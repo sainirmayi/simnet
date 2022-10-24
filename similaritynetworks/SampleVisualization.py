@@ -54,7 +54,7 @@ for edge in G.edges():
 
 edge_trace = go.Scatter(
     x=edge_x, y=edge_y,
-    line=dict(width=1, color='#888'),
+    line=dict(width=1, color='#aaa'),
     hoverinfo='none',
     mode='lines')
 
@@ -67,10 +67,13 @@ for node in G.nodes():
 
 node_trace = go.Scatter(
     x=node_x, y=node_y,
-    mode='markers',
+    mode='markers+text',
     hoverinfo='text',
+    textposition='middle right',
+    textfont=dict(size=10, color='black'),
     marker=dict(
-        showscale=True,
+        showscale=False,
+
         # colorscale options
         # 'Greys' | 'YlGnBu' | 'Greens' | 'YlOrRd' | 'Bluered' | 'RdBu' |
         # 'Reds' | 'Blues' | 'Picnic' | 'Rainbow' | 'Portland' | 'Jet' |
@@ -78,7 +81,7 @@ node_trace = go.Scatter(
         colorscale='YlGnBu',
         reversescale=True,
         color=[],
-        size=25,
+        size=30,
         colorbar=dict(
             thickness=15,
             title='Node Connections',
@@ -90,7 +93,7 @@ node_adjacencies = []
 node_text = []
 for node, adjacencies in enumerate(G.adjacency()):
     node_adjacencies.append(len(adjacencies[1]))
-    node_text.append(adjacencies[0] + ' : ' + str(len(adjacencies[1])) + ' connections')
+    node_text.append(adjacencies[0])
 
 node_trace.marker.color = node_adjacencies
 node_trace.text = node_text
