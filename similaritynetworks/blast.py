@@ -5,7 +5,7 @@ from Bio.Blast import NCBIXML
 import pandas as pd
 
 
-def split_fasta(fname):
+def split_fasta(fastafile):
     # make a new directory to put the separated fasta sequences
     isexist = os.path.exists(os.getcwd() + "/separated_sequences")
     if not isexist:
@@ -13,7 +13,7 @@ def split_fasta(fname):
         os.makedirs(os.getcwd() + "/separated_sequences")
         print("The new directory is created!")
 
-    f = open(fname, "r")
+    f = open(fastafile, "r")
     os.chdir(os.getcwd() + "/separated_sequences")
     outfile = []
     for line in f:
@@ -37,7 +37,7 @@ def blast_search(directory):
                 print(f"{file}_blast.txt already exists")
             else:
                 sequence_data = open(file).read()
-                result_handle = NCBIWWW.qblast("blastp", "swissprot", sequence_data, format_type="XML", hitlist_size=20)
+                result_handle = NCBIWWW.qblast("blastp", "swissprot", sequence_data, format_type="XML", alignments=1, hitlist_size=20)
                 with open(f"{file}_blast.xml", 'w') as save_file:
                     blast_results = result_handle.read()
                     save_file.write(blast_results)
@@ -53,21 +53,21 @@ def parse_blast(directory):
             item = next(records)
 
             for alignment in item.alignments:
-                for hsp in alignment.hsps:
-                    protein = file.split('.')[0]
-                    sequence = alignment.title
-                    length = alignment.length
-                    evalue = hsp.expect
-                    score = hsp.score
-                    gaps = hsp.gaps
+                hsp = alignment.hsps[0]
+                protein = file.split('.')[0]
+                sequence = alignment.title
+                length = alignment.length
+                evalue = hsp.expect
+                score = hsp.score
+                gaps = hsp.gaps
 
-                    blast_records.append(
-                        dict(protein=protein, sequence=sequence, length=length, evalue=evalue, score=score, gaps=gaps))
+                blast_records.append(
+                    dict(protein=protein, sequence=sequence, length=length, evalue=evalue, score=score, gaps=gaps))
 
     blast_dataframe = pd.DataFrame.from_records(blast_records)
     blast_dataframe.to_csv('blast.csv')
 
 
-split_fasta(sequences.fasta)
+split_fasta("fasta_sample.fasta")
 blast_search(os.getcwd())
 parse_blast(os.getcwd())
