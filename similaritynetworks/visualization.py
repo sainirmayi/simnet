@@ -1,7 +1,7 @@
 import plotly.graph_objects as go
 import networkx as nx
 import pandas as pd
-
+pd.options.mode.chained_assignment = None
 
 def create_sample_db():
     """ Sample dataframes to represent the databases """
@@ -23,30 +23,30 @@ def create_sample_db():
     return similarity_db
 
 
-def get_similarity_data(query):
+def get_similarity_data(query,n_neighbors):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
 
-    # similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
-    # results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Score', 'Positives', 'E'], axis=1)
+    similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
+    results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Score', 'Positives', 'E'], axis=1)
 
-    similarity_db = create_sample_db()
-    results = similarity_db.drop(['Hit', 'Score', 'Positives', 'E'], axis=1)
+    # similarity_db = create_sample_db()
+    # results = similarity_db.drop(['Hit', 'Score', 'Positives', 'E'], axis=1)
 
     similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
     similarity_db.reset_index(drop=True, inplace=True)
     similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
     similar.remove(query)
-    top20 = similar[:20]
+    data = similar[:n_neighbors]####variable name modified
 
     for i in range(results.shape[0]):
         if results['Protein1'][i] != query:
-            if results['Protein1'][i] not in top20 or \
-                    (results['Protein1'][i] in top20 and results['Protein2'][i] not in top20):
+            if results['Protein1'][i] not in data or \
+                    (results['Protein1'][i] in data and results['Protein2'][i] not in data):
                 results.drop(labels=i, inplace=True, axis=0)
         else:
-            if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in top20:
+            if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
                 results.drop(labels=i, inplace=True, axis=0)
 
     results.reset_index(drop=True, inplace=True)
@@ -129,18 +129,18 @@ def create_network(similar_proteins):
                         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
                         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
                     )
-    fig.show()
+    return fig
 
 
-def get_visualization(query):
+def get_visualization(query,n_neighbors):
     """ Call this function to get the similarity network for a query """
-    similar_proteins = get_similarity_data(query)
-    create_network(similar_proteins)
+    similar_proteins = get_similarity_data(query,n_neighbors)
+    return create_network(similar_proteins)
 
 
 if __name__ == "__main__":
     similarity_db = create_sample_db()
-    # similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
+    similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
     print(similarity_db['Protein1'].unique())
-    query = input("Query ID: ")
+    query = input("A0T0G9")
     get_visualization(query)
