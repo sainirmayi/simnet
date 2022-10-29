@@ -1,8 +1,12 @@
-import dash
-from dash import html
-from dash import dcc
-import dash_bootstrap_components as dbc
 
+#from dash import html
+#from dash import dcc
+import dash
+
+import dash_core_components as dcc
+import dash_html_components as html
+import dash_bootstrap_components as dbc
+import pip
 homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 homepage.layout = html.Div(
     [
