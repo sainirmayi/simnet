@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_16583</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0K0|RPOA_PHATC DNA-directed RNA polymerase subunit alpha OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpoA PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>311</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_16583</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0K0|RPOA_PHATC DNA-directed RNA polymerase subunit alpha OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpoA PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>311</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0K0.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0K0</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>627.861</Hsp_bit-score>
+      <Hsp_score>1618</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>311</Hsp_identity>
+      <Hsp_positive>311</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</Hsp_qseq>
+      <Hsp_hseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</Hsp_hseq>
+      <Hsp_midline>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49465.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49465</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>447.588</Hsp_bit-score>
+      <Hsp_score>1150</Hsp_score>
+      <Hsp_evalue>1.76892e-158</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>214</Hsp_identity>
+      <Hsp_positive>258</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MNNFYIKCLKSKKVESGSIYGQFVIKSLHPGQGITIGNLFRRVLLSDLGGTAITGVRIAGVRDEFSTIPGIREDILEILLNLKGIVLKSKTNDLKFGRLKIKGPAVVTANCIQLPSEVEIVNPNHYIATITTSNVLEIEFKIESGTGYKLAGQTFCKKSQDYLQIDAIFMPVQKVDFKIENIYDNSNDLTERLFLDIWTNGSMSPEEAVSSASRFIISFFSSLLENKLPQETKESENKTLSAPKNPHTNIAIEELHLSVRAYNCLKRAQINTIGDLLKYSPEKLQELKNFGRKSADEVFTTLKNKLGIVL</Hsp_hseq>
+      <Hsp_midline>MNN  IKCLKS+K++SG+ +GQF+I SL+PGQGITIGN  RRVLL DLGG AI+ VRIAG+  EFSTIPG+REDILEILLNLKGI+  S+  D +FG LK++GP+VVTA+ IQLP  VEI+NPNHYIATI+TSN+LEIEFK E G+GY LA Q F ++ ++YLQ+D IFMPVQKVDFKIENIYD +N+++ERLFLDIWTNGS+SP +A+ SA++ II  F+ L+ NK        E K  +    P+TNIAIEEL LSVRAYNCLK+AQINT+GDLL+YSPEKLQELKNFGRKSADEVF+TLKNKLGI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0Z4.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0Z4</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>419.468</Hsp_bit-score>
+      <Hsp_score>1077</Hsp_score>
+      <Hsp_evalue>2.06934e-147</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>313</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>209</Hsp_identity>
+      <Hsp_positive>256</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>NNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLL----INNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</Hsp_qseq>
+      <Hsp_hseq>SNLLMECIKSEKIESGPMYGQFLIDSLSSGQGITIGNLLRRVLLGDLQGTAITGVRIAGVKDEFSLIPGVREDILEILLNLKGIVLKSKTPNRQFGRLRLQGPAVITASSIQLPPEIEIINPNHYIATISSSHILEIEFKIESGSKYRLANELFSDKFEDFIETDAIFMPVQKVDFKVENVYDNSNNIKERLLIDIWTNGSISPEQAIFSGSNLIINLFKSIGEQKINKEKENIKEKNHIKP----IDPYTHIAIEELQLSVRPYNCLKRAQINTIGDLLDYSPEKLLELKNFGRKSADEVFATLKNKLGIVLK</Hsp_hseq>
+      <Hsp_midline>+N+ ++C+KSEKI+SG  +GQFLI+SL+ GQGITIGN LRRVLLGDL G AI+ VRIAG+  EFS IPGVREDILEILLNLKGI+  S+  + QFG L++QGP+V+TA  IQLPP +EIINPNHYIATIS+S+ILEIEFK E GS Y LA++ F ++ E++++ D IFMPVQKVDFK+EN+YD +NNI ERL +DIWTNGSISP  A+ S + +II+LF  +    IN +  N   +  +KP    I+PYT+IAIEELQLSVR YNCLK+AQINT+GDLL YSPEKL ELKNFGRKSADEVF+TLKNKLGI+LK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51293.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51293</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>313.538</Hsp_bit-score>
+      <Hsp_score>802</Hsp_score>
+      <Hsp_evalue>1.51935e-105</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>318</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTN--------IAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFQIECVESRTDGARGQYGSFVIEALNQGQGITLGNALRRSILSDLEGTAIVAVRIAGVNHEFSTIPGVREDVLEILLNLKEVVFKSNNQESQIGRIKVQGPAIVTAGLFELSSDIEVVDPRQYIATICNNTIFEMEFKIEKSCGYRLAEKAVDELSLDFLQVDSVFMPVNKVNYKVEEVRVGTNSIKDRLILQIWTNGSISPQEAISQGATVLTNLFCSLRN---------LDFK----SVDTYRNKEDKKISQVLIEELQLSVRAYNCLKRAQIHSIADLLDYSQEELLEIKNFGQKSAEEVIYALQKTLGISL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S    +   +G F+I +LN GQGIT+GN LRR +L DL G AI AVRIAG+ HEFSTIPGVRED+LEILLNLK ++  S  Q++Q G +KVQGP++VTA L +L   +E+++P  YIATI  + I E+EFK E   GY LA +   E   ++LQ+D++FMPV KV++K+E +   TN+I +RL L IWTNGSISP +A+   A V+ +LF  L N         L+ K    S++ Y N        + IEELQLSVRAYNCLK+AQI+++ DLL YS E+L E+KNFG+KSA+EV   L+  LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q1XDJ5.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDJ5</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>310.071</Hsp_bit-score>
+      <Hsp_score>793</Hsp_score>
+      <Hsp_evalue>2.58698e-104</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>156</Hsp_identity>
+      <Hsp_positive>214</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFQIECIESRTDGARGQYGSFVIEPLNQGQGITLGNALRRSILSDLEGTAIVAVRIAGVNHEFSTIPGVREDVLEILLNLKEVVFKSYNKESQIGRIRVQGPAIVTAGLFELSSDIEVVDPRQYIATICNNTIFEMEFKIEKNCGYRLAEKAVDELSVDFLQVDSVFMPVNKVNYKVEEVRIGSNSIKDRLIIQIWTNGSISPQEAISQGATVLTNLFCSLRNLDFKSADNYRSKEDKKIS-----QVLIEELQLSVRAYNCLKRAQIHSIADLLDYSQEELLEIKNFGQKSAEEVIYALQKKLGISL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S    +   +G F+I  LN GQGIT+GN LRR +L DL G AI AVRIAG+ HEFSTIPGVRED+LEILLNLK ++  S  +++Q G ++VQGP++VTA L +L   +E+++P  YIATI  + I E+EFK E   GY LA +   E   ++LQ+D++FMPV KV++K+E +   +N+I +RL + IWTNGSISP +A+   A V+ +LF  L N    + +N    + + IS      + IEELQLSVRAYNCLK+AQI+++ DLL YS E+L E+KNFG+KSA+EV   L+ KLGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q6B8X4.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8X4</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>304.679</Hsp_bit-score>
+      <Hsp_score>779</Hsp_score>
+      <Hsp_evalue>5.0083e-102</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>155</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MTYFQIECVESKTESNRQQYGRFILEPLNKGQGITLGNSLRRTILSDLQGAAIVAVRIAGINHEFSTITGVREDVLEILLNLKKVVLKSHSDTPQIGRIRLQGPAIITTGLFEVPPEILIIDPQQYIATICNNTIFEMEFRIEKGSGYKLVNKGFDKKSIDFLQIDAVFMPVTKFNYTVEEKKISPILIQEKLFLEVWTNGSLSPQEAISEGAQVLHSLFYPL-TNLNFQNANNTDNEYE----EEINQVLIEELQLSVRAYNCLKRAQINSISDLLDYSQDELLEIKNFGQKSAEEVIEALQNKLGIRL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S+   +   +G+F++  LN GQGIT+GN LRR +L DL G AI AVRIAGI HEFSTI GVRED+LEILLNLK ++  S     Q G +++QGP+++T  L ++PP + II+P  YIATI  + I E+EF+ E GSGY L ++ F ++  ++LQ+D +FMPV K ++ +E    +   I E+LFL++WTNGS+SP +A+   AQV+  LF  L  N N  N N  + + E    E    + IEELQLSVRAYNCLK+AQIN++ DLL YS ++L E+KNFG+KSA+EV   L+NKLGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|O46914.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Guillardia theta]</Hit_def>
+  <Hit_accession>O46914</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>303.523</Hsp_bit-score>
+      <Hsp_score>776</Hsp_score>
+      <Hsp_evalue>1.2384e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>308</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKK--AQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGI</Hsp_qseq>
+      <Hsp_hseq>MTQFEIECLDSKVYNARDHWSRFVIDPLKPGQGTTLGNALRRTLLSELEGLAITAVRIAGVSHEFSTINGIREDVLEILLNLKEIVFSGQLQESTIGRLTVQGPAIVTARSFELPPEIKLIDPEQYIATICGNNTLEMEFKIEVGSGYKIVEKDNSTEHFEFLQVDSVFMPVKKVNFRIEETRGENNILNEQLILDIWTNGSISAKEAISNAADNLINLFSPL---KTIDGES--ETDYETNETSHINQILIEELQLSVRAYNCLKRGCAHIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGI</Hsp_hseq>
+      <Hsp_midline>M    I+CL S+   +     +F+I+ L PGQG T+GN LRR LL +L G+AI+AVRIAG++HEFSTI G+RED+LEILLNLK I+ + Q+Q++  G L VQGP++VTA   +LPP +++I+P  YIATI  +N LE+EFK E GSGY +  ++   E   +LQ+D++FMPV+KV+F+IE      N ++E+L LDIWTNGSIS  +A+ +AA  +I+LF+ L   K I+  +  E   ET        I IEELQLSVRAYNCLK+  A I++V DLL YS E L E+KNFG+KSA+EV   L+ +LGI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q01569.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Pyrenomonas salina]</Hit_def>
+  <Hit_accession>Q01569</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>302.368</Hsp_bit-score>
+      <Hsp_score>773</Hsp_score>
+      <Hsp_evalue>4.01414e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>308</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>212</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>312</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPET----ISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGI</Hsp_qseq>
+      <Hsp_hseq>MTTFEIECIESTREGLRDHYSKFCLEPLNQGQGTTLGNALRRTLLADLEGTAIVAVRIAGVSHEFSTIPGIREDVLEILLNLKEVVLKSQIGTSGVGRLRVQGPAIVTTNHLELPSEIELIDPNQYIATICGNNILEMEFRIETGKGYNLVERDSDESSIDFLQVDAIFMPVKKVNYLSKDIRSENNLIQEQLTLEVWTNGSIDPQDAVSQAGKILTELLFPL---KEIN------FKPDDSESIIEDSKINQILIEELQLSVRAYNCLKRAQIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGI</Hsp_hseq>
+      <Hsp_midline>M    I+C++S +      + +F +  LN GQG T+GN LRR LL DL G AI AVRIAG++HEFSTIPG+RED+LEILLNLK ++  SQI  +  G L+VQGP++VT + ++LP  +E+I+PN YIATI  +NILE+EF+ E G GY+L  ++  E   ++LQ+D IFMPV+KV++  ++I    N I E+L L++WTNGSI P DA+  A +++ +L   L   K IN       KP+     I       I IEELQLSVRAYNCLK+AQI++V DLL YS E L E+KNFG+KSA+EV   L+ +LGI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q110D1.2|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q110D1</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>301.212</Hsp_bit-score>
+      <Hsp_score>770</Hsp_score>
+      <Hsp_evalue>1.02458e-100</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>153</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE----NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFHYECVESKTDKDRSQYGKFIIEPLARGQGTTVGNALRRVLLSNLEGTAITSVRIAGVNHEFATIKGVREDVLEILLNMKEVVLKSYSEQPQIGRLRVEGPATVTADRFDVPSEVEVIDRSQYIATLSPGSILEMEFRIEKGTGYKAVDRT---RDDVATLDFLQIDAIFMPVRKVNYTIEDAHIGSSLEQDRLIMDIWTNGSYTPQDALSNAAGILMSLFEPL---KDITNMADI---PSGETTDPTSQIPIEELQLSVRAYNCLKRAQINSVADLLDYSQEDLLEIKNFGQKSAEEVIEALQKRLGITL</Hsp_hseq>
+      <Hsp_midline>M     +C++S+  +  + +G+F+I  L  GQG T+GN LRRVLL +L G AI++VRIAG+ HEF+TI GVRED+LEILLN+K ++  S  +  Q G L+V+GP+ VTAD   +P  VE+I+ + YIAT+S  +ILE+EF+ E G+GY    +     D+    ++LQ+D IFMPV+KV++ IE+ +  ++   +RL +DIWTNGS +P DAL +AA +++ LF  L   K+I N   +   P   + +P + I IEELQLSVRAYNCLK+AQIN+V DLL YS E L E+KNFG+KSA+EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q2JUJ5.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Synechococcus sp. JA-3-3Ab]</Hit_def>
+  <Hit_accession>Q2JUJ5</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.056</Hsp_bit-score>
+      <Hsp_score>767</Hsp_score>
+      <Hsp_evalue>5.36449e-100</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>324</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>208</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>KCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIE--PYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>ECVESHQEANGVHYGKFALGPLERGQGITVGNALRRVLLSNLEGTAVTAVRIAGVTHEFSTVPGVREDVMEILLNMKELVLRSNAPDTQVGRLVAQGPGEVTAEKLQLPSEVEVINPRHHIATLAEGAILEMEFMIGRGRGYRAVDYSDSKSMAIDFLQIDSVFMPVRKVNYTVEAARVGQSLEKDRLILEIWTNGSLTPQEALSQAARILVGLFSPL-------QEVSFDTPPEPRQAEDNQKNQIPIEELQLSVRAYNCLKRAQINTVADLLVYTEEDLLEIKNFGQKSAEEVVQALKNRLGLTL</Hsp_hseq>
+      <Hsp_midline>+C++S +  +G  +G+F +  L  GQGIT+GN LRRVLL +L G A++AVRIAG+THEFST+PGVRED++EILLN+K ++  S   DTQ G L  QGP  VTA+ +QLP  VE+INP H+IAT++   ILE+EF    G GY     +  +    ++LQ+D++FMPV+KV++ +E      +   +RL L+IWTNGS++P +AL  AA++++ LF+ L            +  PE    E      I IEELQLSVRAYNCLK+AQINTV DLL Y+ E L E+KNFG+KSA+EV   LKN+LG+ L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|P48118.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48118</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>296.975</Hsp_bit-score>
+      <Hsp_score>759</Hsp_score>
+      <Hsp_evalue>5.40427e-99</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>305</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MTQFQIECVESKVESSCNQYGRFIVEPLEPGQGITIGNSLRRVLLSDIEGSAITAVRIAGVNHEFCSIPGVKEDVLELLLNLKNIVLKSYTNEPQIGRLKIQGACKVTTANFELPSEVEIIHGTQYVATVAENAILEMEFKIEKGRGYKIIDKKQTENSIDFLPIDAIFMPVRKVNYMVEEIFLRNSEIKERLILEIWRNGSVTPQDSISQAAEVLLNLFNPFKKINFENTDDSTEQTEDKIS-----QIPIEELQLSVRAYNCLKRAQIHSIGDLLNVSQEELLEIRNFGQKSAKEVIDALQKRLGISL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S+   S   +G+F++  L PGQGITIGN LRRVLL D+ G AI+AVRIAG+ HEF +IPGV+ED+LE+LLNLK I+  S   + Q G LK+QG   VT    +LP  VEII+   Y+AT++ + ILE+EFK E G GY +  +   E   ++L +D IFMPV+KV++ +E I+   + I ERL L+IW NGS++P D++  AA+V+++LF         N ++  E   + IS      I IEELQLSVRAYNCLK+AQI+++GDLL  S E+L E++NFG+KSA EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q3MF97.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MF97</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>295.434</Hsp_bit-score>
+      <Hsp_score>755</Hsp_score>
+      <Hsp_evalue>1.83031e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKP----ETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFQIECVESNTEESRNHYSKFILEPLERGQGTTVGNALRRVLLSNLEGTAVTAVRIAGVSHEFATVPGVREDVLEIIMRMKEVILKSYSSQAQIGRLLVNGPTTITASHFDLPSEVEVIDPTQYVATIAEGGKLEMEFRIERGKGYRTVERGREEATSLDFLQIDSIFMPVRKVNYSVEEVRADGSIPKDRLLLEVWTNGSISPQEALSSAAGILVDLFNPL---KDIS------LEPTDTNSDIPDDPTAQIPIEELQLSVRAYNCLKRAQVNSVADLLDYTQEDLLEIKNFGQKSAEEVVEALQRRLGITL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S   +S   + +F++  L  GQG T+GN LRRVLL +L G A++AVRIAG++HEF+T+PGVRED+LEI++ +K +I  S     Q G L V GP+ +TA    LP  VE+I+P  Y+ATI+    LE+EF+ E G GY    +   E    ++LQ+D+IFMPV+KV++ +E +    +   +RL L++WTNGSISP +AL SAA +++DLF  L   K+I+      L+P      I  +P   I IEELQLSVRAYNCLK+AQ+N+V DLL Y+ E L E+KNFG+KSA+EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q8YPK3.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YPK3</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>295.434</Hsp_bit-score>
+      <Hsp_score>755</Hsp_score>
+      <Hsp_evalue>2.1087e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>315</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKP----ETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFQIECVESNTEESRNHYSKFILEPLERGQGTTVGNALRRVLLSNLEGTAVTAVRIAGVSHEFATVPGVREDVLEIIMRMKEVILKSYSSQAQIGRLLVNGPTTITASHFDLPSEVEVIDPTQYVATIAEGGKLEMEFRIERGKGYRTVERGREEATSLDFLQIDSIFMPVRKVNYSVEEVRADGSIPKDRLLLEVWTNGSISPQEALSSAAGILVDLFNPL---KDIS------LEPTDTNSDIPDDPTAQIPIEELQLSVRAYNCLKRAQVNSVADLLDYTQEDLLEIKNFGQKSAEEVVEALQRRLGITL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S   +S   + +F++  L  GQG T+GN LRRVLL +L G A++AVRIAG++HEF+T+PGVRED+LEI++ +K +I  S     Q G L V GP+ +TA    LP  VE+I+P  Y+ATI+    LE+EF+ E G GY    +   E    ++LQ+D+IFMPV+KV++ +E +    +   +RL L++WTNGSISP +AL SAA +++DLF  L   K+I+      L+P      I  +P   I IEELQLSVRAYNCLK+AQ+N+V DLL Y+ E L E+KNFG+KSA+EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A6MW22.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MW22</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>294.278</Hsp_bit-score>
+      <Hsp_score>752</Hsp_score>
+      <Hsp_evalue>5.61965e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>308</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>155</Hsp_identity>
+      <Hsp_positive>214</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>309</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTN-IAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGI</Hsp_qseq>
+      <Hsp_hseq>MTKFEIECVESTTDGARDHYSKFCLEPLEQGQGVTLGNALRRTLLSDLEGTAIVAVRIAGVSHEFSTIPGIREDVLEILLNLKEVVLKSQTKNPSVGRLRVQGPAIVTTSNLELPSEVELIDPNQYIATICGNNILEMEFRIETGKGYHLIERSIDETSIDFLQVDAIFMPVKKVNYLTKDIRSNDNLLQEQLLLEVWTNGSIDPQDAVSQGGKILTELLHPL---KEINFKSDEE---DTVAEDSKINQILIEELQLSVRAYNCLKRAQIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGI</Hsp_hseq>
+      <Hsp_midline>M    I+C++S    +   + +F +  L  GQG+T+GN LRR LL DL G AI AVRIAG++HEFSTIPG+RED+LEILLNLK ++  SQ ++   G L+VQGP++VT   ++LP  VE+I+PN YIATI  +NILE+EF+ E G GYHL  ++  E   ++LQ+D IFMPV+KV++  ++I    N + E+L L++WTNGSI P DA+    +++ +L   L   K IN  +  E   +T++ +   N I IEELQLSVRAYNCLK+AQI++V DLL YS E L E+KNFG+KSA+EV   L+ +LGI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q2JL74.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JL74</Hit_accession>
+  <Hit_len>335</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>293.508</Hsp_bit-score>
+      <Hsp_score>750</Hsp_score>
+      <Hsp_evalue>2.15679e-97</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>326</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>148</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>305</Hsp_align-len>
+      <Hsp_qseq>KCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>ECVESHRDDNGVHYGKFALGPLERGQGITVGNALRRVLLSNLEGTAVTAVRIAGVTHEFSTVPGVREDVMEILLNMKELVLRSSSPETQVGRLVAQGPGEVTAEKLQLPSDVEVINPRHHIATLAEGAILEMEFMIGRGHGYRAVDYSDSKAMAIDFLQIDSVFMPVRKVNYAVEAARVGQFLEKDRLVLEIWTNGSLTPQEALSQAARILVGLFAPL---QEVSFDAPVPPKPDEDNQK--NQIPIEELQLSVRAYNCLKRAQINTVADLLLYTEEDLLEIKNFGQKSAEEVVQALKARFGLTL</Hsp_hseq>
+      <Hsp_midline>+C++S +  +G  +G+F +  L  GQGIT+GN LRRVLL +L G A++AVRIAG+THEFST+PGVRED++EILLN+K ++  S   +TQ G L  QGP  VTA+ +QLP  VE+INP H+IAT++   ILE+EF    G GY     +  +    ++LQ+D++FMPV+KV++ +E          +RL L+IWTNGS++P +AL  AA++++ LF  L   + ++ +  +  KP+  + +    I IEELQLSVRAYNCLK+AQINTV DLL Y+ E L E+KNFG+KSA+EV   LK + G+ L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|P73297.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P73297</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>285.034</Hsp_bit-score>
+      <Hsp_score>728</Hsp_score>
+      <Hsp_evalue>2.45781e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>205</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>316</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDEN----YLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIE--PYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQFQIECVESSTRKNQQQYSKFSLEPLDRGQGTTVGNALRRVLLSNLPGAAVTAIRIAGVNHEFATILGVREDVLEIMLNMKELVLKSYTDQPQIGRLTAIGPGTVTAAQFEVPSEVEVIDPNQYIATLAEGAKLEMEFRVERGVGYRVIERG---KDENSSLDFLQIDSVFMPVTKVNYTVEDIRADGMSPKDRLILDIWTNGSIQPREALSEASDIIANLFIPL------KDLNELEAAHSDYQDEVNPESQIPIEELQLSVRAYNCLKRAQINSVADLLEYSQEDLLEIKNFGLKSAEEVIEALQKRLGITL</Hsp_hseq>
+      <Hsp_midline>M    I+C++S   ++   + +F +  L+ GQG T+GN LRRVLL +L G A++A+RIAG+ HEF+TI GVRED+LEI+LN+K ++  S     Q G L   GP  VTA   ++P  VE+I+PN YIAT++    LE+EF+ E G GY +  +    +DEN    +LQ+D++FMPV KV++ +E+I     +  +RL LDIWTNGSI P +AL  A+ +I +LF  L       + N LE        E  P + I IEELQLSVRAYNCLK+AQIN+V DLL+YS E L E+KNFG KSA+EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|O24710.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Synechococcus elongatus PCC 6301] &gt;sp|Q31L30.1| RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Synechococcus elongatus PCC 7942 = FACHB-805]</Hit_def>
+  <Hit_accession>O24710</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>284.648</Hsp_bit-score>
+      <Hsp_score>727</Hsp_score>
+      <Hsp_evalue>2.96088e-94</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>205</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>IKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</Hsp_qseq>
+      <Hsp_hseq>VECVESRTEADQGQYGRFSIEPLARGQGTTVGNALRRVLLSNLEGTAVTAVRIGGVNHEFATIPGVREDVLDILLNVRELVVHAHSPQPQIGRLRVVGPATVTAADVDFGPEVEVINPNHYIASLSEGATLEMELKVEWGTGYRAIDRSHDETTALDFLQLDAVFMPVRRVNYSVEDARVGESTAIDRLVLEVWTNGSLSPQEALSQAASCLVALFEPL---KNVSVGSTHTADPEPT---PESQTPIEDLQLSVRAYNCLKRAQVNSVADLLSYTYEDLLEIKNFGQKSAEEVVEALE-RIGIKLQ</Hsp_hseq>
+      <Hsp_midline>++C++S        +G+F I  L  GQG T+GN LRRVLL +L G A++AVRI G+ HEF+TIPGVRED+L+ILLN++ ++  +     Q G L+V GP+ VTA  +   P VE+INPNHYIA++S    LE+E K E+G+GY    ++  E    ++LQLD +FMPV++V++ +E+     +   +RL L++WTNGS+SP +AL  AA  ++ LF  L   KN++  +     PE     P +   IE+LQLSVRAYNCLK+AQ+N+V DLL Y+ E L E+KNFG+KSA+EV   L+ ++GI L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q7NFF5.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Gloeobacter violaceus PCC 7421]</Hit_def>
+  <Hit_accession>Q7NFF5</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>284.263</Hsp_bit-score>
+      <Hsp_score>726</Hsp_score>
+      <Hsp_evalue>4.52111e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>144</Hsp_identity>
+      <Hsp_positive>207</Hsp_positive>
+      <Hsp_gaps>10</Hsp_gaps>
+      <Hsp_align-len>313</Hsp_align-len>
+      <Hsp_qseq>MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE---NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>MAQYTIECVETRTEADNGQYGKFVLEPLERGQGTTLGNALRRVLLSNLEGTAVTAVRITGVNHEFATMKGIREDVLDILLNMKELVLRSYTSDIQIGRLAVQGPKRVTAADLELPTEVQVVHPRHYIATLAEDGQLEMEFQIERGKGYRAIERG--SEDGAAIDYLSIDAIFMPVRKVNWTVESERSAANVEQDRLTLEIWTSGSLSPQEALSQAAKILVDQLRPL---QEITFEPPAE--PQRSAPNTVGQVPIEELQLSVRAYNCLKRAQINTVADLLEYTEEDLLEIKNFGQKSAEEVIEALQDKMGLSL</Hsp_hseq>
+      <Hsp_midline>M   +I+C+++        +G+F++  L  GQG T+GN LRRVLL +L G A++AVRI G+ HEF+T+ G+RED+L+ILLN+K ++  S   D Q G L VQGP  VTA  ++LP  V++++P HYIAT++    LE+EF+ E G GY    +    ED    +YL +D IFMPV+KV++ +E+   A N   +RL L+IWT+GS+SP +AL  AA++++D    L   + I      E  P+  +      + IEELQLSVRAYNCLK+AQINTV DLL+Y+ E L E+KNFG+KSA+EV   L++K+G+ L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q8DML0.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=RNAP subunit alpha; AltName: Full=RNA polymerase subunit alpha; AltName: Full=Transcriptase subunit alpha [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DML0</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>284.648</Hsp_bit-score>
+      <Hsp_score>727</Hsp_score>
+      <Hsp_evalue>4.65895e-94</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>313</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>207</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>IKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPS----VVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE---NYLQLDTIFMPVQKVDFKIENIYDA----TNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNK-NINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>IECLETRVEEDQGQYGQFALHPLAPGQGITVGNALRRVLLSNLPGSAVTAVRIAGVNHEFSTIPGVREDVMDILLQMKQLVIRSHTSEPQMGRLFAQAPENEPLTVTAGMVQLGSEVEVVNPNHYIATLMPGATLEMEFKIEKDRGYR--SVERVRDDRLALDYLQLDAVFMPVRRVNYTVDSVRSAGAEGDRQLQDYLKLEIWTNGSLTPQDALNQAATILVDLFSPLKEVPLHTSEATATDDHDET------GQIPIEQLNLSVRAYNCLKRAQVNTVADLLEYSQEELLEIKNFGQKSAEEVIEALQKHLGITL</Hsp_hseq>
+      <Hsp_midline>I+CL++   +    +GQF ++ L PGQGIT+GN LRRVLL +L G A++AVRIAG+ HEFSTIPGVRED+++ILL +K ++  S   + Q G L  Q P      VTA ++QL   VE++NPNHYIAT+     LE+EFK E   GY   S   V +D    +YLQLD +FMPV++V++ ++++  A       + + L L+IWTNGS++P DAL  AA +++DLF+ L     + +     +   ET        I IE+L LSVRAYNCLK+AQ+NTV DLL+YS E+L E+KNFG+KSA+EV   L+  LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|A2CI44.1|</Hit_id>
+  <Hit_def>RecName: Full=DNA-directed RNA polymerase subunit alpha; Short=PEP; AltName: Full=Plastid-encoded RNA polymerase subunit alpha; Short=RNA polymerase subunit alpha [Chlorokybus atmophyticus]</Hit_def>
+  <Hit_accession>A2CI44</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>274.633</Hsp_bit-score>
+      <Hsp_score>701</Hsp_score>
+      <Hsp_evalue>2.6585e-90</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>310</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>SIKCLKSEKIQSGACH-GQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENY----LQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIIL</Hsp_qseq>
+      <Hsp_hseq>TIECIES-RIESRRNHYGRFVIAPLEIGQGITVGNVFRRVLLGDLEGACITSVQIPGVNHEFSTIHGVREAVLDILLNLKEIVLKTQSQETQRGHLSVQGPSTVLARDLQLPSSIELVDPDQYIATISGRVSLNMEFTVEVGKGYQLPD---YEKKKTFQVDVLPIDAVFMPVTKVNYTVEENYGGDRS-QERVIIEVWTNGSINSRQAIDLSVNKIINLFSPLQNVRSIEHEPLVKEKDSKM-----TEVLVEELDLSVRAYNCLKRAQIHTVSDLLSYSQEDLLEIKNFGRRSAEEVIEGLQKRLGIHL</Hsp_hseq>
+      <Hsp_midline>+I+C++S +I+S   H G+F+I  L  GQGIT+GN  RRVLLGDL G  I++V+I G+ HEFSTI GVRE +L+ILLNLK I+  +Q Q+TQ GHL VQGPS V A  +QLP  +E+++P+ YIATIS    L +EF  E G GY L      E+ + +    L +D +FMPV KV++ +E  Y    +  ER+ +++WTNGSI+   A++ +   II+LF+ L N ++I +   ++ K   +     T + +EEL LSVRAYNCLK+AQI+TV DLL YS E L E+KNFGR+SA+EV   L+ +LGI L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

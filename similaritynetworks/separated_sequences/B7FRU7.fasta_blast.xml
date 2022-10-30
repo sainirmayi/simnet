@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_32305</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|B7FRU7|LIPA1_PHATC Lipoyl synthase 1, mitochondrial OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_18029 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>401</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_32305</Iteration_query-ID>
+  <Iteration_query-def>sp|B7FRU7|LIPA1_PHATC Lipoyl synthase 1, mitochondrial OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_18029 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>401</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|B7FRU7.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase 1, mitochondrial; AltName: Full=Lipoate synthase 1; Short=LS 1; Short=Lip-syn 1; AltName: Full=Lipoic acid synthase 1; Flags: Precursor [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>B7FRU7</Hit_accession>
+  <Hit_len>401</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>835.484</Hsp_bit-score>
+      <Hsp_score>2157</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>401</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>401</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>401</Hsp_identity>
+      <Hsp_positive>401</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>401</Hsp_align-len>
+      <Hsp_qseq>MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</Hsp_qseq>
+      <Hsp_hseq>MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</Hsp_hseq>
+      <Hsp_midline>MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|C7Z527.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Fusarium vanettenii 77-13-4]</Hit_def>
+  <Hit_accession>C7Z527</Hit_accession>
+  <Hit_len>412</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>422.165</Hsp_bit-score>
+      <Hsp_score>1084</Hsp_score>
+      <Hsp_evalue>2.03731e-145</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>401</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>218</Hsp_identity>
+      <Hsp_positive>278</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>410</Hsp_align-len>
+      <Hsp_qseq>PSFRRAWL---------STVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKA-APRSAKILPK---------PRWLKA-APATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</Hsp_qseq>
+      <Hsp_hseq>PSLKRAHAPLRKALTASSTIRAFATVPPTSSETTKPKRKSYFKDTTVAEFSDFLA-------TSSPAQPLSPAEAFTLRTAEVGPEGKKRTITRLPEWLKTPIPAGNDNFKSIKKDLRGLGLHTVCEEARCPNISECWGGSDKNAATATIMLMGDTCTRGCRFCSVKTNRKPAALDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGAHHFAETIRRIKQKKPSLLVEALTGDFRGDLDMVKVVAESGLDVYAHNVETVEDLTPYVRDRRATFRQSLSVLKHVKEVK-----------GKEGIITKTSLMLGLGEQEHEVMAALEDLRKADVDVVTFGQYMRPTKRHLKVEKYVTPDEFEMWNKRALDMGFLYCASGPLVRSSYKAGEAFIENVL---RKRSGEKAMA</Hsp_hseq>
+      <Hsp_midline>PS +RA           ST+    T  PTSS     + +   ++ ++ +FS   A       TSS   P+   +A   R+A++ P+         P WLK   PA +DN++ ++  +R LGL TVCEEARCPNI ECWGG +   ATATIM+MGDTCTRGCRFCSVKT+R P  LDPHEPE  A A+A+WGL YVVLTSVDRDDL D GA HF + + ++K KKPSLLVEALT DF+G++D+V  VA SGLDVYAHN+ETVE LTP VRDRRAT+RQSL VL++VK ++              G +TKTSLMLGLGE + +V+  L DLR ADVDVVTFGQY++PTK+HL V++YVTP++F+ W + A+ MGF Y ASGPLVRSSYKAGE F++  +   ++R+ E A A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|B2AT43.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Podospora anserina S mat+]</Hit_def>
+  <Hit_accession>B2AT43</Hit_accession>
+  <Hit_len>426</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>414.461</Hsp_bit-score>
+      <Hsp_score>1064</Hsp_score>
+      <Hsp_evalue>3.31826e-142</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>401</Hsp_query-to>
+      <Hsp_hit-from>98</Hsp_hit-from>
+      <Hsp_hit-to>410</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>244</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>327</Hsp_align-len>
+      <Hsp_qseq>APRSAKILPKPRWLKAAPATSD---NYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</Hsp_qseq>
+      <Hsp_hseq>AGRKRTITRLPEWLKTPIPSSGANPNFGKIKADLRGLNLHTVCEEARCPNIGECWGGNDKSAATATIMLMGDTCTRGCRFCSVKTNRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFMGDLDMVKIVAESGLDVYAHNVETVEGLTPYVRDRRATFRQSLKVLEHVKAVR-----------GKEGIITKTSIMLGLGEQEQEIWDTLRELRKIDVDVVTFGQYMRPTKRHLKVEKYVTPDEFDLWKQRALDMGFLYCASGPLVRSSYKAGEAFIENVL---RKRAGERAAA</Hsp_hseq>
+      <Hsp_midline>A R   I   P WLK    +S    N+ K++  +R L L TVCEEARCPNIGECWGG +   ATATIM+MGDTCTRGCRFCSVKT+R PPPLDPHEPE  A A+A+WGL YVVLTSVDRDDL D GA HF + + ++K KKP+LLVEALT DF G++D+V  VA SGLDVYAHN+ETVE LTP VRDRRAT+RQSL+VL +VK ++              G +TKTS+MLGLGE + ++  TLR+LR  DVDVVTFGQY++PTK+HL V++YVTP++FD W++ A+ MGF Y ASGPLVRSSYKAGE F++  +   ++R  E AAA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|D0NP70.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Phytophthora infestans T30-4]</Hit_def>
+  <Hit_accession>D0NP70</Hit_accession>
+  <Hit_len>383</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.609</Hsp_bit-score>
+      <Hsp_score>1054</Hsp_score>
+      <Hsp_evalue>2.67053e-141</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>392</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>209</Hsp_identity>
+      <Hsp_positive>263</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>394</Hsp_align-len>
+      <Hsp_qseq>MWSSSSSLCRNPSFRRAWLSTV--TVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKK</Hsp_qseq>
+      <Hsp_hseq>MHASTLTRCMRVAQNARCLSTAAASVQVTHSERGARLAALRERLAEETRQGPTFAE-QALSLEDFAFEADAAPGTKPSRKPNASN--RKPKWLKAQPTQGANYERLRKSVKSLGLSTVCEEAKCPNIGECWGGGKDGIATATIMLMGDTCTRGCSFCAVKTSRKPKPLDIEEPNKVAEAIAAWGLDYIVFTSVDRDDYEDLGAGHFAKTVSTLRAKLPEILIECLTPDFQGHDNLIDQVATSGLDVFAHNMETVERLQRRVRDYRANYKQSLHVLERAKVAAPHLV-------------TKTSLMLGVGERNEDLFQTLRDLRNSGVDVVTFGQYLRPSTKHMPVKSYVTPEAFAEWQKVAEQMGFLYVASGPMVRSSYKAGEFFMKNLLKNRK</Hsp_hseq>
+      <Hsp_midline>M +S+ + C   +     LST   +V  T +   +RLAALR +LA E      F+   A +       ++ +P  +    P ++    KP+WLKA P    NY +LR +V+ LGL+TVCEEA+CPNIGECWGGG+D  ATATIM+MGDTCTRGC FC+VKTSR P PLD  EP KVA AIA WGLDY+V TSVDRDD  D GA HF + V+ L+ K P +L+E LTPDFQG+ +L+  VATSGLDV+AHNMETVE L  +VRD RA Y+QSL VL   K      +             TKTSLMLG+GE ++ +  TLRDLR++ VDVVTFGQYL+P+ KH+PV+ YVTPE F  WQ+ A  MGF YVASGP+VRSSYKAGE F++  +  +K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|B4IAA7.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Drosophila sechellia]</Hit_def>
+  <Hit_accession>B4IAA7</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>409.068</Hsp_bit-score>
+      <Hsp_score>1050</Hsp_score>
+      <Hsp_evalue>9.07649e-141</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>201</Hsp_identity>
+      <Hsp_positive>254</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>373</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>VVATRAASTNAEKLEEIRERLA-KGPNFQDFVQ-NPDNTRSEWEQYDGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAETVREIKARNSNIFVECLVPDFRGNLECVETIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIENTLKDLREAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKR</Hsp_hseq>
+      <Hsp_midline>V  T+ A+  + +L  +R +LA +  +  DF   N   T + +   +G  + R+K   +  ++   P WLK       NY K++  +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G+ H  + V ++K +  ++ VE L PDF+GN++ V  +A SGLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD+++  TL+DLR+A VD VT GQY+QPT KHL V EYVTPEKF  W+E    +GF Y ASGPLVRSSYKAGE F+   +  +K+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q7JQW6.2|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Drosophila melanogaster]</Hit_def>
+  <Hit_accession>Q7JQW6</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>408.683</Hsp_bit-score>
+      <Hsp_score>1049</Hsp_score>
+      <Hsp_evalue>1.30089e-140</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>201</Hsp_identity>
+      <Hsp_positive>254</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>373</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>VVATRAASTNAEKLEEIRERLA-KGPNFHDFVQ-NPDNTRNEWEQYDGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSEHIAETVREIKARNSNIFVECLVPDFRGNLECVKTIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIENTLKDLREAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKR</Hsp_hseq>
+      <Hsp_midline>V  T+ A+  + +L  +R +LA +  +  DF   N   T   +   +G  + R+K   +  ++   P WLK       NY K++  +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G++H  + V ++K +  ++ VE L PDF+GN++ V  +A SGLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD+++  TL+DLR+A VD VT GQY+QPT KHL V EYVTPEKF  W+E    +GF Y ASGPLVRSSYKAGE F+   +  +K+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q7SF84.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Neurospora crassa OR74A]</Hit_def>
+  <Hit_accession>Q7SF84</Hit_accession>
+  <Hit_len>430</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.223</Hsp_bit-score>
+      <Hsp_score>1053</Hsp_score>
+      <Hsp_evalue>1.9177e-140</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>391</Hsp_query-to>
+      <Hsp_hit-from>69</Hsp_hit-from>
+      <Hsp_hit-to>405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>253</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>354</Hsp_align-len>
+      <Hsp_qseq>ASIDDFSSTN------APTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKA-APATSDN--YRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQK</Hsp_qseq>
+      <Hsp_hseq>ASLDDFIANQSSAAPLAPSEAYTLRTAEVGPAGKKRTITRL------PEWLKTPIPSAGANPEFAKIKADLRGLNLHTVCEEARCPNIGECWGGSNKAAATATIMLMGDTCTRGCRFCSVKTSRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFAGDLDMVKIVAESGLDVYAHNVETVENLTPYVRDRRATFRQSLKVLEHVKKVR-----------GKEGIITKTSIMLGLGETEEELWEALRELRKVDVDVVTFGQYMRPTKRHLAVEKYITPDEFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLRKR</Hsp_hseq>
+      <Hsp_midline>AS+DDF +        AP+      ++   P  +++   R       P WLK   P+   N  + K++  +R L L TVCEEARCPNIGECWGG     ATATIM+MGDTCTRGCRFCSVKTSR PPPLDPHEPE  A A+A+WGL YVVLTSVDRDDL D GA HF + + ++K KKP+LLVEALT DF G++D+V  VA SGLDVYAHN+ETVE LTP VRDRRAT+RQSL+VL +VK ++              G +TKTS+MLGLGET++++   LR+LR  DVDVVTFGQY++PTK+HL V++Y+TP++F+ W++ A+ MGF Y ASGPLVRSSYKAGE F++  + ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|C4JE77.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Uncinocarpus reesii 1704]</Hit_def>
+  <Hit_accession>C4JE77</Hit_accession>
+  <Hit_len>417</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>409.453</Hsp_bit-score>
+      <Hsp_score>1051</Hsp_score>
+      <Hsp_evalue>1.98115e-140</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>397</Hsp_query-to>
+      <Hsp_hit-from>105</Hsp_hit-from>
+      <Hsp_hit-to>398</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>191</Hsp_identity>
+      <Hsp_positive>238</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAE</Hsp_qseq>
+      <Hsp_hseq>PPWLKTSIPDSNNYKRIKNDLRGLNLHTVCEEARCPNISECWGGGSKSAATATIMLMGDTCTRGCRFCSVKTSKAPPPLDPHEPENTAEALSRWGLGYVVMTSVDRDDLPDGGARHWAETVMKIKQKAPNILVECLTGDFDGNLEMVALVAKSGLDVYAHNVETVEALTPQVRDRRAGFQKSIRVLKAAKAAQPSLI-------------TKTSMMLGLGETEEQMWDALRQLRAADIDVVTFGQYMRPTKRHMPVHEYVRPDVFEFWKEKALEMGFLYCASGPLVRSSYKAGEAFIENVL---KKRRAE</Hsp_hseq>
+      <Hsp_midline>P WLK +   S+NY+++++ +R L L TVCEEARCPNI ECWGGG    ATATIM+MGDTCTRGCRFCSVKTS+APPPLDPHEPE  A A+++WGL YVV+TSVDRDDLPD GA H+ + V ++K K P++LVE LT DF GN+++V  VA SGLDVYAHN+ETVEALTP+VRDRRA +++S+ VL+  K  Q   I             TKTS+MLGLGET++Q+   LR LR AD+DVVTFGQY++PTK+H+PV EYV P+ F+FW+E A+ MGF Y ASGPLVRSSYKAGE F++  +   K+R AE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|D1Z4I6.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Sordaria macrospora k-hell]</Hit_def>
+  <Hit_accession>D1Z4I6</Hit_accession>
+  <Hit_len>445</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>409.838</Hsp_bit-score>
+      <Hsp_score>1052</Hsp_score>
+      <Hsp_evalue>3.60174e-140</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>391</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>420</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>253</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>354</Hsp_align-len>
+      <Hsp_qseq>ASIDDFSSTN------APTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKA-APATSDN--YRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQK</Hsp_qseq>
+      <Hsp_hseq>ASLDDFIANQSSAAPLAPSEAYTLRTAQVGPAGKKRTITRL------PEWLKTPIPSAGANPEFAKIKADLRGLNLHTVCEEARCPNIGECWGGSNKAAATATIMLMGDTCTRGCRFCSVKTSRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFMGDLDMVKIVADSGLDVYAHNVETVENLTPYVRDRRATFRQSLKVLEHVKNVR-----------GKEGIITKTSIMLGLGETEEELWDALRELRKVDVDVVTFGQYMRPTKRHLAVEKYITPDEFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLKKR</Hsp_hseq>
+      <Hsp_midline>AS+DDF +        AP+      ++   P  +++   R       P WLK   P+   N  + K++  +R L L TVCEEARCPNIGECWGG     ATATIM+MGDTCTRGCRFCSVKTSR PPPLDPHEPE  A A+A+WGL YVVLTSVDRDDL D GA HF + + ++K KKP+LLVEALT DF G++D+V  VA SGLDVYAHN+ETVE LTP VRDRRAT+RQSL+VL +VK ++              G +TKTS+MLGLGET++++   LR+LR  DVDVVTFGQY++PTK+HL V++Y+TP++F+ W++ A+ MGF Y ASGPLVRSSYKAGE F++  + ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|B4PF83.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase 2, mitochondrial; AltName: Full=Lipoate synthase 2; Short=LS 2; Short=Lip-syn 2; AltName: Full=Lipoic acid synthase 2 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>B4PF83</Hit_accession>
+  <Hit_len>379</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>407.142</Hsp_bit-score>
+      <Hsp_score>1045</Hsp_score>
+      <Hsp_evalue>4.47529e-140</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>370</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>200</Hsp_identity>
+      <Hsp_positive>254</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>373</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>VVATRAASTNAEKLEEIRERLA-KGPNFQDFVQ-NPDNSRSEWENYEGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAETVREIKARNSNIFVECLVPDFRGNLECVETIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIESTLKDLRTAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKR</Hsp_hseq>
+      <Hsp_midline>V  T+ A+  + +L  +R +LA +  +  DF   N   + + + +  G  + R+K   +  ++   P WLK       NY K++  +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G+ H  + V ++K +  ++ VE L PDF+GN++ V  +A SGLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD+++ +TL+DLR A VD VT GQY+QPT KHL V EYVTPEKF  W+E    +GF Y ASGPLVRSSYKAGE F+   +  +K+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B4IUG3.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase 1, mitochondrial; AltName: Full=Lipoate synthase 1; Short=LS 1; Short=Lip-syn 1; AltName: Full=Lipoic acid synthase 1 [Drosophila yakuba]</Hit_def>
+  <Hit_accession>B4IUG3</Hit_accession>
+  <Hit_len>379</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>407.142</Hsp_bit-score>
+      <Hsp_score>1045</Hsp_score>
+      <Hsp_evalue>4.57398e-140</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>370</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>200</Hsp_identity>
+      <Hsp_positive>254</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>373</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>VVATRAASTNAEKLEEIRERLA-KGPNFQDFVQ-NPDNSRSEWENYEGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAETVREIKARNSNIFVECLVPDFRGNLECVETIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIESTLKDLRTAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKR</Hsp_hseq>
+      <Hsp_midline>V  T+ A+  + +L  +R +LA +  +  DF   N   + + + +  G  + R+K   +  ++   P WLK       NY K++  +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G+ H  + V ++K +  ++ VE L PDF+GN++ V  +A SGLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD+++ +TL+DLR A VD VT GQY+QPT KHL V EYVTPEKF  W+E    +GF Y ASGPLVRSSYKAGE F+   +  +K+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B0WAU6.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Culex quinquefasciatus]</Hit_def>
+  <Hit_accession>B0WAU6</Hit_accession>
+  <Hit_len>380</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>405.986</Hsp_bit-score>
+      <Hsp_score>1042</Hsp_score>
+      <Hsp_evalue>1.55387e-139</Hsp_evalue>
+      <Hsp_query-from>23</Hsp_query-from>
+      <Hsp_query-to>391</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>365</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>203</Hsp_identity>
+      <Hsp_positive>253</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>370</Hsp_align-len>
+      <Hsp_qseq>TVTQTAAPTSSR-LAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQK</Hsp_qseq>
+      <Hsp_hseq>TCKHTAAATASQPLQKIRERLESG-PGFQEF--VQNPSYNREDWSAYEGKLKREKGEQDRLRL---PPWLKTKIPMGKNFSRIKDQLRELKLATVCEEAKCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARAPPPLDPDEPKKTASAIASWGLDYIVLTSVDRDDLPDGGSNHIAETIREIKRQNPRIFVECLAPDFRGNLDCIRTVATSGLDVYAHNIETVESLTPFVRDRRAEYRQSLKCLASVKEI-------------NPNMVTKTSIMLGLGETDEQVEQTMKDLRAVGVDCLTLGQYMQPTKRHLKVIEYVTPEKFKHWETRGNELGFLYTASGPLVRSSYKAGEFFITSILKNR</Hsp_hseq>
+      <Hsp_midline>T   TAA T+S+ L  +R +L +      +F     P+      S+    + R+K      ++   P WLK       N+ +++D +REL LATVCEEA+CPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+RAPPPLDP EP+K A+AIA WGLDY+VLTSVDRDDLPD G++H  + + ++K + P + VE L PDF+GN+D +  VATSGLDVYAHN+ETVE+LTP VRDRRA YRQSL+ L  VK I             N   +TKTS+MLGLGETD+QV  T++DLR   VD +T GQY+QPTK+HL V EYVTPEKF  W+     +GF Y ASGPLVRSSYKAGE F+   +  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|B3NIL9.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Drosophila erecta]</Hit_def>
+  <Hit_accession>B3NIL9</Hit_accession>
+  <Hit_len>379</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>405.601</Hsp_bit-score>
+      <Hsp_score>1041</Hsp_score>
+      <Hsp_evalue>2.40013e-139</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>17</Hsp_hit-from>
+      <Hsp_hit-to>370</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>373</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>VVATRAVSTNAEKLEEIRERLA-KGPNFQDFVQ-NPENSRSEWEKYEGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARRPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAETVREIKARNSNIFVECLVPDFRGNLECVETIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDGEIECTLKDLREAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNALGFLYTASGPLVRSSYKAGEFFITSILENRKKR</Hsp_hseq>
+      <Hsp_midline>V  T+  +  + +L  +R +LA +  +  DF   N   + + +    G  + R+K   +  ++   P WLK       NY K++  +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G+ H  + V ++K +  ++ VE L PDF+GN++ V  +A SGLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD ++  TL+DLR+A VD VT GQY+QPT KHL V EYVTPEKF  W+E    +GF Y ASGPLVRSSYKAGE F+   +  +K+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|B3M996.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Drosophila ananassae]</Hit_def>
+  <Hit_accession>B3M996</Hit_accession>
+  <Hit_len>376</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>404.831</Hsp_bit-score>
+      <Hsp_score>1039</Hsp_score>
+      <Hsp_evalue>3.65623e-139</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>396</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>369</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>198</Hsp_identity>
+      <Hsp_positive>255</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>375</Hsp_align-len>
+      <Hsp_qseq>VTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNA</Hsp_qseq>
+      <Hsp_hseq>IVVTRAASTNAEKLEEIRERLA-KGPNFQDFVQ-NPDYSKSEWENYEGK-LRREKGEEQRLRL---PPWLKTTIPMGKNYAKIKNQLRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDENEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAKTVKEIKARNSNIFVECLVPDFRGDLGCVETIANCGLDVYAHNIETVEKLTPYVRDRRAHYRQTLKVLSEAKRF-------------NPNLITKSSIMLGLGETDEEVENTLKDLREAGVDCITLGQYMQPTNKHLKVIEYVTPEKFKHWEDRGNQLGFLYTASGPLVRSSYKAGEFFITSILENRKKRQA</Hsp_hseq>
+      <Hsp_midline>+ VT+ A+  + +L  +R +LA +  +  DF   N   + + + +  G  + R+K   +  ++   P WLK       NY K+++ +REL L+TVCEEARCPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   ATAIA WGLDY+VLTSVDRDDLPD G+ H  + V ++K +  ++ VE L PDF+G++  V  +A  GLDVYAHN+ETVE LTP VRDRRA YRQ+L+VL   K               N   +TK+S+MLGLGETD++V  TL+DLR+A VD +T GQY+QPT KHL V EYVTPEKF  W++    +GF Y ASGPLVRSSYKAGE F+   +  +K+R A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q6PHG4.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Danio rerio]</Hit_def>
+  <Hit_accession>Q6PHG4</Hit_accession>
+  <Hit_len>399</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>405.601</Hsp_bit-score>
+      <Hsp_score>1041</Hsp_score>
+      <Hsp_evalue>4.29598e-139</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>392</Hsp_query-to>
+      <Hsp_hit-from>99</Hsp_hit-from>
+      <Hsp_hit-to>390</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>191</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>305</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKK</Hsp_qseq>
+      <Hsp_hseq>PPWLKTEIPIGKNYNKLKNTLRELNLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARRPPPLDPDEPYNTAKAIAAWGLDYVVLTSVDRDDIPDGGAEHFAKTVSNIKERNSKILVECLTPDFRGDLAAVEKIALSGLDVYAHNVETVRELQRHVRDPRANFDQSLSVLRHAKKVKSS-------------VLTKTSIMLGLGETDAQIQATLTELRDSGVDCLTLGQYMQPTKRHLKVEEYVTPEKFAFWEKVGQEMGFIYTASGPLVRSSYKAGEFFLKNLLEKRK</Hsp_hseq>
+      <Hsp_midline>P WLK       NY KL++T+REL L TVCEEARCPNIGECWGGGE  TATATIM+MGDTCTRGCRFCSVKT+R PPPLDP EP   A AIA WGLDYVVLTSVDRDD+PD GA+HF + V+ +K +   +LVE LTPDF+G++  V  +A SGLDVYAHN+ETV  L   VRD RA + QSL VLR+ K ++S               LTKTS+MLGLGETD Q+  TL +LRD+ VD +T GQY+QPTK+HL V+EYVTPEKF FW++    MGF Y ASGPLVRSSYKAGE FL+  + ++K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q5XIH4.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Rattus norvegicus]</Hit_def>
+  <Hit_accession>Q5XIH4</Hit_accession>
+  <Hit_len>373</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>404.445</Hsp_bit-score>
+      <Hsp_score>1038</Hsp_score>
+      <Hsp_evalue>4.99379e-139</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>398</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>192</Hsp_identity>
+      <Hsp_positive>233</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEV</Hsp_qseq>
+      <Hsp_hseq>PPWLKTKIPMGKNYNKLKNTLRNLNLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARNPPPLDPSEPDNTARAIAEWGLDYVVLTSVDRDDVVDGGAEHIAKTVSCLKERNPKILVECLTPDFRGDLRAVEKVALSGLDVYAHNVETVPELQRKVRDPRANFDQSLRVLKHAKEVQPDVV-------------SKTSIMLGLGETDEQVYATMKALRAADVDCLTLGQYMQPTKRHLKVEEYVTPEKFKYWEEVGNELGFHYTASGPLVRSSYKAGEFFLKNLVAKRKTKVSKV</Hsp_hseq>
+      <Hsp_midline>P WLK       NY KL++T+R L L TVCEEARCPNIGECWGGGE  TATATIM+MGDTCTRGCRFCSVKT+R PPPLDP EP+  A AIA+WGLDYVVLTSVDRDD+ D GA+H  + V+ LK + P +LVE LTPDF+G++  V  VA SGLDVYAHN+ETV  L  KVRD RA + QSL VL++ K +Q D +             +KTS+MLGLGETD+QV  T++ LR ADVD +T GQY+QPTK+HL V+EYVTPEKF +W+E    +GF Y ASGPLVRSSYKAGE FL+  +A++K + ++V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q5BIP7.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Bos taurus]</Hit_def>
+  <Hit_accession>Q5BIP7</Hit_accession>
+  <Hit_len>372</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>403.675</Hsp_bit-score>
+      <Hsp_score>1036</Hsp_score>
+      <Hsp_evalue>7.79777e-139</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>394</Hsp_query-to>
+      <Hsp_hit-from>77</Hsp_hit-from>
+      <Hsp_hit-to>370</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>188</Hsp_identity>
+      <Hsp_positive>231</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQR</Hsp_qseq>
+      <Hsp_hseq>PPWLKTEIPMGKNYNKLKNTLRNLNLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARNPPPLDANEPYNTAKAIAEWGLDYVVLTSVDRDDMPDGGAEHFAKTVSYLKERNPKILVECLTPDFRGDLKAIEKVALSGLDVYAHNVETVPELQRKVRDPRANFDQSLRVLKHAKEVRPDVI-------------SKTSIMLGLGENDEQVYATMKALREADVDCLTLGQYMQPTKRHLKVEEYITPEKFKYWEKVGNELGFHYTASGPLVRSSYKAGEFFLKNLVAKRKTK</Hsp_hseq>
+      <Hsp_midline>P WLK       NY KL++T+R L L TVCEEARCPNIGECWGGGE  TATATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP   A AIA+WGLDYVVLTSVDRDD+PD GA+HF + V+ LK + P +LVE LTPDF+G++  +  VA SGLDVYAHN+ETV  L  KVRD RA + QSL VL++ K ++ D I             +KTS+MLGLGE D+QV  T++ LR+ADVD +T GQY+QPTK+HL V+EY+TPEKF +W++    +GF Y ASGPLVRSSYKAGE FL+  +A++K +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q16W22.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase [Aedes aegypti]</Hit_def>
+  <Hit_accession>Q16W22</Hit_accession>
+  <Hit_len>393</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>404.445</Hsp_bit-score>
+      <Hsp_score>1038</Hsp_score>
+      <Hsp_evalue>1.06576e-138</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>401</Hsp_query-to>
+      <Hsp_hit-from>82</Hsp_hit-from>
+      <Hsp_hit-to>385</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>190</Hsp_identity>
+      <Hsp_positive>230</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYI---AQKKQRNAEVAAA</Hsp_qseq>
+      <Hsp_hseq>PPWLKTKIPMGKNFSRIKDQLRELKLATVCEEAKCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARVPPPLDPAEPTNTASAIASWGLDYIVLTSVDRDDLPDGGSNHIAATIREIKRQNPRIFVECLAPDFRGDLECVKVVAQSGLDVYAHNIETVEALTPFVRDRRARYRQSLDVLRSIKEI-------------NPSMITKTSIMLGLGETDEQIEQTMKDLRSVGVDCLTLGQYMQPTKRHLKVIEYVTPEKFKHWETRGNELGFLYTASGPLVRSSYKAGEFFITSILKNRAEEAERRKEAAGG</Hsp_hseq>
+      <Hsp_midline>P WLK       N+ +++D +REL LATVCEEA+CPNIGECWGGGE  T TATIM+MGDTCTRGCRFCSVKT+R PPPLDP EP   A+AIA WGLDY+VLTSVDRDDLPD G++H    + ++K + P + VE L PDF+G+++ V  VA SGLDVYAHN+ETVEALTP VRDRRA YRQSL+VLR +K I             N   +TKTS+MLGLGETD+Q+  T++DLR   VD +T GQY+QPTK+HL V EYVTPEKF  W+     +GF Y ASGPLVRSSYKAGE F+   +   A++ +R  E A  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q99M04.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; Short=mLIP1; AltName: Full=Lipoic acid synthase; Flags: Precursor [Mus musculus]</Hit_def>
+  <Hit_accession>Q99M04</Hit_accession>
+  <Hit_len>373</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>403.29</Hsp_bit-score>
+      <Hsp_score>1035</Hsp_score>
+      <Hsp_evalue>1.19497e-138</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>398</Hsp_query-to>
+      <Hsp_hit-from>76</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>192</Hsp_identity>
+      <Hsp_positive>233</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEV</Hsp_qseq>
+      <Hsp_hseq>PPWLKTKIPMGKNYNKLKNTLRNLSLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARNPPPLDANEPDNTAKAIAEWGLDYVVLTSVDRDDVADGGAEHIAKTVSCLKERNPKILVECLTPDFRGDLRAVEKVALSGLDVYAHNVETVPELQRKVRDPRANFDQSLRVLRHAKEVQPDVV-------------SKTSIMLGLGETDEQVYATLKALRAADVDCLTLGQYMQPTKRHLKVEEYVTPEKFKYWEKVGNELGFLYTASGPLVRSSYKAGEFFLKNLVARRKTKASKV</Hsp_hseq>
+      <Hsp_midline>P WLK       NY KL++T+R L L TVCEEARCPNIGECWGGGE  TATATIM+MGDTCTRGCRFCSVKT+R PPPLD +EP+  A AIA+WGLDYVVLTSVDRDD+ D GA+H  + V+ LK + P +LVE LTPDF+G++  V  VA SGLDVYAHN+ETV  L  KVRD RA + QSL VLR+ K +Q D +             +KTS+MLGLGETD+QV  TL+ LR ADVD +T GQY+QPTK+HL V+EYVTPEKF +W++    +GF Y ASGPLVRSSYKAGE FL+  +A++K + ++V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q5AQE4.1|</Hit_id>
+  <Hit_def>RecName: Full=Lipoyl synthase, mitochondrial; AltName: Full=Lipoate synthase; Short=LS; Short=Lip-syn; AltName: Full=Lipoic acid synthase; Flags: Precursor [Aspergillus nidulans FGSC A4]</Hit_def>
+  <Hit_accession>Q5AQE4</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>404.445</Hsp_bit-score>
+      <Hsp_score>1038</Hsp_score>
+      <Hsp_evalue>1.56005e-138</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>399</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>402</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>192</Hsp_identity>
+      <Hsp_positive>238</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>322</Hsp_align-len>
+      <Hsp_qseq>APRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVA</Hsp_qseq>
+      <Hsp_hseq>AGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGGDKAAATATIMLMGDTCTRGCRFCSVKTSRAPPPLDPHEPENTAEAISRWGLGYVVLTSVDRDDLADGGARHFAETVIKIKQKAPNILVECLTGDYAGDLEMVGVVARSGLDVYAHNVETVEALTPHVRDRRATFQQSLRVLEAAKKAKPSLI-------------TKTSLMLGLGETEEQLWDALRQLRAVNVDVVTFGQYMRPTKRHMAVHEYVTPDRFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLKKRRSGAPEVS</Hsp_hseq>
+      <Hsp_midline>A R  ++   P WLK     S NY++L+  +R L L TVCEEARCPNI +CWGGG+   ATATIM+MGDTCTRGCRFCSVKTSRAPPPLDPHEPE  A AI++WGL YVVLTSVDRDDL D GA HF + V ++K K P++LVE LT D+ G++++V  VA SGLDVYAHN+ETVEALTP VRDRRAT++QSL VL   K  +   I             TKTSLMLGLGET++Q+   LR LR  +VDVVTFGQY++PTK+H+ V EYVTP++F+ W++ A+ MGF Y ASGPLVRSSYKAGE F++  + +++    EV+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

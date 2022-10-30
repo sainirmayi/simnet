@@ -3,16 +3,10 @@ from os import path
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 import pandas as pd
+import shutil
 
-
+#function to split the fasta sequences in the fasta file into different files
 def split_fasta(fastafile):
-    # make a new directory to put the separated fasta sequences
-    isexist = os.path.exists(os.getcwd() + "/separated_sequences")
-    if not isexist:
-        # Create a new directory because it does not exist
-        os.makedirs(os.getcwd() + "/separated_sequences")
-        print("The new directory is created!")
-
     f = open(fastafile, "r")
     os.chdir(os.getcwd() + "/separated_sequences")
     outfile = []
@@ -29,45 +23,60 @@ def split_fasta(fastafile):
     outfile.close()
     return outfile
 
+#function to do a blast search for a certain protein, input has to be a fastafile
+def blast_search(fastafile):
+    sequence_data = open(file).read()
+    result_handle = NCBIWWW.qblast("blastp", "swissprot", sequence_data, format_type="XML", alignments=1, hitlist_size=20)
+    with open(f"{file}_blast.xml", 'w') as save_file:
+        blast_results = result_handle.read()
+        save_file.write(blast_results)
 
-def blast_search(directory):
-    for file in os.listdir(directory):
-        if file.endswith(".fasta"):
-            if path.exists(f"{file}_blast.xml"):
-                print(f"{file}_blast.txt already exists")
-            else:
-                sequence_data = open(file).read()
-                result_handle = NCBIWWW.qblast("blastp", "swissprot", sequence_data, format_type="XML", alignments=1, hitlist_size=20)
-                with open(f"{file}_blast.xml", 'w') as save_file:
-                    blast_results = result_handle.read()
-                    save_file.write(blast_results)
-
-
-def parse_blast(directory):
+#function to parse the blast output, input has to be a xml file
+def parse_blast(xmlfile):
     blast_records = []
 
-    for file in os.listdir(directory):
-        if file.endswith(".xml"):
-            result = open(file, "r")
-            records = NCBIXML.parse(result)
-            item = next(records)
+    result = open(xmlfile, "r")
+    records = NCBIXML.parse(result)
+    item = next(records)
 
-            for alignment in item.alignments:
-                hsp = alignment.hsps[0]
-                protein = file.split('.')[0]
-                sequence = alignment.title
-                length = alignment.length
-                evalue = hsp.expect
-                score = hsp.score
-                gaps = hsp.gaps
+    for alignment in item.alignments:
+        hsp = alignment.hsps[0]
+        queried_protein = xmlfile.split('.')[0]
+        hit_protein = alignment.title.split('|')[1].split('.')[0]
+        sequence = alignment.title
+        length = alignment.length
+        evalue = hsp.expect
+        score = hsp.score
+        gaps = hsp.gaps
 
-                blast_records.append(
-                    dict(protein=protein, sequence=sequence, length=length, evalue=evalue, score=score, gaps=gaps))
+        blast_records.append(
+                dict(queried_protein=queried_protein, hit_protein=hit_protein, length=length, evalue=evalue, score=score, gaps=gaps, sequence=sequence))
 
     blast_dataframe = pd.DataFrame.from_records(blast_records)
-    blast_dataframe.to_csv('blast.csv')
+    return blast_dataframe
 
 
-split_fasta("fasta_sample.fasta")
-blast_search(os.getcwd())
-parse_blast(os.getcwd())
+main_path = os.getcwd()
+
+isexist = os.path.exists(main_path + "/separated_sequences")
+if not isexist:
+    # Create a new directory because it does not exist
+    os.makedirs(main_path + "/separated_sequences")
+    print("The new directory is created!")
+
+split_fasta("Bacillariophyceae_reviewed.fasta")
+
+for file in os.listdir(main_path + "/separated_sequences"):
+    if file.endswith(".fasta"):
+        if path.exists(f"{file}_blast.xml"):
+            print(f"{file}_blast.txt already exists")
+        else:
+            blast_search(file)
+
+df = pd.DataFrame()
+for file in os.listdir(main_path + "/separated_sequences"):
+    if file.endswith(".xml"):
+        df = pd.concat([df, parse_blast(file)], axis=0)
+
+df.to_csv('blast.csv')
+shutil.move(main_path + "/separated_sequences/blast.csv", main_path + "/blast.csv")

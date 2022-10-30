@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_22677</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0D3|YCF3_PHATC Photosystem I assembly protein Ycf3 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf3 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>168</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_22677</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0D3|YCF3_PHATC Photosystem I assembly protein Ycf3 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf3 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>168</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0D3.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0D3</Hit_accession>
+  <Hit_len>168</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>343.584</Hsp_bit-score>
+      <Hsp_score>880</Hsp_score>
+      <Hsp_evalue>4.63648e-122</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>168</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</Hsp_qseq>
+      <Hsp_hseq>MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</Hsp_hseq>
+      <Hsp_midline>MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49525.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49525</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>284.648</Hsp_bit-score>
+      <Hsp_score>727</Hsp_score>
+      <Hsp_evalue>1.41001e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>139</Hsp_identity>
+      <Hsp_positive>152</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLE---------EDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>MSNFIDKTFTVIADILLKVLPASKQEKQAFSYYRAGMSAQSEGKYAEALENYYEALQLEEDPYDRSYTLYNIGLIYGNNGNYSQALEYYHQALELNSNLPQALNNIAVIYHSQGLNALQMQNQDKNLEIRNDEYLELAKEFFDKAAEYWRQALKLAPDNYPGAQNWLKVTGR</Hsp_hseq>
+      <Hsp_midline>M NFIDKTFTVIADILLKVLPASKQEK+AFSYYRAGMSAQS+G+YAEAL+NYYEALQ+EEDPYDRSYTLYNIGLIYGN G Y+QALE+YHQAL LN+NLPQALNNIAVIYHSQ L A  ++          DEY+EL+KE FDKAAEYW QALKLAPDNYPGA+NWLKVTGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P51258.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51258</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>243.047</Hsp_bit-score>
+      <Hsp_score>619</Hsp_score>
+      <Hsp_evalue>3.36064e-82</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSD</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADIVLKILPTSKEEKEAFSYYRDGMSAQSEGEYAEALENYYEALKLEEDPYDRSYILYNIGLIYASNGEYIKALEYYHQGLELNFKLPQALNNIAVIYHYQGVQAV---EEKNIELSKLMFDKAAQYWQQAIKLAPDNYIEAQNWLKTTGRMKN</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LK+LP SK+EKEAFSYYR GMSAQS+G YAEAL+NYYEAL++EEDPYDRSY LYNIGLIY + G+Y +ALE+YHQ L LN  LPQALNNIAVIYH Q ++A    E++ IELSK +FDKAA+YW QA+KLAPDNY  A+NWLK TGR+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q1XDM9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDM9</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>242.276</Hsp_bit-score>
+      <Hsp_score>617</Hsp_score>
+      <Hsp_evalue>6.20698e-82</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSD</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADIVLKILPTSKEEKEAFSYYRDGMSAQSEGEYAEALENYYEALKLEEDPYDRSYILYNIGLIYASNGEYVKALEYYHQGLELNFKLPQALNNIAVIYHYQGVQAI---EDKDTELSKLMFDKAAQYWQQAIKLAPDNYIEAQNWLKTTGRMRN</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LK+LP SK+EKEAFSYYR GMSAQS+G YAEAL+NYYEAL++EEDPYDRSY LYNIGLIY + G+Y +ALE+YHQ L LN  LPQALNNIAVIYH Q ++A    ED+  ELSK +FDKAA+YW QA+KLAPDNY  A+NWLK TGR+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|A6MVX9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVX9</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>241.121</Hsp_bit-score>
+      <Hsp_score>614</Hsp_score>
+      <Hsp_evalue>2.07141e-81</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>165</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>168</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>116</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLS</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADIVLKVLPASKQEKEAFSYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYILYNIGLIYASNGEYIKALEYYHQALDLNSRLPPALNNIAVIYHYQGVKAS---EKKDLETARTMFDKAAEYWKQAIRLAPNNYIEAQNWLKTTGRMA</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LKVLPASKQEKEAFSYYR GMSAQS+G YAEAL+NYYEAL++EEDPYDRSY LYNIGLIY + G+Y +ALE+YHQAL LN+ LP ALNNIAVIYH Q ++A    E + +E ++ +FDKAAEYW QA++LAP+NY  A+NWLK TGR++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|O78490.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Guillardia theta]</Hit_def>
+  <Hit_accession>O78490</Hit_accession>
+  <Hit_len>172</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>238.424</Hsp_bit-score>
+      <Hsp_score>607</Hsp_score>
+      <Hsp_evalue>2.2553e-80</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADLVLKILPATKQEKEAFSYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYILYNIGLIYASNGEYVKALEYYHQALDLNSQLPAALNNIAVIYHYQGVKASEKKE---LDLARTLFDKAAEYWKQAIRLSPNNYIEAQNWLKTTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+AD++LK+LPA+KQEKEAFSYYR GMSAQS+G YAEAL+NYYEAL++EEDPYDRSY LYNIGLIY + G+Y +ALE+YHQAL LN+ LP ALNNIAVIYH Q ++A   +E   ++L++ LFDKAAEYW QA++L+P+NY  A+NWLK TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q4G394.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G394</Hit_accession>
+  <Hit_len>171</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>236.113</Hsp_bit-score>
+      <Hsp_score>601</Hsp_score>
+      <Hsp_evalue>2.0606e-79</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSD</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADILLKVLPATKEEKKAFSYYRYGMSAQSSGDYAEALENYYEALKLEEDPFDRSYILYNIGLIYGNNGDYSKSLDYYHQALDLNSRLPQALNNIAVIYHYQGTKSSEKKE---FEVAQNNFDKAASYWKKAIRLAPNNYIEAQNWLKITGKLSE</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADILLKVLPA+K+EK+AFSYYR GMSAQS G YAEAL+NYYEAL++EEDP+DRSY LYNIGLIYGN G Y+++L++YHQAL LN+ LPQALNNIAVIYH Q  ++   +E    E+++  FDKAA YW +A++LAP+NY  A+NWLK+TG+LS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|A0T0R5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0R5</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>231.876</Hsp_bit-score>
+      <Hsp_score>590</Hsp_score>
+      <Hsp_evalue>1.23224e-77</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>177</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>139</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEY------------IELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDRVFTVISDLILKLLPASKQEKQAFAYYKAGMAAQAEGDYAEALENYYESLYLDEDQYDRSYTLYNIGLIYAKNENYPRALEYYHQAVSLNSNLPQALNNIAAIYHRQGLLALEMASQDYDAEMEISEEYEYIELAKGLFDKAAEYWYQALKLAPDNYPRARNWLRITGR</Hsp_hseq>
+      <Hsp_midline>NFID+ FTVI+D++LK+LPASKQEK+AF+YY+AGM+AQ++G YAEAL+NYYE+L ++ED YDRSYTLYNIGLIY     Y +ALE+YHQA+SLN+NLPQALNNIA IYH Q L A  +   +Y            IEL+K LFDKAAEYW QALKLAPDNYP ARNWL++TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q6B8S3.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8S3</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>231.106</Hsp_bit-score>
+      <Hsp_score>588</Hsp_score>
+      <Hsp_evalue>1.83751e-77</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSD</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVLADIILKILPTTKEEKQAFCYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYIIYNIGLIYASNGEHIKALEYYHQSLELNPRLPQAFNNIAIIYHYQGLKAADKQDN---NMSKSMFDKAAEYWKQAIYLAPNNYIEAQNWLKTTGRLNN</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LK+LP +K+EK+AF YYR GMSAQS+G YAEAL+NYYEAL++EEDPYDRSY +YNIGLIY + G++ +ALE+YHQ+L LN  LPQA NNIA+IYH Q L+A   +++    +SK +FDKAAEYW QA+ LAP+NY  A+NWLK TGRL++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|P48191.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48191</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>219.164</Hsp_bit-score>
+      <Hsp_score>557</Hsp_score>
+      <Hsp_evalue>1.09487e-72</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>134</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVIADLILKILPVSKKTKEAFAYYRDGMSAQSEGAYAEALENYYEALRLEEDPYDKSYTFYNIALIHTSNGDQTKALEYYRQALDLNPKMPQALNNMAVIYHAQG--EQAAEQGD-MEMAEALFDQAAFYWKQAIRLAPDNYIEAQNWLKTTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTVIAD++LK+LP SK+ KEAF+YYR GMSAQS+G YAEAL+NYYEAL++EEDPYD+SYT YNI LI+ + G  T+ALE+Y QAL LN  +PQALNN+AVIYH+Q    Q+ E+ + +E+++ LFD+AA YW QA++LAPDNY  A+NWLK TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|P56311.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Chlorella vulgaris]</Hit_def>
+  <Hit_accession>P56311</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>218.394</Hsp_bit-score>
+      <Hsp_score>555</Hsp_score>
+      <Hsp_evalue>1.65843e-72</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>164</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRL</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVIADILLKILPTSNKEKQAFSYYRDGMSAQSEGEYAEALQNYYEALRLETDAYDRSYILYNIGLIHTSNGDHARALDYYYQALERNPSLPQALNNIAVIYHYRG--EQALESSQ-TEISKLLFDKAADYWREAIRLAPTNYIEAQNWLKMTGRF</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTVIADILLK+LP S +EK+AFSYYR GMSAQS+G YAEALQNYYEAL++E D YDRSY LYNIGLI+ + G + +AL++Y+QAL  N +LPQALNNIAVIYH +    Q+LE  +  E+SK LFDKAA+YW +A++LAP NY  A+NWLK+TGR </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B7KKZ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Gloeothece citriformis PCC 7424]</Hit_def>
+  <Hit_accession>B7KKZ8</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.927</Hsp_bit-score>
+      <Hsp_score>546</Hsp_score>
+      <Hsp_evalue>5.10576e-71</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRA-QSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVMADIILKVVPFNKKAKEAFVYYRDGMSAQADGEYKEALDNYYEALKLEDDANDRSYILYNIGIIHGSNGEHERALEYYHEAIELNPNLPSALNNIAVIYHYQGERAKEEGREDE----SEALFDKAAEYWKQAIRLAPNNYIEAQNWLKVTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LKV+P +K+ KEAF YYR GMSAQ+ G Y EAL NYYEAL++E+D  DRSY LYNIG+I+G+ G++ +ALE+YH+A+ LN NLP ALNNIAVIYH Q  RA +   EDE    S+ LFDKAAEYW QA++LAP+NY  A+NWLKVTGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|A6YG60.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Pleurastrum terricola]</Hit_def>
+  <Hit_accession>A6YG60</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.542</Hsp_bit-score>
+      <Hsp_score>545</Hsp_score>
+      <Hsp_evalue>5.6955e-71</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVIADILLKVLPTSNREKQAFTYYREGMSAQSEGEYAEALQNYYEAMRLEVDAYDRSYIFYNIGLIHTSNGEHARALEYYYQALERNPSLPQALNNIAVIYH---YRGEQAIENGQAEISKMLFDKAADYWKEAIRLAPTNYIEAQNWLKMTAR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTVIADILLKVLP S +EK+AF+YYR GMSAQS+G YAEALQNYYEA+++E D YDRSY  YNIGLI+ + G++ +ALE+Y+QAL  N +LPQALNNIAVIYH    R +   E+   E+SK LFDKAA+YW +A++LAP NY  A+NWLK+T R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q9MUT7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Mesostigma viride]</Hit_def>
+  <Hit_accession>Q9MUT7</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.157</Hsp_bit-score>
+      <Hsp_score>544</Hsp_score>
+      <Hsp_evalue>8.08566e-71</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>167</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>170</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>136</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDN</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVVADIILKVLPTTVREKAAFSYYRDGMSAQAEGEYAEALQNYYEAMRLEIDPYDRSYILYNIGLIHTSNGEHGKALEYYYQAIERNPSLPQALNNIAVIYHYRG--EQAIEEGN-IATSEILFNQAASYWKQAIRLAPNSYIEAQNWLKITGRIEDN</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LKVLP + +EK AFSYYR GMSAQ++G YAEALQNYYEA+++E DPYDRSY LYNIGLI+ + G++ +ALE+Y+QA+  N +LPQALNNIAVIYH +    Q++EE   I  S+ LF++AA YW QA++LAP++Y  A+NWLK+TGR+ DN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B8HU23.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Cyanothece sp. PCC 7425]</Hit_def>
+  <Hit_accession>B8HU23</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>3.07356e-70</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVMADIILKILPANQKAKEAFVYYRDGMSAQAEGEYAEALDNYEEALNLEEDPYDRSFILYNMGLIYASNGNHERALELYHQAIELNARMPQALNNIAVIFHYLGDQAAASEDGEKAE---QLYDKAADYWKQAIRLAPNNYIEAQNWLKTTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADI+LK+LPA+++ KEAF YYR GMSAQ++G YAEAL NY EAL +EEDPYDRS+ LYN+GLIY + G + +ALE YHQA+ LNA +PQALNNIAVI+H    +A + E+ E  E   +L+DKAA+YW QA++LAP+NY  A+NWLK TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q06SJ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Stigeoclonium helveticum]</Hit_def>
+  <Hit_accession>Q06SJ8</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.231</Hsp_bit-score>
+      <Hsp_score>539</Hsp_score>
+      <Hsp_evalue>4.55885e-70</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVVADILLKVLPTSQREKRAFAYYRDGMSAQSEGEYAEALQNYYEAMRLEVDAYDRSYILYNIGLIHTSNGEHARALEYYYQALERNPSLPSALNNIAVIYHYRG--EQAIEKGQ-AEISSLLFDKAADYWKEAIRLAPTNYIEAQNWLKMTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADILLKVLP S++EK AF+YYR GMSAQS+G YAEALQNYYEA+++E D YDRSY LYNIGLI+ + G++ +ALE+Y+QAL  N +LP ALNNIAVIYH +    Q++E+ +  E+S  LFDKAA+YW +A++LAP NY  A+NWLK+TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|B1XNN2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Synechococcus sp. PCC 7002]</Hit_def>
+  <Hit_accession>B1XNN2</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>1.26126e-69</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRA-QSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKSFTVMADIILKILPTNNRSKEAFAYYRDGMSAQADGEYSEALENYEEALRLEDDPNDRSYILYNMGLIYASNGDHHKALELYHEAIDLNPRMPQALNNIAVVYHYQGEKAKQSGNEDE----SEALFDKAAEYWKQAIRIAPNNYIEAQNWLKTTGR</Hsp_hseq>
+      <Hsp_midline>NFIDK+FTV+ADI+LK+LP + + KEAF+YYR GMSAQ+ G Y+EAL+NY EAL++E+DP DRSY LYN+GLIY + G + +ALE YH+A+ LN  +PQALNNIAV+YH Q  +A QS  EDE    S+ LFDKAAEYW QA+++AP+NY  A+NWLK TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q9TL02.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3; Short=RF3 [Nephroselmis olivacea]</Hit_def>
+  <Hit_accession>Q9TL02</Hit_accession>
+  <Hit_len>171</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>1.85029e-69</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>166</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>169</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSD</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVVADILLKVLPTTRREKEAFTYYRDGMSAQAEGEYAEALQNYYEAMRLEVDAYDRSYILYNIGLIHTSNGEHAKALEYYYQALERNPYLPQALNNIAVIYH---YRGEQAIESGNSRISNLLFDKAADYWKEAIRLAPTNYIEAQNWLKITNRLEE</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+ADILLKVLP +++EKEAF+YYR GMSAQ++G YAEALQNYYEA+++E D YDRSY LYNIGLI+ + G++ +ALE+Y+QAL  N  LPQALNNIAVIYH    R +   E     +S  LFDKAA+YW +A++LAP NY  A+NWLK+T RL +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q8DIQ6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DIQ6</Hit_accession>
+  <Hit_len>173</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>2.13278e-69</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVMADLILKVLPTSSQSKTAFAYYRDGMSAQADGEYAEALENYQAALELEEDPTDRSYILYNIGLIHASNGEHEKALEYYHQALELNPRMPQALNNIAVIYHYLGTQA---EEQQRLEEAEQFFDRAADYWKRAIQLAPNNYIEAQNWLKTTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTV+AD++LKVLP S Q K AF+YYR GMSAQ+ G YAEAL+NY  AL++EEDP DRSY LYNIGLI+ + G++ +ALE+YHQAL LN  +PQALNNIAVIYH    +A   EE + +E +++ FD+AA+YW +A++LAP+NY  A+NWLK TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q1KVR8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf3 [Tetradesmus obliquus]</Hit_def>
+  <Hit_accession>Q1KVR8</Hit_accession>
+  <Hit_len>170</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>2.2046e-69</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>166</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>132</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>161</Hsp_align-len>
+      <Hsp_qseq>NFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGR</Hsp_qseq>
+      <Hsp_hseq>NFIDKTFTVIADILLKVLPTSQREKQAFTYYRDGMSAQAEGEYAEALQNYYEAMRLEVDAYDRSYILYNIGLIHTSNGEHGRALEYYYQALERNPSLPSALNNIAVIYH---YRGEQAIENGQSEISQILFEKAADYWKEAIRLAPTNYIEAQNWLKMTGR</Hsp_hseq>
+      <Hsp_midline>NFIDKTFTVIADILLKVLP S++EK+AF+YYR GMSAQ++G YAEALQNYYEA+++E D YDRSY LYNIGLI+ + G++ +ALE+Y+QAL  N +LP ALNNIAVIYH    R +   E+   E+S+ LF+KAA+YW +A++LAP NY  A+NWLK+TGR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

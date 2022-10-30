@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_60513</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0G1|RK32_PHATC 50S ribosomal protein L32, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl32 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>55</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_60513</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0G1|RK32_PHATC 50S ribosomal protein L32, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl32 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>55</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0G1.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0G1</Hit_accession>
+  <Hit_len>55</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>108.612</Hsp_bit-score>
+      <Hsp_score>270</Hsp_score>
+      <Hsp_evalue>1.29136e-32</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>55</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>55</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A0T0V4.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0V4</Hit_accession>
+  <Hit_len>54</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.1225</Hsp_bit-score>
+      <Hsp_score>222</Hsp_score>
+      <Hsp_evalue>3.20434e-25</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>54</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>54</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDD</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKAKKNSRKANWKRKAAKSAQKSLSLAKSILRGKTTSFVYRLYVDE</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSK+KKN+RKANWKRK  K+AQKSLSLAKS+L+GKTTSFVY +YVD+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49564.2|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49564</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.559</Hsp_bit-score>
+      <Hsp_score>179</Hsp_score>
+      <Hsp_evalue>1.20976e-18</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>54</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>54</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDD</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKAKKNARKSVWKKKADKAAKKSLSLAKSVLQGKTTSFVYSLYIDE</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSK+KKNARK+ WK+K  KAA+KSLSLAKS+L+GKTTSFVYS+Y+D+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51207.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51207</Hit_accession>
+  <Hit_len>59</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.4774</Hsp_bit-score>
+      <Hsp_score>171</Hsp_score>
+      <Hsp_evalue>2.40247e-17</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>49</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>49</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>49</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYS</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKAKKNARKANWKNQAKTEAQKALSLAKSVLTGKSNGFVYN</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSK+KKNARKANWK +    AQK+LSLAKS+L GK+  FVY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q1XDT0.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDT0</Hit_accession>
+  <Hit_len>59</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.855</Hsp_bit-score>
+      <Hsp_score>159</Hsp_score>
+      <Hsp_evalue>1.45746e-15</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>50</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>50</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>41</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>50</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSI</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKAKKNARKANWKNQAKTEAQRALSLAKSVLTRKSNGFIYNL</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSK+KKNARKANWK +    AQ++LSLAKS+L  K+  F+Y++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q7VBW1.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Prochlorococcus marinus subsp. marinus str. CCMP1375]</Hit_def>
+  <Hit_accession>Q7VBW1</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>4.75061e-15</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>54</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>54</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>54</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDD</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKGKRNQRHAVWKAKAGDAAQKALSLGKSILSGRAQGFVYPIQEED</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK K+N R A WK K   AAQK+LSL KS+L G+   FVY I  +D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|B1XQI5.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Synechococcus sp. PCC 7002]</Hit_def>
+  <Hit_accession>B1XQI5</Hit_accession>
+  <Hit_len>55</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>63.5438</Hsp_bit-score>
+      <Hsp_score>153</Hsp_score>
+      <Hsp_evalue>1.07879e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>54</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>55</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKAKRDQRRAHWKRKATIEAQKALSLGKSVLTGR-SSFVYPSPEDDE</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK+K++ R+A+WKRK    AQK+LSL KS+L G+ +SFVY    DDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q31PJ2.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Synechococcus elongatus PCC 7942 = FACHB-805] &gt;sp|Q5N4N2.1| RecName: Full=50S ribosomal protein L32 [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q31PJ2</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.3882</Hsp_bit-score>
+      <Hsp_score>150</Hsp_score>
+      <Hsp_evalue>3.43154e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>55</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>55</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKSKRDKRKATWKRKAALQAQRALSLGKSVLTGRAKGFVYPAQDEEE</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSKSK++ RKA WKRK    AQ++LSL KS+L G+   FVY    ++E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q7U6X6.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Parasynechococcus marenigrum WH 8102]</Hit_def>
+  <Hit_accession>Q7U6X6</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>8.53225e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>56</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>40</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>56</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSI-YVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKAKRNQRSATWKGKAAVAAQRAMSIGKSVLSGRAQGFVYPVREADDE</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK+K+N R A WK K   AAQ+++S+ KS+L G+   FVY +   DDE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|A9BAH6.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Prochlorococcus marinus str. MIT 9211]</Hit_def>
+  <Hit_accession>A9BAH6</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>61.2326</Hsp_bit-score>
+      <Hsp_score>147</Hsp_score>
+      <Hsp_evalue>8.91511e-14</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>55</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>55</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKGKRNQRHSIWKAKAGIAAQKALSLGKSVLTGRSQGFVYPIDEQEE</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK K+N R + WK K   AAQK+LSL KS+L G++  FVY I   +E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B7K5G2.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Rippkaea orientalis PCC 8801]</Hit_def>
+  <Hit_accession>B7K5G2</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>2.75628e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>47</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKTKRDQRKANWKHQAALEAQKALSLGKSILTGRST-FVY</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK+K++ RKANWK +    AQK+LSL KS+L G++T FVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B1WY20.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Crocosphaera subtropica ATCC 51142]</Hit_def>
+  <Hit_accession>B1WY20</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>3.01375e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSNAKRDQRKAHWKRTAALEAQKALSLGKSVLSGRSNSFVY</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TS +K++ RKA+WKR     AQK+LSL KS+L G++ SFVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q6B934.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B934</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>3.21398e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKSKSRSRKAKWKQKAYNAYIKCVSLGKSVISGKSKSFIY</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSKSK  +RKA WK+K Y A  K +SL KS++ GK+ SF+Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q118B3.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q118B3</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>3.87891e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>51</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>51</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>51</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSKSKKNMRKANWKNQAKLAAKKALSLGKSVETQRSHSFVHPRY</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTSKSKKN RKANWK +   AA+K+LSL KS+   ++ SFV+  Y</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B7KJG8.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Gloeothece citriformis PCC 7424]</Hit_def>
+  <Hit_accession>B7KJG8</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.0469e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKAKRDQRRATWRRQAALQAQRALSLGKSVLTGRSNSFVY</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK+K++ R+A W+R+    AQ++LSL KS+L G++ SFVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q7YJT5.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32, chloroplastic [Calycanthus floridus var. glaucus]</Hit_def>
+  <Hit_accession>Q7YJT5</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>4.1367e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>46</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>46</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSF</Hsp_qseq>
+      <Hsp_hseq>MAVPKKRTSVSKKHIRRNIWKRKGYRAASKALSLAKSISTGHSKSF</Hsp_hseq>
+      <Hsp_midline>MAVPKKRTS SKK+ R+  WKRKGY+AA K+LSLAKS+  G + SF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q3AXR9.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Synechococcus sp. CC9902]</Hit_def>
+  <Hit_accession>Q3AXR9</Hit_accession>
+  <Hit_len>58</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.9214</Hsp_bit-score>
+      <Hsp_score>141</Hsp_score>
+      <Hsp_evalue>7.09241e-13</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>55</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>55</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>55</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSIYVDDE</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKAKRNQRSATWKGKAAIAAKRAMSIGKSVLSGRAQGFVYPVSDTDE</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK+K+N R A WK K   AA++++S+ KS+L G+   FVY +   DE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|A2C283.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Prochlorococcus marinus str. NATL1A] &gt;sp|Q46KY2.1| RecName: Full=50S ribosomal protein L32 [Prochlorococcus marinus str. NATL2A]</Hit_def>
+  <Hit_accession>A2C283</Hit_accession>
+  <Hit_len>59</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>58.5362</Hsp_bit-score>
+      <Hsp_score>140</Hsp_score>
+      <Hsp_evalue>1.21601e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>50</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>50</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>50</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVYSI</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKGKRNQRHATWKGKAAVAAEKALSIGKSVLTGRAQGFVYPM</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSK K+N R A WK K   AA+K+LS+ KS+L G+   FVY +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|B3DFA5.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B3DFA5</Hit_accession>
+  <Hit_len>60</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>57.7658</Hsp_bit-score>
+      <Hsp_score>138</Hsp_score>
+      <Hsp_evalue>2.51226e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>48</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MACPKKKTSNAKRDQRRAHWRKQAAREAQKALSLGKSVLSGRSNSFVY</Hsp_hseq>
+      <Hsp_midline>MA PKK+TS +K++ R+A+W+++  + AQK+LSL KS+L G++ SFVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|B2IT82.1|</Hit_id>
+  <Hit_def>RecName: Full=50S ribosomal protein L32 [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2IT82</Hit_accession>
+  <Hit_len>57</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>4.88446e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>48</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>47</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>48</Hsp_align-len>
+      <Hsp_qseq>MAVPKKRTSKSKKNARKANWKRKGYKAAQKSLSLAKSMLKGKTTSFVY</Hsp_qseq>
+      <Hsp_hseq>MAVPKKKTSKSKRDKRRATWRHKAVVEAQKALSLGKSILTGRST-FVY</Hsp_hseq>
+      <Hsp_midline>MAVPKK+TSKSK++ R+A W+ K    AQK+LSL KS+L G++T FVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
