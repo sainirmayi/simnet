@@ -4,7 +4,6 @@ if __name__ == '__main__':
     connection = pymysql.connect(user='root', password='123456',
                                  host='localhost',
                                  port=3306)
-
     cur = connection.cursor()
     # SQL statement
     sql1 = "select * from protein_network.blast"
