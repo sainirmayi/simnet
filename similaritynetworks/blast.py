@@ -4,6 +4,7 @@ from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 import pandas as pd
 import shutil
+import xml.etree.ElementTree as ET
 
 #function to split the fasta sequences in the fasta file into different files
 def split_fasta(fastafile):
@@ -39,8 +40,16 @@ def parse_blast(xmlfile):
     records = NCBIXML.parse(result)
     item = next(records)
 
+    tree = ET.parse(xmlfile)
+    root = tree.getroot()
+    for app in root.findall('BlastOutput_db'):
+        DB = ("%s" % (app.text));
+
+    i=0
     for alignment in item.alignments:
         hsp = alignment.hsps[0]
+        hit = i+1
+        i = i+1
         queried_protein = xmlfile.split('.')[0]
         hit_protein = alignment.title.split('|')[1].split('.')[0]
         sequence = alignment.title
@@ -48,9 +57,14 @@ def parse_blast(xmlfile):
         evalue = hsp.expect
         score = hsp.score
         gaps = hsp.gaps
+        organism = sequence[sequence.find("[") + 1:sequence.find("]")]
+        identities = hsp.identities
+        pidentities = "%0.2f" % (100 * float(identities) / float(length))
+        positives = hsp.positives
+        ppositives = "%0.2f" % (100 * float(positives) / float(length))
 
         blast_records.append(
-                dict(queried_protein=queried_protein, hit_protein=hit_protein, length=length, evalue=evalue, score=score, gaps=gaps, sequence=sequence))
+                dict(Hit=hit, DB=DB, Protein1=queried_protein, Protein2=hit_protein, Organism=organism, Length=length, Score=score, Identities=pidentities, Positives=ppositives, E=evalue))
 
     blast_dataframe = pd.DataFrame.from_records(blast_records)
     return blast_dataframe
@@ -78,5 +92,5 @@ for file in os.listdir(main_path + "/separated_sequences"):
     if file.endswith(".xml"):
         df = pd.concat([df, parse_blast(file)], axis=0)
 
-df.to_csv('blast.csv')
+df.to_csv('blast.csv', index=False)
 shutil.move(main_path + "/separated_sequences/blast.csv", main_path + "/blast.csv")
