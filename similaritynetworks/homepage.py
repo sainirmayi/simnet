@@ -100,6 +100,7 @@ homepage.layout = html.Div(
     State('input', 'value'),
     State('n_neighbors', 'value')
 )
+
 def showNetworkDiagram(n_clicks,proteinID,n_neighors):
     if n_clicks:
         return html.Div(
