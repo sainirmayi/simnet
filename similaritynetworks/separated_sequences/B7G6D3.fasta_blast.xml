@@ -1,0 +1,962 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_122393</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|B7G6D3|MCA3C_PHATC Metacaspase III c OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=MCA-IIIc PE=1 SV=2</BlastOutput_query-def>
+  <BlastOutput_query-len>337</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_122393</Iteration_query-ID>
+  <Iteration_query-def>sp|B7G6D3|MCA3C_PHATC Metacaspase III c OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=MCA-IIIc PE=1 SV=2</Iteration_query-def>
+  <Iteration_query-len>337</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|B7G6D3.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase III c; Short=PtMCA-IIIc; Contains: RecName: Full=Small subunit p10; Contains: RecName: Full=Large subunit p20 [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>B7G6D3</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>693.345</Hsp_bit-score>
+      <Hsp_score>1788</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>337</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>337</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>337</Hsp_identity>
+      <Hsp_positive>337</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>337</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</Hsp_qseq>
+      <Hsp_hseq>MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</Hsp_hseq>
+      <Hsp_midline>MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A7F075.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Sclerotinia sclerotiorum 1980 UF-70]</Hit_def>
+  <Hit_accession>A7F075</Hit_accession>
+  <Hit_len>432</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.925</Hsp_bit-score>
+      <Hsp_score>411</Hsp_score>
+      <Hsp_evalue>2.50329e-45</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>136</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTE</Hsp_qseq>
+      <Hsp_hseq>TGRRKALLIGINYFG-QRGQLRGCINDVKNMSSYLHENFGYQRDDMVILTDDQQNPMSQPTKQNILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGYDEVIYPVDFRQVGHIVDDEMHRIMVQPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKE</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY G ++G LRGC NDVKNM  Y+    G++ +++ IL DD ++  + PT  N++ A   +V  ++ +D+LF H+SGHG + +D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSGT LDLPYVY   G   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>1.25735e-06</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>354</Hsp_hit-from>
+      <Hsp_hit-to>429</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPP</Hsp_qseq>
+      <Hsp_hseq>ADVVMWSGSKDDQTSADATI---------AAQATGAMSWAFITAMKKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPL------SMVPP</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD +          A  A GA +   +  + K+ Q      S+V+LLN +R+ L  K ++Q PQL+ SHP+       +VPP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A6SDT7.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Botrytis cinerea B05.10]</Hit_def>
+  <Hit_accession>A6SDT7</Hit_accession>
+  <Hit_len>431</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.54</Hsp_bit-score>
+      <Hsp_score>410</Hsp_score>
+      <Hsp_evalue>3.53875e-45</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>298</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTE</Hsp_qseq>
+      <Hsp_hseq>TGKRKALLIGINYFG-QRGQLRGCINDVKNMSSYLHENFGYQRDDMVLLTDDQQNPMSQPTKQNILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGYDEVIYPVDFRQVGHIVDDEMHRIMVQPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKE</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY G ++G LRGC NDVKNM  Y+    G++ +++ +L DD ++  + PT  N++ A   +V  ++ +D+LF H+SGHG + +D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSGT LDLPYVY   G   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>3.50668e-06</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>109</Hsp_query-to>
+      <Hsp_hit-from>353</Hsp_hit-from>
+      <Hsp_hit-to>425</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDV</Hsp_qseq>
+      <Hsp_hseq>ADVIMWSGSKDDQTSADATI---------AAQATGAMSWAFITAMKKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPLSM</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD +          A  A GA +   +  + K+ Q      S+V+LLN +R+ L  K ++Q PQL+ SHP+ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|B0XPP3.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1A; Flags: Precursor [Aspergillus fumigatus A1163] &gt;sp|Q4WJA1.3| RecName: Full=Metacaspase-1A; Flags: Precursor [Aspergillus fumigatus Af293]</Hit_def>
+  <Hit_accession>B0XPP3</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>161.77</Hsp_bit-score>
+      <Hsp_score>408</Hsp_score>
+      <Hsp_evalue>4.42415e-45</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>117</Hsp_hit-from>
+      <Hsp_hit-to>283</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI</Hsp_qseq>
+      <Hsp_hseq>TGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVRPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNL</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY G ++G LRGC NDVKNM  Y+    G+  E++ +L DD ++  + PT AN++ A   +V  ++ +D+LF H+SGHG +  D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSG+ LDLPY+Y   G   E  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>62.003</Hsp_bit-score>
+      <Hsp_score>149</Hsp_score>
+      <Hsp_evalue>1.58568e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>311</Hsp_hit-from>
+      <Hsp_hit-to>408</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>VGFLKRATKGDEAYTRSKQTKTSPADVIMWSGSKDSQTSQDA------QI---GGQATGAMSWAFITALRKNPQ-----QSYVQLLNSIRDELATK-YSQKPQLSCSHPLDTN</Hsp_hseq>
+      <Hsp_midline>+GFL+R  +  E + + K+ +   AD+ M SG +D QTS D       Q+    G A GA +   +  L K+ Q      S+V+LLN +R+ L  K +SQ PQL+ SHP+D N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|A1D3V4.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1A; Flags: Precursor [Aspergillus fischeri NRRL 181]</Hit_def>
+  <Hit_accession>A1D3V4</Hit_accession>
+  <Hit_len>435</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>161.384</Hsp_bit-score>
+      <Hsp_score>407</Hsp_score>
+      <Hsp_evalue>9.90333e-45</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>144</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI</Hsp_qseq>
+      <Hsp_hseq>TGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVRPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNL</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY G ++G LRGC NDVKNM  Y+    G+  E++ +L DD ++  + PT AN++ A   +V  ++ +D+LF H+SGHG +  D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSG+ LDLPY+Y   G   E  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.36139e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>338</Hsp_hit-from>
+      <Hsp_hit-to>432</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>61</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPI</Hsp_qseq>
+      <Hsp_hseq>VGFLKRATKGDEAYTRSKQTKTSPADVIMWSGSKDSQTSQDA------QI---AGQATGAMSWAFITALRKNPQ-----QSYVQLLNSIRDELATK-YSQKPQLSCSHPL</Hsp_hseq>
+      <Hsp_midline>+GFL+R  +  E + + K+ +   AD+ M SG +D QTS D       Q+   AG A GA +   +  L K+ Q      S+V+LLN +R+ L  K +SQ PQL+ SHP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|A1CQZ0.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1A; Flags: Precursor [Aspergillus clavatus NRRL 1]</Hit_def>
+  <Hit_accession>A1CQZ0</Hit_accession>
+  <Hit_len>429</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.999</Hsp_bit-score>
+      <Hsp_score>406</Hsp_score>
+      <Hsp_evalue>1.11991e-44</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>133</Hsp_hit-from>
+      <Hsp_hit-to>296</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTE</Hsp_qseq>
+      <Hsp_hseq>TGKRKALMIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVQPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKE</Hsp_hseq>
+      <Hsp_midline>TG R+AL+IGINY G ++G LRGC NDVKNM  Y+    G+  E++ +L DD ++  + PT AN++ A   +V  ++ +D+LF H+SGHG +  D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSG+ LDLPY+Y   G   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>3.16193e-10</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>327</Hsp_hit-from>
+      <Hsp_hit-to>424</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>VGFLKRAAKGDEAYERTKQTKTSPADVIMWSGSKDSQTSQDA---------QIAGQATGAMSWAFISALRKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPLDTN</Hsp_hseq>
+      <Hsp_midline>+GFL+R  +  E +E+ K+ +   AD+ M SG +D QTS D            AG A GA +   ++ L K+ Q      S+V+LLN +R+ L  K ++Q PQL+ SHP+D N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q4PEQ5.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Ustilago maydis 521]</Hit_def>
+  <Hit_accession>Q4PEQ5</Hit_accession>
+  <Hit_len>402</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>2.07143e-44</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>108</Hsp_hit-from>
+      <Hsp_hit-to>272</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>GTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGE--HTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI</Hsp_qseq>
+      <Hsp_hseq>GKRKALLIGINYFG-QNGELRGCINDVRNVQNFLRQ-RGYKDDDMVVLTDDQRDARSIPTRQNMTAAMHWLVRGAQPGDALFFHYSGHGGQAKAT-QGDEADGYNETIIPLDYQQAGQIEDDELHAIMVRPLPVGCRLTAIFDSCHSGTALDLPYVYTTSGNVKEPNV</Hsp_hseq>
+      <Hsp_midline>G R+ALLIGINY G + G LRGC NDV+N+  +++   G++D+++ +L DD     + PT  NM AA   +V  ++  DALF H+SGHG + +   +G+E DGY+ET++P+DY + G I DD+L+ I+++PL  G  L  + D CHSGT LDLPYVY   GN  E  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>66.6254</Hsp_bit-score>
+      <Hsp_score>161</Hsp_score>
+      <Hsp_evalue>4.86675e-11</Hsp_evalue>
+      <Hsp_query-from>15</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>317</Hsp_hit-from>
+      <Hsp_hit-to>397</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>KQTRSSGADVVMLSGCKDSQTSADATE---------AGKATGACSFAFLSVM---NQYPQ--LTYKQMLNAVRDVLASK-YSQKPQLSSSHPIDMD</Hsp_hseq>
+      <Hsp_midline>K+  +  AD+ M+SGC+D QTSAD +          AG A GAC+   L+V+   +Q P+  +++ ++LN +R+ L +K +SQ PQL++SHPID++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|A6R7B8.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Histoplasma mississippiense (nom. inval.)]</Hit_def>
+  <Hit_accession>A6R7B8</Hit_accession>
+  <Hit_len>356</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>158.303</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>3.06668e-44</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>284</Hsp_query-to>
+      <Hsp_hit-from>60</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTE</Hsp_qseq>
+      <Hsp_hseq>TGKRKALLIGINYFG-QRGQLRGCINDVKNMSTYLNQNFGYAREDMVILTDDQQNPMSQPTKANILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGNDEVIYPVDFRSAGHIVDDEMHRIMVKSLLPGVRLTAIFDSCHSGSALDLPYIYSTQGILKE</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY G ++G LRGC NDVKNM  Y+    G+  E++ IL DD ++  + PT AN++ A   +V  ++ +D+LF H+SGHG + +D D G+E+DG DE + P+D+   G I DD+++ I++K L+ GV L  + D CHSG+ LDLPY+Y   G   E</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>51.9878</Hsp_bit-score>
+      <Hsp_score>123</Hsp_score>
+      <Hsp_evalue>2.51222e-06</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>269</Hsp_hit-from>
+      <Hsp_hit-to>351</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>EKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>KARQTKTSPADVIMWSGSKDNQTSQDATI---------AGEATGAMSWAFITALKKNPQ-----QSYVQLLRSIRDELATK-YSQKPQLSCSHPLNTD</Hsp_hseq>
+      <Hsp_midline>+ ++ +   AD+ M SG +D QTS D +          AG A GA +   +  L K+ Q      S+V+LL  +R+ L  K +SQ PQL+ SHP++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q75B43.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Eremothecium gossypii ATCC 10895]</Hit_def>
+  <Hit_accession>Q75B43</Hit_accession>
+  <Hit_len>452</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.229</Hsp_bit-score>
+      <Hsp_score>404</Hsp_score>
+      <Hsp_evalue>4.20903e-44</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>169</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTA--PTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI</Hsp_qseq>
+      <Hsp_hseq>TGNRKALLIGINYF-NSSAELRGCINDVQNIKNFLISRYGYREENMVILTDDQHDPVRIPTKANILRAMHWLVQGAQPNDSLFLHYSGHGGETEDLD-GDEQDGKDSTLYPVDFETNGHIVDDEIHDILVKPLAPGVRLTALIDACHSGSALDLPYMYSTKGIIKEPNV</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY  +    LRGC NDV+N+  ++ + +G+ +EN+ IL DD       PT AN++ A   +V  ++ +D+LF H+SGHG +  D D G+E DG D TL P+D+  NG I DD+++DIL+KPL  GV L  L+D CHSG+ LDLPY+Y   G   E  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.6395e-07</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>374</Hsp_hit-from>
+      <Hsp_hit-to>452</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>95</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSAD-VSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDL</Hsp_qseq>
+      <Hsp_hseq>ADVIMFSGSKDNQTSADAVEN----------GVATGAMSYSFVKVM---SQQPQQT--YLSLLQNMRTELKGK-YTQKPQLSCSHPLDVNLQFVL</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD V N          G A GA + + + V+    Q P+ T  ++ LL  MR  L+ K ++Q PQL+ SHP+DVN  F L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q2UCB7.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus oryzae RIB40]</Hit_def>
+  <Hit_accession>Q2UCB7</Hit_accession>
+  <Hit_len>419</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>155.992</Hsp_bit-score>
+      <Hsp_score>393</Hsp_score>
+      <Hsp_evalue>9.10072e-43</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>327</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKD</Hsp_qseq>
+      <Hsp_hseq>ACTGRRKALLIGINYAG-QPNALRGCINDVTNMSTFLHERYGYRREDMVILTDDQQNPMSVPTKANILRAMQWLVKDAQRNDSLFIHFSGHGGRT-PDLDGDEEDGYDDVIYPVDYRTAGHIVDDDMHAIMVRPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAITSYGQGDFASVAQTAIGFLKKAALGESARE</Hsp_hseq>
+      <Hsp_midline>A TG R+ALLIGINY G +   LRGC NDV NM  ++   +G+  E++ IL DD ++  + PT AN++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DDD++ I+++PL  GV L  + D CHSGT LDLPYVY   G   E  + +    D    +  +G  DF      A+G +   ALG+  ++</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.6918</Hsp_bit-score>
+      <Hsp_score>143</Hsp_score>
+      <Hsp_evalue>9.19544e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>317</Hsp_hit-from>
+      <Hsp_hit-to>414</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>MGFLRR-----QLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>IGFLKKAALGESARERTVKTKTSP--ADVVMFSGSKDTQTSAD-----TFQ----DGQARGALSWAFIKTLQA-----RPNQSYLQLLNSIRSELEGK-YSQKPQLSCSHPLDTN</Hsp_hseq>
+      <Hsp_midline>+GFL++       RE+  K K     AD+ M SG +D QTSAD     +FQ     G A GA +   +  L           S+++LLN +R  LE K +SQ PQL+ SHP+D N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q7S4N5.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Neurospora crassa OR74A]</Hit_def>
+  <Hit_accession>Q7S4N5</Hit_accession>
+  <Hit_len>426</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.451</Hsp_bit-score>
+      <Hsp_score>389</Hsp_score>
+      <Hsp_evalue>3.23986e-42</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>287</Hsp_query-to>
+      <Hsp_hit-from>131</Hsp_hit-from>
+      <Hsp_hit-to>296</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>168</Hsp_align-len>
+      <Hsp_qseq>GTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI</Hsp_qseq>
+      <Hsp_hseq>GRHKALLIGINYFG-QRGQLRGCINDVRNMSSYLVEHFRYKREDMVILTDDQQNPMSQPTKQNILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGYDEVIYPVDFRQVGHITDDEMHRIMVRPLQAGVRLTAIFDSCHSGTALDLPYIYSTQGILKEPNL</Hsp_hseq>
+      <Hsp_midline>G  +ALLIGINY G ++G LRGC NDV+NM  Y+     ++ E++ IL DD ++  + PT  N++ A   +V  ++ +D+LF H+SGHG + +D D G+E+DGYDE + P+D+ + G I DD+++ I+++PL  GV L  + D CHSGT LDLPY+Y   G   E  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>59.3066</Hsp_bit-score>
+      <Hsp_score>142</Hsp_score>
+      <Hsp_evalue>1.32595e-08</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>348</Hsp_hit-from>
+      <Hsp_hit-to>421</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>ADVVMFSGSKDDQTSADATIASQ---------ATGAMSWAFINALKKNPQ-----QSYVQLLNSIRDELQMR-YTQKPQLSCSHPLDTN</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD +  S          A GA +   +N L K+ Q      S+V+LLN +R+ L+ + ++Q PQL+ SHP+D N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|A5D9W7.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Meyerozyma guilliermondii ATCC 6260]</Hit_def>
+  <Hit_accession>A5D9W7</Hit_accession>
+  <Hit_len>410</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>150.599</Hsp_bit-score>
+      <Hsp_score>379</Hsp_score>
+      <Hsp_evalue>7.72657e-41</Hsp_evalue>
+      <Hsp_query-from>81</Hsp_query-from>
+      <Hsp_query-to>325</Hsp_query-to>
+      <Hsp_hit-from>79</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>20</Hsp_gaps>
+      <Hsp_align-len>247</Hsp_align-len>
+      <Hsp_qseq>ELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDG--EHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVG</Hsp_qseq>
+      <Hsp_hseq>QMYNNNRQSGAMNDVSTAPQRFG------NTDMTYQLSNCSGRKKALLVGINYFGSSN-ELRGCVNDIKNMSNFLNRRFGYSYDDMVILTDDQNQRNKIPTKENIIRAMQWLVKDARPNDSLVFHYSGHGGITKDLD-GDEDEGYDEVIYPVDFQQAGHIVDDDMHAIMVRPLPPGCKLTALFDSCHSGTALDLPFVYSTKGVVKE---------PNLWKDAGTDAFGAFMQYERGNIGG-AISSIG</Hsp_hseq>
+      <Hsp_midline>++ N  R++      S  PQ         N D        +G ++ALL+GINY G     LRGC ND+KNM  ++    G+  +++ IL DD    +  PT  N+I A + +V  ++ +D+L  H+SGHG   +D D G+ED+GYDE + P+D+ + G I DDD++ I+++PL  G  L  L D CHSGT LDLP+VY   G   E           L    G D F  F     G I G A+  +G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.49799e-07</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>328</Hsp_hit-from>
+      <Hsp_hit-to>408</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>96</Hsp_align-len>
+      <Hsp_qseq>EALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDF</Hsp_qseq>
+      <Hsp_hseq>KASPADVISISGCKDDQTSADASI---------NNNATGAMSWAFIKTM---TDMPE--QSYLSLLNNMRTLLKEK-YSQKPQLSSSHPQDMNIRF</Hsp_hseq>
+      <Hsp_midline>+A  AD+  ISGC+D QTSAD S            NA GA +   +  +      PE   S++ LLN MR  L+ K +SQ PQL++SHP D+N  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|A3LSY7.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Scheffersomyces stipitis CBS 6054]</Hit_def>
+  <Hit_accession>A3LSY7</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>5.82115e-40</Hsp_evalue>
+      <Hsp_query-from>99</Hsp_query-from>
+      <Hsp_query-to>318</Hsp_query-to>
+      <Hsp_hit-from>84</Hsp_hit-from>
+      <Hsp_hit-to>294</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>222</Hsp_align-len>
+      <Hsp_qseq>PQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTA--PTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKING</Hsp_qseq>
+      <Hsp_hseq>PPPSGSQSFGQNSGYTFQYSNCSGRKKALLVGVNYFGSPN-ELRGCINDVKNMSSFLVDHWGYQWNDIVILTDDQNDISRVPTKNNIIRAMQWLVKDARPNDSLVFHYSGHGGTTADTD-GDEESGYDDVIYPVDFQQAGHIVDDDMHAIMVRPLPPGCRLTALYDSCHSGTALDLPYVYSTKGVVKE---------PNLLKDAGSDALNAFISYERGNIGG</Hsp_hseq>
+      <Hsp_midline>P  + S     N  +       +G ++ALL+G+NY G     LRGC NDVKNM  ++    G++  +I IL DD    +  PT  N+I A + +V  ++ +D+L  H+SGHG    D D G+E+ GYD+ + P+D+ + G I DDD++ I+++PL  G  L  L D CHSGT LDLPYVY   G   E           LL   G D  + F     G I G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>3.22329e-08</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>308</Hsp_hit-from>
+      <Hsp_hit-to>401</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>RRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDF</Hsp_qseq>
+      <Hsp_hseq>RQGSTNQDQVRQAKFSAADVISISGCKDDQTSADAKE---------NGRATGAMSWSFIKVL---NELPN--QSYLSLLNNMRTILAAK-YSQKPQLSCSHPQDMNIQF</Hsp_hseq>
+      <Hsp_midline>R+    Q + ++ +   AD+  ISGC+D QTSAD             G A GA + + + VL   ++ P    S++ LLN MR  L AK +SQ PQL+ SHP D+N  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A1D611.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus fischeri NRRL 181]</Hit_def>
+  <Hit_accession>A1D611</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.288</Hsp_bit-score>
+      <Hsp_score>373</Hsp_score>
+      <Hsp_evalue>6.3629e-40</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALG</Hsp_qseq>
+      <Hsp_hseq>ACTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERYGYRREDMVILTDDQKNPLSIPTKANILRAMQWLVKDAQPNDSLFLHFSGHGGRT-PDLDGDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLRPGVRLTVIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAISSYGKGDLSGVAMTAIGFLKKAAKG</Hsp_hseq>
+      <Hsp_midline>A TG RRALLIGINY+G +   LRGC NDV NM  ++   +G+  E++ IL DD ++  + PT AN++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DD++++I+++PL  GV L  + D CHSGT LDLPYVY   G   E  + +    D    +  +G  D       A+G +   A G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>54.6842</Hsp_bit-score>
+      <Hsp_score>130</Hsp_score>
+      <Hsp_evalue>4.21161e-07</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>305</Hsp_hit-from>
+      <Hsp_hit-to>399</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>59</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLREQFEKKKP---EALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPI</Hsp_qseq>
+      <Hsp_hseq>IGFLKKAAKGDSARKRTVMTKTSPADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIKSL---RQWPNQ--SYLQLLNSIRAQLEGK-YTQKPQLSCSHPL</Hsp_hseq>
+      <Hsp_midline>+GFL++  +    +K+    +   AD+ M SG +D QTSAD     +FQ     G A GA +   +  L    Q P    S+++LLN +R  LE K ++Q PQL+ SHP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B0Y081.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus fumigatus A1163] &gt;sp|Q4WYT0.2| RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus fumigatus Af293]</Hit_def>
+  <Hit_accession>B0Y081</Hit_accession>
+  <Hit_len>408</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>6.67264e-40</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>110</Hsp_hit-from>
+      <Hsp_hit-to>315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALG</Hsp_qseq>
+      <Hsp_hseq>ACTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERYGYRREDMVILTDDQKNPLSIPTKANILRAMQWLVKDAQPNDSLFLHFSGHGGRT-PDLDGDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLRPGVRLTVIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAISSYGKGDLSGVAMTAIGFLKKAAKG</Hsp_hseq>
+      <Hsp_midline>A TG RRALLIGINY+G +   LRGC NDV NM  ++   +G+  E++ IL DD ++  + PT AN++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DD++++I+++PL  GV L  + D CHSGT LDLPYVY   G   E  + +    D    +  +G  D       A+G +   A G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>5.30072e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>306</Hsp_hit-from>
+      <Hsp_hit-to>403</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>62</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>MGFLRRQLREQFEKKKP---EALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>IGFLKKAAKGDSARQRTVMTKTSPADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIKSL---KQWPNQ--SYLQLLNSIRAQLDGK-YTQKPQLSCSHPLDVN</Hsp_hseq>
+      <Hsp_midline>+GFL++  +    +++    +   AD+ M SG +D QTSAD     +FQ     G A GA +   +  L    Q P    S+++LLN +R  L+ K ++Q PQL+ SHP+DVN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|A1CL82.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus clavatus NRRL 1]</Hit_def>
+  <Hit_accession>A1CL82</Hit_accession>
+  <Hit_len>410</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>7.60709e-40</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>114</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>206</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALG</Hsp_qseq>
+      <Hsp_hseq>TGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERFGYRREDMVILTDDQKNPMSVPTKINILRAMQWLVKDAQPNDSLFIHFSGHGGRT-PDLDGDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSALASYGKGDLSGVAMTAIGFLKKAAIG</Hsp_hseq>
+      <Hsp_midline>TG RRALLIGINY+G +   LRGC NDV NM  ++    G+  E++ IL DD ++  + PT  N++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DD++++I+++PL  GV L  + D CHSGT LDLPYVY   G   E  + +    D    L  +G  D       A+G +   A+G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>57.3806</Hsp_bit-score>
+      <Hsp_score>137</Hsp_score>
+      <Hsp_evalue>5.22842e-08</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>308</Hsp_hit-from>
+      <Hsp_hit-to>405</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>117</Hsp_align-len>
+      <Hsp_qseq>MGFLRR-------QLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>IGFLKKAAIGDSARQRTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ----DGEARGA-----LSWAFIKSQKQRPNQSYLQLLNSIRAELEGK-YTQKPQLSCSHPLDVN</Hsp_hseq>
+      <Hsp_midline>+GFL++       + R    K  P    AD+ M SG +D QTSAD     +FQ     G A GA     L+  +   Q      S+++LLN +R  LE K ++Q PQL+ SHP+DVN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|O74477.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Schizosaccharomyces pombe 972h-]</Hit_def>
+  <Hit_accession>O74477</Hit_accession>
+  <Hit_len>425</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>1.29736e-39</Hsp_evalue>
+      <Hsp_query-from>99</Hsp_query-from>
+      <Hsp_query-to>317</Hsp_query-to>
+      <Hsp_hit-from>101</Hsp_hit-from>
+      <Hsp_hit-to>318</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>PQL----TASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMD--DGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGID----DFDKFGGEALGKIN</Hsp_qseq>
+      <Hsp_hseq>PQLPNTQTQSYNLAGGGNFQYQYSTCQGKRKALLIGINYL-NTQNELQGCINDVMSMSQLLIQRYGYKQEDMVIMTDTASNQRAIPTRQNMLDAMRWLVSDAQPNDALFFHYSGHGGQTKDLD-GDEVDGYDETIYPLDHQYAGQIIDDEMHEIMVKPLPAGCRLTALFDSCHSGGALDLPFTYSTKGVLKE---------PNMLKESGMDVLHAGLSYASGDIMGAIN</Hsp_hseq>
+      <Hsp_midline>PQL    T S+ +    +F        G R+ALLIGINY+ + Q  L+GC NDV +M + +   +G++ E++ I+ D    +   PT  NM+ A + +V+ ++ +DALF H+SGHG + +D D G+E DGYDET+ P+D+   G I DD++++I++KPL  G  L  L D CHSG  LDLP+ Y   G   E           +L + G+D          G+ +G IN</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>55.4546</Hsp_bit-score>
+      <Hsp_score>132</Hsp_score>
+      <Hsp_evalue>2.76108e-07</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>347</Hsp_hit-from>
+      <Hsp_hit-to>420</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>ADVISLSGCKDNQTSADTS-VNGF--------ATGALSYAFREVVTQNPQ-----LSYLQLLRGIRQVLSNK-YSQLPQLSCSHPLDMN</Hsp_hseq>
+      <Hsp_midline>AD+  +SGC+D QTSAD S V+ F        A GA +     V+ ++ Q     +S+++LL  +R+ L  K +SQ+PQL+ SHP+D+N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q6BH13.2|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1; Flags: Precursor [Debaryomyces hansenii CBS767]</Hit_def>
+  <Hit_accession>Q6BH13</Hit_accession>
+  <Hit_len>440</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.976</Hsp_bit-score>
+      <Hsp_score>367</Hsp_score>
+      <Hsp_evalue>7.84547e-39</Hsp_evalue>
+      <Hsp_query-from>122</Hsp_query-from>
+      <Hsp_query-to>318</Hsp_query-to>
+      <Hsp_hit-from>144</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>112</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>GTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTA--PTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKING</Hsp_qseq>
+      <Hsp_hseq>GKKKALLVGINYTG-SKNQLRGCINDVKNMSNFLNQHFGYSYDDMVILTDDQNQRARIPTKENIIRAMQWLVKDARPNDSLVFHYSGHGG-VTKDLVGDEESGMDDVIYPLDFEVNGHIIDDIMHDIMVKPLPQGCRLTALYDSCHSGTALDLPYVYSTKGVVKE---------PNLLKDAGTGAFNALLSYETGNISG</Hsp_hseq>
+      <Hsp_midline>G ++ALL+GINY G  +  LRGC NDVKNM  ++    G+  +++ IL DD    A  PT  N+I A + +V  ++ +D+L  H+SGHG  +  D  G+E+ G D+ + P+D+  NG I DD ++DI++KPL QG  L  L D CHSGT LDLPYVY   G   E           LL   G   F+       G I+G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>7.78847e-08</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>351</Hsp_hit-from>
+      <Hsp_hit-to>438</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>REQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDF</Hsp_qseq>
+      <Hsp_hseq>RDQVIRMK--ASPADVISISGCKDDQTSADARE---------GGQSTGAMSWSFITTM---NQMPNQ--SYLSLLNNMRTLLKSK-YSQKPQLSCSHPQDMNLKF</Hsp_hseq>
+      <Hsp_midline>R+Q  + K  A  AD+  ISGC+D QTSAD             G + GA + + +  +   +Q P    S++ LLN MR  L++K +SQ PQL+ SHP D+N  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|A2QU58.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus niger CBS 513.88]</Hit_def>
+  <Hit_accession>A2QU58</Hit_accession>
+  <Hit_len>438</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.591</Hsp_bit-score>
+      <Hsp_score>366</Hsp_score>
+      <Hsp_evalue>1.04428e-38</Hsp_evalue>
+      <Hsp_query-from>121</Hsp_query-from>
+      <Hsp_query-to>326</Hsp_query-to>
+      <Hsp_hit-from>135</Hsp_hit-from>
+      <Hsp_hit-to>342</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>TGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI--DENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGK</Hsp_qseq>
+      <Hsp_hseq>TGRRKALLIGINYIG-QPNQLRGCINDVTNMSTFLNEKYGYRREDMVILTDDQKNPMSIPNKANILRAMQWLVKDAQPNDSLFIHFSGHGGRT-PDLDGDEEDGYDDVIYPLDYRTAGHIVDDDMHAIMVRPLRPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAMDLFSAINSYGKGDLSSVAQTAIGFFKKAANGDTAR</Hsp_hseq>
+      <Hsp_midline>TG R+ALLIGINY+G +   LRGC NDV NM  ++   +G+  E++ IL DD ++  + P  AN++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DDD++ I+++PL  GV L  + D CHSGT LDLPYVY   G   E  +  +   D    +  +G  D       A+G     A G   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>56.225</Hsp_bit-score>
+      <Hsp_score>134</Hsp_score>
+      <Hsp_evalue>1.57684e-07</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>118</Hsp_query-to>
+      <Hsp_hit-from>353</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>97</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPP</Hsp_qseq>
+      <Hsp_hseq>ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIKTL---QQRPNQ--SYLQLLNSIRNELEGK-YTQKPQLSCSHPLGMCNA-SLVPP</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD     +FQ     G A GA +   +  L    Q P    S+++LLN +R  LE K ++Q PQL+ SHP+ + +   LVPP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q0CQL9.1|</Hit_id>
+  <Hit_def>RecName: Full=Metacaspase-1B; Flags: Precursor [Aspergillus terreus NIH2624]</Hit_def>
+  <Hit_accession>Q0CQL9</Hit_accession>
+  <Hit_len>378</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>143.665</Hsp_bit-score>
+      <Hsp_score>361</Hsp_score>
+      <Hsp_evalue>1.39369e-38</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>322</Hsp_query-to>
+      <Hsp_hit-from>80</Hsp_hit-from>
+      <Hsp_hit-to>285</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>121</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>208</Hsp_align-len>
+      <Hsp_qseq>AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI--DENFDFKKLLGKFGIDDFDKFGGEALGKINGDALG</Hsp_qseq>
+      <Hsp_hseq>ACTGRRKALLIGINYIG-QPNQLRGCINDVANVSRYLNERCRYRREDMVILTDDQENPLSIPTKNNILRAMQWLVKDAQPNDSLFIHFSGHGGRT-PDLDGDEEDGYDDVIYPVDYRTAGHIVDDEMHAIMVRPLRPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKEPNLAKEAAMDLFSAISSYGQGDLTGMAKTAIGFFKKAAIG</Hsp_hseq>
+      <Hsp_midline>A TG R+ALLIGINY+G +   LRGC NDV N+  Y+     +  E++ IL DD E+  + PT  N++ A + +V  ++ +D+LF HFSGHG +   D  G+E+DGYD+ + P+DY   G I DD+++ I+++PL  GV L  + D CHSGT LDLPYVY   G   E  +  +   D    +  +G  D       A+G     A+G</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>58.151</Hsp_bit-score>
+      <Hsp_score>139</Hsp_score>
+      <Hsp_evalue>2.52626e-08</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>300</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>17</Hsp_gaps>
+      <Hsp_align-len>90</Hsp_align-len>
+      <Hsp_qseq>ADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLY-KDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVN</Hsp_qseq>
+      <Hsp_hseq>ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFVKTLQERPHQ------SYLQLLNSIRAELEGK-YTQKPQLSCSHPLDVN</Hsp_hseq>
+      <Hsp_midline>AD+ M SG +D QTSAD     +FQ     G A GA +   +  L  + HQ      S+++LLN +R  LE K ++Q PQL+ SHP+DVN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

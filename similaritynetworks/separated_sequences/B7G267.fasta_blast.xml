@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_14737</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|B7G267|DRE2_PHATC Anamorsin homolog OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_47020 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>306</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_14737</Iteration_query-ID>
+  <Iteration_query-def>sp|B7G267|DRE2_PHATC Anamorsin homolog OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_47020 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>306</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|B7G267.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>B7G267</Hit_accession>
+  <Hit_len>306</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>624.78</Hsp_bit-score>
+      <Hsp_score>1610</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>306</Hsp_identity>
+      <Hsp_positive>306</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>306</Hsp_align-len>
+      <Hsp_qseq>MVPPREDVTVRIVCERRRTAGKEARPPPSAKPTPGNTSSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</Hsp_qseq>
+      <Hsp_hseq>MVPPREDVTVRIVCERRRTAGKEARPPPSAKPTPGNTSSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</Hsp_hseq>
+      <Hsp_midline>MVPPREDVTVRIVCERRRTAGKEARPPPSAKPTPGNTSSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|B8C4D7.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>B8C4D7</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>125.176</Hsp_bit-score>
+      <Hsp_score>313</Hsp_score>
+      <Hsp_evalue>8.02324e-33</Hsp_evalue>
+      <Hsp_query-from>105</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>ESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATK------------SLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLT-------------DASNLLGAPPSM--SAAATKSGDDCSGRAPCDDCTCGRAEG----AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</Hsp_qseq>
+      <Hsp_hseq>DSIDIYINTSDLPTHYDSLALASIVPSLSPGGVLSVHVVSASSSAASNESAAVDVVNWSAITTSFVLAGLKAESEQRDGSGGRVYTARKATASQSASSAAATGRINLGGAKTKVKLSLDDDDDDQLIDEDDLLNGGGGMLAPPPTIDTEARAKSNLDDCGGRKACDNCTCGRAEQEAADAAGGPNEQ--QSKSSACGNCAKGDAFRCAGCPYLGMPAFKEGEEHLVLKLNDDV</Hsp_hseq>
+      <Hsp_midline>+S+++ +  S+L   YDS+ L+     LSP   +SV V+  ++             + S I TSF+LAGL   SE+R+  G R  TA +   + ++ +       N  G    +                        +L  PP++   A A  + DDC GR  CD+CTCGRAE     A  G +EQ  + KSS+CG C+ GDAFRCA CPYLG PAFK GEEHLVL L DD </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|B4Q5Z1.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila simulans]</Hit_def>
+  <Hit_accession>B4Q5Z1</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>90.8929</Hsp_bit-score>
+      <Hsp_score>224</Hsp_score>
+      <Hsp_evalue>3.11537e-20</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNANAVNVWK-----ISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+ AAT  D A + +H   + S      +L+V+  E A + DS    +   +L P+  +  VS IG A   L  I     L+G  N  E    D    LTA +    T S A L+FA  N N  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S++  E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|B4HXL7.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila sechellia]</Hit_def>
+  <Hit_accession>B4HXL7</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.7373</Hsp_bit-score>
+      <Hsp_score>221</Hsp_score>
+      <Hsp_evalue>7.92884e-20</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALSAEKPGYETGSSARLSFAKKNANAANVWK-----ISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+ AAT  D A + +H   + S      +L+V+  E A + DS    +   +L P+  +  VS IG A   L  I     L+G  N  E    D    L+A +    T S A L+FA  N N  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S++  E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q9V3Y2.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila melanogaster]</Hit_def>
+  <Hit_accession>Q9V3Y2</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.5817</Hsp_bit-score>
+      <Hsp_score>218</Hsp_score>
+      <Hsp_evalue>1.91499e-19</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>232</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSYIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAVNVWK-----ISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+ AAT  D A + +H   + S      +L+V+  E A + DS    +   +L P+  +  VS IG A   L  I     L+G  N  E    D    LTA +    T S A L+FA  N +  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S++  E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|B4NYT3.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila yakuba]</Hit_def>
+  <Hit_accession>B4NYT3</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>88.1965</Hsp_bit-score>
+      <Hsp_score>217</Hsp_score>
+      <Hsp_evalue>2.36865e-19</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEE</Hsp_qseq>
+      <Hsp_hseq>LKSATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAVNVWK-----ISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELETEKQSQKANETAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEK</Hsp_hseq>
+      <Hsp_midline>+ +AT  D A + +H   + S      +L+V+  E A + DS    +   +L P+  +  VS IG A   L  I     L+G  N  E    D    LTA +    T S A L+FA  N +  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S++  E   SSCG C LGDAFRC++CPYLG PAFKPGE+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|B3N5N3.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila erecta]</Hit_def>
+  <Hit_accession>B3N5N3</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>8.04862e-19</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEE</Hsp_qseq>
+      <Hsp_hseq>LKSATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAINVWK-----ISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEK</Hsp_hseq>
+      <Hsp_midline>+ +AT  D A + +H   + S      +L+V+  E A + DS    +   +L P+  +  VS IG A   L  I     L+G  N  E    D    LTA +    T S A L+FA  N +  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S++  E   SSCG C LGDAFRC++CPYLG PAFKPGE+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|B4GK79.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila persimilis] &gt;sp|Q29P70.1| RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila pseudoobscura pseudoobscura]</Hit_def>
+  <Hit_accession>B4GK79</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.8853</Hsp_bit-score>
+      <Hsp_score>211</Hsp_score>
+      <Hsp_evalue>1.98035e-18</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>240</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>36</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVV-ASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LKTATGGEVAVENVHRLSFSSYANSSFDLIVIECAQLTDNY-----VKLLHMLKPSGKLHLFSFIGPASSLLQEIK----LSGFINCSE-----GTDTLTAEKPGYETGSSARLSFAKKNASALNVWK-----ISGDDEELIDEEDLLDEEDKQKPDPAGLKVCSTTGKRKACKNCSCGLAEELESEKQTATASENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+  AT  + A + +H   + S      +L+V+  ++L D Y      +   +L P+  + + S IG A+  L  I     L+G  N SE     G+ TLTA +    T S A L+FA  N +  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  +    E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q6FI81.2|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin; AltName: Full=Cytokine-induced apoptosis inhibitor 1; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Homo sapiens]</Hit_def>
+  <Hit_accession>Q6FI81</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.0409</Hsp_bit-score>
+      <Hsp_score>214</Hsp_score>
+      <Hsp_evalue>2.19407e-18</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>212</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>50</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>98</Hsp_align-len>
+      <Hsp_qseq>LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEG-AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LIDSDELLDPEDLKKPDPASLRAASCGEGKK---RKACKNCTCGLAEELEKEKSREQMSSQPKSACGNCYLGDAFRCASCPYLGMPAFKPGEKVLLSD</Hsp_hseq>
+      <Hsp_midline>LID D LL         P S+ AA+   G     R  C +CTCG AE   KE + EQ      S+CG C LGDAFRCASCPYLG PAFKPGE+ L+ D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|O15692.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Dictyostelium discoideum]</Hit_def>
+  <Hit_accession>O15692</Hit_accession>
+  <Hit_len>256</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>4.34935e-18</Hsp_evalue>
+      <Hsp_query-from>88</Hsp_query-from>
+      <Hsp_query-to>306</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>251</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>113</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>230</Hsp_align-len>
+      <Hsp_qseq>AATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCS---GRAPCDDCTCGRAEGAKEGNSEQPKEIKS--------SSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</Hsp_qseq>
+      <Hsp_hseq>SKTVTTSLSKE-QQQIQNNFDHVIIIS--SKPFNSALISMYSNLLKKGGKLSIYQTNE-NETLVNSGMDFLIGGLVDFKATSNSTYKTIVHADKPSWDTNESSTINIPSTSSNNPWASIEGGDRINE-NDLVSENDKTSKPAT-TLDDCEVGKTKKACKNCTCGRAE---EENQSKPKLTKEMIENPGVGSSCGNCSLGDAFRCGGCPYRGLPTFKVGEK---IQLPDDF</Hsp_hseq>
+      <Hsp_midline>+ T+T + +K     I  + + V++ S  +  ++S  +S ++ +L     +S+    +  ++L      FL+ GL +     N+     + A + +  TN  +T+N  S ++N     I+  + + + ++L+      S  AT + DDC     +  C +CTCGRAE   E N  +PK  K         SSCG CSLGDAFRC  CPY G P FK GE+   + L DDF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B9RBT0.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Ricinus communis]</Hit_def>
+  <Hit_accession>B9RBT0</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>85.1149</Hsp_bit-score>
+      <Hsp_score>209</Hsp_score>
+      <Hsp_evalue>6.13545e-18</Hsp_evalue>
+      <Hsp_query-from>78</Hsp_query-from>
+      <Hsp_query-to>296</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>262</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>240</Hsp_align-len>
+      <Hsp_qseq>ASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSV-----SVIGDATKSLSPIHTSFLLAGLA-------NNSERRNADGSRTLTATRRNNTTNSVATLNFASNNN---NGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDC---SGRAPCDDCTCGRAEG---AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEE</Hsp_qseq>
+      <Hsp_hseq>AEQCDPQVVTQAS---SLSKLPVDS--SSMDIVISICRSLQFQGDFLFEEISRVLKPGGTVLIYKTLQSVAEGTSEAVLALERKLLLAGFLEAQGLQLNSLELSGLDHSFGMKAKKPSWKIGSSFALKKSTKGSVKVNLDDDLIDEDSLLTEED--MKKPP------IAPGGDCEVGSTRKACKNCTCGRAEAEEKVKLGPTMEQLNNPQSACGSCGLGDAFRCSTCPYKGLPPFKLGEK</Hsp_hseq>
+      <Hsp_midline>A   DP  ++ A+   + +K   D+   S+++V+                 +++L P  TV +     SV    ++++  +    LLAG         N+ E    D S  + A + +    S   L  ++  +   N +D LIDED+LLT+    +  PP         G DC   S R  C +CTCGRAE     K G + +      S+CG C LGDAFRC++CPY G P FK GE+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q5EAC7.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin; AltName: Full=Cytokine-induced apoptosis inhibitor 1; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Bos taurus]</Hit_def>
+  <Hit_accession>Q5EAC7</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>84.7297</Hsp_bit-score>
+      <Hsp_score>208</Hsp_score>
+      <Hsp_evalue>1.17026e-17</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>210</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>51</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>99</Hsp_align-len>
+      <Hsp_qseq>LIDEDNLLTDASNLLGA-PPSMSAAATKSGDDCSGRAPCDDCTCGRAEG-AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LIDSDELL-DAEDLKKPDPASLRAPSCGEGKK---RKACKNCTCGLAEELEKEKSRDQISSQPKSACGNCYLGDAFRCASCPYLGMPAFKPGEKVLLSD</Hsp_hseq>
+      <Hsp_midline>LID D LL DA +L    P S+ A +   G     R  C +CTCG AE   KE + +Q      S+CG C LGDAFRCASCPYLG PAFKPGE+ L+ D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|B4KLC0.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila mojavensis]</Hit_def>
+  <Hit_accession>B4KLC0</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.1889</Hsp_bit-score>
+      <Hsp_score>204</Hsp_score>
+      <Hsp_evalue>1.61417e-17</Hsp_evalue>
+      <Hsp_query-from>85</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>26</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>234</Hsp_align-len>
+      <Hsp_qseq>AISAATMTDAAAKTIHDAIYES-----LELVVV-ASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>ALKEATGGEVAVENVHRLSFSSYANSSFDLIVIECAQLTDNY-----VKLLHMLKPSGKLHLFAYIGPAANLLQEIK----LSGFINCSEDAAAN---TLTAEKPGYETGSSARLSFAKKSPSMNVWKI------SGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELEDEKKTKAATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>A+  AT  + A + +H   + S      +L+V+  ++L D Y      +   +L P+  + + + IG A   L  I     L+G  N SE   A+   TLTA +    T S A L+FA  + + N   I      +     L     +     K   D +G         R  C +C+CG AE  + E  ++   E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|B4MZ79.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila willistoni]</Hit_def>
+  <Hit_accession>B4MZ79</Hit_accession>
+  <Hit_len>253</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.1889</Hsp_bit-score>
+      <Hsp_score>204</Hsp_score>
+      <Hsp_evalue>2.27468e-17</Hsp_evalue>
+      <Hsp_query-from>109</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>56</Hsp_hit-from>
+      <Hsp_hit-to>246</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>LVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGA---------PPSMSAAATKSGDDCSGRAPCDDCTCGRAE----------GAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>IVIECAQLTDNY-----VKLLHMLKPSGKLHLISFIGAAGSLLQEIK----LSGFINCSE----DSDNTLTAEKPGYETGSSARLSFAKKNSSTLNVWKISGDDDELIDEEDLLDEVDKQKPDPASLKVCSTTGK-----RKACKNCSCGLADELENEKKQENAAKQASTENAK----SSCGNCYLGDAFRCSSCPYLGMPAFKPGEKVQLVD</Hsp_hseq>
+      <Hsp_midline>+V+  ++L D Y      +   +L P+  +  +S IG A   L  I     L+G  N SE    D   TLTA +    T S A L+FA  N++  ++     +                    P S+   +T        R  C +C+CG A+           AK+ ++E  K    SSCG C LGDAFRC+SCPYLG PAFKPGE+  ++D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B4LRY2.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila virilis]</Hit_def>
+  <Hit_accession>B4LRY2</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>4.09727e-17</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>72</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>23</Hsp_gaps>
+      <Hsp_align-len>227</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVV-ASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSA---AATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>LKAATGGEVAVENVHRLSFSSYANSSFDLIVIECAQLTDNY-----VKLLHMLKPSGILHLFAYIGPAGSLLQEIK----LSGFINCREDAVAN---TLTAEKPGYETGSSARLSFAKKTSSVNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELESEKTTKTVTENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+ AAT  + A + +H   + S      +L+V+  ++L D Y      +   +L P+  + + + IG A   L  I     L+G  N  E   A+   TLTA +    T S A L+FA   ++ N   I  D+        L           A  +       R  C +C+CG AE  + E  ++   E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|C3YFB4.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Branchiostoma floridae]</Hit_def>
+  <Hit_accession>C3YFB4</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.4185</Hsp_bit-score>
+      <Hsp_score>202</Hsp_score>
+      <Hsp_evalue>9.20458e-17</Hsp_evalue>
+      <Hsp_query-from>223</Hsp_query-from>
+      <Hsp_query-to>303</Hsp_query-to>
+      <Hsp_hit-from>223</Hsp_hit-from>
+      <Hsp_hit-to>304</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>85</Hsp_align-len>
+      <Hsp_qseq>PSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKS----SSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQ</Hsp_qseq>
+      <Hsp_hseq>PASLKAQCGTGGDTKKRKACKNCTCGLAE---ELEGDQPGKTASKPATSACGNCYLGDAFRCASCPYLGMPAFKPGEKITLTDRQ</Hsp_hseq>
+      <Hsp_midline>P+   A   +G D   R  C +CTCG AE   E   +QP +  S    S+CG C LGDAFRCASCPYLG PAFKPGE+  + D Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q8WTY4.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin; AltName: Full=Cytokine-induced apoptosis inhibitor 1; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Mus musculus]</Hit_def>
+  <Hit_accession>Q8WTY4</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>1.11979e-16</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>304</Hsp_query-to>
+      <Hsp_hit-from>210</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLV--LDLQD</Hsp_qseq>
+      <Hsp_hseq>LIDSDELLDPEDLKRPDPASLKAPSCGEGKK---RKACKNCTCGLAEELEREQSKAQSSQPKSACGNCYLGDAFRCANCPYLGMPAFKPGEQVLLSNSNLQD</Hsp_hseq>
+      <Hsp_midline>LID D LL         P S+ A +   G     R  C +CTCG AE  +   S+       S+CG C LGDAFRCA+CPYLG PAFKPGE+ L+   +LQD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q5XID1.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin; AltName: Full=Cytokine-induced apoptosis inhibitor 1; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Rattus norvegicus]</Hit_def>
+  <Hit_accession>Q5XID1</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>1.27188e-16</Hsp_evalue>
+      <Hsp_query-from>205</Hsp_query-from>
+      <Hsp_query-to>304</Hsp_query-to>
+      <Hsp_hit-from>210</Hsp_hit-from>
+      <Hsp_hit-to>308</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>47</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>102</Hsp_align-len>
+      <Hsp_qseq>LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLV--LDLQD</Hsp_qseq>
+      <Hsp_hseq>LIDSDELLDPEDLKKPDPASLKAPSCGEGKK---RKACKNCTCGLAEELEKEQSKAQSSQPKSACGNCYLGDAFRCANCPYLGMPAFKPGEQVLLSSSNLQD</Hsp_hseq>
+      <Hsp_midline>LID D LL         P S+ A +   G     R  C +CTCG AE  ++  S+       S+CG C LGDAFRCA+CPYLG PAFKPGE+ L+   +LQD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|B3MLC5.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Drosophila ananassae]</Hit_def>
+  <Hit_accession>B3MLC5</Hit_accession>
+  <Hit_len>248</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>1.79629e-16</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>27</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>35</Hsp_gaps>
+      <Hsp_align-len>233</Hsp_align-len>
+      <Hsp_qseq>ISAATMTDAAAKTIHDAIYES-----LELVVV-ASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSG---------RAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD</Hsp_qseq>
+      <Hsp_hseq>VKSATGGEVALENVHRLSFSSYANSSFDLIVIECAQLTDNY-----VKLLHMLKPSGKLHLVAFIGPAGSLLQEVK----LSGFINCRE----DADDALTAEKPGYETGSSARLSFAKKDASALNVWK-----ISGDDEELIDEEDLLDEEDKQKPDPAGLRVCSTTGKRKACKNCSCGLAEELESEKQSKAATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLAD</Hsp_hseq>
+      <Hsp_midline>+ +AT  + A + +H   + S      +L+V+  ++L D Y      +   +L P+  +  V+ IG A   L  +     L+G  N  E    D    LTA +    T S A L+FA  + +  ++       ++     L     +     K   D +G         R  C +C+CG AE  + E  S+   E   SSCG C LGDAFRC++CPYLG PAFKPGE+  + D</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|A9V767.1|</Hit_id>
+  <Hit_def>RecName: Full=Anamorsin homolog; AltName: Full=Fe-S cluster assembly protein DRE2 homolog [Monosiga brevicollis]</Hit_def>
+  <Hit_accession>A9V767</Hit_accession>
+  <Hit_len>282</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>2.00505e-16</Hsp_evalue>
+      <Hsp_query-from>233</Hsp_query-from>
+      <Hsp_query-to>303</Hsp_query-to>
+      <Hsp_hit-from>200</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>GDDC-----SGRAPCDDCTCGRAEGAKEGNSEQPK---EIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQ</Hsp_qseq>
+      <Hsp_hseq>GDDCEVGAGGKRRACKNCTCGRADAEAE-QAAKPTLTGPLPASSCGNCYLGDAFRCASCPYLGMPAFKPGEKVTLSDRQ</Hsp_hseq>
+      <Hsp_midline>GDDC       R  C +CTCGRA+   E  + +P     + +SSCG C LGDAFRCASCPYLG PAFKPGE+  + D Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

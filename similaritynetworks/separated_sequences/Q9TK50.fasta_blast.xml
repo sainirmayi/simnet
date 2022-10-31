@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_549495</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|Q9TK50|EFTS_PHATC Elongation factor Ts, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=tsf PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>202</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_549495</Iteration_query-ID>
+  <Iteration_query-def>sp|Q9TK50|EFTS_PHATC Elongation factor Ts, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=tsf PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>202</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|Q9TK50.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts, chloroplastic; Short=EF-Ts [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>Q9TK50</Hit_accession>
+  <Hit_len>202</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.609</Hsp_bit-score>
+      <Hsp_score>1054</Hsp_score>
+      <Hsp_evalue>1.85442e-147</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>202</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>202</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>202</Hsp_align-len>
+      <Hsp_qseq>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGEID</Hsp_qseq>
+      <Hsp_hseq>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGEID</Hsp_hseq>
+      <Hsp_midline>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGEID</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A6MVX0.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts, chloroplastic; Short=EF-Ts [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVX0</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>255.758</Hsp_bit-score>
+      <Hsp_score>652</Hsp_score>
+      <Hsp_evalue>6.64967e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>122</Hsp_identity>
+      <Hsp_positive>160</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>MAAEISAKTVKELRDKTAAGMMDCKKALQESNGDFEQAMESLRKKGLASANKKSDRIATEGIIESYIHMGGKLGVLVEVNCETDFVARREEFQELAKNIAMQIAANPAVKFVSLKEIPQSIIDEEKKIELEKDDLSNKPQEIKEKIVEGRIQKRLNEMILLEQSFIRDSDITIEELVKRNIAILGENIQVRRFERFNLGE</Hsp_hseq>
+      <Hsp_midline>M  EI AKTVK+LRD+T AGMM CK+AL E++GD+++A+ESLR KG+A+A+KKS R   EG+I SYIH G KLG+L+E+NCETDFVARREEF +LAKNI+MQIA+NP ++ VSL +I      E +K E  KDDL NKP+EIK KIVEGR++K L + +LLEQ +IRD +IT+ E +K+ ++ILGENI+V+RF R+ LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|B7K4S9.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Rippkaea orientalis PCC 8801]</Hit_def>
+  <Hit_accession>B7K4S9</Hit_accession>
+  <Hit_len>249</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>245.743</Hsp_bit-score>
+      <Hsp_score>626</Hsp_score>
+      <Hsp_evalue>1.4419e-81</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>152</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEISAKQVKELRETTGAGMMDCKKALQENQGDMTKAIEWLRQKGITSAEKKSGRQTAEGLVESYIHTGGRIGVLVEVNCETDFVARREEFKELVRNVAMQIAACPNVEYIQGSDIPEAVVAKEKEIEMGRDDLGNKPDNIKEKIVQGRIEKRIKELCLLDQPYIRDQNVTVEELIKQTIAQLGENIQVRRFTRFVLGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LR+ TGAGMM CK+AL EN GD  KAIE LR KG+ +A+KKS R T EGL+ SYIHTG ++G+L+E+NCETDFVARREEF +L +N++MQIA+ P ++ +   DI +    + ++ E  +DDL NKP+ IK KIV+GR+EK +K+  LL+Q YIRD N+TV E IKQ ++ LGENI+V+RFTR+VLGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q31K58.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus elongatus PCC 7942 = FACHB-805] &gt;sp|Q5N1Q1.1| RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q31K58</Hit_accession>
+  <Hit_len>221</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>239.965</Hsp_bit-score>
+      <Hsp_score>611</Hsp_score>
+      <Hsp_evalue>9.48779e-80</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEISAKLVKELREKTGAGMMDCKKALNENDGDLQKAIEWLRQKGIASAEKKSGRTAAEGLVGSYIHTGGRVGVLVEVNCETDFVARGDKFQELVRSIAMQIAACPNVEFVKVEDIPAEIAEREKAIEMGRDDLANKPENIREKIVVGRIEKRLKELTLLDQPYIRDPNISVAELVKQSIAELGENIQVRRFTRFVLGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LR++TGAGMM CK+AL EN GD  KAIE LR KG+A+A+KKS R   EGL+ SYIHTG ++G+L+E+NCETDFVAR ++F +L ++I+MQIA+ P ++ V ++DI        +  E  +DDL NKPE I+ KIV GR+EK LK+  LL+Q YIRDPNI+V E +KQ ++ LGENI+V+RFTR+VLGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|B0JTL3.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B0JTL3</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>236.498</Hsp_bit-score>
+      <Hsp_score>602</Hsp_score>
+      <Hsp_evalue>5.9795e-78</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEITAQQVKELREKTGAGMMDCKRALTENAGDITKAIEWLRQKGITSAEKKASRVAAEGMIGSYIHTGSRIGVLVEVNCETDFVARREEFKKLVNDVAMQIAACPNVEYVKVADIPAEIAAKEKEIEMGRDDLANKPDNIKEKIVAGRIEKRLKELSLLDQPFIRDQNISIDELLKQAIAALGENIQVRRFQRFVLGE</Hsp_hseq>
+      <Hsp_midline> EI A+ VK+LR++TGAGMM CK+ALTEN GD  KAIE LR KG+ +A+KK+SR   EG+I SYIHTGS++G+L+E+NCETDFVARREEF  L  +++MQIA+ P ++ V + DI      + ++ E  +DDL NKP+ IK KIV GR+EK LK+  LL+Q +IRD NI++ E +KQ ++ LGENI+V+RF R+VLGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|A2C1I8.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. NATL1A]</Hit_def>
+  <Hit_accession>A2C1I8</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.417</Hsp_bit-score>
+      <Hsp_score>594</Hsp_score>
+      <Hsp_evalue>3.78455e-77</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEITAKLVKELRDKTSAGMMDCKKALIENKGDMDKSIEWLRQKGIASAEKKSGRVAAEGAVGSYIHTGSRVGVLLELNCETDFVARGDLFQGLLRDLSMQVAACPSVEYVSVDQIPESIANKEKEIEMGRDDLSGKPDQIKAKIVEGRIGKRLKEMALLEQPFIKDSSINVEELVKQVAGKIGENIRVRRFTRYILGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LRD+T AGMM CK+AL EN GD DK+IE LR KG+A+A+KKS R   EG + SYIHTGS++G+LLE+NCETDFVAR + F  L +++SMQ+A+ P ++ VS+D I +    + ++ E  +DDL  KP++IK KIVEGR+ K LK+  LLEQ +I+D +I V E +KQV   +GENIRV+RFTRY+LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q46LH8.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. NATL2A]</Hit_def>
+  <Hit_accession>Q46LH8</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.417</Hsp_bit-score>
+      <Hsp_score>594</Hsp_score>
+      <Hsp_evalue>4.3148e-77</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEITAKLVKELRDKTSAGMMDCKKALIENKGDMDKSIEWLRQKGIASAEKKSGRVAAEGAVGSYIHTGSRVGVLLELNCETDFVARGDLFQGLLRDLSMQVAACPSVEYVSVDQIPESIANKEKEIEMGRDDLSGKPDQIKAKIVEGRIGKRLKEMALLEQPFIKDSSINVEELVKQVAGKIGENIRVRRFTRYILGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LRD+T AGMM CK+AL EN GD DK+IE LR KG+A+A+KKS R   EG + SYIHTGS++G+LLE+NCETDFVAR + F  L +++SMQ+A+ P ++ VS+D I +    + ++ E  +DDL  KP++IK KIVEGR+ K LK+  LLEQ +I+D +I V E +KQV   +GENIRV+RFTRY+LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q7U794.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Parasynechococcus marenigrum WH 8102]</Hit_def>
+  <Hit_accession>Q7U794</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>232.261</Hsp_bit-score>
+      <Hsp_score>591</Hsp_score>
+      <Hsp_evalue>1.03408e-76</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>IDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>VSAKLVKDLRDKTGAGMMDCKKALAATDGDANKAVEWLRQKGIASAEKKSGRTAAEGAISSYIHTGSRVGVLIEINCETDFVARGDMFQELLRDVSMQVAACPNVEYVSTDDIPDEIREREKAIEMGRDDLDGKPEQMKVKIVEGRIGKRLKELALMEQPFIKDSSITVTELVKQTAGKIGENVQVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>+ AK VK LRD+TGAGMM CK+AL    GD +KA+E LR KG+A+A+KKS R   EG I SYIHTGS++G+L+EINCETDFVAR + F +L +++SMQ+A+ P ++ VS DDI D  +   +  E  +DDL  KPE++K KIVEGR+ K LK+  L+EQ +I+D +ITVTE +KQ    +GEN++V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|A5GTG7.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus sp. RCC307]</Hit_def>
+  <Hit_accession>A5GTG7</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>231.106</Hsp_bit-score>
+      <Hsp_score>588</Hsp_score>
+      <Hsp_evalue>2.56147e-76</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEISAKLVKELRDQTGAGMMDCKKALNETSGDLTKATEWLRQKGIASAEKKAGRTAAEGAVGSYIHTGARVGVLVEVNCETDFVARGDAFQELVRNVAMQIAACPNVEFVTTDDIPADVKERETNIEMGRDDLGNKPEAMKAKIVEGRVNKRLKELALLEQPFIKDSSLSVAEMVKQLAGKIGENIQVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LRD+TGAGMM CK+AL E  GD  KA E LR KG+A+A+KK+ R   EG + SYIHTG+++G+L+E+NCETDFVAR + F +L +N++MQIA+ P ++ V+ DDI    K      E  +DDL NKPE +K KIVEGRV K LK+  LLEQ +I+D +++V E +KQ+   +GENI+V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|B1XQQ0.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus sp. PCC 7002]</Hit_def>
+  <Hit_accession>B1XQQ0</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>231.106</Hsp_bit-score>
+      <Hsp_score>588</Hsp_score>
+      <Hsp_evalue>2.92001e-76</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AQISAKLVKELRDKTGAGMMDCKKALGETNGDITKAIEWLRQKGITSAEKKAGRVAAEGLIESYIHTGGGIGVLVEVNCETDFVARGDIFKDLAKGIAMQIAACPNVQYVKVDDIPTEIADKEREIEMGRDDLAGKPDNIKEKIVEGRIAKRLKELSLMDQPYIRDQNMTVEELVKQSIATIGENIQIRRFQRFVLGE</Hsp_hseq>
+      <Hsp_midline> +I AK VK+LRD+TGAGMM CK+AL E +GD  KAIE LR KG+ +A+KK+ R   EGLI SYIHTG  +G+L+E+NCETDFVAR + F DLAK I+MQIA+ P +Q V +DDI      + R+ E  +DDL  KP+ IK KIVEGR+ K LK+  L++Q YIRD N+TV E +KQ ++ +GENI+++RF R+VLGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B7K735.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Gloeothece citriformis PCC 7424]</Hit_def>
+  <Hit_accession>B7K735</Hit_accession>
+  <Hit_len>286</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>233.417</Hsp_bit-score>
+      <Hsp_score>594</Hsp_score>
+      <Hsp_evalue>3.63216e-76</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>111</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>AEITAKLVKELREKTGAGMMDCKKALGESGGDMEKATEWLRQKGITSAEKKSGRITAEGLIHSYIHTGGRIGVLVELNCETDFVARGDTFKDLVNNIAMQIAACPNVEYVRVEDIPEAVAQKEKEIEKGRDDLAGKPENIKDKIVEGRIGKRLKELSLMDQPYIKDQSITVAELIKQTIAQIGENIQVRRFVRFVLGE</Hsp_hseq>
+      <Hsp_midline> EI AK VK+LR++TGAGMM CK+AL E+ GD +KA E LR KG+ +A+KKS R T EGLI+SYIHTG ++G+L+E+NCETDFVAR + F DL  NI+MQIA+ P ++ V ++DI +    + ++ E  +DDL  KPE IK+KIVEGR+ K LK+  L++Q YI+D +ITV E IKQ ++ +GENI+V+RF R+VLGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q7VCB5.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus subsp. marinus str. CCMP1375]</Hit_def>
+  <Hit_accession>Q7VCB5</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>229.95</Hsp_bit-score>
+      <Hsp_score>585</Hsp_score>
+      <Hsp_evalue>9.40041e-76</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>148</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDIS-DLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>SSITAKLVKDLRDKTGAGMMDCKKALAETSGDISKAVEWLRQKGIASAEKKSGRVAAEGAIGSYIHTGSRVGVLIELNCETDFVARGELFQGLLRDVSMQVAACPNVEYVAVDDIPKDIVDKE-KNIEMGRDDLAGKPEQIKTKIVEGRIGKRLKELALIEQPFIRDSSITVEQLVKQVAGQIGENVKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>+ I AK VK LRD+TGAGMM CK+AL E  GD  KA+E LR KG+A+A+KKS R   EG I SYIHTGS++G+L+E+NCETDFVAR E F  L +++SMQ+A+ P ++ V++DDI  D+   E +  E  +DDL  KPE+IK KIVEGR+ K LK+  L+EQ +IRD +ITV + +KQV   +GEN++V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|A5GLD9.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus sp. WH 7803]</Hit_def>
+  <Hit_accession>A5GLD9</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>229.565</Hsp_bit-score>
+      <Hsp_score>584</Hsp_score>
+      <Hsp_evalue>1.36246e-75</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>MAAAVSAKLVKDLRDKTGAGMMDCKKALAATDGDADKAIEWLRQKGIASAEKKSGRTAAEGAIGSYIHTGARVGVLIEINCETDFVARGDMFQELLRDVSMQVAACPGVEYVNTDDIPSEIREREKAIEMGRDDLDGKPEQMKEKIVEGRINKRLKELALMEQPFIKDSSLTVAELVKQTAGKIGENVKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>M   + AK VK LRD+TGAGMM CK+AL    GD DKAIE LR KG+A+A+KKS R   EG I SYIHTG+++G+L+EINCETDFVAR + F +L +++SMQ+A+ P ++ V+ DDI    +   +  E  +DDL  KPE++K KIVEGR+ K LK+  L+EQ +I+D ++TV E +KQ    +GEN++V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A8G4D2.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. MIT 9215]</Hit_def>
+  <Hit_accession>A8G4D2</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>228.409</Hsp_bit-score>
+      <Hsp_score>581</Hsp_score>
+      <Hsp_evalue>3.30141e-75</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>IDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDIS-DLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>ITAKLVKDLRDKTGAGMMDCKKALNETEGNLDKALEWLRKKGIASAEKKSGRVAAEGSIGSYIHTGSRVGVLLELNCETDFVARGDIFQSLLKDVSMQVAACPNVEYVSIDEIPEDVVKKE-KQIEMGRDDLSGKPEQIKEKIVEGRIAKRLNELVLLSQPYIKDSSLTVEELVKQAAAKIGENIKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>I AK VK LRD+TGAGMM CK+AL E  G+ DKA+E LR KG+A+A+KKS R   EG I SYIHTGS++G+LLE+NCETDFVAR + F  L K++SMQ+A+ P ++ VS+D+I  D+ K E ++ E  +DDL  KPE+IK KIVEGR+ K L + VLL Q YI+D ++TV E +KQ  + +GENI+V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|A9BAS8.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. MIT 9211]</Hit_def>
+  <Hit_accession>A9BAS8</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>228.024</Hsp_bit-score>
+      <Hsp_score>580</Hsp_score>
+      <Hsp_evalue>5.76309e-75</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>EIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>DITAKLVKELRDKTGAGMMDCKKALVESDADMEKAVEWLRQKGISSAEKKSGRVAAEGAIGSYIHTGSRVGVLLELNCETDFVARGELFQGLLRDISMQIAACPNVEFVAVDDIPVEVSDKEKSIEMGRDDLSGKPDQIKEKIVAGRISKRLKELALIEQPFIRDTSITVEQLVKQVAGQIGENLRIRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>+I AK VK+LRD+TGAGMM CK+AL E+  D +KA+E LR KG+++A+KKS R   EG I SYIHTGS++G+LLE+NCETDFVAR E F  L ++ISMQIA+ P ++ V++DDI      + +  E  +DDL  KP++IK KIV GR+ K LK+  L+EQ +IRD +ITV + +KQV   +GEN+R++RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|A3PCG2.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. MIT 9301]</Hit_def>
+  <Hit_accession>A3PCG2</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>2.00202e-74</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>110</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>IDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>ITAKLVKDLRDKTGAGMMDCKKALNETEGNLDKALEWLRKKGIASAEKKSGRVAAEGSIGSYIHTGSRVGVLLELNCETDFVARGDIFQSLLKDVSMQVAACPNVEYVSIDEIPEEVVEKEKQIEMGRDDLSGKPEQIKEKIVEGRIAKRLNELVLLSQPYIKDSSLTVEDLVKQAAAKIGENIKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>I AK VK LRD+TGAGMM CK+AL E  G+ DKA+E LR KG+A+A+KKS R   EG I SYIHTGS++G+LLE+NCETDFVAR + F  L K++SMQ+A+ P ++ VS+D+I +    + ++ E  +DDL  KPE+IK KIVEGR+ K L + VLL Q YI+D ++TV + +KQ  + +GENI+V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q3AKA4.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus sp. CC9605]</Hit_def>
+  <Hit_accession>Q3AKA4</Hit_accession>
+  <Hit_len>220</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>2.35708e-74</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>200</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>200</Hsp_align-len>
+      <Hsp_qseq>MKTEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>MAAAVSAKLVKELRDKTGAGMMDCKKALAATEGDANKAVEWLRQKGIASAEKKSGRTAAEGAIGSYIHTGARVGVLVEVNCETDFVARGDMFQSLLRDVSMQVAACPNVEYVTTDEIPNEIREREKAIEMGRDDLEGKPEQMKEKIVEGRIGKRLKELALMEQPFIKDSSITVADLVKQTAGKIGENVKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>M   + AK VK+LRD+TGAGMM CK+AL    GD +KA+E LR KG+A+A+KKS R   EG I SYIHTG+++G+L+E+NCETDFVAR + F  L +++SMQ+A+ P ++ V+ D+I +  +   +  E  +DDL+ KPE++K KIVEGR+ K LK+  L+EQ +I+D +ITV + +KQ    +GEN++V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q7TV13.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. MIT 9313]</Hit_def>
+  <Hit_accession>Q7TV13</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.098</Hsp_bit-score>
+      <Hsp_score>575</Hsp_score>
+      <Hsp_evalue>2.49082e-74</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>199</Hsp_align-len>
+      <Hsp_qseq>TEIDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDIS-DLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>ADVSAKIVKDLRDKTGAGMMDCKKALAESDGDMVKASEWLRQKGIASAEKKSSRIAAEGAIGTYIHTGARVGVLLELNCETDFVARGDLFQGLLKDVAMQVAACPNVEYVSTEEIPVDVVEKE-KSIEMGRDDLSGKPEQIKAKIVEGRIGKRLKELVLLEQPFIRDSSMTVAELVKQVAGKIGENIKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline> ++ AK VK LRD+TGAGMM CK+AL E+ GD  KA E LR KG+A+A+KKSSR   EG I +YIHTG+++G+LLE+NCETDFVAR + F  L K+++MQ+A+ P ++ VS ++I  D+ + E +  E  +DDL  KPE+IK KIVEGR+ K LK+ VLLEQ +IRD ++TV E +KQV   +GENI+V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|A2BQP0.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Prochlorococcus marinus str. AS9601]</Hit_def>
+  <Hit_accession>A2BQP0</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.098</Hsp_bit-score>
+      <Hsp_score>575</Hsp_score>
+      <Hsp_evalue>2.51818e-74</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>110</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>IDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>ITAKLVKDLRDKTGAGMMDCKKALNETEGNLDKALEWLRKKGIASAEKKSGRVAAEGSIGSYIHTGSRVGVLLELNCETDFVARGDIFQSLLKDVSMQVAACPNVEYVSIDEIPEDVVEKEKQIEMGRDDLSGKPEQIKEKIVEGRIAKRLNELVLLSQPYIKDSSLTVEDLVKQAAAKIGENIKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>I AK VK LRD+TGAGMM CK+AL E  G+ DKA+E LR KG+A+A+KKS R   EG I SYIHTGS++G+LLE+NCETDFVAR + F  L K++SMQ+A+ P ++ VS+D+I +    + ++ E  +DDL  KPE+IK KIVEGR+ K L + VLL Q YI+D ++TV + +KQ  + +GENI+V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q3AXJ0.1|</Hit_id>
+  <Hit_def>RecName: Full=Elongation factor Ts; Short=EF-Ts [Synechococcus sp. CC9902]</Hit_def>
+  <Hit_accession>Q3AXJ0</Hit_accession>
+  <Hit_len>219</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.098</Hsp_bit-score>
+      <Hsp_score>575</Hsp_score>
+      <Hsp_evalue>3.16649e-74</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>200</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>IDAKTVKKLRDETGAGMMTCKQALTENHGDYDKAIESLRLKGMATADKKSSRNTNEGLIYSYIHTGSKLGILLEINCETDFVARREEFTDLAKNISMQIASNPEIQVVSLDDISDLTKIEVRKFENAKDDLQNKPEEIKNKIVEGRVEKSLKKQVLLEQEYIRDPNITVTEYIKQVVSILGENIRVQRFTRYVLGE</Hsp_qseq>
+      <Hsp_hseq>VTAKLVKELRDKTGAGMMDCKKALAATDGDTDKAVEWLRQKGIASAEKKSGRTAAEGSIGSYIHTGARVGVLIEINCETDFVARGDMFQELLRDVSMQVAACPNVEYVTTDEIPPEISEREKAIEMGRDDLEGKPEKMKEKIVEGRIAKRLKELALMEQPFIKDSSITVAELVKQAAGKIGENVKVRRFTRYTLGE</Hsp_hseq>
+      <Hsp_midline>+ AK VK+LRD+TGAGMM CK+AL    GD DKA+E LR KG+A+A+KKS R   EG I SYIHTG+++G+L+EINCETDFVAR + F +L +++SMQ+A+ P ++ V+ D+I        +  E  +DDL+ KPE++K KIVEGR+ K LK+  L+EQ +I+D +ITV E +KQ    +GEN++V+RFTRY LGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_9281</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0M6|PSAL_PHATC Photosystem I reaction center subunit XI OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaL PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>151</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_9281</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0M6|PSAL_PHATC Photosystem I reaction center subunit XI OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaL PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>151</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0M6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0M6</Hit_accession>
+  <Hit_len>151</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>305.834</Hsp_bit-score>
+      <Hsp_score>782</Hsp_score>
+      <Hsp_evalue>1.33399e-107</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</Hsp_qseq>
+      <Hsp_hseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</Hsp_hseq>
+      <Hsp_midline>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49486.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49486</Hit_accession>
+  <Hit_len>150</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>240.35</Hsp_bit-score>
+      <Hsp_score>612</Hsp_score>
+      <Hsp_evalue>1.0487e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSF</Hsp_qseq>
+      <Hsp_hseq>MANFIKPYNDDPFVGHLATPITSSSITRAILKNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRNSDIALFSGFLSTIGLILILTLGLTIYGVAAFGQGQT-TENSNDLQTKKAWDQFKGGFFVGACGSAGFALICLSSIPAF</Hsp_hseq>
+      <Hsp_midline>MANFIKPYNDDPFVGHLATPITSS++TRAIL+NLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLR+S+I L +GFLST+GLI+ILTLGLTIYGVAAFGQ +T + N NDLQTKKAWDQFKGGFFVGACGSAGFA ICLSSIP+F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0U5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0U5</Hit_accession>
+  <Hit_len>148</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>236.884</Hsp_bit-score>
+      <Hsp_score>603</Hsp_score>
+      <Hsp_evalue>2.1367e-80</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>151</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>148</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</Hsp_qseq>
+      <Hsp_hseq>MANFIKPYNDDPFVGHLATPITSSSLTRALLKNLPAYRFGLTPLLRGLEIGLAHGYFLIGPFAQLGPLRNSDIGLLAGFLSTIGLILILTLGLTIYGAAAFGQEK---SNGSELQTKKSWDQFKGGFFVGACGSAGFAFICLSSIPTFALN</Hsp_hseq>
+      <Hsp_midline>MANFIKPYNDDPFVGHLATPITSS++TRA+L+NLPAYRFGLTPLLRGLEIGLAHGYFL+GPF +LGPLR+S+IGLLAGFLST+GLI+ILTLGLTIYG AAFGQEK   SN ++LQTKK+WDQFKGGFFVGACGSAGFAFICLSSIP+F  N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51222.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51222</Hit_accession>
+  <Hit_len>153</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.578</Hsp_bit-score>
+      <Hsp_score>475</Hsp_score>
+      <Hsp_evalue>7.38348e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>120</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFIT</Hsp_qseq>
+      <Hsp_hseq>MAEFIKPYNDDPFVGNLSTPVSTSSFSKGLLGNLPAYRRGLSPLLRGLEIGMAHGYFLIGPFDKLGPLRGTDVALLAGFLSSVGLIIILTTCLSMYGNVSF----TRSDSKDPLQTAEGWGQFTAGFLVGAVGGSGFAYLLLANIPVLQT</Hsp_hseq>
+      <Hsp_midline>MA FIKPYNDDPFVG+L+TP+++S+ ++ +L NLPAYR GL+PLLRGLEIG+AHGYFL+GPF KLGPLR +++ LLAGFLS+VGLI+ILT  L++YG  +F    T+S +++ LQT + W QF  GF VGA G +GFA++ L++IP   T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q1XDR5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDR5</Hit_accession>
+  <Hit_len>153</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.111</Hsp_bit-score>
+      <Hsp_score>466</Hsp_score>
+      <Hsp_evalue>1.58227e-59</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>119</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>150</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFIT</Hsp_qseq>
+      <Hsp_hseq>MSEFIKPYNDDPFVGNLSTPVSTSSFSKGTSRNLPAYRRGLSPLLRGLEIGMAHGYFLIGPFDKLGPLRGTDVALLAGFLSSVGLIIILTTCLSMYGNVSF----TRADSKDPLQTSEGWGQFTAGFLVGAVGGSGFAYLLLANIPVLQT</Hsp_hseq>
+      <Hsp_midline>M+ FIKPYNDDPFVG+L+TP+++S+ ++   +NLPAYR GL+PLLRGLEIG+AHGYFL+GPF KLGPLR +++ LLAGFLS+VGLI+ILT  L++YG  +F    T++ +++ LQT + W QF  GF VGA G +GFA++ L++IP   T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q6B8P4.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8P4</Hit_accession>
+  <Hit_len>150</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>178.333</Hsp_bit-score>
+      <Hsp_score>451</Hsp_score>
+      <Hsp_evalue>3.27343e-57</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>82</Hsp_identity>
+      <Hsp_positive>117</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIP</Hsp_qseq>
+      <Hsp_hseq>MSDFIQSYNNDPFLGNLSTPVSTSTFTKGLLNNLPAYRRGLSPLLRGLEIGMAHGYFLVGPFDKLGPLRNTDVALLSGFLSAVGLIIILTVCLSMYGNVSFDKDDAK----DLLQTTEGWGQFTAGFLVGAVGGSGFAYLLLANIP</Hsp_hseq>
+      <Hsp_midline>M++FI+ YN+DPF+G+L+TP+++S  T+ +L NLPAYR GL+PLLRGLEIG+AHGYFL+GPF KLGPLR++++ LL+GFLS VGLI+ILT+ L++YG  +F ++  +    + LQT + W QF  GF VGA G +GFA++ L++IP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|O78469.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Guillardia theta]</Hit_def>
+  <Hit_accession>O78469</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>177.948</Hsp_bit-score>
+      <Hsp_score>450</Hsp_score>
+      <Hsp_evalue>4.3903e-57</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNEND----LQTKKAWDQFKGGFFVGACGSAGFAFICLSSI</Hsp_qseq>
+      <Hsp_hseq>MTQFVKPYNDDPFVGNLATPITTSSFTRTLLSNLPAYRAGLSPLLRGLEIGMTHGYFLVGPFYKLGPLRNSEVALLAGVFSALGLIIIMAACLAIYGVVSF--------NTNDGGEQLQSAKGWRQFTSGWLVGSIGGASFAYILIANV</Hsp_hseq>
+      <Hsp_midline>M  F+KPYNDDPFVG+LATPIT+S+ TR +L NLPAYR GL+PLLRGLEIG+ HGYFL+GPF KLGPLR+SE+ LLAG  S +GLI+I+   L IYGV +F        N ND    LQ+ K W QF  G+ VG+ G A FA+I ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q85FP8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85FP8</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>177.563</Hsp_bit-score>
+      <Hsp_score>449</Hsp_score>
+      <Hsp_evalue>5.23147e-57</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>143</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>137</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLS</Hsp_qseq>
+      <Hsp_hseq>MTDYIKPYNNDPFVGHLATPINSSSLTRAYLSQLPIYRRGVSPFLRGLEIGMAHGYFLIGPFVQLGPLRNTDIKYLAGLLSAIGLIVILTLGMLLYGAVSF------TNDSQDLESVDGWRQLASGFLLGAVGGAGFAYLLLT</Hsp_hseq>
+      <Hsp_midline>M ++IKPYN+DPFVGHLATPI SS++TRA L  LP YR G++P LRGLEIG+AHGYFL+GPFV+LGPLR+++I  LAG LS +GLIVILTLG+ +YG  +F      +++  DL++   W Q   GF +GA G AGFA++ L+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q5ENP6.2|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Isochrysis galbana]</Hit_def>
+  <Hit_accession>Q5ENP6</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>164.081</Hsp_bit-score>
+      <Hsp_score>414</Hsp_score>
+      <Hsp_evalue>1.11592e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSF</Hsp_qseq>
+      <Hsp_hseq>MSEFVKPFNNDPFVGNLSTPVTTSTATKLYLGNLPIYRKGLTPLLRGLEIGMAHGYFLIGPFYILGPLRNSPNALLVGLFSAFGLIIILTLALTIYGLASF-QDNGVGEN---LESSKGWRNFTSGFTIGALGGASVAYLVLNNISFF</Hsp_hseq>
+      <Hsp_midline>M+ F+KP+N+DPFVG+L+TP+T+S  T+  L NLP YR GLTPLLRGLEIG+AHGYFL+GPF  LGPLR+S   LL G  S  GLI+ILTL LTIYG+A+F Q+     N   L++ K W  F  GF +GA G A  A++ L++I  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|B8HRF0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Cyanothece sp. PCC 7425]</Hit_def>
+  <Hit_accession>B8HRF0</Hit_accession>
+  <Hit_len>159</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.999</Hsp_bit-score>
+      <Hsp_score>406</Hsp_score>
+      <Hsp_evalue>2.48917e-50</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>NFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSS</Hsp_qseq>
+      <Hsp_hseq>ELIKPYNGDPFTGHLSTPISDSDFTRTFIGNLPAYRKGLSPILRGLEIGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILIATACLAAYGIVSFQKEEAAA---NPLNTAEGWSQFTAGFFVGATGGAFVAFTLLEK</Hsp_hseq>
+      <Hsp_midline>  IKPYN DPF GHL+TPI+ S  TR  + NLPAYR GL+P+LRGLEIG+AHGYFL+GP+VKLGPLRDS++  L G +S + LI+I T  L  YG+ +F +E+  +   N L T + W QF  GFFVGA G A  AF  L  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q8DGB4.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DGB4</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>158.303</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>3.12754e-49</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>75</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>NFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSS</Hsp_qseq>
+      <Hsp_hseq>ELVKPYNGDPFVGHLSTPISDSGLVKTFIGNLPAYRQGLSPILRGLEVGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILVATACLAAYGLVSF---QKGGSSSDPLKTSEGWSQFTAGFFVGAMGSAFVAFFLLEN</Hsp_hseq>
+      <Hsp_midline>  +KPYN DPFVGHL+TPI+ S + +  + NLPAYR GL+P+LRGLE+G+AHGYFL+GP+VKLGPLRDS++  L G +S + LI++ T  L  YG+ +F   +   S+ + L+T + W QF  GFFVGA GSA  AF  L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q116L4.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q116L4</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>156.762</Hsp_bit-score>
+      <Hsp_score>395</Hsp_score>
+      <Hsp_evalue>1.44315e-48</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>ANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSS</Hsp_qseq>
+      <Hsp_hseq>SGFVQPYKGDPFVGHLSTPISDSDFTRAFIGNLPIYRPGLSPILRGLEVGMAHGYFIVGPWTKLGPLRDSAVANLGGLISTIALVLIATICLSAYGLVSFQGKSPEGADP--LKTSEGWSQFTGGFFIGAMGGAVVAFFLLEN</Hsp_hseq>
+      <Hsp_midline>+ F++PY  DPFVGHL+TPI+ S  TRA + NLP YR GL+P+LRGLE+G+AHGYF++GP+ KLGPLRDS +  L G +ST+ L++I T+ L+ YG+ +F  +  + ++   L+T + W QF GGFF+GA G A  AF  L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|P25902.2|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Synechococcus elongatus]</Hit_def>
+  <Hit_accession>P25902</Hit_accession>
+  <Hit_len>149</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.836</Hsp_bit-score>
+      <Hsp_score>390</Hsp_score>
+      <Hsp_evalue>5.01664e-48</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>142</Hsp_align-len>
+      <Hsp_qseq>NFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSS</Hsp_qseq>
+      <Hsp_hseq>ELVKPYNGDPFVGHLSTPISDSGLVKTFIGNLPAYRQGLSPILPGLEVGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILVATACLAAYGLVSF---QKGGSSSDPLKTSEGWSQFTAGFFVGAMGSAFVAFFLLEN</Hsp_hseq>
+      <Hsp_midline>  +KPYN DPFVGHL+TPI+ S + +  + NLPAYR GL+P+L GLE+G+AHGYFL+GP+VKLGPLRDS++  L G +S + LI++ T  L  YG+ +F   +   S+ + L+T + W QF  GFFVGA GSA  AF  L +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|P37277.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P37277</Hit_accession>
+  <Hit_len>157</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>5.01479e-45</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>145</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>95</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>IKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSI</Hsp_qseq>
+      <Hsp_hseq>VQAYNGDPFVGHLSTPISDSAFTRTFIGNLPAYRKGLSPILRGLEVGMAHGYFLIGPWTLLGPLRDSEYQYIGGLIGALALILVATAALSSYGLVTFQGEQ---GSGDTLQTADGWSQFAAGFFVGGMGGAFVAYFLLENL</Hsp_hseq>
+      <Hsp_midline>++ YN DPFVGHL+TPI+ SA TR  + NLPAYR GL+P+LRGLE+G+AHGYFL+GP+  LGPLRDSE   + G +  + LI++ T  L+ YG+  F  E+    + + LQT   W QF  GFFVG  G A  A+  L ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q9TM17.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TM17</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.591</Hsp_bit-score>
+      <Hsp_score>366</Hsp_score>
+      <Hsp_evalue>2.44273e-44</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>144</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>77</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSS</Hsp_qseq>
+      <Hsp_hseq>MINYIKPYGSNPFVGNLSTPVNSSKVTIWYLKNLPIYRRGLSPLLRGLEIGMAHGYFIIGPFYKLGPLRNTDLSLLSGLIAAIGLIIISSIAMIIYGIVTF----DNSENNDKLQTANGWRQLASGFLLGAVGGAGFAYILLAN</Hsp_hseq>
+      <Hsp_midline>M N+IKPY  +PFVG+L+TP+ SS VT   L+NLP YR GL+PLLRGLEIG+AHGYF++GPF KLGPLR++++ LL+G ++ +GLI+I ++ + IYG+  F      S N + LQT   W Q   GF +GA G AGFA+I L++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|B0JT88.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B0JT88</Hit_accession>
+  <Hit_len>160</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.591</Hsp_bit-score>
+      <Hsp_score>366</Hsp_score>
+      <Hsp_evalue>3.47304e-44</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>147</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>141</Hsp_align-len>
+      <Hsp_qseq>IKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSI</Hsp_qseq>
+      <Hsp_hseq>VTPYNDDPFIGHLATPISASGFTKAFIGNLPAYRPGLAPILRGLEVGMAHGYFLGGPWVVLGPLRDSEYANIGGLIPALAMVLLATGCLASYGLVSF---QGKAASNDPLKSAEGWSQFAAGFFIGGMGGAFVAYFLLENL</Hsp_hseq>
+      <Hsp_midline>+ PYNDDPF+GHLATPI++S  T+A + NLPAYR GL P+LRGLE+G+AHGYFL GP+V LGPLRDSE   + G +  + ++++ T  L  YG+ +F   + ++++ + L++ + W QF  GFF+G  G A  A+  L ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q4G3B5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3B5</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>140.584</Hsp_bit-score>
+      <Hsp_score>353</Hsp_score>
+      <Hsp_evalue>1.97689e-42</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>144</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAF-GQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSF</Hsp_qseq>
+      <Hsp_hseq>MSEFVKPYNNDPFVGNLSTPVTTSTATKLYLGNLPIYRKGLSPLLRGLEIGMAHGYFLIGPFYILGPLRNSPNALLVGLFSAFGLILILTLGLTIYGLASFQGTEGGE-----NLESAKGWRNFTSGFSIGAFGGASVAYVLLDNISFF</Hsp_hseq>
+      <Hsp_midline>M+ F+KPYN+DPFVG+L+TP+T+S  T+  L NLP YR GL+PLLRGLEIG+AHGYFL+GPF  LGPLR+S   LL G  S  GLI+ILTLGLTIYG+A+F G E  +     +L++ K W  F  GF +GA G A  A++ L +I  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q54753.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Synechococcus sp. PCC 7002]</Hit_def>
+  <Hit_accession>Q54753</Hit_accession>
+  <Hit_len>152</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>131.339</Hsp_bit-score>
+      <Hsp_score>329</Hsp_score>
+      <Hsp_evalue>1.21977e-38</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>150</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>151</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>68</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>149</Hsp_align-len>
+      <Hsp_qseq>IKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNEN---DLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFIT</Hsp_qseq>
+      <Hsp_hseq>IIQHGGDPQVGNLATPINASAFSKAFINNLPGYRQGLSAQRRGLEVGMAHGYFLYGPFALLGPLRNADFAGVAGLLGTVGLISLLTLALSLYGSVGVSTPTATLTTPNPPENLGTKEGWSEFAAGFLIGGCGGALVAYGLCIALPMMYT</Hsp_hseq>
+      <Hsp_midline>I  +  DP VG+LATPI +SA ++A + NLP YR GL+   RGLE+G+AHGYFL GPF  LGPLR+++   +AG L TVGLI +LTL L++YG           +  N   +L TK+ W +F  GF +G CG A  A+    ++P   T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P95822.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Synechococcus elongatus PCC 7942 = FACHB-805]</Hit_def>
+  <Hit_accession>P95822</Hit_accession>
+  <Hit_len>166</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.865</Hsp_bit-score>
+      <Hsp_score>307</Hsp_score>
+      <Hsp_evalue>3.27222e-35</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>146</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>71</Hsp_identity>
+      <Hsp_positive>92</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>151</Hsp_align-len>
+      <Hsp_qseq>MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSS-----NENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIP</Hsp_qseq>
+      <Hsp_hseq>MAQDVIANGGTPEIGNLATPINSSPFTRTFINALPIYRRGLSSNRRGLEIGMAHGFLLYGPFSILGPLRNTETAGSAGLLATVGLVVILTVCLSLYGNAGSGPSAAESTVTTPNPPQELFTKEGWSEFTSGFILGGLGGAFFAFY-LASTP</Hsp_hseq>
+      <Hsp_midline>MA  +      P +G+LATPI SS  TR  +  LP YR GL+   RGLEIG+AHG+ L GPF  LGPLR++E    AG L+TVGL+VILT+ L++YG A  G    +S+        +L TK+ W +F  GF +G  G A FAF  L+S P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|B1WPZ7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I reaction center subunit XI; AltName: Full=PSI subunit V; AltName: Full=PSI-L [Crocosphaera subtropica ATCC 51142]</Hit_def>
+  <Hit_accession>B1WPZ7</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>122.094</Hsp_bit-score>
+      <Hsp_score>305</Hsp_score>
+      <Hsp_evalue>5.93128e-35</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>145</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>DPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFG---QEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSI</Hsp_qseq>
+      <Hsp_hseq>DPQIGNLATPVNSSRLSLAFIRNLPAYRRGLSANRRGLEVGMAHGYFLYGPFAILGPLRNTEYASTGGLLSAVAMISILTIALSLYASVEVGKPIETLTTPDVPEDLGTSVGWGEFANGFFIGGSGGVIFAYLLCQAL</Hsp_hseq>
+      <Hsp_midline>DP +G+LATP+ SS ++ A ++NLPAYR GL+   RGLE+G+AHGYFL GPF  LGPLR++E     G LS V +I ILT+ L++Y     G   +  T      DL T   W +F  GFF+G  G   FA++   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

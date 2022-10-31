@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_19107</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0C9|CYF_PHATC Cytochrome f OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petA PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>314</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_19107</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0C9|CYF_PHATC Cytochrome f OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petA PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>314</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0C9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0C9</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>633.254</Hsp_bit-score>
+      <Hsp_score>1632</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>314</Hsp_identity>
+      <Hsp_positive>314</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_hseq>
+      <Hsp_midline>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49476.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49476</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>540.806</Hsp_bit-score>
+      <Hsp_score>1392</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>255</Hsp_identity>
+      <Hsp_positive>290</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>MATNKFFKSLLFTLTIAISLFGLSIENSSAYPVFAQQGYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSVFEVTVKVPYDTTRQQVGANGKKADLNVGGIVILPKGFKLAAKNQIPAEVKAKNKGVFISPYSTEFDNILIVGPIAGKTHQELIFPVVSPDPEKDSDVKYLTYPLYAGGNRGRGQVYPTGEKSNINSFGAVQAGQISEITTSEKGESNITIINSDGVKTSQIIPAGLTLTVKQGDSVKVDQSLNIDPNVGGFGQEETEIVLQNPLRIIGYLGFCFCVLLTQVLLIIKKKQFEKVQAAELNF</Hsp_hseq>
+      <Hsp_midline>MATNKFFKSLLF LTIAI+ FG  I+++ AYPVFAQQ YSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNS+FEV +KVPYDTT+QQ+GANGKKADLNVGGI++LP+GFKLA KNQIPAEVK KNKGVFISPYS+EFDNIL+VGPIAGKTHQELIFPV++PDPEK+SD+KYLTYP YAGGNRGRGQVYPTGEKSN+N FGA Q+GQI+EIT +EKGES I I+NS+G +TSQ++PAGL L++KQG  VK DQ LNIDPNVGGFGQEE+EIVLQNP+RI GYL FCF VL+TQ++L++KKKQFEKVQAAELNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0R9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0R9</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>512.686</Hsp_bit-score>
+      <Hsp_score>1319</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>314</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>254</Hsp_identity>
+      <Hsp_positive>281</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>MATNKFFKSLLFTLTIAISSFGFCVENSSAYPVFAQQGYSNPRAANGKLACANCHLNQKAIEIEAPQGVLPNSVFEIEIKVPYDVNRQQISADGKPADLNVGGILILPKGFKLASKTQISPEVKAKNKGVFISPYSTEFDNILVVGPIAGKTHQELIFPVVAPDPENNPDVKYLTYPFYAGGNRGRGQVYPTGERSNINSFGATQGGQITEITTTEKGESKITIVNSDGATTSQTLSAGLKLLVKQGDIVKQDQPLNIDPNVGGFGQEESEIVLQSSSRILGYLAFCFCLLLTQVLLVLKKKQYEKVQAAELNF</Hsp_hseq>
+      <Hsp_midline>MATNKFFKSLLF LTIAI+SFGFC++++ AYPVFAQQ YSNPRAANGKLACANCHLNQKAIEIEAPQ VLPNS+FE+EIKVPYD  +QQ+ A+GK ADLNVGGIL+LP+GFKLA K QI  EVK KNKGVFISPYS+EFDNILVVGPIAGKTHQELIFPV+APDPE N D+KYLTYPFYAGGNRGRGQVYPTGE+SN+N FGA Q GQITEIT TEKGES I I+NS+G  TSQ L AGL L +KQG +VK DQPLNIDPNVGGFGQEESEIVLQ+  RI GYLAFCF +L+TQ++LVLKKKQ+EKVQAAELNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q4G3D7.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3D7</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>357.066</Hsp_bit-score>
+      <Hsp_score>915</Hsp_score>
+      <Hsp_evalue>1.0682e-122</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>312</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>228</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>314</Hsp_align-len>
+      <Hsp_qseq>MATNKFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>MQISKFFKFVFISVSLC-GSLLFP-QMANAYPVFAQQAYDNPREATGRIVCANCHLAQKPTEVEVPQAVLPDTVFEAVVNIPYDTKVQQVTASGTPGPLNVGAVVILPEGFKLAPKGRMSDELKAKTKGVFVQPYSKTRPNILVVGPILGEKNREVTFPILAPDPAQDKSVHYLNYPIYVGANRGRGQVYPSGEKSNNNTFTSTAAGKVTAIEAGDKGTTRVTIQTAAGEAKEQTVPAGLKVSVKTGDVIQADQALSYNPNVGGFGQAETEVILQSPNRVKGMIAFFFTVTVAQILLVLKKKQFEKVQAAEMNF</Hsp_hseq>
+      <Hsp_midline>M  +KFFK +  ++++   S  F  Q A AYPVFAQQ Y NPR A G++ CANCHL QK  E+E PQAVLP+++FE  + +PYDT  QQ+ A+G    LNVG +++LPEGFKLAPK ++  E+K K KGVF+ PYS    NILVVGPI G+ ++E+ FP++APDP ++  + YL YP Y G NRGRGQVYP+GEKSN N F +  +G++T I   +KG + + I  + G+   Q +PAGL +S+K G V++ADQ L+ +PNVGGFGQ E+E++LQ+P R+ G +AF F+V + QI+LVLKKKQFEKVQAAE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q20EX6.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Oltmannsiellopsis viridis]</Hit_def>
+  <Hit_accession>Q20EX6</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>350.517</Hsp_bit-score>
+      <Hsp_score>898</Hsp_score>
+      <Hsp_evalue>5.88246e-120</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>319</Hsp_align-len>
+      <Hsp_qseq>MATNKFFKSLLFALTIAINSF--GF-CIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITV--TEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>MFTNNLTKNALVTLVSGFMAIFIGFNTVQPAEAYPIFAQQNFKNPREANGRIVCANCHLAQKPVELEVPQAVLPDTVFEATVKVPYDKSIKQVGANGKPAELNVGAVLILPEGFQLAPSDRIPEEMKTKVGNLYFSPYSTEQKNILVVGPVPGKDYSEMVFPILSPDPAKDKSVSYLNYPVYLGGNRGRGQVYPDGSKSNNNVFGSPVAGTVSEIKALKSKKGGYEVTITTASGNTVVEKIPGGPEVIVSEGEVVTVDQPLTNNPNVGGFGQGEAELVLQNPARIQGLLLFLLATIGAQVFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>M TN   K+ L  L     +   GF  +Q A AYP+FAQQN+ NPR ANG++ CANCHL QK +E+E PQAVLP+++FE  +KVPYD + +Q+GANGK A+LNVG +L+LPEGF+LAP ++IP E+K K   ++ SPYS+E  NILVVGP+ GK + E++FP+++PDP K+  + YL YP Y GGNRGRGQVYP G KSN NVFG+  +G ++EI    ++KG   + I  ++G    + +P G  + + +G+VV  DQPL  +PNVGGFGQ E+E+VLQNP RI G L F  + +  Q+ LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q95AG0.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Chlamydomonas subcaudata]</Hit_def>
+  <Hit_accession>Q95AG0</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>349.747</Hsp_bit-score>
+      <Hsp_score>896</Hsp_score>
+      <Hsp_evalue>1.09337e-119</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>FFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTE--KGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>FLKAIVLSMTITF-AFNMSAPIASAYPIFAQQNYENPREANGRIVCANCHLAQKPVELEVPQAVLPDTVFEAIIQIPYDTQVKQVLANGKKGDLNVGMVLILPEGFELAPADRIPEEMKKKVGNLYYQPYSPDKKNILVVGPVPGKQYSEMVVPLLSPDPATNKNVSYLKYPIYVGGNRGRGQVYPDGSKSNNTVYNSPVSGTITEILKLEGKKGGYTISITKADGVVLTEKIPGGPEVIVKEGQAIIADQPLTNNPNVGGFGQKDVEVVLQNPVRIQGLLAFFACILLAQILLVVKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>F K+++ ++TI   +F      A AYP+FAQQNY NPR ANG++ CANCHL QK +E+E PQAVLP+++FE  I++PYDT  +Q+ ANGKK DLNVG +L+LPEGF+LAP ++IP E+K+K   ++  PYS +  NILVVGP+ GK + E++ P+++PDP  N ++ YL YP Y GGNRGRGQVYP G KSN  V+ +  SG ITEI   E  KG  TI I  ++G   ++ +P G  + +K+GQ + ADQPL  +PNVGGFGQ++ E+VLQNP+RI G LAF   +L+ QI+LV+KKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q32RJ3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Zygnema circumcarinatum]</Hit_def>
+  <Hit_accession>Q32RJ3</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>345.51</Hsp_bit-score>
+      <Hsp_score>885</Hsp_score>
+      <Hsp_evalue>5.40233e-118</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>285</Hsp_align-len>
+      <Hsp_qseq>AYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AYPIFAQQNYESPREATGRIVCANCHLAKKPVEIEVPQAVLPDTVFEAVVKIPYDKQINQVLANGKPGGLNVGAVLILPEGFQLAPPERIPPELKEKIGNLYFQPYRPEKSNILVVGPVPGKTYSEMVFPILAPDPSVNKQAYFLKYPIYLGGNRGRGQIYPDGSKSNNTVYNSPVTGTITSITKNKKGASTVTIITTDNREVVELIPAGPTLLISEGDTVKADQPLTNNPNVGGFGQADAEIVLQDPLRIQGLLVFFASVVLAQIFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>AYP+FAQQNY +PR A G++ CANCHL +K +EIE PQAVLP+++FE  +K+PYD    Q+ ANGK   LNVG +L+LPEGF+LAP  +IP E+KEK   ++  PY  E  NILVVGP+ GKT+ E++FP++APDP  N    +L YP Y GGNRGRGQ+YP G KSN  V+ +  +G IT IT  +KG ST+ I+ ++ ++  +++PAG  L I +G  VKADQPL  +PNVGGFGQ ++EIVLQ+P+RI G L F  SV++ QI LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|P48123.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48123</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>344.739</Hsp_bit-score>
+      <Hsp_score>883</Hsp_score>
+      <Hsp_evalue>9.55186e-118</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>321</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>222</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>309</Hsp_align-len>
+      <Hsp_qseq>FFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>FFISLLLNL---VAQPTIC----QAFPIYAQQAYQIPREATGRIVCANCHLGKKPVEIEVPQAVLPNTVFEAVVKIPIDKGAQQIQANGQKGPLNVGAVLMLPEGFKLAPAERLSEELKAKTAGLYFQPYSADKENILVIGPIPGDKNQEIIFPILSPNPETNKNVKYLKYQLHVGGNRGRGQVSPTGEKTNNTIYNASVNGRISEITKLENGGYEITITTKNGESKIETIPAGPSLVVKKGQTIKADQPLTIDPNVGGFGQMDTEIVLQSAGRVQGLIAFFISVVLAQIFLVLKKKQFEKVQAAEMNF</Hsp_hseq>
+      <Hsp_midline>FF SLL  L   +     C     A+P++AQQ Y  PR A G++ CANCHL +K +EIE PQAVLPN++FE  +K+P D   QQ+ ANG+K  LNVG +LMLPEGFKLAP  ++  E+K K  G++  PYS++ +NILV+GPI G  +QE+IFP+++P+PE N ++KYL Y  + GGNRGRGQV PTGEK+N  ++ A+ +G+I+EIT  E G   I I   NG+   + +PAG  L +K+GQ +KADQPL IDPNVGGFGQ ++EIVLQ+  R+ G +AF  SV++ QI LVLKKKQFEKVQAAE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q32RX2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Staurastrum punctulatum]</Hit_def>
+  <Hit_accession>Q32RX2</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>344.354</Hsp_bit-score>
+      <Hsp_score>882</Hsp_score>
+      <Hsp_evalue>1.41186e-117</Hsp_evalue>
+      <Hsp_query-from>27</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>32</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>217</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>288</Hsp_align-len>
+      <Hsp_qseq>DAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>NSTAFPIYAQQNYESPREATGRIVCANCHLAKKAVDIEVPQAVLPDTVFEAVVKIPYDTQIKQVLSNGKKGGLNVGAVLILPEGFELAPSDRIPPELKEKISNIYFQPYSPEKKNILVVGPLPGNKYSELVFPILSPDPATNKKASFLKYPIYLGGNRGRGQVYPDGSKSNNNVFSASTAGTISQITRQKKGGYEVIIKTTDGREVTDIIPPGPELIVSEGESIKADQLLTNNPNVGGFGQADAEIVLQDPLRIQGLLVFFASVILAQIFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>++ A+P++AQQNY +PR A G++ CANCHL +KA++IE PQAVLP+++FE  +K+PYDT  +Q+ +NGKK  LNVG +L+LPEGF+LAP ++IP E+KEK   ++  PYS E  NILVVGP+ G  + EL+FP+++PDP  N    +L YP Y GGNRGRGQVYP G KSN NVF A+ +G I++IT  +KG   ++I  ++G++ + ++P G  L + +G+ +KADQ L  +PNVGGFGQ ++EIVLQ+P+RI G L F  SV++ QI LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q19V68.2|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Chlorokybus atmophyticus]</Hit_def>
+  <Hit_accession>Q19V68</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>342.813</Hsp_bit-score>
+      <Hsp_score>878</Hsp_score>
+      <Hsp_evalue>6.16304e-117</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>161</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>285</Hsp_align-len>
+      <Hsp_qseq>AYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AYPIFAQQAYENPREATGRIVCANCHLAKKSVDIEVPQAVLPNTVFEAVVKIPYDIQLKQVLANGKKGGLNVGAVLILPEGFQIAPADRIPEEMKSKIGNLYYQPYSAEKKNIVVVGPIPGKTYQEIVFPILSPDPAKDKGTHFFKYPIYVGGNRGRGQIYPDGSKSNNNVYNASTTGKIIQITAKPKGGYILNIETPDGATIEEKIPAGPELIVSEGQSVKADQPLTKNPNVGGFGQTEGEIVLQNPARIQGLIAFFISVIIAQTFLVLKKKQFERVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>AYP+FAQQ Y NPR A G++ CANCHL +K+++IE PQAVLPN++FE  +K+PYD   +Q+ ANGKK  LNVG +L+LPEGF++AP ++IP E+K K   ++  PYS+E  NI+VVGPI GKT+QE++FP+++PDP K+    +  YP Y GGNRGRGQ+YP G KSN NV+ A+ +G+I +IT   KG   + I   +G    + +PAG  L + +GQ VKADQPL  +PNVGGFGQ E EIVLQNP RI G +AF  SV+I Q  LVLKKKQFE+VQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q1XDM2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDM2</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>342.813</Hsp_bit-score>
+      <Hsp_score>878</Hsp_score>
+      <Hsp_evalue>6.23742e-117</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>36</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>155</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>285</Hsp_align-len>
+      <Hsp_qseq>AYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AFPIYAQQAYESPREATGRIVCANCHLAQKPVEIEAPQAVLPNTVFETVVKIPYDSNAKQILGNGSKGGLNVGAVVILPEGFKLAPVNRLSTELKEKTRNLYIQPYSAKQDNILVIGPISGDKNREIVFPILSPDPAKDKKAHFFKYPIYVGGNRGRGQIYPTGDKSNNNIVSALSSGKINKIELLDKGGFIIHVTNSSNVESTQKISPGLELRVKEGDTIQLDQALNSDPNVGGFGQNETEIVLQSPNRIKGMIVFFFASVLAQIFFVLKKKQFEKVQAAEMNF</Hsp_hseq>
+      <Hsp_midline>A+P++AQQ Y +PR A G++ CANCHL QK +EIEAPQAVLPN++FE  +K+PYD+  +Q+  NG K  LNVG +++LPEGFKLAP N++  E+KEK + ++I PYS++ DNILV+GPI+G  ++E++FP+++PDP K+    +  YP Y GGNRGRGQ+YPTG+KSN N+  A  SG+I +I + +KG   I + NS+  +++Q +  GL L +K+G  ++ DQ LN DPNVGGFGQ E+EIVLQ+P RI G + F F+ ++ QI  VLKKKQFEKVQAAE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q6B8T0.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8T0</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.347</Hsp_bit-score>
+      <Hsp_score>869</Hsp_score>
+      <Hsp_evalue>8.37878e-116</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>310</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>308</Hsp_align-len>
+      <Hsp_qseq>FKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>IKLTLLVLISIINLMIIQPIQTLAFPIYAQQGYENPREATGRIVCANCHLAQKPIKIEAPKTVLPNSIFEAIVKIPYDTNNKQLLGNGIKGSINTGAVMILPEGFKLAPKNLLSEELREKTKNVYIQPYSTTKDNILLVGPLAGEKNQEIIFPILSPDPSKDKNIHFLKYPIYIGANRGRGQVYPTGDKSNNNPIVSLNTGKVTKIISLEKGGYKIEIEKDNGEIYTENIPQGLNLMVSQGSQVVANQNLTDDPNVGGFGQTEIEIVLQSPSRIKGMIVFFFTVTIAQIFFVLKKKQWEKVQAAEINF</Hsp_hseq>
+      <Hsp_midline> K  L  L   IN         +A+P++AQQ Y NPR A G++ CANCHL QK I+IEAP+ VLPNSIFE  +K+PYDT  +QL  NG K  +N G +++LPEGFKLAPKN +  E++EK K V+I PYS+  DNIL+VGP+AG+ +QE+IFP+++PDP K+ +I +L YP Y G NRGRGQVYPTG+KSN N   +  +G++T+I   EKG   I I   NG+  ++ +P GL L + QG  V A+Q L  DPNVGGFGQ E EIVLQ+P RI G + F F+V I QI  VLKKKQ+EKVQAAE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|P23577.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Chlamydomonas reinhardtii]</Hit_def>
+  <Hit_accession>P23577</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.732</Hsp_bit-score>
+      <Hsp_score>870</Hsp_score>
+      <Hsp_evalue>9.11479e-116</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>317</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>178</Hsp_identity>
+      <Hsp_positive>234</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>317</Hsp_align-len>
+      <Hsp_qseq>TNKFFKSLLFALTIAI---NSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITV--TEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>SNQVFTTLR-AATLAVILGMAGGLAVSPAQAYPVFAQQNYANPREANGRIVCANCHLAQKAVEIEVPQAVLPDTVFEAVIELPYDKQVKQVLANGKKGDLNVGMVLILPEGFELAPPDRVPAEIKEKVGNLYYQPYSPEQKNILVVGPVPGKKYSEMVVPILSPDPAKNKNVSYLKYPIYFGGNRGRGQVYPDGKKSNNTIYNASAAGKIVAITALSEKKGGFEVSIEKANGEVVVDKIPAGPDLIVKEGQTVQADQPLTNNPNVGGFGQAETEIVLQNPARIQGLLVFFSFVLLTQVLLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>+N+ F +L  A T+A+    + G  +  A AYPVFAQQNY+NPR ANG++ CANCHL QKA+EIE PQAVLP+++FE  I++PYD   +Q+ ANGKK DLNVG +L+LPEGF+LAP +++PAE+KEK   ++  PYS E  NILVVGP+ GK + E++ P+++PDP KN ++ YL YP Y GGNRGRGQVYP G+KSN  ++ A+ +G+I  IT    +KG   + I  +NG+     +PAG  L +K+GQ V+ADQPL  +PNVGGFGQ E+EIVLQNP RI G L F   VL+TQ++LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|P51265.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51265</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.347</Hsp_bit-score>
+      <Hsp_score>869</Hsp_score>
+      <Hsp_evalue>1.41478e-115</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>KFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>KSIYSCTLLLTI-LNIICIAPNSSNAFPIYAQQAYESPREATGRIVCANCHLAQKPVEIEAPQAVLPNTVFETVVKIPYDNNAKQILGNGSKGGLNVGAVVILPEGFKLAPANRLSPELKEKTKNLYIQPYSTKQSNILVIGPIPGDKNREIIFPILSPDPAKDKQAHFFKYPIYVGGNRGRGQIYPTGDKSNNNLISASASGKINKIEALEKGGFIVHITSTKDSEVNQSIPAGVELKVREGETIQLDQAISKDPNVGGFGQNETEIVLQSPNRIKGMIAFFFVSVLAQIFFVLKKKQFEKVQAAEMNF</Hsp_hseq>
+      <Hsp_midline>K   S    LTI +N        + A+P++AQQ Y +PR A G++ CANCHL QK +EIEAPQAVLPN++FE  +K+PYD   +Q+  NG K  LNVG +++LPEGFKLAP N++  E+KEK K ++I PYS++  NILV+GPI G  ++E+IFP+++PDP K+    +  YP Y GGNRGRGQ+YPTG+KSN N+  A+ SG+I +I   EKG   + I ++   + +Q +PAG+ L +++G+ ++ DQ ++ DPNVGGFGQ E+EIVLQ+P RI G +AF F  ++ QI  VLKKKQFEKVQAAE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q1KVS1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Tetradesmus obliquus]</Hit_def>
+  <Hit_accession>Q1KVS1</Hit_accession>
+  <Hit_len>320</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>334.339</Hsp_bit-score>
+      <Hsp_score>856</Hsp_score>
+      <Hsp_evalue>1.31067e-113</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>33</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>288</Hsp_align-len>
+      <Hsp_qseq>AVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEIT-VTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AEAYPIFAQQNYENPREANGRIVCANCHLAQKPVELEVPQAVLPDTVFEAVVKIPYDQQVQQVLGNGKKGDLNVGMVLILPDGFELAPADRVPEEMKKKVGKLFYQPYSPDKKNILVVGPVPGKKYSEMVIPILSPDPATNKNVSFLKYPIYFGGNRGRGQVYPDGSKSNNTVYNSSVTGKISNIAPFDKKGGVEITIETANGDSIVEKIPAGPQVIVTQGQTVQPDQPLTNNPNVGGFGQKDVEIVLQNPARIQGLLVFFATVLFAQVLLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>A AYP+FAQQNY NPR ANG++ CANCHL QK +E+E PQAVLP+++FE  +K+PYD   QQ+  NGKK DLNVG +L+LP+GF+LAP +++P E+K+K   +F  PYS +  NILVVGP+ GK + E++ P+++PDP  N ++ +L YP Y GGNRGRGQVYP G KSN  V+ ++ +G+I+ I    +KG   I I  +NG    + +PAG  + + QGQ V+ DQPL  +PNVGGFGQ++ EIVLQNP RI G L F  +VL  Q++LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q85FK9.2|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Adiantum capillus-veneris]</Hit_def>
+  <Hit_accession>Q85FK9</Hit_accession>
+  <Hit_len>321</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>334.339</Hsp_bit-score>
+      <Hsp_score>856</Hsp_score>
+      <Hsp_evalue>1.46306e-113</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>321</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>316</Hsp_align-len>
+      <Hsp_qseq>TNKFFKSLLFALTIAINSFG--FCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTE-KGESTILILNSN-GKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>TKKWMKEWWILSLAALISFGKLSCPSVSNAYPIFAQQNYENPREATGRIVCANCHLAKKTVDLEAPQSVLPDTVFEAIVKIPYDTRIKQVLANGKKGGLNVGAVLILPEGFELAPPNRIPTELKNKLGKLSFQTYRPGEKNIIVVGPVPGKLYSEIIFPVLSPDPGTNKEAHFLKYPIYVGGNRGRGQIYPDGSKSNNTVYTASATGKIKRITRKEGKGGYEIIIEESSGGREAIDVVPPGPELIVSEGEFVKADQPLTNNPNVGGFGQGEVEIVLQDPRRIQGLLAFFASVVLAQIFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>T K+ K        A+ SFG   C   + AYP+FAQQNY NPR A G++ CANCHL +K +++EAPQ+VLP+++FE  +K+PYDT  +Q+ ANGKK  LNVG +L+LPEGF+LAP N+IP E+K K   +    Y     NI+VVGP+ GK + E+IFPV++PDP  N +  +L YP Y GGNRGRGQ+YP G KSN  V+ A+ +G+I  IT  E KG   I+I  S+ G++   V+P G  L + +G+ VKADQPL  +PNVGGFGQ E EIVLQ+P RI G LAF  SV++ QI LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|A6MVY3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVY3</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>333.569</Hsp_bit-score>
+      <Hsp_score>854</Hsp_score>
+      <Hsp_evalue>2.18492e-113</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>34</Hsp_hit-from>
+      <Hsp_hit-to>318</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>154</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>285</Hsp_align-len>
+      <Hsp_qseq>AYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AFPVYAQQAYENPREATGRIVCANCHLAQKPVEIEVPQGVLPDTVFEAKVEIPYDLSVKQVTGDGTKGPLNVGAVLILPEGFTLAPKDRLTPEMKEKTKGVVISPYSDSKKSIFVVGPIPGAEHQTIIFPILAPNPADNKNVHFIKYPVFVGANRGRGQVNPTGDKSNNTLYSSPVEGRLTKIEKTEKGGYILTIQSKSGDPLTINVPVGPELVVKEGQKVTADQALTVDPNVGGFGQTETEIVLQSPARVKGLIAFFFTVILAQILLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>A+PV+AQQ Y NPR A G++ CANCHL QK +EIE PQ VLP+++FE ++++PYD + +Q+  +G K  LNVG +L+LPEGF LAPK+++  E+KEK KGV ISPYS    +I VVGPI G  HQ +IFP++AP+P  N ++ ++ YP + G NRGRGQV PTG+KSN  ++ +   G++T+I  TEKG   + I + +G   +  +P G  L +K+GQ V ADQ L +DPNVGGFGQ E+EIVLQ+P R+ G +AF F+V++ QI+LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q6YXL3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Physcomitrium patens]</Hit_def>
+  <Hit_accession>Q6YXL3</Hit_accession>
+  <Hit_len>319</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>332.028</Hsp_bit-score>
+      <Hsp_score>850</Hsp_score>
+      <Hsp_evalue>1.00746e-112</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>35</Hsp_hit-from>
+      <Hsp_hit-to>319</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>152</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>285</Hsp_align-len>
+      <Hsp_qseq>AYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>AYPIFAQQAYEDPREATGRIVCANCHLAKKPVDIEVPQSVLPDTVFEAVVKIPYDMQIKQVLANGKKGALNVGAVLILPKGFELAPADRIPPEMKEKIGNLYFQPYSSDKKNILVIGPVPGKKYSEMVFPILSPDPAVNKEANFLKYPIYLGANRGRGQIYPDGSKSNNTVYNASAAGTVSKIFRKEKGGYEITIDTQDGRQIVDIVPAGPELIISEGELIKADQPLTNNPNVGGFGQGDAEIVLQDPLRVQSLLVFFVSVTLAQIFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>AYP+FAQQ Y +PR A G++ CANCHL +K ++IE PQ+VLP+++FE  +K+PYD   +Q+ ANGKK  LNVG +L+LP+GF+LAP ++IP E+KEK   ++  PYSS+  NILV+GP+ GK + E++FP+++PDP  N +  +L YP Y G NRGRGQ+YP G KSN  V+ A+ +G +++I   EKG   I I   +G+Q   ++PAG  L I +G+++KADQPL  +PNVGGFGQ ++EIVLQ+P+R+   L F  SV + QI LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P56316.2|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Chlorella vulgaris]</Hit_def>
+  <Hit_accession>P56316</Hit_accession>
+  <Hit_len>315</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.102</Hsp_bit-score>
+      <Hsp_score>845</Hsp_score>
+      <Hsp_evalue>4.88423e-112</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>315</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>166</Hsp_identity>
+      <Hsp_positive>219</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>311</Hsp_align-len>
+      <Hsp_qseq>KFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEIT-VTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>KFSTLVSKGVLVLVCSF-FLTASSNAYPIFAQQNYANPREANGRIVCANCHLAEKPIEIEVPQAVLPDTVFEAVVKIPYDKQIKQVLANGKKGDLNVGAVLILPDGFEIAPPDRIPEEMKAKVGKLYFQPYSAEKKTIFVVGPVPGKKYSEMVFPILSPDPAKTKSISYLKYPIYVGGNRGRGQVYPDGSKSNNTIFTASAAGKITAIEPAGKKGGYTLTIETANGESISEKLPPGPELVVNIGDIVGVDQALTTNPNVGGFGQGETEVVLQNPLRIQGLLVFFLFVLLAQVFLVLKKKQFEKVQLAEMNF</Hsp_hseq>
+      <Hsp_midline>KF   +   + + + SF F    + AYP+FAQQNY+NPR ANG++ CANCHL +K IEIE PQAVLP+++FE  +K+PYD   +Q+ ANGKK DLNVG +L+LP+GF++AP ++IP E+K K   ++  PYS+E   I VVGP+ GK + E++FP+++PDP K   I YL YP Y GGNRGRGQVYP G KSN  +F A+ +G+IT I    +KG  T+ I  +NG+  S+ LP G  L +  G +V  DQ L  +PNVGGFGQ E+E+VLQNP+RI G L F   VL+ Q+ LVLKKKQFEKVQ AE+NF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P0C8N4.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome f; Flags: Precursor [Synechococcus elongatus] &gt;sp|P0C8N5.1| RecName: Full=Cytochrome f; Flags: Precursor [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>P0C8N4</Hit_accession>
+  <Hit_len>311</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>328.176</Hsp_bit-score>
+      <Hsp_score>840</Hsp_score>
+      <Hsp_evalue>2.2177e-111</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>314</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>311</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>156</Hsp_identity>
+      <Hsp_positive>218</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>310</Hsp_align-len>
+      <Hsp_qseq>KFFKSLLFALTIAINSFGFCIQDAVAYPVFAQQNYSNPRAANGKLACANCHLNQKAIEIEAPQAVLPNSIFEVEIKVPYDTTKQQLGANGKKADLNVGGILMLPEGFKLAPKNQIPAEVKEKNKGVFISPYSSEFDNILVVGPIAGKTHQELIFPVMAPDPEKNSDIKYLTYPFYAGGNRGRGQVYPTGEKSNVNVFGANQSGQITEITVTEKGESTILILNSNGKQTSQVLPAGLILSIKQGQVVKADQPLNIDPNVGGFGQEESEIVLQNPIRIYGYLAFCFSVLITQIMLVLKKKQFEKVQAAELNF</Hsp_qseq>
+      <Hsp_hseq>HFFKSLTLAIALAASVL-FWSPQAQAYPFYAQQGYESPREATGRIVCANCHLAAKPIQVEVPQAVTPDSVFEAVVKIPYDTSVQQVLGDGSKGGLNVGAVLMLPEGFKIAPPDRLPEELQAKTSGIYYQPYSDDQQNIILVGPLPGEQYQEIVFPILAPNPGTDKSIHFGKYAVHAGGNRGRGQVYPNGEKSNNNVFTAPIAGTITSITPNPDGSTAVVITPENGEAVTETVPAGPELIVREGQTVVAGAALTNNPNVGGFGQKDTEIVLQDPNRIKWLLVFFAAITLSQILLVLKKKQVEKVQAAEMSF</Hsp_hseq>
+      <Hsp_midline> FFKSL  A+ +A +   F    A AYP +AQQ Y +PR A G++ CANCHL  K I++E PQAV P+S+FE  +K+PYDT+ QQ+  +G K  LNVG +LMLPEGFK+AP +++P E++ K  G++  PYS +  NI++VGP+ G+ +QE++FP++AP+P  +  I +  Y  +AGGNRGRGQVYP GEKSN NVF A  +G IT IT    G + ++I   NG+  ++ +PAG  L +++GQ V A   L  +PNVGGFGQ+++EIVLQ+P RI   L F  ++ ++QI+LVLKKKQ EKVQAAE++F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_22323</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|Q08585|FCPB_PHATR Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPB PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>198</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_22323</Iteration_query-ID>
+  <Iteration_query-def>sp|Q08585|FCPB_PHATR Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPB PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>198</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|Q08585.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q08585</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>397.897</Hsp_bit-score>
+      <Hsp_score>1021</Hsp_score>
+      <Hsp_evalue>1.69562e-142</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>198</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>198</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>198</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILPGV</Hsp_qseq>
+      <Hsp_hseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILPGV</Hsp_hseq>
+      <Hsp_midline>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILPGV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|Q41093.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein E, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q41093</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.872</Hsp_bit-score>
+      <Hsp_score>847</Hsp_score>
+      <Hsp_evalue>4.65166e-116</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>176</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILP</Hsp_qseq>
+      <Hsp_hseq>MKFVVFASLLASAARFAPAQQSARTSVATNMAFENELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLVQENGIRLPGDIDYSGTSFESIPNGFAALTTISGAGIAQIVAFIGFLELAVMKDITGGEFVGDFRNDFIDFGWDSFDEETKMQKRAIELNQGRAAQMGILALMVHEQLGVSLIP</Hsp_hseq>
+      <Hsp_midline>MKF VFASL ASAA FAPAQQ+ARTSVATNMAFE+ELGAQ PLGF+DPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYL QE G RL GDI   GT F  IPNGFAAL+ I  AG+ QI+AFIGFLE +VMKDITGGEFVGDFRN +IDFGWDSFD+ETK++KRAIELNQGRAAQMGILALMVHEQLGV+++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|Q08584.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein A, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q08584</Hit_accession>
+  <Hit_len>196</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>328.946</Hsp_bit-score>
+      <Hsp_score>842</Hsp_score>
+      <Hsp_evalue>3.16234e-115</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>160</Hsp_identity>
+      <Hsp_positive>175</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILP</Hsp_qseq>
+      <Hsp_hseq>MKFAVFASLLASRAAFAPAQQSARTSVATNMAFENEIGAQQPLGYWDPLGLVADGNQEKFDRLRYVEIKHGRICMLAVAGYLTQEAGIRLPGDIDYSGTSFESIPNGFAALSAVPGAGIAQIIAFIGFFEIAVMKDITGGEFVGDFRNNYLDFGWDTFSEDKKLQKRAIELNQGRAAQMGILALMVHEQLGVSILP</Hsp_hseq>
+      <Hsp_midline>MKF VFASL AS AAFAPAQQ+ARTSVATNMAFE+E+GAQ PLG++DPLGLVADG+QEKFDRLRYVEIKHGRI MLAVAGYL QEAG RL GDI   GT F  IPNGFAALSA+P AG+ QIIAFIGF E +VMKDITGGEFVGDFRN Y+DFGWD+F ++ KL+KRAIELNQGRAAQMGILALMVHEQLGV+ILP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q41094.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein F, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q41094</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>296.204</Hsp_bit-score>
+      <Hsp_score>757</Hsp_score>
+      <Hsp_evalue>2.25887e-102</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>175</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>196</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILP</Hsp_qseq>
+      <Hsp_hseq>MKFAVFASLLASAAAFAPAQQSARTSVATNMAFESELGAQPPLGFFDPLGLVADGDQEKFDRLRYVELKHGRISMLAVVGYLVQENGIRLPGDIDYSGTSFASIPNGFAALSTISTAGIAQIVAFIGFLEIAVMKDITGGEFPGDFRNDYIDFGWDSFDEETQFKKRAIELNQGRAAQMGILALMVHEKLGVSLIP</Hsp_hseq>
+      <Hsp_midline>MKF VFASL ASAAAFAPAQQ+ARTSVATNMAFESELGAQ PLGF+DPLGLVADGDQEKFDRLRYVE+KHGRISMLAV GYL QE G RL GDI   GT FA IPNGFAALS I  AG+ QI+AFIGFLE +VMKDITGGEF GDFRN YIDFGWDSFD+ET+ +KRAIELNQGRAAQMGILALMVHE+LGV+++P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q08587.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein D, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q08587</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.944</Hsp_bit-score>
+      <Hsp_score>707</Hsp_score>
+      <Hsp_evalue>9.99272e-95</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITG-GEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILP</Hsp_qseq>
+      <Hsp_hseq>MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLP</Hsp_hseq>
+      <Hsp_midline>MK  V ASL A AAAFAPA+ AARTSVATNMAFE ELGAQ PLGF+DPLGLVADGDQEKFDRLRYVEIKHGRISMLAV GYL QEAG RL G I   G  FA+IP+  AA   IP  GL+Q++ FIG LE+SVM+D+TG  EFVGDFRNG IDFGWD+FD+ET+ +KRAIELNQGRAAQMGILALMVHEQLGV++LP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q08586.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein C, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum]</Hit_def>
+  <Hit_accession>Q08586</Hit_accession>
+  <Hit_len>197</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.559</Hsp_bit-score>
+      <Hsp_score>706</Hsp_score>
+      <Hsp_evalue>1.24399e-94</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>196</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>196</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>150</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>197</Hsp_align-len>
+      <Hsp_qseq>MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITG-GEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILP</Hsp_qseq>
+      <Hsp_hseq>MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPK-FAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILAFMVHEQLGVSLLP</Hsp_hseq>
+      <Hsp_midline>MK  V ASL A AAAFAPA+ AARTSVATNMAFE ELGAQ PLGF+DPLGLVADGDQEKFDRLRYVEIKHGRISMLAV GYL QEAG RL G I   G  FA+IP  FAA   IP  GL+Q++ FIG LE+SVM+D+TG  EFVGDFRNG IDFGWD+FD+ET+ +KRAIELNQGRAAQMGILA MVHEQLGV++LP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q42395.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein, chloroplastic; Short=FCP; Flags: Precursor [Trieres chinensis]</Hit_def>
+  <Hit_accession>Q42395</Hit_accession>
+  <Hit_len>203</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>238.424</Hsp_bit-score>
+      <Hsp_score>607</Hsp_score>
+      <Hsp_evalue>1.74358e-79</Hsp_evalue>
+      <Hsp_query-from>21</Hsp_query-from>
+      <Hsp_query-to>194</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>197</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>QAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALS---AIPQAGLIQIIAFIGFLETSVMKDITG-GEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNI</Hsp_qseq>
+      <Hsp_hseq>QSGKASTALNMAFESELGAQPPLGFFDPLGMLADADQERFDRLRYVEVKHGRIAHVAFLGQIVTRNGIHLSGNIDYAGNSFDSFPNGWAAISGPDAIPQAGLLQIVAFVGILELAVMKDVTGEGEFPGDFRNGALDFGWDTFDEETKLSKRAIELNNGRAAMMGILGLMVHEQLGGSI</Hsp_hseq>
+      <Hsp_midline>Q+ + S A NMAFESELGAQ PLGF+DPLG++AD DQE+FDRLRYVE+KHGRI+ +A  G +    G  L G+I   G  F   PNG+AA+S   AIPQAGL+QI+AF+G LE +VMKD+TG GEF GDFRNG +DFGWD+FD+ETKL KRAIELN GRAA MGIL LMVHEQLG +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q40296.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40296</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.305</Hsp_bit-score>
+      <Hsp_score>534</Hsp_score>
+      <Hsp_evalue>3.68836e-68</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>132</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>AARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGT-KFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFG--WDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>SAKACSAMKMSFESEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQ-NTRLPGMLSNSANLSFADMPNGVAALSKIPPAGLAQIFAFIGFLELAVMKNVE-GSFPGDFTLGGNPFGASWDAMSEETQASKRAIELNNGRAAQMGILALMVHEEL</Hsp_hseq>
+      <Hsp_midline>+A+   A  M+FESE+GAQAPLGF+DPLGL+AD DQE+F+RLRYVE+KHGRI+MLA+AG+L Q+   RL G ++      FAD+PNG AALS IP AGL QI AFIGFLE +VMK++  G F GDF  G   FG  WD+  +ET+  KRAIELN GRAAQMGILALMVHE+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q40297.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein A, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40297</Hit_accession>
+  <Hit_len>217</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>209.534</Hsp_bit-score>
+      <Hsp_score>532</Hsp_score>
+      <Hsp_evalue>7.6629e-68</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>199</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>AARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGT-KFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDFG--WDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>SAKSSSAMKMSFESEIGAQAPLGFWDPLGLLADADQDGFERLRYVEVKHGRIAMLAIAGHLTQQNA-RLPGMLSNSANLSFADMPNGVAALSKIPPAGLAQIFAFIGFLELAVMKNVE-GSFPGDFTLGGNPFGASWDAMSEETQASKRAIELNNGRAAQMGILALMVHEEL</Hsp_hseq>
+      <Hsp_midline>+A++S A  M+FESE+GAQAPLGF+DPLGL+AD DQ+ F+RLRYVE+KHGRI+MLA+AG+L Q+   RL G ++      FAD+PNG AALS IP AGL QI AFIGFLE +VMK++  G F GDF  G   FG  WD+  +ET+  KRAIELN GRAAQMGILALMVHE+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q40300.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein F, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40300</Hit_accession>
+  <Hit_len>211</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>205.297</Hsp_bit-score>
+      <Hsp_score>521</Hsp_score>
+      <Hsp_evalue>3.51092e-66</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>111</Hsp_identity>
+      <Hsp_positive>133</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>186</Hsp_align-len>
+      <Hsp_qseq>SLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGT-KFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDF--GWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>SAFNGAALSTPA----KSSSAMKMSFESEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQ-NTRLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVE-GSFPGDFIIGGNPFASSWDSMSSETQASKRAIELNNGRAAQMGILGMMVHEEL</Hsp_hseq>
+      <Hsp_midline>S F  AA   PA    ++S A  M+FESE+GAQAPLGF+DPLGL+AD DQE+F+RLRYVE+KHGRI+MLA+AG+L Q+   RL G ++      FAD+PNG AALS IP  GL QI  FIGFLE +VMK++  G F GDF  G   F   WDS   ET+  KRAIELN GRAAQMGIL +MVHE+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q40298.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein D, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40298</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.593</Hsp_bit-score>
+      <Hsp_score>501</Hsp_score>
+      <Hsp_evalue>1.19316e-63</Hsp_evalue>
+      <Hsp_query-from>28</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>166</Hsp_align-len>
+      <Hsp_qseq>ATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGT-KFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDF--GWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>AMKMSFELEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQNA-RLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVE-GSFPGDFTLGGNPFASSWDAMSEETQESKRAIELNNGRAAQMGILALMVHEEL</Hsp_hseq>
+      <Hsp_midline>A  M+FE E+GAQAPLGF+DPLGL+AD DQE+F+RLRYVE+KHGRI+MLA+AG+L Q+   RL G ++      FAD+PNG AALS IP  GL QI  FIGFLE +VMK++  G F GDF  G   F   WD+  +ET+  KRAIELN GRAAQMGILALMVHE+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q40299.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein C, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40299</Hit_accession>
+  <Hit_len>216</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>197.593</Hsp_bit-score>
+      <Hsp_score>501</Hsp_score>
+      <Hsp_evalue>3.96916e-63</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>127</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>AARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGT-KFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDF--GWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>SAKSSSAMKMSFESEIGAQAPLGFWDPLGLLEDADQDAFERLRYVEVKLGRIAMLAIAGHLTQQNA-RLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVE-GSFPGDFTLGGNPFASSWDAMSAETQASKRAIELNNGRAAQMGILALMVHEEL</Hsp_hseq>
+      <Hsp_midline>+A++S A  M+FESE+GAQAPLGF+DPLGL+ D DQ+ F+RLRYVE+K GRI+MLA+AG+L Q+   RL G ++      FAD+PNG AALS IP  GL QI  FIGFLE +VMK++  G F GDF  G   F   WD+   ET+  KRAIELN GRAAQMGILALMVHE+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q40301.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein E, chloroplastic; Flags: Precursor [Macrocystis pyrifera]</Hit_def>
+  <Hit_accession>Q40301</Hit_accession>
+  <Hit_len>212</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.66</Hsp_bit-score>
+      <Hsp_score>483</Hsp_score>
+      <Hsp_evalue>2.10568e-60</Hsp_evalue>
+      <Hsp_query-from>22</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>172</Hsp_align-len>
+      <Hsp_qseq>AARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIAL-DGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDF--GWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>SAKSSSAMKMSFESEIGAQPPIGFWDPLGLVADADQERFDRLRYVEIKHGRIAMLAVVGHITQQ-NTRLPGMLSFKENLAFADSPNGVAAFSKIPPLGTLQIILAIGCHELFVVKQVE-GSFPGDCTTGGNIFQSAWDNMSEETQASKRAIELNNGRAAQMGILAMMVHEQL</Hsp_hseq>
+      <Hsp_midline>+A++S A  M+FESE+GAQ P+GF+DPLGLVAD DQE+FDRLRYVEIKHGRI+MLAV G++ Q+   RL G ++  +   FAD PNG AA S IP  G +QII  IG  E  V+K +  G F GD   G   F   WD+  +ET+  KRAIELN GRAAQMGILA+MVHEQL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|P55738.1|</Hit_id>
+  <Hit_def>RecName: Full=Caroteno-chlorophyll a-c-binding protein [Amphidinium carterae]</Hit_def>
+  <Hit_accession>P55738</Hit_accession>
+  <Hit_len>102</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>7.33582e-19</Hsp_evalue>
+      <Hsp_query-from>33</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>95</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>94</Hsp_align-len>
+      <Hsp_qseq>FESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALD-GTKFADIPNGFAALSAIPQAGLIQIIAF</Hsp_qseq>
+      <Hsp_hseq>FENERGVADPVGFFDPLGFTADGSVENFKKLAQTEIKHGRVAMLATMGYITQEITGKLPGYLSPSTGVKYDDDINGVLGLIKIVPAGLWGIMIF</Hsp_hseq>
+      <Hsp_midline>FE+E G   P+GF+DPLG  ADG  E F +L   EIKHGR++MLA  GY+ QE   +L G ++   G K+ D  NG   L  I  AGL  I+ F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|A0A4Y1YQ38.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein, chloroplastic; Short=FCP; Flags: Precursor [Chattonella marina var. antiqua]</Hit_def>
+  <Hit_accession>A0A4Y1YQ38</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>60.077</Hsp_bit-score>
+      <Hsp_score>144</Hsp_score>
+      <Hsp_evalue>5.15027e-10</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>85</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>203</Hsp_align-len>
+      <Hsp_qseq>VFASLFASAAAF-APAQ--QAARTSVATNMAFESE----LGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYI-----DFGWDSF-----DQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>VAALMVGSASAFLAPAQFNSVAKSSGALSMKLGSSAEGLIGSDLELPEFDPLGFTNNPAPGALEWYRAAELKHGRVAMLAALGQLVQ---------------SFYHLPDPVFSESAKPWQALVKVCNERPLAAVQIGLAIFACEAIGQANQAKPGQAAGDLGWDPLNLRGSNEEIFERAQLRELKNGRLAMIAITAMIVQENL</Hsp_hseq>
+      <Hsp_midline>V A +  SA+AF APAQ    A++S A +M   S     +G+   L  +DPLG   +      +  R  E+KHGR++MLA  G L Q                F  +P+   + SA P   L+++          +   I   E +G            D GWD       ++E   R +  EL  GR A + I A++V E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q39709.1|</Hit_id>
+  <Hit_def>RecName: Full=Fucoxanthin-chlorophyll a-c binding protein, chloroplastic; Short=FCP; Flags: Precursor [Isochrysis galbana]</Hit_def>
+  <Hit_accession>Q39709</Hit_accession>
+  <Hit_len>208</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.000101558</Hsp_evalue>
+      <Hsp_query-from>43</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>152</Hsp_hit-from>
+      <Hsp_hit-to>193</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>LGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEA</Hsp_qseq>
+      <Hsp_hseq>LGF-DPLGL-APSDPDEFRLMQEKELSHGRLAMIAAAGFLAQEA</Hsp_hseq>
+      <Hsp_midline>LGF DPLGL A  D ++F  ++  E+ HGR++M+A AG+LAQEA</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.000130301</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>83</Hsp_align-len>
+      <Hsp_qseq>VFASLFASA-AAFAPAQQAARTSVATNMAFESEL-GAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQE</Hsp_qseq>
+      <Hsp_hseq>TLASLPSTAIAGLASAAPKVQPRMAANDEFAYGLPGGANILGEFDPAGFLKGKDKLEVYRLREAETTHGRVAMLASLGFVVQE</Hsp_hseq>
+      <Hsp_midline>  ASL ++A A  A A    +  +A N  F   L G    LG +DP G +   D+ +  RLR  E  HGR++MLA  G++ QE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q9SDM1.1|</Hit_id>
+  <Hit_def>RecName: Full=Chlorophyll a-b binding protein 1B-21, chloroplastic; AltName: Full=LHCI type I CAB-1B-21; AltName: Full=LHCI-730 chlorophyll a/b binding protein; AltName: Full=Light-harvesting complex I 21 kDa protein; Flags: Precursor [Hordeum vulgare]</Hit_def>
+  <Hit_accession>Q9SDM1</Hit_accession>
+  <Hit_len>245</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>0.000115175</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>103</Hsp_query-to>
+      <Hsp_hit-from>168</Hsp_hit-from>
+      <Hsp_hit-to>227</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>PLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFAD</Hsp_qseq>
+      <Hsp_hseq>PGGAFDPLGF--SKDPAKFEELKLKEIKNGRLAMLAFVGFCVQQSAYPGTGPLENLATHLAD</Hsp_hseq>
+      <Hsp_midline>P G +DPLG     D  KF+ L+  EIK+GR++MLA  G+  Q++ +   G +    T  AD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|P12360.1|</Hit_id>
+  <Hit_def>RecName: Full=Chlorophyll a-b binding protein 6A, chloroplastic; AltName: Full=LHCI type I CAB-6A; AltName: Full=Light-harvesting complex I 26 kDa protein; Flags: Precursor [Solanum lycopersicum]</Hit_def>
+  <Hit_accession>P12360</Hit_accession>
+  <Hit_len>246</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.669</Hsp_bit-score>
+      <Hsp_score>104</Hsp_score>
+      <Hsp_evalue>0.000141044</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>103</Hsp_query-to>
+      <Hsp_hit-from>169</Hsp_hit-from>
+      <Hsp_hit-to>228</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>62</Hsp_align-len>
+      <Hsp_qseq>PLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFAD</Hsp_qseq>
+      <Hsp_hseq>PGGAFDPLGY--SKDPAKFEELKVKEIKNGRLALLAIVGFCVQQSAYLGTGPLENLATHLAD</Hsp_hseq>
+      <Hsp_midline>P G +DPLG     D  KF+ L+  EIK+GR+++LA+ G+  Q++ +   G +    T  AD</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q9S7W1.1|</Hit_id>
+  <Hit_def>RecName: Full=Chlorophyll a-b binding protein CP29.3, chloroplastic; AltName: Full=LHCB4.3; AltName: Full=LHCII protein 4.3; Flags: Precursor [Arabidopsis thaliana]</Hit_def>
+  <Hit_accession>Q9S7W1</Hit_accession>
+  <Hit_len>276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.000572985</Hsp_evalue>
+      <Hsp_query-from>42</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>219</Hsp_hit-from>
+      <Hsp_hit-to>261</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>45</Hsp_align-len>
+      <Hsp_qseq>PLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEA</Hsp_qseq>
+      <Hsp_hseq>PGGYFDPLGLAAD--PEKLDTLKLAEIKHSRLAMVAFLIFALQAA</Hsp_hseq>
+      <Hsp_midline>P G++DPLGL AD   EK D L+  EIKH R++M+A   +  Q A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P08976.1|</Hit_id>
+  <Hit_def>RecName: Full=Light-harvesting complex I LH38 proteins; Contains: RecName: Full=LH38 protein 1; Contains: RecName: Full=LH38 protein 2; Contains: RecName: Full=LH38 protein 3; Flags: Precursor [Euglena gracilis]</Hit_def>
+  <Hit_accession>P08976</Hit_accession>
+  <Hit_len>530</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.743</Hsp_bit-score>
+      <Hsp_score>99</Hsp_score>
+      <Hsp_evalue>0.00083923</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>62</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>YDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQE</Hsp_qseq>
+      <Hsp_hseq>FDPAGLAADPD--TFERMRIAEVYHGRLAMLAVVGALVPD</Hsp_hseq>
+      <Hsp_midline>+DP GL AD D   F+R+R  E+ HGR++MLAV G L  +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.0466</Hsp_bit-score>
+      <Hsp_score>92</Hsp_score>
+      <Hsp_evalue>0.0063479</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>110</Hsp_query-to>
+      <Hsp_hit-from>210</Hsp_hit-from>
+      <Hsp_hit-to>275</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>YDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQE----AGWRLGGDIALDGTKFADIPNGFAA</Hsp_qseq>
+      <Hsp_hseq>FDPLNLAADPD--VYARMRVAEVFHGRLAMLCTVGCIVPELLGKGAWFEAGD-SVDGLKLGFITMAIAA</Hsp_hseq>
+      <Hsp_midline>+DPL L AD D   + R+R  E+ HGR++ML   G +  E      W   GD ++DG K   I    AA</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>3</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.0483869</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>190</Hsp_query-to>
+      <Hsp_hit-from>394</Hsp_hit-from>
+      <Hsp_hit-to>519</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>63</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>YDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITGGEFVGDFRNGYIDF-GWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQL</Hsp_qseq>
+      <Hsp_hseq>FDPAGLAAD--PVTFERMQVAEVFHCRLSMLALVGCLVPEL---LGNGAWFQIWDKVDF-NRFAVVA-------LQVVAPLEYWRGN------GGFLWNDEETVDQSYPGFDPLNLTTEYTKEA-EIKNGRLAMNGMFGLEVQSHV</Hsp_hseq>
+      <Hsp_midline>+DP GL AD     F+R++  E+ H R+SMLA+ G L  E    LG           D  N FA ++       +Q++A + +   +      GG    D       + G+D  +  T+  K A E+  GR A  G+  L V   +</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>4</Hsp_num>
+      <Hsp_bit-score>30.8018</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>8.94557</Hsp_evalue>
+      <Hsp_query-from>46</Hsp_query-from>
+      <Hsp_query-to>84</Hsp_query-to>
+      <Hsp_hit-from>300</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>YDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQ</Hsp_qseq>
+      <Hsp_hseq>FDPLNLTTD-------YTRAAEVKNGRLALTAVAGLTAQ</Hsp_hseq>
+      <Hsp_midline>+DPL L  D         R  E+K+GR+++ AVAG  AQ</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

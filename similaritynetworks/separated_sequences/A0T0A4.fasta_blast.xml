@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_12059</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0A4|PSBF_PHATC Cytochrome b559 subunit beta OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbF PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>43</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_12059</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0A4|PSBF_PHATC Cytochrome b559 subunit beta OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbF PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>43</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0A4.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0A4</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>89.3521</Hsp_bit-score>
+      <Hsp_score>220</Hsp_score>
+      <Hsp_evalue>2.97791e-25</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>43</Hsp_identity>
+      <Hsp_positive>43</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_hseq>
+      <Hsp_midline>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49474.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49474</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.8113</Hsp_bit-score>
+      <Hsp_score>216</Hsp_score>
+      <Hsp_evalue>1.1013e-24</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MTKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_hseq>
+      <Hsp_midline>M KNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0U1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0U1</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>1.54835e-24</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>41</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MTKNINQPVAYPIFTFRWLAVHGLAIPTVFFLGGITAMQFIQR</Hsp_hseq>
+      <Hsp_midline>M KNINQPVAYPIFTFRWLA+HGLAIPTVFFLGGITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51390.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Porphyra purpurea] &gt;sp|Q1XD97.1| RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>P51390</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.1814</Hsp_bit-score>
+      <Hsp_score>191</Hsp_score>
+      <Hsp_evalue>7.1598e-21</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>NINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>NANQPVSYPIFTFRWLAIHGLAIPTVFFLGAITSMQFIQR</Hsp_hseq>
+      <Hsp_midline>N NQPV+YPIFTFRWLAIHGLAIPTVFFLG IT+MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q6B8K5.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8K5</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>76.2554</Hsp_bit-score>
+      <Hsp_score>186</Hsp_score>
+      <Hsp_evalue>4.53647e-20</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>38</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>NINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>NSNQPISYPIFTFRWLAIHGIAIPTVFFLGAITSMQFIQR</Hsp_hseq>
+      <Hsp_midline>N NQP++YPIFTFRWLAIHG+AIPTVFFLG IT+MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|O78465.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Guillardia theta]</Hit_def>
+  <Hit_accession>O78465</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>75.485</Hsp_bit-score>
+      <Hsp_score>184</Hsp_score>
+      <Hsp_evalue>7.71219e-20</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>KNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>SKIKQPISYPIFTFRWLAIHGLAVPTVFFLGAITSMQFIQR</Hsp_hseq>
+      <Hsp_midline>  I QP++YPIFTFRWLAIHGLA+PTVFFLG IT+MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q4G381.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G381</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>75.485</Hsp_bit-score>
+      <Hsp_score>184</Hsp_score>
+      <Hsp_evalue>7.88358e-20</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>NINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>NTNQPVAYPIFTFRWLTIHALAVPTVFFLGAITSMQFIQR</Hsp_hseq>
+      <Hsp_midline>N NQPVAYPIFTFRWL IH LA+PTVFFLG IT+MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q9TM21.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TM21</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>73.9442</Hsp_bit-score>
+      <Hsp_score>180</Hsp_score>
+      <Hsp_evalue>3.87253e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MANKPLQPISYPIFTFRWLAIHGLAIPTVFFFGAITAMQFIQR</Hsp_hseq>
+      <Hsp_midline>MA    QP++YPIFTFRWLAIHGLAIPTVFF G ITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q3MC10.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MC10</Hit_accession>
+  <Hit_len>45</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>72.4034</Hsp_bit-score>
+      <Hsp_score>176</Hsp_score>
+      <Hsp_evalue>1.47634e-18</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>45</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>GNNINQPVTYPIFTVRWLAVHTLAVPTVFFLGAIASMQFIQR</Hsp_hseq>
+      <Hsp_midline>  NINQPV YPIFT RWLA+H LA+PTVFFLG I +MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|B7K625.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Rippkaea orientalis PCC 8801]</Hit_def>
+  <Hit_accession>B7K625</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.633</Hsp_bit-score>
+      <Hsp_score>174</Hsp_score>
+      <Hsp_evalue>2.82632e-18</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>37</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>SNNPNQPVSYPIFTVRWLSVHALAVPTVFFIGAISAMQFIQR</Hsp_hseq>
+      <Hsp_midline>+ N NQPV+YPIFT RWL++H LA+PTVFF+G I+AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q8YQI1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YQI1</Hit_accession>
+  <Hit_len>45</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>71.2478</Hsp_bit-score>
+      <Hsp_score>173</Hsp_score>
+      <Hsp_evalue>3.92585e-18</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>45</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>GNNINQPVTYPIFTVRWIAVHTLAVPTVFFLGAIASMQFIQR</Hsp_hseq>
+      <Hsp_midline>  NINQPV YPIFT RW+A+H LA+PTVFFLG I +MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q85FQ3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85FQ3</Hit_accession>
+  <Hit_len>40</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.8626</Hsp_bit-score>
+      <Hsp_score>172</Hsp_score>
+      <Hsp_evalue>4.99134e-18</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>40</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>38</Hsp_align-len>
+      <Hsp_qseq>NQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>KQPINYPIFTFRWLAIHGLAVPTVFFFGAITAMQFIQR</Hsp_hseq>
+      <Hsp_midline> QP+ YPIFTFRWLAIHGLA+PTVFF G ITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q10YS9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q10YS9</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>70.0922</Hsp_bit-score>
+      <Hsp_score>170</Hsp_score>
+      <Hsp_evalue>1.48549e-17</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>SQNPNQPISYPIFTVRWLAVHTLGVPTVFFLGAIAAMQFIQR</Hsp_hseq>
+      <Hsp_midline>++N NQP++YPIFT RWLA+H L +PTVFFLG I AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|B2J6T1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J6T1</Hit_accession>
+  <Hit_len>45</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.73063e-17</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>45</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>GNNINQPVTYPIFTVRWLAVHTLGVPTVFFLGAIAAMQFIHR</Hsp_hseq>
+      <Hsp_midline>  NINQPV YPIFT RWLA+H L +PTVFFLG I AMQFI R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q8RSW2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Synechococcus sp. PCC 7002]</Hit_def>
+  <Hit_accession>Q8RSW2</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.75426e-17</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MTSGPNQPVSYPIFTVRWLAVHTLAVPSVFFLGAIAAMQFIQR</Hsp_hseq>
+      <Hsp_midline>M    NQPV+YPIFT RWLA+H LA+P+VFFLG I AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q06J12.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Bigelowiella natans]</Hit_def>
+  <Hit_accession>Q06J12</Hit_accession>
+  <Hit_len>51</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.707</Hsp_bit-score>
+      <Hsp_score>169</Hsp_score>
+      <Hsp_evalue>1.88964e-17</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>51</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>38</Hsp_align-len>
+      <Hsp_qseq>NQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>KKPVVYPIFTFRWLAVHALAVPTVFFIGSITSMQFIQR</Hsp_hseq>
+      <Hsp_midline> +PV YPIFTFRWLA+H LA+PTVFF+G IT+MQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|B0JLV0.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B0JLV0</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>69.3218</Hsp_bit-score>
+      <Hsp_score>168</Hsp_score>
+      <Hsp_evalue>2.77906e-17</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>AKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>SGNPNQPISYPIFTVRWLAVHTLAVPTVFFIGAIAAMQFIQR</Hsp_hseq>
+      <Hsp_midline>+ N NQP++YPIFT RWLA+H LA+PTVFF+G I AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q2JLE9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JLE9</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>3.14079e-17</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>43</Hsp_align-len>
+      <Hsp_qseq>MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>MATKSDEPVFYPVFTVRWLAVHTLAIPTVFFLGAIAAMQFIQR</Hsp_hseq>
+      <Hsp_midline>MA   ++PV YP+FT RWLA+H LAIPTVFFLG I AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P09191.3|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P09191</Hit_accession>
+  <Hit_len>44</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>3.53909e-17</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>44</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>KNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>QNPNQPVTYPIFTVRWLAVHTLAVPSVFFVGAIAAMQFIQR</Hsp_hseq>
+      <Hsp_midline>+N NQPV YPIFT RWLA+H LA+P+VFF+G I AMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P19153.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b559 subunit beta; AltName: Full=PSII reaction center subunit VI [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P19153</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.5514</Hsp_bit-score>
+      <Hsp_score>166</Hsp_score>
+      <Hsp_evalue>4.77763e-17</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>43</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>41</Hsp_align-len>
+      <Hsp_qseq>KNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</Hsp_qseq>
+      <Hsp_hseq>NNPNQPVSYPIFTVRWLAIHAIGIPAVFFIGSITAMQFIQR</Hsp_hseq>
+      <Hsp_midline> N NQPV+YPIFT RWLAIH + IP VFF+G ITAMQFIQR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_49823</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0L8|YCF12_PHATC Photosystem II reaction center protein Ycf12 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf12 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>34</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_49823</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0L8|YCF12_PHATC Photosystem II reaction center protein Ycf12 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf12 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>34</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0L8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0L8</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>65.0846</Hsp_bit-score>
+      <Hsp_score>157</Hsp_score>
+      <Hsp_evalue>5.96914e-16</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_hseq>
+      <Hsp_midline>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49529.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12; AltName: Full=ORF34 [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49529</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>62.3882</Hsp_bit-score>
+      <Hsp_score>150</Hsp_score>
+      <Hsp_evalue>7.72718e-15</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>33</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MINWQVIGQLIATGAIMLAGPAVIVLLALKKGNL</Hsp_hseq>
+      <Hsp_midline>MINWQV+GQLIATG IMLAGPAVIVLLALKKGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0T2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0T2</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>56.9954</Hsp_bit-score>
+      <Hsp_score>136</Hsp_score>
+      <Hsp_evalue>1.18575e-12</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MVNWQVIGQLVSTGAIMLLGPAIIILLALKKGNL</Hsp_hseq>
+      <Hsp_midline>M+NWQV+GQL++TG IML GPA+I+LLALKKGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|O96797.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Skeletonema costatum]</Hit_def>
+  <Hit_accession>O96797</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.5443e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MVNWQVIGQLVSTGLIGLLGPAVIILLALKKGNL</Hsp_hseq>
+      <Hsp_midline>M+NWQV+GQL++TG I L GPAVI+LLALKKGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P51385.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12; AltName: Full=ORF34 [Porphyra purpurea] &gt;sp|Q1XDA2.1| RecName: Full=Photosystem II reaction center protein Ycf12 [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>P51385</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>51.2174</Hsp_bit-score>
+      <Hsp_score>121</Hsp_score>
+      <Hsp_evalue>2.42066e-10</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>30</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MINWQVIAQLVSLGVIVLVGPAVIILLSLKRGNL</Hsp_hseq>
+      <Hsp_midline>MINWQV+ QL++ G I+L GPAVI+LL+LK+GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|B2XTA0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Heterosigma akashiwo NIES-293] &gt;sp|B2XTQ6.1| RecName: Full=Photosystem II reaction center protein Ycf12 [Heterosigma akashiwo CCMP452]</Hit_def>
+  <Hit_accession>B2XTA0</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>49.6766</Hsp_bit-score>
+      <Hsp_score>117</Hsp_score>
+      <Hsp_evalue>8.85267e-10</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MVNWQVIGQLLSATLIVLAGPAVIFVLAFKKGNL</Hsp_hseq>
+      <Hsp_midline>M+NWQV+GQL++   I+LAGPAVI +LA KKGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q6B8L0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8L0</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>6.39849e-09</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>22</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MINWQVIGQLTSLAMIVLVGPAVIVVLSLRKGDL</Hsp_hseq>
+      <Hsp_midline>MINWQV+GQL +   I+L GPAVIV+L+L+KG+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|B2IYZ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2IYZ8</Hit_accession>
+  <Hit_len>47</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>1.02285e-06</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>47</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>INWEVIFQLLSVALIVIAGPVVIFLLAFRNGNL</Hsp_hseq>
+      <Hsp_midline>INW+V+ QL++   I++AGP VI LLA + GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q4G3D2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3D2</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>1.5389e-06</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MFNWNIVAQLLSLALVTLSGPAVIFLLYFKRGNL</Hsp_hseq>
+      <Hsp_midline>M NW ++ QL++   + L+GPAVI LL  K+GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q8YM13.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YM13</Hit_accession>
+  <Hit_len>40</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>1.66905e-06</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>40</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>INWEVIFQLTSVALIIIAGPAVIFVLAFRNGNL</Hsp_hseq>
+      <Hsp_midline>INW+V+ QL +   I++AGPAVI +LA + GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|A6MVU9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVU9</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.5058</Hsp_bit-score>
+      <Hsp_score>88</Hsp_score>
+      <Hsp_evalue>2.37259e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MPNLQTVAQLISLFLILTSGPAIIVLIALRRGNL</Hsp_hseq>
+      <Hsp_midline>M N Q + QLI+   I+ +GPA+IVL+AL++GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|O78460.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Guillardia theta]</Hit_def>
+  <Hit_accession>O78460</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>38.1206</Hsp_bit-score>
+      <Hsp_score>87</Hsp_score>
+      <Hsp_evalue>4.01994e-05</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MPNLQTVAQLLALFVIITSGPAIIILIALRRGNL</Hsp_hseq>
+      <Hsp_midline>M N Q + QL+A   I+ +GPA+I+L+AL++GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q32RW9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Staurastrum punctulatum]</Hit_def>
+  <Hit_accession>Q32RW9</Hit_accession>
+  <Hit_len>33</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>7.40329e-05</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MNLEVVAQLTALAFIVLSGPLVIALLAFRKGNL</Hsp_hseq>
+      <Hsp_midline>+N +V+ QL A   I+L+GP VI LLA +KGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q8M9Z7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12; Short=RF12 [Chaetosphaeridium globosum]</Hit_def>
+  <Hit_accession>Q8M9Z7</Hit_accession>
+  <Hit_len>33</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.000129632</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MNLEILAQLTALAFIVVSGPLVIALLAFRKGNL</Hsp_hseq>
+      <Hsp_midline>+N ++L QL A   I+++GP VI LLA +KGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q8DJI1.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DJI1</Hit_accession>
+  <Hit_len>46</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.000368311</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>46</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>INFEVIAQLTMIAMIGIAGPMIIFLLAVRRGNL</Hsp_hseq>
+      <Hsp_midline>IN++V+ QL     I +AGP +I LLA+++GNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q8WI31.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Psilotum nudum]</Hit_def>
+  <Hit_accession>Q8WI31</Hit_accession>
+  <Hit_len>33</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.00041074</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MTWELIAQLTFLTSIIVSGPLVIALLAIRKGNL</Hsp_hseq>
+      <Hsp_midline>+ W+++ QL    +I+++GP VI LLA++KGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q06SC8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Stigeoclonium helveticum]</Hit_def>
+  <Hit_accession>Q06SC8</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.00042177</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>26</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MNNLEVVFQLMALFFVLAAGPAVVVLVASQKGNL</Hsp_hseq>
+      <Hsp_midline>M N +V+ QL+A   ++ AGPAV+VL+A +KGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q9TLX0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TLX0</Hit_accession>
+  <Hit_len>35</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.4242</Hsp_bit-score>
+      <Hsp_score>80</Hsp_score>
+      <Hsp_evalue>0.00047312</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>34</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MLNWQVIVQLVFLALIITTGPVIIVYLSTRERNL</Hsp_hseq>
+      <Hsp_midline>M+NWQV+ QL+    I+  GP +IV L+ ++ NL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q112P6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q112P6</Hit_accession>
+  <Hit_len>43</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.039</Hsp_bit-score>
+      <Hsp_score>79</Hsp_score>
+      <Hsp_evalue>0.000642984</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>INFETIAQLTMLAMVLIAGPVVIVLLALQGGDL</Hsp_hseq>
+      <Hsp_midline>IN++ + QL     +++AGP VIVLLAL+ G+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|A6H5F0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center protein Ycf12 [Cycas taitungensis]</Hit_def>
+  <Hit_accession>A6H5F0</Hit_accession>
+  <Hit_len>33</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.000759752</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>34</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>33</Hsp_align-len>
+      <Hsp_qseq>INWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</Hsp_qseq>
+      <Hsp_hseq>MNLEVLAQLTVLTLIVISGPLVIALLAVRKGNL</Hsp_hseq>
+      <Hsp_midline>+N +VL QL     I+++GP VI LLA++KGNL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

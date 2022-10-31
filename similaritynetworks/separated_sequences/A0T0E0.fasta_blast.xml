@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_50259</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0E0|RR2_PHATC 30S ribosomal protein S2, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps2 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>226</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_50259</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0E0|RR2_PHATC 30S ribosomal protein S2, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps2 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>226</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0E0.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0E0</Hit_accession>
+  <Hit_len>226</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>466.077</Hsp_bit-score>
+      <Hsp_score>1198</Hsp_score>
+      <Hsp_evalue>1.14562e-168</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>226</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>226</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGKS</Hsp_qseq>
+      <Hsp_hseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGKS</Hsp_hseq>
+      <Hsp_midline>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGKS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49490.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49490</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>384.415</Hsp_bit-score>
+      <Hsp_score>986</Hsp_score>
+      <Hsp_evalue>2.89101e-136</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>180</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MADITLAQLLEAGVHFGHKAYRWNPKMFPYIYTERNNIHILDLVQSAQLLKEANSYLQSAAEKGQTFLFIGTKPQASALIAQEAKRCNSYYVNHRWLGGMLTNWVTLKSRIARLKTLEQEEADQVFNLLPKKEASLRRKELEKLRKNLNGIKDMEKLPDVAIVIDQKREMTAVIECRKLGIPIISILDTNCDPDLVDIPIPGNDDAVGSIKLVLQSLTDSINTGK</Hsp_hseq>
+      <Hsp_midline>M+DI+L+QLLEAGVHFGHKAYRWNPKMFPYIY+E NNIHILDLVQSA LLKEAN YL+SAA + +TFLF+GTK QAS LIAQEAKRC+SYYVNHRWLGGMLTNW TLK RIA LK LEQ+EA+  F+LL KKE +LRRKEL+KLR++L+GIKDM+ LPD+AIVIDQKRE TA+ ECRKLGIP++SILDTNCDPDLVDIPIPGNDDAV SIKL+L+SLTDSI  GK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0Q8.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0Q8</Hit_accession>
+  <Hit_len>227</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>374.785</Hsp_bit-score>
+      <Hsp_score>961</Hsp_score>
+      <Hsp_evalue>1.9566e-132</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>177</Hsp_identity>
+      <Hsp_positive>199</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDS-YYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIG</Hsp_qseq>
+      <Hsp_hseq>MADINLAQLLDAGVHFGHKAYRWNPKMFPYIYTERNNIHILDLVQTAQLLKRANAYVQNAASEGKTFLFVGTKRQASAVIAQEAKRCPSGYYVNHRWLGGMLTNWVTLKSRIERLKTLEQQEVEGVFNLLPKKEASLRAKELEKLRKHLNGVKDMSKLPDVAIIIDQKREMTAIQECRKLGIPVISILDTNCDPDLVDIPIPGNDDAVRSIKLILNSLTNSIVQG</Hsp_hseq>
+      <Hsp_midline>M+DI+L+QLL+AGVHFGHKAYRWNPKMFPYIY+E NNIHILDLVQ+A LLK AN Y+++AA E KTFLFVGTKRQAS +IAQEAKRC S YYVNHRWLGGMLTNW TLK RI  LK LEQQE    F+LL KKE +LR KEL+KLR+HL+G+KDM  LPD+AI+IDQKRE TAI+ECRKLGIPV+SILDTNCDPDLVDIPIPGNDDAVRSIKLIL SLT+SI+ G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|O78482.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Guillardia theta]</Hit_def>
+  <Hit_accession>O78482</Hit_accession>
+  <Hit_len>235</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>317.775</Hsp_bit-score>
+      <Hsp_score>813</Hsp_score>
+      <Hsp_evalue>7.2907e-110</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>223</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>221</Hsp_align-len>
+      <Hsp_qseq>ISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIG</Hsp_qseq>
+      <Hsp_hseq>ITLAELLESGVHFGHQARRWNPKMFPYIYAERNGIHIIDLVQTAQLLTEACEFVKKSAEEGKKFLFVGTKRQAASIIAQEAERCGAFYINQRWLGGILTNWFTIRTRVERLKDLELKEETGYLDKLPKKEAAGLRRELEKLKRNLNGIKNMKRLPDLVVIVDQKRETTAVQECRTLGIPIISILDTNCNPDLTDIAIPGNDDAIRSIKLIITKLTDSICEG</Hsp_hseq>
+      <Hsp_midline>I+L++LLE+GVHFGH+A RWNPKMFPYIY+E N IHI+DLVQ+A LL EA  +++ +A E K FLFVGTKRQA+++IAQEA+RC ++Y+N RWLGG+LTNW T++ R+  LKDLE +E     D L KKE A  R+EL+KL+R+L+GIK+MK LPD+ +++DQKRETTA++ECR LGIP++SILDTNC+PDL DI IPGNDDA+RSIKLI+  LTDSI  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P51249.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51249</Hit_accession>
+  <Hit_len>241</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>316.62</Hsp_bit-score>
+      <Hsp_score>810</Hsp_score>
+      <Hsp_evalue>2.56525e-109</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>140</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MAIVTLAELLEAGVHFGHQARRWNPKMFPYIYTERNGIHIIDLVQTSQLLTEACEFVKQASSDGRKVLFLGTKRQAAGIIAQEAQRCDSYYVNQRWLGGMLTNWVTIKSRVTRLRQLEEQDSSGLIDQLPKKEAAVLRRELDKLRKHLNGIKNMTRLPDIVVVVDQKRETTAIQECLKLGIPTICILDTNCSPEIINIPIPANDDAIRSIKLIIGKIADAIYEGK</Hsp_hseq>
+      <Hsp_midline>M+ ++L++LLEAGVHFGH+A RWNPKMFPYIY+E N IHI+DLVQ++ LL EA  +++ A+ + +  LF+GTKRQA+ +IAQEA+RCDSYYVN RWLGGMLTNW T+K R+  L+ LE+Q+++   D L KKE A+ R+EL KLR+HL+GIK+M  LPDI +V+DQKRETTAI+EC KLGIP + ILDTNC P++++IPIP NDDA+RSIKLI+  + D+I  GK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q1XDN8.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDN8</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>316.235</Hsp_bit-score>
+      <Hsp_score>809</Hsp_score>
+      <Hsp_evalue>3.8105e-109</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>141</Hsp_identity>
+      <Hsp_positive>183</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MAIVTLAELLEAGVHFGHQARRWNPKMFPYIYTERNGIHIIDLVQTAQLLTEACELIKQASSDGKKVLFLGTKRQAAGIVAQEAQRCDSYYVNQRWLGGMLTNWVTIKSRVSRLRQLEEQDKSGMIDQLPKKEAAVLRRELDKLRKHLNGIKNMTRLPDIVVVVDQKRETTAIQECLKLGIPTICILDTNCSPEIINIPIPANDDAIRSIKLIVGKIADAIYDGK</Hsp_hseq>
+      <Hsp_midline>M+ ++L++LLEAGVHFGH+A RWNPKMFPYIY+E N IHI+DLVQ+A LL EA   ++ A+ + K  LF+GTKRQA+ ++AQEA+RCDSYYVN RWLGGMLTNW T+K R++ L+ LE+Q+ +   D L KKE A+ R+EL KLR+HL+GIK+M  LPDI +V+DQKRETTAI+EC KLGIP + ILDTNC P++++IPIP NDDA+RSIKLI+  + D+I  GK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q6B8R5.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8R5</Hit_accession>
+  <Hit_len>231</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>311.227</Hsp_bit-score>
+      <Hsp_score>796</Hsp_score>
+      <Hsp_evalue>2.64706e-107</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>226</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>140</Hsp_identity>
+      <Hsp_positive>181</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGKS</Hsp_qseq>
+      <Hsp_hseq>MSIVSLSELLEAGAHFGHQARRWNPRMFPYIYTERNGIHIIDLVQTAQLLTEACQFIRDASQEGKKFLFLGTKRQAAGVIAEQAIRSNSYYVNQRWLGGMLTNWMTIKSRVERLQRLEMDEQAGLIDMLPKKEAAINRRELDKLRKNLNGIKNMSRLPDFIVVVDQKRETTAIQECIKLGIPIICILDTNCNPEIIDIPIPANDDAIRSIKLIISRIADSIIEGST</Hsp_hseq>
+      <Hsp_midline>MS +SLS+LLEAG HFGH+A RWNP+MFPYIY+E N IHI+DLVQ+A LL EA  ++  A++E K FLF+GTKRQA+ +IA++A R +SYYVN RWLGGMLTNW T+K R+  L+ LE  E     D+L KKE A+ R+EL KLR++L+GIK+M  LPD  +V+DQKRETTAI+EC KLGIP++ ILDTNC+P+++DIPIP NDDA+RSIKLI+  + DSI+ G +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q4G3A3.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3A3</Hit_accession>
+  <Hit_len>229</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>310.071</Hsp_bit-score>
+      <Hsp_score>793</Hsp_score>
+      <Hsp_evalue>6.91461e-107</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>138</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MTVVTLGELLDAGVHFGHQASRWNPKMFPYIYAERNGIHVIDLVQTARLLTHAYEFVQKASQEKKSFLFVGTKRQAASIIAEEAQRCGGHYVNNRWLGGILTNWSTVQKRVEYLKELDAKEEDGTLDRLPKKEAAFLRREQEKLSHNLRGLINMTQIPDIVILVDPKRETTALLECRKLGIPIISILDTNCDPNLVDIPIPANDDAVRSVKLIISTLADGILEGK</Hsp_hseq>
+      <Hsp_midline>M+ ++L +LL+AGVHFGH+A RWNPKMFPYIY+E N IH++DLVQ+A LL  A  +++ A++E K+FLFVGTKRQA+++IA+EA+RC  +YVN+RWLGG+LTNWST+++R+ +LK+L+ +E + T D L KKE A  R+E +KL  +L G+ +M  +PDI I++D KRETTA+ ECRKLGIP++SILDTNCDP+LVDIPIP NDDAVRS+KLI+ +L D IL GK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q3MBF3.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MBF3</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>308.145</Hsp_bit-score>
+      <Hsp_score>788</Hsp_score>
+      <Hsp_evalue>1.27858e-105</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>180</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVVSLAQMMESGVHFGHQTRRWNPKMSPYIYTSRNGVHIIDLVQTAHLMDEAYNYMRSQAEQGKKFLFVGTKRQAAGIIAQEAARCGSHYINQRWLGGMLTNWATIKTRVDRLKDLERREESGALDLLPKKEASMLRRELAKLQKYLGGIKTMRKVPDVVVIVDQRREYNAVQECQKLSIPIVSMLDTNCDPDVVDIPIPANDDAIRSIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M  +SL+Q++E+GVHFGH+  RWNPKM PYIY+  N +HI+DLVQ+A L+ EA  Y+ S A + K FLFVGTKRQA+ +IAQEA RC S+Y+N RWLGGMLTNW+T+K R+  LKDLE++E +   DLL KKE ++ R+EL KL+++L GIK M+ +PD+ +++DQ+RE  A++EC+KL IP+VS+LDTNCDPD+VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q8YMY2.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YMY2</Hit_accession>
+  <Hit_len>265</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>307.76</Hsp_bit-score>
+      <Hsp_score>787</Hsp_score>
+      <Hsp_evalue>1.85459e-105</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>180</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVVSLAQMMESGVHFGHQTRRWNPKMSPYIYTSRNGVHIIDLVQTAHLMDEAYNYMRSQAEQGKKFLFVGTKRQAAGIIAQEAARCGSHYINQRWLGGMLTNWATIKTRVDRLKDLERREESGALDLLPKKEASMLRRELAKLQKYLGGIKTMRKVPDVVVIVDQRREYNAVQECQKLSIPIVSMLDTNCDPDVVDIPIPANDDAIRSIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M  +SL+Q++E+GVHFGH+  RWNPKM PYIY+  N +HI+DLVQ+A L+ EA  Y+ S A + K FLFVGTKRQA+ +IAQEA RC S+Y+N RWLGGMLTNW+T+K R+  LKDLE++E +   DLL KKE ++ R+EL KL+++L GIK M+ +PD+ +++DQ+RE  A++EC+KL IP+VS+LDTNCDPD+VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B8HXK4.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Cyanothece sp. PCC 7425]</Hit_def>
+  <Hit_accession>B8HXK4</Hit_accession>
+  <Hit_len>260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>306.99</Hsp_bit-score>
+      <Hsp_score>785</Hsp_score>
+      <Hsp_evalue>3.79578e-105</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>180</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVLSLAQMLEAGVHFGHQARRWNPKMSPYIFTERNGVHIIDLVQTAQLMDEAYEYVRSASEEGKRFLFIGTKRQAAGLVAHEAQRCGSYFINQRWLGGMLTNWTTIKTRVERLKELERRQETGALDLLPKQEASMLRREMEKLQKYLGGIKQMRKLPDVVLIVDVRREYNAVQECHKLGIPIVSLLDTNCDPDEVDIPIPANDDAIRSIKLIVGKLADGIYEGR</Hsp_hseq>
+      <Hsp_midline>M  +SL+Q+LEAGVHFGH+A RWNPKM PYI++E N +HI+DLVQ+A L+ EA  Y+ SA+ E K FLF+GTKRQA+ L+A EA+RC SY++N RWLGGMLTNW+T+K R+  LK+LE+++     DLL K+E ++ R+E++KL+++L GIK M+ LPD+ +++D +RE  A++EC KLGIP+VS+LDTNCDPD VDIPIP NDDA+RSIKLI+  L D I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B0C075.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Acaryochloris marina MBIC11017]</Hit_def>
+  <Hit_accession>B0C075</Hit_accession>
+  <Hit_len>298</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>306.605</Hsp_bit-score>
+      <Hsp_score>784</Hsp_score>
+      <Hsp_evalue>1.6615e-104</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>179</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVISLAQMLESGVHFGHQARRWNPKMDPYIFTERNGVHIIDLVQTAQLMDEAYHYVRSASESGKKFLFVGTKRQAAGIIAQEAARCGGYYVNQRWLGGMLTNWTTIKTRIERLKDLERRYESGIFDLLPKQEASMLRRELDKLQKYLGGLKQMHKIPDVVVIIDIRREYNAVQECQKLGLPIVSLLDTNCDPDWVDIPIPANDDAIRSIKLIIGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M  ISL+Q+LE+GVHFGH+A RWNPKM PYI++E N +HI+DLVQ+A L+ EA  Y+ SA+   K FLFVGTKRQA+ +IAQEA RC  YYVN RWLGGMLTNW+T+K RI  LKDLE++  +  FDLL K+E ++ R+EL KL+++L G+K M  +PD+ ++ID +RE  A++EC+KLG+P+VS+LDTNCDPD VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|B2J6U9.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J6U9</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>305.449</Hsp_bit-score>
+      <Hsp_score>781</Hsp_score>
+      <Hsp_evalue>1.80235e-104</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVVSLAQMMESGVHFGHQTRRWNPKMSPYIYTSRNGVHIIDLVQTAQLMDNAYNYMRSHAEQGKKFLFVGTKRQAAGIIAQEASRCGSHYINQRWLGGMLTNWATIKTRVDRLKDLERREETGALDLLPKKEASMLRREMTKLQKYLGGIKTMRKVPDIVVIVDQRREYNAVQECQKLNIPIVSMLDTNCDPDVVDIPIPANDDAIRSIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M  +SL+Q++E+GVHFGH+  RWNPKM PYIY+  N +HI+DLVQ+A L+  A  Y+ S A + K FLFVGTKRQA+ +IAQEA RC S+Y+N RWLGGMLTNW+T+K R+  LKDLE++E     DLL KKE ++ R+E+ KL+++L GIK M+ +PDI +++DQ+RE  A++EC+KL IP+VS+LDTNCDPD+VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A6MVX1.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVX1</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>304.294</Hsp_bit-score>
+      <Hsp_score>778</Hsp_score>
+      <Hsp_evalue>2.36051e-104</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>143</Hsp_identity>
+      <Hsp_positive>187</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>224</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIG</Hsp_qseq>
+      <Hsp_hseq>MAVVTLAELLEAGVHFGHQSRRWNPKMFPYIYAERNGIHIIDLVQTAQLLTQACDFVRTASEQGKSFLFVGTKRQAAAVVAQEAERCGAYYVNQRWLGGILTNWFTIRTRVERLKDLENKEESGYLDQLPKKETAILRRELEKLRKNLDGIKTMKRLPDLVVVVDQKRESTAVQECRKLGIPIVSILDTNCNPELADIPIPANDDAIRSIKLILGKIADSISEG</Hsp_hseq>
+      <Hsp_midline>M+ ++L++LLEAGVHFGH++ RWNPKMFPYIY+E N IHI+DLVQ+A LL +A  ++ +A+ + K+FLFVGTKRQA+ ++AQEA+RC +YYVN RWLGG+LTNW T++ R+  LKDLE +E +   D L KKE A+ R+EL+KLR++LDGIK MK LPD+ +V+DQKRE+TA++ECRKLGIP+VSILDTNC+P+L DIPIP NDDA+RSIKLIL  + DSI  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q116Q2.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q116Q2</Hit_accession>
+  <Hit_len>272</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>300.827</Hsp_bit-score>
+      <Hsp_score>769</Hsp_score>
+      <Hsp_evalue>1.42623e-102</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MPVVSLAQLLESGVHFGHQTRRWNPRMSQYIFTERNGVHIIDLVQTAQLMDEAYNYIRTASEQGKKFLFVGTKRQAAGIIAQEATRCGGYYINQRWLGGMLTNWTTIKTRVERLKDLERREESKALDLLPKKEASVLRREMAKLQKYLGGIKNMRRLPDGVIMVDQRREYNAVQECQKLNIPIVSLLDTNCDPTQVDIPIPANDDAIRSIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M  +SL+QLLE+GVHFGH+  RWNP+M  YI++E N +HI+DLVQ+A L+ EA  Y+ +A+ + K FLFVGTKRQA+ +IAQEA RC  YY+N RWLGGMLTNW+T+K R+  LKDLE++E +   DLL KKE ++ R+E+ KL+++L GIK+M+ LPD  I++DQ+RE  A++EC+KL IP+VS+LDTNCDP  VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|P48132.1|</Hit_id>
+  <Hit_def>RecName: Full=Cyanelle 30S ribosomal protein S2 [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48132</Hit_accession>
+  <Hit_len>233</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>299.286</Hsp_bit-score>
+      <Hsp_score>765</Hsp_score>
+      <Hsp_evalue>1.83404e-102</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>224</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>130</Hsp_identity>
+      <Hsp_positive>180</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>224</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIG</Hsp_qseq>
+      <Hsp_hseq>MAIVTLDEMLEAGVHFGHQSRRWNPKMSQYIFTERNGIHIIDLVQTAQLLAEAYDFLRISAEEGKKVLFIGTKRQAANIIAQEATRCGAFYINQRWLGGTLTNWTTIQSRVEYLKELEMREESGALDLLPKKEAAILRRQLEKLRKSLGGIQTMRHIPDIVVIVDQKRENNAVQECKKLNIPIIALLDTNSDPDVVDIPIPGNDDAIRSIKLIIGKLADAILEG</Hsp_hseq>
+      <Hsp_midline>M+ ++L ++LEAGVHFGH++ RWNPKM  YI++E N IHI+DLVQ+A LL EA  +L  +A E K  LF+GTKRQA+ +IAQEA RC ++Y+N RWLGG LTNW+T++ R+ +LK+LE +E +   DLL KKE A+ R++L+KLR+ L GI+ M+++PDI +++DQKRE  A++EC+KL IP++++LDTN DPD+VDIPIPGNDDA+RSIKLI+  L D+IL G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q19VA1.2|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2, chloroplastic [Chlorokybus atmophyticus]</Hit_def>
+  <Hit_accession>Q19VA1</Hit_accession>
+  <Hit_len>228</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>297.745</Hsp_bit-score>
+      <Hsp_score>761</Hsp_score>
+      <Hsp_evalue>4.98515e-102</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>226</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>226</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>175</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>226</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGKS</Hsp_qseq>
+      <Hsp_hseq>MRSVTLEEMMEAGVHFGHQTRGWNPKMAPYIYGERNGIHLIDLIQTARLLSEASDFVLNAAKEGKEFLFIGTKNQAADIISSEALRCRSHFVNQRWLGGMLTNWPTIKTRIKRLKDLEQSEKNGTLDNLPKKESAVLKRQLDKLRKYLGGLQDMKTLPDVVIIVDQKREMNAVRECIKLGIPIIALLDTNCDPSLSDLPIPANDDAIRSVNLIISKLADAIYEGQG</Hsp_hseq>
+      <Hsp_midline>M  ++L +++EAGVHFGH+   WNPKM PYIY E N IH++DL+Q+A LL EA+ ++ +AA+E K FLF+GTK QA+ +I+ EA RC S++VN RWLGGMLTNW T+K RI  LKDLEQ E N T D L KKE A+ +++L KLR++L G++DMK LPD+ I++DQKRE  A+REC KLGIP++++LDTNCDP L D+PIP NDDA+RS+ LI+  L D+I  G+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q8DIA2.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DIA2</Hit_accession>
+  <Hit_len>263</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>296.204</Hsp_bit-score>
+      <Hsp_score>757</Hsp_score>
+      <Hsp_evalue>7.91209e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>133</Hsp_identity>
+      <Hsp_positive>176</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MAVLSLAQMLEAGVHFGHQARRWNPRMAPYIFTVRNGVHIIDLVQTAQLVEEAYNYIRNAAEKGKRFLFIGTKRQAAGIVEQEALRCGSYYVNQRWLGGMLTNWTTIKTRVDRLKELESMEESGLIDLRPKQEASALRRELARLQKYLGGIKQMRRLPDIAIIVDVKREYNAVAECHKLGIPIVALLDTNCDPTQVDIPIPANDDAIRSIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>M+ +SL+Q+LEAGVHFGH+A RWNP+M PYI++  N +HI+DLVQ+A L++EA  Y+ +AA + K FLF+GTKRQA+ ++ QEA RC SYYVN RWLGGMLTNW+T+K R+  LK+LE  E +   DL  K+E +  R+EL +L+++L GIK M+ LPDIAI++D KRE  A+ EC KLGIP+V++LDTNCDP  VDIPIP NDDA+RSIKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q2JLB3.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JLB3</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>295.434</Hsp_bit-score>
+      <Hsp_score>755</Hsp_score>
+      <Hsp_evalue>1.41368e-100</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>225</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>225</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>173</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>225</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSILIGK</Hsp_qseq>
+      <Hsp_hseq>MSVVSLPQLLEAGVHFGHKASRWNPKMRPYIFTERNGIHIIDLVQTARYLNEAYEYVRDAADRGWRFLFVGTKRQAAGIIAQEARRCGSYYVNQRWLGGMLTNWATIKTRIDRLKEIEEMESSGLLDRLPKQEASRLRRELARLEKYLGGIKTMRKLPDAVIIVDQRREANAVQECIKLNIPIISLLDTNCDPDLSDIFIPSNDDAIRAIKLIVGKLADAIYEGR</Hsp_hseq>
+      <Hsp_midline>MS +SL QLLEAGVHFGHKA RWNPKM PYI++E N IHI+DLVQ+A  L EA  Y+  AA     FLFVGTKRQA+ +IAQEA+RC SYYVN RWLGGMLTNW+T+K RI  LK++E+ E++   D L K+E +  R+EL +L ++L GIK M+ LPD  I++DQ+RE  A++EC KL IP++S+LDTNCDPDL DI IP NDDA+R+IKLI+  L D+I  G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q31K59.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S2 [Synechococcus elongatus PCC 7942 = FACHB-805]</Hit_def>
+  <Hit_accession>Q31K59</Hit_accession>
+  <Hit_len>251</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>295.049</Hsp_bit-score>
+      <Hsp_score>754</Hsp_score>
+      <Hsp_evalue>1.44287e-100</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>221</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>221</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>177</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>221</Hsp_align-len>
+      <Hsp_qseq>MSDISLSQLLEAGVHFGHKAYRWNPKMFPYIYSEVNNIHILDLVQSATLLKEANLYLESAARENKTFLFVGTKRQASTLIAQEAKRCDSYYVNHRWLGGMLTNWSTLKERIAHLKDLEQQEANNTFDLLTKKEGALRRKELKKLRRHLDGIKDMKNLPDIAIVIDQKRETTAIRECRKLGIPVVSILDTNCDPDLVDIPIPGNDDAVRSIKLILKSLTDSI</Hsp_qseq>
+      <Hsp_hseq>MAIISLAEMMESGVHFGHQTRRWNPRMAPYIYTARNGVHIIDLVKTAQCVETAYRWVRTNAEQGKRFLFVGTKRQAAGIIAEEATRCGSYYINQRWLGGMLTNWATIKGRVDRLKELERMEETGALALRPKKEAAVLRRELERLQKYLGGIKNMRRLPDAVVIIDQKREYNAVQECQKLGIPIVAMLDTNCDPDVVDVPIPGNDDAIRSVKLIVSKLADAI</Hsp_hseq>
+      <Hsp_midline>M+ ISL++++E+GVHFGH+  RWNP+M PYIY+  N +HI+DLV++A  ++ A  ++ + A + K FLFVGTKRQA+ +IA+EA RC SYY+N RWLGGMLTNW+T+K R+  LK+LE+ E      L  KKE A+ R+EL++L+++L GIK+M+ LPD  ++IDQKRE  A++EC+KLGIP+V++LDTNCDPD+VD+PIPGNDDA+RS+KLI+  L D+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_57669</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0H5|PSB28_PHATC Photosystem II reaction center Psb28 protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psb28 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>115</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_57669</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0H5|PSB28_PHATC Photosystem II reaction center Psb28 protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psb28 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>115</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0H5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0H5</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>235.728</Hsp_bit-score>
+      <Hsp_score>600</Hsp_score>
+      <Hsp_evalue>5.04648e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_qseq>
+      <Hsp_hseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_hseq>
+      <Hsp_midline>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49508.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49508</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>2.19159e-77</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>115</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_qseq>
+      <Hsp_hseq>MEAKIQFIKGLDEKVLPDVRLTRSRDGSTGTATFRFKNPNILDKSTAKEGEITGMYLIDQEGTLETRDVNAQFINGKPEAIESIYIMKSPEAWDRFMRFMERYGESNGLVFTKAS</Hsp_hseq>
+      <Hsp_midline>MEAKIQFIKGLDEKVLPDVRLTRS+DGSTGTATFRFKNPNILDK+TAKEGEITGMYLID+EG LETRDVNA+F+NGKPEAIESIYIMKSPEAWDRFMRFMERYGE+NGLVF+KAS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0W9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0W9</Hit_accession>
+  <Hit_len>114</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>202.986</Hsp_bit-score>
+      <Hsp_score>515</Hsp_score>
+      <Hsp_evalue>4.93592e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>MIARIQFIKGIDEKVLPDVRLTRSRDGSTGTATFLFKNANLINKSLALNGEITGMYMIDEEGILETRDVSARFVNGKPQAVESIYIMKSPEAWDRFMRFMERYGESNGLAFTKA</Hsp_hseq>
+      <Hsp_midline>M A+IQFIKG+DEKVLPDVRLTRS+DGSTGTATF FKN N+++K+ A  GEITGMY+IDEEGILETRDV+ARFVNGKP+A+ESIYIMKSPEAWDRFMRFMERYGE+NGL F+KA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q1XDE0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDE0</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.104</Hsp_bit-score>
+      <Hsp_score>453</Hsp_score>
+      <Hsp_evalue>1.06496e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_qseq>
+      <Hsp_hseq>ATIQFIQGINEEVVPDVRLTRSRDGSTGTATFRFTNPKILDASMADKGEITGMYLMDTEGQIITRDVNAKFINGKPQAIEAVHVIKSPDDWDRFMRFMERYAQDNGLTFTKAS</Hsp_hseq>
+      <Hsp_midline>A IQFI+G++E+V+PDVRLTRS+DGSTGTATFRF NP ILD + A +GEITGMYL+D EG + TRDVNA+F+NGKP+AIE+++++KSP+ WDRFMRFMERY + NGL F+KAS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P51347.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51347</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>177.948</Hsp_bit-score>
+      <Hsp_score>450</Hsp_score>
+      <Hsp_evalue>4.19538e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>78</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_qseq>
+      <Hsp_hseq>ATIQFIQGINEEVVPDVRLTRSRDGSTGTATFRFTNPKILDASMADKGEITGMYLMDTEGQIITRDVNAKFINGKPQAIEAVHVIKSPDDWDRFMRFMERYAQDNGLTFTKAN</Hsp_hseq>
+      <Hsp_midline>A IQFI+G++E+V+PDVRLTRS+DGSTGTATFRF NP ILD + A +GEITGMYL+D EG + TRDVNA+F+NGKP+AIE+++++KSP+ WDRFMRFMERY + NGL F+KA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|O78418.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Guillardia theta]</Hit_def>
+  <Hit_accession>O78418</Hit_accession>
+  <Hit_len>116</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.792</Hsp_bit-score>
+      <Hsp_score>447</Hsp_score>
+      <Hsp_evalue>9.33194e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>115</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>114</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</Hsp_qseq>
+      <Hsp_hseq>AVIQFIQGVNEDVIPDVRLTRSRDGSTGTATFRFANPKVLEAQSSVKGNITGMYLIDEEGQLVTRDVNARFVNGKPQGIEAVYIMQSKEDWDRFMRFMERYSEDNGLSFTKAN</Hsp_hseq>
+      <Hsp_midline>A IQFI+G++E V+PDVRLTRS+DGSTGTATFRF NP +L+  ++ +G ITGMYLIDEEG L TRDVNARFVNGKP+ IE++YIM+S E WDRFMRFMERY E NGL F+KA+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q6B8Z7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8Z7</Hit_accession>
+  <Hit_len>114</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>157.918</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>2.62448e-50</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AVIQFIKGINETVVADVSLTRSRDGSKGTATFRFNNPDILKSGMEDKGDITGMYLKDDEGELMTRDVSAKFINGKPQAVEAIYIIKSPQEWDRFMRFMEKYANENKLSFTKA</Hsp_hseq>
+      <Hsp_midline>A IQFIKG++E V+ DV LTRS+DGS GTATFRF NP+IL      +G+ITGMYL D+EG L TRDV+A+F+NGKP+A+E+IYI+KSP+ WDRFMRFME+Y   N L F+KA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|B2J5G7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J5G7</Hit_accession>
+  <Hit_len>113</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>151.369</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>1.07945e-47</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>73</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AKIQFSRGLDEVVIPEVRLTRSRTGDSGTATFIFTNPKILDQGSTED--ITGMYLSDEEGEIITREVKAKFVNGKPEALEALYVMKSAQEWDRFMRFMERYAEENDLGLSKA</Hsp_hseq>
+      <Hsp_midline>AKIQF +GLDE V+P+VRLTRS+ G +GTATF F NP ILD+ + ++  ITGMYL DEEG + TR+V A+FVNGKPEA+E++Y+MKS + WDRFMRFMERY E N L  SKA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q85G21.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85G21</Hit_accession>
+  <Hit_len>109</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>150.599</Hsp_bit-score>
+      <Hsp_score>379</Hsp_score>
+      <Hsp_evalue>1.92411e-47</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>109</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>88</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>ASIQFIQGVDEDIIPTVRLTRSRDGQTGTAVFRFVQPKLLQQ----QGEITGMYMIDEEGEIVTREVQAKFVNGQPQIIEALYVMKNAQAWERFMRFMNRYAEAKGLSFQRS</Hsp_hseq>
+      <Hsp_midline>A IQFI+G+DE ++P VRLTRS+DG TGTA FRF  P +L +    +GEITGMY+IDEEG + TR+V A+FVNG+P+ IE++Y+MK+ +AW+RFMRFM RY E  GL F ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q3MFL9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MFL9</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>4.31195e-47</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>70</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AKIQFSRGLDEEVIPEVRLTRSRTGDTGTATFIFTNPKILDQGTTED--ITGMYLIDEEGEIITREVKGKFVNGRPEGVEAVYVMKSAQEWERFIRFMERYAQENDLGFSKS</Hsp_hseq>
+      <Hsp_midline>AKIQF +GLDE+V+P+VRLTRS+ G TGTATF F NP ILD+ T ++  ITGMYLIDEEG + TR+V  +FVNG+PE +E++Y+MKS + W+RF+RFMERY + N L FSK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B0CE32.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Acaryochloris marina MBIC11017]</Hit_def>
+  <Hit_accession>B0CE32</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.443</Hsp_bit-score>
+      <Hsp_score>376</Hsp_score>
+      <Hsp_evalue>5.60926e-47</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>74</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>116</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEG--EITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>MSAAIQFIRGVDEEVIPDVRLTRAKDGSSGRAIFYFENPNLI-----QEGKLEVMGMYLQDEEGELTTLDVSAKFVNGKPHAIEANYDMKSEEEWDRFMRFMNRYAESHGLGFSKS</Hsp_hseq>
+      <Hsp_midline>M A IQFI+G+DE+V+PDVRLTR+KDGS+G A F F+NPN++     +EG  E+ GMYL DEEG L T DV+A+FVNGKP AIE+ Y MKS E WDRFMRFM RY E++GL FSK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q8YYP5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YYP5</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.673</Hsp_bit-score>
+      <Hsp_score>374</Hsp_score>
+      <Hsp_evalue>1.15621e-46</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>69</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AKIQFSRGLDEEVIPEVRLTRSRTGDTGTATFIFTNPKILDQGTTED--ITGMYLIDEEGEIITREVKGKFINGRPEGLEAVYVMKSAQEWERFIRFMERYAQENDLGFSKS</Hsp_hseq>
+      <Hsp_midline>AKIQF +GLDE+V+P+VRLTRS+ G TGTATF F NP ILD+ T ++  ITGMYLIDEEG + TR+V  +F+NG+PE +E++Y+MKS + W+RF+RFMERY + N L FSK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q8W0Y8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center PSB28 protein, chloroplastic; AltName: Full=Photosystem II protein W-like; Flags: Precursor [Arabidopsis thaliana]</Hit_def>
+  <Hit_accession>Q8W0Y8</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>150.984</Hsp_bit-score>
+      <Hsp_score>380</Hsp_score>
+      <Hsp_evalue>1.35471e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>113</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSK</Hsp_qseq>
+      <Hsp_hseq>VKPALQFIQGTDEMTIPDVKLTRSRDGSNGMALFSFDQPSVFD-SSGEVGEITGLYMIDEEGVIQSTDVNARFVNGKPEGIVAKHIMRSPKEWDRFMRFMERYSDQNGLQFVK</Hsp_hseq>
+      <Hsp_midline>++  +QFI+G DE  +PDV+LTRS+DGS G A F F  P++ D ++ + GEITG+Y+IDEEG++++ DVNARFVNGKPE I + +IM+SP+ WDRFMRFMERY + NGL F K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q31ML0.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Synechococcus elongatus PCC 7942 = FACHB-805] &gt;sp|Q5MZB9.1| RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q31ML0</Hit_accession>
+  <Hit_len>112</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>2.48473e-46</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>112</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>MSAAIQFTRGIDEPVVPDVRLTRSRDGQNGTATFYFDEPQALVGEVRQD--ITGMYLLDDEGELATREVKAKFINGQPAGLEAVYLMRSPEEWDRFMRFMQRYAEANGLGFTEA</Hsp_hseq>
+      <Hsp_midline>M A IQF +G+DE V+PDVRLTRS+DG  GTATF F  P  L     ++  ITGMYL+D+EG L TR+V A+F+NG+P  +E++Y+M+SPE WDRFMRFM+RY E NGL F++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q8DLJ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DLJ8</Hit_accession>
+  <Hit_len>116</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.976</Hsp_bit-score>
+      <Hsp_score>367</Hsp_score>
+      <Hsp_evalue>1.62216e-45</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>64</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AEIQFIRGINEEVVPDVRLTRARDGSSGQAMFYFDNPKIVQEGNL---EVTGMYMVDEEGEIVTRDVNAKFINGQPVAIEATYTMRSPQEWDRFIRFMDRYAASHGLGFQKS</Hsp_hseq>
+      <Hsp_midline>A+IQFI+G++E+V+PDVRLTR++DGS+G A F F NP I+ +      E+TGMY++DEEG + TRDVNA+F+NG+P AIE+ Y M+SP+ WDRF+RFM+RY  ++GL F K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q0JG75.2|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center PSB28 protein, chloroplastic; AltName: Full=Photosystem II protein W-like; Flags: Precursor [Oryza sativa Japonica Group]</Hit_def>
+  <Hit_accession>Q0JG75</Hit_accession>
+  <Hit_len>180</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.902</Hsp_bit-score>
+      <Hsp_score>372</Hsp_score>
+      <Hsp_evalue>1.91906e-45</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>87</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>IQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSK</Hsp_qseq>
+      <Hsp_hseq>IQFIQGTDEQTIPDVRLTKSRDGTNGVAIFTFDQPSVFD-SSAELGDITGFYMIDDEGVLQSVDVSAKFVNGKPALIEAKYVMRTPREWDRFMRFMERYSQANGLQFVK</Hsp_hseq>
+      <Hsp_midline>IQFI+G DE+ +PDVRLT+S+DG+ G A F F  P++ D ++A+ G+ITG Y+ID+EG+L++ DV+A+FVNGKP  IE+ Y+M++P  WDRFMRFMERY + NGL F K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|B1WXW2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Crocosphaera subtropica ATCC 51142]</Hit_def>
+  <Hit_accession>B1WXW2</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.206</Hsp_bit-score>
+      <Hsp_score>365</Hsp_score>
+      <Hsp_evalue>2.71437e-45</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>111</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>67</Hsp_identity>
+      <Hsp_positive>89</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AQIQFSRGVSEPVVPEVRLTRAKSGNSGTATFRFESPTILDAESTDD--ITGMYLVDEEGEIVTREVKGKFINGKPTSVEAILIMNSQDEWDRFMRFMERYAQENGLGFSKA</Hsp_hseq>
+      <Hsp_midline>A+IQF +G+ E V+P+VRLTR+K G++GTATFRF++P ILD  +  +  ITGMYL+DEEG + TR+V  +F+NGKP ++E+I IM S + WDRFMRFMERY + NGL FSKA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|P48264.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48264</Hit_accession>
+  <Hit_len>112</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.739</Hsp_bit-score>
+      <Hsp_score>356</Hsp_score>
+      <Hsp_evalue>7.91101e-44</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>110</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>65</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AKIQFIQGVDEEAIPDVKLSRSQDGANGIAKFYFDKPTVFD---VYQGEITGLYLIDEEGELSTRTVYAKFINGKPQSIEASYIMNNREEWERFIRFMERYAKQNDLSFTKA</Hsp_hseq>
+      <Hsp_midline>AKIQFI+G+DE+ +PDV+L+RS+DG+ G A F F  P + D     +GEITG+YLIDEEG L TR V A+F+NGKP++IE+ YIM + E W+RF+RFMERY + N L F+KA</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q00UI6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center psb28 protein, chloroplastic; AltName: Full=Photosystem II protein W-like; Flags: Precursor [Ostreococcus tauri]</Hit_def>
+  <Hit_accession>Q00UI6</Hit_accession>
+  <Hit_len>147</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>140.584</Hsp_bit-score>
+      <Hsp_score>353</Hsp_score>
+      <Hsp_evalue>5.34438e-43</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>113</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>146</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>66</Hsp_identity>
+      <Hsp_positive>83</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>IQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSK</Hsp_qseq>
+      <Hsp_hseq>IQFVKGQNETAVPEVRLTRSKDGSNGTAFFIFSDPDVFEN---GQGDITGMFLTDEEGEMSTVDVNAKFVNGKPTGIEARYVMKTEADWNRFMRFMERYAEDNGLGFSK</Hsp_hseq>
+      <Hsp_midline>IQF+KG +E  +P+VRLTRSKDGS GTA F F +P++ +     +G+ITGM+L DEEG + T DVNA+FVNGKP  IE+ Y+MK+   W+RFMRFMERY E NGL FSK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q9TLZ2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem II reaction center Psb28 protein; AltName: Full=Photosystem II 13 kDa protein; AltName: Full=Photosystem II reaction center W protein [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TLZ2</Hit_accession>
+  <Hit_len>115</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>139.043</Hsp_bit-score>
+      <Hsp_score>349</Hsp_score>
+      <Hsp_evalue>7.33889e-43</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>114</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>115</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>62</Hsp_identity>
+      <Hsp_positive>86</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>114</Hsp_align-len>
+      <Hsp_qseq>AKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNI--LDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKA</Hsp_qseq>
+      <Hsp_hseq>AKIQFIKGIDEQTVPEIRLTRSRDGNTGTAIFSFINPTVFLLHSSSQNYGEITGMYLQDDEGELSTRNVTANFVNGKPKAVEAVYLIRNKSGWDRLMRFINKYAEDKNMSFYKS</Hsp_hseq>
+      <Hsp_midline>AKIQFIKG+DE+ +P++RLTRS+DG+TGTA F F NP +  L  ++   GEITGMYL D+EG L TR+V A FVNGKP+A+E++Y++++   WDR MRF+ +Y E   + F K+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

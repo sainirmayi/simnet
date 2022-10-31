@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_46761</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0A7|PETM_PHATC Cytochrome b6-f complex subunit 7 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petM PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>42</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_46761</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0A7|PETM_PHATC Cytochrome b6-f complex subunit 7 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petM PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>42</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0A7.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0A7</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>83.9593</Hsp_bit-score>
+      <Hsp_score>206</Hsp_score>
+      <Hsp_evalue>3.75688e-23</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_hseq>
+      <Hsp_midline>MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A0T0S6.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0S6</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>68.9366</Hsp_bit-score>
+      <Hsp_score>167</Hsp_score>
+      <Hsp_evalue>4.00862e-17</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>34</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>MALILQIFPFANAEIVTAAVTCIFMTLFGLSLGFALLKVQGE</Hsp_hseq>
+      <Hsp_midline>M LI QIFPFAN+EI+TAAV C  MTLFGLSLGF LLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49531.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49531</Hit_accession>
+  <Hit_len>42</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>64.3142</Hsp_bit-score>
+      <Hsp_score>155</Hsp_score>
+      <Hsp_evalue>2.58109e-15</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>MALVLKIFPYANAEIVTAAVTCIFMVLFGLSLGFALLKVQGE</Hsp_hseq>
+      <Hsp_midline>M L+ +IFP+AN+EI+TAAV C  M LFGLSLGF LLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|O96810.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Skeletonema costatum]</Hit_def>
+  <Hit_accession>O96810</Hit_accession>
+  <Hit_len>25</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>1.4259e-06</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>25</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>25</Hsp_align-len>
+      <Hsp_qseq>AAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>AAVTCIFMTLFGLSLGFALLKVQGE</Hsp_hseq>
+      <Hsp_midline>AAV C  MTLFGLSLGF LLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P48366.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48366</Hit_accession>
+  <Hit_len>33</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.2022</Hsp_bit-score>
+      <Hsp_score>95</Hsp_score>
+      <Hsp_evalue>3.06234e-06</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>24</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>KQIFNTAVICFTLTLIGLSLGFVLLKIQGD</Hsp_hseq>
+      <Hsp_midline> +I   AV+CF++TL GLSLGF LLK+QG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q4G3B3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3B3</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>37.3502</Hsp_bit-score>
+      <Hsp_score>85</Hsp_score>
+      <Hsp_evalue>0.000102491</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>KEIFTVAGVMWALVLTGLSVGFGLLKIQGE</Hsp_hseq>
+      <Hsp_midline> EI T A V +++ L GLS+GFGLLK+QGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|O78499.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Guillardia theta]</Hit_def>
+  <Hit_accession>O78499</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>35.8094</Hsp_bit-score>
+      <Hsp_score>81</Hsp_score>
+      <Hsp_evalue>0.000386986</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>23</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>NEFIASASISFIITLIGLTLGFALLKLQGE</Hsp_hseq>
+      <Hsp_midline>+E I +A + F +TL GL+LGF LLK+QGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q1XDL1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDL1</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.9574</Hsp_bit-score>
+      <Hsp_score>71</Hsp_score>
+      <Hsp_evalue>0.0116299</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>29</Hsp_align-len>
+      <Hsp_qseq>EIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>EIVESAVLSSVLVLVGLAIGFLLLKVQGE</Hsp_hseq>
+      <Hsp_midline>EI+ +AV+   + L GL++GF LLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|P51275.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51275</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>0.0212667</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>NSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>GKEIVESAILSSVLVLVGLAVGFLLLKVQGE</Hsp_hseq>
+      <Hsp_midline>  EI+ +A++   + L GL++GF LLKVQGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|B0C6T5.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Acaryochloris marina MBIC11017]</Hit_def>
+  <Hit_accession>B0C6T5</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.8018</Hsp_bit-score>
+      <Hsp_score>68</Hsp_score>
+      <Hsp_evalue>0.0337169</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>29</Hsp_align-len>
+      <Hsp_qseq>EIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>EIFTTAFLCFSLILVGIGLGYLLLKVAPD</Hsp_hseq>
+      <Hsp_midline>EI T A +CFS+ L G+ LG+ LLKV  +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q7NLN8.2|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Gloeobacter violaceus PCC 7421]</Hit_def>
+  <Hit_accession>Q7NLN8</Hit_accession>
+  <Hit_len>36</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.4166</Hsp_bit-score>
+      <Hsp_score>67</Hsp_score>
+      <Hsp_evalue>0.048322</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>32</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>NSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>TGEIFFVAGLVFVLTLVGMAIGFGVLKLRGE</Hsp_hseq>
+      <Hsp_midline>  EI   A + F +TL G+++GFG+LK++GE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q2JN39.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JN39</Hit_accession>
+  <Hit_len>35</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.4166</Hsp_bit-score>
+      <Hsp_score>67</Hsp_score>
+      <Hsp_evalue>0.0485831</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>39</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>29</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>27</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKV</Hsp_qseq>
+      <Hsp_hseq>GEIFTTAGLCIVLTLVGVALGYGILRV</Hsp_hseq>
+      <Hsp_midline> EI T A +C  +TL G++LG+G+L+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|B1WU77.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Crocosphaera subtropica ATCC 51142]</Hit_def>
+  <Hit_accession>B1WU77</Hit_accession>
+  <Hit_len>37</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>29.261</Hsp_bit-score>
+      <Hsp_score>64</Hsp_score>
+      <Hsp_evalue>0.147222</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>ANSEIITAAVVCFSMTLFGLSLGFGLLKVQG</Hsp_qseq>
+      <Hsp_hseq>AESMMFNGAVILMVLVLFGLAWGFLILKIQG</Hsp_hseq>
+      <Hsp_midline>A S +   AV+   + LFGL+ GF +LK+QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|B0JI68.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B0JI68</Hit_accession>
+  <Hit_len>37</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.1054</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>0.470866</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>ANSEIITAAVVCFSMTLFGLSLGFGLLKVQG</Hsp_qseq>
+      <Hsp_hseq>AESMLFNGAIVAIVLVLVGLAWGFLLLKIQG</Hsp_hseq>
+      <Hsp_midline>A S +   A+V   + L GL+ GF LLK+QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B2J8Q3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J8Q3</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.874641</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>31</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>18</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>NSEIITAAVVCFSMTLFGLSLGFGLLKVQG</Hsp_qseq>
+      <Hsp_hseq>GGEILNAAILSFGLIFVGWGLGALLLKIQG</Hsp_hseq>
+      <Hsp_midline>  EI+ AA++ F +   G  LG  LLK+QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q9TLR5.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TLR5</Hit_accession>
+  <Hit_len>31</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.882145</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>40</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>21</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>29</Hsp_align-len>
+      <Hsp_qseq>NSEIITAAVVCFSMTLFGLSLGFGLLKVQ</Hsp_qseq>
+      <Hsp_hseq>SQEIVTVSLIISILVLSGLTMGFILLKIQ</Hsp_hseq>
+      <Hsp_midline>+ EI+T +++   + L GL++GF LLK+Q</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q2JS99.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Synechococcus sp. JA-3-3Ab]</Hit_def>
+  <Hit_accession>Q2JS99</Hit_accession>
+  <Hit_len>35</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.959866</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>39</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>29</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>27</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKV</Hsp_qseq>
+      <Hsp_hseq>SEIFTIAGLSIVLTLVGVALGYGILRI</Hsp_hseq>
+      <Hsp_midline>SEI T A +   +TL G++LG+G+L++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q85FX8.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85FX8</Hit_accession>
+  <Hit_len>32</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>27.335</Hsp_bit-score>
+      <Hsp_score>59</Hsp_score>
+      <Hsp_evalue>0.988293</Hsp_evalue>
+      <Hsp_query-from>13</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>31</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>SEIITAAVVCFSMTLFGLSLGFGLLKVQGE</Hsp_qseq>
+      <Hsp_hseq>NEIVALMIICPLMVMVGLGMGFALLWLQQQ</Hsp_hseq>
+      <Hsp_midline>+EI+   ++C  M + GL +GF LL +Q +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|B7KAA7.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Gloeothece citriformis PCC 7424]</Hit_def>
+  <Hit_accession>B7KAA7</Hit_accession>
+  <Hit_len>37</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>26.5646</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>1.9583</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>33</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>ANSEIITAAVVCFSMTLFGLSLGFGLLKVQG</Hsp_qseq>
+      <Hsp_hseq>AESMLFNGAILSIVLVLVGLAWGFLLLKIQG</Hsp_hseq>
+      <Hsp_midline>A S +   A++   + L GL+ GF LLK+QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P0A3Y1.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Nostoc sp. PCC 7120 = FACHB-418] &gt;sp|P0A3Y2.1| RecName: Full=Cytochrome b6-f complex subunit 7; AltName: Full=Cytochrome b6-f complex subunit PetM; AltName: Full=Cytochrome b6-f complex subunit VII [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>P0A3Y1</Hit_accession>
+  <Hit_len>34</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>26.5646</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>1.99016</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>41</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>31</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>20</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>30</Hsp_align-len>
+      <Hsp_qseq>NSEIITAAVVCFSMTLFGLSLGFGLLKVQG</Hsp_qseq>
+      <Hsp_hseq>SGELLNAALLSFGLIFVGWALGALLLKIQG</Hsp_hseq>
+      <Hsp_midline>+ E++ AA++ F +   G +LG  LLK+QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_8827</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0A2|YCF4_PHATC Photosystem I assembly protein Ycf4 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf4 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>181</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_8827</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0A2|YCF4_PHATC Photosystem I assembly protein Ycf4 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf4 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>181</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0A2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0A2</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>361.688</Hsp_bit-score>
+      <Hsp_score>927</Hsp_score>
+      <Hsp_evalue>9.4618e-129</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>181</Hsp_identity>
+      <Hsp_positive>181</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_hseq>
+      <Hsp_midline>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A0T0U3.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0U3</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>301.982</Hsp_bit-score>
+      <Hsp_score>772</Hsp_score>
+      <Hsp_evalue>3.38667e-105</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>142</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>MQDQIRQEKIVGSRRFSNYFWASLLLVGGLMFLLAGISSYLKINLLPFANTTELVFIPQGIVMMFYGTLSFGLSIYIMATLFWDIGSGYNEYNKVENLVKVVRRGFPGKNREILLTYPLNNIRSIGIKISEGLNPQRIIYLCLKDERKIPLTPVQQPDSISDLEDQAADLAKFLDLKLENL</Hsp_hseq>
+      <Hsp_midline>MQ++IRQ+KI+GSRRFSNYFWA  LLVGGL FLLAGISSY K+NLLPF NTTELVFIPQG+VMMFYG LS G+SIY + T+  DIGSGYNEYN++ENLVKVVR+GFPGKNREILLTY L+N+R+IGIKI+EGLNP R IYLCLKDER IPLTPVQ+P +IS+LE++A DLAKFLDL+LENL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49526.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49526</Hit_accession>
+  <Hit_len>181</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>296.975</Hsp_bit-score>
+      <Hsp_score>759</Hsp_score>
+      <Hsp_evalue>3.4243e-103</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>141</Hsp_identity>
+      <Hsp_positive>158</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>MQKEIRRDDIIGSRRFSNYFWAVFLCSGGISFLLAGISSYFKINFLPFANPKELAFIPQGLVMSFYGTLSIALAIYILGTLFWDIGSGYNEYNKVENLVKIVRKGFPGKNREILLTYPLTNIRAIGIKISEGLNPKRSIYLCLKDERQIPLTPVQQPNSISNLEEEAAELAKFLDLKLENL</Hsp_hseq>
+      <Hsp_midline>MQ EIR+D IIGSRRFSNYFWA FL  GG+ FLLAGISSYFK+N LPF N  EL FIPQGLVM FYG LS+ ++IY L T+  DIGSGYNEYN++ENLVK+VRKGFPGKNREILLTY L+N+RAIGIKI+EGLNP RSIYLCLKDER IPLTPVQ+P +ISNLEEEA +LAKFLDL+LENL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51220.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51220</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>2.84964e-75</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLE</Hsp_qseq>
+      <Hsp_hseq>HKVRKDVILGSRRFSNYWWASTIFIGALGFLLAGLSSYFQTDLLPFANSTELVFIPQGIVMTFYGSVGIFLSMFLWLTIIWNIGAGYNEFNKNEGIVKIFRLGFPGKNRQICLKFNIKEIKSIKIDIKEGLNPRREIYLCTKDKRNIPLTRVGQPLLLSEVEEQAAEIARFLDVVLE</Hsp_hseq>
+      <Hsp_midline>+++R+D I+GSRRFSNY+WA  + +G LGFLLAG+SSYF+ +LLPF N+TELVFIPQG+VM FYG++ + +S++  LTII +IG+GYNE+N+ E +VK+ R GFPGKNR+I L +++  +++I I I EGLNP R IYLC KD+RNIPLT V +P  +S +EE+A ++A+FLD+ LE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q1XDR7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDR7</Hit_accession>
+  <Hit_len>186</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>221.861</Hsp_bit-score>
+      <Hsp_score>564</Hsp_score>
+      <Hsp_evalue>2.1701e-73</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>184</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLE</Hsp_qseq>
+      <Hsp_hseq>HSVRKDLILGSRRLSNYWWATIIFIGALGFLLAGLSSYFQVDLLPFTNSTDLVFIPQGIVMTFYGSIGVFLSLFLWLTIIWNIGAGYNEFNKDKGIVKIFRLGFPGKNRKICLQFNIKEIKSIKIDIKEGLNPRREIYLCTKDKRVIPLTRVGQPLLLSEVEEQAAEIARFLDVVLE</Hsp_hseq>
+      <Hsp_midline>+ +R+D I+GSRR SNY+WA  + +G LGFLLAG+SSYF+V+LLPFTN+T+LVFIPQG+VM FYG++ + +S++  LTII +IG+GYNE+N+ + +VK+ R GFPGKNR+I L +++  +++I I I EGLNP R IYLC KD+R IPLT V +P  +S +EE+A ++A+FLD+ LE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q6B8P5.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B8P5</Hit_accession>
+  <Hit_len>184</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>203.756</Hsp_bit-score>
+      <Hsp_score>517</Hsp_score>
+      <Hsp_evalue>2.73491e-66</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>EIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>QIKTDKILGSRRISNYFWATIILLGGLSFFLVGLSSYLKIELLPFTKSTDLLFLPQGIIMTFYGTAAILISLFLWLTIIWNIGSGYNEFNRDIGLVTIYRLGFPGKNRLIKLRYKIHDIYSIKVQIQEGLTPKREIYLKTKDKREIPLTQVGQPMSLAQIEERAAFLAKFLGVILEGI</Hsp_hseq>
+      <Hsp_midline>+I+ DKI+GSRR SNYFWA  +L+GGL F L G+SSY K+ LLPFT +T+L+F+PQG++M FYG  ++ IS++  LTII +IGSGYNE+NR   LV + R GFPGKNR I L Y + ++ +I ++I EGL P R IYL  KD+R IPLT V +P +++ +EE A  LAKFL + LE +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q19V70.2|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Chlorokybus atmophyticus]</Hit_def>
+  <Hit_accession>Q19V70</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.06</Hsp_bit-score>
+      <Hsp_score>510</Hsp_score>
+      <Hsp_evalue>3.79928e-65</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>129</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>IRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>IRRDPVLGSRRLSNYWWATVILVGASGFFLVGISSYFGFNLVPFIKSEEILFIPQGLVMSFYGVAGILLSVYLWLTIIWNVGEGYNEYNKQDGIVRIFRWGFPGKNRRIDLVYPIQDVQAIRVEIKEGINPRRVIYLKIKGKREIPLTRIGQPLTLGEIEEKAANLARFLQVSIEGL</Hsp_hseq>
+      <Hsp_midline>IR+D ++GSRR SNY+WA  +LVG  GF L GISSYF  NL+PF  + E++FIPQGLVM FYG   + +S+Y  LTII ++G GYNEYN+ + +V++ R GFPGKNR I L Y + +V+AI ++I EG+NP R IYL +K +R IPLT + +P  +  +EE+A +LA+FL + +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q118V7.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q118V7</Hit_accession>
+  <Hit_len>187</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>196.052</Hsp_bit-score>
+      <Hsp_score>497</Hsp_score>
+      <Hsp_evalue>3.46751e-63</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>DRLVHQEIIGSRRLSNYLWAIIVTMGGIGFLLSGISSYLKVNLLIVADPTQLNFLPQGIAMSFYGLLGTIYGIFLWLTVIWDLGGGYNDFNQESGQIMIFRRGFPGKNRKVEFNCTTENVQSIKVDIKEGLNPRRAIYLCLKDRRQIPLTRVGQPLALSKLENEAAQLAKFLQVPLEGL</Hsp_hseq>
+      <Hsp_midline>+ +   +IIGSRR SNY WA  + +GG+GFLL+GISSY KVNLL   + T+L F+PQG+ M FYG L     I+  LT+I D+G GYN++N+    + + R+GFPGKNR++    +  NV++I + I EGLNP R+IYLCLKD R IPLT V +P A+S LE EA  LAKFL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q20EU3.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Oltmannsiellopsis viridis]</Hit_def>
+  <Hit_accession>Q20EU3</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.897</Hsp_bit-score>
+      <Hsp_score>494</Hsp_score>
+      <Hsp_evalue>9.10254e-63</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>178</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>174</Hsp_align-len>
+      <Hsp_qseq>IRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRL</Hsp_qseq>
+      <Hsp_hseq>IRRYSITGSRRFSNYWWSSVIFLGASGFLLTGLSSYLNVNLLPFIHAENIIFFPQGLVMCFYGILGLIFSVYLGLTIFWSVGSGFNEFNKKDGLVRIFRWGFPGKNRRIDLSYALTDVEAIRVELQEGINPRRTIYLCVKGNREIPVTRIGQPMSLEEVETQAAELAKFLQIDL</Hsp_hseq>
+      <Hsp_midline>IR+  I GSRRFSNY+W+  + +G  GFLL G+SSY  VNLLPF +   ++F PQGLVM FYG L L  S+Y  LTI   +GSG+NE+N+ + LV++ R GFPGKNR I L+Y+L++V AI +++ EG+NP R+IYLC+K  R IP+T + +P ++  +E +A +LAKFL + L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q4G3A9.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G3A9</Hit_accession>
+  <Hit_len>174</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>189.504</Hsp_bit-score>
+      <Hsp_score>480</Hsp_score>
+      <Hsp_evalue>7.00746e-61</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>179</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>170</Hsp_align-len>
+      <Hsp_qseq>IIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLE</Hsp_qseq>
+      <Hsp_hseq>ISGSRRLSNIFWALTITLGGLGFFLNGCSSYFNTNLLIFSDASSIAFIPQGIILMFYGTVALILGLFLCLTIIWDVGFGYNDYN--ADQITVYRKGFPGKNRELNLTFPSEVVKSIKVRVTEGLNPRRQLFLCLKDSREIPLTGVDQPAALNKIENEAVTLAKYLNVFLE</Hsp_hseq>
+      <Hsp_midline>I GSRR SN FWA  + +GGLGF L G SSYF  NLL F++ + + FIPQG+++MFYG ++L + ++  LTII D+G GYN+YN   + + V RKGFPGKNRE+ LT+    V++I +++TEGLNP R ++LCLKD R IPLT V +P A++ +E EA  LAK+L++ LE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B2J2W1.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J2W1</Hit_accession>
+  <Hit_len>189</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.193</Hsp_bit-score>
+      <Hsp_score>474</Hsp_score>
+      <Hsp_evalue>9.71175e-60</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>189</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>DRLLHQNVLGSRRFSNYWWATIVTLGASGFLLAGISSYLKVNLLIVSDPTQLVFVPQGLVMGLYGAAGLLLATYLWLVILLDVGGGYNEFNQETGTIKIFRWGFPGKNRRIEIDSRIEDVQSVRIAVKEGLNPIRALYLRIKGRRDIPLTRVGQPLSLTELETEGAKLARFLGVSLEGL</Hsp_hseq>
+      <Hsp_midline>+ +    ++GSRRFSNY+WA  + +G  GFLLAGISSY KVNLL  ++ T+LVF+PQGLVM  YGA  L ++ Y  L I+LD+G GYNE+N+    +K+ R GFPGKNR I +   + +V+++ I + EGLNP R++YL +K  R+IPLT V +P +++ LE E   LA+FL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q3ZJ14.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Tupiella akineta]</Hit_def>
+  <Hit_accession>Q3ZJ14</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.808</Hsp_bit-score>
+      <Hsp_score>473</Hsp_score>
+      <Hsp_evalue>1.17801e-59</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>175</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>173</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLD</Hsp_qseq>
+      <Hsp_hseq>DSIRRYNVIGSRRISNYWWAIIIGSGGLGFLFTGLSSYLQFNLLPIIHAEKIIFFPQGLVMSFYGILGIFFSLYLGLTILFSVGEGFNEFNKELGIIRIFRWGFPGKNRRIDLSYSIDDVKAIRVELKDGINPKRTIYLCIKGQRQIPLTRVGQPLTLEEIEMQAAELAQFLQ</Hsp_hseq>
+      <Hsp_midline>+ IR+  +IGSRR SNY+WA  +  GGLGFL  G+SSY + NLLP  +  +++F PQGLVM FYG L +  S+Y  LTI+  +G G+NE+N+   ++++ R GFPGKNR I L+YS+ +V+AI +++ +G+NP R+IYLC+K +R IPLT V +P  +  +E +A +LA+FL </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|A6MVV6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MVV6</Hit_accession>
+  <Hit_len>179</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.808</Hsp_bit-score>
+      <Hsp_score>473</Hsp_score>
+      <Hsp_evalue>1.3323e-59</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>179</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>EIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>QTRYDLILGSRRFSNYLWTLISFSGGIGFLLAGLSSYLGVQLLPFGNTETIVFIPQGIVMTFYGTIGILLSLFLLLNISLNVGGGYNSYDKSTGAIQIFRLGFPGKRRKILLQYKIQEIKSIKLSIAEGLNPKREIYLQTKDQRQIPLTRVGEPLLLSQIEEEAVELANFLNIPLEGL</Hsp_hseq>
+      <Hsp_midline>+ R D I+GSRRFSNY W      GG+GFLLAG+SSY  V LLPF NT  +VFIPQG+VM FYG + + +S++ LL I L++G GYN Y++    +++ R GFPGK R+ILL Y +  +++I + I EGLNP R IYL  KD+R IPLT V EP  +S +EEEA +LA FL++ LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|B7JVR2.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Rippkaea orientalis PCC 8801]</Hit_def>
+  <Hit_accession>B7JVR2</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.037</Hsp_bit-score>
+      <Hsp_score>471</Hsp_score>
+      <Hsp_evalue>2.65445e-59</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>88</Hsp_identity>
+      <Hsp_positive>124</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>175</Hsp_align-len>
+      <Hsp_qseq>QDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>REEVLGSRRFSNIWWGTVAAIGGIGFLLAGLSSYLRVNLLIVSDTSQLVFIPQGIALLFYGIAGSALSLYLWFTIILDIGGGYNEFNKETGKVTIFRWGFPGKNRRIEVSYPLADIQAIRADIKEGLNTKRKLYIQLKQRREIPLTRVGRPISLSELENQGAELARFLGVPLEGL</Hsp_hseq>
+      <Hsp_midline>+++++GSRRFSN +W     +GG+GFLLAG+SSY +VNLL  ++T++LVFIPQG+ ++FYG     +S+Y   TIILDIG GYNE+N+    V + R GFPGKNR I ++Y L++++AI   I EGLN  R +Y+ LK  R IPLT V  P ++S LE +  +LA+FL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q5N3Q6.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q5N3Q6</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.496</Hsp_bit-score>
+      <Hsp_score>467</Hsp_score>
+      <Hsp_evalue>1.15871e-58</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>123</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>181</Hsp_align-len>
+      <Hsp_qseq>MQNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>VETDSLQQPILGSRRPSNYFWAIAVSVGGTGFLLAGLSSYLQVNLLPFSEPTRLAFLPQGLVMGLYGIAAILLASYLWFVISLDVGGGYNAFDRKTQKATIFRWGFPGKNRRVEITYPLSDIQAVRVDIKEGLNPKRALYLKVKGRGDVPLTRVGQPLPLTELESQGAELARFLAVPLEGL</Hsp_hseq>
+      <Hsp_midline>++ +  Q  I+GSRR SNYFWA  + VGG GFLLAG+SSY +VNLLPF+  T L F+PQGLVM  YG  ++ ++ Y    I LD+G GYN ++R      + R GFPGKNR + +TY LS+++A+ + I EGLNP R++YL +K   ++PLT V +P  ++ LE +  +LA+FL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q9MUN8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Mesostigma viride]</Hit_def>
+  <Hit_accession>Q9MUN8</Hit_accession>
+  <Hit_len>187</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.111</Hsp_bit-score>
+      <Hsp_score>466</Hsp_score>
+      <Hsp_evalue>1.79523e-58</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>187</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>80</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>177</Hsp_align-len>
+      <Hsp_qseq>IRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>ILRESVVGSRRISNYWWASVVLLGASGFLIVGISSYLQYDLVPFLSAKNIVFVPQGLVMCFYGSAGILLSIYLWLTIFWNVGEGYNEFDKVNGLVRIFRWGYPGKDRRINIVYDIKDIQAIRVEIKEGINPRRVIYLKIKGTRDMPLTRIGQPLTLAEIEEQAARLARFLQVNIEGI</Hsp_hseq>
+      <Hsp_midline>I ++ ++GSRR SNY+WA  +L+G  GFL+ GISSY + +L+PF +   +VF+PQGLVM FYG+  + +SIY  LTI  ++G GYNE++++  LV++ R G+PGK+R I + Y + +++AI ++I EG+NP R IYL +K  R++PLT + +P  ++ +EE+A  LA+FL + +E +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|P72705.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P72705</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.111</Hsp_bit-score>
+      <Hsp_score>466</Hsp_score>
+      <Hsp_evalue>2.02176e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>127</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>SQVLRQEVLGARRFSNFFWAGISTIGGVGFLLAGLSSYFGKNLLIVSDTTGLQFIPQGVALLFYGVAGSTVAGYLWLTMALNVGSGYNEFNKKSGQVTIFRWGFPGKNRRIELINKIADVQAVKAEIKEGVNPKRSLYLKVKQRRDIPLTRAGQPISLSQLENQGAELARFLGVPLEGL</Hsp_hseq>
+      <Hsp_midline>+++ + +++G+RRFSN+FWA    +GG+GFLLAG+SSYF  NLL  ++TT L FIPQG+ ++FYG     ++ Y  LT+ L++GSGYNE+N+    V + R GFPGKNR I L   +++V+A+  +I EG+NP RS+YL +K  R+IPLT   +P ++S LE +  +LA+FL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q3MDS1.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MDS1</Hit_accession>
+  <Hit_len>198</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>184.111</Hsp_bit-score>
+      <Hsp_score>466</Hsp_score>
+      <Hsp_evalue>2.45421e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>198</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>87</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>179</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>SSVLHQKVLGSRRFSNYWWASIVTLGASGFLLAGISSYLKVNLLIVTDPTQLIFVPQGLVMGLYGTAGLLLASYLWLAILWDLGGGYNDFNRETGNIKIFRWGFPGKNRKIEIGSRIQDIQSVRIDIKEGLNPRRALYLRVKGRRDIPLTRVGQPLSLAELETQGAQLARFLGVPLEGL</Hsp_hseq>
+      <Hsp_midline>+ +   K++GSRRFSNY+WA  + +G  GFLLAGISSY KVNLL  T+ T+L+F+PQGLVM  YG   L ++ Y  L I+ D+G GYN++NR    +K+ R GFPGKNR+I +   + +++++ I I EGLNP R++YL +K  R+IPLT V +P +++ LE +   LA+FL + LE L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q06SF8.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4 [Stigeoclonium helveticum]</Hit_def>
+  <Hit_accession>Q06SF8</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.341</Hsp_bit-score>
+      <Hsp_score>464</Hsp_score>
+      <Hsp_evalue>2.94797e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>181</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>183</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>180</Hsp_align-len>
+      <Hsp_qseq>QNEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLENL</Hsp_qseq>
+      <Hsp_hseq>ENLIRRYVITGSRRLSNYWWASVVFLGAIGFLFTGLSSYFGQNLLPFLQVQNITFFPQGLVMSFYGILGLLLSIYLWLTIIWNVGGGFNEFNKKAGAIRIFRWGFPGKTRCIDISYSLKEVEAIKVDFKQGVNPQRTLYLRVKGKREIPLSQIGQPLTVEEVEKQAAELAKFLQVSVEGL</Hsp_hseq>
+      <Hsp_midline>+N IR+  I GSRR SNY+WA  + +G +GFL  G+SSYF  NLLPF     + F PQGLVM FYG L L +SIY  LTII ++G G+NE+N+    +++ R GFPGK R I ++YSL  V AI +   +G+NP R++YL +K +R IPL+ + +P  +  +E++A +LAKFL + +E L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q9TKZ3.1|</Hit_id>
+  <Hit_def>RecName: Full=Photosystem I assembly protein Ycf4; Short=RF4 [Nephroselmis olivacea]</Hit_def>
+  <Hit_accession>Q9TKZ3</Hit_accession>
+  <Hit_len>183</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.57</Hsp_bit-score>
+      <Hsp_score>462</Hsp_score>
+      <Hsp_evalue>5.61359e-58</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>180</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>182</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>126</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>178</Hsp_align-len>
+      <Hsp_qseq>NEIRQDKIIGSRRFSNYFWAFFLLVGGLGFLLAGISSYFKVNLLPFTNTTELVFIPQGLVMMFYGALSLGISIYTLLTIILDIGSGYNEYNRIENLVKVVRKGFPGKNREILLTYSLSNVRAIGIKITEGLNPTRSIYLCLKDERNIPLTPVQEPTAISNLEEEATDLAKFLDLRLEN</Hsp_qseq>
+      <Hsp_hseq>NLVRRDIVIGSRRVSNYWWASVLLLGGSSFLVVGLSSRLGFDLVPFLPAGDIIFIPQGLVMCFYGLVGLVVSTYLWLTILWSVGGGYNEFNKQEGVMRIFRWGFPGRDRRIQLTCPLQDIEAIRVELQEGMNPRRTIYVRLKGKREVPLTRIGQPLTLAEIEKQAAELAGFLQVSLEG</Hsp_hseq>
+      <Hsp_midline>N +R+D +IGSRR SNY+WA  LL+GG  FL+ G+SS    +L+PF    +++FIPQGLVM FYG + L +S Y  LTI+  +G GYNE+N+ E ++++ R GFPG++R I LT  L ++ AI +++ EG+NP R+IY+ LK +R +PLT + +P  ++ +E++A +LA FL + LE </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

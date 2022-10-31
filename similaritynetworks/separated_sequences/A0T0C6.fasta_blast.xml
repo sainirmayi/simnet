@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_538155</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0C6|CY550_PHATC Cytochrome c-550 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbV PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>163</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_538155</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0C6|CY550_PHATC Cytochrome c-550 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbV PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>163</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0C6.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0C6</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>337.035</Hsp_bit-score>
+      <Hsp_score>863</Hsp_score>
+      <Hsp_evalue>1.32579e-119</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>163</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A0T0N2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0N2</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>290.426</Hsp_bit-score>
+      <Hsp_score>742</Hsp_score>
+      <Hsp_evalue>3.28988e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>134</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFKTYSKSFACILFCIFNIFVVSASAIDLDEATRTVVTDSSGNTTVLTPEQVKRGKRLFNATCGACHTGGITKTNPNVGLDPEALSLATPRRDNISALVDYLKNPTTYDGLESIAEIHPSIKSADIYPRMRSLTDEDLYSIAGHIMLQPKIVAEKWGGGKIYF</Hsp_hseq>
+      <Hsp_midline>MFK  S+ F+ + F IF+IF+ +ASAIDLDEATRTVV DSSG T VLTPEQVKRGKRLFNATCGACH GG+TKTNPNVGLDPEALSLATPRRDNI+ LVD+LKNPTTYDGLESIAE+HPSIKSADIYPRMRS+TDEDL ++AGHI+LQPKIV EKWGGGKIY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49510.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49510</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>290.426</Hsp_bit-score>
+      <Hsp_score>742</Hsp_score>
+      <Hsp_evalue>3.36286e-101</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>148</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFKKSYQFFALVLFSIFNVLVTSASAIDLDEATRTVVADSNGNTTVLTPEQVKRGKRLFNNTCGACHVGGVTKTNPNVGLRPEGLSLATPRRDNAAALVDYLKNPTSYDGLESIAEIHPSIKSGDIYPRMRSLTDEDLFSIAGHILLQPKIVTEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MFKKS Q F+LV F+IF++ + +ASAIDLDEATRTVV DS+G T VLTPEQVKRGKRLFN TCGACHVGGVTKTNPNVGL PE LSLATPRRDN A LVD+LKNPT+YDGLESIAE+HPSIKS DIYPRMRS+TDEDL ++AGHILLQPKIVTEKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51199.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51199</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>243.817</Hsp_bit-score>
+      <Hsp_score>621</Hsp_score>
+      <Hsp_evalue>1.12665e-82</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>137</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MLKRSSWLATLLGLLTVASVSTIVYAIELDEATRTVPLESSGRTVVLTPEQVKRGKRLFNNSCAICHNGGITKTNPNVGLDPESLGLATPQRDNIEALVDYMKDPTSYDGAESIAELHPSIKSAEIFPKMRNLTDEDLFTIAGHILLQPKIVSEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>M K+SS L +L+     +       AI+LDEATRTV ++SSG+T+VLTPEQVKRGKRLFN +C  CH GG+TKTNPNVGLDPE+L LATP+RDNI  LVD++K+PT+YDG ESIAE+HPSIKSA+I+P+MR++TDEDL  +AGHILLQPKIV+EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q8WKF2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q8WKF2</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>241.891</Hsp_bit-score>
+      <Hsp_score>616</Hsp_score>
+      <Hsp_evalue>6.36569e-82</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>140</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLV-FFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MLKRSSWLAALLGLLTVVSTSTHTY-AIELDEATRTVPLESSGRTVILTPEQVKRGKRLFNNSCAICHNGGITKTNPNIGLDPESLGLATPQRDTIEGLVDYMKDPTSYDGAESIAELHPSIKSAEIFPKMRNLTDEDLFTIAGHILLQPKIVSEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>M K+SS L +L+   T+ S    T  AI+LDEATRTV ++SSG+T++LTPEQVKRGKRLFN +C  CH GG+TKTNPN+GLDPE+L LATP+RD I GLVD++K+PT+YDG ESIAE+HPSIKSA+I+P+MR++TDEDL  +AGHILLQPKIV+EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|O78454.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Guillardia theta]</Hit_def>
+  <Hit_accession>O78454</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>240.736</Hsp_bit-score>
+      <Hsp_score>613</Hsp_score>
+      <Hsp_evalue>1.84182e-81</Hsp_evalue>
+      <Hsp_query-from>26</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>127</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>138</Hsp_align-len>
+      <Hsp_qseq>AIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>SIDLDENTRSVPLDDAGNTVILTPEQVKRGKRLFNASCGQCHVGGITKTNPNLGLEPDALSLATPARDNINALVDYMKNPTSYDGLESIAEVHPSIKSADIFPKMRSLSDEDLFAIGGHILLQPKLSSEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>+IDLDE TR+V +D +G T++LTPEQVKRGKRLFNA+CG CHVGG+TKTNPN+GL+P+ALSLATP RDNI  LVD++KNPT+YDGLESIAEVHPSIKSADI+P+MRS++DEDL A+ GHILLQPK+ +EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q6B942.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B942</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>231.106</Hsp_bit-score>
+      <Hsp_score>588</Hsp_score>
+      <Hsp_evalue>9.71143e-78</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>127</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>QLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>QLSLFAVIIVFETLLNQVYAMELDEATRTVTLEESGKTITLTPEQVKRGKRLFNNSCAQCHNGGITKTNPNIGLDPESLSGATPVRDNIRNLIEYIKDPTSYDGATSIAELHPSIKSAEIFPKMRNLTDEDLFAIAGHILIQPKIAAEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>QL       +F   +    A++LDEATRTV ++ SGKTI LTPEQVKRGKRLFN +C  CH GG+TKTNPN+GLDPE+LS ATP RDNI  L++++K+PT+YDG  SIAE+HPSIKSA+I+P+MR++TDEDL A+AGHIL+QPKI  EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q4G368.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G368</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>226.483</Hsp_bit-score>
+      <Hsp_score>576</Hsp_score>
+      <Hsp_evalue>8.96004e-76</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>130</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>164</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFT-IFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MALKSKFLVGSILATFILNGFSSPAQALELDEDTRTVTLDGKGNTVVLSVEQIKRGKRLFNNACAICHVGGLTKTNPNVGLDVEALSLATPPRDNVSSLVSYLKDPMTYDGADSIAELHPSIKSADIFPKMRSLTDEDLFAISGHILVQPKVVNEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>M  KS  L   +  T I + F   A A++LDE TRTV +D  G T+VL+ EQ+KRGKRLFN  C  CHVGG+TKTNPNVGLD EALSLATP RDN++ LV +LK+P TYDG +SIAE+HPSIKSADI+P+MRS+TDEDL A++GHIL+QPK+V EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q3M9H7.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3M9H7</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>225.328</Hsp_bit-score>
+      <Hsp_score>573</Hsp_score>
+      <Hsp_evalue>2.22352e-75</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFRRLIGVVVATVLLTFQLIVGSATALELDEATRTVPLNAQGDTVTLSLKQVKEGKRLFQYACAQCHVGGVTKTNQNVGLEPEALALATPNRNNIEGLVDYMKNPTTYDGVEEISEIHPSIKSADIFTAMRNLTDKDLESIAGHILLQPKILGDKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MF++   +        F + +G+A+A++LDEATRTV +++ G T+ L+ +QVK GKRLF   C  CHVGGVTKTN NVGL+PEAL+LATP R+NI GLVD++KNPTTYDG+E I+E+HPSIKSADI+  MR++TD+DL ++AGHILLQPKI+ +KWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q8Z044.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8Z044</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>224.172</Hsp_bit-score>
+      <Hsp_score>570</Hsp_score>
+      <Hsp_evalue>6.29508e-75</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>131</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFRRLIGVVVATALLTFQLIVGSATALELDEATRTVPLNAQGDTVTLSLKQVKEGKRLFQYACAQCHVGGVTKTNQNVGLEPEALALATPNRNNIEGLVDYMKNPTTYDGVEEISEIHPSLKSADIFTAMRNLTDKDLESIAGHILLQPKILGDKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MF++   +        F + +G+A+A++LDEATRTV +++ G T+ L+ +QVK GKRLF   C  CHVGGVTKTN NVGL+PEAL+LATP R+NI GLVD++KNPTTYDG+E I+E+HPS+KSADI+  MR++TD+DL ++AGHILLQPKI+ +KWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|B2IVD8.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2IVD8</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>223.016</Hsp_bit-score>
+      <Hsp_score>567</Hsp_score>
+      <Hsp_evalue>1.59725e-74</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFRRLIGVVVATVLLSFQLLVGSATAVELDKATRTVPLNAEGETTVLSLKQVKEGKRLFNYACAQCHAGGVTKTNQNVGLTPEDLALATPNRNNIEGLVDYLKNPTTYDGEEEISEIHPSIKSADIFTAMRNLTDEDLEAIAGHILIQPKIVGTKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MF++   +        F + +G+A+A++LD+ATRTV +++ G+T VL+ +QVK GKRLFN  C  CH GGVTKTN NVGL PE L+LATP R+NI GLVD+LKNPTTYDG E I+E+HPSIKSADI+  MR++TDEDL A+AGHIL+QPKIV  KWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B8HUH9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Cyanothece sp. PCC 7425]</Hit_def>
+  <Hit_accession>B8HUH9</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>215.698</Hsp_bit-score>
+      <Hsp_score>548</Hsp_score>
+      <Hsp_evalue>1.1922e-71</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MLKRCLWLVVTVLFA-WQVFNGTAIAAQLDATTRTVALNDQGKNITLSRRQVEDGQRLFNEACASCHAGGITKTNPSLDLSPETLALATPRRDSVAGLVDYMKDPTTYDGEDSIAEIHPSIKSADIYPKMRNLSEQDLTAIAGYILVQPKVQGEKWGGGKIYF</Hsp_hseq>
+      <Hsp_midline>M K+   L   V F  + +F GTA A  LD  TRTV ++  GK I L+  QV+ G+RLFN  C +CH GG+TKTNP++ L PE L+LATPRRD++AGLVD++K+PTTYDG +SIAE+HPSIKSADIYP+MR+++++DLTA+AG+IL+QPK+  EKWGGGKIY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q9TLW2.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q9TLW2</Hit_accession>
+  <Hit_len>164</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>214.542</Hsp_bit-score>
+      <Hsp_score>545</Hsp_score>
+      <Hsp_evalue>3.80671e-71</Hsp_evalue>
+      <Hsp_query-from>11</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>12</Hsp_hit-from>
+      <Hsp_hit-to>164</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>125</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>153</Hsp_align-len>
+      <Hsp_qseq>LVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>LAFLFAVSTYVYPASSLELNEEARTVKLNSEGQSLTLNEEQIKKGKRLFNSHCGSCHVGGITKTNPNVGLDLESLNGANPPRNNINALVEYMKDPKTYDGSESIAEIHPSIKSADIFPKMRDLSDDDLKVIAGHILVQPKINSEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>L F    S ++  AS+++L+E  RTV ++S G+++ L  EQ+K+GKRLFN+ CG+CHVGG+TKTNPNVGLD E+L+ A P R+NI  LV+++K+P TYDG ESIAE+HPSIKSADI+P+MR ++D+DL  +AGHIL+QPKI +EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|P48263.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48263</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>1.17584e-70</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>128</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MFNKNFWTSIIIGCLFCTITYSGVNAAALDEETRTVALNST-ETVVLTPEQVKRGKRLFNSTCGICHVGGITKTNPNVGLDSEALALATPPRNNIESLVDYMKNPTSYDGSEEIYDIHPSIRSADAFPKMRNLTEEDLYDIAGHILLSPKILPSQWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>MF K+     ++     +I     +A  LDE TRTV ++S+ +T+VLTPEQVKRGKRLFN+TCG CHVGG+TKTNPNVGLD EAL+LATP R+NI  LVD++KNPT+YDG E I ++HPSI+SAD +P+MR++T+EDL  +AGHILL PKI+  +WGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|P0A386.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c-549; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Thermosynechococcus vestitus BP-1] &gt;sp|P0A387.1| RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Thermostichus vulcanus]</Hit_def>
+  <Hit_accession>P0A386</Hit_accession>
+  <Hit_len>163</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>201.83</Hsp_bit-score>
+      <Hsp_score>512</Hsp_score>
+      <Hsp_evalue>4.50562e-66</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>163</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>122</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>163</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>MLKKCVWLAVALCLCLWQFTMGTALAAELTPEVLTVPLNSEGKTITLTEKQYLEGKRLFQYACASCHVGGITKTNPSLDLRTETLALATPPRDNIEGLVDYMKNPTTYDGEQEIAEVHPSLRSADIFPKMRNLTEKDLVAIAGHILVEPKILGDKWGGGKVYY</Hsp_hseq>
+      <Hsp_midline>M KK   L   +   ++   +GTA A +L     TV ++S GKTI LT +Q   GKRLF   C +CHVGG+TKTNP++ L  E L+LATP RDNI GLVD++KNPTTYDG + IAEVHPS++SADI+P+MR++T++DL A+AGHIL++PKI+ +KWGGGK+YY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q31LM9.2|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Synechococcus elongatus PCC 7942 = FACHB-805] &gt;sp|Q5N095.2| RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q31LM9</Hit_accession>
+  <Hit_len>167</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.519</Hsp_bit-score>
+      <Hsp_score>506</Hsp_score>
+      <Hsp_evalue>3.92863e-65</Hsp_evalue>
+      <Hsp_query-from>16</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>89</Hsp_identity>
+      <Hsp_positive>114</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>148</Hsp_align-len>
+      <Hsp_qseq>IFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>VFQFNLGAAQAAELTAETRTVKLNPQGDNVTLSLKQVAEGKQLFAYACGQCHVGGITKTDPNVGLDPEALALATPPRDSVESLVDYLHNPTTYDGEREISELHPSTKSTDIFPKMRNLTEDDLVAISGHILLQPKIVGTKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>+F   +G A A +L   TRTV ++  G  + L+ +QV  GK+LF   CG CHVGG+TKT+PNVGLDPEAL+LATP RD++  LVD+L NPTTYDG   I+E+HPS KS DI+P+MR++T++DL A++GHILLQPKIV  KWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q76FB0.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>Q76FB0</Hit_accession>
+  <Hit_len>155</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.126</Hsp_bit-score>
+      <Hsp_score>492</Hsp_score>
+      <Hsp_evalue>3.82845e-63</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>VAKDTNGGILNIAPEQLKRGKRLFNSHCSSCHVGGITKTNPNIGLDLESLSLATPPRNNLDALVDYMKNPTTYDGSESIAQIHPSIASSDIFPKMRDLSEDDLYAIAAHILTQPQIQAEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>V  D++G  + + PEQ+KRGKRLFN+ C +CHVGG+TKTNPN+GLD E+LSLATP R+N+  LVD++KNPTTYDG ESIA++HPSI S+DI+P+MR ++++DL A+A HIL QP+I  EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q85FS3.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; Flags: Precursor [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85FS3</Hit_accession>
+  <Hit_len>150</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.045</Hsp_bit-score>
+      <Hsp_score>484</Hsp_score>
+      <Hsp_evalue>4.12574e-62</Hsp_evalue>
+      <Hsp_query-from>36</Hsp_query-from>
+      <Hsp_query-to>163</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>150</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>128</Hsp_align-len>
+      <Hsp_qseq>VVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIYY</Hsp_qseq>
+      <Hsp_hseq>VVKDVSGQKVEVNADQLKRGKRLFNTHCSACHVGGITKTNPNIGLDLESLSLATPARNNLDALVDYMKNPTTYDGSESIAQIHPSIASSDIFPKMRDLSEDDLYAIASHILTQAQIQAEKWGGGKIYY</Hsp_hseq>
+      <Hsp_midline>VV D SG+ + +  +Q+KRGKRLFN  C ACHVGG+TKTNPN+GLD E+LSLATP R+N+  LVD++KNPTTYDG ESIA++HPSI S+DI+P+MR ++++DL A+A HIL Q +I  EKWGGGKIYY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q111E9.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q111E9</Hit_accession>
+  <Hit_len>161</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>188.348</Hsp_bit-score>
+      <Hsp_score>477</Hsp_score>
+      <Hsp_evalue>7.44697e-61</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>162</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>160</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>119</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>157</Hsp_align-len>
+      <Hsp_qseq>LFSLVFFTI--FSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGKIY</Hsp_qseq>
+      <Hsp_hseq>FISVVFIVLLTFTTFINSATAAKLDDNVRTLPLNED-KEVVLTIKEYTQGKREFTNVCSQCHVGGITKTNPDVSLDPETLALAYPARDNIEGLIDYMQNPTTYDGFIEISEFHPSIKSADIYPEMRNLTEDDLYAIAGYILVQPKVLGKQWGGGKIF</Hsp_hseq>
+      <Hsp_midline>  S+VF  +  F+ FI +A+A  LD+  RT+ ++   K +VLT ++  +GKR F   C  CHVGG+TKTNP+V LDPE L+LA P RDNI GL+D+++NPTTYDG   I+E HPSIKSADIYP MR++T++DL A+AG+IL+QPK++ ++WGGGKI+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|B0C731.1|</Hit_id>
+  <Hit_def>RecName: Full=Cytochrome c-550; AltName: Full=Cytochrome c550; AltName: Full=Low-potential cytochrome c; Flags: Precursor [Acaryochloris marina MBIC11017]</Hit_def>
+  <Hit_accession>B0C731</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.808</Hsp_bit-score>
+      <Hsp_score>473</Hsp_score>
+      <Hsp_evalue>3.44136e-60</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>160</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>159</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>115</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>160</Hsp_align-len>
+      <Hsp_qseq>MFKKSSQLFSLVFFTIFSIFIGTASAIDLDEATRTVVVDSSGKTIVLTPEQVKRGKRLFNATCGACHVGGVTKTNPNVGLDPEALSLATPRRDNIAGLVDFLKNPTTYDGLESIAEVHPSIKSADIYPRMRSVTDEDLTAMAGHILLQPKIVTEKWGGGK</Hsp_qseq>
+      <Hsp_hseq>MLKRYMLLAVATVFFAFQVLTSTATAAELDDATRTVALNE-GSTVTLSTQQAKEGQRLFNFACANCHIGGDTKTNPSINLSSASLAGANPRRDNVEGLVDYMNNPTTYDGFDTISEVHPSTQSTDVFPLMRNLSDEDLFDIAGHILIQPSVIGDQWGGGK</Hsp_hseq>
+      <Hsp_midline>M K+   L     F  F +   TA+A +LD+ATRTV ++  G T+ L+ +Q K G+RLFN  C  CH+GG TKTNP++ L   +L+ A PRRDN+ GLVD++ NPTTYDG ++I+EVHPS +S D++P MR+++DEDL  +AGHIL+QP ++ ++WGGGK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

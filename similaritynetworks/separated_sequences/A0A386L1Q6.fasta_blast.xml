@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_198013</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0A386L1Q6|DABB_PSEMU Domoic acid biosynthesis cluster protein B OS=Pseudo-nitzschia multiseries OX=37319 GN=dabB PE=2 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>249</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_198013</Iteration_query-ID>
+  <Iteration_query-def>sp|A0A386L1Q6|DABB_PSEMU Domoic acid biosynthesis cluster protein B OS=Pseudo-nitzschia multiseries OX=37319 GN=dabB PE=2 SV=1</Iteration_query-def>
+  <Iteration_query-len>249</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0A386L1Q6.1|</Hit_id>
+  <Hit_def>RecName: Full=Domoic acid biosynthesis cluster protein B; Short=PmDabB [Pseudo-nitzschia multiseries]</Hit_def>
+  <Hit_accession>A0A386L1Q6</Hit_accession>
+  <Hit_len>249</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>525.783</Hsp_bit-score>
+      <Hsp_score>1353</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>249</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>249</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>249</Hsp_identity>
+      <Hsp_positive>249</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>249</Hsp_align-len>
+      <Hsp_qseq>MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</Hsp_qseq>
+      <Hsp_hseq>MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</Hsp_hseq>
+      <Hsp_midline>MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P27206.4|</Hit_id>
+  <Hit_def>RecName: Full=Surfactin synthase subunit 1 [Bacillus subtilis subsp. subtilis str. 168]</Hit_def>
+  <Hit_accession>P27206</Hit_accession>
+  <Hit_len>3587</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.6538</Hsp_bit-score>
+      <Hsp_score>78</Hsp_score>
+      <Hsp_evalue>0.880884</Hsp_evalue>
+      <Hsp_query-from>119</Hsp_query-from>
+      <Hsp_query-to>201</Hsp_query-to>
+      <Hsp_hit-from>409</Hsp_hit-from>
+      <Hsp_hit-to>498</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>9</Hsp_gaps>
+      <Hsp_align-len>91</Hsp_align-len>
+      <Hsp_qseq>EVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEV---LQQTLPKFYDYPVGYRLNDRPAEI-----SAYWTLHMRIAR</Hsp_qseq>
+      <Hsp_hseq>EINMICERMITMLENALTHPEHTIDELTLISDAEKEKLLARAGGKSVSYRKDMTIPELFQEKAEL-LSDHPAVVFEDRTLSYRTLHEQSAR</Hsp_hseq>
+      <Hsp_midline>E+   C  +I  +     HP+  +D   +I DA+    LA  G   V      T+P+ +       L+D PA +      +Y TLH + AR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|Q96W30.2|</Hit_id>
+  <Hit_def>RecName: Full=Heat shock 70 kDa protein 2 [Paracoccidioides lutzii Pb01]</Hit_def>
+  <Hit_accession>Q96W30</Hit_accession>
+  <Hit_len>654</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>1.35019</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>70</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>APAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQH</Hsp_qseq>
+      <Hsp_hseq>APAIGIDLGTTYSCVGIFRDDRIEIIANDQGNRTTPSFV--AFTDTERLIGDAAKNQVA----MNPSNTVFDAKR</Hsp_hseq>
+      <Hsp_midline>APAI I +  T   +   +D +IE   N   N   PSF    F     LI    +NQV     ++PSN ++DA+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q05944.1|</Hit_id>
+  <Hit_def>RecName: Full=Heat shock 70 kDa protein [Hydra vulgaris]</Hit_def>
+  <Hit_accession>Q05944</Hit_accession>
+  <Hit_len>654</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>1.41139</Hsp_evalue>
+      <Hsp_query-from>77</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>72</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>77</Hsp_align-len>
+      <Hsp_qseq>SDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQH</Hsp_qseq>
+      <Hsp_hseq>SKAPAIGIDLGTTYSCVGVFQHGKVEIIANEQGNRTTPSYV--AFTDTERLIGDAAKNQVA----MNPSNTVFDAKR</Hsp_hseq>
+      <Hsp_midline>S APAI I +  T   +   Q  K+E   N+  N   PS+    F     LI    +NQV     ++PSN ++DA+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q02LI9.1|</Hit_id>
+  <Hit_def>RecName: Full=Serine/threonine transporter SstT; AltName: Full=Na(+)/serine-threonine symporter [Pseudomonas aeruginosa UCBPP-PA14]</Hit_def>
+  <Hit_accession>Q02LI9</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.113</Hsp_bit-score>
+      <Hsp_score>74</Hsp_score>
+      <Hsp_evalue>1.83307</Hsp_evalue>
+      <Hsp_query-from>144</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>PSNVIYDAQHPGALAE-DGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQW</Hsp_qseq>
+      <Hsp_hseq>PSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTTRNLLSELSNGVSLI-VKVVIRF</Hsp_hseq>
+      <Hsp_midline>PS+++  A HPG ++   G AEVLQ  L    D PV   ++     I A W + + IA         +  S L  G++ I VK  +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q9I273.1|</Hit_id>
+  <Hit_def>RecName: Full=Serine/threonine transporter SstT; AltName: Full=Na(+)/serine-threonine symporter [Pseudomonas aeruginosa PAO1]</Hit_def>
+  <Hit_accession>Q9I273</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.113</Hsp_bit-score>
+      <Hsp_score>74</Hsp_score>
+      <Hsp_evalue>1.88277</Hsp_evalue>
+      <Hsp_query-from>144</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>PSNVIYDAQHPGALAE-DGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQW</Hsp_qseq>
+      <Hsp_hseq>PSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTTRNLLSELSNGVSLI-VKVVIRF</Hsp_hseq>
+      <Hsp_midline>PS+++  A HPG ++   G AEVLQ  L    D PV   ++     I A W + + IA         +  S L  G++ I VK  +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|B7VA62.1|</Hit_id>
+  <Hit_def>RecName: Full=Serine/threonine transporter SstT; AltName: Full=Na(+)/serine-threonine symporter [Pseudomonas aeruginosa LESB58]</Hit_def>
+  <Hit_accession>B7VA62</Hit_accession>
+  <Hit_len>409</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.113</Hsp_bit-score>
+      <Hsp_score>74</Hsp_score>
+      <Hsp_evalue>1.89964</Hsp_evalue>
+      <Hsp_query-from>144</Hsp_query-from>
+      <Hsp_query-to>230</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>190</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>PSNVIYDAQHPGALAE-DGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQW</Hsp_qseq>
+      <Hsp_hseq>PSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTTRNLLSELSNGVSLI-VKVVIRF</Hsp_hseq>
+      <Hsp_midline>PS+++  A HPG ++   G AEVLQ  L    D PV   ++     I A W + + IA         +  S L  G++ I VK  +++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|P40918.1|</Hit_id>
+  <Hit_def>RecName: Full=Heat shock 70 kDa protein; AltName: Full=Allergen Cla h IV; AltName: Allergen=Cla h 4 [Cladosporium herbarum]</Hit_def>
+  <Hit_accession>P40918</Hit_accession>
+  <Hit_len>643</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.3426</Hsp_bit-score>
+      <Hsp_score>72</Hsp_score>
+      <Hsp_evalue>3.59865</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>70</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>34</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>APAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQH</Hsp_qseq>
+      <Hsp_hseq>APAIGIDLGTTYSCVGIYRDDRIEIIANDQGNRTTPSFV--AFTDTERLIGDSAKNQVA----INPHNTVFDAKR</Hsp_hseq>
+      <Hsp_midline>APAI I +  T   +   +D +IE   N   N   PSF    F     LI    +NQV     ++P N ++DA+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q00043.1|</Hit_id>
+  <Hit_def>RecName: Full=Heat shock 70 kDa protein [Histoplasma capsulatum]</Hit_def>
+  <Hit_accession>Q00043</Hit_accession>
+  <Hit_len>705</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>6.66295</Hsp_evalue>
+      <Hsp_query-from>79</Hsp_query-from>
+      <Hsp_query-to>153</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>70</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>75</Hsp_align-len>
+      <Hsp_qseq>APAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQH</Hsp_qseq>
+      <Hsp_hseq>APAVGIDLGTTYSCVGIFRDDRIEIIANDQGNRTTPSFV--AFTDTERLIGDAAKNQVA----MNPANTVFDAKR</Hsp_hseq>
+      <Hsp_midline>APA+ I +  T   +   +D +IE   N   N   PSF    F     LI    +NQV     ++P+N ++DA+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q9KNC9.1|</Hit_id>
+  <Hit_def>RecName: Full=Serine/threonine transporter SstT; AltName: Full=Na(+)/serine-threonine symporter [Vibrio cholerae O1 biovar El Tor str. N16961]</Hit_def>
+  <Hit_accession>Q9KNC9</Hit_accession>
+  <Hit_len>405</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.5722</Hsp_bit-score>
+      <Hsp_score>70</Hsp_score>
+      <Hsp_evalue>7.20501</Hsp_evalue>
+      <Hsp_query-from>144</Hsp_query-from>
+      <Hsp_query-to>222</Hsp_query-to>
+      <Hsp_hit-from>104</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>79</Hsp_align-len>
+      <Hsp_qseq>PSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRI</Hsp_qseq>
+      <Hsp_hseq>PTTLVLATGAEGATPPQGIAEVLNTLLFKLVDNPVSALMNANYIGILA-WGVGLGLALHHSSSTTKAVFEDLSHGISQI</Hsp_hseq>
+      <Hsp_midline>P+ ++      GA    G AEVL   L K  D PV   +N     I A W + + +A     S        L  GI++I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|P27024.1|</Hit_id>
+  <Hit_def>RecName: Full=Major surface glycoprotein G; AltName: Full=Attachment glycoprotein G; AltName: Full=Membrane-bound glycoprotein; Short=mG; Contains: RecName: Full=Mature secreted glycoprotein G; Short=Mature sG [Human respiratory syncytial virus (strain RSB6190)]</Hit_def>
+  <Hit_accession>P27024</Hit_accession>
+  <Hit_len>298</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>31.187</Hsp_bit-score>
+      <Hsp_score>69</Hsp_score>
+      <Hsp_evalue>8.00736</Hsp_evalue>
+      <Hsp_query-from>86</Hsp_query-from>
+      <Hsp_query-to>125</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>172</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>22</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>40</Hsp_align-len>
+      <Hsp_qseq>INPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCP</Hsp_qseq>
+      <Hsp_hseq>IQPSKPTTKQRQN----KPPNKPNND----FHFEVFNFVP</Hsp_hseq>
+      <Hsp_midline>I P++P+   RQ+       N+  ND    FHFEVF+F P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

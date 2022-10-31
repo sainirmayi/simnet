@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_48377</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0L1|THIG_PHATC Thiazole synthase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=thiG PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>269</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_48377</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0L1|THIG_PHATC Thiazole synthase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=thiG PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>269</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0L1.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0L1</Hit_accession>
+  <Hit_len>269</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>550.436</Hsp_bit-score>
+      <Hsp_score>1417</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>269</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>269</Hsp_identity>
+      <Hsp_positive>269</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>269</Hsp_align-len>
+      <Hsp_qseq>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</Hsp_qseq>
+      <Hsp_hseq>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</Hsp_hseq>
+      <Hsp_midline>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|A0T103.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T103</Hit_accession>
+  <Hit_len>269</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>469.544</Hsp_bit-score>
+      <Hsp_score>1207</Hsp_score>
+      <Hsp_evalue>1.61352e-168</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>268</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>268</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>223</Hsp_identity>
+      <Hsp_positive>245</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>268</Hsp_align-len>
+      <Hsp_qseq>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKL</Hsp_qseq>
+      <Hsp_hseq>MKNTFDPLRIGDKSFSSRLMLGTGKYRTSEDAINSIKKSECDIVTVAIRRLPTNINSDNISFLKSLDWEKLWLLPNTAGSQTAEDAIRMAFLGHELACQLGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLVKKGFTVLPYINADPMLALHLEDLGCATVMPLGSPIGSGQGLNNLANLQIIIENANIPVIVDAGIGAPSEATMAMELGADGVLLNTAVAQSKNPEQMAFAMNLGVQSGRLGYLAGRMEKKQYANPSSPVSQISKI</Hsp_hseq>
+      <Hsp_midline>M N  D L+IG+KSF+SRLMLGTGKYRT++ AI SI+ S CDIVTVAIRRLP N+ +DNI+FL  LDW KLWLLPNTAGSQTAE+AIRMAFLGHELACQ+GQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFL++KGFTVLPYINADPMLALHLEDLGCATVMPL SPIGSGQGLNNLAN++IIIENA++PVI+DAGIG PSEAT AMELGADGVLLNTAVAQSKNP QMA AM LGVQ+GRL YLAGRMEKK YA+ SSP+ QISK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49570.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49570</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>441.425</Hsp_bit-score>
+      <Hsp_score>1134</Hsp_score>
+      <Hsp_evalue>1.41742e-157</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>252</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>206</Hsp_identity>
+      <Hsp_positive>232</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEK</Hsp_qseq>
+      <Hsp_hseq>MINNSDTLKIGNKTFNSRLMLGSGKYRTIENAVNSIITSDCEILTVAVRRLPTKLTNDNTSFLKSLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQLGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLVKKGFTVLPYINADPMLALHLEDLGCATVMPLGSPIGSGQGLNNISNLQIIIENSSIPVIIDAGIGTPSEAAKSMELGADGVLLNTAIAQAKTPEKMALAMKLAVEAGRLGYLAGRMEK</Hsp_hseq>
+      <Hsp_midline>M NN D LKIGNK+FNSRLMLG+GKYRT ++A+ SI  S+C+I+TVA+RRLP  L NDN +FL  LDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQ+GQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFL++KGFTVLPYINADPMLALHLEDLGCATVMPL SPIGSGQGLNN++N++IIIEN+S+PVIIDAGIGTPSEA ++MELGADGVLLNTA+AQ+K P +MA AM+L V+AGRL YLAGRMEK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q317X8.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Prochlorococcus marinus str. MIT 9312]</Hit_def>
+  <Hit_accession>Q317X8</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>348.977</Hsp_bit-score>
+      <Hsp_score>894</Hsp_score>
+      <Hsp_evalue>5.08499e-121</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>266</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>173</Hsp_identity>
+      <Hsp_positive>213</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>266</Hsp_align-len>
+      <Hsp_qseq>NNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQIS</Hsp_qseq>
+      <Hsp_hseq>DNYSSLRIGGKQFSSRLMVGTGKYKSTQDMVESLSNSDTEIITVAVRRI----KNDQTGDNLLEKINWKKYWMLPNTAGCVNADEAVRIAMLGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETVKAAEVLIKKGFAVLPYINADPILAKRLEELGCSTVMPLGSPIGSGQGLLNLSNIAIIIENAKVPVIIDAGIGVPSEASQAMELGADGVLINSAIAQAKNPPLMAQAINYGVKAGRQAFLAGRIKKQDFAIASSPEKNIS</Hsp_hseq>
+      <Hsp_midline>+N   L+IG K F+SRLM+GTGKY++TQ  + S+ +S+ +I+TVA+RR+    KND    N L K++W K W+LPNTAG   A+EA+R+A LG ELA   GQE+N FVKLEVI D KYLLPDPI T+KAAE LI+KGF VLPYINADP+LA  LE+LGC+TVMPL SPIGSGQGL NL+NI IIIENA VPVIIDAGIG PSEA+QAMELGADGVL+N+A+AQ+KNP  MA A+  GV+AGR A+LAGR++K+ +A ASSP + IS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q8DMP6.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DMP6</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>345.125</Hsp_bit-score>
+      <Hsp_score>884</Hsp_score>
+      <Hsp_evalue>3.32772e-119</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>262</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>197</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>255</Hsp_align-len>
+      <Hsp_qseq>LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPL</Hsp_qseq>
+      <Hsp_hseq>LTIAGRQFRSRLMTGTGKYRSIADLQASVAASGCEIVTVAVRRVQTNAPGHE-GLVDALDWSKLWLLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPFGTLAAAEQLVKEGFAVLPYINADPLLAKRLEEVGCVTVMPLASPIGSGQGLRNAANIQIIIEQASVPVVVDAGIGTPSEAAAAMELGADALLINTAIAEAGNAPAMAKAMALATTAGRLAYLAGRIPVKAYASASSPL</Hsp_hseq>
+      <Hsp_midline>L I  + F SRLM GTGKYR+     AS+  S C+IVTVA+RR+  N        ++ LDW+KLWLLPNTAG QTAEEAIR+A LG E+A  +GQEDN FVKLEVI DPKYLLPDP GTL AAE L+++GF VLPYINADP+LA  LE++GC TVMPLASPIGSGQGL N ANI+IIIE ASVPV++DAGIGTPSEA  AMELGAD +L+NTA+A++ N   MA AM L   AGRLAYLAGR+  K YA ASSPL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|A8G7G9.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Prochlorococcus marinus str. MIT 9215]</Hit_def>
+  <Hit_accession>A8G7G9</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>344.354</Hsp_bit-score>
+      <Hsp_score>882</Hsp_score>
+      <Hsp_evalue>4.0905e-119</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>266</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>171</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>265</Hsp_align-len>
+      <Hsp_qseq>NLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQIS</Hsp_qseq>
+      <Hsp_hseq>NYSSLLIGGKKFSSRLMVGTGKYKSTQDMIESLSNSETEIITVAVRRI----KNDETGENLLEKINWKKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPMETLKAAEILIKKGFSVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIGIIIESAKVPVIIDAGIGVPSEASQAMELGADGVLINSAIAQAENPPLMAQAINYGVKAGRQAFLAGRIKKQDFATASSPEKNIS</Hsp_hseq>
+      <Hsp_midline>N   L IG K F+SRLM+GTGKY++TQ  I S+ +S  +I+TVA+RR+    KND    N L K++W K W+LPNTAG   ++EA+R+A LG ELA   GQE+N FVKLEVI D KYLLPDP+ TLKAAE LI+KGF+VLPYINADP+LA  LE++GCATVMPL SPIGSGQGL NL+NI IIIE+A VPVIIDAGIG PSEA+QAMELGADGVL+N+A+AQ++NP  MA A+  GV+AGR A+LAGR++K+ +A ASSP + IS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|B0C390.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Acaryochloris marina MBIC11017]</Hit_def>
+  <Hit_accession>B0C390</Hit_accession>
+  <Hit_len>275</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>344.354</Hsp_bit-score>
+      <Hsp_score>882</Hsp_score>
+      <Hsp_evalue>5.73016e-119</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>262</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>DKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPL</Hsp_qseq>
+      <Hsp_hseq>ETLQIGHRQFQSRLMTGTGKYDDFETMRRSIAASGCEIVTVAVRRVQTNAPGHQ-GLAEAVDWNKVWMLPNTAGCQTAEEAVRVARLGREMAKLLGQEDNNFIKLEVIPDSKYLLPDPIGTLEAAEQLVKEGFAVLPYINADPLLAKRLEEVGCATVMPLGSPIGSGQGIKNMANIQIIIENATVPVVVDAGIGSPSEAAQAMEMGADAVLINTAIAKAQDPVMMATAMGMATQAGRFAYQSGRIPVKAYASASSPL</Hsp_hseq>
+      <Hsp_midline>+ L+IG++ F SRLM GTGKY   ++   SI  S C+IVTVA+RR+  N           +DWNK+W+LPNTAG QTAEEA+R+A LG E+A  +GQEDN F+KLEVI D KYLLPDPIGTL+AAE L+++GF VLPYINADP+LA  LE++GCATVMPL SPIGSGQG+ N+ANI+IIIENA+VPV++DAGIG+PSEA QAME+GAD VL+NTA+A++++P  MA+AM +  QAGR AY +GR+  K YA ASSPL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|A2BTP5.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Prochlorococcus marinus str. AS9601]</Hit_def>
+  <Hit_accession>A2BTP5</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>343.584</Hsp_bit-score>
+      <Hsp_score>880</Hsp_score>
+      <Hsp_evalue>6.99196e-119</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>266</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>170</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>265</Hsp_align-len>
+      <Hsp_qseq>NLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQIS</Hsp_qseq>
+      <Hsp_hseq>NYSSLLIGGKQFSSRLMVGTGKYKSTQDMVASLSNSETEIITVAVRRI----KNDQTGENLLEKINWEKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILIKKGFAVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIRIIIENSKVPVIIDAGIGVPSEASQAMEIGADGVLINSAIAQAANPPLMAQAINYSVKAGRQAFLAGRIKKQDFAVASSPEKNIS</Hsp_hseq>
+      <Hsp_midline>N   L IG K F+SRLM+GTGKY++TQ  +AS+ +S  +I+TVA+RR+    KND    N L K++W K W+LPNTAG   ++EA+R+A LG ELA   GQE+N FVKLEVI D KYLLPDPI TLKAAE LI+KGF VLPYINADP+LA  LE++GCATVMPL SPIGSGQGL NL+NI+IIIEN+ VPVIIDAGIG PSEA+QAME+GADGVL+N+A+AQ+ NP  MA A+   V+AGR A+LAGR++K+ +A ASSP + IS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|P51361.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51361</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>342.043</Hsp_bit-score>
+      <Hsp_score>876</Hsp_score>
+      <Hsp_evalue>4.25534e-118</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>267</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>172</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>268</Hsp_align-len>
+      <Hsp_qseq>MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKN-DNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISK</Hsp_qseq>
+      <Hsp_hseq>VNDQLDQFKISDKSFSSRLMLGTGKYKNLQDAINSINVSGANIVTVAIRRAQ-NTKNLGRTNLIDGLDWSKLWILPNTAGCESAEEAVRIASLGQEIVKKLGQFDNNFIKLEVIPDSRYLLPDPIGTLKAAEYLINKGFVVMPYIGADPVLAKQLENIGCATVMPLASPIGSGKGLRNLLNLKIIIENAKIPVIIDAGIGTPSEAGKVMELGASAVLVNTAIARAKNSQTMARAMSLAVESGRLTYIAGRMPISEKAEPSSPILGISK</Hsp_hseq>
+      <Hsp_midline>+ + LD+ KI +KSF+SRLMLGTGKY+  Q AI SI  S  +IVTVAIRR   N KN    N ++ LDW+KLW+LPNTAG ++AEEA+R+A LG E+  ++GQ DN F+KLEVI D +YLLPDPIGTLKAAE+LI KGF V+PYI ADP+LA  LE++GCATVMPLASPIGSG+GL NL N+KIIIENA +PVIIDAGIGTPSEA + MELGA  VL+NTA+A++KN   MA AM L V++GRL Y+AGRM     A+ SSP+  ISK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|A3PFF2.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Prochlorococcus marinus str. MIT 9301]</Hit_def>
+  <Hit_accession>A3PFF2</Hit_accession>
+  <Hit_len>264</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.347</Hsp_bit-score>
+      <Hsp_score>869</Hsp_score>
+      <Hsp_evalue>3.1824e-117</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>266</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>265</Hsp_align-len>
+      <Hsp_qseq>NLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQIS</Hsp_qseq>
+      <Hsp_hseq>NYSSLIIGGKKFSSRLMVGTGKYKSSQDMVESLSNSETEIITVAVRRI----KNEQSGENLLEKINWEKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILIKKGFAVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIRIIIENAKVPVIIDAGIGVPSEASQAMEIGADGVLINSAIAQAANPPLMAQAINYSVKAGRQAFLAGRIKKQDFAVASSPEKNIS</Hsp_hseq>
+      <Hsp_midline>N   L IG K F+SRLM+GTGKY+++Q  + S+ +S  +I+TVA+RR+    KN+    N L K++W K W+LPNTAG   ++EA+R+A LG ELA   GQE+N FVKLEVI D KYLLPDPI TLKAAE LI+KGF VLPYINADP+LA  LE++GCATVMPL SPIGSGQGL NL+NI+IIIENA VPVIIDAGIG PSEA+QAME+GADGVL+N+A+AQ+ NP  MA A+   V+AGR A+LAGR++K+ +A ASSP + IS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q1XDC6.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDC6</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>338.191</Hsp_bit-score>
+      <Hsp_score>866</Hsp_score>
+      <Hsp_evalue>1.69658e-116</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>267</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>277</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>205</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>263</Hsp_align-len>
+      <Hsp_qseq>LDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISK</Hsp_qseq>
+      <Hsp_hseq>LDSLKIGEKIFNSRLMVGTGKYNNLKEAIKSIDYSGANIVTVAIRRAQNSKNLGRSNLLDGLDWSKLWILPNTAGCESAEEAVRIAALGREIVKKLGQTDNNFIKLEVIPDSHYLFPDPIGTLKAAEYLVKKGFIVMPYIGADPVLAKQLENIGCATVMPLASPIGSGQGLKNLLNLKIIIENSNIPVIIDAGIGTPSEAAKVMEMGASGVLVNTAIARAPNSPQMAKAMSLAVKSGRLTHTAGRMIINQTANPSSPIFGISK</Hsp_hseq>
+      <Hsp_midline>LD LKIG K FNSRLM+GTGKY   + AI SI+ S  +IVTVAIRR   +      N L+ LDW+KLW+LPNTAG ++AEEA+R+A LG E+  ++GQ DN F+KLEVI D  YL PDPIGTLKAAE+L++KGF V+PYI ADP+LA  LE++GCATVMPLASPIGSGQGL NL N+KIIIEN+++PVIIDAGIGTPSEA + ME+GA GVL+NTA+A++ N  QMA AM L V++GRL + AGRM     A+ SSP+  ISK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q112X4.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Trichodesmium erythraeum IMS101]</Hit_def>
+  <Hit_accession>Q112X4</Hit_accession>
+  <Hit_len>279</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>338.191</Hsp_bit-score>
+      <Hsp_score>866</Hsp_score>
+      <Hsp_evalue>2.00533e-116</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>262</Hsp_query-to>
+      <Hsp_hit-from>9</Hsp_hit-from>
+      <Hsp_hit-to>269</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>262</Hsp_align-len>
+      <Hsp_qseq>TNNLDK-LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPL</Hsp_qseq>
+      <Hsp_hseq>TETLEKPLIIAGKKFTSRLMTGTGKYPTIETMQQSIEASKCEIITVAVRRVQTQAPGHK-GLAEAIDWQKVWMLPNTAGCQTAEDAVRVARLGREMAKLLGQEDNNFVKLEVIPDSKYLLPDPIGTLQAAEQLIKEGFAVLPYINADPLLAKRLEEAGCSTVMPLGSPIGSGQGIQNAANISIIIDNSTVPVVIDAGIGTPSEATQAMEMGADALLINSAIALAKNPPIMAKAMGMATESGRLAYLAGRIPKKSYATPSSPV</Hsp_hseq>
+      <Hsp_midline>T  L+K L I  K F SRLM GTGKY T ++   SIE S C+I+TVA+RR+              +DW K+W+LPNTAG QTAE+A+R+A LG E+A  +GQEDN FVKLEVI D KYLLPDPIGTL+AAE LI++GF VLPYINADP+LA  LE+ GC+TVMPL SPIGSGQG+ N ANI III+N++VPV+IDAGIGTPSEATQAME+GAD +L+N+A+A +KNP  MA AM +  ++GRLAYLAGR+ KK YA  SSP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q8YRC9.1|</Hit_id>
+  <Hit_def>RecName: Full=Bifunctional protein ThiO/ThiG; Includes: RecName: Full=Probable FAD-dependent glycine oxidase; Includes: RecName: Full=Thiazole synthase [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YRC9</Hit_accession>
+  <Hit_len>652</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>349.747</Hsp_bit-score>
+      <Hsp_score>896</Hsp_score>
+      <Hsp_evalue>6.07009e-116</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>262</Hsp_query-to>
+      <Hsp_hit-from>394</Hsp_hit-from>
+      <Hsp_hit-to>647</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>171</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>255</Hsp_align-len>
+      <Hsp_qseq>LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPL</Hsp_qseq>
+      <Hsp_hseq>LIIAGKSFHSRLMTGTGKYRSIEEMQQSVVASGCEIVTVAVRRVQTKTPGHE-GLAEALDWSKIWMLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPIGTLQAAEQLVKEGFAVLPYINADPMLAKHLEDVGCATVMPLASPIGSGQGLKTTANIQIIIENAKIPVVVDAGIGAPSEASQAMELGADALLINSAIALAQNPAAMAQAMNLATVAGRLAYLAGRMPMKTYASASSPV</Hsp_hseq>
+      <Hsp_midline>L I  KSF+SRLM GTGKYR+ +    S+  S C+IVTVA+RR+              LDW+K+W+LPNTAG QTAEEAIR+A LG E+A  +GQEDN FVKLEVI DPKYLLPDPIGTL+AAE L+++GF VLPYINADPMLA HLED+GCATVMPLASPIGSGQGL   ANI+IIIENA +PV++DAGIG PSEA+QAMELGAD +L+N+A+A ++NP+ MA AM L   AGRLAYLAGRM  K YA ASSP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q6B924.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B924</Hit_accession>
+  <Hit_len>276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>334.724</Hsp_bit-score>
+      <Hsp_score>857</Hsp_score>
+      <Hsp_evalue>3.99397e-115</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>265</Hsp_query-to>
+      <Hsp_hit-from>16</Hsp_hit-from>
+      <Hsp_hit-to>273</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>258</Hsp_align-len>
+      <Hsp_qseq>LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQI</Hsp_qseq>
+      <Hsp_hseq>LIIDNKSFPSRLMLGTGKYRSLRNASISIRNSSASIVTVAIRRAYNNKLKGKSSLLDGLDWKKLWILPNTAGCETVEEAIRIAILGREMARRLGQVDNNFVKLEVIADSEYLFPDPYGTLKAAEYLVSNNFTVLPYINPDPVLAKQLEEIGCSAIMPLGSPIGSGQGLQNLLNLQIIINNAKVPIIIDAGIGTASEASQAMEMGASGVLLNTAVAKATNPEYMAEAMKLGVISGRIAYLSGRISKQDKAIASSPSEGI</Hsp_hseq>
+      <Hsp_midline>L I NKSF SRLMLGTGKYR+ ++A  SI +S+  IVTVAIRR   N      + L+ LDW KLW+LPNTAG +T EEAIR+A LG E+A ++GQ DN FVKLEVI+D +YL PDP GTLKAAE+L+   FTVLPYIN DP+LA  LE++GC+ +MPL SPIGSGQGL NL N++III NA VP+IIDAGIGT SEA+QAME+GA GVLLNTAVA++ NP  MA AM+LGV +GR+AYL+GR+ K+  A ASSP E I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q4G387.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G387</Hit_accession>
+  <Hit_len>277</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>332.798</Hsp_bit-score>
+      <Hsp_score>852</Hsp_score>
+      <Hsp_evalue>2.13121e-114</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>267</Hsp_query-to>
+      <Hsp_hit-from>14</Hsp_hit-from>
+      <Hsp_hit-to>276</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>201</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>263</Hsp_align-len>
+      <Hsp_qseq>LDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISK</Hsp_qseq>
+      <Hsp_hseq>IDPLVIGERQFTSRLMLGTGKYKNLDEAKKSITASGCQILTVAVRRAQNSTIQSMGNLITGLDWSKIWLMPNTAGCQTAQEAIRVAFLGREITKNIGFENNNFTKLEVIPDPKYLLPDGLGTLLAAEYLVSKNFTVLPYINADPILAKQLENAGCATVMPLGSPIGSGQGLKNLSNIQIIIENANVPVIVDAGIGTPSQAAQAMEIGAGGVLANTAVAKAQNAPQMAYAMQLGVLAGRAAFQAGKIDAGKLAQPSSPIVGLSK</Hsp_hseq>
+      <Hsp_midline>+D L IG + F SRLMLGTGKY+    A  SI  S C I+TVA+RR   +      N +  LDW+K+WL+PNTAG QTA+EAIR+AFLG E+   +G E+N F KLEVI DPKYLLPD +GTL AAE+L+ K FTVLPYINADP+LA  LE+ GCATVMPL SPIGSGQGL NL+NI+IIIENA+VPVI+DAGIGTPS+A QAME+GA GVL NTAVA+++N  QMA AM+LGV AGR A+ AG+++    A  SSP+  +SK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q3M859.1|</Hit_id>
+  <Hit_def>RecName: Full=Bifunctional protein ThiO/ThiG; Includes: RecName: Full=Probable FAD-dependent glycine oxidase; Includes: RecName: Full=Thiazole synthase [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3M859</Hit_accession>
+  <Hit_len>652</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>344.354</Hsp_bit-score>
+      <Hsp_score>882</Hsp_score>
+      <Hsp_evalue>6.62798e-114</Hsp_evalue>
+      <Hsp_query-from>8</Hsp_query-from>
+      <Hsp_query-to>262</Hsp_query-to>
+      <Hsp_hit-from>394</Hsp_hit-from>
+      <Hsp_hit-to>647</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>169</Hsp_identity>
+      <Hsp_positive>201</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>255</Hsp_align-len>
+      <Hsp_qseq>LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPL</Hsp_qseq>
+      <Hsp_hseq>LIIAGKSFHSRLMTGTGKYRSIEEMQQSVVASGCEIVTVAVRRVQTKAPGHE-GLAEALDWSRIWMLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPIGTLQAAEQLVKEGFAVLPYINADPMLAKRLEDVGCATVMPLASPIGSGQGLKTTANIQIIIENAKIPVVVDAGIGAPSEASQAMELGADALLINSAIALAQNPAAMAQAMNLATVAGRLAYLAGRMPIKTYASASSPV</Hsp_hseq>
+      <Hsp_midline>L I  KSF+SRLM GTGKYR+ +    S+  S C+IVTVA+RR+              LDW+++W+LPNTAG QTAEEAIR+A LG E+A  +GQEDN FVKLEVI DPKYLLPDPIGTL+AAE L+++GF VLPYINADPMLA  LED+GCATVMPLASPIGSGQGL   ANI+IIIENA +PV++DAGIG PSEA+QAMELGAD +L+N+A+A ++NP+ MA AM L   AGRLAYLAGRM  K YA ASSP+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|O19915.2|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>O19915</Hit_accession>
+  <Hit_len>266</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>328.946</Hsp_bit-score>
+      <Hsp_score>842</Hsp_score>
+      <Hsp_evalue>4.23889e-113</Hsp_evalue>
+      <Hsp_query-from>10</Hsp_query-from>
+      <Hsp_query-to>261</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>258</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>168</Hsp_identity>
+      <Hsp_positive>194</Hsp_positive>
+      <Hsp_gaps>8</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>IGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKL----DWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSP</Hsp_qseq>
+      <Hsp_hseq>IKNKKFQSRLILGTGRYRSLLEAKQSIEASGCDIVTVAIRRI----NADNIGFIKSLIKLINWQKYWLLPNTAGCQTAEEAIRVANLGQEIAKQLGQVDNNFVKLEVIPANKYLFPDPIGTLKAAEHLVKQGFVVLPYINSDPILAKQLEDIGCSAVMPLASAIGSGQGLKNIDNIRIIVEASKVPVIVDAGIGVPSEATQVMEIGADAVLINTAVAQCKVPVAMANAMRLAVAAGYEAHSAGRIPIKNYARTSSP</Hsp_hseq>
+      <Hsp_midline>I NK F SRL+LGTG+YR+   A  SIE S CDIVTVAIRR+      DNI F+  L    +W K WLLPNTAG QTAEEAIR+A LG E+A Q+GQ DN FVKLEVI   KYL PDPIGTLKAAE L+++GF VLPYIN+DP+LA  LED+GC+ VMPLAS IGSGQGL N+ NI+II+E + VPVI+DAGIG PSEATQ ME+GAD VL+NTAVAQ K P  MA+AMRL V AG  A+ AGR+  K YA  SSP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q3B0V2.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Synechococcus sp. CC9902]</Hit_def>
+  <Hit_accession>Q3B0V2</Hit_accession>
+  <Hit_len>273</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>325.094</Hsp_bit-score>
+      <Hsp_score>832</Hsp_score>
+      <Hsp_evalue>2.05462e-111</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>261</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>263</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>156</Hsp_identity>
+      <Hsp_positive>199</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>TNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSP</Hsp_qseq>
+      <Hsp_hseq>SNGSDPLTIGGRLFSCRLLTGTGKYPSINSMQSSIERSACEMVTVAVRRVQTGAAG-HTGLMEAIDWSRIWMLPNTAGCTNAEEAIRVARLGRELAKLAGQEDNNFIKLEVIPDSRHLLPDPIGTLQAAEALVKEGFTVLPYINADPLLAQRLEEVGCATVMPLGSPIGSGQGLNNAANIALIIENATVPVVVDAGIGVPSEAAQAMEMGADAVLVNSAIALAGDPPSMAEAMGKAVIAGRMAYSSGRLPRRGQASASSP</Hsp_hseq>
+      <Hsp_midline>+N  D L IG + F+ RL+ GTGKY +  S  +SIE S C++VTVA+RR+       +   +  +DW+++W+LPNTAG   AEEAIR+A LG ELA   GQEDN F+KLEVI D ++LLPDPIGTL+AAE L+++GFTVLPYINADP+LA  LE++GCATVMPL SPIGSGQGLNN ANI +IIENA+VPV++DAGIG PSEA QAME+GAD VL+N+A+A + +P  MA AM   V AGR+AY +GR+ ++  A ASSP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q7UA46.1|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Parasynechococcus marenigrum WH 8102]</Hit_def>
+  <Hit_accession>Q7UA46</Hit_accession>
+  <Hit_len>274</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>325.094</Hsp_bit-score>
+      <Hsp_score>832</Hsp_score>
+      <Hsp_evalue>2.34588e-111</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>261</Hsp_query-to>
+      <Hsp_hit-from>13</Hsp_hit-from>
+      <Hsp_hit-to>267</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>196</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>DKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSP</Hsp_qseq>
+      <Hsp_hseq>DDLIIGGRRFHSRLFTGTGKYPSMEVMQQSIKRSACEMVTVAVRRVQA-VAAGHAGLMEAIDWTRIWMLPNTAGCTNAEEAVRVARLGRELAKLAGQEDNTFVKLEVIPDGRHLLPDPIGTLQAAEQLVNEGFTVLPYINADPLLAKHLEDAGCATVMPLGSPIGSGQGLNNAANIALIIENASVPVVVDAGIGVPSEAAQALEMGADAVLVNSAIALARNPAAMAEAMGQAVIAGRTAFCAGRLPRREEASASSP</Hsp_hseq>
+      <Hsp_midline>D L IG + F+SRL  GTGKY + +    SI+ S C++VTVA+RR+   +   +   +  +DW ++W+LPNTAG   AEEA+R+A LG ELA   GQEDN FVKLEVI D ++LLPDPIGTL+AAE L+ +GFTVLPYINADP+LA HLED GCATVMPL SPIGSGQGLNN ANI +IIENASVPV++DAGIG PSEA QA+E+GAD VL+N+A+A ++NP+ MA AM   V AGR A+ AGR+ ++  A ASSP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q5N3I3.2|</Hit_id>
+  <Hit_def>RecName: Full=Thiazole synthase [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q5N3I3</Hit_accession>
+  <Hit_len>276</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>320.857</Hsp_bit-score>
+      <Hsp_score>821</Hsp_score>
+      <Hsp_evalue>1.19042e-109</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>261</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>264</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>DKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSP</Hsp_qseq>
+      <Hsp_hseq>DVLTIAGRSFRSRLMTGTGKYRSFEQMRASIAASGCEIVTVAVRRVQTNAPGHE-GLAEALDWQKIWMLPNTAGCATAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDSRYLLPDPIGTLQAAEQLVKEGFAVLPYINADPLLAKRLEEVGCATVMPLGSPIGSGQGIRNEANIRIIVENAKVPVVVDAGIGTASEAAQAMELGADALLINTAIAQAEDPARMAQAMAMATIAGRLAFQAGRIPTRSAAIASSP</Hsp_hseq>
+      <Hsp_midline>D L I  +SF SRLM GTGKYR+ +   ASI  S C+IVTVA+RR+  N           LDW K+W+LPNTAG  TAEEAIR+A LG E+A  +GQEDN FVKLEVI D +YLLPDPIGTL+AAE L+++GF VLPYINADP+LA  LE++GCATVMPL SPIGSGQG+ N ANI+II+ENA VPV++DAGIGT SEA QAMELGAD +L+NTA+AQ+++P++MA AM +   AGRLA+ AGR+  +  A ASSP</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

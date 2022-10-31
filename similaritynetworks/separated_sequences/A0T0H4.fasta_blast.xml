@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_31223</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0H4|SYFB_PHATC Phenylalanine--tRNA ligase beta subunit, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=pheT PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>706</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_31223</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0H4|SYFB_PHATC Phenylalanine--tRNA ligase beta subunit, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=pheT PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>706</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0H4.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit, chloroplastic; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0H4</Hit_accession>
+  <Hit_len>706</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1416.75</Hsp_bit-score>
+      <Hsp_score>3666</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>706</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>706</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>706</Hsp_identity>
+      <Hsp_positive>706</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>706</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</Hsp_qseq>
+      <Hsp_hseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</Hsp_hseq>
+      <Hsp_midline>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|Q5N5G8.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus elongatus PCC 6301]</Hit_def>
+  <Hit_accession>Q5N5G8</Hit_accession>
+  <Hit_len>811</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>359.377</Hsp_bit-score>
+      <Hsp_score>921</Hsp_score>
+      <Hsp_evalue>8.98336e-112</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>810</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>215</Hsp_identity>
+      <Hsp_positive>363</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>671</Hsp_align-len>
+      <Hsp_qseq>IALEISSTANRSDSLSIQGISVEIASLFNKQ---PKV--CKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLIS-LLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF-LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKS-VGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>VVLDLTSTANRADALSLIGIAREVRALTAATLTLPEVGTADLSRTTLSW----RSLYKVKPGS----HYSGTIIEGVTIAPSPEWLQKRLQLAGIRTINNVVDITNYILLEYGQPLHAFDRQKLQAIAGSSDLAIGVRSAQAGETLKTLDDQERTLAEAALVITAGDCPVALAGVMGGADSEVSQETTQLLLEAAWFEPIAVRRSARSQGLRTEASARYERGVNVTELPIATQRAIDLLLQIAGGTVISQTVATTTQTEPE-HSITLRLQRINELLGPVQAE-DEELKDLGADDIERLLTAIGCHLTLVDDAV--WQVRVPPYRYRDLEREIDLIEEVARLYGYDNFGETLPPLGSDEGALSIDESLRRQIRAVCRGVGLTELQHYSLVKPGS--DRQVHLANPLLAEYSALRLDLLSGLIDAFQYNWEQGNGPLWGFEIGRIFWRE-EDGFFEADRMGGILGGDPSRGRWQRGGKEQAIDWYAAKGVLEEIFERFGLTIEFQPDRQ--DDRF-HPGRTASLWL-QGDRLGRFGQLHPSLCEGRGLPAEVYAFELDLDVWLDHLDQPERQVPRFQPYSSFPASDRDLAFFVDQSVTVAELERIIRRQGGALLSEVELFDQYCGEHVPENQRSLAFRLTYRASDRTLTEAEVEPVHDQVRQSLVERFRVTLR</Hsp_hseq>
+      <Hsp_midline>+ L+++STANR+D+LS+ GI+ E+ +L       P+V       ++L+W    ++L  ++        ++  I+EG+     P+W+Q +L  +GI  +NN+VD  NYILLE G P   +D  K+ +   +   ++ +  A+ G      +     L  +  ++ A + P+++AG++   +     +T+ LL+E + F    +R+ +R   +RT+ SARYE+ +  T L  A  R I  LL+I+  +++ +  ++    E     I L  + I E+LGP++   +E L  +  + +   L  +     L D +   W+V +P  R  D+ REIDLIEEV RL+G++NF   LP + S  G        R++I +    +GLTEL HYSLV   +    ++ L NPLL++ S LR+ LL  L+   Q N +QGN  L GFE G +F    E    E + +GGI GG   +  W   G  Q++ W+ AKG +E++F++  L I ++ + Q    +F HP R+A ++L  G  +G FGQLHP L    GL +E+Y FEL+L++    L Q +  +  +  YS +P   +DL+F + +++   ELE+II   G   LS++ L D Y GE +PE   SL  +LT++++ +TL   E++ +   +++ L  + +  LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.0225353</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEI</Hsp_qseq>
+      <Hsp_hseq>MRISLNWLRELVQV-DLEPEVLAEKLTLAGFEVEEI</Hsp_hseq>
+      <Hsp_midline>M+ISL W++EL+ + +++ + L EKLTL GFEVEEI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P74764.2|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus elongatus PCC 7942 = FACHB-805]</Hit_def>
+  <Hit_accession>P74764</Hit_accession>
+  <Hit_len>810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>358.221</Hsp_bit-score>
+      <Hsp_score>918</Hsp_score>
+      <Hsp_evalue>2.33744e-111</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>159</Hsp_hit-from>
+      <Hsp_hit-to>809</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>216</Hsp_identity>
+      <Hsp_positive>359</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>669</Hsp_align-len>
+      <Hsp_qseq>IALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLIS-LLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF-LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKS-VGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>VVLDLTSTANRADALSLIGIAREVRALTAATLTLPEV------ELQTYPELPCLA-ISLQSEACSHYSGTIIEGVTIAPSPEWLQKRLQLAGIRTINNVVDITNYILLEYGQPLHAFDRQKLQAIAGSSDLAIGVRSAQAGETLKTLDDQERTLAEAALVITAGDCPVALAGVMGGADSEVSQETTQLLLEAAWFEPIAVRRSARSQGLRTEASARYERGVNVTELPIATQRAIDLLLQIAGGTVISQTVATTTQTEPE-HSITLRLQRINELLGPVQAE-DEELKDLGADDIERLLTAIGCHLTLVDDAV--WQVRVPPYRYRDLEREIDLIEEVARLYGYDNFGETLPPLGSDEGALSIDESLRRQIRAVCRGVGLTELQHYSLVKPGS--DRQVHLANPLLAEYSALRLDLLSGLIDAFQYNWEQGNGPLWGFEIGRIFWRE-EDGFFEADRMGGILGGDPSRGRWQRGGKEQAIDWYAAKGVLEEIFERFGLTIEFQPDRQ--DDRF-HPGRTASLWL-QGDRLGRFGQLHPSLCEGRGLPAEVYAFELDLDVWLDHLDQPERQVPRFQPYSSFPASDRDLAFFVDQSVTVAELERIIRRQGGALLSEVELFDQYCGEHVPENQRSLAFRLTYRASDRTLTEAEVEPVHDQVRQSLVERFRVTLR</Hsp_hseq>
+      <Hsp_midline>+ L+++STANR+D+LS+ GI+ E+ +L       P+V       L    ++  L  I      C  ++  I+EG+     P+W+Q +L  +GI  +NN+VD  NYILLE G P   +D  K+ +   +   ++ +  A+ G      +     L  +  ++ A + P+++AG++   +     +T+ LL+E + F    +R+ +R   +RT+ SARYE+ +  T L  A  R I  LL+I+  +++ +  ++    E     I L  + I E+LGP++   +E L  +  + +   L  +     L D +   W+V +P  R  D+ REIDLIEEV RL+G++NF   LP + S  G        R++I +    +GLTEL HYSLV   +    ++ L NPLL++ S LR+ LL  L+   Q N +QGN  L GFE G +F    E    E + +GGI GG   +  W   G  Q++ W+ AKG +E++F++  L I ++ + Q    +F HP R+A ++L  G  +G FGQLHP L    GL +E+Y FEL+L++    L Q +  +  +  YS +P   +DL+F + +++   ELE+II   G   LS++ L D Y GE +PE   SL  +LT++++ +TL   E++ +   +++ L  + +  LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.0223374</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>20</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEI</Hsp_qseq>
+      <Hsp_hseq>MRISLNWLRELVQV-DLEPEVLAEKLTLAGFEVEEI</Hsp_hseq>
+      <Hsp_midline>M+ISL W++EL+ + +++ + L EKLTL GFEVEEI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51346.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit, chloroplastic; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51346</Hit_accession>
+  <Hit_len>720</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>351.673</Hsp_bit-score>
+      <Hsp_score>901</Hsp_score>
+      <Hsp_evalue>9.05347e-110</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>701</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>719</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>252</Hsp_identity>
+      <Hsp_positive>392</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>727</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKT--ECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDN-------SIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSL-----KSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGN----IETTLTEIEYVGGIFGGT-KIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHW-RINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQ-NKLTIYSQ-YSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEID----RIVKNLKRVLELKVQ</Hsp_qseq>
+      <Hsp_hseq>MKVSLNWLKELAKIEIIDAHSLANKLTQAGFEVEDVEMVNIDGHKDYILDVTSTANRSDVLSMIGLSREVSAL--TQADIVK--TADIPSAGLFDNISTIISDDSLLNCSYYVSAIMDNIVIQDSPKWLKNRLYSCGFISQNLIIDISNYIMLKWGQPINIIDLKKI-ADTNTESY------IEITSNFCSSKQKSVKLDNKDIALSRDVLITQINNNITSIAGIGINQEFHVDQNTKLIFIEAAIFKEAVVRKSSRSIGIRTESSIRQERGLNIDNGRSAYR-ETLSLLIELTHGKVKATFLKKETENSTLN-----IDISLKKIQDVLGPIKD--NHTVRFLSFDEIENTLKSLQFK-ITKKDVKKFNVIIPSYRKYDVFREIDIVEEIARVYGYNQFQSKIPKIQFTKHPSSRRNFIDQIRNILRNLGLTELVHYSLVKS----KGEINLKNPLIKDYSTLRSSLLEGLINASAYNIKQSNQTVDGFEIGTVFNLKRNKIIETTKLAI-----ILGGSLDIRSEWSEPAHSLNWYEAKGIIENFFRKLNKSIQWVKRESSNDQINFIQNNKSATLTYNND-NIGLFGELNELTSSQFGFNTELFVLEIDLDILQYSDPEINYLSYRIQPYSKYPCITRDLCIVIPKKMQINSLFQLLNQFNDNDLENMTLFDQYSNKLLGNGKKSIGLRFTYRSDHKTLTNLEIDNKQNELQKNIIKKLNLEIR</Hsp_hseq>
+      <Hsp_midline>M++SL W+KEL  IE +D   L  KLT  GFEVE++  + I+  K   L+++STANRSD LS+ G+S E+++L   Q  + K   + +       N++TI +  +   C  + + I++ +     PKW++N+L S G +  N ++D  NYI+L+ G P    DL K+ +   T ++       E  S F +S Q + KLDN        + + Q NN   SIAGI  N E      T  + IE +IF  + +R+ SR + IRT+ S R E+ L     +S Y  E L  LI L      +   K  + N  L      I ++ K I ++LGPIK   N  + ++S + + + LK L FK +       + V IPS R  D+ REID++EE+ R++G+N F + +P+I+             +I + L N+GLTEL+HYSLV +    K EI L NPL+ D STLR SLL  L+     N+KQ N  ++GFE G VF+      IETT   I     I GG+  I+S W E   SL W+EAKG IE  F++LN  I W +  S      F+   +SA +  ++  NIG+FG+L+ L +++ G ++E+++ E++L+++Q S  + N L+   Q YS YP I +DL  +I K ++ + L +++       L  + L D Y  + +     S+ L+ T++S+ KTL N EID     + KN+ + L L+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q8YMH5.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YMH5</Hit_accession>
+  <Hit_len>810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>348.977</Hsp_bit-score>
+      <Hsp_score>894</Hsp_score>
+      <Hsp_evalue>9.428e-108</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>809</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>214</Hsp_identity>
+      <Hsp_positive>364</Hsp_positive>
+      <Hsp_gaps>27</Hsp_gaps>
+      <Hsp_align-len>689</Hsp_align-len>
+      <Hsp_qseq>EKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYK-FHSSNKVLEKVLKPIVLNYKTIVEILGPIK-KRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFE--KGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>ENLPLGS-DVRPLLGLD-----DVILDVTATANRADALSMVGIAREVAALTDAKLNIPEPGEVSVSGSVGKLGLKIADTQA--CPAYIGTVIEQVKIASSPEWLQQRLRSAGVRPISNVVDITNYVLLEWGQPLHAFDQERLKFVANADSLTIGVRFANPGETLKTLDGQTRNLTTQNLLITANDQPVALAGVMGGEETEVHEGTQSLILEAALFDSVAIRRSSRSVGLRSEASGRYERGVNRAELEIANRRALSLISELAAGVIVHQEIADTRPDPASWSRSILLRLDRVNEVLGPINVGETGE----LEAKDVERTLTALGCE-LTPAGEGTWNVSVPPYRYRDLEREIDLIEEVARLYGYDNFCDTLPDKAEAGYLPVDQELVRKLRAALRAEGLTELIHYSLVKPGE--DRQIVLSNPLFAEYSALRTDLLAGLIDAFQYNLEQGNGSLNGFEIGRIFWQE-EDGLQEKDAIAGIIGGDTSLGKWSKGSKEQPLAWFEAKGILESVFQQLGILVEYQPDCR---DERLHPGRTASLWI-GGNRLGIFGQLHPQLRRDKDLPESVYVFQLDLDVFLNALDKDEILVPTFKPYSTYPASDRDIAFFAPVKVSVSEIEKAINKAGKGLLESVEIFDEYRGENVPQGQRSLAFRLVYRASDRTLTDTEVEPVHNKVREALVEKFGVNLR</Hsp_hseq>
+      <Hsp_midline>E L LG  +V  +L L+      + L++++TANR+D+LS+ GI+ E+A+L + +  + +    S++       L    T    C  +   ++E ++  + P+W+Q +L S+G+ P++N+VD  NY+LLE G P   +D +++       + ++ +  A  G      +     L     L+ AN+ P+++AG++  +E   H  T SL++E ++F +  IR+ SR + +R++ S RYE+ +    L  A  R +SL+  ++   +V++    +        + I+L    + E+LGPI    T E    +  + V   L  L  + L  +    W V++P  R  D+ REIDLIEEV RL+G++NF   LP     G      +  +K+ + L   GLTELIHYSLV        +I L NPL ++ S LR  LL  L+   Q NL+QGN  L GFE G +F    E  L E + + GI GG      W +  K Q L WFEAKG +E +FQQL + + ++ + +    + LHP R+A +++  G  +G+FGQLHP L     L   +Y+F+L+L++   +L ++++ +  +  YS YP   +D++F     +   E+EK I   G   L  + + D+Y+GE +P+   SL  +L ++++ +TL + E++ +   ++  L  K    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.954223</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEI</Hsp_qseq>
+      <Hsp_hseq>MRISLNWLRELVEIK-LSPEELAHILTMAGFEVEDI</Hsp_hseq>
+      <Hsp_midline>M+ISL W++EL++I+ +  ++L   LT+ GFEVE+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|P74296.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P74296</Hit_accession>
+  <Hit_len>810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>348.591</Hsp_bit-score>
+      <Hsp_score>893</Hsp_score>
+      <Hsp_evalue>1.21328e-107</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>158</Hsp_hit-from>
+      <Hsp_hit-to>809</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>208</Hsp_identity>
+      <Hsp_positive>343</Hsp_positive>
+      <Hsp_gaps>21</Hsp_gaps>
+      <Hsp_align-len>666</Hsp_align-len>
+      <Hsp_qseq>IALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFL--FDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKI-KSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>VILEISPTANRADALSMVGVAREVAALTGGKLSLPEIKAVSVSDQ----DLPISVTEPQACPTYVGTVIRGVKVGPSPDWLQQRLLAAGTRPINNVVDVTNYVLLEWGQPLHSFDQDKLQTLVGPEGFALGVRFAEEGEKLITLDDQERTLQPQNLLVTANDQPVAIAGVMGGAATEVDENTQNIVLETALFDGVTIRKSSKAINLRSESSTRYERGVNRCELEVALHRAIALMTELAGGTVVRQGKADQRQDR--GEAIINLRLERLQQLLGKVNTPTGIGNITAEDVERILTDLGCGLTRQSDSDTPVWAVTVPSYRQRDIEREIDLIEEVARLYGYDHFCEQLPSNTIAGGLSPSYQAELALREACRGVGLTEVVHYSLVKPH---GSEVMLANPLFAEYSALRTNLLDGLITAFANNQAQNNGALNAFEVGRVFWQN-EGDIGEADHLAGICGGSQITEGTWPQGGKPQPMSWYDAKGLLEAIFQRLGATVTY---SGDHQDPRLHPGRTA-LLSCNGTVLGRFGQLHPQLRREKGLIDEVYAFEITLTPLYQAMETQILGTPDFRPYSPYPAVARDLALYAPLELTVAELTQAMVKAGGDLLEQVELFDEYRGQSVPAGQRSLAFSLAYRVGDRTLTDADVEPLHNQIREALTKQFAVSLR</Hsp_hseq>
+      <Hsp_midline>+ LEIS TANR+D+LS+ G++ E+A+L   +  + +    S++ Q    +L    T    C  +   ++ G++    P W+Q +L+++G  P+NN+VD  NY+LLE G P   +D DK+ + V    F+L +  AE G +    +     L     LV AN+ P++IAG++          T ++++E ++F    IR+ S+ + +R++ S RYE+ +    L  AL+R I+L+       V +   +++  ++     ++N +         K  T   +  I+ E V   L  L        DS T  W VT+PS R  DI REIDLIEEV RL+G+++F   LP     G    SYQ    +      +GLTE++HYSLV       +E+ L NPL ++ S LR +LL  L+     N  Q N  L  FE G VF  N E  + E +++ GI GG++I + +W + G  Q + W++AKG +E +FQ+L   + +   S  +    LHP R+A +   +G  +G FGQLHP L  + GL  E+Y FE+ L  + Q+++   L    +  YS YP + +DL+      +   EL + +   G + L Q+ L D+Y+G+ +P    SL   L ++   +TL + +++ +   ++  L  +    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>4.06706</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>85</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>83</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>24</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>87</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPK--VCKYFN</Hsp_qseq>
+      <Hsp_hseq>MRISVNWLQSLVEL-NLSPEELGELLTIAGLEVEEI---EDRRSWAAGVVLGRVISREKHPNADKLSVCVVDIGTEEPSTIVCGAAN</Hsp_hseq>
+      <Hsp_midline>M+IS+ W++ L+++ N+  ++L E LT+ G EVEEI   E        + +    +R    +   +SV +  +  ++P   VC   N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q3MAZ7.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MAZ7</Hit_accession>
+  <Hit_len>810</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>345.51</Hsp_bit-score>
+      <Hsp_score>885</Hsp_score>
+      <Hsp_evalue>2.04722e-106</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>809</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>219</Hsp_identity>
+      <Hsp_positive>366</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>692</Hsp_align-len>
+      <Hsp_qseq>EKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYKFHSSNKVLEKVL-KPIVLNYKTIVEILGPIK-KRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFE--KGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>ENLPLGS-DVRPLLGLD-----DVILDVTATANRADALSMVGIAREVAALTDAKLSIPKPGEAFVS-----ESVGKLGLKIADTQACPAYIGTVIEQVKIASSPEWLQQRLRSAGVRPISNVVDITNYVLLEWGQPLHAFDQERLKSVANADNLTIGVRCANQGETLKTLDGQTRNLTTQNLLITANDQPVALAGVMGGEETEVHEGTQSLILEAALFDSVAIRRSSRSVGLRSEASGRYERGVNRAELEIANRRALSLISELADGVIVHQEIADTRPDPTTWSRSIFLRLDRVNEVLGPINVGETGE----LEAKDVERTLTALGCE-LTPAGEGTWNVSVPPYRYRDLEREIDLIEEVARLYGYDNFCDTLPDKAEAGYLPVDQELVRKLRAALRAEGLTELIHYSLVKPGE--DRQIVLSNPLFVEYSALRTDLLAGLIDAFQYNLEQGNGSLNGFEIGRIFWQE-EDGLQEKDAIAGIIGGDTSLGKWSKGSKDQPLTWFEAKGILESVFQQLGILVEYQPDCR---DERLHPGRTASLWI-GGNRLGIFGQLHPQLRRDKDLPESVYVFQLDLDVLLDALDKDEILVPAFKPYSTYPASDRDIAFFAPVKISVSEIEKAINKAGKGLLESVELFDEYRGENVPQGQRSLAFRLVYRASDRTLTDTEVEPVHNKVREALVEKFGVNLR</Hsp_hseq>
+      <Hsp_midline>E L LG  +V  +L L+      + L++++TANR+D+LS+ GI+ E+A+L + +   PK  + F S     + +  L         C  +   ++E ++  + P+W+Q +L S+G+ P++N+VD  NY+LLE G P   +D +++ S       ++ +  A  G      +     L     L+ AN+ P+++AG++  +E   H  T SL++E ++F +  IR+ SR + +R++ S RYE+ +    L  A  R +SL+  +++  +V++  +  +       + I L    + E+LGPI    T E    +  + V   L  L  + L  +    W V++P  R  D+ REIDLIEEV RL+G++NF   LP     G      +  +K+ + L   GLTELIHYSLV        +I L NPL  + S LR  LL  L+   Q NL+QGN  L GFE G +F    E  L E + + GI GG      W +  K Q L WFEAKG +E +FQQL + + ++ + +    + LHP R+A +++  G  +G+FGQLHP L     L   +Y+F+L+L+++  +L ++++ +  +  YS YP   +D++F     I   E+EK I   G   L  + L D+Y+GE +P+   SL  +L ++++ +TL + E++ +   ++  L  K    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>36.5798</Hsp_bit-score>
+      <Hsp_score>83</Hsp_score>
+      <Hsp_evalue>0.930116</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>17</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEI</Hsp_qseq>
+      <Hsp_hseq>MRISLNWLRELVEIK-LSPEELAHILTMAGFEVEDI</Hsp_hseq>
+      <Hsp_midline>M+ISL W++EL++I+ +  ++L   LT+ GFEVE+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q8DL37.2|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DL37</Hit_accession>
+  <Hit_len>821</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>343.969</Hsp_bit-score>
+      <Hsp_score>881</Hsp_score>
+      <Hsp_evalue>9.75168e-106</Hsp_evalue>
+      <Hsp_query-from>30</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>145</Hsp_hit-from>
+      <Hsp_hit-to>820</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>361</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>696</Hsp_align-len>
+      <Hsp_qseq>GFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTE-CLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKS------TYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPI--KKRTNEHLIYISPETVTDYLKRLNFKF----LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG---QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQN-KLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIY--ANGTE-FLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>GEDVRPLLGLD-----DVILHLTSTANRADALSMVGIAREVAAL-TGAPLTLPTPRAIAPKKSGAKGPVQLAIADPQACPAYCGTLITHVQIAPSPLWLQQRLEAAGLRAINNVVDITNYILLKWGQPLHAFDWDRLQKVAAQTPVSVGVRFAKAGETLKTLDGQERRLSSENLLITAGDVPVALAGVMGGEETEVHPGTQNVFLEAALFASPVIRRSARAQGLRTEASARYERGVNPAELEAATAEAIALLKEIAQGTVSDTTLA----DQRPPLERTL---TLRLEQVHRLLGAVVSEAEDSDEPAYLDPETVEELLSRLGFHLSRQETLEDELVVWSVTVPPYRFRDIEREVDLIEEIARLYGYDRFEETLPAQTEVGALPLELTLLREVRAAFRGAGLTELMHYSWVKGGQ--PNQVTVVNPLVAEFSSLRTDLITGLVQAFRYNHEQGNPPLNGFEIGRVF-GQDEEGLWENDRLGGIIGGDPWQGKWVRRSQQPQPLTWYEAKGILESVFQRFGLNVEYQSDRH---DERLHPGRTAVLCL-QGERLGIFGQLHPQYAATLEIPAAIYVFELDLEVLLSRLEERYRQIVFQPFSTYPASDRDLAFFAPTALTVAELSRTIWKAAGGRDSFLESVELFDEYSGSGVPAGQRSLAFRLTYRASDRTLTEAEVNELHQRIRDSLVEKYAVTLR</Hsp_hseq>
+      <Hsp_midline>G +V  +L L+      + L ++STANR+D+LS+ GI+ E+A+L    P       +    +   K    +  +  + C  +   ++  ++    P W+Q +L ++G+  +NN+VD  NYILL+ G P   +D D++         S+ +  A+ G      +    +L +   L+ A ++P+++AG++  +E   H  T ++ +E ++F++  IR+ +R   +RT+ SARYE+ +        T    AL + I+   +S+ +L          LE+ L    L  + +  +LG +  +   ++   Y+ PETV + L RL F        +   + W VT+P  R  DI RE+DLIEE+ RL+G++ F   LP    VG         +++ +     GLTEL+HYS V       N++ +VNPL+++ S+LR  L+  L+   + N +QGN  L GFE G VF G  E  L E + +GGI GG   +  W  +    Q L W+EAKG +E +FQ+  L + ++ +      + LHP R+A + L  G+ +G+FGQLHP  A  L + + IY+FEL+LE++   L++  +  ++  +S YP   +DL+F     +   EL + I+  A G + FL  + L D+Y G  +P    SL  +LT++++ +TL   E++ + + ++  L  K    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.0268044</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>87</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>89</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPK--VCKYFNSS</Hsp_qseq>
+      <Hsp_hseq>MRVSLRWLRELVAV-DLDVTMLADRLTMAGFEVEDIEDRRTWAEGVVVGYILACEPHPNAQKLRVCQVDVG---QGEPRTIVCGAPNAA</Hsp_hseq>
+      <Hsp_midline>M++SL+W++EL+ + ++D+  L ++LT+ GFEVE+I +     E  +   I +     ++  ++   V++      +P+  VC   N++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q2JHU3.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JHU3</Hit_accession>
+  <Hit_len>825</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.872</Hsp_bit-score>
+      <Hsp_score>847</Hsp_score>
+      <Hsp_evalue>7.23537e-101</Hsp_evalue>
+      <Hsp_query-from>18</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>141</Hsp_hit-from>
+      <Hsp_hit-to>824</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>205</Hsp_identity>
+      <Hsp_positive>359</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>714</Hsp_align-len>
+      <Hsp_qseq>DLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFN---KQPKVCKYFNSSL-NWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLV-YKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF--------------LFDSSTLN---WEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIET---TLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>DLD--LEAHPLGS-DVRPLLGLD-----DVVLDLTSTANRADALSMVGIAREVAALTRNPLRLPPVQPLQAKPIPNFQLRIADAKA-------CPAYSGVLIEGVKVGPSPDWLKHRLAAAGMRSINNVVDITNLILLEWGQPLHAFDWDRLLQVMGKKKPTIEVRLAQPGETLKTLDGQTRTLQADSHLIVAGSQPVALAGVMGGEETEVGSTTTRIFLEAALFDPAVTRRSARSQGLRTEASTRYERGVNFATLDQARDRAVQLILELAGGAVAGLTTFDQRPPLERTLK---LRLSRLIDVLG------DE----VQAADVEEILSALGFQLSRCEGANSQSALSPATETATVASCVWQVVVPPYRLRDIEREIDLIEEFARLYGYDRFSETLPTEPQVGSLSARETFTRQIREVLRGIGLTEVYHISLCPAEED-GSLVRIANPLSPEYSAVRNALLPGLVEAFRFNWDQGNGPLQAFEIGRVFAHALPPNPHPYREAEHIGGILGGDPNPHDWQHRNRPMDWFEAKGLLVSALERLGFGPEFRLDPPEEQSSLLHPGRQASLWIE-GSRIGLFGQLHPRLCQEKGLPDQVYGFELQLDPLLESLERRGIVQFVPFSPFPAADRDIAFFAPLDLAVGEIEKVIRRAGGELLQSVQLFDEYRGQGVPAGQRSLAFRLVYRAPDRTLTDAEVEALQNQVRAQLATQFPVTLR</Hsp_hseq>
+      <Hsp_midline>DLD  +E   LG  +V  +L L+      + L+++STANR+D+LS+ GI+ E+A+L     + P V       + N+Q +I +          C  ++ V++EG++    P W++++L ++G+  +NN+VD  N ILLE G P   +D D++   +     ++ +  A+ G      +     L     L+ A + P+++AG++  +E    S T+ + +E ++F  +  R+ +R   +RT+ S RYE+ +    L +A  R + L L ++  ++           LE+ LK   L    ++++LG      +E    +    V + L  L F+                 +++T+    W+V +P  R  DI REIDLIEE  RL+G++ F   LP    VG         ++I   L  +GLTE+ H SL   E    + +++ NPL  + S +R +LLP L+   + N  QGN  L+ FE G VF+  +        E E++GGI GG      W  + + + WFEAKG +    ++L  G  +R++        LHP R A +++  G  IG+FGQLHP L  + GL  ++Y FEL L+ + +SL++  +  +  +S +P   +D++F    ++   E+EK+I   G E L  + L D+Y+G+ +P    SL  +L +++  +TL + E++ +   ++  L  +    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.00351784</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>36</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>29</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>36</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEI</Hsp_qseq>
+      <Hsp_hseq>MRISLKWLRELVDFQ-LSPEELGEALTLAGFEVEEI</Hsp_hseq>
+      <Hsp_midline>M+ISLKW++EL+D + +  ++L E LTL GFEVEEI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q2JXF6.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus sp. JA-3-3Ab]</Hit_def>
+  <Hit_accession>Q2JXF6</Hit_accession>
+  <Hit_len>825</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>326.25</Hsp_bit-score>
+      <Hsp_score>835</Hsp_score>
+      <Hsp_evalue>4.41995e-99</Hsp_evalue>
+      <Hsp_query-from>47</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>162</Hsp_hit-from>
+      <Hsp_hit-to>824</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>200</Hsp_identity>
+      <Hsp_positive>337</Hsp_positive>
+      <Hsp_gaps>46</Hsp_gaps>
+      <Hsp_align-len>684</Hsp_align-len>
+      <Hsp_qseq>IALEISSTANRSDSLSIQGISVEIASLFN---KQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLV-YKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF------------LFDSSTLN-----WEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETT---LTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>VVLDLTSTANRADALSMVGIAREVAALTRNPLRLPPVQPL------QAKPIPNFNLRIADAKACPAYSGVLIEGVKVGPSPDWLKHRLAAAGMRSINNVVDVTNLILLEWGQPLHAFDWDRLLQVMGKKKPTIEVRFAQAGETLKTLDGQTRTLHPESHLIVAGGQPVALAGVMGGEETEVSSATTSIFLEAALFDPVVTRRSARSQGLRTEASARYERGVNFATLDLARDRAVQLILELAGGSVVGLTTFDQRPPLERTLK---LRLSRLIDVLG----------EEVRPEDVEEILPALGFQLSRCQAVAPEAPPLPATETAGVAGCVWQVSVPPYRLRDVEREIDLIEEFARLYGYDRFSETLPTEPQVGSLSARETLTRQIREVMRGIGLTEVYHISLCPAEED-SSLVKIANPLSPEYSAVRKALLPGLVEAFRFNWDQGNGPLQAFEIGHVFAYAPPSSPEPYQEAEHLGGILGGDLNPNDWRHHSRPMDWFEAKGLLVSALERLGFTSEFRPDPPEAQSPLLHPGRQAGIWI-EGSRIGLFGQLHPRLCQEKDLPEEVYGFEVDLDPLLASLEKRGLVQFSPFSPFPASDRDIAFFAPLELSVADIEKVIRQAAGPLLQSVQLFDEYRGQGVPPGQRSLAFRLVYRAPDRTLTDAEVEAAQNQVRAQLEKHFPVTLR</Hsp_hseq>
+      <Hsp_midline>+ L+++STANR+D+LS+ GI+ E+A+L     + P V           + I N          C  ++ V++EG++    P W++++L ++G+  +NN+VD  N ILLE G P   +D D++   +     ++ +  A+ G      +     L     L+ A   P+++AG++  +E    S T+S+ +E ++F     R+ +R   +RT+ SARYE+ +    L  A  R + L L ++  S+V          LE+ LK   L    ++++LG            + PE V + L  L F+             L  + T       W+V++P  R  D+ REIDLIEE  RL+G++ F   LP    VG         ++I   +  +GLTE+ H SL   E    + +K+ NPL  + S +R +LLP L+   + N  QGN  L+ FE GHVF+    ++     E E++GGI GG    + W    + + WFEAKG +    ++L     +R +        LHP R A I++  G  IG+FGQLHP L  +  L  E+Y FE++L+ +  SL++  L  +S +S +P   +D++F     +   ++EK+I       L  + L D+Y+G+ +P    SL  +L +++  +TL + E++     ++  LE      LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>0.00127324</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>86</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>84</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>88</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPK--VCKYFNS</Hsp_qseq>
+      <Hsp_hseq>MRISLKWLRELVDFE-LSPEELAEALTLVGFEVEEIEDRRSWAEGVVLGRILAAEPHPNADKLRVCQVDLGS---EQPATIVCGAANA</Hsp_hseq>
+      <Hsp_midline>M+ISLKW++EL+D E +  ++L E LTL GFEVEEI +     E  +   I +     ++  ++   V++ S   +QP   VC   N+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q1XDE1.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit, chloroplastic; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDE1</Hit_accession>
+  <Hit_len>719</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>322.398</Hsp_bit-score>
+      <Hsp_score>825</Hsp_score>
+      <Hsp_evalue>1.32632e-98</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>701</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>718</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>377</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>717</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGT-KIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKN---------IGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQ-NKLTIYSQ-YSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEID----RIVKNLKRVLELKVQ</Hsp_qseq>
+      <Hsp_hseq>MKVSLNWLKALGNIKTIDIDNKYSTNT-AGFEVEAIESIIIGGEIDHILDISSTANRSDVLSMIGLSREVSAL-TGSSMFQLYINPIIDIFSKKETIIS-NHDLLNCDNYFAAIIDEIRVKDSPDWLKNRLLSSGFTHRNLLTDISNYIMLKWGQPINIIDLNKINNMNHKNSLTIRSNFPLGSNDQIKLNNENIELNKNILVTQVNTNVTSIAGIGSNSDFDTDYNTKSILVESAIFKQSVVRKSSRVLNIRTESSIRQERGLNVDNWKNAHFEALALITDLTCGNIRDTFCREKITDHALN-INLSIKKVHDILGPIMYNGQTRFLFF--EEIQNILHSLNFDLIYQNKE-NIEVTVPNYRREDVFREIDVIEEIARIYGYHKFRSSVPNIQFNKRLSTKRKFIDKSRSILRNLGLTELVHYSLIKS----KGNIALNNPLIQDYSNLRGSLLEGLIESNLYNIKQSNQTIDSFEIGTVFH-NDQNKIVETTNLAIILGGNLDIRSTWSHPAHSLNWYEAKGIVENFFQRLNRQIEW-------TKKDILDGRIK--FIQKGKFATLIYNNIIIGIFSELNQATYSELGLNTKLFFLEVNLNILEDCHNEFNYLSYQIQPYSKYPSIIRDLSLIIPKNMEIKYLLKLLDQFYDKDLESTTLFDQYIDESIGKEKKSIGLRFTYRSNEKTLTNSEIDYKQHQLQKKIVKQLNLKIR</Hsp_hseq>
+      <Hsp_midline>M++SL W+K L +I+ +D+D+     T  GFEVE I  + I  E    L+ISSTANRSD LS+ G+S E+++L         Y N  ++   K + + +       C  + A I++ +     P W++N+L+SSG    N L D  NYI+L+ G P    DL+K+ +     + ++        ++    N  N +L+ +I + Q N    SIAGI  N +      T S+L+E +IF  S +R+ SR L IRT+ S R E+ L       A +  ++L+       +       K+ +  L  I L+ K + +ILGPI        ++   E + + L  LNF  ++ +   N EVT+P+ R +D+ REID+IEE+ R++G++ F + +P I+   R     +   K  S L N+GLTEL+HYSL+ +    K  I L NPL+ D S LR SLL  L+ +   N+KQ N  ++ FE G VF  N +  + E   +  I GG   I+S+W     SL W+EAKG +E  FQ+LN  I W       TKK +   R    F+  GK          IG+F +L+    ++LGL+++++  E+NL +++    + N L+   Q YS YP I++DLS II KN++   L K++     + L    L D Y  E I ++  S+ L+ T++SN+KTL N EID    ++ K + + L LK++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q7NCQ2.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Gloeobacter violaceus PCC 7421]</Hit_def>
+  <Hit_accession>Q7NCQ2</Hit_accession>
+  <Hit_len>785</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>303.138</Hsp_bit-score>
+      <Hsp_score>775</Hsp_score>
+      <Hsp_evalue>9.52597e-91</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>160</Hsp_hit-from>
+      <Hsp_hit-to>784</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>188</Hsp_identity>
+      <Hsp_positive>333</Hsp_positive>
+      <Hsp_gaps>44</Hsp_gaps>
+      <Hsp_align-len>663</Hsp_align-len>
+      <Hsp_qseq>LEISSTANRSDSLSIQGISVEIASLFN---KQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDY-LKRL--NFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>LEVASTANRADALSMVGIAREVAALTGGILRLPLVDAPLVPRGDLAARI-------AEPEACPVYTATLLEEVAVGPAPDWLRERLEKAGMRPINNVVDVTNYVLLEWGQPLHAFDADRLAAG------TLGVRFAHKGEQLVTLDGTERPLTPANLLITAGERPVALAGVMGGEATEVGGQTRRIVLEAAIFDPPAIRRSARVFALRTEASARYERGVDASALEHALGRALQLLADCAGARAV-VQATDDYRRRENRVVSLRPERLAQILG---------------EDIPDAEIARVLKNLGFDVQTGPQEFAVTVPGHRLRDIEREIDLIEEVARVVGYDRFAPTLPPPADGGYLPFEDFIERRVRSLCQGAGLTEVVTYSLAPDRD--QQPVVLSNPLSAELNSLRTNLIDGLLEILRFNRSQGNMPFHAFEVGVVFLRSDEGIF-ESGRLGAVMCGEPAVGDWQKLTPPFDWFAAKGVLAAILQPWQIEVEYQADRR---DERLHPGRTASLWV-SGERLGTLGQLHPRLASRLDLPEQTFVFEIDLDFLIDLVRERPVEFRS-FSPFPPAARDLSFYAREALTVFEFERLIREQGEPLLESVALLDEFKGQGVPEGCRSLAFRMVYRSD-HTLTEEEITAVHQRVRQALAERYSVDLR</Hsp_hseq>
+      <Hsp_midline>LE++STANR+D+LS+ GI+ E+A+L     + P V        +   +I            C ++TA +LE +     P W++ +L  +G+ P+NN+VD  NY+LLE G P   +D D++ +       +L +  A  G +    +     L  +  L+ A   P+++AG++  +      +T  +++E +IF    IR+ +R  A+RT+ SARYE+ + ++ L  AL R + LL     +      +++    +  + + L  + + +ILG               E + D  + R+  N  F   +    + VT+P  R  DI REIDLIEEV R+ G++ F   LP     G   F     +++ S     GLTE++ YSL  +    +  + L NPL ++ ++LR +L+  LL  ++ N  QGN     FE G VF  + E    E   +G +  G      W +      WF AKG +  + Q   + + ++ + +    + LHP R+A +++ SG+ +G  GQLHP LA++L L  + ++FE++L+ +   +++  +   S +S +P   +DLSF  ++ +   E E++I   G   L  + LLD++KG+ +PE   SL  ++ ++S+  TL  +EI  + + +++ L  +    LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>33.8834</Hsp_bit-score>
+      <Hsp_score>76</Hsp_score>
+      <Hsp_evalue>6.30349</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>99</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>97</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>101</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTA--NRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTT</Hsp_qseq>
+      <Hsp_hseq>MRVSFNWLQEYVEFDFTP-SELAEKLTMAGFEVEHVEDRRTWAAGVVVGRVLECAPHPQADRLHVCRVDIGTGRLLN---IVCGAPNARAGIYAPVAPVGT</Hsp_hseq>
+      <Hsp_midline>M++S  W++E ++ +     +L EKLT+ GFEVE + +        +   +   A   ++D L +  + +    L N    VC   N+       +  + T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q7V1J8.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Prochlorococcus marinus subsp. pastoris str. CCMP1986]</Hit_def>
+  <Hit_accession>Q7V1J8</Hit_accession>
+  <Hit_len>821</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>286.574</Hsp_bit-score>
+      <Hsp_score>732</Hsp_score>
+      <Hsp_evalue>3.192e-84</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>706</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>821</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>216</Hsp_identity>
+      <Hsp_positive>370</Hsp_positive>
+      <Hsp_gaps>55</Hsp_gaps>
+      <Hsp_align-len>685</Hsp_align-len>
+      <Hsp_qseq>EISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTV-PKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKV-RTPTF-SLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLR----ISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEH-------LIYISPETVTDYLKRLNFKFLFDSSTLN-----WEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQ-IKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWF--EKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHP-LLANKLGLSSEIYLFELNL-ELIQQSLQQNK-LTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</Hsp_qseq>
+      <Hsp_hseq>DLAITANRPDGMSVVGIAREISALLETKLNFPGLKTRYKTNV-----YKNFNLCPEAISKNCLYSISNIESVNGKQLSPGWLKDRLDKSGIKSINLLVDITNYILLEQGQPLHAFDKDKLSNLIGRKVSYEDFSVRKANNNESLLCLNGENYKLNENITIIACDDKPVAIAGVIGGLETAVNEDTSSIYLEGAVFNPVIIRKSSKVIGIRTESSSRYEKGISYKNTLDSVTRAINILEEYFNITSPII---NTSTELDLKKILIP--LRRERIKKILGPIVIRNENYENNSKLEKRYLTDTEITEKLKLI-------GCTLNIKEYGWDVEIIPNRSQDLLREIDLIEEIARLIGYDMFDLNLPNPIKPGKLSSFQIALRKLKTGLIVN-GFNEVLSYSLVPESK--NNLIKISNPLLLETSCLRDNIWKEHINICNQNIKSGHEYCWIFEVGNIFHKKPDFSQEEI-LNGAIYGNNKFE-QWLGSNKDNNMTYYEARGKLKEALSILNLNIE---DKPTDTIDFLHPGRSSRLF-TEGNEVGYFGEIHPNLISNKIAL-KKMYLFSLKINSILQASTRKNKWITVYKQFPTVPKMERDINFIFNKKYLVSEIISQIKKSGTKLLENVNLIDVYDDDSFGKEFISYTFRLSYRDSEKTLLDSDIGYLHDSVVEIIEKKFSTKLRD</Hsp_hseq>
+      <Hsp_midline>+++ TANR D +S+ GI+ EI++L   +   P +   + +++      KN      + ++  +++   +E +    + P W++++L  SGI  +N LVD  NYILLE G P   +D DK+ + + R  ++   S+ KA N       N  NYKL+ +I ++  ++ P++IAG+I   E   +  TSS+ +EG++F+   IR+ S+ + IRT+ S+RYEK +     ++++ R I++L     I++P +     S+   L+K+L P  L  + I +ILGPI  R   +         Y++   +T+ LK +         TLN     W+V I   RS D+ REIDLIEE+ RL G++ F   LP  IK    + F    RK  T  ++N G  E++ YSLV       N IK+ NPLL + S LR ++    +    +N+K G+     FE G++F    + +  EI   G I+G  K +  W    K  ++ ++EA+GK+++    LNL I    +  T T  FLHP RS+ +F + G  +G FG++HP L++NK+ L  ++YLF L +  ++Q S ++NK +T+Y Q+   PK+ +D++FI  K     E+   I  +GT+ L  +NL+D Y  +   ++  S   +L+++ ++KTL + +I  +  ++  ++E K    LR+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>40.4318</Hsp_bit-score>
+      <Hsp_score>93</Hsp_score>
+      <Hsp_evalue>0.0608174</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>63</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>64</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>39</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>65</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANR--SDSLSI</Hsp_qseq>
+      <Hsp_hseq>MKVSQNWLKSLVEI-NTTAHDLSEKLSIGGFEVESLVDCSENVKGIVLGKVLSVVKHENSDKLSI</Hsp_hseq>
+      <Hsp_midline>M++S  W+K L++I N    DL EKL++GGFEVE +++   N +  +  ++ S      SD LSI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q3AJY9.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus sp. CC9605]</Hit_def>
+  <Hit_accession>Q3AJY9</Hit_accession>
+  <Hit_len>807</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>3.20972e-81</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>138</Hsp_hit-from>
+      <Hsp_hit-to>806</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>194</Hsp_identity>
+      <Hsp_positive>335</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>699</Hsp_align-len>
+      <Hsp_qseq>LDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQ-KIKNLTTIRTSKTECLMFTAVILEGLEDL-TVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTP--TFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVL----EKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNL-ELIQQSLQQNKLTI-YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>LDELDESLPPNGSPVAPLLGLD-----DTVLELAITANRPDGLSMVGIAREVAALTG----------GSLSLPELDLDPSTSPLTTELDGCFYTITRIEGVDGSKPSPTWLQQRLERGGVNSVNAVVDVTNLVMLEQGQPLHAFDADALEQLTGQPVDAKSFAVRSARDGEIFVGLDDQKRTLDSRVQVVTCHDRPVAVAGVMGSLESGVTASTRNIWLESALFAPPRVRHSARALGLRTDASSRFEKGLPVEMTLPCSARASALL-----SQEFSCSESGRWVGGSGPAEAGPVLLRRSALHQLLGPLDAADGPE--DLDDTSIENCLTALGCQ--LSAHEQGWEVMAPPSRRQDLQREVDLIEEVARLVGFDRFGAHLPDPLEPGALTPRQQAERRLRQLFCATGLQEVTTLSLVP-ASEQEQRIAISNPLLADTSHLRTNLWEEHLQICVRNLKASQRGCSVFEIGNTYSGSPE-AVSQKAVLAGVICGDRRLSTWATSGKPQAPDYFQARGVLTRVMEALQLELSDR---RLTDDARLHPGRAATLVL-EGRPLGCFGQLHPAMAEELDLPEATYLFELDLARLLDAATRSNRWTPSFKPYPTVPFSERDLAVIVDRSSAATDLIQAIRKAGKPLLEQVELVDRFEGEQLGDNKVSQAFRLRYRGKNETLTDDKIQPVHDKVRAALSKQFQAELR</Hsp_hseq>
+      <Hsp_midline>LD+L E L   G  V  +L L+        LE++ TANR D LS+ GI+ E+A+L             SL+  +  +   T+  T++ +   +T   +EG++     P W+Q +L   G+  +N +VD  N ++LE G P   +D D +      P    S ++  A +G  F   +     LD+ + +V  ++ P+++AG++ + E    + T ++ +E ++F+  ++R  +R L +RTD S+R+EK L     +    R  +LL     S  +    S + +         P++L    + ++LGP+          +   ++ + L  L  +    +    WEV  P  R  D+ RE+DLIEEV RL GF+ F   LP     G      Q  +++       GL E+   SLV   +  +  I + NPLL+D S LR +L    L     NLK        FE G+ +SG+ E  +++   + G+  G +  S+W   G  Q+  +F+A+G + ++ + L L +  R   +      LHP R+A + L  G+ +G FGQLHP +A +L L    YLFEL+L  L+  + + N+ T  +  Y   P   +DL+ I+ ++    +L + I   G   L Q+ L+D ++GE + +   S   +L ++   +TL + +I  +   ++  L  + QA LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.0180288</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>39</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>38</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILEL</Hsp_qseq>
+      <Hsp_hseq>MRVSISWLKQLVQV-NESVDDLSERLSMAGFEVDDVDDL</Hsp_hseq>
+      <Hsp_midline>M++S+ W+K+L+ + N  +DDL E+L++ GFEV+++ +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q3AVJ1.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Synechococcus sp. CC9902]</Hit_def>
+  <Hit_accession>Q3AVJ1</Hit_accession>
+  <Hit_len>807</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.944</Hsp_bit-score>
+      <Hsp_score>707</Hsp_score>
+      <Hsp_evalue>7.82158e-81</Hsp_evalue>
+      <Hsp_query-from>19</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>138</Hsp_hit-from>
+      <Hsp_hit-to>806</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>193</Hsp_identity>
+      <Hsp_positive>339</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>694</Hsp_align-len>
+      <Hsp_qseq>LDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLED-LTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTP--TFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLE-LIQQSLQQNKLT-IYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>LEDTTKEIPAVGTPVAALFGLD-----DAVLELAITANRPDGLSMVGIAREVAALTNAELSL-PLLNHTPE-QEPLQ-------AELDGSYYAVACVEGVQGGQESPPWIQQRLNRAGINAVNAVVDITNLVMLEQGQPLHAFDAEALESLTGKPVDAASFAVRPAKDQETFIGLDDQSLCLDPRVQVVTCHDRAIAIAGVMGSRDSAVSDSTTKIWLESAMFSPIRVRQSSRAVGLRTDASSRFEKGLPPEVTLACSQRAIELLSDQFACRVNGRWVGGEG-PRTPVPLQLRRDALHQLLGPID--TDSGPVDLADHTIEQCLTALGCE--LESTDEGWAVMTPPSRRQDLHREVDLIEEVARLVGFDKFGSHLPDPVSPGSLTSRQQAERRLRRLFCSTGLQEITTLSLVGSSDG-DARIAISNPLLAETSHLRTNLWEEHLQICVRNLKASMAGCSIFEVGNTYSGTPE-SVVQSGIISGVICGDRRLERWSTSGKYQAPNYYEARGVLSRVMEALHLELSDR---PLADDARLHPGRAATLVM-EGRPLGCFGQLHPALADDLSLPESTYLFELDLERLLDATTRTNRWTPIYKSFPTVPASERDLAVVVDRNSNAADLIQAIRKAGKPLLEHVELIDRFEGDQLGDQKVSQAFRLRYRSQNETLTDDKIQPVHDKVRAALSKQFKAELR</Hsp_hseq>
+      <Hsp_midline>L+D  +++   G  V  +  L+        LE++ TANR D LS+ GI+ E+A+L N +  +    N +   Q+ ++       ++ +   +    +EG++     P WIQ +L  +GI  +N +VD  N ++LE G P   +D + + S    P    S ++  A++   F   +  +  LD  + +V  ++  I+IAG++ + +      T+ + +E ++FS  ++RQ SR + +RTD S+R+EK L     +    R I LL       V       +   +   P+ L    + ++LGPI   T+   + ++  T+   L  L  +   +S+   W V  P  R  D+ RE+DLIEEV RL GF+ F + LP   S G      Q  +++     + GL E+   SLV +       I + NPLL++ S LR +L    L     NLK   +    FE G+ +SG  E ++ +   + G+  G +    W   G  Q+  ++EA+G + ++ + L+L +  R          LHP R+A + +  G+ +G FGQLHP LA+ L L    YLFEL+LE L+  + + N+ T IY  +   P   +DL+ ++ +N    +L + I   G   L  + L+D ++G+ + ++  S   +L ++S  +TL + +I  +   ++  L  + +A LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.00729252</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>44</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>43</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>32</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNE</Hsp_qseq>
+      <Hsp_hseq>MLVSLSWLKDLVQVDD-SVDDLAERLSMAGFEVENIDDLSARSQ</Hsp_hseq>
+      <Hsp_midline>M +SL W+K+L+ +++  +DDL E+L++ GFEVE I +L   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q46KZ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Prochlorococcus marinus str. NATL2A]</Hit_def>
+  <Hit_accession>Q46KZ8</Hit_accession>
+  <Hit_len>824</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.863</Hsp_bit-score>
+      <Hsp_score>699</Hsp_score>
+      <Hsp_evalue>1.42753e-79</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>163</Hsp_hit-from>
+      <Hsp_hit-to>823</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>206</Hsp_identity>
+      <Hsp_positive>345</Hsp_positive>
+      <Hsp_gaps>38</Hsp_gaps>
+      <Hsp_align-len>678</Hsp_align-len>
+      <Hsp_qseq>LEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLT-VPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYD---LDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSS--NKVLEKVLKPIVLNYKTIVEILGPIKK-------RTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSW--FEKGQSLKWFEAKGKIEKLFQQLN-LGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLE-LIQQSLQQNKLT-IYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>IELAITANRPDGMSMVGIAREISTITNSKLTLPNL-NYIEDFNIFEPKICDKETI---GVDCI-YSITYIDSIDNTGKTNKNIFNKLSSLKQNCINPVVDITNYLMLEQGQPLHAFDADLLDNIIGRKVKPN-DFGIRNGKQGELFVALDKKEYKINPTIKLITCDDIPIAIAGVIGGNNSSVSDKTTRIWLEAAVFTPTSIRNSSREIGLRTDASSRYEKGISSNMTTAVSKRASELISVQ---LGGDNISSYVNTDFKKKSISVNLRMDKINSVLGKLSSSDSNFVNNNSTKLRYLNEDEIETLLSKLGL--ILTSNDSGWNVQVPPYRSSDLTREIDLIEEIARLIGYDNFDSNMPDPLEPGVLSPTKLVERRLRNSFIHNGFQEVVTSSLVGPENTDDNAVLIKNPLLSETSRLRTNVWDEHLKILQRNVSFGAEGCWIFEIAKTYKKDKE-CFVETNLLSGALTGSKRLSKWGGASKQLSLDYFEARGKLK---QSLDVLGVE-TIDKQLAEKDFMHPGRTSELFV-EGKSIGFFGQIHPSQSEKFDLIKETYLFNLDFDSLIKAATRKTNWTRIYKDYPTVPYMERDIALIHSKKYSSLEIMGLIKKTGRPLLEKVELIDRYEGSSMPEDEISQAFRIRYRDAKKTLVEKDINPIHEKIRNALKEKIKAELR</Hsp_hseq>
+      <Hsp_midline>+E++ TANR D +S+ GI+ EI+++ N +   P +  Y      ++ KI +  TI     +C+ ++   ++ +++     K I NKL S     +N +VD  NY++LE G P   +D   LD +  +   P     I   + G  F A ++  YK++ +I L+  ++IPI+IAG+I  +      KT+ + +E ++F+ + IR  SR++ +RTD S+RYEK + S        R   L+ +    L     SS  N   +K    + L    I  +LG +           +  L Y++ + +   L +L    +  S+   W V +P  RS D+TREIDLIEE+ RL G++NF + +P     G    +    +++ +  ++ G  E++  SLV  E    N + + NPLLS+ S LR ++    L  +Q N+  G      FE    +  + E    E   + G   G+K  S W    K  SL +FEA+GK++   Q L+ LG+   I+ Q   K F+HP R++E+F+  GK+IG FGQ+HP  + K  L  E YLF L+ + LI+ + ++   T IY  Y   P + +D++ I  K     E+  +I   G   L ++ L+D Y+G  +PE   S   ++ ++  KKTL  K+I+ I + ++  L+ K++A LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.0232029</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>39</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>38</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>18</Hsp_identity>
+      <Hsp_positive>31</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILEL</Hsp_qseq>
+      <Hsp_hseq>MKVSVSWLKDLVEFNN-DIDELSEKLSMTGFEVESLEDL</Hsp_hseq>
+      <Hsp_midline>M++S+ W+K+L++  N D+D+L EKL++ GFEVE + +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q9K896.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Halalkalibacterium halodurans C-125]</Hit_def>
+  <Hit_accession>Q9K896</Hit_accession>
+  <Hit_len>808</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.092</Hsp_bit-score>
+      <Hsp_score>697</Hsp_score>
+      <Hsp_evalue>2.3481e-79</Hsp_evalue>
+      <Hsp_query-from>39</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>155</Hsp_hit-from>
+      <Hsp_hit-to>807</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>203</Hsp_identity>
+      <Hsp_positive>349</Hsp_positive>
+      <Hsp_gaps>52</Hsp_gaps>
+      <Hsp_align-len>686</Hsp_align-len>
+      <Hsp_qseq>LEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTE-CLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYS-KVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIV-LNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSV--GRADFSYQTRKKITSYLLNMGLTELIHYSLVS----------NETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLT----EIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>LEALNRYDQVLELDLTPNRSDCLNMYGVAYEVAALFDKEVHWPTAESSGTDGQ--ASDYVSVEIEDIEKNPYYGATIIKNVKVGPSPLWLQNRLIAAGIRPISNVVDVTNYVLLEYGQPLHAFDYDRLGSNKVVT-------RLAKEGEKMVTLDDVERTLQADHLLITNGRDPVAIAGVMGGATSEVQEDTTTVLLEAAYFDPATVRKASRDLGLRSDSSSRFEKGVDPKRVREAAARAATLIAEVAGGTVVGGVVEAGEL-AIEEPVVSLNLPHMNQRLG----------MELSHDEVAAIFDRLGFAYTVENDT--FEVTAPS-RRGDIRIEEDLFEEVARLYGYDNIPTTFPVGGTTRGGLTDYQ-QKRRKIRRYLEGAGLFEVMTYSLTSEEKEKGLQGENEDYLP--IRVAMPMSEERSTMRTSLVPHLLDVVQYNLNRKQEALFIYELGSVFLSK-EETLTKQPEEREMLAGALTGFWTEHLWQGEKKAVDFFVVKGILEGMFAEL--GLSEKVTFERGEQPGMHPGRTANVKVN-GRAVGFAGQIHPERQSELDLK-ETYVFQLDVESLLT--EEGTEVAYEPLPRFPAISRDIALVVDENVTAAQLQQVIEANGGEWLKHVYLFDLYEGEHMEAGKKSIAFSLTYFDPERTLTDEEVTAVHEQILKELEASTGAVLR</Hsp_hseq>
+      <Hsp_midline>LE  N     LE+  T NRSD L++ G++ E+A+LF+K+       +S  + Q    +  ++     E    + A I++ ++    P W+QN+L+++GI P++N+VD  NY+LLE G P   +D D++ S KV T         A+ G +    + +   L     L+     P++IAG++          T+++L+E + F  + +R+ SR L +R+D S+R+EK +    + EA  R  +L+       V         L  + +P+V LN   + + LG          + +S + V     RL F +  ++ T  +EVT PS R  DI  E DL EEV RL+G++N  T  P   +   G  D+  Q R+KI  YL   GL E++ YSL S          NE +L   I++  P+  + ST+R SL+P LL  +Q NL +    L  +E G VF    E TLT    E E + G   G   +  W  + +++ +F  KG +E +F +L  G+  ++  +   +  +HP R+A + ++ G+ +G  GQ+HP   ++L L  E Y+F+L++E +    ++     Y     +P I +D++ ++ +N+   +L+++I ANG E+L  + L D Y+GE +     S+   LT+   ++TL ++E+  + + + + LE    A+LR</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>37.7354</Hsp_bit-score>
+      <Hsp_score>86</Hsp_score>
+      <Hsp_evalue>0.396149</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>39</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>39</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>28</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>39</Hsp_align-len>
+      <Hsp_qseq>MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILEL</Hsp_qseq>
+      <Hsp_hseq>MLVSYQWLKQYVDLDGISAEEVAEKLTRGGIEVDIIHDL</Hsp_hseq>
+      <Hsp_midline>M +S +W+K+ +D++ +  +++ EKLT GG EV+ I +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q8CSY8.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Staphylococcus epidermidis ATCC 12228]</Hit_def>
+  <Hit_accession>Q8CSY8</Hit_accession>
+  <Hit_len>800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>270.396</Hsp_bit-score>
+      <Hsp_score>690</Hsp_score>
+      <Hsp_evalue>1.8321e-78</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>694</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>794</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>196</Hsp_identity>
+      <Hsp_positive>346</Hsp_positive>
+      <Hsp_gaps>53</Hsp_gaps>
+      <Hsp_align-len>665</Hsp_align-len>
+      <Hsp_qseq>LEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTV---PKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVT--IPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRA---DFSYQTRKKITSYLLNMGLTELIHYSLVS----NETFLKNE--IKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLT-EIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEI----DRIVKNLKR</Hsp_qseq>
+      <Hsp_hseq>MEFDLTPNRADALSMVGTAYEVAALY--QTKMNKPQLTSNESQESAKDELTIEVKNEDKVPYYSTRV--VHDVTIGPSPVWMQFRLIKAGIRPINNVVDISNYVLLEYGQPLHMFDQEQIGSQ------SIEVRQAKKDETMRTLDGEERRLLDTDIVITNGKDPIALGGVMGGDFSEVTEQTRHVVVEGAIFDPVSIRHTSRRLNLRSESSSRFEKGIATEFVDEAVDRACYLLERYASGTVLKDRVSHGDLGSFVTPIEITADKVNRTIG----------FNLTDEEIIDIFEQLG----FDTENKNGEITVNVPS-RRKDISIKEDLIEEVARIYGYDEIPSTLPVFKDVTSGELTDRQFKTR-TVKETLEGAGLDQAITYSLVSKNHATDFALQNRPTIELLMPMSEAHSTLRQSLLPHLIDAVSYNVARKNTNVKLYEIGRVFFGNGEGELPDEVEYLSGILTGDFVNNTWQGKKESVDFYLTKGVVERIAEKLNLQFDFRAGQ----IDGLHPGRTAIVSL-NGKDIGFIGELHPTLAANNDL-KRTYVFELNYDAMMEV--SVGYINYEPIPRFPGVTRDIALEVNHEVTSSELLSIIHENGEDILNDTLVFDVYEGEHLEKGKKSIAIRLSYLDTENTLTDERVNAVHDKILEALKK</Hsp_hseq>
+      <Hsp_midline>+E   T NR+D+LS+ G + E+A+L+  Q K+ K   +S   Q+  K+  TI     + + + +  +  + D+T+   P W+Q +L+ +GI P+NN+VD  NY+LLE G P   +D +++ S+      S+ + +A+        +    +L ++  ++     PI++ G++  D      +T  +++EG+IF    IR  SR+L +R++ S+R+EK + + ++ EA+ R   LL       V K   S+  L   + PI +    +   +G            ++ E + D  ++L     FD+   N E+T  +PS R  DI+ + DLIEEV R++G++   + LP  K V      D  ++TR  +   L   GL + I YSLVS     +  L+N   I+L+ P+    STLR SLLP L+  +  N+ + N+ ++ +E G VF GN E  L  E+EY+ GI  G  + ++W  K +S+ ++  KG +E++ ++LNL   +R          LHP R+A + L +GK+IG  G+LHP LA    L    Y+FELN + + +         Y     +P + +D++  +   +   EL  II+ NG + L+   + D Y+GE + +   S+ ++L++   + TL ++ +    D+I++ LK+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q2FHU2.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Staphylococcus aureus subsp. aureus USA300]</Hit_def>
+  <Hit_accession>Q2FHU2</Hit_accession>
+  <Hit_len>800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>268.47</Hsp_bit-score>
+      <Hsp_score>685</Hsp_score>
+      <Hsp_evalue>1.04839e-77</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>705</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>800</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>188</Hsp_identity>
+      <Hsp_positive>341</Hsp_positive>
+      <Hsp_gaps>40</Hsp_gaps>
+      <Hsp_align-len>667</Hsp_align-len>
+      <Hsp_qseq>LEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLP---QIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFL------KNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTE-IEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILR</Hsp_qseq>
+      <Hsp_hseq>MEFDLTPNRADALSMIGTAYEVAALYNTKMTKPETTSNELDLSAN-DELTVTIENEDKVPYYSARVVHDVTIEPSPIWMQARLIKAGIRPINNVVDISNYVLLEYGQPLHMFDQDAIGSQ------QIVVRQANEGEKMTTLDDTERELLTSDIVITNGQTPIALAGVMGGDFSEVKEQTSNIVIEGAIFDPVSIRHTSRRLNLRSESSSRFEKGIATEFVDEAVDRACYLLQTYANGKVLKDRVSSGELGAFITPIDITADKINRTIG----------FDLSQNDIVTIFNQLGFDTEINDDVIT--VLVPS-RRKDITIKEDLIEEVARIYGYDDIPSTLPVFDKVTSGQLTDRQYKTR-MVKEVLEGAGLDQAITYSLVSKEDATAFSMQQRQTIDLLMPMSEAHASLRQSLLPHLIEAASYNVARKNKDVKLFEIGNVFFANGEGELPDQVEYLSGILTGDYVVNQWQDKKETVDFYLAKGVVDRVSEKLNLEFSYR----RADIDGLHPGRTAEILLEN-KVVGFIGELHPILAADNDL-KRTYVFELNFDAL-MAVSVGYIN-YQPIPRFPGMSRDIALEVDQNIPAADLLSTIHAHGGNILKDTLVFDVYQGEHLEKGKKSIAIRLNYLDTEETLTDERVSKVQAEIEAAL-IEQGAVIR</Hsp_hseq>
+      <Hsp_midline>+E   T NR+D+LS+ G + E+A+L+N +    +  ++ L+       LT    ++ +   ++A ++  +     P W+Q +L+ +GI P+NN+VD  NY+LLE G P   +D D + S+       + + +A  G +    +    +L  S  ++     PI++AG++  D      +TS+++IEG+IF    IR  SR+L +R++ S+R+EK + + ++ EA+ R   LL+      V K   S+  L   + PI +    I   +G            +S   +     +L F    +   +   V +PS R  DIT + DLIEEV R++G+++  + LP   ++ S    D  Y+TR  +   L   GL + I YSLVS E         +  I L+ P+    ++LR SLLP L+     N+ + N  ++ FE G+VF  N E  L + +EY+ GI  G  + + W +K +++ ++ AKG ++++ ++LNL   +R          LHP R+AEI L + K +G  G+LHP+LA    L    Y+FELN + +  ++    +  Y     +P + +D++  + +NI   +L   I+A+G   L    + D Y+GE + +   S+ ++L +   ++TL ++ + ++   ++  L ++  A++R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q4L5E4.1|</Hit_id>
+  <Hit_def>RecName: Full=Phenylalanine--tRNA ligase beta subunit; AltName: Full=Phenylalanyl-tRNA synthetase beta subunit; Short=PheRS [Staphylococcus haemolyticus JCSC1435]</Hit_def>
+  <Hit_accession>Q4L5E4</Hit_accession>
+  <Hit_len>800</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>266.929</Hsp_bit-score>
+      <Hsp_score>681</Hsp_score>
+      <Hsp_evalue>2.93472e-77</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>703</Hsp_query-to>
+      <Hsp_hit-from>164</Hsp_hit-from>
+      <Hsp_hit-to>799</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>190</Hsp_identity>
+      <Hsp_positive>341</Hsp_positive>
+      <Hsp_gaps>41</Hsp_gaps>
+      <Hsp_align-len>666</Hsp_align-len>
+      <Hsp_qseq>LEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECL-MFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLP---QIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNE---TFLKNE---IKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLT-EIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAI</Hsp_qseq>
+      <Hsp_hseq>MEFDLTPNRADALSMVGTAYEVAALY--QTEMTKPETQSNETSESATNELSVTIDNPEKVPYYSARVVKNVSIEPSPIWVQARLIKAGIRPINNVVDISNYVLLEYGQPLHMFDQDHIGSK------EIVVRQAKDEETMTTLDNNERKLVDTDIVISNGQEPIALAGVMGGDFSEVTEQTTNVVIEGAIFDPVSIRHTSRRLNLRSEASSRFEKGIATEFVDEAVDRACYLLQELASGEVLQDRVSSGDLGSFVTPIDITAEKVNKTIG----------FNLSNDEIQSIFRQLGFETTLKGETLT--VNVPS-RRKDITIKEDLIEEVARIYGYDEIPSSLPVFGEVTSGELTDRQHKTR-TLKETLEGAGLNQAITYSLVSKDHAKDFALQERPTISLLMPMSEAHATLRQSLLPHLIEATAYNVARKNKDVRLYEIGRVFFGNGEGELPDEVEYLSGILTGEYVVNAWQGKKEEIDFFIAKGVVDRVAEKLNLEFSYKAGK----IEGLHPGRTAIVSL-EGQDIGFIGELHPQVAADNDL-KRTYVFELNYDAMMQVAV--GYINYEQIPKFPGVTRDIALEVNHDVPSSELKQIIHNNGEDILQSTLVFDVYEGEHLEKGKKSVAIRLNYLDTEDTLTDERVSKIHDKILEALQAQGATI</Hsp_hseq>
+      <Hsp_midline>+E   T NR+D+LS+ G + E+A+L+  Q ++ K    S    +   N  ++     E +  ++A +++ +     P W+Q +L+ +GI P+NN+VD  NY+LLE G P   +D D + SK       + + +A++       +    KL ++  ++     PI++AG++  D      +T++++IEG+IF    IR  SR+L +R++ S+R+EK + + ++ EA+ R   LL+      V +   S+  L   + PI +  + + + +G            +S + +    ++L F+      TL   V +PS R  DIT + DLIEEV R++G++   + LP   ++ S    D  ++TR  +   L   GL + I YSLVS +    F   E   I L+ P+    +TLR SLLP L+     N+ + N  +  +E G VF GN E  L  E+EY+ GI  G  + ++W  K + + +F AKG ++++ ++LNL   ++        + LHP R+A + L  G++IG  G+LHP +A    L    Y+FELN + + Q         Y Q   +P + +D++  +  ++   EL++II+ NG + L    + D Y+GE + +   S+ ++L +   + TL ++ + +I   +   L+ +   I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

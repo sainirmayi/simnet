@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_52799</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0F8|ACP_PHATC Acyl carrier protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=acpP PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>76</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_52799</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0F8|ACP_PHATC Acyl carrier protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=acpP PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>76</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0F8.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0F8</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>151.754</Hsp_bit-score>
+      <Hsp_score>382</Hsp_score>
+      <Hsp_evalue>4.28353e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>76</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>76</Hsp_identity>
+      <Hsp_positive>76</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_hseq>
+      <Hsp_midline>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P27060.2|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Cylindrotheca sp. (STRAIN N1)]</Hit_def>
+  <Hit_accession>P27060</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>97.4413</Hsp_bit-score>
+      <Hsp_score>241</Hsp_score>
+      <Hsp_evalue>1.9142e-27</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>74</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLE</Hsp_qseq>
+      <Hsp_hseq>MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIE</Hsp_hseq>
+      <Hsp_midline>M D   RLQ IV +QL +DP KV   +DFG++LGADSLD++EL+M IE EF ++IED  AS+I TVQD LNY+E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P49517.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49517</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>95.5153</Hsp_bit-score>
+      <Hsp_score>236</Hsp_score>
+      <Hsp_evalue>1.24859e-26</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>74</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>DNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLE</Hsp_qseq>
+      <Hsp_hseq>DTFSRIQSIVEEQLGVESSKIKLETDFQKDLGADSLDVVELIMAFEEEFDINVNDDAAGDIKTVQQVLEYIE</Hsp_hseq>
+      <Hsp_midline>D F+R+QSIV +QLG++ SK+KLE+DF ++LGADSLDVVEL+MA E+EF++N+ D +A  I TVQ VL Y+E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q6MLJ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Bdellovibrio bacteriovorus HD100]</Hit_def>
+  <Hit_accession>Q6MLJ8</Hit_accession>
+  <Hit_len>78</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.0333</Hsp_bit-score>
+      <Hsp_score>201</Hsp_score>
+      <Hsp_evalue>2.20341e-21</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>HPKVKDIIVEQLGVDPDKVKAEASFIDDLGADSLDIVELVMAMEEEFDLEIPDEDAEKLKTVQDVASYLEKK</Hsp_hseq>
+      <Hsp_midline>  +++ I+ +QLG+DP KVK E+ F  +LGADSLD+VELVMA+E+EF++ I D+ A ++ TVQDV +YLE+ </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q9KA04.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Halalkalibacterium halodurans C-125]</Hit_def>
+  <Hit_accession>Q9KA04</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.8777</Hsp_bit-score>
+      <Hsp_score>198</Hsp_score>
+      <Hsp_evalue>5.94442e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>74</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLE</Hsp_qseq>
+      <Hsp_hseq>MADTLSRITKIVVDRLGVDEAEVKPEASFKDDLGADSLDVVELVMELEDEFDLEISDEEAEKIATVADVVEYIE</Hsp_hseq>
+      <Hsp_midline>M D  +R+  IV  +LG+D ++VK E+ F  +LGADSLDVVELVM +EDEF++ I D+ A +IATV DV+ Y+E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|A7Z4L2.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Bacillus velezensis FZB42] &gt;sp|P80643.1| RecName: Full=Acyl carrier protein; Short=ACP [Bacillus subtilis subsp. subtilis str. 168]</Hit_def>
+  <Hit_accession>A7Z4L2</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.4925</Hsp_bit-score>
+      <Hsp_score>197</Hsp_score>
+      <Hsp_evalue>8.07891e-21</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>74</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>39</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>74</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLE</Hsp_qseq>
+      <Hsp_hseq>MADTLERVTKIIVDRLGVDEADVKLEASFKEDLGADSLDVVELVMELEDEFDMEISDEDAEKIATVGDAVNYIQ</Hsp_hseq>
+      <Hsp_midline>M D   R+  I+  +LG+D + VKLE+ F  +LGADSLDVVELVM +EDEF++ I D+ A +IATV D +NY++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q8R9W1.2|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Caldanaerobacter subterraneus subsp. tengcongensis MB4]</Hit_def>
+  <Hit_accession>Q8R9W1</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.1073</Hsp_bit-score>
+      <Hsp_score>196</Hsp_score>
+      <Hsp_evalue>1.00125e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>73</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>71</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYL</Hsp_qseq>
+      <Hsp_hseq>FEKVRNIIAEQLGIDPEEITMESSFIDDLGADSLDIVELIMALEEEFDIEIPDEDAEKIKTVGDVVEYL</Hsp_hseq>
+      <Hsp_midline>F ++++I+ +QLGIDP ++ +ES F  +LGADSLD+VEL+MA+E+EF++ I D+ A +I TV DV+ YL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|B0K1W0.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Thermoanaerobacter sp. X514] &gt;sp|B0K9X7.1| RecName: Full=Acyl carrier protein; Short=ACP [Thermoanaerobacter pseudethanolicus ATCC 33223]</Hit_def>
+  <Hit_accession>B0K1W0</Hit_accession>
+  <Hit_len>75</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>80.1073</Hsp_bit-score>
+      <Hsp_score>196</Hsp_score>
+      <Hsp_evalue>1.35468e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>73</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>71</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYL</Hsp_qseq>
+      <Hsp_hseq>FEKVRDIIAEQLGIDPEEITMESSFIDDLGADSLDIVELIMALEEEFDIEIPDEDAEKIKTVGDVVEYL</Hsp_hseq>
+      <Hsp_midline>F +++ I+ +QLGIDP ++ +ES F  +LGADSLD+VEL+MA+E+EF++ I D+ A +I TV DV+ YL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q5WFM5.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Alkalihalobacillus clausii KSM-K16]</Hit_def>
+  <Hit_accession>Q5WFM5</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>1.4922e-20</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>76</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>40</Hsp_identity>
+      <Hsp_positive>56</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>MADVMERVTKIIVDRLGVEESEVKLESSFKEDLKADSLDVVELVMELEDEFDMEIADEDAEKIATVKDVVDYINNN</Hsp_hseq>
+      <Hsp_midline>M D   R+  I+  +LG++ S+VKLES F  +L ADSLDVVELVM +EDEF++ I D+ A +IATV+DV++Y+  N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q2JQZ8.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Synechococcus sp. JA-3-3Ab]</Hit_def>
+  <Hit_accession>Q2JQZ8</Hit_accession>
+  <Hit_len>81</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.7221</Hsp_bit-score>
+      <Hsp_score>195</Hsp_score>
+      <Hsp_evalue>1.69616e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>73</Hsp_query-to>
+      <Hsp_hit-from>7</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYL</Hsp_qseq>
+      <Hsp_hseq>YSRVRKIVSDQLGVEDDKVTLEANFQNDLGADSLDTVELVMAFEEEFDLEIPDEDAEGIATVQDAVNYI</Hsp_hseq>
+      <Hsp_midline>++R++ IV  QLG++  KV LE++F  +LGADSLD VELVMA E+EF++ I D+ A  IATVQD +NY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|A7ZF37.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Campylobacter concisus 13826]</Hit_def>
+  <Hit_accession>A7ZF37</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>79.337</Hsp_bit-score>
+      <Hsp_score>194</Hsp_score>
+      <Hsp_evalue>2.09572e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>75</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>71</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLER</Hsp_qseq>
+      <Hsp_hseq>FEDVRDVVVEQLSVDPQAVKLESKIIEDLGADSLDVVELVMALEEKFEVEIPDSEAEKLVSIQDVVNYIEK</Hsp_hseq>
+      <Hsp_midline>F  ++ +V +QL +DP  VKLES    +LGADSLDVVELVMA+E++FEV I D  A ++ ++QDV+NY+E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|C0ZFP2.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Brevibacillus brevis NBRC 100599]</Hit_def>
+  <Hit_accession>C0ZFP2</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.9518</Hsp_bit-score>
+      <Hsp_score>193</Hsp_score>
+      <Hsp_evalue>3.99998e-20</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>76</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>55</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>MADTLERVKKIIVDRLGVDESKITLEASFKEDLGADSLDVVELVMELEDEFDLEISDEDAEKITSVGEVVKYIESH</Hsp_hseq>
+      <Hsp_midline>M D   R++ I+  +LG+D SK+ LE+ F  +LGADSLDVVELVM +EDEF++ I D+ A +I +V +V+ Y+E +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q97IA5.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Clostridium acetobutylicum ATCC 824]</Hit_def>
+  <Hit_accession>Q97IA5</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.5666</Hsp_bit-score>
+      <Hsp_score>192</Hsp_score>
+      <Hsp_evalue>4.56196e-20</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>74</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>FEKVKDIIADQLGIDATEIKMESSFIDDLGADSLDIVELIMALEEEFDIEMPDEEAEKVSSVGDVVNYIKAH</Hsp_hseq>
+      <Hsp_midline>F +++ I+  QLGID +++K+ES F  +LGADSLD+VEL+MA+E+EF++ + D+ A ++++V DV+NY++ +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A8FD57.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Bacillus pumilus SAFR-032]</Hit_def>
+  <Hit_accession>A8FD57</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.1814</Hsp_bit-score>
+      <Hsp_score>191</Hsp_score>
+      <Hsp_evalue>6.62085e-20</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>73</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYL</Hsp_qseq>
+      <Hsp_hseq>MADVLERVTKIIVDRLGVDEADVKMEASFKEDLGADSLDVVELVMELEDEFDMEISDEDAEKIATVGDAVNYI</Hsp_hseq>
+      <Hsp_midline>M D   R+  I+  +LG+D + VK+E+ F  +LGADSLDVVELVM +EDEF++ I D+ A +IATV D +NY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|B2A2M9.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Natranaerobius thermophilus JW/NM-WN-LF]</Hit_def>
+  <Hit_accession>B2A2M9</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>8.76391e-20</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>35</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>NFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>TFDKVKDIVVDQLGVDEDQVTMEANFTEDLEADSLDIVELIMAMEEEFDMEISDEEAEKMSTVGDVVNYIEQN</Hsp_hseq>
+      <Hsp_midline> F +++ IV  QLG+D  +V +E++F  +L ADSLD+VEL+MA+E+EF++ I D+ A +++TV DV+NY+E+N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q65JQ6.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Bacillus licheniformis DSM 13 = ATCC 14580]</Hit_def>
+  <Hit_accession>Q65JQ6</Hit_accession>
+  <Hit_len>77</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.7962</Hsp_bit-score>
+      <Hsp_score>190</Hsp_score>
+      <Hsp_evalue>1.02616e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>73</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>73</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYL</Hsp_qseq>
+      <Hsp_hseq>MADALERVTKIIVDRLGVDEADVTLEASFKEDLGADSLDVVELVMELEDEFDMEISDEDAEKIATVGDAVNYI</Hsp_hseq>
+      <Hsp_midline>M D   R+  I+  +LG+D + V LE+ F  +LGADSLDVVELVM +EDEF++ I D+ A +IATV D +NY+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q8RGX5.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Fusobacterium nucleatum subsp. nucleatum ATCC 25586]</Hit_def>
+  <Hit_accession>Q8RGX5</Hit_accession>
+  <Hit_len>75</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.411</Hsp_bit-score>
+      <Hsp_score>189</Hsp_score>
+      <Hsp_evalue>1.57668e-19</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>37</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>RLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>KVKEIIVEQLGVDADQIKPESNFVDDLGADSLDTVELIMSFEEEFGVEIPDTEAEKIKTVQDVINYIEAN</Hsp_hseq>
+      <Hsp_midline>+++ I+ +QLG+D  ++K ES+F  +LGADSLD VEL+M+ E+EF V I D  A +I TVQDV+NY+E N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q7M9W1.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Wolinella succinogenes DSM 1740]</Hit_def>
+  <Hit_accession>Q7M9W1</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.0258</Hsp_bit-score>
+      <Hsp_score>188</Hsp_score>
+      <Hsp_evalue>1.74756e-19</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>75</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>72</Hsp_align-len>
+      <Hsp_qseq>FTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>FDDIKEVVVEQLNVNPEEVKEESKFVEDLGADSLDVVELVMALEEKFNIEIPDEEAEKIATVGDVVRYIETN</Hsp_hseq>
+      <Hsp_midline>F  ++ +V +QL ++P +VK ES F  +LGADSLDVVELVMA+E++F + I D+ A +IATV DV+ Y+E N</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|C0QUD3.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Persephonella marina EX-H1]</Hit_def>
+  <Hit_accession>C0QUD3</Hit_accession>
+  <Hit_len>76</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.0258</Hsp_bit-score>
+      <Hsp_score>188</Hsp_score>
+      <Hsp_evalue>1.92863e-19</Hsp_evalue>
+      <Hsp_query-from>7</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>73</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>52</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>70</Hsp_align-len>
+      <Hsp_qseq>RLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>RIKEIIADQLGIDVEQIKPESKFVDDLGADSLDVVELIMAFEEEFDVEIPDEDAEKIQTVGDVINYIKEK</Hsp_hseq>
+      <Hsp_midline>R++ I+  QLGID  ++K ES F  +LGADSLDVVEL+MA E+EF+V I D+ A +I TV DV+NY++  </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|A4G6S9.1|</Hit_id>
+  <Hit_def>RecName: Full=Acyl carrier protein; Short=ACP [Herminiimonas arsenicoxydans]</Hit_def>
+  <Hit_accession>A4G6S9</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>77.0258</Hsp_bit-score>
+      <Hsp_score>188</Hsp_score>
+      <Hsp_evalue>2.44346e-19</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>76</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>76</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>38</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>76</Hsp_align-len>
+      <Hsp_qseq>MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</Hsp_qseq>
+      <Hsp_hseq>MSDIEQRVKKIVAEQLGVAEADIKIESSFVDDLGADSLDTVELVMALEDEFEMEIPDEQAEKITTVQQAIDYAKAH</Hsp_hseq>
+      <Hsp_midline>M D   R++ IV +QLG+  + +K+ES F  +LGADSLD VELVMA+EDEFE+ I D+ A +I TVQ  ++Y + +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

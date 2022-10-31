@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_65209</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0G2|RBCR_PHATC Probable RuBisCO transcriptional regulator OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rbcR PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>307</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_65209</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0G2|RBCR_PHATC Probable RuBisCO transcriptional regulator OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rbcR PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>307</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0G2.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0G2</Hit_accession>
+  <Hit_len>307</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>607.446</Hsp_bit-score>
+      <Hsp_score>1565</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>307</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>307</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>307</Hsp_identity>
+      <Hsp_positive>307</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>307</Hsp_align-len>
+      <Hsp_qseq>MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</Hsp_qseq>
+      <Hsp_hseq>MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</Hsp_hseq>
+      <Hsp_midline>MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49518.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49518</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>442.965</Hsp_bit-score>
+      <Hsp_score>1138</Hsp_score>
+      <Hsp_evalue>1.02753e-156</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>303</Hsp_query-to>
+      <Hsp_hit-from>3</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>226</Hsp_identity>
+      <Hsp_positive>261</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>304</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFA--NKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKN</Hsp_qseq>
+      <Hsp_hseq>LPFTLQQLRILKAIATEKSFTRAAEVLFVSQPSLSKQIKTLESRLNISLLNRENNIVSLTQAGKLFLEYSERILALCEESCRVLNDLKTGDRGNLIVGASQTIGTYLMPRVLALFAQNHPQINIEVHVDSTRKIAKRVLEGDIDIAVVGGNIPEEIEKNLKVEDFVNDELILIIPKSHPFALKKKKKINKDDLYHLNFITLNSNSTIRKLIDNILIQIAFEPKQFNIIMQLNSIEAIKTAVSLGLGAAFVSSSAIEKEIELKTIEIVTIEDIKITRILSIISNPECYRSKAVDLFYNELWTLKN</Hsp_hseq>
+      <Hsp_midline>LPFTLQQLRILKA+ATEK+FT+AAE+L++SQPSLSKQIKTLE  L+I L+NRENN +SLT+ GK+FL+YSERILALCEESCR L DLK G+RG+L VGASQTIGTYLMPRVLALFAQN+PQI+++V V+STR +AK +L  +IDIAVVGG IP +++KNL VE FV DE  LIIPKSHPFA   KK + K+DLYHLNFI+LNSNSTIRK IDNILIQ   + KQ  IIMQLNSIEAIKTAVSLG GAAFVSS+AIEKEIELKTIEI+ IE+I+ITR LSIISN E Y+SKA + F NEL  LKN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0V5.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0V5</Hit_accession>
+  <Hit_len>307</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>433.335</Hsp_bit-score>
+      <Hsp_score>1113</Hsp_score>
+      <Hsp_evalue>6.09158e-153</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>303</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>306</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>226</Hsp_identity>
+      <Hsp_positive>264</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>305</Hsp_align-len>
+      <Hsp_qseq>MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFA--NKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKN</Hsp_qseq>
+      <Hsp_hseq>VLPFTLQQLRIFKAIASEKSFTQAAEILFVSQPSLSKQIKTLENRLGILLLNRTGNKILLTEAGVVFLQYSERILALCEESCRALNDLKDGERGNLKVGASQTIGAYLMPRVLTLFAQSYPQINLHIDIDSTRIIAKKVADRSLDIAVVGGDIPTGLKKNLEIEDFVEDELILIISKSHPFAKKKKKKISKEDLYHLNFITLNSNSTIHKFINNILIQNNIQTAQFNVIMELNSIEAIKTAVSLGLGAAFVSSSAIEKELELKTVEIITIENIRITRTLSIITNPDSHRSKAFDFFYNELWLLKN</Hsp_hseq>
+      <Hsp_midline>+LPFTLQQLRI KA+A+EK+FT+AAE+L++SQPSLSKQIKTLE  L ILL+NR  NKI LTE G +FLQYSERILALCEESCRAL DLK+GERG+L VGASQTIG YLMPRVL LFAQ+YPQI+L + ++STRI+AK + +R +DIAVVGG+IP  LKKNL +E FVEDE  LII KSHPFA   KK ++KEDLYHLNFI+LNSNSTI KFI+NILIQN I T Q  +IM+LNSIEAIKTAVSLG GAAFVSS+AIEKE+ELKT+EI+ IENIRITRTLSII+N +S++SKAF+FF NEL  LKN</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P51205.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51205</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>343.199</Hsp_bit-score>
+      <Hsp_score>879</Hsp_score>
+      <Hsp_evalue>3.41584e-117</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIAKEGSFKKAANSLYVSQPAISLQIQNLERQLNVALFERGNKKATLTEAGSLLLRYGGRILALCEETCRALDDLQNLQGGTLIIGASQTTGTYLMPRLIGLFRQRYPQVAVQLQVHSTRLISWSVANGQVDLAIIGGEVPTELQDVLQVTSYAEDELALILPKSHPFSKLGDIQKEDLYRLRFIALDTQSTIRKVIDKVLSQHGIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGIVHWAQIENVTIKRMLSIIVNPNRYKSKATETFSQEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+A E +F KAA  LY+SQP++S QI+ LE+ L++ L  R N K +LTE G + L+Y  RILALCEE+CRAL DL+N + G+L +GASQT GTYLMPR++ LF Q YPQ+ +++QV+STR+++ ++ N ++D+A++GGE+P +L+  L V  + EDE +LI+PKSHPF+    + KEDLY L FI+L++ STIRK ID +L Q+ ID+ + KI M+LNSIEAIK AV  G GAAFVS +AI KE+EL  +   +IEN+ I R LSII N   YKSKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q1XDT2.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDT2</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>342.428</Hsp_bit-score>
+      <Hsp_score>877</Hsp_score>
+      <Hsp_evalue>6.64871e-117</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>165</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIAKEGSFKKAANSLYVSQPAISLQIQNLERQLNVSLFERGNKKATLTEAGSLLLRYGGRILALCEETCRALDDLQNLQGGTLIIGASQTTGTYLMPRLIGLFRQRYPQVAVQLQVHSTRLISWSVANGQVDLAIIGGEVPTELQDVLQVTSYAEDELALILPKSHPFSKLGDIQKEDLYRLRFIALDTQSTIRKVIDKVLSQHGIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGIVHWAQIENVTIKRMLSIIVNPNRYKSKATETFSQEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+A E +F KAA  LY+SQP++S QI+ LE+ L++ L  R N K +LTE G + L+Y  RILALCEE+CRAL DL+N + G+L +GASQT GTYLMPR++ LF Q YPQ+ +++QV+STR+++ ++ N ++D+A++GGE+P +L+  L V  + EDE +LI+PKSHPF+    + KEDLY L FI+L++ STIRK ID +L Q+ ID+ + KI M+LNSIEAIK AV  G GAAFVS +AI KE+EL  +   +IEN+ I R LSII N   YKSKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|P48271.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Cyanophora paradoxa]</Hit_def>
+  <Hit_accession>P48271</Hit_accession>
+  <Hit_len>324</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>340.502</Hsp_bit-score>
+      <Hsp_score>872</Hsp_score>
+      <Hsp_evalue>4.23737e-116</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>162</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFSLEQLRILKAIATEGSFKKAAESLYMTQPAISLQIQTLEKKLNIALFDRSGRRALMTEAGHLLLRYGDCILALCEETCHALEDLRNLQGGTLVIGASQTTGTYLMPRLIGLFRQRYPQVTVKLHVHSTRRISWNIANGQVDLAVIGGEVPHELQESLTITPYAEDELVLILPKSHPFAKLESIQKEDLYRLKFIALDAQSAIRKVIDKVLAQNGIDSNLFRVEMELNSIESIKNAVQSGLGAAFVSVSAIAKELELGILHWCRIENITIKRMLSIITNPNRYHSQAARIFSEEI</Hsp_hseq>
+      <Hsp_midline>LPF+L+QLRILKA+ATE +F KAAE LY++QP++S QI+TLEK L+I L +R   +  +TE G + L+Y + ILALCEE+C AL DL+N + G+L +GASQT GTYLMPR++ LF Q YPQ+ +K+ V+STR ++ NI N ++D+AV+GGE+P +L+++LT+  + EDE  LI+PKSHPFA  + + KEDLY L FI+L++ S IRK ID +L QN ID+   ++ M+LNSIE+IK AV  G GAAFVS +AI KE+EL  +   +IENI I R LSII+N   Y S+A   FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q6B936.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Gracilaria tenuistipitata var. liui]</Hit_def>
+  <Hit_accession>Q6B936</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>339.732</Hsp_bit-score>
+      <Hsp_score>870</Hsp_score>
+      <Hsp_evalue>4.60042e-116</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIVKEGSFKRAADSLYVSQPAISLQIQNLEKQLNIPLFERSNKKATLTEAGNLLLRYGGRILALCEETCRALEDVQNLQGGNLVIGASQTTGTYLMPRLIGLFRQRYPQVNVQLQVHSTRLISWSVANGQVDLAVIGGEVPNELKDTLQVTSYAEDELALILPTSHVFSKLPDIQKEDLYRLRFIALDTQSTIRKVIDKILIQHDIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGILHWAKIENVTIKRMLSIIINPNRYKSKAAETFSKEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+  E +F +AA+ LY+SQP++S QI+ LEK L+I L  R N K +LTE G + L+Y  RILALCEE+CRAL D++N + G+L +GASQT GTYLMPR++ LF Q YPQ+++++QV+STR+++ ++ N ++D+AV+GGE+P +LK  L V  + EDE +LI+P SH F+    + KEDLY L FI+L++ STIRK ID ILIQ+ ID+ + KI M+LNSIEAIK AV  G GAAFVS +AI KE+EL  +   KIEN+ I R LSII N   YKSKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|P73123.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P73123</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>331.643</Hsp_bit-score>
+      <Hsp_score>849</Hsp_score>
+      <Hsp_evalue>2.59554e-112</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>157</Hsp_identity>
+      <Hsp_positive>217</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>IPFTLDQLRILKAIASEGSFKRAADTLYVSQPAVSLQVQNLEKQLSVPLFDRGGRKAQLTEAGHLLLNYGEKIITLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPRMIGMFRQQYPDVTVQLQVHSTRRTAWGVANGQVDLAIIGGEVPAELQETLTVLPYAEDELALILPVLHPLAQAETIQKEDLYKLKFISLDSQSTIRKVIDKVLSQGEIDTKRLKIEMELNSIEAIKNAVQSGLGAAFVSTTAIEKELEMNVLHIAPIKNVEIRRVLSVIINPNRYRSKASAAFIREV</Hsp_hseq>
+      <Hsp_midline>+PFTL QLRILKA+A+E +F +AA+ LY+SQP++S Q++ LEK L + L +R   K  LTE G + L Y E+I+ LC+E+CRA+ DL+N + G+L VGASQT GTYL+PR++ +F Q YP + +++QV+STR  A  + N ++D+A++GGE+P +L++ LTV  + EDE +LI+P  HP A  + + KEDLY L FISL+S STIRK ID +L Q +IDTK+LKI M+LNSIEAIK AV  G GAAFVS+ AIEKE+E+  + I  I+N+ I R LS+I N   Y+SKA   F  E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|O78432.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Guillardia theta]</Hit_def>
+  <Hit_accession>O78432</Hit_accession>
+  <Hit_len>310</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>330.102</Hsp_bit-score>
+      <Hsp_score>845</Hsp_score>
+      <Hsp_evalue>2.95335e-112</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>158</Hsp_identity>
+      <Hsp_positive>221</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIASEGSFKKAAESLYISQPAVSLQIQNLEKQLNIPIFDRANRKAVFTEEGDTLLRYGNRVLSLCDETCRAIEDLKTLQGGTLIIGASQTTGTYLMPRLIGLFRHKYPQIAVQLQVHSTRRVAWSVANGQVNLAVVGGKVPDELRSKLQITPYVDDELALILPKLHPFSKLEVIQKEDLYRLRFITLDKQSTIRRVIDTVLNEHGIDSARFKIEMELNSVEAIKNAVQSGLGAAFVSISAIAKELELGLLHWVKIEGVVIKRTLSIITNPSRYQAKASEIFSKEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+A+E +F KAAE LY+SQP++S QI+ LEK L+I + +R N K   TE G   L+Y  R+L+LC+E+CRA+ DLK  + G+L +GASQT GTYLMPR++ LF   YPQI +++QV+STR VA ++ N ++++AVVGG++P +L+  L +  +V+DE +LI+PK HPF+  +++ KEDLY L FI+L+  STIR+ ID +L ++ ID+ + KI M+LNS+EAIK AV  G GAAFVS +AI KE+EL  +  +KIE + I RTLSII+N   Y++KA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q85G62.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Cyanidioschyzon merolae strain 10D]</Hit_def>
+  <Hit_accession>Q85G62</Hit_accession>
+  <Hit_len>303</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>322.013</Hsp_bit-score>
+      <Hsp_score>824</Hsp_score>
+      <Hsp_evalue>3.89833e-109</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRIFQAIVVEGSFQKAAQSLYISQPAVSLQIQNLEQQLNAPLFDRSHRKAKLTEAGQVFFKYASRILALCEETCRALEDLHHLQAGSLIIGASQTIGTYLMPGLIGLFRQKYPHICVQLQVHSTRRIAWSVAKGHIDVAVIGGAIPTELIPLLSIQPFAEDELTLIVPPDHPFARLSKIQKEDLYRLRFVSLDRHSTIRKVIDQILHQNGIDTNRLKMEMELNSIEAIKNAVQWGLGAAFVSVCAIAKELELNLVREVEIEAISIKRQLYQITNPNRYQSKAAFTFCQQM</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRI +A+  E +F KAA+ LY+SQP++S QI+ LE+ L+  L +R + K  LTE G++F +Y+ RILALCEE+CRAL DL + + GSL +GASQTIGTYLMP ++ LF Q YP I +++QV+STR +A ++    ID+AV+GG IP +L   L+++ F EDE +LI+P  HPFA    + KEDLY L F+SL+ +STIRK ID IL QN IDT +LK+ M+LNSIEAIK AV  G GAAFVS  AI KE+EL  +  ++IE I I R L  I+N   Y+SKA   F  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|A2CI69.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Chlorokybus atmophyticus]</Hit_def>
+  <Hit_accession>A2CI69</Hit_accession>
+  <Hit_len>313</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>321.627</Hsp_bit-score>
+      <Hsp_score>823</Hsp_score>
+      <Hsp_evalue>9.20353e-109</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>151</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLLILKAIAAQGSFKKAADSLYISQPAVSMQVQNIEKQLNVQLLDRGGRRANLTDAGHLLLRYGDRILALCDETCRALEDLRNLQTGTLIIGASQTTGTYLMPQLISLFRKKYPQIMVQLHVDSTRHICWNVANGQIDIAIIGGEVPLELREILQVTPYADDELALILPCSHPFSQRQEIQKEDLYQLHFIALYASSTIRKVVDNILREHDIHSSRFFIEMELNSIEAIKSAVQSELGAAFVSASAITKELQLGLLHWAKIQNVILNRNLSIVTNPNRYRSKAAEKFSCEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QL ILKA+A + +F KAA+ LY+SQP++S Q++ +EK L++ L++R   + +LT+ G + L+Y +RILALC+E+CRAL DL+N + G+L +GASQT GTYLMP++++LF + YPQI +++ V+STR +  N+ N +IDIA++GGE+PL+L++ L V  + +DE +LI+P SHPF+ ++ + KEDLY L+FI+L ++STIRK +DNIL ++ I + +  I M+LNSIEAIK+AV    GAAFVS++AI KE++L  +   KI+N+ + R LSI++N   Y+SKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|Q3MCB5.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Trichormus variabilis ATCC 29413]</Hit_def>
+  <Hit_accession>Q3MCB5</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>320.857</Hsp_bit-score>
+      <Hsp_score>821</Hsp_score>
+      <Hsp_evalue>3.26325e-108</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>218</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIAVEGSFKRAADSLYVSQPAVSLQVQNLERQLDVPLFDRGGRRAQLTEAGHLLLNYGEKILSLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPKMIGMFRQKYPDVAVQLHVHSTRRTAWSVANGQVDLAIIGGEIPGELTESLEIIPYAEDELALILPVFHPFTKQETIQKEDLYKLQFITLDSQSTIRKVIDQVLSRSEIDTRRFKIEMELNSIEAIKNAVQSGLGAAFVSTSAIAKELQMGVLHCTPIDGVVIKRTLWLIFNPNRYRSKAAEAFSQEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+A E +F +AA+ LY+SQP++S Q++ LE+ LD+ L +R   +  LTE G + L Y E+IL+LC+E+CRA+ DL+N + G+L VGASQT GTYL+P+++ +F Q YP + +++ V+STR  A ++ N ++D+A++GGEIP +L ++L +  + EDE +LI+P  HPF  ++ + KEDLY L FI+L+S STIRK ID +L +++IDT++ KI M+LNSIEAIK AV  G GAAFVS++AI KE+++  +    I+ + I RTL +I N   Y+SKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|O19892.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Cyanidium caldarium]</Hit_def>
+  <Hit_accession>O19892</Hit_accession>
+  <Hit_len>317</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>320.087</Hsp_bit-score>
+      <Hsp_score>819</Hsp_score>
+      <Hsp_evalue>4.15752e-108</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>156</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILRAILIQGSFKKAATSLYISQPAVSSHVHNIEKQLNIQLFDRSHRNAQLTEAGQLLLKYGGRILALCEETCRALEDLQNLQCGNLIIGASQTTGTYLMPKLIGLFRQKYPQISVQLQVHSTRRISWSVANGQLDLAIIGGEVPKELTEILEVRNFVEDELTLILPPSHPFSKFSCIQKEDLYRLRFIALDKNSTIRKVIDKILNRNGIDSSRLKTEMELSSIEAIKNAVQSGLGASFVSISAIDKELKLQLLNRVNIDKIKIKRMLSIITNYSRYRSKASETFCHEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRIL+A+  + +F KAA  LY+SQP++S  +  +EK L+I L +R +    LTE G++ L+Y  RILALCEE+CRAL DL+N + G+L +GASQT GTYLMP+++ LF Q YPQI +++QV+STR ++ ++ N ++D+A++GGE+P +L + L V  FVEDE +LI+P SHPF+    + KEDLY L FI+L+ NSTIRK ID IL +N ID+ +LK  M+L+SIEAIK AV  G GA+FVS +AI+KE++L+ +  + I+ I+I R LSII+N   Y+SKA E F +E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q8YQ82.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Nostoc sp. PCC 7120 = FACHB-418]</Hit_def>
+  <Hit_accession>Q8YQ82</Hit_accession>
+  <Hit_len>337</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>319.316</Hsp_bit-score>
+      <Hsp_score>817</Hsp_score>
+      <Hsp_evalue>1.62015e-107</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>298</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>300</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>297</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNEL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLRILKAIAVEGSFKRAADSLYVSQPAVSLQVQNLERQLDVPLFDRGGRRAQLTEAGHLLLSYGEKILSLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPKMIGMFRQKYPDVAVQLHVHSTRRTAWSVANGQVDLAIIGGEIPGELTESLEIIPYAEDELALILPVFHPFTKLDTIQKEDLYKLQFITLDSQSTIRKVIDQVLSRSEIDTRRFKIEMELNSIEAIKNAVQSGLGAAFVSTSAIAKELQMGVLHCTPIDGVVIKRTLWLIFNPNRYRSKAAEAFSQEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QLRILKA+A E +F +AA+ LY+SQP++S Q++ LE+ LD+ L +R   +  LTE G + L Y E+IL+LC+E+CRA+ DL+N + G+L VGASQT GTYL+P+++ +F Q YP + +++ V+STR  A ++ N ++D+A++GGEIP +L ++L +  + EDE +LI+P  HPF     + KEDLY L FI+L+S STIRK ID +L +++IDT++ KI M+LNSIEAIK AV  G GAAFVS++AI KE+++  +    I+ + I RTL +I N   Y+SKA E FS E+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q4G384.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable RuBisCO transcriptional regulator [Emiliania huxleyi]</Hit_def>
+  <Hit_accession>Q4G384</Hit_accession>
+  <Hit_len>314</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>307.76</Hsp_bit-score>
+      <Hsp_score>787</Hsp_score>
+      <Hsp_evalue>2.20954e-103</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>301</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>147</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>300</Hsp_align-len>
+      <Hsp_qseq>LPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKL</Hsp_qseq>
+      <Hsp_hseq>LPFTLDQLKIIKTIHREGSFKTAAKKLYISQPAVSRQVQNLERQLNTPIFYRDKRKARLTETGHILVKYAEQILSLCEETCQALDELKSINSGTLVIGASQTTGTYLMPRLIGIFRHKYPQISIELKVHSTRRISWGVANGEIDLAIVGGEVPPELQGTLEIISYAEDELALIIPQAHPFATLQSIQKEDLYRLRFIALDTQSTIRSVIENTLTQSGIDSRYFKIEMELNSIEAIKNAVQSGLGAAFVSVSAISKELELGILHWAKIEDVTIKRTLSILINPKRYYANPIKNFEKEIMEI</Hsp_hseq>
+      <Hsp_midline>LPFTL QL+I+K +  E +F  AA+ LY+SQP++S+Q++ LE+ L+  +  R+  K  LTE G I ++Y+E+IL+LCEE+C+AL +LK+   G+L +GASQT GTYLMPR++ +F   YPQI ++++V+STR ++  + N EID+A+VGGE+P +L+  L +  + EDE +LIIP++HPFA  + + KEDLY L FI+L++ STIR  I+N L Q+ ID++  KI M+LNSIEAIK AV  G GAAFVS +AI KE+EL  +   KIE++ I RTLSI+ N + Y +   + F  E+ ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|P39647.1|</Hit_id>
+  <Hit_def>RecName: Full=HTH-type transcriptional regulator CysL; AltName: Full=CysJI operon transcriptional activator [Bacillus subtilis subsp. subtilis str. 168]</Hit_def>
+  <Hit_accession>P39647</Hit_accession>
+  <Hit_len>299</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>5.00037e-42</Hsp_evalue>
+      <Hsp_query-from>9</Hsp_query-from>
+      <Hsp_query-to>299</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>290</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>156</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>291</Hsp_align-len>
+      <Hsp_qseq>LRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELK</Hsp_qseq>
+      <Hsp_hseq>LKTFIAVVEEKNFTKAAEKLMISQPSVSLHIKNLEKEFQTALLNRSPKHFTTTPTGDILYQRAKQMVFLYEQAKAEIYAHHHYVKGELKIAASFTIGEYILPPLLAQLQKLYPELNLDVMIGNTEEVSERVRMLQADIGLIEGHTN---ENELEIEPFMEDEMCIAAPNQHPLAGRKEISISDLQNEAWVTREKGSGTREYLDHVLSSNGLRPKSM---FTISSNQGVKEAVINGMGLSVLSRSVLRKDLIHREISILHINNFSLKRKLSYIHSPLMENTKNKEIFITMLK</Hsp_hseq>
+      <Hsp_midline>L+   AV  EKNFTKAAE L +SQPS+S  IK LEK     L+NR     + T  G I  Q +++++ L E++   +    +  +G L + AS TIG Y++P +LA   + YP+++L V + +T  V++ +   + DI ++ G      +  L +E F+EDE  +  P  HP A +K ++  DL +  +++    S  R+++D++L  N +  K +     ++S + +K AV  G G + +S + + K++  + I IL I N  + R LS I +     +K  E F   LK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|P25544.1|</Hit_id>
+  <Hit_def>RecName: Full=RuBisCO operon transcriptional regulator [Allochromatium vinosum]</Hit_def>
+  <Hit_accession>P25544</Hit_accession>
+  <Hit_len>302</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>128.642</Hsp_bit-score>
+      <Hsp_score>322</Hsp_score>
+      <Hsp_evalue>7.41599e-34</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>280</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>272</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>278</Hsp_align-len>
+      <Hsp_qseq>TLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTV--EKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSII</Hsp_qseq>
+      <Hsp_hseq>SLRQLRVFEAVARHNSYTRAAEELHLSQPAVSMQVRQLEDEIGLSLFERLGKQVVLTEAGREVFHYSRAIGQSLREMEEVLESLKGVSRGSLRIAVASTV-NYFAPRLMAIFQQRHSGIGLRLDVTNRESLVQMLDSNSVDLVLMG--VP---PRNVEVEAEAFMDNPLVVIAPPDHPLAGERAISLARLAEETFVMREEGSGTRQAMERFFSER---GQTIRHGMQMTRNEAVKQAVRSGLGLSVVSLHTIELELETRRLVTLDVEGFPDRRQWYLV</Hsp_hseq>
+      <Hsp_midline>+L+QLR+ +AVA   ++T+AAE L+LSQP++S Q++ LE  + + L  R   ++ LTE G+    YS  I     E    L  LK   RGSL +  + T+  Y  PR++A+F Q +  I L++ V +   + + + +  +D+ ++G  +P    +N+ V  E F+++   +I P  HP A ++ ++   L    F+     S  R+ ++    +     + ++  MQ+   EA+K AV  G G + VS   IE E+E + +  L +E     R   ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q55459.1|</Hit_id>
+  <Hit_def>RecName: Full=HTH-type transcriptional activator CmpR [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>Q55459</Hit_accession>
+  <Hit_len>304</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>121.324</Hsp_bit-score>
+      <Hsp_score>303</Hsp_score>
+      <Hsp_evalue>4.08169e-31</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>280</Hsp_query-to>
+      <Hsp_hit-from>5</Hsp_hit-from>
+      <Hsp_hit-to>273</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>276</Hsp_align-len>
+      <Hsp_qseq>TLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSII</Hsp_qseq>
+      <Hsp_hseq>TLHQFEVFAAIARTGSFTKAAEELFLTQPTVSQQMKQLTKAIGVPLYEQIGRKIYLTEAGQAVLDASKNITSCLDQLQEVIADLQGLKKGNLRL-ATITTGKYFVPRLLGEFRQQYPGISISLQIGNRQQILERLANNLDDLYFL-GKPPSNL--DINIRHFLENPLVVIASRQHPLVKEKKISLERLVNEPLIMRESGSGTRMAVEEFFSENRL---KMNVEMEISSNEAIKQAVYGGLGISILSLYSLALEGINGPLAVLDVEGFPLQKHWYII</Hsp_hseq>
+      <Hsp_midline>TL Q  +  A+A   +FTKAAE L+L+QP++S+Q+K L K + + L  +   KI LTE G+  L  S+ I +  ++    + DL+  ++G+L + A+ T G Y +PR+L  F Q YP I + +Q+ + + + + + N   D+  + G+ P +L  ++ +  F+E+   +I  + HP   +K ++ E L +   I   S S  R  ++    +N++   ++ + M+++S EAIK AV  G G + +S  ++  E     + +L +E   + +   II</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P0ACR4.1|</Hit_id>
+  <Hit_def>RecName: Full=Uncharacterized HTH-type transcriptional regulator YeiE [Escherichia coli K-12] &gt;sp|P0ACR5.1| RecName: Full=Uncharacterized HTH-type transcriptional regulator YeiE [Escherichia coli CFT073] &gt;sp|P0ACR6.1| RecName: Full=Uncharacterized HTH-type transcriptional regulator YeiE [Escherichia coli O157:H7]</Hit_def>
+  <Hit_accession>P0ACR4</Hit_accession>
+  <Hit_len>293</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>119.013</Hsp_bit-score>
+      <Hsp_score>297</Hsp_score>
+      <Hsp_evalue>2.16178e-30</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>294</Hsp_query-to>
+      <Hsp_hit-from>4</Hsp_hit-from>
+      <Hsp_hit-to>282</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>81</Hsp_identity>
+      <Hsp_positive>151</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>290</Hsp_align-len>
+      <Hsp_qseq>TLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFF</Hsp_qseq>
+      <Hsp_hseq>TLRQLEVFAEVLKSGSTTQASVMLALSQSAVSAALTDLEGQLGVQLFDRVGKRLVVNEHGRLLY---PRALALLEQAVE-IEQLFREDNGAIRIYASSTIGNYILPAVIARYRHDYPQLPIELSVGNSQDVMQAVLDFRVDIGFIEGPC---HSTEIISEPWLEDELVVFAAPTSPLA-RGPVTLEQLAAAPWILRERGSGTREIVDYLLLSH---LPKFEMAMELGNSEAIKHAVRHGLGISCLSRRVIEDQLQAGTLSEVAVPLPRLMRTLWRIHHRQKHLSNALRRF</Hsp_hseq>
+      <Hsp_midline>TL+QL +   V    + T+A+ +L LSQ ++S  +  LE  L + L +R   ++ + E+G++      R LAL E++   +  L   + G++ + AS TIG Y++P V+A +  +YPQ+ +++ V +++ V + +L+  +DI  + G         +  E ++EDE  +    + P A +  VT E L    +I     S  R+ +D +L+ +     + ++ M+L + EAIK AV  G G + +S   IE +++  T+  + +   R+ RTL  I + + + S A   F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P25545.2|</Hit_id>
+  <Hit_def>RecName: Full=HTH-type transcriptional regulator CbbR; AltName: Full=RuBisCO operon transcriptional regulator [Xanthobacter flavus]</Hit_def>
+  <Hit_accession>P25545</Hit_accession>
+  <Hit_len>333</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>116.701</Hsp_bit-score>
+      <Hsp_score>291</Hsp_score>
+      <Hsp_evalue>3.65673e-29</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>275</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>271</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>79</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>12</Hsp_gaps>
+      <Hsp_align-len>279</Hsp_align-len>
+      <Hsp_qseq>MLP-FTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVE-KFVEDEFSLII-PKSHP-FANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITR</Hsp_qseq>
+      <Hsp_hseq>MAPHWTLRQLRLVALAAASGSYAKAAQDMGLSPPAVTAQMKALEEDIGVPMFERVDGRLRPTAAGQELLSAQERIARALSEAERAIAALKSPERGSVVVGVVST-AKYFAPMALAAFRRRRPEIELRLIIGNREDIIRGIVSLDFDVAIMGRPPP-----ALEAETRLIGDHPHIVVAPVDHPLFKRRKRITPADLTRESLLVREPGSGTRILMERVF--EEAGAPNPPIAMEIGSNETIKQSVMAGLGLAFISAHTVAAEVADGRLRVLEVEGLPVVR</Hsp_hseq>
+      <Hsp_midline>M P +TL+QLR++   A   ++ KAA+ + LS P+++ Q+K LE+++ + +  R + ++  T  G+  L   ERI     E+ RA+  LK+ ERGS+ VG   T   Y  P  LA F +  P+I+L++ + +   + + I++ + D+A++G   P      L  E + + D   +++ P  HP F  +K +T  DL   + +     S  R  ++ +    +       I M++ S E IK +V  G G AF+S+  +  E+    + +L++E + + R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

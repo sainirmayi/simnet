@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_44381</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|B7GDS0|CSK_PHATC Chloroplast sensor kinase, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=CSK PE=3 SV=2</BlastOutput_query-def>
+  <BlastOutput_query-len>583</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_44381</Iteration_query-ID>
+  <Iteration_query-def>sp|B7GDS0|CSK_PHATC Chloroplast sensor kinase, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=CSK PE=3 SV=2</Iteration_query-def>
+  <Iteration_query-len>583</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|B7GDS0.2|</Hit_id>
+  <Hit_def>RecName: Full=Chloroplast sensor kinase, chloroplastic; Flags: Precursor [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>B7GDS0</Hit_accession>
+  <Hit_len>583</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1190.25</Hsp_bit-score>
+      <Hsp_score>3078</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>583</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>583</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>583</Hsp_identity>
+      <Hsp_positive>583</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>583</Hsp_align-len>
+      <Hsp_qseq>MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYPGFSYRGLSVVTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</Hsp_qseq>
+      <Hsp_hseq>MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYPGFSYRGLSVVTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</Hsp_hseq>
+      <Hsp_midline>MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYPGFSYRGLSVVTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|Q8DMC5.1|</Hit_id>
+  <Hit_def>RecName: Full=Sensor histidine kinase Hik2 [Thermosynechococcus vestitus BP-1]</Hit_def>
+  <Hit_accession>Q8DMC5</Hit_accession>
+  <Hit_len>385</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>55.0694</Hsp_bit-score>
+      <Hsp_score>131</Hsp_score>
+      <Hsp_evalue>8.31483e-07</Hsp_evalue>
+      <Hsp_query-from>95</Hsp_query-from>
+      <Hsp_query-to>312</Hsp_query-to>
+      <Hsp_hit-from>6</Hsp_hit-from>
+      <Hsp_hit-to>181</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>63</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>50</Hsp_gaps>
+      <Hsp_align-len>222</Hsp_align-len>
+      <Hsp_qseq>SQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQN----DRAARALSDSLHQIKNPLQAMRTYGKLLQRRI</Hsp_qseq>
+      <Hsp_hseq>SEEFAALCRTQLELVVNSL------GAS---SLAVYL-SETLNDS------------PSWSPVAVYPEAASLLSLAIPPTLPP-PTQVPETSL-SHYP-------------QQVVSSL---ANQLILPLMYQNWVLGVLVA------QRQHRPWLAAEQAQLQQVAQTLAIACVLDQRQQWLSHSPAQPLDQRQQRFDDLLHQLRNPVAAIRTFVKLLLKRL</Hsp_hseq>
+      <Hsp_midline>S+ F  L  +QLEL+ NS+      G S   ++A+YL  E +N              PS   V +  EAAS ++ A+P TL   P     TSL   YP             ++V+  L   A  L +PL   +  +GVL+       +R+   W   ++ Q+ +  ++L++A  +D  +  L        D+  +   D LHQ++NP+ A+RT+ KLL +R+</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>53.5286</Hsp_bit-score>
+      <Hsp_score>127</Hsp_score>
+      <Hsp_evalue>2.43382e-06</Hsp_evalue>
+      <Hsp_query-from>460</Hsp_query-from>
+      <Hsp_query-to>570</Hsp_query-to>
+      <Hsp_hit-from>233</Hsp_hit-from>
+      <Hsp_hit-to>328</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>36</Hsp_identity>
+      <Hsp_positive>60</Hsp_positive>
+      <Hsp_gaps>15</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRG</Hsp_qseq>
+      <Hsp_hseq>LAETLLPLISAAQARAEMEGKTFVVEIPPQLPPIWLEERVLQEVVGNLLDNAFKYT--PKGGT---------IGLRLMLSSP----ALELTVWDTGCGIPKEAQPRLFERG</Hsp_hseq>
+      <Hsp_midline>L++ L P+++A +A AE  G  F  +    LP + +  + LQE + N++DNAF Y   PK G+         + +RL+ +S      + + V D G GIP E + ++F+RG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|P73276.1|</Hit_id>
+  <Hit_def>RecName: Full=Sensor histidine kinase Hik2; AltName: Full=CSK [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>P73276</Hit_accession>
+  <Hit_len>434</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>53.1434</Hsp_bit-score>
+      <Hsp_score>126</Hsp_score>
+      <Hsp_evalue>3.46519e-06</Hsp_evalue>
+      <Hsp_query-from>219</Hsp_query-from>
+      <Hsp_query-to>311</Hsp_query-to>
+      <Hsp_hit-from>111</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>33</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>100</Hsp_align-len>
+      <Hsp_qseq>LSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTE----RAALQMQNDRAA---RALSDSLHQIKNPLQAMRTYGKLLQRR</Hsp_qseq>
+      <Hsp_hseq>LVLPLVYGEEMVGLLVI------HRSQGQWHGEEMMQLEAIAKSLAVACLLDQQQDWYRQAWEEQNQQYQWERQHWADLLHQLRNPLTALKTFSKLLLKR</Hsp_hseq>
+      <Hsp_midline>L +PL  G   VG+L++       R    W  E+  Q+    KSL++A  +D +    R A + QN +     +  +D LHQ++NPL A++T+ KLL +R</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>0.00029293</Hsp_evalue>
+      <Hsp_query-from>413</Hsp_query-from>
+      <Hsp_query-to>569</Hsp_query-to>
+      <Hsp_hit-from>234</Hsp_hit-from>
+      <Hsp_hit-to>373</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>46</Hsp_identity>
+      <Hsp_positive>67</Hsp_positive>
+      <Hsp_gaps>19</Hsp_gaps>
+      <Hsp_align-len>158</Hsp_align-len>
+      <Hsp_qseq>ASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPS-AEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDR</Hsp_qseq>
+      <Hsp_hseq>ASQSQGPEAVPLLSSSPVTTIQVLPPADRVETMPLANFS--------LGEVLPPILLAHQAIAAERNITLTAQIALIDTVVMANRLALREVVNNLLDN----------GIKYTPNGGLVEVSLALEKVSSSGMDWATLAIADTGYGIPPEDQQKIFER</Hsp_hseq>
+      <Hsp_midline>AS S GP       S   + +      D    MP + FS        L +VL P+L A +AIA +R I  +         V     AL+E + N++DN          G ++ PN    EV + L + S       T+ + D G GIP E + +IF+R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q2JWK9.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Synechococcus sp. JA-3-3Ab]</Hit_def>
+  <Hit_accession>Q2JWK9</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.7506</Hsp_bit-score>
+      <Hsp_score>112</Hsp_score>
+      <Hsp_evalue>0.000146502</Hsp_evalue>
+      <Hsp_query-from>460</Hsp_query-from>
+      <Hsp_query-to>567</Hsp_query-to>
+      <Hsp_hit-from>227</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>50</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>LSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIF</Hsp_qseq>
+      <Hsp_hseq>LASLCQPVIEELLPRIQAKQLQFQADIPVDLPTVHVDPDKIRQVIFNLLDNAIKYT--PAGGS---------IRLNILHRTSQK---VQVTVSDTGPGIPEAEQENIF</Hsp_hseq>
+      <Hsp_midline>L+ +  PV+       + + + F  D   DLP V + P  +++ + N++DNA  Y   P  GS         +R+ ++  +      V + V D GPGIP   ++ IF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|B7K3M6.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Rippkaea orientalis PCC 8801]</Hit_def>
+  <Hit_accession>B7K3M6</Hit_accession>
+  <Hit_len>391</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>47.3654</Hsp_bit-score>
+      <Hsp_score>111</Hsp_score>
+      <Hsp_evalue>0.000246636</Hsp_evalue>
+      <Hsp_query-from>459</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>339</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>28</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>FLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>FLPVLCQDILDEYREIFKEKSLTLVKDIPQDIPTVYADEELIRQVIVNLLDNAIKYT----PS---GGKVTVSILHRTTQK-------VQVSICDTGPGIPEEKQERIFE</Hsp_hseq>
+      <Hsp_midline>FL  +   +L  +R I +++ +    D  +D+P V    + +++ ++N++DNA  Y     P    G   +  +  R  Q        V + + D GPGIP E +++IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|B0JK50.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Microcystis aeruginosa NIES-843]</Hit_def>
+  <Hit_accession>B0JK50</Hit_accession>
+  <Hit_len>384</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>0.000297225</Hsp_evalue>
+      <Hsp_query-from>459</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>237</Hsp_hit-from>
+      <Hsp_hit-to>332</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>54</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>FLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>YLQSLCQEILSQFTDTFQEKTLIFQSDIPQDLPPVYADEELIRQVIINLLENGIKYT--PAGG---------EITLSVLHRTTQK---VQVSISDTGPGIPEEKQEHIFE</Hsp_hseq>
+      <Hsp_midline>+L  +   +L+ F    +++ ++F  D  +DLP V    + +++ +IN+++N   Y   P  G         E+ + ++  +      V + + D GPGIP E ++ IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|P23837.1|</Hit_id>
+  <Hit_def>RecName: Full=Sensor protein PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Escherichia coli K-12]</Hit_def>
+  <Hit_accession>P23837</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>0.000373126</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>336</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLTSALNKVYQRKGVNISLDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDEHLYIVVEDDGPGIPLSKREVIFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD + +A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I+VED+GPGIP   R+ IFDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q8X739.3|</Hit_id>
+  <Hit_def>RecName: Full=Sensor protein PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Escherichia coli O157:H7]</Hit_def>
+  <Hit_accession>Q8X739</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>0.000376373</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>336</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLTSALNKVYQRKGVNISLDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDEHLYIVVEDDGPGIPLSKREVIFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD + +A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I+VED+GPGIP   R+ IFDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q83RR1.1|</Hit_id>
+  <Hit_def>RecName: Full=Virulence sensor protein PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Shigella flexneri]</Hit_def>
+  <Hit_accession>Q83RR1</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.9802</Hsp_bit-score>
+      <Hsp_score>110</Hsp_score>
+      <Hsp_evalue>0.000379649</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>336</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLTSALNKVYQRKGVNISLDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDEHLYIVVEDDGPGIPLSKREVIFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD + +A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I+VED+GPGIP   R+ IFDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q8FIB8.1|</Hit_id>
+  <Hit_def>RecName: Full=Sensor protein PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Escherichia coli CFT073]</Hit_def>
+  <Hit_accession>Q8FIB8</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>0.00039991</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>336</Hsp_hit-from>
+      <Hsp_hit-to>433</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>58</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLTSALNKVYQRKGVNISLDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDEHLYIVVEDDGPGIPLSKREVIFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD + +A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I+VED+GPGIP   R+ IFDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q8Z7H3.1|</Hit_id>
+  <Hit_def>RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Typhi]</Hit_def>
+  <Hit_accession>Q8Z7H3</Hit_accession>
+  <Hit_len>487</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>0.000432828</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>337</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLISALNKVYQRKGVNISMDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDDHLHIFVEDDGPGIPHSKRSLVFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD +++A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I VED+GPGIP   R  +FDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|D0ZV89.1|</Hit_id>
+  <Hit_def>RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Typhimurium str. 14028S] &gt;sp|E1WFA0.1| RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344] &gt;sp|F5ZP94.1| RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Typhimurium str. UK-1] &gt;sp|P0DM80.1| RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Typhimurium str. LT2] &gt;sp|Q57QC4.1| RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Choleraesuis str. SC-B67] &gt;sp|Q5PMJ0.1| RecName: Full=Virulence sensor histidine kinase PhoQ; AltName: Full=Sensor histidine protein kinase/phosphatase PhoQ [Salmonella enterica subsp. enterica serovar Paratyphi A str. ATCC 9150]</Hit_def>
+  <Hit_accession>D0ZV89</Hit_accession>
+  <Hit_len>487</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>46.595</Hsp_bit-score>
+      <Hsp_score>109</Hsp_score>
+      <Hsp_evalue>0.000444225</Hsp_evalue>
+      <Hsp_query-from>456</Hsp_query-from>
+      <Hsp_query-to>571</Hsp_query-to>
+      <Hsp_hit-from>337</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>57</Hsp_positive>
+      <Hsp_gaps>22</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>EMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQA--LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGK</Hsp_qseq>
+      <Hsp_hseq>ELHPVAPLLDNLISALNKVYQRKGVNISMDIS---PEISFVGEQNDFVEVMGNVLDNACKYCL-----------EFVEI------SARQTDDHLHIFVEDDGPGIPHSKRSLVFDRGQ</Hsp_hseq>
+      <Hsp_midline>E+  ++ +LD +++A   + + +G+  S D +   P ++   +     E + NV+DNA  Y                E+      +++ +D  + I VED+GPGIP   R  +FDRG+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|B1WYT4.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Crocosphaera subtropica ATCC 51142]</Hit_def>
+  <Hit_accession>B1WYT4</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.8246</Hsp_bit-score>
+      <Hsp_score>107</Hsp_score>
+      <Hsp_evalue>0.000601167</Hsp_evalue>
+      <Hsp_query-from>459</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>235</Hsp_hit-from>
+      <Hsp_hit-to>330</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>25</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>110</Hsp_align-len>
+      <Hsp_qseq>FLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>FLPRLSKEIVEQYNDLLTEKSLKLIQDVPQDVPGVYADEELIRQVIVNLIDNAIKYT-----------SEGGEITLSILHR---TSQKVQVSVCDTGPGIPEEKQERIFE</Hsp_hseq>
+      <Hsp_midline>FL  +   ++  +  +  ++ +    D  +D+PGV    + +++ ++N+IDNA  Y            +   E+ + ++     +   V + V D GPGIP E +++IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|Q2JKD9.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Synechococcus sp. JA-2-3B&apos;a(2-13)]</Hit_def>
+  <Hit_accession>Q2JKD9</Hit_accession>
+  <Hit_len>377</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>45.0542</Hsp_bit-score>
+      <Hsp_score>105</Hsp_score>
+      <Hsp_evalue>0.00104142</Hsp_evalue>
+      <Hsp_query-from>476</Hsp_query-from>
+      <Hsp_query-to>567</Hsp_query-to>
+      <Hsp_hit-from>243</Hsp_hit-from>
+      <Hsp_hit-to>320</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>92</Hsp_align-len>
+      <Hsp_qseq>EDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIF</Hsp_qseq>
+      <Hsp_hseq>QGKRLQFQADIPVDLPSVHVDPDKIRQVLFNLLDNAIKYT--PAGGS---------IRLDVLHRTSQK---VQVTVSDTGPGIPEADQESIF</Hsp_hseq>
+      <Hsp_midline>+ + + F  D   DLP V + P  +++ L N++DNA  Y   P  GS         +R+ ++  +      V + V D GPGIP   ++ IF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q55630.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA [Synechocystis sp. PCC 6803 substr. Kazusa]</Hit_def>
+  <Hit_accession>Q55630</Hit_accession>
+  <Hit_len>383</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>44.2838</Hsp_bit-score>
+      <Hsp_score>103</Hsp_score>
+      <Hsp_evalue>0.00199457</Hsp_evalue>
+      <Hsp_query-from>460</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>237</Hsp_hit-from>
+      <Hsp_hit-to>331</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>27</Hsp_identity>
+      <Hsp_positive>53</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>109</Hsp_align-len>
+      <Hsp_qseq>LSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>IADLCQEVLELYQAKFSKKNLTITYDIPKDLPNVFADEELIRQVIANLLDNAIKYT--PAHGS---------ITVGALHRTTQK---VQVSITDNGPGIPNSKQETIFE</Hsp_hseq>
+      <Hsp_midline>++D+   VL  ++A    + +  ++D  +DLP V    + +++ + N++DNA  Y   P  GS         + +  +  +      V + + DNGPGIP   ++ IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q7BWI3.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA [Prochlorococcus marinus subsp. marinus str. CCMP1375]</Hit_def>
+  <Hit_accession>Q7BWI3</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8986</Hsp_bit-score>
+      <Hsp_score>102</Hsp_score>
+      <Hsp_evalue>0.00249364</Hsp_evalue>
+      <Hsp_query-from>460</Hsp_query-from>
+      <Hsp_query-to>567</Hsp_query-to>
+      <Hsp_hit-from>220</Hsp_hit-from>
+      <Hsp_hit-to>313</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>30</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>LSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIF</Hsp_qseq>
+      <Hsp_hseq>LANIAAEVILELEKFWLSRGIGINTDIPADLPNVFADQSRMKQVLLNLIENALKF-----------SNDGDTVEITMLHR---TNQWVQISVSDKGPGIPEEEQQRIF</Hsp_hseq>
+      <Hsp_midline>L+++   V+         RGI  + D   DLP V      +++ L+N+I+NA  +            N    V I ++     ++  V I V D GPGIP E + +IF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|B2J946.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Nostoc punctiforme PCC 73102]</Hit_def>
+  <Hit_accession>B2J946</Hit_accession>
+  <Hit_len>401</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.1282</Hsp_bit-score>
+      <Hsp_score>100</Hsp_score>
+      <Hsp_evalue>0.00505146</Hsp_evalue>
+      <Hsp_query-from>462</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>260</Hsp_hit-from>
+      <Hsp_hit-to>348</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>32</Hsp_identity>
+      <Hsp_positive>51</Hsp_positive>
+      <Hsp_gaps>18</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>DVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>DVLEELCDRYTAKSQE----VETDIPSDLPYVYADPERIRQVLVNLLDNAIKYT--PEGG-----------KIS-VSGLHRTTQKVQFSIGDTGPGIPVENRDRIFE</Hsp_hseq>
+      <Hsp_midline>DVL+ +   + A +++       D   DLP V   P+ +++ L+N++DNA  Y   P+ G           +I  V     +   V   + D GPGIP E RD+IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|B7KFU0.1|</Hit_id>
+  <Hit_def>RecName: Full=Adaptive-response sensory-kinase SasA; AltName: Full=Synechococcus adaptive sensor protein A [Gloeothece citriformis PCC 7424]</Hit_def>
+  <Hit_accession>B7KFU0</Hit_accession>
+  <Hit_len>393</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.9726</Hsp_bit-score>
+      <Hsp_score>97</Hsp_score>
+      <Hsp_evalue>0.00983968</Hsp_evalue>
+      <Hsp_query-from>476</Hsp_query-from>
+      <Hsp_query-to>568</Hsp_query-to>
+      <Hsp_hit-from>263</Hsp_hit-from>
+      <Hsp_hit-to>341</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>23</Hsp_identity>
+      <Hsp_positive>48</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>93</Hsp_align-len>
+      <Hsp_qseq>EDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFD</Hsp_qseq>
+      <Hsp_hseq>QEKSLKIEKDIPQDLPPVYADEELIRQVIVNLLDNAIKYT--PEEGT---------ITVSILHRTTQK---VQVSICDTGPGIPEEKQDRIFE</Hsp_hseq>
+      <Hsp_midline>+++ +    D  +DLP V    + +++ ++N++DNA  Y   P+ G+         + + ++  +      V + + D GPGIP E +D+IF+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P10047.1|</Hit_id>
+  <Hit_def>RecName: Full=C4-dicarboxylate transport sensor protein DctB [Rhizobium leguminosarum]</Hit_def>
+  <Hit_accession>P10047</Hit_accession>
+  <Hit_len>622</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>42.3578</Hsp_bit-score>
+      <Hsp_score>98</Hsp_score>
+      <Hsp_evalue>0.0102697</Hsp_evalue>
+      <Hsp_query-from>500</Hsp_query-from>
+      <Hsp_query-to>567</Hsp_query-to>
+      <Hsp_hit-from>520</Hsp_hit-from>
+      <Hsp_hit-to>575</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>29</Hsp_identity>
+      <Hsp_positive>36</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>LQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAG-VTILVEDNGPGIPAETRDQIF</Hsp_qseq>
+      <Hsp_hseq>LEQVLINLLQNALEAV-APKAGE-------GRVEIR-----TSTDAGMVTVTVADNGPGIPTEIRKGLF</Hsp_hseq>
+      <Hsp_midline>L++ LIN++ NA   V  PK G          V IR       +DAG VT+ V DNGPGIP E R  +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P19906.1|</Hit_id>
+  <Hit_def>RecName: Full=Sensory histidine kinase/phosphatase NtrB; AltName: Full=Nitrogen regulation protein NR(II); AltName: Full=Nitrogen regulator II; Short=NRII [Vibrio alginolyticus]</Hit_def>
+  <Hit_accession>P19906</Hit_accession>
+  <Hit_len>350</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>41.5874</Hsp_bit-score>
+      <Hsp_score>96</Hsp_score>
+      <Hsp_evalue>0.0125661</Hsp_evalue>
+      <Hsp_query-from>464</Hsp_query-from>
+      <Hsp_query-to>567</Hsp_query-to>
+      <Hsp_hit-from>199</Hsp_hit-from>
+      <Hsp_hit-to>302</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>31</Hsp_identity>
+      <Hsp_positive>49</Hsp_positive>
+      <Hsp_gaps>14</Hsp_gaps>
+      <Hsp_align-len>111</Hsp_align-len>
+      <Hsp_qseq>LDPVLAAFRAIAE---DRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQ--NSKGSDAGVTILVE--DNGPGIPAETRDQIF</Hsp_qseq>
+      <Hsp_hseq>LHQILEKVRQLVELESQRSIVIERDYDPSLPEILMDADQIEQAMLNIVSNAAQILSHQEHGK-------ITIRTRTVHQANIHGKRCKLAARVEITDNGPGIPPELQDTLF</Hsp_hseq>
+      <Hsp_midline>L  +L   R + E    R I+   D    LP + +    +++A++N++ NA   +   + G          +R R V   N  G    +   VE  DNGPGIP E +D +F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

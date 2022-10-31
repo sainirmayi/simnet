@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_58213</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|A0T0I5|RR3_PHATC 30S ribosomal protein S3, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps3 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>214</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_58213</Iteration_query-ID>
+  <Iteration_query-def>sp|A0T0I5|RR3_PHATC 30S ribosomal protein S3, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps3 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>214</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|A0T0I5.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>A0T0I5</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>432.18</Hsp_bit-score>
+      <Hsp_score>1110</Hsp_score>
+      <Hsp_evalue>1.31687e-155</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>214</Hsp_identity>
+      <Hsp_positive>214</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_hseq>
+      <Hsp_midline>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P49491.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Trieres chinensis]</Hit_def>
+  <Hit_accession>P49491</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>358.221</Hsp_bit-score>
+      <Hsp_score>918</Hsp_score>
+      <Hsp_evalue>2.49232e-126</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>167</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGQKTHPLGFRLGITQEHRSAWYANFNQYANLLKEDNQIRTYLNKLAKTASISNIQINRNGLSDQIQLNIETGRPGVLVGENGTGIKTLLSNIKKILPPNRQLTINIIEVEKVNLNASLIGDLVVEQLEDRVAFRKAIRKAMQSALDENVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATKEAHTIYGVLGVKVWLFKSEILAK</Hsp_hseq>
+      <Hsp_midline>MGQKTHPLGFRLGITQEH+S WYANFNQYAN+LKED++IRTY++ ++K  SI+N++INRNGL+DQIQLNIETG+PG+LVG+ G G++TLL+N+KK LP NRQLTIN++EVEKV+L+ASL+ DLV EQLE R+AFR+AIR+A+Q A  +NVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYAT+EA+TIYGVLG+KVWLFKSEIL+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|A0T0X9.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Thalassiosira pseudonana]</Hit_def>
+  <Hit_accession>A0T0X9</Hit_accession>
+  <Hit_len>214</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>340.502</Hsp_bit-score>
+      <Hsp_score>872</Hsp_score>
+      <Hsp_evalue>2.80145e-119</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>159</Hsp_identity>
+      <Hsp_positive>191</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGQKTHPLGFRLGITQEHRSAWYADFKHYSTLLEEDDKIRTYLNKLAKLASISDIHINRNGLGDQIELNIETGRPGILVGDNGSGIKTLATNIKKFIPNNRQITINVVEVENVNANASLIADLVVQQLEDRVAFRRAIREALQCLQDNQVNGIKVEVSGRLNGAEMARSEWIREGRVPLQTLRADIDYATKEANTIYGVLGVKVWLFKNEILKK</Hsp_hseq>
+      <Hsp_midline>MGQKTHPLGFRLGITQEH+S WYA+F  Y+ +L+EDDKIRTY++ ++K  SI+++ INRNGL DQI+LNIETG+PGILVGD G+G++TL  N+KKF+P NRQ+TINV+EVE V+ +ASL+ADLV +QLE R+AFRRAIREALQ  Q   VNGIK++VSGRLNGAE+ARSEWIREGRVPLQTLRADIDYAT+EANTIYGVLG+KVWLFK+EIL K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q1XDI0.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Neopyropia yezoensis]</Hit_def>
+  <Hit_accession>Q1XDI0</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.092</Hsp_bit-score>
+      <Hsp_score>697</Hsp_score>
+      <Hsp_evalue>2.11005e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGQKIHPLGFRIGITQKHRSSWFANSKDYPVLLQEDHKIRSFIHSKLSNASIAKIEINRK--VDQVEILIATARPGIVLGKSGAGIESLRKSLSLILDPSKQLRVNVVEIADPDSEATLVAEFITQQLEKRVAFRRAVRQAVQRAQRANTQGVKIQVSGRLNGAEIARSEWVREGRVPLQTLRADIDYCHRQAHTTYGVLGVKVWLFKGEILPE</Hsp_hseq>
+      <Hsp_midline>MGQK HPLGFR+GITQ+H+S+W+AN   Y  +L+ED KIR++IH+     SIA + INR    DQ+++ I T +PGI++G  GAG+E+L  ++   L  ++QL +NV+E+   D +A+L+A+ + +QLEKR+AFRRA+R+A+QRAQ+ N  G+KIQVSGRLNGAEIARSEW+REGRVPLQTLRADIDY  ++A+T YGVLG+KVWLFK EIL +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P51308.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Porphyra purpurea]</Hit_def>
+  <Hit_accession>P51308</Hit_accession>
+  <Hit_len>230</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>272.707</Hsp_bit-score>
+      <Hsp_score>696</Hsp_score>
+      <Hsp_evalue>3.1627e-92</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>210</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>212</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEIL</Hsp_qseq>
+      <Hsp_hseq>MGQKIHPLGFRIGITQKHRSSWFASSKDYSVLLQEDHKIRSFIHGKLSNASIAKIEINRKA--DQVEVLIATARPGIVLGKSGAGIESLRNSLTLILDPNKQIRVNVVEISDPDSEATLVAEFITQQLEKRVAFRRAVRQAVQRAQRANTQGVKIQVSGRLNGAEIARSEWVREGRVPLQTLRADIDYCHRQAHTTYGVLGVKVWLFKGELL</Hsp_hseq>
+      <Hsp_midline>MGQK HPLGFR+GITQ+H+S+W+A+   Y+ +L+ED KIR++IH      SIA + INR    DQ+++ I T +PGI++G  GAG+E+L N++   L  N+Q+ +NV+E+   D +A+L+A+ + +QLEKR+AFRRA+R+A+QRAQ+ N  G+KIQVSGRLNGAEIARSEW+REGRVPLQTLRADIDY  ++A+T YGVLG+KVWLFK E+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|A5GIT9.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Synechococcus sp. WH 7803]</Hit_def>
+  <Hit_accession>A5GIT9</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>267.314</Hsp_bit-score>
+      <Hsp_score>682</Hsp_score>
+      <Hsp_evalue>6.55429e-90</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEIL</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGLRLGITQEHRSRWYASSKSYPTLLKEDDRIRKFIHKKYGSAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEELRSGIQKTVGDPNRQVRINVVEVERVDADAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVSGRLNGAEIARTEWTREGRVPLHTLRADIDYATKVASTTYGVLGIKVWVFKGEVL</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA+   Y  +LKEDD+IR +IH    +  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L + ++K +   NRQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQVSGRLNGAEIAR+EW REGRVPL TLRADIDYAT+ A+T YGVLGIKVW+FK E+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|A6MW07.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3, chloroplastic [Rhodomonas salina]</Hit_def>
+  <Hit_accession>A6MW07</Hit_accession>
+  <Hit_len>218</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>263.462</Hsp_bit-score>
+      <Hsp_score>672</Hsp_score>
+      <Hsp_evalue>9.50345e-89</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>210</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>208</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>162</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>210</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSE</Hsp_qseq>
+      <Hsp_hseq>MGQKVHPLGFRLRITQTHRSSWFASSKNYPETLAEDYAIRNYVKVNLSSAGISKVEIHRK--SDQVELEIHTSRPGIIVGRSGSGIDTIKEDLRKIINKNNQIRINVTELKNVDADANLIAEFIAQQLEKRIAFRRATRQAIQRAQRANVQGIKVQVSGRLNGAEIARSEWVREGRVPLQTLRADIDYATKEADTTYGKLGVKVWVFNGE</Hsp_hseq>
+      <Hsp_midline>MGQK HPLGFRL ITQ H+S+W+A+   Y   L ED  IR Y+     +  I+ V I+R   +DQ++L I T +PGI+VG  G+G++T+  +++K +  N Q+ INV E++ VD DA+L+A+ +A+QLEKRIAFRRA R+A+QRAQ+ NV GIK+QVSGRLNGAEIARSEW+REGRVPLQTLRADIDYAT+EA+T YG LG+KVW+F  E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|Q0ID11.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Synechococcus sp. CC9311]</Hit_def>
+  <Hit_accession>Q0ID11</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>264.233</Hsp_bit-score>
+      <Hsp_score>674</Hsp_score>
+      <Hsp_evalue>1.01879e-88</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILS</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGLRLGITQEHRSRWYASSKSYPALLQEDDRIRKFIHKKYGSAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEDLRSGIQKTVGDSSRQVRINVVEVERVDADAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVSGRLNGAEIARTEWTREGRVPLHTLRAEIDYATKVASTTYGVLGIKVWVFKGEVLS</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA+   Y  +L+EDD+IR +IH    +  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L + ++K +  ++RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQVSGRLNGAEIAR+EW REGRVPL TLRA+IDYAT+ A+T YGVLGIKVW+FK E+LS</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|A2C4Z3.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. NATL1A]</Hit_def>
+  <Hit_accession>A2C4Z3</Hit_accession>
+  <Hit_len>244</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.536</Hsp_bit-score>
+      <Hsp_score>667</Hsp_score>
+      <Hsp_evalue>1.2451e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGIRLGITQEHRSKWYAPSKTYPLLLQEDDRIRTFIKKKYVAAGISDVLIARKA--DQLEVELKTARPGVIVGRQGSGIEELRSGIQKTIGDRNRQVRINVVEVEKVDADAYLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVGGRLNGAEIARSEWTREGRVPLHTLRAEIDYATKVASTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA    Y  +L+EDD+IRT+I     A  I++V I R    DQ+++ ++T +PG++VG  G+G+E L + ++K +   NRQ+ INV+EVEKVD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQV GRLNGAEIARSEW REGRVPL TLRA+IDYAT+ A+T YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q3AMN6.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Synechococcus sp. CC9605]</Hit_def>
+  <Hit_accession>Q3AMN6</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.151</Hsp_bit-score>
+      <Hsp_score>666</Hsp_score>
+      <Hsp_evalue>1.35797e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKINPTGLRLGITQEHRSRWYASSKNYPALLQEDDRIRKFIHKKYGSAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEELRSGIQKTIGDSSRQVRINVVEVERVDGDAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVSGRLNGAEIARTEWTREGRVPLHTLRADIDYATKVASTTYGVLGIKVWVFKGEVLSE</Hsp_hseq>
+      <Hsp_midline>MG K +P G RLGITQEH+S WYA+   Y  +L+EDD+IR +IH    +  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L + ++K +  ++RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQVSGRLNGAEIAR+EW REGRVPL TLRADIDYAT+ A+T YGVLGIKVW+FK E+LS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|Q7UZV2.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus subsp. pastoris str. CCMP1986]</Hit_def>
+  <Hit_accession>Q7UZV2</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.151</Hsp_bit-score>
+      <Hsp_score>666</Hsp_score>
+      <Hsp_evalue>1.41913e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGNKINPTGFRLGITQEHRSKWFATSKTYPTLLQEDDKIRTFIQKKYSSAGISDVLIARKA--DQLELELKTARPGVIVGRQGSGIEELRSGIQKTIGDRTRQVRINVVEVERVDADAYLLAEYIAQQLEKRVAFRRTIRMALQRAQRAGVLGLKVQVGGRLNGAEIARTEWTREGRVPLHTLRAEVDYALREANTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K +P GFRLGITQEH+S W+A    Y  +L+EDDKIRT+I     +  I++V I R    DQ++L ++T +PG++VG  G+G+E L + ++K +    RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR ALQRAQ+  V G+K+QV GRLNGAEIAR+EW REGRVPL TLRA++DYA +EANT YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|A2BTD1.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. AS9601] &gt;sp|A3PF41.1| RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. MIT 9301]</Hit_def>
+  <Hit_accession>A2BTD1</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.151</Hsp_bit-score>
+      <Hsp_score>666</Hsp_score>
+      <Hsp_evalue>1.67192e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPSGLRLGITQEHRSKWFATSKTYPILLQEDFKIRTFIQKKYGAAGISDVLIARKA--DQLELELKTARPGVIVGRQGSGIEELRSGIQKTIGDRTRQVRINVVEVERVDADAFLLAEYIAQQLEKRVAFRRTIRMALQRAQRAGVLGLKIQVGGRLNGAEIARTEWTREGRVPLHTLRAEIDYATREANTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S W+A    Y  +L+ED KIRT+I     A  I++V I R    DQ++L ++T +PG++VG  G+G+E L + ++K +    RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR ALQRAQ+  V G+KIQV GRLNGAEIAR+EW REGRVPL TLRA+IDYAT+EANT YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|Q46IR5.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. NATL2A]</Hit_def>
+  <Hit_accession>Q46IR5</Hit_accession>
+  <Hit_len>244</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>261.151</Hsp_bit-score>
+      <Hsp_score>666</Hsp_score>
+      <Hsp_evalue>1.8453e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGIRLGITQEHRSKWYAPSKTYPLLLQEDDRIRTFIKKKYLAAGISDVLIARKA--DQLEVELKTARPGVIVGRQGSGIEELRSGIQKTIGDRNRQVRINVVEVEKVDADAYLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVGGRLNGAEIARSEWTREGRVPLHTLRAEIDYATKVASTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA    Y  +L+EDD+IRT+I     A  I++V I R    DQ+++ ++T +PG++VG  G+G+E L + ++K +   NRQ+ INV+EVEKVD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQV GRLNGAEIARSEW REGRVPL TLRA+IDYAT+ A+T YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A8G756.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. MIT 9215]</Hit_def>
+  <Hit_accession>A8G756</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.381</Hsp_bit-score>
+      <Hsp_score>664</Hsp_score>
+      <Hsp_evalue>2.98377e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPSGLRLGITQEHRSKWFATSKTYPILLQEDFKIRTFIEKKYGAAGISDVLIARKA--DQLELELKTARPGVIVGRQGSGIEELRSGIQKTIGDRTRQVRINVVEVERVDADAFLLAEYIAQQLEKRVAFRRTIRMALQRAQRAGVLGLKIQVGGRLNGAEIARTEWTREGRVPLHTLRAEIDYATREANTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S W+A    Y  +L+ED KIRT+I     A  I++V I R    DQ++L ++T +PG++VG  G+G+E L + ++K +    RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR ALQRAQ+  V G+KIQV GRLNGAEIAR+EW REGRVPL TLRA+IDYAT+EANT YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|Q318J0.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. MIT 9312]</Hit_def>
+  <Hit_accession>Q318J0</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>260.381</Hsp_bit-score>
+      <Hsp_score>664</Hsp_score>
+      <Hsp_evalue>3.08322e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>163</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFLPAN-RQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPSGLRLGITQEHRSKWFATSKTYPILLQEDFKIRTFIQKKYGAAGISDVLIARKA--DQLELELKTARPGVIVGRQGSGIEELRAGIQKTIGDNTRQVRINVVEVERVDADAFLLAEYISQQLEKRVAFRRTIRMALQRAQRAGVLGLKIQVGGRLNGAEIARTEWTREGRVPLHTLRAEIDYATREANTTYGVLGIKVWVFKGEVLPK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S W+A    Y  +L+ED KIRT+I     A  I++V I R    DQ++L ++T +PG++VG  G+G+E L   ++K +  N RQ+ INV+EVE+VD DA LLA+ +++QLEKR+AFRR IR ALQRAQ+  V G+KIQV GRLNGAEIAR+EW REGRVPL TLRA+IDYAT+EANT YGVLGIKVW+FK E+L K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q3AUX0.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Synechococcus sp. CC9902]</Hit_def>
+  <Hit_accession>Q3AUX0</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>259.996</Hsp_bit-score>
+      <Hsp_score>663</Hsp_score>
+      <Hsp_evalue>3.87739e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGLRLGITQEHRSRWYASSKTYPSLLQEDDRIRKFIHKKYGSAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEDLRAGIQKTVGDKSRQVRINVVEVERVDGDAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVSGRLNGAEIARTEWTREGRVPLHTLRADIDYATKVGKTTYGVLGIKVWVFKGEVLNE</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA+   Y ++L+EDD+IR +IH    +  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L   ++K +   +RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQVSGRLNGAEIAR+EW REGRVPL TLRADIDYAT+   T YGVLGIKVW+FK E+L++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q7V537.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. MIT 9313]</Hit_def>
+  <Hit_accession>Q7V537</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>259.225</Hsp_bit-score>
+      <Hsp_score>661</Hsp_score>
+      <Hsp_evalue>9.70987e-87</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>213</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>212</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>162</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>214</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILS</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPTGLRLGITQEHRSRWYATSKMYPILLQEDDRIRRFIHKKYGAAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEELRTGIQKTIGDHSRQVRINVVEVERVDADAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVGGRLNGAEIARTEWTREGRVPLHTLRAEIDYATKVASTTYGVLGIKVWIFKGEVLG</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA    Y  +L+EDD+IR +IH    A  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L   ++K +   +RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQV GRLNGAEIAR+EW REGRVPL TLRA+IDYAT+ A+T YGVLGIKVW+FK E+L </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|A9BCP1.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus str. MIT 9211]</Hit_def>
+  <Hit_accession>A9BCP1</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.84</Hsp_bit-score>
+      <Hsp_score>660</Hsp_score>
+      <Hsp_evalue>1.39298e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPNGLRLGITQEHRSRWYASSKTYPTLLQEDDRIRGFIQKKYASAGISDVLIARKA--DQLEVELKTARPGVIVGRQGSGIEELRSGIQKTIGDRSRQVRINVVEIERVDADAHLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVGGRLNGAEIARSEWTREGRVPLHTLRAEIDYANKTANTTYGVLGIKVWVFKGEVLSK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA+   Y  +L+EDD+IR +I     +  I++V I R    DQ+++ ++T +PG++VG  G+G+E L + ++K +   +RQ+ INV+E+E+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQV GRLNGAEIARSEW REGRVPL TLRA+IDYA + ANT YGVLGIKVW+FK E+LSK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q7U4J4.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Parasynechococcus marenigrum WH 8102]</Hit_def>
+  <Hit_accession>Q7U4J4</Hit_accession>
+  <Hit_len>242</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.455</Hsp_bit-score>
+      <Hsp_score>659</Hsp_score>
+      <Hsp_evalue>2.01925e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>212</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>211</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>213</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEIL</Hsp_qseq>
+      <Hsp_hseq>MGHKINPTGLRLGITQEHRSRWYASSKSYPALLQEDDRIRKFIHKKYGSAGISDVLIARKA--DQLEVELKTARPGVLVGRQGSGIEELRSGIQKTVGDRSRQVRINVVEVERVDGDAFLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVSGRLNGAEIARTEWTREGRVPLHTLRADIDYATKVASTTYGVLGIKVWVFKGEVL</Hsp_hseq>
+      <Hsp_midline>MG K +P G RLGITQEH+S WYA+   Y  +L+EDD+IR +IH    +  I++V I R    DQ+++ ++T +PG+LVG  G+G+E L + ++K +   +RQ+ INV+EVE+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQVSGRLNGAEIAR+EW REGRVPL TLRADIDYAT+ A+T YGVLGIKVW+FK E+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|Q7V9W8.1|</Hit_id>
+  <Hit_def>RecName: Full=30S ribosomal protein S3 [Prochlorococcus marinus subsp. marinus str. CCMP1375]</Hit_def>
+  <Hit_accession>Q7V9W8</Hit_accession>
+  <Hit_len>243</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>258.07</Hsp_bit-score>
+      <Hsp_score>658</Hsp_score>
+      <Hsp_evalue>2.48581e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>213</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>126</Hsp_identity>
+      <Hsp_positive>164</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>215</Hsp_align-len>
+      <Hsp_qseq>MGQKTHPLGFRLGITQEHKSTWYANFNQYANILKEDDKIRTYIHTISKANSIANVRINRNGLNDQIQLNIETGKPGILVGDLGAGLETLLNNVKKFL-PANRQLTINVLEVEKVDLDASLLADLVAEQLEKRIAFRRAIREALQRAQKQNVNGIKIQVSGRLNGAEIARSEWIREGRVPLQTLRADIDYATQEANTIYGVLGIKVWLFKSEILSK</Hsp_qseq>
+      <Hsp_hseq>MGHKIHPNGLRLGITQEHRSRWYASSKTYPLLLQEDDRIRVFIQKKYGAAGISDVLIARKA--DQLEVELKTARPGVIVGRQGSGIEELRSGIQKTIGDRSRQVRINVVEIERVDADAHLLAEYIAQQLEKRVAFRRTIRMAVQRAQRAGVLGLKIQVGGRLNGAEIARSEWTREGRVPLHTLRAEIDYANKTANTTYGVLGIKVWVFKGEVLSK</Hsp_hseq>
+      <Hsp_midline>MG K HP G RLGITQEH+S WYA+   Y  +L+EDD+IR +I     A  I++V I R    DQ+++ ++T +PG++VG  G+G+E L + ++K +   +RQ+ INV+E+E+VD DA LLA+ +A+QLEKR+AFRR IR A+QRAQ+  V G+KIQV GRLNGAEIARSEW REGRVPL TLRA+IDYA + ANT YGVLGIKVW+FK E+LSK</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

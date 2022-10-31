@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_41639</BlastOutput_query-ID>
+  <BlastOutput_query-def>sp|B7G5J1|TRM52_PHATC tRNA (guanine(37)-N1)-methyltransferase 2 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_47967 PE=3 SV=1</BlastOutput_query-def>
+  <BlastOutput_query-len>587</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_41639</Iteration_query-ID>
+  <Iteration_query-def>sp|B7G5J1|TRM52_PHATC tRNA (guanine(37)-N1)-methyltransferase 2 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_47967 PE=3 SV=1</Iteration_query-def>
+  <Iteration_query-len>587</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|B7G5J1.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase 2; AltName: Full=M1G-methyltransferase 2; AltName: Full=tRNA [GM37] methyltransferase 2; AltName: Full=tRNA methyltransferase 5 homolog 2 [Phaeodactylum tricornutum CCAP 1055/1]</Hit_def>
+  <Hit_accession>B7G5J1</Hit_accession>
+  <Hit_len>587</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>1217.99</Hsp_bit-score>
+      <Hsp_score>3150</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>587</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>587</Hsp_identity>
+      <Hsp_positive>587</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>587</Hsp_align-len>
+      <Hsp_qseq>MTTRVTGNERRGRQLLLRFSGFLSAALTVMALITATRALAPVVAYIAPQRVRSHFMRRAFASGNCRSRRFSVLRSTVGTETRNENNITTPYHSPLPTSRYVYQSSRTLSSRNPALPLESTLMHSNANELTDVELKNLVAHWRDHPVLNPMVTFRSWVVPIKGKMIQAILNSKSLQPYLASRHELLQEMHVRLKIVRDYTDSTDGTEKLILLHPDTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>MTTRVTGNERRGRQLLLRFSGFLSAALTVMALITATRALAPVVAYIAPQRVRSHFMRRAFASGNCRSRRFSVLRSTVGTETRNENNITTPYHSPLPTSRYVYQSSRTLSSRNPALPLESTLMHSNANELTDVELKNLVAHWRDHPVLNPMVTFRSWVVPIKGKMIQAILNSKSLQPYLASRHELLQEMHVRLKIVRDYTDSTDGTEKLILLHPDTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_hseq>
+      <Hsp_midline>MTTRVTGNERRGRQLLLRFSGFLSAALTVMALITATRALAPVVAYIAPQRVRSHFMRRAFASGNCRSRRFSVLRSTVGTETRNENNITTPYHSPLPTSRYVYQSSRTLSSRNPALPLESTLMHSNANELTDVELKNLVAHWRDHPVLNPMVTFRSWVVPIKGKMIQAILNSKSLQPYLASRHELLQEMHVRLKIVRDYTDSTDGTEKLILLHPDTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|Q3MHN8.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Bos taurus]</Hit_def>
+  <Hit_accession>Q3MHN8</Hit_accession>
+  <Hit_len>497</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>180.644</Hsp_bit-score>
+      <Hsp_score>457</Hsp_score>
+      <Hsp_evalue>6.16103e-49</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>95</Hsp_hit-from>
+      <Hsp_hit-to>466</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>203</Hsp_positive>
+      <Hsp_gaps>74</Hsp_gaps>
+      <Hsp_align-len>429</Hsp_align-len>
+      <Hsp_qseq>PYLASRHELLQEMHVRLK--------IVRDYTDSTDGTEKLILLHP------DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFL---MDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>PVLKVRKEVVNKLMRSLKRAALQRPGIKRVIEDPEDGEGRLIMLDPYKMFTVDSFEKEEL-SILKQLNVNPQISKYN----LDLTYENFKSEEILRAVLPEG-QDVTSGFSRVGHIAHLNLRDHQLPYKHLIGQVMIDKNPGITSAVNKINNIDNTYRNFEMEVLSGEENMMTKVRENNYTYEFDFSKVYWNPRLSTEHSRITELLKPGDVLFDVFAGVGPFAIPAA---KKKCTVFANDLNPESHKWLLHNCKLNKVDQKVKVFNL-DGRDFLQGPVREELMQQLGPLSKERKHSV------------------HIVMNLPAKAIEFLSAFK-----------ALLEGQPCGSELLPIVHCYSFSK-DANPAKDVQQRAATVLGISL--------------EAYSS---VHLVRNVAPNKEMLCITFR</Hsp_hseq>
+      <Hsp_midline>P L  R E++ ++   LK        I R   D  DG  +LI+L P      D+    EL + ++QL  N QI +         TY++F +  IL  +LP       + F  +GH+AHLNL++   PY+ LIGQV+++  P I S +NK+  +   YR ++  +L+G  +   K+ E+    +FD + VYW  RLS E  R+    +PG ++ D F GVG   + AA   ++ CT++AND NP++ ++L  N + N V  +++     D  DFL   +   L Q     ++ RK  V                  H+VMN P +A +FL A +           +       GS ++P VH Y+F++ D    +D ++ A  ++  +L              E Y     VH VR+VAP K +LC  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|F4NUJ6.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 [Batrachochytrium dendrobatidis JAM81]</Hit_def>
+  <Hit_accession>F4NUJ6</Hit_accession>
+  <Hit_len>475</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.481</Hsp_bit-score>
+      <Hsp_score>441</Hsp_score>
+      <Hsp_evalue>6.22939e-47</Hsp_evalue>
+      <Hsp_query-from>191</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>53</Hsp_hit-from>
+      <Hsp_hit-to>432</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>55</Hsp_gaps>
+      <Hsp_align-len>416</Hsp_align-len>
+      <Hsp_qseq>RLKIVRDYTDSTDGTEKLILLHP--DTPPLSELPADVQQLLRNCQIHENGPVMPT-KFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDF----LMDMG--------LQQHQKASTRSRKEDVTNKDGNHVT---PTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANL-LPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>RLRTIVD--DPTDKKWRLLLLDPSMEASEINDLPNPLKEFALK---HEAKLVKHTIELKYDYWTSDQVLRSILPDEMETP-GAFETVGHIAHLNLRDRYQPFKHIIGQVILDKSSHIKTVVNKLDNIDHTFRFFQMEILAGINDMNAKLKEGGCFFHFDFSKVYWNSRLQGEHDRIIKLFGQNDLICDVFAGVGPFALPAAK--HKRCVVFANDLNPQSFKYLMENIKLNKLETRILPFNM-DGRQFIKQSLEDLNNPAIWNKITKQKPTSNDKKRNRKVESPTVAPLTDQPAISGIRHFKHYVMNLPATAIEFLDAFHGL--------YSGMRDVIMDSDL-PTIHCHCFSNA-----KDVKADVIERVERVIGMPLGSNL-------------IMVHSVRTVAPNKDMLCISFR</Hsp_hseq>
+      <Hsp_midline>RL+ + D  D TD   +L+LL P  +   +++LP  +++       HE   V  T +  Y  +T+  +L  +LP  +  P  AFET+GH+AHLNL++R+ P++ +IGQV+L+    I++V+NK+  +   +R +   +LAG ND   KL E G    FD + VYW SRL  E  R+++ F    +I D F GVG   L AA    + C ++AND NP++ +YL EN + N +  RI      D   F    L D+          +Q   ++ + R   V +     +T       +R   H VMN P  A +FL A             S  RD  + S + P +H + F+ A     +D +   ++ V   + +PLG+ +             I VH VR VAP K +LC  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q5KBP2.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5; Flags: Precursor [Cryptococcus neoformans var. neoformans JEC21]</Hit_def>
+  <Hit_accession>Q5KBP2</Hit_accession>
+  <Hit_len>543</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.637</Hsp_bit-score>
+      <Hsp_score>444</Hsp_score>
+      <Hsp_evalue>8.09354e-47</Hsp_evalue>
+      <Hsp_query-from>219</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>143</Hsp_hit-from>
+      <Hsp_hit-to>532</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>192</Hsp_positive>
+      <Hsp_gaps>59</Hsp_gaps>
+      <Hsp_align-len>409</Hsp_align-len>
+      <Hsp_qseq>SELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPP-PTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGL------------------QQHQKASTRSRKEDVTNKDGNHVTPTEPMRLP-----------------DHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIG----SVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>SELPEEAKEVLKGAKALVKEVV---RLGYDNWNASEILGACLPTTKSEDIPSSFTTTGHIGHMNLREEWLPFRYLIGQVVLDKNPGLRTIVNKLDTIHAQFRYFDMEVIAGDNDYIATVNESGCSFTFNFSNVYWNSRLHHEHERLISLFPPGCVIADVMAGVGPFAIPAA---KKGCYVLGNDLNPESVKWMRENRLRNKVEPTL-RVSEIDGFEFIRIAPLEVWTRPFDPAPPPKVSNRQRDREAKEARRKREQAKAAGQPVTETAPMSIPSQEVAIKPHPPQPPKLISHFIMNLPDSAITFLPSYVSCYTPLLAERSFIDEYGGEEEAKRKVEMPMVHCYCF-----TKEIEIGKAEIDILQRASTNLSFNL---TPQVENYN----LHHVRSVAPNKDMYCLSFR</Hsp_hseq>
+      <Hsp_midline>SELP + +++L+  +      V   +  Y ++ AS IL   LP       P++F T GH+ H+NL+E   P+R+LIGQV+L+  P + +++NK+  +   +R +D  ++AG ND    + ESG    F+ ++VYW SRL  E +RL+  F PG +IAD   GVG   + AA   ++ C +  ND NP++V+++REN  RN V   + R+   D ++F+    L                  Q+ ++A    RK +     G  VT T PM +P                  H +MN P  A  FL +      P  + R      GG       V +P VH Y F     T + +  +  +D++      L   +   T   E+Y+    +H VR VAP K + C  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|F6VSS6.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog; Flags: Precursor [Xenopus tropicalis]</Hit_def>
+  <Hit_accession>F6VSS6</Hit_accession>
+  <Hit_len>494</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.17</Hsp_bit-score>
+      <Hsp_score>435</Hsp_score>
+      <Hsp_evalue>6.58688e-46</Hsp_evalue>
+      <Hsp_query-from>157</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>87</Hsp_hit-from>
+      <Hsp_hit-to>456</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>123</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>65</Hsp_gaps>
+      <Hsp_align-len>433</Hsp_align-len>
+      <Hsp_qseq>VVPIKGKMIQAILNSKSLQPYLASRHELLQEMHVRLKIVRDYTDSTDGTEKLILLHP-DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>VIKIKKEIINRLM--KSL------KHRLIQ----RPSLKRVIEDPKDDVNKLVLLDPYKVKSIDSFDESDHVLFKQFDVNPQVSQYELQLTYENFKCEEILRAVLPKG-QDVTSGFSRVGHIAHMNLRDHQLPYKNVIGQVILDKNPGITSVVNKTNTIDSTYRNFQMEVLAGEENMITKVKENYVTYEFDFSKVYWNPRLGTEHNRIIGFLKARDVLFDVFAGVGPFAVPAA---KKNCTVYANDLNPESYKWLLHNCKLNKVEKRVQAFNT-DGRDFI-----------KTTIKKELLKYAD----MPSAEEKPSLHIAMNLPALAVEFLDAFK-----------NLLEEEPCNSFILPTIHCYSFSKDDDPLQDVKARAESF---------LGTTLE-----------DCSMHLVRNVAPNKEMVCISFK</Hsp_hseq>
+      <Hsp_midline>V+ IK ++I  ++  KSL      +H L+Q    R  + R   D  D   KL+LL P     +         L +   ++        + TY++F    IL  +LP       + F  +GH+AH+NL++   PY+ +IGQV+L+  P I SV+NK   +   YR +   +LAG  +   K+ E+ V  +FD + VYW  RL  E  R++   +   ++ D F GVG   + AA   ++NCT++AND NP++ ++L  N + N V  R++     D  DF+            T  +KE +   D     P+   +   H+ MN P  A +FL A +           +   +    S I+P +H Y+F++  DP  D  A   +          LG T+            D  +H VR+VAP K ++C  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|F5HAU9.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 [Neurospora crassa OR74A]</Hit_def>
+  <Hit_accession>F5HAU9</Hit_accession>
+  <Hit_len>475</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.014</Hsp_bit-score>
+      <Hsp_score>432</Hsp_score>
+      <Hsp_evalue>1.34329e-45</Hsp_evalue>
+      <Hsp_query-from>244</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>129</Hsp_hit-from>
+      <Hsp_hit-to>464</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>178</Hsp_positive>
+      <Hsp_gaps>38</Hsp_gaps>
+      <Hsp_align-len>359</Hsp_align-len>
+      <Hsp_qseq>KFTYKDFTASYILSQLLPIAVHPP-PTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGP--YRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFL---MDMGLQQHQ---------KASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>QLNYDYWTYHDIITSILPEELHDDIPSGFNTAGHVAHMNLRERYIPYKKVIAEVILDKTTNIRTVINKVDNVGAESEFRTFQYEVLAGPDDMQVQVTENACSFEFDYSKVYWNSKLEAEHRRLINMFEPGEVVCDVMAGIGPFAVPAG---KKGVFVWANDMNPESNKYMQVAINRNKVSQYV-RPICEDGRTFIHHAADSVLEAHKNGEHVLIAPKPPSRAKKAPKPEPKRVDIPPT-----ISHFVMNLPATAIEFLGCYRGV---YAGHEDLFSAESGRKLPLV-HVHCFSFKADDETPLNDICERITKYLGFPVKP----------GNPDVEGEVAVHDVRDVAPAKRMFCASFR</Hsp_hseq>
+      <Hsp_midline>+  Y  +T   I++ +LP  +H   P+ F T GHVAH+NL+ER+ PY+ +I +V+L+    I +VINKV  V     +RT+ + +LAG +D +V++TE+    +FD + VYW S+L  E +RL+  F+PG+++ D   G+G   + A    ++   +WAND NP++ +Y++    RN VS  + R  C D   F+    D  L+ H+         K  +R++K          + PT       H VMN P  A +FLG  R      +      + + G    +V  VH ++F   D T   D  E     +   + P           N D + ++ VH VRDVAP K + C  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|Q32P41.2|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Homo sapiens]</Hit_def>
+  <Hit_accession>Q32P41</Hit_accession>
+  <Hit_len>509</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.318</Hsp_bit-score>
+      <Hsp_score>425</Hsp_score>
+      <Hsp_evalue>2.2777e-44</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>467</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>129</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>91</Hsp_gaps>
+      <Hsp_align-len>437</Hsp_align-len>
+      <Hsp_qseq>PYLASRHELLQEMHVRLK--------IVRDYTDSTDGTEKLILLHP------DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMD---------MGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGG-IGSVIVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>PVLKVRKEIVSKLMRSLKRAALQRPGIRRVIEDPEDKESRLIMLDPYKIFTHDSFEKAELSV-LEQLNVSPQISKYN----LELTYEHFKSEEILRAVLPEG-QDVTSGFSRIGHIAHLNLRDHQLSFKHLIGQVMIDKNPGITSAVNKINNIDNMYRNFQMEVLSGEQNMMTKVRENNYTYEFDFSKVYWNPRLSTEHSRITELLKPGDVLFDVFAGVGPFAIPVA---KKNCTVFANDLNPESHKWLLYNCKLNKVDQKVKVFNL-DGKDFLQGPVKEELMQLLGLSKERKPSV-------------------------HVVMNLPAKAIEFLSAFKW------------LLDGQPCSSEFLPIVHCYSFSKDANPAEDVRQRAGAV---------LGISLEA---------CS-SVHLVRNVAPNKEMLCITFQ</Hsp_hseq>
+      <Hsp_midline>P L  R E++ ++   LK        I R   D  D   +LI+L P      D+   +EL   ++QL  + QI +       + TY+ F +  IL  +LP       + F  IGH+AHLNL++    ++ LIGQV+++  P I S +NK+  +   YR +   +L+G  +   K+ E+    +FD + VYW  RLS E  R+    +PG ++ D F GVG   +  A   ++NCT++AND NP++ ++L  N + N V  +++     D  DFL           +GL + +K S                          HVVMN P +A +FL A +W              DG    S  +P VH Y+F++ A+P  D      AV         LG ++           C   VH VR+VAP K +LC  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|D3BT31.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Heterostelium album PN500]</Hit_def>
+  <Hit_accession>D3BT31</Hit_accession>
+  <Hit_len>426</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>165.236</Hsp_bit-score>
+      <Hsp_score>417</Hsp_score>
+      <Hsp_evalue>5.03579e-44</Hsp_evalue>
+      <Hsp_query-from>171</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>378</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>131</Hsp_identity>
+      <Hsp_positive>202</Hsp_positive>
+      <Hsp_gaps>93</Hsp_gaps>
+      <Hsp_align-len>433</Hsp_align-len>
+      <Hsp_qseq>SKSLQPYLASRHELLQEMHVRLKIVRDYTDSTDGTEKLILLHPDTPPLS--------ELPADVQQLLRNCQI----HENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETL-PLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANL---LPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>NKTLLKTLAQEFKGYLLIRDRVKHIVDDSDSKD--KKLVLLSESIENGNVGAYGVNKQLPDNLQSFLKTHSIEVVKHQ------VQLNYNNFSYEEVMKELIPTGL-PIPHAFEKIGHIAHLNLKEELLPYKNMIGQVILDKKGPQIRTVLNKVGKIDTVFRTFNFELLAGDNDLLAQV-------------VYWNSRLQFEHSNLIQTFKSHDIVVDMFAGVGPFAVPASKLVK--CKVYANDLNPNSVKYMRENATRNKAS-TIE-ISNLDARDFVRELVSRDPPVAFTQA-------------------------IMNLPSTSIEFLDVFREIFLNPEKA----------PPIPAPTIHCYTFTPVSETAGGDLKELTIKNVEAIIKHPLP----------------ADTTVYEVRDVSPNKRMMRISFK</Hsp_hseq>
+      <Hsp_midline>+K+L   LA   +    +  R+K + D +DS D  +KL+LL       +        +LP ++Q  L+   I    H+       +  Y +F+   ++ +L+P  + P P AFE IGH+AHLNLKE   PY+ +IGQV+L+   P I +V+NKVG++   +RT++F LLAG ND   ++             VYW SRL  E   L++TF+   I+ D F GVG   + A+ L +  C ++AND NP +V+Y+RENA RN  S  IE +   DA DF+ ++  +    A T++                         +MN P  + +FL   R   + P               +  P +H YTF     T   D +E+ +  V A +   LP                 D  V+ VRDV+P K ++   F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q54WD6.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Dictyostelium discoideum]</Hit_def>
+  <Hit_accession>Q54WD6</Hit_accession>
+  <Hit_len>460</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.007</Hsp_bit-score>
+      <Hsp_score>419</Hsp_score>
+      <Hsp_evalue>5.66358e-44</Hsp_evalue>
+      <Hsp_query-from>201</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>47</Hsp_hit-from>
+      <Hsp_hit-to>376</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>114</Hsp_identity>
+      <Hsp_positive>186</Hsp_positive>
+      <Hsp_gaps>65</Hsp_gaps>
+      <Hsp_align-len>391</Hsp_align-len>
+      <Hsp_qseq>STDGTEKLILLHPDT-PPLSELPADVQQLLRNCQIHENGPVMPTK---FTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>STDNDDKKMIYLCDTLKKETDIPDQLKTFIK-----ENDIKVIEKDISLNYNNFSYEQVLKTLLPKDVGIP-FSFERIGHIIHVNLKDEQLPFKYIIGQAILDKNIQVKTVLNKVGEIDTVFRTFKIEILAGEPDLVAEIKENECIFRFNFEEVYWNSRLQYEHMELVNTFKKEDIICDMFAGVGPFALPAAKI--KKCKVYANDLNPSSVKYMKENAKTNRLESKVE-ISNLDARDFVKSL------------------------VEKSIPFT---HVVMNLPSTSIEFLDVFRDIFLNSTIPPPIPPP----------IINCYTFTKLDESS---------DLIKDTIKNVENVIGAKVP--SDYVC----YEVRDVAPKKSMMRITFR</Hsp_hseq>
+      <Hsp_midline>STD  +K ++   DT    +++P  ++  ++     EN   +  K     Y +F+   +L  LLP  V  P  +FE IGH+ H+NLK+   P++++IGQ +L+    +++V+NKVGE+   +RT+   +LAG  D   ++ E+    +F+  +VYW SRL  E   L+ TF+   II D F GVG   L AA +  + C ++AND NP +V+Y++ENA+ N +  ++E +   DA DF+  +                        V  + P     HVVMN P  + +FL   R   +  +                   ++ YTF + D ++         DL+   +  + N I  +     DY C    + VRDVAP K ++   FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|A8N339.2|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 [Coprinopsis cinerea okayama7#130]</Hit_def>
+  <Hit_accession>A8N339</Hit_accession>
+  <Hit_len>457</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>164.851</Hsp_bit-score>
+      <Hsp_score>416</Hsp_score>
+      <Hsp_evalue>1.54779e-43</Hsp_evalue>
+      <Hsp_query-from>199</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>67</Hsp_hit-from>
+      <Hsp_hit-to>446</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>122</Hsp_identity>
+      <Hsp_positive>182</Hsp_positive>
+      <Hsp_gaps>57</Hsp_gaps>
+      <Hsp_align-len>413</Hsp_align-len>
+      <Hsp_qseq>TDSTDGTEKLILLHPDTPPLSELPADVQQLLRNCQIHENGPV-MPTKFTYKDFTASYILSQLLPIAVHP-PPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMD-------------MGLQQHQKASTRSRKEDVTNKDGNHVTPTEPM------RLPDHVVMNYPVEAPKFLGALRWW--PVPPSSRRGSTTRDGGIGSVIVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>SDPKEEGNRLVLLR--MPNEGDIPPEALELIKT---ESNGLTEFNVNLDYNYWTADEILQSFLPEELREGAPSGFAMVGHIAHLNLNEEYLPYKYIIGQLILEKNNRVRTVVNKINSIDTQFRFFKMELLAGEPDYVVEHHESDCRFMFDFTKVYWNSRLHTEHDRLIQVFQPEEVVADVFAGVGPFAIPAG---KKGCGVLANDLNPESYKYLAINAKNNRVDDTVKAF-CEDGREFIQKSVSRLWEEPLPAYTGPKQSRVQEEKERRRLQRLKAEGQTVPIPPSEKQHGRRRISHFVMNLPDSAISFLDAFRGLLSGAEPALREQYST---------MPMVHCHCFTREVDSRVNAEG-----DIRKRVEEKLGGALTSETSF----------HFVRSVAPNKDMYCISFR</Hsp_hseq>
+      <Hsp_midline>+D  +   +L+LL    P   ++P +  +L++      NG         Y  +TA  IL   LP  +    P+ F  +GH+AHLNL E + PY+++IGQ++LE    + +V+NK+  +   +R +   LLAG  D  V+  ES  +  FD   VYW SRL  E  RL++ FQP +++AD F GVG   + A    ++ C + AND NP++ +YL  NA+ N V D ++   C D  +F+                G +Q +    + R+     K      P  P       R   H VMN P  A  FL A R       P+ R   +T         +P VH + F R  D   + +      D+       LG  +   T            H VR VAP K + C  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|D0NLC2.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Phytophthora infestans T30-4]</Hit_def>
+  <Hit_accession>D0NLC2</Hit_accession>
+  <Hit_len>411</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.155</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>4.86151e-43</Hsp_evalue>
+      <Hsp_query-from>203</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>59</Hsp_hit-from>
+      <Hsp_hit-to>381</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>115</Hsp_identity>
+      <Hsp_positive>179</Hsp_positive>
+      <Hsp_gaps>68</Hsp_gaps>
+      <Hsp_align-len>388</Hsp_align-len>
+      <Hsp_qseq>DGTEKLILLH---PDTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>NSSSKLILLNSKVKDMETLQPLNEDLVAFLKEESLAFVSHAIELDYSY--FAVDQVLSELLPKGMDIP-SSFETVGHIAHLNLRDNQLPFKNVIGQVILDKNAQIRTVVNKTDNIETKFRTFPMEVLAGDDDMEVEVHESKASFRFNYAEVYWNSRLQQEHLRIIRQIKPHDVVCDMMCGIGP---FAVPVALNGSKVYANDLNPRSYHYLKENIALNKVEKLVTAYNL-DGRDFL----------AKLLSEKKQFT-----------------QVLMNLPAIALEFLDA---FPGQFDHWEGE-----------LPFVHCYCFSNAD-DVKQDVKQRAEKIMGGELDPERTSFHL----------------VRDVAPKKVMVCISFQ</Hsp_hseq>
+      <Hsp_midline>+ + KLILL+    D   L  L  D+   L+   +      +   ++Y  F    +LS+LLP  +  P ++FET+GH+AHLNL++   P++ +IGQV+L+    I +V+NK   +   +RT+   +LAG +D  V++ ES    +F+ A+VYW SRL +E  R++R  +P  ++ D  CG+G     A  +      ++AND NP++  YL+EN   N V   +      D  DFL          A   S K+  T                  V+MN P  A +FL A   +P       G            +P VH Y F+ AD    +D ++ A  ++   L P   + H                 VRDVAP KV++C  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|B8A5G9.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog; Flags: Precursor [Danio rerio]</Hit_def>
+  <Hit_accession>B8A5G9</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>163.696</Hsp_bit-score>
+      <Hsp_score>413</Hsp_score>
+      <Hsp_evalue>5.03817e-43</Hsp_evalue>
+      <Hsp_query-from>200</Hsp_query-from>
+      <Hsp_query-to>586</Hsp_query-to>
+      <Hsp_hit-from>113</Hsp_hit-from>
+      <Hsp_hit-to>447</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>118</Hsp_identity>
+      <Hsp_positive>179</Hsp_positive>
+      <Hsp_gaps>56</Hsp_gaps>
+      <Hsp_align-len>389</Hsp_align-len>
+      <Hsp_qseq>DSTDGTEKLILLHPDTPPLSE-LPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARA-DPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDF</Hsp_qseq>
+      <Hsp_hseq>DCGNIEHRLLLLDPNSITSSDSFGSDEAEALKAYSVPQEIQSYELKLTYENFKSEEILRAVLPEG-QGVTSGFSRVGHIAHMNLREHQLPYRKLIGQVIIDKNPGITCVVNKTNTIDSTYRNFQMEVLAGESNMVAKVRENGVLYEFDFSRVYWNPRLSTEHERIVSLLHRGDTVVDVFAGVGPFAIPAA---RRGCAVLANDLNPESFRWLQHNAKLNKVDQKITTSNL-DGRDFI---------RGPVRERLPALM-KGSQKI----------HVVMNLPALALEFLDAFKGLLDPEPDQSLSN----------LPQVHCYGFSKENDP--QRDVVERAEASLKTNL-----------------QGQCSVHLVRNVAPNKEMMCVSF</Hsp_hseq>
+      <Hsp_midline>D  +   +L+LL P++   S+   +D  + L+   + +       K TY++F +  IL  +LP       + F  +GH+AH+NL+E   PYR LIGQV+++  P I  V+NK   +   YR +   +LAG ++   K+ E+GV  +FD + VYW  RLS E +R++     G  + D F GVG   + AA   +R C + AND NP++  +L+ NA+ N V  +I      D  DF+         +   R R   +  K    +          HVVMN P  A +FL A +    P   +  S           +P+VH Y F++  DP   RD  E A   +  NL                      VH VR+VAP K ++C  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|F6H2F8.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase 1; AltName: Full=M1G-methyltransferase 1; AltName: Full=tRNA [GM37] methyltransferase 1; AltName: Full=tRNA methyltransferase 5 homolog 1 [Vitis vinifera]</Hit_def>
+  <Hit_accession>F6H2F8</Hit_accession>
+  <Hit_len>608</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.007</Hsp_bit-score>
+      <Hsp_score>419</Hsp_score>
+      <Hsp_evalue>5.69308e-43</Hsp_evalue>
+      <Hsp_query-from>204</Hsp_query-from>
+      <Hsp_query-to>586</Hsp_query-to>
+      <Hsp_hit-from>262</Hsp_hit-from>
+      <Hsp_hit-to>593</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>185</Hsp_positive>
+      <Hsp_gaps>79</Hsp_gaps>
+      <Hsp_align-len>397</Hsp_align-len>
+      <Hsp_qseq>GTEKLILLHP--DTPPLSELPADVQQLLRNCQIHENGPVMPTKFT---------YKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLE-TLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARA-DPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMN-EDYDCDIQVHPVRDVAPGKVVLCGDF</Hsp_qseq>
+      <Hsp_hseq>GSTRLLLLDERYADKGVEELPEAIKAVLK----EDTGQSMTSTFELVKCKLTLFYNYWQMNEILEALLPEGM-IVPSAFEMVGHIAHLNLRDEHLPYKKLIAKVVLDKNKPKIQTVVNKTDAIHNDYRTMQLEVLAGNRSLVTTVIENGMRFQVDLATVYWNSRLATERQRLLNCFTRNDVVCDVFSGVGPIAISAAKKVKR---VYANDLNPYAIEYLESNSVLNKLERKIKVFNM-DGRRFINAM--------FTSDKAESIT-----------------QVVMNLPNDAAEFLDAF----------RGIFRKKSRDKQLKLPMIHVYGFSKAQDPEFD---------------------FHQRIRIALSEVAVDVEMHRVRLVAPGKWMLRASF</Hsp_hseq>
+      <Hsp_midline>G+ +L+LL        + ELP  ++ +L+     + G  M + F          Y  +  + IL  LLP  +   P+AFE +GH+AHLNL++ H PY+ LI +V+L+   P I++V+NK   +   YRT    +LAG       + E+G++ Q DLA VYW SRL+ ERQRLL  F    ++ D F GVG + + AA   +R   ++AND NP A+EYL  N+  N +  +I+     D   F+  M         T  + E +T                  VVMN P +A +FL A           RG   +      + +P +HVY F++A DP  D                      H R  +   +   D+++H VR VAPGK +L   F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|A9T6G5.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Physcomitrium patens]</Hit_def>
+  <Hit_accession>A9T6G5</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>163.31</Hsp_bit-score>
+      <Hsp_score>412</Hsp_score>
+      <Hsp_evalue>6.9999e-43</Hsp_evalue>
+      <Hsp_query-from>247</Hsp_query-from>
+      <Hsp_query-to>582</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>444</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>112</Hsp_identity>
+      <Hsp_positive>176</Hsp_positive>
+      <Hsp_gaps>78</Hsp_gaps>
+      <Hsp_align-len>378</Hsp_align-len>
+      <Hsp_qseq>YKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQH----QKAST--------------------------------------RSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVL</Hsp_qseq>
+      <Hsp_hseq>YSYWPVEHILKEILPAGCEVP-SSFETIGHIAHLNLREDLLTYKKIIAEVILDKNPKLKTVVNKVGTITNEFRVPEFEILAGEPSLVTEIKQHGATFRLDYGMVYWNSRLEGEHKRLFAQFKPGQVIVDMFAGIGPFAIPAA---QQGCAVYANDLNPTSVKFLKLNSDINKVGESIKAFNL-DAREFMRKLVTEEEGCVGEIASSTLIAENSLNGTRIPSSKENSSSLTEGSDMPSSKKPEERKAKKAKVSEVVKMKISDVKPWEHFDHVVMNLPASALEFLDVL----------NGLLCKGRWKGT--MPRVHCYCFMRSNETN--------ADIVKKAETYLGGSI-----------ADPDVYVVRDVAPNKASL</Hsp_hseq>
+      <Hsp_midline>Y  +   +IL ++LP     P ++FETIGH+AHLNL+E    Y+ +I +V+L+  P +++V+NKVG ++  +R  +F +LAG      ++ + G   + D   VYW SRL  E +RL   F+PGQ+I D F G+G   + AA   Q+ C ++AND NP +V++L+ N+  N V + I+     DA +F+  +  ++     + AS+                                      +++K  V+      ++  +P    DHVVMN P  A +FL  L           G   +    G+  +PRVH Y F R++ T          D+V      LG +I            D  V+ VRDVAP K  L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|F7GSQ4.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog; Flags: Precursor [Macaca mulatta]</Hit_def>
+  <Hit_accession>F7GSQ4</Hit_accession>
+  <Hit_len>509</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>164.081</Hsp_bit-score>
+      <Hsp_score>414</Hsp_score>
+      <Hsp_evalue>8.00357e-43</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>467</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>125</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>77</Hsp_gaps>
+      <Hsp_align-len>430</Hsp_align-len>
+      <Hsp_qseq>PYLASRHELLQEMHVRLK--------IVRDYTDSTDGTEKLILLHP------DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQK--ASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGG-IGSVIVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>PVLKVRKEIVSRLMRSLRRAALQRPGIKRVIEDPEDKESRLILLDPYKIFTHDSFEKAELSV-LEQLNVSPQISKYN----LELTYENFKSEEILRAVLPEG-QDVTSGFSRVGHIAHLNLRDHQLPFKQLIGQVMIDKNPGITSAVNKINNIDNMYRNFHMEVLSGEQNMMTKVRENKYTYEFDFSKVYWNPRLSTEHSRITELLKAGDVLFDVFAGVGPFAIPVA---KKNCTVFANDLNPESHKWLLHNCKLNKVDQKVKIFNL-DGKDFLQGPVKEELIQLLSLSKERKPSV------------------HIVMNLPAKAIEFLSAFKW------------LLDGQPCSNEFLPIVHCYSFSKDANPAKDVRQRAGAV---------LGISLEA---------CS-SVHLVRNVAPNKEMLCITFQ</Hsp_hseq>
+      <Hsp_midline>P L  R E++  +   L+        I R   D  D   +LILL P      D+   +EL   ++QL  + QI +       + TY++F +  IL  +LP       + F  +GH+AHLNL++   P++ LIGQV+++  P I S +NK+  +   YR +   +L+G  +   K+ E+    +FD + VYW  RLS E  R+    + G ++ D F GVG   +  A   ++NCT++AND NP++ ++L  N + N V  +++     D  DFL     ++  +  + ++ RK  V                  H+VMN P +A +FL A +W              DG    +  +P VH Y+F++ A+P  D      AV         LG ++           C   VH VR+VAP K +LC  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|Q9D0C4.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Mus musculus]</Hit_def>
+  <Hit_accession>Q9D0C4</Hit_accession>
+  <Hit_len>501</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.155</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>2.89844e-42</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>90</Hsp_hit-from>
+      <Hsp_hit-to>460</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>122</Hsp_identity>
+      <Hsp_positive>193</Hsp_positive>
+      <Hsp_gaps>91</Hsp_gaps>
+      <Hsp_align-len>437</Hsp_align-len>
+      <Hsp_qseq>PYLASRHELLQEMHVRLK--------IVRDYTDSTDGTEKLILLHP------DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDF---------LMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSV-IVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>PVLKARKEVVNRLMRALRRVALQRPGIKRVIEDPKDEDSRLIMLDPYRMLTADSFDKAEL-----GVLKELDVSPQLSQYNLELTYENFKSEEILKAVLPEG-QDVTSGFSRVGHIAHLNLRDHQLPFKHLIGQVMVDKNPGITSAVNKTSNIDNTYRNFQMEVLCGEENMLTKVRENNYTYEFDFSKVYWNPRLSTEHGRITELLNPGDVLFDVFAGVGPFAIPAA---RKNCTVFANDLNPESHKWLLHNCKLNKVDQKVKVFNM-DGKDFIQGPVREELMLRLGLSAEAKPSV-------------------------HIVMNLPAKAIEFLSVFR------------SLLDGQPCSTELLPTVHCYCFSKDSDPAKDVRQQAEAV---------LGVSLETSS----------SVHLVRNVAPNKEMLCITFQ</Hsp_hseq>
+      <Hsp_midline>P L +R E++  +   L+        I R   D  D   +LI+L P      D+   +EL      +L+   +         + TY++F +  IL  +LP       + F  +GH+AHLNL++   P++ LIGQV+++  P I S +NK   +   YR +   +L G  +   K+ E+    +FD + VYW  RLS E  R+     PG ++ D F GVG   + AA   ++NCT++AND NP++ ++L  N + N V  +++     D  DF         ++ +GL    K S                          H+VMN P +A +FL   R            +  DG   S  ++P VH Y F++ +DP  D   +  AV         LG ++   +           VH VR+VAP K +LC  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|Q93YU6.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase 1; AltName: Full=M1G-methyltransferase 1; AltName: Full=tRNA [GM37] methyltransferase 1; AltName: Full=tRNA methyltransferase 5 homolog 1 [Arabidopsis thaliana]</Hit_def>
+  <Hit_accession>Q93YU6</Hit_accession>
+  <Hit_len>468</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.999</Hsp_bit-score>
+      <Hsp_score>406</Hsp_score>
+      <Hsp_evalue>4.23006e-42</Hsp_evalue>
+      <Hsp_query-from>218</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>66</Hsp_hit-from>
+      <Hsp_hit-to>458</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>122</Hsp_identity>
+      <Hsp_positive>184</Hsp_positive>
+      <Hsp_gaps>111</Hsp_gaps>
+      <Hsp_align-len>437</Hsp_align-len>
+      <Hsp_qseq>LSELPADVQQLLRNCQIHENGPVMPTKFT--YKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLE-TLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRI--ERLQCGDAYDFLMDMG-------------------------------------------LQQHQKASTRSRKEDVTNKDGNHVTP-------------TEPMRLPDHVVMNYPVEAPKFLGAL------RWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>LSEIPEEKLNQLKKLSELE---VVPHSVTLGYSYWSADHLLKQILPDGLDIP-SSFETIGHIAHLNLHDELLPFKDVIAKVIYDKNYPRIKTIVNKVGTISNEFRVPKFEVLAGENGMETEVKQYGARFKLDYGLVYWNSRLEHEHMRLSSLFKPGETVCDMFAGIGPFAIPAA---QKGCFVYANDLNPDSVRYLKINAKFNKVDDLICVHNMDARKFFSHLMAVSTCEDNLQSVADNDKTKEAAVSRGGETNSSGEEIRESNASINEPLGANKKPSGTTKTENGVGKDCKSIEGHANKRLRQTLLPIAKPWEHIDHVIMNLPASALQFLDSFSNVIQKKYWKGP------------------LPLIHCYCFIRASETTEFIIAEAETAL----------KFHIE---------DPVFHKVRDVAPNKAMFCLSFR</Hsp_hseq>
+      <Hsp_midline>LSE+P +    L+     E   V+P   T  Y  ++A ++L Q+LP  +  P ++FETIGH+AHLNL +   P++ +I +V+ +   P I++++NKVG +S  +R   F +LAG N    ++ + G + + D   VYW SRL  E  RL   F+PG+ + D F G+G   + AA   Q+ C ++AND NP +V YL+ NA+ N V D I    +     +  LM +                                            L  ++K S  ++ E+   KD   +                +P    DHV+MN P  A +FL +       ++W  P                  +P +H Y F RA  TT+    E    L            H           D   H VRDVAP K + C  FR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|Q95KJ2.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog; Flags: Precursor [Macaca fascicularis]</Hit_def>
+  <Hit_accession>Q95KJ2</Hit_accession>
+  <Hit_len>509</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>161.384</Hsp_bit-score>
+      <Hsp_score>407</Hsp_score>
+      <Hsp_evalue>6.99941e-42</Hsp_evalue>
+      <Hsp_query-from>176</Hsp_query-from>
+      <Hsp_query-to>587</Hsp_query-to>
+      <Hsp_hit-from>97</Hsp_hit-from>
+      <Hsp_hit-to>467</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>124</Hsp_identity>
+      <Hsp_positive>198</Hsp_positive>
+      <Hsp_gaps>77</Hsp_gaps>
+      <Hsp_align-len>430</Hsp_align-len>
+      <Hsp_qseq>PYLASRHELLQEMHVRLK--------IVRDYTDSTDGTEKLILLHP------DTPPLSELPADVQQLLRNCQIHENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQ--HQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGG-IGSVIVPRVHVYTFAR-ADPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMNEDYDCDIQVHPVRDVAPGKVVLCGDFR</Hsp_qseq>
+      <Hsp_hseq>PVLKVRKEIVSRLMRSLRRAALQRPGIKRVIEDPEDKESRLILLDPYKIFTHDSFEKAGLSV-LEQLNVSPQISKYN----LELTYENFKSEEILRAVLPEG-QDVTSGFSRVGHIAHLNLRDHQLPFKQLIGQVMIDKNPGITSAVNKINNIDNMYRNFHMEVLSGEQNMMTKVRENKYTYEFDFSKVYWNPRLSTEHSRITELLKAGDVLFDVFAGVGPFAIPVA---KKNCTVFANDLNPESHKWLLHNCKLNKVDQKVKIFNL-DGKDFLQGPVKEELIQLLSLSKERKPSV------------------HIVMNLPAKAIEFLSAFKW------------LLDGQPCSNEFLPIVHCYSFSKDANPAKDVRQRAGAV---------LGISLEA---------CS-SVHLVRNVAPNKEMLCITFQ</Hsp_hseq>
+      <Hsp_midline>P L  R E++  +   L+        I R   D  D   +LILL P      D+   + L   ++QL  + QI +       + TY++F +  IL  +LP       + F  +GH+AHLNL++   P++ LIGQV+++  P I S +NK+  +   YR +   +L+G  +   K+ E+    +FD + VYW  RLS E  R+    + G ++ D F GVG   +  A   ++NCT++AND NP++ ++L  N + N V  +++     D  DFL     ++     + ++ RK  V                  H+VMN P +A +FL A +W              DG    +  +P VH Y+F++ A+P  D      AV         LG ++           C   VH VR+VAP K +LC  F+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|Q6NQ64.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase 2; AltName: Full=M1G-methyltransferase 2; AltName: Full=tRNA [GM37] methyltransferase 2; AltName: Full=tRNA methyltransferase 5 homolog 2; Flags: Precursor [Arabidopsis thaliana]</Hit_def>
+  <Hit_accession>Q6NQ64</Hit_accession>
+  <Hit_len>619</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>162.54</Hsp_bit-score>
+      <Hsp_score>410</Hsp_score>
+      <Hsp_evalue>1.05458e-41</Hsp_evalue>
+      <Hsp_query-from>255</Hsp_query-from>
+      <Hsp_query-to>586</Hsp_query-to>
+      <Hsp_hit-from>329</Hsp_hit-from>
+      <Hsp_hit-to>602</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>113</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>64</Hsp_gaps>
+      <Hsp_align-len>335</Hsp_align-len>
+      <Hsp_qseq>ILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLE-TLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIGSVIVPRVHVYTFARA-DPTTDRDAEEVAVDLVAANLLPLGNTIHCRTEMN-EDYDCDIQVHPVRDVAPGKVVLCGDF</Hsp_qseq>
+      <Hsp_hseq>ILEAVLPKGM-IVPSAFEMVGHIAHLNLRDEHLPYKRLIAKVVLDKNQPKIQTVVNKIDPIHNDFRTMQLEVLAGNHSLVTLVVENGLRFHVDLARVYWNSKLGTERQRLLLGFDQNDVVCDVFAGVGPIALAAARIVKR---VYANDLNPHAVEFMEQNSVVNKLEKRIE----------IFNMDGRRFIKAMFSSEK-------GQKVT---------QVVMNLPKDAAESLDAFR-------GVYNDRHRDEGLS---FPTIHVYGFSKASDPEFD---------------------FHERIRIALSEVAVDVKMRKVRLVAPGKWMLCASF</Hsp_hseq>
+      <Hsp_midline>IL  +LP  +   P+AFE +GH+AHLNL++ H PY+ LI +V+L+   P I++V+NK+  +   +RT    +LAG +     + E+G++   DLA VYW S+L  ERQRLL  F    ++ D F GVG + L AA + +R   ++AND NP AVE++ +N+  N +  RIE          + +M  ++  KA   S K       G  VT          VVMN P +A + L A R              RD G+     P +HVY F++A DP  D                      H R  +   +   D+++  VR VAPGK +LC  F</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|B5DPF1.1|</Hit_id>
+  <Hit_def>RecName: Full=tRNA (guanine(37)-N1)-methyltransferase; AltName: Full=M1G-methyltransferase; AltName: Full=tRNA [GM37] methyltransferase; AltName: Full=tRNA methyltransferase 5 homolog [Drosophila pseudoobscura pseudoobscura]</Hit_def>
+  <Hit_accession>B5DPF1</Hit_accession>
+  <Hit_len>440</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>158.688</Hsp_bit-score>
+      <Hsp_score>400</Hsp_score>
+      <Hsp_evalue>1.59774e-41</Hsp_evalue>
+      <Hsp_query-from>209</Hsp_query-from>
+      <Hsp_query-to>529</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>359</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>39</Hsp_gaps>
+      <Hsp_align-len>326</Hsp_align-len>
+      <Hsp_qseq>ILLHPDTPPLSELPADVQQLLRNCQI-HENGPVMPTKFTYKDFTASYILSQLLPIAVHPPPTAFETIGHVAHLNLKERHWPYRFLIGQVLLETLPLIESVINKVGEVSGPYRTYDFGLLAGRNDTRVKLTESGVQLQFDLADVYWCSRLSEERQRLLRTFQPGQIIADPFCGVGALCLLAASLPQRNCTIWANDWNPKAVEYLRENARRNHVSDRIERLQCGDAYDFLMDMGLQQHQKASTRSRKEDVTNKDGNHVTPTEPMRLPDHVVMNYPVEAPKFLGALRWWPVPPSSRRGSTTRDGGIG----SVIVPRVHVYTFARADPT</Hsp_qseq>
+      <Hsp_hseq>ILLHP--MPIKAWESLPTEDLQKQQVTQENFSFVELELNYENWSANEILKSVLP-EEEEGMTSYSRIGHIVHLNLRDHLLPYKQLIGEVLRDKLPNCRTVVNKASSIDNTYRNFQLELICGEAEYQVETKENGIPFEFDFSKVYWNPRLSTEHERIVKLLQPGDVLYDVFAGVGPFSVPAA---KKRCHVLANDLNPVSFHWLQHNAKRNKCLSNI-KMSNKDGREFIL------------KELRADLLQR----LRLTDTSSYATHITMNLPAMAVEFLDAF----------RGLYT-DNELADISDAVVFPTVHVYSFAKGENT</Hsp_hseq>
+      <Hsp_midline>ILLHP   P+    +   + L+  Q+  EN   +  +  Y++++A+ IL  +LP       T++  IGH+ HLNL++   PY+ LIG+VL + LP   +V+NK   +   YR +   L+ G  + +V+  E+G+  +FD + VYW  RLS E +R+++  QPG ++ D F GVG   + AA   ++ C + AND NP +  +L+ NA+RN     I ++   D  +F++            +  + D+  +    +  T+      H+ MN P  A +FL A           RG  T D  +     +V+ P VHVY+FA+ + T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>480361</Statistics_db-num>
+      <Statistics_db-len>182352356</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
