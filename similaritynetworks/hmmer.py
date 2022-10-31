@@ -76,5 +76,5 @@ def parse_xml():
     return 0
 
 sequences = parse_fasta("Bacillariophyceae_reviewed.fasta")
-hmmer_search(sequences, 'uniprotkb')
+hmmer_search(sequences, 'alphafold')
 # The second argument is the database you want to search against, can be pdb, uniprotkb, swissprot...
