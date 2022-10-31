@@ -1,15 +1,6 @@
 import os
 import urllib
-import pandas as pd
 import urllib.request as urllib2
-import xml.etree.ElementTree as ET
-tree = ET.parse('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/hmmer_output/A0A386KZ50_hmmer.xml')
-root = tree.getroot()
-
-for hit in root.iter('hits'):
-    print(hit.attrib)
-
-
 from multidimensional_urlencode import urlencode
 try:
     from urllib.parse import unquote
@@ -73,11 +64,9 @@ def hmmer_search(sequences, DB):
         print(f"The result for {name[1]} has been saved.")
 
 def parse_xml():
-    df = pd.read_xml(xml, xpath=".//row")
-    df
+    # to be added...
     return 0
 
-#sequences = parse_fasta("Bacillariophyceae_reviewed.fasta")
-#hmmer_search(sequences, 'swissprot')
-#df = pd.read_xml('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/hmmer_output/A0A386KZ50_hmmer.xml', xpath=".//row")
+sequences = parse_fasta("fasta_sample.fasta")
+hmmer_search(sequences, 'uniprotkb')
 # The second argument is the database you want to search against, can be pdb, uniprotkb, swissprot...
