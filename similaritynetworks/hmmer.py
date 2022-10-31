@@ -36,7 +36,6 @@ def hmmer_search(sequences, DB):
         data = urllib.parse.urlencode(parameters).encode("utf-8")
 
         # post the search request to the server
-        ##### maybe also for ssearch/fastA
         req = urllib.request.Request('https://www.ebi.ac.uk/Tools/hmmer/search/phmmer', data)
 
         # get the url where the results can be fetched from

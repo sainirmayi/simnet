@@ -103,6 +103,7 @@ homepage.layout = html.Div(
     State('input', 'value'), # static input
     State('n_neighbors', 'value')# static input
 )
+
 def showNetworkDiagram(n_clicks,proteinID,n_neighors):
     if n_clicks: #click or not
         return html.Div( # return a whole block containing network digram
