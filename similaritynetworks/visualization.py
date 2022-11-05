@@ -29,7 +29,7 @@ def get_similarity_data(query,n_neighbors, DB):
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
 
-    similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
+    similarity_db = pd.DataFrame(pd.read_csv("Hmmer/final.csv"))
     results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
 
     similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)

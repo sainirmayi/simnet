@@ -13,7 +13,7 @@ def uniprot_retrieval(query_id):
     return df
 
 
-blast_dataframe = pd.read_csv('blast.csv')
+blast_dataframe = pd.read_csv('../Blast/blast.csv')
 proteins = blast_dataframe['hit_protein'].append(blast_dataframe['queried_protein']).drop_duplicates()
 
 df = pd.DataFrame()
