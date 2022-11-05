@@ -2,37 +2,35 @@ import plotly.graph_objects as go
 import networkx as nx
 import pandas as pd
 pd.options.mode.chained_assignment = None
+import pymysql
 
-def create_sample_db():
-    """ Sample dataframes to represent the databases """
-    main_dataframe = pd.DataFrame(pd.read_csv("sample_data.csv"))
-    protein_info = main_dataframe.drop(['Hit', 'Score(Bits)', 'Identities(%)', 'Positives(%)', 'E()'],
-                                       axis=1).drop_duplicates()
-    protein_info.reset_index(drop=True, inplace=True)
-    similarity_db = main_dataframe.drop(['DB', 'Description', 'Organism', 'Length'], axis=1)
-    similarity_db.reset_index(drop=True, inplace=True)
-    similarity_db['Protein1'] = None
-    for i in range(similarity_db.shape[0]):
-        if similarity_db["Hit"][i] == 1:
-            qp = similarity_db.loc[i, 'Accession']
-        similarity_db['Protein1'][i] = qp
-    similarity_db.rename(columns={'Accession': 'Protein2', 'Score(Bits)': 'Score',
-                                  'Identities(%)': 'Identities', 'Positives(%)': 'Positives', 'E()': 'E'},
-                         inplace=True)
-    similarity_db.reset_index(drop=True, inplace=True)
-    return similarity_db
+# def create_sample_db():
+#     """ Sample dataframes to represent the databases """
+#     main_dataframe = pd.DataFrame(pd.read_csv("sample_data.csv"))
+#     protein_info = main_dataframe.drop(['Hit', 'Score(Bits)', 'Identities(%)', 'Positives(%)', 'E()'],
+#                                        axis=1).drop_duplicates()
+#     protein_info.reset_index(drop=True, inplace=True)
+#     similarity_db = main_dataframe.drop(['DB', 'Description', 'Organism', 'Length'], axis=1)
+#     similarity_db.reset_index(drop=True, inplace=True)
+#     similarity_db['Protein1'] = None
+#     for i in range(similarity_db.shape[0]):
+#         if similarity_db["Hit"][i] == 1:
+#             qp = similarity_db.loc[i, 'Accession']
+#         similarity_db['Protein1'][i] = qp
+#     similarity_db.rename(columns={'Accession': 'Protein2', 'Score(Bits)': 'Score',
+#                                   'Identities(%)': 'Identities', 'Positives(%)': 'Positives', 'E()': 'E'},
+#                          inplace=True)
+#     similarity_db.reset_index(drop=True, inplace=True)
+#     return similarity_db
 
 
-def get_similarity_data(query,n_neighbors):
+def get_similarity_data(query,n_neighbors, DB):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
 
     similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
-    results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Score', 'Positives', 'E'], axis=1)
-
-    # similarity_db = create_sample_db()
-    # results = similarity_db.drop(['Hit', 'Score', 'Positives', 'E'], axis=1)
+    results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
 
     similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
     similarity_db.reset_index(drop=True, inplace=True)
@@ -50,13 +48,39 @@ def get_similarity_data(query,n_neighbors):
                 results.drop(labels=i, inplace=True, axis=0)
 
     results.reset_index(drop=True, inplace=True)
+    #------------------------------------------------------------------------------------------------------------------
+    """Use the following code if you can connect to the database"""
+    # Retrieve information from database.
+    # connection = pymysql.connect(user='root', password='123456',
+    #                              host='localhost',
+    #                              port=3306)
+    # cur = connection.cursor()
+    # if DB == 'Blast':
+    #     sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    # elif DB == 'Fasta':
+    #     sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    # else:
+    #     # a default sql query
+    #     sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #
+    #
+    # cur.execute(sql)
+    # dt = cur.fetchall()
+    # results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    #
+    # cur.close()
+    # # close the connection
+    # connection.close()
+    # ------------------------------------------------------------------------------------------------------------------
+
+    # 'return results2' if you want to retrieve data from the database.
     return results
 
 
 def create_network(similar_proteins):
     """ Creating network diagram """
-    graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Identities')
-    pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Identities')
+    graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
+    pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Score')
     for n, p in pos.items():
         graph.nodes[n]['pos'] = p
 
@@ -132,15 +156,12 @@ def create_network(similar_proteins):
     return fig
 
 
-def get_visualization(query,n_neighbors):
+def get_visualization(query,n_neighbors,DB):
     """ Call this function to get the similarity network for a query """
-    similar_proteins = get_similarity_data(query,n_neighbors)
+    similar_proteins = get_similarity_data(query,n_neighbors,DB)
     return create_network(similar_proteins)
 
 
 if __name__ == "__main__":
-    similarity_db = create_sample_db()
-    similarity_db = pd.DataFrame(pd.read_csv("final.csv"))
-    print(similarity_db['Protein1'].unique())
-    query = input("A0T0G9")
-    get_visualization(query)
+
+    get_visualization("A0T0A3", 5, "Blast").show()
