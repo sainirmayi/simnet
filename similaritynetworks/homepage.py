@@ -29,13 +29,12 @@ homepage.layout = html.Div(
     dbc.Row(dbc.Col('Algorithm',width={"size": 3, "offset": 4},),),
     dbc.Row(
         dbc.Col(html.Div(
-        dcc.Dropdown(
+        dcc.Dropdown(id = 'Algorithm',
         options=[
         {'label': 'Blast', 'value': 'Blast'},
-        {'label': 'SSearch', 'value': 'SSearch'}
+        {'label': 'Fasta', 'value': 'Fasta'},
          ],
-         placeholder="Blast",
-         multi=True)),width={"size": 5,  "offset": 4},),),
+         placeholder="Blast")),width={"size": 5,  "offset": 4},),),
 
     html.Br(),
     dbc.Row(
@@ -78,7 +77,7 @@ homepage.layout = html.Div(
                 {'label': 'No more than 20 interactors', 'value': 20},
                 ],
                 placeholder="no more than 15 interactors",
-                ),width={"size": 5,  "offset": 4},),  )],)),
+                ),width={"size": 5,  "offset": 4},),)],)),
     html.Br(),
     dbc.Row(
         dbc.Col(
@@ -101,14 +100,16 @@ homepage.layout = html.Div(
     Output('plot_zone', 'children'),
     Input('search', 'n_clicks'), # dynamic input
     State('input', 'value'), # static input
+    State('Algorithm', 'value'),
     State('n_neighbors', 'value')# static input
 )
 
-def showNetworkDiagram(n_clicks,proteinID,n_neighors):
+def showNetworkDiagram(n_clicks, proteinID,db,n_neighors):
     if n_clicks: #click or not
-        return html.Div( # return a whole block containing network digram
+        return html.Div( # return a whole block containing network diagram
            dcc.Graph(
-                id='network',figure = visualization.get_visualization(proteinID,n_neighors)))
+                id='network',figure = visualization.get_visualization(proteinID,n_neighors,db)))
+
 
 if __name__ == '__main__':
     homepage.run_server()
