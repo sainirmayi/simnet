@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171358-0757-61085098-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171358-0757-61085098-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171358-0757-61085098-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0C2|RK11_PHATC" type="PROTEIN" length="141"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:13:58+00:00" end="2022-11-07T17:14:01+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RK11_PHATC" ac="A0T0C2" length="141" description="50S ribosomal protein L11, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl11 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>873</score>
+      <smithWatermanScore>873</smithWatermanScore>
+      <zScore>1237.8</zScore>
+      <bits>234.9</bits>
+      <expectation>2.2e-61</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RK11_TRICV" ac="P49549" length="141" description="50S ribosomal protein L11, chloroplastic OS=Trieres chinensis OX=1514140 GN=rpl11 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>821</score>
+      <smithWatermanScore>821</smithWatermanScore>
+      <zScore>1163.9</zScore>
+      <bits>221.2</bits>
+      <expectation>2.9e-57</expectation>
+      <identity>92.2</identity>
+      <positives>99.3</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::::::::::::.::::::::::::::::::::::::::::.:.::.::::::::::::::::::.:::::::::::::::::::::.:: :.::::::.::::::.:::::::::::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="141">MAKKITALIKLALPAGKATPAPPVGPALGQHGVNIAAFCKEYNAKTTDKTGLIIPVEISVYEDRSYTFILKTPPASVLLANAAKIKKGSSTPNRVNVGSITKSQLEEIASIKLPDLNTTKISSAMKIVEGTARNMGISIVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RK11_THAPS" ac="A0T0Q5" length="141" description="50S ribosomal protein L11, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rpl11 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>789</score>
+      <smithWatermanScore>789</smithWatermanScore>
+      <zScore>1118.5</zScore>
+      <bits>212.8</bits>
+      <expectation>9.7e-55</expectation>
+      <identity>86.5</identity>
+      <positives>97.2</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>: :::::::::::::.::::::::::::::::::::::::::::::..: ::::::::::::::::::.:::::::::::::::.::::..:: :.:::.::.::::::::::::::::.::::..:::::::::::.. :</pattern>
+      <matchSeq start="1" end="141">MPKKITALIKLALPAGKATPAPPVGPALGQHGVNIAAFCKEYNARTTEKMGLIIPVEISVYEDRSYTFILKTPPASVLLANAAKVKKGSATPNRVNVGSVTKAQLEEIANIKLPDLNTTEISSAIRIVEGTARNMGITVSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RL11_SYNE7" ac="Q31QK3" length="141" description="50S ribosomal protein L11 OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <smithWatermanScore>709</smithWatermanScore>
+      <zScore>1004.9</zScore>
+      <bits>191.8</bits>
+      <expectation>2.1e-48</expectation>
+      <identity>75.2</identity>
+      <positives>94.3</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:::::::::.::.:::::::::::::::: ::::::::::.::.::.:::::::.::::.::.:::::::::.:.:: :..::.::: ..::.:: .::.:::. ::::::: .. .::.::::::::::..: :</pattern>
+      <matchSeq start="1" end="141">MAKKVVALIKLALPAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKVGLVIPVEISVFEDRSFTFILKTPPASVLIAKAAGIERGSGNPNKTKVGKITTAQLREIAETKLPDLNTKNVEAAMRIVEGTARNMGVTIAD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RL11_SYNP6" ac="Q5N3N9" length="141" description="50S ribosomal protein L11 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>705</score>
+      <smithWatermanScore>705</smithWatermanScore>
+      <zScore>999.2</zScore>
+      <bits>190.7</bits>
+      <expectation>4.3e-48</expectation>
+      <identity>74.5</identity>
+      <positives>94.3</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:::::::::.::.:::::::::::::::: ::::::::::.::.::.:::::::.::::.::.:::::::::.:.:: :..::.::: ..::.:: .::.:::. ::::.:: .. .::.::::::::::..: :</pattern>
+      <matchSeq start="1" end="141">MAKKVVALIKLALPAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKVGLVIPVEISVFEDRSFTFILKTPPASVLIAKAAGIERGSGNPNKTKVGKITTAQLREIAETKLPDFNTKNVEAAMRIVEGTARNMGVTIAD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RK11_GUITH" ac="O78412" length="141" description="50S ribosomal protein L11, chloroplastic OS=Guillardia theta OX=55529 GN=rpl11 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>693</score>
+      <smithWatermanScore>693</smithWatermanScore>
+      <zScore>982.2</zScore>
+      <bits>187.6</bits>
+      <expectation>3.8e-47</expectation>
+      <identity>73.8</identity>
+      <positives>92.9</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:.::::: :.::::::::::::::.::::. :::.::::: :::::::::::.::::.::::::::::::::::.:: ..:::.::. ..:::.:: :.::::. ::::::: .. ::..:.::::.::::.. :</pattern>
+      <matchSeq start="1" end="141">MAKKVVAIIKLALEAGKATPAPPVGPALGQRGVNIVMFCKDYNARTADKAGLIIPVEITVYEDKSYTFVLKTPPASVLLAKAAGVQKGSGNPKKTQVGSVTKKQVEEIAQTKLPDLNTRRLESAIRIIEGTAKNMGIGVTD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RL11_CROS5" ac="B1X076" length="141" description="50S ribosomal protein L11 OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>690</score>
+      <smithWatermanScore>690</smithWatermanScore>
+      <zScore>977.9</zScore>
+      <bits>186.8</bits>
+      <expectation>6.6e-47</expectation>
+      <identity>73.0</identity>
+      <positives>94.3</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:::::::::.::.:::::::::::::::: ::::::::.:.:.::..:::::::.::::.::::::::::::. .:: :.:::..::. .::::.. ::.:::. :.::::.. :..::.::::::::::..: :</pattern>
+      <matchSeq start="1" end="141">MAKKVVALIKLALPAGKANPAPPVGPALGQHGVNIMAFCKEYNAKTSDQAGMVIPVEISVFEDRSFTFVLKTPPASVLIRKAAGIEKGSAQPNNQKVGSISRDQLKEIAQTKMPDLNANDIDAAMNIVEGTARNMGVTIND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RL11_SYNR3" ac="A5GWK2" length="141" description="50S ribosomal protein L11 OS=Synechococcus sp. (strain RCC307) OX=316278 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>686</score>
+      <smithWatermanScore>686</smithWatermanScore>
+      <zScore>972.2</zScore>
+      <bits>185.8</bits>
+      <expectation>1.4e-46</expectation>
+      <identity>73.0</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::.::.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::..    ::::::..::::::: :::::: ... :::.:.::::::::... :</pattern>
+      <matchSeq start="1" end="141">MAKKVTAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLIVKAAGIEKGSGESAKGSVGSITRAQLEEIANTKLPDLNCSSVESAMRIIEGTARNMGVAVKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RL11_PARMW" ac="Q7U3T6" length="141" description="50S ribosomal protein L11 OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>684</score>
+      <smithWatermanScore>684</smithWatermanScore>
+      <zScore>969.4</zScore>
+      <bits>185.2</bits>
+      <expectation>2e-46</expectation>
+      <identity>73.8</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::.::.::::: :.::.::::::::::::::::  :::::::::.::::..::::::::::::.::. ::::::::...::::.:::..    .::::...::::::. :::::: :.. :::.:.::::::::.:: :</pattern>
+      <matchSeq start="1" end="141">MAKKVTAVIKLALQAGKANPAPPVGPALGQHGVNIMMFCKEYNARTQDKAGFVIPVEISVYEDRSFTFITKTPPASVLITKAAKIEKGSGESAKGNVGSINRAQLEEIAKTKLPDLNCTSVESAMRIIEGTARNMGVSISD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RL11_PROM5" ac="A2BUI1" length="141" description="50S ribosomal protein L11 OS=Prochlorococcus marinus (strain MIT 9515) OX=167542 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <smithWatermanScore>683</smithWatermanScore>
+      <zScore>968.0</zScore>
+      <bits>185.0</bits>
+      <expectation>2.4e-46</expectation>
+      <identity>74.5</identity>
+      <positives>92.2</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::.:.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::.. .  :::.:.:.::::::. :::::: :.: ::::..::::::::::: .</pattern>
+      <matchSeq start="1" end="141">MAKKIVAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGSGESSKGSVGNISKSQLEEIAKTKLPDLNCTSIESAMKVIEGTARNMGISITE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RL11_SYNPW" ac="A5GPD5" length="141" description="50S ribosomal protein L11 OS=Synechococcus sp. (strain WH7803) OX=32051 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>682</score>
+      <smithWatermanScore>682</smithWatermanScore>
+      <zScore>966.6</zScore>
+      <bits>184.7</bits>
+      <expectation>2.8e-46</expectation>
+      <identity>73.8</identity>
+      <positives>90.8</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::.::.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::..    ::::: ..::::::. :::::: :.: :::.:.::::::::..: :</pattern>
+      <matchSeq start="1" end="141">MAKKVTAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGSGESAKGSVGSIKRSQLEEIAKTKLPDLNCTSIESAMRIIEGTARNMGVAITD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RL11_SYNSC" ac="Q3AGS9" length="141" description="50S ribosomal protein L11 OS=Synechococcus sp. (strain CC9605) OX=110662 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <smithWatermanScore>681</smithWatermanScore>
+      <zScore>965.1</zScore>
+      <bits>184.4</bits>
+      <expectation>3.4e-46</expectation>
+      <identity>73.8</identity>
+      <positives>90.8</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:.::::: :.::.::::::::::::::::  :::::::::.:::: .:::::::.::::.::. ::::::::...::::.:::..    :::::...::::::. :::::: :.: :::.:.::::::::.:: :</pattern>
+      <matchSeq start="1" end="141">MAKKVVAVIKLALDAGKANPAPPVGPALGQHGVNIMMFCKEYNARTQDKAGYVIPVEISVFEDRSFTFITKTPPASVLITKAAKIQKGSGESAKGSVGSISRAQLEEIAKTKLPDLNCTSIESAMRIIEGTARNMGVSISD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RK11_NEOYE" ac="Q1XDF0" length="141" description="50S ribosomal protein L11, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=rpl11 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <smithWatermanScore>681</smithWatermanScore>
+      <zScore>965.1</zScore>
+      <bits>184.4</bits>
+      <expectation>3.4e-46</expectation>
+      <identity>74.5</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::.:...:::: :.:::::::::::::::::::. ::::::::: ::.::.::::::.:::::.::.:::::::::.:.:: ..:::..::: .:::::. ::: ::. :::::::..: .::::: :::.:::: : :</pattern>
+      <matchSeq start="1" end="141">MAKKVTGIVKLALNAGKATPAPPVGPALGQHGVNIVMFCKEYNARTADKSGLVIPVEISIYEDRSFTFILKTPPASVLIAKAAGLNKGSGEPNTKKVGSITNKQLESIAETKLPDLNTNNIPQAMKIVGGTAKNMGILIKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RL11_PROM2" ac="A8G2L1" length="141" description="50S ribosomal protein L11 OS=Prochlorococcus marinus (strain MIT 9215) OX=93060 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>680</score>
+      <smithWatermanScore>680</smithWatermanScore>
+      <zScore>963.7</zScore>
+      <bits>184.2</bits>
+      <expectation>4.1e-46</expectation>
+      <identity>73.0</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::.:.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::..    :::.:.:.::::::. :::::: ... ::::..::::::::.:: :</pattern>
+      <matchSeq start="1" end="141">MAKKIVAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGSGESAKGSVGNISKAQLEEIAKTKLPDLNCSSVESAMKVIEGTARNMGVSITD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RL11_PROM0" ac="A3PAS2" length="141" description="50S ribosomal protein L11 OS=Prochlorococcus marinus (strain MIT 9301) OX=167546 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>680</score>
+      <smithWatermanScore>680</smithWatermanScore>
+      <zScore>963.7</zScore>
+      <bits>184.2</bits>
+      <expectation>4.1e-46</expectation>
+      <identity>73.0</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::.:.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::..    :::.:.:.::::::. :::::: ... ::::..::::::::.:: :</pattern>
+      <matchSeq start="1" end="141">MAKKIVAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGSGESAKGSVGNISKAQLEEIAKTKLPDLNCSSVESAMKVIEGTARNMGVSITD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RL11_PROMS" ac="A2BNZ9" length="141" description="50S ribosomal protein L11 OS=Prochlorococcus marinus (strain AS9601) OX=146891 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>680</score>
+      <smithWatermanScore>680</smithWatermanScore>
+      <zScore>963.7</zScore>
+      <bits>184.2</bits>
+      <expectation>4.1e-46</expectation>
+      <identity>73.0</identity>
+      <positives>91.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::.:.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.:::..    :::.:.:.::::::. :::::: ... ::::..::::::::.:: :</pattern>
+      <matchSeq start="1" end="141">MAKKIVAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGSGESAKGSVGNISKAQLEEIAKTKLPDLNCSSVESAMKVIEGTARNMGVSITD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RL11_SYNY3" ac="P36237" length="141" description="50S ribosomal protein L11 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>679</score>
+      <smithWatermanScore>679</smithWatermanScore>
+      <zScore>962.3</zScore>
+      <bits>183.9</bits>
+      <expectation>4.9e-46</expectation>
+      <identity>73.4</identity>
+      <positives>92.8</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="139">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:::::::::.::.:::::::::::::::: ::::::::.: :: :.::::::::.::::.::.:::::::::. .:: ..::::.::  .:.:::. ::.:::. ::::::.. :..::.:.:::::::::..</pattern>
+      <matchSeq start="1" end="139">MAKKVVALIKLALPAGKANPAPPVGPALGQHGVNIMAFCKEYNAKTADKPGMIIPVEISVFEDRSFTFILKTPPASVLIRKAAGVEKGSSEPNKNKVASITREQLREIAQTKLPDLNANDIDAAMNIIEGTARNMGITVNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RL11_RIPO1" ac="B7JWT8" length="141" description="50S ribosomal protein L11 OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>679</score>
+      <smithWatermanScore>679</smithWatermanScore>
+      <zScore>962.3</zScore>
+      <bits>183.9</bits>
+      <expectation>4.9e-46</expectation>
+      <identity>71.9</identity>
+      <positives>92.8</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="139">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:.:::::::.::.:::::::::::::::: ::::::::.: :.::..:::::::.::::.::::::::::::. .:: ...::..:: ..:::::. ::.:::. :.::::.. : .::::: :::::::..:</pattern>
+      <matchSeq start="1" end="139">MAKKVVAMIKLALPAGKANPAPPVGPALGQHGVNIMAFCKEYNAKTADQAGMVIPVEISVFEDRSFTFVLKTPPASVLIRKAAGVERGSNQPNKTKVGSITQDQLREIAQTKMPDLNANDIEAAMKIVAGTARNMGVTIKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RL11_NOSP7" ac="B2JA74" length="141" description="50S ribosomal protein L11 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>678</score>
+      <smithWatermanScore>678</smithWatermanScore>
+      <zScore>960.9</zScore>
+      <bits>183.7</bits>
+      <expectation>5.9e-46</expectation>
+      <identity>72.3</identity>
+      <positives>92.2</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>::::..:.::::: :.::.::::::::::::::::  :::::::.: :.::..:::::::.::::.::::::::::::. .:::..:::..::  .::::::.::.:::. ::::::.. :..::::: :::.::::.. :</pattern>
+      <matchSeq start="1" end="141">MAKKVVAVIKLALNAGKANPAPPVGPALGQHGVNIMMFCKEYNAKTADQAGMVIPVEISVFEDRSFTFVLKTPPASVLIRKAAKVEKGSNEPNKKKVGSITKAQLQEIAQTKLPDLNANDIDAAMKIVAGTAKNMGITVKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RL11_PROMP" ac="Q7V381" length="141" description="50S ribosomal protein L11 OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=rplK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>678</score>
+      <smithWatermanScore>678</smithWatermanScore>
+      <zScore>960.9</zScore>
+      <bits>183.7</bits>
+      <expectation>5.9e-46</expectation>
+      <identity>73.0</identity>
+      <positives>92.2</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="141">MAKKITALIKLALPASKATPAPPVGPALGQHGVNIAAFCKEYNARTNDKAGLIIPVEISVYEDRSYTFVLKTPPASVLLANAAKIKKGSSNPNTVSVGSITKTQLEEIANIKLPDLNTTKISSAMKIVEGTARNMGISILD</querySeq>
+      <pattern>:::::.:.::::: :.::.:::::::::::::::: ::::::::::.::::..:::::::.::::.::. ::::::::...:: :.::... .  :::.:.:.::::::. :::::: :.: ::::..::::::::.:: .</pattern>
+      <matchSeq start="1" end="141">MAKKIVAVIKLALQAGKANPAPPVGPALGQHGVNIMAFCKEYNARTQDKAGFVIPVEISVFEDRSFTFITKTPPASVLITKAAGIEKGAGESSKGSVGNISKSQLEEIAKTKLPDLNCTSIESAMKVIEGTARNMGVSITE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

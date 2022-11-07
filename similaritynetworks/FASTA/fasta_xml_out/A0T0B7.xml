@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162937-0146-82420205-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162937-0146-82420205-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162937-0146-82420205-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0B7|PETD_PHATC" type="PROTEIN" length="160"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:29:37+00:00" end="2022-11-07T16:29:40+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PETD_PHATC" ac="A0T0B7" length="160" description="Cytochrome b6-f complex subunit 4 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1097</score>
+      <smithWatermanScore>1097</smithWatermanScore>
+      <initn>1097</initn>
+      <init1>1097</init1>
+      <opt>1097</opt>
+      <zScore>1397.2</zScore>
+      <bits>264.7</bits>
+      <expectation>2.9e-70</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PETD_TRICV" ac="P49489" length="160" description="Cytochrome b6-f complex subunit 4 OS=Trieres chinensis OX=1514140 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1023</score>
+      <smithWatermanScore>1023</smithWatermanScore>
+      <initn>1023</initn>
+      <init1>1023</init1>
+      <opt>1023</opt>
+      <zScore>1303.7</zScore>
+      <bits>247.5</bits>
+      <expectation>4.7e-65</expectation>
+      <identity>89.4</identity>
+      <positives>97.5</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::. .:::..: .::.:.::::.:::::::::::::::::::::::::::::::::::::::: :: :::::::::::::::::::::.:::.::.:::::::::::::.:::::.:::::</pattern>
+      <matchSeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPVCILGTFACCIGLAVMAPTQMGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMARVPAGLITVPFIENVNKFQNPFRRPIASLVFILGFFTAVWLGIGACLPIDKAVSLGFW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PETD_THAPS" ac="A0T0T7" length="160" description="Cytochrome b6-f complex subunit 4 OS=Thalassiosira pseudonana OX=35128 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>999</score>
+      <smithWatermanScore>999</smithWatermanScore>
+      <initn>1061</initn>
+      <init1>999</init1>
+      <opt>999</opt>
+      <zScore>1273.4</zScore>
+      <bits>241.9</bits>
+      <expectation>2.3e-63</expectation>
+      <identity>86.3</identity>
+      <positives>96.9</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::.:::::::::::::::::::::::::::::::::::.::. .:::..: .::.:.::::.::::::::::::::::::::::::::::::::::::::::::: :::::::::::::::::::::.:::.:: ::. :::.:::::.:::::.:::.:</pattern>
+      <matchSeq start="1" end="160">MSIIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYLFPVCILGTFACCIGLAVMAPTQMGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPAGLITVPFIENVNKFQNPFRRPIASLVFITGFIFAVWFGIGACLPIDKAVSLGYW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PETD_EMIHU" ac="Q4G3F7" length="160" description="Cytochrome b6-f complex subunit 4 OS=Emiliania huxleyi OX=2903 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>929</score>
+      <smithWatermanScore>929</smithWatermanScore>
+      <initn>986</initn>
+      <init1>929</init1>
+      <opt>929</opt>
+      <zScore>1185.0</zScore>
+      <bits>225.5</bits>
+      <expectation>1.9e-58</expectation>
+      <identity>80.6</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::..:::::.::::::::::::::::::::::::::::.::. .:::..: .::.:: :: ::: :::: ::::::::::::::::::::.::::::::.:::::.:::::::::::::::::::::.:::.:.:: ::: :::::: .:: .:..:::.</pattern>
+      <matchSeq start="1" end="160">MSILKKPDLADPKLRAKLAKGMGHNYYGEPAWPNDLLYIFPVCILGTIACCIGLGVLEPTPLGEKADPFATPLEILPEWYFFPTFNLLRVIPNKLLGVLSMAAVPIGLITVPFIENVNKFQNPFRRPVASLVFLFGTFTAFWLGIGATMPITQALTLGFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PETD_GUITH" ac="O78415" length="160" description="Cytochrome b6-f complex subunit 4 OS=Guillardia theta OX=55529 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>914</score>
+      <smithWatermanScore>914</smithWatermanScore>
+      <initn>989</initn>
+      <init1>914</init1>
+      <opt>914</opt>
+      <zScore>1166.1</zScore>
+      <bits>222.0</bits>
+      <expectation>2.2e-57</expectation>
+      <identity>78.7</identity>
+      <positives>94.4</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:::.::::::::::::::::::::::::::::::::::.::...::::.:..:::::::. .:: :::: ::::::::::::::::::::.::::::::.:::::.:::::::::.:::::::::::.:  .:.:.   :.:::::: .::.::..::..</pattern>
+      <matchSeq start="1" end="160">MSVLKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGTLACVIGLSVLAPSPIGEKADPFATPLEILPEWYFFPTFNLLRVIPNKLLGVLSMAAVPVGLITVPFIESVNKFQNPFRRPVAMTVFVFSVVFAIWLGIGATMPINKALTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PETD_EUGGR" ac="Q84TU6" length="173" description="Cytochrome b6-f complex subunit 4, chloroplastic (Fragment) OS=Euglena gracilis OX=3039 GN=petD PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>901</score>
+      <smithWatermanScore>901</smithWatermanScore>
+      <initn>901</initn>
+      <init1>901</init1>
+      <opt>901</opt>
+      <zScore>1149.0</zScore>
+      <bits>218.9</bits>
+      <expectation>1.9e-56</expectation>
+      <identity>79.2</identity>
+      <positives>93.1</positives>
+      <overlap>159</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="160">-------------MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>              .:.:::::.:::::::::::::.::::::::::::::.::. .:::.. ::::.:. ::  ::::.:: ::::::::::::::::::::.::::::::.::::: :::::::::::::::::::::.:. .:..:  .:.:::::: .:::::::::::</pattern>
+      <matchSeq start="15" end="173">ESALERRSSSVVMNNVMKKPDLSDPKLRAKLAKGMGRNYYGEPAWPNDLLYMFPVCILGTFAAIVGLAVMQPTPTGEPANPFATPLEILPEWYFFPTFNLLRVIPNKLLGVLSMAAVPAGLITVPFIENVNKFQNPFRRPVATSVFLLGTVVAIWLGIGATLPIDKAISLGFW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PETD_TUPAK" ac="Q3ZJ11" length="160" description="Cytochrome b6-f complex subunit 4 OS=Tupiella akineta OX=160070 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>880</score>
+      <smithWatermanScore>880</smithWatermanScore>
+      <initn>928</initn>
+      <init1>872</init1>
+      <opt>880</opt>
+      <zScore>1123.2</zScore>
+      <bits>214.0</bits>
+      <expectation>5.3e-55</expectation>
+      <identity>73.1</identity>
+      <positives>94.4</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.:::::::::: :::::::::::::::::::::::::.::....:...:..::.:: :. .::::.:: :::::::::::.:::.:::..:::::::: ::::: ::.:::::::.::::::::::.:. .:..: :.:.:::::::.::: ...::..</pattern>
+      <matchSeq start="1" end="160">MAVIKKPDLTDPVLRAKLAKGMGHNYYGEPAWPNDLLYMFPVVIFGSFACVIGLAVLDPAAVGEPANPFATPLEILPEWYFYPTFQLLRTVPNKLLGVLLMAAVPAGLLTVPFIENINKFQNPFRRPIATTVFLIGTFAAIWLGIGACLPIDISLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PETD_CYAPA" ac="P48122" length="160" description="Cytochrome b6-f complex subunit 4 OS=Cyanophora paradoxa OX=2762 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>880</score>
+      <smithWatermanScore>880</smithWatermanScore>
+      <initn>932</initn>
+      <init1>880</init1>
+      <opt>880</opt>
+      <zScore>1123.2</zScore>
+      <bits>214.0</bits>
+      <expectation>5.3e-55</expectation>
+      <identity>74.4</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::..:::::.::.:::::::::::::::::::::::::.::...::...:  ::.:: :. .:::::::.:::::::::::::.:..:::.:::::::. ::::: :::.:::::::::::::::::.:: .:.:: :.:.::::::  ::::...::..</pattern>
+      <matchSeq start="1" end="160">MSILKKPDLNDPELRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGSIACCGGLAVLDPALIGEPADPFSTPLEILPEWYFFPVFQILRVIPNKLLGVVLMAAVPAGLIAVPFIENVNKFQNPFRRPVASAVFLFGTFVAIWLGIGATFPIDKSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PETD_GRATL" ac="Q6B904" length="160" description="Cytochrome b6-f complex subunit 4 OS=Gracilaria tenuistipitata var. liui OX=285951 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>877</score>
+      <smithWatermanScore>877</smithWatermanScore>
+      <initn>933</initn>
+      <init1>877</init1>
+      <opt>877</opt>
+      <zScore>1119.4</zScore>
+      <bits>213.3</bits>
+      <expectation>8.7e-55</expectation>
+      <identity>75.6</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::.:::::::::::::::::::::.::::::::::.::.::...:: :.: ::::.: :. .::::.:: ::::::::::::::::::::.::::.:::.::.:: :::::::::.:::::::::::.:. .:. : ..:::::::: .:..:::.::..</pattern>
+      <matchSeq start="1" end="160">MSIIKKPDLTDPKLRAKLAKGMGHHYYGEPAWPNDILYMFPVVILGILACDVGLSILEPSVIGEPANPFATPLEILPEWYFFPTFNLLRVIPNKLVGVLSMASVPAGLITVPFIESVNKFQNPFRRPIATSVFLVGTIVAVWLGIGATMPLSKAITLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PETD_NEOYE" ac="Q1XDE7" length="160" description="Cytochrome b6-f complex subunit 4 OS=Neopyropia yezoensis OX=2788 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>877</score>
+      <smithWatermanScore>877</smithWatermanScore>
+      <initn>934</initn>
+      <init1>877</init1>
+      <opt>877</opt>
+      <zScore>1119.4</zScore>
+      <bits>213.3</bits>
+      <expectation>8.7e-55</expectation>
+      <identity>73.8</identity>
+      <positives>94.4</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::..:::::::::::::::::::::::::::::::::::::....::..: .::..: :...:: ..:: ::::::::::::::::::::.::::::::.::::: ::.::::::::::::::::::.:. .:..:  ...:::::: .::..::.::..</pattern>
+      <matchSeq start="1" end="160">MSILKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPVVIIGTFACSIGLAILEPSSIGEKSNPFATPLEILPEWYFFPTFNLLRVIPNKLLGVLSMAAVPAGLLTVPFIENVNKFQNPFRRPIATTVFLIGTVVSIWLGIGATMPINNAITLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PETD_PORPU" ac="P51340" length="160" description="Cytochrome b6-f complex subunit 4 OS=Porphyra purpurea OX=2787 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>873</score>
+      <smithWatermanScore>873</smithWatermanScore>
+      <initn>964</initn>
+      <init1>873</init1>
+      <opt>873</opt>
+      <zScore>1114.3</zScore>
+      <bits>212.4</bits>
+      <expectation>1.7e-54</expectation>
+      <identity>74.4</identity>
+      <positives>93.1</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::..:::::::::::::::::::::::::::::::::::::...:::..: .::..: :..::: ..:: ::::::::::::::::::::.::::::::.::::: ::.::::::::::::::::::.:.  :...   ..:::::: .::..::.::..</pattern>
+      <matchSeq start="1" end="160">MSILKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPVVILGTIACSIGLAILEPSSLGEKSNPFATPLEILPEWYFFPTFNLLRVIPNKLLGVLSMAAVPAGLLTVPFIENVNKFQNPFRRPIATTIFLISTVITIWLGIGATMPINNAITLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PETD_SPIMX" ac="Q71KP3" length="160" description="Cytochrome b6-f complex subunit 4 OS=Spirogyra maxima OX=3180 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>863</score>
+      <smithWatermanScore>863</smithWatermanScore>
+      <initn>913</initn>
+      <init1>852</init1>
+      <opt>863</opt>
+      <zScore>1101.7</zScore>
+      <bits>210.1</bits>
+      <expectation>8.4e-54</expectation>
+      <identity>73.1</identity>
+      <positives>93.1</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::::: :::::::::::::::::::::::::.::....::..: :::.:: :...::::.:: :::::::::::::.:..::..:::::::: ::::: ::.::::.:::::::::::::.:. .:.::  .:.:::::: .::::...::..</pattern>
+      <matchSeq start="1" end="160">MGVTKKPDLTDPVLRAKLAKGMGHNYYGEPAWPNDLLYIFPVVIFGTIACNVGLAVLEPSMIGEPANPFATPLEILPEWYFFPVFQILRTVPNKLLGVLLMAAVPAGLLTVPFLENVNKFQNPFRRPVATTVFLFGTVVALWLGIGAALPIDKSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PETD_STAPU" ac="Q32RU6" length="160" description="Cytochrome b6-f complex subunit 4 OS=Staurastrum punctulatum OX=102822 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>859</score>
+      <smithWatermanScore>859</smithWatermanScore>
+      <initn>911</initn>
+      <init1>852</init1>
+      <opt>859</opt>
+      <zScore>1096.7</zScore>
+      <bits>209.1</bits>
+      <expectation>1.6e-53</expectation>
+      <identity>74.4</identity>
+      <positives>91.9</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.:::::::::: :::::::::::.:::::::::::::.::. .:::..: :::.:: :. .::::.:: :::::::::::::.:..:::.:::::::: ::.::.:::::::::::::::::::::.:.  :..:  .:::::::: .::: ...::..</pattern>
+      <matchSeq start="1" end="160">MGVIKKPDLTDPVLRAKLAKGMGHHYYGEPAWPNDLLYMFPVCILGTIACNVGLAVLEPSLIGEPANPFATPLEILPEWYFFPVFQILRVVPNKLLGVLLMASVPVGLITVPFIENVNKFQNPFRRPVATTIFLIGTVVAVWLGIGATLPIDTSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PETD_MASLA" ac="P83792" length="160" description="Cytochrome b6-f complex subunit 4 OS=Mastigocladus laminosus OX=83541 GN=petD PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>859</score>
+      <smithWatermanScore>859</smithWatermanScore>
+      <initn>896</initn>
+      <init1>849</init1>
+      <opt>859</opt>
+      <zScore>1096.7</zScore>
+      <bits>209.1</bits>
+      <expectation>1.6e-53</expectation>
+      <identity>72.5</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:...:::::.:::::::::::::::::::::::::::::::....::..:::.:::: :...::::::: ::::::::::..:.:..:: .:::::::: ::.:::::: :::::::::::::::::.:.  :.:: ....::::::  :.::...::..</pattern>
+      <matchSeq start="1" end="160">MATLKKPDLSDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPVVIMGTFACIVALSVLDPAMVGEPADPFATPLEILPEWYLYPVFQILRSVPNKLLGVLLMASVPLGLILVPFIENVNKFQNPFRRPVATTIFLFGTLVTIWLGIGATFPLDKTLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PETD_CHAVU" ac="Q1ACH0" length="160" description="Cytochrome b6-f complex subunit 4 OS=Chara vulgaris OX=55564 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>859</score>
+      <smithWatermanScore>859</smithWatermanScore>
+      <initn>906</initn>
+      <init1>848</init1>
+      <opt>859</opt>
+      <zScore>1096.7</zScore>
+      <bits>209.1</bits>
+      <expectation>1.6e-53</expectation>
+      <identity>71.9</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::::: :::::::::::::::::::::::::.::...:::..: .::.:: :...::::.:: :::::::::::::.:..::..:::::::: ::.::.::.::::.:::::::::::::.:. .:..:  .:.:::::: .::::...::..</pattern>
+      <matchSeq start="1" end="160">MGVTKKPDLTDPILRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGTIACTIGLAVLDPSMIGEPANPFATPLEILPEWYFFPVFQILRTVPNKLLGVLLMASVPVGLLTVPFLENVNKFQNPFRRPVATTVFLIGTAVAIWLGIGAALPIDKSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PETD_ACOCL" ac="Q3V503" length="160" description="Cytochrome b6-f complex subunit 4 OS=Acorus calamus OX=4465 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>858</score>
+      <smithWatermanScore>858</smithWatermanScore>
+      <initn>897</initn>
+      <init1>847</init1>
+      <opt>858</opt>
+      <zScore>1095.4</zScore>
+      <bits>208.9</bits>
+      <expectation>1.9e-53</expectation>
+      <identity>72.5</identity>
+      <positives>93.8</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::.:: :::::::::::::::::::::::::.::...:::..: :::..: :...::::::: :::::::::::::.:..::..:::::::: ::.:::::.::::.:::::::::::::.:. .:..:  .:.:::::: .::::...::..</pattern>
+      <matchSeq start="1" end="160">MGVTKKPDLNDPVLRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGTIACNVGLAILEPSMIGEPADPFATPLEILPEWYFFPVFQILRTVPNKLLGVLLMASVPLGLFTVPFLENVNKFQNPFRRPVATTVFLIGTAVALWLGIGATLPIDKSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PETD_NEPOL" ac="Q9TL32" length="160" description="Cytochrome b6-f complex subunit 4 OS=Nephroselmis olivacea OX=31312 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>858</score>
+      <smithWatermanScore>858</smithWatermanScore>
+      <initn>924</initn>
+      <init1>858</init1>
+      <opt>858</opt>
+      <zScore>1095.4</zScore>
+      <bits>208.9</bits>
+      <expectation>1.9e-53</expectation>
+      <identity>73.8</identity>
+      <positives>92.5</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>::: :::::::: :::::::::::::::::::::::::.::...::::.::.::.:: :. .::::.:: :::::::::::::.:.:::..:::::::: ::::: ::.::::::..::::::::::.:. .:..:  .:.:::::: .::: ...::..</pattern>
+      <matchSeq start="1" end="160">MSVTKKPDLTDPVLRAKLAKGMGHNYYGEPAWPNDLLYMFPVVILGTLSCITGLAVLDPAAIGEPANPFATPLEILPEWYFFPVFQLLRTVPNKLLGVLLMAAVPAGLLTVPFIESINKFQNPFRRPVATTVFLIGTVVAIWLGIGATLPIDISLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PETD_MARPO" ac="P06250" length="160" description="Cytochrome b6-f complex subunit 4 OS=Marchantia polymorpha OX=3197 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>858</score>
+      <smithWatermanScore>858</smithWatermanScore>
+      <initn>905</initn>
+      <init1>847</init1>
+      <opt>858</opt>
+      <zScore>1095.4</zScore>
+      <bits>208.9</bits>
+      <expectation>1.9e-53</expectation>
+      <identity>72.5</identity>
+      <positives>93.1</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::.:: :::::::::::::::::::::::::.::...:::..: :::.:: :...::::.:: :::::::::::::.:..::..:::::::: ::::: ::.::::.:::::::::::::.:. .:..:  .:.:::::: .::::...::..</pattern>
+      <matchSeq start="1" end="160">MGVTKKPDLSDPILRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGTIACTVGLAVLEPSMIGEPANPFATPLEILPEWYFFPVFQILRTVPNKLLGVLLMAAVPAGLLTVPFLENVNKFQNPFRRPVATTVFLIGTVVALWLGIGAALPIDKSLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PETD_ANTAG" ac="Q85AY5" length="160" description="Cytochrome b6-f complex subunit 4 OS=Anthoceros angustus OX=48387 GN=petD PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>857</score>
+      <smithWatermanScore>857</smithWatermanScore>
+      <initn>914</initn>
+      <init1>846</init1>
+      <opt>857</opt>
+      <zScore>1094.1</zScore>
+      <bits>208.7</bits>
+      <expectation>2.2e-53</expectation>
+      <identity>73.0</identity>
+      <positives>92.5</positives>
+      <overlap>159</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="159">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::.:: :::::::::::::::::::::::::.::...:::..: :::.:: :...::::.:: :::::::::::::.:..::..:::::::: ::::: ::.::::.:::::::::::::.:.  :..:  .:.:::::: .::::...::.</pattern>
+      <matchSeq start="1" end="159">MGVTKKPDLSDPVLRAKLAKGMGHNYYGEPAWPNDLLYIFPVVILGTIACTVGLAVLEPSMIGEPANPFATPLEILPEWYFFPVFQILRTVPNKLLGVLLMAAVPAGLLTVPFLENVNKFQNPFRRPVATTIFLIGTAVAIWLGIGAALPIDKSLTLGLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PETD_CHLVU" ac="P56322" length="160" description="Cytochrome b6-f complex subunit 4 OS=Chlorella vulgaris OX=3077 GN=petD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>855</score>
+      <smithWatermanScore>855</smithWatermanScore>
+      <initn>911</initn>
+      <init1>843</init1>
+      <opt>855</opt>
+      <zScore>1091.6</zScore>
+      <bits>208.2</bits>
+      <expectation>3.1e-53</expectation>
+      <identity>71.3</identity>
+      <positives>92.5</positives>
+      <overlap>160</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="160">MSVIKKPDLTDPKLRAKLAKGMGHNYYGEPAWPNDLLYVFPLTMLGTLTCIVGLSVLAPTQLGEPADPFNTPLEILPEWYFFPTFNLLRVLPNKLLGVLAMAAVPLGLITVPFIENVNKFQNPFRRPLASLTFIFGFFTAVWLGIGACVPIDKAISLGFW</querySeq>
+      <pattern>:.: :::::.:: :::::::::::::::::::::::::.::....::..:..::::: :. .::::.:: :::::::::::.:.:..:::.:::::::: ::::: ::.:::::::.::::::::::.:. .:..:  .:.:::::: .::: ...::..</pattern>
+      <matchSeq start="1" end="160">MAVTKKPDLSDPVLRAKLAKGMGHNYYGEPAWPNDLLYIFPVVIFGTFACVIGLSVLDPAAIGEPANPFATPLEILPEWYFYPVFQILRVVPNKLLGVLLMAAVPAGLLTVPFIENINKFQNPFRRPVATTVFLIGTVAAIWLGIGAALPIDISLTLGLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

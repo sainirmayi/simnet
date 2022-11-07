@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-172356-0825-88159873-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-172356-0825-88159873-p2m.m9&quot; -m &quot;F10 fasta-R20221107-172356-0825-88159873-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FNU7|LIS1_PHATC" type="PROTEIN" length="439"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:23:56+00:00" end="2022-11-07T17:24:01+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="LIS1_PHATC" ac="B7FNU7" length="439" description="Lissencephaly-1 homolog OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_17300 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2946</score>
+      <smithWatermanScore>2946</smithWatermanScore>
+      <zScore>3801.6</zScore>
+      <bits>712.5</bits>
+      <expectation>3.5e-204</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="439">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="439">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="LIS1B_SALSA" ac="B5X3C4" length="410" description="Lissencephaly-1 homolog B OS=Salmo salar OX=8030 GN=pafah1b1-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1215</score>
+      <smithWatermanScore>1215</smithWatermanScore>
+      <zScore>1558.9</zScore>
+      <bits>297.5</bits>
+      <expectation>2.9e-79</expectation>
+      <identity>44.3</identity>
+      <positives>70.8</positives>
+      <overlap>438</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPK--NNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--:.---:: .    :  .  .   ..-. ::-----:::::::.. ::::::.:::------.:..  .     :: . .  :---- .. .:: : ...:.:: : :: :  ::::.:.:..:::...::::.:.:.. :::::::..:. ..:  ::. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:.. ::.: .:.  : .::: .    :::. :: .:: .. :.     .  .::: ::.::: ::.  . . : --. ..  ::.      .:.:::::.:...: .: . :::.: .::::::.::.::.: .:.: .:::..:..: ::.::..::- ::.:::.::::: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNG--YE---EAYSTFKKEAELDMNEELDK-KYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEITLGGPVAQKRD----PKEWIPRPPERYALSGHRSPVTRVIFHPVFSVMVTSSEDATIKVWDYEAGDFERTLKGHTDSVQDISFDQTGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVATGYCVKTFTGHREWVRMVRPNQDGSLIASCSNDQTVRVWVATSKECKAELREHEHVVECIAWAPDTAHPTILEATSSESKKNGKSGPFLLSGSRDKTIKMWDISTGMCLMTLVGHDNWVRGVLVHPGGRFIVSCADDKTLRIWDYKNKRCMKTL-CAHEHFVTSLDMHQTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="LIS1A_DANRE" ac="Q7T394" length="410" description="Lissencephaly-1 homolog A OS=Danio rerio OX=7955 GN=pafah1b1a PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1214</score>
+      <smithWatermanScore>1214</smithWatermanScore>
+      <zScore>1557.6</zScore>
+      <bits>297.2</bits>
+      <expectation>3.4e-79</expectation>
+      <identity>44.3</identity>
+      <positives>71.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .   . ::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::::.:.. :::::::..:. ..:  ::. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:.. ::.: .:.  : .::: .    ::.. ::..:: .. :.     .  .::: ::.::: :..  ... :       :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.::.:.::.: .:::..:..: ::.:: .::-.::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEINIGGPIGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVIVSASEDATIKVWDHETGDFERTLKGHTDSVQDISFDHTGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVATGYCVKTFTGHREWVRMVRPNQDGTLIASSSNDQTVRVWVVATKECKAELREHEHVVECISWAPESAHPTILEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSIGMCLMTLVGHDNWVRGVLVHPGGKYIVSCADDKTLRIWDYKNKRCTKTL-SAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="LIS1_BOVIN" ac="P43033" length="410" description="Platelet-activating factor acetylhydrolase IB subunit beta OS=Bos taurus OX=9913 GN=PAFAH1B1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1206</score>
+      <smithWatermanScore>1206</smithWatermanScore>
+      <zScore>1547.2</zScore>
+      <bits>295.3</bits>
+      <expectation>1.3e-78</expectation>
+      <identity>44.0</identity>
+      <positives>71.5</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG-DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :-.:  .: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEAAYSVFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVEDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LIS1_CHICK" ac="Q9PTR5" length="410" description="Lissencephaly-1 homolog OS=Gallus gallus OX=9031 GN=PAFAH1B1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1205</score>
+      <smithWatermanScore>1205</smithWatermanScore>
+      <zScore>1545.9</zScore>
+      <bits>295.1</bits>
+      <expectation>1.5e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  ::. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...    .    :.  .. . --.:.:::::.:...: .: . :::.: .::::::.::.: .:..::: .:::..::.:.::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDVNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHTGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSTISEATGSETKKSGKPGPFLLSGSRDKTIKMWDISTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDFKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LIS1_BRAFL" ac="C3XVT5" length="406" description="Lissencephaly-1 homolog OS=Branchiostoma floridae OX=7739 GN=BRAFLDRAFT_59218 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1204</score>
+      <smithWatermanScore>1204</smithWatermanScore>
+      <zScore>1544.7</zScore>
+      <bits>294.8</bits>
+      <expectation>1.8e-78</expectation>
+      <identity>44.0</identity>
+      <positives>70.6</positives>
+      <overlap>436</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--:....::. .---:  .:     . --------: :::::::.. ::::::..::------::.   ..   :::---- :    .  . .:: : ...:.:: : .: :  :::..:.::.:::...:.::.:.:.. :::::::..:. ..:   :. :::::.:..::::::::.  :::..::::..::: :.:-.::.:--------.::::: :.:.:.: ::.: .:.  : .::::. .  :::. :: .:: .. :.     .  .::: ::.::: ::.  ..   . .    ...      .:.:::::.:...: .: . :.:.: .::::::.:. ::.:.::.:.::::.:::.: ::.:: .:::-::.:: .:.:.: . : ...::::::.. :</pattern>
+      <matchSeq start="1" end="403">MVLSQRQREELNKAIADYLRSNG--YESALEAFQK---EAEMPGEIEKKY--------TGLLEKKWTSVIRLQKKVMDLE------AKLAEAEKEFQSGG----PNKKERSPSEWIPRPPARYSLSGHRSPITRVLFHPVYSVMVSASEDATIKIWDYETGDFERTLKGHTDAVQDVSFDQQGKLLASCSADMTIKLWDFQTFENIKTMHGHDHNVSSVHFMP-NGDFL--------ISASRDKTIKMWELATGYCVKTFTGHREWVRTVRVNQDGSLLASCSNDQTVRVWVVANKECKAELREHEHVVECIAWAPESCNGHVSEVMGAEKKGRSGPFLLSGSRDKTIKMWDISTGVCIMTLVGHDNWVRGVVWHPGGKYIISASDDKTIRVWDYKNKRCQKTLE-AHQHFCTSIDFHRSAPYVITGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="LIS1_RAT" ac="P63004" length="410" description="Platelet-activating factor acetylhydrolase IB subunit alpha OS=Rattus norvegicus OX=10116 GN=Pafah1b1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1203</score>
+      <smithWatermanScore>1203</smithWatermanScore>
+      <zScore>1543.3</zScore>
+      <bits>294.6</bits>
+      <expectation>2.1e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LIS1_FELCA" ac="B0LSW3" length="410" description="Platelet-activating factor acetylhydrolase IB subunit beta OS=Felis catus OX=9685 GN=PAFAH1B1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1203</score>
+      <smithWatermanScore>1203</smithWatermanScore>
+      <zScore>1543.3</zScore>
+      <bits>294.6</bits>
+      <expectation>2.1e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="LIS1_HUMAN" ac="P43034" length="410" description="Platelet-activating factor acetylhydrolase IB subunit beta OS=Homo sapiens OX=9606 GN=PAFAH1B1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1203</score>
+      <smithWatermanScore>1203</smithWatermanScore>
+      <zScore>1543.3</zScore>
+      <bits>294.6</bits>
+      <expectation>2.1e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDVNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="LIS1_MOUSE" ac="P63005" length="410" description="Platelet-activating factor acetylhydrolase IB subunit beta OS=Mus musculus OX=10090 GN=Pafah1b1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1203</score>
+      <smithWatermanScore>1203</smithWatermanScore>
+      <zScore>1543.3</zScore>
+      <bits>294.6</bits>
+      <expectation>2.1e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="LIS1_MACFA" ac="Q8HXX0" length="410" description="Platelet-activating factor acetylhydrolase IB subunit alpha OS=Macaca fascicularis OX=9541 GN=PAFAH1B1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1201</score>
+      <smithWatermanScore>1201</smithWatermanScore>
+      <zScore>1540.7</zScore>
+      <bits>294.1</bits>
+      <expectation>2.9e-78</expectation>
+      <identity>44.1</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :.:::.:..::::::: . ::.:..::::..:::...:-.::--------.:.::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLTSCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HLVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="LIS1_XENTR" ac="Q6NZH4" length="410" description="Lissencephaly-1 homolog OS=Xenopus tropicalis OX=8364 GN=pafah1b1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1201</score>
+      <smithWatermanScore>1201</smithWatermanScore>
+      <zScore>1540.7</zScore>
+      <bits>294.1</bits>
+      <expectation>2.9e-78</expectation>
+      <identity>43.6</identity>
+      <positives>71.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.:..:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...    .    :.  .. . --.:.:::::.:...: .: . :::.: .::::::.: .::.:..::: .:::.::..: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPIGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVTASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSTISDATGSETKKSGKPGPFLLSGSRDKTIKMWDISIGMCLMTLVGHDNWVRGVQFHPGGKFILSCADDKTIRIWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="LIS1_SCHMA" ac="C4Q0P6" length="417" description="Lissencephaly-1 homolog OS=Schistosoma mansoni OX=6183 GN=Smp_129340 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1201</score>
+      <smithWatermanScore>1201</smithWatermanScore>
+      <zScore>1540.6</zScore>
+      <bits>294.1</bits>
+      <expectation>3e-78</expectation>
+      <identity>44.8</identity>
+      <positives>71.4</positives>
+      <overlap>444</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAK-IHAHRSAAGSGGGALEANDGAGGARR-------LLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::. .:. .: .:: . :--: :...:. . .------. .  .. .  :-----:::::::.. ::::::..:: . ..  :-... ..: : : ..--:  :.: . :------- .:: : . :: :: : .: :  :: ..: ::.:::.:.::::.:.::. .::::::..:. .:: :.:. :::::.:...:::::  : ::::: ::::..:::.:::-.::.:--------.::::: :.:.:.. ::.: .:.  :..:.:..    .:.. :: .:: .: ..  .  .  : :::::.::: ::. ..---:.:  . ::.   ..-- :::::::::.:.: :. . ::.:: .::::::....::.:  .::.::::.:::.:.::.:: .::-:::.:::.:::..   :  ..:::::::. :</pattern>
+      <matchSeq start="1" end="414">MVLAQRQKEELNRAIADYLFANG--YVKALNAFREES------QLAGENDRKYDG-----LLEKKWTSVIRLQKKVMDLEAKLNEAEKEFQSMQNAIGFGVAG--AAPGSGLSDRSDRRDVDAIPRPPAKFTLTGHRSPITRVLFHPHYNVFVSASEDASIKVWDYETGEFEHTLKGHTDSVQDVAFDPSGKFLASCSADMQVKLWDFTIYQCIKTLTGHDHNVSSVAFLP-SGDFL--------VSASRDKTIKMWEVSTGYCTKTFIGHTEWIRSVRPSPEGNLLASCSNDHTIRIWSVESRECQVVLRGHEHVVECIAWASH---PQNLNSLPSSMNSSL--LLVSGSRDRTIRFWDVNIGICLFVLIGHDNWVRQLVFHPHGRLLLSASDDKTIRVWDLKNRRCHKTL-NAHSHFVTSLDVNRLAPYAITGSVDQTIHIWDCR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="LIS1_PONAB" ac="Q5REG7" length="410" description="Platelet-activating factor acetylhydrolase IB subunit alpha OS=Pongo abelii OX=9601 GN=PAFAH1B1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1200</score>
+      <smithWatermanScore>1200</smithWatermanScore>
+      <zScore>1539.4</zScore>
+      <bits>293.9</bits>
+      <expectation>3.5e-78</expectation>
+      <identity>43.9</identity>
+      <positives>71.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::.... . :  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSIQDIPFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LIS1_PIG" ac="Q9GL51" length="410" description="Platelet-activating factor acetylhydrolase IB subunit alpha OS=Sus scrofa OX=9823 GN=PAFAH1B1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1199</score>
+      <smithWatermanScore>1199</smithWatermanScore>
+      <zScore>1538.1</zScore>
+      <bits>293.6</bits>
+      <expectation>4.1e-78</expectation>
+      <identity>43.9</identity>
+      <positives>71.6</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::.:: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSAARDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LIS1A_SALSA" ac="B5X3Z6" length="410" description="Lissencephaly-1 homolog A OS=Salmo salar OX=8030 GN=pafah1b1-1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1197</score>
+      <smithWatermanScore>1197</smithWatermanScore>
+      <zScore>1535.6</zScore>
+      <bits>293.2</bits>
+      <expectation>5.7e-78</expectation>
+      <identity>43.8</identity>
+      <positives>71.0</positives>
+      <overlap>438</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPK--NNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--:.---:: .    :  .  .   ..-. ::-----:::::::.. ::::::.:::------.:..  .     ::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  ::. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:.. ::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ... : --. .   ::.      .:.:::::.:...: :: . :::.: .::::::..:.::.:..::: .:::..:..: ::.::..::-.::.:::.:::.: . : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNG--YE---EAYSTFKKEAELDMNEELDK-KYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEITLGGPIAQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHTGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVATGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVASKECKAELREHEHVVECISWAPESAHPTILEATGSESKKSGKPGPFLLSGSRDKTIKMWDVSIGMCLMTLVGHDNWVRGMLVHPGGKFILSCADDKTLRIWDYKNKRCMKTL-GAHEHFVTSLDFHKNAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LIS1_TETNG" ac="Q4RJN5" length="410" description="Lissencephaly-1 homolog OS=Tetraodon nigroviridis OX=99883 GN=pafah1b1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1196</score>
+      <smithWatermanScore>1196</smithWatermanScore>
+      <zScore>1534.3</zScore>
+      <bits>292.9</bits>
+      <expectation>6.8e-78</expectation>
+      <identity>43.6</identity>
+      <positives>71.7</positives>
+      <overlap>438</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPK--NNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--:.---:: .    :  . ..   ..-. ::-----:::::::.. ::::::.:::------.:..  .     :: . .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  ::. :::::.:..:::::::.. ::.:..::::..:::...:-.::--------...::::: :.:.:.. ::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ... : --. ..  ::.      .:.:::::.:...: :: . :::.: .::::::.::.::.:..:.. .:::..:..: ::.::..::- ::.:::.:::.: . : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNG--YE---EAYSTFKKEAELDNNEELDK-KYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEITLGGPVSQKRD----PKEWIPRPPERYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDLTGKLLASCSADMTIKLWDFQSFECIRTMHGHDHNVSSVAIMP-NGD--------HIISASRDKTMKMWEVATGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVASKECKAELREHEHVVECISWAPESAHPTILDATSSESKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHPGGKFIVTCADDKTLRIWDYKNKRCMKTL-CAHEHFVTSLDFHKAAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="LIS1_XENLA" ac="Q90ZL4" length="410" description="Lissencephaly-1 homolog OS=Xenopus laevis OX=8355 GN=pafah1b1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1195</score>
+      <smithWatermanScore>1195</smithWatermanScore>
+      <zScore>1533.0</zScore>
+      <bits>292.7</bits>
+      <expectation>8e-78</expectation>
+      <identity>43.4</identity>
+      <positives>71.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.:..:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . :..:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...    .    :.  .. . --.:.:::::.:...: .: . :::.: .::::::.: .::.:..::: .:::.::..: ::.::..::-:::.:::.:::.: : : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DIKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPIGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVTASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECLRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSTISDATGSETKRSGKPGPFLLSGSRDKTIKMWDISIGMCLMTLVGHDNWVRGVQFHPGGKFILSCADDKTIRIWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LIS1_PANTR" ac="Q5IS43" length="410" description="Platelet-activating factor acetylhydrolase IB subunit alpha OS=Pan troglodytes OX=9598 GN=PAFAH1B1 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1195</score>
+      <smithWatermanScore>1195</smithWatermanScore>
+      <zScore>1533.0</zScore>
+      <bits>292.7</bits>
+      <expectation>8e-78</expectation>
+      <identity>43.9</identity>
+      <positives>71.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRG--DAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--.::.-: .  :. : .  .-------. . ::-----:::::::.. ::::::.:::------.:..  .    :::   .  :---- .. .:: : ...:.:: : :: :  ::::.:.::.:::...::::.:.:.. :::::::..:. ..:  .:. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:...::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ...  . .    :.  .. . --.:.:::::.:...: :: . :::.: .::::::.::.: .:..::: .:::..::.: ::.::..::-:::.:::.:::.: : : .:.: ::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNGYEEAYS-VFKKEAELDMNEEL-------DKKYAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEFTSGGPLGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSVMVSASEDATIKVWDYETGDFERTLKGHTDSVQDISFDHSGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTIKMWEVQTGYCVKTFTGHREWVRMVRPNQDGTLIASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESSYSSISEATGSETKKSGKPGPFLLSGSRDKTIKMWDVSTGMCLMTLVGHDNWVRGVLFHSGGKFILSCADDKTLRVWDYKNKRCMKTL-NAHEHFVTSLDFHKTAPYVVTGFVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="LIS1B_DANRE" ac="Q803D2" length="410" description="Lissencephaly-1 homolog B OS=Danio rerio OX=7955 GN=pafah1b1b PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1190</score>
+      <smithWatermanScore>1190</smithWatermanScore>
+      <zScore>1526.5</zScore>
+      <bits>291.5</bits>
+      <expectation>1.8e-77</expectation>
+      <identity>42.9</identity>
+      <positives>71.5</positives>
+      <overlap>438</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRD--YLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .::.: :--:.---:: .    :  . -..   . . ::-----:::::::.. ::::::.:::------.:..  .     :: . .  :---- .. .:: : ...:.:: : :: :  ::::...::.:::...::::.:.:.. :::::::..:. ..:  ::. :::::.:..::::::: . ::.:..::::..:::...:-.::--------...::::: :.:.:.. ::.: .:.  : .::: .    ::.. :: .:: .. :.     .  .::: ::.::: :..  ... :  .    :.. .. . --.:.:::::.:...: .: . :::.: .::::::.::.::.: ...: .:::..:..: ::.::..::-.::.:::.:::.: . : .:.::::::.. :</pattern>
+      <matchSeq start="1" end="407">MVLSQRQRDELNRAIADYLRSNG--YE---EAYSTFKKEAELD-VNDELDKKFAG-----LLEKKWTSVIRLQKKVMELE------SKLNEAKEEITLGGPVGQKRD----PKEWIPRPPEKYALSGHRSPVTRVIFHPVFSLMVSASEDATIKVWDYEAGDFERTLKGHTDSVQDISFDQTGKLLASCSADMTIKLWDFQGFECIRTMHGHDHNVSSVAIMP-NGD--------HIVSASRDKTMKMWEVATGYCVKTFTGHREWVRMVRPNQDGTLLASCSNDQTVRVWVVATKECKAELREHEHVVECISWAPESAHPTISEATGSENKKSGKPGPFLLSGSRDKTIKMWDISTGMCLMTLVGHDNWVRGVLFHPGGRFVVSCADDKTLRIWDYKNKRCMKTL-SAHEHFVTSLDFHKASPYVVTGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

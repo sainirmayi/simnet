@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162101-0192-92265441-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162101-0192-92265441-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162101-0192-92265441-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0H6|CH60_PHATC" type="PROTEIN" length="533"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:21:01+00:00" end="2022-11-07T16:21:06+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="CH60_PHATC" ac="A0T0H6" length="533" description="Chaperonin GroEL, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3273</score>
+      <smithWatermanScore>3273</smithWatermanScore>
+      <initn>3273</initn>
+      <init1>3273</init1>
+      <opt>3273</opt>
+      <zScore>3466.9</zScore>
+      <bits>651.2</bits>
+      <expectation>1.5e-185</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>533</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="533">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="533">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="CH60_TRICV" ac="P49464" length="528" description="Chaperonin GroEL, chloroplastic OS=Trieres chinensis OX=1514140 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3067</score>
+      <smithWatermanScore>3067</smithWatermanScore>
+      <initn>3160</initn>
+      <init1>3067</init1>
+      <opt>3067</opt>
+      <zScore>3249.0</zScore>
+      <bits>610.9</bits>
+      <expectation>2.1e-173</expectation>
+      <identity>93.5</identity>
+      <positives>98.7</positives>
+      <overlap>526</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="526">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::: :::::::::::::::::.: ::::::::.:::::::::::::::::::::::::::::::::::.:::::::::::::::.::::::::::::::::::::.::::::::::..::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::.::.::::::::::::::::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::.:::::::::::::::.:::.:::::::::::::::::::.::  ...:. :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::.:::.:::: :::::::::::::::::.:::.:::::::::::::::::::::::::::::::.::::: :::::::::::::::::::::::::::::::::.</pattern>
+      <matchSeq start="1" end="526">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKPYGSPQIVNDGVTIAKEINLEDHIENTGVALIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVTAGANPISIKLGMEKATQYLVTQINEFAQPVEDIQSIEQVASISAGNDNLIGSLIADALSKVGKEGVISLEEGKGIITELEITEGMKLEKGFISPYFITNTEKMEVSYENPFILLTDKRITLVQQDLLPILEQITKTKRPLLLIAEDVEKEALATLILNKLRGIVNVVAVRAPGFGELRKQMLEDIAVLTGGTVITQDAGLSLENIQVNLLGQARRIIVNKDSTTIVGDGLEIEQIKARCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLAHLAENLLTWAKINLKEDELIGAMIISRAIVAPLKRIAENAGINGPVIIEKVQQQEFEIGYNAAKNVFGNMYDEGIVDPAKVTRSGLQNATSIASMILTTECIIVDETD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CH60_THAPS" ac="A0T0X0" length="531" description="Chaperonin GroEL, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3028</score>
+      <smithWatermanScore>3028</smithWatermanScore>
+      <initn>3116</initn>
+      <init1>3028</init1>
+      <opt>3028</opt>
+      <zScore>3207.7</zScore>
+      <bits>603.2</bits>
+      <expectation>4.2e-171</expectation>
+      <identity>91.3</identity>
+      <positives>98.1</positives>
+      <overlap>528</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="528">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::.: :::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::.:::: :::::::::::::::.::::::::::..::.::::::.:::::::::::::::::::::::::::::::::::::::.:::::: ..:::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::.:::::::::: ::.:::.:::::::::::::::::::.::::::::::::::.::::.::  ...:. ::::::::::::.:.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::.:.::::::::::.::::::.:::.::::::::::::.: :::.:::::::::::: ::::: ::.:::::::::::::::::::::::::::::::..</pattern>
+      <matchSeq start="1" end="528">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKTYGSPQIVNDGVTIAKEISLEDHIENTGVSLIRQAAAKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKATQYLVMQINEFAQPVEDIQSIKQVASISAGNDDVIGALIADALAKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITDTEKMEVCFENPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIVNVVAIRAPGFGELRKLMLQDIAVLTGGTVITQDAGLSLDNIQVNLLGQARRIIVNKDTTTIVGDGLEIENIKARCEQLRKQVNIAETSYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLAHLSENLVTWSKTNLKEDELIGALIISRAIVAPLKRIAENAGINGPVVIGKVQEQEFEIGYNAAKNLFGNMYDEGVVDPAKVTRSGLQNATSIASMILTTECIIVDDIEKVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CH60_GUITH" ac="O78419" length="529" description="Chaperonin GroEL, chloroplastic OS=Guillardia theta OX=55529 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2484</score>
+      <smithWatermanScore>2484</smithWatermanScore>
+      <initn>2483</initn>
+      <init1>1641</init1>
+      <opt>2484</opt>
+      <zScore>2632.0</zScore>
+      <bits>496.7</bits>
+      <expectation>4.8e-139</expectation>
+      <identity>72.6</identity>
+      <positives>93.1</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:.: ::::..:::::::::.:..:::::::::::::::::..::.::::::::::::::.: ::::::::.::::::::::::::::::::::::.::::.:.:::::::: :..: :.:::.:..:::: :.:.:::: ..:.::::::::::   :..::::..:::.::::::::::. .::::.:::: .:::::::::.:.::.:::  ::::::::::.::::::.::: :: :.::.:::.::::::::::::::..::::::.:::::::::::. :: ::::::::::: ::..:::.::... :..::::::: ..:..:::...:. -.... ::::.:.:.. .:..::.::::.:.:::.::.:::.:::.:::::::::::::::::::.::::::::::::.:::::...:  ::..:: :::::::.:. :.. .::::: ::.: :. .:::.....::.:::.:::. . .::  ::.:::::::::::::.::::::::::::.::</pattern>
+      <matchSeq start="1" end="524">MSKIILYQEDARRALERGMDILAEAVSVTLGPKGRNVVLERKYGAPQIVNDGVTIAKEIELEDHIENTGVALIRQAASKTNDVAGDGTTTATVLAHAMVKQGMKNVAAGANAIALKRGIEKATQFIVTQIAEYARPVEDTRAISQVASISAGNDIETGKMIADAIDKVGREGVISLEEGKSTITELEMTEGMCFEKGFISPYFVTDTERMEVIQDNPYILLTDKKITLVQQELLPTLELISKTSRPLVIIAEDVEKEALATLVVNKLRGIVNVVAVRAPGFGDRRKAMLEDIAILTGGQVISEDAGFSLETLTLDMLGQARRITITKENTTIIAEGNE-KDVKSRCEQIRRQIEASDSSYEREKLQERLAKLAGGVAVIKVGAATETEMKDKKLRLEDAINATKAAVEEGIVPGGGSTLTHLANDLKDWAEDNLIEDELIGALIVERSLTSPLRRIIENTGQNSAIIIEQIKESEFNIGYDAAKGEIVDMYDVGIIDPAKVTRSGLQNAASIASMILTTECIVVDKQDEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CH60_GALSU" ac="P28256" length="534" description="Chaperonin GroEL, chloroplastic OS=Galdieria sulphuraria OX=130081 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2448</score>
+      <smithWatermanScore>2448</smithWatermanScore>
+      <initn>2439</initn>
+      <init1>1600</init1>
+      <opt>2448</opt>
+      <zScore>2593.9</zScore>
+      <bits>489.6</bits>
+      <expectation>6.5e-137</expectation>
+      <identity>68.4</identity>
+      <positives>93.4</positives>
+      <overlap>532</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="532">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:.:.::::.:::.:::.:..:..:::::::::::::::.::.:: :::.::::::::::.: ::::::::.:::::::::::::::::::.::::.:.::.:..:::::::::..: :..::.:.....:.:...:::: ..: :::.::.:::: ::..::::. :::.:::::.::::. .::::: ::::.:.:.:::::.:....:::  .:  .:.:::.::::::::::.::::.::..::::::::.:::::::::.::::::.:::::.:::::. ::..:::::::::: .::.:::::::...:..:::: ..::::.::::.:... -:... ::::.:::..:.:..:::::::.:.:::.::::::.:::.:::::::::::::::::::.::.::::::::::::.::...: .:::. :::::::::.:. ..: :::.::..: : :: ........ .: :::.:. . : :::  ::.::::::::.::::.:::.:::::::..::... . :</pattern>
+      <matchSeq start="1" end="531">MTKQILYQENARKALEKGIDILAEAVSVTLGPKGRNVVIEKKYGPPQIINDGVTIAKEIELEDHIENTGVALIRQAASKTNDVAGDGTTTSTVLAHAIVKQGMRNVAAGANPIALKRGIDKATQFIINKISEYSRPVEDNKAITQVATISSGNDENIGKMIADAIEKVGREGVISIEEGKSTTTELEIKEGMKFERGYISPYFVTDSDRMEVVQENASVLITDKKITLVQQDLLPVLEQIAKTNKPLLIIAEDIEKEALATLIVNKLRGILNVVAVKAPGFGDRRKSILEDIAILTGGQLITEDAGLSLDKVDLSMLGQANKVIVNKESTTIISNANE-NNVKARCEQIRKQIEITDSSYEKEKLQERLAKLAGGIAVIKVGAATETEMKDKKLRLEDAINATKAAIEEGIVPGGGATLVHLANDLFNWAKGVLKEDELIGALIVEKSITAPLKRIVQNEGKNGAIVVDEIKNLDFSIGYDASTSKFVNMYESGIIDPAKVTRSALQNASSIAGMILTTECLVVDEMNRNMEVRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="CH60_NEOYE" ac="Q1XDD8" length="528" description="Chaperonin GroEL, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=groEL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2445</score>
+      <smithWatermanScore>2445</smithWatermanScore>
+      <initn>2451</initn>
+      <init1>1609</init1>
+      <opt>2445</opt>
+      <zScore>2590.8</zScore>
+      <bits>489.1</bits>
+      <expectation>9.6e-137</expectation>
+      <identity>70.2</identity>
+      <positives>93.4</positives>
+      <overlap>527</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="527">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:.:.:::::.::.:::.::.:..::::::::::::::::::..:.:::.::::::::::.: .:::::::.:::::::::::::::::::::::: :.::.:..:::::.::..:: :.:::....:..: :.:.:::: ..: ::::.:.:::  .:..::.:. :::.::::::::::.  : :::::::..:::::::::.:.::.:::  .::.::.:::.::::::.:.:.::::.::.:::::::::.:::::::...::::::.:::::::::::. ::..:::..:::.: :::.:::::::..::..::.:::.::.::::::..::. .-... ::::...:.. .:. ::.::::.:.::::::.:::.:::.:::::::::::: ::::::.::.::::::::::: .:.: .: ::::::: :::::::.:. ::.  :::::: ::: :: ::.:::....:.:::.::.... ::: .::.:::::.::.::::.:::.:.::::::.:: :</pattern>
+      <matchSeq start="1" end="526">MSKQILYQDDARKALEKGMDILTEAVSVTLGPKGRNVVLEKKFGAPQIINDGVTIAKEISLENHIENTGVALIRQAASKTNDVAGDGTTTATVLASAIVKQGMRNVAAGSNPMAIKKGIEKATNFVVSKIAEYAKPVEDTKAIIQVASLSSGNDIEVGKMIANAIEKVGREGVISLEEGKSTNTILEITEGMQFEKGFISPYFVTDTERMEVLQENPFILFTDKKITLVQQELVPLLEQIAKTSRPLLIIAEDIEKEALATIVVNKLRGILNVVAVRAPGFGDRRKSLLEDMSILTNGQVITEDAGLSLDTVQLDMLGKARRVIVTKDSTTIIADGHEI-KVKSRCEQIKRQIETSDSLYEREKLQERLAKLSGGVAVIKVGAATETEMKDKKLRLGDAINATKAAIEEGIVPGGGATNVHISSELFTWAKNNLVEDELIGALIVERAVTYPLRRIAFNAGDNGAVIVEKVKSHDFHIGYDAANGNIVNMYDRGIIDPAKVARSALQNAASIAAMVLTTECIVVDKVDD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="CH60_PORPU" ac="P51349" length="528" description="Chaperonin GroEL, chloroplastic OS=Porphyra purpurea OX=2787 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2434</score>
+      <smithWatermanScore>2434</smithWatermanScore>
+      <initn>2439</initn>
+      <init1>1615</init1>
+      <opt>2434</opt>
+      <zScore>2579.1</zScore>
+      <bits>486.9</bits>
+      <expectation>4.3e-136</expectation>
+      <identity>69.2</identity>
+      <positives>92.6</positives>
+      <overlap>529</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="529">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:.:.:::::.::.:::.::.:..::::::::::::::::::..:.::::::::::::::.: ::::::::.:::::::::::::::::::::::: :.::.:..:::::.::..:: :.:::....:..: :.:.::::  .: ::::::.:::  .:..::::...::.::::::::::.  : :::::::..:::::::::.:. ..:::  .::.::.:::.::::::.:.:.::::.::..::::::::.:::::::...::::::.:::::::::::. ::..:::..::::: :::.:::.:::..::..::.:::..:.::::::..::.  .-.. ::::...:.. .:. ::.::::.:.::::::.:::.:::.:::::::::::::::::::.::.:::::::::.: .:.: .: .:::::: :::::::.:..::.  :::::: ::: :: :..:::. ..: :::.:... . :::  ::.:::::.::.::::::::.:.::::::.:: ...</pattern>
+      <matchSeq start="1" end="528">MSKQILYQDDARKALEKGMDILTEAVSVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEISLEDHIENTGVALIRQAASKTNDVAGDGTTTATVLASAIVKQGMRNVAAGSNPMAIKKGIEKATNFVVSKIAEYAKPVEDTTAIVQVASISSGNDAEVGKMIADAIDRVGREGVISLEEGKSTSTSLEITEGMQFEKGFISPYFVTDLDRMEVLQENPFILFTDKKITLVQQELVPLLEQIAKTSKPLLIIAEDIEKEALATIVVNKLRGILNVVAVRAPGFGDRRKSLLEDMSILTGGQVITEDAGFSLDTVQLDMLGKARRVVVTKDSTTIIADGHEAT-VKSRCEQIKRQIETSDSLYEREKLQERLAKLSGGVAVIKVGAATETEMKDKKLRLEDAINATKAAIEEGIVPGGGSTNVHISGELFVWAKNNLFEDELIGALIVQRALTYPLRRIAFNAGDNGAVVVEKVKTNDFCIGYDASNGKIVNMYDAGIIDPAKVARSALQNATSIAAMVLTTECIVVDKLEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CH601_THEVB" ac="Q8DMD4" length="545" description="Chaperonin GroEL 1 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=groEL1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2394</score>
+      <smithWatermanScore>2394</smithWatermanScore>
+      <initn>1932</initn>
+      <init1>1114</init1>
+      <opt>2394</opt>
+      <zScore>2536.5</zScore>
+      <bits>479.1</bits>
+      <expectation>1e-133</expectation>
+      <identity>68.8</identity>
+      <positives>92.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::.::.:..:.:.::::::::::::::..:.::::::::::::::.: ::::::::.:::::::::::.::::::::::::.:::::::.:::::::::..: :..::.:.:: .: : :.:::: ..: :::.::::::: .: .::::..::::::::::::::...::::.::::...::.::::: :.::.::.  :.:..:.:::.:::::-::.:::::.... .::.:::::.::::::::..:.:::..::.::.:::::. :: ::::::.::.: :::.::::.:.: .:..::.:::: ..:: ::::..:. -. .. ::::.:.:.. .:..:.:::::.:.:::.::.:::.:::.:::::::.:::::::::::.::::::::::::.::.::. .: .:: ..:  .::::: :. ::. ::::::::::: :: .:.:.:... :..::.:::. . ::.  :::::::::::.::::.:::.:.:::::::::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALEKGMDILAESVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHIENTGVALIRQAASKTNDAAGDGTTTATVLAHAMVKEGLRNVAAGANPIALKRGIDKATQFLVEKIAEHARPVEDSKAIAQVAAISAGNDEEVGRMIADAMDKVGKEGVISLEEGKSMTTELEVTEGMRFDKGYISPYFATDTERMEAVLDEPFVLVTDKKITLVQ-DLVPILEQVARAGKPLVIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKAMLEDIAVLTAGQVITEDAGLKLENAKLDMLGKARRITITKDHTTIVAEGNE-KAVKARCEQIRRQIEETDSSYDKEKLQERLAKLAGGVAVIKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLVHLAPELSNWAAEHLTGEELIGANIVERALSAPLRRIAENAGQNGAIIVERVKEKPFDVGYDAAKDEYVNMFDAGIVDPAKVTRSALQNAASIAGMVLTTECIIVDKPEPKENNPAGSGAGMGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CH602_TRIEI" ac="Q10WQ4" length="544" description="Chaperonin GroEL 2 OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=groEL2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2377</score>
+      <smithWatermanScore>2377</smithWatermanScore>
+      <initn>1900</initn>
+      <init1>1070</init1>
+      <opt>2377</opt>
+      <zScore>2518.5</zScore>
+      <bits>475.7</bits>
+      <expectation>1e-132</expectation>
+      <identity>68.0</identity>
+      <positives>92.8</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::.::.:..:.:.::::::::::::::..:.::::::::::::::.: ::.:::::::::::::::::.::::::::::::.:::::::.:::::::::..: :..::. .:: .: : :. .:: ..: ::..::::::: .:..::.:..::::::::::::::.. :::::::::...::.::::: :. :.::.: ..: ::.:::.:.:::-::.:.:::.... .::::.:::.::::::::..:.:::..::.::.:::::. :: ::::::.:::: :::.::::.:.: .:..::.:::: ..::.::::..:. -.:.. ::::.:.:.. .:..:.:::::.:.:::.::.::..:::.:::::::.:::::::::::.::::::::::::.::.::. .: :::..::. .:: :..:.:::.::::.::::::: :: :: :.:....:. :.:::.: : .:.  :::::::::::.::::.:::.:.::::::.::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALEKGMDILAESVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHVENTGVSLIRQAASKTNDAAGDGTTTATVLAHAMVKEGLRNVAAGANPIALKRGIDKAAGFLVEKIAEHARQIEDSKAIAQVGAISAGNDEEVGKMIAEAMDKVGKEGVISLEEGKSMQTELEITEGMRFDKGYISPYFATDMERMEASLEEPQILITDKKIALVQ-DLVPVLEQVARSGKPLLILAEDIEKEALATLVVNRLRGVVNVAAVKAPGFGDRRKAMLEDIAVLTGGQVITEDAGLKLENAKLDMLGKARRITITKDNTTIVAEGNE-KEVKARCEQIRRQMDETDSSYDKEKLQERLAKLAGGVAVVKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLAHLAPELETWANENLQSEELTGSLIVSRALLAPLKRIAENAGQNGAVIGERVKEKDFNTGFNAANNEFVDMFEAGIVDPAKVTRSALQNAASIAGMVLTTECIVVDKPEPKENAPAGAGMGGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CH601_THEVL" ac="O50323" length="545" description="Chaperonin GroEL 1 OS=Thermostichus vulcanus OX=32053 GN=groEL1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2373</score>
+      <smithWatermanScore>2373</smithWatermanScore>
+      <initn>1924</initn>
+      <init1>1106</init1>
+      <opt>2373</opt>
+      <zScore>2514.3</zScore>
+      <bits>475.0</bits>
+      <expectation>1.7e-132</expectation>
+      <identity>68.2</identity>
+      <positives>92.2</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::.::.:..:.:.::::::::::::::..:.::::::::::::::.: ::::::::.:::::::::::.::::::::::::.:::::::.:::::::::..: :..::.:.:: .: : :.:::: ..: :::.::::::: .: .::::..::::::::::::.:...::::.::::...::.::::: :.::.::.  :.:..:.:::.:::::-::.:::::.... .::.:::::.::::::::..:.:::..::.::.:::::.  : ::::::.::.: ::..::::.:.: .:..::.:::: ..:: ::::..:. -. .. ::::.:.:.. .:..:.:::::.:.:::.::.:::.:::.:::::::.:::::::::::.::::::::::::.::.::. .: .:: ..:  .::::: :. ::. ::::::::::: :: .:.:.:... :..::.:::. . ::.  :::::::::::.::::.:::.:.:::::::::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALEKGMDILAESVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHIENTGVALIRQAASKTNDAAGDGTTTATVLAHAMVKEGLRNVAAGANPIALKRGIDKATQFLVEKIAEHARPVEDSKAIAQVAAISAGNDEEVGRMIADAMDKVGKEGVISLEEAKSMTTELEVTEGMRFDKGYISPYFATDTERMEAVLDEPFVLVTDKKITLVQ-DLVPILEQVARAGKPLVIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRSKAMLEDIAVLTAGQVIAEDAGLKLENAKLDMLGKARRITITKDHTTIVAEGNE-KAVKARCEQIRRQIEETDSSYDKEKLQERLAKLAGGVAVIKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLVHLAPELSNWAAEHLTGEELIGANIVERALSAPLRRIAENAGQNGAIIVERVKEKPFDVGYDAAKDEYVNMFDAGIVDPAKVTRSALQNAASIAGMVLTTECIIVDKPEPKENNPAGSGAGMGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CH60_CYACA" ac="Q9TLZ1" length="530" description="Chaperonin GroEL, chloroplastic OS=Cyanidium caldarium OX=2771 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2356</score>
+      <smithWatermanScore>2356</smithWatermanScore>
+      <initn>2343</initn>
+      <init1>1564</init1>
+      <opt>2356</opt>
+      <zScore>2496.6</zScore>
+      <bits>471.6</bits>
+      <expectation>1.7e-131</expectation>
+      <identity>67.0</identity>
+      <positives>91.7</positives>
+      <overlap>531</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="531">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:.:.:::.:.::.:::::......:::.::::::::::..:.::.:::.:::..:::::.: .:.::::::::::::.:::::::::::::::::.:..:.::: :..:.::::.: :.:::::... .:.: ..:.::..:: ::.:::::::: :::.::.:..::::.:::::::::. .::::::.:::.:::.::::::::.:::::  .:::::.:::.::::..::::.:  :.::.::::::::::::::::::..::::::.:::::::::::. .: .::::::::.: ::....::.:..: :..::::::  . .:::::: :-.. . .. :::::..:. :: ..:::::::.:.::: ::.:::.:::.::::::.:::::::.::::.::.:::::::::..:.:.: ::  ::: ::. :::.:: :. .: ::::..::::.: :: .:.: .....:::::.: .:.. .::  ::.::::::::..:::.:::::.:::::.::.  :..:</pattern>
+      <matchSeq start="1" end="530">MSKRILYKDQARKALERGIDVLAKAVSITLGPKGRNVVIDKKYGAPQIINDGIAIAKEIELKNHMENTGVSLIRQAAAKTNDVAGDGTTTATVLAHAIIKQGLKYVSTGSNPISLKKGIEKASQFIIQKISENSRPIEDVKSIIQVSSISAGNDEEIGSMIANAIQKVGKDGVISLEEGKSAITELEITQGMKFEKGYISPYFITNSEKMEVVLENPYILMTDKKITLVKEDLLPVLTLINKTNRPLLIIAEDVEKEALATLVINKLRGIVNVVAVRAPGFGDRKKALLEDIAILTNGQVISEETGLNLETITLDVLGQARRATILRDSTTIVED-KNQQAVHARCEQLKNQLLIAKSSYEKEKLQERLAKLIGGVAVIKVGAATETEMKEKKLRLEDSINATKAAIEEGIVPGGGTALVHISANLKQWAKINLSSDELLGANIVEQASLAPLHKIAENSGKNGSLIVEALEHKNFEIGYDALSNSLVDMYDAGIIDPAKVTRSAIQNAASIASMVLTTECVIVNRDKKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CH601_SYNY3" ac="Q05972" length="541" description="Chaperonin GroEL 1 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=groEL1 PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2354</score>
+      <smithWatermanScore>2354</smithWatermanScore>
+      <initn>1903</initn>
+      <init1>1093</init1>
+      <opt>2354</opt>
+      <zScore>2494.3</zScore>
+      <bits>471.2</bits>
+      <expectation>2.3e-131</expectation>
+      <identity>68.2</identity>
+      <positives>92.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:.:.:::::::::.:..:::.::::::::::::::..:::::.:::.::::::.: ::.::::::::::::::::::::::::::::::.:.:::::.::::::::::.: :..::...::..:.: :::: : ..: ::..::::::: .:..::.:..:::.::::::::::...:::::::::...::.:::::.:..:.::.  ..: ::.:::.:.:::-::.:::::...  .::::::::.::::::::..:.:::..::.::.:::::. ::::::::: :::: ::..::::.:..  .. ::.:::: ..::.::::..:. -  .. ::::.:.:.. .:..:.:::::.:.:::.::.:::.:::.:::::::.:::::::::::.::::::::::::.::.::. .:  :: .:::..:: ::.:..::. :::.::::::: :: :: :.:...::..:::::.  . .: . :::::::::::.::::.:::.:.::::::.::</pattern>
+      <matchSeq start="1" end="523">MAKSIIYNDEARRALERGMDILAEAVAVTLGPKGRNVVLEKKFGSPQIINDGITIAKEIELEDHVENTGVSLIRQAASKTNDVAGDGTTTATVLAHAIVKEGLRNVAAGANPISLKRGIDKATDFLVARIKEHAQPVGDSKAIAQVGAISAGNDEEVGQMIANAMDKVGQEGVISLEEGKSMTTELEITEGMRFDKGYISPYFVTDAERMEAVLEDPRILITDKKINLVQ-DLVPILEQVARQGKPLLIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKQMLEDIATLTGGQVISEDAGLKLESATVDSLGSARRINITKDNTTIVAEGNE-AAVKSRCEQIRRQIEETDSSYDKEKLQERLAKLAGGVAVIKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLAHLAPQLEDWATGNLKDEELTGALIVARALPAPLKRIAENAGQNGAVISERVKEKEFNVGYNAASLEYVDMLAAGIVDPAKVTRSALQNAASIAGMVLTTECIVVDKPEKEKAPAGAPGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="CH601_TRIV2" ac="Q3M704" length="544" description="Chaperonin GroEL 1 OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=groEL1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2354</score>
+      <smithWatermanScore>2354</smithWatermanScore>
+      <initn>1885</initn>
+      <init1>1080</init1>
+      <opt>2354</opt>
+      <zScore>2494.2</zScore>
+      <bits>471.2</bits>
+      <expectation>2.3e-131</expectation>
+      <identity>68.4</identity>
+      <positives>92.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::::..:..:::.::::::::::::::..:.::::::::::::::.: ::::::::.:::::::::::.::::::::::::.:.:::::.::::::: : .: :..::. .:: .:.: :.:::: .:: ::.:::::::. .:..::.:..::::::::::::::...:::::::::...::.::::: :. :.::. .:.:..:::::.:.:::-::.:.:::.... :::.:::::.::::::::..:.:::..::.::.:::::. :: ::::::::::: .::.::::.:.: .:. ::.:::: ..:::::::..:. . -.. : ::.:.:.. ....:.:::::.:.::::::.::..:::.:::::::::::::::::::.::::::::::::.::.::. .: .::..:::..:: ::.:..::. :::.::::::: :: :: :.:... :..:.::: : : .:.  :::::::::::.::::.:::.:.::::::.::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALERGIDILAEAVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHIENTGVALIRQAASKTNDAAGDGTTTATVLAHAIVKEGLRNVAAGANAILLKRGIDKATGFLVDRIKEHARPVEDSKSIAQVGSISAGNDDEVGQMIAEAMDKVGKEGVISLEEGKSVTTELEITEGMRFDKGYISPYFATDPERMEAIFDEPFLLLTDKKIALVQ-DLVPVLEQVARAGRPLVIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKAMLEDIAILTGGQLITEDAGLKLENTKLESLGKARRITITKDSTTIVAEGNDVA-VKGRVEQIRRQMEETESSYDKEKLQERLAKLSGGVAVVKVGAATETEMKDKKLRLEDAINATKAAVEEGIVPGGGTTLAHLTPELEVWANSNLKDEELTGALIVARALPAPLKRIAENAGQNGAVIAERVKEKAFNVGFNAATNEFVDMFEAGIVDPAKVTRSALQNAASIAGMVLTTECIVVDKPEPKDAAPAGAGAGGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CH602_SYNJA" ac="Q2JUN7" length="544" description="Chaperonin GroEL 2 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=groEL2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2354</score>
+      <smithWatermanScore>2354</smithWatermanScore>
+      <initn>1904</initn>
+      <init1>1102</init1>
+      <opt>2354</opt>
+      <zScore>2494.2</zScore>
+      <bits>471.2</bits>
+      <expectation>2.3e-131</expectation>
+      <identity>68.0</identity>
+      <positives>91.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.....::::::.::.:..:::.::::::::::::::..:.::::::::::::::.: ::::::::::::::::::::.::::::::::::.:::::::::::::::::..: :..:: ..:: .: : :.:::: ..: :::.::::::: .: .::.:..:::.::::::::::...::::.::::...::.:::::.:.::.::.  .:::::.:::.:::::-::.:.:::.... :::::::::.::::::::..:::::...::::.:::::. :: ::::::::::: ::... ::.:.: .:. .:.:::. :.:: ::::..:. -  .. ::::.:.:.. .:. :.:::::.:.::::::.:::.:::.:::::::.:::::::::::.::::::::::::.::.::   .. ::. ::. :::.:::...::. ::::::::::: :: ...:.:... : .::.: .... .:.  :::::::::::.::::.:::::.:::: :.::</pattern>
+      <matchSeq start="1" end="523">MAKSIIFSEEARRALEHGMDILAEAVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHIENTGVSLIRQAASKTNDTAGDGTTTATVLAHAMVKEGLKNVAAGANPIALKRGIDKAVKFLVDKIAEHARPVEDSKAIAQVAAISAGNDEEVGRMIAEAMDKVGREGVISLEEGKSMTTELEVTEGMRFDKGYISPYFVTDTERMEAVLENPYILITDKKITLVQ-DLVPVLEQVARAGRPLLIIAEDIEKEALATLVVNKLRGVLSVVAVKAPGFGDRRKAMLEDIAILTGGEVISEERGLKLENARLDSFGSARRVTVTKDHTTIVAEGNE-AAVKARCEQIRRQIEETDSTYDKEKLQERLAKLSGGVAVIKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLAHLMPAVTEWAQANLSGDELVGAMLVARALGAPLRRIAENAGQNGSIVLERVKEKPFTVGYDAQNDAYVDMFEAGIVDPAKVTRSALQNAASIASMVLTTEAIVVDKPEPKSNKPAGGGGGVDDYDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CH601_NOSS1" ac="Q8YQZ8" length="544" description="Chaperonin GroEL 1 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=groEL1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2354</score>
+      <smithWatermanScore>2354</smithWatermanScore>
+      <initn>1885</initn>
+      <init1>1080</init1>
+      <opt>2354</opt>
+      <zScore>2494.2</zScore>
+      <bits>471.2</bits>
+      <expectation>2.3e-131</expectation>
+      <identity>68.4</identity>
+      <positives>92.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::::..:..:::.::::::::::::::..:.::::::::::::::.: ::::::::.:::::::::::.::::::::::::.:.:::::.::::::: : .: :..::. .:: .:.: :.:::: .:: ::.:::::::. .:..::.:..::::::::::::::...:::::::::...::.::::: :. :.::. .:.:..:::::.:.:::-::.:.:::.... :::.:::::.::::::::..:.:::..::.::.:::::. :: ::::::::::: .::.::::.:.: .:. ::.:::: ..:::::::..:. . -.. : ::.:.:.. ....:.:::::.:.::::::.::..:::.:::::::::::::::::::.::::::::::::.::.::. .: .::..:::..:: ::.:..::. :::.::::::: :: :: :.:... :..:.::: : : .:.  :::::::::::.::::.:::.:.::::::.::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALERGIDILAEAVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDHIENTGVALIRQAASKTNDAAGDGTTTATVLAHAIVKEGLRNVAAGANAILLKRGIDKATGFLVDRIKEHARPVEDSKSIAQVGSISAGNDDEVGQMIAEAMDKVGKEGVISLEEGKSVTTELEITEGMRFDKGYISPYFATDPERMEAIFDEPFLLLTDKKIALVQ-DLVPVLEQVARAGRPLVIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKAMLEDIAILTGGQLITEDAGLKLENTKLESLGKARRITITKDSTTIVAEGNDVA-VKGRVEQIRRQMEETESSYDKEKLQERLAKLSGGVAVVKVGAATETEMKDKKLRLEDAINATKAAVEEGIVPGGGTTLAHLTPELEVWANSNLKDEELTGALIVARALPAPLKRIAENAGQNGAVIAERVKEKAFNVGFNAATNEFVDMFEAGIVDPAKVTRSALQNAASIAGMVLTTECIVVDKPEPKDNAPAGAGAGGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CH60_GRATL" ac="Q6B911" length="528" description="Chaperonin GroEL, chloroplastic OS=Gracilaria tenuistipitata var. liui OX=285951 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2352</score>
+      <smithWatermanScore>2352</smithWatermanScore>
+      <initn>2348</initn>
+      <init1>1572</init1>
+      <opt>2352</opt>
+      <zScore>2492.4</zScore>
+      <bits>470.9</bits>
+      <expectation>2.9e-131</expectation>
+      <identity>67.9</identity>
+      <positives>91.1</positives>
+      <overlap>527</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="527">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>::::::::::::.:::.::. .::::..::::::::::::...:.:::.::::::::::.: :  :::::.::::::::::::::::::::::::.:.::.::::::::::::..: :..:: ...: .: :...:. ..:.. ...:::.:::  .:..::.:...:::::.::::::..  :::.: ::::..::::::::.:.: .:::  ::::::.:::.:::.::.::::::..::: :::::::::.:::::::.:.::::::::::::::::::. :: .::::::::.:.::::: :::::...:. ::.:::. ..:::::::.:.: -. :. ::.:.:.:.. : ..: :.::..:.::::::.::..:::.:::::.:::::::::::::.::.:::::::::.:..:::: : .:: ::: :.::.::.::  ..: ::.::.:::: :: .::::.....:  ::::  . . .:: :::.::::::::.::::.:::::::::::.:...:</pattern>
+      <matchSeq start="1" end="526">MAKKILYQDNARKALEKGMDTLVEAVAITLGPKGRNVVLERKFGAPQIINDGVTIAKEIELQDLAENTGVALIRQAASKTNDVAGDGTTTATVLAHAIVKQGLKNVAAGANPITLKKGIQKAVKFVVGKIAEYSKPICSMQDVTHIGSISSGNDVEVGTMIANAIQQVGKEGIISLEEGQSTSTELDIKEGMKFDKGFISPYFVTDTSRMEVIQDNPYILITDKKITLIQQELLPILEKVTKTGRPLLIIAEDIEKEALATIIVNKLRGIINVVAVRAPGFGDRRKLLLEDIAILTSGVVITQDMGLSLDSMSLDQLGSARRVQITKDSTTIVADAQK-DLIQARCDQIRRQLEAATNSYAKDKLHERLAKLSGGVAVVKVGAATETEMRDKKLRLEDAINATKAAIEEGIVPGGGSTFVHLSEVLRVWAINNLVEEELVGALIIVDSLLHPLKRIVENAGNNGSIIIEKIKNSNFSTGYNADIGQIVDMYKEGIIDPAKVTRSALQNAASIASMILTTECLIAEQVDN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CH60_EMIHU" ac="Q4G3D5" length="531" description="Chaperonin GroEL, chloroplastic OS=Emiliania huxleyi OX=2903 GN=groEL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2347</score>
+      <smithWatermanScore>2347</smithWatermanScore>
+      <initn>2341</initn>
+      <init1>1530</init1>
+      <opt>2347</opt>
+      <zScore>2487.0</zScore>
+      <bits>469.9</bits>
+      <expectation>5.8e-131</expectation>
+      <identity>67.8</identity>
+      <positives>90.5</positives>
+      <overlap>528</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="530">-MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>   : ::::..::.::::::.:..::::::::::::::::::..:.::::::::::::::.: : .::::::::::::::::::::::::::::::::..:.:..::::::::: .: :.:::.:..: .: ..:.:.:.. .: :::.::::::  .:::::.:..:::.::.:::::.:. .::::::::: ...:::: ::.::::.:::  ::::::::::.::.:.:::.: :: ..::..:::::...::::::::::.::::::.:::::::::::. :: .:.:.:.:::: ::: ::::::. .... :: :::..:.:..:::.::.. -.:.  ::::::.:.. .:. :::::::.:.:::.::.:::.:::.:::::::.:::::::.:::.::::::::::::.:: :.. .:. :.:..:  :::.:..:. .:. :::..:: ::: :: .:.:......:::::::: : . .::  ::.:::::::: ::::.:::::::::::::::  : .</pattern>
+      <matchSeq start="4" end="530">MGVKTILYQEDARKALERGMDILAEAVSVTLGPKGRNVVLEKKFGTPQIVNDGVTIAKEINLQDTLENTGVSLIRQAASKTNDVAGDGTTTATVLAYAIIKQGMRNVAAGANPIVLKRGIEKATQFVVRKIMDYARPIENLTDITQVAQISAGNDAEVGSLIANAIDKVGREGLISLEESKSTATELEITEGMGFDRGFISGYFVTNTERMEVVLDNPYILLTDKKITVVKQDLVPTLELVSKTNQPLLIISDNVEKEALATLIVNKLRGILNVVAVRAPGFGDRRKAILQDLAVLTGGDVITADAGLSLERMDIENLGVARRVVVGKENTTIISDSNK-QEVLARCEQLRRQMETSDSTYEKEKLQERLAKLTGGVAVIKVGAATETEMKDRKLRLEDAVNATKAAVEEGIVPGGGTTLIHIAAELLEWVKETLTGDELLGGLIVEKALQAPLKKIALNAGENGSIIVERIKESDFEIGYNAATNEIVDMYEAGIIDPAKVTRSTLQNAASIASMILTTECIIVDKNKETK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="CH601_SYNJB" ac="Q2JL43" length="544" description="Chaperonin GroEL 1 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=groEL1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2335</score>
+      <smithWatermanScore>2335</smithWatermanScore>
+      <initn>1884</initn>
+      <init1>1101</init1>
+      <opt>2335</opt>
+      <zScore>2474.1</zScore>
+      <bits>467.5</bits>
+      <expectation>3e-130</expectation>
+      <identity>67.6</identity>
+      <positives>91.2</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.....::::::.::.:..:::.::::::::::::::..:.:::.::::::::::.: ::::::::::::::::::::.::::::::::::.:::::::::::::::::..: :..:: ..:: .: : :.:::: ..: :::.::::::: .: .::.:..:::.::::::::::...::::.::::...::.:::::.:.::.::.  .:::::.:::.:::::-::.:.:::.... :::::::::.::::::::..:::::...::::.:::::. :: ::::::::::: ::... ::.:.: .:. .: :::. :.::.::::..:. -  .. ::::.:.:.. .:. :.:::::.:.::::::.:::.:::.:::::::.:::::::::::.::::::::::::.::.::   .. ::. ::. :::.:: ...::. ::::::::::: :: ...:.:... :. ::.: ...: .:.  :::::::::::.::::.:::.:.:::: :.::</pattern>
+      <matchSeq start="1" end="523">MAKSIIFSEEARRALEHGMDILAEAVAVTLGPKGRNVVLEKKFGAPQIINDGVTIAKEIELEDHIENTGVSLIRQAASKTNDTAGDGTTTATVLAHAMVKEGLKNVAAGANPIALKRGIDKAVKFLVDKIAEHARPVEDSKAIAQVAAISAGNDEEVGRMIAEAMDKVGREGVISLEEGKSMTTELEVTEGMRFDKGYISPYFVTDTERMEAVLENPYILITDKKITLVQ-DLVPVLEQVARAGRPLLIIAEDIEKEALATLVVNKLRGVLSVVAVKAPGFGDRRKAMLEDIAILTGGEVISEERGLKLENARLDSFGTARRVTVTKDNTTIVAEGNE-AAVKARCEQIRRQIEETDSTYDKEKLQERLAKLSGGVAVIKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLAHLIPVVTEWAQANLSGDELVGANLVARALGAPLRRIAENAGQNGSIVLERVKDKPFNTGYDAQNDAFVDMFEAGIVDPAKVTRSALQNAASIAGMVLTTEAIVVDKPEPKTNTPASSGSGMSDYDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CH602_ACAM1" ac="B0CEZ1" length="543" description="Chaperonin GroEL 2 OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=groEL2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2330</score>
+      <smithWatermanScore>2330</smithWatermanScore>
+      <initn>1893</initn>
+      <init1>1067</init1>
+      <opt>2330</opt>
+      <zScore>2468.8</zScore>
+      <bits>466.5</bits>
+      <expectation>5.9e-130</expectation>
+      <identity>67.2</identity>
+      <positives>91.6</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::.::.:. :.:.::::::::::::::..:.::::::::::::::.: :.::::::.:::::::::::.::::::::::::.::::::..::.:::: ::.: :.:::. .:: .: : :. :::  .: ::..::::::. .:..::.:..::::::::::::::...::::.::::..:::.::::: :.::.::.  :.::::::::.:::::-::.:.::: ... .:::.::::.::::::::..:.:::..::.::.:::::. :: ::::::.:::: :::.::::.:.. .:...:::::: ..::.::.:..:. - ... ::::.:.:.. ....:.:::::.:.:::.::.:::.:::.:::::::.:::::::::.:.::::::::::::.::.::. .:..:: .::  .::::: :. ::. :::.::::::: :: :: :.:...::..:..:. : : .:.. :::::::::::.::::.:::.:.::::::: :</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALEKGMDILCESVAVTLGPKGRNVVLEKKFGAPQIVNDGVTIAKEIELEDNIENTGVALIRQAASKTNDAAGDGTTTATVLAHAMVKEGMRNVVAGANAISLKRGIEKAAGFLVEKIAENARSVEDSTAIAQVGTISAGNDDEVGQMIANAMDKVGKEGVISLEEGKSMTTELEVTEGMRFEKGYISPYFATDTERMEAVLDEPYILLTDKKITLVQ-DLVPVLEQAARAGKPLLVIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKAMLEDIAVLTGGQVITEDAGLKLETAKLEMMGQARRITITKDTTTLVAEGNE-ADVQARCEQIRRQMDETESSYDKEKLQERLAKLAGGVAVIKVGAATETEMKDRKLRLEDAINSTKAAVEEGIVPGGGTTLAHLGPQLASWAADNLTGEELIGATIVERALTAPLKRIAENAGQNGAVIAERVREKEFNVGFDASVNEFTDMFAAGIVDPAKVTRSALQNAASIAGMVLTTECIISDKPEPKENAPTGAGMGGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CH601_SYNP6" ac="P12834" length="544" description="Chaperonin GroEL 1 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=groEL1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2327</score>
+      <smithWatermanScore>2327</smithWatermanScore>
+      <initn>1863</initn>
+      <init1>1074</init1>
+      <opt>2327</opt>
+      <zScore>2465.6</zScore>
+      <bits>465.9</bits>
+      <expectation>9e-130</expectation>
+      <identity>67.2</identity>
+      <positives>91.4</positives>
+      <overlap>525</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="525">MAKKILYQDNARRALERGMEIMVEAVSVTLGPKGRNVVLEKSYGSPQIVNDGVTIAKEIKLLDHIENTGVSLIRQAASKTNDVAGDGTTTATVLAYAMVKEGLKNVAAGANPISIKLGMEKASQYLVTQINEFAQPVEDIQSIQQVASISAGNDEIIGSLIADALSKVGKEGVISLEEGKGIVTELEITEGMKLEKGFISPYFITNTEKMEVSYDNPYILLTDKRITLVQQDLLPILEQITKTKRPLLIIAEDVEKEALATLILNKLRGIINVVAVRAPGFGELRKQMLEDIAILTGGTVITQDAGLSLDNIQLNLLGQARRIIVNKDSTTIVSDGQTLNEINIRCEQLRKQVNIADTGYEKEKLQDRIAKLSGGIAVIRVGAVTETEMKDKKLRLEDAINATRAAVEEGIVPGGGATLTHLSENLVTWAKNNLKEDELIGAMIISRAILAPLRRIAENAGINGPVIIEKVQQQEFEIGYNAAKNTFGNMYTEGIVDPAKVTRSGLQNATSIASMILTTECIIVDDVKSSNES</querySeq>
+      <pattern>:::.:.:..:::::::.:..:..:::.::::::::::::::..:.:::.::::::::::.: ::::::::.:::::::::::.::::::::::::.:.:::::.::::::: : .: :..::...:: ::.  :.:::: .:: ::..::::::  .:..::::..::::::::::::::...::::.::::...::.::::: :.::.::. .:.:.::.:::.: :::-::.:.:::.... :::.:::::.::::::::..:.:::..::.::.:::::. :: ::::::.:::: .::.::::.::. .:. ::.:::: ..::.::::..:. -  .. : .:.:.:.. ....:.:::::.:.::::::.::..:::.:::::::.:::::::::::.::::::::::::.::.::. .:  ::  ::. .:: ::.:..::. :::.:::::::.:: :: :.:..  :. ::.:..: : ::.: :::::::::::.::::.:::.:.::::::.::</pattern>
+      <matchSeq start="1" end="523">MAKRIIYNENARRALEKGIDILAEAVAVTLGPKGRNVVLEKKFGAPQIINDGVTIAKEIELEDHIENTGVALIRQAASKTNDAAGDGTTTATVLAHAVVKEGLRNVAAGANAILLKRGIDKATNFLVEQIKSHARPVEDSKSIAQVGAISAGNDFEVGQMIADAMDKVGKEGVISLEEGKSMTTELEVTEGMRFDKGYISPYFATDTERMEAVFDEPFILITDKKIGLVQ-DLVPVLEQVARAGRPLVIIAEDIEKEALATLVVNRLRGVLNVAAVKAPGFGDRRKAMLEDIAVLTGGQLITEDAGLKLDTTKLDQLGKARRITITKDNTTIVAEGNE-AAVKARVDQIRRQIEETESSYDKEKLQERLAKLSGGVAVVKVGAATETEMKDRKLRLEDAINATKAAVEEGIVPGGGTTLAHLAPQLEEWATANLSGEELTGAQIVARALTAPLKRIAENAGLNGAVISERVKELPFDEGYDASNNQFVNMFTAGIVDPAKVTRSALQNAASIAAMVLTTECIVVDKPEPKEKAPAGAGGGMGDFDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

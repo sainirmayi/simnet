@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162853-0068-39856196-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162853-0068-39856196-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162853-0068-39856196-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0A9|PSBH_PHATC" type="PROTEIN" length="67"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:28:53+00:00" end="2022-11-07T16:28:56+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBH_PHATC" ac="A0T0A9" length="67" description="Photosystem II reaction center protein H OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>432</score>
+      <smithWatermanScore>432</smithWatermanScore>
+      <initn>432</initn>
+      <init1>432</init1>
+      <opt>432</opt>
+      <zScore>660.6</zScore>
+      <bits>125.9</bits>
+      <expectation>3.1e-29</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>67</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="67">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="67">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBH_TRICV" ac="P49475" length="67" description="Photosystem II reaction center protein H OS=Trieres chinensis OX=1514140 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>409</score>
+      <smithWatermanScore>409</smithWatermanScore>
+      <initn>409</initn>
+      <init1>409</init1>
+      <opt>409</opt>
+      <zScore>626.3</zScore>
+      <bits>119.6</bits>
+      <expectation>2.5e-27</expectation>
+      <identity>94.0</identity>
+      <positives>98.5</positives>
+      <overlap>67</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="67">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::::::::::::::::::.::: ::::::::::::::::::::::::::.::::</pattern>
+      <matchSeq start="1" end="67">MALRTRLGEILRPLNAEYGKVAPGWGTTPIMGVVMLAFLVFLLIILQIYNSSLIIENVDVDWSNGIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBH_THAPS" ac="A0T0P8" length="66" description="Photosystem II reaction center protein H OS=Thalassiosira pseudonana OX=35128 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>373</score>
+      <smithWatermanScore>373</smithWatermanScore>
+      <initn>417</initn>
+      <init1>373</init1>
+      <opt>373</opt>
+      <zScore>572.7</zScore>
+      <bits>109.7</bits>
+      <expectation>2.4e-24</expectation>
+      <identity>86.4</identity>
+      <positives>97.0</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::::::::.:::::::::...:  :::::::::::::::::::::::::.:.:</pattern>
+      <matchSeq start="1" end="66">MALRTRLGEILRPLNAEYGKVVPGWGTTPIMGLTMVLFLVFLLIILQIYNSSLIIENVDVDWANAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBH_EMIHU" ac="Q4G3C2" length="66" description="Photosystem II reaction center protein H OS=Emiliania huxleyi OX=2903 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <smithWatermanScore>370</smithWatermanScore>
+      <initn>370</initn>
+      <init1>370</init1>
+      <opt>370</opt>
+      <zScore>568.2</zScore>
+      <bits>108.8</bits>
+      <expectation>4.3e-24</expectation>
+      <identity>87.1</identity>
+      <positives>96.8</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::::::::::::::::.:.: :: :::::.:::::::::.:.:::::::</pattern>
+      <matchSeq start="1" end="62">MALRTRLGEILRPLNAEYGKVAPGWGTTPVMGVFMGLFLVFLVIILQIYNSSIILENVDVDWVTVN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBH_GRATL" ac="Q6B8Y7" length="67" description="Photosystem II reaction center protein H OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <smithWatermanScore>354</smithWatermanScore>
+      <initn>354</initn>
+      <init1>354</init1>
+      <opt>354</opt>
+      <zScore>544.3</zScore>
+      <bits>104.4</bits>
+      <expectation>9.4e-23</expectation>
+      <identity>85.5</identity>
+      <positives>95.2</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::.:::::::::::::::.: :  :..::::::::::::::.:::::::</pattern>
+      <matchSeq start="1" end="62">MALRTRLGEILRPLNSEYGKVAPGWGTTPIMGVFMLLFFLFLLIILQIYNSSLILENVDVDWATLGN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBH_PORPU" ac="P51325" length="67" description="Photosystem II reaction center protein H OS=Porphyra purpurea OX=2787 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <smithWatermanScore>352</smithWatermanScore>
+      <initn>352</initn>
+      <init1>352</init1>
+      <opt>352</opt>
+      <zScore>541.3</zScore>
+      <bits>103.9</bits>
+      <expectation>1.4e-22</expectation>
+      <identity>82.3</identity>
+      <positives>95.2</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::.:::::::::::::::.. :  :..:::::::::::::..:::::::</pattern>
+      <matchSeq start="1" end="62">MALRTRLGEILRPLNSEYGKVAPGWGTTPIMGIFMLLFFLFLLIILQIYNSSLVLENVDVDWATLGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBH_NEOYE" ac="Q1XDG1" length="67" description="Photosystem II reaction center protein H OS=Neopyropia yezoensis OX=2788 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <smithWatermanScore>352</smithWatermanScore>
+      <initn>352</initn>
+      <init1>352</init1>
+      <opt>352</opt>
+      <zScore>541.3</zScore>
+      <bits>103.9</bits>
+      <expectation>1.4e-22</expectation>
+      <identity>82.3</identity>
+      <positives>95.2</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::.:::::::::::::::.. :  :..:::::::::::::..:::::::</pattern>
+      <matchSeq start="1" end="62">MALRTRLGEILRPLNSEYGKVAPGWGTTPIMGIFMLLFFLFLLIILQIYNSSLVLENVDVDWATLGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBH_GUITH" ac="O78514" length="67" description="Photosystem II reaction center protein H OS=Guillardia theta OX=55529 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <smithWatermanScore>352</smithWatermanScore>
+      <initn>390</initn>
+      <init1>352</init1>
+      <opt>352</opt>
+      <zScore>541.3</zScore>
+      <bits>103.9</bits>
+      <expectation>1.4e-22</expectation>
+      <identity>82.8</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::::::::.::::::::::::: :. ::  :..::::::::::::::.:::::::..</pattern>
+      <matchSeq start="1" end="64">MALRTRLGELLRPLNSEYGKVAPGWGTTPAMGFVMLLFFLFLLIILQIYNSSLILENVDVDWASLGN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBH_CYACA" ac="O19925" length="67" description="Photosystem II reaction center protein H OS=Cyanidium caldarium OX=2771 GN=psbH PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>346</score>
+      <smithWatermanScore>346</smithWatermanScore>
+      <initn>345</initn>
+      <init1>345</init1>
+      <opt>346</opt>
+      <zScore>532.3</zScore>
+      <bits>102.2</bits>
+      <expectation>4.3e-22</expectation>
+      <identity>76.1</identity>
+      <positives>95.5</positives>
+      <overlap>67</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTN-GIV</querySeq>
+      <pattern>:::.:::::::::::..::::::::::::::.. :. ::.::.:::::::::::.::.:..::.-::</pattern>
+      <matchSeq start="1" end="67">MALKTRLGELLRPLNSQYGKVAPGWGTTPIMGIFMALFLLFLIIILQIYNSSLILENLDISWTTLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBH_SYNP2" ac="B1XIE1" length="67" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>334</score>
+      <smithWatermanScore>334</smithWatermanScore>
+      <initn>334</initn>
+      <init1>334</init1>
+      <opt>334</opt>
+      <zScore>514.4</zScore>
+      <bits>98.9</bits>
+      <expectation>4.3e-21</expectation>
+      <identity>77.8</identity>
+      <positives>93.7</positives>
+      <overlap>63</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="63">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::..:.:::.:::::::::::::.:.: :. :::::::::::::::::.:. .::::</pattern>
+      <matchSeq start="1" end="63">MAQRTRLGDILKPLNSEYGKVAPGWGTTPLMGVFMALFLVFLLIILQIYNSSLILEGFEVDWTALGF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBH_SYNJB" ac="Q2JLQ8" length="67" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <smithWatermanScore>329</smithWatermanScore>
+      <initn>343</initn>
+      <init1>329</init1>
+      <opt>329</opt>
+      <zScore>507.0</zScore>
+      <bits>97.5</bits>
+      <expectation>1.1e-20</expectation>
+      <identity>75.8</identity>
+      <positives>95.2</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>::.:::::.::::::.:::::::::::::.::: :. : :::::::::::.::..:...:.:</pattern>
+      <matchSeq start="1" end="62">MAIRTRLGDLLRPLNSEYGKVAPGWGTTPLMAVFMALFAVFLLIILQIYNKSLLLEDINVSWESLSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBH_CYAM1" ac="Q85FZ2" length="64" description="Photosystem II reaction center protein H OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>328</score>
+      <smithWatermanScore>328</smithWatermanScore>
+      <initn>328</initn>
+      <init1>328</init1>
+      <opt>328</opt>
+      <zScore>505.9</zScore>
+      <bits>97.2</bits>
+      <expectation>1.3e-20</expectation>
+      <identity>77.4</identity>
+      <positives>95.2</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:::::::::.:::::..::::::::::::::.: :  ::.::.::::::::::....:.:::</pattern>
+      <matchSeq start="1" end="62">MALRTRLGEILRPLNSQYGKVAPGWGTTPIMGVFMVLFLLFLVIILQIYNSSLLLNDVQVDWMG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBH_SYNY3" ac="P14835" length="64" description="Photosystem II reaction center protein H OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=psbH PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>328</score>
+      <smithWatermanScore>328</smithWatermanScore>
+      <initn>328</initn>
+      <init1>328</init1>
+      <opt>328</opt>
+      <zScore>505.9</zScore>
+      <bits>97.2</bits>
+      <expectation>1.3e-20</expectation>
+      <identity>77.4</identity>
+      <positives>93.5</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::..:::::.:::::.:::::::.:.: :. :::::::::::::::::.:. .:::</pattern>
+      <matchSeq start="1" end="62">MAQRTRLGDILRPLNSEYGKVVPGWGTTPVMGVFMALFLVFLLIILQIYNSSLILEGFSVDWAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBH_SYNS3" ac="Q0IDC8" length="68" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain CC9311) OX=64471 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>328</score>
+      <smithWatermanScore>328</smithWatermanScore>
+      <initn>380</initn>
+      <init1>323</init1>
+      <opt>328</opt>
+      <zScore>505.4</zScore>
+      <bits>97.2</bits>
+      <expectation>1.4e-20</expectation>
+      <identity>71.2</identity>
+      <positives>93.9</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.. :. ::::::::::.::.:::.:...:.:-::.</pattern>
+      <matchSeq start="1" end="65">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPVMGIFMALFLVFLLIILQLYNKSLILEGINVNW-NGLGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBH_TRIEI" ac="Q110N3" length="67" description="Photosystem II reaction center protein H OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>326</score>
+      <smithWatermanScore>326</smithWatermanScore>
+      <initn>349</initn>
+      <init1>320</init1>
+      <opt>326</opt>
+      <zScore>502.5</zScore>
+      <bits>96.7</bits>
+      <expectation>2e-20</expectation>
+      <identity>73.4</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:. :: ::..:.:::.:::::.:::::: .::: .: :.::::::::::::::..:::::::.:</pattern>
+      <matchSeq start="1" end="64">MSQRTGLGDILKPLNSEYGKVSPGWGTTWVMAVFIGLFFVFLLIILQIYNSSLLLENVDVDWANLTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBH_SYNS9" ac="Q3AUQ6" length="66" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain CC9902) OX=316279 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>323</score>
+      <smithWatermanScore>323</smithWatermanScore>
+      <initn>373</initn>
+      <init1>318</init1>
+      <opt>323</opt>
+      <zScore>498.1</zScore>
+      <bits>95.9</bits>
+      <expectation>3.5e-20</expectation>
+      <identity>69.7</identity>
+      <positives>92.4</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.. :  ::::::.:::.::.:::.:...:.:-::.</pattern>
+      <matchSeq start="1" end="65">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPVMGIFMVLFLVFLLVILQLYNKSLILEGINVNW-NGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBH_PARMW" ac="Q7U9I7" length="66" description="Photosystem II reaction center protein H OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>323</score>
+      <smithWatermanScore>323</smithWatermanScore>
+      <initn>373</initn>
+      <init1>318</init1>
+      <opt>323</opt>
+      <zScore>498.1</zScore>
+      <bits>95.9</bits>
+      <expectation>3.5e-20</expectation>
+      <identity>69.7</identity>
+      <positives>92.4</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.. :  ::::::.:::.::.:::.:...:.:-::.</pattern>
+      <matchSeq start="1" end="65">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPVMGIFMVLFLVFLLVILQLYNKSLILEGINVNW-NGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBH_SYNSC" ac="Q3AMZ3" length="66" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain CC9605) OX=110662 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>323</score>
+      <smithWatermanScore>323</smithWatermanScore>
+      <initn>373</initn>
+      <init1>318</init1>
+      <opt>323</opt>
+      <zScore>498.1</zScore>
+      <bits>95.9</bits>
+      <expectation>3.5e-20</expectation>
+      <identity>69.7</identity>
+      <positives>92.4</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="66">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.. :  ::::::.:::.::.:::.:...:.:-::.</pattern>
+      <matchSeq start="1" end="65">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPVMGIFMVLFLVFLLVILQLYNKSLILEGINVNW-NGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBH_CROS5" ac="B1WS17" length="64" description="Photosystem II reaction center protein H OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <smithWatermanScore>321</smithWatermanScore>
+      <initn>372</initn>
+      <init1>321</init1>
+      <opt>321</opt>
+      <zScore>495.4</zScore>
+      <bits>95.3</bits>
+      <expectation>4.9e-20</expectation>
+      <identity>77.4</identity>
+      <positives>90.3</positives>
+      <overlap>62</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="62">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.: :: :::::::::::::::::...  : :</pattern>
+      <matchSeq start="1" end="62">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPLMGVFMGLFLVFLLIILQIYNSSLILNGFTVTWGG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBH_SYNPW" ac="A5GIH4" length="66" description="Photosystem II reaction center protein H OS=Synechococcus sp. (strain WH7803) OX=32051 GN=psbH PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <smithWatermanScore>321</smithWatermanScore>
+      <initn>371</initn>
+      <init1>318</init1>
+      <opt>321</opt>
+      <zScore>495.2</zScore>
+      <bits>95.3</bits>
+      <expectation>5.1e-20</expectation>
+      <identity>70.8</identity>
+      <positives>92.3</positives>
+      <overlap>65</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="65">MALRTRLGELLRPLNAEYGKVAPGWGTTPIMAVVMGAFLVFLLIILQIYNSSLIIENVDVDWTNGIV</querySeq>
+      <pattern>:: :::::.::::::.:::::.:::::::.:.. :  ::::::.:::.::.:::.:...:.:-::</pattern>
+      <matchSeq start="1" end="64">MAQRTRLGDLLRPLNSEYGKVVPGWGTTPVMGIFMVLFLVFLLVILQLYNQSLILEGINVNW-NGAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

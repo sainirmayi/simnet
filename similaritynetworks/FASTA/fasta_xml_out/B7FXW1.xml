@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-161642-0290-50178820-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-161642-0290-50178820-p1m.m9&quot; -m &quot;F10 fasta-R20221107-161642-0290-50178820-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FXW1|SQLE_PHATC" type="PROTEIN" length="348"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:16:42+00:00" end="2022-11-07T16:16:45+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="SQLE_PHATC" ac="B7FXW1" length="348" description="Alternative squalene epoxidase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_45494 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2418</score>
+      <smithWatermanScore>2418</smithWatermanScore>
+      <initn>2418</initn>
+      <init1>2418</init1>
+      <opt>2418</opt>
+      <zScore>3247.8</zScore>
+      <bits>609.4</bits>
+      <expectation>2.4e-173</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>348</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="348">MLVDRVENNEKQQQQMASSSDAMSDSSLSDDEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="348">MLVDRVENNEKQQQQMASSSDAMSDSSLSDDEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ERG3B_GIBZE" ac="A0A0E0SNE8" length="323" description="Delta(7)-sterol 5(6)-desaturase ERG3B OS=Gibberella zeae (strain ATCC MYA-4620 / CBS 123657 / FGSC 9075 / NRRL 31084 / PH-1) OX=229533 GN=ERG3B PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <initn>222</initn>
+      <init1>123</init1>
+      <opt>226</opt>
+      <zScore>300.8</zScore>
+      <bits>64.0</bits>
+      <expectation>3.4e-09</expectation>
+      <identity>24.4</identity>
+      <positives>50.5</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="61" end="346">DEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSM-YSPISYRQVFPESWYVYDTLSNCAPKP--LGLVLGILAVA-VGQVFVWI----FFYLFKFGY-LGTDPRSIQSKGAREY---IFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYAC---WLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYR------DPSGFAPRVFRENV</querySeq>
+      <pattern>                              : ..: . : :   .: -..: :  . : . . .--....  :. --     .:: .:- : .:...----. : : :  -:   :: ....  .: ---.:   ..  .  :  .  . :.  .   .  .  :. ..-.:: :------.:..:   : .: :::-- :..:.. :::::..  :  . :.    .: . . .-:  :---.:  : .  ..-.   ..:---:  :::.  .. --: . .  ...:: : .:: .:  :::. : : :.  :..:------::   : ::..:</pattern>
+      <matchSeq start="18" end="306">-------------MDAILEILDPYVFDYGYAYLFPQQTTQPSYGNSTGFAPSSASKNFDDEYSL--NFGSSLPRDDIYRQSASILMIAGFGAAFIYVISAALSYYFVFDRRLEHHPRFLKNQIKQEIQSSFFAIPIIDLLTLPFFLGEVRGHSLLYTNIDEYGWSWLAI-STILY------MVFNDLGIYWIHRLEH--HPSIYKYVHKPHHKWIVPTPWAAIAFHPVDGYVQSV-PYHV---FVYLCPMQKHL-YMFLFVCVQIWTILIHDGDMIT--GHWLERFINSPAHHTLHHMYFTCNYGQYFTWADNYWGSHRAPMPELDPIHEAIRVMQEKGLADKDGNPIEKSKSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ERG3_ASHGO" ac="Q754B9" length="351" description="Delta(7)-sterol 5(6)-desaturase OS=Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) OX=284811 GN=ERG3 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <smithWatermanScore>238</smithWatermanScore>
+      <initn>217</initn>
+      <init1>118</init1>
+      <opt>238</opt>
+      <zScore>294.6</zScore>
+      <bits>63.0</bits>
+      <expectation>7.6e-09</expectation>
+      <identity>23.2</identity>
+      <positives>52.9</positives>
+      <overlap>293</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="58" end="336">LSDDEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLS-SMYSPISYRQVFPESWYVYD-TLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLF-KFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITW-MLKLMPQS--YYSFEGTIQ------YKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFT--NPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :. :..   :...  ...-:.  :.      :  . :  -....  :.   :  ..    :  :: :... . -.:.:. .  .:. ..---   ... .  .: :  : .  .. ... :-.:.:   :--:...: ...------ . ::. :  . ::-: .:   : --:: :.. :: ::.. --.:    ::. --.: .-.  .:  .   :    .:-.:... .    : ..::.   .  : .-----..  : : ::: .:..:::..   .:.:::.::.:</pattern>
+      <matchSeq start="33" end="310">LVLEFCDSYFFDYVYATLLPASLSPKMGGTWQQAMIKEQMVNATRVFGRSLERPLEVYGYAPFMFEVSPHAFGSVLPRYSLLRQSLSLFLVTTVFGWLLYLIVASFSYVFVFDKSVFNH---PRYLKNQMSMEIKQGLGAIPYMAVMTVPWFLLELHGYSHLYMGLELNVRGYVRLALEALFFILFTDFGI-YLLHRWLHW--PAVYKVLHKKHHKWLVCTPFASHAFHP--IDGY-LQSLPYHLFPMLFPLHKV-SYLVLFTFVNVWTVMIHDGEYLSNDPV-----INGAACHTVHHLYFNYNYGQFTTLWDRLGGSYREPDHELFDSNLKKDKAVWEQQIKEVDEMIKNVEGPADDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="SC5D_RAT" ac="Q9EQS5" length="299" description="Lathosterol oxidase OS=Rattus norvegicus OX=10116 GN=Sc5d PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <initn>202</initn>
+      <init1>117</init1>
+      <opt>230</opt>
+      <zScore>286.8</zScore>
+      <bits>61.3</bits>
+      <expectation>2.1e-08</expectation>
+      <identity>24.3</identity>
+      <positives>51.1</positives>
+      <overlap>280</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="78" end="348">ELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGY-LGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLI---GYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHV-LEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHS-EYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGF---APRVFRENV</querySeq>
+      <pattern>                              ..:  :  ..::.  . .:.: -------::.  :.. .   :   . : : . .-:   :. .... .:: .:    :  :. :   ..:.---::  .   .  .:...  .  ..-----.  : . : . : .: -:.: .---.:.  ::::: .  :  : .     .: :-.  .:  .  -.:   .  .:...      :   ::.-..  : --::: .  :.-: :  :: .: .:::. :  .:..::... ::.:---.:. . .:.</pattern>
+      <matchSeq start="13" end="272">------------------MDLVLSAADYYFFTPYVYPATWPEDNIIRQTVSL-------LVVTNLGAYILYFFCATLSYYFVYDHSLMKHPQFLKNQVSREIMFTVKSLPWISIPTVSLFLLELRGYSKLYDDIGDFPNGWIHLIMSV-----ISFLFFTDMLIYWIHRGLHHRL---LYKHIHKPHHIWKIPTPFASHAFHPVDGF-LQSLPYHIYP-FVFPLHKVVYLGLYVLVNVWTISIHDGDFRVPQ--IFRPFINGS-AHHTDHHMLFDYNYGQYFTLWDRIGGSFKHPSSFEGKGPHSYVKNMTEKESNSLAENGCKSKKLCNGEFTKNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="SC5D_MOUSE" ac="O88822" length="299" description="Lathosterol oxidase OS=Mus musculus OX=10090 GN=Sc5d PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <smithWatermanScore>229</smithWatermanScore>
+      <initn>203</initn>
+      <init1>124</init1>
+      <opt>229</opt>
+      <zScore>282.8</zScore>
+      <bits>60.6</bits>
+      <expectation>3.4e-08</expectation>
+      <identity>24.3</identity>
+      <positives>51.1</positives>
+      <overlap>280</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="78" end="348">ELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGY-LGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLI---GYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHV-LEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHS-EYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGF---APRVFRENV</querySeq>
+      <pattern>                              ..:  :  ..::.  . .:.: -------:..  :.. .   :   . : : . .-:   :. .... .:: .:    :  :. :   ..:.---::  .   .  .:...  .  ..- . ::----. : . : .: -:.: .--- :.  ::::: .  :  : .     .: :-.  .:  .  -.:   .  .:...      :   ::.-..  : --:.: .  :.-: :  :: :: .:::. :  .:..::... ::.:---.:. . .:.</pattern>
+      <matchSeq start="13" end="272">------------------MDLVLSAADYYFFTPYVYPATWPEDNIIRQTISL-------LIVTNLGAYILYFFCATLSYYFVYDHSLMKHPQFLKNQVSREIVFTVKSLPWISIPTVSLFLLELRGYSKLYDDIGDFPNGWIHLMVSV-VSFLF----FTDMLIYWIHRGLHHRL---VYKRIHKPHHIWKIPTPFASHAFHPVDGF-LQSLPYHIYP-FVFPLHKVVYLGLYVLVNVWTISIHDGDFRVPQ--ILRPFINGS-AHHTDHHMFFDYNYGQYFTLWDRIGGSFKHPSSFEGKGPHSYVKNMTEKESNSFAENGCKGKKVGNGEFTKNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="SC5D_TOBAC" ac="Q9ZT29" length="271" description="Delta(7)-sterol-C5(6)-desaturase OS=Nicotiana tabacum OX=4097 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <initn>191</initn>
+      <init1>129</init1>
+      <opt>214</opt>
+      <zScore>273.0</zScore>
+      <bits>58.6</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>25.4</identity>
+      <positives>51.1</positives>
+      <overlap>276</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="75" end="336">STYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQV-------FVWIFF-YLFKFG-YLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVL--LIGYLAIT-WMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMII--IPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              .:.:. .     .::::.--------.: :- .. : :   .: :-------:.: :.-: .: .-:.  :--.: :. :---.. .  ..  ..:   .:--:  :.  .-:   .   :  .. . . :  ...-.... ::-: ::.  : ..:-.:.. :  :: ...   .. : :  .  .  :.--.:- :.: :.   .  :..:.    : : . ::.  ---   .:  .: : ---: .::. .. ::::  .:.: . :: :::</pattern>
+      <matchSeq start="12" end="263">-------------------MEDYLKQFVEETSFYNRLVLGTFMPESWW--------GPLP-HMLQGWLRNYIGGVLLYFISGFLWCFYIYHLKRNVYIPKD--AIPSNKA---MLLQISVAMKAMPWYCALPSLSEYMIENGWTKCFARISDVGWLSYVIYAAIYL-VIVEFGI-YWMHMELHDIKP-LYKYLHATHHIYNKQNTLSPFAGLAFHPLDGILQAVP-HVVALLLVPMHFSTHIALIFLEALWTANIHDCI---HGKVFPVMGAGY---HTIHHRTYRHNYGHYTIWMDWMFGTLRDPVEEDAKKM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ERG25_YEAST" ac="P53045" length="309" description="C-4 methylsterol oxidase ERG25 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ERG25 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <smithWatermanScore>201</smithWatermanScore>
+      <initn>186</initn>
+      <init1>93</init1>
+      <opt>201</opt>
+      <zScore>270.4</zScore>
+      <bits>58.3</bits>
+      <expectation>1.7e-07</expectation>
+      <identity>24.1</identity>
+      <positives>47.9</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="49" end="345">SSDAMSDSSLSDDEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSP-ISYRQVFPESWYVYDTLSNCAPKPLGLVLGILA--VAVGQVFVWIFF-YLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDT----FCMIIIPLFVTA-----NLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHH-VHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              .: : :  . ::-::     .  :   . :.:-... . .  .:: :--- :      ::.. .: --.   . . :...- .  :     .: .: :   . : ..  ::.:.-  :.-. .  .  .   : .  .  .    :.  -:. . .::.:  .:  : : : -- .::.. :: :::.. :  ..:  .   .:----:  . .:.. . -----.:   :-::  . . ..   -----:: : :::.-. . . . . :.::-.::..:  ::.  : :.:    :   : . : :  :</pattern>
+      <matchSeq start="1" end="295">------------------------------MSAVFNNATLSG-LVQASTYSQTLQNVAHYQPQLNFMEKYWAAWYSY---MNNDVLATGLMFFLLHEFMYFFRCLPWFIIDQIPYFRRWKLQPTKIPSAKEQLYCLKSVLLSHF-LVEA-IPIWTFHPMCEKLGITVEVPFPSLKTMAL-EIGLFFVLEDTWHYWAHRLFHY--GVFYKYIHKQHHRYAAPFGLSAEYAHPAETLSLGFGTVGMPILYVMYTGKLHLFTLC-VWITLRLFQAVDS-----HSGYDFPWS-LNKIMPFWAGAEHHDLHHHYFIGNYASSFRWWDYCLDTESGPEAKASREERMKKRAENNAQKKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CH25H_MOUSE" ac="Q9Z0F5" length="298" description="Cholesterol 25-hydroxylase OS=Mus musculus OX=10090 GN=Ch25h PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>209</score>
+      <smithWatermanScore>209</smithWatermanScore>
+      <initn>95</initn>
+      <init1>49</init1>
+      <opt>199</opt>
+      <zScore>268.0</zScore>
+      <bits>57.8</bits>
+      <expectation>2.3e-07</expectation>
+      <identity>25.6</identity>
+      <positives>53.7</positives>
+      <overlap>281</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="58" end="334">LSDDEIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANL-VRHCNVWTYMAFGSSYACWLTLI-HSEYVFPWDGI-FRKLG-LGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              ..:. .  :  .  :::. ... :  :..: .:     :.:  .-- .:. : .... :--.. :.-- ...   .  : ----: .... .   ::  .--:   ::. .  :  .    :.:: --. : .   .....::.: :   .. :.:.: :-: .:.  :: ::.--:   :-:.  . :. . .. . .: . :.-: .:.  : ..:-     ::.. -:: : :::.  -.  .:- :  : : .::. :. :..  :  .:.. :: :</pattern>
+      <matchSeq start="4" end="265">---------------------------MGCYNGSELQDLGCSSQLLLQPLWDTIRTREAFTRSPIFPVTFSIIT--YVGFCLPFVVLDV--LYPWV--PILRRYKIHPDF----SPSVKQLLPCLGLTLY--QHLVFVFPVTLLHWVRSPALLPQE--APELVQLLSHVLICLLLFDTEIFAWHLLHHKV-PWLYRTFHKVHHQ--NSSSF-ALATQYMSFWELLSLTFFDVLNVAVLRCHPLTIFTF-HVINIWLSVEDHSGYDFPWSTHRLVPFGWYGGVAHHDMHHSQFNCNFAPYFTHWDKMLGTLRSAPLPESLCACGERCVNSRERCAVHLIQKKKQT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CH25H_RAT" ac="Q4QQV7" length="298" description="Cholesterol 25-hydroxylase OS=Rattus norvegicus OX=10116 GN=Ch25h PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <smithWatermanScore>198</smithWatermanScore>
+      <initn>78</initn>
+      <init1>49</init1>
+      <opt>197</opt>
+      <zScore>265.4</zScore>
+      <bits>57.3</bits>
+      <expectation>3.2e-07</expectation>
+      <identity>25.3</identity>
+      <positives>50.9</positives>
+      <overlap>277</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="62" end="334">EIIEHVVHGKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVR-HCNVWTYMAFGSSYACWLTLI-HSEYVFPWDGI-FRKLG-LGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :. ::  ..    .:  ::.-----::  . ..  :. : : ---.:: .: ------- :.-- ...   .  : ----: ..:. .   ::  .--:   ::. .  .  .    :.:. --. : .   .....::.: :   .. :.:.: :-: .:.  :: ::.--:   :-:.  . :... .. . .: . :.. -.:.  : ..:-     ::.. -:: : :::.  -.  .:- :  : : .::. :. :..  :  .:.. :: :</pattern>
+      <matchSeq start="19" end="265">------------MACHNVSELQDLGCSNQLLLQPLWDSIRTGEASARSPF-----FPVIFSIFTYLGFCLPF---VVLDVLC-------PWV--PILRRYKIHPDF----SPSVRQLLPCLGLTLY--QHLVFVFPVTLMHWARSPALLPRE--APELSQLLSHVLICLLLFDTEIFAWHLLHHKV-PWLYRTFHKVHHQ--NSSSF-ALATQYMSVWELLSLTFFDVLNVAMLQCHPLTILVF-HVVNIWLSVEDHSGYDFPWSTHRLVPFGWYGGVAHHDLHHSQFNCNFAPYFTHWDKMLGTLRCAPHSKRLCAGSESCLDSGEQCTVHLNQKKKQT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CH25H_PIG" ac="Q4G1G8" length="270" description="Cholesterol 25-hydroxylase OS=Sus scrofa OX=9823 GN=CH25H PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <smithWatermanScore>193</smithWatermanScore>
+      <initn>116</initn>
+      <init1>52</init1>
+      <opt>193</opt>
+      <zScore>261.0</zScore>
+      <bits>56.4</bits>
+      <expectation>5.6e-07</expectation>
+      <identity>30.8</identity>
+      <positives>57.5</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="194" end="334">FVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTAN-LVRHCNVWTYMAFGSSYACWLTLI-HSEYVFPWDGIFRKLGLG--TPADHH-VHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              ... .::.: :   .  :::.: :-: .:.  :: ::.--:   :-:.  . :..  .. . .:  .:-.. .:.  : . :-     ::.. -:: : :::..- : . .:--  . ::-.::. :. :..  :  .:.. :: :</pattern>
+      <matchSeq start="126" end="265">VVFVFPMTLLHWAASPVLLPPEAPELLQLVRHIVLCLLLFDTEFFIWHVLHHKV-PWLYRTFHKMHHQ--NSSSF-ALATQYMSVGELLSLGVFDMVNIMLLRCHPLTVLIF-HVINIWLSVEDHSGYDFPWSA-HRLVPFGWYGGVTHHDLHHSQFNCNFAPYFTHWDKILGTLRSAHAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CH25H_DANRE" ac="Q5PRC0" length="251" description="Cholesterol 25-hydroxylase-like protein OS=Danio rerio OX=7955 GN=ch25h PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <initn>142</initn>
+      <init1>87</init1>
+      <opt>192</opt>
+      <zScore>260.4</zScore>
+      <bits>56.2</bits>
+      <expectation>6.1e-07</expectation>
+      <identity>31.5</identity>
+      <positives>55.2</positives>
+      <overlap>165</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="175" end="332">AREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFE-GTIQYK-ELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNP-RLFDAFNGSLMDTFCMIIIPLFVTAN-LVRHCNVWTYMAFGSSYACWLTLI-HSEYVFPW-DGIFRKLGLGTPADHH-VHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :. .--: :: .  -:...  -.:  ::.: :   .. :.:.: :-: .:.  :: ::..:. - :   ..:.- .:. .--- .:...:-..   .  : : :-     ::.. -:  : .::-   .  .::   : ::-:::. :: ::.  :  .:.: ::</pattern>
+      <matchSeq start="91" end="247">ASVSWTMMWSCLALSLYNHVVYIFPLSVLHWYWR--PVSYLAEAPGVLRVVWDLAACLLLFDFQYFVWHLLHHKV-PWLYRTFHKVHHKYTSTFALATEYSGA-WETLSL---GFFAAVNPMLLGVHPMTEMLF-HMLNMWLSVEDHCGYDLPWATHRLMPFGLYGGAPHHDVHHQKFKSNYAPYFTHWDKLFGTLHFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CH25H_HUMAN" ac="O95992" length="272" description="Cholesterol 25-hydroxylase OS=Homo sapiens OX=9606 GN=CH25H PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <smithWatermanScore>190</smithWatermanScore>
+      <initn>103</initn>
+      <init1>50</init1>
+      <opt>190</opt>
+      <zScore>256.9</zScore>
+      <bits>55.6</bits>
+      <expectation>9.6e-07</expectation>
+      <identity>28.1</identity>
+      <positives>55.1</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="164" end="337">GTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANL-VRHCNVWTYMAFGSSYACWLTLI-HSEYVFPWDGI-FRKLG-LGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              ::. .  :  .    :.:--. . :  .  .....::.: :   .. :.:.: :-: .:.  :: ::.--:   :-:.  . :... .. . .:   :.-.  :.  : ..:-     ::.. -:: : :::.  -.  .:- :  . : .::. :. :..  :  .:.. :: :  :</pattern>
+      <matchSeq start="98" end="268">LRRYKIHPDFSPSAQQLLPCLGQTLYQHVMFVFPVTLLHWARSPALLP--HEAPELLLLLHHILFCLLLFDMEFFVWHLLHHKV-PWLYRTFHKVHHQ--NSSSF-ALATQYMSVWELFSLGFFDMMNVTLLGCHPLTTLTF-HVVNIWLSVEDHSGYNFPWSTHRLVPFGWYGGVVHHDLHHSHFNCNFAPYFTHWDKILGTLRTASVPAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ERG3B_ASPFU" ac="Q4WIX5" length="335" description="Delta(7)-sterol 5(6)-desaturase erg3B OS=Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 GN=erg3B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <smithWatermanScore>201</smithWatermanScore>
+      <initn>211</initn>
+      <init1>113</init1>
+      <opt>201</opt>
+      <zScore>254.8</zScore>
+      <bits>55.6</bits>
+      <expectation>1.3e-06</expectation>
+      <identity>25.2</identity>
+      <positives>55.1</positives>
+      <overlap>234</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="120" end="337">SWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFG---YLGTDPRS---IQSKGAREY--IFREGLLTHIGQP-EGFVLLIGYLAITWMLKLMPQS-YYSFE-GT----IQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHS-EYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :. .:. .. ::---:: :   :---. .: : ..--..:. .  .::: -... .. .  :  .. ..   :- :.: -:.----  : .  . ... :   : .:   :-- ::.:.  ::::::.     . ..    .: .:. .-:  :   :    ..-.:...    . : ..::.-::..--:.  ----..  : : .:: .:..:::... ..:..::.:: :.</pattern>
+      <matchSeq start="67" end="290">YNSHINRYVTLTPSQYAVESSLARDNILRQFLSLFITIWAFGLLLYLTTASLSFALVFDKRAMQHPKFLRHQIRLEIGQALRAMPVMAALTAPLFLAEVRGYSKLYDFPTGSPFPLYTYLQYPLFIAFTDFAIYWIHRGLH--HPAIYKRLHKPHHRWIISTPYASYAFHPVDGWCQSL-PYHVYPFLFPLQKA-AYLGLFVFVTIWTVMIHDGEYAL--DSPV----INGSACHTIHHYYFNYNYGQFITFWDRIGGSYRRPNRELFDKQQRLQQTEIQRQVEEMERLVKEVEGSDDRC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="SC5D_HUMAN" ac="O75845" length="299" description="Lathosterol oxidase OS=Homo sapiens OX=9606 GN=SC5D PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>208</score>
+      <smithWatermanScore>208</smithWatermanScore>
+      <initn>188</initn>
+      <init1>127</init1>
+      <opt>208</opt>
+      <zScore>247.9</zScore>
+      <bits>54.1</bits>
+      <expectation>3e-06</expectation>
+      <identity>26.5</identity>
+      <positives>47.7</positives>
+      <overlap>264</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="339">IAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGY-LGTDPRSIQSKGAREYIFREGLLTHIG--QPEGFVLLI-GYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHV-LEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTP----ADHHV-HHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :.: .:   : . .   --: .: .. :  .-  :   . : : : .-:   :. ....  ::  :    :  :.--    :.: :-::  .   :  .:--:  :: ...---..  : . : . : .: -:.: .--- :.  ::::: .  :  : .     .: :-.  .:  .  -..   .  .:...      :   ::-------:: ::   .  :----. ::.-:: :: .:::. :  .:..::....::.:</pattern>
+      <matchSeq start="17" end="260">--------------MDLVLRVADYYFFTPYVYPATWPEDDIFRQAIS--LLIVTNVGAYIL-YFFCATLSYYFVFDHALMKHPQFLKNQVRREIKFTVQALPWISILTVALFLLEIRGYSKLHDDLGEFP--YGLFELVVS---IISFLFFTDMFIYWIHRGLHHRL---VYKRLHKPHHIWKIPTPFASHAFHPIDGF-LQSLPYHIYP-FIFPLHKVVYLSLYILVNIWTISIH-------DGDFRVPQILQPFINGSAHHTDHHMFFDYNYGQYFTLWDRIGGSFKNPSSFEGKGPLSYVKEMTEGKRSSHSGNGCKNEKLFNGEFTKTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ERG25_SCHPO" ac="Q9UUH4" length="300" description="C-4 methylsterol oxidase erg25 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=erg25 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <smithWatermanScore>184</smithWatermanScore>
+      <initn>120</initn>
+      <init1>69</init1>
+      <opt>184</opt>
+      <zScore>247.8</zScore>
+      <bits>54.1</bits>
+      <expectation>3.1e-06</expectation>
+      <identity>22.9</identity>
+      <positives>46.8</positives>
+      <overlap>284</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="74" end="342">KSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSNCAPKPLGLVLGILA--VAVGQVFVWIFF-YLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGYLAITWMLKL-MPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFG---SSYACWLTL-------IHSEYVFPWDGIFRKLGLGTPADHH-VHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :..:.  ... .---. : .:    .      ::.  .: --.  :. . :...- .  :     .:... . . .    :  ::.:.      . :.  .  :. :. -.:--.      :    ::--. :.:  .:  : : : --  ::.. :: :::.. :  ..:  .  .. . .    .::  -------.: :..  --- ..  :.::------- :. : :::.-. . : . . ::::- ::  :: :..  : :.: .  : ..   :  :</pattern>
+      <matchSeq start="20" end="286">-----------MNTTSEVIVGTGFQAIRQQLAQMHPELNFVE---QLWLAYYKWFDNDVVATGLMSFLLHELIYFGRCIPWMIIDAMPYFRRWKIQPKKVPTLAEQWECTRLVLLSHFTVELPQIWLFDPMCATFGLSTSVP--FPPVTKMIWQITLF--FFLEDTWHYWAHRLFHY--GIFYRFIHKVHHRYSAPFGLSAEYAHPLEIILLGAGTVFVPL-------MWCYFTHDLHLVTMYIWITLRLFQAVDSHAGYDFPWS-LNKFLPIWAGADHHDYHHMAFKDNFSSSFRWWDAVLKTDQNYHQFKARRLAAKYEAESKKAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ERG3_NEUCR" ac="Q7SBB6" length="344" description="Probable Delta(7)-sterol 5(6)-desaturase OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=NCU06207 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>202</score>
+      <smithWatermanScore>202</smithWatermanScore>
+      <initn>206</initn>
+      <init1>118</init1>
+      <opt>202</opt>
+      <zScore>247.8</zScore>
+      <bits>54.3</bits>
+      <expectation>3.1e-06</expectation>
+      <identity>22.9</identity>
+      <positives>55.1</positives>
+      <overlap>236</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="119" end="338">ESWYVYDTLSNCAPKPLGLVLGILAVAVGQVFVWIF----FYLF-KFGYLGT-DPRSIQS-KGAREYIFREGLLTHIGQP-EGFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELF---MCLVLQD-GIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMII----IPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              ...:.:----.:.:-...:. .-: .... -:  .. .. :   :. . :- .:  .   .: .   .:. ..--. ::  .. ..:---. ... :-:: .  . :.:---:  :.  :::::..  :  . .     .: : . :----.:..   . . . ...... :------:  .::.   .  . .-----..  : : :::  :..:::..   .:.:::.::.:.:</pattern>
+      <matchSeq start="80" end="299">TKFFSLEPSQAAYQSIWTRDNIYRQALSLFLILWLFGLVTYYVFASLSYIFVFDKKTMEHPKFLKNQVWLEIKQTNAALPVMAFFTFPFLVAEVRGYSLLYDT--TAEGPGRWYDFFQFPLFIMFTDFGIYWIHRGLHH---PLVYKHLHKPHHKWIMPTPYASHAFHPIDGFAQSIPYHIFPFIFPLQKMAYVGLFVFINF------WTIMIHDGEYYANNPV-----INGAACHSVHHFAFNYNYGQFTTLWDRLGGSYREPDGDMFAKEKKMSTTTWKKQVNEMEKIVKEVEGEDDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ERG3_LEPMC" ac="Q8J207" length="356" description="Delta(7)-sterol 5(6)-desaturase OS=Leptosphaeria maculans OX=5022 GN=ERG3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <smithWatermanScore>190</smithWatermanScore>
+      <initn>220</initn>
+      <init1>111</init1>
+      <opt>190</opt>
+      <zScore>246.1</zScore>
+      <bits>54.0</bits>
+      <expectation>3.8e-06</expectation>
+      <identity>27.2</identity>
+      <positives>52.4</positives>
+      <overlap>147</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="193" end="337">GFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLG--LGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              : .. . ... :   : .:   :-- :  :.  :::::..  :  : .     .: . . .-: ..   :    .. .-.::      : .:::-------:: . . .--..  : : .:: .:..:::..   .:.:::.:: :.</pattern>
+      <matchSeq start="174" end="309">IFTVPWFLAEVRGYSKLYDTTEKGPGRWYDYLQIPFFIAFTDLCIYWIHRGLH--HPMVYKHIHKPHHKWIMPTPFASHAFHPIDGYAQGL-PYYIFPFLFPLSKIAS-VAFFVFVNIWTVLIH-------DGEYAHNSPIINGAACHTMHHLYFNYNYGQFTTLWDRLGGSYRKPNDELFKRELKMCQDEWNKQAKAVDMMVEQVEGENDRSYQGEPESKKVQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="SC5D1_ARATH" ac="Q39208" length="281" description="Delta(7)-sterol-C5(6)-desaturase 1 OS=Arabidopsis thaliana OX=3702 GN=STE1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <smithWatermanScore>179</smithWatermanScore>
+      <initn>166</initn>
+      <init1>125</init1>
+      <opt>179</opt>
+      <zScore>241.8</zScore>
+      <bits>52.9</bits>
+      <expectation>6.6e-06</expectation>
+      <identity>28.1</identity>
+      <positives>52.7</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="193" end="336">GFVLLIGYLAITWMLKLMPQSYYSFEGTIQYKELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMII--IPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIFRKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              :  ... .:-. ::-: ::   : ..:-.:.. :  :: ...   .. : :  .     :.--.:- : : ..   .  :....    : : . ::.  ---  .:.  .: : ---: .::  .: ::::  .:.: . :. :::</pattern>
+      <matchSeq start="131" end="266">LPTVSESMIERGWTKCFASIGEFGWILYFVYIAIYLVFV-EFGI-YWMHRELHDIKP-LYKYLHATHHIYNKQNTLSPFAGLAFHPVDGILQAVP-HVIALFIVPIHFTTHIGLLFMEAIWTANIHDCI---HGNIWPVMGAGY---HTIHHTTYKHNYGHYTIWMDWMFGSLRDPLLEEDDNKDSFKKAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ER25B_ASPFU" ac="Q4W9I3" length="296" description="Methylsterol monooxygenase erg25B OS=Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 GN=erg25B PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <smithWatermanScore>185</smithWatermanScore>
+      <initn>170</initn>
+      <init1>92</init1>
+      <opt>185</opt>
+      <zScore>241.2</zScore>
+      <bits>52.9</bits>
+      <expectation>7.1e-06</expectation>
+      <identity>25.9</identity>
+      <positives>52.8</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="164" end="342">GTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGY---LAITWMLKLMPQSYYSFEGTIQYKELF-------MCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFTNPRLFDAFNGSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTL-------IHSEYVFPWDGIFRKLGLGTPADHH-VHHKFFKFNYGHLFMWFDQLGGTYRDPSGFAPRVFRENV</querySeq>
+      <pattern>                              ::::  .---:   :... : :-....  .. .  ..-------. .::.:  .:  :   : -.:-.:.  :: ::... :  . :  .: ..---..:. . ...  .  : .   . . . :.-:..:------- :: : :::.-. . : . . ::::-.::. :  ::.  : :.: :  :   : ..  :</pattern>
+      <matchSeq start="98" end="286">ILIDTLGLFKNYKIQNNKIPSLREQWDCAKFVLLSHFTVELPQIWLFHPMAQ-FFGLSTSVPFPSVWTMMYQIAIFFVLEDTWHYFSHRALHW-GP-LYKAIHKIHHQYSAPFGMAAEYASPIE---VMILGFGTVGCPILWCALTGDLHIFTMYV-WIVLRLFQAIDAHSGYEFPWS-LHHFLPFWAGADHHDLHHEKFVGNYSSSFRWWDYLLDTEYTPEALKRRREGKLTKKAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ERG3_YEAST" ac="P32353" length="365" description="Delta(7)-sterol 5(6)-desaturase ERG3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ERG3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <smithWatermanScore>217</smithWatermanScore>
+      <initn>207</initn>
+      <init1>114</init1>
+      <opt>201</opt>
+      <zScore>233.8</zScore>
+      <bits>51.8</bits>
+      <expectation>1.9e-05</expectation>
+      <identity>25.2</identity>
+      <positives>53.1</positives>
+      <overlap>286</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="70" end="343">GKEPKSTYELSWVSNAIAWSGALVWPLMLTVPLLLSSMYSPISYRQVFPESWYVYDTLSN-CAPKPLGLVLGILAVAVGQVFVWIFFYLFKFGYLGTDPRSIQSKGAREYIFREGLLTHIGQPEGFVLLIGY--LAITWMLKLMPQSYYSFEGTIQYK-ELFMCLVLQDGIQYTMHVLEHIVSPAFYQMSHKPHHRFT--NPRLFDAFN--GSLMDTFCMIIIPLFVTANLVRHCNVWTYMAFGSSYACWLTLIHSEYVFPWDGIF--RKLGLGTPADHHVHHKFFKFNYGHLFMWFDQLGGTYRDP--SGFAPRVFRENV</querySeq>
+      <pattern>                              ::.:..--.:  :. ...:.:  . . :: -     .::.: ....... :::---:    :..----:: .... : :  .  . .-----:   .: . .--. ..   ::. .  :  .:. .  -: :  . . :   :  :   : --:  :.  :::::.. --.:    .:.-- ...... . : ::..  . : .  ..:.. :------: ..::-------:: .-- . ...  : : ::: .:..:::..   .:.:::.:: :--: : :..</pattern>
+      <matchSeq start="69" end="325">LNSGFSNSTILQETLNSKNAVKECRRFYGQVPFLFD--MSTTSFASLLPRSSILREFLSLWVIVTIFGLLLYLFTASLSYVFV---FDKSIFNH----PRYLKNQMAMEIKLAVSAI-----PWMSMLTVPWFVMELNGHSKLYMKIDYENHGVRKLIIEYFTFIFFTDCGVYLAHRWLHW--PRVYRALHKPHHKWLVCTPFASHSFHPVDGFLQSISYHIYPLILPLHKVSYLILFTFVNF------WTVMIH-------DGQYLSNNPAVNGTACHTVHHLYFNYNYGQFTTLWDRLGGSYRRPDDSLFDPKLRDAKETWDAQVKEVEHFIKEVEGDDNDRIYENDPNTKKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

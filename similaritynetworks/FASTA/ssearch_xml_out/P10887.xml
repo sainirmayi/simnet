@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-172434-0897-21299757-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-172434-0897-21299757-p1m.m9&quot; -m &quot;F10 fasta-R20221107-172434-0897-21299757-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P10887|MDH_NITAL" type="PROTEIN" length="32"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:24:34+00:00" end="2022-11-07T17:24:39+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="MDH_NITAL" ac="P10887" length="32" description="Malate dehydrogenase (Fragment) OS=Nitzschia alba OX=2858 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <smithWatermanScore>197</smithWatermanScore>
+      <zScore>380.5</zScore>
+      <bits>72.0</bits>
+      <expectation>1.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="32">RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="MDHM_FRAAN" ac="P83373" length="339" description="Malate dehydrogenase, mitochondrial OS=Fragaria ananassa OX=3747 GN=MMDHI PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <smithWatermanScore>158</smithWatermanScore>
+      <zScore>287.2</zScore>
+      <bits>58.1</bits>
+      <expectation>2e-08</expectation>
+      <identity>75.0</identity>
+      <positives>93.8</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">--------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                          :::::.::::::::::.::.::.: :..:: :</pattern>
+      <matchSeq start="27" end="58">MRPSMSLIRSVSRVARRGYSSESVPQRKVAVLGAAGGIGQPLALLMKLNPLVSQLSLYDIAGTPGVAADVSHINTRSEVKGYAGEEQLGEALEGCDVVIIPAGVPRKPGMTRDDLFNINA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="MDHP_YEAST" ac="P32419" length="343" description="Malate dehydrogenase, peroxisomal OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=MDH3 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <zScore>283.4</zScore>
+      <bits>57.4</bits>
+      <expectation>3.2e-08</expectation>
+      <identity>74.2</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">-RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>  :::..::.::.:::::::::::: :.::. :</pattern>
+      <matchSeq start="3" end="33">MVKVAILGASGGVGQPLSLLLKLSPYVSELALYDIRAAEGIGKDLSHINTNSSCVGYDKDSIENTLSNAQVVLIPAGVPRKPGLTRDDLFKMNAGIVKSLVTAVGKFAPNARILVISNPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="MDHM1_ARATH" ac="Q9ZP06" length="341" description="Malate dehydrogenase 1, mitochondrial OS=Arabidopsis thaliana OX=3702 GN=At1g53240 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <smithWatermanScore>154</smithWatermanScore>
+      <zScore>279.7</zScore>
+      <bits>56.7</bits>
+      <expectation>5.1e-08</expectation>
+      <identity>71.9</identity>
+      <positives>90.6</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">-----------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                             ::::..::::::::::.::.::.: :. :: :</pattern>
+      <matchSeq start="30" end="61">MFRSMLVRSSASAKQAVIRRSFSSGSVPERKVAILGAAGGIGQPLALLMKLNPLVSSLSLYDIANTPGVAADVGHINTRSEVVGYMGDDNLAKALEGADLVIIPAGVPRKPGMTRDDLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="MDHM_BRANA" ac="Q43744" length="341" description="Malate dehydrogenase, mitochondrial OS=Brassica napus OX=3708 GN=MDH PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <smithWatermanScore>154</smithWatermanScore>
+      <zScore>279.7</zScore>
+      <bits>56.7</bits>
+      <expectation>5.1e-08</expectation>
+      <identity>71.9</identity>
+      <positives>90.6</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">-----------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                             ::::..::::::::::.::.::.: :. :: :</pattern>
+      <matchSeq start="30" end="61">MFRSALVRSSASAKQSLLRRSFSSGSVPERKVAILGAAGGIGQPLALLMKLNPLVSSLSLYDIANTPGVAADVGHINTRSQVVGYMGDDNLAKALEGADLVIIPAGVPRKPGMTRDDLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="MDHM_EUCGU" ac="P46487" length="347" description="Malate dehydrogenase, mitochondrial OS=Eucalyptus gunnii OX=3933 GN=MDH PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <smithWatermanScore>154</smithWatermanScore>
+      <zScore>279.5</zScore>
+      <bits>56.7</bits>
+      <expectation>5.2e-08</expectation>
+      <identity>71.9</identity>
+      <positives>93.8</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">------------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                              :::::.::::::::::.::.::.: :..:. :</pattern>
+      <matchSeq start="35" end="66">MLRLIRSRSSSAAPRPHLLRRAYGSESVPERKVAVLGAAGGIGQPLALLMKLNPLVSQLALYDIAGTPGVAADVGHINTRSEVAGYVGEEQLGQALEGSDVVIIPAGVPRKPGMTRDDLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="MDHM2_ARATH" ac="Q9LKA3" length="341" description="Malate dehydrogenase 2, mitochondrial OS=Arabidopsis thaliana OX=3702 GN=At3g15020 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <zScore>277.8</zScore>
+      <bits>56.4</bits>
+      <expectation>6.5e-08</expectation>
+      <identity>71.9</identity>
+      <positives>90.6</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">-----------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                             :::...:::::::::::::.::.: :. :: :</pattern>
+      <matchSeq start="30" end="61">MFRSMIVRSASPVKQGLLRRGFASESVPDRKVVILGAAGGIGQPLSLLMKLNPLVSSLSLYDIANTPGVAADVGHINTRSQVSGYMGDDDLGKALEGADLVIIPAGVPRKPGMTRDDLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="MDHM_CITLA" ac="P17783" length="347" description="Malate dehydrogenase, mitochondrial OS=Citrullus lanatus OX=3654 GN=MMDH PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <zScore>277.7</zScore>
+      <bits>56.4</bits>
+      <expectation>6.7e-08</expectation>
+      <identity>71.9</identity>
+      <positives>93.8</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">------------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                              :::::.::::::::::.::.::.: :..:. :</pattern>
+      <matchSeq start="35" end="66">ILRSVRSAVSRSSSSNRLLSRSFATESVPERKVAVLGAAGGIGQPLALLMKLNPLVSKLALYDIAGTPGVAADVGHVNTRSEVTGYVGEEQLGKALEGSDVVIIPAGVPRKPGMTRDDLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="MDHM_CHLRE" ac="Q42686" length="373" description="Malate dehydrogenase, mitochondrial OS=Chlamydomonas reinhardtii OX=3055 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <zScore>277.0</zScore>
+      <bits>56.4</bits>
+      <expectation>7.2e-08</expectation>
+      <identity>71.9</identity>
+      <positives>90.6</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">------------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                              :::::.:::::::::::.:.:.. ::. :: :</pattern>
+      <matchSeq start="63" end="94">MASSTSSAMAKWAAQAARGFAAAAPSSGKGRKVAVLGAAGGIGQPLSMLMKMNSQVSSLSLYDIAGTPGVAADVSHINTKAQVKGFDKDGLAEALRGCDLVIIPAGVPRKPGMTRDDLFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="MDHP_ARATH" ac="Q9SN86" length="403" description="Malate dehydrogenase, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=At3g47520 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <smithWatermanScore>147</smithWatermanScore>
+      <zScore>265.1</zScore>
+      <bits>54.3</bits>
+      <expectation>3.3e-07</expectation>
+      <identity>74.2</identity>
+      <positives>87.1</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">-----------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                              ::::.:::::::::::::.:.:: :. :  :</pattern>
+      <matchSeq start="84" end="114">SSLAKTLRGSVTKAQTSDKKPYGFKINASYKVAVLGAAGGIGQPLSLLIKMSPLVSTLHLYDIANVKGVAADLSHCNTPSQVRDFTGPSELADCLKDVNVVVIPAGVPRKPGMTRDDLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="MDHC_CANAL" ac="P83778" length="337" description="Malate dehydrogenase, cytoplasmic OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=MDH1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <smithWatermanScore>145</smithWatermanScore>
+      <zScore>262.9</zScore>
+      <bits>53.6</bits>
+      <expectation>4.4e-07</expectation>
+      <identity>71.0</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">-RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>  :::..::::::::::::: ::.:.: ::. .</pattern>
+      <matchSeq start="3" end="33">MVKVAILGAAGGIGQPLSLLTKLNPNVDELALFDVVNVPGVGADLSHINSDSKTQSYLPKDKEDKTALAAALKGSDLVIIPAGVPRKPGMTRDDLFNINASIVQGLAEGIAANSPKAFVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="MDHM_PONAB" ac="Q5NVR2" length="338" description="Malate dehydrogenase, mitochondrial OS=Pongo abelii OX=9601 GN=MDH2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPASAVLRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETKATVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="MDHM_FELCA" ac="K0J107" length="338" description="Malate dehydrogenase, mitochondrial OS=Felis catus OX=9685 GN=MDH2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPAGAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETRAAVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNASI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="MDHM_BOVIN" ac="Q32LG3" length="338" description="Malate dehydrogenase, mitochondrial OS=Bos taurus OX=9913 GN=MDH2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPAGAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETRATVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="MDHM_HUMAN" ac="P40926" length="338" description="Malate dehydrogenase, mitochondrial OS=Homo sapiens OX=9606 GN=MDH2 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPASAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETKAAVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="MDHM_MACFA" ac="Q4R568" length="338" description="Malate dehydrogenase, mitochondrial OS=Macaca fascicularis OX=9541 GN=MDH2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPASAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETKAVVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="MDHM_RAT" ac="P04636" length="338" description="Malate dehydrogenase, mitochondrial OS=Rattus norvegicus OX=10116 GN=Mdh2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPVGAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETRANVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="MDHM_PIG" ac="P00346" length="338" description="Malate dehydrogenase, mitochondrial OS=Sus scrofa OX=9823 GN=MDH2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPAGAALRRSFSTSXQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETRATVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="MDHM_MOUSE" ac="P08249" length="338" description="Malate dehydrogenase, mitochondrial OS=Mus musculus OX=10090 GN=Mdh2 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <zScore>259.1</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-07</expectation>
+      <identity>74.2</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                         ::::.::.:::::::::::: :: :..:. :</pattern>
+      <matchSeq start="26" end="56">MLSALARPAGAALRRSFSTSAQNNAKVAVLGASGGIGQPLSLLLKNSPLVSRLTLYDIAHTPGVAADLSHIETRANVKGYLGPEQLPDCLKGCDVVVIPAGVPRKPGMTRDDLFNTNATI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="MDHM_SCHPO" ac="Q9Y7R8" length="341" description="Malate dehydrogenase, mitochondrial OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=MDH1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <zScore>251.6</zScore>
+      <bits>51.5</bits>
+      <expectation>1.9e-06</expectation>
+      <identity>67.7</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="32">----------------------------RKVAVMGAAGGIGQPLSLLLKLSPQVTELSKY</querySeq>
+      <pattern>                             ::::.::.::::::::.::::. .:.::. .</pattern>
+      <matchSeq start="30" end="60">MFAKVAFKNFTPLKSIAPRSFSTTSSRAFKVAVLGAGGGIGQPLSMLLKLNDKVSELALFDIRGAPGVAADIGHINTTSNVVGYAPDDKGLEKALNGADVVIIPAGVPRKPGMTRDDLFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

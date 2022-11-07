@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162645-0814-96713750-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162645-0814-96713750-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162645-0814-96713750-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q84XB6|PSBU_PHATR" type="PROTEIN" length="148"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:26:45+00:00" end="2022-11-07T16:26:48+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBU_PHATR" ac="Q84XB6" length="148" description="Photosystem II 12 kDa extrinsic protein, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>937</score>
+      <smithWatermanScore>937</smithWatermanScore>
+      <initn>937</initn>
+      <init1>937</init1>
+      <opt>937</opt>
+      <zScore>1226.1</zScore>
+      <bits>232.9</bits>
+      <expectation>9.8e-61</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>148</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="148">MKLAVFAVLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="148">MKLAVFAVLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBU_GRIJA" ac="Q7XY82" length="153" description="Photosystem II 12 kDa extrinsic protein, chloroplastic OS=Griffithsia japonica OX=83288 GN=psbU PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>464</score>
+      <smithWatermanScore>464</smithWatermanScore>
+      <initn>455</initn>
+      <init1>455</init1>
+      <opt>464</opt>
+      <zScore>612.3</zScore>
+      <bits>119.4</bits>
+      <expectation>1.5e-26</expectation>
+      <identity>54.1</identity>
+      <positives>75.3</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="148">-MKLAVFAVLISTVAAFVAPNGVQRAATTELNA-ERREFLS---AAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>       :.  . :   :: . :. :.  .  .- :: .::---:::.:: :.    :.: :.: :::.:::.. .:::::::::: ..::.:::::: :..::::..::::::::::. :.  ::::::. :.: .:. .: ::.:::::::</pattern>
+      <matchSeq start="8" end="153">MAFISGPALPTARVNRTVAATPVRMASGEDTPVVSRRALLSSTLAAAAAALLSAAAPAKADREYGNVGFLGGGDKIDVNNANVRVYGRLPGMYPTLAGLIVANGPYKSVGDLYNIPGLDDKQTGLLKKYEDSFVALEPRPEYEIDKFNNGLYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBU_CYACA" ac="Q9ZQS5" length="154" description="Photosystem II 12 kDa extrinsic protein, chloroplastic OS=Cyanidium caldarium OX=2771 GN=psbU PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>402</score>
+      <smithWatermanScore>402</smithWatermanScore>
+      <initn>425</initn>
+      <init1>382</init1>
+      <opt>402</opt>
+      <zScore>531.9</zScore>
+      <bits>104.5</bits>
+      <expectation>4.6e-22</expectation>
+      <identity>47.9</identity>
+      <positives>72.9</positives>
+      <overlap>144</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="148">-MKLAVFAVLISTVAAFVAPN--GVQRAATTELNAERREFLS---AAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>          ... .: :. :--:..  . .:  . :: .::---::::::.::    :.:  :::..:::::.. .::::::::.: :.:::::: : ::...:::..  :. . : :: ..::..::: .::.:  :  .:  :: :::.:.</pattern>
+      <matchSeq start="11" end="154">MAFISTPLGKVTVKSATVSANRRGLRMQSDSEPVVSRRALLSGALAAAVAAALARARPAQARIDYEGIGYLGGGDKIDVNNANVRAYRKFPGLYPTAAKKIVQGGPYGTPDDILKNPELSERDKEVIKKYMDRFVALPPTPEYFTDRVNNGIYK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBU_NEOYE" ac="C0HJG3" length="152" description="Photosystem II 12 kDa extrinsic protein, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=psbU PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>400</score>
+      <smithWatermanScore>400</smithWatermanScore>
+      <initn>393</initn>
+      <init1>393</init1>
+      <opt>400</opt>
+      <zScore>529.4</zScore>
+      <bits>104.0</bits>
+      <expectation>6.3e-22</expectation>
+      <identity>49.3</identity>
+      <positives>73.2</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="148">--MKLAVFAVLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAA--GLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>              ::: .  .  . ::  .  . ::  :..::.::--..:  : : :  .: :: .:::: :.:.::::::.: :.::.:::.:: ::.:::...:.:::.::::.  .   :::::....:  :  .: .:. ::::::</pattern>
+      <matchSeq start="15" end="152">MDSTAFVGAAAPLRVAAAARSTICMAAADDKPVVSRRAALTGAAAAALAAVAGSLPALAETEYANVPFLGGSVIIDINNANVRAYAKYPGMYPTVAGLIATNGPFETVSDLYKIPGLTDLQIATLKKYEDKLVALTPTPEYELDKVNNGLYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBU_KARBR" ac="Q00GL7" length="159" description="Photosystem II 12 kDa extrinsic protein, chloroplastic OS=Karenia brevis OX=156230 GN=psbU PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>383</score>
+      <smithWatermanScore>383</smithWatermanScore>
+      <initn>379</initn>
+      <init1>379</init1>
+      <opt>383</opt>
+      <zScore>506.9</zScore>
+      <bits>99.9</bits>
+      <expectation>1.1e-20</expectation>
+      <identity>46.2</identity>
+      <positives>71.5</positives>
+      <overlap>130</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="148">-----------MKLAVFAVLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>                             :.  :.: .    :-:::.:: .  ::.:    .:.:  .:. :.::::.. .::::::.::: :.::.::. :::. .::::  . :.:    :: .:. ..:.... :   ::: .::.: .::::::</pattern>
+      <matchSeq start="30" end="158">MQKMAMLMACLACMGLAAAFSPATLGVNKPSHRQQAPVMSQVA-RRELLSKVLGAAALLGAASADAKVNYDAVAYLGGAQQIDVNNANIRVYQKLPGMYPSAAGKLCTNGPYVDLKDMYAKAKLSKEEEAIVKEFDKDFLFLKPQIEYVVDNLNNGLYRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBU_CYAPA" ac="Q5CC96" length="165" description="Photosystem II 12 kDa extrinsic protein, cyanelle OS=Cyanophora paradoxa OX=2762 GN=psbU PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <smithWatermanScore>290</smithWatermanScore>
+      <initn>283</initn>
+      <init1>144</init1>
+      <opt>290</opt>
+      <zScore>386.0</zScore>
+      <bits>77.6</bits>
+      <expectation>6.2e-14</expectation>
+      <identity>42.8</identity>
+      <positives>70.3</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="148">----------MKLAVFAVLISTVAAFVAPNGVQRAATTEL-NAE----RREFLSAA-AVAAGLAFPLTANAIRDYE-NVGYLGGS-EIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>                            : ....:: : .-.::----::::..::-:. :..:   .: :    .-::  :::.-  .:.::::. :: :.::.::..: :: ...::..:..::.. -:: :.:: :.:::. : : .:     .: .:::.:.</pattern>
+      <matchSeq start="29" end="165">MAFVASIPAVRIQTSLQSLKGESLKAQKPAAAKQAAFTVVAQAEEKKGRREFVAAAGALFAAFAASPAAFAYSAADANVTGLGGDLSNIDINNANIAVYQKLPGMYPNIAKKIIGGAPYKSVAELYSLD-LSEKQKETLRKYEDNFYAGEPVDALGFDSINNGIYK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBU_NOSS1" ac="Q8YXJ7" length="142" description="Photosystem II 12 kDa extrinsic protein OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=psbU PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>264</score>
+      <smithWatermanScore>264</smithWatermanScore>
+      <initn>268</initn>
+      <init1>218</init1>
+      <opt>264</opt>
+      <zScore>353.6</zScore>
+      <bits>71.4</bits>
+      <expectation>3.9e-12</expectation>
+      <identity>50.0</identity>
+      <positives>76.8</positives>
+      <overlap>82</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="69" end="148">SAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQK--PQADYVIDRFNNGLYR</querySeq>
+      <pattern>                              : .:.::.:::.. ..:::::::: :: .:.::. : :. :.::::  .:.::..  ..::. .--:  .   ::::::.::</pattern>
+      <matchSeq start="61" end="142">SLQSFLVPQIPVLAIERQNRADAKLATEFGEKIDLNNTNVRAFQQYPGLYPTLAKKIIQNAPYGKVEDVLNLPGLSDGQKQLLQSNFDKFTVTELEPAFNEGDDRFNNGIYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBU_TRIV2" ac="Q3MFH7" length="142" description="Photosystem II 12 kDa extrinsic protein OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psbU PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <smithWatermanScore>256</smithWatermanScore>
+      <initn>260</initn>
+      <init1>210</init1>
+      <opt>256</opt>
+      <zScore>343.2</zScore>
+      <bits>69.4</bits>
+      <expectation>1.5e-11</expectation>
+      <identity>48.7</identity>
+      <positives>77.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="71" end="148">AAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQK--PQADYVIDRFNNGLYR</querySeq>
+      <pattern>                              .:.::.:::.. ..:::::::: :: .:.::. : :. ..::::  .:.::..  ..::. .--:  .   ::::::.::</pattern>
+      <matchSeq start="63" end="142">QSFLVPQVPVLAIESQNRADAKLATEFGKKIDLNNTNVRAFQQYPGLYPTLARKIIQNAPYSKVEDVLDLPGLSDGQKQLLQSNFDKFTVTELEPAFNEGDDRFNNGIYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBU_PHOLA" ac="P20094" length="143" description="Photosystem II 12 kDa extrinsic protein OS=Phormidium laminosum OX=32059 GN=psbU PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <smithWatermanScore>251</smithWatermanScore>
+      <initn>245</initn>
+      <init1>191</init1>
+      <opt>251</opt>
+      <zScore>336.7</zScore>
+      <bits>68.2</bits>
+      <expectation>3.4e-11</expectation>
+      <identity>42.9</identity>
+      <positives>74.5</positives>
+      <overlap>98</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="54" end="148">RAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI---DRFNNGLYR</querySeq>
+      <pattern>                              ::. :   . .--:..:-:.::.:::.....::.:::::  : .:.:...: :. ..:::.  .::.::.  : :... : -: ..---::::::.::</pattern>
+      <matchSeq start="50" end="143">LLGSPQTAIAASLSPLSFNPSPVLAEQQFRNAMDDKLATDF--GKKI-DLNNTNVRAFMQYPGMYPTLARMILKNAPFESVEDVLKMPGLTDTQKEILKNNFSNFVVSPPL-DALVEGGDRFNNGIYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBU_SYNPW" ac="A5GNW4" length="125" description="Photosystem II 12 kDa extrinsic protein OS=Synechococcus sp. (strain WH7803) OX=32051 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <smithWatermanScore>246</smithWatermanScore>
+      <initn>235</initn>
+      <init1>153</init1>
+      <opt>246</opt>
+      <zScore>331.4</zScore>
+      <bits>67.1</bits>
+      <expectation>6.7e-11</expectation>
+      <identity>40.0</identity>
+      <positives>70.8</positives>
+      <overlap>120</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="37" end="148">AVLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPL-TANAIR--DYENVGYLGGSE---IVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQA--DYVIDRFNNGLYR</querySeq>
+      <pattern>                              .:.. .: ::: : :-: ....--: .::.    .:--- ::.::..:: . ..::.::::::::. .:::..: :.  . -:. ..:::..::.. ::.  :. --.  .::.:.: ::</pattern>
+      <matchSeq start="7" end="125">------------------------MKRLLSWLTGLVVMAGLLFSLATPSGVQAADIRNVADDKIAERGDKVDLNNSSVRRFQQFPGMYPTLAGKIVLGGPYESVDDVLALD-LTDRQKELFEKYRDNFTVTAPSIALNEGFDRINDGQYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBU_SYNR3" ac="A5GQP8" length="127" description="Photosystem II 12 kDa extrinsic protein OS=Synechococcus sp. (strain RCC307) OX=316278 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <smithWatermanScore>238</smithWatermanScore>
+      <initn>238</initn>
+      <init1>157</init1>
+      <opt>238</opt>
+      <zScore>320.9</zScore>
+      <bits>65.2</bits>
+      <expectation>2.6e-10</expectation>
+      <identity>40.7</identity>
+      <positives>73.1</positives>
+      <overlap>108</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="148">VAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANA--IRDY--ENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQA--DYVIDRFNNGLYR</querySeq>
+      <pattern>                              :. ::...:--::. --....  .:.--::.:::.:: . ..::.::::::::. .:::. : :. .. -:. ..:::..::.  ::.  :. --.  .::.:.: ::</pattern>
+      <matchSeq start="23" end="127">--------MSRLFRRLSTLLLCSLLVLGVWLTQPLSVQAAEIRNKVDDKIAETAGK--VDLNNASVRRFQQYPGMYPTLAGKIVVGGPYDQVEDVLKLD-LTERQKELFEKYKENFTVTDPEIALNEGFDRINDGQYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBU_MICAN" ac="B0JNP1" length="135" description="Photosystem II 12 kDa extrinsic protein OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <smithWatermanScore>237</smithWatermanScore>
+      <initn>252</initn>
+      <init1>197</init1>
+      <opt>237</opt>
+      <zScore>319.0</zScore>
+      <bits>64.9</bits>
+      <expectation>3.3e-10</expectation>
+      <identity>44.3</identity>
+      <positives>73.4</positives>
+      <overlap>79</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="71" end="147">AAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI--DRFNNGLYR</querySeq>
+      <pattern>                              .:.::...: .  . :.::.::::: .:.::. : :. ::::::  .:: :.    .::. .:. ... --:::: :.:</pattern>
+      <matchSeq start="57" end="135">LNLTSIALPSLPVAVLNAADAKLTTEFGAKIDLNNSDIRDFRDLRGFYPNLAGKIIKNAPYEEVEDVLNIPGLSDTQKERLQANLEKFTVTEPSKEFIEGDDRFNPGVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBU_THEVL" ac="P56152" length="104" description="Photosystem II 12 kDa extrinsic protein OS=Thermostichus vulcanus OX=32053 GN=psbU PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <smithWatermanScore>235</smithWatermanScore>
+      <initn>244</initn>
+      <init1>176</init1>
+      <opt>235</opt>
+      <zScore>318.8</zScore>
+      <bits>64.5</bits>
+      <expectation>3.4e-10</expectation>
+      <identity>41.8</identity>
+      <positives>75.8</positives>
+      <overlap>91</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="148">LNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI--DRFNNGLYR</querySeq>
+      <pattern>                              :..:   :-: .:.::.:. ..... :::::::  :..:.::..: :. :::::. ..:..:..   .::. . ..  : --::.:::::.</pattern>
+      <matchSeq start="15" end="104">----------------ATASTEEELVNVVDEKLGTAYG-EKIDLNNTNIAAFIQYRGLYPTLAKLIVKNAPYESVEDVLNIPGLTERQKQILRENLEHFTVTEVETALVEGGDRYNNGLYK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBU_THEVB" ac="Q9F1L5" length="134" description="Photosystem II 12 kDa extrinsic protein OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=psbU PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <smithWatermanScore>236</smithWatermanScore>
+      <initn>238</initn>
+      <init1>176</init1>
+      <opt>236</opt>
+      <zScore>317.8</zScore>
+      <bits>64.7</bits>
+      <expectation>3.9e-10</expectation>
+      <identity>38.4</identity>
+      <positives>69.6</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="39" end="148">LISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI--DRFNNGLYR</querySeq>
+      <pattern>                              :: ..::  .       . :-:..:   :-: .:.::.:. ..... :::::::  :..:.::..: :. :::::. ..:..:..   .::. . ..  : --::.:::::.</pattern>
+      <matchSeq start="25" end="134">------MQRLGRWLALAYFVGVSLLGWINWSAPTLAATASTEEELVNVVD-EKLGTAYG-EKIDLNNTNIAAFIQYRGLYPTLAKLIVKNAPYESVEDVLNIPGLTERQKQILRENLEHFTVTEVETALVEGGDRYNNGLYK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBU_PROM3" ac="A2C664" length="120" description="Photosystem II 12 kDa extrinsic protein OS=Prochlorococcus marinus (strain MIT 9303) OX=59922 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <smithWatermanScore>235</smithWatermanScore>
+      <initn>198</initn>
+      <init1>186</init1>
+      <opt>235</opt>
+      <zScore>317.5</zScore>
+      <bits>64.4</bits>
+      <expectation>4e-10</expectation>
+      <identity>39.4</identity>
+      <positives>74.0</positives>
+      <overlap>104</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="148">VAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTA--QKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>                              : :: .: :  . :..:  :--: ::.::..::.. ..::..::.::::. .:::..:.:  ..--:....: .. ::.. ::.--:.  ..  .::.:.: ::</pattern>
+      <matchSeq start="21" end="120">----------MKRLLSLLTGVLVMTGLLMALIFPQSAYANVSDEKLGDRG--EKVDLNNSSVRAFRQFPGMFPTIAGKIVVGGPYSSVSDASSV--LDASQKSVFDKYKDNFTVTDQEIAVNEGFDRINDGQYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBU_SYNS3" ac="Q0I738" length="125" description="Photosystem II 12 kDa extrinsic protein OS=Synechococcus sp. (strain CC9311) OX=64471 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <initn>238</initn>
+      <init1>148</init1>
+      <opt>230</opt>
+      <zScore>310.7</zScore>
+      <bits>63.2</bits>
+      <expectation>9.7e-10</expectation>
+      <identity>36.6</identity>
+      <positives>68.8</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="41" end="148">STVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFP--LTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQA--DYVIDRFNNGLYR</querySeq>
+      <pattern>                              :..  ::  :--..:  ::.  .      .. ::.::..:: . ..::.:::.::::. .:::. : :. .. -:: ..:::..::.. :..  :. --.  .::.:.: .:</pattern>
+      <matchSeq start="15" end="125">----------------MKRLLSWLTGLVVIAGLLIGLLVPPSVSAAEIRNVADDKLAERGDKVDLNNSSVRRFQQFPGMYPTFAGKIVLGGPYENVDDVLKLD-LSERQKELFEKYRDNFVVTAPSIALNEGFDRINDGQFR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBU_PROMM" ac="Q7TV66" length="120" description="Photosystem II 12 kDa extrinsic protein OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <smithWatermanScore>229</smithWatermanScore>
+      <initn>196</initn>
+      <init1>184</init1>
+      <opt>229</opt>
+      <zScore>309.7</zScore>
+      <bits>63.0</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>38.5</identity>
+      <positives>73.1</positives>
+      <overlap>104</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="148">VAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTA--QKPQADYVIDRFNNGLYR</querySeq>
+      <pattern>                              : :: .: :  . ...:  :--: ::.::..::.. ..::..::.::::. .::: .:.:  ..--:....: .. ::.. ::.--:.  ..  .::.:.: ::</pattern>
+      <matchSeq start="21" end="120">----------MKRLLSLLTGVLVMTGLLMALIFPQSAYANVSDDKLGDRG--EKVDLNNSSVRAFRQFPGMFPTIAGKIVVGGPYASVSDASSV--LDASQKSVFDKYKDNFTVTDQEIAVNEGFDRINDGQYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBU_PARMW" ac="Q7U480" length="135" description="Photosystem II 12 kDa extrinsic protein OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <smithWatermanScore>242</smithWatermanScore>
+      <initn>268</initn>
+      <init1>157</init1>
+      <opt>242</opt>
+      <zScore>304.8</zScore>
+      <bits>62.3</bits>
+      <expectation>2.1e-09</expectation>
+      <identity>38.6</identity>
+      <positives>63.8</positives>
+      <overlap>127</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="38" end="148">VLISTVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANAIRDYENVGYLGGSEI--------------VDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQA--DYVIDRFNNGLYR</querySeq>
+      <pattern>                              :  :.. ::: .: ...:--: . ::  .:.::--------------::.::..:: . ..::.:::.::::. .:::: : .. :. -:: .. ::..::.  ::.  :. --.   ::.:.: ::</pattern>
+      <matchSeq start="12" end="135">-------------------MKRLLSWLTGALLMAGLLAGLILPGSVHA--DEDLVGKYSGNEIRNIADDKIAAREGKVDLNNSSVRRFQQFPGMYPTMAGKIVLGGPYNDVDEVLNLD-LSERQIELFNKYKENFTVTPPEIALNEGDDRINDGQYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBU_SYNE7" ac="Q31M07" length="136" description="Photosystem II 12 kDa extrinsic protein OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <initn>204</initn>
+      <init1>140</init1>
+      <opt>226</opt>
+      <zScore>304.7</zScore>
+      <bits>62.3</bits>
+      <expectation>2.1e-09</expectation>
+      <identity>36.8</identity>
+      <positives>69.3</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="41" end="148">STVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANA---IRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI---DRFNNGLYR</querySeq>
+      <pattern>                              .: : .:  :: : :---::.  ..  . ..  .:.:: .::.. ..::.:: ::.::. .:::..: :. .. -:: ...:....:.  ::.  :.-: . ---::.:::.::</pattern>
+      <matchSeq start="25" end="136">------MKQLAQRLFSLALVLALVLGISVQSAQALSLQSPLLAVAEAEIRNEADAQRIEAGGKLDLNNIGVRAFQQFPGMYPYLASKIVLGGPYDSVDDVLKLD-LSDRQREVFEQYKENFTVTPPR-DALNEGDDRINNGIYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBU_SYNP6" ac="Q5MZW7" length="136" description="Photosystem II 12 kDa extrinsic protein OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psbU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <initn>204</initn>
+      <init1>140</init1>
+      <opt>226</opt>
+      <zScore>304.7</zScore>
+      <bits>62.3</bits>
+      <expectation>2.1e-09</expectation>
+      <identity>36.8</identity>
+      <positives>69.3</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="41" end="148">STVAAFVAPNGVQRAATTELNAERREFLSAAAVAAGLAFPLTANA---IRDYENVGYLGGSEIVDVNNANVRVYLKMPGLYPTLAGKIASNGPYNAVGDLYNIPGLSGKEKELLKKYESRFTAQKPQADYVI---DRFNNGLYR</querySeq>
+      <pattern>                              .: : .:  :: : :---::.  ..  . ..  .:.:: .::.. ..::.:: ::.::. .:::..: :. .. -:: ...:....:.  ::.  :.-: . ---::.:::.::</pattern>
+      <matchSeq start="25" end="136">------MKQLAQRLFSLALVLALVLGISVQSAQALSLQSPLLAVAEAEIRNEADAQRIEAGGKLDLNNIGVRAFQQFPGMYPYLASKIVLGGPYDSVDDVLKLD-LSDRQREVFEQYKENFTVTPPR-DALNEGDDRINNGIYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163505-0468-72601647-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163505-0468-72601647-p2m.m9&quot; -m &quot;F10 fasta-R20221107-163505-0468-72601647-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0H7|DNAK_PHATC" type="PROTEIN" length="613"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:35:05+00:00" end="2022-11-07T16:35:11+00:00" search="P0Y0M0DT0H0M6.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="DNAK_PHATC" ac="A0T0H7" length="613" description="Chaperone protein dnaK OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3834</score>
+      <smithWatermanScore>3834</smithWatermanScore>
+      <initn>3834</initn>
+      <init1>3834</init1>
+      <opt>3834</opt>
+      <zScore>4081.7</zScore>
+      <bits>765.3</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>613</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="613">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="613">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="DNAK_TRICV" ac="P49463" length="614" description="Chaperone protein dnaK OS=Trieres chinensis OX=1514140 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3303</score>
+      <smithWatermanScore>3303</smithWatermanScore>
+      <initn>3359</initn>
+      <init1>3243</init1>
+      <opt>3303</opt>
+      <zScore>3516.5</zScore>
+      <bits>660.8</bits>
+      <expectation>2.6e-188</expectation>
+      <identity>84.4</identity>
+      <positives>95.8</positives>
+      <overlap>614</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="613">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTND-TATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::::::::::::::.:::::::::::::::::.::::::::::::::::::::::::::::::: ::: ..::::::: .:::.::::.: .::..:::::::::::::::::::.::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::.::: ::...:.....::: .:.::::::::::::::.::::::::::::::::::::::::::.:::: .::.::: ::.::.:::::.:.::::.:.::::.:::::::::::.::::::::.::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::.::::::::.:::::::::::::::::::::::::.::.:::::::::.:::.:::::.: :::.::.:::::::::.:.:: .::.::::.:. .: ::.:::.:::::.::::::::.. :. ..::.:.::.. ::::::: .::::::.::  .:::: ::::.:  :   :-: ::::::::::</pattern>
+      <matchSeq start="1" end="614">MGKVVGIDLGTTNSVVAAIEGGQPSVIVNAEGLRTTPSIVAYTKKQELLVGQIAKRQAVINPENTFFSVKRFIGSKELEISADSKKLPYKVVKDQNGNIKINCSSLNKEFSPEEISAQVLRKLINDATSYLGQDVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLATAGDTNLGGDDFDKVLVRWLVKEFEDQEGIDLTQDIQALQRLTEAAEKAKMELSTVEKTTIHLPFITADKTGPKHIEKELTRKTFETLCQELIERCQIPVEKALTDARLEKSDINEVVLVGGSTRIPAIQNLVESLTNKKPNQSVNPDEVVAIGAAIQAGILAGEIKDVLLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVENQTNVEIHVLQGERELVAGNKSLGNFRLDGIPAAERGVPQIEVTFDINVDGLLSVKAKELETGIEQSVTIQGASNLDESEVSDMLAEAEKYAALNKEKRQNIDLKNQAETLCFEAEKELDLFKTSIPEEKQQNVQKLIENIRQDTQTDNFESLKLLVEELKMAMKDMVEAKPFVDQTDTDPMSNLNDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="DNAK_THAPS" ac="A0T0X1" length="602" description="Chaperone protein dnaK OS=Thalassiosira pseudonana OX=35128 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2879</score>
+      <smithWatermanScore>2879</smithWatermanScore>
+      <initn>2839</initn>
+      <init1>2797</init1>
+      <opt>2879</opt>
+      <zScore>3065.3</zScore>
+      <bits>577.3</bits>
+      <expectation>3.5e-163</expectation>
+      <identity>75.2</identity>
+      <positives>92.5</positives>
+      <overlap>602</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="600">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSS--FNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:.::::::::::::::::::::::.:: ::::.::::::::::::.::::::.::::.:.: :::::::::::: :  :::.:.:.::::: .:.:.:::::: .::.:::::::::::.:::: :: .::::.::.:::::::::::::::::.:::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..:: ::..::. :.. .: .:.::::::::::::::.:::.::::::.::::::::.:::::.:::::. ::.::: :::::::::::.:.::.::.. :::.:::::::::::.:.:::::::::::.::::::::::::::::::::::: ::::::::::::::::.::.:::.:.:::::::::::.::::.:::::::::.::::::.:.::::::::.:.::: : .: :::::::::.::::::: :.:.:.: :: :::::::::.:.::..:: ::::.:  :: ..:. ..  .: : : :.::...:--... . :-....::..:...:.:... :. ..::..:.:.:  .--: :.:::</pattern>
+      <matchSeq start="1" end="599">MNKVVGIDLGTTNSVVAAIEGGQPTVITNAEGFRTTPSIVAYTKKQELLVGQLAKRQSVVNAENTFFSVKRFIGCKADEISEESKELPYKVIKDSNGNIKIKCSSLNKDFSPEEISAQVIRKLIADAKEYLGQDVTKAVITVPAYFNDSQRQATVDAGKIAGIEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDKALVRWLVEDFEAKEGTNLTKDIQALQRLTEAAEKAKMELSNVEKTTINLPFITADKNGPKHIQQELTREKFESLCQDLINRCRIPVEKALKDAKLDQSGINEVVLVGGSTRIPAIQQLVESLTGKKPNKSVNPDEVVAIGAAIQAGILAGEITDILLLDVTPLSLGVETVGGIMTKLISRNTTIPVKKSELFSTAADNQTNVEIHVLQGEREVVSGNKSLGNFKLEGIPQAPKGKPQIEVTFDINVDGILSVTAKENESGKEQNVTIQGASNLSESEVNDMLEEAEKYAVIDKEQKEKSEMVVSATAYCDEVEKKLNSGEMGECTTE-EEEEIKNVIKTLREALSSANYASIKESFEQLRTLTE--VHLNSTNPAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="DNAK_GRATL" ac="Q6B8V2" length="621" description="Chaperone protein dnaK OS=Gracilaria tenuistipitata var. liui OX=285951 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2703</score>
+      <smithWatermanScore>2703</smithWatermanScore>
+      <initn>2790</initn>
+      <init1>2696</init1>
+      <opt>2703</opt>
+      <zScore>2877.7</zScore>
+      <bits>542.6</bits>
+      <expectation>1e-152</expectation>
+      <identity>68.8</identity>
+      <positives>91.1</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:.:::::::::::::.:..:::.:.:: : ::::::::.::::::.. :::::::::::.::::::.::::::: :. :.. : :.  :.:..: :.:.:..::::..::.::::::::::::..::. ::::.:::::::::::::::::::: :::.:::..:::::::::::::.::::::.::::::::::::::::::::::::.::::::.:::.:::::::  .:.:::..:.. ..:.::.: ::::::::::::::.:::.. .: :.:::::.  :::::.:...::  :: ::: :::::.:::...:.::.:....:.:::::::::::::.:.::... :: ::::::::::::::::.:::.::::.:::::::::::::::::::::::::: ::::.:.::::.:::::::: :::::.::::::..  :::::.::::::  : ::.::::: ::::..:::::::..: :: ::..:: :::.: ..:::... :::. .  :: :::.::.::::.:::........ ..: . :..:::.. ::.... ..: :..: .:. ...:. .: .:</pattern>
+      <matchSeq start="1" end="593">MAKVVGIDLGTTNSVIAVMEGGKPTVIPNKEGLRTTPSVVAYTKKQDKLVGQIAKRQAVMNPENTFYSVKRFIGRKKDELGDELKQSSYNVKTDINSNVKLECPALSKDFAPEEISAQVLRKLVEDASTYLGQQVTQAVITVPAYFNDSQRQATKDAGQIAGLDVLRIINEPTAASLSYGLDKKNNETILVFDLGGGTFDVSILEVGDGVFEVLSTSGDTHLGGDDFDRKIVEWLIHEFSHDEGINLGKDRQALQRLTEAAEKAKMELSSLAQTDINLPFITSTDTGPKHLEKNITRAKFEYLCQDLINRCEIPVNNALKDAQLSSGNIDEIVLVGGSTRIPAIQQLVKKMIGKDPNQSVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIDRNTTVPTKKSEIFSTAVDNQPNVEIHVLQGEREFTKDNKSLGTFRLDGIMPAPRGVPQIEVIFDIDANGILSVKAKDKGTGKEQSITITGASTLPKEEVEKLVKEAEENSELDKHKREQIDLKNQADALCYQSQNQINELKDKISEDEKQNVQKLIDSLKLSIQEDDYEKIKDIQNQLQQVMMNIGKQVYSSTQQDNSKTEDGSVIDTNSKEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="DNAK_NEOYE" ac="Q1XDH2" length="621" description="Chaperone protein dnaK OS=Neopyropia yezoensis OX=2788 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2652</score>
+      <smithWatermanScore>2652</smithWatermanScore>
+      <initn>2650</initn>
+      <init1>2237</init1>
+      <opt>2652</opt>
+      <zScore>2823.4</zScore>
+      <bits>532.5</bits>
+      <expectation>1.1e-149</expectation>
+      <identity>68.5</identity>
+      <positives>90.6</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::.:..:::.:.:: ::::.::: :.:::::. . ::::::.:::::::::::.::::::: :..:::.: ..  :.:...-...::: :::::.::.::::::::::::..::. :::. :::::::::::::::::::: :::::::..:::::::::::::.:::::..:::::::::::::::::.::::::.::::::.:::.:::::::. .:.:::.:::....::::.: ::::::::::::::.:::.. .: :.:::::: . ::::.:. .::  ::.::. ::..: :::...:.::.:. ..:.:.:::::::::::.:..:. : :: ::::::::::::::::.:::.::::.:::::::::::::::::::::::::: ::::::.::::.:::::::  ::::..:::::::.  :::::.::::::  : ::.::::::::::..:::::::.:: :: ::..::.:::.: . .::.:. :::.  ..:. .:.:::.:::::.::..:::.:. :.: . .. : .:. :: ..:.... .......   ..:..:. ::</pattern>
+      <matchSeq start="1" end="592">MGKVVGIDLGTTNSVIAVMEGGKPTVIPNAEGFRTTASVVAYTKSGDKLVGQIARRQAVINPENTFYSVKRFIGRKQNEISQEIRQTSYNVKTS-GSSIKIACPALNKDFAPEEISAQVLRKLVEDASTYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLDVLRIINEPTAASLSYGLDKQNNETILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDQQIVEWLIKDFKQNEGIDLGKDRQALQRLTEAAEKAKIELSNLTQTEINLPFITATQDGPKHLEKTVTRGKFEELCSNLIDKCSIPVNNALKDAKLEASSIDEVVLVGGSTRIPAIQQMVKRLIGKDPNQSVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDNPPNVEIQVLQGERELTKDNKSLGTFRLDGIMPAPRGVPQIEVTFDIDANGILSVKAKEKATGKEQSITISGASTLPKDDVERMVKEAEENFDTDQKRRKNIDTKNQAESLCYQAEKQVKEFEDKISQDLKIKIEELITELRSSLEKEEYDNIESISQQLQNALMDIGKNAAQTESKDTKAKDDDTVIDTDFSEAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="DNAK_PORPU" ac="P69376" length="620" description="Chaperone protein dnaK OS=Porphyra purpurea OX=2787 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2645</score>
+      <smithWatermanScore>2645</smithWatermanScore>
+      <initn>2514</initn>
+      <init1>2245</init1>
+      <opt>2645</opt>
+      <zScore>2815.9</zScore>
+      <bits>531.2</bits>
+      <expectation>2.8e-149</expectation>
+      <identity>67.2</identity>
+      <positives>89.5</positives>
+      <overlap>609</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="609">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::.:..:::.:.:: ::::.::: :.:::::. . ::::::-:::::::::::.::::::: :..:::.: ..  :.:...-...:::.:::::.::.::::::::::::..::. :::. :::::::::::::::::::: :::::::..:::::::::::::.:::::..::::::::::::::::::::::::.::::::.:::.:::::::. .:.:::.:::....::::.: :::::::::.::::.:::.. .: :.:::::: . ::::.:. .::  ::.::. ::..: :::...:.::.:. ..:.:.:::::::::::.:..:. : :: ::::::::::::::::.:::.::::.:::::::::::::::::::::::::: ::::::.::::.:::::::: ::::..:::::::.  :::::.::::::  : ::.::::::::::..:::::::.:: :: ::..::.:::.: . .::.:. :::.  ..:. .:.:::..::::.::...::.:. :.: . :. :. : .:: ..:. .. ....... . :.:..:. .:    .. .  :.  ::</pattern>
+      <matchSeq start="1" end="607">MGKVVGIDLGTTNSVIAVMEGGKPTVIPNAEGFRTTASVVAYTKSGDKLVGQIA-RQAVINPENTFYSVKRFIGRKQNEISQEIRQTSYNVKTS-GSSIKIECPALNKDFAPEEISAQVLRKLVEDASTYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLDVLRIINEPTAASLSYGLDKQNNETILVFDLGGGTFDVSILEVGDGVFEVLSTSGDTHLGGDDFDQQIVEWLIKDFKQSEGIDLGKDRQALQRLTEASEKAKIELSNLTQTEINLPFITATQDGPKHLEKTVTRAKFEELCSRLIDKCSIPVNNALKDAKLEASSIDEVVLVGGSTRIPAIQQMVKRLIGKDPNQSVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDNQPNVEIQVLQGERELTKDNKSLGTFRLDGIMPAPRGVPQIEVTFDIDANGILSVKAKEKATGKEQSITISGASTLPKDDVERMVKEAEENFDVDQKRRKNIDIRNQAESLCYQSEKQVKEFEDKIDEELKNRITNLISELRSNLEKEELDSIEANSEKLQNALMEIGKNATSAEKDTQNASNDDTVIDTDFSEAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="DNAK_PORUM" ac="P69377" length="620" description="Chaperone protein dnaK OS=Porphyra umbilicalis OX=2786 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2645</score>
+      <smithWatermanScore>2645</smithWatermanScore>
+      <initn>2514</initn>
+      <init1>2245</init1>
+      <opt>2645</opt>
+      <zScore>2815.9</zScore>
+      <bits>531.2</bits>
+      <expectation>2.8e-149</expectation>
+      <identity>67.2</identity>
+      <positives>89.5</positives>
+      <overlap>609</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="609">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::.:..:::.:.:: ::::.::: :.:::::. . ::::::-:::::::::::.::::::: :..:::.: ..  :.:...-...:::.:::::.::.::::::::::::..::. :::. :::::::::::::::::::: :::::::..:::::::::::::.:::::..::::::::::::::::::::::::.::::::.:::.:::::::. .:.:::.:::....::::.: :::::::::.::::.:::.. .: :.:::::: . ::::.:. .::  ::.::. ::..: :::...:.::.:. ..:.:.:::::::::::.:..:. : :: ::::::::::::::::.:::.::::.:::::::::::::::::::::::::: ::::::.::::.:::::::: ::::..:::::::.  :::::.::::::  : ::.::::::::::..:::::::.:: :: ::..::.:::.: . .::.:. :::.  ..:. .:.:::..::::.::...::.:. :.: . :. :. : .:: ..:. .. ....... . :.:..:. .:    .. .  :.  ::</pattern>
+      <matchSeq start="1" end="607">MGKVVGIDLGTTNSVIAVMEGGKPTVIPNAEGFRTTASVVAYTKSGDKLVGQIA-RQAVINPENTFYSVKRFIGRKQNEISQEIRQTSYNVKTS-GSSIKIECPALNKDFAPEEISAQVLRKLVEDASTYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLDVLRIINEPTAASLSYGLDKQNNETILVFDLGGGTFDVSILEVGDGVFEVLSTSGDTHLGGDDFDQQIVEWLIKDFKQSEGIDLGKDRQALQRLTEASEKAKIELSNLTQTEINLPFITATQDGPKHLEKTVTRAKFEELCSRLIDKCSIPVNNALKDAKLEASSIDEVVLVGGSTRIPAIQQMVKRLIGKDPNQSVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDNQPNVEIQVLQGERELTKDNKSLGTFRLDGIMPAPRGVPQIEVTFDIDANGILSVKAKEKATGKEQSITISGASTLPKDDVERMVKEAEENFDVDQKRRKNIDIRNQAESLCYQSEKQVKEFEDKIDEELKNRITNLISELRSNLEKEELDSIEANSEKLQNALMEIGKNATSAEKDTQNASNDDTVIDTDFSEAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="DNAK_NEOHI" ac="Q06W39" length="621" description="Chaperone protein dnaK OS=Neoporphyra haitanensis OX=1262161 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2640</score>
+      <smithWatermanScore>2640</smithWatermanScore>
+      <initn>2638</initn>
+      <init1>2225</init1>
+      <opt>2640</opt>
+      <zScore>2810.6</zScore>
+      <bits>530.2</bits>
+      <expectation>5.5e-149</expectation>
+      <identity>68.0</identity>
+      <positives>90.6</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::.:..:::.:.:: ::::.::: :.:::::. . ::::::.:::::::::::.::::::: :..:::.: ..  :.:...-...::: ::::..::.::::::::::::..::. :::. :::::::::::::::::::: :::::::..::::::::::: :.:::::..:::::::::::::::::.::::::.::::::.:::.:::::::. .:.:::.:::....:::..: ::::::::::::::.:::.. .: :.:::::: . ::::.:. .::  ::.::. ::..: :::...:.::.:. ..:.:.:::::::::::.:..:. : :: ::::::::::::::::.:::.::::.:::::::::::::::::::::::::: ::::::.::::.:::::::: ::::..:::::::.  :::::.::::::  : ::.::::::::::..:::::::.:: :: ::..::.:::.: . .::.:. :::.  ..:. .:.:::.:::::.::..:::... :.: . .. : .:. :: ..:.... ...:...   ..:.... ::</pattern>
+      <matchSeq start="1" end="592">MGKVVGIDLGTTNSVIAVMEGGKPTVIPNAEGFRTTASVVAYTKSGDKLVGQIARRQAVINPENTFYSVKRFIGRKQNEISQEIRQTSYNVKTS-GSSIKIACPALDKDFAPEEISAQVLRKLVEDASTYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLDVLRIINEPTAAPLSYGLDKQNNETILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDQQIVEWLIKDFKQNEGIDLAKDRQALQRLTEAAEKAKIELSNLTQTEINLPFITATQDGPKHLEKTVTRGKFEELCSNLIDKCSIPVNNALKDAKLEASSIDEVVLVGGSTRIPAIQQMVKRLIGKDPNQSVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDNQPNVEIQVLQGERELTKDNKSLGTFRLDGIMPAPRGVPQIEVTFDIDANGILSVKAKEKATGKEQSITISGASTLPKDDVERMVKEAEENFDTDQKRRKNIDTKNQAESLCYQAEKQIKEFEDKISQDLKTKIEELITELRSSLEKEEYENIESISQRLQNSLMDIGKMAAQAESKNTNTKDDGTVIDTDFSEAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="DNAK2_THEVB" ac="Q8DI58" length="640" description="Chaperone protein dnaK2 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=dnaK2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2636</score>
+      <smithWatermanScore>2636</smithWatermanScore>
+      <initn>2650</initn>
+      <init1>2192</init1>
+      <opt>2636</opt>
+      <zScore>2802.9</zScore>
+      <bits>528.8</bits>
+      <expectation>1.5e-148</expectation>
+      <identity>68.4</identity>
+      <positives>88.0</positives>
+      <overlap>602</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTD---------NFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:.:::::::::::: ::..:::.:.:: ::::.:::::.:::::. . :::::::::::.::::::.::::::: .  :...:: .. ::: :- :.:.:. ::::...:.:::::::::::: .::. :::.::::::::::::::::::::: :::::::.::::::::::::::::::::: ::::::::::::::::::::::::.::::.:.:::.:::::::. .:..: ..:. ...::: .: ::::::::::::::.:::.: .: :.:::::: . ::::... :::  ::.::. ::.:::.:::..:.::.:.: .:.:.:::::::::::.:.::. : :: ::::::::::::.:::::::.::::.:::::::::::::::::::::::::: ::::::.::::.::::::.:::::::.::::::..: :::::.::::::: : ::.::::::::::..:::.: ::.: :: .:...: :::.: ..:::.:. :::  :.:::.:::.:..::::: ::..:::... ..: :  . :. . .:: :.:. . :.---------.:  .:  :..:. :. ..</pattern>
+      <matchSeq start="1" end="601">MAKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAYTKNGDRLVGQIAKRQAVMNPENTFYSVKRFIGRRFDEVTHEATEVSYKVLN-VNGNVKLDCPALGKQFAPEEISAQVLRKLKEDASKYLGEEVTQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAASLAYGLDKKANETILVFDLGGGTFDVSILEVGDGVFEVLATSGDTHLGGDDFDKKIVDYLAESFRAQEGIDLRKDRQALQRLTEAAEKAKIELSSVMQTEINLPFITATQDGPKHLDMTLTRAKFEELCSDLIDRCRVPVEQALKDAKLSKDQIDEVVLVGGSTRIPAIQELVKRLLGKDPNQSVNPDEVVAVGAAIQAGVLAGEVKDILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDGQTNVEIHVLQGEREMAADNKSLGTFRLDGIPPAPRGVPQIEVTFDIDANGILNVTARDKGTGKQQSISITGASTLPKEEVERMVREAEMNAAADKAKREKIETKNQAEQLCYQAEKQLNELGDKVSTSDKDRLTSLIANLRSEIGTEAEKKPIDAIDFGRVKSLMQDLQQALYSVGSSVYQSAQSSDGTGSSSSGGSGSGGDDEVIDAEFSETK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="DNAK_GUITH" ac="P29215" length="627" description="Chaperone protein dnaK OS=Guillardia theta OX=55529 GN=dnaK PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2615</score>
+      <smithWatermanScore>2615</smithWatermanScore>
+      <initn>2648</initn>
+      <init1>2603</init1>
+      <opt>2615</opt>
+      <zScore>2783.9</zScore>
+      <bits>525.2</bits>
+      <expectation>1.7e-147</expectation>
+      <identity>65.1</identity>
+      <positives>88.6</positives>
+      <overlap>616</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="612">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDI---VALKSTND-TATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::::..:::.:.:: ::::.:::::.:::::  . ::::::::::::::.:::.::::::: .  :.:.: :.. : :..:.:.:::. ::.:...:. :::::.:::::..::. :::. : :::::::::::::::::: :::.:::.:::::::::::::::::::::.:::::::::::::::::.::::::.::::::.:::.:::::::. .:.::...:. ...:.: .: :::::::::.::::.:::.. .: :.:::.:: .:::::.:. .::  ::.::. :::: .::::..:.::.::.. :.:.:::::::::::.:.::. . .: :::.::::::::::::.:::.::::.::::::::::::::::::::: :.:: ::::::.::::.:::::::: :::::.::::::..  :::::.::::::  : ::.::::::::::..::::: :..: :: ::..:: :::.:   :::.:. ::.. :. :: ::..::.:::...::...::... ..  . ...:..:...: ..:.:....:.. ...   .:.::. :.---:  :....-:.:.  .: ::</pattern>
+      <matchSeq start="1" end="616">MGKVVGIDLGTTNSVVAVMEGGKPAVIQNAEGFRTTPSVVAYTKTGDRLVGQIAKRQAVINPDNTFYSVKRFIGRRSEEVSEELKQVSYIVKTDSNGNIKLDCPSLKKEFASEEISAEVLRKLVDDASKYLGESVKQAVITVPAYFNDSQRQATKDAGRIAGLEVLRIINEPTAASLAYGLDKKNNETILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDDKIVQWLLKEFETEHSINLKSDRQALQRLTEASEKAKIELSNLSQTEINLPFLTATETGPKHLERSITRAKFEELCSDLINRVKIPVENALKDAKLDSSKIDEVVLVGGSTRIPAIQELVKRILNKTPNQTVNPDEVVAIGAAVQAGVLAGEVKDILLLDVTPLSLGVETLGGVTTRIIPRNTTIPTKKSEVFSTAVDNQPNVEIHVLQGEREFAKDNKSLGTFRLDGILPAPRGVPQIEVTFDIDANGILSVTAKDKGTGKEQSITITGASTLPSDEVERMVNEAQNSAKEDKEKRDKIDLKNQSDSLCYQSEKQLKELEGKIDDTNKNKISSMISELRNAINNENYDEMRDLNSKLQTALMDLGKSVYEKTSKEQTSTSSPTNSNDSVIDADFSETK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="DNAK_CYACA" ac="Q9TLT1" length="618" description="Chaperone protein dnaK OS=Cyanidium caldarium OX=2771 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2598</score>
+      <smithWatermanScore>2598</smithWatermanScore>
+      <initn>2619</initn>
+      <init1>2575</init1>
+      <opt>2598</opt>
+      <zScore>2765.9</zScore>
+      <bits>521.9</bits>
+      <expectation>1.7e-146</expectation>
+      <identity>64.4</identity>
+      <positives>87.3</positives>
+      <overlap>612</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="612">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>: :.:::::::::::.:..: :.:.:: :.::.:::::.:::.:. .::::::::::::::: :::.::::::: :  ::..: ... :.:..: ..:.:: ::  :.::.::::::::.::: . :. :::...:.::::::::::::::::: :::::::..::::::::::::::::::::.:: :::::::::::::.:::.::::::::::.:::.:::::::. .:.::...::.. ::::..: ::::::::::::::.:::.: .: :.:::::: . :: :... :.:  ::.: . :: ::.::::..:.::.:.:.::::::::::::::::.::::.    : :::.::::::::.:::::...::::.:::::::: :::::::::::::::.: .:::::..:.:..:::::::::::::.:::::::.  :::::.::::::: : ::.::::::::::..::::: :.:: :: .:.::: :::.:.. :..... :::  :. :. :.:::..:::::..:..:.:... :.. . .:. . :. :: ...::......: .:. :: ..    .:     ..:. .   :.. :</pattern>
+      <matchSeq start="1" end="612">MEKIVGIDLGTTNSVIAVMEMGKPAVIPNSEGFRTTPSVVAYAKNGDLLVGQIAKRQAVINPSNTFYSVKRFIGRKFEEINEENRQVTYQVNKDPSGNVKIYCPFKNKDFTPEEISAQVIRKLTEGASKYLGEKITKAVITVPAYFNDSQRQATKDAGKIAGLDVLRIINEPTAASLAYGLDKKNNEKILVFDLGGGTFDVTILEIGDGIFEVLSTSGDTHLGGDDFDKKIVDWLVDEFKKSYNIDLSKDKQALQRLTEAAEKAKIELSSVSQTEINLPFITATSEGPIHFDKSLNRAKFEELVSELIARCKIPVENALKDAKLNKSDINEIVLVGGSTRIPAIQNLVKESLQKDPNQTVNPDEVVAVGAAIQGAVLAGEVKDILLLDVCPLSLGVETLGGVMTKMIPKNTTIPTRKTEIYSTAVDNQTNVEIHVLQGERELAKDNKSLGTFRLDGIPPAPRGVPQIEVTFDIDANGILSVTAKEKTTGKQQSVTITGASTLDKDEIQKIIKEAEINAQEDRKKKENIELKNQAETICYQAQKQLNEFKEKIDKNQYKRIEDLIAKLKQAISSNEYEEIKNLMEAIQKETMEIGKELYSKDSKNTKNSDVIDADFSET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="DNAK_EMIHU" ac="Q4G366" length="623" description="Chaperone protein dnaK OS=Emiliania huxleyi OX=2903 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2598</score>
+      <smithWatermanScore>2598</smithWatermanScore>
+      <initn>2651</initn>
+      <init1>2159</init1>
+      <opt>2598</opt>
+      <zScore>2765.9</zScore>
+      <bits>521.9</bits>
+      <expectation>1.7e-146</expectation>
+      <identity>67.5</identity>
+      <positives>88.2</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::::::..:::.:.:: :.:: :::::.:::::: .:::::::::::::::::::.::::::: : .:...  ...:::: . .. -::. ::::...:. ::::::::::: .::: :::. :::::::::::::::::::: :::::::.::::::::::::::.::::::.::::::::::::::::::::::::.::::.:.::: :::::::. .:.::.:.::. ..::: .: :::::::::::::::::::. ...:.::::..   ::::.:..:::  ::.::. ::.::. :....:.::.:. ..:.. :::::::::::::.:::.: :::::::::::::::.:::.:::.:.::.::::::::::::::::::::. :::  ::: ::.:::: :::::::: :::::.:::::::.  :::::.::::::  : ::.::::::::::..::::: :..: :. .:..::.::::: . :::.:. :::. :..:: : :.:::::.:..::....:..  ... .    :.... .. ... :::.:..: .:   :::.  : ..</pattern>
+      <matchSeq start="1" end="592">MGKVVGIDLGTTNSVVAVMEGGKPTVITNSEGQRTTPSVVAYTKKGDLLVGQIAKRQAVINPENTFYSVKRFIGRKTSEVTEALRQVPYKVLQTEDI-IKLDCPALGKQFASEEISAQVLRKLADDATKYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAASLSYGLDKKDNETILVFDLGGGTFDVSILEVGDGVFEVLATSGDTRLGGDDFDEKIVQWLVNEFKNDEGIDLTQDNQALQRLTEAAEKAKVELSTLTQSSINLPFISVTPEGPKHLEKDLTRAKFEELCSDLIDRCKTPIQNALKDAELSPSSIDQNVLVGGSTRIPAVQELVEQLLGKKPNQSVNPDEVVAVGAAVQAGVLGGEVKDILLLDVTPLSLGVETLGGITTKITPRNTIIPTKKSETFSTAVDNQPNVEIHVLQGERELAKDNKSLGTFRLDGIAPAARGVPQIEVTFDIDANGILSVTAKDKATNKQQSITISGASNLAKDEVERMVEEAEQNAASDKEKSEQIDVKNKADSLCYQTKKQLEELSSKLEAADKEKVEEVLTKLELAVQNDDLEGMKTLSEELQKNMMEVGQKVYTPDAGAEGGAAPSQDDAIETDFSTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="DNAK2_PROMM" ac="Q7V3T5" length="634" description="Chaperone protein dnaK2 OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=dnaK2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2571</score>
+      <smithWatermanScore>2571</smithWatermanScore>
+      <initn>2599</initn>
+      <init1>2159</init1>
+      <opt>2571</opt>
+      <zScore>2737.0</zScore>
+      <bits>516.6</bits>
+      <expectation>6.9e-145</expectation>
+      <identity>65.7</identity>
+      <positives>88.7</positives>
+      <overlap>595</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="595">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.: :: ::::.:::::.:::::... :::::::::::.: .:::.:.:::.: .  :...:.:.. :.:-. ...:...:::.:...:::::.:::::::: .::  :::..:::::::::::::::::::: :::::::.::::::::::::.::::::::.:: ::::::::::::::.::::::.::::::.:::.:::::::.:.:. :   :: ...::: .: ::::::::::::::.:::.. .. :.:::::: . ::::..  :::  ::.: . ::.:::.:::..:.::.:......:::.::::.:.::::.::. .::: :::.::::::::.:::::.:.::::.::::::::::::::::::::::::.:.::::.:.:::: .:::::.:::::::.::::::... :::::.::::::: : ::.::::::::::..:::::.:..: .: ::...: :::.:.:.:::.:. .::  ::::: ::: ::.:::::.: ..:::... . : :  ..: ...    ... :.. :.:...:  .:::.  .  . :</pattern>
+      <matchSeq start="1" end="594">MGKVVGIDLGTTNSCVAVMEGGKPVVIANAEGFRTTPSVVAYTKNQDQLVGQIAKRQAVMNTDNTFYSAKRFVGRRVDEVNEESKEVSYEV-EKSGSNVRLKCPVLDKQFSPEEVSAQVLRKLAEDAGKYLGENVTQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLDKKSNERILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDKVIVDHLAATFKANEGIDLRQDKQALQRLTEAAEKAKIELSSATQSEINLPFITATSEGPKHLDLTLTRAKFEELASKLIDRCRVPVEQALKDAKLSSGELDEIVMVGGSSRMPAVQELVKRVTGKDPNQTVNPDEVVAVGAAIQGGVLAGEVKDILLLDVTPLSLGVETLGGVMTKMITRNTTVPTKKSETYSTAVDGQTNVEIHVLQGEREMASDNKSLGTFRLDGIPPAPRGVPQIEVTFDIDANGILSVNAKDKGSGKEQSISITGASTLSENEVEKMVKDAETNASADKEKRERIDIKNQAETLVYQAEKQLGELADKVDADSKAKVEDKRVKLKAAIEKDDFDAMKSLLEELQQELYTVGASVYQQAGAAAAESGADAGAAGAGDSSSGDDVIDAEFTESK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="DNAK_PROMT" ac="Q46I76" length="630" description="Chaperone protein DnaK OS=Prochlorococcus marinus (strain NATL2A) OX=59920 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2569</score>
+      <smithWatermanScore>2569</smithWatermanScore>
+      <initn>2598</initn>
+      <init1>2148</init1>
+      <opt>2569</opt>
+      <zScore>2734.9</zScore>
+      <bits>516.2</bits>
+      <expectation>9e-145</expectation>
+      <identity>65.3</identity>
+      <positives>87.8</positives>
+      <overlap>605</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="603">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVA--LKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.:.:: ::::.:::::.:::::... :::::::::::.::::::.: :::.: .  :.. :.:.. : : .- ..:.::::: :...:::::.:::::::: .::  :::. :::::::::::::::::::: :::::::.::::::::::::.::::::::.:: ::::::::::::::.::::::.::::::.:::.::::::: :.:. : . :: ...::: .: ::::::::::::::.:::.. .. :.::::::   ::::..  :::  ::.: . ::.:::.:::..:.::.:. ..:.:::.::::::.:::..::. .: : :::.::::::::.:::::.:.::::.::::::::::::::::::::::::.:.::::.:.::.: .:::::.:::::::.::::::... :::::.::::::: : ::.::::::::::..:::::.:..: .: ::...: :::.:...::..:. .::  ::::: :::.::.:::::.: ..:::... ..: : :  : ...    ....:.. :..:..:  .:::.  . .. :-- ...::..</pattern>
+      <matchSeq start="1" end="604">MGKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAYTKNQDQLVGQIAKRQAVMNPENTFYSSKRFVGRRVDEVNDESKEVSYGVEK-AGSNVKIKCPILDKQFSPEEVSAQVLRKLSDDAGKYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLDKKSNERILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDRVIVDHLASTFKGNEGIDLRQDKQALQRLTEAAEKAKIELSNATQSEINLPFITATPEGPKHLDLTLTRGKFEELASNLIDRCRVPVEQALKDAKLSTGEIDEIVMVGGSTRMPAVKELVKRVTTKDPNQTVNPDEVVAVGAAIQGGVLAGEVKDILLLDVTPLSLGVETLGGVMTKMISRNTTVPTKKAETYSTAVDGQTNVEIHVLQGEREMASDNKSLGTFRLDGIPPAPRGVPQIEVTFDIDANGILSVNAKDKGSGKEQSISITGASTLSDNEVDKMVKDAEMNASADKEKREKIDIKNQAETLVYQAEKQIGELGDKVDEAAKAKVEEKRIKLKEATEKDDYESMKTLVEELQQELYSLGASVYQQANDASQAAADSNTDSKVDGDDVIDADFTETK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="DNAK2_SYNY3" ac="P22358" length="636" description="Chaperone protein DnaK2 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=dnaK2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2564</score>
+      <smithWatermanScore>2564</smithWatermanScore>
+      <initn>2635</initn>
+      <init1>2564</init1>
+      <opt>2564</opt>
+      <zScore>2729.5</zScore>
+      <bits>515.2</bits>
+      <expectation>1.8e-144</expectation>
+      <identity>66.3</identity>
+      <positives>87.9</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.:.:: ::::.:::::.:.:.:. . :::::::::::.:: :::.::::::: :  ::..:: .. :.: .: :.:.:. ::: ...:.::::::::::::..::. :::. :::::::::::::::::::: :::::::.:::::::::::::::::::::.::::::::::::::::::::::.:.::::.:.:::.:::::::. .:..: ..:.. ..::: .: ::::::::::::::.::: : .: :.:::::: . ::::..  :.:  ::..:. ::.:: ::::... ::..::. ..:::::::::::::::..:... :: :::.::::::::.:::::.:.:.::.::::::::.::::::::::::::::: ::::::.:::: ::::::.:.:::::.::::::..  :::::.::::::: : ::.::::::::::..:::.: :... :: ::...: :::.: . ::..:. :::. :.::: .::.:: ::::..: ..:::... ..: ::   : . . ::.....::  ..   ..  : ::. .. .:</pattern>
+      <matchSeq start="1" end="593">MGKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVGYAKNGDRLVGQIAKRQAVMNPGNTFYSVKRFIGRKFDEITNEATEVAYSVVKDGNGNVKLDCPAQGKQFAPEEISAQVLRKLVDDASKYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGIEVLRIINEPTAASLAYGLDKKDNETILVFDLGGGTFDVSILEVGEGVFEVLATSGDTHLGGDDFDKKIVDFLAGEFQKAEGIDLRKDKQALQRLTEAAEKAKIELSGVSQTEINLPFITATQDGPKHLDTTLSRAKFEEICSDLIDRCGIPVENAIRDAKIDKSALDEIVLVGGSTRIPAVQEVVKKILGKDPNQGVNPDEVVAVGAAIQGGVLSGEVKDILLLDVSPLSLGVETLGGVMTKIIPRNTTIPTKKSETFSTAVDGQSNVEIHVLQGEREMANDNKSLGTFRLDGIPPAPRGVPQIEVTFDIDANGILNVTAKDRGTGKEQSISITGASTLPDTEVDRMVKEAESNAAADKERREKIDRKNQADSLVYQAEKQITELGDKVPAADKIKAEGLIKDLKEAVAQEDDAKIQTVMPELQQVLYSIGSNMYQQAGAEAGVGAPGAGPEAGTSSGGGDDVIDAEFSEPEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="DNAK_PROM5" ac="A2BZ91" length="634" description="Chaperone protein DnaK OS=Prochlorococcus marinus (strain MIT 9515) OX=167542 GN=dnaK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2561</score>
+      <smithWatermanScore>2561</smithWatermanScore>
+      <initn>2585</initn>
+      <init1>2134</init1>
+      <opt>2561</opt>
+      <zScore>2726.3</zScore>
+      <bits>514.6</bits>
+      <expectation>2.7e-144</expectation>
+      <identity>65.4</identity>
+      <positives>89.2</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.:.:: ::::.:::::.:::::... :::::::::::.::::::.:.:::.: .  :...:.: . : .-.  ..:.:.:::.:...:::::.:::::::: .::  :::...::::::::::::::::::: :::::::.::::::::::::.::::::::.:: ::::::::::::::.::::::.::::::.:::.:::::::  .:: : . :: ...::: .: ::::::::::::::.:::.. .. :.::::::   ::::.. .:::  ::.: . ::.:::.:::..:.::.:. ..:.:::.::::::.::::.::. .::: :::.::::::::.:::::.:.::::.::::::::::::::::::::::::.:.::::.:.:::: .:::::.:::::::.::::::... :::::.:::::::.: ::.::::::::::..::::: :..: .: ::...: :::.:...::..:. .::. ::.:: :::.::.:::::.: ...::... ..: : .. : ...   . ...:.. ......:. .:::.  .  :</pattern>
+      <matchSeq start="1" end="592">MGKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAYTKNQDQLVGQIAKRQAVMNPENTFYSAKRFVGRRVDEVNEESKDVSYGI-EKAGSNVKLKCPVLDKQFSPEEVSAQVLRKLSEDAGKYLGENITQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLDKKSNERILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDRCIVNHLASVFKSNEGIDLREDKQALQRLTEAAEKAKIELSNATQSEINLPFITATPDGPKHLDLNLTRANFEELASKLIDRCRVPVEQALKDAKLSTGEIDEIVMVGGSTRMPAVQELVKRVTGKDPNQTVNPDEVVAVGAAIQGGVLAGEVKDILLLDVTPLSLGVETLGGVMTKMITRNTTVPTKKSETYSTAVDGQTNVEIHVLQGEREMASDNKSLGTFRLDGIPSAPRGVPQIEVTFDIDANGILSVTAKDKGSGKEQSISITGASTLSDNEVDKMVKDAESNASVDKEKREKIDLKNQAETLVYQTEKQLGELGDKVDDSAKAKVEEKSKALKEATSKEDYDSMKKLLEELQQELYAIGSSVYQQPGNQPPAPGGPNANASDDKGPDDDVIDADFTETKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="DNAK2_PROMP" ac="Q7UZG3" length="634" description="Chaperone protein dnaK2 OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=dnaK2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2557</score>
+      <smithWatermanScore>2557</smithWatermanScore>
+      <initn>2587</initn>
+      <init1>2128</init1>
+      <opt>2557</opt>
+      <zScore>2722.1</zScore>
+      <bits>513.8</bits>
+      <expectation>4.7e-144</expectation>
+      <identity>65.4</identity>
+      <positives>89.2</positives>
+      <overlap>593</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="593">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.:.:: ::::.:::::.:::::... :::::::::::.::::::.:.:::.: .  :...:.:.. : .-.  ..:.:.:::.:...:::::.:::::::: .::  :::...::::::::::::::::::: :::::::.::::::::::::.::::::::.:: ::::::::::::::.::::::.::::::.:::.:::::::  .:. : . :: ...::: .: ::::::::::::::.:::.. .. :.::::::   ::::.. .:::  ::.: . ::.:::.:::..:.::.:. ..:.:::.::::::.::::.::. .::: :::.::::::::.:::::.:.::::.::::::::::::::::::::::::.:.::::.:.:::: .:::::.:::::::.::::::... :::::.:::::::.: ::.::::::::::..::::: :..: .: ::...: :::.:...::..:. .::. ::.:: :::.::.:::::.: ...::... ..: :  . : ...   . ...:.. ...:..:. .:::.  .  :</pattern>
+      <matchSeq start="1" end="592">MGKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAYTKNQDQLVGQIAKRQAVMNPENTFYSAKRFVGRRVDEVNEESKEVSYGI-EKAGSNVKLKCPVLDKQFSPEEVSAQVLRKLSEDAGKYLGENITQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLDKKSNERILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDRCIVDHLASIFKSNEGIDLRQDKQALQRLTEAAEKAKIELSNATQSEINLPFITATPEGPKHLDLNLTRANFEELASKLIDRCRVPVEQALKDAKLSTGEIDEIVMVGGSTRMPAVQELVKRVTGKDPNQTVNPDEVVAVGAAIQGGVLAGEVKDILLLDVTPLSLGVETLGGVMTKMITRNTTVPTKKSETYSTAVDGQTNVEIHVLQGEREMASDNKSLGTFRLDGIPSAPRGVPQIEVTFDIDANGILSVTAKDKGSGKEQSISITGASTLSDNEVDKMVKDAESNASVDKEKREKIDLKNQAETLVYQTEKQLGELGDKVDASAKAKVEEKSKALKEATSKEDYEAMKKLLEELQQELYAIGSSVYQQPGNQPPAPGTPDSNESNDKGGDDDVIDADFTETKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="DNAK_CYAPA" ac="Q37106" length="618" description="Chaperone protein dnaK OS=Cyanophora paradoxa OX=2762 GN=dnaK-A PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2555</score>
+      <smithWatermanScore>2555</smithWatermanScore>
+      <initn>2542</initn>
+      <init1>2031</init1>
+      <opt>2555</opt>
+      <zScore>2720.2</zScore>
+      <bits>513.4</bits>
+      <expectation>5.9e-144</expectation>
+      <identity>65.1</identity>
+      <positives>86.9</positives>
+      <overlap>613</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="613">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::.:::::::::::::..:::.:.:: ::::.:::::.:::::  . :::::::::::.:: :::.::::::: :  :...:::..::::.. :--:..:.::::. .:.:::::::::::: .::. :.:. :::::::::::::::::::: :::::::.:::::::::::::::::::::.::::::::::::::::::::::::.::::::.:::.:::::::. ::...:..:.. .::.: .: ::::::::::::::.:::.: .: : :::..   .::::..  :.:  ::.::..::.::::::: .:.::.: : ::.:.::::::::::::..::...  : :.::::::::::.:::.:::.::::.:::.::::::::::::::::::.:::.::::::..:::.::::.:.:::::::.::::: ..  :::::.::::::  : ::.::::::::::..::::: :..: :: :...:: :::.:.. :::.:. :::: :. :: .:..:...::::.:  .::.... :.--.  : .  :.  :.... :.. ::.: ..   .::.... .:     ..  .: : .: .:.</pattern>
+      <matchSeq start="1" end="609">MGKIVGIDLGTTNSVVAVMEGGKPTVITNAEGFRTTPSVVAYTKTGDRLVGQIAKRQAVLNPGNTFYSVKRFIGRKFDEVTEEAKQVPYKVTGTQ--NVRIECPALQTSFTPEEISAQVLRKLAEDASKYIGEPVTQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAASLAYGLDKKKNETILVFDLGGGTFDVSILEVGDGVFEVLSTSGDTHLGGDDFDKKLVDFFIEEFQKLENINLREDQQALQRLTEAAEKAKIELSSVTQTEITLPFLSLTPSGPKHFDTTLNRAKFEELCSTLIDRCRIPVETALKDAKLTKEDIDEVVLVGGSTRIPAVRELVQKVLDKVPKQSVNPDEVVAVGAAVQAGVLAGEVKDIVLLDVTPLSLGVETLGGVMSKIIVRNTTIPTQKSELFSTATDGQTNVEIHVLQGERGFAKDNKSLGTFRLDGIAPAPRGVPQIEVTFDIDANGILSVTAKDKGTGKEKSITITGASTLSQDEVERMVQEAEKNAAQDKENRQKIELRNQAESLINQAERQLKEFK--LEPNVQAPIEQTIQQLQTALKEDNLEQVQSLCQELQNSLLEIGKQVYSKTETTTPNKNEEDVIDASFSEEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="DNAK2_NOSS1" ac="Q8YW74" length="633" description="Chaperone protein dnaK2 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=dnaK2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2553</score>
+      <smithWatermanScore>2553</smithWatermanScore>
+      <initn>2581</initn>
+      <init1>2113</init1>
+      <opt>2553</opt>
+      <zScore>2717.8</zScore>
+      <bits>513.0</bits>
+      <expectation>8.1e-144</expectation>
+      <identity>65.9</identity>
+      <positives>88.8</positives>
+      <overlap>590</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="590">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:.:::::::::::: ::..:::.:.:: ::::.:::::.::..:. . :::::::::::.::::::.::::::: .  :...:: .. ::: ..-..:.:.  :. ...:.::::::.:::::..::. :::. :::::::::::::::::::: :::::::.::.::::::::::::::.:::.:::::::::::::::::.::::::.::::.:.:::.:::::::. .:..: ..:.. ..::: .: ::::::::::::::.:::.: .. :.:::::: . ::::... :::  ::.::  ::.:::::::..: ::.: : .:.:.:::::::::::::.::..: :..:::.::::::::.:::::::.:.::.  :::::::::::::::::::::::: ::::::.::::.::::::.:::::::.::::::..  :::::.::::::: : ::.:::::.::::..:::.: :..: :: ::...: :::.:.. ....:. :::. ::.:: .::.:. ::::..: ..:::... ..: :::  : ... :....:.::  .. : .:.   ::. :.</pattern>
+      <matchSeq start="1" end="589">MAKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAFAKNGDTLVGQIAKRQAVMNPENTFYSVKRFIGRRYDEVTNEATEVSYKVLSS-GGNVKVDSPGAGKQFAPEEISAKVLRKLVEDASKYLGETVTQAVITVPAYFNDSQRQATKDAGKIAGIEVMRIINEPTAASLAYGFDKKSNETILVFDLGGGTFDVSVLEVGDGVFEVLATSGDTHLGGDDFDKKIVDFLAEQFRKDEGIDLRKDKQALQRLTEAAEKAKIELSSVTQAEINLPFITATQDGPKHLDMTLTRAKFEELCADLIDRCRIPVEQALRDAKLKKENIDEVVLVGGSTRIPAVQQLVKNLLGREPNQTVNPDEVVAVGAAIQAGVLGGEVTGILLLDVTPLSLGVETLGGVMTKIIPRNTTIPTKKSEVFSTAVDGQTNVEIHVLQGEREFANDNKSLGTFRLDGIPPAPRGVPQIEVVFDIDANGILNVTAKDKGTGKEQSISITGASTLDKTDIDRMVREAEQNASSDKERREKIERKNQADSLAYQAEKQLQELGDKVPEADKTKVEGLVKDLREAVAKEDDEQIKKLTPELQQALFAVGSNIYQQAGGGAAPGAAPQDGGTTSSDGGDDVIDADFTETK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="DNAK2_PROMA" ac="Q7V9G2" length="633" description="Chaperone protein dnaK2 OS=Prochlorococcus marinus (strain SARG / CCMP1375 / SS120) OX=167539 GN=dnaK2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2550</score>
+      <smithWatermanScore>2550</smithWatermanScore>
+      <initn>2574</initn>
+      <init1>2121</init1>
+      <opt>2550</opt>
+      <zScore>2714.6</zScore>
+      <bits>512.4</bits>
+      <expectation>1.2e-143</expectation>
+      <identity>63.4</identity>
+      <positives>88.1</positives>
+      <overlap>612</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="612">MGKVVGIDLGTTNSVVAAIEGGQPSVIINAEGLRTTPSIVAYTKKEELLVGQIAKRQAVINPENTFFSVKRFIGSKEGEISKEAKKLPYKVSNDQNNNIKIKCPALNRDFSPEEISAQVLRKLINDATDYLGQEVTQAVITVPAYFNDSQRQATMDAGKIAGVEVLRIINEPTAASLAYGLDKKQNETILVFDLGGGTFDVSILEVGDGIFEVLSTAGDTNLGGDDFDNVLVNWLINDFKEKNNIDLGNDVQALQRLTEAAEKAKVELSTVEKTTIHLPFITADKTGPKHIEQELTRDVFENLCQALINRCRIPVEKSLNDARLDKADINEIVLVGGSTRIPAVQNLVESLTGKKPNQSVNPDEVVAIGAAIQAGILAGEIKDILLLDVTPLSLGVETLGGVMTKIIARNTTIPVKKSEMFSTAVDNQTNVEIHILQGERELVAGNKSLGNFRLDGIPAADRGAPQIEVTFDIDVDGILSVKAREKETGVEQAVTIQGASNLNEKEVEEMLVEAEKFASADKVKRENIDVKNQAEALCFEAEKEVSSFNDTVPENKKQNIKTLIENIRQAVQTDNFETLKEQMEELKTAMKDIVALKSTNDTATDPMSNLNDL</querySeq>
+      <pattern>:::::::::::::: ::..:::.:.:: ::::.:::::.:::::... :::::::::::.::::::.:.:::.: .  :...:.:.. :.:-. .....:.:::.:...:::::..::::::: .::  :::....:::::::::::::::::: :::::::.::::::::::::.::::::.:.:: ::::::::::::::.::::::.::::::.:::.:::::::.:.:. :   :: ...::: .: ::::::::::::::.:::.. .. :.::::::   ::::..  :::  ::.: . ::.:::.:::..:.::.:. ..:.:::.::::::.:::..::. .::: :::.::::::::.:::::.:.::::.::::::::::::::::::::::::.:.::::.:.::.: .:::::.:::::::.::::::... :::::.::::::: . ::.::::::::::..::::: :..: .: ::...: :::.:...:::.:. .::  :.::: ::. ::.:::::.: ...::... ..: : :. : ....   ....:.. :..::.:  .:.:.---:.. .: ..    ..  :.  :</pattern>
+      <matchSeq start="1" end="608">MGKVVGIDLGTTNSCVAVMEGGKPTVIANAEGFRTTPSVVAYTKNQDQLVGQIAKRQAVMNPENTFYSAKRFVGRRVDEVNEESKEVSYSV-EKSGSSVKLKCPVLDKQFSPEEVAAQVLRKLSEDAGKYLGENINQAVITVPAYFNDSQRQATKDAGKIAGLEVLRIINEPTAAALAYGLDRKSNERILVFDLGGGTFDVSVLEVGDGVFEVLSTSGDTHLGGDDFDKVIVDHLAATFKANEGIDLRQDKQALQRLTEAAEKAKIELSNATQSEINLPFITATPEGPKHVDLTLTRAKFEELASNLIDRCRVPVEQALKDAKLSTGEIDEIVMVGGSTRMPAVKELVKRVTGKDPNQTVNPDEVVAVGAAIQGGVLAGEVKDILLLDVTPLSLGVETLGGVMTKMITRNTTVPTKKTETYSTAVDGQTNVEIHVLQGEREMASDNKSLGTFRLDGIPPSPRGVPQIEVTFDIDANGILSVTAKDKGSGKEQSISITGASTLSDNEVEKMVKDAETNATADKEKRDRIDIKNQAETLVYQTEKQLGELGDKVDEEAKAKVEAKRIQLKEATEKDDYETMKTLVEDLQ---KELYSLGASVYQQSNAASQAADGTSSESNNSTEGNDDVIDAEFTESK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

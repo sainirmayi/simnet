@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163736-0229-94981279-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163736-0229-94981279-p2m.m9&quot; -m &quot;F10 fasta-R20221107-163736-0229-94981279-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0J3|RK6_PHATC" type="PROTEIN" length="178"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:37:36+00:00" end="2022-11-07T16:37:38+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RK6_PHATC" ac="A0T0J3" length="178" description="50S ribosomal protein L6, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl6 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1124</score>
+      <smithWatermanScore>1124</smithWatermanScore>
+      <initn>1124</initn>
+      <init1>1124</init1>
+      <opt>1124</opt>
+      <zScore>1485.0</zScore>
+      <bits>281.3</bits>
+      <expectation>3.8e-75</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RK6_TRICV" ac="P49548" length="179" description="50S ribosomal protein L6, chloroplastic OS=Trieres chinensis OX=1514140 GN=rpl6 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>812</score>
+      <smithWatermanScore>812</smithWatermanScore>
+      <initn>884</initn>
+      <init1>812</init1>
+      <opt>812</opt>
+      <zScore>1075.6</zScore>
+      <bits>205.6</bits>
+      <expectation>2.4e-52</expectation>
+      <identity>71.9</identity>
+      <positives>87.1</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: :: ::::. .  ..:::::::::.. :: .: : : :. : :.....::: ::::::::::::::: ::::::.. :.:.::::::.::.: :::::::::::.. ::. ::::::::::::::.:::  :::::.:::.:: :::::::::::::: . ::::::.:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIKIPANVDITCSGPDLTVKGKFGTLHNTIPDAIGIEEIDGSLIVNVKDNTRSNRALHGLYRTLINNMVTGVSEQFQLTLNLQGVGYRASVQGNSIILNLGYSHPVELVIPEGISVEVVQNTTINLKACDKGNLGLFASNIRSWRPPEPYKGKGILYKGEIVKRKAGKSGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RK6_THAPS" ac="A0T0Y7" length="187" description="50S ribosomal protein L6, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rpl6 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>749</score>
+      <smithWatermanScore>749</smithWatermanScore>
+      <initn>788</initn>
+      <init1>611</init1>
+      <opt>749</opt>
+      <zScore>992.6</zScore>
+      <bits>190.3</bits>
+      <expectation>1e-47</expectation>
+      <identity>64.0</identity>
+      <positives>85.5</positives>
+      <overlap>186</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSE----ITVKGKFGTLQTQIPTVIKITE--SDN--ILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: .: .:.:..... ----:.::::::.::  .:  .:: .--.::-- : :.. .:::. ..:.::::::::::::::.::: ::: :.::::::.::.. ..:::::::::.: ::. :.:::.::::.:.:.:::: ::::::..:::: ::::::::::::.:::.::::::.:</pattern>
+      <matchSeq start="1" end="186">MSRIGKLPIKLPTTVEISHQSDATVQVINVKGKFGSLQRTLPEELKIEQIHNDNGSSLIVSFENQTRTNKSLQGLYRTLINNMVIGVTEQFVIILTLQGVGYRASVQGKSLVLNLGYSHPVEIDIPEGITVEVTQNTTLNIKACDKEQLGLFAAKVRAWRPPEPYKGKGILYKNEQILRKAGKSGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RL6_GLOC7" ac="B7KI01" length="179" description="50S ribosomal protein L6 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>597</score>
+      <smithWatermanScore>597</smithWatermanScore>
+      <initn>635</initn>
+      <init1>597</init1>
+      <opt>597</opt>
+      <zScore>793.6</zScore>
+      <bits>153.4</bits>
+      <expectation>1.2e-36</expectation>
+      <identity>52.2</identity>
+      <positives>79.8</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :::::..: .: . :...:::  : ::  .::.. . .....: :  ....:..:  ::: :::..::: :::. ::  ::..:::::::.:.... ::.:::.::.. .:. :.: : .:: :.. . :::..:  ::.::: : ::::::::: :::: . :::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKRPITIPNKVTVNIDGSHVAVKGPKGELQRTLPTLVIVEQDEGVLRVVRQDDSRTARQRHGLCRTLVSNMVEGVSKGFEKRLEIQGVGYRAAAQGSKLTLNVGYSKPVEMDMPSGIGVAVEKNTEITITGIDKEIVGNVAAKIRAVRPPEPYKGKGIRYKGEVVRRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RL6_GEOUR" ac="A5GAV7" length="179" description="50S ribosomal protein L6 OS=Geotalea uraniireducens (strain Rf4) OX=351605 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>581</score>
+      <smithWatermanScore>581</smithWatermanScore>
+      <initn>623</initn>
+      <init1>581</init1>
+      <opt>581</opt>
+      <zScore>772.6</zScore>
+      <bits>149.5</bits>
+      <expectation>1.8e-35</expectation>
+      <identity>52.2</identity>
+      <positives>78.1</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: ::..: :.: ::.. :.:  :.:  .: . ..:  .:: .::. ...  . :. ::: :::::::: ::.  ::  ::..:::::: .... . :.::::::.:...:. :.::: . : . .:. ::::.:  ::.:::.: ::::::::. : .: :.:::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIEIPKGVKISYIDSNLMVEGPKGSLGRRIMSGVSIDLTDNTITVSRDNDGIKSRSAHGLTRTLINNMVTGVTTGFETALEINGVGYRAELKGDVLNLSLGYSHPINFQLPKGINVEVDKMTKLLVKGIDKELVGQTAAKIRAFRGPEPYKGKGVKYANETILRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RL6_SYNJB" ac="Q2JIL3" length="181" description="50S ribosomal protein L6 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>579</score>
+      <smithWatermanScore>579</smithWatermanScore>
+      <initn>621</initn>
+      <init1>579</init1>
+      <opt>579</opt>
+      <zScore>769.9</zScore>
+      <bits>149.0</bits>
+      <expectation>2.5e-35</expectation>
+      <identity>52.8</identity>
+      <positives>77.5</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::. ::..: .:.:. . ..:.:::  : :. ..: .: . .. ..:::.  ...: .: :::: :::. ::: :::. ::  ::: :::::::.:.....::.::::::.: .:  :.. :  :. : ... ::::.:  :: ::: : ::::::::: : :::. ::::::.:</pattern>
+      <matchSeq start="1" end="178">MSRIGRRPIALPAKVEIQIDGQHIAVKGPKGQLSRSLPPLITVQQNAQMLTVSRLNDSRPARQLHGLCRTLVANMVDGVSKGFERRLELVGVGYRAAIQGSKLVLNVGYSHPVEIPFPPGIQIAVEGNNIIVVSGTDKELVGNTAARIRAVRPPEPYKGKGIRYLGEQVRRKAGKSGKAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RL6_DICT6" ac="B5YDV8" length="180" description="50S ribosomal protein L6 OS=Dictyoglomus thermophilum (strain ATCC 35947 / DSM 3960 / H-6-12) OX=309799 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>577</score>
+      <smithWatermanScore>577</smithWatermanScore>
+      <initn>622</initn>
+      <init1>498</init1>
+      <opt>577</opt>
+      <zScore>767.3</zScore>
+      <bits>148.5</bits>
+      <expectation>3.5e-35</expectation>
+      <identity>50.8</identity>
+      <positives>79.3</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSE-ITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :. ::.::... .:..-. ::: .: :.  .  .. : . :: ..:   .. . :.::::: :.::::::.::.. ::  :::.:.:::: ::.:..::..:.::::...::. ..: : .:: :..:. ::::.: ::: .:. :  :::::::: :.::.: .::::..:</pattern>
+      <matchSeq start="1" end="179">MSRIGKKPVPIPQNVQVEIKDGNCVLVKGPLGQLEKTFSPLLTIKKVDNQIVVERPNDEKFVKALHGLTRALINNMVLGVTQGFEKRLELQGTGYRARVQGNKLILEVGFSHPVELEIPTGLTVTVQDNTKISVKGIDKELVGQFAAIVRSVRPAEPYKGKGIRYEGEKIRQKAGKAGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RL6_DICTD" ac="B8E1E8" length="180" description="50S ribosomal protein L6 OS=Dictyoglomus turgidum (strain DSM 6724 / Z-1310) OX=515635 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>573</score>
+      <smithWatermanScore>573</smithWatermanScore>
+      <initn>612</initn>
+      <init1>494</init1>
+      <opt>573</opt>
+      <zScore>762.1</zScore>
+      <bits>147.6</bits>
+      <expectation>6.9e-35</expectation>
+      <identity>49.2</identity>
+      <positives>79.9</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSE-ITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::. :. ::.::... .:..-..::: .: ..  .  .. : . :: ..:   .. . :.::::: :.::::::.::.. ::  :::.:.:::: ::.:...:..:.::::...::. ..: : .:: :..:. ::::.: ::: .:. :  :::::::: :.::.: .::::..:</pattern>
+      <matchSeq start="1" end="179">MSRIGRKPVPIPQNVQVEIKDGNCVSVKGPLGQIEKTFSPLLTIKKVDNQIVVERPNDEKFVKALHGLTRALINNMVLGVTQGFEKRLELQGTGYRARVQGNKLVLEVGFSHPVELEIPTGLTVSVQDNTKISVKGIDKELVGQFAAIVRSVRPAEPYKGKGIRYEGEKIRQKAGKAGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RL6_SYNJA" ac="Q2JQN4" length="181" description="50S ribosomal protein L6 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>572</score>
+      <smithWatermanScore>572</smithWatermanScore>
+      <initn>617</initn>
+      <init1>572</init1>
+      <opt>572</opt>
+      <zScore>760.7</zScore>
+      <bits>147.3</bits>
+      <expectation>8.3e-35</expectation>
+      <identity>52.8</identity>
+      <positives>76.4</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: ::..: .:... . ..:.:::  : :. ..: .: . .  . : :.  ...: .: :::: :::. ::: :::. ::  ::: ::::::..:.:..:::.::::::.: .:  :.. :  :..: ... ::::.:  :: ::: : ::::::::: : :::. ::::::.:</pattern>
+      <matchSeq start="1" end="178">MSRIGKRPIALPAKVEVQIEGQQISVKGPKGELSRSLPPLIAVHQEAQTLKVSRVNESRPARQLHGLCRTLVANMVDGVSRGFERRLELVGVGYRASTQGNKLILNVGYSHPVEIPFPPGIQIAVEGNNVIVVSGIDKELVGNTAARIRAVRPPEPYKGKGIRYVGEQVRRKAGKSGKAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RL6_OCEIH" ac="Q8ETW8" length="178" description="50S ribosomal protein L6 OS=Oceanobacillus iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 / KCTC 3954 / HTE831) OX=221109 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>571</score>
+      <smithWatermanScore>571</smithWatermanScore>
+      <initn>571</initn>
+      <init1>571</init1>
+      <opt>571</opt>
+      <zScore>759.6</zScore>
+      <bits>147.1</bits>
+      <expectation>9.6e-35</expectation>
+      <identity>51.7</identity>
+      <positives>73.6</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::.:  :. :::.:... ... .::::  : :. ..   .::.  ::.:::    . .  :::::  :.::::::::::. ::  ::. ::::::  :... ..: ::::::...  . : .:: .:: :..:. ::::.: .:::::: : ::::::::: :  : . :: ::.::</pattern>
+      <matchSeq start="1" end="178">MSRVGLKPVEIPEGVELKLDNNTVTVKGPKGELSRELHPDMKINIEDNVLTVERPSDHKEHRALHGTTRSLINNMVIGVSKGFEKSLEIIGVGYRAQKQGDKTVINAGYSHPVELEAIDGIEIEVPKNTQITVKGIDKELVGAIAANIRAIRPPEPYKGKGIRYTDEYVRRKEGKTAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RL6_SYNY3" ac="P73306" length="179" description="50S ribosomal protein L6 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <smithWatermanScore>570</smithWatermanScore>
+      <initn>612</initn>
+      <init1>570</init1>
+      <opt>570</opt>
+      <zScore>758.2</zScore>
+      <bits>146.8</bits>
+      <expectation>1.1e-34</expectation>
+      <identity>49.4</identity>
+      <positives>77.5</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :: .: .:... . :...:::  :.:. :.:  . ...  . .::  ....:..:  ::: :::. ::: ::.. ::  ::..:::::: .:.:.. ::.:::.::.. .:. : :.: .:: . ... ::::::  ::.::: : ::::::::: :.:: . :::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKRPIPLPAKVSVDIQGSHLSVKGPKGSLERQLPEKVIVAQEGETITVTRQDESRTARERHGLVRTLVANMVDGVAQGFERRLEIQGVGYRAQAQGNKLTLNVGYSKPVEMTMPQGIEVKVENNTQVIVSGIDKELLGNTAAKIRAVRPPEPYKGKGIRYQGEYVRRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RL6_CITBB" ac="B5EFR5" length="179" description="50S ribosomal protein L6 OS=Citrifermentans bemidjiense (strain ATCC BAA-1014 / DSM 16622 / JCM 12645 / Bem) OX=404380 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <smithWatermanScore>570</smithWatermanScore>
+      <initn>616</initn>
+      <init1>570</init1>
+      <opt>570</opt>
+      <zScore>758.2</zScore>
+      <bits>146.8</bits>
+      <expectation>1.1e-34</expectation>
+      <identity>52.8</identity>
+      <positives>74.7</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::::::.:: .: . ::  :: :.:  : :  .:   . :  . . .::   ..: . :. ::: ::::::::::::. :: .::..:::::: :..: . : ::.:::::...:. :.::: . : ... . :::..:  ::.:::.: ::::::::. :  : :.:::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIAIPAGVKVIYNAPEIKVEGPKGKLARNIGEGVAIDVTAQAVTVTRHDDTIKSRSAHGLTRTLINNMVIGVSKGFETLLEINGVGYRAEVKGNVLNLALGFSHPVNFELPTGITVEVEKMTKLKVMGIDKEVVGETAAKIRAFRPPEPYKGKGVKYADETILRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RL6_GEODF" ac="B9M6G3" length="179" description="50S ribosomal protein L6 OS=Geotalea daltonii (strain DSM 22248 / JCM 15807 / FRC-32) OX=316067 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>569</score>
+      <smithWatermanScore>569</smithWatermanScore>
+      <initn>635</initn>
+      <init1>569</init1>
+      <opt>569</opt>
+      <zScore>756.9</zScore>
+      <bits>146.6</bits>
+      <expectation>1.4e-34</expectation>
+      <identity>51.7</identity>
+      <positives>77.0</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: ::..: :.:.::.. : :  :::.  : . . :  ..: ..:. ...  . :. ::: :::::::: ::.. ::  ::..:::::: .... . :.::::::.:...:. :.::: . : : .:. ::::.:  ::.:: .: ::::::::. :  : :.:::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIEIPKGVKISYTDSNLQVVGPKGTLSRTIMSGVTIEMTENHISVSRDDDGIKSRSAHGLTRTLINNMVTGVTKGFETALEINGVGYRAELKGDVLNLSLGYSHPINFSLPKGINVEVDKMTKILVKGVDKELVGQTAAKIRDFRGPEPYKGKGVKYADETILRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RL6_NATTJ" ac="B2A4F4" length="178" description="50S ribosomal protein L6 OS=Natranaerobius thermophilus (strain ATCC BAA-1301 / DSM 18059 / JW/NM-WN-LF) OX=457570 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>567</score>
+      <smithWatermanScore>567</smithWatermanScore>
+      <initn>607</initn>
+      <init1>567</init1>
+      <opt>567</opt>
+      <zScore>754.3</zScore>
+      <bits>146.1</bits>
+      <expectation>1.9e-34</expectation>
+      <identity>51.7</identity>
+      <positives>74.7</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :: ::..:::. :..:.::::  : :.  .   : . : .. : :    ..   ..:::: :.:: ::: ::.. ::  ::. :::::: .:.....::.::::::.:. :. . .:: .:. : .:. :::..:  :: ::: :.::::::::: :  ::::::.::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKKPIEIPDSVDISINNNEVTVKGPKGELSQVVDQSIILEEEEGQLLVKRPTDSNHHKSLHGLSRSLIANMVEGVTNGFERHLEIVGVGYRAQMQGKNLVLNVGYSHPVTIEPPEGVEIEVPKNNQIIVKGTDKEVVGQVAARIRAVRKPEPYKGKGIKYAEEQIIRKVGKTGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RL6_TRIV2" ac="Q3MFA7" length="182" description="50S ribosomal protein L6 OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>562</score>
+      <smithWatermanScore>562</smithWatermanScore>
+      <initn>617</initn>
+      <init1>562</init1>
+      <opt>562</opt>
+      <zScore>747.5</zScore>
+      <bits>144.9</bits>
+      <expectation>4.5e-34</expectation>
+      <identity>49.4</identity>
+      <positives>76.4</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :::.: .:... . ....:::  : :. ..:. .....  . : :   ..::. : :::: :::. ::: :::. :.  ::..:::::: ::. ..:::.:::: :.:. :. :.  : .::.. ... :::..:  ::.::: : ::::::::: : :: . :::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKRPITVPAKVQVTIDGTKVVVKGPKGELSRELPVNVSVSQEGETLQVTRRDETRTSRQLHGLSRTLVANMVEGVSQGFQRRLEIQGVGYRAQVQGRNLILNMGYSHQVQIEPPDGIQFAVENNTNVIVSGYDKEIVGNTAAKIRAVRPPEPYKGKGIRYAGEVVRRKAGKTGKGGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RL6_TRIL1" ac="B3E845" length="179" description="50S ribosomal protein L6 OS=Trichlorobacter lovleyi (strain ATCC BAA-1151 / DSM 17278 / SZ) OX=398767 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <initn>593</initn>
+      <init1>558</init1>
+      <opt>558</opt>
+      <zScore>742.4</zScore>
+      <bits>143.9</bits>
+      <expectation>8.6e-34</expectation>
+      <identity>49.4</identity>
+      <positives>75.3</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: .:..: ... :: .::::  : :   :   ....  :. ..:   ... . :. ::: :::.::::.::.  ..  ::..:::::: :.. :..:.::::::: . .:. :.::: . : . .:. ::::.:  ::.::..: ::::::::: :  : :.:::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIEVPKGVTVTFVDSVLTVKGPKGELCRTIMPEVSVAVEDGKISVTRPDDAIKSRSAHGLTRTLVNNMVVGVTAGYQTDLEINGVGYRAEVKGAELVLSLGYSHPVVFPLPSGITVEVDKMTKLAVKGIDKELVGQTAAKIRSFRGPEPYKGKGIKYATETILRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RL6_NOSS1" ac="Q8YPJ3" length="182" description="50S ribosomal protein L6 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <initn>596</initn>
+      <init1>558</init1>
+      <opt>558</opt>
+      <zScore>742.3</zScore>
+      <bits>143.9</bits>
+      <expectation>8.8e-34</expectation>
+      <identity>48.3</identity>
+      <positives>76.4</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>:::::: :::.: .:... . ....:::  : :. ..:. .....  . : :   ..::. : :::: :::. ::: :::. :.  ::..:::::: ::. ...::.:::: :.:. :. :.  : .::.. ... :::..:  ::..:: : ::::::::: : :: . :::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKRPITVPAKVQVTIDGTKVVVKGPKGELSRELPANVSVSQEGETLQVTRRDETRTSRQLHGLSRTLVANMVEGVSQGFQRRLEIQGVGYRAQVQGRNLVLNMGYSHQVQIEPPDGIQFVVENNTNVIVSGYDKEIVGNTAAKVRAVRPPEPYKGKGIRYAGEVVRRKAGKTGKGGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RK6_ARATH" ac="O23049" length="223" description="50S ribosomal protein L6, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=RPL6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <initn>592</initn>
+      <init1>442</init1>
+      <opt>558</opt>
+      <zScore>740.2</zScore>
+      <bits>143.8</bits>
+      <expectation>1.1e-33</expectation>
+      <identity>48.3</identity>
+      <positives>75.3</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="178">-----------------------------MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKIT-ESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>                              ::::: ::..: :: :  . ... ::: .: :    :  ...:-: ...: :  . .:: .  .:::.::: .:::.:::. ::  : : ::::::.:...:..::::.::::...::. ..:.: .:: :.... ::  .: :::..: :: ::::::::. :. : . :: ::..:</pattern>
+      <matchSeq start="44" end="221">AFLGDRNVFKVSSTPFAQVGYSSKTIECKESRIGKQPIAVPSNVTIALEGQDLKVKGPLGELALTYPREVELTKEESGFLRVKKTVETRRANQMHGLFRTLTDNMVVGVSKGFEKKLILVGVGYRATVDGKELVLNLGFSHPVKMQIPDSLKVKVEENTRITVSGYDKSEIGQFAATVRKWRPPEPYKGKGVKYSDEIVRRKEGKAGKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RL6_PARUW" ac="Q6ME49" length="180" description="50S ribosomal protein L6 OS=Protochlamydia amoebophila (strain UWE25) OX=264201 GN=rplF PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <smithWatermanScore>555</smithWatermanScore>
+      <initn>582</initn>
+      <init1>549</init1>
+      <opt>555</opt>
+      <zScore>738.5</zScore>
+      <bits>143.2</bits>
+      <expectation>1.4e-33</expectation>
+      <identity>49.4</identity>
+      <positives>80.3</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="177">MSRIGKLPITIPENVDINYNDSEITVKGKFGTL-QTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::: :::::..:..:... ...:..:::  :.:-:  :: :   .:....:-:.:...  ..  .::::::::.:::.:..: ::  ::. :::::::::.. . :.::.::: .. ::. ..:.: .:: :.... ::.:.: :::..:. : ::::.:::: : :: . .::::.:</pattern>
+      <matchSeq start="1" end="177">MSRKGKLPISLPNGVEVKVSNTEVAVKGPKGALTQKLIPGVNVNVEGNEVL-VSLADEEAKLAHFHGLYRTLIHNMVVGTTEGFEKKLEMIGVGYRAAVQGDLLDLQLGFSHPCKLPIPKGLAVKVDKNTLITISGFDKHLVGQFAATVRSQRPPEPYQGKGIRYAGEFVRKKAGKAAAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RL6_PELPD" ac="A1ALV6" length="179" description="50S ribosomal protein L6 OS=Pelobacter propionicus (strain DSM 2379 / NBRC 103807 / OttBd1) OX=338966 GN=rplF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>554</score>
+      <smithWatermanScore>554</smithWatermanScore>
+      <initn>598</initn>
+      <init1>554</init1>
+      <opt>554</opt>
+      <zScore>737.2</zScore>
+      <bits>142.9</bits>
+      <expectation>1.7e-33</expectation>
+      <identity>47.2</identity>
+      <positives>77.0</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MSRIGKLPITIPENVDINYNDSEITVKGKFGTLQTQIPTVIKITESDNILTVGLSEQTRSVRALHGLYRTLINNMVIGVSEQFEIILELKGVGYRAAVQNNEIILNLGYSHPVNIKIPNIISVEVVQNTTINLKSCDKELLGLFAANIRAWRQPEPYKGKGILYKGEQIIRKAGKSAK</querySeq>
+      <pattern>::::::::: : ..: . ..:: ..:.: .: :. .:   ...  .:. . :  .... ..:. ::: :::..::: ::.. :.  ::..:::::: :...:..:.::::::: . ::  ...:: . : . .:. ::::.:  ::.::..: ::::::::. :  : :.:::::..:</pattern>
+      <matchSeq start="1" end="178">MSRIGKLPIDISKDVKLAFSDSILSVQGPLGKLSRRIMPCVNLEITDSCIIVMRNDESGTARSAHGLTRTLVSNMVNGVTKGFQKSLEINGVGYRAEVKGSELVLSLGYSHPVVFTIPAGVTIEVDKLTKVVVKGFDKELVGETAAKIRSFRPPEPYKGKGVKYADETILRKAGKTGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

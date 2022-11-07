@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162444-0290-80207995-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162444-0290-80207995-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162444-0290-80207995-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7G816|GUF1_PHATC" type="PROTEIN" length="693"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:24:44+00:00" end="2022-11-07T16:24:50+00:00" search="P0Y0M0DT0H0M6.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="GUF1_PHATC" ac="B7G816" length="693" description="Translation factor GUF1 homolog, mitochondrial OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_22622 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>4552</score>
+      <smithWatermanScore>4552</smithWatermanScore>
+      <initn>4552</initn>
+      <init1>4552</init1>
+      <opt>4552</opt>
+      <zScore>3193.9</zScore>
+      <bits>601.4</bits>
+      <expectation>2.4e-170</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>693</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MIQSAAPSCRRWWALGFAAVALWVDSTSGWTTQRPPMAGLRRFQSSAWYMSSSSTEKPTTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="693">MIQSAAPSCRRWWALGFAAVALWVDSTSGWTTQRPPMAGLRRFQSSAWYMSSSSTEKPTTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="GUF1_THAPS" ac="B8BYH3" length="706" description="Translation factor GUF1 homolog, mitochondrial OS=Thalassiosira pseudonana OX=35128 GN=THAPSDRAFT_40001 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3242</score>
+      <smithWatermanScore>3242</smithWatermanScore>
+      <initn>3224</initn>
+      <init1>1193</init1>
+      <opt>3242</opt>
+      <zScore>2280.5</zScore>
+      <bits>432.5</bits>
+      <expectation>1.8e-119</expectation>
+      <identity>76.6</identity>
+      <positives>90.4</positives>
+      <overlap>653</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="693">ALWVDSTSGWTTQRPPMAGLRRFQSSAWYMSSSSTEKPTTS--GTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQAR-DGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASK----GKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKK---EHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              :.. : . :::--.: ..  ... ...:    .   .....:::::::::::::::::::::::.::::: ::: ::::::::::::::::::::::::::...-::::: :::::::::::::::::::::::::::::::::::.::::::::::::::.:::::.:::::::::::.::::::: :::.:::  :.::::.::::.:::: ::. ::::   :::::::::::: .: ::::::::::.:: :..:.::::::: :::::::::::::::: ::::.::::::: :.:::::::::::::.:..::: .:.:----..  ::  ::::..:.::::::.:::::::::.::::::::::::::.:::::.::::::::::::::::::....:::.::.:.:::::::::::.:.:---. .   ..:.:.:::.. :.  ..:::::::.:::::::: :::::::::: : ::..:::::::::::.:::::::::::::::::.:::::::.::.:: .:::::::::::: ::::: .:: : ::..:::: ::::.::::::::.::::::::::::: :::::::::::::::::.::::::::::::::::::..:::::::::::::.:::.</pattern>
+      <matchSeq start="50" end="702">AFSTLSHQRIRTSNVGVSSIFTNSQRITTFSATPTTRRTTSLFSTTENKKSSELVSNQDLGLGTSGFSTSRIRNFSIIAHIDHGKSTLADRLLESTQTVAARDMAAQLLDNMDLERERGITIKLQAARVLYKSEVDGEMYILNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGVEAQTLANVYLALENNLEIIPVLNKIDLPAADPDRVAEEIEETIGIDCSDAVRASAKSGIGINDILESIVKNVPPPQPDTGGPFRALIFDSLFDPYRGVIVFFRVVDGAVKKGQKVRFLASKAEHDVTEVGIMQPNQVQVDCLRAGEVGYLCGSIKDVLDARVGDTITLSSEYKAAAAKLDPKSEEDPITPLPGYSESIPMVYCGIFPVDADQYENLRDALGKLRLNDAAISYEPETSGAMGFGFRCGFLGLLHMDVIRERLEREFDLDLIVTAPSVVYRVEKGEGDSKTVEIVDAPSKMPEILREMKVMEPYVRMEILTPSEYNGQIIELGQERRGILKDINYLTPTRSTIVYEVPLAEVITDFFDQLKSRTQGYASMEYQLIEYREGDLVRLDVKINYEDAPPLATIVHVDAAQTVGRRLVASLKELIPRQMFKVPIQACIGVKVIASASISPMRKDVLAKCYGGDLSRKKKLLQKQAKGKKRMKAMGKVNVPQEAFMAVIKLNKSAGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="GUFP_ORYSJ" ac="B9F2U5" length="680" description="Translation factor GUF1 homolog, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=Os02g0157700 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2677</score>
+      <smithWatermanScore>2677</smithWatermanScore>
+      <initn>2226</initn>
+      <init1>1233</init1>
+      <opt>2677</opt>
+      <zScore>1886.9</zScore>
+      <bits>359.6</bits>
+      <expectation>1.5e-97</expectation>
+      <identity>65.3</identity>
+      <positives>84.1</positives>
+      <overlap>634</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="74" end="693">QSSAWYMSSSSTEKPTTSGTINGGGGKQKAASQPKKTAGIVYDA-QK-----IRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALS--------YEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::.: .:.    : -::-----:::::::::::::::::::.::: : :: .:.:. :.::::::::::::::::::::. :   :-: :::::::::::::::::::::::::::::::::::::.::::::::::::::::::::.:::::::.:.:.:::.:::  ::.:::. .. ::: :::: .::. ::  .:::  .. .:.:::::::::: ::::::.:::.:: ...:::. :.::  :. . :.:...:::. :. :.::::::: ..:..: ::::::::. ...  : :----------::::....:::.:::::.::::.: ::.:: ::.::::::.--------.:::::.:::::::::::::::::::::::.:::...::.:::::::.:.    :    ..:. .:. :.     ::::....:::.:: : :.::::::::.. ...:.: .:...::::::::.. :::::::::.::::::::::: :: :.::.::..:: . .  :. .:::::: :.:: :  .::.:::::::..:::::::.::::::..: .:::::.::::::::::::::.:::.::::::.::.:.::::::::::::..</pattern>
+      <matchSeq start="55" end="677">RPAAPLPSAPPRPRALSAAPRGRVVCPAAPASSPASTTDAGQDRLQKVPVSNIRNFSIIAHIDHGKSTLADKLLELTGTVQKREMKQQFLDNMDLERERGITIKLQAARMRYIMND-EPYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGVEAQTLANVYLALENDLEIIPVLNKIDLPGAEPDRVAQEIEEIIGMDCSNAIRCSAKEGIGITEILDAIVTKIPPPQNTAISPLRALIFDSYYDPYRGVIVYFRVVDGSIKKGDKICFMASGKEYVADEIGVLSPNQMQVSELYAGEVGYLSASIRSVADARVGDTITHSSKRAECA----------LPGYSQATPMVFCGLFPIDADQFEELREALEKLQLNDAALKAVTRFSMQFEPESSSAMGFGFRCGFLGLLHMEIVQERLEREYNLNLIITAPSVVYHVNLADGETVECSNPSLLPEPGKRRSIEEPYVKIDMLTPKEYIGPIMELGQERRGEFKEMNFITENRASVVYELPLAEMVGDFFDQLKSRSKGYASMEYSLIGYRESNLVKLDIQINGDPVEALSTIVHRDKAYSVGRALTQKLKELIPRQMFRVPIQACIGAKVIASEALSAIRKDVLSKCYGGDISRKKKLLKKQAEGKKRMKAIGRVDVPQEAFMAVLKLEKEVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="GUFP_ORYSI" ac="B8AI54" length="636" description="Translation factor GUF1 homolog, chloroplastic OS=Oryza sativa subsp. indica OX=39946 GN=OsI_05919 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2668</score>
+      <smithWatermanScore>2668</smithWatermanScore>
+      <initn>2226</initn>
+      <init1>1233</init1>
+      <opt>2668</opt>
+      <zScore>1881.1</zScore>
+      <bits>358.4</bits>
+      <expectation>3.2e-97</expectation>
+      <identity>66.4</identity>
+      <positives>85.4</positives>
+      <overlap>611</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="91" end="693">SGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALS--------YEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::.::: : :: .:.:. :.::::::::::::::::::::. :   :-: :::::::::::::::::::::::::::::::::::::.::::::::::::::::::::.:::::::.:.:.:::.:::  ::.:::. .. ::: :::: .::. ::  .:::  .. .:.:::::::::: ::::::.:::.:: ...:::. :.::  :. . :.:...:::. :. :.::::::: ..:..: ::::::::. ...  : :----------::::....:::.:::::.::::.: ::.:: ::.::::::.--------.:::::.:::::::::::::::::::::::.:::...::.:::::::.:.    :    ..:. .:. :.     ::::....:::.:: : :.::::::::.. ...:.: .:...::::::::.. :::::::::.::::::::::: :: :.::.::..:: . .  :. .:::::: :.:: :  .::.:::::::..:::::::.::::::..: .:::::.::::::::::::::.:::.::::::.::.:.::::::::::::..</pattern>
+      <matchSeq start="34" end="633">AALLFRDTRSVPEKINLKVDGTLPSTMNLARNFSIIAHIDHGKSTLADKLLELTGTVQKREMKQQFLDNMDLERERGITIKLQAARMRYIMND-EPYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGVEAQTLANVYLALENDLEIIPVLNKIDLPGAEPDRVAQEIEEIIGMDCSNAIRCSAKEGIGITEILDAIVTKIPPPQNTAISPLRALIFDSYYDPYRGVIVYFRVVDGSIKKGDKICFMASGKEYVADEIGVLSPNQMQVSELYAGEVGYLSASIRSVADARVGDTITHSSKRAECA----------LPGYSQATPMVFCGLFPIDADQFEELREALEKLQLNDAALKAVTRFSMQFEPESSSAMGFGFRCGFLGLLHMEIVQERLEREYNLNLIITAPSVVYHVNLADGETVECSNPSLLPEPGKRRSIEEPYVKIDMLTPKEYIGPIMELGQERRGEFKEMNFITENRASVVYELPLAEMVGDFFDQLKSRSKGYASMEYSLIGYRESNLVKLDIQINGDPVEALSTIVHRDKAYSVGRALTQKLKELIPRQMFRVPIQACIGAKVIASEALSAIRKDVLSKCYGGDISRKKKLLKKQAEGKKRMKAIGRVDVPQEAFMAVLKLEKEVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LEPA_VEREI" ac="A1WMW4" length="602" description="Elongation factor 4 OS=Verminephrobacter eiseniae (strain EF01-2) OX=391735 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2254</score>
+      <smithWatermanScore>2254</smithWatermanScore>
+      <initn>2245</initn>
+      <init1>1107</init1>
+      <opt>2254</opt>
+      <zScore>1592.9</zScore>
+      <bits>305.0</bits>
+      <expectation>3.7e-81</expectation>
+      <identity>54.8</identity>
+      <positives>81.7</positives>
+      <overlap>606</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="88" end="693">PTTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ..:::::::::::::::::::::.:    .:.:.:.::.::.::::.::::::: :.: . ::::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : :::  .:..:.:::.::: :::. .  ::: .::.: .  .  :::::.::::::. ::  :: : . . ::.::.:.::..:.: ::... ::.::.. .:......:: : ...  .:.. : . : : : ::.:::. ..::..  :.:::::.: :.  ..:.----:  .::::. .  :.:. ::.:..:. :.:::::: ::.::::.: :::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   . .....:.:::: :: .   :: : ...  :..: : .. :....::  ... .-   .  ..:..::.:.. ::::.::: ..:::::.:.. .:::::.:..:. .: . .  :. .:::...:  :: . :.....: :::. . ::: ::...:: :.:. .::.::::::::::.::.:::.::  ::::::.::.:.::::::.:.:...:</pattern>
+      <matchSeq start="2" end="602">-----------------------------MKHIRNFSIIAHIDHGKSTLADRLIERCGGLADRQMQAQVLDSMDLEKERGITIKAQTAALQYQARDGQVYQLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALELGVEVVPVLNKMDLPNADPDNAKAEIEDVIGIDATDAIPCSAKTGMGIDDILQAIVAKVPAPRGQADGPLRAMIIDSWFDSYVGVVMLVRVVDGRLLKGERIKMMASGAVYNADGLGVFTPANEPRDALAAGQVGYVIAGIKELQAAKVGDTITLEKKLPNNAG----PAAQALPGFKEIQPQVFAGLYPTEASAYDSLRDALEKLKLNDASLHYEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYQVVKADGQVLMVENPSKMPDQGRLSEIREPIVTVHLYMPQDYVGPVMTLANQKRGVQMNMAY-HGRQVMLTYDMPLGEIVLDFFDKLKSVSRGYASMDYTFKEYRASDVVKVDILLNGDKVDALSIIVHRSQSQHRGRAVVAKMREIISRQMYDVAIQAAIGANIIARETIKALRKNVLAKCYGGDITRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LEPA_DELAS" ac="A9BNJ8" length="602" description="Elongation factor 4 OS=Delftia acidovorans (strain DSM 14801 / SPH-1) OX=398578 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2248</score>
+      <smithWatermanScore>2248</smithWatermanScore>
+      <initn>2261</initn>
+      <init1>1102</init1>
+      <opt>2248</opt>
+      <zScore>1588.7</zScore>
+      <bits>304.2</bits>
+      <expectation>6.3e-81</expectation>
+      <identity>55.1</identity>
+      <positives>82.0</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              :::::::::::::::::::::..    .:.::::::.::.::.:.::::::: :.: . :.:.::..: ::::::::::::::::::::.::::::::::::::.::::.:: : :::  .:.  .:::.::: :::: .  ::: .::.: :  .  :::::.::..::: .:  :::: .  .: .::.:.::..:.: ::... ::.:::...:.. ...:: : ......:.. : .:: : :.::::::. ..::..  :.:::::.: :.  .. .----:  :::::. .  :.:. ::.:..:..:..::::: ::.:::..:..::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   : . ...:.:::: :: . . :: : ...  :..: : .. :....::  :....-   .  ..::.::.:.. ::::.::: ..:::::.: . .:::::.:..:. .: : .  :. .:::..:   :: . :.....: :::: . ::: ::...:: :... :::.::::::::::.::.:::.::  ::::::.::.:.::::::.:.:....</pattern>
+      <matchSeq start="4" end="602">---------------------------MNHIRNFSIIAHIDHGKSTLADRLIQRCGGLADRDMEAQVLDSMDIEKERGITIKAQTAALQYKAKDGQVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALELGVEVTAVLNKMDLPQADPENARAEIEDVIGIDASDAIPCSAKTGMGIEEILEAVVAKVPPPKGDPNGQLRAMIIDSWFDTYVGVVMLVRVVDGELKRGERFKMMASGAAYEANNLGVFTPADVPRDVLRAGEVGYIIAGIKELKAAKVGDTITLEKKLPNNLG----PATEALPGFKEIKPQVFAGLYPTEASEYDQLRDALEKLQLNDSSLQFEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVVKGDGEVIQVENPSKMPDAGRIEEVREPIVTVHLYMPQDYVGPVMTLANQKRGVQINMQY-HGRQVMLTYEMPLGEIVLDFFDKLKSVSRGYASMDYEFKEYRASDVVKVDILLNGEKVDALSIIVHRSQATYRGRAVVAKMREIISRQMFDVAIQAAIGANIIARETVKAMRKNVLAKCYGGDITRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="LEPA_ACISJ" ac="A1WAW8" length="602" description="Elongation factor 4 OS=Acidovorax sp. (strain JS42) OX=232721 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2239</score>
+      <smithWatermanScore>2239</smithWatermanScore>
+      <initn>2243</initn>
+      <init1>1091</init1>
+      <opt>2239</opt>
+      <zScore>1582.4</zScore>
+      <bits>303.1</bits>
+      <expectation>1.4e-80</expectation>
+      <identity>54.6</identity>
+      <positives>82.0</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    .:.:.::::.::.::.:.::::::: :.: . :.::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  .:..:.:::.::: :::. .  ::: .::.: :  .  :::::.::::.::.::  :: : . . .:.::.:.::..:.: ::... ::.::....:.. ...:: : ......:.. : :   : :.::::::. ..::..  :.:::::.: :.  .. .----:  :::::. .  :.:. ::.:..:.::..::::: ::.::::.: .::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   : .....:.:::: :. .   :: : ...  :..: : .. :....::  .....-   .  ..:::::.:.. ::::.::: ..:::::.: . .:: ::.:..:. .: : .  :. .:::...:  :: . :.....: :::: . ::: ::...:: :.:. .::.::::::::::.::.:::.::  ::::::.::.:.::::::.:.:....</pattern>
+      <matchSeq start="4" end="602">---------------------------MNHIRNFSIIAHIDHGKSTLADRIIQRCGGLADREMEAQVLDSMDIEKERGITIKAQTAALQYKARDGKVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVEVLPVLNKMDLPQADPDTAKAEIEDVIGIDASEAIAISAKTGMGIDDVLEQIVAKVPAPRGQSEAPLRAMIIDSWFDSYVGVVMLVRVVDGRLQKGERFKMMASGAAYEANNLGVFTPAQQSRDALEAGEVGYIIAGIKELKAAKVGDTITLEKKLPNNLG----PATEALPGFKEIQPQVFAGLYPTEANQYDALRDALEKLQLNDASLHFEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVVKGDGEVIMVENPSKMPDQGKIQEIREPIVTVHLYMPQDYVGPVMTLANQKRGVQMNMQY-HGRQVMLTYELPLGEIVLDFFDKLKSVSRGYASMDYEFKEYRPSDVVKVDILLNGEKVDALSIIVHRSQSQYRGRAVAAKMREIISRQMFDVAIQAAIGANIIARETIKALRKNVLAKCYGGDITRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LEPA_ACIET" ac="B9MDP9" length="602" description="Elongation factor 4 OS=Acidovorax ebreus (strain TPSY) OX=535289 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2238</score>
+      <smithWatermanScore>2238</smithWatermanScore>
+      <initn>2242</initn>
+      <init1>1090</init1>
+      <opt>2238</opt>
+      <zScore>1581.7</zScore>
+      <bits>302.9</bits>
+      <expectation>1.5e-80</expectation>
+      <identity>54.6</identity>
+      <positives>81.8</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    .:.:.::::.::.::.:.::::::: :.: . :.::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  .:..:.:::.::: :::. .  ::: .::.: :  .  :::::.::::.::.::  :: : .   .:.::.:.::..:.: ::... ::.::....:.. ...:: : ......:.. : :   : :.::::::. ..::..  :.:::::.: :.  .. .----:  :::::. .  :.:. ::.:..:.::..::::: ::.::::.: .::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   : .....:.:::: :. .   :: : ...  :..: : .. :....::  .....-   .  ..:::::.:.. ::::.::: ..:::::.: . .:: ::.:..:. .: : .  :. .:::...:  :: . :.....: :::: . ::: ::...:: :.:. .::.::::::::::.::.:::.::  ::::::.::.:.::::::.:.:....</pattern>
+      <matchSeq start="4" end="602">---------------------------MNHIRNFSIIAHIDHGKSTLADRIIQRCGGLADREMEAQVLDSMDIEKERGITIKAQTAALQYKARDGKVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVEVLPVLNKMDLPQADPDTAKAEIEDVIGIDASEAIAISAKTGMGIDDVLEQIVAKVPAPRGKPDAPLRAMIIDSWFDSYVGVVMLVRVVDGRLQKGERFKMMASGAAYEANNLGVFTPAQQSRDALEAGEVGYIIAGIKELKAAKVGDTITLEKKLPNNLG----PATEALPGFKEIQPQVFAGLYPTEANQYDALRDALEKLQLNDASLHFEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVVKGDGEVIMVENPSKMPDQGKIQEIREPIVTVHLYMPQDYVGPVMTLANQKRGVQMNMQY-HGRQVMLTYELPLGEIVLDFFDKLKSVSRGYASMDYEFKEYRPSDVVKVDILLNGEKVDALSIIVHRSQSQYRGRAVAAKMREIISRQMFDVAIQAAIGANIIARETIKALRKNVLAKCYGGDITRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="LEPA_VARPS" ac="C5CSF2" length="603" description="Elongation factor 4 OS=Variovorax paradoxus (strain S110) OX=543728 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2237</score>
+      <smithWatermanScore>2237</smithWatermanScore>
+      <initn>2258</initn>
+      <init1>1077</init1>
+      <opt>2237</opt>
+      <zScore>1581.0</zScore>
+      <bits>302.8</bits>
+      <expectation>1.7e-80</expectation>
+      <identity>54.5</identity>
+      <positives>81.5</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              :::::::::::::::::::::..    .:.:.::::.::.::.:.::::::: :.: . :.: ::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  .:..:.:::.::: :::. .  ::: .::.: .  .  :::::.:::.::: ::. .: : .   ::.::.: ::..: : ::... ::.::.. .:......:: : ... ..:.. : . :   :.::::::. ..::..  :.::::..: :    .:.   .---:::::. .  :.:. ::.:..:..:.:::::: ::.:::..: :::: : :.:::::::::::::::::::::.::.: :::.:::::::.: ..  : .....:.::::.:. .   :: : ...  :.:: ::.. :....::  ... .-   .  ..::.::.:.. ::::.::: ..:::::.: . .:::::.:..:. .: : .  :. .:::...:  :: . ......: :::: . ::: :::..:: :.:. .::.::::::::::.::::::.::  ::::::.::.:.::::::.:.:....</pattern>
+      <matchSeq start="4" end="603">---------------------------MNHIRNFSIIAHIDHGKSTLADRLIQRCGGLAEREMEAQVLDSMDIEKERGITIKAQTAALHYKALDGQVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVEVVPVLNKMDLPNADPDNARSEIEDVIGIDATDAIPCSAKTGLGIDEILEAIVHKMPAPRGNPDGPLRAMIVDSWFDPYVGVVMLVRVVDGRLVKGERIKMMASGAMYNADNIGVFTPANEPRASLEAGEVGYIIAGIKELQAAKVGDTVTLIKPGTGGAAATAT---EALPGFKEIQPQVFAGLYPTEASEYDSLRDALEKLKLNDSSLRYEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYQVVRNDGEVIMVENPSKMPDVGKMSEIREPIVTVHLYMPQEYVGAVMTLANQKRGVQMNMAY-HGRQVMLTYEMPLGEIVLDFFDKLKSVSRGYASMDYEFKEYRASDVVKVDILLNGEKVDALSIIVHRSQSQYRGRAVVSKMREIISRQMFDVAIQAAIGVNIIARETIKALRKNVLAKCYGGDITRKKKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="LEPA_POLSJ" ac="Q126K0" length="603" description="Elongation factor 4 OS=Polaromonas sp. (strain JS666 / ATCC BAA-500) OX=296591 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2227</score>
+      <smithWatermanScore>2227</smithWatermanScore>
+      <initn>2236</initn>
+      <init1>1108</init1>
+      <opt>2227</opt>
+      <zScore>1574.1</zScore>
+      <bits>301.5</bits>
+      <expectation>4.1e-80</expectation>
+      <identity>54.3</identity>
+      <positives>81.1</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    . .:.: ::.::.::::.::::::: :.: . :.::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  .:..:.:::.::: :::: . .::: .::.: .  .  :::::.:::.::: ..  :::: .   : .::.:.::.:::: ::... ::.::....::.....::.: ... ..:.. :.  : . :.:::::.. ..::..  ::::::..: :    .:.   .---.::::. .  :.:. ::.:..:..:.:::::: ::.::::.: :::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   : . ...:.:.:: ::     :: : ...  :..: ::.. :.. .::  ... .-   .  ..::.::.:.. ::::.::: ..:::::.: . ..::::.:..:. .: : .  :. .:::...   :: . :.....: ::.: . ::: ::...:: :.:. .::.:.:::::::::::.:::.::  ::::::.::.:.::::::.:.:...:</pattern>
+      <matchSeq start="4" end="603">---------------------------MNHIRNFSIIAHIDHGKSTLADRIIQRCGGLQDREMSAQVLDSMDLEKERGITIKAQTAALKYKARDGQIYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVEVVPVLNKMDLPQADPENAKQEIEDVIGIDATDAIPCSAKTGMGIDEILEAVIARVPPPKGNPDGALRAMIIDSWYDAYVGVVMLVRVVDGRLAKGDRIKLMASEAMYNAEQLGVFTPHTEPRQSLEAGEVGFVIAGIKELQAARVGDTVTLIKPGTGGAAFTAT---QALPGFKEIQPQVFAGLYPTEASEYDSLRDALEKLKLNDASLHYEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVLKADGEIIKVENPSKIPDAGRVTEIREPIVTVHLYMPQDYVGAVMTLANLKRGVQLNMAY-HGKQVMLTYEMPLGEIVLDFFDKLKSVSRGYASMDYEFKEFRASDVVKVDILLNGEKVDALSIIVHRSQSAYRGRAVVAKMREIISRQQFDVAIQAAIGANIIARETIKALRKNVIAKCYGGDISRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="LEPA_ACIAC" ac="A1TLE7" length="602" description="Elongation factor 4 OS=Acidovorax citrulli (strain AAC00-1) OX=397945 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2211</score>
+      <smithWatermanScore>2211</smithWatermanScore>
+      <initn>2213</initn>
+      <init1>1071</init1>
+      <opt>2211</opt>
+      <zScore>1562.9</zScore>
+      <bits>299.4</bits>
+      <expectation>1.7e-79</expectation>
+      <identity>54.5</identity>
+      <positives>81.0</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              :::::::::::::::::::::..    . .:.::::.::.::.:.::::::: :.: . :.::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  .:..:.:::.::: :::. .  ::: .::.: .  .  :::::.:::.::: ::  :: : .   .:.::.:.::..: : ::... ::.::.. .:.. ...:: : ... ..:.. : . : . :.::::::. ..::..  :.:::::.: :.  .. .----:  .::::. .  :.:. ::.:..:..:..::::: ::.::::.: .::: : :.:::::::::::::::::::::.::.: :::.:::::::.: :   : .....:.:::: :: .   :: : ...  :.:: : .. :....::  ... .-   .  ..:::::.:.. ::::.::: ..:::::.: . .:::::.:..:. .: : .  :. .:::...   :: . :.....: :::: . ::: ::...:: :.:. .::.::::::::::.::.:::.::  ::::::.::.:.::::::.:.:...:</pattern>
+      <matchSeq start="4" end="602">---------------------------MNHIRNFSIIAHIDHGKSTLADRLIQRCGGLEERQMEAQVLDSMDIEKERGITIKAQTAALQYKARDGQVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVEVLPVLNKMDLPQADPDNAKAEIEDVIGIDATDAIPCSAKTGMGIDEILELIVAKVPAPRGNPDAPLRAMIIDSWFDPYVGVVMLVRVVDGRLLKGERFKMMASGAAYNADNLGVFTPANEPRNALNAGEVGYIIAGIKELKAAKVGDTITLEKKLPNNLG----PAEQALPGFKEIQPQVFAGLYPTEASEYDQLRDALEKLQLNDASLHFEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVVKGDGEVIMVENPSKMPDQGRIQEIREPIVTVHLYMPQEYVGPVMTLANQKRGVQLNMAY-HGRQVMLTYELPLGEIVLDFFDKLKSVSRGYASMDYEFKEYRASDVVKVDILLNGEKVDALSIIVHRSQSAYRGRAVAAKMREIISRQMFDVAIQAAIGANIIARETIKALRKNVLAKCYGGDITRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="LEPA_POLAQ" ac="A4SVW0" length="601" description="Elongation factor 4 OS=Polynucleobacter asymbioticus (strain DSM 18221 / CIP 109841 / QLW-P1DMWA-1) OX=312153 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2209</score>
+      <smithWatermanScore>2209</smithWatermanScore>
+      <initn>2234</initn>
+      <init1>1063</init1>
+      <opt>2209</opt>
+      <zScore>1561.5</zScore>
+      <bits>299.2</bits>
+      <expectation>2e-79</expectation>
+      <identity>52.8</identity>
+      <positives>81.6</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    ...:.::::.::.::.::::::::: :.: . :..:::. : .:::::::::::::::::::.::::::::::::::.::::.:: :.:::  .:..:.::::::: :::::. .::: .::.: :  :  :::::.:..:..:...  :::: . .. :..:::.::..: : ::... ::..: ..  ::. ..:. . : : .::...:...    : ::.::.. ..::..  :.::::..-----.  ...:. :  : :::. .  :.:. ::.::....:..::..: ::.::::.: :::: : :.:::::::::::::::::::::.:.: ..::.:::.:::.:..     . .:.:.:::. .. .. ::: : ...  :.:: :::: :   .::  .:...: - .  ..::::.::.. ::::..:: ..:::::.: . .:: .:.:..:. :: : .  :. .:::...:  ::.. :... .:::::: . ::: :: ...: :... .::.:::::::::::::.:::.:: .::::::..:.:..:::::.:.:....</pattern>
+      <matchSeq start="4" end="601">---------------------------MDLIRNFSIIAHIDHGKSTLADRIIQHCGGLSDREMEAQVLDSMDIERERGITIKAQTAALTYKSRDGKTYNINLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYMALELGVEVVPVLNKIDLPQADPERAKKEIEDVIGIDASHAVTCSAKTGLGVQDVIEEMIARVPPPTGNAADPLQALIIDSWFDNYVGVVMLVRVVNGSLKPKDKITLMANGSSHLVEHVGVFSPKSIDRPELSAGQVGFVIAGIKELKAAKVGDTVT-----HSPGQQGRVPATEPLPGFKEVKPQVFAGLYPVESSEYDQLRESLEKLQLNDASLLYEPEVSQALGFGFRCGFLGLLHMEIVQERLERQYGMNLITTAPTVVYQVEQSDGSILSVDNPSKMPEASKINTILEPIVTVNLYMPQEYVGAIITLCVGKRGIQMDMNYLG-RQVKLTYELPMAEIVLDFFDKMKSISRGYASMDYEFKEYRPADVVKVDILINGERVDALSVIVHRSNSQHRGREVVAKMRGIIPRQMFDVAIQAAIGSNIVARENVKALRKNVLAKCYGGDISRKRKLLEKQKEGKKRMKQVGNVEIPQEAFLAILQVDD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="LEPA_LEPCP" ac="B1XZN0" length="602" description="Elongation factor 4 OS=Leptothrix cholodnii (strain ATCC 51168 / LMG 8142 / SP-6) OX=395495 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2207</score>
+      <smithWatermanScore>2207</smithWatermanScore>
+      <initn>2223</initn>
+      <init1>1068</init1>
+      <opt>2207</opt>
+      <zScore>1560.1</zScore>
+      <bits>298.9</bits>
+      <expectation>2.4e-79</expectation>
+      <identity>53.1</identity>
+      <positives>81.0</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    ...:.::::.::.::.::::::::: :.: . :.::::..: ::::::::::::::::::::.::::::::::::::.::::.:: : ::.  . ..:.:::.::: :::. .  ::: .::.: .  .  :::::.:::.::: ..  .::: .   :: ::.: ::..: : ::... ::.:: ...:...:..:... . . ..:.. :..   . :.:::::..  .::..  :.::::..: :.  ..:.----:  :::::. .  :.:. ::.:..:..:..::::: ::.:::..: :::: : :.:::::::::::::::::::::.::.: :::.:::::::.:. .  . . ...:.:::..:.     :: : ...  :..: : .. :....::  ... .-   .  ..::.::::.. ::::.::: ..:::::.: . .:::::.:..:. :: . .  :. .::: ..:  :: . :.... :::::. . ::: ::...:: :.:. .::.:::::::::::::.:::.::  ::::::.::.:.::::::.:.:....</pattern>
+      <matchSeq start="4" end="602">---------------------------MDHIRNFSIIAHIDHGKSTLADRIIQRCGGLSDREMEAQVLDSMDIERERGITIKAQTAALQYKARDGQVYNLNLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYTALDLGVTVVPVLNKMDLPNADPDNAKAEIEDVIGIDADDAIPCSAKTGMGIDEILEAVIARMPPPKGNPDGPPRAMIVDSWFDNYVGVVMLVRVVDGTLGKGERIRMMATNSVYPIEHLGVFTPKSENREALKAGEVGFIICGIKELQAAKVGDTVTLEKKLPNNAG----PAAEALPGFKEIQPQVFAGLYPTEASEYDQLRDALEKLKLNDSSLRYEPEVSQALGFGFRCGFLGLLHMEIVQERLEREFDQDLITTAPSVVYEVQLNGGDVIEVENPSKMPEVGKIAEIREPIVTVHLYMPQDYVGPVMTLANQKRGVQLNMAY-HGRQVMLTYEMPLAEIVLDFFDKLKSVSRGYASMDYEFKEYRASDVVKVDILINGDRVDALSIIVHRAQSQYRGRAVAAKMREQIPRQMYDVAIQAAIGANIIARENIKALRKNVLAKCYGGDISRKRKLLEKQKAGKKRMKQIGSVEVPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="LEPA_POLNS" ac="B1XTL2" length="601" description="Elongation factor 4 OS=Polynucleobacter necessarius subsp. necessarius (strain STIR1) OX=452638 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2205</score>
+      <smithWatermanScore>2205</smithWatermanScore>
+      <initn>2230</initn>
+      <init1>1049</init1>
+      <opt>2205</opt>
+      <zScore>1558.8</zScore>
+      <bits>298.7</bits>
+      <expectation>2.9e-79</expectation>
+      <identity>53.0</identity>
+      <positives>81.6</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="693">TSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              ::::::::::::::::::::...    ...:.::::.::.::.::::::::: :.: . :.:.::..: .:::::::::::::::::::.::::::::::::::.::::.:: :.::   .:..:.::::::: :::::. .::: .::.: :  :  :::::.:. :..:...  :::: . .  :..:::.::..: : ::... :...: ..  ::. ..:. . : : .::...:..:    : ::.::.. ..::..  :.::::..-----.  ...:. :  : :::. .  :.:. ::.::....:..::..: ::.:::::: :::: : :.:::::::::::::::::::::.:.: ..::.:::.:::.:..     . .:.:.:::. .. .. ::: : ...  :.:: :.:: :   .::  .:...: - .  ..::::.::.. ::::..:: ..:::::.: . .:: .:.:..:. :: : .  :. .:::...:: ::.. :...:.:::::: . ::: :: ...: :... .::.:::::::::::::.:::.:: .::::::..:.:..:::::.:.:....</pattern>
+      <matchSeq start="4" end="601">---------------------------MDLIRNFSIIAHIDHGKSTLADRIIQLCGGLSDREMEAQVLDSMDIERERGITIKAQTAALNYKAKDGKIYNINLIDTPGHVDFSYEVSRSLSACEGALLVVDASQGVEAQTVANCYMALGLGVEVVPVLNKIDLPQADPERAKKEIEDVIGIDASEAVTCSAKTGLGVADVIEEMIARVPPPTGNAEDPLQALIIDSWFDNYVGVVMLVRIVNGTLKPKDKITLMANGSSHLVEHVGVFSPKSVDRPELSAGQVGFVIAGIKELKAAKVGDTVT-----HSPGQQGRVPASEPLPGFKEVKPQVFAGLYPVESSEYDQLRESLEKLQLNDAALLYEPEVSQALGFGFRCGFLGLLHMEIVQERLERQYGMNLITTAPTVVYQVEQSSGSIISVDNPSKMPEASKINTILEPIVTVNLYMPQEYVGSIITLCVGKRGIQMDMNYLG-RQVKLTYELPMAEIVLDFFDKMKSISRGYASMDYEFKEYRPADVVKVDILINGERVDALSVIVHRSNSQSRGREVVAKMRDIIPRQMFDVAIQAAIGSNIVARENVKALRKNVLAKCYGGDISRKRKLLEKQKEGKKRMKQVGNVEIPQEAFLAILQVED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LEPA_MYCTO" ac="P9WK96" length="653" description="Elongation factor 4 OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LEPA_MYCBP" ac="A1KL96" length="653" description="Elongation factor 4 OS=Mycobacterium bovis (strain BCG / Pasteur 1173P2) OX=410289 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LEPA_MYCBO" ac="P65270" length="653" description="Elongation factor 4 OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="LEPA_MYCTU" ac="P9WK97" length="653" description="Elongation factor 4 OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=lepA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LEPA_MYCBT" ac="C1AQW9" length="653" description="Elongation factor 4 OS=Mycobacterium bovis (strain BCG / Tokyo 172 / ATCC 35737 / TMC 1019) OX=561275 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="LEPA_MYCTA" ac="A5U598" length="653" description="Elongation factor 4 OS=Mycobacterium tuberculosis (strain ATCC 25177 / H37Ra) OX=419947 GN=lepA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2199</score>
+      <smithWatermanScore>2199</smithWatermanScore>
+      <initn>2195</initn>
+      <init1>796</init1>
+      <opt>2199</opt>
+      <zScore>1554.0</zScore>
+      <bits>297.9</bits>
+      <expectation>5.4e-79</expectation>
+      <identity>54.1</identity>
+      <positives>80.3</positives>
+      <overlap>604</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="692">TTSGTINGGGGKQKAASQPKKTAGIVYDAQKIRNFSIIAHIDHGKSTLADRLLETTQTVAQRDMEAQLLDNMDLERERGITIKLQAARVLYQARDGEMYCLNLIDTPGHVDFSYEVSRSLAACEGALLVVDASQGIEAQTLANVYLALENDLEIIPILNKIDLPAADPERVAEEIEATIGLDCSGIVHASAKTGIGIDDILERIVQMVPPPPAATGGPFRALIFDSYYDAYRGVIVFFRVMDGEVSQGDKVRFLASDAEHDVTEVGIMQPNQVPVDCLHAGEVGYLWGNIKDVLDARVGDTIVLAKEYKESASKGKSPPIEALPGYADSVPMVYCGLFPVDADQYESLRDALGKLRLNDAALSYEPESSGAMGFGFRCGFLGLLHMEIVQERLQREYDIDLIVTAPSVVYKVKKEHQEEFFIDTPAKMPDLGRNDVALEPYVRMEVLTPSEYNGAIIELGQERRGDLIDIKFLTPTRSTIVYELPLAEVITDFFDQLKSRTKGYASMEYSLIDYRASDLVRLDVKINYEMAPPLACVVHRDKAQSIGRRLCASLKDLIPRQMFKIPIQACIGVKVIASESISPMRKDVLAKCYGGDISRKKKLLQKQAKGKKRMKSIGKVNVPQEAFMAVLKLNE</querySeq>
+      <pattern>                              .:::: :::::::::::::::.:. : .: .:.:.:: :: ::.::::::::: : .:. ...-:   : :.::::::::::.:::::.: :::::.:.:::.::::::::::.::::. ::.:::.:::::::::::.: : :.   :: . . ....:.::: :..:.:...:..:::: . . .: ::.:::: :: ::::... ::.::..:  ... .... : :.. ::::..:.  : . : .::::::  ..::: ...::::..-------: :....   ::: :: .  :::: ::.:::...: .::::: ::.::::::.::::.: :.::::::::::::::::..:::.::. .::: :.:.:::.:.:.   :. . .:.  :.-:.  .. :: :.  ...:::. :.:.:: : :::.:  . .:.: :  . : .::.:.: :::: :::::.::::..:     . . ::..:. .. : .  .. .::.: : . : .. ..::.:::::.:..:.:: :: :.:: :.:  .:::::.:::::::.::.:::.:: .::::::.::.:.::::::.:.:. .</pattern>
+      <matchSeq start="51" end="645">PDADTLDTRQPPLQEIPISSFADKTFTAPAQIRNFCIIAHIDHGKSTLADRMLQLTGVVDERSMRAQYLDRMDIERERGITIKAQNVRLPWRV-DKTDYVLHLIDTPGHVDFTYEVSRALEACEGAVLLVDAAQGIEAQTLANLYLALDRDLHIIPVLNKIDLPAADPDRYAAEMAHIIGCEPAEVLRVSGKTGEGVSDLLDEVVRQVPPPQGDAEAPTRAMIFDSVYDIYRGVVTYVRVVDGKISPRERIMMMSTGATHELLEVGIVSPEPKPCEGLGVGEVGYLITGVKDVRQSKVGDTVT-------SLSRARGAAAEALTGYREPKPMVYSGLYPVDGSDYPNLRDALDKLQLNDAALTYEPETSVALGFGFRCGFLGLLHMEITRERLEREFGLDLISTSPNVVYRVHKDDGTEIRVTNPSDWPE-GKIRTVYEPVVKTTIIAPSEFIGTIMELCQSRRGELGGMDYLSPERVELRYTMPLGEIIFDFFDALKSRTRGYASLDYEEAGEQEAALVKVDILLQGEAVDAFSAIVHKDTAYAYGNKMTTKLKELIPRQQFEVPVQAAIGSKIIARENIRAIRKDVLSKCYGGDITRKRKLLEKQKEGKKRMKTIGRVEVPQEAFVAALSTDAAGDKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

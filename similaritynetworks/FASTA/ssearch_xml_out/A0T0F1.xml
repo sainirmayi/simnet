@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170340-0803-46868465-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170340-0803-46868465-p1m.m9&quot; -m &quot;F10 fasta-R20221107-170340-0803-46868465-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0F1|ATPA_PHATC" type="PROTEIN" length="505"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:03:40+00:00" end="2022-11-07T17:03:45+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="ATPA_PHATC" ac="A0T0F1" length="505" description="ATP synthase subunit alpha, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3148</score>
+      <smithWatermanScore>3148</smithWatermanScore>
+      <zScore>3398.1</zScore>
+      <bits>638.3</bits>
+      <expectation>1e-181</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>505</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="505">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="505">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ATPA_TRICV" ac="Q00820" length="503" description="ATP synthase subunit alpha, chloroplastic OS=Trieres chinensis OX=1514140 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2853</score>
+      <smithWatermanScore>2853</smithWatermanScore>
+      <zScore>3078.5</zScore>
+      <bits>579.2</bits>
+      <expectation>6.5e-164</expectation>
+      <identity>88.7</identity>
+      <positives>97.4</positives>
+      <overlap>503</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="503">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::.::.:::::.:. ::::::.:::. :::::.:.....::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::.::::.::::::::::::.::::::::::.::.:::.: .:::::::::::::::::::::::::.:::::..::::::::.:::::::::::::::::::::::::::::::::::::: ::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::.::.: :..::.:::::...:.::.. :  :: .::::: :::..::::: ::: .: :</pattern>
+      <matchSeq start="1" end="503">MINIRPDEISSIIREQIEQYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGNGRQILEGSTVKTTGQIAQIPTGEAFLGRVVNPLGAPIDGKGDIANTETRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTAIAVDTIINQKTEDVVCVYVGVGQKASTVAQVVNVLEEKEAMAYTIIVCASANDPATLQYIAPYAGAALAEYFMYNGKATLVIYDDLTKQAMAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPVIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKQVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAEQVALIYTGINGFLDELEVASVKKYCASLLSFLNTSNNSYIGIVSSTNQFTAEAETALKEAISESKAVFMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ATPA_THAPS" ac="A0T0P4" length="503" description="ATP synthase subunit alpha, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2802</score>
+      <smithWatermanScore>2802</smithWatermanScore>
+      <zScore>3023.3</zScore>
+      <bits>568.9</bits>
+      <expectation>7.8e-161</expectation>
+      <identity>87.5</identity>
+      <positives>96.8</positives>
+      <overlap>502</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>::::::::::::::::::.::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::..::.::.:::::::. ::::::.:::. :::::.:.....::.:.:::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::.:::::.::::::::::::::.::.::.:::.:..::::::::::::::.::::::::::.:::::::::::::::.:::::::::::::::::::::::::::::::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.::::.::.: ::.::.. :::.  :.-:.: : ..:  :::::::::. :::::  .: .:.</pattern>
+      <matchSeq start="1" end="501">MINIRPDEISSIIREQIEQYDQDVKIDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGNGRQILEGGSVKSTGQIAQIPVGEAFLGRVVNPLGAPIDGKGDIASTETRLVESMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQKTEDVVCVYVGIGQKASTIAQVVNVLDEKEAMAYTIIVSASANDPATLQYIAPYSGAALAEYFMYNGKATLIVYDDLTKQAMAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKQVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREILKQPQNSPLSVAQQVALIYAGINGFLDNLAVSDVKKFSASLIQTLA-SQKSYIDVVGKTNQFTEEAETLLKEAIASTKTGFATL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="ATPA_GUITH" ac="O78475" length="502" description="ATP synthase subunit alpha, chloroplastic OS=Guillardia theta OX=55529 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2575</score>
+      <smithWatermanScore>2575</smithWatermanScore>
+      <zScore>2777.4</zScore>
+      <bits>523.4</bits>
+      <expectation>3.9e-147</expectation>
+      <identity>77.6</identity>
+      <positives>94.4</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::::::.::.:::: ..:.:.:::::.::::::::::::::.::::::::::::::::::.::::::::: :: :::::.:::::.:::.:::  .:::::. ::. :::::.:  :..::.:..:::::::::::::.:::::.::.::::::::::::::::::::.:.:.::::::. :::.::::.:::::.:.:..:..::::.:..:: .::..:.:::::::::::.:::.::::::.:.:::..::::.::: :::.:::::::::::::.:::::::::::::::::::::::::::::::.:::::.:::::::::::::::::::::.::::.:::::::::::::::::::: ::::.::::::::::::::::::::::::::.::..::::: ::::.::::::::.:: .:::.:::::::::::. :..:. . ..: : : .::  :.::.:.:. :. .::. :: :: ..:..:</pattern>
+      <matchSeq start="1" end="501">MVNIRPDEISSIIRQQIDKYDQAIQVSNVGTVLQIGDGIARVYGLDQVMAGELLEFEDKTIGIALNLESDNVGVVLMGEGRGILEGSSVKATGKIAQVPVGKSYLGRVVNALGTPIDGKGDINCSETRLIESIAPGIISRKSVCEPIQTGITAIDSMIPIGRGQRELIIGDRQTGKSSVAIDTIINQKGEDVVCVYVAVGQKAATVASIVTTLEEKGALDYTCIVAANADDPATLQYIAPYTGAAIAEYFMYNGQATLVIYDDLSKQASAYREMSLLLRRPPGREAFPGDVFYLHSRLLERAAKLSDKLGGGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSGDLFNAGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDQATRNQLARGQRLREILKQPQNSPISVEEQVAIIYTGINGYLDDIAVDKVRRFVTNLRTNLKNSKPQYAEIIRNTKTFNSDAENLLKSAIADTKQSFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="ATPA_RHDSA" ac="A6MVW4" length="502" description="ATP synthase subunit alpha, chloroplastic OS=Rhodomonas salina OX=52970 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2552</score>
+      <smithWatermanScore>2552</smithWatermanScore>
+      <zScore>2752.4</zScore>
+      <bits>518.8</bits>
+      <expectation>9.5e-146</expectation>
+      <identity>77.6</identity>
+      <positives>93.4</positives>
+      <overlap>500</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="500">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::::::.::.:::: :.: :.:::::.::::::::::::::.::::::::.:::::::::.::::::::: :: :::::.:::::.:::.:::: .:::::. ::. :::::.: .::.::.:. :::::::::::::.:::::.::.::::::::::::::::::::::.:.::::::.::::.::::..::::...:..:. ::::.:..::..::..:..::::::::::.:::.:::::::::::::.::::.::: :::::::::::::::::.:::::::::::::::::::: ::::::::::::::::.:::::::::::::::::::::.::::.:::::::::::::::::::: ::::.::::::::::::::::::::::::::.::..::::: ::::.:::: .::.:: .:::.:::::::.::..::..:: . ..: : : .::  ..: .: :. .  .::  :: :: . :..</pattern>
+      <matchSeq start="1" end="500">MVNIRPDEISSIIRQQIDKYDQGVQVANVGTVLQIGDGIARVYGLDQVMAGELLEFEDETIGIALNLESDNVGVVLMGEGRAILEGSSVKATGKIAQVPVGDGYLGRVVNSLGAPIDGKGDISSSDTRLIESAAPGIISRKSVCEPIQTGITAIDSMIPIGRGQRELIIGDRQTGKTSVAIDTIINQKTEDVVCVYVAIGQKAASVASIVTQLEEKGALDYTVIVAANADEPATLQYIAPYTGAAIAEYFMYKGKATLIIYDDLSKQASAYRQMSLLLRRPPGREAFPGDVFYLHSRLLERAAKLSDALGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNAGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDQATRNQLARGQRLREILKQPASSPISVEEQVAIIYTGINGFLDEVPVNKVKEFVSQLRTNLKNSKPKFAESIRETKALGSDAEELLKSAIADVKQSMG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ATPA_RIPO1" ac="B7K5I8" length="503" description="ATP synthase subunit alpha OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2543</score>
+      <smithWatermanScore>2543</smithWatermanScore>
+      <zScore>2742.7</zScore>
+      <bits>517.0</bits>
+      <expectation>3.3e-145</expectation>
+      <identity>76.8</identity>
+      <positives>94.0</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.::: : :.:.::::::::: ::.:::.:.:.:::::::: :.:::::::.::::.:::::: .: :::::::::.:::.:::. ..::::. ::  :::::.: :...::.:.:::::..:::::::.:::::.::::::.::::::::::::.::::.::.::::::..::::::::..::::::.:::...::::.::.::::::..:::::::::.:::.::..::::::::::::..::::.::: ::::.::::.::::::::::::::.::::::::::::: ::::::::::.:::::.:::::::::::::::::::::.::::::.:::::.:::::::::::::::::.:::::::::::::::::::::::::: :::.::::: :::::::::.::::.: .:::. :.:.:::::..:: .:. . :.:  :. :::  ...:: . ...:.:::. ::::: : :.::</pattern>
+      <matchSeq start="1" end="501">MVSIRPDEISSIIRQQIESYDQTVTVSNVGTVLQVGDGTARIYGLEQAMAGELLEFEDGTVGIALNLEEDNVGAVLMGTGLDIQEGSTVKATGKIAQVPVGEALIGRVVDALGRPIDGKGDINTTETRLIESMAPGIVARKSVCEPMQTGITAIDAMIPVGRGQRELIIGDRKTGKTAIAIDTIINQKSEDVICVYVAIGQKASTVAQVIGTLEEKGAMAYTIVVAANANDPATLQYLAPYTGASMAEYFMYKGKATLVIYDDLSKQAQAYRQLSLLLKRPPGREAYPGDVFYIHSRLLERAAKLSDALGGGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSSDLFNSGFRPAINAGISVSRVGSAAQTKAMKQVAGKLKLELAQFAELEAFSQFASDLDAATQSQLARGQRLREVLKQPENSPLAVWEQVAIAYAGLNGYLDEIPVPKVSEFAAGLRDYIKTSKAKFADIVGSEKKLTDEAETLLKEAIAEYKQAFGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ATPA_NEOYE" ac="Q1XDP5" length="504" description="ATP synthase subunit alpha, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2526</score>
+      <smithWatermanScore>2526</smithWatermanScore>
+      <zScore>2724.2</zScore>
+      <bits>513.6</bits>
+      <expectation>3.5e-144</expectation>
+      <identity>77.7</identity>
+      <positives>92.4</positives>
+      <overlap>503</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="503">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::::::.:::::::::.: :::::::::::::::::::.::.::::::::::::.:::::.::::::::: ::.:::::.::.::::::::::: ::::::.::.  :: ::: ... .::.:.::::::.:.:::::.:::::.::.:::::::::::::::::::::..:.::::::. .::.::::..:::::..::::. :..:.:..:::.::..:..::::::::::.::::::::::::::::..:::::::: ::::::::::::::::::::::::::::::::::::. .::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::::: ::::.::: ::::. : .:.:.:::::::::::. ::.:  .   :   : .::  . : ::.:...   .:  ::.:: . :..:.:</pattern>
+      <matchSeq start="1" end="503">MVNIRPDEISSIIRQQIEKYDQDVEVANIGTVLQVGDGIARVYGLDEVMAGELLEFEDKTIGVALNLESDNVGVVLMGDGRDILEGSSVKGTGRIAQIPVGDAFLGRVVDPLARPIDDKGEPASNGTRLIESMAPGIIGRQSVCEPMQTGITAIDSMIPIGRGQRELIIGDRQTGKTAVALDTIINQKGQDVVCVYVAIGQKASSVAQVVSSLQDKGALDYTIIVAANADSPATLQYIAPYTGAALAEYFMYKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNAELGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLARGQRLREILKQAQNSPIPVEEQTAIIYTGINGYLDDIEVSKVAEFIRELREDLKNSKPEFGENVRSTKKLEPVSEELLKRAIEDVKQGFDKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="ATPA_GRATL" ac="Q6B8Q8" length="503" description="ATP synthase subunit alpha, chloroplastic OS=Gracilaria tenuistipitata var. liui OX=285951 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2519</score>
+      <smithWatermanScore>2519</smithWatermanScore>
+      <zScore>2716.7</zScore>
+      <bits>512.2</bits>
+      <expectation>9.3e-144</expectation>
+      <identity>77.1</identity>
+      <positives>93.4</positives>
+      <overlap>502</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::..::.::.::.:...: :::::::::::::::::::.::.::::::::.:::::::::.::::::::: ::.:::::.:::::.:::::::: ::::::.::.  ::.::   .: .::.:..:::::.:.:::::::::::.::.:::::::::::::::::::::..:.::::::. .::.:.::..:::::..::::..:....:..:::::::.:.:::::::::::.::::::::::::::::.::::::::: ::::::::::::::::::::::::::::::::::::...::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::.:: ::::.::: ::::. : .:.:.:::::::::::. .:.:. .  .:   : .::  . : .:::.... :::  ::..: . :.:::</pattern>
+      <matchSeq start="1" end="502">MLNIRPDEISNVIRQQIDKYEQEIQVANIGTVLQVGDGIARVYGLDEVMAGELLEFEDQTIGIALNLESDNVGVVLMGEGRNILEGSSVKATGKIAQIPVGDAFLGRVVDPLARPIDAKGLPNSSGTRLIESYAPGIIGRQSVCEPLQTGITAIDSMIPIGRGQRELIIGDRQTGKTAVALDTIINQKGQDVVCIYVAIGQKASSVAQVVSTLQDESALDYTIVVASNADDPATLQYIAPYTGAALAEYFMYKGKATLVVYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNSELGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLSRGQRLREILKQAQNSPIPVEEQTAIIYTGINGYLDDINLSQVQEFIEALREDLRNSKPEFGESIRTTKKLSAEAEELLKQSIEDVKQAFSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="ATPA_PORPU" ac="P51242" length="504" description="ATP synthase subunit alpha, chloroplastic OS=Porphyra purpurea OX=2787 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2518</score>
+      <smithWatermanScore>2518</smithWatermanScore>
+      <zScore>2715.6</zScore>
+      <bits>512.0</bits>
+      <expectation>1.1e-143</expectation>
+      <identity>76.9</identity>
+      <positives>92.8</positives>
+      <overlap>503</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="503">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::::::.:::::::::.: :::::::::::::::::::.::.::::::::::::.:::::.::::::::: ::.:::::.::.::.:::::::: ::::::.::.  ::.::: ... .::.:.::::::.:.:::::.:::::.::.:::::::::::::::::::::..:.::::::. .::.::::..:::::..::::. :.::.:..:::.:...:..::::::::::.::::::::::::::::..:::::::: ::::::::::::::::::::::::::::::::::::.. ::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::::: ::::.::: ::::. : .:.:.:::::::::::. :..: ..  .:   : .::  . : .:.....   .:  ::.:: . :..: :</pattern>
+      <matchSeq start="1" end="503">MVNIRPDEISSIIRQQIEKYDQDVEVANIGTVLQVGDGIARVYGLDEVMAGELLEFEDKTIGVALNLESDNVGVVLMGDGRDILEGSSVKGTGKIAQIPVGDAFLGRVVDPLARPIDNKGEPASNGTRLIESMAPGIIGRQSVCEPMQTGITAIDSMIPIGRGQRELIIGDRQTGKTAVALDTIINQKGQDVVCVYVAIGQKASSVAQVVSSLQEKGALDYTIIVTANADSPATLQYIAPYTGAALAEYFMYKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNSDLGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLARGQRLREILKQAQNSPIPVEEQTAIIYTGINGYLDDIAVNKVPDFIIKLREDLKNSKPEFGESIRSSKKLDTASEELLKKAIEDVKQGFVKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="ATPA_EMIHU" ac="Q4G397" length="499" description="ATP synthase subunit alpha, chloroplastic OS=Emiliania huxleyi OX=2903 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2515</score>
+      <smithWatermanScore>2515</smithWatermanScore>
+      <zScore>2712.4</zScore>
+      <bits>511.4</bits>
+      <expectation>1.6e-143</expectation>
+      <identity>77.3</identity>
+      <positives>93.2</positives>
+      <overlap>498</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="498">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>::::::::::.:::.:::.:::.:..::.:::::.::::::::::.:::.::::::.:.:.::::::::::::.:::: :  :::::.:..::.:::.:::: ::::::. :.  :::::.: .:..::.:.::::::.:::::::.:::::.::.::::::::::::::::::::::.:.::::::.:::::::::..:::::..: ::..::.:.:..:::.::..:..::::::::::.:::::::::::::::.:::::::::: :::::::::::::::::::::::::::::::::::::: ::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::::::::.:::::::::::::::::::::::::: ::: .::::.::::.::: ::::.:: .:::.::.::::::: .:::.::..  .: .:: .:   .   ... .... : :  ::. . . :</pattern>
+      <matchSeq start="1" end="498">MINIRPDEISNIIRQQIESYDQEVQIDNVGTVLQIGDGIARVYGLEQVMAGELLEFDDSTVGIALNLENDNVGAVLMGPGLGILEGSAVRSTGKIAQVPVGDAFLGRVVNSLAKPIDGKGDIPASETRLVESMAPGIITRKSVCEPVQTGITAIDSMIPIGRGQRELIIGDRQTGKTSVAIDTIINQKTEDVICVYVAIGQKASSVAGVVSTLEDKGALGYTIIVAANADEPATLQYIAPYTGAALAEYFMYKGKATVIVYDDLTKQASAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNSGIRPAINVGISVSRVGSAAQTKAMKQVAGKLKLELAQFAELEAFSQFASDLDAATQAELARGVRLREMLKQKQNSPISVEEQVAIIYAGINGYLDTIPVSEVKGFVEKLRSYLRNSAPQFISSIQSEKKLSPENEELLKKILTDLKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ATPA_MICAN" ac="B0JWV1" length="502" description="ATP synthase subunit alpha OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2514</score>
+      <smithWatermanScore>2514</smithWatermanScore>
+      <zScore>2711.3</zScore>
+      <bits>511.2</bits>
+      <expectation>1.9e-143</expectation>
+      <identity>76.2</identity>
+      <positives>93.4</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:. :::::::.:::.:::.:.:.:.:.:.::::::::: ::.:::.:.:::::::::: :.:::::::.::::.:::: :  : ::.::::::.:::.:::: ..::::. ::  :::::::..:..::.:. ::::..:::::::.:::::.::::::.::::::::::::.::::.::.::::::..::::::::..::::::.:::...: ...::.::.:::..:::::::::::::.::..::::::::::::..:::::::: ::::.:::.::::::::::::::::::::::::::::: ::::::::::::::::.:::::::::::::::::::::.::::.:.:::::.:::::::::::::::::::::::::::::: :::::.::::::: ::: ::::: :::..:::::: :::: .:::..:.:.::::::. ...: ..::.:  :: :::  :.::: : .:...:::. ::..: : :.::</pattern>
+      <matchSeq start="1" end="501">MVAIRPDEISTIIRQQIESYNQEVQVSNVGTVLQVGDGTARIYGLQQAMSGELLEFEDGTVGIALNLEEDNVGAVLMGDGFGIKEGGTVKATGKIAQVPVGDALVGRVVDALGRPIDGKGEILASETRLVESPAPGIVARKSVCEPMQTGITAIDAMIPVGRGQRELIIGDRKTGKTAIAIDTIINQKSEDVICVYVAIGQKASTVAQVIDTLTQRGAMDYTVVVAANANDPATLQYIAPYTGASIAEYFMYKGKATLVIYDDLTKQAQAYRQLSLLMRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSTDLFNAGFRPAINAGISVSRVGSAAQTKAMKKVAGKLKLELAQFDELEAFAQFASDLDAATQAQLARGQRLRQILKQPQNFPLSVWEQVAVVYAGLNGYLDDIATDKVIDFCAGLREYLKTSKPRYVEIVSTEKQLNDEAEGLLKDGINEYKQAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="ATPA_TRIEI" ac="Q112Z6" length="505" description="ATP synthase subunit alpha OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2514</score>
+      <smithWatermanScore>2514</smithWatermanScore>
+      <zScore>2711.2</zScore>
+      <bits>511.2</bits>
+      <expectation>1.9e-143</expectation>
+      <identity>76.2</identity>
+      <positives>93.8</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::.:::.:::.:.:::::.:.:::::::::::::::::.::.:::.:: : :.::: :::.::::.:::: ::.: :::.: :::::::.:::: ..::::. ::  ::::::. :.::::::. :::::.:.:: ::.:::::.::.:::::::::::::::::::::.::.::::::. ::::::::..::::::.::::..::::.:..::..::..:.:::::::.:::.::..::::::::::::..::::.::: ::::.:::::::::::::::::::::::::::::::.::::::::::::::::::.:::::::::::::::::::::.::::.:.:::.:.:::::::::::::::.::::::.:::::::::::::::::::::.:::.::::: ::::.:::::::: :. .::: ::.::::::::.:. .. .. :.:. ::..::  . ::..: . .:.::.. :::.: : :..:</pattern>
+      <matchSeq start="1" end="501">MVSIRPDEISQIIRDQIEQYEQDVKVSNVGTVLQVGDGIARVYGLDKVMAGELVEFADGTVGIAQNLEEDNVGAVLMGEGREIQEGSAVTATGRIAQVPVGDALVGRVVDGLGRPIDGKGEMKTTDSRLLESPAPGIIDRRSVYEPMQTGITAIDSMIPIGRGQRELIIGDRQTGKTAIAIDTIINQKGEDVICVYVAIGQKASTVAQVVGTLEEKGALDYTVIVAANASDPATLQYLAPYTGATIAEYFMYKGKATLVIYDDLSKQAQAYRQVSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNDKLGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSSDLFNAGFRPAVNAGISVSRVGSAAQTKAIKKVAGKIKLELAQFAELEAFSQFASDLDKATQNQLARGQRLREILKQPQNSPRSLPEQVAAIYSGINGYLDDIPLEKAAKFIAGLLDYLNNSKPKFGEIIKTEKVLTDEAQTLLKEGITEYKQTFLVSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ATPA_GLOC7" ac="B7KKR4" length="503" description="ATP synthase subunit alpha OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2505</score>
+      <smithWatermanScore>2505</smithWatermanScore>
+      <zScore>2701.5</zScore>
+      <bits>509.4</bits>
+      <expectation>6.5e-143</expectation>
+      <identity>76.3</identity>
+      <positives>93.0</positives>
+      <overlap>502</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.:::.:.:.:.::::::::: ::.:::.:.:. ::::::: :::::::::.::::.::::.:  : :::::::::::::.:::. ...:.:. ::  ::::: : :...::::. ::::..:::::::.:::::.::::::.::::::::::::.::::.::.::::::. ::::::::..::::::.::::..: ::.::.::.::..::::::::::.:::.::..::::::::::::..::::.::: ::::.:::.:::::::::::::::::::::::::::.:.::::::::::::::::.:::::::::::::::::::::.::::.:.:::::.:::::::::::::::::.:::::::::::::::::::::::::: ::: ::::: ::::::::::::::.: .:::..:.:.::::::.: ..: ..  .:  :: .::  . ::: . ...:.:::: ::::: : :..:.</pattern>
+      <matchSeq start="1" end="502">MVSIRPDEISSIIRQQIESYDQQVQVSNVGTVLQVGDGTARIYGLQQAMAQELLEFEDGTIGIALNLEEDNVGAVLMGSGYGIQEGSTVKATGRIAQVPVGEALVSRIVDALGRPIDGKGPINTNETRLLESPAPGIVARKSVCEPMQTGITAIDAMIPVGRGQRELIIGDRKTGKTAIAIDTIINQKGEDVICVYVAIGQKASTVAQVVDTLTEKGAMDYTVVVSASANDPATLQYLAPYTGATIAEYFMYKGKATLVIYDDLSKQAQAYRQISLLMRRPPGREAYPGDVFYLHSRLLERAAKLNDQLGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSSDLFNAGFRPAINAGISVSRVGSAAQTKAMKQVAGKLKLELAQFAELEAFSQFASDLDAATQAQLARGQRLREVLKQPQNSPLAVWEQVAIVYAGLNGYLDDIPPAQVTTFTQGLRDYLRNSKPKFPEIVGNEKKLTDEAESLLKEAIGEFKQGFTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ATPA_GALSU" ac="P35009" length="505" description="ATP synthase subunit alpha, chloroplastic OS=Galdieria sulphuraria OX=130081 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2489</score>
+      <smithWatermanScore>2489</smithWatermanScore>
+      <zScore>2684.1</zScore>
+      <bits>506.2</bits>
+      <expectation>6e-142</expectation>
+      <identity>75.8</identity>
+      <positives>93.4</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::.::.::::::. .:. . .::::::: ::::::::..::.::::::::::::::::::::::::::::   .::::: ::.::.::.::::.:::::::. :: .:::: : : :..::.: .::::: :.:::::::::::.::.::::::::::::::::::::::::.::::::. .::::.:...:::::..::::..::::.:..:::.::..:..::.:::::::..:.:::::::::::::..:::::::: ::::::::::::::::::::::::::::::::::::..:::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::::: ::::.::: ::::. : .:.:.::.:::::::..:...:.:.  .:  :...::. . :......:.. :::  ::..: :.: .:</pattern>
+      <matchSeq start="1" end="501">MVNIRPDEISTIIKEQIEKYETEVRFSAVGTVLQVGHGIARVYGLEEVMAGELLEFEDKTIGIALNLENDNVGVVLMGDDSNILEGSPVKSTGKIAEIPVGEEFLGRVVNALGKSIDGKVEPVCSENRLIEMLAPGIIVRQSVCEPLQTGITAIDSMIPIGRGQRELIIGDRQTGKTSIALDTIINQKDQDVICIYAAIGQKASSVAQVVSTLEEKGALGYTIIVAANADEPASLQYIAPYTAASLAEYFMYKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNQKLGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSSDLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLARGQRLREMLKQSQNSPIPVEEQIAIIYSGINGYLDEIPLQKVSSFIKALREYIVNSKSKFIELIKSNKQLVSEAEEILKQSIQETKATFLASE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ATPA_SYNP6" ac="P08449" length="505" description="ATP synthase subunit alpha OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2488</score>
+      <smithWatermanScore>2488</smithWatermanScore>
+      <zScore>2683.1</zScore>
+      <bits>506.0</bits>
+      <expectation>6.9e-142</expectation>
+      <identity>75.6</identity>
+      <positives>93.6</positives>
+      <overlap>499</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="499">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.:.:::::.:.::::::::::::.:::.:::::::.:::: : :::::::.::::.:::: ::.: :::::::::.:::::::: ..::::::::. .::::::.....::.:. :::::.:.:: ::.:::::.::::::::::::::::::::::::.::.:::.::. ::::::::..:::::..:....::.:..:..::.:::..:..::::::.:::::::.::::::::::::..:::::::: :::::::::::::::::::::::::::::::::::::: ::::::::::.:::::.:::::::::::::::::::::.::::::.:::::::::::::::::::::.::.:: :::::::: :: ::.:::::::.:::.::::: ::::.::::: ::: .:.:::..:.:..: .:..::..: .. . : .:: :::  . : :....:. . ::. ::::: : :.</pattern>
+      <matchSeq start="1" end="499">MVSIRPDEISSIIRQQIEQYSQDVKVENVGTVLQVGDGIARIYGLQQVMSGELVEFEDGTTGIALNLEEDNVGAVLMGEGRNIQEGSTVKATGKIAQIPVGDALVGRVVSPLGAPLDGKGEIAATENRLIESPAPGIIARRSVHEPMQTGITAIDAMIPIGRGQRELIIGDRQTGKTAIAIDTILNQKGEDVICVYVAIGQKASSVANIIEVLRERGALDYTVVVAANASEPATLQYLAPYAGAAIAEYFMYKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSSDLFNSGLRPAINVGISVSRVGSAAQTKAIKKIAGTLKLELAQFDELAAFAQFASDLDKATQNQLARGQRLRELLKQPQFSPLILAEQVAVVYAGVKGLIDEIPVNQVTAFVSELRSYLKTSKPEFIEKVQSSKQLDDAAEALLKEAIAEVKKNILAAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ATPA_ANTSP" ac="Q02848" length="505" description="ATP synthase subunit alpha, chloroplastic OS=Antithamnion sp. OX=2767 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2488</score>
+      <smithWatermanScore>2488</smithWatermanScore>
+      <zScore>2683.1</zScore>
+      <bits>506.0</bits>
+      <expectation>6.9e-142</expectation>
+      <identity>76.4</identity>
+      <positives>92.9</positives>
+      <overlap>504</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDK--TIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::.:::.::..:::.:.: :::::::::::::::::::.::.::::.::::--:.:::::::.::::::::: ::.:::::.::.::.:::::::::::::::.::.  ::.::   ..:.::.:..:::::.:.:::::::::::.::.:::::::::::::::::::::..:.::::::. .::.::::..:::::..::::..::::.:. ::::::..:..::::::::::.::::::::::::::::..:::::::: ::::::::::::::::::::::::::::::::::::.. ::::::::::::::::.:::::::::::::::::::::.::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::::: ::::.::: ::::. : .:.:.::.:::::::.. .:.::..  .:   : .::  . : . .:.... ..:  ::.:: .  .:::</pattern>
+      <matchSeq start="1" end="504">MVNIRPDEISNIIRQQIDNYDQEVQVANIGTVLQVGDGIARVYGLDEVMAGELLQFEDKEQTVGIALNLESDNVGVVLMGDGRNILEGSSVKSTGKIAQIPVGDEFLGRVVNPLAKPIDAKGTPSVQDTRLIESYAPGIIGRQSVCEPLQTGITAIDSMIPIGRGQRELIIGDRQTGKTTVALDTIINQKGQDVVCVYVAIGQKASSVAQVVSTLEEKGALEYTIVVAANADEPATLQYIAPYTGAALAEYFMYKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNQDLGGGSMTALPIIETQAGDVSAYIPTNVISITDGQIFLSGDLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLARGQRLREILKQAQNSPIPVEEQTAIIYAGINGYLDEVELSQVKDFVLALREDLRNSKPEFGESILSTKKLNPDSEEILKKAISDVAQAFSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ATPA_THEVB" ac="Q8DLP3" length="503" description="ATP synthase subunit alpha OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=atpA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2477</score>
+      <smithWatermanScore>2477</smithWatermanScore>
+      <zScore>2671.2</zScore>
+      <bits>503.8</bits>
+      <expectation>3.2e-141</expectation>
+      <identity>75.3</identity>
+      <positives>92.0</positives>
+      <overlap>502</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.:.:..::::.:::::::::::::::::.::..::.:::: :.:::::::.::::::::: : .: :::::.:::.::.::::.  .::::. :   ::::::: :..:::.:. ::::..:::::::::::::.::::::::::::::::::::::::..:.:::.::. .:::::::..:::::..:::::::.:..:..::::.:..:.:::.:::.:::.::..::::::.:: ::.:::::.::: ::::::::::::::::::::::::::::::::::::.: ::::::::::..::::.:::::::::::::::::::::.::::.:.:::::.:::::::::::: ::::.:::::::::::: ::.::.:::::::.:::.::::: ::::.::::: ::. :  ::: ::.: ::::::.::  : .. :.:  :: :.:  : ::.:::... :.::. ::::: : : .:.</pattern>
+      <matchSeq start="1" end="502">MVSIRPDEISSIIRQQIEQYEQSIKVDNVGTVLQVGDGIARVYGLDKVMASELVEFEDGTVGIALNLEEDNVGVVLMGDGLSIEEGSTVRATGKIASIPVGEAAIGRVVDALMRPIDGKGEIHTTQSRLIESPAPGIVQRKSVCEPLQTGITAIDAMIPIGRGQRELIIGDRQTGKTAVAIDTILNQKGQDVICVYVAIGQKASSVAQVVNVLRERGALDYTIVIAANASDPAALQYLAPYTGATVAEYFMYQGKHTLVVYDDLSKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLNDALGGGSMTALPVVETQAGDVSAYIPTNVISITDGQIFLSSDLFNAGLRPAINAGISVSRVGSAAQIKAMKQVAGKLKLELAQFDELQAFAQFASDLDKATQNQLARGQRLREILKQPQYSPIPVEYQVATIYAGTNGYLDDIPVEAVAKFVAGLRDYLRTNKPEYGEIIRTTQKLDEKAEALLKEAIAEYKATFTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ATPA_SYNE7" ac="Q31RF1" length="505" description="ATP synthase subunit alpha OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2477</score>
+      <smithWatermanScore>2477</smithWatermanScore>
+      <zScore>2671.1</zScore>
+      <bits>503.8</bits>
+      <expectation>3.2e-141</expectation>
+      <identity>75.4</identity>
+      <positives>93.4</positives>
+      <overlap>499</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="499">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.:.:::::.:.::::::::::::.:::.:::::::.:::: : :::::::.::::.:::: ::.: :::::::::.:::::::: ..::::::::. .::::::.....::.:. :::::.:.:: ::.:::::.::::::::::::::::::::::::.::.:::.::. ::::::::..:::::..:....::.:..:..::.:::..:..::::::.:::::::.::::: ::::::..:::::::: :::::::::::::::::::::::::::::::::::::: ::::::::::.:::::.:::::::::::::::::::::.::::::.:::::::::::::::::::::.::.:: :::::::: :: ::.:::::::.:::.::::: ::::.::::: ::: .:.:::..:.:..: .:..::..: .. . : .:: :::  . : :....:. . ::. ::::: : :.</pattern>
+      <matchSeq start="1" end="499">MVSIRPDEISSIIRQQIEQYSQDVKVENVGTVLQVGDGIARIYGLQQVMSGELVEFEDGTTGIALNLEEDNVGAVLMGEGRNIQEGSTVKATGKIAQIPVGDALVGRVVSPLGAPLDGKGEIAATENRLIESPAPGIIARRSVHEPMQTGITAIDAMIPIGRGQRELIIGDRQTGKTAIAIDTILNQKGEDVICVYVAIGQKASSVANIIEVLRERGALDYTVVVAANASEPATLQYLAPYAGAAIAEYFMCKGKATLVIYDDLTKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDALGGGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSSDLFNSGLRPAINVGISVSRVGSAAQTKAIKKIAGTLKLELAQFDELAAFAQFASDLDKATQNQLARGQRLRELLKQPQFSPLILAEQVAVVYAGVKGLIDEIPVNQVTAFVSELRSYLKTSKPEFIEKVQSSKQLDDAAEALLKEAIAEVKKNILAAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ATPA_SYNY3" ac="P27179" length="503" description="ATP synthase subunit alpha OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2472</score>
+      <smithWatermanScore>2472</smithWatermanScore>
+      <zScore>2665.8</zScore>
+      <bits>502.8</bits>
+      <expectation>6.4e-141</expectation>
+      <identity>75.3</identity>
+      <positives>92.0</positives>
+      <overlap>502</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="502">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:..:::::::::::.:::.:::.:.:.:.::::::::: ::.:::.:::: ::::::: :::::::::.::::.:::: :  : ::::::.::.:::::.:: ..::::. ::  ::::: : .. .::::. ::::: :::::::.:::::.:::::::::::::::::::.::::.::.::::::..::::::::..::::::.::....: ::.::.::::::..:::::::::.:::.::.:::.:::.::.::..::::.::: ::::::::.:::::::::::::::.::::::::::::: ::::::::::.:::::.:::::::::::::::::::::.::::.:.:::::.:::::::::::::::::::::::::::::::::::::::::::: ::: ::::: :::..::::.:::::: .:::. :.:.:::.: .::..:  .  .:  :: ..:  :.::. ... .:.:::. :::.: :  ..:.</pattern>
+      <matchSeq start="1" end="502">MVSIRPDEISSIIRQQIESYDQSVQVSNVGTVLQVGDGTARIYGLEQVMSQELLEFEDGTIGIALNLEEDNVGAVLMGDGFGIQEGSTVKTTGQIAQIPIGDAMVGRVVDSLGRPIDGKGPISSTATRLLESPAPGIIERKSVCEPMQTGITAIDAMIPIGRGQRELIIGDRKTGKTAIAIDTIINQKSEDVICVYVAIGQKASTVAQIIDTLTEKGAMAYTIVVAANANDPATLQYLAPYTGATLAEHFMYQGKSTLVIYDDLSKQAQAYRQMSLLMRRPPGREAYPGDVFYIHSRLLERAAKLSDALGGGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSTDLFNAGFRPAINAGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDAATQAQLARGQRLRQLLKQPENSPLSVWEQVAISYAGLNGYIDTIPVDKVTEFAQGLRDYLKANKAKYVEIINSSKALTDEAETLLKEGIKEFTQGFAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ATPA_ZYGCR" ac="Q32RL1" length="505" description="ATP synthase subunit alpha, chloroplastic OS=Zygnema circumcarinatum OX=35869 GN=atpA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2469</score>
+      <smithWatermanScore>2469</smithWatermanScore>
+      <zScore>2662.5</zScore>
+      <bits>502.2</bits>
+      <expectation>9.7e-141</expectation>
+      <identity>76.6</identity>
+      <positives>91.8</positives>
+      <overlap>501</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="501">MINIRPDEISSIIREQIEKYDQDVKVDNIGTVLQVGDGIARVYGLDQVMSGELLEFEDKTIGIALNLENDNVGVVLMGTGRQILEGSTVKATGRIAQIPVGDEFLGRVVSPLGVAIDGKGEIVTSDSRLLEAMAPGIISRKSVCEPLQTGITSIDAMIPIGRGQRELIIGDRQTGKTSIAVDTIINQQTEDVICVYVGVGQKASTIAQVVNVLEEKNAMSYTIVVASSANDPATLQYIAPYAGAALAEYFMYKGKATLIVYDDLTKQAVAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLSDKLGGGSMTALPIIETQASDVSAYIPTNVISITDGQIFLSNDLFNSGIRPAINVGISVSRVGSAAQTKAMKKVAGKLKLELAQFAELEAFSQFASDLDEATQKQLARGTRLREVLKQPQNSPLSVAQQVALIYTGINGYLDDLPVSNVKSYCASLMTYLTTSKKPYTEIVRTTNQFTEEAESSLKEAILESKEAFSKTN</querySeq>
+      <pattern>:.::::::::::::.:::.: :.::: ::::::::::::::.::::.::.:::::::: :::::::::.::::.:::: :  : :::.:::::.::::::.: .:::::. :.  :::::.:..:. ::.:. :::::::.:: ::.:::. .::::::::::::::::::::::::..:.:::.::. ..::::::..:::::..:::::..::..::.:::::: .:: ::::::.:::.::::::::::::. ::.:::::.::: ::::::::::::::::::::::::::::::::::::...:: ::::::::.::::.::::::::::::::::::::: ::::::::::::::::::::::::: ::::.::::::::::::::::::::::::::.:::.::::: ::::.::: :..:::: :::: :.::.::::: . ::.:.:. ..:  :. :.:  . ::.:.:. ::.::.. ::.:: :  :::</pattern>
+      <matchSeq start="1" end="501">MVNIRPDEISSIIRKQIEQYTQEVKVVNIGTVLQVGDGIARIYGLDKVMAGELLEFEDGTIGIALNLESDNVGAVLMGDGLTIQEGSSVKATGKIAQIPVSDGYLGRVVNALARPIDGKGDIASSEFRLIESPAPGIISRRSVYEPMQTGLIAIDAMIPIGRGQRELIIGDRQTGKTAVATDTILNQKGQNVICVYVAIGQKASSVAQVVNTFEERGAMDYTIVVAETANAPATLQYLAPYTGAALAEYFMYKGQHTLVVYDDLSKQAQAYRQMSLLLRRPPGREAYPGDVFYLHSRLLERAAKLGSQLGEGSMTALPIVETQAGDVSAYIPTNVISITDGQIFLSADLFNSGIRPAINVGISVSRVGSAAQIKAMKQVAGKLKLELAQFAELEAFSQFASDLDKATQNQLARGQRLRELLKQAQSAPLSVEQQVATIFTGVNGYLDVIEVSQVRSFLTQLREYIITNKPQFGEIIRSTKTFTDEAQTILKQAIQEHTEAFLLQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

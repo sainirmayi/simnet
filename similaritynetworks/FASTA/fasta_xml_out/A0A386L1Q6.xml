@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162718-0055-13233959-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162718-0055-13233959-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162718-0055-13233959-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A386L1Q6|DABB_PSEMU" type="PROTEIN" length="249"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:27:18+00:00" end="2022-11-07T16:27:21+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="19">
+   <hit number="1" database="SP" id="DABB_PSEMU" ac="A0A386L1Q6" length="249" description="Domoic acid biosynthesis cluster protein B OS=Pseudo-nitzschia multiseries OX=37319 GN=dabB PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1706</score>
+      <smithWatermanScore>1706</smithWatermanScore>
+      <initn>1706</initn>
+      <init1>1706</init1>
+      <opt>1706</opt>
+      <zScore>2277.8</zScore>
+      <bits>429.0</bits>
+      <expectation>2.6e-119</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>249</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="249">MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="249">MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ANR16_MOUSE" ac="A2AS55" length="361" description="Ankyrin repeat domain-containing protein 16 OS=Mus musculus OX=10090 GN=Ankrd16 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <initn>99</initn>
+      <init1>52</init1>
+      <opt>111</opt>
+      <zScore>148.6</zScore>
+      <bits>35.5</bits>
+      <expectation>1.0</expectation>
+      <identity>27.2</identity>
+      <positives>51.8</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="65" end="177">GSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRN-DGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFAS</querySeq>
+      <pattern>                              : ... : :.  .:   . .: --:: .::. ::.  .: .   .:-::: :::.   .  : .. .. -- : :..    ::.     : .:.-- :  :..:  : . .  :</pattern>
+      <matchSeq start="91" end="198">SMDIEATNRDYKRPLHEAASMGHRDCVRYLLGRGAVVDSLKKADWTPLMMAC--TRKNLDVIQDLVEHGANPLLKNKDGWNSFHIASREGHPVILRYLL--TVCPDAWKTESNIRRTPLHTAAM--HGCLEAVQVLLERCHYEPDCRDNCGVTPFMDAIQCGHVSIAKLLLEQHKACSSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="SSTT_PSEA8" ac="B7VA62" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain LESB58) OX=557722 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>70</initn>
+      <init1>61</init1>
+      <opt>107</opt>
+      <zScore>142.0</zScore>
+      <bits>34.5</bits>
+      <expectation>2.4</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="SSTT_PSEAE" ac="Q9I273" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>70</initn>
+      <init1>61</init1>
+      <opt>107</opt>
+      <zScore>142.0</zScore>
+      <bits>34.5</bits>
+      <expectation>2.4</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="SSTT_PSEAB" ac="Q02LI9" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain UCBPP-PA14) OX=208963 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>70</initn>
+      <init1>61</init1>
+      <opt>107</opt>
+      <zScore>142.0</zScore>
+      <bits>34.5</bits>
+      <expectation>2.4</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="Y1583_ARATH" ac="A8MS78" length="127" description="Uncharacterized protein At1g05835 OS=Arabidopsis thaliana OX=3702 GN=At1g05835 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <smithWatermanScore>98</smithWatermanScore>
+      <initn>93</initn>
+      <init1>55</init1>
+      <opt>98</opt>
+      <zScore>141.9</zScore>
+      <bits>32.8</bits>
+      <expectation>2.4</expectation>
+      <identity>29.7</identity>
+      <positives>60.8</positives>
+      <overlap>74</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="116" end="186">INPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPH--LINFMYENQVHPQSRVDPSNV-IYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :. ::.. :: --.::.  . :  ::: :::. .-. ...  . ...::.    .::: --..:   ...  ::</pattern>
+      <matchSeq start="48" end="119">LQIGSGAICEGKSSEPAVRQTQVKWREGKKFRVEVMNKCPMCPIINLRLKCQGFPQSLVDPTFLRVLSSSAGNCVVNDGLPLSPMQTLS--FNYSNTHQFALRPLSWSFQCE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="URK_BACHK" ac="Q6HDE5" length="212" description="Uridine kinase OS=Bacillus thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="URK_BACAH" ac="A0RIZ3" length="212" description="Uridine kinase OS=Bacillus thuringiensis (strain Al Hakam) OX=412694 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="URK_BACAA" ac="C3P969" length="212" description="Uridine kinase OS=Bacillus anthracis (strain A0248) OX=592021 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="URK_BACCZ" ac="Q634G4" length="212" description="Uridine kinase OS=Bacillus cereus (strain ZK / E33L) OX=288681 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="URK_BACAC" ac="C3L5Y6" length="212" description="Uridine kinase OS=Bacillus anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="URK_BACAN" ac="Q81LK8" length="212" description="Uridine kinase OS=Bacillus anthracis OX=1392 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="URK_BACC3" ac="C1ESS5" length="212" description="Uridine kinase OS=Bacillus cereus (strain 03BB102) OX=572264 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="URK_BACC0" ac="B7JP70" length="212" description="Uridine kinase OS=Bacillus cereus (strain AH820) OX=405535 GN=udk PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>74</initn>
+      <init1>49</init1>
+      <opt>97</opt>
+      <zScore>135.4</zScore>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>36.8</identity>
+      <positives>51.7</positives>
+      <overlap>87</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="112" end="189">IDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVF-HFCPHLI-----NFMYENQVH-PQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLP-KFYDYPV-GYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  :    .:-::  : :-----...:..: :-:. .   .:--::--:: :. .: . : ::: : -:  : ::- : :. :  ::</pattern>
+      <matchSeq start="18" end="100">-------------MGTNKPVVIGIAGGSGSGKTSVTKAIFDHFKGHSILILEQDYYYKDQSHLPMEERLKTN--YD--HPLAFDNDLLIEHLQQLLAYKQVDKPVYDYTLHTRSEEIIPVEPKDVIILEGILILEDPRLCELMDIKLFVDTDADLRILRRMQRDIKERGRTMDSVIDQYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="HSP70_HYDVU" ac="Q05944" length="654" description="Heat shock 70 kDa protein OS=Hydra vulgaris OX=6087 GN=HSP70.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <smithWatermanScore>105</smithWatermanScore>
+      <initn>130</initn>
+      <init1>62</init1>
+      <opt>105</opt>
+      <zScore>134.5</zScore>
+      <bits>33.8</bits>
+      <expectation>6.3</expectation>
+      <identity>26.3</identity>
+      <positives>51.3</positives>
+      <overlap>156</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="77" end="220">FLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQH--------PGALAEDG---FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMR-IARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              : :::: : .. :   . . :  :.:  .:.  :   ::.-- .:    .::.   .::: ----..:::...::..--------:.. ..  ---:  . . . ::.     :   .  : :::..  :.:.-:: .   ..  : . ..:  .:</pattern>
+      <matchSeq start="2" end="151">-----------------------------MSKAPAIGIDLGTTYSCVGVFQHGKVEIIANEQGNRTTPSY--VAFTDTERLIGDAAKNQVA----MNPSNTVFDAKRLIGRKFNDPSVTSDRKHWPFNVIDDGSRPKIQVEFKGETKSFYPEEISSMVLLKMEEIADAYLGKKVTDVVITVPAYFNDSQRQATKDAGVIAGLNVLRIINEPTAAAIAYGLDKKVGTEKNVLIFDLGGGTF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RBM24_DANRE" ac="Q76LC6" length="230" description="RNA-binding protein 24 OS=Danio rerio OX=7955 GN=rbm24 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <smithWatermanScore>96</smithWatermanScore>
+      <initn>75</initn>
+      <init1>45</init1>
+      <opt>96</opt>
+      <zScore>133.2</zScore>
+      <bits>32.0</bits>
+      <expectation>7.4</expectation>
+      <identity>27.4</identity>
+      <positives>51.9</positives>
+      <overlap>106</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="75" end="176">AFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQ-DFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMY---ENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGIN</querySeq>
+      <pattern>                              : .:  : : : .   : .:.:.-. ..   : . : -  :.: : : .. : .:.  :--- . :.::. ..:: ::   :-: : .  . .  .. :   . .:</pattern>
+      <matchSeq start="58" end="161">RKYFEVFGEIEEAVVITDRQTGKSRGYGFVTMADRSAADRACKDPNPIIDGRKANVNLAYLGAKPRV-MQPGFTFGVPQIHPAFIQRPYGIPTHYVYPQAFMQPSVVIPHIQ-PTATSATASSPYIDYTGAAYAQYASAATAAAAAAYEQYPYAASPAATGYVAAAGYGYAMQQPLATAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="SSTT_VIBCH" ac="Q9KNC9" length="405" description="Serine/threonine transporter SstT OS=Vibrio cholerae serotype O1 (strain ATCC 39315 / El Tor Inaba N16961) OX=243277 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <smithWatermanScore>99</smithWatermanScore>
+      <initn>78</initn>
+      <init1>65</init1>
+      <opt>99</opt>
+      <zScore>131.4</zScore>
+      <bits>32.5</bits>
+      <expectation>9.3</expectation>
+      <identity>26.9</identity>
+      <positives>54.6</positives>
+      <overlap>108</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRI--YVKK--PLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :....  .   ::   .:.::::.  : :. : ::.  .:     : :-: . . .:    .:  .    .: .::..:--.. .--:.   :  .. :..-::.. :</pattern>
+      <matchSeq start="104" end="209">QHTYMRPIVVLYLFGTFSAALTAVILSFLFPTTLVLATGAEGATPPQGIAEVLNTLLFKLVDNPVSALMNANYIGILA-WGVGLGLALHHSSSTTKAVFEDLSHGISQIVRFIIRLAPFGIFGLVASTFAT-TGFDALAGYAQLLAVLLGAMAFIALVVNPMIVYYKIRRNPFPLVLQCL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ANR16_RAT" ac="Q499M5" length="370" description="Ankyrin repeat domain-containing protein 16 OS=Rattus norvegicus OX=10116 GN=Ankrd16 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <smithWatermanScore>98</smithWatermanScore>
+      <initn>98</initn>
+      <init1>52</init1>
+      <opt>98</opt>
+      <zScore>131.0</zScore>
+      <bits>32.3</bits>
+      <expectation>9.8</expectation>
+      <identity>25.4</identity>
+      <positives>51.8</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="65" end="177">GSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRN-DGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFAS</querySeq>
+      <pattern>                              : ... : :.  .:   . .: --:: .:.. ::.  .: .   .:-::: :::.   .  : .. .. -- : :.     :..     : .:.-- :  :..:. : . .  :</pattern>
+      <matchSeq start="100" end="207">SMDIEAANRDYKRPLHEAASMGHRDCVRYLLGRGAVVDSLKKADWTPLMMAC--TRKNLEVIQDLVEHGANPLLKNKDGWNSFHIASREGDPVILRYLL--TVCPDVWKTESKIRRTPLHTAAM--HGCFEAVQELLERCHYEPDCRDNCGVTPFMDAIQCGHVSIAKLLLENHEACSSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RHAA_LACPL" ac="Q88S51" length="427" description="L-rhamnose isomerase OS=Lactiplantibacillus plantarum (strain ATCC BAA-793 / NCIMB 8826 / WCFS1) OX=220668 GN=rhaA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <smithWatermanScore>99</smithWatermanScore>
+      <initn>109</initn>
+      <init1>75</init1>
+      <opt>99</opt>
+      <zScore>130.9</zScore>
+      <bits>32.5</bits>
+      <expectation>10.0</expectation>
+      <identity>28.8</identity>
+      <positives>60.6</positives>
+      <overlap>66</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="176" end="238">NVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRL--NDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGIN-RIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              : :: .:--:.     .  ::.     . .:: .-  :.. .: : .- ..:..:..:..:::..:</pattern>
+      <matchSeq start="239" end="303">SLDEVFAKKYDEKNTIEAVEGKLFGTGIESYTVGSHLFYNNYAISRGKLWTIDAGHWHPTEDVS-DKFSAFMPFGKGLMLHVSRPIRWDSDHVVIFDEALQRITRSLVRDNELERTNIGLDFFDATINRVSAWVIGARATQKALLQAMLAPIDDLKKAELNYDFTKRLAVTEELKSFPFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

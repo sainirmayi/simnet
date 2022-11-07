@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170820-0861-27107262-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170820-0861-27107262-p1m.m9&quot; -m &quot;F10 fasta-R20221107-170820-0861-27107262-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7GCG7|CYB5_PHATC" type="PROTEIN" length="133"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:08:20+00:00" end="2022-11-07T17:08:24+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="CYB5_PHATC" ac="B7GCG7" length="133" description="Cytochrome b5 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_30770 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>861</score>
+      <smithWatermanScore>861</smithWatermanScore>
+      <zScore>1223.0</zScore>
+      <bits>232.0</bits>
+      <expectation>1.5e-60</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="133">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="CYB5D_ARATH" ac="Q9ZWT2" length="140" description="Cytochrome B5 isoform D OS=Arabidopsis thaliana OX=3702 GN=CYTB5-D PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>316</score>
+      <smithWatermanScore>316</smithWatermanScore>
+      <zScore>447.4</zScore>
+      <bits>88.6</bits>
+      <expectation>2.3e-17</expectation>
+      <identity>43.9</identity>
+      <positives>69.8</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="133">-MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATL---AKMKADAEAKA---QQKNSGTGIMLI---VLMALFAIAYGY-YQTQMK</querySeq>
+      <pattern>     : . :.:.:::.....::..:----.:--:::::::.::::::: ::.:  .:.:: . :::.:::. :.: : .: ::.--::.::.---::.   . .::---:.:.:   : :.---: . ....:.: -: :. :</pattern>
+      <matchSeq start="6" end="136">MGGDGKVFTLSEVSQHSSAKDCWIVI----DG--KVYDVTKFLDDHPGGDEVILTSTGKDATDDFEDVGHSSTAKAMLDEYYVGD--IDTATVPVKAKFVPPTSTKAVATQDKSSDFVIKLLQFLVPLLILGLAFGIRYYTKTKAPSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CYB5_TOBAC" ac="P49098" length="136" description="Cytochrome b5 OS=Nicotiana tabacum OX=4097 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>314</score>
+      <smithWatermanScore>314</smithWatermanScore>
+      <zScore>444.8</zScore>
+      <bits>88.0</bits>
+      <expectation>3.3e-17</expectation>
+      <identity>42.6</identity>
+      <positives>69.5</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="131">MSAE-KEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATL-AKMKADAEAKA---QQKNSGTGIMLI---VLMALFAIAYG--YYQTQMK</querySeq>
+      <pattern>:..:-: . : :.:::.....:::.:..------:::::::.::::::: ::.:...:.:: . :::.:::. ::: : .: ::.--::.::.-.: :     . ---:.:.:   . :.---: . ....:.:--.:  :</pattern>
+      <matchSeq start="1" end="133">MGGETKVFTLAEVSQHNNAKDCWLVISG------KVYDVTKFLDDHPGGDEVLLSATGKDATDDFEDVGHSSSARAMLDEYYVGD--IDSATIPTKTKYTPPNQPHYNQDKTSEFVVKLLQFLVPLIILGVAFGIRFYTKQSSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CYB5_NEUCR" ac="Q9P5L0" length="139" description="Probable cytochrome b5 OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=B23L21.190 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>300</score>
+      <smithWatermanScore>300</smithWatermanScore>
+      <zScore>424.7</zScore>
+      <bits>84.3</bits>
+      <expectation>4.3e-16</expectation>
+      <identity>44.0</identity>
+      <positives>68.1</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="131">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKA---DAEAKAQQKNSGTGI-----MLIVL--MALFAIAYGYYQTQMK</querySeq>
+      <pattern>::::  :--.....:.: .. ...: .------::::.::..:.:::: ::.:::::::. : :::.::: :::  :.  :::..: .:. - : ::---.. : : : ...::.----- ..::--.: ::-:: : :.:</pattern>
+      <matchSeq start="1" end="131">MSAEFTY--QDVAEHNTKKDLYVVIHD------KVYDITKFVDEHPGGEEVLLDVAGQDSTEAFEDVGHSDEAREALEPLLVGTLKRQAGD-PKPKAPLPSSLAPAAQTGTATGLGIGLYAVLVLGGLAGFA-AYQYLQAQQGATAPSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CYB5_CUSRE" ac="P49097" length="135" description="Cytochrome b5 OS=Cuscuta reflexa OX=4129 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>299</score>
+      <smithWatermanScore>299</smithWatermanScore>
+      <zScore>423.6</zScore>
+      <bits>84.1</bits>
+      <expectation>5e-16</expectation>
+      <identity>40.7</identity>
+      <positives>67.5</positives>
+      <overlap>123</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="123">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>:.. : : : :.:.:.  ..:::.::.------:::::::.::::::::.:.:. ...:: . :::::::. ::: . .. ::.--::..:.    . .  :    :.    ..:. .  : .</pattern>
+      <matchSeq start="1" end="115">MGGSKVYSLAEVSEHSQPNDCWLVIGG------KVYDVTKFLDDHPGGADVLLSSTAKDATDDFEDIGHSSSARAMMDEMCVGD--IDSSTIPTKTSYTPPKQPLYNQDKTPQFIIKLLQFLVPLIILGVAVGIRFYKKQSSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="CYB5_CANTR" ac="Q874I5" length="129" description="Cytochrome b5 OS=Candida tropicalis OX=5482 GN=Cytb5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>297</score>
+      <smithWatermanScore>297</smithWatermanScore>
+      <zScore>421.1</zScore>
+      <bits>83.6</bits>
+      <expectation>6.8e-16</expectation>
+      <identity>42.1</identity>
+      <positives>72.2</positives>
+      <overlap>126</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="130">----MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYG--YYQTQMK</querySeq>
+      <pattern>          :  .:..:::: .. :.:.----::--:::....:.:.:::: ::.:: :: :: : :.::::: ::.  :..  .::.:--.: ... :- :.. . ...:: .. ::..-..:  :.:--::.:</pattern>
+      <matchSeq start="11" end="126">MTDTDTTTTIYTHEEVAQHTTHDDLWVIL----NG--KVYNISNYIDEHPGGEEVILDCAGTDATEAFDDIGHSDEAHEILEKLYIGNLK--GAKIVEAK-HAQSFSTEEDSGINFPLIAV-GVFLAAFGVYYYKTNFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="CYB5_RHIST" ac="Q9HFV1" length="131" description="Cytochrome b5 OS=Rhizopus stolonifer OX=4846 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <smithWatermanScore>296</smithWatermanScore>
+      <zScore>419.6</zScore>
+      <bits>83.3</bits>
+      <expectation>8.3e-16</expectation>
+      <identity>41.4</identity>
+      <positives>67.7</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="127">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAK------MKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>:.:-: . :::.:.: :  . :..: :------::::.:... .:::: ::..: .:.:: : ::::::: :::  :..::.:.--.: :. .:------..:-.:   ..:.:.  :.: .:  . :..: :</pattern>
+      <matchSeq start="1" end="123">MTA-KIFSLDEVSKHKTKSDLWVVIHN------KVYDITRFVVEHPGGEEVLVDEGGKDATEAFEDIGHSDEAREMLEEYLIGS--LDEASRTKEYNVNVIRA-GELPEEKKGSSLRIILPALAIIGALVYKYVIVPKAHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CYB5S_TOBAC" ac="P49099" length="135" description="Cytochrome b5, seed isoform OS=Nicotiana tabacum OX=4097 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>294</score>
+      <smithWatermanScore>294</smithWatermanScore>
+      <zScore>416.4</zScore>
+      <bits>82.8</bits>
+      <expectation>1.2e-15</expectation>
+      <identity>39.0</identity>
+      <positives>71.3</positives>
+      <overlap>136</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="131">-MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATL-AKMKADAEAKAQQKNSGTG------IMLIVLMALFAIAYG--YYQTQMK</querySeq>
+      <pattern>     : . : :.:.:.....:::::..------:::.:::.:.:::::.::.:...:.:: . :::::::. ::: : .: ::.--::..:.-.:.:     . . ... : ------....: . ....:.:--.:  :</pattern>
+      <matchSeq start="6" end="133">MGGQSKVFTLAEVSNHNNAKDCWLIISG------KVYNVTKFLEDHPGGGEVLLSATGKDATDDFEDIGHSSSARAMLDEYYVGD--IDSSTIPTKVKYTPPKQPHYNQDKTTEFIVKLLQFLVPLIILGVAFGVHFYTKQSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CYB5_ORYSJ" ac="P49100" length="137" description="Cytochrome b5 OS=Oryza sativa subsp. japonica OX=39947 GN=Os05g0108800 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <smithWatermanScore>290</smithWatermanScore>
+      <zScore>410.6</zScore>
+      <bits>81.7</bits>
+      <expectation>2.6e-15</expectation>
+      <identity>38.3</identity>
+      <positives>66.7</positives>
+      <overlap>120</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="123">--MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>     .: : :.:...:.. ..::::::.------:::.:.:.:.::::: .:.:. .:.:: . :::.:::  ::: . .: ::.--::..:.      .  :  . :.     .:. .  : .</pattern>
+      <matchSeq start="6" end="117">MSNDNKKVYTLEEVAKHNSKDDCWLIIGG------KVYNVSKFLEDHPGGDDVLLSSTGKDATDDFEDVGHSTTARAMMDEYYVGD--IDTSTIPARTKYVPPKQPHYNQDKTPEFIIKILQFLVPLAILGLAVAIRIYTKSESA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CYB5_MORAP" ac="Q9Y706" length="130" description="Cytochrome b5 OS=Mortierella alpina OX=64518 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <smithWatermanScore>288</smithWatermanScore>
+      <zScore>408.2</zScore>
+      <bits>81.2</bits>
+      <expectation>3.5e-15</expectation>
+      <identity>40.6</identity>
+      <positives>66.4</positives>
+      <overlap>128</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="122">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAK------AQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>:.  : . : ..::::: .: .: :----.:--:::: : ..:.:::: ::..: ::.:: : :::.::: :::  ... :::.:: :..   : :. . . ------:. ..::.-.. .. .:. :</pattern>
+      <matchSeq start="1" end="121">MAELKSFTLADLSQHTTKDSLYLAI----HG--KVYDCTGFIDEHPGGEEVLIDEAGRDATESFEDVGHSDEARDIMSKLLVGEFKTDSSEKPKAKSPSSSTPRPIPAAEPSDSGS-LQYVLALAVVAGCVIWKVLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CYB5_BOROF" ac="O04354" length="132" description="Cytochrome b5 OS=Borago officinalis OX=13363 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <smithWatermanScore>287</smithWatermanScore>
+      <zScore>406.7</zScore>
+      <bits>80.9</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>40.3</identity>
+      <positives>68.1</positives>
+      <overlap>119</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="123">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>    : . : :..::.....:::::----::--:::::::.:.::::: .:.:...:.:: . :::::::. :.: : .: ::.--::.... ..   .  :    :      ... .  : .</pattern>
+      <matchSeq start="3" end="113">--MGKIFTLAEVAQHNNSKDCWLII----NG--KVYDVTKFLEDHPGGDDVLLSATGKDATDDFEDIGHSSSAKAMLDEYYVGD--IDSSSIPSQVKYTPPKQPLYNPDKTREFVIKLLQFLVPLVILAGAIGIRFYTKSSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CYB5_BRAOB" ac="P40934" length="134" description="Cytochrome b5 OS=Brassica oleracea var. botrytis OX=3715 GN=CYB5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <smithWatermanScore>287</smithWatermanScore>
+      <zScore>406.5</zScore>
+      <bits>80.9</bits>
+      <expectation>4.4e-15</expectation>
+      <identity>38.9</identity>
+      <positives>69.8</positives>
+      <overlap>126</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="123">MSAEKEYI-LDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEA--KAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>:..::. .-..:.:::. :..:::::..------:::::: ..:::::: ::.:. .:.:: . :::.:::  ::  ...: .:--.::..:.   .. .  -- : ....   .:. .:. :  :</pattern>
+      <matchSeq start="1" end="118">MASEKKVLGFEEVSQHNKTKDCWLIISG------KVYDVTPFMDDHPGGDEVLLSSTGKDATNDFEDVGHSDTARDMMEKYYIG--EIDSSTVPATRTYVAPVQPAYNQDKTPEFMIKILQFLVPILILGLALVVRQYTKKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="CYB5_YEAST" ac="P40312" length="120" description="Cytochrome b5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CYB5 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>282</score>
+      <smithWatermanScore>282</smithWatermanScore>
+      <zScore>400.4</zScore>
+      <bits>79.6</bits>
+      <expectation>9.7e-15</expectation>
+      <identity>37.9</identity>
+      <positives>67.7</positives>
+      <overlap>124</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="128">MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>    : :  .:...:.  :. :.:: .------:::::... :.:::: :...:..:::: : : ::::: ::   ::.  .:.    .  ..  :.-. .. :.:.:::---:.:..:.. .. .::</pattern>
+      <matchSeq start="3" end="116">--MPKVYSYQEVAEHNGPENFWIIIDD------KVYDVSQFKDEHPGGDEIIMDLGGQDATESFVDIGHSDEALRLLKGLYIGDVDKTSERVSVEKV-STSENQSKGSGT---LVVILAILMLGVAYYLLNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CYB5E_ARATH" ac="Q42342" length="134" description="Cytochrome b5 isoform E OS=Arabidopsis thaliana OX=3702 GN=CYTB5-E PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>279</score>
+      <smithWatermanScore>279</smithWatermanScore>
+      <zScore>395.2</zScore>
+      <bits>78.8</bits>
+      <expectation>1.9e-14</expectation>
+      <identity>35.5</identity>
+      <positives>67.7</positives>
+      <overlap>124</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="123">MSAEKEYI-LDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>::.... .-..:.:.:. :..:::::..------:::::: ..:::::: ::.:. .:.:: . :::.:::  ::  . .:..:--.::....   .. .  .    :.     .:. .  : .</pattern>
+      <matchSeq start="1" end="116">MSSDRKVLSFEEVSKHNKTKDCWLIISG------KVYDVTPFMDDHPGGDEVLLSSTGKDATNDFEDVGHSDTARDMMDKYFIG--EIDSSSVPATRTYVAPQQPAYNQDKTPEFIIKILQFLVPILILGLALVVRHYTKKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CYB5B_ARATH" ac="O48845" length="134" description="Cytochrome b5 isoform B OS=Arabidopsis thaliana OX=3702 GN=CYTB5-B PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>279</score>
+      <smithWatermanScore>279</smithWatermanScore>
+      <zScore>395.2</zScore>
+      <bits>78.8</bits>
+      <expectation>1.9e-14</expectation>
+      <identity>38.7</identity>
+      <positives>67.2</positives>
+      <overlap>119</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="123">-MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>     : . :.:.:.:. ...::..:----::--:::.:::.:.::::: .:.:. .:.:: . :::.:::. ::  ...: ::--.:: .:. :    .  :  . :.     .:. .  : .</pattern>
+      <matchSeq start="6" end="116">MGDEAKIFTLSEVSEHNQAHDCWIVI----NG--KVYNVTKFLEDHPGGDDVLLSSTGKDATDDFEDVGHSESAREMMEQYYVG--EIDPTTIPKKVKYTPPKQPHYNQDKTSEFIIKLLQFLVPLAILGLAVGIRIYTKSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CYB5_CHICK" ac="P00174" length="138" description="Cytochrome b5 OS=Gallus gallus OX=9031 GN=CYB5A PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>271</score>
+      <smithWatermanScore>271</smithWatermanScore>
+      <zScore>383.5</zScore>
+      <bits>76.7</bits>
+      <expectation>8.4e-14</expectation>
+      <identity>32.3</identity>
+      <positives>66.2</positives>
+      <overlap>130</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="131">----------MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTG---IMLIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>              . : :.:...:....: :.:. .------..::.::.::.:::: ::. . :: :: : :::.::: .:::  .....:... :     .  :..   . :.::.. ---..  .   . :. :  :...</pattern>
+      <matchSeq start="15" end="138">MVGSSEAGGEAWRGRYYRLEEVQKHNNSQSTWIIVHH------RIYDITKFLDEHPGGEEVLREQAGGDATENFEDVGHSTDARALSETFIIGELHPDDRPKLQKPAETLITTVQSNSSSWSNWVIPAIAAIIVALMYRSYMSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CYB5_DROME" ac="Q9V4N3" length="134" description="Cytochrome b5 OS=Drosophila melanogaster OX=7227 GN=Cyt-b5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <smithWatermanScore>269</smithWatermanScore>
+      <zScore>380.9</zScore>
+      <bits>76.2</bits>
+      <expectation>1.2e-13</expectation>
+      <identity>34.1</identity>
+      <positives>68.9</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="129">MSAE--KEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSGTGIM-LIVLMALFAIAYGYYQTQMK</querySeq>
+      <pattern>::.:--: .   :...:.:... ::.: :------..:::: .:..:::: ::... ::.:: : :::.:::..::  .:.: .:..  .  : . .:..   ...:..  ... - .: ..:  .:  .:.</pattern>
+      <matchSeq start="1" end="126">MSSEETKTFTRAEVAKHNTNKDTWLLIHN------NIYDVTAFLNEHPGGEEVLIEQAGKDATENFEDVGHSNDARDMMKKYKIGELVESERTSVAQKSEPTWSTEQQTEESSVKSWLVPLVLCLVATLFYKFFFGGAKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="CYB5_PIG" ac="P00172" length="134" description="Cytochrome b5 OS=Sus scrofa OX=9823 GN=CYB5A PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>268</score>
+      <smithWatermanScore>268</smithWatermanScore>
+      <zScore>379.5</zScore>
+      <bits>75.9</bits>
+      <expectation>1.4e-13</expectation>
+      <identity>35.6</identity>
+      <positives>67.4</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="131">-----MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSG--TGIMLIVLMALF-AIAYGYYQTQMK</querySeq>
+      <pattern>       : : : :.::..:....: :::. .------::::.::.:..:::: ::. . :: :: : :::.::: .::   :....:... :  .     ...   . ..::.--:. .. .. :: -.. : .: ..</pattern>
+      <matchSeq start="8" end="133">MAEQSDKAVKYYTLEEIQKHNNSKSTWLILHH------KVYDLTKFLEEHPGGEEVLREQAGGDATENFEDVGHSTDARELSKTFIIGELHPDDRSKIAKPSETLITTVESNSSWWTNWVIPAISALVVSLMYHFYTSEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CYB5_MOUSE" ac="P56395" length="134" description="Cytochrome b5 OS=Mus musculus OX=10090 GN=Cyb5a PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>267</score>
+      <smithWatermanScore>267</smithWatermanScore>
+      <zScore>378.1</zScore>
+      <bits>75.7</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>36.9</identity>
+      <positives>66.2</positives>
+      <overlap>130</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="131">-----MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSG--TGIMLIVLMAL-FAIAYGYYQTQMK</querySeq>
+      <pattern>         : : :.::..:  ..: :.:. .------::::.::.:..:::: ::. . :: :: : :::.::: .::   :.:..:... :  .     .:.   . ..::.--:. .. .. ::- :. :  :...</pattern>
+      <matchSeq start="10" end="133">MAGQSDKDVKYYTLEEIQKHKDSKSTWVILHH------KVYDLTKFLEEHPGGEEVLREQAGGDATENFEDVGHSTDARELSKTYIIGELHPDDRSKIAKPSDTLITTVESNSSWWTNWVIPAISALAVALMYRLYMAED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CYB5_BOVIN" ac="P00171" length="134" description="Cytochrome b5 OS=Bos taurus OX=9913 GN=CYB5A PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>267</score>
+      <smithWatermanScore>267</smithWatermanScore>
+      <zScore>378.1</zScore>
+      <bits>75.7</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>37.3</identity>
+      <positives>64.9</positives>
+      <overlap>134</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="131">-----MSAEKEYILDEISQHTTTESCWLIIGNASNGGPKVYDVTKYLDDHPGGAEVMLDVAGQDADEFFEDIGHSKEARAELKNYLVGNFKIDAATLAKMKADAEAKAQQKNSG----TGIMLIVLMALF-AIAYGYYQTQMK</querySeq>
+      <pattern>       : : : :.::..:....: :::.  ------::::.::.:..:::: ::. . :: :: : :::.::: .::   :....:... :  .--:.   .:.     .:.----:. .. .. :::-:. :  : ..</pattern>
+      <matchSeq start="8" end="133">MAEESSKAVKYYTLEEIQKHNNSKSTWLILHY------KVYDLTKFLEEHPGGEEVLREQAGGDATENFEDVGHSTDARELSKTFIIGELHPDDRS--KITKPSESIITTIDSNPSWWTNWLIPAISALFVALIYHLYTSEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

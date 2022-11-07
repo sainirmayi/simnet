@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163339-0814-12312383-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163339-0814-12312383-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163339-0814-12312383-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0G0|PSBY_PHATC" type="PROTEIN" length="36"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:33:39+00:00" end="2022-11-07T16:33:42+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBY_PHATC" ac="A0T0G0" length="36" description="Photosystem II protein Y OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbY-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <smithWatermanScore>223</smithWatermanScore>
+      <initn>223</initn>
+      <init1>223</init1>
+      <opt>223</opt>
+      <zScore>446.0</zScore>
+      <bits>84.4</bits>
+      <expectation>2.8e-17</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="36">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBY_THAPS" ac="A0T0V3" length="36" description="Photosystem II protein Y OS=Thalassiosira pseudonana OX=35128 GN=psbY-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <initn>214</initn>
+      <init1>214</init1>
+      <opt>214</opt>
+      <zScore>428.4</zScore>
+      <bits>81.2</bits>
+      <expectation>2.7e-16</expectation>
+      <identity>94.4</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:::::.::::::::::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="36">MDTRLLVIAAPVLVAASWALFNIGRLAIQQIQRLSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBY_TRICV" ac="P49543" length="36" description="Photosystem II protein Y OS=Trieres chinensis OX=1514140 GN=psbY-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>200</score>
+      <smithWatermanScore>200</smithWatermanScore>
+      <initn>200</initn>
+      <init1>200</init1>
+      <opt>200</opt>
+      <zScore>401.1</zScore>
+      <bits>76.1</bits>
+      <expectation>8.9e-15</expectation>
+      <identity>91.2</identity>
+      <positives>100.0</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>::.::.:::::.::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="34">MDSRLLVIAAPLLVAASWALFNIGRLAIQQIQRLSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBY_EMIHU" ac="Q4G385" length="35" description="Photosystem II protein Y OS=Emiliania huxleyi OX=2903 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <smithWatermanScore>163</smithWatermanScore>
+      <initn>168</initn>
+      <init1>163</init1>
+      <opt>163</opt>
+      <zScore>329.1</zScore>
+      <bits>62.8</bits>
+      <expectation>9.1e-11</expectation>
+      <identity>67.6</identity>
+      <positives>91.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:::::.:.  :: .::.::::::::::.::..:.</pattern>
+      <matchSeq start="1" end="34">MDTRLLVVLLPVATAAAWALFNIGRLALQQLKRMS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBY_NEOYE" ac="Q1XDT1" length="36" description="Photosystem II protein Y OS=Neopyropia yezoensis OX=2788 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <initn>161</initn>
+      <init1>153</init1>
+      <opt>153</opt>
+      <zScore>309.4</zScore>
+      <bits>59.2</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>58.8</identity>
+      <positives>94.1</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>::.::.:.  :::.:::::..::::.:.::....</pattern>
+      <matchSeq start="1" end="34">MDSRLLVVLIPVLAAASWAVYNIGRVALQQFRKMTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBY_PORPU" ac="P51206" length="36" description="Photosystem II protein Y OS=Porphyra purpurea OX=2787 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>160</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>307.4</zScore>
+      <bits>58.8</bits>
+      <expectation>1.5e-09</expectation>
+      <identity>55.9</identity>
+      <positives>94.1</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>::.::...  :::.:::::..::::.:.::....</pattern>
+      <matchSeq start="1" end="34">MDSRLLIVLIPVLAAASWAVYNIGRVALQQFRKMTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBY_GRATL" ac="Q6B935" length="34" description="Photosystem II protein Y OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <smithWatermanScore>148</smithWatermanScore>
+      <initn>156</initn>
+      <init1>148</init1>
+      <opt>148</opt>
+      <zScore>300.1</zScore>
+      <bits>57.4</bits>
+      <expectation>3.7e-09</expectation>
+      <identity>58.8</identity>
+      <positives>88.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: ::...  :::.::::::.::::.:.::.. .</pattern>
+      <matchSeq start="1" end="34">MDIRLLIVLLPVLAAASWALYNIGRVALQQFRSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBY_SYNE7" ac="Q31LS7" length="40" description="Photosystem II protein Y OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <smithWatermanScore>144</smithWatermanScore>
+      <initn>144</initn>
+      <init1>144</init1>
+      <opt>144</opt>
+      <zScore>290.9</zScore>
+      <bits>55.9</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>60.6</identity>
+      <positives>90.9</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="33">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: ::::. ::.:.:..::.::::. :..::.:</pattern>
+      <matchSeq start="1" end="33">MDWRLIVVLAPILLAGGWAVFNIGKAALEQINRALKGDQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBY_SYNP6" ac="Q5N047" length="40" description="Photosystem II protein Y OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <smithWatermanScore>144</smithWatermanScore>
+      <initn>144</initn>
+      <init1>144</init1>
+      <opt>144</opt>
+      <zScore>290.9</zScore>
+      <bits>55.9</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>60.6</identity>
+      <positives>90.9</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="33">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: ::::. ::.:.:..::.::::. :..::.:</pattern>
+      <matchSeq start="1" end="33">MDWRLIVVLAPILLAGGWAVFNIGKAALEQINRALKGDQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBY_GLOC7" ac="B7KIS7" length="41" description="Photosystem II protein Y OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <initn>154</initn>
+      <init1>143</init1>
+      <opt>143</opt>
+      <zScore>288.7</zScore>
+      <bits>55.5</bits>
+      <expectation>1.6e-08</expectation>
+      <identity>55.9</identity>
+      <positives>88.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: :.... :::..:.::::::::  ::.:.:..</pattern>
+      <matchSeq start="1" end="34">MDWRVLIVLAPVIIAGSWALFNIGAAAIRQVQEFLNRDKLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBY_RIPO1" ac="B7JX92" length="39" description="Photosystem II protein Y OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <smithWatermanScore>142</smithWatermanScore>
+      <initn>146</initn>
+      <init1>142</init1>
+      <opt>142</opt>
+      <zScore>287.2</zScore>
+      <bits>55.2</bits>
+      <expectation>2e-08</expectation>
+      <identity>54.3</identity>
+      <positives>91.4</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: :..:...:.:.:::::.::::  ::.:.:...</pattern>
+      <matchSeq start="1" end="35">MDWRVLVVVGPLLIAASWAVFNIGAAAIRQLQEFRSRES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBY_SYNR3" ac="A5GU84" length="40" description="Photosystem II protein Y OS=Synechococcus sp. (strain RCC307) OX=316278 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <smithWatermanScore>142</smithWatermanScore>
+      <initn>142</initn>
+      <init1>138</init1>
+      <opt>142</opt>
+      <zScore>287.0</zScore>
+      <bits>55.2</bits>
+      <expectation>2e-08</expectation>
+      <identity>56.8</identity>
+      <positives>83.8</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQ-RLKR</querySeq>
+      <pattern>:: ::...:.:.:.:..:: ::::: :. :.:- :::</pattern>
+      <matchSeq start="1" end="37">MDLRLVLVASPILLAVGWAGFNIGRAAVGQLQLMLKRARG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBY_GUITH" ac="O78433" length="37" description="Photosystem II protein Y OS=Guillardia theta OX=55529 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <smithWatermanScore>141</smithWatermanScore>
+      <initn>141</initn>
+      <init1>141</init1>
+      <opt>141</opt>
+      <zScore>285.7</zScore>
+      <bits>54.8</bits>
+      <expectation>2.4e-08</expectation>
+      <identity>58.8</identity>
+      <positives>88.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: ::...  :::.::::: :::.:.:..:..::</pattern>
+      <matchSeq start="1" end="34">MDMRLLIVLLPVLAAASWAGFNIARIALRQLSRLGSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBY_PARMW" ac="P59908" length="43" description="Photosystem II protein Y OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>137</initn>
+      <init1>137</init1>
+      <opt>138</opt>
+      <zScore>278.5</zScore>
+      <bits>53.7</bits>
+      <expectation>6e-08</expectation>
+      <identity>56.8</identity>
+      <positives>86.5</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">---MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRL-KR</querySeq>
+      <pattern>   .:.::....::.:.:.::: ::::: :. :.: :-::</pattern>
+      <matchSeq start="4" end="40">MLGIDARLFLVVAPILAAVSWAAFNIGRAAVGQLQLLIKRSRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBY_SYNPW" ac="A5GLJ4" length="40" description="Photosystem II protein Y OS=Synechococcus sp. (strain WH7803) OX=32051 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <smithWatermanScore>137</smithWatermanScore>
+      <initn>137</initn>
+      <init1>136</init1>
+      <opt>137</opt>
+      <zScore>277.2</zScore>
+      <bits>53.4</bits>
+      <expectation>7.1e-08</expectation>
+      <identity>54.1</identity>
+      <positives>81.1</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRL-KR</querySeq>
+      <pattern>:: ::...:.:.:.: .:: ::::: :. :.: .-::</pattern>
+      <matchSeq start="1" end="37">MDLRLVLVASPILLALGWAGFNIGRAAVGQLQLMIKRSRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBY_NOSP7" ac="B2J1B5" length="41" description="Photosystem II protein Y OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <smithWatermanScore>134</smithWatermanScore>
+      <initn>134</initn>
+      <init1>134</init1>
+      <opt>134</opt>
+      <zScore>271.1</zScore>
+      <bits>52.3</bits>
+      <expectation>1.5e-07</expectation>
+      <identity>56.2</identity>
+      <positives>84.4</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">--MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>  .: :. .. :::..:::::.::::  :..:::</pattern>
+      <matchSeq start="3" end="34">MDIDYRIAIVLAPVVIAASWAVFNIGAAALRQIQGFLDREA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBY_TRIEI" ac="Q10WA3" length="39" description="Photosystem II protein Y OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <smithWatermanScore>132</smithWatermanScore>
+      <initn>137</initn>
+      <init1>132</init1>
+      <opt>132</opt>
+      <zScore>267.7</zScore>
+      <bits>51.6</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>51.5</identity>
+      <positives>87.9</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">--MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>   : ::...  :.:.::.::.:::: .:.::.:..</pattern>
+      <matchSeq start="4" end="36">MDFDFRLLIVLLPILAAAGWAVFNIGVVAMQQFQKFLNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBY_CYAM1" ac="Q85G61" length="35" description="Photosystem II protein Y OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <smithWatermanScore>129</smithWatermanScore>
+      <initn>139</initn>
+      <init1>129</init1>
+      <opt>129</opt>
+      <zScore>262.8</zScore>
+      <bits>50.5</bits>
+      <expectation>4.5e-07</expectation>
+      <identity>45.5</identity>
+      <positives>84.8</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="33">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:::::...  :...:::::..:::.. . :. .</pattern>
+      <matchSeq start="1" end="33">MDTRLLIVLLPIIAAASWAIYNIGKILLLQLTKRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBY_CYACA" ac="O19893" length="37" description="Photosystem II protein Y OS=Cyanidium caldarium OX=2771 GN=psbY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <smithWatermanScore>129</smithWatermanScore>
+      <initn>134</initn>
+      <init1>129</init1>
+      <opt>129</opt>
+      <zScore>262.3</zScore>
+      <bits>50.5</bits>
+      <expectation>4.8e-07</expectation>
+      <identity>47.1</identity>
+      <positives>79.4</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: :::..  :.:.:::::..:::.  . :. ..</pattern>
+      <matchSeq start="1" end="34">MDIRLIIVLMPILMAASWAIYNIGKALVGQFGKMLNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBY_SYNY3" ac="P73676" length="39" description="Photosystem II protein Y OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=psbY PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <smithWatermanScore>128</smithWatermanScore>
+      <initn>128</initn>
+      <init1>128</init1>
+      <opt>128</opt>
+      <zScore>259.9</zScore>
+      <bits>50.1</bits>
+      <expectation>6.5e-07</expectation>
+      <identity>56.2</identity>
+      <positives>87.5</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MDTRLIVIAAPVLVAASWALFNIGRLAIQQIQRLKR</querySeq>
+      <pattern>:: :.::...:.:.::.:: .:::  ::.:.:</pattern>
+      <matchSeq start="1" end="32">MDWRVIVVVSPLLIAATWAAINIGAAAIRQLQDVLGREA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

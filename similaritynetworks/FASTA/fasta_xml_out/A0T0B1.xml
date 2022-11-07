@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162910-0944-77070551-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162910-0944-77070551-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162910-0944-77070551-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0B1|PSBT_PHATC" type="PROTEIN" length="32"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:29:10+00:00" end="2022-11-07T16:29:13+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBT_PHATC" ac="A0T0B1" length="32" description="Photosystem II reaction center protein T OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <smithWatermanScore>196</smithWatermanScore>
+      <initn>196</initn>
+      <init1>196</init1>
+      <opt>196</opt>
+      <zScore>356.6</zScore>
+      <bits>67.6</bits>
+      <expectation>2.7e-12</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBT_TRICV" ac="P49516" length="32" description="Photosystem II reaction center protein T OS=Trieres chinensis OX=1514140 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <smithWatermanScore>187</smithWatermanScore>
+      <initn>187</initn>
+      <init1>187</init1>
+      <opt>187</opt>
+      <zScore>341.1</zScore>
+      <bits>64.7</bits>
+      <expectation>1.9e-11</expectation>
+      <identity>90.6</identity>
+      <positives>100.0</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::::::.::::::::::::::..:</pattern>
+      <matchSeq start="1" end="32">MEALVYTFLLIGTLMVIFFAVFFRETPRILRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBT_THAPS" ac="A0T0P6" length="32" description="Photosystem II reaction center protein T OS=Thalassiosira pseudonana OX=35128 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <smithWatermanScore>186</smithWatermanScore>
+      <initn>186</initn>
+      <init1>186</init1>
+      <opt>186</opt>
+      <zScore>339.4</zScore>
+      <bits>64.4</bits>
+      <expectation>2.4e-11</expectation>
+      <identity>90.6</identity>
+      <positives>100.0</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::::::.:::::::::.::::.::</pattern>
+      <matchSeq start="1" end="32">MEALVYTFLLIGTLMVIFFAVFFRDTPRILKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBT_EMIHU" ac="Q4G3C4" length="32" description="Photosystem II reaction center protein T OS=Emiliania huxleyi OX=2903 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <smithWatermanScore>183</smithWatermanScore>
+      <initn>183</initn>
+      <init1>183</init1>
+      <opt>183</opt>
+      <zScore>334.2</zScore>
+      <bits>63.4</bits>
+      <expectation>4.7e-11</expectation>
+      <identity>84.4</identity>
+      <positives>96.9</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::::::.:::::.:::. :::.::</pattern>
+      <matchSeq start="1" end="32">MEALVYTFLLIGTLVVIFFAIFFRDPPRIVKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBT_CYAM1" ac="Q85FZ4" length="32" description="Photosystem II reaction center protein T OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <smithWatermanScore>174</smithWatermanScore>
+      <initn>174</initn>
+      <init1>174</init1>
+      <opt>174</opt>
+      <zScore>318.7</zScore>
+      <bits>60.5</bits>
+      <expectation>3.5e-10</expectation>
+      <identity>81.2</identity>
+      <positives>93.8</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::.:::::::..::::.:::: ::: ::</pattern>
+      <matchSeq start="1" end="32">MEALVYVFLLIGTLMIIFFAIFFREPPRIAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBT_CYACA" ac="O19927" length="32" description="Photosystem II reaction center protein T OS=Cyanidium caldarium OX=2771 GN=psbT PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <smithWatermanScore>173</smithWatermanScore>
+      <initn>173</initn>
+      <init1>173</init1>
+      <opt>173</opt>
+      <zScore>317.0</zScore>
+      <bits>60.2</bits>
+      <expectation>4.3e-10</expectation>
+      <identity>81.2</identity>
+      <positives>93.8</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::.:::::::.:::::.:::. ::: ::</pattern>
+      <matchSeq start="1" end="32">MEALVYVFLLIGTLVVIFFAIFFRDPPRIAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBT_MESVI" ac="Q9MUV6" length="31" description="Photosystem II reaction center protein T OS=Mesostigma viride OX=41882 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <smithWatermanScore>172</smithWatermanScore>
+      <initn>172</initn>
+      <init1>172</init1>
+      <opt>172</opt>
+      <zScore>315.5</zScore>
+      <bits>59.9</bits>
+      <expectation>5.2e-10</expectation>
+      <identity>83.9</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .::::.:::: :::::</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFAIFFREPPRIIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBT_OLTVI" ac="Q20F15" length="31" description="Photosystem II reaction center protein T OS=Oltmannsiellopsis viridis OX=51324 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <smithWatermanScore>171</smithWatermanScore>
+      <initn>171</initn>
+      <init1>171</init1>
+      <opt>171</opt>
+      <zScore>313.7</zScore>
+      <bits>59.6</bits>
+      <expectation>6.5e-10</expectation>
+      <identity>80.6</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .::::.:::: :::.:</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFAIFFREPPRIVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBT_CHLVU" ac="P56327" length="31" description="Photosystem II reaction center protein T OS=Chlorella vulgaris OX=3077 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <smithWatermanScore>171</smithWatermanScore>
+      <initn>171</initn>
+      <init1>171</init1>
+      <opt>171</opt>
+      <zScore>313.7</zScore>
+      <bits>59.6</bits>
+      <expectation>6.5e-10</expectation>
+      <identity>80.6</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .::::.:::: :::.:</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFAIFFREPPRIVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBT_CHAVU" ac="Q1ACH4" length="35" description="Photosystem II reaction center protein T OS=Chara vulgaris OX=55564 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <smithWatermanScore>171</smithWatermanScore>
+      <initn>171</initn>
+      <init1>171</init1>
+      <opt>171</opt>
+      <zScore>312.9</zScore>
+      <bits>59.6</bits>
+      <expectation>7.3e-10</expectation>
+      <identity>81.2</identity>
+      <positives>90.6</positives>
+      <overlap>32</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="32">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .::::.:::: :::: :</pattern>
+      <matchSeq start="1" end="32">MEALVYTFLLVGTLGIIFFAIFFREPPRIIAKTKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBT_EUGGR" ac="P20176" length="31" description="Photosystem II reaction center protein T OS=Euglena gracilis OX=3039 GN=psbT PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <smithWatermanScore>169</smithWatermanScore>
+      <initn>169</initn>
+      <init1>169</init1>
+      <opt>169</opt>
+      <zScore>310.3</zScore>
+      <bits>59.0</bits>
+      <expectation>1e-09</expectation>
+      <identity>87.1</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>:::::::::::::: :::::.::::.::: :</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLIGTLGVIFFAIFFRESPRINK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBT_TETOB" ac="Q1KVV5" length="31" description="Photosystem II reaction center protein T OS=Tetradesmus obliquus OX=3088 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <smithWatermanScore>169</smithWatermanScore>
+      <initn>169</initn>
+      <init1>169</init1>
+      <opt>169</opt>
+      <zScore>310.3</zScore>
+      <bits>59.0</bits>
+      <expectation>1e-09</expectation>
+      <identity>80.6</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>:::::::::::::: .::::.:::: ::..:</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLIGTLGIIFFAIFFREPPRMVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBT_STIHE" ac="Q06SJ0" length="31" description="Photosystem II reaction center protein T OS=Stigeoclonium helveticum OX=55999 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <smithWatermanScore>169</smithWatermanScore>
+      <initn>179</initn>
+      <init1>169</init1>
+      <opt>169</opt>
+      <zScore>310.3</zScore>
+      <bits>59.0</bits>
+      <expectation>1e-09</expectation>
+      <identity>80.6</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>:::::::::::::: .::::.:::: :::..</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLIGTLGIIFFAIFFREPPRIVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBT_TUPAK" ac="Q3ZJ28" length="31" description="Photosystem II reaction center protein T OS=Tupiella akineta OX=160070 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>168</score>
+      <smithWatermanScore>168</smithWatermanScore>
+      <initn>168</initn>
+      <init1>168</init1>
+      <opt>168</opt>
+      <zScore>308.6</zScore>
+      <bits>58.6</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>80.6</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .:::..:::: :::::</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFSIFFREPPRIIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBT_GRATL" ac="Q6B8Y5" length="31" description="Photosystem II reaction center protein T OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <smithWatermanScore>164</smithWatermanScore>
+      <initn>164</initn>
+      <init1>164</init1>
+      <opt>164</opt>
+      <zScore>301.7</zScore>
+      <bits>57.4</bits>
+      <expectation>3.1e-09</expectation>
+      <identity>77.4</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::.:::.:::.:::::.:::. ::: :</pattern>
+      <matchSeq start="1" end="31">MEALVYVFLLVGTLMVIFFAIFFRDPPRIAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBT_PORPU" ac="P51323" length="31" description="Photosystem II reaction center protein T OS=Porphyra purpurea OX=2787 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <smithWatermanScore>163</smithWatermanScore>
+      <initn>163</initn>
+      <init1>163</init1>
+      <opt>163</opt>
+      <zScore>300.0</zScore>
+      <bits>57.0</bits>
+      <expectation>3.8e-09</expectation>
+      <identity>80.6</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::.::: :::.:::::.:::: ::: :</pattern>
+      <matchSeq start="1" end="31">MEALVYVFLLTGTLMVIFFAIFFREPPRIAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBT_OSTTA" ac="Q0P3P9" length="31" description="Photosystem II reaction center protein T OS=Ostreococcus tauri OX=70448 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <smithWatermanScore>163</smithWatermanScore>
+      <initn>163</initn>
+      <init1>163</init1>
+      <opt>163</opt>
+      <zScore>300.0</zScore>
+      <bits>57.0</bits>
+      <expectation>3.8e-09</expectation>
+      <identity>77.4</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>:::.::::::.::: .::::.:::: ::: :</pattern>
+      <matchSeq start="1" end="31">MEAIVYTFLLVGTLGIIFFAIFFREPPRIAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBT_NEOYE" ac="Q1XDG3" length="31" description="Photosystem II reaction center protein T OS=Neopyropia yezoensis OX=2788 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <smithWatermanScore>163</smithWatermanScore>
+      <initn>163</initn>
+      <init1>163</init1>
+      <opt>163</opt>
+      <zScore>300.0</zScore>
+      <bits>57.0</bits>
+      <expectation>3.8e-09</expectation>
+      <identity>80.6</identity>
+      <positives>90.3</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::.::: :::.:::::.:::: ::: :</pattern>
+      <matchSeq start="1" end="31">MEALVYVFLLTGTLMVIFFAIFFREPPRIAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBT_BIGNA" ac="Q06J23" length="31" description="Photosystem II reaction center protein T OS=Bigelowiella natans OX=227086 GN=psbT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <smithWatermanScore>162</smithWatermanScore>
+      <initn>162</initn>
+      <init1>162</init1>
+      <opt>162</opt>
+      <zScore>298.2</zScore>
+      <bits>56.7</bits>
+      <expectation>4.8e-09</expectation>
+      <identity>74.2</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .:::..:::: ::..:</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFSIFFREPPRLLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBT_CHLRE" ac="P37256" length="31" description="Photosystem II reaction center protein T OS=Chlamydomonas reinhardtii OX=3055 GN=psbT PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <smithWatermanScore>161</smithWatermanScore>
+      <initn>161</initn>
+      <init1>161</init1>
+      <opt>161</opt>
+      <zScore>296.5</zScore>
+      <bits>56.4</bits>
+      <expectation>5.9e-09</expectation>
+      <identity>74.2</identity>
+      <positives>93.5</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="31">MEALVYTFLLIGTLIVIFFAVFFRETPRIIKK</querySeq>
+      <pattern>::::::::::.::: .:::..:::. ::.::</pattern>
+      <matchSeq start="1" end="31">MEALVYTFLLVGTLGIIFFSIFFRDPPRMIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

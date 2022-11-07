@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163056-0373-11642261-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163056-0373-11642261-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163056-0373-11642261-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0D1|ATPE_PHATC" type="PROTEIN" length="133"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:30:56+00:00" end="2022-11-07T16:30:59+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="ATPE_PHATC" ac="A0T0D1" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>816</score>
+      <smithWatermanScore>816</smithWatermanScore>
+      <initn>816</initn>
+      <init1>816</init1>
+      <opt>816</opt>
+      <zScore>1046.6</zScore>
+      <bits>199.3</bits>
+      <expectation>9.8e-51</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ATPE_THAPS" ac="A0T0R7" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>728</score>
+      <smithWatermanScore>728</smithWatermanScore>
+      <initn>728</initn>
+      <init1>728</init1>
+      <opt>728</opt>
+      <zScore>935.2</zScore>
+      <bits>178.7</bits>
+      <expectation>1.6e-44</expectation>
+      <identity>87.2</identity>
+      <positives>96.2</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:::.::::::::::::::::::.:::::::::::::::.:::::.:::::::: :::::::::::::::::.::::::::::::. . :::::.:::::: :.:::.::: ::::::::::::::::..::::</pattern>
+      <matchSeq start="1" end="133">MVMDIRVLTPDRVICSTTADEVILPGLTGQVGVLDGHATLITALDTGLLRIKLADKWTPIILCGGLAEIDRNRVTVLVNDVEELVAVELSEATKELEKATSAIENAETSKARLDASVELKKATARLEGINYLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ATPE_TRICV" ac="P49648" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Trieres chinensis OX=1514140 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>713</score>
+      <smithWatermanScore>713</smithWatermanScore>
+      <initn>713</initn>
+      <init1>713</init1>
+      <opt>713</opt>
+      <zScore>916.2</zScore>
+      <bits>175.2</bits>
+      <expectation>1.8e-43</expectation>
+      <identity>85.0</identity>
+      <positives>95.5</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>::::.::::: :::::::::::.:::::: ::.:::::::::::.:::::::::.::::::::::::::::.::::::::::::. . :.::: ::::::::::::.::: :::::.:::::.::::..::::</pattern>
+      <matchSeq start="1" end="133">MVMNVRVLTPTRVICSTTADEVILPGLTGLVGILDGHAALITALDTGLLRIKLNEKWTPIILCGGLAEIDRNRVTVLVNDVEELVAVELNEATTELEKATLAVENAETSKARLDASIELKKAVARLEGMNYLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="ATPE_PYLLI" ac="P26534" length="132" description="ATP synthase epsilon chain, chloroplastic OS=Pylaiella littoralis OX=2885 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>428</score>
+      <smithWatermanScore>428</smithWatermanScore>
+      <initn>444</initn>
+      <init1>420</init1>
+      <opt>428</opt>
+      <zScore>555.5</zScore>
+      <bits>108.5</bits>
+      <expectation>2.2e-23</expectation>
+      <identity>53.8</identity>
+      <positives>78.8</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="132">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>: .::::..:: .: .:::. ::::.::::.:.: ::: :::.:: :.:::: :.::::::. ::.: :  :.: ::.. :::.     :.: . : :: . ...:::.:: .::: ::: :.:...: ...</pattern>
+      <matchSeq start="1" end="132">MSLNIRVIAPDGLIWDTTAEGVVLPSLTGQLGILTGHAPLITSLEIGILRIKTNSKWTPIIVLGGFAVIKDDEVLVLISGVEEVIKEDYSKAKSILAKAKIDLDSAKTTKEIIDASQELKIASAKVKAFKFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="ATPE_GRATL" ac="Q6B8S5" length="134" description="ATP synthase epsilon chain, chloroplastic OS=Gracilaria tenuistipitata var. liui OX=285951 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <smithWatermanScore>427</smithWatermanScore>
+      <initn>458</initn>
+      <init1>417</init1>
+      <opt>427</opt>
+      <zScore>554.2</zScore>
+      <bits>108.2</bits>
+      <expectation>2.6e-23</expectation>
+      <identity>44.4</identity>
+      <positives>84.2</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..::::..:::.. ...:.::.::. :::::.: ::  :.::.. :..:.... .: :::: ::.::.  :..:.::: .::.. : .. : ..:::::  ...:...:....:. .:..: ::..:.: :.</pattern>
+      <matchSeq start="1" end="133">MTLNIRVIAPDRTVWDANAEEVILPSSTGQVGILKGHIPLLTAIDIGVMRVRIEKEWQPIILLGGFAEVKDDKITILVNGAEEVSKIEIKAAKENLEKATKILNEARNDKDKIEATQNLRRARARIQAANVLAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ATPE_GALSU" ac="Q08808" length="138" description="ATP synthase epsilon chain, chloroplastic OS=Galdieria sulphuraria OX=130081 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>422</score>
+      <smithWatermanScore>422</smithWatermanScore>
+      <initn>463</initn>
+      <init1>416</init1>
+      <opt>422</opt>
+      <zScore>547.6</zScore>
+      <bits>107.1</bits>
+      <expectation>6.2e-23</expectation>
+      <identity>45.1</identity>
+      <positives>84.2</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>: .::::..:::.. .. :.::.::  :::.:.:.::: :.:::. :..:..... :: :.: ::.::.. :.. .::: .:: . :.:..:..:: ...  ...:::.::...:. .:.:: ::..:.: :.</pattern>
+      <matchSeq start="1" end="133">MGLNIRVIAPDRIVWNAKAEEVILPTSTGQLGILSGHAPLLTALDIGVMRVRITNTWTSIVLFGGFAEVENDEILILVNGAEEASVINLDKANKELIESSSLLNEAKTNKEKFEATQKLRKAKARVQAANTLTNQSIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ATPE_NEOYE" ac="Q1XDM7" length="134" description="ATP synthase epsilon chain, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>418</score>
+      <smithWatermanScore>418</smithWatermanScore>
+      <initn>448</initn>
+      <init1>408</init1>
+      <opt>418</opt>
+      <zScore>542.8</zScore>
+      <bits>106.1</bits>
+      <expectation>1.1e-22</expectation>
+      <identity>44.5</identity>
+      <positives>84.4</positives>
+      <overlap>128</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="128">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:::...:::.. .. :.:..::. :::.:.: ::: :.:::. :..:.... .: ::.: ::.:::. ...:.::: .:: ..: :::: ..:. ::  . .:...::...:. ...:: ::..:</pattern>
+      <matchSeq start="1" end="128">MTLNIRIIAPDRTVWDAEAQEIILPSSTGQLGILTGHAPLLTALDIGVMRVRVDKEWMPIVLLGGFAEIENNQLTILVNGAEEASQIDLSEAEKNLDTATQLLSDASSNKEKIEATQKIRKARARVQAATAATS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="ATPE_GUITH" ac="O78492" length="131" description="ATP synthase epsilon chain, chloroplastic OS=Guillardia theta OX=55529 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>416</score>
+      <smithWatermanScore>416</smithWatermanScore>
+      <initn>449</initn>
+      <init1>398</init1>
+      <opt>416</opt>
+      <zScore>540.4</zScore>
+      <bits>105.7</bits>
+      <expectation>1.5e-22</expectation>
+      <identity>46.2</identity>
+      <positives>83.1</positives>
+      <overlap>130</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="130">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>: ..: ...:::.. ...:.::.::. :::.:.: ::: :.:::. :..:....  ::::.: ::.:::. :..:.::: .:: ..:  ..: ..::. :.  ..: :.:::..:. .:.:: :::.::.</pattern>
+      <matchSeq start="1" end="130">MSIHISIIAPDRTVWDANAEEVILPSSTGQLGILKGHAPLLTALDIGVMRVRVDRDWTPIVLLGGFAEIENDELTILVNGAEEASQIDRDQAQRDLEEMTVKFNEATTNKERIEATQNLRKARARLQAVSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="ATPE_PORPU" ac="P51260" length="134" description="ATP synthase epsilon chain, chloroplastic OS=Porphyra purpurea OX=2787 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>416</score>
+      <smithWatermanScore>416</smithWatermanScore>
+      <initn>464</initn>
+      <init1>406</init1>
+      <opt>416</opt>
+      <zScore>540.2</zScore>
+      <bits>105.7</bits>
+      <expectation>1.6e-22</expectation>
+      <identity>43.6</identity>
+      <positives>83.5</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:::...:::.. .. :.:..::. :::.:.: ::: :.:::. :..:.... .: ::.: ::.:::. ...:.::: .:: ..: : :: ..:. ::  ...:..:::...:. ...:: ::..:..  :</pattern>
+      <matchSeq start="1" end="133">MTLNIRIIAPDRTVWDAEAQEIILPSSTGQLGILTGHAPLLTALDIGVMRVRVDKEWMPIVLLGGFAEIENNQLTILVNGAEEASQIDLVEAEKNLDTATQLLNDASSSKEKIEATQNIRKARARVQAATAASA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="ATPE_EMIHU" ac="Q4G3C9" length="130" description="ATP synthase epsilon chain, chloroplastic OS=Emiliania huxleyi OX=2903 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>403</score>
+      <smithWatermanScore>403</smithWatermanScore>
+      <initn>403</initn>
+      <init1>403</init1>
+      <opt>403</opt>
+      <zScore>524.0</zScore>
+      <bits>102.6</bits>
+      <expectation>1.3e-21</expectation>
+      <identity>45.7</identity>
+      <positives>79.8</positives>
+      <overlap>129</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="129">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>: .:.::.::::.. ...:.:..::. :::.:.:  :: :.:::. :..:.: . .:  ..:  :.::.. ...:.: : .:: ..:  : :   :::.:: :..: :.::...:..::.:: :::.::</pattern>
+      <matchSeq start="1" end="129">MSLNVRVITPDRIVWDANAEELILPSSTGQLGILTDHAPLLTALDIGVMRLKTGGNWISFVLMEGFAEVEDNKITILCNGAEEGASIDASTAQAALEKVTLLVDEAATKKEKIEATIELRKAKARLQAVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ATPE_ATRBE" ac="Q8S8W9" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Atropa belladonna OX=33113 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>385</score>
+      <smithWatermanScore>385</smithWatermanScore>
+      <initn>398</initn>
+      <init1>367</init1>
+      <opt>385</opt>
+      <zScore>501.1</zScore>
+      <bits>98.4</bits>
+      <expectation>2.4e-20</expectation>
+      <identity>42.1</identity>
+      <positives>78.2</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.:..:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :   :..:.  .....:.. :..: .:.::.: .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILSNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDIDPQEAQQTLEIAEANVKKAEGRRQKIEANLALRRARTRVEAINPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="ATPE_TOBAC" ac="P00834" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Nicotiana tabacum OX=4097 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>384</score>
+      <smithWatermanScore>384</smithWatermanScore>
+      <initn>400</initn>
+      <init1>366</init1>
+      <opt>384</opt>
+      <zScore>499.8</zScore>
+      <bits>98.2</bits>
+      <expectation>2.8e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :   :..:.  .....:.. :..: .:.::.: .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDIDPQEAQQTLELAEANVKKAEGRRQKIEANLALRRARTRVEAINPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ATPE_NICSY" ac="Q3C1J6" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Nicotiana sylvestris OX=4096 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>384</score>
+      <smithWatermanScore>384</smithWatermanScore>
+      <initn>400</initn>
+      <init1>366</init1>
+      <opt>384</opt>
+      <zScore>499.8</zScore>
+      <bits>98.2</bits>
+      <expectation>2.8e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :   :..:.  .....:.. :..: .:.::.: .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDIDPQEAQQTLELAEANVKKAEGRRQKIEANLALRRARTRVEAINPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ATPE_NICTO" ac="Q33C28" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Nicotiana tomentosiformis OX=4098 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>383</score>
+      <smithWatermanScore>383</smithWatermanScore>
+      <initn>401</initn>
+      <init1>365</init1>
+      <opt>383</opt>
+      <zScore>498.5</zScore>
+      <bits>97.9</bits>
+      <expectation>3.3e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :   :..:.  .....:.. :..: .:.::.: .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDIDPQEAQQTLELAEANVKKAEGRRQKIEANLALQRARTRVEAINPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ATPE_JASNU" ac="Q06RC3" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Jasminum nudiflorum OX=126431 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <smithWatermanScore>380</smithWatermanScore>
+      <initn>392</initn>
+      <init1>368</init1>
+      <opt>380</opt>
+      <zScore>494.7</zScore>
+      <bits>97.2</bits>
+      <expectation>5.4e-20</expectation>
+      <identity>43.6</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.: .. . :..:   .::.::: .:: . ::.. :.:::..::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :   ...:. ...:..:.. :..: .:::::: .:</pattern>
+      <matchSeq start="1" end="133">MTFNLCVLTPNRIIWDSEVKEIILSTNSGQIGVLPNHAPIATAVDIGILRIRFNDQWLTVALMGGFARIGNNEITVLVNDAERGSDIDPQEAQQTLEIAEANLRKAEGKRQRIEANLALRRARTRLEAVNVIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ATPE_SOLLC" ac="Q2MI94" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Solanum lycopersicum OX=4081 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <smithWatermanScore>379</smithWatermanScore>
+      <initn>390</initn>
+      <init1>361</init1>
+      <opt>379</opt>
+      <zScore>493.5</zScore>
+      <bits>97.0</bits>
+      <expectation>6.4e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::. .:: : :: :   :..:.  .....:.. :..: .:.:: : .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDINPQEAQQTLEIAEANVKKAEGRRQKIEANLALRRARTRVEASNPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ATPE_SOLBU" ac="Q2MII1" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Solanum bulbocastanum OX=147425 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <smithWatermanScore>379</smithWatermanScore>
+      <initn>390</initn>
+      <init1>361</init1>
+      <opt>379</opt>
+      <zScore>493.5</zScore>
+      <bits>97.0</bits>
+      <expectation>6.4e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::. .:: : :: :   :..:.  .....:.. :..: .:.:: : .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDINPQEAQQTLEIAEANVKKAEGRRQKIEANLALRRARTRVEASNPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ATPE_SOLTU" ac="Q27S44" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Solanum tuberosum OX=4113 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <smithWatermanScore>379</smithWatermanScore>
+      <initn>390</initn>
+      <init1>361</init1>
+      <opt>379</opt>
+      <zScore>493.5</zScore>
+      <bits>97.0</bits>
+      <expectation>6.4e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. ..:.::   .::.:.: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::. .:: : :: :   :..:.  .....:.. :..: .:.:: : .:</pattern>
+      <matchSeq start="1" end="133">MTLNLSVLTPNRIVWDSEVEEIVLSTNSGQIGILPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKGSDINPQEAQQTLEIAEANVKKAEGRRQKIEANLALRRARTRVEASNPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ATPE_HELAN" ac="Q1KXV3" length="133" description="ATP synthase epsilon chain, chloroplastic OS=Helianthus annuus OX=4232 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>378</score>
+      <smithWatermanScore>378</smithWatermanScore>
+      <initn>400</initn>
+      <init1>363</init1>
+      <opt>378</opt>
+      <zScore>492.2</zScore>
+      <bits>96.8</bits>
+      <expectation>7.5e-20</expectation>
+      <identity>42.1</identity>
+      <positives>77.4</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:. ::::.:.. .. . :..:   .::.::: .:: . ::.. :.:::.:::.:  . : ::.:.:  ...::::::.:. .::  .:: : :: :  :...:. ... ..:.. :..: .:.::.: .:</pattern>
+      <matchSeq start="1" end="133">MTLNLCVLTPNRIVWDSEVKEIILSTNSGQIGVLPNHAPIATAVDIGILRIRLNDQWLTMALMGGFARIGNNEITVLVNDAEKSSDIDPQEAQQTLEIAEAALRKAEGKRQTIEANLALRRARTRVEAINAIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ATPE_PICAB" ac="O47036" length="137" description="ATP synthase epsilon chain, chloroplastic OS=Picea abies OX=3329 GN=atpE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <smithWatermanScore>377</smithWatermanScore>
+      <initn>399</initn>
+      <init1>358</init1>
+      <opt>377</opt>
+      <zScore>490.7</zScore>
+      <bits>96.5</bits>
+      <expectation>9.1e-20</expectation>
+      <identity>42.3</identity>
+      <positives>79.2</positives>
+      <overlap>130</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="130">MVMNIRVLTPDRVICSTTADEVVLPGLTGQVGVLDGHAALITALETGLLRIKLNDKWTPIILCGGLAEIDRDRVTVLVNDVEELTDIGLSEATQELEKATLAVENAKTSKERLDASVELKKATARLEAVNYLS</querySeq>
+      <pattern>:..:.:::.:.::: .. . :..:   .::.::: .::.:..:.. :...:.:: .:. . : ::.:.:: ::.:::::..:. .:: :.:: . .. :   .  :. ... ..:.: ::.: .::::..</pattern>
+      <matchSeq start="1" end="130">MTLNLRVLSPNRVIWDSEVKEIILSTNSGQIGVLPNHASLVAAVDIGVMKIRLNGQWSTMALMGGFAKIDNDRITVLVNNAERDVDIDLKEAQETFKVAKADLARAEGKRQAIEADVALKRARTRLEAISASPPVSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

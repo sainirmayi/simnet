@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164026-0430-6183625-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164026-0430-6183625-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164026-0430-6183625-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0L8|YCF12_PHATC" type="PROTEIN" length="34"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:40:26+00:00" end="2022-11-07T16:40:28+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="YCF12_PHATC" ac="A0T0L8" length="34" description="Photosystem II reaction center protein Ycf12 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>211</score>
+      <smithWatermanScore>211</smithWatermanScore>
+      <initn>211</initn>
+      <init1>211</init1>
+      <opt>211</opt>
+      <zScore>398.8</zScore>
+      <bits>75.5</bits>
+      <expectation>1.2e-14</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="YCF12_TRICV" ac="P49529" length="34" description="Photosystem II reaction center protein Ycf12 OS=Trieres chinensis OX=1514140 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>203</score>
+      <smithWatermanScore>203</smithWatermanScore>
+      <initn>203</initn>
+      <init1>203</init1>
+      <opt>203</opt>
+      <zScore>384.1</zScore>
+      <bits>72.8</bits>
+      <expectation>7.9e-14</expectation>
+      <identity>94.1</identity>
+      <positives>100.0</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>::::::.:::::::.:::::::::::::::::::</pattern>
+      <matchSeq start="1" end="34">MINWQVIGQLIATGAIMLAGPAVIVLLALKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="YCF12_THAPS" ac="A0T0T2" length="34" description="Photosystem II reaction center protein Ycf12 OS=Thalassiosira pseudonana OX=35128 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <smithWatermanScore>188</smithWatermanScore>
+      <initn>188</initn>
+      <init1>188</init1>
+      <opt>188</opt>
+      <zScore>356.5</zScore>
+      <bits>67.7</bits>
+      <expectation>2.7e-12</expectation>
+      <identity>76.5</identity>
+      <positives>97.1</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::::.:::..::.::: :::.:.:::::::::</pattern>
+      <matchSeq start="1" end="34">MVNWQVIGQLVSTGAIMLLGPAIIILLALKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="YCF12_SKECO" ac="O96797" length="34" description="Photosystem II reaction center protein Ycf12 OS=Skeletonema costatum OX=2843 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <smithWatermanScore>178</smithWatermanScore>
+      <initn>178</initn>
+      <init1>178</init1>
+      <opt>178</opt>
+      <zScore>338.1</zScore>
+      <bits>64.3</bits>
+      <expectation>2.9e-11</expectation>
+      <identity>76.5</identity>
+      <positives>91.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::::.:::..:: : : :::::.:::::::::</pattern>
+      <matchSeq start="1" end="34">MVNWQVIGQLVSTGLIGLLGPAVIILLALKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YCF12_PORPU" ac="P51385" length="34" description="Photosystem II reaction center protein Ycf12 OS=Porphyra purpurea OX=2787 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <smithWatermanScore>165</smithWatermanScore>
+      <initn>165</initn>
+      <init1>165</init1>
+      <opt>165</opt>
+      <zScore>314.1</zScore>
+      <bits>59.9</bits>
+      <expectation>6.2e-10</expectation>
+      <identity>67.6</identity>
+      <positives>97.1</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>::::::..::.. :.:.:.:::::.::.::.:::</pattern>
+      <matchSeq start="1" end="34">MINWQVIAQLVSLGVIVLVGPAVIILLSLKRGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="YCF12_NEOYE" ac="Q1XDA2" length="34" description="Photosystem II reaction center protein Ycf12 OS=Neopyropia yezoensis OX=2788 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <smithWatermanScore>165</smithWatermanScore>
+      <initn>165</initn>
+      <init1>165</init1>
+      <opt>165</opt>
+      <zScore>314.1</zScore>
+      <bits>59.9</bits>
+      <expectation>6.2e-10</expectation>
+      <identity>67.6</identity>
+      <positives>97.1</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>::::::..::.. :.:.:.:::::.::.::.:::</pattern>
+      <matchSeq start="1" end="34">MINWQVIAQLVSLGVIVLVGPAVIILLSLKRGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="YCF12_HETA4" ac="B2XTQ6" length="34" description="Photosystem II reaction center protein Ycf12 OS=Heterosigma akashiwo (strain CCMP452 / OLISTH) OX=536046 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <smithWatermanScore>159</smithWatermanScore>
+      <initn>159</initn>
+      <init1>159</init1>
+      <opt>159</opt>
+      <zScore>303.1</zScore>
+      <bits>57.8</bits>
+      <expectation>2.6e-09</expectation>
+      <identity>67.6</identity>
+      <positives>91.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::::.:::...  :.::::::: .::.:::::</pattern>
+      <matchSeq start="1" end="34">MVNWQVIGQLLSATLIVLAGPAVIFVLAFKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="YCF12_HETA2" ac="B2XTA0" length="34" description="Photosystem II reaction center protein Ycf12 OS=Heterosigma akashiwo (strain NIES-293 / 8280G21-1) OX=536047 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <smithWatermanScore>159</smithWatermanScore>
+      <initn>159</initn>
+      <init1>159</init1>
+      <opt>159</opt>
+      <zScore>303.1</zScore>
+      <bits>57.8</bits>
+      <expectation>2.6e-09</expectation>
+      <identity>67.6</identity>
+      <positives>91.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::::.:::...  :.::::::: .::.:::::</pattern>
+      <matchSeq start="1" end="34">MVNWQVIGQLLSATLIVLAGPAVIFVLAFKKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="YCF12_GRATL" ac="Q6B8L0" length="34" description="Photosystem II reaction center protein Ycf12 OS=Gracilaria tenuistipitata var. liui OX=285951 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>151</initn>
+      <init1>151</init1>
+      <opt>151</opt>
+      <zScore>288.4</zScore>
+      <bits>55.1</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>64.7</identity>
+      <positives>91.2</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>::::::.::: . . :.:.::::::.:.:.::.:</pattern>
+      <matchSeq start="1" end="34">MINWQVIGQLTSLAMIVLVGPAVIVVLSLRKGDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="YCF12_EMIHU" ac="Q4G3D2" length="34" description="Photosystem II reaction center protein Ycf12 OS=Emiliania huxleyi OX=2903 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <smithWatermanScore>126</smithWatermanScore>
+      <initn>126</initn>
+      <init1>126</init1>
+      <opt>126</opt>
+      <zScore>242.4</zScore>
+      <bits>46.6</bits>
+      <expectation>6.2e-06</expectation>
+      <identity>50.0</identity>
+      <positives>85.3</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::....::.. . . :.::::: :: .:.:::</pattern>
+      <matchSeq start="1" end="34">MFNWNIVAQLLSLALVTLSGPAVIFLLYFKRGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="YCF12_NOSP7" ac="B2IYZ8" length="47" description="Photosystem II reaction center protein Ycf12 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <smithWatermanScore>125</smithWatermanScore>
+      <initn>125</initn>
+      <init1>125</init1>
+      <opt>125</opt>
+      <zScore>238.1</zScore>
+      <bits>46.3</bits>
+      <expectation>1.1e-05</expectation>
+      <identity>54.5</identity>
+      <positives>90.9</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">-------------MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>              :::.:. ::.... :..:::.:: :::...:::</pattern>
+      <matchSeq start="15" end="47">MFDAVSDLVNAFTSINWEVIFQLLSVALIVIAGPVVIFLLAFRNGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="YCF12_NOSS1" ac="Q8YM13" length="40" description="Photosystem II reaction center protein Ycf12 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <smithWatermanScore>124</smithWatermanScore>
+      <initn>124</initn>
+      <init1>124</init1>
+      <opt>124</opt>
+      <zScore>237.5</zScore>
+      <bits>45.9</bits>
+      <expectation>1.2e-05</expectation>
+      <identity>54.5</identity>
+      <positives>87.9</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">------MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>       :::.:. :: ... :..:::::: .::...:::</pattern>
+      <matchSeq start="8" end="40">MFDALANINWEVIFQLTSVALIIIAGPAVIFVLAFRNGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="YCF12_RHDSA" ac="A6MVU9" length="34" description="Photosystem II reaction center protein Ycf12 OS=Rhodomonas salina OX=52970 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <smithWatermanScore>117</smithWatermanScore>
+      <initn>117</initn>
+      <init1>117</init1>
+      <opt>117</opt>
+      <zScore>225.8</zScore>
+      <bits>43.5</bits>
+      <expectation>5.2e-05</expectation>
+      <identity>52.9</identity>
+      <positives>82.4</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>: : :...:::.   :. .:::.:::.::..:::</pattern>
+      <matchSeq start="1" end="34">MPNLQTVAQLISLFLILTSGPAIIVLIALRRGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="YCF12_GUITH" ac="O78460" length="34" description="Photosystem II reaction center protein Ycf12 OS=Guillardia theta OX=55529 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <smithWatermanScore>117</smithWatermanScore>
+      <initn>117</initn>
+      <init1>117</init1>
+      <opt>117</opt>
+      <zScore>225.8</zScore>
+      <bits>43.5</bits>
+      <expectation>5.2e-05</expectation>
+      <identity>50.0</identity>
+      <positives>85.3</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>: : :...::.:  .:. .:::.:.:.::..:::</pattern>
+      <matchSeq start="1" end="34">MPNLQTVAQLLALFVIITSGPAIIILIALRRGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="YCF12_STAPU" ac="Q32RW9" length="33" description="Photosystem II reaction center protein Ycf12 OS=Staurastrum punctulatum OX=102822 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <initn>111</initn>
+      <init1>111</init1>
+      <opt>111</opt>
+      <zScore>215.0</zScore>
+      <bits>41.5</bits>
+      <expectation>0.00021</expectation>
+      <identity>54.5</identity>
+      <positives>84.8</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern> .: .:..:: : . :.:.:: ::.:::..::::</pattern>
+      <matchSeq start="1" end="33">-MNLEVVAQLTALAFIVLSGPLVIALLAFRKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="YCF12_CHAGL" ac="Q8M9Z7" length="33" description="Photosystem II reaction center protein Ycf12 OS=Chaetosphaeridium globosum OX=96477 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <smithWatermanScore>110</smithWatermanScore>
+      <initn>110</initn>
+      <init1>110</init1>
+      <opt>110</opt>
+      <zScore>213.1</zScore>
+      <bits>41.1</bits>
+      <expectation>0.00026</expectation>
+      <identity>51.5</identity>
+      <positives>84.8</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern> .: ..:.:: : . :...:: ::.:::..::::</pattern>
+      <matchSeq start="1" end="33">-MNLEILAQLTALAFIVVSGPLVIALLAFRKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="YCF12_PSINU" ac="Q8WI31" length="33" description="Photosystem II reaction center protein Ycf12 OS=Psilotum nudum OX=3240 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <smithWatermanScore>110</smithWatermanScore>
+      <initn>110</initn>
+      <init1>110</init1>
+      <opt>110</opt>
+      <zScore>213.1</zScore>
+      <bits>41.1</bits>
+      <expectation>0.00026</expectation>
+      <identity>45.5</identity>
+      <positives>84.8</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern> ..:....::    .:...:: ::.:::..::::</pattern>
+      <matchSeq start="1" end="33">-MTWELIAQLTFLTSIIVSGPLVIALLAIRKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="YCF12_STIHE" ac="Q06SC8" length="34" description="Photosystem II reaction center protein Ycf12 OS=Stigeoclonium helveticum OX=55999 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <smithWatermanScore>108</smithWatermanScore>
+      <initn>108</initn>
+      <init1>108</init1>
+      <opt>108</opt>
+      <zScore>209.2</zScore>
+      <bits>40.5</bits>
+      <expectation>0.00043</expectation>
+      <identity>52.9</identity>
+      <positives>76.5</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>: : .:. ::.:   .. :::::.::.: .::::</pattern>
+      <matchSeq start="1" end="34">MNNLEVVFQLMALFFVLAAGPAVVVLVASQKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="YCF12_PHYPA" ac="P61051" length="33" description="Photosystem II reaction center protein Ycf12 OS=Physcomitrium patens OX=3218 GN=ycf12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>107</initn>
+      <init1>107</init1>
+      <opt>107</opt>
+      <zScore>207.6</zScore>
+      <bits>40.1</bits>
+      <expectation>0.00053</expectation>
+      <identity>54.5</identity>
+      <positives>81.8</positives>
+      <overlap>33</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern> .: .:..:::: . :. .:: ::.::: .::::</pattern>
+      <matchSeq start="1" end="33">-MNLEVIAQLIALALIVGSGPLVIALLAARKGNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="YCF12_CYACA" ac="Q9TLX0" length="35" description="Photosystem II reaction center protein Ycf12 OS=Cyanidium caldarium OX=2771 GN=ycf12 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>107</initn>
+      <init1>107</init1>
+      <opt>107</opt>
+      <zScore>207.2</zScore>
+      <bits>40.1</bits>
+      <expectation>0.00056</expectation>
+      <identity>44.1</identity>
+      <positives>76.5</positives>
+      <overlap>34</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="34">MINWQVLGQLIATGTIMLAGPAVIVLLALKKGNL</querySeq>
+      <pattern>:.::::. ::.  . :. .::..:: :. .. ::</pattern>
+      <matchSeq start="1" end="34">MLNWQVIVQLVFLALIITTGPVIIVYLSTRERNLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

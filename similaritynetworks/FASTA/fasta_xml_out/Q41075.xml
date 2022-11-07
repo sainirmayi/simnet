@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164214-0887-8052597-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164214-0887-8052597-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164214-0887-8052597-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q41075|ATPG_PHATR" type="PROTEIN" length="370"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:42:14+00:00" end="2022-11-07T16:42:17+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="ATPG_PHATR" ac="Q41075" length="370" description="ATP synthase gamma chain, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=ATPC PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2291</score>
+      <smithWatermanScore>2291</smithWatermanScore>
+      <initn>2291</initn>
+      <init1>2291</init1>
+      <opt>2291</opt>
+      <zScore>2779.8</zScore>
+      <bits>523.0</bits>
+      <expectation>2.8e-147</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>370</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="370">MRSFCIAALLAVASAFTTQPTSFTVKTANVGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="370">MRSFCIAALLAVASAFTTQPTSFTVKTANVGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ATPG_TRICV" ac="Q06908" length="370" description="ATP synthase gamma chain, chloroplastic OS=Trieres chinensis OX=1514140 GN=ATPC PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1880</score>
+      <smithWatermanScore>1880</smithWatermanScore>
+      <initn>1914</initn>
+      <init1>1644</init1>
+      <opt>1880</opt>
+      <zScore>2281.5</zScore>
+      <bits>430.8</bits>
+      <expectation>1.6e-119</expectation>
+      <identity>79.8</identity>
+      <positives>93.3</positives>
+      <overlap>371</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="370">MRSFCIAALLAVASAFTTQPTSFTVKTANVGERASGVFPEQSS-AHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>:. ::.:.::: :.:: .::..::. .  ::  .:.:: :.::-:::.:.::::::::::::::::::::::.:::::::::-:: ::::::::::::::::::::::::::: :.:::..::::::.:::.::::.:::::::::::::::::::::::::::: .::  :..:.:::::.::.:::.:::: .:::::: .::::::.::. .:.:::::::::::::::.:::::::: :::.:::::.:: .::::::::: .:.: ::::::.:: ::.::::::::::::::.:.:::::::::::::::::::::::::::::::::::::.:::.:. :::::::::::::.:::.::::::.</pattern>
+      <matchSeq start="1" end="370">MKFFCVAGLLASAAAFQAQPAAFTTYSPAVGGATSNVFSESSSPAHRNRRATIVMDGKANAIRDRITSVKNTKKITMAMKLV-AAAKVRRAQDAVLATRPFSETLQSVFGGLIARMGGEALDLPLLTQREVSKVTLVVITGDRGLCGGYNSFMIKKAEARFNELKDQGVACDMVLIGKKGITYFQRRGYPIRKTFETGQNPDSKQALAISEELLNTYLSGESDAVELLYTKFISLIASSPSARTLIPFSASEITQQGDEVFQLTSSGGDFEVERTELEVAEPQDFPNDMIFEQDPIQIINSILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGDLAKRLSTEYNRARQAAVTQEILEIVSGASALE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ATPG_ACAM1" ac="B0BZL3" length="317" description="ATP synthase gamma chain OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1135</score>
+      <smithWatermanScore>1135</smithWatermanScore>
+      <initn>1083</initn>
+      <init1>487</init1>
+      <opt>1135</opt>
+      <zScore>1379.8</zScore>
+      <bits>263.7</bits>
+      <expectation>2.7e-69</expectation>
+      <identity>58.5</identity>
+      <positives>82.1</positives>
+      <overlap>313</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="370">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYE-TGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASD-ITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              .:::::..::::.::: ::.::-:: ::::::. : :::::.. : .:. ::  ::  : :.:::: :: ..:: :::.::::::::.::: .::.:: : :::: .:..  ..:::.:.: ::.::  ::.  : -  : :::..:  ::.:. : .:: : : :::.::.:.::. : : ..::.:.. . -..:. ::::.::...::: ::: ... ..:::.:.::::::.::::..:.::::::.:.::.::::.:::::::: .:..:::::. :   :.: ::.:::::.::::::...:: ::.</pattern>
+      <matchSeq start="6" end="317">-------------------------MPNLKSIRDRISTVKNTKKITEAMRLV-AAAKVRRAQEQVTATRPFADRLAQVLYGLQARLKFEEVELPLLQERALRKVCLLVVTGDRGLCGAYNSSVIKRAEERSNELKAKGIDYTFVLVGRKAIQYFQRRDQPIEATYGGLEQIPTAQEASEIADELLSLYLSEEVDHVELIYTRFISLVNSRPVVQTLLPLDPDALVVAEEDEVFRLTTRGGQFQVERERMERGTPQEMPSDMIFEQNPIQILDALLPLYLNNQLLRALQESAASELAARMTAMNNASDNASELIGTLTLSYNKARQAAITQELLEVVGGAEALN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="ATPG_GLOC7" ac="B7KKR3" length="314" description="ATP synthase gamma chain OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1128</score>
+      <smithWatermanScore>1128</smithWatermanScore>
+      <initn>766</initn>
+      <init1>766</init1>
+      <opt>1128</opt>
+      <zScore>1371.4</zScore>
+      <bits>262.2</bits>
+      <expectation>8e-69</expectation>
+      <identity>57.1</identity>
+      <positives>85.5</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="61" end="369">GERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKY-ETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              ::::: :::::.::: ::.::-:: ::::::. :.:::::...: .:. .: .::    :.:::::.::.: :..::.:::::::::::. .::..: :..:::..:..  :.:.:.:.. :::::. ::. ::-: .: :.:..: .:..:. : :::   : :::.::.:.:::.:.: ..::.:.... . .  ::.:.:....:.: ::: ...-:. . ::.::::::::.::....::::::.:.::.::::.:::::::: .:.::::::: : : :.: ::.:::::.:::.::...::.::</pattern>
+      <matchSeq start="7" end="314">------------------------MPNLKFIRDRIQSVKNTKKITEAMRLV-AAAKVRRAQEQVIATRPFADALAQVLYNLQNRLQFGEVSLPLLTQREIKTVAVLVVTGDRGLCGGYNANVIKRTEQRIKELKSQGINYKLVLIGRKAVQYFERRNAPIQTKYTELSQIPSASEASTISDELLSLFLSETVDRVELIYTRFLSLISSKPVVQTLLPLTTKGLDTPDDEIFRLVTKGGKFQVEREKVS-ASVSSFPQDMIFEQDPVQILDSLLPLYLNNQLLRALQESAASELAARMTAMSSASDNAGELIKTLSLSYNKARQAAITQEILEVVAGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="ATPG_SYNE7" ac="Q31RF0" length="316" description="ATP synthase gamma chain OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1118</score>
+      <smithWatermanScore>1118</smithWatermanScore>
+      <initn>1008</initn>
+      <init1>730</init1>
+      <opt>1118</opt>
+      <zScore>1359.2</zScore>
+      <bits>259.9</bits>
+      <expectation>3.8e-68</expectation>
+      <identity>58.6</identity>
+      <positives>83.1</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="370">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDV-AAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: ::.:::::: ::.::-:: ::::::. ::.::::.. : .:..:: :::  :.:::::: .:::: :.:::..::::::::::: .:..:: :  ::. .:..  ...::.:.  ::.::  ::.  :-.:--: :::..:  ::.:. : ::::  : :::.::::.::.::.: ..::.:.. . .... ::.:.::...:.: ::: .:  -.::--.: :::::::: ::..:.:::::..:.::.:::..:::::::: .:.::::::..:. ::.: ::.:::::.::::::...:: ::.</pattern>
+      <matchSeq start="6" end="315">-------------------------MANLKAIRDRIKSVRNTRKITEAMRLV-AAAKVRRAQEQVLSTRPFADRLAQVLAGLQQRLQFENVDLPLLQRREVKTVALLVVSGDRGLCGGYNSNVIRRAEQRARELSAQGLDYKFVIVGRKAGQYFQRREQPIEATY-SGLEQIPTAQEANDIADELLSLFLSGTVDRVELVYTKFLSLVASNPVVQTLLPLDPQGLASSDDEIFRLTTRGGSFTVEREKLTSEVAP--LPRDMIFEQDPAQILSALLPLYLSNQLLRALQEAAASELAARMTAMNSASDNANALVGQLTLVYNKARQAAITQELLEVVAGAEALNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ATPG_SYNP6" ac="P08450" length="316" description="ATP synthase gamma chain OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=atpG PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1114</score>
+      <smithWatermanScore>1114</smithWatermanScore>
+      <initn>1004</initn>
+      <init1>730</init1>
+      <opt>1114</opt>
+      <zScore>1354.4</zScore>
+      <bits>259.0</bits>
+      <expectation>7.1e-68</expectation>
+      <identity>58.3</identity>
+      <positives>83.1</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="370">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDV-AAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: ::.:::::: ::.::-:: ::::::. ::.::::.. : .:..:: :::  :.:::::: .:::: :.:::..::::::::::: .:..:: :  ::. .:..  ...::.:.  ::.::  ::.  :-.:--: :::..:  ::... : ::::  : :::.::::.::.::.: ..::.:.. . .... ::.:.::...:.: ::: .:  -.::--.: :::::::: ::..:.:::::..:.::.:::..:::::::: .:.::::::..:. ::.: ::.:::::.::::::...:: ::.</pattern>
+      <matchSeq start="6" end="315">-------------------------MANLKAIRDRIKSVRNTRKITEAMRLV-AAAKVRRAQEQVLSTRPFADRLAQVLAGLQQRLQFENVDLPLLQRREVKTVALLVVSGDRGLCGGYNSNVIRRAEQRARELSAQGLDYKFVIVGRKAGQYFQRREQPIEATY-SGLEQIPTAQEANDIADQLLSLFLSGTVDRVELVYTKFLSLVASNPVVQTLLPLDPQGLASSDDEIFRLTTRGGSFTVEREKLTSEVAP--LPRDMIFEQDPAQILSALLPLYLSNQLLRALQEAAASELAARMTAMNSASDNANALVGQLTLVYNKARQAAITQELLEVVAGAEALNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ATPG_TRIV2" ac="Q3M9W1" length="315" description="ATP synthase gamma chain OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1112</score>
+      <smithWatermanScore>1112</smithWatermanScore>
+      <initn>731</initn>
+      <init1>731</init1>
+      <opt>1112</opt>
+      <zScore>1352.0</zScore>
+      <bits>258.6</bits>
+      <expectation>9.6e-68</expectation>
+      <identity>58.3</identity>
+      <positives>82.4</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              .::::: :::::.::: ::.::-:: .:::::. :.:::::.. : .:. ::  ::  :.:::::: .::::.: ::::.::::::::::. .:..:: : .::::.:..  ...::.:.  ::.::  ::  .:-::--: :::..:  ::.:. : ::: . : .::.::.::::..: : :.::.:.... . :  ::.:.::...::: :::  . . :-. .: ::::::::.::....:::::..:.::.::::.:::::::: .:..:::::: : :.:.: ::.:::::.::::::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKSIRDRIQSVKNTKKITEAMRLV-AAARVRRAQEQVIATRPFADRLAQVLYGLQTRLRFEDVDLPLLKKREVKSVGLLVISGDRGLCGGYNTNVIRRAENRAKELKKEGLDYTFVIVGRKAEQYFRRREQPIDASY-TGLEQIPTAEEANKIADELLSLFLSEKVDRIELVYTRFVSLVSSRPVIQTLLPLDTQGLEAADDEIFRLTTRGGQFEVERQTVTTQA-RPLPRDMIFEQDPVQILDSLLPLYLSNQLLRALQESAASELAARMTAMSNASDNAGELIKSLSLSYNKARQAAITQELLEVVGGAEALT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="ATPG_CYAP4" ac="B8HPK2" length="315" description="ATP synthase gamma chain OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1098</score>
+      <smithWatermanScore>1098</smithWatermanScore>
+      <initn>730</initn>
+      <init1>730</init1>
+      <opt>1098</opt>
+      <zScore>1335.0</zScore>
+      <bits>255.4</bits>
+      <expectation>8.5e-67</expectation>
+      <identity>58.0</identity>
+      <positives>81.4</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              .::::: :::::.::: ::.::-:: ::::::. :.:::::.. : .:. ::  ::  : ..:::: .::::::.:::..:::::::.::. .::.:  : .::: .:..  ..:::.:.: ::.::  ::   :-::--: ::: .:  ::.:. : :::   : :::.::::::::.: : ..::.:.. . . :. ::.:.::...:.: :.: ...-.: : .:.::::::::.::..:.::::::.:.::.::::.:::::::: .:..:::::  : : :.. ::.:::::.:::.::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MANLKSIRDRIQSVKNTQKITEAMRLV-AAAKVRRAQEQVIATRPFADRLAQVLYGLQARLRFEEANLPLLRRREVKKVALLVVSGDRGLCGAYNTNVIKRAAERSKELKAEGIDYTFVLVGRKAIQYFQRREQPIDATY-TGLEQVPTAAEASQIADELLSLFLSESVDRVELVYTKFVSLISSRPVVQTLLPLDPQGLEAQDDEIFRLTTRGGRFEVQREKVS-SATQSMPQDMIFEQDPLQILDALLPLYLNNQLLRALQESAASELAARMTAMNNASDNAKELIKGLSMTYNKARQAAITQEILEVVGGAEALK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="ATPG_NOSS1" ac="P12408" length="315" description="ATP synthase gamma chain OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=atpG PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1096</score>
+      <smithWatermanScore>1096</smithWatermanScore>
+      <initn>717</initn>
+      <init1>717</init1>
+      <opt>1096</opt>
+      <zScore>1332.6</zScore>
+      <bits>255.0</bits>
+      <expectation>1.2e-66</expectation>
+      <identity>57.7</identity>
+      <positives>81.4</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              .::::: :::::.::: ::.::-:: .:::::. :.:::::.. : .:. ::  ::  :.:::::: .::::.: ::::.::::::::::. .:..:: : .::: .:..  ...::.:.  ::.::  ::  .:-::--: ::: .:  ::.:. : ::: . : .::.::.::::..: : :.::.:.... . :  ::.:.::...::: :::  .   :-. .: ::::::::.::....:::::..:.::.::::.:::::::: .:..::.::: : :.:.: ::.:::::.::::::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKSIRDRIQSVKNTKKITEAMRLV-AAARVRRAQEQVIATRPFADRLAQVLYGLQTRLRFEDVDLPLLKKREVKSVGLLVISGDRGLCGGYNTNVIRRAENRAKELKAEGLDYTFVIVGRKAEQYFRRREQPIDASY-TGLEQIPTADEANKIADELLSLFLSEKVDRIELVYTRFVSLVSSRPVIQTLLPLDTQGLEAADDEIFRLTTRGGQFQVERQTVTSQA-RPLPRDMIFEQDPVQILDSLLPLYLSNQLLRALQESAASELAARMTAMSNASENAGELIKSLSLSYNKARQAAITQELLEVVGGAEALT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="ATPG_MICAN" ac="B0JWV2" length="315" description="ATP synthase gamma chain OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1085</score>
+      <smithWatermanScore>1085</smithWatermanScore>
+      <initn>623</initn>
+      <init1>623</init1>
+      <opt>1085</opt>
+      <zScore>1319.2</zScore>
+      <bits>252.5</bits>
+      <expectation>6.4e-66</expectation>
+      <identity>55.0</identity>
+      <positives>83.3</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKY-ETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              ::::.: :::::.::: ::.::-:: ::::::. :: ::::...: .:. .:  ::.  .:.::::..:::: :.:::.:::::::::::. .:..:: :.::::..:.. .:...:.:.  :::::. ::  :.-.  : ::: .: .:..:. : :::   : :::.::.:.:::...: :.::.:.... .... ::.:.:... :.: :.: ..     : ::.::::::.:.::....::::::.:.::.::::.:::::::: .:..::.::. :   :.  ::.:::::.::::::...::.::</pattern>
+      <matchSeq start="6" end="315">-------------------------MPNLKAIRDQIQSVKNTKKITEAMRLV-AAAKVRRAQEQVLCTRPFADALAQVLYNLQGRLAFSDVNLPLLAQREVKTVALLVVTGDRGLCGGYNTNVIRRAEQRMNELKEQGINYQLVVAGRKAAQYFERRNAPIAAKFINLEQIPTADEAGTIGDELLSLFLSETVDRVELIYTRFISLISATPVIQTLLPLTTQGLAVQDDEIFRLVTKEGKFKVQREKMASQPAQVFPQDMIFEQNPVQILDSLLPLYLNNQLLRALQESAASELAARMTAMSNASENASELIGTLSRTYNKARQAAITQELLEVVAGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ATPG_CROS5" ac="B1WUI3" length="314" description="ATP synthase gamma chain OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1082</score>
+      <smithWatermanScore>1082</smithWatermanScore>
+      <initn>712</initn>
+      <init1>712</init1>
+      <opt>1082</opt>
+      <zScore>1315.6</zScore>
+      <bits>251.8</bits>
+      <expectation>1e-65</expectation>
+      <identity>55.4</identity>
+      <positives>82.7</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETGQN--PTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: :::::.::: ::.::-:: ::::::. :..::::...: .:. .:..::   .:.:::: .:.:: : ..:..:::::::::::..:..:: :..:::..::.  :. .:.:.  :: ::  ::..::-:: :--::: .: .::.:. : :::   : :::.::.:::::.: : ..::.:.. . . .. ::.:.: .. :.. :::-:  . . . ::.::::::::.::..:.::::.:.:.::.:::..:::::::: .:..::::::.:   :.: ::.:::::.::.:.:...::.::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKAIRDRIQSVKNTKKITEAMRLV-AAAKVRRAQEQVISTRPFADALANVLFNLLNRLKFGDVSLPLLQQRDVKTVGIVVVSGDRGLCGGYNSYVIRRAEQRIKELKEQGVNYRLVTIGRKATQYFSRREAPIESKY-TGLNQIPTADEAATIADELLSLFLSETVDRVELIYTRFVSLISSRPVVQTLAPLTMQGLETEDDEIFRLITREGKLQVER-ETVTQTMSSFPQDMIFEQDPVQILDALLPLYINNQLLRALQEAAASELAARMTAMSNASDNAGQLIGTLTLSYNKARQAAITQQLMEVVAGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="ATPG_TRIEI" ac="Q112Z7" length="314" description="ATP synthase gamma chain OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1081</score>
+      <smithWatermanScore>1081</smithWatermanScore>
+      <initn>716</initn>
+      <init1>716</init1>
+      <opt>1081</opt>
+      <zScore>1314.4</zScore>
+      <bits>251.6</bits>
+      <expectation>1.2e-65</expectation>
+      <identity>55.3</identity>
+      <positives>82.0</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETGQN-PTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: :.:::.::: ::.::-:: ::::::. :..::::.. : .:. :: .::  ::.::::: .::.: : ::::.:.:::::.::. .::.:: :  :: ..:.. . .:.:.:.: ::.::  :: . :.. ..-::: .: ..:.:. . :..:  : :::..:.:.:::.:.: :.::.:.. . . .: ::.:.:::..:.: : :-:   :: . :: :::::::::::..:.:::.:..:.::. ::: :::::.:: .:..:::::. ::  :.: ::.:::::.:::.::...::.::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKAIRDRIKSIKNTKKITEAMRLV-AAAKVRRAQEQVIGTRPFADRLAQVLYGLAERLQFESLDLPLLQKREAKTVGLLVISGNRGLCGSYNTNVIKRAEMRARELTQQGINCQYVLIGRKAIQYFQRREVPILNTYDNPEKIPTADNASVVADEILAGFMAGSIDRVELIFTRFISLISSKPVIQTLLPLDPQGLEVKDDEIFRLTSKGGEFEVSR-ETVSAAVKSFPRDMIFEQDPIQILDALLPLFLTNQLLRAWQESSASELASRMTAMSNASDNASELAGTLTLAYNKARQAAITQEILEVVGGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ATPG_RIPO1" ac="B7K5I9" length="314" description="ATP synthase gamma chain OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1075</score>
+      <smithWatermanScore>1075</smithWatermanScore>
+      <initn>694</initn>
+      <init1>694</init1>
+      <opt>1075</opt>
+      <zScore>1307.1</zScore>
+      <bits>250.3</bits>
+      <expectation>3e-65</expectation>
+      <identity>55.6</identity>
+      <positives>82.0</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYE-TGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: :::::.::: ::.::-:: ::::::. :.:::::...: .:. .:..::   .:.:::: .:.:: :.:.:..::::::::::...:..:: : .::. .:..  :: .:.:.  :: ::  ::.: : - .: ::: .: .::.:. : :::   : :::.::.:::::.: : ..::.:.... . .. ::::.: ...:.. :::-:  .   . ::.:::::::::::..:.::::.:.:.:: :::..:::::::: .:..::::::.:   :.: ::.:::::.::.:.:...::.::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKAIRDRIQSVKNTKKITEAMRLV-AAAKVRRAQEQVIATRPFADALANVLYNLLNRLQYGDVSLPLLQQRQVKTVALVVVSGDRGLCGGYNTYVIRRAEQRQKELEAQGINYRLITIGRKATQYFSRRQAPIEKTYVGLNQIPTADEAGSIADELLSLFLSETVDRVELIYTRFVSLISSRPVVQTLLPLTVQGLEVEDDEVFRLITRDGKLRVER-ETIAQEVSSFPQDMIFEQDPIQILDALLPLYINNQLLRGLQEAAASELAARMTAMSNASDNAGQLIGTLTLSYNKARQAAITQQLMEVVAGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ATPG_SYNJA" ac="Q2JSW2" length="314" description="ATP synthase gamma chain OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1075</score>
+      <smithWatermanScore>1075</smithWatermanScore>
+      <initn>692</initn>
+      <init1>692</init1>
+      <opt>1075</opt>
+      <zScore>1307.1</zScore>
+      <bits>250.3</bits>
+      <expectation>3e-65</expectation>
+      <identity>55.8</identity>
+      <positives>81.3</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="61" end="369">GERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKY-ETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              ::::: .:::::::: ::.::-:: .:::::. :.:::::.. : .::  :  ::  :.:::::: .: .. : :::..:::::::.::. .::..: :  ::...: .. : :::.:.. ::.::. :: : :-. .: ::: .:  :..:. :.::: . : :::.::.:::::.: : ...:.:.. . ..:. ::.:.:  ..:.: :::...-::: .  : ::::::::.::..:.::::::.:.::.:::..:::::::: .:..:::::  : . :.: ::.:::::.:::.::...:: ::</pattern>
+      <matchSeq start="7" end="314">------------------------MANLKRIRDRIKAVKNTRKITEAMRLV-AAARVRRAQEQVMATRPFADRLAQVFYRLQTRLRLEDVDLPLLKQRPIETVGLLVVAGDRGLCGAYNANVIKRTEERVRELQETGQQVRLYLVGRKAVQYFQRRSAPIAKTYVNLSQIPTAAEAAQIGDELLSAFLSEKVDKVELIYTRFVSLISSRPVVQSLLPLDPTRLAARDDEIFNLLVRGGEFTVERSKI-VAAVSAPPPDMIFEQDPVQILDALLPLYLNNQLLRALQEAAASELAARMTAMSNASDNATELIRTLGLAYNKARQAAITQEILEVVAGAEAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ATPG_SYNJB" ac="Q2JIG1" length="314" description="ATP synthase gamma chain OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1067</score>
+      <smithWatermanScore>1067</smithWatermanScore>
+      <initn>693</initn>
+      <init1>693</init1>
+      <opt>1067</opt>
+      <zScore>1297.4</zScore>
+      <bits>248.5</bits>
+      <expectation>1.1e-64</expectation>
+      <identity>54.8</identity>
+      <positives>82.3</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="61" end="369">GERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKY-ETGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              ::::: .:::::::: ::.::-:: .:::::. :.:::::.. : .::  :  ::  :.:.:::: .: .. : :::..:::::::.::. .::..: :  ::...: ...: :::.:.. ::.::. :: : :-. .: ::: .:  :.... ..::: . : ::::::.:::::.: : ...:.:.. : .... ::.:.:  ..:.: :::...-.:: .  :.::::::::.::..:.::::::.:.::.:::..:::::::: .:..:::::. : . :.: ::.:::::.:::.::...:: ::</pattern>
+      <matchSeq start="7" end="314">------------------------MANLKRIRDRIKAVKNTRKITEAMRLV-AAARVRRAQEQVMATRPFADRLAQVFYRLQTRLRLEDVNLPLLKQRPIQTVGLLVVAGDRGLCGAYNANVIKRTEERVRELQETGQQVQLYLVGRKAVQYFQRRSAPIAKTYVNLSQIPTAAEAAQIGDQLLAAFLSEKVDKVELLYTRFVSLISSRPVVQSLLPLDPSRLATQDDEIFRLLVRGGEFTVERSKV-IAAVSAPPQDMIFEQDPVQILDALLPLYLNNQLLRALQEAAASELAARMTAMNNASDNASELIRTLGLAYNKARQAAITQEILEVVAGAEAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ATPG_NOSP7" ac="B2J059" length="315" description="ATP synthase gamma chain OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1061</score>
+      <smithWatermanScore>1061</smithWatermanScore>
+      <initn>688</initn>
+      <init1>688</init1>
+      <opt>1061</opt>
+      <zScore>1290.1</zScore>
+      <bits>247.1</bits>
+      <expectation>2.7e-64</expectation>
+      <identity>56.1</identity>
+      <positives>80.3</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFP--NDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: :::::.::: ::.::-:: .:::::. :::::::.. : .:. :: .::  : ..:::: .::::.: ::::.::::::::::. .:..:: : .:.: .:.. ...:::.:.  ::.::  ::   :-.:--: ::: .:  ::... : ::: : : .::.::.:.::..: : ..::.:.. . . :  ::.:.::...:.: ::: ..---: :  :-- ::::::::.::....:::::..:.::.::::.:::::::: .:..::.::: : . :.: ::.:::::.::::::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MANLKAIRDRIQSVKNTKKITEAMRLV-AAARVRRAQEQVLATRPFADRLAQVLYGLQSRLRFEEANLPLLRKREVKSVGLLVISGDRGLCGGYNNNVIRRAENRAKEIKAEGLNYQFVLVGRKSTQYFQRRDQPIDATY-SGLEQIPTAAEANQIADQLLSLFLSEEVDRIELIYTRFLSLVSSRPVVQTLLPLDPQGLEAADDEIFRLTTRGGKFEVEREKV---ASQVRPLAPDMIFEQDPVQILDSLLPLYLSNQLLRALQESAASELAARMTAMSNASENAGELINTLTLSYNKARQAAITQELLEVVGGAEALT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ATPG_SYNP2" ac="B1XHY7" length="314" description="ATP synthase gamma chain OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1057</score>
+      <smithWatermanScore>1057</smithWatermanScore>
+      <initn>698</initn>
+      <init1>698</init1>
+      <opt>1057</opt>
+      <zScore>1285.3</zScore>
+      <bits>246.2</bits>
+      <expectation>5e-64</expectation>
+      <identity>56.5</identity>
+      <positives>79.7</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="61" end="369">GERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYE-TGQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              ::::: :::::.::: ::.::-:: ::::::. : .::::..:: .:. .: .::  : .::::: .:::: : :::::::::::::::. .:.::: : .::   :..  ..:::.:.. ::. :  :. : : -  : :.: .:  ::.:. : ::: : : .::.::.:::::.:.: ..::.:.    .:   ::.:.: ...:.: ::: .. . .-.:.: :::::::: .:.::.:::::..:.::.:::..:::::::: .:..:::::..: : :.: ::.:::::.:::: :...::.::</pattern>
+      <matchSeq start="7" end="314">------------------------MPNLKGIRDRIQSVKNTKKITEAMRLV-AAAKVRRAQEQVTSTRPFANTLLQVLYSLKSRLRLEEADLPLLKQREVKCVGLLVITGDRGLCGGYNANIIRKAERRAKELAAAGINYKFVLVGRKAVQYFQNRQAPVAKTYAGLEQIPSAAEASDIADELLSLFLSEEVDKIELIYTRFVSLISSQPVVQTLLPLVPEALTNPDDETFNLITRGGKFQVEREKVATEV-KELPADMIFEQDPKDILNALLPLYLSNQLLRALQEGAASELAARMTAMNNASDNASDLMKTLTLSYNKARQAAITQELSEVVAGANAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ATPG_THEVB" ac="Q8DLU1" length="315" description="ATP synthase gamma chain OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=atpG PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1053</score>
+      <smithWatermanScore>1053</smithWatermanScore>
+      <initn>710</initn>
+      <init1>710</init1>
+      <opt>1053</opt>
+      <zScore>1280.4</zScore>
+      <bits>245.3</bits>
+      <expectation>9.3e-64</expectation>
+      <identity>54.5</identity>
+      <positives>81.4</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: ..:.::::: ::.::-:: ::::::. :.:.:::.. : .:. .:  ::  :.::::::..: :: :.:::.:::::::::::. .:..:. :..::. .:..  :..::.:.  ::.:: .::   :-.:--: :.:..:  :: :. : :::   : :::.::::::::.:.: ..::.:.. . . .  ::.:.::...... :.: ..  . : -.:.::::::::.::..:.::::::.:.::.:::..:::::::: .:..::::: .:   :.: ::.:::::.:::.::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MANLKAIRDRIKTIKDTRKITEAMRLV-AAAKVRRAQEQVMASRPFADRLAQVLYSLQTRLRFEDVDLPLLAKRPVKTVALLVVTGDRGLCGGYNTNVIRRAKERLQELEAEGLKYTLVIVGRKAAQYFQRRDYPIDAVY-SGLEQIPSASEAGQIASELLSLFLSETVDRVELIYTKFVSLISSKPVVQTLLPLDPQGLETADDEIFRLTTRGSHLEVNREKVTSTLPA-LPSDMIFEQDPLQILDALLPLYLNNQLLRALQEAAASELAARMTAMNNASDNAQALIGTLTLSYNKARQAAITQEILEVVAGAEALR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ATPG_SYNP1" ac="Q05384" length="315" description="ATP synthase gamma chain OS=Synechococcus sp. (strain PCC 6716) OX=32048 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1050</score>
+      <smithWatermanScore>1050</smithWatermanScore>
+      <initn>693</initn>
+      <init1>693</init1>
+      <opt>1050</opt>
+      <zScore>1276.8</zScore>
+      <bits>244.7</bits>
+      <expectation>1.5e-63</expectation>
+      <identity>54.2</identity>
+      <positives>80.8</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYETG--QNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQEFPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: ..:.::::: ::.::-:: ::::::. :.:.:::.. : .:. ::  ::  :...::::..: :: :.:::.:::::::::::. .:..:. : .::. .:..  :..::.:.  ::.:: .::   :-.:--: :.:..:  ::.:. : :::   : :::.::::::::.:.: ..::.:.. . . :  ::.:.::...... :.: ..    : -.: ::::::::.::..:.:::::..:.::.:::..:::::::: .:..::::: .:   :.: ::.:::::.:::.::...:: ::</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKAIRDRIKTIKDTRKITEAMRLV-AAAKVRRAQEQVMASRPFADRLAQVLYGLQTRLRFEDANLPLLAKRPVKTVALLVVTGDRGLCGGYNTNVIRRAKERTEELEAEGIKYTLVIVGRKAAQYFQRRDYPIDAVY-SGLEQIPSASEAGQIANELLSLFLSETVDRVELIYTKFVSLISSKPVVQTLLPLDPQGLEAADDEIFRLTTRASHLEVNREKVTSNLPA-LPPDMIFEQDPVQILDALLPLYLSNQLLRALQEAAASELAARMTAMNNASDNAQTLIGTLTLSYNKARQAAITQEILEVVAGAEALR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ATPG_SYNY3" ac="P17253" length="314" description="ATP synthase gamma chain OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=atpG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1049</score>
+      <smithWatermanScore>1049</smithWatermanScore>
+      <initn>960</initn>
+      <init1>693</init1>
+      <opt>1049</opt>
+      <zScore>1275.6</zScore>
+      <bits>244.4</bits>
+      <expectation>1.7e-63</expectation>
+      <identity>55.8</identity>
+      <positives>80.1</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="60" end="369">VGERASGVFPEQSSAHRTRKATIVMDGKANAIRDRITSVKNTRKITMAMKLVRAAPKVRRAQDAVLATRPFSETLQSVFGGLIQRLGGESVDLPLLTEREVKKVTLLVITGDRGLCGGYNSFMIKKAEARFNELKKNGVEADLILVGKKGIAYFERRGFPIRKKYET-GQNPTAKQALAIAEEVSSTFLSGESDAVELLYTKFVSLIASSPSIRTLVPFSASDITAKGDEVFQLTSESGQFGVERTELDVAAPQE-FPNDMIFEQDPIQIVNAILPLYLNGQILRTLQESVASELAARMQSMQSASDNAGSLAKQLNLEYNRARQAAVTQELLEIISGASALD</querySeq>
+      <pattern>                              :::::: :::::.::: ::.::-:: ::::::. ::.::::...: .:. .: .::.   ..:::. .:: : :.:::.:::::::::::   ::.:: : .:::..:. . :.:::.:.  :: :: . .  .: .- : :.:..:  ::. . . :.:   : :::.::.:::::.:.: ..:: :.: . . :  ::.:.: ...:.: ::: .--: :: :-::.::::::::.::..:.:::: ..:.::.::::.:::::::: .:..::::::.:   :.: ::.:::::.::::::...::..:</pattern>
+      <matchSeq start="6" end="314">-------------------------MPNLKAIRDRIQSVKNTKKITEAMRLV-AAAKVRRAQEQVLSTRPFADALAQVLYNLQNRLSFAETELPLFEQREPKAVALLVVTGDRGLCGGYNVNAIKRAEQRAKELKNQGIAVKLVLVGSKAKQYFGRRDYDVAASYANLEQIPNASEAAQIADSLVALFVSETVDRVELIYTRFVSLISSQPVVQTLFPLSPQGLEAPDDEIFRLITRGGKFQVEREK--VEAPVESFPQDMIFEQDPVQILEALLPLYNTNQLLRALQESAASELAARMTAMSNASDNAGQLIGTLTLSYNKARQAAITQELLEVVAGANSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163639-0717-33638935-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163639-0717-33638935-p2m.m9&quot; -m &quot;F10 fasta-R20221107-163639-0717-33638935-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0I8|RR17_PHATC" type="PROTEIN" length="84"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:36:39+00:00" end="2022-11-07T16:36:42+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RR17_PHATC" ac="A0T0I8" length="84" description="30S ribosomal protein S17, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps17 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>548</score>
+      <smithWatermanScore>548</smithWatermanScore>
+      <initn>548</initn>
+      <init1>548</init1>
+      <opt>548</opt>
+      <zScore>816.7</zScore>
+      <bits>155.5</bits>
+      <expectation>6.3e-38</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RR17_TRICV" ac="P49504" length="84" description="30S ribosomal protein S17, chloroplastic OS=Trieres chinensis OX=1514140 GN=rps17 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <smithWatermanScore>473</smithWatermanScore>
+      <initn>481</initn>
+      <init1>473</init1>
+      <opt>473</opt>
+      <zScore>707.1</zScore>
+      <bits>135.2</bits>
+      <expectation>8e-32</expectation>
+      <identity>78.6</identity>
+      <positives>95.2</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::::...:::.:::::::::::.:.:: ::.::::. ::.:::::::.:::::::::::.::::::::::: : :.::::::..</pattern>
+      <matchSeq start="1" end="84">MPVKEKVGIVVSNKMQKTIVVKVESRYSHPIYSKTMTKTRKYLAHDEMGECNIGDQVLVQECRPLSKRKRWTLSKVLSKSSLVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RR17_THAPS" ac="A0T0Y2" length="84" description="30S ribosomal protein S17, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rps17 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>468</score>
+      <smithWatermanScore>468</smithWatermanScore>
+      <initn>468</initn>
+      <init1>468</init1>
+      <opt>468</opt>
+      <zScore>699.8</zScore>
+      <bits>133.9</bits>
+      <expectation>2e-31</expectation>
+      <identity>75.9</identity>
+      <positives>98.8</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="83">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::::...:.:::::::::.:::.:.:::::.::::.:::.:::::::..::::::::::.:::::::.:::.. .:.:.::::</pattern>
+      <matchSeq start="1" end="83">MPVKEKVGVVISNKMQKTVVVKVESRYPHPIYSKTMIKTRKYLAHDEMSECNIGDQVLVQECRPLSKKKRWSVARIISRSSLIT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RS17_SYNY3" ac="P73311" length="81" description="30S ribosomal protein S17 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>339</score>
+      <smithWatermanScore>339</smithWatermanScore>
+      <initn>339</initn>
+      <init1>339</init1>
+      <opt>339</opt>
+      <zScore>511.7</zScore>
+      <bits>99.0</bits>
+      <expectation>6.1e-21</expectation>
+      <identity>56.8</identity>
+      <positives>86.4</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: .:...:::.::::.::.:: .:.: ::: :.: ..::::. :::: ..:. ::.: ..: ::::: :::..:.:.:.::</pattern>
+      <matchSeq start="1" end="81">MAIKERVGIVVSNKMDKTVVVAVESRSPHPKYGKIVVKTKKFKAHDEENQCQEGDKVRIQETRPLSKTKRWQVINIMSHSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RS17_TRIV2" ac="Q3MFB2" length="81" description="30S ribosomal protein S17 OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>331</score>
+      <smithWatermanScore>331</smithWatermanScore>
+      <initn>302</initn>
+      <init1>282</init1>
+      <opt>331</opt>
+      <zScore>500.0</zScore>
+      <bits>96.8</bits>
+      <expectation>2.7e-20</expectation>
+      <identity>55.1</identity>
+      <positives>85.9</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: .:...:.:.:.:::::.:: :::: ::: :.: ..::..: :::: ..:..::.: ..: ::::: :::.. .::.</pattern>
+      <matchSeq start="1" end="78">MAIKERVGLVVSDKMQKTVVVAIENRAPHPKYGKIVVKTRRYKAHDEDNKCKVGDRVRIQETRPLSKTKRWQVAEILNTKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RS17_NOSS1" ac="Q8YPI8" length="81" description="30S ribosomal protein S17 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>331</score>
+      <smithWatermanScore>331</smithWatermanScore>
+      <initn>302</initn>
+      <init1>282</init1>
+      <opt>331</opt>
+      <zScore>500.0</zScore>
+      <bits>96.8</bits>
+      <expectation>2.7e-20</expectation>
+      <identity>55.1</identity>
+      <positives>85.9</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: .:...:.:.:.:::::.:: :::: ::: :.: ..::..: :::: ..:..::.: ..: ::::: :::.. .::.</pattern>
+      <matchSeq start="1" end="78">MAIKERVGLVVSDKMQKTVVVAIENRAPHPKYGKIVVKTRRYKAHDEDNKCKVGDRVRIQETRPLSKTKRWQVAEILNTKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RS17_AQUAE" ac="O66439" length="107" description="30S ribosomal protein S17 OS=Aquifex aeolicus (strain VF5) OX=224324 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>324</score>
+      <smithWatermanScore>324</smithWatermanScore>
+      <initn>309</initn>
+      <init1>287</init1>
+      <opt>324</opt>
+      <zScore>487.3</zScore>
+      <bits>94.9</bits>
+      <expectation>1.4e-19</expectation>
+      <identity>54.5</identity>
+      <positives>85.7</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="80">-----------MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>              :. .:.:.:.::.::.:::.. . :::.:.: .::.::: :::: .:: .:: :...: ::::: ::: ..:::...</pattern>
+      <matchSeq start="15" end="91">MTEQKQQKKWHEKRKHLVGVVVSDKMDKTVVVKVDRKVPHPIYGKHIIKSKKYHAHDEHNECRVGDIVMIRETRPLSKTKRWVVVKILQRARRPEEEIQKQQEGQEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RS17_KOSOT" ac="C5CGQ5" length="101" description="30S ribosomal protein S17 OS=Kosmotoga olearia (strain ATCC BAA-1733 / DSM 21960 / TBF 19.5.1) OX=521045 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>323</score>
+      <smithWatermanScore>323</smithWatermanScore>
+      <initn>323</initn>
+      <init1>323</init1>
+      <opt>323</opt>
+      <zScore>486.3</zScore>
+      <bits>94.6</bits>
+      <expectation>1.6e-19</expectation>
+      <identity>55.0</identity>
+      <positives>83.8</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>:: :. .: :.::::.::.::..:  . ::.:.::. ..::: :::: . :.::: : .:::::::: :..:...:..::</pattern>
+      <matchSeq start="1" end="80">MPRKKLVGTVVSNKMDKTVVVRVERTFAHPLYKKTVKRAKKYHAHDEDNSCGIGDIVEIEECRPLSKTKKFKVVRIVKKSVFGEEKLETPENVEMLGGEEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RS17_THEVB" ac="Q8DMM3" length="82" description="30S ribosomal protein S17 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>319</score>
+      <smithWatermanScore>319</smithWatermanScore>
+      <initn>319</initn>
+      <init1>319</init1>
+      <opt>319</opt>
+      <zScore>482.4</zScore>
+      <bits>93.6</bits>
+      <expectation>2.6e-19</expectation>
+      <identity>55.1</identity>
+      <positives>83.3</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: ::...:.:.:.:::::.:: .::: ::: :.: ..::..: :::: .: ..::.: ..: ::::. ::: . .:::</pattern>
+      <matchSeq start="1" end="78">MAVKERVGVVVSDKMQKTVVVAVENRAPHPKYGKIVVKTRRYKAHDENNEAKVGDRVRIRETRPLSRTKRWVIAEILSPRTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RS17_SYNS3" ac="Q0ID14" length="88" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain CC9311) OX=64471 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>319</score>
+      <smithWatermanScore>319</smithWatermanScore>
+      <initn>291</initn>
+      <init1>276</init1>
+      <opt>319</opt>
+      <zScore>481.7</zScore>
+      <bits>93.6</bits>
+      <expectation>2.9e-19</expectation>
+      <identity>51.2</identity>
+      <positives>82.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: .:...: :.:.::.::.:: .:::.:::.:.::. .: .: :::: . : .::.: . : ::::..::: . ..::.:</pattern>
+      <matchSeq start="1" end="80">MALKERVGTVVSDKMDKTVVVAVENRFPHPIYQKTVSRTTRYKAHDEDNACRVGDRVRITETRPLSRHKRWAIAEVLSQSPKAEEVTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RR17_NEOYE" ac="Q1XDI3" length="83" description="30S ribosomal protein S17, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=rps17 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>318</score>
+      <smithWatermanScore>318</smithWatermanScore>
+      <initn>318</initn>
+      <init1>318</init1>
+      <opt>318</opt>
+      <zScore>480.8</zScore>
+      <bits>93.3</bits>
+      <expectation>3.2e-19</expectation>
+      <identity>58.7</identity>
+      <positives>80.0</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::.:.  : :.:.::.::::: .:::  :  :.::.:.:::: :::: .::.::: : ..: ::::. : : ...:::::</pattern>
+      <matchSeq start="1" end="80">MPLKETTGKVVSDKMNKTIVVAVENRISHRKYAKTMIRTKKYKAHDENNECTIGDIVTIQETRPLSRTKCWTMVNILSKSFDN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RS17_TRIEI" ac="Q110B6" length="83" description="30S ribosomal protein S17 OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>318</score>
+      <smithWatermanScore>318</smithWatermanScore>
+      <initn>283</initn>
+      <init1>273</init1>
+      <opt>318</opt>
+      <zScore>480.8</zScore>
+      <bits>93.3</bits>
+      <expectation>3.2e-19</expectation>
+      <identity>56.6</identity>
+      <positives>83.1</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKIL-SKSSLIN</querySeq>
+      <pattern>: .:...:.:.::::.::::: ::::  :: :.: ..::::: .::: ..:: ::.: ..: ::::. :::.: .:.-::..:</pattern>
+      <matchSeq start="1" end="83">MAAKERVGVVVSNKMHKTIVVAIENRSAHPRYGKIVVKTKKYKVHDEENKCNEGDRVRIRETRPLSRTKRWELSEIIGSKATL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RS17_THENN" ac="B9K895" length="112" description="30S ribosomal protein S17 OS=Thermotoga neapolitana (strain ATCC 49049 / DSM 4359 / NBRC 107923 / NS-E) OX=309803 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>319</score>
+      <smithWatermanScore>319</smithWatermanScore>
+      <initn>346</initn>
+      <init1>319</init1>
+      <opt>319</opt>
+      <zScore>479.5</zScore>
+      <bits>93.5</bits>
+      <expectation>3.8e-19</expectation>
+      <identity>54.4</identity>
+      <positives>82.3</positives>
+      <overlap>79</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="79">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>:: :..::.:.:.::.::.:: .: .  ::.:.: . .:::: :::: .:: .:: : .:: ::::: :::...::...</pattern>
+      <matchSeq start="1" end="79">MPRKRMIGVVVSDKMDKTVVVAVERHVQHPLYKKYIKRTKKYHAHDEKNECRVGDVVEIEETRPLSKTKRWRVVKIIKRFEPERILKEEEEVQDELEEIEGEVVEEKGGAES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RS17_SYNSC" ac="Q3AMN9" length="98" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain CC9605) OX=110662 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>317</score>
+      <smithWatermanScore>317</smithWatermanScore>
+      <initn>326</initn>
+      <init1>311</init1>
+      <opt>317</opt>
+      <zScore>477.8</zScore>
+      <bits>93.0</bits>
+      <expectation>4.7e-19</expectation>
+      <identity>51.2</identity>
+      <positives>82.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: ::..:: :.:.::.::.:: .:.:.:::.:.::. .: .: :::: . : .::.: . : ::.:..::: . ..::.:</pattern>
+      <matchSeq start="1" end="80">MAVKERIGTVVSDKMEKTVVVAVESRFPHPIYQKTVSRTTRYKAHDEDNTCRVGDRVRITETRPMSRQKRWAIAEVLSHSPKAAAEEANKAEAQEVKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RS17_SYNJA" ac="Q2JV90" length="83" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <smithWatermanScore>315</smithWatermanScore>
+      <initn>342</initn>
+      <init1>315</init1>
+      <opt>315</opt>
+      <zScore>476.4</zScore>
+      <bits>92.5</bits>
+      <expectation>5.7e-19</expectation>
+      <identity>54.5</identity>
+      <positives>81.8</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="77">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::....::.:.:::::::.:: .:::  :: :.: ..::::. :::: ..:. :: : . : ::::. :::.. .:.</pattern>
+      <matchSeq start="1" end="77">MPAREKIGVVVSNKMQKTVVVAVENRVAHPKYGKIVVKTKKFKAHDEENRCQEGDLVRITETRPLSRTKRWRVAEIIREVKKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RS17_SYNS9" ac="Q3AW84" length="95" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain CC9902) OX=316279 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <smithWatermanScore>315</smithWatermanScore>
+      <initn>324</initn>
+      <init1>309</init1>
+      <opt>315</opt>
+      <zScore>475.2</zScore>
+      <bits>92.5</bits>
+      <expectation>6.6e-19</expectation>
+      <identity>50.0</identity>
+      <positives>82.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: ::...: :.:.::.::.:: .:.:.:::.:.::. .: .: :::: . : .::.: . : ::.:..::: . ..::.:</pattern>
+      <matchSeq start="1" end="80">MAVKERVGTVVSDKMEKTVVVAVETRFPHPIYQKTVSRTTRYKAHDEDNSCRVGDRVRITETRPMSRQKRWAIAEVLSHSPKAAAAEAKAEEANQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RS17_PARMW" ac="Q7U4J1" length="103" description="30S ribosomal protein S17 OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <smithWatermanScore>315</smithWatermanScore>
+      <initn>324</initn>
+      <init1>309</init1>
+      <opt>315</opt>
+      <zScore>474.5</zScore>
+      <bits>92.4</bits>
+      <expectation>7.3e-19</expectation>
+      <identity>50.0</identity>
+      <positives>82.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: ::...: :.:.::.::.:: .:.:.:::.:.::. .: .: :::: . : .::.: . : ::.:..::: . ..::.:</pattern>
+      <matchSeq start="1" end="80">MAVKERVGTVVSDKMEKTVVVAVESRFPHPIYQKTVSRTTRYKAHDEDNSCRVGDRVRITETRPMSRHKRWAIAEVLSHSPKADKSAGSTAPAPEAAAKEVSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RS17_SYNR3" ac="A5GVW9" length="83" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain RCC307) OX=316278 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>313</score>
+      <smithWatermanScore>313</smithWatermanScore>
+      <initn>312</initn>
+      <init1>307</init1>
+      <opt>313</opt>
+      <zScore>473.5</zScore>
+      <bits>92.0</bits>
+      <expectation>8.2e-19</expectation>
+      <identity>49.4</identity>
+      <positives>82.7</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: ::...: :.:.::.::.:: .:::.:::.:.::. .: .: .::: ..:..::.: . : ::::. ::: . .:.. .:</pattern>
+      <matchSeq start="1" end="81">MAVKERVGTVVSDKMEKTVVVAVENRFPHPIYKKTVSRTTRYKVHDEDNRCQVGDRVRITETRPLSRSKRWAVAEIMTTKSGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RS17_SYNJB" ac="Q2JIL8" length="83" description="30S ribosomal protein S17 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=rpsQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>312</score>
+      <smithWatermanScore>312</smithWatermanScore>
+      <initn>312</initn>
+      <init1>312</init1>
+      <opt>312</opt>
+      <zScore>472.0</zScore>
+      <bits>91.7</bits>
+      <expectation>9.9e-19</expectation>
+      <identity>57.1</identity>
+      <positives>80.5</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="77">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>: :...::::.:::::::.:: .:::  :: :.: ..::::. :::: ..:. :: : . : ::::. :::.. .::</pattern>
+      <matchSeq start="1" end="77">MAVREKIGIVVSNKMQKTVVVAVENRVAHPKYGKIVVKTKKFKAHDEENRCQEGDLVRITETRPLSRTKRWQVAEILREVKKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RR17_PORPU" ac="P51305" length="83" description="30S ribosomal protein S17, chloroplastic OS=Porphyra purpurea OX=2787 GN=rps17 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>310</score>
+      <smithWatermanScore>310</smithWatermanScore>
+      <initn>310</initn>
+      <init1>310</init1>
+      <opt>310</opt>
+      <zScore>469.1</zScore>
+      <bits>91.1</bits>
+      <expectation>1.4e-18</expectation>
+      <identity>56.2</identity>
+      <positives>77.5</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MPVKQQIGIVISNKMQKTIVVKIENRYPHPMYSKTLIKTKKYLAHDELGECNIGDQVLVEECRPLSKRKRWKLIKILSKSSLIN</querySeq>
+      <pattern>::.:.  : :.:.::.::::: .:::  :  :.::. .:::: :::: .:: .:: : ..: ::::. : : ...:::::</pattern>
+      <matchSeq start="1" end="80">MPLKETTGKVVSDKMNKTIVVAVENRISHRKYAKTMTRTKKYKAHDENNECAVGDIVTIQETRPLSRTKCWTMVNILSKSFHN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

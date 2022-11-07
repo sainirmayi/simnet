@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170040-0869-98806536-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170040-0869-98806536-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170040-0869-98806536-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A386KZ95|DABC_PSEMU" type="PROTEIN" length="373"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:00:40+00:00" end="2022-11-07T17:00:43+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="DABC_PSEMU" ac="A0A386KZ95" length="373" description="Alpha-ketoglutarate dependent kainoid synthase OS=Pseudo-nitzschia multiseries OX=37319 GN=dabC PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2496</score>
+      <smithWatermanScore>2496</smithWatermanScore>
+      <zScore>3188.8</zScore>
+      <bits>598.7</bits>
+      <expectation>4.7e-170</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>373</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="373">MTVAINNETVVLTPNEDDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="373">MTVAINNETVVLTPNEDDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="KABC_DIGSM" ac="A0A4D6IA61" length="360" description="Alpha-ketoglutarate dependent kainoid synthase OS=Digenea simplex OX=945030 GN=kabC PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1497</score>
+      <smithWatermanScore>1497</smithWatermanScore>
+      <zScore>1907.1</zScore>
+      <bits>361.5</bits>
+      <expectation>1.2e-98</expectation>
+      <identity>64.0</identity>
+      <positives>83.0</positives>
+      <overlap>342</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="31" end="371">MTVAINNETVVLTPNEDDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSE-SCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              : ::..: :.:.:::.:: ::::::..::.:.::: :::::::::::::::.::.:::.::. ::::::: .  -:: : :: ::  :..::::::.:.:: :::: . ::: :::.::::: :.::.::..:.: :. :: .: ..:::.: ::.:::: :::.: : :....:: ..:::.:::::.: :.: :.  .::::: : :::::::::::.:::.:::. ::::.:. :: :::::::::::.:::::..:::.:::::: : .  ::::::.:::.:::: . ..::::::: :::  :-:: :. :.:.---   :::...:. ::  :::</pattern>
+      <matchSeq start="22" end="359">---------MTVSKYNGVASTFNGVARRFDFAPLEADKLNWYPRSALPPEIPAIDLNKVNTEEELAQFLVDIRKSGLFYIVDHGIPEEISIGCYNAFREFCNLP-EEAREKYNTDESFKSGGYVPFKGTSIGGGNLFERQKDFVVKFFWRGPSVVNRSPNDRFAEFHDEHHRKTAELAEKIITTILKALKTRFPEFHPDELKDNINVRNMFFSNRIYPEAPPDDGEKADYRLVPHRDLSFITLANQVPANNGFKGLFILTGDGEKIPVPPIRNSYLVFIGQGLSYLTNKYLPAALHGVDFPDNTNFEGSERASLISFYEPNDYMMPSKNINPLPEEIFEKSCTFYDDVGV---GRAGTTYNYVRYKFHEGYYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CEFE_AMYLA" ac="Q03047" length="314" description="Deacetoxycephalosporin C synthase OS=Amycolatopsis lactamdurans OX=1913 GN=cefE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>300</score>
+      <smithWatermanScore>300</smithWatermanScore>
+      <zScore>372.2</zScore>
+      <bits>77.3</bits>
+      <expectation>3.6e-13</expectation>
+      <identity>26.1</identity>
+      <positives>56.5</positives>
+      <overlap>276</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="49" end="320">VQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVS-INVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQG-SSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDE--EEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              : .:..:....    . :.:   .:..:.::. . :.: :..- .  .   .:..  :: :.   .:       ::. ...-:. .  : ::-  :. ..:     .--:  :. .: .: . . .. ..... : : .. ..  .-:.     : . ----. ..  : .:..-: :.--::   :..:: : :..:: .:.:  ::: .: ::.-::. : .:.  .. ::: :   . .. . . .  : :  : .:   :: :.: . : .:</pattern>
+      <matchSeq start="4" end="269">---------------------------MTDATVPTFDLAELREGLHQEEFRHCLREKGVFYLKGTGLPAEADHASGREIAVDFFDHGTEAEKKAVMTPIPTIRRGYAGLESESTAQITNTGK-YTDYSMSYSMGTAD--NLFPSAEFEKAWEDYFARMYRASQDVARQVLTSVGAE-PEVGMDAFLDC----EPLLRLRYFPEV-PEDRVAEEQPLRMAPHYDLSIVTLIHQTPCANGFVSLQVEV-DGSYVDIPAQPGAVLVFCGAVATLVADGAIKAPKHHVAAPGADKRVGSSRTSSVFFLRPNGDFRFSVPRARECGFDVSIPAETATFDDWIGGNYINIRKTAAAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CEFF_AMYLA" ac="P42219" length="310" description="Deacetoxycephalosporin C hydroxylase OS=Amycolatopsis lactamdurans OX=1913 GN=cefF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>275</score>
+      <smithWatermanScore>275</smithWatermanScore>
+      <zScore>340.3</zScore>
+      <bits>71.4</bits>
+      <expectation>2.2e-11</expectation>
+      <identity>23.0</identity>
+      <positives>58.8</positives>
+      <overlap>274</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="321">VNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQG-SSIRGGNLGKPQKDHVVKYFWR-GPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQA-EPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              .:.......    . ..:    :.-:.::....:. :.    . ..  .:..  : ::..   : .  .  ::  ...-:. .  : : -  :. ..:   -: ---:  :...:  . . .    ...:... : .. : ----  .:  .... ..   ..  -: .:..-:    :   .:..:: : :.::. .:.:  ::: .: .:.-::. :..: .... .:. :     .:.. .:.  : : .: .....::.:.: . : .:.</pattern>
+      <matchSeq start="6" end="268">-------------------------MSDKTVPVFSMAELRDGSRQDEFREWARR-GVFYLTGYGATERDHRVATDTAMDFFAQGTAEEKQAVTTKVPTMRRGYSALEAESTAQVTNTGT-YTDYSMSYSMGIGG---NLFPSKEFESVWTDYFDSLYRAAQETARLVLTAA----GTYDGEDLDTLLDCDPVLRL-RYFPEVPEHRAAEYEPRRMAPHYDLSIITFIHQTPCANGFVSLQAEV-DGEMVSLPHVEDAVVVLCGAIAPLVTQGAVPAPNHHVVSPDASMLKGSDRTSSVFFLRPSTDFTFSVPDARKYGLDVSLDMEKATFGDWIGTNYVTMHAVTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CEFF_STRCL" ac="P42220" length="318" description="Deacetoxycephalosporin C hydroxylase OS=Streptomyces clavuligerus OX=1901 GN=cefF PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <smithWatermanScore>269</smithWatermanScore>
+      <zScore>332.3</zScore>
+      <bits>69.9</bits>
+      <expectation>6e-11</expectation>
+      <identity>23.2</identity>
+      <positives>55.4</positives>
+      <overlap>271</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="320">VNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQA-EPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              .: .... .    . :.:   .   :.::....:. ..    . ..  .:... :: :.    ::.  .  ::  ... :    .      :. ..-:  :   -:  :. .: .. . .  . . .:... : .. :    --: . .   . . .    .  : .:..-:  . :.  .:..:: : :.::. .:.:  ::: .: .: :-:. :..: .... .:. :      :.. ::.  : : .: . . :::.:.: . : .:</pattern>
+      <matchSeq start="6" end="271">-------------------------MADTPVPIFNLAALREGADQEKFRECVTGMGVFYLTGYGAGDKDHRLATDTAMDFFANGTEAEKAAVTTDVPTMRRGYSALEAESTAQVTRTGSYTDYSMS-FSMGISG-NVFPSPEFERVWTEYFDKLYAAAQETARLVLTASGGY--DAEIVGSLDELLDADPVLRLRYFPEVPEHRSAEHEPRRMAPHYDLSIITFIHQTPCANGFVSLQAEIG-GELVSLPVVEDAVVVMCGAMAPLATQGALPAPRHHVRSPGAGMREGSDRTSSVFFLRPTTDFSFSVAKARSYGLAVDLDMETATFGDWIGTNYVTMHAKNEPQAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="FLS_SOLTU" ac="Q41452" length="349" description="Flavonol synthase/flavanone 3-hydroxylase OS=Solanum tuberosum OX=4113 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>268</score>
+      <smithWatermanScore>268</smithWatermanScore>
+      <zScore>330.1</zScore>
+      <bits>69.6</bits>
+      <expectation>8e-11</expectation>
+      <identity>28.1</identity>
+      <positives>53.8</positives>
+      <overlap>299</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="342">QVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEE-LEQFLVDIRKS-GLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQN-GGYVPFQGSSIRGGNLGKP-QKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRI--YPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              :.:.:::..:.  ::-: . .:.  : -:.: ..:::.:.::  :. .. .::.  . .::.         :.- ::----:.:..    :: -  ::. . .:- : .::     :   ..   . :  :  .::   ::..:.: .- ..  :. .. .:. . .  .:--::---:  . ...  .: : : :.:::-- ::--:  :-.:--- ::.   :  : :. .: ::...  :...   :. : -----. . . . : :  .: ::. ---- ....: :.  .:. :</pattern>
+      <matchSeq start="56" end="328">ITKCMDTIPSEYIRSENEQPAATTLQGVVLEVPVIDISNVDDDEEKLVKEIVEASKEWGIFQVINHGIPDEVIENLQKVGKEFFEEVPQEEKELIAKKPGAQSLEGY----GTSLQKEIEGKKGWVDHLFHKIW-PPSAINYRYWPKNPPSYREANEEYAKWLRKVADGIFRSLSLGL-GLEGHEMMEAAGSEDIVYMLKINYYP---PCPRPDLALGVVAHTDMSYITL--LVP--NEVQ-VF---KDGHWYDVNYIPNAIIVHIGDQVEILSNGKYKSVYHR-----TTVNKYKTRMSWPVFLEPSS----EHEVGPIPNLINEANPPKFKTKKYKDYVYCKLNKLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="FLS_PETHY" ac="Q07512" length="348" description="Flavonol synthase/flavanone 3-hydroxylase OS=Petunia hybrida OX=4102 GN=FL PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>262</score>
+      <smithWatermanScore>262</smithWatermanScore>
+      <zScore>322.4</zScore>
+      <bits>68.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>26.3</identity>
+      <positives>55.3</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="342">QVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKS-GLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNG--GYVPFQGSSIRGGNLGKP-QKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRI--YPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKN-INPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYA</querySeq>
+      <pattern>                              ..:.::.-.   .... ....:  : -:.: ..:::.:.:.  .. .. .::.  . .::.-.  . :  .: --::----:.:..    :: -  ::. . .:- : ..:     :   ..   . :  :  ..:.  :::.:.: .- ..  :. .. .. .. .  .:--::---:  . ...  .: : : :.::.-- ::--:  ::: :-  ::.   :  : :. .: ::...  :...   :. : -----. . . . : :  .: ::-----::..-..: :.  ::. :</pattern>
+      <matchSeq start="54" end="327">LSKCMDTIPSEYIRSENEQPAATTLHGVVLQVPVIDL-RDPDENKMVKLIADASKEWGIFQLINHGIPDEAIADLQKVGKEFFEHVPQEEK-ELIAKTPGSNDIEGY----GTSLQKEVEGKKGWVDHLFHKIW-PPSAVNYRYWPKNPPSYREANEEYGKRMREVVDRIFKSLSLGL-GLEGHEMIEAAGGDEIVYLLKINYYP---PCPRPDLALGVVAHTDMSYITI--LVP--NEVQGLQV-FKDGHWYDVKYIPNALIVHIGDQVEILSNGKYKSVYHR-----TTVNKDKTRMSWPVFLEP-----PSEHEVGPIPKLLSEANPPKFKTKKYKDYVYCKLNKLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CEFE_STRCL" ac="P18548" length="311" description="Deacetoxycephalosporin C synthase OS=Streptomyces clavuligerus OX=1901 GN=cefE PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>259</score>
+      <smithWatermanScore>259</smithWatermanScore>
+      <zScore>319.7</zScore>
+      <bits>67.6</bits>
+      <expectation>3e-10</expectation>
+      <identity>23.2</identity>
+      <positives>54.3</positives>
+      <overlap>276</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="320">DDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQG-SSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQA-EPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              . . .:........   . ..:   .: .::::... :. .    .. .   .:.   .: :.    . .  .  :.. ...-:. .  : :.- .:. . :     .--:  :.  : .  ...  . . ... : : ...:   .-::     : . ----. ..  : .::.-:  . ::   :..:: : :..:: .:.:  ::: .: .:.:-:  . .:   .. ::: :   . .: . . .  : :  :  : . :: :.: . : .:</pattern>
+      <matchSeq start="1" end="267">------------------------------MDTTVPTFSLAELQQGLHQDEFRRCLRDKGLFYLTDCGLTDTELKSAKDLVIDFFEHGSEAEKRAVTSPVPTMRRGFTGLESESTAQITNTGS-YSDYSMCYSMGTAD--NLFPSGDFERIWTQYFDRQYTASRAVAREVLRATGTE-PDGGVEAFLDC----EPLLRFRYFPQVPEHRSAEEQPLRMAPHYDLSMVTLIQQTPCANGFVSLQAEVG-GAFTDLPYRPDAVLVFCGAIATLVTGGQVKAPRHHVAAPRRDQIAGSSRTSSVFFLRPNADFTFSVPLARECGFDVSLDGETATFQDWIGGNYVNIRRTSKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="DLO2_ARATH" ac="Q9ZSA7" length="348" description="Protein DMR6-LIKE OXYGENASE 2 OS=Arabidopsis thaliana OX=3702 GN=DLO2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <smithWatermanScore>252</smithWatermanScore>
+      <zScore>309.6</zScore>
+      <bits>65.8</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>28.3</identity>
+      <positives>56.6</positives>
+      <overlap>318</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="360">VNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKV---STKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYT-DTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRTPNE--KFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAE--IIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              :: ::.  .---.  . ..::     . :.: : :::::::.  ...:: :::.  .-: ::.:.:.-::.  .   . :. :. . .:---- .: .  . .   . ::. :. --.: :.   . : .  ..  ....: ..: : - :----.  :::... . ..   ::. -:--. :.:. :  : :...::.  :  .-.:.:-.:--- ::: . :  . :...: .:.... ....   :.:: .-   ::.----:: :. ::: :.:--.: :.... -: :: :---: .: -..:  .     ::</pattern>
+      <matchSeq start="42" end="331">ASVVDHVPSNYVRPVSDRPKMSEVQTSGDSIPLIDLHDLHGPNRADIINQFAHACSSCGFFQIKNHGVPEETIKKMMNAAREFFRQS-ESERVKHYSADTKKTTRLSTSFNVSKEKVSN----WRDFLRLHCYPIEDFINEWPSTPISFREVTAEYATSVRALVLTLLEAISESLGLA-KD----RVSNTIGKHGQHMAINYYPRC-P--QPELTYGLPGHKDANLITVLLQDEV-SGLQ-VF---KDGKWIAVNPVPNTFIVNLGDQMQVISNEKYKSVLHRA-VVNSDM----ERISIPTFYCPSEDAVISPAQELI-NEEEDS---PAIYR-NFTYAEYFEKFWDTAFDTESCIDSFKASTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="FLS_EUSER" ac="Q9M547" length="334" description="Flavonol synthase/flavanone 3-hydroxylase OS=Eustoma exaltatum subsp. russellianum OX=52518 GN=FLS PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <smithWatermanScore>238</smithWatermanScore>
+      <zScore>292.0</zScore>
+      <bits>62.5</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>25.9</identity>
+      <positives>52.2</positives>
+      <overlap>301</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="342">QVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKS-GLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKP-QKDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRI--YPQAEPSDEEEITHRLVPHLDTSFITL--ANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALH--GVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              :.:.::.. -: ....  .. .  : -:.: .::::.:.::  .. .. ..:.    ::...    .   .  ::----:. ..    :: -  ::. . .:- : .::     :   :.   . :  :  . :. ..:: :.: .-:..:  :..  ..  . .  .:--::---:  . ...  -: : : : ::.-- :.::------:: :  -::.      : :. .: ::...  ....   :. :-- :.:  .-------: :  .: :: ----:.....: :. ..:  :</pattern>
+      <matchSeq start="42" end="313">LSKVIDTIPAEYIRSENEQPVISTVHGVVLEVPVIDLSD-SDEKKIVGLVSEASKEWGIFQVVNHGIPNEVIRKLQEVGKHFFELPQEEKELIAKPEGSQSIEGY----GTRLQKEVDGKKGWVDHLFHKIW-PPSAINYQFWPKNPPAYREANEEYAKRLQLVVDNLFKYLSLGL-DLEPNSFKDGAGGDDLVYLMKINYYP---PCPRPDLALG-VAHTDMSAITVLVPNEVP------GLQVYK-DGHWYDCKYIPNALIVHIGDQVEIMSNGKYKSVYHRTTVNKEKT-------RMSWPVFLEPP----PDHEVGPIPKLVNEENPAKFKTKKYKDYAYCKLNKLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="IPNS_AMYLA" ac="P27744" length="328" description="Isopenicillin N synthase OS=Amycolatopsis lactamdurans OX=1913 GN=pcbC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <smithWatermanScore>236</smithWatermanScore>
+      <zScore>289.6</zScore>
+      <bits>62.1</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>25.8</identity>
+      <positives>56.2</positives>
+      <overlap>299</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="322">DDVQVNKGKTLETSFPPLKGDDLKWFPRSSLP-AEIPAIDIGKVSTKEELEQFLVD------IRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEE-RMKYYT--DTHFQNGGYVPFQGS-SIRGGNLGKPQ--KDHVVKYFWRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKL------RFPDFDP-MEFENTINSKKMFFTNRI--YPQAEPS-DEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVND</querySeq>
+      <pattern>                              .:-::.:.::.. .   .  :.  : ------ : ::.:: .::::  .   .: : :.. .:   . .- .. :.--..: .:: :. ..:.-....    .:.--.::         . .:  :.:.   .      : . . ... ....... :------::--:.:-..  .:..: ...    .--:: .. .-: :... .-- :.:.:.::.  :. .----:.: ::: :: .- .:   ...::  :  :..::..:.:: :: : ------: ..:: ::  :.. ..</pattern>
+      <matchSeq start="3" end="286">----------------------------MKMPSAEVPTIDVSPLFGDDAQEKVRVGQEINKACRGSGFFYAANHGVDVQRLQDVVNEFHRTMSPQEKYDLAIHAYNKNNSHVRNGYYMAIEGKKAVESFCYLNPSFSEDHPEIKAGTPMHEVNSWPDEEKHPSFRPFCEEYYWTMHRLSKVLMRGFALALGKDERF--FEPELKEADTLSSVSLIRYPYLEDYPPVKTGPDGEKLSFE--DHFDVSMITVLYQTQV----QNLQVETVDGWR-DLPTSDTDFLVNAGTYLGHLTNDYFPSPLHRVK------FVNAERLSLPFFFHAGQHTLIEPFFPDGAPEGKQGNEAVRYGDYLNHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="EXPA_ACRCH" ac="P11935" length="332" description="Cephalosporin biosynthesis expandase/hydroxylase OS=Acremonium chrysogenum OX=5044 GN=CEFEF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <smithWatermanScore>233</smithWatermanScore>
+      <zScore>285.7</zScore>
+      <bits>61.4</bits>
+      <expectation>2.4e-08</expectation>
+      <identity>23.7</identity>
+      <positives>54.7</positives>
+      <overlap>278</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="320">DDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEE-RMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWR-GPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDE--EEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYA</querySeq>
+      <pattern>                              . ...:.. .  ... . : ..   .  .:.::... :. ..   .. ..  .:... .:::-:    .: . . :  .    :.    . ::- .:. . :   -: ---:  ::. : .. . .  . . .:. : :......   .   :  .:---..   ..  -: .:..-: :.--::   :. :: : : :::..:.   ::: .:  :.-::. : .: . ....:: :   .  : . . .  : : .:  :   :: :.: . : .:</pattern>
+      <matchSeq start="1" end="268">------------------------------MTSKVPVFRLDDLKSGKVLTELAEAVTTKGIFYLTESGLVDDDHTSARETCVDFFKNGSEEEKRAVTLADRNARRGFSALEWESTAVVTETGK-YSDYSTCYSMGIGG---NLFPNRGFEDVWQDYFDRMYGAAKDVARAVLNSVGAPLAGEDIDDF---VECDPLLRL-RYFPEV-PEDRVAEEEPLRMGPHYDLSTITLVHQTACANGFVSLQCEV-DGEFVDLPTLPGAMVVFCGAVGTLATGGKVKAPKHRVKSPGRDQRVGSSRTSSVFFLRPKPDFSFNVQQSREWGFNVRIPSERTTFREWLGGNYVNMRRDKPAAAEAAVPA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="HY6H_HYONI" ac="P24397" length="344" description="Hyoscyamine 6-dioxygenase OS=Hyoscyamus niger OX=4079 GN=H6H PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <smithWatermanScore>233</smithWatermanScore>
+      <zScore>285.3</zScore>
+      <bits>61.3</bits>
+      <expectation>2.5e-08</expectation>
+      <identity>25.1</identity>
+      <positives>55.8</positives>
+      <overlap>346</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="25" end="350">MTVAINNETVVLTPNEDDVQVNKGKTLETSF-PPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEE-ERMKYYTDT-HFQNGGYVPFQGSS---IRGGNLGKPQKDHVVKYFWRG--P---EVINRTPNE--KFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQ-VPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEP--AEIIIPSKNI----NPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                        :..  ::- ::.    :  : ..---..: ::. .-  .  ..:.    .  ::: ..::: :::. ...... .::..  .::-:..:   ..-.:.----.:.. ..---..: .:.. .  .    . .:--:---...:  :..--:. :.   . .:. :.. ...  : ..: :..  ::-----: ... .:..::   :  .::.----:     : : ..::: .:-.:---:.: :.:.--:.  . :  : ....: .: .:. .:.. . ...: :   :.----- .: :. :.  :--.  : :.:..----::-:     :   : :: :.</pattern>
+      <matchSeq start="11" end="328">--------------MATFVSNWSTKSVSESFIAPLQKRAEKDVPVGN---DVPIIDLQQ-HHHLLVQQITKACQDFGLFQVINHGFPEELMLETMEVCKEFFALPAEEKEKFKPKGEAAKFE----LPLEQKAKLYVEGEQLSNEEFLYWKDTLAHGCHPLDQDLVNSWPEKPAKYREVVAKYSVEVRKLTMRMLDYICEGLGLKLGYFD-----NELSQIQMMLTNYYPPCPDPSS----TLGSGGHYDGNLITLLQQDLP---GLQQLIVK--DATWIAVQPIPTAFVVNLGLTLKVITNEKFEGSIHRVVTDPT-----RDRVSIATLIGPDYSCTIEPAKELLNQDNP-PLYKPYSYSEFADIYLSDKSDYDSGVKPYKINV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="IPNS_STRGR" ac="Q54243" length="329" description="Isopenicillin N synthase OS=Streptomyces griseus OX=1911 GN=pcbC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <smithWatermanScore>232</smithWatermanScore>
+      <zScore>284.5</zScore>
+      <bits>61.1</bits>
+      <expectation>2.8e-08</expectation>
+      <identity>26.5</identity>
+      <positives>55.5</positives>
+      <overlap>321</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="43" end="337">TPNEDDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDI-----GKVSTKEELEQFLVDI-RKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTH------FQNGGYVPFQGS-SIRGGNLGKPQ--KDHVVKYFWRGPEVINRTPNEK----FTEAHNMHHTETFKVAEKVIRTIFKALKLRFPD--FDP-MEFENTINSKKMFFTNRI--YPQAEPS-DEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINP-NPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              :   :::..:.:::-----: .. :... : .   -:.::.::  .::.  ..  .: :---::  : :.::..    ...------ .:: :.  .:.-....    .:.--.::         .  :  :.::----:    .... ..:.... ..: .--:: :  :.--:: -. . .:...  ..    .--:: .. .-:  ... .-- :::.:.::.  :. .----:.: :::.:: .- .:   ...::  :  ..:::..:.:.  : : ------: ..:: ::  : . ..  .----..:-.::.:</pattern>
+      <matchSeq start="2" end="300">-----------------------------MPIPMLPAHVPTIDISPLSGGDADDKKRVAQEINKACRESGFFYASHHGIDVQLLKDVVN---EFHRTMTDEEKYDLAINAYNKNNPRTRNGYYMAVKGKKAVESWCYLNPSFSEDHPQIRSGTPMHEGNIWPDEKRHQRFRPFCEQYYRDVFSLSKVLMRGF--ALALGKPEDFFDASLSLADTLSAVTLIHYPYLEDYPPVKTGPDGTKLSFE--DHLDVSMITVLFQTEV----QNLQVETADGWQ-DLPTSGENFLVNCGTYMGYLTNDYFPAPNHRVK------FINAERLSLPFFLHAGHTTV----MEPFSPEDTRGKELNPPVRYGDYLQQASNALIAKNGQT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="FLS_PETCR" ac="Q7XZQ6" length="337" description="Flavonol synthase/flavanone 3-hydroxylase OS=Petroselinum crispum OX=4043 GN=FLS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <smithWatermanScore>231</smithWatermanScore>
+      <zScore>282.9</zScore>
+      <bits>60.9</bits>
+      <expectation>3.4e-08</expectation>
+      <identity>26.5</identity>
+      <positives>55.7</positives>
+      <overlap>298</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="322">QVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVS-TKEELEQFLVDI-RKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIR---GGNLGKPQKDHVVKYFWRGPEV-INRTPNEK--FTEAHNMHHTETFKVAEK-VIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRI--YPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALH--GVDK------------PPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDP</querySeq>
+      <pattern>                              ..:.::.:. .-:.:.: ..... -:. :.: .::::.:...  .. .. .::.    .:...    . .    ::----:....---::. :--  ::. . .:    :- :  ::. --. ::.-----: . :: .-:.  .:.::.: .- ..  :.... ..  ...  .:--::---:  . ...  .: : : : ::. --::--:  ::: :. -: .   :  : :. .. ::...  ....   :. :-- :.:------------:: .:. :  -:.:::  .::.</pattern>
+      <matchSeq start="42" end="318">MSRCMDTIPSEYIRSESEQPAVTTMQGVVLQVPVIDLGSSNNTEENLVELIAEASREWGIFQVVNHGIPDDAIAKLQKVGKEFFELPQQEKEVIAKPEGYQGVEGY----GTKLQKELGGKKG--WVDHLFHIIWPKSAVNYNFWPNNPPLYREAN-----EEYAVALRGVVDKLFEALSLGI-GLEKHELKKASGGDDLIYMLKINYYP---PCPRPDLALGVVAHTDMSAITIL--VP--NEVQGLQVHK-DDHWYDVKYIPNALIIHIGDQIEIMSNGKYKSVYHRTTVNKDKTRMSWPVFLEPPPELLTGPI-SKLITDENPAKFKTKKYKDYVYCKLNKLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LDOX_ARATH" ac="Q96323" length="356" description="Leucoanthocyanidin dioxygenase OS=Arabidopsis thaliana OX=3702 GN=LDOX PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <smithWatermanScore>225</smithWatermanScore>
+      <zScore>274.7</zScore>
+      <bits>59.4</bits>
+      <expectation>9.8e-08</expectation>
+      <identity>27.0</identity>
+      <positives>55.9</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="342">QVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEEL--EQFLVDIRKS----GLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQ-KDHVVKYFW----RGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINS-KKMFFTNRI--YPQAEPSDEEEITHRLVPHLDTSFIT--LANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALH-G-VDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              ..:.::. .. . .: --:. . ...:.----:.....:::.: ..   : .: .::.: ..::..-:: .:---:  : .   ::.. ..  :. .-.:.  .  .----:   .  .::..-. :: ----.:  :  . .   .::::.. .- ..: ..:. ...-.....  .:--::. -:--. :..  .  : :.: .:--: :.::---:.:-:: :---:: : .  . .: .. ::..:  :...   : ::-:-:.:   -------: :  .: :: .  :  :---: :: .:   :</pattern>
+      <matchSeq start="46" end="326">ISIPKEYIRPKEELESINDVFLEEKKEDGPQVPTIDLKNIESDDEKIRENCIEELKKASLDWGVMHLINHGIPADLMERVKKAGEEFFSLSVEEKE-KYAND---QATGKIQGYGSKLANNASGQLEWEDYFFHLAYPEEKRDLSIWPKTPSD-YIEAT----SEYAKCLRLLATKVFKALSVGL-GLEPDRLEKEVGGLEELLLQMKINYYPKC-P--QPELALGVEAHTDVSALTFILHNMVP---GLQ-LFYE---GKWVTAKCVPDSIVMHIGDTLEILSNGKYKSILHRGLVNKEKV-------RISWAVFCEPPKDKIVLK---PLPEMVSVESPAKFPPRTFAQHIEHKLFGKEQEELVSEKND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="IDS2_HORVU" ac="Q40061" length="338" description="Mugineic-acid 3-dioxygenase OS=Hordeum vulgare OX=4513 GN=IDS2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <smithWatermanScore>224</smithWatermanScore>
+      <zScore>273.9</zScore>
+      <bits>59.2</bits>
+      <expectation>1.1e-07</expectation>
+      <identity>25.2</identity>
+      <positives>55.3</positives>
+      <overlap>309</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="353">VNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEELEQFLVDIRKS-GLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRGPEVINRT-PNEK--FTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFIT--LANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              .: ::...-- ..:..: ..:  : -:.. .::::. : .  ..: . .::..  .:.-. ..... . . .  --: ::...--.::.     :.. ..  :   .. -:.. --. :. . . . .  :: ...: . ..: ::-:::----: . :.. ..      ::---:: .   :  : :: : ...:--: . ::------:: .  - :  .::  . :: .. .: .:  .:..:: .. :---.  ... :-- : :. .:  ::.  .----..:  : .::. :  :  -:::..</pattern>
+      <matchSeq start="35" end="311">MNLTPVHASSIPDSFLLPADRLHPATTDVSLPIIDMSR--GRDEVRQAILDSGKEYGFIQVVNHGISEPMLHEMYAVCHEFFDMPAED-KAEFFSEDRSERNKL--FCGSAFE--TLGEKYWIDVLELLYPLPSGDTKDWPHKPQMLREVVGNYTSLARGVAMEILRLLCEGLGLR-PDF----FVGDISGGRVVVDINYYP---PSPNPSRTLGLPPHCDRDLMTVLLPGAVP------GLEIAY-KGGWIKVQPVPNSLVINFGLQLEVVTNGYLKAVEH---RAATNFAE--PRLSVASFIVPADDCV----VGPAEEFVSEDNPPRYRT-LTVGEFKRKHNVVNLDSSINQIININNNQKGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="JOX4_ARATH" ac="O80449" length="353" description="Jasmonate-induced oxygenase 4 OS=Arabidopsis thaliana OX=3702 GN=JOX4 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <smithWatermanScore>220</smithWatermanScore>
+      <zScore>268.3</zScore>
+      <bits>58.2</bits>
+      <expectation>2.2e-07</expectation>
+      <identity>28.3</identity>
+      <positives>53.4</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="44" end="345">PNEDDVQVNKGKTLETSFPPLKGDDLKWFPRSSLPAEIPAIDIGKVSTKEE-LEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGGYVPFQGSSIRGGNLGKPQKDHVVKYFWRG--PEVINRTPNE------KFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFENTINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>                              .:.   :::..:.. :  : :-:.      .. :.: .::::: . .   : .:.:::.    ::.:-:: ..  ------- ..: . : : .-:  :     ::. .--:  :-:.:..------:. :  . .  :. :. :.. .:. ..: :.-:.-  :.  .  ..    . . .::. -:--. ..:  :  : : . ::.-- .:-:.   :: :. ::: -: . .. :. .: ::..:. :...   :. : : -----.  : :: ::  ::.:-.  ::---..:  : .. . : .:</pattern>
+      <matchSeq start="41" end="323">SVQSLSQTGVPTVPNRYVKPAHQRPVFNTTQSDAGIEIPVLDMNDVWGKPEGLRLVRSACEEWGFFQMVNHGVTHSLMERVRGAWREFFELPLEEKR-KYANSPD-------TYEGYGSRLGVV-KDAKLDWSDYFFLNYLPSSI-RNPSKWPSQPPKIRELIEKYGEEVRKLCERLTETLSESLGLK-PN-KLMQALGGGDKVGASLRTNFYPKC-P--QPQLTLGLSSHSDPGGITI--LLP-DEKVAGLQVRRGDGW-VTIKSVPNALIVNIGDQLQILSNGIYKSVEHQVI-----VNSGMERVSLAFFYNP-RSDIP---VGPIEELVTANRPALYKPIRFDEYRSLIRQKGPCGKNQVDSLLLTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="SRG1_ARATH" ac="Q39224" length="358" description="Protein SRG1 OS=Arabidopsis thaliana OX=3702 GN=SRG1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <smithWatermanScore>220</smithWatermanScore>
+      <zScore>268.2</zScore>
+      <bits>58.2</bits>
+      <expectation>2.2e-07</expectation>
+      <identity>24.5</identity>
+      <positives>56.5</positives>
+      <overlap>322</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="318">-MTVAINNETVVLTPNEDDVQVNKGKTLETSFPP--LKGDDLKWFPRSSLPA--EIPAIDIGKVSTKE----ELEQFLVDIRKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERMKYYTDTHFQNGG--YVPFQGSSIRGGNLGKPQKDHVVKYF-WRGPEVINRTPNEKFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFEN--TINSKKMFFTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALH-GVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPEGTTWDFVKNKFITGYYAD</querySeq>
+      <pattern>           .:.:. ...-- : ::.-:. ::--...:. :    ... .--::: ::. .. .. ----:.:..    .. :.: .::::.      .: . ...:..   ::..  .    .... :--.:  . ...  ..:  ----:.:.  - : :... . :-  : .. .:. .:. .::. .:  . .::...  ... .-:..--...: .: .----::---:  . . .  :.:: :.  .:.  ::---:  .:: .. -::: : :  . :...: ::. :  .:..   :  :-:: .  ------.:: :. ::.</pattern>
+      <matchSeq start="12" end="307">MEAKGAAQWSSILVPSVQEM--VKEKTI-TTVPPRYVRSDQDKTEVDDDFDVKIEIPIIDMKRLCSSTTMDSEVEKLDFACKEWGFFQLVNHGIDSSFLDKVKSEIQDFFNLPMEEKKKFWQRPDEIEGFGQAFVVSEDQKLDWADLFF----HTVQPVELRKPHLFPKLP-LPFRDTLEMYSSEVQSVAKILIAKMARALEIKPEELEKL-FDDVDSVQSMRMNY----YP---PCPQPDQVIGLTPHSDSVGLTVLMQV---NDVEGLQIKK-DGKWVPVKPLPNAFIVNIGDVLEIITNGTYRSIEHRGVVNSE------KERLSIATFHNVGMYKEVGPAKSLVERQKVARFKRLTMKEYNDGLFSRTLDGKAYLDALRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="IPNS_STRJU" ac="P18286" length="329" description="Isopenicillin N synthase OS=Streptomyces jumonjinensis OX=1945 GN=pcbC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>219</score>
+      <smithWatermanScore>219</smithWatermanScore>
+      <zScore>267.8</zScore>
+      <bits>58.0</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>26.4</identity>
+      <positives>54.1</positives>
+      <overlap>292</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="317">DDVQVNKGKTLETSFPPLKGDDLKWFPRSSLP-AEIPAIDIGKVS-----TKEELEQFLVDI-RKSGLFYIVNHGVPEEVSINVYNAFREFISTTTEEERM--KYYTDT-HFQNGGYVPFQGS-SIRGGNLGKPQ--KDHVVKYFWRGPEVINRTPNE----KFTEAHNMHHTETFKVAEKVIRTIFKALKLRFPDFDPMEFE-NTINSKKMF---FTNRIYPQAEPSDEEEITHRLVPHLDTSFITLANQVPADNGFQGLFVETGDGKKVKVPGIRNSYLVFIGQSLSYLTKNYLPSALHGVDKPPSDLFEGSERSSLITFYEPAEIIIPSKNINPNPEETSESCPFFYDIGLTVNDPE</querySeq>
+      <pattern>                              .:-::.:.:::. .:-----.:... : .   -: ::.::  ::::  ..  .: : :.. .:   ...  -- :  :.-: .:: :  ..:.-....    .:.-- :: .       . .:  :.:----.:    . .. . ....  ..:    ::  :   ::    :-.:..: ...---. ..  :    .:  ... .-- :::.:.::.  :. .----:.: ::: :: .- .:   ...::  :  ....:..:.:.  : : ------: ..:: ::  :</pattern>
+      <matchSeq start="5" end="283">--------------------------MPILMPSAEVPTIDISPLSGDDAKAKQRVAQEINKAARGSGFFYASNHGVDVQLLQDVVNEFHRNMSDQEKHDLAINAYNKDNPHVRNGYYKAIKGKKAVESFCYLNPSFSDDHPMIKSETPMHEVNLWPDEEKHPRFRPFCEDYYRQLLRLSTVIMRGYALALGRREDFFDEALAEADTLSSVSLIRYPYLEEYPPVKTGADGTKLSFE--DHLDVSMITVLYQTEV----QNLQVETVDGWQ-DIPRSDEDFLVNCGTYMGHITHDYFPAPNHRVK------FINAERLSLPFFLNAGHNSVIEPFVPEGAAGTVKNPTTSYGEYLQHGLRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

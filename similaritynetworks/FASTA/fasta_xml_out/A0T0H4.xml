@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162046-0713-74865026-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162046-0713-74865026-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162046-0713-74865026-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0H4|SYFB_PHATC" type="PROTEIN" length="706"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:20:46+00:00" end="2022-11-07T16:20:50+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="SYFB_PHATC" ac="A0T0H4" length="706" description="Phenylalanine--tRNA ligase beta subunit, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>4456</score>
+      <smithWatermanScore>4456</smithWatermanScore>
+      <initn>4456</initn>
+      <init1>4456</init1>
+      <opt>4456</opt>
+      <zScore>5344.8</zScore>
+      <bits>999.5</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>706</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="706">MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="706">MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="SYFB_TRIV2" ac="Q3MAZ7" length="810" description="Phenylalanine--tRNA ligase beta subunit OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1181</score>
+      <smithWatermanScore>1181</smithWatermanScore>
+      <initn>985</initn>
+      <init1>255</init1>
+      <opt>1181</opt>
+      <zScore>1410.7</zScore>
+      <bits>271.7</bits>
+      <expectation>5.1e-71</expectation>
+      <identity>31.6</identity>
+      <positives>66.6</positives>
+      <overlap>692</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="24" end="705">-------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYKFHSSNKVLEKVL-KPIVLNYKTIVEILGPIK-KRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFE--KGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :.: ::.-.:. .: :.-----.. :....::::.:.::. ::. :.:.: . .---::  . : :-----... .:    ..   :  . ....: ..  . :.:.:..: :.:. :..:.::. ::.::: : :.  .: ... : . . ....... :..:  . . .  . .: .. .:. ::. :...::.. ..:   :  :.::..:...:..  ::..::....:.. :.:::.... . :  :  : .::.-....  .:..  ....    . -. : :    . :.::::.- .:.:----.  . :   :  :. .-:  ..  .:.:..:  :  :. :::::::::.::.:..::   ::.   .:    . .  .:. . :   :::::::::::.   --  .: : :::. . :.::..:: .:. ..: ::.:::. :.::: :..:  .-:  : : . ..::.::    ..: .--: : : :::::: .:..::::.. .... . . ---. ::: :.: ....-:. .:.:::::: :     :   .:.:.:.:... ..:..... .--.. ::.::   .:..:.   .:. .:.:: :   :  .: ...:.:.:.:: .:. . :: ..:..... .:: . :.. . ......:  :  . ::</pattern>
+      <matchSeq start="141" end="809">LRGVPSQGMICSLKELGLPSEVDGIYIFPQENLPLGS-DVRPLLGLD-----DVILDVTATANRADALSMVGIAREVAALTDAKLSIPKPGEAFVS-----ESVGKLGLKIADTQACPAYIGTVIEQVKIASSPEWLQQRLRSAGVRPISNVVDITNYVLLEWGQPLHAFDQERLKSVANADNLTIGVRCANQGETLKTLDGQTRNLTTQNLLITANDQPVALAGVMGGEETEVHEGTQSLILEAALFDSVAIRRSSRSVGLRSEASGRYERGVNRAELEIANRRALSLISELADGVIVHQEIADTRPDPTTWSRSIFLRLDRVNEVLGPINVGETGE----LEAKDVERTLTALGCE-LTPAGEGTWNVSVPPYRYRDLEREIDLIEEVARLYGYDNFCDTLPDKAEAGYLPVDQELVRKLRAALRAEGLTELIHYSLVKPGE--DRQIVLSNPLFVEYSALRTDLLAGLIDAFQYNLEQGNGSLNGFEIGRIFWQE-EDGLQEKDAIAGIIGGDTSLGKWSKGSKDQPLTWFEAKGILESVFQQLGILVEYQPDCRD---ERLHPGRTASLWIG-GNRLGIFGQLHPQLRRDKDLPESVYVFQLDLDVLLDALDKDEILVPAFKPYSTYPASDRDIAFFAPVKISVSEIEKAINKAGKGLLESVELFDEYRGENVPQGQRSLAFRLVYRASDRTLTDTEVEPVHNKVREALVEKFGVNLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="SYFB_SYNE7" ac="P74764" length="810" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=pheT PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1164</score>
+      <smithWatermanScore>1164</smithWatermanScore>
+      <initn>1071</initn>
+      <init1>328</init1>
+      <opt>1164</opt>
+      <zScore>1390.3</zScore>
+      <bits>268.0</bits>
+      <expectation>7e-70</expectation>
+      <identity>32.3</identity>
+      <positives>66.5</positives>
+      <overlap>669</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="705">VDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF-LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKS-VGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              ..:...:::::.:.::. ::. :. .:    ---:.:------ :.   ..  :.-:  ..  :  ....:.::.     :.:.:..:  .::  .::.::. :::::: : :.  .: .:. . . .  .......:. :  . . .. .  : .. ... :.. :...::.. . .    ..:..::.:.. :    .:...:. ..::. :::::.... : :  :  : :.::-.:.. ... .  ...   :  -. :.:  . : :.:::.. .-.:.:  .. . .   :  .. ..-: :...--:.: .:  :  :. :::::::::.::.:..::   :: . :- :  ... . :..: .   ..::::: :::::.  .--  ...:.::::.. :.::..:: .:. ..: : .:::. : ::: :..:  .-:  . : . .:::.::   .. : . :--:.. :. ::: .:..:....: :... . :--  .:-:: :.: ..:.-:  .: :::::: : .  :: .:.: :::.:..  . :.: .  .--.. :: .:   .::.:.. ...   :::.::  .:  .::...:.:.: :: .::.. :: ..::.... .:: . :.. .  .... :  . .. ::</pattern>
+      <matchSeq start="159" end="809">TKESEGIHIFPEDAGLQAGQPVGPLLGLDDVVLDLTSTANRADALSLIGIAREVRALTAATLTLPEV------ELQTYPELPCLA-ISLQSEACSHYSGTIIEGVTIAPSPEWLQKRLQLAGIRTINNVVDITNYILLEYGQPLHAFDRQKLQAIAGSSDLAIGVRSAQAGETLKTLDDQERTLAEAALVITAGDCPVALAGVMGGADSEVSQETTQLLLEAAWFEPIAVRRSARSQGLRTEASARYERGVNVTELPIATQRAIDLLLQIAGGTVISQTVATTTQTEPE-HSITLRLQRINELLGPVQAE-DEELKDLGADDIERLLTAIGCHLTLVDDAV--WQVRVPPYRYRDLEREIDLIEEVARLYGYDNFGETLPPLGSDEGALSIDESLRRQIRAVCRGVGLTELQHYSLVKPGS--DRQVHLANPLLAEYSALRLDLLSGLIDAFQYNWEQGNGPLWGFEIGRIFWRE-EDGFFEADRMGGILGGDPSRGRWQRGGKEQAIDWYAAKGVLEEIFERFGLTIEFQPDRQ--DDRF-HPGRTASLWLQ-GDRLGRFGQLHPSLCEGRGLPAEVYAFELDLDVWLDHLDQPERQVPRFQPYSSFPASDRDLAFFVDQSVTVAELERIIRRQGGALLSEVELFDQYCGEHVPENQRSLAFRLTYRASDRTLTEAEVEPVHDQVRQSLVERFRVTLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="SYFB_SYNP6" ac="Q5N5G8" length="811" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1163</score>
+      <smithWatermanScore>1163</smithWatermanScore>
+      <initn>1071</initn>
+      <init1>328</init1>
+      <opt>1163</opt>
+      <zScore>1389.1</zScore>
+      <bits>267.7</bits>
+      <expectation>8.2e-70</expectation>
+      <identity>32.0</identity>
+      <positives>66.6</positives>
+      <overlap>671</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="705">VDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKV--CKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF-LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKS-VGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              ..:...:::::.:.::. ::. :. .:    ---:.:--     ..:.:----..:  .. ..---- ....:.::.     :.:.:..:  .::  .::.::. :::::: : :.  .: .:. . . .  .......:. :  . . .. .  : .. ... :.. :...::.. . .    ..:..::.:.. :    .:...:. ..::. :::::.... : :  :  : :.::-.:.. ... .  ...   :  -. :.:  . : :.:::.. .-.:.:  .. . .   :  .. ..-: :...--:.: .:  :  :. :::::::::.::.:..::   :: . :- :  ... . :..: .   ..::::: :::::.  .--  ...:.::::.. :.::..:: .:. ..: : .:::. : ::: :..:  .-:  . : . .:::.::   .. : . :--:.. :. ::: .:..:....: :... . :--  .:-:: :.: ..:.-:  .: :::::: : .  :: .:.: :::.:..  . :.: .  .--.. :: .:   .::.:.. ...   :::.::  .:  .::...:.:.: :: .::.. :: ..::.... .:: . :.. .  .... :  . .. ::</pattern>
+      <matchSeq start="159" end="810">TKESEGIHIFPEDAGLQAGQPVGPLLGLDDVVLDLTSTANRADALSLIGIAREVRALTAATLTLPEVGTADLSRTTLSW----RSLYKVKPGS----HYSGTIIEGVTIAPSPEWLQKRLQLAGIRTINNVVDITNYILLEYGQPLHAFDRQKLQAIAGSSDLAIGVRSAQAGETLKTLDDQERTLAEAALVITAGDCPVALAGVMGGADSEVSQETTQLLLEAAWFEPIAVRRSARSQGLRTEASARYERGVNVTELPIATQRAIDLLLQIAGGTVISQTVATTTQTEPE-HSITLRLQRINELLGPVQAE-DEELKDLGADDIERLLTAIGCHLTLVDDAV--WQVRVPPYRYRDLEREIDLIEEVARLYGYDNFGETLPPLGSDEGALSIDESLRRQIRAVCRGVGLTELQHYSLVKPGS--DRQVHLANPLLAEYSALRLDLLSGLIDAFQYNWEQGNGPLWGFEIGRIFWRE-EDGFFEADRMGGILGGDPSRGRWQRGGKEQAIDWYAAKGVLEEIFERFGLTIEFQPDRQ--DDRF-HPGRTASLWLQ-GDRLGRFGQLHPSLCEGRGLPAEVYAFELDLDVWLDHLDQPERQVPRFQPYSSFPASDRDLAFFVDQSVTVAELERIIRRQGGALLSEVELFDQYCGEHVPENQRSLAFRLTYRASDRTLTEAEVEPVHDQVRQSLVERFRVTLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="SYFB_NOSS1" ac="Q8YMH5" length="810" description="Phenylalanine--tRNA ligase beta subunit OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1158</score>
+      <smithWatermanScore>1158</smithWatermanScore>
+      <initn>971</initn>
+      <init1>246</init1>
+      <opt>1158</opt>
+      <zScore>1383.1</zScore>
+      <bits>266.6</bits>
+      <expectation>1.8e-69</expectation>
+      <identity>30.9</identity>
+      <positives>66.8</positives>
+      <overlap>689</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="24" end="705">-------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLL-RISNPSLVYKFHSSNKVLEKVL-KPIVLNYKTIVEILGPIK-KRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFE--KGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :.: ::.-.:. .: :.-----.. :....::::.:.::. ::. :.:.: . . .. .  . :..-- .. .:    ..   :  . ....: ..  . :.:.:..: :.:. :..:.::. ::.::: : :.  .: ...   . . ....... :. :  . . .  . .: .. .:. ::. :...::.. ..:   :  :.::..:...:..  ::..::....:.. :.:::.... . :  :  : .::.-...   .:..  ....      -. :.:    . :.::::.- .:.:----.  . :   :  :. .-:  ..  .:.:..:  :  :. :::::::::.::.:..::   ::.   .:    . .  .:. . :   :::::::::::.   --  .: : :::... :.::..:: .:. ..: ::.:::. :.::: :..:  .-:  : : . ..::.::    ..: .--: : : :::::: .:..::::.. .... . . ---. ::: :.: ....-:. .:.:::::: :     :   .:.:.:.:... ..:..... .--.. ::.::   .:..:.   ... .:.:: :   :  .: .....:.:.:: .:. . :: ..:..... .:: . :.. . ......:  :  . ::</pattern>
+      <matchSeq start="141" end="809">LRGVPSQGMICSLKELGLPSEVDGIYIFPQENLPLGS-DVRPLLGLD-----DVILDVTATANRADALSMVGIAREVAALTDAKLNIPEPGEVSVS--GSVGKLGLKIADTQACPAYIGTVIEQVKIASSPEWLQQRLRSAGVRPISNVVDITNYVLLEWGQPLHAFDQERLKFVANADSLTIGVRFANPGETLKTLDGQTRNLTTQNLLITANDQPVALAGVMGGEETEVHEGTQSLILEAALFDSVAIRRSSRSVGLRSEASGRYERGVNRAELEIANRRALSLISELAAGVIVHQEIADTRPDPASWSRSILLRLDRVNEVLGPINVGETGE----LEAKDVERTLTALGCE-LTPAGEGTWNVSVPPYRYRDLEREIDLIEEVARLYGYDNFCDTLPDKAEAGYLPVDQELVRKLRAALRAEGLTELIHYSLVKPGE--DRQIVLSNPLFAEYSALRTDLLAGLIDAFQYNLEQGNGSLNGFEIGRIFWQE-EDGLQEKDAIAGIIGGDTSLGKWSKGSKEQPLAWFEAKGILESVFQQLGILVEYQPDCRD---ERLHPGRTASLWIG-GNRLGIFGQLHPQLRRDKDLPESVYVFQLDLDVFLNALDKDEILVPTFKPYSTYPASDRDIAFFAPVKVSVSEIEKAINKAGKGLLESVEIFDEYRGENVPQGQRSLAFRLVYRASDRTLTDTEVEPVHNKVREALVEKFGVNLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="SYFB_SYNY3" ac="P74296" length="810" description="Phenylalanine--tRNA ligase beta subunit OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1140</score>
+      <smithWatermanScore>1140</smithWatermanScore>
+      <initn>836</initn>
+      <init1>539</init1>
+      <opt>1140</opt>
+      <zScore>1361.5</zScore>
+      <bits>262.6</bits>
+      <expectation>2.8e-68</expectation>
+      <identity>31.5</identity>
+      <positives>64.6</positives>
+      <overlap>666</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="705">VDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLF--DSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKI-KSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTI--YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              . :::: ::::.:.::. :.. :.:.: . . .. .    :.. :----.:    :    :  .......:..    : :.:..:...:  :.::.::  ::.::: : :.  .: ::. . :    :.:... ::.: .... .. .  :. . .:: ::. :..:::.. .       .:.....: ..:..  ::..:. . .:.. :.:::....   :  ::.: :.:.     . : .  ....  ..    : :  . . ..:: ..  :.--.  :. : :   :  :.  .  --::.:  : ::.:: :. :: :::::::::.::.:...:  .::.   .:  . :::..  .     ..::::..:::::. . ---.:. :.:::... :.::..:: .:. .. .:  :.:. :..:: :.::  :-:  . : ....:: ::..:-...: . :--: ..:..::: .: .::.:.  . .  . :   ---::: :.:-..  .:  .: :::::: :  . :: .:.: ::..:  . :... . :  --.  :: :: ...::..    ..   :: . .   : ..: :..:.:.:.:. .:  . :: ..:... . .:: . ... . ......:  .  . ::</pattern>
+      <matchSeq start="158" end="809">LSKESEGIHIFPDLDLPSGSPVGPLLGLDDVILEISPTANRADALSMVGVAREVAALTGGKLSLPEIKAVSVSDQ----DLPISVTEPQACPTYVGTVIRGVKVGPSPDWLQQRLLAAGTRPINNVVDVTNYVLLEWGQPLHSFDQDKLQTLVGPEGFALGVRFAEEGEKLITLDDQERTLQPQNLLVTANDQPVAIAGVMGGAATEVDENTQNIVLETALFDGVTIRKSSKAINLRSESSTRYERGVNRCELEVALHRAIALMTELAGGTVVRQGKADQRQDRGEAIINLRLERLQQLLGKVNTPTG--IGNITAEDVERILTDLGCGLTRQSDSDTPVWAVTVPSYRQRDIEREIDLIEEVARLYGYDHFCEQLPSNTIAGGLSPSYQAELALREACRGVGLTEVVHYSLVKPHG---SEVMLANPLFAEYSALRTNLLDGLITAFANNQAQNNGALNAFEVGRVFWQN-EGDIGEADHLAGICGGSQITEGTWPQGGKPQPMSWYDAKGLLEAIFQRLGATVTYSGDHQDPR---LHPGRTA-LLSCNGTVLGRFGQLHPQLRREKGLIDEVYAFEITLTPLYQAMETQILGTPDFRPYSPYPAVARDLALYAPLELTVAELTQAMVKAGGDLLEQVELFDEYRGQSVPAGQRSLAFSLAYRVGDRTLTDADVEPLHNQIREALTKQFAVSLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="SYFB_THEVB" ac="Q8DL37" length="821" description="Phenylalanine--tRNA ligase beta subunit OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=pheT PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1138</score>
+      <smithWatermanScore>1138</smithWatermanScore>
+      <initn>886</initn>
+      <init1>359</init1>
+      <opt>1138</opt>
+      <zScore>1359.0</zScore>
+      <bits>262.2</bits>
+      <expectation>3.9e-68</expectation>
+      <identity>30.5</identity>
+      <positives>65.2</positives>
+      <overlap>692</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="30" end="705">-MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTE-CLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKV--LEKVLKPIVLNYKTIVEILGPI--KKRTNEHLIYISPETVTDYLKRLNFKF----LFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQS---LKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQN-KLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIY--ANGTE-FLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              : .:. .: :.-----.. :...:::::.:.::. ::. :.:.: . -: .     .    ..  :. . .  .  .-:  . ....  ..    : :.:..: ..:.  .::.::. :::::. : :.  .: :.. . .     :.... :. :  . . .  . .:..  .:. :...:...::.. ..:   :  :.....:...:..  ::...:  ..::. :::::.... . :  :  . :.::.    . :     ... --::..:---.:  . . ..:: .--. . ...  :..:::: . :.::.:..---- ...  . : ::.:  :  :: ::.:::::..::.:.. :   ::    ::   .     ... . . . :::::.::: :..  -- :.. .::::... :.::..:. .:..... : .:::  :.::: :.::-:. :  : : . .:::.::   ...: ...:.---: :.:::: .:..::...:.....--:. . ..-::: :.: . :.-:. .:.::::::  :  : . . ::.:::.::.. . :.. -.  ... .:.::   .::.:.    .   :: . :.--:.: .-:: ...:.:.:.:  .:  . :: ..::.... .:: . :.... . ..  :  :  . ::</pattern>
+      <matchSeq start="145" end="820">KSEGMICSLAELGLTKESEGIHTFTDAVTVGEDVRPLLGLD-----DVILHLTSTANRADALSMVGIAREVAALTGA-PLTLPTPRAIAPKKSGAKGPVQLAIADPQACPAYCGTLITHVQIAPSPLWLQQRLEAAGLRAINNVVDITNYILLKWGQPLHAFDWDRLQKVAAQTPVSVGVRFAKAGETLKTLDGQERRLSSENLLITAGDVPVALAGVMGGEETEVHPGTQNVFLEAALFASPVIRRSARAQGLRTEASARYERGVNPAELEAATAEAIALLKEIAQGTVSDTTLADQRPPLERTL---TLRLEQVHRLLGAVVSEAEDSDEPAYLDPETVEELLSRLGFHLSRQETLEDELVVWSVTVPPYRFRDIEREVDLIEEIARLYGYDRFEETLPAQTEVGALPLELTLLREVRAAFRGAGLTELMHYSWVKGGQ--PNQVTVVNPLVAEFSSLRTDLITGLVQAFRYNHEQGNPPLNGFEIGRVF-GQDEEGLWENDRLGGIIGGDPWQGKWVRRSQQPQPLTWYEAKGILESVFQRFGLNVEYQ--SDRHDER-LHPGRTAVLCLQ-GERLGIFGQLHPQYAATLEIPAAIYVFELDLEVLLSRLEERYRQIVFQPFSTYPASDRDLAFFAPTALTVAELSRTIWKAAGGRDSFLESVELFDEYSGSGVPAGQRSLAFRLTYRASDRTLTEAEVNELHQRIRDSLVEKYAVTLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="SYFB_PORPU" ac="P51346" length="720" description="Phenylalanine--tRNA ligase beta subunit, chloroplastic OS=Porphyra purpurea OX=2787 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1273</score>
+      <smithWatermanScore>1273</smithWatermanScore>
+      <initn>1196</initn>
+      <init1>353</init1>
+      <opt>1273</opt>
+      <zScore>1270.3</zScore>
+      <bits>245.6</bits>
+      <expectation>3.4e-63</expectation>
+      <identity>34.3</identity>
+      <positives>69.1</positives>
+      <overlap>724</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="701">----------------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKT--ECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNS-------IFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSL-----KSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLI-YISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGT-KIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHW-RINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQ-NKLTIYSQ-YSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEID----RIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                      :..::.:.:::  :: .:  .: .::: .:::::..  ..:...:.  :...::::::: ::. :.: :...:-- :  . :--....     . :..:: .. .--.: .....:....     :::..:.: : :..  : ..:..:::.:. : :. . :: :.-. . : ..------ :  :.: .:.: . ::::.-------....: ::   :::::  :.:.   ..:. ..::..::. . .:..::...:::. : : :..:-----.:.: -:.:  :: : . .  .   : .. :..:.-----: .. : : ..:::::---..: .-..: . . . :: :.::-.  ... ...: ::: :. :. ::::..::..:..:.:.: . .:.:. . . .   .   .: . : :.:::::.:::::..----:.::.: :::..: :::: ::: .:. .   :.::.:. ..::: : ::. .-.. . :   .. :.::.- :.: : : ..::.:.:::: ::..:..:: .:.:-. .:..   .:..  .:: .  .. -:::.::.:. : ....:...:....:..:...: :  .-: :.   :-:: :: :..:: ..: :..... : ...   . . : ...:.:.:..... . . :. :..:..:..::: : :::----.. ::. . :.:...</pattern>
+      <matchSeq start="23" end="719">MNFLNKSLIRDSVVLQNRWKIIMKVSLNWLKELAKIEIIDAHSLANKLTQAGFEVEDVEMVNIDGHKDYILDVTSTANRSDVLSMIGLSREVSAL--TQADIVK--TADIPSAGLFDNISTIISDDSLLNCSYYVSAIMDNIVIQDSPKWLKNRLYSCGFISQNLIIDISNYIMLKWGQPINIIDLKKI-ADTNTESY------IEITSNFCSSKQKSVKLDNKDIALSRDVLITQINNNITSIAGIGINQEFHVDQNTKLIFIEAAIFKEAVVRKSSRSIGIRTESSIRQERGLNIDNGRSAYR-ETLSLLIELTHGKVKATFLKKETENSTLN-----IDISLKKIQDVLGPIK---DNHTVRFLSFDEIENTLKSLQFK-ITKKDVKKFNVIIPSYRKYDVFREIDIVEEIARVYGYNQFQSKIPKIQFTKHPSSRRNFIDQIRNILRNLGLTELVHYSLVKS----KGEINLKNPLIKDYSTLRSSLLEGLINASAYNIKQSNQTVDGFEIGTVFNLK-RNKIIETTKLAIILGGSLDIRSEWSEPAHSLNWYEAKGIIENFFRKLNKSIQWVKRESSNDQINFIQNNKSATLTYNND-NIGLFGELNELTSSQFGFNTELFVLEIDLDILQYSDPEINYLSYRIQPYSKYPCITRDLCIVIPKKMQINSLFQLLNQFNDNDLENMTLFDQYSNKLLGNGKKSIGLRFTYRSDHKTLTNLEIDNKQNELQKNIIKKLNLEIRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="SYFB_PROMP" ac="Q7V1J8" length="821" description="Phenylalanine--tRNA ligase beta subunit OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1055</score>
+      <smithWatermanScore>1055</smithWatermanScore>
+      <initn>881</initn>
+      <init1>203</init1>
+      <opt>1055</opt>
+      <zScore>1259.3</zScore>
+      <bits>243.7</bits>
+      <expectation>1.4e-62</expectation>
+      <identity>32.2</identity>
+      <positives>66.7</positives>
+      <overlap>681</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="706">DDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTV-PKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKV-RTPTF-SLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLR----ISNPSLVYKFHSSNKV-LEKVLKPIVLNYKTIVEILGPIKKRT-----NEHLI--YISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGR-ADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWF--EKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHP-LLANKLGLSSEIYLFELNLE-LIQQSLQQNK-LTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              ... :::: :..:. ::. ::..:.. .---: .   .....--- :  ::     ::.-::-..   .:...   .-: :....: .:::  .: :::. :::::: : :.  .: ::. . .-:  ..-..:..::.:.  ..  :  ::::...: ..  .. :..:::.: . :   .  :::. .::..:.   ::..:. ..:::. :.::::...    .... : :..:.----:..: .----..:...-:.:.: :--:  . : .:::::  :.-----: .: --:..   .:. :: ..  .--. .  .:.: :   ::.:. ::::::::..:: :.. :   ::.  . :.-..:.   ::  :. ..:-:..:.. :::: .  --.: ::. :::: . : :: ..    .   ..:.:.:.     :: :..:  . . .  ::-  :.:.:..:...-:.--.: ... ..::.::... .. :::.:.---.. : :  :::: ::...:-. :...: ::..::-:..::..:.-..::: :...-..: : ..::-.:.:.:. . ::. .:..::..:.   .:. . :  .::..: ..::.: :  . . ..  :  ..:......::: ...:  .  .. ...: : .. ::.</pattern>
+      <matchSeq start="164" end="821">GIAIIDEDIALNHNLGTSGAELLDLNDYIYDLAITANRPDGMSVVGIAREISALLETKLNFPGLKTRYKTNV---YKNFNLCPEAISKN-CL-YSISNIESVNGKQLSPGWLKDRLDKSGIKSINLLVDITNYILLEQGQPLHAFDKDKLSNLIGRKVSYEDFSVRKANNNESLLCLNGENYKLNENITIIACDDKPVAIAGVIGGLETAVNEDTSSIYLEGAVFNPVIIRKSSKVIGIRTESSSRYEKGISYKNTLDSVTRAINILEEYFNITSPII----NTSTELDLKKILIP--LRRERIKKILGPIVIRNENYENNSKLEKRYLTDTEITEKLKLIGCTL--NIKEYGWDVEIIPNRSQDLLREIDLIEEIARLIGYDMFDLNLPNPIKPGKLSSFQIALRKLKTGLIVN-GFNEVLSYSLVPESK--NNLIKISNPLLLETSCLRDNIWKEHINICNQNIKSGHEYCWIFEVGNIFHKKPDFSQEEI-LNGAIYGNNKFEQ-WLGSNKDNNMTYYEARGKLKEALSILNLNIE---DKPTDTIDFLHPGRSSRLF-TEGNEVGYFGEIHPNLISNKIALK-KMYLFSLKINSILQASTRKNKWITVYKQFPTVPKMERDINFIFNKKYLVSEIISQIKKSGTKLLENVNLIDVYDDDSFGKEFISYTFRLSYRDSEKTLLDSDIGYLHDSVVEIIEKKFSTKLRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="SYFB_NEOYE" ac="Q1XDE1" length="719" description="Phenylalanine--tRNA ligase beta subunit, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1215</score>
+      <smithWatermanScore>1215</smithWatermanScore>
+      <initn>1052</initn>
+      <init1>290</init1>
+      <opt>1215</opt>
+      <zScore>1257.1</zScore>
+      <bits>243.1</bits>
+      <expectation>1.8e-62</expectation>
+      <identity>33.3</identity>
+      <positives>68.3</positives>
+      <overlap>709</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="701">----------------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGT-KIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTK-KFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQ-NKLTIYSQ-YSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEID----RIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                      :..::.:.: : .:...:.:.     :-.::::: :  . :..: .  :.::::::::: ::. :.: :...: ...-    :.:  ..  .: ... .-  .  .:  . :.:.. ..    : :..:.:.:::.   : :.:..:::.:. : :. . ::.:. .  .  ....  .   .... .  :. : .:...:...:.:.   :::::  :...    .:.:.:.:..::. : .:..:: : :::. : : :..:.     .: .. ..:.   . . .      .:. ...:.-: :. : . .:::::    . .....--: . . :. ::: ...... -: :::.:. : .:. ::::.:::..:..:...: . .:.:.   : . . .   :  : : :.:::::.::::...----:..: : :::..: :.:: ::: .:. .   :.::.:. ...:: : :: -: .. ..:   .. :.::.- :.:.: . ..::.:.:::: .:..::.::  :.:  ..    .-::..  . : .-. ..  ::.:..:.    ..:::.......:.::.....  ..-: :.   :-:: ::.:..:::.:: ::...  : :..     . : . .:.:.:  : : ... :. :..:..::.::: :.:::----.. :.. . :.::..</pattern>
+      <matchSeq start="23" end="718">MNFLNYFYHSKKILLQKIDGQFMKVSLNWLKALGNIKTIDIDNKYSTNT-AGFEVEAIESIIIGGEIDHILDISSTANRSDVLSMIGLSREVSALTGSS-MFQLYINPIIDIFSKKETIIS-NHDLLNCDNYFAAIIDEIRVKDSPDWLKNRLLSSGFTHRNLLTDISNYIMLKWGQPINIIDLNKINNMNHKNSLTIRSNFPLGSNDQIKLNNENIELNKNILVTQVNTNVTSIAGIGSNSDFDTDYNTKSILVESAIFKQSVVRKSSRVLNIRTESSIRQERGLNVDNWKNAHFEALALITDLTCGNIRDTFCREKITDHALN-INLSIKKVHDILGPIMYNGQTRFLFF--EEIQNILHSLNFDLIYQNKE-NIEVTVPNYRREDVFREIDVIEEIARIYGYHKFRSSVPNIQFNKRLSTKRKFIDKSRSILRNLGLTELVHYSLIKS----KGNIALNNPLIQDYSNLRGSLLEGLIESNLYNIKQSNQTIDSFEIGTVFH-NDQNKIVETTNLAIILGGNLDIRSTWSHPAHSLNWYEAKGIVENFFQRLNRQIEWTKKDILDGRIKFIQKGKFATL-IYNNIIIGIFSELNQATYSELGLNTKLFFLEVNLNILEDCHNEFNYLSYQIQPYSKYPSIIRDLSLIIPKNMEIKYLLKLLDQFYDKDLESTTLFDQYIDESIGKEKKSIGLRFTYRSNEKTLTNSEIDYKQHQLQKKIVKQLNLKIRQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="SYFB_SYNJB" ac="Q2JHU3" length="825" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1052</score>
+      <smithWatermanScore>1052</smithWatermanScore>
+      <initn>991</initn>
+      <init1>301</init1>
+      <opt>1052</opt>
+      <zScore>1255.6</zScore>
+      <bits>243.1</bits>
+      <expectation>2.2e-62</expectation>
+      <identity>28.8</identity>
+      <positives>62.9</positives>
+      <overlap>701</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="705">-------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQK-IKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLV-YKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLN-------WEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETT---LTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :::--.:   ::.-.:. .: :.-----...:...:::::.:.::. ::. :.:.:-...:---  .      : :-: :.    ..   :  ...:..::..    : :....:...:.  .::.::. : :::: : :.  .: :.. . .     .. .. :. :  . . .  .  :. .  :. :.. :...::.. ..:    : :. ...:...:. .  :...:. ..::. :.:::.... . : .:  : ..:-:.... ...-    ..   ::..::---:  . ....::   . .. . :  .     .  .  : .  .. .: .-------:.:..:  :  :: :::::::: .::.:.. :   ::   .::  .      ..:   : ..::::. : ::   : -  . ....:::  . :..: .:::.:. ... :  :::. :..:: :.::.  .  .---  : :..:::.::     .: .... . :::::: . . ...:..: ..:..     ...::: :.: ... -:. ::.:::::: : .. :: ...: :::.:. . .::..  .. .  .: .:   .:..:.   ..   :.::.:   : :.:....:.:.:.:. .:  . :: ..:....  .:: . :.. . ....  :  .  . ::</pattern>
+      <matchSeq start="141" end="824">KRGVISEGMICSLAELGLEKSSEGIHEFPPDLD--LEAHPLGS-DVRPLLGLD-----DVVLDLTSTANRADALSMVGIAREVAAL-TRNP---LRLPPVQPLQAKPIPNFQLRIADAKACPAYSGVLIEGVKVGPSPDWLKHRLAAAGMRSINNVVDITNLILLEWGQPLHAFDWDRLLQVMGKKKPTIEVRLAQPGETLKTLDGQTRTLQADSHLIVAGSQPVALAGVMGGEETEVGSTTTRIFLEAALFDPAVTRRSARSQGLRTEASTRYERGVNFATLDQARDRAVQLILELAGGAVAGLTTFDQRPPLERTLK---LRLSRLIDVLGDEVQAADVEEILSALGFQLSRCEGANSQSALSPATETATVASCVWQVVVPPYRLRDIEREIDLIEEFARLYGYDRFSETLPTEPQVGSLSARETFTRQIREVLRGIGLTEVYHISLCPAEE-DGSLVRIANPLSPEYSAVRNALLPGLVEAFRFNWDQGNGPLQAFEIGRVFAHALPPNPHPYREAEHIGGILGGDPNPHDWQHRNRPMDWFEAKGLLVSALERLGFGPEFRLDPPEEQSSLLHPGRQASLWIE-GSRIGLFGQLHPRLCQEKGLPDQVYGFELQLDPLLESLERRGIVQFVPFSPFPAADRDIAFFAPLDLAVGEIEKVIRRAGGELLQSVQLFDEYRGQGVPAGQRSLAFRLVYRAPDRTLTDAEVEALQNQVRAQLATQFPVTLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="SYFB_SYNJA" ac="Q2JXF6" length="825" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1032</score>
+      <smithWatermanScore>1032</smithWatermanScore>
+      <initn>953</initn>
+      <init1>279</init1>
+      <opt>1026</opt>
+      <zScore>1224.4</zScore>
+      <bits>237.3</bits>
+      <expectation>1.2e-60</expectation>
+      <identity>29.5</identity>
+      <positives>61.4</positives>
+      <overlap>682</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="47" end="705">VDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQK-IKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLV-YKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKF------------LFDSSTLN-----WEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETT---LTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              ..:...:::::.:.::. ::. :.:.:-...:---  .      : :-: :..   ..   :  ...:..::..    : :....:...:.  .::.::  : :::: : :.  .: :.. . .     .. .. :. :  . . .  .  :     :. :.. :...::.. ..:    : :.:...:...:.    :...:. ..::. :::::.... . :  :  : ..:-:.... :.:-    ..   ::..::---:  . ....:: ---------- . :: : . :  :.:..------------:  . : .-----:.:..:  :  :. :::::::: .::.:.. :   ::   .::  .      ..:   . ..::::. : ::   : - .. .:..:::  . :..: .:::.:. ... :  :::. :..:: ::::.    ..---  : :..:::.::    ..: .... . :::::: . . ...:..  ..: .     . .::: :.: :.. -:. ::.:::::: : ..  :  :.: ::..:. .  ::..  :. .: .: .:   .:..:.   ...  ..::.:   .  .:....:.:.:.:. .:  . :: ..:....  .:: . :..   ....  :: .  . ::</pattern>
+      <matchSeq start="162" end="824">SEGIHEFPPDLDLKAHPLGSDARPLLGLDDVVLDLTSTANRADALSMVGIAREVAAL-TRNP---LRLPPVQPLQAKPIPNFNLRIADAKACPAYSGVLIEGVKVGPSPDWLKHRLAAAGMRSINNVVDVTNLILLEWGQPLHAFDWDRLLQVMGKKKPTIEVRFAQAGETLKTLDGQTRTLHPESHLIVAGGQPVALAGVMGGEETEVSSATTSIFLEAALFDPVVTRRSARSQGLRTEASARYERGVNFATLDLARDRAVQLILELAGGSVVGLTTFDQRPPLERTLK---LRLSRLIDVLGE----------EVRPEDVEEILPALGFQLSRCQAVAPEAPPLPATETAGVAGCVWQVSVPPYRLRDVEREIDLIEEFARLYGYDRFSETLPTEPQVGSLSARETLTRQIREVMRGIGLTEVYHISLCPAEE-DSSLVKIANPLSPEYSAVRKALLPGLVEAFRFNWDQGNGPLQAFEIGHVFAYAPPSSPEPYQEAEHLGGILGGDLNPNDWRHHSRPMDWFEAKGLLVSALERLGFTSEFRPDPPEAQSPLLHPGRQAGIWIE-GSRIGLFGQLHPRLCQEKDLPEEVYGFEVDLDPLLASLEKRGLVQFSPFSPFPASDRDIAFFAPLELSVADIEKVIRQAAGPLLQSVQLFDEYRGQGVPPGQRSLAFRLVYRAPDRTLTDAEVEAAQNQVRAQLEKHFPVTLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="SYFB_PROMT" ac="Q46KZ8" length="824" description="Phenylalanine--tRNA ligase beta subunit OS=Prochlorococcus marinus (strain NATL2A) OX=59920 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>998</score>
+      <smithWatermanScore>998</smithWatermanScore>
+      <initn>914</initn>
+      <init1>268</init1>
+      <opt>998</opt>
+      <zScore>1190.8</zScore>
+      <bits>231.1</bits>
+      <expectation>9.1e-59</expectation>
+      <identity>29.9</identity>
+      <positives>66.0</positives>
+      <overlap>676</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="49" end="705">LDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDL-TVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYD---LDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNE-------HLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSW--FEKGQSLKWFEAKGKIEKLFQQLN-LGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLE-LIQQSLQQNKLT-IYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              .:.. :::: :..:. ::. ::... :..---:..-.:...   .. :: .  ::--- ..:.-.. . ...... - . : : ::: :     .: .::. ::..:: : :.  .:---::.. ..   :.-...:.....:  : : .. .::.. .: :.  ..:::.:::.: ...    .::. . .:...:. ..::..::....::: :.::::...:..   .  :   :. ..  .   . . ..   .: ..-. : .  :  .:: ...  ..-------.: :.. . .   :..:.--... :.  .:.: .:  ::.:.:::::::::..:: :..:: . .:.    :  . .  ..... . ... :. :..  :::. :.   : . . :::::. : ::...    :  .:.:.. :      :: ..... . : -..: . ..: . :.:  :.:--  :  :: .:::.::..---:.:.-::..- :..:   : :.:: :..:.:. -::.:: :::.::  ..:. : .: :::.:...-::. . .... :-::..: . : . .:...: .:. .  :.  .:  .:  .: ...:.: :.:  .:: . :  ... ... :::: .:.:. : .... .:. :..: ::</pattern>
+      <matchSeq start="163" end="823">EGIEILEENEANIPPIGSNAVDYLCLNDTIIELAITANRPDGMSMVGIAREISTITNSKLTLPNL-NYIEDFNIFEPKICDKETI---GVDCI-YSITYIDSIDNTGKTNKNIFNKLSSLKQNCINPVVDITNYLMLEQGQPLHAFDADLLDNIIGRKVKPN-DFGIRNGKQGELFVALDKKEYKINPTIKLITCDDIPIAIAGVIGGNNSSVSDKTTRIWLEAAVFTPTSIRNSSREIGLRTDASSRYEKGISSNMTTAVSKRASELISVQLGGDNISSYVNTDFKKKSIS-VNLRMDKINSVLGKLSSSDSNFVNNNSTKLRYLNEDEIETLLSKLG--LILTSNDSGWNVQVPPYRSSDLTREIDLIEEIARLIGYDNFDSNMPDPLEPGVLSPTKLVERRLRNSFIHNGFQEVVTSSLVGPENTDDNAVLIKNPLLSETSRLRTNVWDEHLKILQRNVSFGAEGCWIFEIAKTYKKDKEC-FVETNLLSGALTGSKRLSKWGGASKQLSLDYFEARGKLK---QSLDVLGVE-TIDKQLAEKDFMHPGRTSELFVE-GKSIGFFGQIHPSQSEKFDLIKETYLFNLDFDSLIKAATRKTNWTRIYKDYPTVPYMERDIALIHSKKYSSLEIMGLIKKTGRPLLEKVELIDRYEGSSMPEDEISQAFRIRYRDAKKTLVEKDINPIHEKIRNALKEKIKAELRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="SYFB_PROM9" ac="Q31AV5" length="814" description="Phenylalanine--tRNA ligase beta subunit OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1008</score>
+      <smithWatermanScore>1008</smithWatermanScore>
+      <initn>794</initn>
+      <init1>203</init1>
+      <opt>1008</opt>
+      <zScore>1087.7</zScore>
+      <bits>212.0</bits>
+      <expectation>5.1e-53</expectation>
+      <identity>30.9</identity>
+      <positives>64.1</positives>
+      <overlap>705</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="705">-----------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQ---PKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLE-DLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYS---KVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSN-KVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFE--KGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHP-LLANKLGLSSEIYLFELNLE-LIQQSLQQNK-LTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :: .:-.::  :  :: - : ..:.:.-----..  ... :::: :..:. ::. ::..:....---:.. . .:  ::--. ::      ::.--:.-.:   ..:..-.   : :..... .:::  .: :::. :::::: : :.  .: .:. .---:  .: -..:..::...  .   .  .:.:...: .:  .. :..:::.: . :    . :::. .::..:.   ::..:. ..:::. :.::::...:   : :. : ..::.      .  ...::-:  : ..--: :  . : .::::.    . .   ::   ..: :  .. ..-- :.  .:.:..   ::.:. ::::::::..:: :.. :   ::.  . :. .    . .:. . . . :..:.. :::: .. --.. ::. :::: . : :: ..    :  ...:.: :..    :: :.::  : :    :.-  :.:::. ....-: .--: ..:....:.::... ...::. : ---.. : .  :::: :.:.... -::. : ::..::-:. .: .:. -.::: .:..-:.  : ..::-. :..:: . ::: .:..:...:.. .... ..:  .: ..: .. :.: ..   . : . :  ..:..... ::: ...:  : ...   .: . :. ::</pattern>
+      <matchSeq start="135" end="813">TIKRSEIRGVMSEGMICSLQELGLEDSSEGIEIID-EDLALKHELGT-PVSDLLQLN-----DFIYDLAITANRPDGMSVIGIAREISALLESKLSFPELNHKYNIHLN--KGIKLCPEAITSN--CI-YTISCIDGVNGNKLSPIWLKDRIEKSGIKSINLLVDLTNYILLEQGQPLHAFDKEKLSNLIGKDVSPE-DFSVRKAKDNESLVCLDGKKYELNENITVVTCSDKPVAIAGVIGGLETSVSNTTSSIYLEGAVFNPVTIRKSSKAVGIRTESSSRYEKGISSKNTISAVTRAMNLLEEYFSINLPIINTSNLKNNEDIF--IKLRRSRIHKILGPLIINDQFEKRNISDTEIVDKLTLIGCSL--KSKEYGWDVAVIPNRSQDLIREIDLIEEIARLIGYDRFDLNLPNPIKPGKLSSEQLALRKVKNGFTENGFNEVLSYSLVPEDK--ETLIKISNPLLLETSCLRDNIWKEHLEIVNRNIKAGQNSCYIFEIGNVFHKNTEFIQKEV-LNGAIFGNKRFEK-WVNSNKDNDLNYYQARGKLKEALSSLNIKID---DKPTDSIDFLHPGRTAKLIIE-GKDAGYFGEIHPKLILEKKSLKI-VYLFSINVDNLLGASTRKNKWIPIFKQYPIVPKIERDINFVFSKKFLISDITSLIKKTGKNLLEDVYLIDIFEDIKLGEDYISYTFRLSYRAQDKTLLDSDIKTIHSSIISNIEKSFQTKLRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="SYFB_PROMM" ac="Q7V7K5" length="815" description="Phenylalanine--tRNA ligase beta subunit OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>887</score>
+      <smithWatermanScore>887</smithWatermanScore>
+      <initn>657</initn>
+      <init1>179</init1>
+      <opt>887</opt>
+      <zScore>1049.2</zScore>
+      <bits>204.9</bits>
+      <expectation>7e-51</expectation>
+      <identity>27.6</identity>
+      <positives>61.1</positives>
+      <overlap>699</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="705">------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLE-DLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLD--KVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLR-----ISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQ--SLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLE-LIQQSLQQNKLT-IYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :... :..   :  :  .: :.-----. .::.. :::: :..:. ::. :.:.: . . .. .   . ..--....  .:  .:  .  ..  . ::...-.:: : :....:  ::   .:..::. : ..:: : :.  .:.:--.. .   . . :.....:.:.  : . .  . .:...  .:  ..:::..::.. . :    .::  . .:...:. . .:   : ...::: :.:.::.:   . . .  : ..:..----- ::   :: -- : :  :----:. :  ..: ..::::  .....--:.  . .   :  :. .--..  . .: : .:  :  :..::.::::::.:: ::. : . ::.    :    .  ... . ..: . :: :.   :::. ..   ..: . ::::.. : ::..:    :   :.::....     .: :.:.. . : -...   .::.. . .    :  .:.--:. . .:.:.. ..:: :.: :. :  .....---::: ::::.:. -:: .: :::::: :...: :    ::: :.:.-.:: . ..:. .- .  . . : .  ::. :..:. . ..: . :   :  .: ...:.: ..:  .     :  ..: ..:. .:: . ... : ......:  . .: ::</pattern>
+      <matchSeq start="138" end="814">ASELRGVPSQGMICSLAELGLESNGNGIAILEEIAENVPDLGQPVGPLLGLD-----DTVLELAITANRPDGMSMVGIAREVAALTGASLQLPQLDMAPIH--KSFEPDSTSSASMLKGGLYGLTALENVDGELTSPAWLKQRLERSGCKSVNGVVDITNLVMLEQGQPLHAFDIDALEMITGQTVSAESFGLRQARNNELFNGLDGHQLQLNENCQIVTCHDIPIALAGVMGSAESGVSAKTRRVWLESAMFTPTAVRTTCRAVGLRTDASSRFEKGLPVEMTLASARRAVTLMEEHLGIKSNGCWVYG--ESPKSAE----PVKLRREAIHRLLGPIGVENDNR--YLEDDIIETSLLALGCE--LSPYNEGWLVIVPPSRRRDLSREVDLIEEVSRLVGFDRFEANLPDPLEPGGLTTAQTAERLLRQMLCGAGLQEVTTLSLVGADSDEPQRIAISNPLLAETSHLRTNLWEEHLRICQRNLQSSQPGCWLYEIGNVYTVTDEL-INQRAVLGGVICAERSFERWSTSGKIKSMTYHQARGQLSQVFQGLKLDINDRPLKDNHS---LHPGRSAELFVE-GKLLGDFGQLHPALSERLDLPEATYLFALDLQCIIQAATRSNRWNPTFRPFPTVPAMELDLAVIVSKECSCSDLIQAIRKAGKPLLEHVELIDRFEGGQLDPYSCSQAFRLRYRSKDRTLSEDKVNPIHEKVRQALVKQFSAELRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="SYFB_SYNS9" ac="Q3AVJ1" length="807" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus sp. (strain CC9902) OX=316279 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>889</score>
+      <smithWatermanScore>889</smithWatermanScore>
+      <initn>772</initn>
+      <init1>179</init1>
+      <opt>889</opt>
+      <zScore>995.3</zScore>
+      <bits>194.9</bits>
+      <expectation>7.1e-48</expectation>
+      <identity>27.8</identity>
+      <positives>59.8</positives>
+      <overlap>694</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="705">------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLED-LTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPT--FSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNLE-LIQQSLQQNKLT-IYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              :.:  ...   :  :  .. :.-----. .::.. :::: :.::. ::. :.:.: : . ..-  .: . .-:. ..-------.. .  ..... .::.. -   : :::..:  .::  .: .::. : ..:: : :.  .: . . : .  :.-- :.... :..   :.. .. .  ::  . .:  ..  :.:::.. . .    ..:... .:...::  ..::.:: ...::: :.:.::.:     .    : : ::  .    :     ... - ..  :. :   .. ..:::: --:.   . .. .:. . :  :. .--..:.  .: :  :  : .:. ::.::::::.:: ::..: . ::.  : :      :.....   . . :: :.   :::..   -  .: . ::::.. : ::..:    :.   .::: . .    :: :...::. :...-.   ..:.. : .    :  .:--:. ...::.: . .... :.: .  :---       ::: :.: . . -:. .: :::::: ::. :.:    :::::.::-:.. . . :. :-::... . :   .::. .. .: .  .: . :   :  .: ...:.: ..:. . ....:  ..: ..:...:: . .:. .  ... .:  . .: ::</pattern>
+      <matchSeq start="138" end="806">AGELRGVASNGMICSLSELGLTAESSGIAILEDTTKEIPAVGTPVAALFGLD-----DAVLELAITANRPDGLSMVGIAREVAALTNAELSL-PLLNHTPE-QEPLQ-------AELDGSYYAVACVEGVQGGQESPPWIQQRLNRAGINAVNAVVDITNLVMLEQGQPLHAFDAEALESLTGKPVDAASFAVRPAKDQETFIGLDDQSLCLDPRVQVVTCHDRAIAIAGVMGSRDSAVSDSTTKIWLESAMFSPIRVRQSSRAVGLRTDASSRFEKGLPPEVTLACSQRAIELLSDQFACRVNGRWVGGEG-PRTPVPLQLRRDALHQLLGPID--TDSGPVDLADHTIEQCLTALGCE--LESTDEGWAVMTPPSRRQDLHREVDLIEEVARLVGFDKFGSHLPDPVSPGSLTSRQQAERRLRRLFCSTGLQEITTLSLVGSSDG-DARIAISNPLLAETSHLRTNLWEEHLQICVRNLKASMAGCSIFEVGNTYSGTPESVV-QSGIISGVICGDRRLERWSTSGKYQAPNYYEARGVLSRVMEALHLELSDR---PLADDARLHPGRAATLVME-GRPLGCFGQLHPALADDLSLPESTYLFELDLERLLDATTRTNRWTPIYKSFPTVPASERDLAVVVDRNSNAADLIQAIRKAGKPLLEHVELIDRFEGDQLGDQKVSQAFRLRYRSQNETLTDDKIQPVHDKVRAALSKQFKAELRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="SYFB_SYNSC" ac="Q3AJY9" length="807" description="Phenylalanine--tRNA ligase beta subunit OS=Synechococcus sp. (strain CC9605) OX=110662 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>883</score>
+      <smithWatermanScore>883</smithWatermanScore>
+      <initn>602</initn>
+      <init1>167</init1>
+      <opt>883</opt>
+      <zScore>977.3</zScore>
+      <bits>191.5</bits>
+      <expectation>7.1e-47</expectation>
+      <identity>27.9</identity>
+      <positives>60.1</positives>
+      <overlap>695</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="705">------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLE-DLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPT--FSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRIS-NPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKG--QSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNL-ELIQQSLQQNKLTI-YSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              ::.: :.:  .:  :  .: :.-----. .::.. :::: :.::. ::. :.:.: . . ..-----  :. . . . :::----. .  ..: . .::..-.   : :.:..:  .:.  .: .::  : ..:: : :.  .: : . . .  :.-- :.....:..:  : . .. .  ::. . .:  .. :...::.. . :    ..: .. .:...:.  ..:...: :..::: :.:.::.:   . .    :  .::   -. :   .. ...   : -- :..:  ... ..:::.    . .-- ..  .. . :  :. .--...   .:::  :  : .:. ::.::::::.:: ::. : . ::.    :      :..... . .   :: :.   :::  -.  ...: . ::::.: : ::..:    :.   .::: ..     :: :...::. :.-...   ..:.. : .  :.:  .:--:.  .:.:.: . .... :.: .  :---.      ::: :.: . : -:. .: :::::: .:..: :    :::::.:-.:.. . ..:. : -.. : . :   .::. :. ..    .: . :   :  .: :..:.: ..:: . ....:  ..: ......:: . .:. .  ... .:  . :: ::</pattern>
+      <matchSeq start="138" end="806">AGELRGVASNGMICSLTELGLTEQSDGIAILDELDESLPPNGSPVAPLLGLD-----DTVLELAITANRPDGLSMVGIAREVAALTGGSLSL-----PELDLDPSTSPLTT----ELDGCFYTITRIEGVDGSKPSPTWLQQRLERGGVNSVNAVVDVTNLVMLEQGQPLHAFDADALEQLTGQPVDAKSFAVRSARDGEIFVGLDDQKRTLDSRVQVVTCHDRPVAVAGVMGSLESGVTASTRNIWLESALFAPPRVRHSARALGLRTDASSRFEKGLPVEMTLPCSARASALLSQEFSCSESGRWVGGSGPAEA--GPVLLRRSALHQLLGPLDAADGPE--DLDDTSIENCLTALGCQ--LSAHEQGWEVMAPPSRRQDLQREVDLIEEVARLVGFDRFGAHLPDPLEPGALTPRQQAERRLRQLFCATGLQEVTTLSLVPA-SEQEQRIAISNPLLADTSHLRTNLWEEHLQICVRNLKASQRGCSVFEIGNTYSGSPEA-VSQKAVLAGVICGDRRLSTWATSGKPQAPDYFQARGVLTRVMEALQLELSDR---RLTDDARLHPGRAATLVLE-GRPLGCFGQLHPAMAEELDLPEATYLFELDLARLLDAATRSNRWTPSFKPYPTVPFSERDLAVIVDRSSAATDLIQAIRKAGKPLLEQVELVDRFEGEQLGDNKVSQAFRLRYRGKNETLTDDKIQPVHDKVRAALSKQFQAELRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="SYFB_DEHM1" ac="Q3Z9I7" length="809" description="Phenylalanine--tRNA ligase beta subunit OS=Dehalococcoides mccartyi (strain ATCC BAA-2266 / KCTC 15142 / 195) OX=243164 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>818</score>
+      <smithWatermanScore>818</smithWatermanScore>
+      <initn>585</initn>
+      <init1>194</init1>
+      <opt>818</opt>
+      <zScore>974.9</zScore>
+      <bits>191.1</bits>
+      <expectation>9.7e-47</expectation>
+      <identity>26.1</identity>
+      <positives>62.2</positives>
+      <overlap>677</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="46" end="705">NVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKY-FNSSLNWQQKIKNLTTIRTSKTE-CLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGII--ENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLI--YISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQT--RKKITSYLLNMGLTELIHYSLVSNE----TFLKNE---IKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNL-ELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              .: :..  : ::.: . . :.. :...:... :..   -:...--- . ::.  .:. ..:.-:  .:: ..::..    : :....:.. :. :.::.::  ::..:: : :.  .: :.. ::------ . .. : .:  . . . .. ::. ...:.   .  :..::..--:: :. -- ::.:.:.:.. :.  .::. .. : .... :::.::.:.      :: :  .:-:.:.. . .  . .   :-.:  . .::. . . ..::   .. .   :-- ..   . .:.  ..-.: . :   . . -.:.    ::  .::.::::.:. :...-.  ::  :.. . .     --.. . . : ..:. ::: ::..: :----.:   :---. . ::. :.  ..:.:: :.:  ..  : .  .. :. .: :...  . ..   : :.. ....:.  .. : ..  .. .:.::: .:.: ..:...  . ....  ----: :  .: :-: .   .::.::: :  :.:.:..  .:.::.::-.:: ..  . :.:---: . .:.. .::.... ..:   ..  ::--.  .......:.: :.:. . : . ::  .: :::. .::.. ..: ..... . :. .. :.::</pattern>
+      <matchSeq start="157" end="808">RELGLSDEHEGILILPADAPVGMLASEYLGEIILDLELTPNRGDLMCVTGVARELGALIDRLPSISTPDFKAT---GKDIKDKINIEIKNTKLCTRYTASLIEGIKIGESPDWLKERLIACGMRPINNVVDATNYVMLEFGQPLHSFDYDQIKSK------HIIVRPAAEGEVLTTLDGVERKLSPDMLLITEPDKIIALAGVMGGENTEVT--EKTASVLLESATFDKHSIRRTAKALKLQSEASARFEKGLSFELAPVALKRATQLILEIAGGQAASGLMDVMPV-KKDRNSVVLSLSKVNRVLGLEGEKFDSCKIAKRLGFAWMPEYVPGME-EFGYGSVDDKMRF-FPGYWRMDIESDIDMIEEVARIAGYDT-IPCLPLDKAIPKIETPPLPGIKRFLRQILSGYGFQELISYSFTSREMLSRVFSGAEPECLAISNPMSSEQEVMRTSLRPALYASLAANRRFEKNGLRLYELGRIYLPKENNKQDEPEMLCALIAGSASEAWWQRNTAGFDFFDAKGIVESLVSRLGIAADFAVSDEPG----LTPGYQAGI-LVGDMPVGVLGQLSPQTADKFGITEPVYMFEINLSKLITRATVRRKFT---QINRFPSVERDLALVLDRSITNRQVTDII--SEFDLVKNVELFDMYQGKQVAEDKKSLAYHLLFQSDTHTLKDADVDSVMNQILKRLNTETGAVLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="SYFB_PARMW" ac="Q7U6V9" length="814" description="Phenylalanine--tRNA ligase beta subunit OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>821</score>
+      <smithWatermanScore>821</smithWatermanScore>
+      <initn>544</initn>
+      <init1>146</init1>
+      <opt>821</opt>
+      <zScore>960.4</zScore>
+      <bits>188.4</bits>
+      <expectation>6.2e-46</expectation>
+      <identity>26.3</identity>
+      <positives>58.8</positives>
+      <overlap>699</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="705">-------------MQISLKWIKELIDIENVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCKYFNSSLNWQQKIKNLTTIRTSKTECL----MFTAVILEGLEDLTV-PKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPT--FSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGIIENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISLLRISNPSLVYKFHSSNKVLEKVLKPIVLNYKTIVEILGPIKKRTNEHLIYISPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQTRKKITSYLLNMGLTELIHYSLVSNETFLKNEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLK--WFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNL-ELIQQSLQQNK-LTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              .:: : ..:   :  :  .: :.-----. .::.. :::: :.::. ::. :.:.: .. ------..  .   .  ..:    ....: .----..  ...::..   :-: :.:..:  .::  .: .::. : ..:: : :.  .: : . . .  :.-- :.....:..:  :.. .  . .:     .:  ...::..::.. .      . :. . .:...:: . .:  .:....::: :::.::.: . . .    : . ::.   :  .  .   .     .-. ..:  ... ..::::. --.:    ..  .: . :  :. .--.. :  .:.:  :  :  :..:::::::::.:: ::. : . ::.  . :    . :..... . . . :: :.   ::::    -  .: . ::::.. : ::..:    : .  .::: ..     :: : ...:. ..-. : . ..:.. : .    :  .:.   --.. :.:.. ...: :.: .  :---.    . ::: :.: . : -:. .: :::::: :: . .:    .::::.:-.:.... ..:.-.  .. . . :   .::. .. ..   ..: . :   :  .:  ..:.: ..:. . :...:  ..: .. ...:: . ... .  ... .:  .  : ::</pattern>
+      <matchSeq start="137" end="813">KSGELRGVSSNGMICSLSELGLATESDGIAELDALTDELPALGAPVAPMLGLD-----DTVLELAITANRPDGLSMVGIAREVAALTGSA------LTLPVLTLKPAHELLQASAASAEAMQAGGLYGITLIEGVDGSQVSPTWVQQRLERAGINRVNAVVDITNVVMLEQGQPLHAFDADALEQLTGKPVNAASFGLRQAREGEAFIGLDGRELSLVARAQVVTCHDLPIALAGVMGSKASGVTAATGRIWLESAMFSPAAVRTTARSVGLRTDASARFEKGLPKEMTLACSIRALELLKELFPCEAKGLWVCGDSAADA-SSVLLRRNALHQLLGPIED--EEGSSDLADAVVEQCLTALGSE--LSPSDEGWNVIAPPSRRLDLAREIDLIEEVARLVGFDRFGAHLPDPLAPGALTPAQQAERRLRTLFCGAGLQEITTLSLVSASDS-DPRIAISNPLLAETSHLRTNLWEEHLAVCVRNLKASQPGCWIFELGTTYAGSADA-VEESRLLSGVICGEQRLERWTTSGKPAPPDYYAARGRLTEVMQALKLDVSDR---RLTDDSRLHPGRAATLVLE-GRPLGCFGQLHPELAASQNLPEATFLFELDLTRLVESATRRNRWVPAFKAFPTVPASERDLAVVVDRSQAASDLMQSIRKAGKPLLEAVTLIDRFEGDQLGENKASQAFRLRYRHQSETLTDDQVQPVHDKVRNALVKQHGAELRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="SYFB_DEHMC" ac="Q3ZZD2" length="809" description="Phenylalanine--tRNA ligase beta subunit OS=Dehalococcoides mccartyi (strain CBDB1) OX=255470 GN=pheT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>792</score>
+      <smithWatermanScore>792</smithWatermanScore>
+      <initn>619</initn>
+      <init1>191</init1>
+      <opt>792</opt>
+      <zScore>943.6</zScore>
+      <bits>185.3</bits>
+      <expectation>5.3e-45</expectation>
+      <identity>25.9</identity>
+      <positives>61.2</positives>
+      <overlap>683</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="46" end="705">NVDLDDLIEKLTLGGFEVEEILELEINNEKQIALEISSTANRSDSLSIQGISVEIASLFNKQPKVCK--YFNSSLNWQQKIKNLTTIRTSKTECLMFTAVILEGLEDLTVPKWIQNKLVSSGIMPLNNLVDFQNYILLETGYPFAFYDLDKVYSKVRTPTFSLSIEKAENGSEFFASNQINYKLDNSIFLVQANNIPISIAGII--ENDEIICHSKTSSLLIEGSIFSASKIRQQSRKLAIRTDRSARYEKSLKSTYLIEALYRLISL-LRISNPSLVYKFHS--SNKVLEKVLKPIVLNYKTIVEILG-----PIKKRTNEHLIYI-SPETVTDYLKRLNFKFLFDSSTLNWEVTIPSIRSDDITREIDLIEEVGRLHGFNNFLTMLPQIKSVGRADFSYQT--RKKITSYLLNMGLTELIHYSLVSNETFLK-------NEIKLVNPLLSDCSTLRVSLLPSLLMTIQENLKQGNSILEGFEYGHVFSGNIETTLTEIEYVGGIFGGTKIKSSWFEKGQSLKWFEAKGKIEKLFQQLNLGIHWRINSQTYTKKFLHPYRSAEIFLSSGKNIGVFGQLHPLLANKLGLSSEIYLFELNL-ELIQQSLQQNKLTIYSQYSVYPKIVKDLSFIIKKNIKFDELEKIIYANGTEFLSQINLLDDYKGEFIPEKHTSLCLQLTFQSNKKTLENKEIDRIVKNLKRVLELKVQAILRE</querySeq>
+      <pattern>                              .. :..  : ::.: . . :.. :...:... : .  --.  .. . ..::.--  : .:: -:  .:: ..::..    : :....:.. :. :.::.::  ::..:: : :.  .: :.. :.------ . .. : .:  . . . .. ::. ...:.   .  :..::..--:: :. -- ::: .:.:.. :. ..::. .: : .... :::.::.:.      :: :  .:-:.:.. . .  . .-- ::---:  . :::.   . .:::-----:   .  ..: .:- :: :  -......-----..: .     :.    ::  .::.::::.:. :...-.  ::  :.. . .     --.. . . : ..:. ::: ::..: : . .-------. . . ::. :.  ..:.:: :::  ..  : .  .. :. .: :.:.  . .    : :.. ....: . .: : ..  .. .:..:: .:.. ..:.:.  . ....---. . : :...--.: .   .:..::. :  :.:. ..  .:.::.::-.:: ... . :---..  . .: . .::...: ..:   ..  :.--.  ..... .:.: :.:. : :.. ::  .: :::. .::...:.: .....   :. .. :.::</pattern>
+      <matchSeq start="157" end="808">RELGLSDEHEGILVLPADALVGMLASEYLGEVILDLELTPNRGDLMCVTGVARELGALIDRLPAISDPDFKATGPDIKEKIE--IEINNSKL-CTRYTASLIEGIKLGESPDWLKERLIACGMRPINNVVDATNYVMLEFGQPLHAFDYDQIKSR------HIIVRPAAEGEVLTTLDGVERKLSPDMLLITEPDRIIALAGVMGGENTEVT--EKTSRILLESATFDKQSIRKTARGLKLQSEASARFEKGLSYELAPIALKRATQLILEIAGGQAASGLIDVLPNK---KERNGIVLSLAKVNQILGYEKEPPDACKIAKRLGFIWLPEYVPG-MEEFGY-----GATEDMVRIYPGYWRMDIETDIDMIEEVARIAGYHT-IPCLPLDKAIPKIETPPLPGMKRFLRQILSGYGFQELISYSFTSREMLSRVSSGAEPEFLAISNPMSSEQEVMRTSLRPSLYASLAANRRFEKDGLRLYELGRVYLPKENKKQEEPEMLCAVIAGGSSQSRWQRNTAGFDFFDVKGIVESMVSRLGLSADFVVSDE---HGLSHGYQAG--ILVGDMPVGILGQVSPQTADKFDITEPVYMFEINLSKLITRAMVRRK---FNPINRFPAVERDLALVIDRHITNRQVIDIL--SEYDLVKNAELFDMYQGKQIAENKKSLAYHLLFQSDTHTLKDEEVDGVMSQILGRLNTETGAVLRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

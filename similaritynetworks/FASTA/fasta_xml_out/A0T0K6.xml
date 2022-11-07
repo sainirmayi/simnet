@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163944-0948-35318352-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163944-0948-35318352-p2m.m9&quot; -m &quot;F10 fasta-R20221107-163944-0948-35318352-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0K6|EFTU_PHATC" type="PROTEIN" length="409"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:39:44+00:00" end="2022-11-07T16:39:50+00:00" search="P0Y0M0DT0H0M6.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="EFTU_PHATC" ac="A0T0K6" length="409" description="Elongation factor Tu, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2648</score>
+      <smithWatermanScore>2648</smithWatermanScore>
+      <initn>2648</initn>
+      <init1>2648</init1>
+      <opt>2648</opt>
+      <zScore>1716.9</zScore>
+      <bits>326.6</bits>
+      <expectation>4.6e-88</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="EFTU_THAPS" ac="A0T100" length="409" description="Elongation factor Tu, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2499</score>
+      <smithWatermanScore>2499</smithWatermanScore>
+      <initn>2499</initn>
+      <init1>2499</init1>
+      <opt>2499</opt>
+      <zScore>1621.9</zScore>
+      <bits>309.0</bits>
+      <expectation>8.8e-83</expectation>
+      <identity>93.2</identity>
+      <positives>97.3</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::  ::: :: :.:::::::::::::::::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::.::::::.:::::::.:::::.:::::::::::::::.:::::::::::::::::::::...:: :::::: :::::.::::::: ::::::::::::::::::::::::::::::::::::::::::.::::::: ::::::::::::::::::::::::::::::::::::::::::::.:::::::::.::::::::::.::::::::::::::::::::::::::: :::::::..:::::::::::::::.::::::: :::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLATAGGAVAKDYSDIDGAPEERARGITINTAHVEYETADRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPHIVVFLNKQDQVDDDELLELVELEVRELLSTYDFPGDDIPICPGSALQAIEALSSNPDVKRGDNPWVDKIFALMDAVDAYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGDNVEIVGVGDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLSKPGTITPHTNFESEVYVLTKEEGGRHTPFFTGYRPQFYVRTTDVTGSIEQFTADDGTIVEMVMPGDRIKMTAELIYPVAIEEGMRFAIREGGRTIGAGVVSKIVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="EFTU_CYCME" ac="P50373" length="409" description="Elongation factor Tu, chloroplastic OS=Cyclotella meneghiniana OX=29205 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2421</score>
+      <smithWatermanScore>2421</smithWatermanScore>
+      <initn>2421</initn>
+      <init1>2421</init1>
+      <opt>2421</opt>
+      <zScore>1572.3</zScore>
+      <bits>299.9</bits>
+      <expectation>5.2e-80</expectation>
+      <identity>90.2</identity>
+      <positives>96.3</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>:. ::: :.:::.::::::::::::::.::::::::: :: . ::::.::::::::::::::::::::::.:.:::::::::::::::::::::::::::::::::::::::::::::::::.::::::.:::::::.:::::.:::::::::::::::.:::::::::::::: :::::::..:::.::::: ::::::::::::: ::::::::::::::::::::::::::::::::::::::.:: .::::::. ::.:::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::.:::::::::::: : ::: :::::::: ::::::::.:::::::::::::::.::::::: ::::.::::::::::::::::::</pattern>
+      <matchSeq start="1" end="409">MGPEKFARAKPHINIGTIGHVDHGKTTFTAAITATLANDGESFAKAYSDIDGAPEERARGITINTAHVEYQTRDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPHIVVFLNKQDQVDDDELLELVELEVRELLSTYDFPGDDIPICPGSRLQAIEAISSNPTLKRGDNPWVDKIYALMDAVDAYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVIKVVDNVEIVGIGDTKTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTNFESEVYVLTKEEGGRHTPFFTGYSPIFYVITTDVTGSIDQFTADDGSIVEMVMPGDRIKMTAELIYPVAIEEGMRFVIREGGRTIGAGVVSKIVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="EFTU_TRICV" ac="P49462" length="409" description="Elongation factor Tu, chloroplastic OS=Trieres chinensis OX=1514140 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2406</score>
+      <smithWatermanScore>2406</smithWatermanScore>
+      <initn>2464</initn>
+      <init1>2406</init1>
+      <opt>2406</opt>
+      <zScore>1562.7</zScore>
+      <bits>298.1</bits>
+      <expectation>1.8e-79</expectation>
+      <identity>90.2</identity>
+      <positives>96.6</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::.:..: : ::::::::::::::::::::::::.. ::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::: :::::::::::::::::::    . . :::::::::::..::..::::: :::::.::::::::::::::::.:::::::::::::::::::::::::::::::::..:::::: :::::::::::::::::.::::::::::::::::::.:: ::::..::::::::.::::::::::::::::::::::::::::::::::::.::::::::::.:::::::::::::::.::::::: :::::::::::::::::::::..</pattern>
+      <matchSeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGNAKVKDYPDIDGAPEERARGITINTAHVEYETENGHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPDIVVFLNKEDQVDDAELLELVELEVRELLSAYDFQVMTFRFAPGSALQAIEAISSNPAIKRGDNPWVDKIFALMDAVDEYIPTPERDIEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGDTVEIVGVGDTQTTTITGIEMFQKTLDEGFAGDNVGILLRGVTREDIEAGMVLSEPGTITPHTNFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGAITQFTADDGSIVEMVMPGDRIKMTAELIYPVAIEEGMRFAIREGGRTIGAGVVSKIIQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="EFTU_SYNP2" ac="B1XI63" length="409" description="Elongation factor Tu OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2276</score>
+      <smithWatermanScore>2276</smithWatermanScore>
+      <initn>2358</initn>
+      <init1>2276</init1>
+      <opt>2276</opt>
+      <zScore>1479.9</zScore>
+      <bits>282.8</bits>
+      <expectation>7.2e-75</expectation>
+      <identity>82.2</identity>
+      <positives>95.4</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::.: :.::::.::::::::::::::: .:: .::..::.: :::.::::.:::::::::::::::..:::::::::::::::::::::::::::.::::::::::::::::::::.::::::..:::::::::::::::::::::::::::: ::::::::::  ::::.:.::..:::..:::..:::::: ::::.::::.: :::::.: ::::.:::::::::::::::::::: :::::..::::. ::..::.::.:::::::.::.::::::.::::: ...:::::::::::.:::::.::.:::::::.::::::::: .::::::::::::::.:. ::::::: .::::::::::::.:.: :.::: ::::::::::::::::.::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERNKDHANIGTVGHVDHGKTTLTAAITMALAAQGGGKAKSYEDIDAAPEEKARGITINTAHVEYETENRHYAHVDCPGHADYVKNMITGAAQMDGGILVVSAADGPMPQTREHILLAKQVGVPSLVVFLNKEDQVDDEELLELVELEVRELLSEYDFPGDDIPITTGSALKAVEALVANPNIKRGEDKWVDKILALMDSVDEYMPLPERDVDKPFLMAVEDVFSITGRGTVATGRIERGRVKVGETIEIVGIRDTRSTTVTGVEMFQKTLDEGMAGDNVGVLLRGVQKDDIERGMVLAKPGSITPHTNFEAEVYVLTKEEGGRHTPFFPNYRPQFYVRTTDVTGTISAFTADDGSSAEMVMPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGAGTVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="EFTU_ACAM1" ac="B0CCD0" length="409" description="Elongation factor Tu OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2269</score>
+      <smithWatermanScore>2269</smithWatermanScore>
+      <initn>2341</initn>
+      <init1>2269</init1>
+      <opt>2269</opt>
+      <zScore>1475.4</zScore>
+      <bits>281.9</bits>
+      <expectation>1.3e-74</expectation>
+      <identity>82.4</identity>
+      <positives>93.6</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::::::::::::::::::::: .::  : :.:. : :::.::::: ::::::::::::::.:::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::.::::::::::::::::::::. ::::::::::  ::::.:.::...  ..:.:::.:::::: ::. :: :::::::::.: ::::.:::::::::::::::::::: : :::.::.::. ::..::.::.:::::::.::.::::::.::::: .:.:::::::::::.:::::.::::::.: ::::::::::: :::::::::::::::.:. :::::::..::::::::::::.:.: :.::: ::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNIGTIGHVDHGKTTLTAAITMSLAALGQAKARKYDDIDAAPEERERGITINTAHVEYETQDRHYAHVDCPGHADYVKNMITGAAQMDGAVLVVSAADGPMPQTREHILLAKQVGVPNIVVFMNKQDQVDDEELLELVELEVRELLNDYDFPGDDIPIVSGSALMALEALNGADSMKKGDNEWVDKIYKLMEEVDAYIPTPERDVDKPFLMAVEDVFSITGRGTVATGRIERGKVVVGETVELVGIRDTRSTTVTGVEMFQKTLDEGMAGDNVGLLLRGVQKEDIERGMVLAKPGSITPHTQFESEVYILKKDEGGRHTPFFPGYRPQFYVRTTDVTGTISAFTADDGSAAEMVMPGDRIKMTVELINPIAIEQGMRFAIREGGRTVGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="EFTU_GRATL" ac="Q6B8Y0" length="409" description="Elongation factor Tu, chloroplastic OS=Gracilaria tenuistipitata var. liui OX=285951 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2267</score>
+      <smithWatermanScore>2267</smithWatermanScore>
+      <initn>2340</initn>
+      <init1>2267</init1>
+      <opt>2267</opt>
+      <zScore>1474.2</zScore>
+      <bits>281.7</bits>
+      <expectation>1.5e-74</expectation>
+      <identity>81.9</identity>
+      <positives>94.9</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: :::: :::::::::::::::::::::::.::::  . ..:: . .::.::::.:::::::::::::::..::::::::::::::::::::::::::::::::::::::::::::::::.:::::::.::::::.::::::::::::::::::::  :::::::::.  :::: :.: .: : ...::.:.:::::..:::::::::::: ::::::::::.::::::::::::::::::::..:::...::::. .: ::::::.:::::::.::.::::.::::::: ...::::::::.::::::::.::.:::.:::.:::::::::.:::::::::::::::.::::::::::..:::::::::::.::.: :.::: ::::::::::::.::::::::..</pattern>
+      <matchSeq start="1" end="409">MARAKFERKKPHVNIGTIGHVDHGKTTLTAAISATLAAANDTKAKKFDEIDAAPEEKARGITINTAHVEYETQNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPNVVVFLNKQDQVDDEELLELVELEVRELLIQYDFPGDDIPFVAGSALLALEKVTENNSIQRGENEWVDKIHSLMDAVDEYIPTPVRDVEKTFLMAVEDVFSITGRGTVATGRIERGIIKVGDTIEIVGLRETTTTTITGLEMFQKTLDEGMAGDNIGILLRGVQKKDIERGMVLAQPGTITPHTQFEAEVYILTKEEGGRHTPFFSGYRPQFYVRTTDVTGTITQFTADDGSAAEMVMPGDRIKMSAELINPIAIEQGMRFAIREGGRTVGAGVVSKILE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="EFTU_GLOC7" ac="B7K834" length="410" description="Elongation factor Tu OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2262</score>
+      <smithWatermanScore>2262</smithWatermanScore>
+      <initn>2283</initn>
+      <init1>1457</init1>
+      <opt>2262</opt>
+      <zScore>1471.0</zScore>
+      <bits>281.1</bits>
+      <expectation>2.3e-74</expectation>
+      <identity>82.4</identity>
+      <positives>94.4</positives>
+      <overlap>410</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTD-TQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::::::::::::::::::::: .:: .: :.:. :::::.::::.::::::::::::::: ::::::::::::::::::::::::::::.::::::::::::::::::::.:::::::.::::::::.::::::::::::::::::: :.::::::::  ::::.:.::.: .::.:.::: ::::: :::: :: ::::::::..: :::::::::::.::::::::::::: .:.::.:::::. .-:..::.::.::::::::::.::::::.::::: .:.::::::.::::.: :::.::.:::::::.::::::::: .::::::::::::::.:...::::::.:::::::::::::.:.: :.::: :::::::::::::::::::::..</pattern>
+      <matchSeq start="1" end="410">MARAKFERTKPHVNIGTIGHVDHGKTTLTAAITMALAAQGKAKARKYADIDAAPEEKARGITINTAHVEYETDDRHYAHVDCPGHADYVKNMITGAAQMDGGILVVSAADGPMPQTREHILLAKQVGVPNLVVFLNKEDMVDDEELLELVELEVRELLSEYEFPGDDIPIVKGSALKAVEALTDTPTIKKGDNDWVDKILALMDEVDAYIPTPERDIDKPFLMAIEDVFSISGRGTVATGRIERGKIKAGETVEIVGIKEKTKSTTVTGVEMFQKTLEEGLAGDNVGLLLRGVQKEEIERGMVIAKPGSIKPHTQFEGEVYVLTKEEGGRHTPFFKNYRPQFYVRTTDVTGTIVDYTADDGSAVEMVMPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGAGVVSKIIQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="EFTU_NEOYE" ac="Q1XDK1" length="409" description="Elongation factor Tu, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2260</score>
+      <smithWatermanScore>2260</smithWatermanScore>
+      <initn>2339</initn>
+      <init1>2260</init1>
+      <opt>2260</opt>
+      <zScore>1469.7</zScore>
+      <bits>280.9</bits>
+      <expectation>2.7e-74</expectation>
+      <identity>82.2</identity>
+      <positives>94.6</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: :::: :::::::::::::::::::::::.:::.  :.. :: . .::.::::.::::::::::::::: .::::::::::::::::::::::::::::::::::::::::::::::::.::::::..:::::::::::::::::::::: ::::: :::::::::.  :::: :.::.: ::..:.:..::::::..::.::: :::::::::.::::::.::::::::::::::::::::..:::...::::. .:.::::::.::::::::::.::::.::::::: ...:::::::::::::::::.::.:::.:::.::::::::: :::::::::::::::.:.:::::::. .::::::::::::::.:  .::: ::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARSKFERKKPHVNIGTIGHVDHGKTTLTAAISATLSTLGSTAAKKFDEIDAAPEEKARGITINTAHVEYETDNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPTLVVFLNKEDQVDDEELLELVELEGRELLSQYDFPGDDIPFVAGSALLALEAVTKNPAIKQGEDKWVDKIFSLMEAVDTYIPTPERDVDKTFLMAVEDVFSITGRGTVATGRIERGIIKVGDTIEIVGLRETRTTTITGLEMFQKTLEEGLAGDNIGILLRGVQKKDIERGMVLAKPGTITPHTQFEAEVYILTKEEGGRHTPFFPGYRPQFYVRTTDVTGTINQFTADDGTDAEMVMPGDRIKMTAELINAIAIEQGMRFAIREGGRTVGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="EFTU_PORPU" ac="P51287" length="409" description="Elongation factor Tu, chloroplastic OS=Porphyra purpurea OX=2787 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2253</score>
+      <smithWatermanScore>2253</smithWatermanScore>
+      <initn>2332</initn>
+      <init1>2253</init1>
+      <opt>2253</opt>
+      <zScore>1465.3</zScore>
+      <bits>280.1</bits>
+      <expectation>4.7e-74</expectation>
+      <identity>81.9</identity>
+      <positives>94.4</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: :::: :::::::::::::::::::::::.:::.  :.. :: . .::.::::.::::::::::::::: .::::::::::::::::::::::::::::::::::::::::::::::::.::::::..:::::::::::::::::::::: ::::: :::::::::.  :::: :.::.: : ..:.:..::::::..::.::: :::::::::.::::::.::::::::::::::::::::..:::...::::. .:.::::::.::::::::::.::::.::::::: ...:::::::::::::::::.::.:::.:::.::::::::: :::::::::::::::.:.:::::::. .::::::::::::::.:  .::: ::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARSKFERKKPHVNIGTIGHVDHGKTTLTAAISATLSTLGSTAAKKFDEIDAAPEEKARGITINTAHVEYETDNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPTLVVFLNKEDQVDDEELLELVELEGRELLSQYDFPGDDIPFVAGSALLALEAVTKNTSIKKGEDKWVDKIFSLMEAVDTYIPTPERDVDKTFLMAVEDVFSITGRGTVATGRIERGIIKVGDTIEIVGLRETRTTTITGLEMFQKTLEEGLAGDNIGILLRGVQKKDIERGMVLAKPGTITPHTQFEAEVYILTKEEGGRHTPFFPGYRPQFYVRTTDVTGTINQFTADDGTDAEMVMPGDRIKMTAELINAIAIEQGMRFAIREGGRTVGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="EFTU_CYAPA" ac="P17245" length="409" description="Elongation factor Tu, cyanelle OS=Cyanophora paradoxa OX=2762 GN=tufA PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2243</score>
+      <smithWatermanScore>2243</smithWatermanScore>
+      <initn>2314</initn>
+      <init1>2243</init1>
+      <opt>2243</opt>
+      <zScore>1458.9</zScore>
+      <bits>278.9</bits>
+      <expectation>1.1e-73</expectation>
+      <identity>81.4</identity>
+      <positives>94.4</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>:::.::. .::::::::::::::::::::::::..:: .: ..:. : .::.::::.:::::::::::::::. ::::::::::::::::::::::::::::::::::::::::::::::::.:::::::.:::::::::.:: .:::::::::::::: ::::::.::.  :::: :.:....:: . ::..:::::: ::::::::::::::: ..:.:::::::::::::::::::::::::..::::.::.::. ::..::.::.::::::::::.::::.::::::: . .:::::::::::.:::::.::::::::::::::::::::.:::::::::::::::::  ::::::: .::::::::::::. ...:.::: :::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARQKFDGNKPHVNIGTIGHVDHGKTTLTAAITTALASQGKGKARKYDEIDAAPEEKARGITINTAHVEYETEKRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPNMVVFLNKEDQIDDADLLELVELEVRELLSKYDFPGDQIPFVSGSALLALESLSSNPKLMRGEDKWVDKILALMDAVDEYIPTPERPIDKSFLMAIEDVFSITGRGTVATGRIERGAIKVGETVELVGLKDTKSTTVTGLEMFQKTLEEGMAGDNIGILLRGVQKTDIERGMVLAKPGSITPHTQFESEVYVLTKDEGGRHTPFFSGYRPQFYVRTTDVTGSIDAFTADDGSNAEMVMPGDRIKMTVSLVHPIAIEQGMRFAIREGGRTIGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="EFTU_SYNE7" ac="P33171" length="409" description="Elongation factor Tu OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=tuf PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2235</score>
+      <smithWatermanScore>2235</smithWatermanScore>
+      <initn>2302</initn>
+      <init1>2235</init1>
+      <opt>2235</opt>
+      <zScore>1453.8</zScore>
+      <bits>277.9</bits>
+      <expectation>2.1e-73</expectation>
+      <identity>81.7</identity>
+      <positives>93.9</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::.::::::::::::::::::::..::  : :.:.::::::.::::.::::::::::::::: .::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::.::: :::::::::::::::.::::::::::  ::::::.::: .. . ..::: :::::  ::. :: :::::::.:.. ::::.::::.::::::::::::::: :::::..::::. ::..::.::.:::::::.::.::::::.::::. . .:::::::::::.:::::.:::::::: :.::::::::: :::::::::::::::.:..:::::::..:::.::::::::.:.: :.::: :::::::::::::::::::::..</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHANIGTIGHVDHGKTTLTAAITTVLAKAGMAKARAYADIDAAPEEKARGITINTAHVEYETGNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPNIVVFLNKEDMVDDAELLELVELEVRELLSSYDFPGDDIPIVAGSALQALEAIQGGASGQKGDNPWVDKILKLMEEVDAYIPTPEREVDRPFLMAVEDVFTITGRGTVATGRIERGSVKVGETIEIVGLRDTRSTTVTGVEMFQKTLDEGLAGDNVGLLLRGIQKTDIERGMVLAKPGSITPHTKFESEVYVLKKEEGGRHTPFFPGYRPQFYVRTTDVTGAISDFTADDGSAAEMVIPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGAGVVSKILQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="EFTU_SYNP6" ac="P18668" length="409" description="Elongation factor Tu OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2235</score>
+      <smithWatermanScore>2235</smithWatermanScore>
+      <initn>2302</initn>
+      <init1>2235</init1>
+      <opt>2235</opt>
+      <zScore>1453.8</zScore>
+      <bits>277.9</bits>
+      <expectation>2.1e-73</expectation>
+      <identity>81.7</identity>
+      <positives>93.9</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::.::::::::::::::::::::..::  : :.:.::::::.::::.::::::::::::::: .::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::.::: :::::::::::::::.::::::::::  ::::::.::: .. . ..::: :::::  ::. :: :::::::.:.. ::::.::::.::::::::::::::: :::::..::::. ::..::.::.:::::::.::.::::::.::::. . .:::::::::::.:::::.:::::::: :.::::::::: :::::::::::::::.:..:::::::..:::.::::::::.:.: :.::: :::::::::::::::::::::..</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHANIGTIGHVDHGKTTLTAAITTVLAKAGMAKARAYADIDAAPEEKARGITINTAHVEYETGNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPNIVVFLNKEDMVDDAELLELVELEVRELLSSYDFPGDDIPIVAGSALQALEAIQGGASGQKGDNPWVDKILKLMEEVDAYIPTPEREVDRPFLMAVEDVFTITGRGTVATGRIERGSVKVGETIEIVGLRDTRSTTVTGVEMFQKTLDEGLAGDNVGLLLRGIQKTDIERGMVLAKPGSITPHTKFESEVYVLKKEEGGRHTPFFPGYRPQFYVRTTDVTGAISDFTADDGSAAEMVIPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGAGVVSKILQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="EFTU_CROS5" ac="B1WQY4" length="409" description="Elongation factor Tu OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2224</score>
+      <smithWatermanScore>2224</smithWatermanScore>
+      <initn>2301</initn>
+      <init1>2224</init1>
+      <opt>2224</opt>
+      <zScore>1446.8</zScore>
+      <bits>276.6</bits>
+      <expectation>5e-73</expectation>
+      <identity>80.4</identity>
+      <positives>93.6</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::::::::::::::::::::: :::  :.:.:. : :::.::::.::::::::::::::: .::::::::::::::::::::::::::::::::::::::::::::::::.::::::..::::::.::::::::::::::::::::: ::::::::::  ::::.:..:.  ::..: :.:.:.:..  :: :::. :: :::...: ::::.::::::.::::::::::::: :::::..::::. ::..::.::.:::::::.::.::::::.::::. .:.::::::.::::.:::::.::.:::::::.::::::::: .::::::::::::::.: ..::::::.:::::::::::::.:.: :.::: :::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNIGTIGHVDHGKTTLTAAITMTLAAAGSAKARKYEDIDAAPEEKARGITINTAHVEYETPNRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPSLVVFLNKKDQVDDEELLELVELEVRELLSEYDFPGDDIPIISGSALMAVNALIDNPNIKPGENEWTDQVLELMKAVDDNIPEPEREIDKPFLMAVEDVFSISGRGTVATGRIERGKVKVGETIEIVGIRDTRSTTVTGVEMFQKTLDEGMAGDNVGLLLRGIKKEDIERGMVIAKPGSITPHTQFEGEVYVLTKEEGGRHTPFFKNYRPQFYVRTTDVTGTIQDYTADDGSAVEMVMPGDRIKMTVELISPIAIEQGMRFAIREGGRTIGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="EFTU_SYNJB" ac="Q2JMX7" length="409" description="Elongation factor Tu OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2222</score>
+      <smithWatermanScore>2222</smithWatermanScore>
+      <initn>2306</initn>
+      <init1>2222</init1>
+      <opt>2222</opt>
+      <zScore>1445.5</zScore>
+      <bits>276.4</bits>
+      <expectation>5.9e-73</expectation>
+      <identity>80.7</identity>
+      <positives>93.2</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::.::::::::::::::::::.:::  : : :: : .::.::::.:::::::::::::.: .::::::::::::::::::::::::::::::::::::::::::::::::..:::::..:::::: :.::: ::::::::::::::: :::::::.::  ::::.:.: .:::: ..::.. :::::: :::::: :::::::::.: ::::.:::::::::::::::::::: .::::.::.::. .:..::.::.:::::::.::.::::::.::::. ....::::::::: ::::::.:::::::: :.:::::::::.:::::::::::::::.:..:::::::  ::::::::.:::.:.: :.::: ::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNVGTIGHVDHGKTTLTAAITTTLAALGQATAKRYDEIDAAPEEKARGITINTAHVEYQTANRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLARQVGVPSLVVFLNKADMVDDPELLELVELEVRELLSKYDFPGDDVPIIRGSALKALERMTANPKTQRGEDPWVDKIYELMDAVDSYIPTPERDVDKPFLMAVEDVFSITGRGTVATGRIERGRIKVGETVELVGLRETRSTTVTGLEMFQKTLDEGIAGDNVGVLLRGIQKNEVERGMVLAKPKTITPHTNFESEVYVLKKEEGGRHTPFFAGYRPQFYVRTTDVTGTISSFTADDGSQPEMVMPGDRVKMTVELIQPIAIEQGMRFAIREGGRTVGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="EFTU_TRIEI" ac="Q118Z2" length="409" description="Elongation factor Tu OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2216</score>
+      <smithWatermanScore>2216</smithWatermanScore>
+      <initn>2285</initn>
+      <init1>2216</init1>
+      <opt>2216</opt>
+      <zScore>1441.7</zScore>
+      <bits>275.7</bits>
+      <expectation>9.7e-73</expectation>
+      <identity>80.7</identity>
+      <positives>93.2</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::.:::::::::::::::::::::::: .:: .: :.:. :::::.::::.:::::::::::::::. ::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::.::::.:.::::::::::::::::::: ::: ::.:::  ::::::.::.:::: . .:.:.::::: .::: :: ::: :::::.: ::::.:::::::::::::::::::: .::::.::.::. ::...:.::.::::: :.::.::::::.::::. ...:.::::::: :.:::: .:::::::: :.::::::::: .::::::.:::::::.: .::::::::.::::::::::::...: ::::: ::::::::::::::::::::::.</pattern>
+      <matchSeq start="1" end="409">MARAKFERNKPHVNIGTIGHVDHGKTTLTAAITMSLAAQGKAKARNYADIDAAPEEKARGITINTAHVEYETEGRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLAKQVGVPNIVIFLNKQDMVDDEELLELVELEVRELLSDYDFDGDNIPIVAGSALQAVEALTANPGIGKGENEWVDKILSLMDEVDGYIPQPERDVDKPFLMAVEDVFSITGRGTVATGRIERGKIKVGETVELVGIKDTRNSTVTGVEMFQKILDEGMAGDNVGLLLRGMQKDDIQRGMVLAKSGSITPHKKFESEVYVLKKEEGGRHTPFFPNYRPQFYIRTTDVTGAIESFTADDGSVAEMVMPGDRIKMTVQLINPVAIEQGMRFAIREGGRTIGAGVVSKIVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="EFTU_SYNJA" ac="Q2JUX4" length="409" description="Elongation factor Tu OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2216</score>
+      <smithWatermanScore>2216</smithWatermanScore>
+      <initn>2285</initn>
+      <init1>2216</init1>
+      <opt>2216</opt>
+      <zScore>1441.7</zScore>
+      <bits>275.7</bits>
+      <expectation>9.7e-73</expectation>
+      <identity>80.7</identity>
+      <positives>92.9</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::.:::::::::::::::::: :::  : : :: : .::.::::::::::::::::::.:. ::::::::::::::::::::::::::::::::::::::::::::::::..:::::..:::::: :.:::::::::::::.::::: ::::::.:::  ::::.:.: . ::: ..::.. :::::: :::::: :::::::::.: ::::.:::::::::::::::::::: .::::.::.::. .:..::.::.:::::::.::.::::::.::::. ....::::::::: ::::::.:::::::: :.:::::::::.:::::::::::::::.::.:::::::  ::::::::..::.:.: :.::: ::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNVGTIGHVDHGKTTLTAAITMTLAALGQATAKRYDEIDAAPEERARGITINTAHVEYQTEKRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLARQVGVPSLVVFLNKVDMVDDEELLELVELEIRELLSKYDFPGDEIPIIRGSALKALERMQANPKTQRGEDPWVDKIYELMDAVDSYIPTPERDVDKPFLMAVEDVFSITGRGTVATGRIERGRIKVGETVELVGLRETRSTTVTGLEMFQKTLDEGIAGDNVGVLLRGIQKNEVERGMVLAKPKTITPHTQFESEVYVLKKEEGGRHTPFFAGYRPQFYVRTTDVTGTITSFTADDGSKPEMVMPGDRVRMTVELIQPIAIEQGMRFAIREGGRTVGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="EFTU_RIPO1" ac="B7JUP5" length="409" description="Elongation factor Tu OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2214</score>
+      <smithWatermanScore>2214</smithWatermanScore>
+      <initn>2309</initn>
+      <init1>2214</init1>
+      <opt>2214</opt>
+      <zScore>1440.4</zScore>
+      <bits>275.5</bits>
+      <expectation>1.1e-72</expectation>
+      <identity>80.7</identity>
+      <positives>93.2</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::::::::::::::::::::: ::: .: :.:. : :::.::::.::::::::::::::: .:::::::::::::::::::::::::::.::::::::::::::::::::.:::::::.::::::.:.::::::::::::::::::. : : ::.:::  ::::::.::. ::: . .:::.:.::: :::: :: ::: :::...: ::::.::::::.::::::::::::: :::::.:::::.  :..::.::.::::::::::.::::::.::::: .:.::::::.::::.:::::.::.:::::::.::::::::: .:.::::::::::::::...:.:.: .:::::::::::::.:.: :.::: :::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNIGTIGHVDHGKTTLTAAITMTLAAQGKAKARNYEDIDAAPEEKARGITINTAHVEYETDSRHYAHVDCPGHADYVKNMITGAAQMDGGILVVSAADGPMPQTREHILLAKQVGVPNLVVFLNKQDMVDDEELLELVELEVRELLTEYGFDGDNIPIVAGSALQAVEALKANPKIAKGDNEWTDKILALMDEVDAYIPEPEREIDKPFLMAVEDVFSISGRGTVATGRIERGKVKVGETVEIVGIRATSSTTVTGVEMFQKTLEEGLAGDNVGLLLRGVKKEDIERGMVIAKPGSITPHTQFEGEVYVLTKEEGGRHTPFFKNYKPQFYVRTTDVTGSIVDYTSDEGETVEMVMPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGAGVVSKILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="EFTU_MICAN" ac="B0JSE0" length="409" description="Elongation factor Tu OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=tuf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2207</score>
+      <smithWatermanScore>2207</smithWatermanScore>
+      <initn>2291</initn>
+      <init1>2207</init1>
+      <opt>2207</opt>
+      <zScore>1436.0</zScore>
+      <bits>274.6</bits>
+      <expectation>2e-72</expectation>
+      <identity>79.7</identity>
+      <positives>93.2</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::: ::::::::::::::::::::::::::::: :::  :.:::: : .::.::::.::::::::::::::: .:::::::::::::::::::::::::::.::::::::::::::::::::..::::::.::::::.:.::::::::::::::::::. ::: ::::::  ::: .:.: .: :: ...:::.::: :: ::.::: ::::::::..: ::::.::::::::::::::::::::.::::.:::.::. .:. ::.::::::.:.:..:.::::.::::::. . .::::::.:::::: :::.::.:::::.:.::::::::: .::::::::::::::.: ..::::::.:::::::::::::.:.: :.::: ::::::::::::::.::.:::.:</pattern>
+      <matchSeq start="1" end="409">MARAKFERTKPHVNIGTIGHVDHGKTTLTAAITMTLAALGNAQAKKYDEIDAAPEEKARGITINTAHVEYETASRHYAHVDCPGHADYVKNMITGAAQMDGGILVVSAADGPMPQTREHILLARQVGVPNLVVFLNKKDMVDDEELLELVELEVRELLTNYDFAGDDIPIIAGSAKEALEYMTKNPKAQKGDNEWVDAIYELMEAVDSYIPTPERDIDKPFLMAVEDVFSITGRGTVATGRIERGIVKVGDNVELVGIRETRPTTVTGIEMFKKSLDQGMAGDNAGILLRGIQKTDIERGMVIAKPGTIKPHTQFEGEVYVLSKEEGGRHTPFFKNYRPQFYVRTTDVTGTIQDYTADDGSTVEMVMPGDRIKMTVELINPIAIEQGMRFAIREGGRTIGSGVISKIIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="EFTU_EMIHU" ac="Q4G342" length="407" description="Elongation factor Tu, chloroplastic OS=Emiliania huxleyi OX=2903 GN=tufA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2193</score>
+      <smithWatermanScore>2193</smithWatermanScore>
+      <initn>2219</initn>
+      <init1>1205</init1>
+      <opt>2193</opt>
+      <zScore>1427.1</zScore>
+      <bits>273.0</bits>
+      <expectation>6.3e-72</expectation>
+      <identity>80.0</identity>
+      <positives>94.1</positives>
+      <overlap>409</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="409">MAREKFERTKPHVNIGTIGHVDHGKTTLTAAITATLALDGGAQAKAYADIDGAPEERARGITINTAHVEYETKDRHYAHVDCPGHADYVKNMITGAAQMDGAILVVSAADGPMPQTREHILLSKQVGVPNIVVFLNKEDQVDDEELLELVELEVRELLSAYDFPGDDIPICPGSALQAIEAITANPTVKRGDNKWVDKIYALMDAVDEYIPTPERDVEKTFLMAIEDVFSITGRGTVATGRIERGVVKVGENVEIVGVTDTQTTTITGIEMFQKTLEEGFAGDNVGILLRGVTRENIERGMVLAKPGTITPHTSFESEVYVLTKDEGGRHTPFFTGYRPQFYVRTTDVTGSITQFTADDGSVVEMVMPGDRIKMTAEFIYPVAIEAGMRFAIREGGRTIGAGVVSKIVK</querySeq>
+      <pattern>::::::::.:::::::::::::::::::::::.::::. .:..-:  . ::.::::.:::::::::::::::. :::::::::::::::::::::::::::.::::::::::::::::::::.::::::..:::::: ::::::::::::::::.:::  :::::::::.  :::: :..:. ..: .:-::.::::.:. ::..::.:::.::::.:::::::.::::::::::::::::::::..:.:...::::. ::::::.::::::::::.::.::::::::.::: . .::::::::.::::.:: .::.::::: :::::::::::::::::::::: ::::.:.:::.::::..::::::::::::::.: :.::: ::::::::::::.::::::::..</pattern>
+      <matchSeq start="1" end="407">MAREKFERSKPHVNIGTIGHVDHGKTTLTAAISATLAVYSGSK-KDISLIDSAPEEKARGITINTAHVEYETETRHYAHVDCPGHADYVKNMITGAAQMDGGILVVSAADGPMPQTREHILLAKQVGVPHLVVFLNKADQVDDEELLELVELEVQELLENYDFPGDDIPFVSGSALLALQAVEGGPKAK-GDDKWVDRIFDLMESVDNYIPAPERDTEKTFLMAVEDVFSITGRGTVATGRIERGILKIGDTIEIVGLKDTQTTTVTGIEMFQKTLDEGMAGDNVGILIRGVQKTDIERGMVLAQPGTISPHKKFEAEVYVLGKDEGGRHTPFFTGYRPQFYVRTIDVTGTIVQFTGDDGSAAEMVMPGDRIKMTAELINPIAIEQGMRFAIREGGRTVGAGVVSKILE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

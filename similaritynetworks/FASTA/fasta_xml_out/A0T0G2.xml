@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163358-0167-60004385-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163358-0167-60004385-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163358-0167-60004385-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0G2|RBCR_PHATC" type="PROTEIN" length="307"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:33:58+00:00" end="2022-11-07T16:34:04+00:00" search="P0Y0M0DT0H0M6.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RBCR_PHATC" ac="A0T0G2" length="307" description="Probable RuBisCO transcriptional regulator OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1867</score>
+      <smithWatermanScore>1867</smithWatermanScore>
+      <initn>1867</initn>
+      <init1>1867</init1>
+      <opt>1867</opt>
+      <zScore>2158.2</zScore>
+      <bits>407.4</bits>
+      <expectation>1.2e-112</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="307">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="307">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RBCR_THAPS" ac="A0T0V5" length="307" description="Probable RuBisCO transcriptional regulator OS=Thalassiosira pseudonana OX=35128 GN=rbcR-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1421</score>
+      <smithWatermanScore>1421</smithWatermanScore>
+      <initn>906</initn>
+      <init1>884</init1>
+      <opt>1421</opt>
+      <zScore>1644.6</zScore>
+      <bits>312.4</bits>
+      <expectation>4.8e-84</expectation>
+      <identity>74.1</identity>
+      <positives>91.5</positives>
+      <overlap>305</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="303">-MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKI--VTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern> .::::::::::.::.:.::.::.:::.:..:::::::::::::. : :::.:: .::: ::: : .::::::::::::::::::: :::.::::.: ::::::::.:::::::.::::.::::.:.....::::.::.. .: .:::::::.::  ::::: .: :::::. ::: ::::::.:: --..::::::::::.:::::::.:::.::::::.:.: :...::.:::::::::::::: :::::::.:::::.::::.::. :::::::::::::.: .:..::::.:: :::  :::</pattern>
+      <matchSeq start="2" end="306">MVLPFTLQQLRIFKAIASEKSFTQAAEILFVSQPSLSKQIKTLENRLGILLLNRTGNKILLTEAGVVFLQYSERILALCEESCRALNDLKDGERGNLKVGASQTIGAYLMPRVLTLFAQSYPQINLHIDIDSTRIIAKKVADRSLDIAVVGGDIPTGLKKNLEIEDFVEDELILIISKSHPFAKKKKKKISKEDLYHLNFITLNSNSTIHKFINNILIQNNIQTAQFNVIMELNSIEAIKTAVSLGLGAAFVSSSAIEKELELKTVEIITIENIRITRTLSIITNPDSHRSKAFDFFYNELWLLKNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RBCR_TRICV" ac="P49518" length="309" description="Probable RuBisCO transcriptional regulator OS=Trieres chinensis OX=1514140 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1395</score>
+      <smithWatermanScore>1395</smithWatermanScore>
+      <initn>904</initn>
+      <init1>880</init1>
+      <opt>1395</opt>
+      <zScore>1614.6</zScore>
+      <bits>306.9</bits>
+      <expectation>2.3e-82</expectation>
+      <identity>74.3</identity>
+      <positives>90.8</positives>
+      <overlap>304</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="303">-MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFA--NKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>  :::::::::::::.::::.::.:::.:..:::::::::::::. :.: :.::::: .:::. ::.::.::::::::::::::.: :::.:.::.: ::::::::::::::::::::::.:::...:.:.::: .:: .:. .::::::::.:: ...::: :: ::.::. ::::::::::--.:: ..:.::::::::.:::::::::.:::::::  .. ::..:::::::::::::::::: :::::::.:::::::::::::. ::.:.::: :::::: : :.::: ..: :::  :::</pattern>
+      <matchSeq start="3" end="306">MTLPFTLQQLRILKAIATEKSFTRAAEVLFVSQPSLSKQIKTLESRLNISLLNRENNIVSLTQAGKLFLEYSERILALCEESCRVLNDLKTGDRGNLIVGASQTIGTYLMPRVLALFAQNHPQINIEVHVDSTRKIAKRVLEGDIDIAVVGGNIPEEIEKNLKVEDFVNDELILIIPKSHPFALKKKKKINKDDLYHLNFITLNSNSTIRKLIDNILIQIAFEPKQFNIIMQLNSIEAIKTAVSLGLGAAFVSSSAIEKEIELKTIEIVTIEDIKITRILSIISNPECYRSKAVDLFYNELWTLKNTSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RBCR_PORPU" ac="P51205" length="317" description="Probable RuBisCO transcriptional regulator OS=Porphyra purpurea OX=2787 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1065</score>
+      <smithWatermanScore>1065</smithWatermanScore>
+      <initn>1100</initn>
+      <init1>1065</init1>
+      <opt>1065</opt>
+      <zScore>1234.3</zScore>
+      <bits>236.5</bits>
+      <expectation>3.4e-61</expectation>
+      <identity>55.3</identity>
+      <positives>82.0</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="301">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.: : .: :::. ::.:::..: ::..::..:.. : .: :.: .::: :...:.:. ::::::::.:::: ::.: . :.: .::::: :::::::...:: : :::. ...::.:::... .. : ..:.:..:::.: .:.  : : ...:::..::.::::::..   . :::::.: ::.:...::::: ::..: :. ::....:: :.::::::::.::. : :::::: .:: ::.::  ..  .:::. : : :::: : . ::::: : ::.:.  :</pattern>
+      <matchSeq start="4" end="303">MTDLPFTLDQLRILKAIAKEGSFKKAANSLYVSQPAISLQIQNLERQLNVALFERGNKKATLTEAGSLLLRYGGRILALCEETCRALDDLQNLQGGTLIIGASQTTGTYLMPRLIGLFRQRYPQVAVQLQVHSTRLISWSVANGQVDLAIIGGEVPTELQDVLQVTSYAEDELALILPKSHPFSKLGDIQKEDLYRLRFIALDTQSTIRKVIDKVLSQHGIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGIVHWAQIENVTIKRMLSIIVNPNRYKSKATETFSQEILTLFVTPSQHKTLGDKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RBCR_NEOYE" ac="Q1XDT2" length="317" description="Probable RuBisCO transcriptional regulator OS=Neopyropia yezoensis OX=2788 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1064</score>
+      <smithWatermanScore>1064</smithWatermanScore>
+      <initn>1099</initn>
+      <init1>1064</init1>
+      <opt>1064</opt>
+      <zScore>1233.2</zScore>
+      <bits>236.3</bits>
+      <expectation>4e-61</expectation>
+      <identity>55.3</identity>
+      <positives>82.0</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="301">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.: : .: :::. ::.:::..: ::..::..:.. : .: :.: .::: :...:.:. ::::::::.:::: ::.: . :.: .::::: :::::::...:: : :::. ...::.:::... .. : ..:.:..:::.: .:.  : : ...:::..::.::::::..   . :::::.: ::.:...::::: ::..: :. ::....:: :.::::::::.::. : :::::: .:: ::.::  ..  .:::. : : :::: : . ::::: : ::.:.  :</pattern>
+      <matchSeq start="4" end="303">MTDLPFTLDQLRILKAIAKEGSFKKAANSLYVSQPAISLQIQNLERQLNVSLFERGNKKATLTEAGSLLLRYGGRILALCEETCRALDDLQNLQGGTLIIGASQTTGTYLMPRLIGLFRQRYPQVAVQLQVHSTRLISWSVANGQVDLAIIGGEVPTELQDVLQVTSYAEDELALILPKSHPFSKLGDIQKEDLYRLRFIALDTQSTIRKVIDKVLSQHGIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGIVHWAQIENVTIKRMLSIIVNPNRYKSKATETFSQEILTLFVTPSQHKILSDKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RBCR_GRATL" ac="Q6B936" length="309" description="Probable RuBisCO transcriptional regulator OS=Gracilaria tenuistipitata var. liui OX=285951 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1060</score>
+      <smithWatermanScore>1060</smithWatermanScore>
+      <initn>1093</initn>
+      <init1>1060</init1>
+      <opt>1060</opt>
+      <zScore>1228.8</zScore>
+      <bits>235.5</bits>
+      <expectation>7e-61</expectation>
+      <identity>56.0</identity>
+      <positives>83.0</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="301">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.. : .: .::. ::.:::..: ::..:::.:.: : .: :.: .::: :...:.:. ::::::::.:::: :..: . :.:..::::: :::::::...:: : :::.....::.:::... .. : ..:.::.:::.: .:: .: : ...:::..::.: :: :..   . :::::.: ::.:...::::: ::.::::..::....:: :.::::::::.::. : :::::: .:: ::.::  ..  ::::. : : :::: : . ::::: : ::.:.  :</pattern>
+      <matchSeq start="4" end="303">MRDLPFTLDQLRILKAIVKEGSFKRAADSLYVSQPAISLQIQNLEKQLNIPLFERSNKKATLTEAGNLLLRYGGRILALCEETCRALEDVQNLQGGNLVIGASQTTGTYLMPRLIGLFRQRYPQVNVQLQVHSTRLISWSVANGQVDLAVIGGEVPNELKDTLQVTSYAEDELALILPTSHVFSKLPDIQKEDLYRLRFIALDTQSTIRKVIDKILIQHDIDSSRFKIEMELNSIEAIKNAVQSGLGAAFVSVSAIAKELELGILHWAKIENVTIKRMLSIIINPNRYKSKAAETFSKEILTLFVTPAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RBCR_CYAPA" ac="P48271" length="324" description="Probable RuBisCO transcriptional regulator OS=Cyanophora paradoxa OX=2762 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1053</score>
+      <smithWatermanScore>1053</smithWatermanScore>
+      <initn>1080</initn>
+      <init1>1053</init1>
+      <opt>1053</opt>
+      <zScore>1220.3</zScore>
+      <bits>234.0</bits>
+      <expectation>2.1e-60</expectation>
+      <identity>54.5</identity>
+      <positives>83.5</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">----MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>     :::.:.:::::::.::: .: :::: ::..::..: ::.::::.:.: : .: . .  .:: :...:.:.. :::::::.:.:: ::.: . :.:..::::: :::::::...:: : :::. .:..:.::: .. :: : ..:.::.:::.: .:...::.  ..:::. ::.:::::::. . . :::::.:.::.:...:.::: ::..: :: ::.. ... :.:::::.::.::. : :::::: .:: ::.::  ..  .:::: : : ::::.: . :.:.: ..::.:.</pattern>
+      <matchSeq start="6" end="302">MKVEELPFSLEQLRILKAIATEGSFKKAAESLYMTQPAISLQIQTLEKKLNIALFDRSGRRALMTEAGHLLLRYGDCILALCEETCHALEDLRNLQGGTLVIGASQTTGTYLMPRLIGLFRQRYPQVTVKLHVHSTRRISWNIANGQVDLAVIGGEVPHELQESLTITPYAEDELVLILPKSHPFAKLESIQKEDLYRLKFIALDAQSAIRKVIDKVLAQNGIDSNLFRVEMELNSIESIKNAVQSGLGAAFVSVSAIAKELELGILHWCRIENITIKRMLSIITNPNRYHSQAARIFSEEILTMFSLQSPEVKKRALSIIQNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RBCR_SYNY3" ac="P73123" length="345" description="Probable RuBisCO transcriptional regulator OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1032</score>
+      <smithWatermanScore>1032</smithWatermanScore>
+      <initn>1028</initn>
+      <init1>1028</init1>
+      <opt>1032</opt>
+      <zScore>1195.5</zScore>
+      <bits>229.5</bits>
+      <expectation>5e-59</expectation>
+      <identity>52.9</identity>
+      <positives>84.8</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   .::::.:::::::.:.: .: .::. ::.:::..: :...:::.:.. : .: . : .::: :...:.:.:.:..::.:.:::. ::.: . :.: :::::: ::::.::....: :.::.. ...::.::: .: .. : ..:.:..:::.: .:...:::  ..:::..::.:  ::.:. . . :::::.:.::::.:.::::: ::..: :..::::.::: :.::::::::.::. : ::::::..:::::.:.....:  :.:..: :.::.: : . :.:::   :  :.</pattern>
+      <matchSeq start="4" end="300">MSDIPFTLDQLRILKAIASEGSFKRAADTLYVSQPAVSLQVQNLEKQLSVPLFDRGGRKAQLTEAGHLLLNYGEKIITLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPRMIGMFRQQYPDVTVQLQVHSTRRTAWGVANGQVDLAIIGGEVPAELQETLTVLPYAEDELALILPVLHPLAQAETIQKEDLYKLKFISLDSQSTIRKVIDKVLSQGEIDTKRLKIEMELNSIEAIKNAVQSGLGAAFVSTTAIEKELEMNVLHIAPIKNVEIRRVLSVIINPNRYRSKASAAFIREVLPQFSTHPDALDPERLFANPYSSNNGDRQGDGKDGKGSIEIDSVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RBCR_GUITH" ac="O78432" length="310" description="Probable RuBisCO transcriptional regulator OS=Guillardia theta OX=55529 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1029</score>
+      <smithWatermanScore>1029</smithWatermanScore>
+      <initn>1060</initn>
+      <init1>1029</init1>
+      <opt>1029</opt>
+      <zScore>1193.1</zScore>
+      <bits>228.9</bits>
+      <expectation>6.8e-59</expectation>
+      <identity>53.0</identity>
+      <positives>83.0</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="301">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.:.: .: :::: ::.:::..: ::..:::.:.: . .: : :  .::.:  .:.:..:.:.::.:.:::. :::. . :.: .::::: :::::::...:: ..:::: ...::.::: :: .. : ....:::::..: .:...: .  .:.::..::.:: :::.. ... :::::.: ::.:...::::. ::..: .. ::. ..:: :.:::.::::.::. : :::::: .:: ::.::  .. .:::.. : ::::::.:   :..:: :.::.:.  :</pattern>
+      <matchSeq start="4" end="303">MTDLPFTLDQLRILKAIASEGSFKKAAESLYISQPAVSLQIQNLEKQLNIPIFDRANRKAVFTEEGDTLLRYGNRVLSLCDETCRAIEDLKTLQGGTLIIGASQTTGTYLMPRLIGLFRHKYPQIAVQLQVHSTRRVAWSVANGQVNLAVVGGKVPDELRSKLQITPYVDDELALILPKLHPFSKLEVIQKEDLYRLRFITLDKQSTIRRVIDTVLNEHGIDSARFKIEMELNSVEAIKNAVQSGLGAAFVSISAIAKELELGLLHWVKIEGVVIKRTLSIITNPSRYQAKASEIFSKEILTLFVTPYEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RBCR_CYACA" ac="O19892" length="317" description="Probable RuBisCO transcriptional regulator OS=Cyanidium caldarium OX=2771 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1010</score>
+      <smithWatermanScore>1010</smithWatermanScore>
+      <initn>1042</initn>
+      <init1>1010</init1>
+      <opt>1010</opt>
+      <zScore>1171.0</zScore>
+      <bits>224.8</bits>
+      <expectation>1.2e-57</expectation>
+      <identity>52.5</identity>
+      <positives>83.2</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::.:.  . .: :::  ::.:::..:......::.:.: : .: . . .::: :...:.:. ::::::::.:::: ::.: . :.: .::::: ::::::....:: :.::::....::.::: .. .. : ..:.:..:::.: .: . : :..:::::..::.: ::::.. . . :::::.: ::.:..:::::: ::.:: .: ::...::  :.:.::::::.::. : ::.::: .::.::..:. .. ..:..:.: : ::::.:   :.::: : : .:.</pattern>
+      <matchSeq start="4" end="300">MTDLPFTLDQLRILRAILIQGSFKKAATSLYISQPAVSSHVHNIEKQLNIQLFDRSHRNAQLTEAGQLLLKYGGRILALCEETCRALEDLQNLQCGNLIIGASQTTGTYLMPKLIGLFRQKYPQISVQLQVHSTRRISWSVANGQLDLAIIGGEVPKELTEILEVRNFVEDELTLILPPSHPFSKFSCIQKEDLYRLRFIALDKNSTIRKVIDKILNRNGIDSSRLKTEMELSSIEAIKNAVQSGLGASFVSISAIDKELKLQLLNRVNIDKIKIKRMLSIITNYSRYRSKASETFCHEILGLLVNLPFKNAPSTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RBCR_CHLAT" ac="A2CI69" length="313" description="Probable RuBisCO transcriptional regulator OS=Chlorokybus atmophyticus OX=3144 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>999</score>
+      <smithWatermanScore>999</smithWatermanScore>
+      <initn>1038</initn>
+      <init1>999</init1>
+      <opt>999</opt>
+      <zScore>1158.5</zScore>
+      <bits>222.5</bits>
+      <expectation>5.8e-57</expectation>
+      <identity>50.8</identity>
+      <positives>83.5</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:: ::::.:.. .: :::. ::.:::..: :....::.:.. :..: . . .::. :...:.:..::::::.:.:::: ::.: . :.: .::::: ::::::....:: ..:::: ....:.::: .  :. : .::::..:::.::.:.. : :  ...::..::.: ::::.... . :::::.:.::.: ..::::: .:::: ...: .... : :.::::::::.::.   ::::::..:: ::..:  ..  ::.:. ..:.:::..: . :.::: : :: :.</pattern>
+      <matchSeq start="4" end="300">MNDLPFTLDQLLILKAIAAQGSFKKAADSLYISQPAVSMQVQNIEKQLNVQLLDRGGRRANLTDAGHLLLRYGDRILALCDETCRALEDLRNLQTGTLIIGASQTTGTYLMPQLISLFRKKYPQIMVQLHVDSTRHICWNVANGQIDIAIIGGEVPLELREILQVTPYADDELALILPCSHPFSQRQEIQKEDLYQLHFIALYASSTIRKVVDNILREHDIHSSRFFIEMELNSIEAIKSAVQSELGAAFVSASAITKELQLGLLHWAKIQNVILNRNLSIVTNPNRYRSKAAEKFSCEILASFQPPTVHPCG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RBCR_CYAM1" ac="Q85G62" length="303" description="Probable RuBisCO transcriptional regulator OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>996</score>
+      <smithWatermanScore>996</smithWatermanScore>
+      <initn>992</initn>
+      <init1>992</init1>
+      <opt>996</opt>
+      <zScore>1155.3</zScore>
+      <bits>221.9</bits>
+      <expectation>8.6e-57</expectation>
+      <identity>53.5</identity>
+      <positives>80.1</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.::::..:...: .: :::. ::.:::..: ::..::..:.  : .: . : .::: :..:..:. ::::::::.:::: ::.. . ::: .:::::::::::: ...:: :.::.: ...::.::: .: .. . .::.::.:: :: .:   :... :.:::..::.: .::::  . . :::::.: :.::. .::::: ::.:: :: :::..::. :.::::::::.::. : ::::::  :: ::.::. .. ..:: : : : :  :.: . :.:::   : ...</pattern>
+      <matchSeq start="4" end="300">MTDLPFTLDQLRIFQAIVVEGSFQKAAQSLYISQPAVSLQIQNLEQQLNAPLFDRSHRKAKLTEAGQVFFKYASRILALCEETCRALEDLHHLQAGSLIIGASQTIGTYLMPGLIGLFRQKYPHICVQLQVHSTRRIAWSVAKGHIDVAVIGGAIPTELIPLLSIQPFAEDELTLIVPPDHPFARLSKIQKEDLYRLRFVSLDRHSTIRKVIDQILHQNGIDTNRLKMEMELNSIEAIKNAVQWGLGAAFVSVCAIAKELELNLVREVEIEAISIKRQLYQITNPNRYQSKAAFTFCQQMLNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RBCR_TRIV2" ac="Q3MCB5" length="337" description="Probable RuBisCO transcriptional regulator OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>990</score>
+      <smithWatermanScore>990</smithWatermanScore>
+      <initn>1029</initn>
+      <init1>990</init1>
+      <opt>990</opt>
+      <zScore>1147.4</zScore>
+      <bits>220.5</bits>
+      <expectation>2.4e-56</expectation>
+      <identity>50.2</identity>
+      <positives>83.8</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.:.: .: .::. ::.:::..: :...::..::. : .: . . .::: :...:.:.:.::.::.:.:::. ::.: . :.: :::::: ::::.:.....: :.::.. ....:.::: .: .. : ..:.:..::::: .: ..: .  ..:::..::.:  :::.... . :::::.:.::.:.:.::::: ::..: ...:::...:: :.::::::::.::. : ::::::..:: ::... ...   :... : ::: .: : . :.::: : ::.:.</pattern>
+      <matchSeq start="4" end="300">MSDLPFTLDQLRILKAIAVEGSFKRAADSLYVSQPAVSLQVQNLERQLDVPLFDRGGRRAQLTEAGHLLLNYGEKILSLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPKMIGMFRQKYPDVAVQLHVHSTRRTAWSVANGQVDLAIIGGEIPGELTESLEIIPYAEDELALILPVFHPFTKQETIQKEDLYKLQFITLDSQSTIRKVIDQVLSRSEIDTRRFKIEMELNSIEAIKNAVQSGLGAAFVSTSAIAKELQMGVLHCTPIDGVVIKRTLWLIFNPNRYRSKAAEAFSQEILPQFATPDWNQDVLKLVQKKLVVNVLDAAIPNTSDDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RBCR_NOSS1" ac="Q8YQ82" length="337" description="Probable RuBisCO transcriptional regulator OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>983</score>
+      <smithWatermanScore>983</smithWatermanScore>
+      <initn>1018</initn>
+      <init1>983</init1>
+      <opt>983</opt>
+      <zScore>1139.3</zScore>
+      <bits>219.0</bits>
+      <expectation>6.8e-56</expectation>
+      <identity>50.2</identity>
+      <positives>83.2</positives>
+      <overlap>297</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="298">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.:::::::.:.: .: .::. ::.:::..: :...::..::. : .: . . .::: :...:.:.:.::.::.:.:::. ::.: . :.: :::::: ::::.:.....: :.::.. ....:.::: .: .. : ..:.:..::::: .: ..: .  ..:::..::.:  :::..   . :::::.:.::.:.:.::::: ::..: ...:::...:: :.::::::::.::. : ::::::..:: ::... ...   :... : ::: .: : . :.::: : ::.:.</pattern>
+      <matchSeq start="4" end="300">MSDLPFTLDQLRILKAIAVEGSFKRAADSLYVSQPAVSLQVQNLERQLDVPLFDRGGRRAQLTEAGHLLLSYGEKILSLCQETCRAIEDLQNLQGGTLIVGASQTTGTYLLPKMIGMFRQKYPDVAVQLHVHSTRRTAWSVANGQVDLAIIGGEIPGELTESLEIIPYAEDELALILPVFHPFTKLDTIQKEDLYKLQFITLDSQSTIRKVIDQVLSRSEIDTRRFKIEMELNSIEAIKNAVQSGLGAAFVSTSAIAKELQMGVLHCTPIDGVVIKRTLWLIFNPNRYRSKAAEAFSQEILPQFATPDWNQDVLKLAQKKLVVNVLDAAIPNTSDDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RBCR_EMIHU" ac="Q4G384" length="314" description="Probable RuBisCO transcriptional regulator OS=Emiliania huxleyi OX=2903 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>961</score>
+      <smithWatermanScore>961</smithWatermanScore>
+      <initn>998</initn>
+      <init1>950</init1>
+      <opt>961</opt>
+      <zScore>1114.7</zScore>
+      <bits>214.4</bits>
+      <expectation>1.6e-54</expectation>
+      <identity>49.0</identity>
+      <positives>82.0</positives>
+      <overlap>300</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="301">--MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>   :::::.::.:.:..  : .:  ::. ::.:::..:.:...::..:.  .  :.. :  :::.:.:...:.:.::.::::.:.:: .::. . :.:..::::: :::::::....: ..::::.....:.::: .. .. : :::.:.::::.: .:. .: . ...:::..::::..::::. . . :::::.: ::.:...::::. :.: : :. ::.. .:: :.::::::::.::. : :::::: .:: ::.::  ..  :::.. : :::::. : . : .. .. : .:. ..</pattern>
+      <matchSeq start="4" end="303">MSDLPFTLDQLKIIKTIHREGSFKTAAKKLYISQPAVSRQVQNLERQLNTPIFYRDKRKARLTETGHILVKYAEQILSLCEETCQALDELKSINSGTLVIGASQTTGTYLMPRLIGIFRHKYPQISIELKVHSTRRISWGVANGEIDLAIVGGEVPPELQGTLEIISYAEDELALIIPQAHPFATLQSIQKEDLYRLRFIALDTQSTIRSVIENTLTQSGIDSRYFKIEMELNSIEAIKNAVQSGLGAAFVSVSAISKELELGILHWAKIEDVTIKRTLSILINPKRYYANPIKNFEKEIMEILLTSAASTNNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CYSL_BACSU" ac="P39647" length="299" description="HTH-type transcriptional regulator CysL OS=Bacillus subtilis (strain 168) OX=224308 GN=cysL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>514</score>
+      <smithWatermanScore>514</smithWatermanScore>
+      <initn>415</initn>
+      <init1>301</init1>
+      <opt>514</opt>
+      <zScore>600.4</zScore>
+      <bits>119.2</bits>
+      <expectation>7e-26</expectation>
+      <identity>32.0</identity>
+      <positives>68.7</positives>
+      <overlap>291</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="9" end="299">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>        :. . ::. ::::::::: :..::::.: .::.:::...  :.::  .... : .: :. : ..... : :..   .   ..  .: : ..:: ::: :..: .:: . . ::...: :....:. :.. .   . ::... :.  ---...: .: :.:::. .  :..::.:..: ..  :: .  ... ...:  :...:..: .: .  :..---. ..: ...: ::  :.: . .: ....:..  . : ::.:.:. . : :: : .    ..:  :.: . ::</pattern>
+      <matchSeq start="6" end="290">---MYYDVLKTFIAVVEEKNFTKAAEKLMISQPSVSLHIKNLEKEFQTALLNRSPKHFTTTPTGDILYQRAKQMVFLYEQAKAEIYAHHHYVKGELKIAASFTIGEYILPPLLAQLQKLYPELNLDVMIGNTEEVSERVRMLQADIGLIEGHTN---ENELEIEPFMEDEMCIAAPNQHPLAGRKEISISDLQNEAWVTREKGSGTREYLDHVLSSNGLRPKSM---FTISSNQGVKEAVINGMGLSVLSRSVLRKDLIHREISILHINNFSLKRKLSYIHSPLMENTKNKEIFITMLKSNYQSQLLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CMPR_SYNY3" ac="Q55459" length="304" description="HTH-type transcriptional activator CmpR OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=cmpR PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>431</score>
+      <smithWatermanScore>431</smithWatermanScore>
+      <initn>365</initn>
+      <init1>203</init1>
+      <opt>431</opt>
+      <zScore>504.6</zScore>
+      <bits>101.5</bits>
+      <expectation>1.5e-20</expectation>
+      <identity>28.6</identity>
+      <positives>65.6</positives>
+      <overlap>294</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="298">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>    ::.:.... :.:   .:::::: :.:.::..:.:.: : : . . : .. . :: ::: :.  :. :. : .  ..  ... ::.. ..:.: .-:. : : :..::.:. : :.:: :....:... . . . . :   :.  .:-. : .:--......:.:. . .:  ..::....: .. : : .  .:  .:.:  :  ..... .:..---.... :...: :::: ::  : : ...:  ..  :     . .: .:.. . .   :: .. .  : . . : . :</pattern>
+      <matchSeq start="5" end="291">MKNATLHQFEVFAAIARTGSFTKAAEELFLTQPTVSQQMKQLTKAIGVPLYEQIGRKIYLTEAGQAVLDASKNITSCLDQLQEVIADLQGLKKGNLRL-ATITTGKYFVPRLLGEFRQQYPGISISLQIGNRQQILERLANNLDDLYFLG-KPPSNL--DINIRHFLENPLVVIASRQHPLVKEKKISLERLVNEPLIMRESGSGTRMAVEEFFSENRL---KMNVEMEISSNEAIKQAVYGGLGISILSLYSLALEGINGPLAVLDVEGFPLQKHWYIIYQKSKQLSIVAQTFLDYLFAHDEAVSIAQIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RBCR_ALLVI" ac="P25544" length="302" description="RuBisCO operon transcriptional regulator OS=Allochromatium vinosum OX=1049 GN=rbcR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <smithWatermanScore>426</smithWatermanScore>
+      <initn>293</initn>
+      <init1>216</init1>
+      <opt>426</opt>
+      <zScore>498.9</zScore>
+      <bits>100.4</bits>
+      <expectation>3.1e-20</expectation>
+      <identity>28.7</identity>
+      <positives>64.4</positives>
+      <overlap>303</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="301">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEK--FVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSII---SNSESYKSKAF-EFFSNELKKLKNEIEN</querySeq>
+      <pattern>    .:.:::...::: ....:.::: :.::::..: :.. :: .. . : .: .... ::: :.  ..::. :    .:  ..: .::.  :::: .....:..-:. ::..:.: : .  : :...:.. . ... . .  .:....:--.:--- .:. :: --:... . .: : .::.:... ..   : . .:.  . .:  :. .. .. .  ---. ..  ::..  ::.: ::  : : . ::  .:: :.: . .  : .:..   :   ..---..  :  . ::-::  .:  ..</pattern>
+      <matchSeq start="4" end="297">-MHVSLRQLRVFEAVARHNSYTRAAEELHLSQPAVSMQVRQLEDEIGLSLFERLGKQVVLTEAGREVFHYSRAIGQSLREMEEVLESLKGVSRGSLRIAVASTVN-YFAPRLMAIFQQRHSGIGLRLDVTNRESLVQMLDSNSVDLVLMG--VP---PRNVEVEAEAFMDNPLVVIAPPDHPLAGERAISLARLAEETFVMREEGSGTRQAMERFFSERG---QTIRHGMQMTRNEAVKQAVRSGLGLSVVSLHTIELELETRRLVTLDVEGFPDRRQWYLVYRRGKRLSPAAGAFREFVLSEAARMHCRLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CBBR_XANFL" ac="P25545" length="333" description="HTH-type transcriptional regulator CbbR OS=Xanthobacter flavus OX=281 GN=cbbR PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>412</score>
+      <smithWatermanScore>412</smithWatermanScore>
+      <initn>225</initn>
+      <init1>201</init1>
+      <opt>412</opt>
+      <zScore>481.9</zScore>
+      <bits>97.4</bits>
+      <expectation>2.8e-19</expectation>
+      <identity>28.3</identity>
+      <positives>65.6</positives>
+      <overlap>279</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="275">MLP-FTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVE-KFVEDEFSLII-PKSHP-FANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>: :-.::.:::..  .:.  ...:::. . :: :... :.:.::... . . .: ....  :  :. .:. .:::     :. ::.  ::. ::::..::. .:-. :. : .:: : .  :.:.:.. ... . . ..:.. ..:.:..:   :----- : .:-... :.  ...-: .::-:  .: .:  :: . ...  . .:  : ... ..--..  . .  : :...: :.:: .:  : : ::.:. ..  :.    ...:..:.. ..:</pattern>
+      <matchSeq start="1" end="271">MAPHWTLRQLRLVALAAASGSYAKAAQDMGLSPPAVTAQMKALEEDIGVPMFERVDGRLRPTAAGQELLSAQERIARALSEAERAIAALKSPERGSVVVGVVST-AKYFAPMALAAFRRRRPEIELRLIIGNREDIIRGIVSLDFDVAIMGRPPP-----ALEAETRLIGDHPHIVVAPVDHPLFKRRKRITPADLTRESLLVREPGSGTRILMERVF--EEAGAPNPPIAMEIGSNETIKQSVMAGLGLAFISAHTVAAEVADGRLRVLEVEGLPVVRQWLAVRARDKRLLPAGQALMDFLEREGASFLPQMPGGEGGRCYLPDHVSGSTPAKAVARDPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CMPR_SYNP6" ac="Q5N5I5" length="323" description="HTH-type transcriptional activator CmpR OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=cmpR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>404</score>
+      <smithWatermanScore>404</smithWatermanScore>
+      <initn>336</initn>
+      <init1>194</init1>
+      <opt>404</opt>
+      <zScore>472.9</zScore>
+      <bits>95.7</bits>
+      <expectation>8.8e-19</expectation>
+      <identity>28.4</identity>
+      <positives>66.5</positives>
+      <overlap>275</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="275">MLPFTLQQLRILKAVATEKNFTKAAELLYLSQPSLSKQIKTLEKNLDILLVNRENNKISLTENGKIFLQYSERILALCEESCRALIDLKNGERGSLTVGASQTIGTYLMPRVLALFAQNYPQIDLKVQVNSTRIVAKNILNREIDIAVVGGEIPLDLKKNLTVEKFVEDEFSLIIPKSHPFANKKIVTKEDLYHLNFISLNSNSTIRKFIDNILIQNQIDTKQLKIIMQLNSIEAIKTAVSLGQGAAFVSSAAIEKEIELKTIEILKIENIRITRTLSIISNSESYKSKAFEFFSNELKKLKNEIEN</querySeq>
+      <pattern>:  .::.::....:.: ...::.::: :::.::..: :.: : : . . : .. .... ::: :. . . .....   :.   .. ::.. ..:.: .-:  : . :..::... : : :: :.....:.. . . -: .: ..:   : .. :  .--..::. :... . .. : :::.::.. .. : : .  ::  . .:  :.  ....  ....---:.. ..:.: :::: :.  : : : .:  .. .      ......:.. : :</pattern>
+      <matchSeq start="1" end="268">MKNLTLHQLKVFEAAARHSSFTRAAEELYLTQPTVSIQVKQLTKAVGLPLFEQIGKRLYLTEAGRQLYKTTRQVFEQLEQLDMTIADLQGMKQGQLRL-AVITTAKYFIPRLIGPFCQRYPGINVSLKVTNHEGLI-NRINDNLDDLYVLSRPPSGF--DITVQPFLDNPLVVVGPASHPLANQRGISLERLAQEPFILRERGSGTREATEQLFAAHNLN---LNVKLDLGSNEAIKQAILGGLGLAVLSYHTLTSAGATPELKMFEVEGFPIHRQWHAVYPAGKQLSTVAATFLDYLLTESQRIAADIQIPESTTTDPELDAPQPVVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

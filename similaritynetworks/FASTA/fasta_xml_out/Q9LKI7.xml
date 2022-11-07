@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164232-0772-63233072-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164232-0772-63233072-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164232-0772-63233072-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9LKI7|TCPG_THAWE" type="PROTEIN" length="558"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:42:32+00:00" end="2022-11-07T16:42:35+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="TCPG_THAWE" ac="Q9LKI7" length="558" description="T-complex protein 1 subunit gamma OS=Thalassiosira weissflogii OX=1577725 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3630</score>
+      <smithWatermanScore>3630</smithWatermanScore>
+      <initn>3630</initn>
+      <init1>3630</init1>
+      <opt>3630</opt>
+      <zScore>4390.3</zScore>
+      <bits>822.2</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>558</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="558">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="558">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="TCPG_YEAST" ac="P39077" length="534" description="T-complex protein 1 subunit gamma OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=CCT3 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2118</score>
+      <smithWatermanScore>2118</smithWatermanScore>
+      <initn>2120</initn>
+      <init1>1264</init1>
+      <opt>2118</opt>
+      <zScore>2311.2</zScore>
+      <bits>437.4</bits>
+      <expectation>3.6e-121</expectation>
+      <identity>57.8</identity>
+      <positives>82.4</positives>
+      <overlap>550</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPF-VRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>       :.. .:.. .:.::::::..:: ::.::::.::. :::..:::::::::::.:.::::. ::::.::.::.::::.::::..:::::::::.:::::::.: .  :.-.. ::::.::... . :: .:: . .. .  :::...  .:.:.:. ::.:.  .:.. : ..:: :: ::-:..   .   : :------.:.:::::..:::::::.. :  ::.::..::::.: :: :.:::::..::: ::::::::::::.::  ::::: .:..::: :. :: .:.: .: .::::::::::::::. :.. ...::..:.::::.::.::::::.:.....:::.::.::::... ::.:::.:...::.::::::.:::::::.::::.::: ::: :.:::...: : :::::::::::: : . . .:::::: :. ::.:::: ::::: :: : . :: ..:::::::----------.:.:  ---::::  ::.:::  .:.:::  .: :..:::.::::..::.:::::: .:.</pattern>
+      <matchSeq start="4" end="533">----MQAPVVFMNASQERTTGRQAQISNITAAKAVADVIRTCLGPKAMLKMLLDPMGGLVLTNDGHAILREIDVAHPAAKSMLELSRTQDEEVGDGTTTVIILAGEILAQCAPYLIEKNIHPVIIIQALKKALTDALEVIKQVSKPVDVENDAAMKKLIQASIGTKYVIHWSEKMCELALDAVKTV-RKDLGQTVEGEPN------FEIDIKRYVRVEKIPGGDVLDSRVLKGVLLNKDVVHPKMSRHIENPRVVLLDCPLEYKKGESQTNIEIEKEEDWNRILQIEEEQVQLMCEQILAVRPTLVITEKGVSDLAQHYLLKGGCSVLRRVKKSDNNRIARVTGATIVNRVEDLKESDVGTNCGLFKVEMIGDEYFSFLDNCKEPKACTIMLRGGSKDILNEIDRNLQDAMAVARNVMLSPSLSPGGGATEMAVSVKLAEKAKQLEGIQQWPYQAVADAMECIPRTLIQNAGGDPIRLLSQLRAKHA----------QGNFTT---GIDGDKGKIVDMVSYGIWEPEVIKQQSVKTAIESACLLLRVDDIVSGVRKQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="TCPG_DICDI" ac="Q54TH8" length="530" description="T-complex protein 1 subunit gamma OS=Dictyostelium discoideum OX=44689 GN=cct3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2111</score>
+      <smithWatermanScore>2111</smithWatermanScore>
+      <initn>2139</initn>
+      <init1>1315</init1>
+      <opt>2111</opt>
+      <zScore>1599.5</zScore>
+      <bits>305.7</bits>
+      <expectation>1.6e-81</expectation>
+      <identity>56.3</identity>
+      <positives>85.1</positives>
+      <overlap>549</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>       :..:::....: . ..:: : . :...::.::.. :::..::::.:::::  :.::::: ::::.::.::.::::::::::.::.::::::::.:::.:.: ..: :.. .:::  :.... .::...:.: .......:...  .: ..::::::.:: ..:...: ..:: ::.:: --------- . .:--- . :.::::::::::::::.:::: :. :::.:::::: ::.: :.::::.:::  ::::::::.: :.::.:.:...:::.:::::. .: .:: .:::.:.:::::::::::.:.: .:: .:::.:..:::.:: .::::::::::..::::::::::::.::::.:::.:.:.::.::::::.:::.:::.:::.:::::::..:.::.:.::::.::::: :::.: .: . . ..::..: :. :.....: ::. ::::::..... .:.::::::.   .. :----------.:.:: .: .:::...:.:.  ::::::.:::.:::: .::.: :.:...:.</pattern>
+      <matchSeq start="4" end="530">----MNQPVFVLNTNAKRENQKEAQQGIFLAVKSVASIIKTCLGPKAMLKMILDPMGTTVVTNDGNAILREIDVTHPAAKSMIELSRAQDENVGDGTTSVVILAAEVLASSELFIEKKIHPHYIIKAFRMALDDSLSIVDQYSVAIDLKNRPEVLKVVQSCIGTKFIGKWGSLMCNLALDAVMTVH---------IQEED---GRSEIDIKRYAKVEKIPGGDISDCRVIRGVMLNKDVTHPKMKRMIKNPRIVLLDCSLEYKKGESDTMVDITNEDDFSALLKIEEEYVQRICEDIIKLKPDLVFTEKGVSDLAQHFFVKKGITCLRRLKKSENNRIARISGATIVSRTDELQESDIGTGCGLFEIRKIGDEYFTFLEDCKEPKACTILLRGASKDILNEVERNLTDALNVARNIVLDPRLVPGGGAIEMALSQALSEKSKSIEGLHQLPYKALAQSLECIPKILAQNCGANTVKLLTELRAKHATNPTENYT----------YGVDGDNGTIVDMKQLGIWDTHSVKVQTLKTAIESACTMLRVDHIASAASKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="TCPG_SCHPO" ac="O74341" length="528" description="T-complex protein 1 subunit gamma OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=cct3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2206</score>
+      <smithWatermanScore>2206</smithWatermanScore>
+      <initn>2202</initn>
+      <init1>1318</init1>
+      <opt>2206</opt>
+      <zScore>1592.3</zScore>
+      <bits>304.4</bits>
+      <expectation>4e-81</expectation>
+      <identity>59.7</identity>
+      <positives>83.6</positives>
+      <overlap>548</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="555">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>       :..:.:.. .:..:..::..:::::.::::.::. ::::.::::::::.:....::::. ::::..:.::.:::::::.:..:::::::::::::::::.:  : :..  .:::....:... ::..::.: .: .: :.: :. ..  :...:::.:. .::.:.:  .::.:: ::.  :  -------------.::.::::::.:::.::::: .  ::.:::.:::::: :::::::::::.::: ::::.:::::::.::. . ::: .:..::: :. ::  ::: :::.::::::::::::::. ::::::.:: ::.::::.::: ::.::.: ...::.:.::::::: . :.:.::..:.  ::.::::::.::: :::..::.:::: ::: :.::: : :.: :::::::::::: : . . ..::. : :. ::.::.:.:::::.::::.. :...:.::::::-------- :. .:-----:::: ::..:::.:.::::: .::.:.::::.::::..::.:::::: .:</pattern>
+      <matchSeq start="4" end="525">----MQSPVFVMNTNGNRQVGHKAQMSNIQAAKAVADVIRTCLGPRAMLKMLLDPVGSVLLTNDGHAILREIEVAHPAAKSMIELARTQDEEVGDGTTSVIILAGEILAAASPLLDRKIHPVVMIRSFKQALEDALSIIDEITLPVNVDDNAEMFRLIRTCIGTKLVARWSDLMCHLALRAVRTVASTSNG-------------RMEIDIKRYARVEKVPGGEIESSCVLDGVMLNKDVTHPKMRRRIENPRIVLLDCPLEYRKGESQTNIEISKDTDWNRILEIEEEQVKRMCDYIIAVKPDLVITEKGVSDLAQHYLLKANITALRRTRKSDNNRIARACGANIVNRLEDLREKDVGTGCGLFYIDKLGDEYYTFLTGCKNPKACTILLRGPSKDIINEVERNLQDAMAVARNVFFHPKLSPGGGATEMAVSVRLAEKARSIEGVAQWPYRAVADAIEIIPRTLVQNCGANPIKALTELRAKHA--------EGQHSF-----GIDGETGRVVDMHEYGVWEPEAVKLQSIKTAIESACLLLRVDDIVSGVRKHSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="TCPG_MACFA" ac="Q4R963" length="545" description="T-complex protein 1 subunit gamma OS=Macaca fascicularis OX=9541 GN=CCT3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2151</score>
+      <smithWatermanScore>2151</smithWatermanScore>
+      <initn>2175</initn>
+      <init1>1294</init1>
+      <opt>2151</opt>
+      <zScore>1575.0</zScore>
+      <bits>301.2</bits>
+      <expectation>3.6e-80</expectation>
+      <identity>59.1</identity>
+      <positives>83.0</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::::.::..::::: :::::::::::::  :: :.. ..:::... .:  ::.. ..  .. .. ::..::. . ....: : .:  :::...  ..:: :: ::.-------:--: : ----. :.:::.:::::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .:::::.::.:::::::.::: :: :::: .:.::.:.::: ::.:..:::.:::.:. ::::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: :::..:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGGGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRKALDDMISTLKKISIPVDINDSDMMLNIINSSITTKAISRWSSLACNIALDAVKTVQ-------F--EENG----RKEIDIKKYAKVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIQQLCEDIIQLKPDVVITEKGISDLAQHYLMRANITAIRRVRKTDNNRIARACGARIVSRPEELREDDVGTGAGLLEIKKIGDEYFTFITECKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ENCET----------WGVNGETGTLVDVKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQSRQGGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="TCPG_BOVIN" ac="Q3T0K2" length="545" description="T-complex protein 1 subunit gamma OS=Bos taurus OX=9913 GN=CCT3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2147</score>
+      <smithWatermanScore>2147</smithWatermanScore>
+      <initn>2171</initn>
+      <init1>1290</init1>
+      <opt>2147</opt>
+      <zScore>1570.1</zScore>
+      <bits>300.3</bits>
+      <expectation>6.8e-80</expectation>
+      <identity>59.0</identity>
+      <positives>82.6</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::::.::..:::::::::::::::::::  :: :.. ..:::... .:  ::.. ..  .. .. ::. . . . ....: : .:  :::...  ..:: :: ::.-------:--: : ----. :.:::.::.::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .:::::.::.:::::::.::: :: :::: .:.:: :.::: ::.:..:::.:::.:. ::::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: ::::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGDGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRKALDDMISTLKKISIPVDTSNRDTMLNIINSSITTKVISRWSSLACNIALDAVKTVQ-------F--EENG----RKEIDIKKYARVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIQQLCEDIIQLKPDVVITEKGISDLAQHYLMRANITAIRRVRKTDNNRIARACGARIVSRPEELREEDVGTGAGLLEIKKIGDEYFTFITECKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ENCET----------WGVNGETGTLVDMKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQSRQGGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="TCPG_PONAB" ac="Q5NVF9" length="545" description="T-complex protein 1 subunit gamma OS=Pongo abelii OX=9601 GN=CCT3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2152</score>
+      <smithWatermanScore>2152</smithWatermanScore>
+      <initn>2176</initn>
+      <init1>1287</init1>
+      <opt>2152</opt>
+      <zScore>1566.5</zScore>
+      <bits>299.7</bits>
+      <expectation>1.1e-79</expectation>
+      <identity>58.8</identity>
+      <positives>83.0</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::.:.::..:::::::::::::::::::  :: :.. ..:::... .:  ::.. ..  .. .. ::..::. . ....: : .:  :::...  ..:: ::  :.-------:--: : ----. :.:::.::.::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .:::::.::.:::::::.::: :: :::: .:.::.:.::: ::.:..:::.:::.:. .:::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: ::::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMVEISRTQDEEVGDGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRKALDDMISTLKKISIPVDINDSDMMLNIINSSITTKAISRWSSLACNIALDAVKMVQ-------F--EENG----RKEIDIKKYARVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIQQLCEDIIQLKPDVVITEKGISDLAQHYLMRANITAIRRVRKTDNNRIARACGARIVSRPEELREDDVGTGAGLLEIKKIGDEYFTFITDCKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ENCET----------WGVNGETGTLVDMKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQSRQGGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="TCPG_HUMAN" ac="P49368" length="545" description="T-complex protein 1 subunit gamma OS=Homo sapiens OX=9606 GN=CCT3 PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2151</score>
+      <smithWatermanScore>2151</smithWatermanScore>
+      <initn>2175</initn>
+      <init1>1287</init1>
+      <opt>2151</opt>
+      <zScore>1566.5</zScore>
+      <bits>299.7</bits>
+      <expectation>1.1e-79</expectation>
+      <identity>59.0</identity>
+      <positives>82.8</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::::.::..:::::::::::::::::::  :: :.. ..:::... .:  ::.. ..  .. .. ::. ::. . ....: : .:  :::...  ..:: ::  :.-------:--: : ----. :.:::.::.::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .:::::.::.:::::::.::: :: :::: .:.::.:.::: ::.:..:::.:::.:. .:::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: ::::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGDGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRKALDDMISTLKKISIPVDISDSDMMLNIINSSITTKAISRWSSLACNIALDAVKMVQ-------F--EENG----RKEIDIKKYARVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIQQLCEDIIQLKPDVVITEKGISDLAQHYLMRANITAIRRVRKTDNNRIARACGARIVSRPEELREDDVGTGAGLLEIKKIGDEYFTFITDCKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ENCET----------WGVNGETGTLVDMKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQSRQGGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="TCPG_RAT" ac="Q6P502" length="545" description="T-complex protein 1 subunit gamma OS=Rattus norvegicus OX=10116 GN=Cct3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2147</score>
+      <smithWatermanScore>2147</smithWatermanScore>
+      <initn>2165</initn>
+      <init1>1286</init1>
+      <opt>2147</opt>
+      <zScore>1565.3</zScore>
+      <bits>299.4</bits>
+      <expectation>1.3e-79</expectation>
+      <identity>58.8</identity>
+      <positives>83.0</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::::.::..:::::::::::::::::::  :: :.. ..:::... .: .::.. ..  .. .  :::.. . . ....: : .:  :::...  ..:: :: ::.-------:--: : ----. :.:::.::.::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .::.::.::.:::::::.::: :: :::: .:.::.:.::: ::.:..:::.:::.:. .:::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: ::::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGDGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRMALDDMVSTLKKISTPVDVNNRDMMLNIINSSITTKVISRWSSLACNIALDAVKTVQ-------F--EENG----RKEIDIKKYARVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIQQLCEDIIQLKPDVVITEKGISDLAQHYLMRANVTAIRRVRKTDNNRIARACGARIVSRPEELREDDVGTGAGLLEIKKIGDEYFTFITDCKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ENCET----------WGVNGETGTLVDMKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQNRQTGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="TCPG_MOUSE" ac="P80318" length="545" description="T-complex protein 1 subunit gamma OS=Mus musculus OX=10090 GN=Cct3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2152</score>
+      <smithWatermanScore>2152</smithWatermanScore>
+      <initn>2178</initn>
+      <init1>1284</init1>
+      <opt>2152</opt>
+      <zScore>1560.5</zScore>
+      <bits>298.5</bits>
+      <expectation>2.4e-79</expectation>
+      <identity>59.1</identity>
+      <positives>83.0</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :  :..::...:.: .::..: :::.::...:::::. :::.::.:::::::::::.::::: ::::..:.::.::::::.::..:::::::::::::::::::  :: :.. ..:::... .: .::.. ..  .. .  :::.. : . :...: : .:  :::...  ..:: :: ::.-------:--: : ----. :.:::.::.::::::: : :  :: :::.:::::: .::: :.::::.:::. ::::::::::..::: :::.. .:.:::::....: .:: .:::.::::::.:::::::. .::.::.::.:::::::.::: :: :::: .:.::.:.::: ::.:..:::.:::.:. .:::::::::.:::.::..:.:.:::: ::::: :::..::.:.:::::.::::. .: . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::. --:. ::----------::..: :: ::::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="3" end="530">--MMGHRPVLVLSQNTKRESGRKVQSGNINAAKTIADIIRTCLGPKSMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGDGTTSVIILAGEMLSVAEHFLEQQMHPTVVISAYRMALDDMISTLKKISTPVDVNNREMMLSIINSSITTKVISRWSSLACNIALDAVKTVQ-------F--EENG----RKEIDIKKYARVEKIPGGIIEDSCVLRGVMINKDVTHPRMRRYIKNPRIVLLDSSLEYKKGESQTDIEITREEDFTRILQMEEEYIHQLCEDIIQLKPDVVITEKGISDLAQHYLMRANVTAIRRVRKTDNNRIARACGARIVSRPEELREDDVGTGAGLLEIKKIGDEYFTFITDCKDPKACTILLRGASKEILSEVERNLQDAMQVCRNVLLDPQLVPGGGASEMAVAHALTEKSKAMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRLLTSLRAKHTQ--ESCET----------WGVNGETGTLVDMKELGIWEPLAVKLQTYKTAVETAVLLLRIDDIVSGHKKKGDDQNRQTGAPDAGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="TCPG_XENLA" ac="P50143" length="547" description="T-complex protein 1 subunit gamma OS=Xenopus laevis OX=8355 GN=cct3 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2124</score>
+      <smithWatermanScore>2124</smithWatermanScore>
+      <initn>2150</initn>
+      <init1>1291</init1>
+      <opt>2124</opt>
+      <zScore>1559.2</zScore>
+      <bits>298.3</bits>
+      <expectation>2.8e-79</expectation>
+      <identity>59.5</identity>
+      <positives>80.7</positives>
+      <overlap>553</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="557">MANQGMG-PIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>     ::-:..::... .: .::..: :::.::...:::::. ::::.:.:::::::::::.::::: ::::..:.::.::::::.::..:::::::::::::::::::  :: :.. ..:::.:. .:  ::.. ..  .: .  ::..: : . ....: :..:  . : :.   .:: :: ::  :   -------------. :.:::.:::::::::: : :  :: ::: :::::: :::: :.::::.:::  ::::::::::..::: :::.  .:.:::::....: .:: .:::.::::::.:::::::..:::::: ::.:::::::.::: :: :.:::::.:: :.::: ::::..:::.:::.:. .:::::::::.:::.::..: :.:::: ::::: ::::.:: :.:::::.::.:.  : . .  . :..: :. ::..:.::::::: ::::.:.:: .:.:::::.-- :  .:----------::.:: .: :.::.:.:.:::..::.:: :::::.: ..::::::::: ::::</pattern>
+      <matchSeq start="2" end="529">----MMGRPVLVLSQNMKRESGRKVQSGNINAAKTIADIIRTCLGPRAMMKMLLDPMGGIVMTNDGNAILREIQVQHPAAKSMIEISRTQDEEVGDGTTSVIILAGEMLSVAEQFLEQQMHPTVIISAYRKALDDMVNTLKEISTPVDTNDRELMLKIINSAINTKAIKLWADMACGIALDAVKTVELEENG-------------RKEIDIKKYAKVEKIPGGIIEDSCVLRGVMVNKDVTHPKMRRLIKNPRIILLDCSLEYKKGESQTEIEITREEDFARILQMEEEYIQQVCEDIIRLKPDVVITEKGISDLAQHYLVKANITAVRRVRKTDNNRIARACGARIASRTDELREEDVGTGAGLFEIKKIGDEYFTFITDCKDPKACTIVLRGASKEILAEVERNLQDAMQVCRNVVIDPYLVPGGGASEMSVAHILTEKSKTMTGVEQWPYRAVAQALEVIPRTLIQNCGASTIRILTSLRAKHT--QEGCQT----------WGVDGEAGVLADMKELGIWEPLAVKLQTYKTAVETAILLLRIDDIVSGHKKKGEDHGRQPAAAPEAPQQAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="TCPG_ARATH" ac="Q84WV1" length="555" description="T-complex protein 1 subunit gamma OS=Arabidopsis thaliana OX=3702 GN=CCT3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2139</score>
+      <smithWatermanScore>2139</smithWatermanScore>
+      <initn>2033</initn>
+      <init1>1120</init1>
+      <opt>2139</opt>
+      <zScore>1534.8</zScore>
+      <bits>293.8</bits>
+      <expectation>6.3e-78</expectation>
+      <identity>58.6</identity>
+      <positives>83.7</positives>
+      <overlap>551</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTH-SKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNW-GIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>       :..::... .: .: ... :::::..:::::::.:::::::::::::  ::::.::::: ::::.::.::.:::::::::..::::::::::::.::::::  :: :.. : :::.: :.:  ::...... .. :. .:..:  .: .::.::::.::.:...:.. :.:. :. ::. ------------:.     :::::.: ::::.:::.. :  ::.::::::::. -.::.:.: ::::.::: ::::::::.:::.:.. ::::..:::.::::.::.:..:. ::::.::::::.:::: :::.::...:.::::::::::.:.: ::.::.: ::..::::::: ::::..:::...:.:. .::.:::::..::: ::: .::.:::: :::.:.::.. .:.:.:::::::..::. :.. .  .:::.. :. :.. :.:.:::::::::::.::::.: :..:::----------::---.  :-::::.:: ..::.:  .:. ..::.::.:::.:.:::.::::::::: :::</pattern>
+      <matchSeq start="4" end="529">----MHAPVLVLSDSLKRESGSKVHHGNIQASKAVADIIRTTLGPRSMLKMLLDAGGGIVVTNDGNAILRELDVAHPAAKSMIELSRTQDEEVGDGTTSVIVLAGEMLHVAEAFLEKNYHPTVICRAYIKALEDSIAVLDKIAMSIDINDRSQVLGLVKSCIGTKFTSQFGDLIADLAIDATTTVGV------------DLGQGLREVDIKKYIKVEKVPGGQFEDSEVLKGVMFNKDVVAPGKMKRKIVNPRIILLDCPLEYKKGENQTNAELVREEDWEVLLKLEEEYIENICVQILKFKPDLVITEKGLSDLACHYFSKAGVSAIRRLRKTDNNRIAKACGAVIVNRPDELQESDIGTGAGLFEVKKIGDDFFSFIVDCKEPKACTVLLRGPSKDFINEVERNLQDAMSVARNIIKNPKLVPGGGATELTVSATLKQKSATIEGIEKWPYEAAAIAFEAIPRTLAQNCGVNVIRTMTALQGKHA----------NG---ENAWTGIDGNTGAIADMKESKIWDSYNVKAQTFKTAIEAACMLLRIDDIVSGIKKKQAPGSGPSKPTIETEGDADNEQILPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="TCPG_DROME" ac="P48605" length="544" description="T-complex protein 1 subunit gamma OS=Drosophila melanogaster OX=7227 GN=CCT3 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2152</score>
+      <smithWatermanScore>2152</smithWatermanScore>
+      <initn>2181</initn>
+      <init1>1080</init1>
+      <opt>2152</opt>
+      <zScore>1504.8</zScore>
+      <bits>288.2</bits>
+      <expectation>3e-76</expectation>
+      <identity>59.4</identity>
+      <positives>82.9</positives>
+      <overlap>554</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALT-ICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>    :. ::.::...:.: .::..:: ::::..:.::.::. :::..:::::.:::::::.::::: ::::. :.::.::::::..:..::::::::::::.::::::  ::::.. .::::.:.:.:  ::.. . -.  . .. .::.:. .. ..:..:.:.:: ..:.:. . .:: :: ::.--------  : .-----..:::::::::::::::: : .  ::.:::.:::::: :::: ::::::.:::  ::::::::::::::  :.:.. .:..:::.:. .: .::: :::.:.::::::::::::. ::.:::.:::::::: :.::: :::::.::.:. :.:.::: ::::..:::.:::.:  :::.::::::.:::.:::.::: :::: ::..:.::.:..:::. ::::.:::.:  : .  .:------::. ::. :.:.::::::::::...::..: ::::::. ------.:.:.---: ::::: .:..:::.  ..:::..::.:: :::::.: ..::::::::::::.:</pattern>
+      <matchSeq start="4" end="529">-MFGGQQPILVLSQNTKRESGRKVQLENIQAGKAIADVIRTCLGPQAMLKMLMDPMGGIVMTNDGNAILREITVQHPAAKSMIEIARTQDEEVGDGTTSVIVLAGEMLAAAEPFLQQQIHPTVIIRAYREALEDIVGHLQSQLSIQLDVKDKAKMADVVKACVGTKFIGKWSDLAVKIALDAVETVT--------LSENG-----RLEVDIKRYAKVEKIPGGAIEESCVLKGVMINKDVTHPKMRRLIENPRIVLLDCSLEYKKGESQTNVEIIGEQDFTRMLQIEEEFVQRICADIIAVKPDLVFTEKGVSDLAQHYLLKAGITAIRRLRKTDNLRIARACGATIVNRTEELTEKDVGTGAGLFEVKKIGDEYFTFVTECKEPKACTILLRGASKDILNETERNLQDALHVARNLVLEPRLVAGGGAVEMAASQLLTRKQVK------GPYTAVAHALEIIPRTLAQNCGANTIRALTALRAKHASH------TGDGV---CAWGIDGESGEIVDMNVKNIWEPLAVKLQTYKTAVETAILLLRIDDIVSGSKKRGGNEPTNPAAMAQGQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="TCPG_OXYGR" ac="O00782" length="559" description="T-complex protein 1 subunit gamma OS=Oxytricha granulifera OX=5947 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2144</score>
+      <smithWatermanScore>2144</smithWatermanScore>
+      <initn>2045</initn>
+      <init1>729</init1>
+      <opt>2144</opt>
+      <zScore>1490.0</zScore>
+      <bits>285.5</bits>
+      <expectation>2e-75</expectation>
+      <identity>59.7</identity>
+      <positives>84.0</positives>
+      <overlap>549</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="9" end="555">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCME-IIAFKPDIVITEKGVSDLAQHYFAK-ANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>        ...::....:  ::.:: .::.:::::.::.:.::::.::::::::::::::.::::: ::::.::.::.:::::::.::.:::::::::::::::::.:  .: :.. .::::.:: .:  ::.: . . : ..  .:... . ....:.::::.::::.:.....:.:.::: .:--------.  :.. :-----:.:.:::::::::::: . . .::.::::::::::  ::: :::::..::: :::::::::.::.:.: :::..  : :::: :..:: :-:.  :::.::::::::: :::.. :-.: :..::.:::::::.::.:::::..: .:..:::.:: :::::..:::.:::.:. .:..::::.:.:::.:::::::::::: ::. :.:::. .:.:.::::: :: ..  : . . :.::.:: :: :.. :.::::::::::::..:.:..:.::::::---.:.:----: .----:::::.:::. ::.: .::.:.::: ::.::..:..::.::::::::: ::</pattern>
+      <matchSeq start="7" end="531">--MSSRAAVFILNQNAKREQGRKAQTANIKAARAVSDIVRTTLGPKSMLKMLLDPMGGIVLTNDGNAILREIDVAHPAAKSMIELARAQDEEVGDGTTSVIILAGEILSAVESFLERDIHPTVIVGAYFQALEEIVRLTESYGEPIDIENENDLQKIVSSCIGTKFSSKWGNLIVDLAVKAVKSV--------YKKEGDYV-----EIDVKRYAKVEKIPGGLLEESVVLDGVMFNKDVTHPGMRRYIENPRVVLLDCPLEYKKGESMTNMEFTKEEDFKKALMMEEEEVKKMCAEDILRVKPDVVITEKGVSDTAQHFLLKYGNCTVIRRIRKTDNNRIARVTGATIANRPEELQESDVGTKCGLFEIKKIGDEYFSFMTKCENPKACSILLRGASKDVLNEIERNLHDALGVARNVMVNPKLVPGGGAIEMELACRLMEFSQKIEGMQQWPFKALAGALEVIPRTLAQNCGADVVRVMTELRAKHA---NDKE----GLY----WGIDGNTGKIRDMRESNVWDPISVKQQTLKTSIEATCMLLRIDDIVSGIKKDKRGGAGQRGGDRGQGDQEETFGDQRDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="TCPG_TETPY" ac="P54408" length="559" description="T-complex protein 1 subunit gamma OS=Tetrahymena pyriformis OX=5908 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2142</score>
+      <smithWatermanScore>2142</smithWatermanScore>
+      <initn>2186</initn>
+      <init1>1211</init1>
+      <opt>2142</opt>
+      <zScore>1462.1</zScore>
+      <bits>280.4</bits>
+      <expectation>7e-74</expectation>
+      <identity>58.3</identity>
+      <positives>82.7</positives>
+      <overlap>556</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>: . :  ::::::..:.: .:..:::.::.:..::..:. ::::::::::::::::::::.::::: ::::.::.::.:::::::.:..:::::::::::::.::::.  :.::.. .:::.::: .:  ::.:..   :: :. .::.....:.. ..::::.::.:::. .. :.::::: :. : .  ------------::....::::::::::::: . : .::.:::::::.:: :::: :.:::..::: :::::::::.::.:.  : : .  :..: : .  :: .:.  :::.::::::::::::::. : :....::.:::::::..:..:::::.: .::.:::.:  :::::.. ::.:::.:. ::..:.::.:::::.:::::::.:::: : . :..:.  .:.:.::::: :: ::  :.: . ..::..: :: ::. :.:.::.::::::::.:.:..:.:::::-----..:--::  .-----::.:..::..:: : .::::..::.:. :::.:::::.:::::.::: ::.</pattern>
+      <matchSeq start="1" end="532">MFQGGHQPIMVLNQNTKRESGKKAQLANISASKAVSEIVTSTLGPRSMLKMLLDPMGGIVMTNDGNAILREIDVNHPAAKSMIELARVQDEEVGDGTTSVIIMAGEMMSAAKPFIERDIHPSIIVTAYYRALEESIKKIEELAVPIDVNNDDQVNKALSSCIGTKFTSRWGKLITDLALKAVRTIMRGGNL------------QKLNLEIKRYAKVEKIPGGTLEDSVVLDGVMFNKDITHPKMRRFIKNPRVILLDCPLEYKKGESMTNLEMMKETDMTDALQQEMEELALMCNDILKHKPDVVITEKGVSDLAQHYLLKQNVSVIRRVRKTDNNRISRVSGATIVNRPEEIQESDVGKKCGLFEVKLIGDEYFTFMTECENPEACSIILRGASKDVLNEMERNLHDCLAVAKNIFVNPKLVPGGGAIEMEVSSHLEKISSSIEGLHQLPFRAVAYALEAIPKTLAQNCGVDVVRNITELRAKH-----NQE--GNKFI-----GIEGNSGKITDMGEANVWEPIAVKLQVYKTAIESACMLLRIDDVVSGLKKQKVAKGGASVTDGNGQEIPETFGDARDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="TCPG_CAEEL" ac="Q9N4J8" length="543" description="T-complex protein 1 subunit gamma OS=Caenorhabditis elegans OX=6239 GN=cct-3 PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1936</score>
+      <smithWatermanScore>1936</smithWatermanScore>
+      <initn>1643</initn>
+      <init1>690</init1>
+      <opt>1936</opt>
+      <zScore>1336.5</zScore>
+      <bits>257.1</bits>
+      <expectation>7e-67</expectation>
+      <identity>51.6</identity>
+      <positives>80.4</positives>
+      <overlap>556</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="555">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICE-EWALVVDVHDSERVKSLVQSCIGAKFSSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVDMEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>: . :. ::.::.. :.: .:.:.:.:::.: ...::.::..::::.:::::.:::::::.::::: ::::. :.::.::::::..:..:::.:::::::::::::.. .:. ... . :::.:...:  ::.. .   :-... .::. :. .. ..:.::.:.:. :.: :. ......:: :.  :.-------------:   :.::::: ..::::::.: :  :..:.. :::. :.:::::::::::.:::  ::::::::::..::  ::: ...:..::. ....: ::: .:::.:.::::.::::::.. ::.:: .:::.::::::.::. :: .:  :...:. :.::   :::. ::..::...   -.   :::..::: ::::.::.:::: :...::::....:.:.::::: :::.:  ... : :..:... :. :.: :.::::::: :::: :.:: .:.::: ::   :------: ::-----:.:::.: ::::... .:.:..:..:..:::.:.. :.:::::::::.::</pattern>
+      <matchSeq start="1" end="531">MRGAGQQPIIVLSQGTKRESGHQVQIGNINACKTIADVIRTSLGPRAMLKMLMDPMGGIVMTNDGNAILREITVKHPAAKSMIEIARTQDEETGDGTTSVIILAGEVMAHAQTYLEQKTHPTLIIKAYRQALEDMIQWSENKFSKTVDITDDAEIAKVVKSCLGTKMISKWMDLAVNISIQAVKTIRVEK-------------AGVREIDIKRYCRIEKIPGGRIEDSQVVKGIVVNKDILHAKMRRRIENPRIVLLDCNLEYKKGESQTSLEIMREEDISAILEQEEQAIRKQCDEIIKLKPDLVFTEKGISDLAQHFLLKAGITCLRRLKKTDNNRLARVCGARVVHDTSDLRDEDVGTKAQLFEVVKIADEYYTYVTA-ETTTACTVVLRGPSKDVINEVERNLQDSLHVVRNIMINPKLVPGGGALEMALSREIEQQGAKMDGVKKWPYKAIGLALEVIPRTLIQNCGGSTIRKMTELRAIHAQNAE------NWTF-----GVDGTSGDLVDMNKLEIWDPLAVRIQVLKTAIETSVMLLRIDDIVSGTKKAVGGEKQEMMPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="THSA_SACS2" ac="Q9V2S9" length="559" description="Thermosome subunit alpha OS=Saccharolobus solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) OX=273057 GN=thsA PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1181</score>
+      <smithWatermanScore>1181</smithWatermanScore>
+      <initn>1165</initn>
+      <init1>457</init1>
+      <opt>1082</opt>
+      <zScore>1306.0</zScore>
+      <bits>251.5</bits>
+      <expectation>3.5e-65</expectation>
+      <identity>34.6</identity>
+      <positives>70.5</positives>
+      <overlap>563</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHD------SERVKSLVQSCIGAKFSSRWNDI--MIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVD-MEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSG----SKKKGY</querySeq>
+      <pattern>       :...:.  :.:.:::.:  .:: ::...:...::.:::... :::.: .: ..:::::  :.......::.:: ..: ..:.: ::::::::...::: .: .:: ..  :::::::..::. : ..:: .  . .  .:..:------ . ..... . ...:: ..  ..--.:::.. :...:..--------:  :  :  ....----- :..:  :: : : ....:....:.:.:  : ::. . .: .::. :: .: : .... ::. :. ...:  : .:...:  .. ..  ..:: .::..:.:::..:: .: : ::....: ... .: :: :.:   .    :.: . -: : :..:.. ..:.:  :. :: .:.:::..  .:.: ::...::....::....: .:::::: :. ... ::. . .. : .:  . : .::.: ::  ::.. :. .: .. .:::.:: .  ..-------------:.:   ::.::-.  ... ::. :: :..:.:.:.:  ::.:::....----:.:::</pattern>
+      <matchSeq start="4" end="539">----MAAPVLLLKEGTSRTTGRDALRNNILAAKTLAEMLRSSLGPKGLDKMLIDSFGDVTITNDGATIVKDMEIQHPAAKLLVEAAKAQDAEVGDGTTSAVVLAGALLEKAESLLDQNIHPTIIIEGYKKAYNKALELLPQLGTRIDIKDLNSSVARDTLRKIAFTTLASKFIAEGAELNKIIDMVIDAIVNVAE--------PLPNGGYNVSLDL-----IKIDKKKGGSIEDSVLVKGLVLDKEVVHPGMPRRVTKAKIAVLDAALEVEKPEISAKISITSPEQIKAFLDEESKYLKDMVDKLASIGANVVICQKGIDDIAQHFLAKKGILAVRRVKRSDIEKLEKALGARIISSIKDATPEDLGYAE-LVEERRVGNDKMVFIEGAKNLKAVNILLRGSNDMALDEAERSINDALHALRNILLEPVILPGGGAIELELAMKLREYARSVGGKEQLAIEAFADALEEIPLILAETAGLEAISSLMDLRARHAKGLSNT-------------GVDVIGGKIVDDVYALNIIEPIRVKSQVLKSATEAATAILKIDDLIAAAPLKSEKKGGEGSKEESGGEGGSTPSLGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="THSA_SACSH" ac="P46219" length="560" description="Thermosome subunit alpha OS=Saccharolobus shibatae OX=2286 GN=thsA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1183</score>
+      <smithWatermanScore>1183</smithWatermanScore>
+      <initn>1167</initn>
+      <init1>456</init1>
+      <opt>1082</opt>
+      <zScore>1306.0</zScore>
+      <bits>251.5</bits>
+      <expectation>3.5e-65</expectation>
+      <identity>34.6</identity>
+      <positives>70.7</positives>
+      <overlap>563</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="557">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHD------SERVKSLVQSCIGAKFSSRWNDI--MIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVD-MEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSG----SKKKGY</querySeq>
+      <pattern>       :...:.  :.:.:::.:  .:: ::...:...::.:::... :::.: .: ..:::::  :.......::.:: ..: ..:.: ::::::::...::: .: .:: ..  :::::::..::. :  .:: .  . .  .:..:------ . ..... . ...:: ..  ..--.:::.. :...:..--------:  :  :  ....----- :..:  :: : : ....:....:.:.:  : ::. . .: .::. :: .: : .... ::. :. ...:  : .:...:  .. ..  ..:: .::..:.:::..:: .: : ::....: ... .: :: :.:   .   .:.: . -: : :..:.. ..:.:  :. :: .:.:::..  .:.: ::...::....::....: .:::::: :. ... ::. . .. : .:  . : .::.: ::  ::.. :. .: .. .:::.:: .  ..-------------:.:   ::.::-.  ... ::. ::.:..:.:.:.:  ::.:::....----:.:::</pattern>
+      <matchSeq start="4" end="539">----MASPVLLLKEGTSRTTGRDALRNNILAAKTLAEMLRSSLGPKGLDKMLIDSFGDVTITNDGATIVKDMEIQHPAAKLLVEAAKAQDAEVGDGTTSAVVLAGALLEKAESLLDQNIHPTIIIEGYKKAYTKALELLPQLGTRIDIRDLNSSVARDTLRKIAFTTLASKFIAEGAELNKIIDMVIDAIVNVAE--------PLPNGGYNVSLDL-----IKIDKKKGGSIEDSVLVKGLVLDKEVVHPGMPRRVTKAKIAVLDAALEVEKPEISAKISITSPEQIKAFLDEESKYLKDMVDKLASIGANVVICQKGIDDIAQHFLAKKGILAVRRVKRSDIEKLEKALGARIISSIKDATPDDLGYAE-LVEERRVGNDKMVFIEGAKNLKAVNILLRGSNDMALDEAERSINDALHALRNILLEPVILPGGGAIELELAMKLREYARSVGGKEQLAIEAFADALEEIPTILAETAGLEAISALMDLRARHAKGLTNT-------------GVDVIGGKIVDDVYALNIIEPIRVKAQVLKSATEAATAILKIDDLIAAAPLKSEKKGGEGSKEESGGEGGAGTPSLGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="THSA_SULTO" ac="O24734" length="559" description="Thermosome subunit alpha OS=Sulfurisphaera tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) OX=273063 GN=thsA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1183</score>
+      <smithWatermanScore>1183</smithWatermanScore>
+      <initn>1180</initn>
+      <init1>463</init1>
+      <opt>1078</opt>
+      <zScore>1301.1</zScore>
+      <bits>250.6</bits>
+      <expectation>6.5e-65</expectation>
+      <identity>36.5</identity>
+      <positives>70.4</positives>
+      <overlap>565</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHD------SERVKSLVQSCIGAKF--SSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVD-MEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>:::---.:...:.  ::::.::.:  .:: :: ..:....:.::::.. :::.: .: ..:::::  :..:....::.:: ..: ..:.: ::::::::...::: .: .:. ..  :::::::..::. ::...: : .. :  .:: .------ ...:..: . ...::--...  : ...:.. ::  :..----:-- ::..---- .. .:.--- :..:  :: : :  .. :....:.:.:  : ::.:. .: .::. :: .: : .... ::. :. ...:  : .:...:  .. ..  ..:: .::..:.:::..:: .: : ::....: ... .: :: :.:   .    :.: . -: : :..:.. ..:.:  :.::: .:.:::..  .:.: ::...::.. .:::.. : .. ::::.:  ... ::. . .. : .:  .   ..:.: ::  ::.. :.  :.:. .::::::----------.: .---: :.:  .::..:-:  ..: ::  ::.:..:.:::.:  ::.:::.....  :</pattern>
+      <matchSeq start="1" end="535">MAN---APVLLLKEGTQRSSGRDALKNNILAAVTLAEMLKSSLGPRGLDKMLIDSFGDVTITNDGATIVKEMEIQHPAAKLLVEAAKAQDAEVGDGTTSAVVLAGLLLDKADDLLDQNIHPTIIIEGYKKALNKSLEIIDQLATKIDVSNLNSLATRDQLKKIVYTTMSSKFIAGGEEMDKIMNMVIDAVSIVAE----P--LPEGG----YNVPLDL---IKIDKKKGGSIEDSMLVHGLVLDKEVVHPGMPRRVEKAKIAVLDAALEVEKPEISAKISITSPEQIKAFLDEEAKYLKDMVDKLASIGANVVICQKGIDDVAQHFLAKKGILAVRRVKRSDIEKLEKALGARIISSIKDATPEDLGYAE-LVEERRVGNDKMVFIEGAKNPKAVNILLRGSNDMALDEAERSINDALHSLRNVLMKPMIVAGGGAVETELALRLREYARSVGGKEQLAIEKFAEALEEIPMILAETAGMEPIQTLMDLRAKHA----------KGLI---NAGVDVMNGKIADDMLALNVLEPVRVKAQVLKSAVEAATAILKIDDLIAAAPLKSGEKKGEKKEGGEEEKSSTPSSLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="THSA_SULAC" ac="Q9V2T5" length="558" description="Thermosome subunit alpha OS=Sulfolobus acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 15157 / NCIMB 11770) OX=330779 GN=thsA PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1201</score>
+      <smithWatermanScore>1201</smithWatermanScore>
+      <initn>1235</initn>
+      <init1>476</init1>
+      <opt>1087</opt>
+      <zScore>1286.6</zScore>
+      <bits>247.9</bits>
+      <expectation>4.2e-64</expectation>
+      <identity>36.6</identity>
+      <positives>71.4</positives>
+      <overlap>560</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="556">MANQGMGPIMVLNSKTQRSTGRQAQLGNIQAARAVADIIRSTLGPRSMLKMLLDPMGGIVITNDGNCILREVDVSHPTAKSMIELSRAHDEEVGDGTTSVIILAGEMLINAEPFVRTNIHPTIIVRGYNYALQEALTICEEWALVVDVHD------SERVKSLVQSCIGAKF---SSRWNDIMIDMALKAVLTVSRESRTPSFTPEANDVYAQKMEVDIKRYAKVEKIPGGEISDCAVLSGVMFNKDVTHSKMRRRIENPRILLLDTPLEYKKGESQTNVEITDEEDWNTLLKMEEEYVENMCMEIIAFKPDIVITEKGVSDLAQHYFAKANITAFRRLRKTDNNRVARATGATIVSRTDEIRESDIGTGCGLFEMRKIGEEYFAFFEECKDPKACTIILRGGSKDVLNEIERNLTDAMQVVRNVVFDPRLLPGGGATEMAVSVGLRKAGLKLEGIQQGPFLAVGDAMEVIPRTLAQNCGVSVIRTVTQLRAKHAAAYEDSETSGNGTFPKCNWGIDGTTGKLVD-MEEFGVWEPFSVKVQTIKTAVESACMILRIDDIVSGSKKKGY</querySeq>
+      <pattern>      ::.....  :.::.::.:  .:: :: ..:....:.::::.. :::.: .: ..:::::  :..:....::.:: ..: ..:.: ::::::::...::: .: .:: ... :.:::::. ::. :: .:: : .. .: .::.:------. ..:..:.. ...::---...  : .::... :.-:.  :.:-----:...---- .. .:.--- :..:  :: : :  .. :....:.:.:. : ::.:. .: .::. :: .: : .... ::. :. ...:  : .:...:  .. ..  ..:: .::..:.:::..:: .: : ::....: ... .: :: :.:   .    :.: . -: : :.::.. ..:.:  :.:.: .:.:::..  .:.: ::.:.::.. .:::.. : .. ::::.:  ... ::. . .. : .:  .   ..:.: ::  ::.. :.  :... .:::.:: .  .:-------------:::...::..:-: ...: ::  :: :..:.:::.:  ::.:::.:..:  :</pattern>
+      <matchSeq start="3" end="535">----MAGPVLLFKEGTSRSSGRDALRNNILAAVTLAEMLKSSLGPRGLDKMLIDSFGDVTITNDGATIVKEMEIQHPAAKLLVEAAKAQDAEVGDGTTSAVVLAGLLLDKAEELLEQNVHPTIIIDGYKKALTKALEIIDQLSLKIDVNDLSSPTAKAQLKKIVSTTMSSKFIAGGAEEIDKIIDLVIDAI-TIVAEKR-----PDGT----YNVPLDL---IKIDKKKGGSIEDSILVHGLVLDKEVVHAGMPRRVEKAKIAVLDAALEVEKPEISAKISITSPEQIKSFLDEEARYLKEMVDKLASIGANVVICQKGIDDVAQHFLAKKGILAVRRVKRSDIEKLEKALGARIISSIKDATPEDLGYAE-LVEERRIGNDKMVFIEGAKNPRAVNILLRGSNDMALDEAERSLNDALHSLRNVLMKPMIVAGGGAVESELALRLREYARSVGGKEQLAIEKFAEALEEIPMILAETAGMEPIQALMDLRARHAKGLVNS-------------GIDAVNGKIADDMMKINVIEPVRVKSQVLKSAVEAATAILKIDDLVAASALKTEKGKKEGGEGAGAETPGAPSLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

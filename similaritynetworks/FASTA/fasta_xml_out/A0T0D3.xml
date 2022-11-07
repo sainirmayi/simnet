@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163105-0471-34192230-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163105-0471-34192230-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163105-0471-34192230-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0D3|YCF3_PHATC" type="PROTEIN" length="168"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:31:05+00:00" end="2022-11-07T16:31:07+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="YCF3_PHATC" ac="A0T0D3" length="168" description="Photosystem I assembly protein Ycf3 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1086</score>
+      <smithWatermanScore>1086</smithWatermanScore>
+      <initn>1086</initn>
+      <init1>1086</init1>
+      <opt>1086</opt>
+      <zScore>1393.6</zScore>
+      <bits>264.2</bits>
+      <expectation>4.6e-70</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>168</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="168">MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="168">MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="YCF3_PORPU" ac="P51258" length="173" description="Photosystem I assembly protein Ycf3 OS=Porphyra purpurea OX=2787 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <smithWatermanScore>776</smithWatermanScore>
+      <initn>838</initn>
+      <init1>586</init1>
+      <opt>776</opt>
+      <zScore>999.0</zScore>
+      <bits>191.3</bits>
+      <expectation>4.4e-48</expectation>
+      <identity>72.6</identity>
+      <positives>91.5</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.::.::.::.::::::::: ::::::.:.:::::.::::::..::::::::: ::::::::...:.: .:::.:::.: :: .::::::::::::: :..--:..::-. ::::: .:::::.:: ::.:::::::  :.::::.:::...</pattern>
+      <matchSeq start="9" end="169">MPRSQKNDNFIDKTFTVLADIVLKILPTSKEEKEAFSYYRDGMSAQSEGEYAEALENYYEALKLEEDPYDRSYILYNIGLIYASNGEYIKALEYYHQGLELNFKLPQALNNIAVIYHYQGV--QAVEE-KNIELSKLMFDKAAQYWQQAIKLAPDNYIEAQNWLKTTGRMKNIQGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="YCF3_NEOYE" ac="Q1XDM9" length="173" description="Photosystem I assembly protein Ycf3 OS=Neopyropia yezoensis OX=2788 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>775</score>
+      <smithWatermanScore>775</smithWatermanScore>
+      <initn>844</initn>
+      <init1>587</init1>
+      <opt>775</opt>
+      <zScore>997.7</zScore>
+      <bits>191.0</bits>
+      <expectation>5.2e-48</expectation>
+      <identity>72.0</identity>
+      <positives>90.2</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.::.::.::.::::::::: ::::::.:.:::::.::::::..::::::::: ::::::::...:.:..:::.:::.: :: .::::::::::::: :...: ---::.  :::: .:::::.:: ::.:::::::  :.::::.:::. .</pattern>
+      <matchSeq start="9" end="169">MPRSQKNDNFIDKTFTVLADIVLKILPTSKEEKEAFSYYRDGMSAQSEGEYAEALENYYEALKLEEDPYDRSYILYNIGLIYASNGEYVKALEYYHQGLELNFKLPQALNNIAVIYHYQGVQAI---EDKDTELSKLMFDKAAQYWQQAIKLAPDNYIEAQNWLKTTGRMRNIQGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="YCF3_RHDSA" ac="A6MVX9" length="173" description="Photosystem I assembly protein Ycf3 OS=Rhodomonas salina OX=52970 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>769</score>
+      <smithWatermanScore>769</smithWatermanScore>
+      <initn>799</initn>
+      <init1>599</init1>
+      <opt>769</opt>
+      <zScore>990.1</zScore>
+      <bits>189.6</bits>
+      <expectation>1.4e-47</expectation>
+      <identity>69.9</identity>
+      <positives>90.4</positives>
+      <overlap>166</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="168">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.:::::::::::::::::: ::::::.:.:::::.::::::..::::::::: ::::::::...:.: .:::.:::::.::. :: :::::::::: :...:.---: . .: .. .:::::::: ::..:::.::  :.::::.:::.....</pattern>
+      <matchSeq start="9" end="171">MPRFQKNDNFIDKTFTVLADIVLKVLPASKQEKEAFSYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYILYNIGLIYASNGEYIKALEYYHQALDLNSRLPPALNNIAVIYHYQGVKAS---EKKDLETARTMFDKAAEYWKQAIRLAPNNYIEAQNWLKTTGRMASESLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YCF3_GUITH" ac="O78490" length="172" description="Photosystem I assembly protein Ycf3 OS=Guillardia theta OX=55529 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>761</score>
+      <smithWatermanScore>761</smithWatermanScore>
+      <initn>669</initn>
+      <init1>597</init1>
+      <opt>761</opt>
+      <zScore>980.0</zScore>
+      <bits>187.7</bits>
+      <expectation>5e-47</expectation>
+      <identity>70.1</identity>
+      <positives>91.5</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.::..::.:::.::::::::::: ::::::.:.:::::.::::::..::::::::: ::::::::...:.:..:::.:::::.::..:: :::::::::: :...:.---: . ..:.. ::::::::: ::..:.:.::  :.::::.:::-::</pattern>
+      <matchSeq start="9" end="168">MPRFQKNDNFIDKTFTVLADLVLKILPATKQEKEAFSYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYILYNIGLIYASNGEYVKALEYYHQALDLNSQLPAALNNIAVIYHYQGVKAS---EKKELDLARTLFDKAAEYWKQAIRLSPNNYIEAQNWLKTTGR-SDTLTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="YCF3_EMIHU" ac="Q4G394" length="171" description="Photosystem I assembly protein Ycf3 OS=Emiliania huxleyi OX=2903 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>755</score>
+      <smithWatermanScore>755</smithWatermanScore>
+      <initn>808</initn>
+      <init1>596</init1>
+      <opt>755</opt>
+      <zScore>972.4</zScore>
+      <bits>186.3</bits>
+      <expectation>1.3e-46</expectation>
+      <identity>69.5</identity>
+      <positives>89.6</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">----MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>      :::::::::.::::::::::.:.::.:::::: ::::::.: :::::.::::::..::::.:::: ::::::::::.: :...:..:::::.::. ::::::::::::: :. .--: :. :.-:.... ::::: :: .:..:::.::  :.::::.::.::.</pattern>
+      <matchSeq start="7" end="167">MSQKNDNFIDKTFTVLADILLKVLPATKEEKKAFSYYRYGMSAQSSGDYAEALENYYEALKLEEDPFDRSYILYNIGLIYGNNGDYSKSLDYYHQALDLNSRLPQALNNIAVIYHYQGTK--SSEKKEF-EVAQNNFDKAASYWKKAIRLAPNNYIEAQNWLKITGKLSETEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="YCF3_GRATL" ac="Q6B8S3" length="170" description="Photosystem I assembly protein Ycf3 OS=Gracilaria tenuistipitata var. liui OX=285951 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>737</score>
+      <smithWatermanScore>737</smithWatermanScore>
+      <initn>736</initn>
+      <init1>569</init1>
+      <opt>737</opt>
+      <zScore>949.6</zScore>
+      <bits>182.1</bits>
+      <expectation>2.5e-45</expectation>
+      <identity>65.9</identity>
+      <positives>89.0</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.::.::..:.::.:: ::: ::::::.:.:::::.::::::..::::::::: .:::::::...:.. .:::.:::.: ::  ::::.::::.::: :.:.: . ....---.:: .:::::::: ::. :::.::  :.::::.::::..</pattern>
+      <matchSeq start="9" end="169">MPRLQKNDNFIDKTFTVLADIILKILPTTKEEKQAFCYYRDGMSAQSEGEYAEALENYYEALRLEEDPYDRSYIIYNIGLIYASNGEHIKALEYYHQSLELNPRLPQAFNNIAIIYHYQGLKAADKQDNN---MSKSMFDKAAEYWKQAIYLAPNNYIEAQNWLKTTGRLNNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="YCF3_CYAPA" ac="P48191" length="173" description="Photosystem I assembly protein Ycf3 OS=Cyanophora paradoxa OX=2762 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>702</score>
+      <smithWatermanScore>702</smithWatermanScore>
+      <initn>745</initn>
+      <init1>542</init1>
+      <opt>702</opt>
+      <zScore>904.9</zScore>
+      <bits>173.8</bits>
+      <expectation>7.7e-43</expectation>
+      <identity>65.8</identity>
+      <positives>88.8</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        ::::::::::::..::.::.::. ::::.::: ::::::.: :::::.::::::..::::::.:::.:::.::. ..:  :.:::.:.:::.:: ..::::::.:::::.:.-- :. :. .-.:... :::.:: :: ::..::::::  :.::::.:::</pattern>
+      <matchSeq start="9" end="166">MPRSQRNDNFIDKTFTVIADLILKILPVSKKTKEAFAYYRDGMSAQSEGAYAEALENYYEALRLEEDPYDKSYTFYNIALIHTSNGDQTKALEYYRQALDLNPKMPQALNNMAVIYHAQG--EQAAEQGD-MEMAEALFDQAAFYWKQAIRLAPDNYIEAQNWLKTTGRSKLDILI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="YCF3_CHLVU" ac="P56311" length="167" description="Photosystem I assembly protein Ycf3 OS=Chlorella vulgaris OX=3077 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>695</score>
+      <smithWatermanScore>695</smithWatermanScore>
+      <initn>731</initn>
+      <init1>531</init1>
+      <opt>695</opt>
+      <zScore>896.3</zScore>
+      <bits>172.2</bits>
+      <expectation>2.3e-42</expectation>
+      <identity>67.3</identity>
+      <positives>87.0</positives>
+      <overlap>162</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="164">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        ::::::::::::::::.::.:..::.:::::: ::::::.:.::::::::::::..: : ::::: :::::::. ..: ...::..:.:::  : .::::::::::::: ..-- :.:: ..- :.:: ::::::.:: .:..::: ::  :.::::.:::.</pattern>
+      <matchSeq start="9" end="167">MPRSQRNDNFIDKTFTVIADILLKILPTSNKEKQAFSYYRDGMSAQSEGEYAEALQNYYEALRLETDAYDRSYILYNIGLIHTSNGDHARALDYYYQALERNPSLPQALNNIAVIYHYRG--EQALESSQ-TEISKLLFDKAADYWREAIRLAPTNYIEAQNWLKMTGRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="YCF3_TRICV" ac="P49525" length="179" description="Photosystem I assembly protein Ycf3 OS=Trieres chinensis OX=1514140 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>904</score>
+      <smithWatermanScore>904</smithWatermanScore>
+      <initn>993</initn>
+      <init1>672</init1>
+      <opt>904</opt>
+      <zScore>895.7</zScore>
+      <bits>172.2</bits>
+      <expectation>2.5e-42</expectation>
+      <identity>82.0</identity>
+      <positives>93.0</positives>
+      <overlap>172</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="163">MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRA-------QSLE--EDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>:.:::::::::::::::::::::::::.:::::::::::::.:.:::::.:::::::.::::::::::::::::::::.:.:.::::.::::: ::.::::::::::::::::.: :-------..::--.:::.::.::.:::::::: :::::::::::::.::::::::</pattern>
+      <matchSeq start="1" end="172">MSNFIDKTFTVIADILLKVLPASKQEKQAFSYYRAGMSAQSEGKYAEALENYYEALQLEEDPYDRSYTLYNIGLIYGNNGNYSQALEYYHQALELNSNLPQALNNIAVIYHSQGLNALQMQNQDKNLEIRNDEYLELAKEFFDKAAEYWRQALKLAPDNYPGAQNWLKVTGRQISEEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="YCF3_MESVI" ac="Q9MUT7" length="173" description="Photosystem I assembly protein Ycf3 OS=Mesostigma viride OX=41882 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>685</score>
+      <smithWatermanScore>685</smithWatermanScore>
+      <initn>718</initn>
+      <init1>522</init1>
+      <opt>685</opt>
+      <zScore>883.3</zScore>
+      <bits>169.8</bits>
+      <expectation>1.2e-41</expectation>
+      <identity>63.6</identity>
+      <positives>85.5</positives>
+      <overlap>165</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="167">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.:::::.. .:: :::::: :::::..:.:::::::::::...: ::::::: :::::::. ..:.. .:::.:.::.  : .::::::::::::: ..-- :..:: .-:  :. ::..:: :: ::..:::..:  :.::::.:::. ::</pattern>
+      <matchSeq start="9" end="170">MPRSQKNDNFIDKTFTVVADIILKVLPTTVREKAAFSYYRDGMSAQAEGEYAEALQNYYEAMRLEIDPYDRSYILYNIGLIHTSNGEHGKALEYYYQAIERNPSLPQALNNIAVIYHYRG--EQAIEEGN-IATSEILFNQAASYWKQAIRLAPNSYIEAQNWLKITGRIEDNINL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="YCF3_GLOC7" ac="B7KKZ8" length="173" description="Photosystem I assembly protein Ycf3 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>685</score>
+      <smithWatermanScore>685</smithWatermanScore>
+      <initn>730</initn>
+      <init1>519</init1>
+      <opt>685</opt>
+      <zScore>883.3</zScore>
+      <bits>169.8</bits>
+      <expectation>1.2e-41</expectation>
+      <identity>66.0</identity>
+      <positives>84.6</positives>
+      <overlap>162</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSL-EEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.:::.: .:. :::: ::: :::::. :.: :::.::::::..:.:  :::: :::::.:.:..:.. .:::.::.:. :: :::.:::::::::: :. ::.  -.:::----:. ::::::::: ::..:::.::  :.::::::::</pattern>
+      <matchSeq start="9" end="166">MPRTQRNDNFIDKTFTVMADIILKVVPFNKKAKEAFVYYRDGMSAQADGEYKEALDNYYEALKLEDDANDRSYILYNIGIIHGSNGEHERALEYYHEAIELNPNLPSALNNIAVIYHYQGERAKEEGREDE----SEALFDKAAEYWKQAIRLAPNNYIEAQNWLKVTGRSEMDVFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="YCF3_CYAP4" ac="B8HU23" length="173" description="Photosystem I assembly protein Ycf3 OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>684</score>
+      <smithWatermanScore>684</smithWatermanScore>
+      <initn>691</initn>
+      <init1>525</init1>
+      <opt>684</opt>
+      <zScore>882.0</zScore>
+      <bits>169.6</bits>
+      <expectation>1.4e-41</expectation>
+      <identity>64.0</identity>
+      <positives>86.3</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::.::.:::... :::: ::: :::::..:.:::::.:: :::..::::::::. :::.::::...:.. .:::.::::. ::: .::::::::::.:  . .: . :. :  :---.:.::::.:: ::..:::.::  :.::::.:::</pattern>
+      <matchSeq start="9" end="166">MPRTQRNDNFIDKTFTVMADIILKILPANQKAKEAFVYYRDGMSAQAEGEYAEALDNYEEALNLEEDPYDRSFILYNMGLIYASNGNHERALELYHQAIELNARMPQALNNIAVIFHYLGDQAAASEDGEKAE---QLYDKAADYWKQAIRLAPNNYIEAQNWLKTTGRSTMDVYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="YCF3_PLETE" ac="A6YG60" length="167" description="Photosystem I assembly protein Ycf3 OS=Pleurastrum terricola OX=34116 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>682</score>
+      <smithWatermanScore>682</smithWatermanScore>
+      <initn>714</initn>
+      <init1>527</init1>
+      <opt>682</opt>
+      <zScore>879.8</zScore>
+      <bits>169.2</bits>
+      <expectation>1.9e-41</expectation>
+      <identity>65.8</identity>
+      <positives>86.3</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::::::::::::.:..::.::.::: ::::::.:.:::::::::::...: : ::::: .::::::. ..:....:::.:.:::  : .:::::::::::::--- :...  :.   :.:: ::::::.:: .:..::: ::  :.::::.:.:</pattern>
+      <matchSeq start="9" end="166">MPRSQRNDNFIDKTFTVIADILLKVLPTSNREKQAFTYYREGMSAQSEGEYAEALQNYYEAMRLEVDAYDRSYIFYNIGLIHTSNGEHARALEYYYQALERNPSLPQALNNIAVIYH---YRGEQAIENGQAEISKMLFDKAADYWKEAIRLAPTNYIEAQNWLKMTARE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="YCF3_STIHE" ac="Q06SJ8" length="167" description="Photosystem I assembly protein Ycf3 OS=Stigeoclonium helveticum OX=55999 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>677</score>
+      <smithWatermanScore>677</smithWatermanScore>
+      <initn>717</initn>
+      <init1>521</init1>
+      <opt>677</opt>
+      <zScore>873.5</zScore>
+      <bits>168.0</bits>
+      <expectation>4.3e-41</expectation>
+      <identity>65.2</identity>
+      <positives>87.6</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::::::::.:..::.::.::: ::::::.:.:::::::::::...: : ::::: :::::::. ..:....:::.:.:::  : .::.:::::::::: ..-- :..:. .- :.:. ::::::.:: .:..::: ::  :.::::.:::</pattern>
+      <matchSeq start="9" end="166">MPRSQRNDNFIDKTFTVVADILLKVLPTSQREKRAFAYYRDGMSAQSEGEYAEALQNYYEAMRLEVDAYDRSYILYNIGLIHTSNGEHARALEYYYQALERNPSLPSALNNIAVIYHYRG--EQAIEKGQ-AEISSLLFDKAADYWKEAIRLAPTNYIEAQNWLKMTGRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="YCF3_SYNP2" ac="B1XNN2" length="173" description="Photosystem I assembly protein Ycf3 OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>676</score>
+      <smithWatermanScore>676</smithWatermanScore>
+      <initn>713</initn>
+      <init1>508</init1>
+      <opt>676</opt>
+      <zScore>871.8</zScore>
+      <bits>167.7</bits>
+      <expectation>5.3e-41</expectation>
+      <identity>63.0</identity>
+      <positives>86.4</positives>
+      <overlap>162</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRA-QSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::.:::.:::.::.::.... ::::.::: :::::. :.:.:::.:: :::..:.:: :::: :::.::::...: . .:::.::.:..::  .:::::::::.:: :. .:-:: .:::----:. ::::::::: ::...::.::  :.::::.:::</pattern>
+      <matchSeq start="9" end="166">MPRTQRNDNFIDKSFTVMADIILKILPTNNRSKEAFAYYRDGMSAQADGEYSEALENYEEALRLEDDPNDRSYILYNMGLIYASNGDHHKALELYHEAIDLNPRMPQALNNIAVVYHYQGEKAKQSGNEDE----SEALFDKAAEYWKQAIRIAPNNYIEAQNWLKTTGRSEMDVFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="YCF3_GALSU" ac="Q08814" length="167" description="Photosystem I assembly protein Ycf3 OS=Galdieria sulphuraria OX=130081 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>674</score>
+      <smithWatermanScore>674</smithWatermanScore>
+      <initn>587</initn>
+      <init1>536</init1>
+      <opt>674</opt>
+      <zScore>869.6</zScore>
+      <bits>167.3</bits>
+      <expectation>7.1e-41</expectation>
+      <identity>62.3</identity>
+      <positives>86.4</positives>
+      <overlap>162</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="164">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        ::::::::..::..:: ::.. . :.:::::: ::::::.:.::::: ::::::..::::::.:. :::::::....:.:..::..::.::  : .::::::::::::: ::..:. ...---.: .. :: .::.:: ::.::::.::  :.:::  ::::</pattern>
+      <matchSeq start="9" end="167">MSRSQKNDNFIDKTFTILADLILKFLPTNINAKKAFSYYRDGMSAQSEGEYAEALANYYEALNLEEDPYDKSFILYNIGLIHASNGEYVKALDYYHKALEANNKLPQALNNIAVIYHYQAVKASEIND---LETAQALFHEAAQYWKQAIKLAPSNYIEAQNWLLSTGRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="YCF3_NEPOL" ac="Q9TL02" length="171" description="Photosystem I assembly protein Ycf3 OS=Nephroselmis olivacea OX=31312 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>673</score>
+      <smithWatermanScore>673</smithWatermanScore>
+      <initn>714</initn>
+      <init1>527</init1>
+      <opt>673</opt>
+      <zScore>868.1</zScore>
+      <bits>167.0</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>63.4</identity>
+      <positives>86.0</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="166">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.:::::::::....:::::.::: :::::..:.:::::::::::...: : ::::: :::::::. ..:....:::.:.:::  :  ::::::::::::: ..-- :..:  . -..:. ::::::.:: .:..::: ::  :.::::.:.:: .</pattern>
+      <matchSeq start="9" end="169">MPRSQRNDNFIDKTFTVVADILLKVLPTTRREKEAFTYYRDGMSAQAEGEYAEALQNYYEAMRLEVDAYDRSYILYNIGLIHTSNGEHAKALEYYYQALERNPYLPQALNNIAVIYHYRG--EQAIESGNS-RISNLLFDKAADYWKEAIRLAPTNYIEAQNWLKITNRLEEAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="YCF3_THEVB" ac="Q8DIQ6" length="173" description="Photosystem I assembly protein Ycf3 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>673</score>
+      <smithWatermanScore>673</smithWatermanScore>
+      <initn>521</initn>
+      <init1>521</init1>
+      <opt>673</opt>
+      <zScore>868.0</zScore>
+      <bits>167.0</bits>
+      <expectation>8.7e-41</expectation>
+      <identity>62.7</identity>
+      <positives>85.7</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="163">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        :::::::::.::..:::::.:.: : ::.::: :::::. :.:::::.::  ::..:::: :::: :::::::....:.. .:::.::::: ::  .::::::::::::  . .:---::.. .: ....::.::.:: .:..:::.::  :.::::.:::</pattern>
+      <matchSeq start="9" end="166">MPRSQRNDNFIDKTFTVMADLILKVLPTSSQSKTAFAYYRDGMSAQADGEYAEALENYQAALELEEDPTDRSYILYNIGLIHASNGEHEKALEYYHQALELNPRMPQALNNIAVIYHYLGTQA---EEQQRLEEAEQFFDRAADYWKRAIQLAPNNYIEAQNWLKTTGRSNIDVYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="YCF3_CHAVU" ac="Q1ACM4" length="167" description="Photosystem I assembly protein Ycf3 OS=Chara vulgaris OX=55564 GN=ycf3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <smithWatermanScore>671</smithWatermanScore>
+      <initn>672</initn>
+      <init1>513</init1>
+      <opt>671</opt>
+      <zScore>865.8</zScore>
+      <bits>166.6</bits>
+      <expectation>1.2e-40</expectation>
+      <identity>61.7</identity>
+      <positives>87.0</positives>
+      <overlap>162</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="164">------MGNFIDKTFTVIADILLKVLPASKQEKEAFSYYRAGMSAQSKGRYAEALQNYYEALQVEEDPYDRSYTLYNIGLIYGNTGKYTQALEFYHQALSLNANLPQALNNIAVIYHSQALRAQSLEEDEYIELSKELFDKAAEYWIQALKLAPDNYPGARNWLKVTGRLSDNN</querySeq>
+      <pattern>        ::::::::.::::::...:.:..:.:::.::: :::::..:.:::::::::::...: ::::::: :::::::. ..:....:::.: :::  : .::::.::.::: : ..-- :......-:: ::  :..::::: ::..::: ::  :.::::.:::.</pattern>
+      <matchSeq start="9" end="167">MPRSQKNDNFIDKTFTIIADILLRIVPTSQREREAFTYYRDGMSAQAEGEYAEALQNYYEAMRLEIDPYDRSYILYNIGLIHTSNGEHAKALEYYFQALERNPSLPQAFNNVAVICHYRG--EQAIQQQD-IESSKAWFNQAAEYWKQAIQLAPGNYIEAQNWLKITGRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

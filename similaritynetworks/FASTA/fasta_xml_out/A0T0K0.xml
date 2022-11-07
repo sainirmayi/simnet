@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162143-0341-96402083-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162143-0341-96402083-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162143-0341-96402083-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0K0|RPOA_PHATC" type="PROTEIN" length="311"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:21:43+00:00" end="2022-11-07T16:21:45+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RPOA_PHATC" ac="A0T0K0" length="311" description="DNA-directed RNA polymerase subunit alpha OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1986</score>
+      <smithWatermanScore>1986</smithWatermanScore>
+      <initn>1986</initn>
+      <init1>1986</init1>
+      <opt>1986</opt>
+      <zScore>2438.0</zScore>
+      <bits>459.3</bits>
+      <expectation>3.1e-128</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="311">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="311">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RPOA_TRICV" ac="P49465" length="312" description="DNA-directed RNA polymerase subunit alpha OS=Trieres chinensis OX=1514140 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1424</score>
+      <smithWatermanScore>1424</smithWatermanScore>
+      <initn>1447</initn>
+      <init1>1424</init1>
+      <opt>1424</opt>
+      <zScore>1749.4</zScore>
+      <bits>331.8</bits>
+      <expectation>7e-90</expectation>
+      <identity>69.0</identity>
+      <positives>91.3</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:::. ::::::.:..::. .:::.:.::.::::::::: .:::::.::::.::..:::::.  :::::::.::::::::::::::.  :. .: .::.::..::.::::. ::::  :::.:::::::::.:::.::::::.: :.::.::.:.: .....:::.:.::::::::::::::::: .:...::::::::::::.::..:. ::.. ::..:. :..::  ..... : :  .   .:.::::::::.::::::::::.:::::.::::.:::::::::::::::::::::.::::::::.:</pattern>
+      <matchSeq start="1" end="310">MNNFYIKCLKSKKVESGSIYGQFVIKSLHPGQGITIGNLFRRVLLSDLGGTAITGVRIAGVRDEFSTIPGIREDILEILLNLKGIVLKSKTNDLKFGRLKIKGPAVVTANCIQLPSEVEIVNPNHYIATITTSNVLEIEFKIESGTGYKLAGQTFCKKSQDYLQIDAIFMPVQKVDFKIENIYDNSNDLTERLFLDIWTNGSMSPEEAVSSASRFIISFFSSLLENKLPQETKESENKTLSAPKNPHTNIAIEELHLSVRAYNCLKRAQINTIGDLLKYSPEKLQELKNFGRKSADEVFTTLKNKLGIVLSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RPOA_THAPS" ac="A0T0Z4" length="313" description="DNA-directed RNA polymerase subunit alpha OS=Thalassiosira pseudonana OX=35128 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1344</score>
+      <smithWatermanScore>1344</smithWatermanScore>
+      <initn>1344</initn>
+      <init1>1344</init1>
+      <opt>1344</opt>
+      <zScore>1651.3</zScore>
+      <bits>313.7</bits>
+      <expectation>2e-84</expectation>
+      <identity>66.5</identity>
+      <positives>88.1</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="311">--MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>   .:. ..:.:::::.::  .:::::.::. :::::::: ::::::::: :.::..:::::.  ::: ::::::::::::::::::.  :.  . :::.:..:::.:.::. ::::: .:::::::::::::.:.:::::::.: :: :.::.. : .. :.... :.:::::::::::.::.:: .:::.:::..::::::::::..:. :....::.::  . ..:  .... .. : .   :.:::.::::::::::: :::::.:::::.::::.:::::: ::::::::::::::.::::::::.::</pattern>
+      <matchSeq start="4" end="313">MNSSNLLMECIKSEKIESGPMYGQFLIDSLSSGQGITIGNLLRRVLLGDLQGTAITGVRIAGVKDEFSLIPGVREDILEILLNLKGIVLKSKTPNRQFGRLRLQGPAVITASSIQLPPEIEIINPNHYIATISSSHILEIEFKIESGSKYRLANELFSDKFEDFIETDAIFMPVQKVDFKVENVYDNSNNIKERLLIDIWTNGSISPEQAIFSGSNLIINLFKSIGEQKINKEKENIKEKNHIKPIDPYTHIAIEELQLSVRPYNCLKRAQINTIGDLLDYSPEKLLELKNFGRKSADEVFATLKNKLGIVLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RPOA_PORPU" ac="P51293" length="311" description="DNA-directed RNA polymerase subunit alpha OS=Porphyra purpurea OX=2787 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1000</score>
+      <smithWatermanScore>1000</smithWatermanScore>
+      <initn>998</initn>
+      <init1>751</init1>
+      <opt>1000</opt>
+      <zScore>1229.9</zScore>
+      <bits>235.7</bits>
+      <expectation>6.1e-61</expectation>
+      <identity>50.6</identity>
+      <positives>81.9</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ...:.:..:.   . . .:.:.:..:: :::::.:: ::: .:.:: :.:: ::::::..::::::::::::.:::::::: ..  :. :..:.:..:::::..::: :..:   .:...: .::::: ...:.:.:::.: . ::.:: .   : . ..::.:..::::.::..:.:..  .::.:..::.:.:::::::::..:. ..: :. .::  :- : .... .  . : .----.  ... :::::::::::::::.:::....:::.:: :.: :.::::.:::.::. .:.. ::: :</pattern>
+      <matchSeq start="1" end="305">MAQFQIECVESRTDGARGQYGSFVIEALNQGQGITLGNALRRSILSDLEGTAIVAVRIAGVNHEFSTIPGVREDVLEILLNLKEVVFKSNNQESQIGRIKVQGPAIVTAGLFELSSDIEVVDPRQYIATICNNTIFEMEFKIEKSCGYRLAEKAVDELSLDFLQVDSVFMPVNKVNYKVEEVRVGTNSIKDRLILQIWTNGSISPQEAISQGATVLTNLFCSL-RNLDFKSVDTYRNKED----KKISQVLIEELQLSVRAYNCLKRAQIHSIADLLDYSQEELLEIKNFGQKSAEEVIYALQKTLGISLPKEKTD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RPOA_NEOYE" ac="Q1XDJ5" length="311" description="DNA-directed RNA polymerase subunit alpha OS=Neopyropia yezoensis OX=2788 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>996</score>
+      <smithWatermanScore>996</smithWatermanScore>
+      <initn>991</initn>
+      <init1>734</init1>
+      <opt>996</opt>
+      <zScore>1225.0</zScore>
+      <bits>234.8</bits>
+      <expectation>1.1e-60</expectation>
+      <identity>50.3</identity>
+      <positives>80.6</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ...:.:..:.   . . .:.:.:. :: :::::.:: ::: .:.:: :.:: ::::::..::::::::::::.:::::::: ..  :  ...:.:...::::..::: :..:   .:...: .::::: ...:.:.:::.: . ::.:: .   : . ..::.:..::::.::..:.:..  ..:.:..::...:::::::::..:. ..: :. .::  : :    . .:    . . ::-----.. :::::::::::::::.:::....:::.:: :.: :.::::.:::.::. .:..:::: :</pattern>
+      <matchSeq start="1" end="305">MAQFQIECIESRTDGARGQYGSFVIEPLNQGQGITLGNALRRSILSDLEGTAIVAVRIAGVNHEFSTIPGVREDVLEILLNLKEVVFKSYNKESQIGRIRVQGPAIVTAGLFELSSDIEVVDPRQYIATICNNTIFEMEFKIEKNCGYRLAEKAVDELSVDFLQVDSVFMPVNKVNYKVEEVRIGSNSIKDRLIIQIWTNGSISPQEAISQGATVLTNLFCSLRNLDFKSADNYRSKEDKKIS-----QVLIEELQLSVRAYNCLKRAQIHSIADLLDYSQEELLEIKNFGQKSAEEVIYALQKKLGISLPKEKSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RPOA_GRATL" ac="Q6B8X4" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Gracilaria tenuistipitata var. liui OX=285951 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>994</score>
+      <smithWatermanScore>994</smithWatermanScore>
+      <initn>982</initn>
+      <init1>719</init1>
+      <opt>994</opt>
+      <zScore>1222.5</zScore>
+      <bits>234.4</bits>
+      <expectation>1.6e-60</expectation>
+      <identity>50.0</identity>
+      <positives>81.9</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:. ..:.:..:.  ..   .:.:... :: :::::.::.:::..:.:: :.:: :::::::.:::::: :::::.:::::::: ..  :. .  :.:....:::...:. :...:: . ::.:..::::: ...:.:.::..: ::::.:....: ... ..::.:..:::: : .. .:.   .   :.:.:::..:::::.::..:.  .:::. .::  :-.: :..: :  . . :----:  ... :::::::::::::::.::::...:::.:: ..: :.::::.:::.::. .:.::::: :</pattern>
+      <matchSeq start="1" end="305">MTYFQIECVESKTESNRQQYGRFILEPLNKGQGITLGNSLRRTILSDLQGAAIVAVRIAGINHEFSTITGVREDVLEILLNLKKVVLKSHSDTPQIGRIRLQGPAIITTGLFEVPPEILIIDPQQYIATICNNTIFEMEFRIEKGSGYKLVNKGFDKKSIDFLQIDAVFMPVTKFNYTVEEKKISPILIQEKLFLEVWTNGSLSPQEAISEGAQVLHSLFYPL-TNLNFQNANNTDNEYE----EEINQVLIEELQLSVRAYNCLKRAQINSISDLLDYSQDELLEIKNFGQKSAEEVIEALQNKLGIRLPKEKNIQNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RPOA_GUITH" ac="O46914" length="318" description="DNA-directed RNA polymerase subunit alpha OS=Guillardia theta OX=55529 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>989</score>
+      <smithWatermanScore>989</smithWatermanScore>
+      <initn>956</initn>
+      <init1>747</init1>
+      <opt>989</opt>
+      <zScore>1216.2</zScore>
+      <bits>233.2</bits>
+      <expectation>3.5e-60</expectation>
+      <identity>51.8</identity>
+      <positives>81.2</positives>
+      <overlap>313</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACH-GQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKK--AQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:... :.:: :-:. ..  :-..:.:. :.:::: :.:: :::.::..: :.::.::::::..:::::: :.:::.:::::::: :. ..:.:.. .:.: ::::..:::  ..::: ...:.:..:::::  .: ::.:::.: ::::... ..   :  ..::.:..::::.::.:.::.    .: ..:.:.:::::::::: ..:. .::. .:.::. :---:.:....--:   ::      ..: :::::::::::::::.--:.:..:.:::.:: : : :.::::.:::.::...:...::: :</pattern>
+      <matchSeq start="1" end="307">MTQFEIECLDS-KVYNARDHWSRFVIDPLKPGQGTTLGNALRRTLLSELEGLAITAVRIAGVSHEFSTINGIREDVLEILLNLKEIVFSGQLQESTIGRLTVQGPAIVTARSFELPPEIKLIDPEQYIATICGNNTLEMEFKIEVGSGYKIVEKDNSTEHFEFLQVDSVFMPVKKVNFRIEETRGENNILNEQLILDIWTNGSISAKEAISNAADNLINLFSPL---KTIDGES--ETDYETNETSHINQILIEELQLSVRAYNCLKRGCAHIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGINLPKEKTTKIYNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RPOA_RHDSA" ac="A6MW22" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Rhodomonas salina OX=52970 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>977</score>
+      <smithWatermanScore>977</smithWatermanScore>
+      <initn>953</initn>
+      <init1>701</init1>
+      <opt>977</opt>
+      <zScore>1201.6</zScore>
+      <bits>230.5</bits>
+      <expectation>2.3e-59</expectation>
+      <identity>50.2</identity>
+      <positives>80.7</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTN-IAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:... :.:..:    .   ...: .. :. :::.:.:: :::.::.:: :.:: ::::::..::::::::.:::.:::::::: ..  :: .. . :.:.::::..::.. ..::  ::.:.::.:::::  .::::.::..: :.::::  ... : . ..::.:.:::::.::..  ..: .  : ..:.:.:..::::::.:.::. ...... .:.  :---:.:: ..  :---.:.. .   :-: :::::::::::::::.:::..:.:::.:: : : :.::::.:::.::...:...::: :</pattern>
+      <matchSeq start="1" end="305">MTKFEIECVESTTDGARDHYSKFCLEPLEQGQGVTLGNALRRTLLSDLEGTAIVAVRIAGVSHEFSTIPGIREDVLEILLNLKEVVLKSQTKNPSVGRLRVQGPAIVTTSNLELPSEVELIDPNQYIATICGNNILEMEFRIETGKGYHLIERSIDETSIDFLQVDAIFMPVKKVNYLTKDIRSNDNLLQEQLLLEVWTNGSIDPQDAVSQGGKILTELLHPL---KEINFKSDEE---DTVAEDSKINQILIEELQLSVRAYNCLKRAQIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGINLPKEKTVKPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RPOA_CYAPA" ac="P48118" length="315" description="DNA-directed RNA polymerase subunit alpha OS=Cyanophora paradoxa OX=2762 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>968</score>
+      <smithWatermanScore>968</smithWatermanScore>
+      <initn>944</initn>
+      <init1>706</init1>
+      <opt>968</opt>
+      <zScore>1190.6</zScore>
+      <bits>228.5</bits>
+      <expectation>9.4e-59</expectation>
+      <identity>49.4</identity>
+      <positives>82.4</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGAC--HGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:....:.:..:-:..:-.:--.:.:... :.:::::::::.::::::.:. : ::.::::::..::: .::::.::.::.:::::.:.  :  .. :.:.::.::   ::.  ..::  ::::. ..:.::.. . :::.:::.: : ::.. ... .:.. ..: .:.:::::.::.. .:.:.  ...:.:::.:.:: :::..:.:.. .::.:...::. .---:.:: .:  .   .:-- .  ..: :::::::::::::::.:::...::::. : :.: :..:::.::: ::...:...::: :</pattern>
+      <matchSeq start="1" end="305">MTQFQIECVES-KVES-SCNQYGRFIVEPLEPGQGITIGNSLRRVLLSDIEGSAITAVRIAGVNHEFCSIPGVKEDVLELLLNLKNIVLKSYTNEPQIGRLKIQGACKVTTANFELPSEVEIIHGTQYVATVAENAILEMEFKIEKGRGYKIIDKKQTENSIDFLPIDAIFMPVRKVNYMVEEIFLRNSEIKERLILEIWRNGSVTPQDSISQAAEVLLNLFNPF---KKINFENTDDSTEQT--EDKISQIPIEELQLSVRAYNCLKRAQIHSIGDLLNVSQEELLEIRNFGQKSAKEVIDALQKRLGISLPKRKTNKKEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RPOA_PYRSA" ac="Q01569" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Pyrenomonas salina OX=3034 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>971</score>
+      <smithWatermanScore>971</smithWatermanScore>
+      <initn>963</initn>
+      <init1>703</init1>
+      <opt>971</opt>
+      <zScore>1188.2</zScore>
+      <bits>228.0</bits>
+      <expectation>1.3e-58</expectation>
+      <identity>51.0</identity>
+      <positives>79.0</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKP---ETISIEPYTN-IAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>:... :.:..: .      ...: .. :: ::: :.:: :::.::.:: :.:: ::::::..::::::::.:::.:::::::: ..  :::  .  :.:.::::..::.. ..::  .:.:.::.:::::  .::::.::..: :.::.:. ..  : . ..::.:.:::::.::..  ..: . .: :.:.: :..::::::.:.::. .:.... .:.  :---:.::------.::---:.:  .   :-: :::::::::::::::.:::..:.:::.:: : : :.::::.:::.::...:...::: :</pattern>
+      <matchSeq start="1" end="305">MTTFEIECIESTREGLRDHYSKFCLEPLNQGQGTTLGNALRRTLLADLEGTAIVAVRIAGVSHEFSTIPGIREDVLEILLNLKEVVLKSQIGTSGVGRLRVQGPAIVTTNHLELPSEIELIDPNQYIATICGNNILEMEFRIETGKGYNLVERDSDESSIDFLQVDAIFMPVKKVNYLSKDIRSENNLIQEQLTLEVWTNGSIDPQDAVSQAGKILTELLFPL---KEIN------FKPDDSESIIEDSKINQILIEELQLSVRAYNCLKRAQIHSVADLLDYSQEDLIEIKNFGQKSAEEVIDALQKRLGINLPKEKTSKSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RPOA_TRIEI" ac="Q110D1" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=rpoA PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>953</score>
+      <smithWatermanScore>953</smithWatermanScore>
+      <initn>933</initn>
+      <init1>475</init1>
+      <opt>953</opt>
+      <zScore>1172.2</zScore>
+      <bits>225.1</bits>
+      <expectation>9.9e-58</expectation>
+      <identity>48.9</identity>
+      <positives>79.7</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVE-EDENYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ..  .:..:.  .. . .:.:.:. :  ::: :.:: ::::::..: :.::..:::::..:::.:: :::::.::::::.: ..  :  .. :.:.:.:.::..:::: ...:  ::.:. ..::::.: ..:::.::..: :.::. ....  .-   ..::.:.:::::.::.. ::. . ...  ..::..::::::: .:.::: .:: ....::  :---:.:.:   .---:   . .: ..: :::::::::::::::.::::.:.:::.:: : : :.::::.:::.::. .:...::: :</pattern>
+      <matchSeq start="1" end="305">MAQFHYECVESKTDKDRSQYGKFIIEPLARGQGTTVGNALRRVLLSNLEGTAITSVRIAGVNHEFATIKGVREDVLEILLNMKEVVLKSYSEQPQIGRLRVEGPATVTADRFDVPSEVEVIDRSQYIATLSPGSILEMEFRIEKGTGYKAVDRTRDDVATLDFLQIDAIFMPVRKVNYTIEDAHIGSSLEQDRLIMDIWTNGSYTPQDALSNAAGILMSLFEPL---KDITNMADI---PSGETTDPTSQIPIEELQLSVRAYNCLKRAQINSVADLLDYSQEDLLEIKNFGQKSAEEVIEALQKRLGITLPQEKVAKAT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RPOA_SYNJA" ac="Q2JUJ5" length="331" description="DNA-directed RNA polymerase subunit alpha OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>949</score>
+      <smithWatermanScore>949</smithWatermanScore>
+      <initn>950</initn>
+      <init1>506</init1>
+      <opt>949</opt>
+      <zScore>1166.8</zScore>
+      <bits>224.1</bits>
+      <expectation>2e-57</expectation>
+      <identity>49.5</identity>
+      <positives>78.4</positives>
+      <overlap>305</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="310">------------------MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>                        .:..:..  .:. .:.: .. :. :::::.:: ::::::..: :.:..::::::.::::::.::::::..:::::.: ..  :.  ::: :.: .:::. :::. .:::  ::.::: :.:::.. . :::.:: .  : ::. .. .  .   -..::.:..::::.::.. .:    . .  ..::.:.::::::..:..:: .::.... ::. :---.... ..  :--:.    .  ..: :::::::::::::::.::::::.::: :. : : :.::::.:::.:: ..:::.::. :</pattern>
+      <matchSeq start="25" end="324">MMQTSRTLHNLGSKAASSAAPYQTECVESHQEANGVHYGKFALGPLERGQGITVGNALRRVLLSNLEGTAVTAVRIAGVTHEFSTVPGVREDVMEILLNMKELVLRSNAPDTQVGRLVAQGPGEVTAEKLQLPSEVEVINPRHHIATLAEGAILEMEFMIGRGRGYRAVDYSDSKSMAIDFLQIDSVFMPVRKVNYTVEAARVGQSLEKDRLILEIWTNGSLTPQEALSQAARILVGLFSPL---QEVSFDTPPE--PRQAEDNQKNQIPIEELQLSVRAYNCLKRAQINTVADLLVYTEEDLLEIKNFGQKSAEEVVQALKNRLGLTLPRERSKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RPOA_NOSS1" ac="Q8YPK3" length="315" description="DNA-directed RNA polymerase subunit alpha OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>940</score>
+      <smithWatermanScore>940</smithWatermanScore>
+      <initn>931</initn>
+      <init1>455</init1>
+      <opt>940</opt>
+      <zScore>1156.3</zScore>
+      <bits>222.1</bits>
+      <expectation>7.7e-57</expectation>
+      <identity>47.0</identity>
+      <positives>79.9</positives>
+      <overlap>313</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLL--INNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ...:.:..:.  .:   ...:... :. ::: :.:: ::::::..: :.:..::::::..:::.:.::::::.:::.. .: .:  :  ...:.:.: :.::...::. ..::  ::.:.:..:.:::. .. ::.::..: :.::. . ..  :   -..::.:.:::::.::....:..    .  ..::.:..::::::::..:: ::: ...:::. :--:. .  ..:. .---:.----.: ..: :::::::::::::::.::.:.:.:::.:. : : :.::::.:::.::  .:. .::: :</pattern>
+      <matchSeq start="1" end="306">MAQFQIECVESNTEESRNHYSKFILEPLERGQGTTVGNALRRVLLSNLEGTAVTAVRIAGVSHEFATVPGVREDVLEIIMRMKEVILKSYSSQAQIGRLLVNGPTTITASHFDLPSEVEVIDPTQYVATIAEGGKLEMEFRIERGKGYRTVERGREEATSLDFLQIDSIFMPVRKVNYSVEEVRADGSIPKDRLLLEVWTNGSISPQEALSSAAGILVDLFNPLKDISLEPTDTNSDI---PD----DPTAQIPIEELQLSVRAYNCLKRAQVNSVADLLDYTQEDLLEIKNFGQKSAEEVVEALQRRLGITLPQERSSKHN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RPOA_TRIV2" ac="Q3MF97" length="315" description="DNA-directed RNA polymerase subunit alpha OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>940</score>
+      <smithWatermanScore>940</smithWatermanScore>
+      <initn>931</initn>
+      <init1>455</init1>
+      <opt>940</opt>
+      <zScore>1156.3</zScore>
+      <bits>222.1</bits>
+      <expectation>7.7e-57</expectation>
+      <identity>47.0</identity>
+      <positives>79.9</positives>
+      <overlap>313</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLL--INNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ...:.:..:.  .:   ...:... :. ::: :.:: ::::::..: :.:..::::::..:::.:.::::::.:::.. .: .:  :  ...:.:.: :.::...::. ..::  ::.:.:..:.:::. .. ::.::..: :.::. . ..  :   -..::.:.:::::.::....:..    .  ..::.:..::::::::..:: ::: ...:::. :--:. .  ..:. .---:.----.: ..: :::::::::::::::.::.:.:.:::.:. : : :.::::.:::.::  .:. .::: :</pattern>
+      <matchSeq start="1" end="306">MAQFQIECVESNTEESRNHYSKFILEPLERGQGTTVGNALRRVLLSNLEGTAVTAVRIAGVSHEFATVPGVREDVLEIIMRMKEVILKSYSSQAQIGRLLVNGPTTITASHFDLPSEVEVIDPTQYVATIAEGGKLEMEFRIERGKGYRTVERGREEATSLDFLQIDSIFMPVRKVNYSVEEVRADGSIPKDRLLLEVWTNGSISPQEALSSAAGILVDLFNPLKDISLEPTDTNSDI---PD----DPTAQIPIEELQLSVRAYNCLKRAQVNSVADLLDYTQEDLLEIKNFGQKSAEEVVEALQRRLGITLPQERSSKHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RPOA_SYNJB" ac="Q2JL74" length="335" description="DNA-directed RNA polymerase subunit alpha OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>931</score>
+      <smithWatermanScore>931</smithWatermanScore>
+      <initn>940</initn>
+      <init1>520</init1>
+      <opt>931</opt>
+      <zScore>1144.6</zScore>
+      <bits>220.0</bits>
+      <expectation>3.4e-56</expectation>
+      <identity>48.5</identity>
+      <positives>78.0</positives>
+      <overlap>305</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="310">--------------------MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>                          .:..:.. ..:. .:.: .. :. :::::.:: ::::::..: :.:..::::::.::::::.::::::..:::::.: ..  :.  .:: :.: .:::. :::. .:::  ::.::: :.:::.. . :::.:: .  : ::. .. .  .   -..::.:..::::.::.. .:    .    ..:: :.::::::..:..:: .::.... ::. :---.... .  .  ::.  . .--..: :::::::::::::::.::::::.::: :. : : :.::::.:::.:: ..:: ..:. :</pattern>
+      <matchSeq start="27" end="326">MTIQTSRTLSHSLGSRASSSAVAYQTECVESHRDDNGVHYGKFALGPLERGQGITVGNALRRVLLSNLEGTAVTAVRIAGVTHEFSTVPGVREDVMEILLNMKELVLRSSSPETQVGRLVAQGPGEVTAEKLQLPSDVEVINPRHHIATLAEGAILEMEFMIGRGHGYRAVDYSDSKAMAIDFLQIDSVFMPVRKVNYAVEAARVGQFLEKDRLVLEIWTNGSLTPQEALSQAARILVGLFAPL---QEVSFDAPVPPKPDEDNQK--NQIPIEELQLSVRAYNCLKRAQINTVADLLLYTEEDLLEIKNFGQKSAEEVVQALKARFGLTLPRTREKGKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RPOA_SYNY3" ac="P73297" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>912</score>
+      <smithWatermanScore>912</smithWatermanScore>
+      <initn>894</initn>
+      <init1>438</init1>
+      <opt>912</opt>
+      <zScore>1122.0</zScore>
+      <bits>215.8</bits>
+      <expectation>6.2e-55</expectation>
+      <identity>46.8</identity>
+      <positives>76.4</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDEN----YLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: ...:.:..:   ..   ...: .. :. ::: :.:: ::::::..: :.:..:.::::..:::.:: :::::.:::.::.: ..  :  .. :.:.: . ::..:::  ...:  ::.:.::.::::.. .  ::.::. : : ::..  ..---.:::----.::.:..:::: ::.. .:.:     . ..::.:::::::::.: .::  :...: .::  : . ....  . -. . :---..: ..: :::::::::::::::.::::.:.:::.:: : : :.:::: :::.::. .:...::: :</pattern>
+      <matchSeq start="1" end="307">MAQFQIECVESSTRKNQQQYSKFSLEPLDRGQGTTVGNALRRVLLSNLPGAAVTAIRIAGVNHEFATILGVREDVLEIMLNMKELVLKSYTDQPQIGRLTAIGPGTVTAAQFEVPSEVEVIDPNQYIATLAEGAKLEMEFRVERGVGYRVIERG---KDENSSLDFLQIDSVFMPVTKVNYTVEDIRADGMSPKDRLILDIWTNGSIQPREALSEASDIIANLFIPLKDLNELEAAHS-DYQDE---VNPESQIPIEELQLSVRAYNCLKRAQINSVADLLEYSQEDLLEIKNFGLKSAEEVIEALQKRLGITLPHEKAKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RPOA_SYNE7" ac="Q31L30" length="309" description="DNA-directed RNA polymerase subunit alpha OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>905</score>
+      <smithWatermanScore>905</smithWatermanScore>
+      <initn>891</initn>
+      <init1>470</init1>
+      <opt>905</opt>
+      <zScore>1113.6</zScore>
+      <bits>214.2</bits>
+      <expectation>1.8e-54</expectation>
+      <identity>46.3</identity>
+      <positives>76.9</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="311">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>     ..:..:.   . . .:.: :. :  ::: :.:: ::::::..: :.:..::::.:..:::.::::::::.:.::::.. ..  ..  . :.:.:.: ::..:::  ... : ::.::::::::..: .  ::.:.: :.:.::.  ...  :   -..::::..::::..:....:.   . ..  .:: :..:::::.::..:: .::. .. ::  :---::.. ..     ::  ---: ..  ::.::::::::::::.::.:.:.:::.:. : : :.::::.:::.::  .:.-..:: :.</pattern>
+      <matchSeq start="5" end="304">-MTFQVECVESRTEADQGQYGRFSIEPLARGQGTTVGNALRRVLLSNLEGTAVTAVRIGGVNHEFATIPGVREDVLDILLNVRELVVHAHSPQPQIGRLRVVGPATVTAADVDFGPEVEVINPNHYIASLSEGATLEMELKVEWGTGYRAIDRSHDETTALDFLQLDAVFMPVRRVNYSVEDARVGESTAIDRLVLEVWTNGSLSPQEALSQAASCLVALFEPL---KNVSVGSTHTADPEPT---PESQTPIEDLQLSVRAYNCLKRAQVNSVADLLSYTYEDLLEIKNFGQKSAEEVVEALE-RIGIKLQESKVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RPOA_SYNP6" ac="O24710" length="309" description="DNA-directed RNA polymerase subunit alpha OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>905</score>
+      <smithWatermanScore>905</smithWatermanScore>
+      <initn>891</initn>
+      <init1>470</init1>
+      <opt>905</opt>
+      <zScore>1113.6</zScore>
+      <bits>214.2</bits>
+      <expectation>1.8e-54</expectation>
+      <identity>46.3</identity>
+      <positives>76.9</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="311">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>     ..:..:.   . . .:.: :. :  ::: :.:: ::::::..: :.:..::::.:..:::.::::::::.:.::::.. ..  ..  . :.:.:.: ::..:::  ... : ::.::::::::..: .  ::.:.: :.:.::.  ...  :   -..::::..::::..:....:.   . ..  .:: :..:::::.::..:: .::. .. ::  :---::.. ..     ::  ---: ..  ::.::::::::::::.::.:.:.:::.:. : : :.::::.:::.::  .:.-..:: :.</pattern>
+      <matchSeq start="5" end="304">-MTFQVECVESRTEADQGQYGRFSIEPLARGQGTTVGNALRRVLLSNLEGTAVTAVRIGGVNHEFATIPGVREDVLDILLNVRELVVHAHSPQPQIGRLRVVGPATVTAADVDFGPEVEVINPNHYIASLSEGATLEMELKVEWGTGYRAIDRSHDETTALDFLQLDAVFMPVRRVNYSVEDARVGESTAIDRLVLEVWTNGSLSPQEALSQAASCLVALFEPL---KNVSVGSTHTADPEPT---PESQTPIEDLQLSVRAYNCLKRAQVNSVADLLSYTYEDLLEIKNFGQKSAEEVVEALE-RIGIKLQESKVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RPOA_GLOVI" ac="Q7NFF5" length="314" description="DNA-directed RNA polymerase subunit alpha OS=Gloeobacter violaceus (strain ATCC 29082 / PCC 7421) OX=251221 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>899</score>
+      <smithWatermanScore>899</smithWatermanScore>
+      <initn>907</initn>
+      <init1>459</init1>
+      <opt>899</opt>
+      <zScore>1106.1</zScore>
+      <bits>212.8</bits>
+      <expectation>4.8e-54</expectation>
+      <identity>46.2</identity>
+      <positives>78.2</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MNNISIKCLKSEKIQSGACHGQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE--NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>: . .:.:....   ... .:.:... :. ::: :.:: ::::::..: :.:..::::.:..:::.:. :.:::.:.::::.: ..  :  .: :.:.: ::::. :::  ..::  :....: :::::.. .. ::.::..: :.::.-: .   :.  --.::..:.:::::.::.. .:.  .:.:  ..:: :.:::.::.::..:: .::....: .  :---..:. .   :--:.  . .   .. :::::::::::::::.::::::.:::.:. : : :.::::.:::.::. .:..:.:. :</pattern>
+      <matchSeq start="1" end="306">MAQYTIECVETRTEADNGQYGKFVLEPLERGQGTTLGNALRRVLLSNLEGTAVTAVRITGVNHEFATMKGIREDVLDILLNMKELVLRSYTSDIQIGRLAVQGPKRVTAADLELPTEVQVVHPRHYIATLAEDGQLEMEFQIERGKGYR-AIERGSEDGAAIDYLSIDAIFMPVRKVNWTVESERSAANVEQDRLTLEIWTSGSLSPQEALSQAAKILVDQLRPL---QEITFEPPAE--PQRSAPNTVGQVPIEELQLSVRAYNCLKRAQINTVADLLEYTEEDLLEIKNFGQKSAEEVIEALQDKMGLSLPKDKPARS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RPOA_CHLAT" ac="A2CI44" length="318" description="DNA-directed RNA polymerase subunit alpha OS=Chlorokybus atmophyticus OX=3144 GN=rpoA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>893</score>
+      <smithWatermanScore>893</smithWatermanScore>
+      <initn>818</initn>
+      <init1>498</init1>
+      <opt>893</opt>
+      <zScore>1098.6</zScore>
+      <bits>211.4</bits>
+      <expectation>1.3e-53</expectation>
+      <identity>48.4</identity>
+      <positives>76.9</positives>
+      <overlap>308</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="310">-----MNNISIKCLKSEKIQSGACH-GQFLINSLNPGQGITIGNQLRRVLLGDLGGVAISAVRIAGITHEFSTIPGVREDILEILLNLKGIICTSQIQDTQFGHLKVQGPSVVTADLIQLPPGVEIINPNHYIATISTSNILEIEFKFEYGSGYHLASQNFVEEDE-NYLQLDTIFMPVQKVDFKIENIYDATNNISERLFLDIWTNGSISPNDALESAAQVIIDLFTLLINNKNINNNNRLELKPETISIEPYTNIAIEELQLSVRAYNCLKKAQINTVGDLLQYSPEKLQELKNFGRKSADEVFSTLKNKLGIILK</querySeq>
+      <pattern>         .:.:..:-.:.:   :-:.:.:  :. :::::.:: .:::::::: :. :..:.: :..:::::: :::: .:.:::::: :.  .: :.:: :::.:::::.: :  .::: ..:...:..::::::    :..::  : :.::.: . .  .  .-. : .:..:::: ::.. .:. : .  .-.::.....::::::.  .:.. ... ::.::. : : ..:...  .. :   .-----:.. .:::.::::::::::.:::.::.:::.:: : : :.:::::.::.::.  :...::: :</pattern>
+      <matchSeq start="10" end="310">MAHQRIVGPTIECIES-RIESRRNHYGRFVIAPLEIGQGITVGNVFRRVLLGDLEGACITSVQIPGVNHEFSTIHGVREAVLDILLNLKEIVLKTQSQETQRGHLSVQGPSTVLARDLQLPSSIELVDPDQYIATISGRVSLNMEFTVEVGKGYQLPDYEKKKTFQVDVLPIDAVFMPVTKVNYTVEENYGGDRS-QERVIIEVWTNGSINSRQAIDLSVNKIINLFSPLQNVRSIEHEPLVKEKDSKM-----TEVLVEELDLSVRAYNCLKRAQIHTVSDLLSYSQEDLLEIKNFGRRSAEEVIEGLQKRLGIHLPKEKFTKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

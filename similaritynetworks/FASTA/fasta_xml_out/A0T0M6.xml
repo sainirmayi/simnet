@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164058-0240-86585570-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164058-0240-86585570-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164058-0240-86585570-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0M6|PSAL_PHATC" type="PROTEIN" length="151"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:40:58+00:00" end="2022-11-07T16:41:01+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSAL_PHATC" ac="A0T0M6" length="151" description="Photosystem I reaction center subunit XI OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>995</score>
+      <smithWatermanScore>995</smithWatermanScore>
+      <initn>995</initn>
+      <init1>995</init1>
+      <opt>995</opt>
+      <zScore>1287.4</zScore>
+      <bits>244.3</bits>
+      <expectation>3.8e-64</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>151</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="151">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="151">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSAL_TRICV" ac="P49486" length="150" description="Photosystem I reaction center subunit XI OS=Trieres chinensis OX=1514140 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>878</score>
+      <smithWatermanScore>878</smithWatermanScore>
+      <initn>911</initn>
+      <init1>632</init1>
+      <opt>878</opt>
+      <zScore>1137.4</zScore>
+      <bits>216.5</bits>
+      <expectation>8.6e-56</expectation>
+      <identity>87.8</identity>
+      <positives>97.3</positives>
+      <overlap>148</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="148">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>::::::::::::::::::::::::..:::::.:::::::::::::::::::::::::::::::::::::.:.:.:..:::::.:::.:::::::::::::::: .:-. : :::::::::::::::::::::::::::.:::::::.:</pattern>
+      <matchSeq start="1" end="147">MANFIKPYNDDPFVGHLATPITSSSITRAILKNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRNSDIALFSGFLSTIGLILILTLGLTIYGVAAFGQGQT-TENSNDLQTKKAWDQFKGGFFVGACGSAGFALICLSSIPAFTIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSAL_THAPS" ac="A0T0U5" length="148" description="Photosystem I reaction center subunit XI OS=Thalassiosira pseudonana OX=35128 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>872</score>
+      <smithWatermanScore>872</smithWatermanScore>
+      <initn>921</initn>
+      <init1>636</init1>
+      <opt>872</opt>
+      <zScore>1129.8</zScore>
+      <bits>215.1</bits>
+      <expectation>2.3e-55</expectation>
+      <identity>85.4</identity>
+      <positives>96.0</positives>
+      <overlap>151</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="151">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>::::::::::::::::::::::::..:::.:.::::::::::::::::::::::::::.:::..:::::.:.::::::::::.:::.::::::::::.:::::::---:: ..:::::.:::::::::::::::::::::::::::.:  :</pattern>
+      <matchSeq start="1" end="148">MANFIKPYNDDPFVGHLATPITSSSLTRALLKNLPAYRFGLTPLLRGLEIGLAHGYFLIGPFAQLGPLRNSDIGLLAGFLSTIGLILILTLGLTIYGAAAFGQEK---SNGSELQTKKSWDQFKGGFFVGACGSAGFAFICLSSIPTFALN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSAL_PORPU" ac="P51222" length="153" description="Photosystem I reaction center subunit XI OS=Porphyra purpurea OX=2787 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>624</score>
+      <smithWatermanScore>624</smithWatermanScore>
+      <initn>668</initn>
+      <init1>493</init1>
+      <opt>624</opt>
+      <zScore>811.5</zScore>
+      <bits>156.2</bits>
+      <expectation>1.2e-37</expectation>
+      <identity>60.0</identity>
+      <positives>86.7</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="150">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>::.::::::::::::.:.::...:. ....: :::::: ::.:::::::::.::::::.::: :::::: ....:::::::.::::.:::  :..:: ..:----:.:.... ::: ..: :: .::.::: :..:::.. :..:: . :</pattern>
+      <matchSeq start="1" end="146">MAEFIKPYNDDPFVGNLSTPVSTSSFSKGLLGNLPAYRRGLSPLLRGLEIGMAHGYFLIGPFDKLGPLRGTDVALLAGFLSSVGLIIILTTCLSMYGNVSF----TRSDSKDPLQTAEGWGQFTAGFLVGAVGGSGFAYLLLANIPVLQTAGLSLFS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSAL_NEOYE" ac="Q1XDR5" length="153" description="Photosystem I reaction center subunit XI OS=Neopyropia yezoensis OX=2788 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>609</score>
+      <smithWatermanScore>609</smithWatermanScore>
+      <initn>640</initn>
+      <init1>473</init1>
+      <opt>609</opt>
+      <zScore>792.3</zScore>
+      <bits>152.7</bits>
+      <expectation>1.4e-36</expectation>
+      <identity>58.0</identity>
+      <positives>86.7</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="150">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:..::::::::::::.:.::...:. ...  .:::::: ::.:::::::::.::::::.::: :::::: ....:::::::.::::.:::  :..:: ..:----:...... :::...: :: .::.::: :..:::.. :..:: . :</pattern>
+      <matchSeq start="1" end="146">MSEFIKPYNDDPFVGNLSTPVSTSSFSKGTSRNLPAYRRGLSPLLRGLEIGMAHGYFLIGPFDKLGPLRGTDVALLAGFLSSVGLIIILTTCLSMYGNVSF----TRADSKDPLQTSEGWGQFTAGFLVGAVGGSGFAYLLLANIPVLQTAGLSLFS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSAL_GUITH" ac="O78469" length="152" description="Photosystem I reaction center subunit XI OS=Guillardia theta OX=55529 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>587</score>
+      <smithWatermanScore>587</smithWatermanScore>
+      <initn>589</initn>
+      <init1>492</init1>
+      <opt>587</opt>
+      <zScore>764.1</zScore>
+      <bits>147.5</bits>
+      <expectation>5.3e-35</expectation>
+      <identity>59.1</identity>
+      <positives>89.3</positives>
+      <overlap>149</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="149">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:..:.::::::::::.::::::.:. ::..:.:::::: ::.:::::::::..:::::.::: ::::::.::..:::: .:..:::.:..  :.::::..:.---:....:.-::. :.: :: .:..::. :.:.::.: ....-::.</pattern>
+      <matchSeq start="1" end="144">MTQFVKPYNDDPFVGNLATPITTSSFTRTLLSNLPAYRAGLSPLLRGLEIGMTHGYFLVGPFYKLGPLRNSEVALLAGVFSALGLIIIMAACLAIYGVVSFN---TNDGGEQ-LQSAKGWRQFTSGWLVGSIGGASFAYILIANV-SFLQTGSSLLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSAL_GRATL" ac="Q6B8P4" length="150" description="Photosystem I reaction center subunit XI OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>586</score>
+      <smithWatermanScore>586</smithWatermanScore>
+      <initn>486</initn>
+      <init1>461</init1>
+      <opt>586</opt>
+      <zScore>763.0</zScore>
+      <bits>147.2</bits>
+      <expectation>6.2e-35</expectation>
+      <identity>56.2</identity>
+      <positives>87.7</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="146">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:..::. ::.:::.:.:.::...:. :...:.:::::: ::.:::::::::.::::::.::: ::::::.....::.::::.::::.:::. :..:: ..: .. ..----. ::: ..: :: .::.::: :..:::.. :..::</pattern>
+      <matchSeq start="1" end="142">MSDFIQSYNNDPFLGNLSTPVSTSTFTKGLLNNLPAYRRGLSPLLRGLEIGMAHGYFLVGPFDKLGPLRNTDVALLSGFLSAVGLIIILTVCLSMYGNVSFDKDDAK----DLLQTTEGWGQFTAGFLVGAVGGSGFAYLLLANIPVLQNLGLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSAL_CYAM1" ac="Q85FP8" length="140" description="Photosystem I reaction center subunit XI OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psaL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>583</score>
+      <smithWatermanScore>583</smithWatermanScore>
+      <initn>612</initn>
+      <init1>480</init1>
+      <opt>583</opt>
+      <zScore>759.7</zScore>
+      <bits>146.5</bits>
+      <expectation>9.4e-35</expectation>
+      <identity>58.0</identity>
+      <positives>86.7</positives>
+      <overlap>143</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="143">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:...:::::.:::::::::::.::..::: :..:: :: :..:.:::::::.::::::.::::.:::::...:  :::.::..:::::::::. .::...:------... .::..  .: :. .::..:: :.::::.. :.</pattern>
+      <matchSeq start="1" end="137">MTDYIKPYNNDPFVGHLATPINSSSLTRAYLSQLPIYRRGVSPFLRGLEIGMAHGYFLIGPFVQLGPLRNTDIKYLAGLLSAIGLIVILTLGMLLYGAVSF------TNDSQDLESVDGWRQLASGFLLGAVGGAGFAYLLLTLFS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSAL_EMIHU" ac="Q4G3B5" length="145" description="Photosystem I reaction center subunit XI OS=Emiliania huxleyi OX=2903 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>554</score>
+      <smithWatermanScore>554</smithWatermanScore>
+      <initn>528</initn>
+      <init1>476</init1>
+      <opt>554</opt>
+      <zScore>722.2</zScore>
+      <bits>139.6</bits>
+      <expectation>1.2e-32</expectation>
+      <identity>57.7</identity>
+      <positives>82.6</positives>
+      <overlap>149</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="148">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAF-GQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:..:.::::.:::::.:.::.:.:..:.  : ::: :: ::.:::::::::.::::::.:::  :::::.:  .::.:..:. :::.::::::::::.:.:-: :----..::-:.. :.: .: .:: .:: :.:. :.. :..:  :</pattern>
+      <matchSeq start="1" end="144">MSEFVKPYNNDPFVGNLSTPVTTSTATKLYLGNLPIYRKGLSPLLRGLEIGMAHGYFLIGPFYILGPLRNSPNALLVGLFSAFGLILILTLGLTIYGLASFQGTE----GGEN-LESAKGWRNFTSGFSIGAFGGASVAYVLLDNISFFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSAL_ISOGA" ac="Q5ENP6" length="145" description="Photosystem I reaction center subunit XI OS=Isochrysis galbana OX=37099 GN=psaL PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>550</score>
+      <smithWatermanScore>550</smithWatermanScore>
+      <initn>519</initn>
+      <init1>466</init1>
+      <opt>550</opt>
+      <zScore>717.1</zScore>
+      <bits>138.7</bits>
+      <expectation>2.2e-32</expectation>
+      <identity>56.1</identity>
+      <positives>83.8</positives>
+      <overlap>148</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="148">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>:..:.::.:.:::::.:.::.:.:..:.  : ::: :: ::::::::::::.::::::.:::  :::::.:  .::.:..:. :::.::::.:::::.:.:---. .. .::-:...:.: .: .:: .:: :.:. :.. :..:  :</pattern>
+      <matchSeq start="1" end="144">MSEFVKPFNNDPFVGNLSTPVTTSTATKLYLGNLPIYRKGLTPLLRGLEIGMAHGYFLIGPFYILGPLRNSPNALLVGLFSAFGLIIILTLALTIYGLASF---QDNGVGEN-LESSKGWRNFTSGFTIGALGGASVAYLVLNNISFFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSAL_CYACA" ac="Q9TM17" length="152" description="Photosystem I reaction center subunit XI OS=Cyanidium caldarium OX=2771 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>547</score>
+      <smithWatermanScore>547</smithWatermanScore>
+      <initn>540</initn>
+      <init1>440</init1>
+      <opt>547</opt>
+      <zScore>712.8</zScore>
+      <bits>138.0</bits>
+      <expectation>3.8e-32</expectation>
+      <identity>53.5</identity>
+      <positives>84.7</positives>
+      <overlap>144</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="144">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>: :.::::...::::.:.::..:: ::   :.::: :: ::.:::::::::.:::::..::: ::::::.....::.:.....:::.: .... :::...: .----: :.. ::: ..: :. .::..:: :.::::.: :..</pattern>
+      <matchSeq start="1" end="140">MINYIKPYGSNPFVGNLSTPVNSSKVTIWYLKNLPIYRRGLSPLLRGLEIGMAHGYFIIGPFYKLGPLRNTDLSLLSGLIAAIGLIIISSIAMIIYGIVTFDN----SENNDKLQTANGWRQLASGFLLGAVGGAGFAYILLANNLLSTSTPILQT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSAL_CYAP4" ac="B8HRF0" length="159" description="Photosystem I reaction center subunit XI OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>530</score>
+      <smithWatermanScore>530</smithWatermanScore>
+      <initn>538</initn>
+      <init1>437</init1>
+      <opt>530</opt>
+      <zScore>690.6</zScore>
+      <bits>133.9</bits>
+      <expectation>6.6e-31</expectation>
+      <identity>56.8</identity>
+      <positives>82.7</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="142">-----MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>        .::::: :::.:::.:::..:  ::... :::::: ::.:.:::::::.::::::.::.:::::::::... :.:..: ..::.: :  :. ::...: .:.. .---: :.: ..:.:: .:::::: :.:  ::  :</pattern>
+      <matchSeq start="9" end="144">MADARDMELIKPYNGDPFTGHLSTPISDSDFTRTFIGNLPAYRKGLSPILRGLEIGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILIATACLAAYGIVSFQKEEAAA---NPLNTAEGWSQFTAGFFVGATGGAFVAFTLLEKFDVVDGIMTGLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSAL_THEVB" ac="Q8DGB4" length="155" description="Photosystem I reaction center subunit XI OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=psaL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>525</score>
+      <smithWatermanScore>525</smithWatermanScore>
+      <initn>520</initn>
+      <init1>419</init1>
+      <opt>525</opt>
+      <zScore>684.4</zScore>
+      <bits>132.7</bits>
+      <expectation>1.5e-30</expectation>
+      <identity>55.4</identity>
+      <positives>85.6</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="142">-MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>    ..:::: :::::::.:::..:....... :::::: ::.:.:::::.:.::::::.::.:::::::::... :.:..: ..::.. :  :. ::...:--.:  ::..- :.:...:.:: .:::::: :::  ::. :</pattern>
+      <matchSeq start="5" end="140">MAEELVKPYNGDPFVGHLSTPISDSGLVKTFIGNLPAYRQGLSPILRGLEVGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILVATACLAAYGLVSF--QKGGSSSD-PLKTSEGWSQFTAGFFVGAMGSAFVAFFLLENFSVVDGIMTGLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSAL_TRIEI" ac="Q116L4" length="161" description="Photosystem I reaction center subunit XI OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>525</score>
+      <smithWatermanScore>525</smithWatermanScore>
+      <initn>509</initn>
+      <init1>412</init1>
+      <opt>525</opt>
+      <zScore>684.1</zScore>
+      <bits>132.7</bits>
+      <expectation>1.5e-30</expectation>
+      <identity>53.2</identity>
+      <positives>83.7</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="142">-----MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>      ..:..::. :::::::.:::..:  :::.. ::: :: ::.:.:::::.:.:::::..::..:::::::: .. :.:..::..:..: :. :. ::...:-: :.  . .- :.:...:.:: ::::.:: :.:  ::. :</pattern>
+      <matchSeq start="7" end="145">MTQATDSGFVQPYKGDPFVGHLSTPISDSDFTRAFIGNLPIYRPGLSPILRGLEVGMAHGYFIVGPWTKLGPLRDSAVANLGGLISTIALVLIATICLSAYGLVSF-QGKSPEGAD-PLKTSEGWSQFTGGFFIGAMGGAVVAFFLLENFELVDSIFRGLFNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSAL_SYNEL" ac="P25902" length="149" description="Photosystem I reaction center subunit XI OS=Synechococcus elongatus OX=32046 GN=psaL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <smithWatermanScore>515</smithWatermanScore>
+      <initn>510</initn>
+      <init1>409</init1>
+      <opt>515</opt>
+      <zScore>672.0</zScore>
+      <bits>130.4</bits>
+      <expectation>7.3e-30</expectation>
+      <identity>54.7</identity>
+      <positives>84.9</positives>
+      <overlap>139</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="142">-MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>    ..:::: :::::::.:::..:....... :::::: ::.:.: :::.:.::::::.::.:::::::::... :.:..: ..::.. :  :. ::...:--.:  ::..- :.:...:.:: .:::::: :::  ::. :</pattern>
+      <matchSeq start="5" end="140">MAEELVKPYNGDPFVGHLSTPISDSGLVKTFIGNLPAYRQGLSPILPGLEVGMAHGYFLIGPWVKLGPLRDSDVANLGGLISGIALILVATACLAAYGLVSF--QKGGSSSD-PLKTSEGWSQFTAGFFVGAMGSAFVAFFLLENFLLSMAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSAL_SYNY3" ac="P37277" length="157" description="Photosystem I reaction center subunit XI OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=psaL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>490</score>
+      <smithWatermanScore>490</smithWatermanScore>
+      <initn>481</initn>
+      <init1>403</init1>
+      <opt>490</opt>
+      <zScore>639.5</zScore>
+      <bits>124.4</bits>
+      <expectation>4.7e-28</expectation>
+      <identity>51.8</identity>
+      <positives>82.3</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="145">---MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>       .. :: :::::::.:::..:: ::... :::::: ::.:.:::::.:.::::::.::.. ::::::::   ..:......::.. : .:. ::...:  :--:.:...-:::  .:.:: .:::::. :.:  :.. : ..</pattern>
+      <matchSeq start="8" end="145">MAESNQVVQAYNGDPFVGHLSTPISDSAFTRTFIGNLPAYRKGLSPILRGLEVGMAHGYFLIGPWTLLGPLRDSEYQYIGGLIGALALILVATAALSSYGLVTFQGE--QGSGDT-LQTADGWSQFAAGFFVGGMGGAFVAYFLLENLSVVDGIFRGLFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSAL_MICAN" ac="B0JT88" length="160" description="Photosystem I reaction center subunit XI OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>485</score>
+      <smithWatermanScore>485</smithWatermanScore>
+      <initn>462</initn>
+      <init1>398</init1>
+      <opt>485</opt>
+      <zScore>632.9</zScore>
+      <bits>123.2</bits>
+      <expectation>1.1e-27</expectation>
+      <identity>49.6</identity>
+      <positives>81.6</positives>
+      <overlap>141</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="145">-----MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>         . :::::::.:::::::..:. :.:.. :::::: ::.:.:::::.:.:::::: ::.: :::::::: . ..:.. ....... :  :. ::...:-: :. :.. --:.. ..:.:: .:::.:. :.:  :.. : ..</pattern>
+      <matchSeq start="10" end="147">MAETGYKQVVTPYNDDPFIGHLATPISASGFTKAFIGNLPAYRPGLAPILRGLEVGMAHGYFLGGPWVVLGPLRDSEYANIGGLIPALAMVLLATGCLASYGLVSF-QGKAASNDP--LKSAEGWSQFAAGFFIGGMGGAFVAYFLLENLGVVDGIMRGVFNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSAL_SYNP2" ac="Q54753" length="152" description="Photosystem I reaction center subunit XI OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <smithWatermanScore>446</smithWatermanScore>
+      <initn>442</initn>
+      <init1>356</init1>
+      <opt>446</opt>
+      <zScore>583.3</zScore>
+      <bits>114.0</bits>
+      <expectation>6.3e-25</expectation>
+      <identity>46.0</identity>
+      <positives>79.3</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="150">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSSNEN---DLQTKKAWDQFKGGFFVGACGSAGFAF-ICLSSIPSFITN</querySeq>
+      <pattern>    :  .. :: ::.:::::..:: ..:...:::.:: ::.   ::::.:.::::::.:::. :::::..... .::.:.::::: .:::.:..:: .. .   .  .. :---.: ::..:..: .::..:.::.:  :.-.:..-.: . :</pattern>
+      <matchSeq start="3" end="151">--MDIIQHGGDPQVGNLATPINASAFSKAFINNLPGYRQGLSAQRRGLEVGMAHGYFLYGPFALLGPLRNADFAGVAGLLGTVGLISLLTLALSLYGSVGVSTPTATLTTPNPPENLGTKEGWSEFAAGFLIGGCGGALVAYGLCIA-LPMMYTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSAL_SYNE7" ac="P95822" length="166" description="Photosystem I reaction center subunit XI OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psaL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>419</score>
+      <smithWatermanScore>419</smithWatermanScore>
+      <initn>450</initn>
+      <init1>343</init1>
+      <opt>419</opt>
+      <zScore>547.9</zScore>
+      <bits>107.6</bits>
+      <expectation>5.9e-23</expectation>
+      <identity>47.0</identity>
+      <positives>73.5</positives>
+      <overlap>151</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="146">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQEKTQSS-----NENDLQTKKAWDQFKGGFFVGACGSAGFAFICLSSIPSFITN</querySeq>
+      <pattern>::. .   .  : .:.:::::.::  ::.... :: :: ::.   ::::::.:::..:.:::  :::::..: .  ::.:.::::.::::. :..:: :. :   ..:.-----  ..: ::..:..: .::..:. :.: ::: -:.: :</pattern>
+      <matchSeq start="1" end="150">MAQDVIANGGTPEIGNLATPINSSPFTRTFINALPIYRRGLSSNRRGLEIGMAHGFLLYGPFSILGPLRNTETAGSAGLLATVGLVVILTVCLSLYGNAGSGPSAAESTVTTPNPPQELFTKEGWSEFTSGFILGGLGGAFFAFY-LASTPYVQPLVKIAAGVWSVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSAL_CROS5" ac="B1WPZ7" length="156" description="Photosystem I reaction center subunit XI OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=psaL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>412</score>
+      <smithWatermanScore>412</smithWatermanScore>
+      <initn>449</initn>
+      <init1>336</init1>
+      <opt>412</opt>
+      <zScore>539.5</zScore>
+      <bits>105.9</bits>
+      <expectation>1.7e-22</expectation>
+      <identity>46.7</identity>
+      <positives>79.3</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="141">MANFIKPYNDDPFVGHLATPITSSAVTRAILQNLPAYRFGLTPLLRGLEIGLAHGYFLMGPFVKLGPLRDSEIGLLAGFLSTVGLIVILTLGLTIYGVAAFGQE-KTQSSNE--NDLQTKKAWDQFKGGFFVGACGSAGFAFI-CLSSIPSFITN</querySeq>
+      <pattern>          :: .:.::::..:: .. :...:::::: ::.   ::::.:.::::::.:::. :::::..: .  .:.::.:..: :::..:..:. .  :. -.: .. .--.:: :. .: .: .:::.:. :.. ::..-:</pattern>
+      <matchSeq start="9" end="143">--MDIIGQRGDPQIGNLATPVNSSRLSLAFIRNLPAYRRGLSANRRGLEVGMAHGYFLYGPFAILGPLRNTEYASTGGLLSAVAMISILTIALSLYASVEVGKPIETLTTPDVPEDLGTSVGWGEFANGFFIGGSGGVIFAYLLCQALYFDLIQKILG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171202-0357-14201365-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171202-0357-14201365-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171202-0357-14201365-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0A6|PSBJ_PHATC" type="PROTEIN" length="39"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:12:02+00:00" end="2022-11-07T17:12:04+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBJ_PHATC" ac="A0T0A6" length="39" description="Photosystem II reaction center protein J OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <smithWatermanScore>251</smithWatermanScore>
+      <zScore>414.1</zScore>
+      <bits>78.8</bits>
+      <expectation>1.7e-15</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBJ_TRICV" ac="P49512" length="39" description="Photosystem II reaction center protein J OS=Trieres chinensis OX=1514140 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <smithWatermanScore>232</smithWatermanScore>
+      <zScore>383.9</zScore>
+      <bits>73.2</bits>
+      <expectation>8e-14</expectation>
+      <identity>89.7</identity>
+      <positives>100.0</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>:.::::::::::::::::::::::.::.::.::::::::</pattern>
+      <matchSeq start="1" end="39">MSNTGRIPLWLVGLVGGLAVITMLSLFLYGAYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBJ_THAPS" ac="A0T0T9" length="39" description="Photosystem II reaction center protein J OS=Thalassiosira pseudonana OX=35128 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <smithWatermanScore>224</smithWatermanScore>
+      <zScore>371.2</zScore>
+      <bits>70.8</bits>
+      <expectation>4.1e-13</expectation>
+      <identity>84.6</identity>
+      <positives>100.0</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>:.::::.::::::::::.::::...::::::::::::::</pattern>
+      <matchSeq start="1" end="39">MVNTGRVPLWLVGLVGGFAVITIVSLFIYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBJ_GRATL" ac="Q6B8K7" length="39" description="Photosystem II reaction center protein J OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <zScore>355.3</zScore>
+      <bits>67.9</bits>
+      <expectation>3.1e-12</expectation>
+      <identity>79.5</identity>
+      <positives>97.4</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:::.:::::. :::.::::.::.::::::::.::::</pattern>
+      <matchSeq start="1" end="39">MAGTGRVPLWLVATVGGIAVITVLGIFIYGSYSGIGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBJ_CYAM1" ac="Q85FQ5" length="39" description="Photosystem II reaction center protein J OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>213</score>
+      <smithWatermanScore>213</smithWatermanScore>
+      <zScore>353.8</zScore>
+      <bits>67.6</bits>
+      <expectation>3.8e-12</expectation>
+      <identity>79.5</identity>
+      <positives>97.4</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:::::::::. .::.::.:.::::.:::::::::::</pattern>
+      <matchSeq start="1" end="39">MASTGRIPLWLVATIGGIAVLTVLGLFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBJ_PORPU" ac="P51388" length="39" description="Photosystem II reaction center protein J OS=Porphyra purpurea OX=2787 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <smithWatermanScore>210</smithWatermanScore>
+      <zScore>349.0</zScore>
+      <bits>66.7</bits>
+      <expectation>7.1e-12</expectation>
+      <identity>79.5</identity>
+      <positives>97.4</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:::::::::. :::.:.::.::.::::::::.::::</pattern>
+      <matchSeq start="1" end="39">MAGTGRIPLWLVATVGGMAAITVLGIFIYGSYSGVGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBJ_NEOYE" ac="Q1XD99" length="39" description="Photosystem II reaction center protein J OS=Neopyropia yezoensis OX=2788 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>209</score>
+      <smithWatermanScore>209</smithWatermanScore>
+      <zScore>347.4</zScore>
+      <bits>66.4</bits>
+      <expectation>8.7e-12</expectation>
+      <identity>79.5</identity>
+      <positives>97.4</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:::::::::. :::.:.::.::.::::::::.::::</pattern>
+      <matchSeq start="1" end="39">MAGTGRIPLWLVATVGGIAAITVLGIFIYGSYSGVGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBJ_RHDSA" ac="A6MVV2" length="39" description="Photosystem II reaction center protein J OS=Rhodomonas salina OX=52970 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <smithWatermanScore>197</smithWatermanScore>
+      <zScore>328.4</zScore>
+      <bits>62.9</bits>
+      <expectation>1e-10</expectation>
+      <identity>71.8</identity>
+      <positives>94.9</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.::::::::.. ::: :..:..:::.::::::.::::</pattern>
+      <matchSeq start="1" end="39">MASTGRIPLWLIATVGGTAALTVVGLFFYGSYSGVGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBJ_CYACA" ac="Q9TM23" length="39" description="Photosystem II reaction center protein J OS=Cyanidium caldarium OX=2771 GN=psbJ PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <zScore>325.2</zScore>
+      <bits>62.3</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>74.4</identity>
+      <positives>89.7</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>: .:::::::::   ::..:.:.::.:::::::::::::</pattern>
+      <matchSeq start="1" end="39">MNSTGRIPLWLVVTFGGIVVLTVLGIFIYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBJ_PEA" ac="P13555" length="40" description="Photosystem II reaction center protein J OS=Pisum sativum OX=3888 GN=psbJ PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>194</score>
+      <smithWatermanScore>194</smithWatermanScore>
+      <zScore>323.4</zScore>
+      <bits>62.0</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>72.5</identity>
+      <positives>92.5</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::::-::::::..: :.:..:: ..:::.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MANTTGRIPLWIIGTVAGIVVIGLIGLFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBJ_GUITH" ac="O78463" length="39" description="Photosystem II reaction center protein J OS=Guillardia theta OX=55529 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <smithWatermanScore>193</smithWatermanScore>
+      <zScore>322.0</zScore>
+      <bits>61.7</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>66.7</identity>
+      <positives>94.9</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:::::::...  ::.:..:..::::::::::.::.:</pattern>
+      <matchSeq start="1" end="39">MASTGRIPLWIIATFGGIAALTVVGLFIYGSYSGIGSAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBJ_PHYPA" ac="Q6YXL6" length="40" description="Photosystem II reaction center protein J OS=Physcomitrium patens OX=3218 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <zScore>320.2</zScore>
+      <bits>61.4</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>72.5</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::::-:::::::.: :.:. :. .::.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MANTTGRIPLWLIGTVAGILVLGLLGIFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBJ_SECCE" ac="P19053" length="40" description="Photosystem II reaction center protein J OS=Secale cereale OX=4550 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <zScore>320.2</zScore>
+      <bits>61.4</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>72.5</identity>
+      <positives>92.5</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:-:::::::.: :.:.::: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MADTTGRIPLWLIGTVAGIAVIGLVGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBJ_CHLAT" ac="Q19V80" length="42" description="Photosystem II reaction center protein J OS=Chlorokybus atmophyticus OX=3144 GN=psbJ PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <zScore>319.9</zScore>
+      <bits>61.4</bits>
+      <expectation>3e-10</expectation>
+      <identity>80.6</identity>
+      <positives>97.2</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="39">---MANTGRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>      :::::::::. :.:::::..::.:.:::::::::::</pattern>
+      <matchSeq start="7" end="42">MSNTGTTGRIPLWLVATVAGLAVIALLGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBJ_ORYNI" ac="Q6ENF9" length="40" description="Photosystem II reaction center protein J OS=Oryza nivara OX=4536 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>318.7</zScore>
+      <bits>61.1</bits>
+      <expectation>3.5e-10</expectation>
+      <identity>72.5</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:-:::::::.: : :.::: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MADTTGRIPLWLIGTVTGIAVIGLIGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBJ_ORYSA" ac="P0C414" length="40" description="Photosystem II reaction center protein J OS=Oryza sativa OX=4530 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>318.7</zScore>
+      <bits>61.1</bits>
+      <expectation>3.5e-10</expectation>
+      <identity>72.5</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:-:::::::.: : :.::: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MADTTGRIPLWLIGTVTGIAVIGLIGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBJ_ORYSJ" ac="P12189" length="40" description="Photosystem II reaction center protein J OS=Oryza sativa subsp. japonica OX=39947 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>318.7</zScore>
+      <bits>61.1</bits>
+      <expectation>3.5e-10</expectation>
+      <identity>72.5</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:-:::::::.: : :.::: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MADTTGRIPLWLIGTVTGIAVIGLIGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBJ_ORYSI" ac="P0C415" length="40" description="Photosystem II reaction center protein J OS=Oryza sativa subsp. indica OX=39946 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>318.7</zScore>
+      <bits>61.1</bits>
+      <expectation>3.5e-10</expectation>
+      <identity>72.5</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::.:-:::::::.: : :.::: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MADTTGRIPLWLIGTVTGIAVIGLIGVFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBJ_MARPO" ac="P12188" length="40" description="Photosystem II reaction center protein J OS=Marchantia polymorpha OX=3197 GN=psbJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <smithWatermanScore>190</smithWatermanScore>
+      <zScore>317.1</zScore>
+      <bits>60.9</bits>
+      <expectation>4.2e-10</expectation>
+      <identity>70.0</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::::-::.::::.: :.:. :: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MANTTGRVPLWLIGTVAGILVIGLVGIFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBJ_ANTAG" ac="Q85CD4" length="40" description="Photosystem II reaction center protein J OS=Anthoceros angustus OX=48387 GN=psbJ PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <smithWatermanScore>190</smithWatermanScore>
+      <zScore>317.1</zScore>
+      <bits>60.9</bits>
+      <expectation>4.2e-10</expectation>
+      <identity>70.0</identity>
+      <positives>90.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MANT-GRIPLWLVGLVGGLAVITMLGLFIYGSYSGLGSSL</querySeq>
+      <pattern>::::-:::::::.: ..:. :: ..:.:.:::::::::::</pattern>
+      <matchSeq start="1" end="40">MANTTGRIPLWLIGTIAGILVIGLVGIFFYGSYSGLGSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

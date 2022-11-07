@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164035-0776-98872035-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164035-0776-98872035-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164035-0776-98872035-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0M0|PSAJ_PHATC" type="PROTEIN" length="41"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:40:35+00:00" end="2022-11-07T16:40:39+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSAJ_PHATC" ac="A0T0M0" length="41" description="Photosystem I reaction center subunit IX OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>271</score>
+      <smithWatermanScore>271</smithWatermanScore>
+      <initn>271</initn>
+      <init1>271</init1>
+      <opt>271</opt>
+      <zScore>472.6</zScore>
+      <bits>89.7</bits>
+      <expectation>9.2e-19</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSAJ_THAPS" ac="A0T0V1" length="41" description="Photosystem I reaction center subunit IX OS=Thalassiosira pseudonana OX=35128 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <smithWatermanScore>252</smithWatermanScore>
+      <initn>252</initn>
+      <init1>252</init1>
+      <opt>252</opt>
+      <zScore>440.8</zScore>
+      <bits>83.9</bits>
+      <expectation>5.5e-17</expectation>
+      <identity>85.4</identity>
+      <positives>100.0</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..:::::::::::::.:.:::::::::.::::::.:::::</pattern>
+      <matchSeq start="1" end="41">MNDFQKYLSTAPVLLTLWMTFTAGFIIEVNRFFPDMLGLYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSAJ_TRICV" ac="P49485" length="41" description="Photosystem I reaction center subunit IX OS=Trieres chinensis OX=1514140 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <smithWatermanScore>246</smithWatermanScore>
+      <initn>246</initn>
+      <init1>246</init1>
+      <opt>246</opt>
+      <zScore>430.7</zScore>
+      <bits>82.0</bits>
+      <expectation>2e-16</expectation>
+      <identity>85.4</identity>
+      <positives>100.0</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:...::::::::::::.:.::::::::::::::::.:::::</pattern>
+      <matchSeq start="1" end="41">MNDLQKYLSTAPVLLTLWMTFTAGFIIEINRFFPDMLGLYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSAJ_PORPU" ac="P51194" length="42" description="Photosystem I reaction center subunit IX OS=Porphyra purpurea OX=2787 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <smithWatermanScore>199</smithWatermanScore>
+      <initn>199</initn>
+      <init1>199</init1>
+      <opt>199</opt>
+      <zScore>351.7</zScore>
+      <bits>67.4</bits>
+      <expectation>5e-12</expectation>
+      <identity>71.8</identity>
+      <positives>92.3</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="41">-MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>   :: ::::::::. ..:.:::::::::.::::::.: .:.</pattern>
+      <matchSeq start="4" end="42">MNNNFTKYLSTAPVIGVLWMTFTAGFIIELNRFFPDVLYFYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSAJ_NEOYE" ac="Q1XDU3" length="42" description="Photosystem I reaction center subunit IX OS=Neopyropia yezoensis OX=2788 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <smithWatermanScore>199</smithWatermanScore>
+      <initn>199</initn>
+      <init1>199</init1>
+      <opt>199</opt>
+      <zScore>351.7</zScore>
+      <bits>67.4</bits>
+      <expectation>5e-12</expectation>
+      <identity>71.8</identity>
+      <positives>92.3</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="41">-MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>   :: ::::::::. ..:.:::::::::.::::::.: .:.</pattern>
+      <matchSeq start="4" end="42">MNNNFTKYLSTAPVIGVLWMTFTAGFIIELNRFFPDVLYFYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSAJ_RHDSA" ac="A6MVU6" length="42" description="Photosystem I reaction center subunit IX OS=Rhodomonas salina OX=52970 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <smithWatermanScore>198</smithWatermanScore>
+      <initn>198</initn>
+      <init1>196</init1>
+      <opt>198</opt>
+      <zScore>350.0</zScore>
+      <bits>67.1</bits>
+      <expectation>6.2e-12</expectation>
+      <identity>76.9</identity>
+      <positives>89.7</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="41">-MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>   :: :::::::::.:.::.:::.:::: ::::::.--:::</pattern>
+      <matchSeq start="4" end="40">MDSNFLKYLSTAPVLFTVWLSFTASFIIEANRFFPDM--LYFPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSAJ_GRATL" ac="Q6B947" length="42" description="Photosystem I reaction center subunit IX OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <initn>186</initn>
+      <init1>185</init1>
+      <opt>191</opt>
+      <zScore>338.2</zScore>
+      <bits>64.9</bits>
+      <expectation>2.8e-11</expectation>
+      <identity>78.4</identity>
+      <positives>91.9</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="39">-MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>   :. ::::: ::. .:::::::::::::::::::.:.:</pattern>
+      <matchSeq start="4" end="40">MNNNLLKYLSTIPVVGAIWLTFTAGFIIEINRFFPDILSLSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSAJ_GUITH" ac="O78456" length="42" description="Photosystem I reaction center subunit IX OS=Guillardia theta OX=55529 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <initn>189</initn>
+      <init1>189</init1>
+      <opt>191</opt>
+      <zScore>338.2</zScore>
+      <bits>64.9</bits>
+      <expectation>2.8e-11</expectation>
+      <identity>74.4</identity>
+      <positives>89.7</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="41">-MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>   :: ::::::::::::::.:::...:: :::.::.--:::</pattern>
+      <matchSeq start="4" end="40">MDNNFLKYLSTAPVLLTIWLSFTAALVIEANRFYPDM--LYFPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSAJ_STIHE" ac="Q06SH1" length="41" description="Photosystem I reaction center subunit IX OS=Stigeoclonium helveticum OX=55999 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <smithWatermanScore>188</smithWatermanScore>
+      <initn>169</initn>
+      <init1>168</init1>
+      <opt>188</opt>
+      <zScore>333.4</zScore>
+      <bits>64.0</bits>
+      <expectation>5.2e-11</expectation>
+      <identity>70.7</identity>
+      <positives>82.9</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..:. :::::::.   :::::::::::::::::: : . :</pattern>
+      <matchSeq start="1" end="41">MKDFKIYLSTAPVVAFAWLTFTAGFIIEINRFFPDPLVFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSAJ_MESVI" ac="Q9MUP4" length="42" description="Photosystem I reaction center subunit IX OS=Mesostigma viride OX=41882 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <smithWatermanScore>185</smithWatermanScore>
+      <initn>179</initn>
+      <init1>174</init1>
+      <opt>185</opt>
+      <zScore>328.2</zScore>
+      <bits>63.1</bits>
+      <expectation>1e-10</expectation>
+      <identity>73.0</identity>
+      <positives>89.2</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..::::::::::: :::. . ::..::::::::: :</pattern>
+      <matchSeq start="1" end="37">MQDFQKYLSTAPVLATIWFIILAGLLIEINRFFPDALLVPMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSAJ_CHLRE" ac="P59777" length="41" description="Photosystem I reaction center subunit IX OS=Chlamydomonas reinhardtii OX=3055 GN=psaJ PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <smithWatermanScore>183</smithWatermanScore>
+      <initn>170</initn>
+      <init1>164</init1>
+      <opt>183</opt>
+      <zScore>325.0</zScore>
+      <bits>62.4</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>65.9</identity>
+      <positives>85.4</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..:  :::::::. :::.:::::..:::::.::: : . :</pattern>
+      <matchSeq start="1" end="41">MKDFTTYLSTAPVIATIWFTFTAGLLIEINRYFPDPLVFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSAJ_PLETE" ac="A6YG80" length="41" description="Photosystem I reaction center subunit IX OS=Pleurastrum terricola OX=34116 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <smithWatermanScore>183</smithWatermanScore>
+      <initn>180</initn>
+      <init1>174</init1>
+      <opt>183</opt>
+      <zScore>325.0</zScore>
+      <bits>62.4</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>68.3</identity>
+      <positives>80.5</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>: ::  :::::::.  ::.:::::..::::::::: : . :</pattern>
+      <matchSeq start="1" end="41">MTNFTTYLSTAPVVALIWFTFTAGLLIEINRFFPDPLVFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSAJ_OLTVI" ac="Q20EV3" length="41" description="Photosystem I reaction center subunit IX OS=Oltmannsiellopsis viridis OX=51324 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <smithWatermanScore>179</smithWatermanScore>
+      <initn>169</initn>
+      <init1>163</init1>
+      <opt>179</opt>
+      <zScore>318.3</zScore>
+      <bits>61.2</bits>
+      <expectation>3.6e-10</expectation>
+      <identity>63.4</identity>
+      <positives>85.4</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..:  :::::::. . :.:::::..::::::::: :.. :</pattern>
+      <matchSeq start="1" end="41">MKDFTTYLSTAPVVAAAWFTFTAGLLIEINRFFPDPLAFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSAJ_BIGNA" ac="Q06J31" length="41" description="Photosystem I reaction center subunit IX OS=Bigelowiella natans OX=227086 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <smithWatermanScore>179</smithWatermanScore>
+      <initn>169</initn>
+      <init1>160</init1>
+      <opt>179</opt>
+      <zScore>318.3</zScore>
+      <bits>61.2</bits>
+      <expectation>3.6e-10</expectation>
+      <identity>68.3</identity>
+      <positives>87.8</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>: .:. ::::.::...::::::::.::::::.:::--:: :</pattern>
+      <matchSeq start="1" end="39">MSGFKGYLSTVPVVFAIWLTFTAGLIIEINRLFPD--GLVFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSAJ_TRIEI" ac="Q115B5" length="41" description="Photosystem I reaction center subunit IX OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <smithWatermanScore>177</smithWatermanScore>
+      <initn>177</initn>
+      <init1>177</init1>
+      <opt>177</opt>
+      <zScore>314.9</zScore>
+      <bits>60.6</bits>
+      <expectation>5.6e-10</expectation>
+      <identity>67.6</identity>
+      <positives>91.9</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:... ::::::::: :.:. .:::..::.::::::::</pattern>
+      <matchSeq start="1" end="37">MQDLLKYLSTAPVLATVWMIITAGILIEFNRFFPDLLFHPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSAJ_NEPOL" ac="Q9TKZ8" length="42" description="Photosystem I reaction center subunit IX OS=Nephroselmis olivacea OX=31312 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <smithWatermanScore>177</smithWatermanScore>
+      <initn>164</initn>
+      <init1>161</init1>
+      <opt>177</opt>
+      <zScore>314.8</zScore>
+      <bits>60.6</bits>
+      <expectation>5.7e-10</expectation>
+      <identity>61.0</identity>
+      <positives>82.9</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:..:  :::::::: ..:. : ::..::::::::: :.. :</pattern>
+      <matchSeq start="1" end="41">MKDFTTYLSTAPVLAAVWFGFLAGLLIEINRFFPDALSFSFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSAJ_OSTTA" ac="Q0P3J4" length="42" description="Photosystem I reaction center subunit IX OS=Ostreococcus tauri OX=70448 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <smithWatermanScore>176</smithWatermanScore>
+      <initn>168</initn>
+      <init1>168</init1>
+      <opt>176</opt>
+      <zScore>313.1</zScore>
+      <bits>60.3</bits>
+      <expectation>7.1e-10</expectation>
+      <identity>64.1</identity>
+      <positives>87.2</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="39">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:.::: :::::::: ..:.:  ::..::.:::::: :..</pattern>
+      <matchSeq start="1" end="39">MKNFQIYLSTAPVLAAVWFTVLAGILIELNRFFPDALSFPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSAJ_CHAGL" ac="Q8M9Y5" length="42" description="Photosystem I reaction center subunit IX OS=Chaetosphaeridium globosum OX=96477 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <smithWatermanScore>175</smithWatermanScore>
+      <initn>163</initn>
+      <init1>159</init1>
+      <opt>175</opt>
+      <zScore>311.4</zScore>
+      <bits>60.0</bits>
+      <expectation>8.8e-10</expectation>
+      <identity>63.4</identity>
+      <positives>80.5</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:. :. :::::::. :::. : ::..::::::::: : : .</pattern>
+      <matchSeq start="1" end="41">MQYFKTYLSTAPVIATIWFGFLAGLLIEINRFFPDALVLPYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSAJ_MARPO" ac="P12191" length="42" description="Photosystem I reaction center subunit IX OS=Marchantia polymorpha OX=3197 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <smithWatermanScore>174</smithWatermanScore>
+      <initn>166</initn>
+      <init1>163</init1>
+      <opt>174</opt>
+      <zScore>309.7</zScore>
+      <bits>59.6</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>63.4</identity>
+      <positives>80.5</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:.. . :::::::: :.:. : ::..::::::::: : : :</pattern>
+      <matchSeq start="1" end="41">MQDVKTYLSTAPVLATLWFGFLAGLLIEINRFFPDALVLPFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSAJ_LARDC" ac="Q85V00" length="44" description="Photosystem I reaction center subunit IX OS=Larix decidua OX=71402 GN=psaJ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <smithWatermanScore>174</smithWatermanScore>
+      <initn>168</initn>
+      <init1>161</init1>
+      <opt>174</opt>
+      <zScore>309.4</zScore>
+      <bits>59.6</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>63.4</identity>
+      <positives>80.5</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="41">MENFQKYLSTAPVLLTIWLTFTAGFIIEINRFFPDLLGLYF</querySeq>
+      <pattern>:.... ::::::::   :: :.::..::::::::: : : :</pattern>
+      <matchSeq start="1" end="41">MQDLKTYLSTAPVLAISWLIFVAGLLIEINRFFPDALTLTFPSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

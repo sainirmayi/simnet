@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-161627-0190-32481002-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-161627-0190-32481002-p2m.m9&quot; -m &quot;F10 fasta-R20221107-161627-0190-32481002-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A386KZ50|DABA_PSEMU" type="PROTEIN" length="482"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:16:27+00:00" end="2022-11-07T16:16:30+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="17">
+   <hit number="1" database="SP" id="DABA_PSEMU" ac="A0A386KZ50" length="482" description="Magnesium-dependent glutamate N-prenyltransferase OS=Pseudo-nitzschia multiseries OX=37319 GN=dabA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3167</score>
+      <smithWatermanScore>3167</smithWatermanScore>
+      <initn>3167</initn>
+      <init1>3167</init1>
+      <opt>3167</opt>
+      <zScore>3982.5</zScore>
+      <bits>746.3</bits>
+      <expectation>2.9e-214</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>482</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="482">MKFATSIVAAIATTGAAFTVIPQKLSHPSQLNALNTMGSISSITAESPKEVLSRVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYYINDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="482">MKFATSIVAAIATTGAAFTVIPQKLSHPSQLNALNTMGSISSITAESPKEVLSRVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYYINDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="KABA_DIGSM" ac="A0A4D6IA24" length="439" description="Magnesium-dependent glutamate N-prenyltransferase OS=Digenea simplex OX=945030 GN=kabA PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1987</score>
+      <smithWatermanScore>1987</smithWatermanScore>
+      <initn>1554</initn>
+      <init1>1179</init1>
+      <opt>1987</opt>
+      <zScore>2498.5</zScore>
+      <bits>471.6</bits>
+      <expectation>1.3e-131</expectation>
+      <identity>65.3</identity>
+      <positives>88.7</positives>
+      <overlap>435</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="36" end="465">SIVAAIATTGAAFTVIPQKLSHPSQLNALNTMGSISSITAESPKEVLSRVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIY-----ETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYYINDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              .. .....:.::: :.::: : .::::.::.:::::..::::..::.:.:::::::::::: :.....:::::.:::::..::.:::::...:-----.: :::::::: :: ... .: :.: ::..:. :::::::.::::::::::: .:. ::.: ::: .: ::. :.:::.:.. :::::::.:::::::::.::::::.: :::  ::: :. ::: :  :: :.:::.:::::::.::.:::::.:.::.:::::::::::.:::.:::.::.:::::...:::.. :::.:: :: :..::.  :::::::::::: ::::::.::::::::: :: -:::..::::.::.::..:.. ::..:. .:. ...:.:. :.:.::::::::::::..::.::: .::::::::::: .::..: :.:</pattern>
+      <matchSeq start="2" end="435">-----------------------------MSITTMKGVTSESPAEALSRFQTTGLTLNNPKDLYWMTEFLKEEFYDKGNYYYPIKTVCDGELIETELFCPFEPKLSPHYIQLYNSRDERSNLYAVPPKKTDMKKYNRINCEKMGSLMAPNSNYDDTEMVSLFYSMMYYLNDQTAHLKLPEEDIQPELVDELNDHVLQYLSVFLSIFKPREPQDLERIWNFLDFYQPYFKKVDGKIILHEKYQGRTPPQIGLIKKITGYVLERFAPKKNITQVIYEVIRYIKGIKQEIKIRGDKSFTLSLKEYDEFRDQVTSSPMAHSITDLTYDDFSYKAYMNPLFIKLEDLTSEIITYFNDVCTCDRERLDDDPFNSVFILRDLH-SLNYVKSCDLVVKHAHDKLSKFLEIKQTLLKESTNENEKKAIAQMIKTREDSLIGYTIHEICCVTNGYARDHKPLMKDYLEKNIFKKLKATN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="MTS22_SELML" ac="D8RNZ9" length="368" description="(3S,6E)-nerolidol synthase OS=Selaginella moellendorffii OX=88036 GN=SELMODRAFT_413294 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <smithWatermanScore>145</smithWatermanScore>
+      <initn>84</initn>
+      <init1>54</init1>
+      <opt>145</opt>
+      <zScore>182.4</zScore>
+      <bits>42.8</bits>
+      <expectation>0.014</expectation>
+      <identity>24.1</identity>
+      <positives>49.7</positives>
+      <overlap>191</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="238" end="421">PEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHE-----RFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDED-PFNSVFILMDLDP-SLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              :: :---:   . : . . : .   . :  -. . .  :   ...:::..: :..::. -...::   :--- :. . .::. .  :-----:.:     .: : :: :  :. .   ::. .  .:    :-  : . .:.  .:-. .:    : . :    .  ..: :...: .  ... :   .::</pattern>
+      <matchSeq start="118" end="300">FLLDDLLESSSKHEMPQLNLTISNLANGNSDEDY---TNPLLALYREVMEEIRAAMEPPL-LDRYVQCVGASLEAVKDQVHRRAEKSIP-GVEEYKLAR---RATGFMEAVGGIMTEFCIGIRLSQAQIQSPIFRELLNSVSDHVILVNDLLSFRKEFYGGDYHHNWISVLLHHSPRGTSFQDVVDRLCEMIQAEELSILALRKKIADEEGSDSELTKFAREFPMVASGSLVWSYVTGRYHGYGNPLLTGEIFSGTWLLHPMATVVLPSKFRMDTMRFSLAPKKRDSFP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="AHGD_VIBSJ" ac="H2IFE7" length="480" description="3,6-anhydro-alpha-L-galactose dehydrogenase OS=Vibrio sp. (strain EJY3) OX=1116375 GN=Vejahgd PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <smithWatermanScore>120</smithWatermanScore>
+      <initn>132</initn>
+      <init1>55</init1>
+      <opt>120</opt>
+      <zScore>148.0</zScore>
+      <bits>36.8</bits>
+      <expectation>1.1</expectation>
+      <identity>29.4</identity>
+      <positives>55.9</positives>
+      <overlap>102</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="359" end="456">EAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSL--NFAKSCDVVVEHAYNKMQAFLKLK--EEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              .:: :  :.. : .---.:..--:  .:  .: :.:.. .   .:. --::... :.: :-- .:: :: ::. . .  . ::. : :    : :    ..:</pattern>
+      <matchSeq start="352" end="448">GPKVNKRELDHMEALVAQALKEGAQLLHGGKRLTEGEFGKGFWF---EPTILGNVQQSMTIVHEEAFGPILPVIKFDTFEEVIDYANDSE--YGLATMICTRNMKYVHRLTHELECGEIYVNRGHGEQHQGFHNGYKLSGTGGEDGKYGFEQYLEKKTFYVNFD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="G6PD_BUCAI" ac="P57405" length="491" description="Glucose-6-phosphate 1-dehydrogenase OS=Buchnera aphidicola subsp. Acyrthosiphon pisum (strain APS) OX=107806 GN=zwf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <smithWatermanScore>121</smithWatermanScore>
+      <initn>80</initn>
+      <init1>53</init1>
+      <opt>121</opt>
+      <zScore>146.5</zScore>
+      <bits>36.5</bits>
+      <expectation>1.3</expectation>
+      <identity>20.8</identity>
+      <positives>52.6</positives>
+      <overlap>380</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="66" end="422">TMGSISSITAESPKEVLSRVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPI-----KTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFY-SMMYYINDQTAH--------LKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQD-LERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPS-QMPLIKTICEYVSEQFAPSKNITQVIWEVVR--YIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPF-NSVFILMDLDPSLNFAKSCDVV-VEHAYNKMQAFLK---LKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              ::: : -.. .. .. : : . :.-----::.   ..  . .::  -:: . . . .  .  .  :. -------.::  ::  ..:   :.  . ::  :: -:... :.   ..--------:.. .. .  .  .   : : : ..: ..:---::  .-.. . .. :. : .. ..   ...:.   . . :-:   .: .-----... : -:: ..  ..::--: .:: .: ..--- :.---:.:    ....: . .:  :-::.....:   .   .  .: .. :::...:.   :.  . :. . .-:...: .. .:.. :  :  . -.:. :.  .. ::---....  ... :  ::: .  :</pattern>
+      <matchSeq start="74" end="428">IIASGRADWSTEDYIEKIKTEVKNFLNEEINDLIWK-NLSSRIFFCNIDVHEPLHFFRLKTILKQKKNIIVYYCAV-PSNTLNSIFIGLGNAHLNSVP-------SRIVLEKPLGVCLKTSKKINDQISKYFLESQIFRIDHYLGKESILNLFALRFSNTCLFYNWNNKTIDHIQITVSEEVGI---EDRWNYFNMMGQMKDMVQNHLLQILTILTMDQPKNISSESIQHEKVKIL-----RSLNPI-NIHNINKKTVRGQYCSGVINEKKV---PSY---LEENGANKNSLTETFVAIKV-DLNNKQWSGVPFYLRTGKRLAHKYSEIVVFFKKKPTNLFKNLNSELLQNKLIIRLEPNPNIIFDFSVKAPGLEQEYKIENSQLKSSQFSKKYSKNSIDAYERLLFEIMRGVQSLFVCRDEIEAAWKWIDPIIHAWKNSKNNAPQLYMSGTWGPKNSDLLLAHDGRVWYEFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="STS10_POSPM" ac="B8PD44" length="336" description="Sesquiterpene synthase 10 OS=Postia placenta (strain ATCC 44394 / Madison 698-R) OX=561896 GN=STS-10 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <smithWatermanScore>114</smithWatermanScore>
+      <initn>150</initn>
+      <init1>88</init1>
+      <opt>114</opt>
+      <zScore>144.4</zScore>
+      <bits>35.6</bits>
+      <expectation>1.8</expectation>
+      <identity>18.6</identity>
+      <positives>52.9</positives>
+      <overlap>172</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="262" end="432">DGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLT-HERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVK</querySeq>
+      <pattern>                              :.:     .. . .   :...:  : . :-. . .:..  .. .: . .:  .  .. .  -   .   .. .:.:: :    .... . ::: . . :.      :..  ..    ...   .::.: ::    :. .:  ::..   . . ..--:.: .... :  .::</pattern>
+      <matchSeq start="133" end="301">NVYLKAMRDPEWNDGSVLAKMTKEFRARLLQYAGPGCYARFLKHCEDYVEAVAKEAEYR-ECGVVLDMASFETLRRENSAIRLCFGLFEYCLGVDLPEYVFEDPTFMTLYWAAADMVCWSNDVYSYNMEQAKGIGGNNIVTVLMQAKGIDVQAACDAVGEHCKLLMERYLDAKEKLPSWGPSVDD--AVAGYVQAMEHWIIGNLEWSFETQRYFGAVHAEVKATRVVMLRPREIDED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="STS18_POSPM" ac="A0A348B790" length="348" description="Delta(6)-protoilludene synthase 18 OS=Postia placenta (strain ATCC 44394 / Madison 698-R) OX=561896 GN=STS-18 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <smithWatermanScore>130</smithWatermanScore>
+      <initn>109</initn>
+      <init1>53</init1>
+      <opt>130</opt>
+      <zScore>144.0</zScore>
+      <bits>35.6</bits>
+      <expectation>1.9</expectation>
+      <identity>22.8</identity>
+      <positives>53.1</positives>
+      <overlap>228</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="199" end="415">INDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLD-----FYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEY-DDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILM-----DLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFL</querySeq>
+      <pattern>                              .: :. : :  :..: .   :..:-----. .:.  . .:..:: :-----------. . .   . :  .:...- . .   . :...:  .   :-: .   ..: :- . ::.. . :-..:: .:. .-.  ... .::. ::    .:..   ::. . .::. . :  : .:..:-----.:: .. .: .    .:  .--:.:: ..    ::  :. ::</pattern>
+      <matchSeq start="80" end="290">KAFDKCDFCLLAALAYPRARKEHLRTGCDLMNLFFVIDEYTDVEDANVCRDMVDIVIDALRRPHDPRPEGEVVLGE-----------IARQFWARAIETASPTSQ-RRFLETFIAYLESVVLQAADR-DCDAEHTVQTYLAQRRDNIGSYP-SYAVLELALD-IPDDVFYHPAMNELSLYATEMLIIDNDLVSYNREQASGDTNNILFVIMRQFNCSLDHAMAWAAAYHSQLEARF--MDAFKRMPSWGLEIDSQVEEYCQGIANWPRGNDCWSFESGRYFGDKGREVQKTRCVPLLPKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="POTA_LACLA" ac="Q9CGD4" length="428" description="Spermidine/putrescine import ATP-binding protein PotA OS=Lactococcus lactis subsp. lactis (strain IL1403) OX=272623 GN=potA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <smithWatermanScore>115</smithWatermanScore>
+      <initn>87</initn>
+      <init1>53</init1>
+      <opt>115</opt>
+      <zScore>143.0</zScore>
+      <bits>35.7</bits>
+      <expectation>2.1</expectation>
+      <identity>21.1</identity>
+      <positives>52.1</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="221" end="480">LNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEI-ITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILES-ASDE--EERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFN-PVESESVRLN</querySeq>
+      <pattern>                              :..    .. .:: ..::.: .   :..   ..::--. :  . :. :. . .  ...-::::-:. .:    : .:.: . : :-.: . . .. . .. . --..      :  . :..  : .-.   .:.    ::  .   .. .:.  : . .: ..    .. :    .  .   . .: .. -..: --:  .  .:::---:: :. .  ..   :-::  : ..:.  ..  :.:  .: .. :::- :...  :</pattern>
+      <matchSeq start="50" end="303">TTVLKDISFELEEGKFYTLLGASGSGKSTILNIIAGLLDATDGDVILDNKRINDLPANKRNVHTI--FQSYALFPNMNVFDNVAFALK-IKGV-DKKEIAKRVSESLKLVRLDGF-EKRSITKLSGGQKQRVA--IARAIIDRPKVLLLDESLSALDMKLRKDMQYELRELQQSLGITFIFVTHDQEEALAMSDWVFIMNEGEIVQSGTPTDIYDEPINHFVADFIGESNILNGRMI---EDYLVEFNGQKFEAV-DGGMRKNEPIEVVIRPEDIWFTLPDEGKFNVKVDTQLFRGVHYEIVAYDEFNNEWLIHSTHKAIVGETVGLDFDPEAIHIMRLNETEEEFDARIEEYVEEEETV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="STS8_POSPM" ac="A0A348B784" length="342" description="Delta(6)-protoilludene synthase 8 OS=Postia placenta (strain ATCC 44394 / Madison 698-R) OX=561896 GN=STS-08 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <smithWatermanScore>129</smithWatermanScore>
+      <initn>109</initn>
+      <init1>53</init1>
+      <opt>129</opt>
+      <zScore>142.9</zScore>
+      <bits>35.4</bits>
+      <expectation>2.1</expectation>
+      <identity>22.8</identity>
+      <positives>52.6</positives>
+      <overlap>228</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="199" end="415">INDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLD-----FYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEY-DDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILM-----DLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFL</querySeq>
+      <pattern>                              .: :. : :  :..: .   :..:-----. .:.  . .:..:: :-----------. . .   . :  .:...- . .   . :...:  .   :-: .   ..: :- . ::.. . :-..:: .:. .-.  . . .::. ::    .:..   ::. . .::. . :  : .:..:-----.:: .. .: .    .:  .--:.:: ..    ::  :. ::</pattern>
+      <matchSeq start="74" end="284">KAFDKCDFCLLAALAYPRARKEHLRTGCDLMNLFFVIDEYTDVEDANVCRDMVDIVIDALRRPHDPRPEGEVVLGE-----------IARQFWARAIETASPTSQ-RRFLETFIAYLESVVLQAADR-DCDAEHTVQTYLAQRRDNIGSYP-SYAVLELALD-IPDDIFYHPAMNELSLYATEMLIIDNDLVSYNREQASGDTNNILFVIMRQFNCSLDHAMAWAAAYHSQLEARF--MDAFKRMPSWGLEIDSQVEEYCQGIANWPRGNDCWSFESGRYFGDKGREVQKTRCVPLLPKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="FBXL5_SALSA" ac="C0HAC0" length="696" description="F-box/LRR-repeat protein 5 OS=Salmo salar OX=8030 GN=fbxl5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <smithWatermanScore>116</smithWatermanScore>
+      <initn>127</initn>
+      <init1>97</init1>
+      <opt>116</opt>
+      <zScore>138.9</zScore>
+      <bits>35.6</bits>
+      <expectation>3.6</expectation>
+      <identity>25.2</identity>
+      <positives>64.2</positives>
+      <overlap>123</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="348" end="469">VSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKP-LMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              ......:.. .:   .. ... .:.  :. -----.::.:   :. ::.. .:.: :. :.:...:.:.:  :...: : ...    : ..   :. .----.:-::. :  ::.-:.. ..:</pattern>
+      <matchSeq start="42" end="154">TGPHWRMKQLVGLYCEKLSQTNFSNNNDFRSFLQSLCATFKEFKMHEQIENEYIIGLLQQ-----RSCNVYNVHSDNKLSEMLSLFEKGLRSVKSENEQLNYAQQLKERLEAFTQDFLPHMKEEEEVF----QPMLMQYFTYEEL-KDIKKQVIAQHSSQQRWDCAAEVLKGLSLWSQAEELHKAFKYADHEKTDDELEKELCSTHISQLPTEILLCLFRYLGPEDLCHCGQVCSAWSDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="TPS4_PHYPO" ac="P9WEY4" length="337" description="Terpene synthase 4 OS=Physarum polycephalum OX=5791 GN=TPS4 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <smithWatermanScore>109</smithWatermanScore>
+      <initn>99</initn>
+      <init1>50</init1>
+      <opt>109</opt>
+      <zScore>138.0</zScore>
+      <bits>34.4</bits>
+      <expectation>4.0</expectation>
+      <identity>23.7</identity>
+      <positives>54.8</positives>
+      <overlap>186</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="259" end="439">SKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEV--VRYIKGVKDEIHIRGDKSFTLSLQEYDDFR--DKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIG-YVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFNPVESESVRLN</querySeq>
+      <pattern>                              .....: :..::  . . --. .. :.    ..:  :.. -.:.::   :--:  .:. .:-    ..:  .: .  ..:  ... .  .. :.: ::. .  ::.: .. .::. :  .---.:.:  .    . .  . .: :  ::. . :::  :.---.:  .:   :. ..:- :  : :</pattern>
+      <matchSeq start="147" end="324">IFRTGKAPEKNAKLNFSIVQLEDLLLRIFAMANDLAKSSDITARFMKSCEIYFVDGAVPMENFRQMKTLP-KLEEYLAVRTIDGGAAACIA-CFEIVAHLDLSDDIVNEPRVLRMCEIAGQQIAYANDIYSYHREKLHNNSMNSLNIRCQ---TLSFEDALTEQIAQLNGWVQEFETLKQSLAESALWEN---SLKMYITGMENIVMGCKVWSESCTRYNLKSLLTVVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="POTA_LACLS" ac="Q02Z10" length="426" description="Spermidine/putrescine import ATP-binding protein PotA OS=Lactococcus lactis subsp. cremoris (strain SK11) OX=272622 GN=potA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <initn>96</initn>
+      <init1>55</init1>
+      <opt>111</opt>
+      <zScore>138.0</zScore>
+      <bits>34.8</bits>
+      <expectation>4.0</expectation>
+      <identity>20.8</identity>
+      <positives>52.1</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="221" end="480">LNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEI-ITYFNDVCTSDRERLDEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILES-ASDE--EERLALARMIKTREDSLIGYVLHEVCCVEDGYARDHKPLMKAFLEEEITKSLAEKVKFN-PVESESVRLN</querySeq>
+      <pattern>                              :..    .. .:: ..::.: .   :..   ..::--. :  . :. :. . .  ...-::::-:. .:    : .:.: . : :-.: . . .. . .. . --..      :  . :..  : .-.   .:.    ::  .   .. .:.  : . .: ..    .. :    .  .   . .: .. -..: --:  .  ..::---:: :. .  ..   :-::  : ..:.  ..  :.:  .: .. :::- :...  :</pattern>
+      <matchSeq start="50" end="303">TTVLKDISFELEEGKFYTLLGASGSGKSTILNIIAGLLDATDGDVILDDKRINDLPANKRNVHTI--FQSYALFPNMNVFDNVAFALK-IKGV-DKKEIAKRVSESLKLVRLDGF-EKRSITKLSGGQKQRVA--IARAIIDRPKVLLLDESLSALDMKLRKDMQYELRELQQSLGITFIFVTHDQEEALAMSDWVFIMNEGEIVQSGTPTDIYDEPINHFVADFIGESNILNGKMI---EDYLVEFNGQKFEAV-DGGMRKNEPIEVVIRPEDIWFTLPNEGKFNVKVDTQLFRGVHYEIVAYDEFNNEWIIHSTHKAIVGETVGLDFDPEAIHIMRLNESEEEFDARIEEYVEEEETV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PRO1_ARMGA" ac="P0DL13" length="345" description="Delta(6)-protoilludene synthase OS=Armillaria gallica OX=47427 GN=PRO1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <initn>96</initn>
+      <init1>64</init1>
+      <opt>107</opt>
+      <zScore>135.3</zScore>
+      <bits>34.0</bits>
+      <expectation>5.7</expectation>
+      <identity>28.3</identity>
+      <positives>60.9</positives>
+      <overlap>92</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="284" end="374">TICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERL-DEDPFNSVFILMDLDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIG</querySeq>
+      <pattern>                              ... :.:: .:.-: ..-----:. . :.:-. :. ..  .-.  :. ..:.. :::: : ...   ::: . . :. -:.:  : : : :.</pattern>
+      <matchSeq start="161" end="244">AKKTASTQAQKRFIDTFDEYLESVVQQAADRNNSHVRGIESY-LEVR-----RNTIGAKP-SFALLEFDMQ-LPDEVINHPVIKELENSCIDMLCLGNDVVSYNLEQARDDDGHNIVTIAMNELRTDVAGAMIWVDEYHKQLESRFMENFKKVPRWGGPIDLQVARYCDGLGNWVRANDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="DGTL1_RHIEC" ac="Q2K976" length="405" description="Deoxyguanosinetriphosphate triphosphohydrolase-like protein OS=Rhizobium etli (strain CFN 42 / ATCC 51251) OX=347834 GN=RHE_CH01817 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <smithWatermanScore>108</smithWatermanScore>
+      <initn>69</initn>
+      <init1>58</init1>
+      <opt>108</opt>
+      <zScore>134.8</zScore>
+      <bits>34.1</bits>
+      <expectation>6.1</expectation>
+      <identity>21.9</identity>
+      <positives>52.1</positives>
+      <overlap>192</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="113" end="292">GDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLEL--YGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYYINDQTAHLKLPES---EIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKI-VLDEKYLVRTPSQMPLIKTICEYVSEQFAP----SKNITQVIWEVVRYIKGVKDEIHIR--GDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERLDEDPFNSVF</querySeq>
+      <pattern>                              : :::--:.: . ...     . -::--. .  ... . : ..   . . .. ..:  .  .  ::.-:  ---::  . :  . .:..   .. .::..::.: :..     .  ..  ....: .:-.:  : . :.:. : .     . :.. :: ---- :.. .  :--: .: :. :  . :--::</pattern>
+      <matchSeq start="195" end="380">LVKHNGPLLTPEGAGTRGPVPQPILDYCELHDLELATYASLEAQVAAIADDIA-YN--THDIDDGLRSGYLTFDMLEEIPFLAGLMAEVRARYPHLE-PSRFTHEIMRRQITRMVEDVIGVAQQRLSILRPESAADIRAADRVIATFSDAMAETDRQIKALLFKRIYRNPDIMRIRAGAAQIVTDLFAAYMASPKEMQSHYW--VDHIAGLADAPKARHVGDYLAGMTDTYAISAHRRLFDHTPDLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="FET3_YEAST" ac="P38993" length="636" description="Iron transport multicopper oxidase FET3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FET3 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <initn>99</initn>
+      <init1>53</init1>
+      <opt>111</opt>
+      <zScore>133.6</zScore>
+      <bits>34.5</bits>
+      <expectation>7.0</expectation>
+      <identity>21.5</identity>
+      <positives>47.5</positives>
+      <overlap>339</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="69" end="382">SISSITAESPKEVLSRVQDAGLTLTNPNDLYWMVDFLKEK--YYDNGDYYYPIKTVCDGESIDVKFYCPFEPS-LSPHYLELY----GSRDERASIYETTMKKYNRI--NSEKTSAICTP-YSSYGDTQIVAYFYSM--MYYINDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQF-APSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTA------SPMAHAV-SDLTHERFSYEAYTNPAFMELENRCSEIITYFNDVCTSDRERL----DEDPFNSVFILMD-LDPSLNFAKSCDVVVEHAYNKMQAFLKLKEEILESASDEEERLALARMIKTREDSLIGY</querySeq>
+      <pattern>                              :  :: :: .--   ::.. .:  ::  :. ... .   .. .- : :.  :.----.: :    . .  .   . .--:      . : -: :. : :---:  .:--.. :.:..      :-:.   : .  .: .    . :::...:  :. . .-----..      ..  ..  :  ::.:-------: ..  .::. :-  ....: :  . .   :.: : ..:   . .:. ..  .:- ::  :------. :  ..-:::  .  :: .:.. : .  .:  . : ....:   .  :. ----. :   .: ..::-:  ..:.:</pattern>
+      <matchSeq start="34" end="355">ALLSIAVLLFSMLSLAQAETHTFNWTTGWDYRNVDGLKSRPVITCNGQFPWPDITVNKGDRVQIYLTNGMNNTNTSMHFHGLFQNGTASMDGVPFLTQCPIAPGSTMLYNFTVDYNVGTYWYHSHTDGQ---YEDGMKGLFIIKDDSFPYDYDE-ELSLSLSEWYHDLVTDLTKSFMSVYNPTGAEPIPQ-----NLIVNNTMNLTWEVQPDTTYLLR-------IVNVGGFVSQYFWIEDHEMTVVEIDGITTEKNVTDMLYITVAQRYTVLVHTKND-TDKNFAIMQKFDDTMLDVIPSDLQLNATSYMVYNKTAALPTQNYVDSIDNFLDDFYLQPYEKEAIYGEPDHVITVDVVMDNLKNGVNYAFFNNITYTAPKVPTLMTVLSSGDQANNSEIYGSNTHTFILEKDEIVEIVLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PCNA_BRANA" ac="Q43124" length="263" description="Proliferating cell nuclear antigen OS=Brassica napus OX=3708 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <smithWatermanScore>103</smithWatermanScore>
+      <initn>79</initn>
+      <init1>48</init1>
+      <opt>103</opt>
+      <zScore>133.2</zScore>
+      <bits>33.2</bits>
+      <expectation>7.4</expectation>
+      <identity>23.2</identity>
+      <positives>54.4</positives>
+      <overlap>125</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="84" end="205">RVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYY--IND-QTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDFLDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLIKTICEYVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIR</querySeq>
+      <pattern>                              :    ::.   :...   :  : . ...   ..:.   .:. .: .. ...  :. :.. : ::   :. ::: ...     . .-- .:- ::.. : ..----  .:  .: :.: .:: .:.</pattern>
+      <matchSeq start="85" end="205">EGFEHYRCDRNLSMGMNLGNMSKMLKCAGNDDIITIKADDGGDTVTFMFESPKQDKIADFEMKLMDIDSEHLGIPDAEYHSIVRMPSNEFSRICKDLSTIGDTVVISVTKEGVKFSTAGDIGTANIVLRQN----TTVDKPEDAIVIEMNEPVSLSFALRYMNSFTKATPLSDTVTISLSSELPVVVEYKVAEMGYIRYYLAPKIEEDEEDKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PCNA2_DAUCA" ac="Q00265" length="365" description="Proliferating cell nuclear antigen large form OS=Daucus carota OX=4039 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <smithWatermanScore>108</smithWatermanScore>
+      <initn>93</initn>
+      <init1>48</init1>
+      <opt>105</opt>
+      <zScore>132.1</zScore>
+      <bits>33.5</bits>
+      <expectation>8.5</expectation>
+      <identity>22.5</identity>
+      <positives>47.1</positives>
+      <overlap>187</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="84" end="265">RVQDAGLTLTNPNDLYWMVDFLKEKYYDNGDYYYPIKTVCDGESIDVKFYCPFEPSLSPHYLELYGSRDERASIYETTMKKYNRINSEKTSAICTPYSSYGDTQIVAYFYSMMYYINDQTAHLKLPESEIESELIDILNDDILIYLNEFMSIFEPEDAQDLERIWDF-LDFYQPYFSKVDGKIVLDEKYLVRTPSQMPLI--KTICE--YVSEQFAPSKNITQVIWEVVRYIKGVKDEIHIRGDKSFTLSLQEYDDFRDKVTASPMAHAVSDLTHERFSYEAYTNPAFMELENRCSEIIT</querySeq>
+      <pattern>                              :    .:.  ::. :   :  : . ..:   ..:.   .:. .: :. ..   :. : . . ::   :. ::: ...--------.. . ...--------:   :: . .:.   : --:. .::::  .:     -: :   :...      : ..  .   :..:..--  : :--:.   .::</pattern>
+      <matchSeq start="85" end="253">EGFEHYRCDRNISMGMNLGNMAKMLRCAGNDDIVTMKADDDGDVITFMFESPTQDKISDFEMKLMDIDSEHLGIPESEYEAIVRMPSAEFARICKDLSTIGDTVVIS--------VTKEGVKF--------STRGDIGTANIVCRQNT--SVDKPEDATIIEMQETVSLTFALRYMNSFTKATPLANQVTISLSSELPVVVEYKIAEMGYIRYYLAPKIEEEDEAANYAQPAQNSAAAATSNNGTKKNEGNNKVDSKKRAIKSEFVDDSEAATDAQPQAKAKTKTEAGEDDDVEVMDTKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

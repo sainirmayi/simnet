@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170734-0127-11024651-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170734-0127-11024651-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170734-0127-11024651-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7G3Y9|LIPA2_PHATC" type="PROTEIN" length="314"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:07:34+00:00" end="2022-11-07T17:07:36+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="LIPA2_PHATC" ac="B7G3Y9" length="314" description="Lipoyl synthase 2, mitochondrial OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_28652 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2106</score>
+      <smithWatermanScore>2106</smithWatermanScore>
+      <zScore>2614.0</zScore>
+      <bits>491.8</bits>
+      <expectation>4.9e-138</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>314</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="314">MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="314">MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="LIPA_TOXGO" ac="Q86G50" length="543" description="Lipoyl synthase, apicoplast OS=Toxoplasma gondii OX=5811 GN=lipA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1403</score>
+      <smithWatermanScore>1403</smithWatermanScore>
+      <zScore>1732.6</zScore>
+      <bits>329.5</bits>
+      <expectation>6.1e-89</expectation>
+      <identity>66.9</identity>
+      <positives>87.3</positives>
+      <overlap>299</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="303">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              ::.::.::::----:..   :  ::: :.. ... ::::::::::.::::::::::::.:..:::::::::: :::..:.::::::::.:: :.:.::. : .::.:.:::::::. :::: :::.::::.:. ::..:.:::::::::: .::.::: :::::::::.:::.:: :.::: ::.:.::: .:. ::  .: :.::.::::::::: :::..:. :::   :::::.:::::::...:.:::::::: : .:....:.::::::::::.:::::::::.:..:.:   :</pattern>
+      <matchSeq start="215" end="509">SCGSGKNPELPLKGSKDEVIPRVGTSTAGPRPDWFHVPAP----QAASRGAEESRYQQLQKQIRGLDLHTVCEEAKCPNIGECWNGGTATLILLGDTCTRGCRFCAIKTSSKPPPPDPLEPEKVADAVAKWDIDYVVMTSVDRDDMPDGGAGHFARTVQLVKKAKPSMLIECLVSDFQGMEESVRTLAQSGLDVYAHNIETVRRLTPYVRDKRAKYDQSLRVLHLAKQFNPSLFTKSSIMLGLGETSEEVVRTLRDLRDHDVDVVTLGQYLRPTKQQLGVVEYVTPETFKKYQDIAEEMGFKYVASGPLVRSSYKAGEYYMKHLIDDARKHGRRETVKQVKLEADVGTLKGTTTTFQVNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="LIPA_PLAYO" ac="Q7RBD6" length="502" description="Lipoyl synthase, apicoplast OS=Plasmodium yoelii yoelii OX=73239 GN=lipA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1392</score>
+      <smithWatermanScore>1392</smithWatermanScore>
+      <zScore>1719.6</zScore>
+      <bits>327.0</bits>
+      <expectation>3.2e-88</expectation>
+      <identity>63.9</identity>
+      <positives>86.9</positives>
+      <overlap>305</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="305">------------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              ::. .:.::.::::.-: ----------.: ..:..: :: :::::::::::::::::: ::.::::::::::::: ::...:.:::::::  :::.::.:.  : ..:::.:::::::. ::::.:::.::.:.: .::..:.::::::::: .::.. ::::::::::::.:::.::: .::: ::::.::: .:..:: ..:.::::::::::::::..:: ::: : :.  .::.:::::::::..::.::::..:. :..:..:: .:::::.::::.::::: :::.....:..: :..</pattern>
+      <matchSeq start="158" end="451">EQNIKDCYTNENAQNDEKNKKVKIPKVGNAMPEKKPDWFHVPAPN-GE----------KYKKLKSDLGKLKLHTVCEEAQCPNIGECWNIGTATIMLLGDTCTRGCKFCSIKTSSKPPPPDINEPFNTAKAICEWDINYIVITSVDRDDLPDGGADHFAKTVELIKFSKPSILIECLVSDFQGNIDSIKRLALSGLDVYAHNIETVKRLQKYVRDKRANYEQSLYVLKKAKEINPNLYTKTSIMLGLGETQDEVLQTMKDARSNDIDVITFGQYLRPTKNHLNVVEYISPQMFNYYKDVGLKMGFKYIASGPLVRSSYMAGEYFMKNMVEKGRNQKNQQIKPVELKLVTELDKLTECIQKEIKHREISVFIQVHAFLVNVFVLVRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="LIPA_PLAF7" ac="Q8IDQ0" length="415" description="Lipoyl synthase, apicoplast OS=Plasmodium falciparum (isolate 3D7) OX=36329 GN=lipA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1360</score>
+      <smithWatermanScore>1360</smithWatermanScore>
+      <zScore>1681.6</zScore>
+      <bits>319.7</bits>
+      <expectation>4.2e-86</expectation>
+      <identity>62.6</identity>
+      <positives>87.1</positives>
+      <overlap>302</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="301">------------------------------MPKGR-PSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              ::.:.-:.::.: ::.----------- ..: ..::...::.:::::::::::::::::: ::.::::::::::::: ::...:.:.: :::  :::.::.:.  :..::.:::::::::. ::::.:::.::.:.: ..:..:.::::::::: .:::. ::.:::::::::.:::.::: .::: ::::.::: .:. :: ..:.::::::::::::::.::: ::: : :  ..::.:::::::::..:::.:.:..:. :..:.. : .:::::.::::.:::::::::.........</pattern>
+      <matchSeq start="118" end="408">LYANRYVHEGNENFSSTTKKLLLTPKVGNKMPEGKKPDWFHVAAPT-----------VAKYNKLKDDIKKLNLHTVCEEAQCPNIGECWNIGTATIMLLGDTCTRGCKFCSIKTSSNPLPPDINEPFNTAKAICEWNIDYVVLTSVDRDDLPDGGASHFAKTVELVKFSRPDILIECLVSDFQGNIDSVRKLAFSGLDVYAHNIETVKRLQKYVRDKRANYDQSLFVLKTAKEINPQLYTKTSIMLGLGETKEEVIQTMYDARKNNIDVITFGQYLRPTKNHLSIVQYISPQMFEYYKEEGLKMGFKYIASGPLVRSSYKAGEYFIKNLVNQRNKDKKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LIPA_PLAVS" ac="A5K883" length="442" description="Lipoyl synthase, apicoplast OS=Plasmodium vivax (strain Salvador I) OX=126793 GN=lipA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1357</score>
+      <smithWatermanScore>1357</smithWatermanScore>
+      <zScore>1677.3</zScore>
+      <bits>319.0</bits>
+      <expectation>7.3e-86</expectation>
+      <identity>62.0</identity>
+      <positives>86.5</positives>
+      <overlap>303</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="303">------------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              ::. .:.::.::::. -----------..: ..: .:.:: :::::::::::::::::: ::.::::::::::::: ::...:.::: :::  :::.::.:.  : ..:.:::::::::. ::::.:::.:..:.: ..:..:.::::::::: .::.. :: ::..:::::.:::.::: :::: ::::.::: .:. :: ..: ::::::::::::::..:: :.:.:.:  ..::.:::::::::..::.:::::.:. ::.:.. : .:::::.::::.:::::::::..........:</pattern>
+      <matchSeq start="143" end="434">LKESPANWGKDKQEEQQSTDRLPLPKVGNKMPEKKPDWFHVPAPTG-----------KKYNELKADLKKLKLHTVCEEAQCPNIGECWNIGTATIMLLGDTCTRGCKFCSIKTSSKPLPPDANEPFNTAKAICEWDINYVVLTSVDRDDLPDGGASHFAKTIELIKFSRPEILIECLVSDFQGNVDSIRKLANSGMEVYAHNIETVRRLQKFVRDRRANYEQSLWVLKTAKEINPLLYTKTSIMLGLGETKQEVLQAMADVRQNNIDVITFGQYLRPTKNHLNVVEYVSPQMFDYYKEEGMKMGFKYIASGPLVRSSYKAGEYFMKNLVEQRRGVKLHAEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LIPA_PLAKH" ac="B3L8F2" length="442" description="Lipoyl synthase, apicoplast OS=Plasmodium knowlesi (strain H) OX=5851 GN=lipA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1347</score>
+      <smithWatermanScore>1347</smithWatermanScore>
+      <zScore>1664.8</zScore>
+      <bits>316.7</bits>
+      <expectation>3.6e-85</expectation>
+      <identity>61.7</identity>
+      <positives>85.8</positives>
+      <overlap>303</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="303">------------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              ::. .:.::.::::. -----------..: ..:..:.:: :::::::::::::::::: ::.::::::::::::: ::...:.:::  ::  :::.::.:.  : ..:.:::::::::. ::::.:::.:..:.: ..:..:.::::::::: .::.. :: ::..:::::.:::.::: :::: ::::.::: .:. :: ..: ::::::::::::::.::: ..:.:.:  ..::.:::::::::..::.:::::.:. :: :.. : .:::::.::::.:::::::::.... .....:</pattern>
+      <matchSeq start="143" end="434">RKESATNVEKEKKEKEQQEERLPVPKVGNKMPEKKPDWFHVPAPTG-----------KKYNKLKEDLKKLKLHTVCEEAQCPNIGECWNIGTATIMLLGDTCTRGCKFCSIKTSSKPLAPDANEPFNTAKAICEWDINYVVLTSVDRDDLPDGGASHFAKTIELIKFSRPEILIECLVSDFQGNVDSIRKLANSGMEVYAHNIETVRRLQKFVRDRRANYEQSLRVLKIAKEINPMLYTKTSIMLGLGETKEEVLEAMSDVRQHNIDVITFGQYLRPTKNHLNVVEYVSPQMFDFYKEEGMKMGFKYIASGPLVRSSYKAGEYFMKSLVEQRRGAKTHAQG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="LISC_ARATH" ac="Q8LEE8" length="394" description="Lipoyl synthase, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=LIP1P PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1321</score>
+      <smithWatermanScore>1321</smithWatermanScore>
+      <zScore>1633.6</zScore>
+      <bits>310.8</bits>
+      <expectation>2e-83</expectation>
+      <identity>61.6</identity>
+      <positives>85.7</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="306">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  ::-:: ----------:. .::.::..:.:.::::::::::::::::::-----:.:::.::::::::: ::::.:. .::::::.:: .::.:...:::::::.:::::::: :::. ::::::. .:..::....:::.:::.: :..:.::. :::::.:::::::.::: .::: ::.:.::.:.:.:::. :: . ::::::::::::.::. ..:.::::: ::..:.::::.::  ::.: ::::::::: ..  ::..::.::::::.:::::.:::.... :.:.  ...</pattern>
+      <matchSeq start="97" end="392">LMELEGKKSEPYPGGMPKMGPFTGRDPNVKKPAWLRQKAP-QGE----------RFQEVKESLSRLNLNTVCEEAQCPNIGECWNGGGDGVATATIMVLGDTCTRGCRFCAVKTSRNPPPPDPMEPENTAKAIASWGVDYIVITSVDRDDIPDGGSGHFAQTVKAMKRHKPDIMIECLTSDFRGDLEAVDTLVHSGLDVFAHNVETVKRLQRLVRDPRAGYEQSMSVLKHAKISKPGMITKTSIMLGLGETDEELKEAMADLRAIDVDILTLGQYLQPTPLHLTVKEYVTPEKFDFWKTYGESIGFRYVASGPLVRSSYRAGELFVKTMVKESYSKSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LISC1_POPTR" ac="B9I666" length="376" description="Lipoyl synthase 1, chloroplastic OS=Populus trichocarpa OX=3694 GN=LIP1P-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1306</score>
+      <smithWatermanScore>1306</smithWatermanScore>
+      <zScore>1615.3</zScore>
+      <bits>307.3</bits>
+      <expectation>2.1e-82</expectation>
+      <identity>62.3</identity>
+      <positives>84.1</positives>
+      <overlap>308</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="307">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .: :..  ::-:: ----------:: .::.::..: :.:::.::::::::::::::-----:.:::.::::::::: ::::.:. .::::::.::..:: :...:::::::.:::::::. :::. ::::::. .:. ::...::::.:::.: : .:.::. :::::.:::::::.::: .::: ::.:.::::.:.:::. :  . :::::::::::...:: ..:.::::::::..::::::.::  ::.: ::::::::  ... ::..::.::::::.:::::.:::.... :.:.   :::</pattern>
+      <matchSeq start="77" end="373">IDAKHPQISSINSNGGGKMGSYTGRDPNVKKPEWLRQKAP-QGE----------RYDEVKESLSRLKLNTVCQEAQCPNIGECWNGGGDGIATATIMVLGDTCTRGCRFCAVKTSRNPPPPDPMEPLNTALAIASWGVDYIVITSVDRDDLPDGGSGHFAQTVRAMKELKPEIMVECLTSDFRGDLKAVDTLVHSGLDVFAHNVETVKRLQRIVRDPRAGYEQSLSVLKHAKISKKGMITKTSIMLGLGESDNEVKEAMADLRAIGVDILTFGQYLQPTPLHLTVKEYVTPEKFAFWKEYGESIGFRYVASGPLVRSSYRAGELFVKTMVKESVKEAAAIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="LISC2_POPTR" ac="B9N2B0" length="397" description="Lipoyl synthase 2, chloroplastic OS=Populus trichocarpa OX=3694 GN=LIP1P-2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1305</score>
+      <smithWatermanScore>1305</smithWatermanScore>
+      <zScore>1613.5</zScore>
+      <bits>307.1</bits>
+      <expectation>2.6e-82</expectation>
+      <identity>62.0</identity>
+      <positives>84.4</positives>
+      <overlap>308</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="307">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .: :..  ::-:: ----------:. .::.:...:.:.:::.::::::::::::::-----:.:::.::::::::: ::::.:.  ::::::.::..:: :...:::::::.:::::::..:::. ::::::. .:. ::...::::.:::.: : .:.::. :::::.:::::::.::: .::: ::.:.::::.:.:::: :  . ::::::::::::..:: ..::::::: ::..::::::.::  ::.: :::.:::: .... ::..::.::::::.:::::.:::.... :.:.   :::</pattern>
+      <matchSeq start="98" end="394">VDLKNNEKGPYPYPGGGKMGPYTGRDLNEKKPEWLRQRAP-QGE----------RFEEVKESISRLNLNTVCQEAQCPNIGECWNGGGDGIATATIMVLGDTCTRGCRFCAVKTSRTPPPPDPMEPLNTALAIASWGVDYIVITSVDRDDLSDGGSGHFAQTVRAMKELKPEIMVECLTSDFRGDLKAVDTLVHSGLDVFAHNVETVKRLQRIVRDPRAGYEQSLSVLKHAKVSKKGMITKTSIMLGLGETDDEVKEAMTDLRAIDVDILTFGQYLQPTPLHLTVKEYVSPEKFAYWKEYGESIGFRYVASGPLVRSSYRAGELFVKTMVKESAKEAAAIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="LISC2_MAIZE" ac="C0PN26" length="367" description="Lipoyl synthase 2, chloroplastic OS=Zea mays OX=4577 GN=LIP1P-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1288</score>
+      <smithWatermanScore>1288</smithWatermanScore>
+      <zScore>1593.1</zScore>
+      <bits>303.2</bits>
+      <expectation>3.6e-81</expectation>
+      <identity>58.9</identity>
+      <positives>84.2</positives>
+      <overlap>316</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="309">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  :-.:: ----------.::....:. .: :.::: :::::::::::::: :-----------:::.::::::::: ::::.:..:::::::.::..:: ::..:::::.:::::::::. :::..::::::. ::. ::..:::::.:::.: :... .:: :::::::::.:::. ::  ::: ::.:.:::..:.:::  . .. ::.:::::::::.::: :.: ::::::::..:.::::.:.:.::.: :::::.::. ... ::..::.::::::.:::::.:::...........::...:</pattern>
+      <matchSeq start="54" end="358">ARCRAEAAAPVWTASRASAGPYTGRDPEVKKPAWLRQRA-AQGE----------KYARLRESIGELKLNTVCVEAQCPNIGECWNGGGGAGGEGDGIATATIMVLGDTCTRGCRFCAVKTSNKPPPPDPLEPLNTALAVASWGVDYVVLTSVDRDDLPDGGSSHFAQTVKALKELKPGILVECLTSDFRGDLEAISSLANSGLDVYAHNIETVRSLQRVVRDPRAGYDQSLAVLKHAKGSREDMITKSSIMLGLGETDEEVKQAMMDLRAIGVDILTLGQYLQPSERHLTVREYVTPQKFQFWKEYGESVGFRYVASGPLVRSSYRAGELFIQNLVRNNKTESSMDPYAEITKSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="LISC2_ORYSI" ac="B8B016" length="384" description="Lipoyl synthase 2, chloroplastic OS=Oryza sativa subsp. indica OX=39946 GN=LIP1P-2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1283</score>
+      <smithWatermanScore>1283</smithWatermanScore>
+      <zScore>1586.5</zScore>
+      <bits>302.0</bits>
+      <expectation>8.4e-81</expectation>
+      <identity>60.3</identity>
+      <positives>81.4</positives>
+      <overlap>317</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="307">-----------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              : :-:   . ::  . .     .:.  .::....:: .: :.::: :::::::::::::: :-----------::::::::::::: ::::.:..:::::: .::..:: ::..:::::.:::::::::. :::. ::::::. ::. ::..:::::.:::.: :..: .:: :::::.:::.:::. :: .::: :: :.:::..:.:::  :  . ::.:::::::::.::: ::: ::::: ::..:.::::.:::.:: : ::::::::: ... ::..:: ::::::.:::::.:::............: :</pattern>
+      <matchSeq start="65" end="380">LTFRARPNSVSIVRCDADSPPEGSAVAGWAPPG-PYTGRDPAARKPAWLRQRAAQGEKYARLRESLGELKLNTVCVEAQCPNIGECWNGGGGAGGDGDGIATATIMLLGDTCTRGCRFCAVKTSNKPPPPDALEPLRTAVAVASWGVDYVVLTSVDRDDLPDGGSGHFAQTVKALKELKPGILVECLTSDFRGDLEAVSSLASSGLDVFAHNIETVRSLQRIVRDPRAAYDQSLAVLKHAKNCKDGMVTKSSIMLGLGETDEEVKQTMCDLRAIDVDILTLGQYLQPTERHLRVREYVTPEKFDFWKEYGESLGFLYVASGPLVRSSYRAGELFVQNLVRRKKAELAPTLQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="LISC1_MAIZE" ac="B6TN12" length="361" description="Lipoyl synthase 1, chloroplastic OS=Zea mays OX=4577 GN=LIP1P-1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1278</score>
+      <smithWatermanScore>1278</smithWatermanScore>
+      <zScore>1580.8</zScore>
+      <bits>300.9</bits>
+      <expectation>1.7e-80</expectation>
+      <identity>59.8</identity>
+      <positives>84.2</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="304">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  :-.:: ----------.::....:. .: :.::: :::::::::::::: :-----------:::.::::::::: ::::.:..:::::::.::..:: ::..:::::.:::::::::. :::..::::::. ::. ::..:::::.:::.: :... .:: :::::::::.:::. :: .::: ::.:.:::..:.:::. .  . ::.:::::::::.::: :.: ::::::::..:.::::.:::.::.: ::::::::. ... ::..::.::::::.:::::.:::...........:</pattern>
+      <matchSeq start="57" end="356">ARCHAEAAPPVGTASRAPAGPYTGRDPEVKKPAWLRQRA-AQGE----------KYARLRESIGELKLNTVCVEAQCPNIGECWNGGGGAGGEGDGIATATIMVLGDTCTRGCRFCAVKTSNKPPPPDPLEPLNTALAVASWGVDYVVLTSVDRDDLPDGGSSHFAQTVKALKELKPGILVECLTSDFRGDLEAISSLASSGLDVYAHNIETVRSLQRIVRDPRAGYDQSLAVLKHAKACREGMVTKSSIMLGLGETDEEVKQAMMDLRAIGVDILTLGQYLQPTERHLTVREYVTPEKFQFWKEYGESVGFRYVASGPLVRSSYRAGELFVQNLVRNNKTGSSSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="LISC2_ORYSJ" ac="Q6L534" length="384" description="Lipoyl synthase 2, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=LIP1P-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1278</score>
+      <smithWatermanScore>1278</smithWatermanScore>
+      <zScore>1580.2</zScore>
+      <bits>300.9</bits>
+      <expectation>1.9e-80</expectation>
+      <identity>59.9</identity>
+      <positives>81.4</positives>
+      <overlap>317</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="307">-----------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              : :-:   . ::  . .     .:.  .::....:: .: :.::: :::::::::::.:: :-----------::::::::::::: ::::.:..:::::: .::..:: ::..:::::.:::::::::. :::. ::::::. ::. ::..:::::.:::.: :..: .:: :::::.:::.:::. :: .::: :: :.:::..:.:::  :  . ::.:::::::::.::: ::: ::::: ::..:.::::.:::.:: : ::::::::: ... ::..:: ::::::.:::::.:::............: :</pattern>
+      <matchSeq start="65" end="380">LTFRARPNSVSIVRCDADSPPEGSAVAGWAPPG-PYTGRDPAARKPAWLRQRAAQGEKYARLRESLGELKLNTVCVEAQCPNIGECWDGGGGAGGDGDGIATATIMLLGDTCTRGCRFCAVKTSNKPPPPDALEPLRTAVAVASWGVDYVVLTSVDRDDLPDGGSGHFAQTVKALKELKPGILVECLTSDFRGDLEAVSSLASSGLDVFAHNIETVRSLQRIVRDPRAAYDQSLAVLKHAKNCKDGMVTKSSIMLGLGETDEEVKQTMCDLRAIDVDILTLGQYLQPTERHLRVREYVTPEKFDFWKEYGESLGFLYVASGPLVRSSYRAGELFVQNLVRRKKAELAPTLQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="LISC_SORBI" ac="C5XKZ1" length="368" description="Lipoyl synthase, chloroplastic OS=Sorghum bicolor OX=4558 GN=LIP1P PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1274</score>
+      <smithWatermanScore>1274</smithWatermanScore>
+      <zScore>1575.7</zScore>
+      <bits>299.9</bits>
+      <expectation>3.3e-80</expectation>
+      <identity>60.1</identity>
+      <positives>84.2</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="304">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  :-.::----------..::....:. .: :.::: :::::::::::::: :-----------:::.::::::::: ::::.:..:::::::.::..:: ::..:::::.:::::::::. :::..::::::. ::. ::..:::::.:::.: :..: .:: :::::::::.:::. :: .::: ::.:.:::..:.:::  .  . ::.:::::::::.::: :.: ::::::::..:.::::.:::.::.: ::::::::. ... ::..::.::::::.:::::.:::...........:</pattern>
+      <matchSeq start="64" end="363">RCRAEAAPPTVGTASRAPAGPYTGRDPEVKKPAWLRQRA-AQG----------DKYARLRESIGELKLNTVCVEAQCPNIGECWNGGGGAGGEGDGIATATIMVLGDTCTRGCRFCAVKTSNKPPPPDPLEPLNTALAVASWGVDYVVLTSVDRDDLPDGGSSHFAQTVRALKELKPGILVECLTSDFRGDLEAVSSLANSGLDVYAHNIETVRSLQRIVRDPRAGYDQSLAVLKHAKDCREGMITKSSIMLGLGETDEEVKQAMIDLRAIGVDILTLGQYLQPTERHLTVREYVTPEKFQFWKEYGESVGFRYVASGPLVRSSYRAGELFVQNLVRNNKTGSSSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LISC_CHLRE" ac="A8I2V9" length="430" description="Lipoyl synthase, chloroplastic OS=Chlamydomonas reinhardtii OX=3055 GN=LIP1P PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1273</score>
+      <smithWatermanScore>1273</smithWatermanScore>
+      <zScore>1572.9</zScore>
+      <bits>299.7</bits>
+      <expectation>4.8e-80</expectation>
+      <identity>62.9</identity>
+      <positives>82.6</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="306">------------------------------MP-KGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNG--GTGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVG-ENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:-...:.:..  ::-::  ----------:. .::.:. : : :::::::::::::::::--.:.::::::::::::: ::::::   :::::: :: .:: ::..::: :.:::::::::. :::..::: ::. ::: .:..:::::. ::.: ::.:. :: :::::::::::::::::  ::: ::.:.:.:..:. ::--.  .:::.:::::::::..:: .:: ::.:.:::. :.::::.:: ::: :.:.::::::...:. :-:..::.:::::::::::::::::.:. ::...:..:</pattern>
+      <matchSeq start="120" end="416">SKSAAPVSPFAAPSPGSPSASSMLGPSLGALPNQNKPAWLRQRAP-QGEI----------YSGLKDQLRGLKLATVCEEAQCPNIGECWNGELATATIMLLGDTCTRGCRFCAVNTARTPPPPDPNEPVNTATAVASWGVGYVVLTSVDRDDMPDGGSEHFAATVRTLKQLRPGILVECLTPDFKGDLDAVRHLARSGLDVYAHNVETVERLQKRVRDPRAGYMQTLDVLRAAK--ECGVYTKSSIMLGLGETDDEVIDTMLDLKAVGVDIFTLGQYLQPTPHHLPVTEFVTPEKFEYWRKFGQEEIGFRYVASGPMVRSSYKAGEFFLHSMIESDRAKARAAQEGAAGRVRPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LISC_RICCO" ac="B9RX57" length="364" description="Lipoyl synthase, chloroplastic OS=Ricinus communis OX=3988 GN=LIP1P PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1268</score>
+      <smithWatermanScore>1268</smithWatermanScore>
+      <zScore>1568.3</zScore>
+      <bits>298.6</bits>
+      <expectation>8.6e-80</expectation>
+      <identity>61.0</identity>
+      <positives>83.4</positives>
+      <overlap>308</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="307">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .: :..  ::-:: ----------:. .:: ::..: :.::::::::::::::::::-----:.::::::::::::: ::::.:. .: ::::.:: .:: :...:::::::::::::::. :::. ::..::: .:. ::...::::.:::.: :..::::. :::::.:::.:::.::: .::: ::.:.::::.:.:::  :  . ::.:::::::::..:. ..:.::::: ::..:.::::.::  ::.: ::::::::  ... ::..::.::::::::::::.:::.... :.:.. ...:</pattern>
+      <matchSeq start="65" end="361">SPSSNTKTTTVTVPSKKTMGPYTGRDPNVKKPEWLRQRAP-QGE----------RFQEVKHSLSSLKLNTVCEEAQCPNIGECWNGGGDGIATATIMLLGDTCTRGCRFCAVKTSRNPSPPDPLEPQNTALAIASWGVDYIVLTSVDRDDLPDGGSGHFSETVQAMKKLKPEIMVECLTSDFRGDLEAVETLVHSGLDVFAHNIETVKRLQRIVRDPRAGYEQSLSVLKHAKHSKEGMITKSSIMLGLGETDDELKEAMADLRAIDVDILTLGQYLQPTPLHLTVKEYVTPEKFAFWKEYGESIGFRYVASGPMVRSSYRAGELFVKTMVKERSSNSAAKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LISC1_ORYSI" ac="B8AA76" length="370" description="Lipoyl synthase 1, chloroplastic OS=Oryza sativa subsp. indica OX=39946 GN=LIP1P-1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1267</score>
+      <smithWatermanScore>1267</smithWatermanScore>
+      <zScore>1566.9</zScore>
+      <bits>298.3</bits>
+      <expectation>1e-79</expectation>
+      <identity>60.0</identity>
+      <positives>83.9</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="303">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  :-.:: ----------.::....:. .: :.::: :::::::::::::: :-----------:::.::::::::: ::::.:..:::::::.::..:: ::..:::::.:::::::::. :::..::::::. ::. ::..:::::.:::.: :..: .:: :::::.:::.:::. :: .::: ::.:.:::..:.:::  :  . ::.:::::::::.::: :.: ::::::::..:.::::.:::.::.: ::::::::. ... ::..::.::::::.:::::.:::...........</pattern>
+      <matchSeq start="65" end="363">RCRAEAAPPAPAPAARRAAGPYTGRDPEVKKPAWLRQRA-AQGE----------KYARLRESIGELKLNTVCVEAQCPNIGECWNGGGGAGGEGDGIATATIMVLGDTCTRGCRFCAVKTSNKPPPPDPLEPLNTALAVASWGVDYVVLTSVDRDDLPDGGSSHFAQTVRALKELKPGILVECLTSDFRGDLEAVSALANSGLDVFAHNIETVRSLQRIVRDPRAGYDQSLAVLKHAKSCKEGMITKSSIMLGLGETDEEVKQAMIDLRAIGVDILTLGQYLQPTERHLTVREYVTPEKFQFWKEYGESVGFRYVASGPLVRSSYRAGELFVQNLVRNNKPKLPASS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="LISC1_ORYSJ" ac="Q5ZAQ2" length="370" description="Lipoyl synthase 1, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=LIP1P-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1267</score>
+      <smithWatermanScore>1267</smithWatermanScore>
+      <zScore>1566.9</zScore>
+      <bits>298.3</bits>
+      <expectation>1e-79</expectation>
+      <identity>60.0</identity>
+      <positives>83.9</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="303">--------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGGTG-----------TIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              .:.:..  :-.:: ----------.::....:. .: :.::: :::::::::::::: :-----------:::.::::::::: ::::.:..:::::::.::..:: ::..:::::.:::::::::. :::..::::::. ::. ::..:::::.:::.: :..: .:: :::::.:::.:::. :: .::: ::.:.:::..:.:::  :  . ::.:::::::::.::: :.: ::::::::..:.::::.:::.::.: ::::::::. ... ::..::.::::::.:::::.:::...........</pattern>
+      <matchSeq start="65" end="363">RCRAEAAPPAPAPAARRAAGPYTGRDPEVKKPAWLRQRA-AQGE----------KYARLRESIGELKLNTVCVEAQCPNIGECWNGGGGAGGEGDGIATATIMVLGDTCTRGCRFCAVKTSNKPPPPDPLEPLNTALAVASWGVDYVVLTSVDRDDLPDGGSSHFAQTVRALKELKPGILVECLTSDFRGDLEAVSALANSGLDVFAHNIETVRSLQRIVRDPRAGYDQSLAVLKHAKSCKEGMITKSSIMLGLGETDEEVKQAMIDLRAIGVDILTLGQYLQPTERHLTVREYVTPEKFQFWKEYGESVGFRYVASGPLVRSSYRAGELFVQNLVRNNKPKLPASS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LIAS_PICSI" ac="A9NNH7" length="386" description="Lipoyl synthase, mitochondrial OS=Picea sitchensis OX=3332 GN=LIP1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1235</score>
+      <smithWatermanScore>1235</smithWatermanScore>
+      <zScore>1526.6</zScore>
+      <bits>290.9</bits>
+      <expectation>1.8e-77</expectation>
+      <identity>58.0</identity>
+      <positives>80.1</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="307">-----------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPE-LYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              :  .:.:.:. .:. -----------..:. .: .:....::::::::.:::.::::.::-----:.:::.::::::::: ::::.:.  :::::: :: ..:::.:.::.::.:::::::::. : :. :::.::: ::: ::..::: :: ::::  . :. .: :::::.:::.::::.::  ::: :::..::: .:. ::. .: -. ::::.::: :::  .: .::  .:  ::::.:::::.:::..:..: :::::: :..:...: .:::.::::::::::::::::::.. ::. .: .:.</pattern>
+      <matchSeq start="82" end="382">LANGGPTLSDFLTRNLGEEPYSVDVGTKKNPLPKPKWMKAAVPGG-----------DKYTAIKAKLREMNLHTVCEEAKCPNLGECWSGGETGTATATIMILGDTCTRGCRFCAVKTSRTPPPPDPNEPTNVAEAIVSWGLDYVVLTSVDRDDLPDQGSGHFAKTVQKLKQLKPKMLVEALVPDFQGNSECVQKVATSGLDVFAHNIETVEELQRVVRDHRANFNQSLEVLKMAKTYSPLGVLTKTSVMLGCGETPAQVIETMEKVREAGVDVITFGQYMRPTKRHMAVSEYVTPEAFEKYQKLGMEMGFRYVASGPMVRSSYKAGEFYIKSMIEDDRKKASSSSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="LIAS_DANRE" ac="Q6PHG4" length="399" description="Lipoyl synthase, mitochondrial OS=Danio rerio OX=7955 GN=lias PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1232</score>
+      <smithWatermanScore>1232</smithWatermanScore>
+      <zScore>1522.5</zScore>
+      <bits>290.2</bits>
+      <expectation>3e-77</expectation>
+      <identity>59.0</identity>
+      <positives>82.1</positives>
+      <overlap>312</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="312">-------------------------MPKGRPSWFKVPAPSQGTQSTYSTASYSRYAQVKDSLQKLDLHTVCEEAQCPNIGECWNGG-----TGTIMLLGDTCTRGCMFCAVNTDSKPPPPDPFEPFKTAEAVVAWGVDYIVLTSVDRDDIADGGAQHFAQTVQLLKQNKPNLLVECLVSDFQGMLDSVETLALSGLDVYAHNVETVERLQPFVRDARANYQQSLSTLQHAKVVKPELYTKTSIMLGLGETEEEVTQTMTDLRAIGVDVVTFGQYLRPTEHHLSVVEYVTPEKFDHYRQVGENMGFKYVASGPMVRSSYKAGEFYLEHMIKKERTEAAIDIGENA</querySeq>
+      <pattern>                              : :.:.  : -: .----------: ..:..:..:.::::::::.::::::::.::-----:.::::.:::::::: ::.:.:  .::: :: ::..::.:..:::.::.:::::::::: ::::.:::.::. .:. . ..:::::. ::.: : .:: .:::::::::::::::..::  ::: :::..::::.:.::: ::  . ::::::::::::. ..  :.:.::  ::: .:.:::..::..::.: ::::::::  ...::..::: :.::::.::::::::::.:.....:..:: .   .:</pattern>
+      <matchSeq start="99" end="399">DFISGELSEKSKWEEYRGNLKREKGERLRLPPWLKTEIPI-GKN----------YNKLKNTLRELNLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARRPPPLDPDEPYNTAKAIAAWGLDYVVLTSVDRDDIPDGGAEHFAKTVSNIKERNSKILVECLTPDFRGDLAAVEKIALSGLDVYAHNVETVRELQRHVRDPRANFDQSLSVLRHAKKVKSSVLTKTSIMLGLGETDAQIQATLTELRDSGVDCLTLGQYMQPTKRHLKVEEYVTPEKFAFWEKVGQEMGFIYTASGPLVRSSYKAGEFFLKNLLEKRKTEETTATAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

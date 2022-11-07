@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162607-0975-12612284-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162607-0975-12612284-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162607-0975-12612284-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q08587|FCPD_PHATR" type="PROTEIN" length="197"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:26:07+00:00" end="2022-11-07T16:26:11+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="FCPD_PHATR" ac="Q08587" length="197" description="Fucoxanthin-chlorophyll a-c binding protein D, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1267</score>
+      <smithWatermanScore>1267</smithWatermanScore>
+      <initn>1267</initn>
+      <init1>1267</init1>
+      <opt>1267</opt>
+      <zScore>1606.7</zScore>
+      <bits>304.1</bits>
+      <expectation>6.3e-82</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="197">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="197">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="FCPC_PHATR" ac="Q08586" length="197" description="Fucoxanthin-chlorophyll a-c binding protein C, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPC PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1254</score>
+      <smithWatermanScore>1254</smithWatermanScore>
+      <initn>1254</initn>
+      <init1>1254</init1>
+      <opt>1254</opt>
+      <zScore>1590.3</zScore>
+      <bits>301.1</bits>
+      <expectation>5.1e-81</expectation>
+      <identity>98.5</identity>
+      <positives>100.0</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="197">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::</pattern>
+      <matchSeq start="1" end="197">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPKFAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILAFMVHEQLGVSLLPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="FCPF_PHATR" ac="Q41094" length="197" description="Fucoxanthin-chlorophyll a-c binding protein F, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1008</score>
+      <smithWatermanScore>1008</smithWatermanScore>
+      <initn>995</initn>
+      <init1>888</init1>
+      <opt>1008</opt>
+      <zScore>1280.1</zScore>
+      <bits>243.7</bits>
+      <expectation>9.7e-64</expectation>
+      <identity>78.7</identity>
+      <positives>92.4</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="196">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:: ::.:::.:.:::::::...::::::::::::.::::::::::::::::::::::::::::::::.::::::::::::::::: :.:::: ::::: .:: ::.-.::.. : ..:..:.. ::: :: .::.:.::-.:: :::::  ::::::.:::::::::::::::::::::::::::::::.:::::.:</pattern>
+      <matchSeq start="1" end="196">MKFAVFASLLASAAAFAPAQQSARTSVATNMAFESELGAQPPLGFFDPLGLVADGDQEKFDRLRYVELKHGRISMLAVVGYLVQENGIRLPGDIDYSGTSFASIPNGFAALSTISTAGIAQIVAFIGFLEIAVMKDITG-GEFPGDFRNDYIDFGWDSFDEETQFKKRAIELNQGRAAQMGILALMVHEKLGVSLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="FCPE_PHATR" ac="Q41093" length="197" description="Fucoxanthin-chlorophyll a-c binding protein E, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPE PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>984</score>
+      <smithWatermanScore>984</smithWatermanScore>
+      <initn>979</initn>
+      <init1>875</init1>
+      <opt>984</opt>
+      <zScore>1249.8</zScore>
+      <bits>238.1</bits>
+      <expectation>4.7e-62</expectation>
+      <identity>76.6</identity>
+      <positives>91.4</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="196">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:: .:.:::.:.:: ::::...::::::::::::.:::::::::::::::::::::::::::::::::::::::::::.:::::: :.:::: ::::: .:  ::.-.::.  : ..:..:.. ::: :: .::.:.::-.::::::::  ::::::.:::::...:::::::::::::::::::::::::::::.:</pattern>
+      <matchSeq start="1" end="196">MKFVVFASLLASAARFAPAQQSARTSVATNMAFENELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLVQENGIRLPGDIDYSGTSFESIPNGFAALTTISGAGIAQIVAFIGFLELAVMKDITG-GEFVGDFRNDFIDFGWDSFDEETKMQKRAIELNQGRAAQMGILALMVHEQLGVSLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="FCPB_PHATR" ac="Q08585" length="198" description="Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>972</score>
+      <smithWatermanScore>972</smithWatermanScore>
+      <initn>822</initn>
+      <init1>822</init1>
+      <opt>972</opt>
+      <zScore>1234.7</zScore>
+      <bits>235.3</bits>
+      <expectation>3.3e-61</expectation>
+      <identity>76.1</identity>
+      <positives>91.9</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="196">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:: .:.:::.:.:::::::..:::::::::::::.::::: ::::.::::::::::::::::::::::::::::::::.:::.:::: :: : :  .:  ::.::.-.::.. :: .::.:.. ::: ::.:::.:.::-.::::::::: ::::::.::.::...:::::::::::::::::::::::::::..::</pattern>
+      <matchSeq start="1" end="196">MKFTVFASLFASAAAFAPAQQAARTSVATNMAFESELGAQAPLGFYDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVAGYLAQEAGWRLGGDIALDGTKFADIPNGFAALSAIPQAGLIQIIAFIGFLETSVMKDITG-GEFVGDFRNGYIDFGWDSFDQETKLRKRAIELNQGRAAQMGILALMVHEQLGVNILPGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="FCPA_PHATR" ac="Q08584" length="196" description="Fucoxanthin-chlorophyll a-c binding protein A, chloroplastic OS=Phaeodactylum tricornutum OX=2850 GN=FCPA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>946</score>
+      <smithWatermanScore>946</smithWatermanScore>
+      <initn>828</initn>
+      <init1>828</init1>
+      <opt>946</opt>
+      <zScore>1202.0</zScore>
+      <bits>229.2</bits>
+      <expectation>2.2e-59</expectation>
+      <identity>72.1</identity>
+      <positives>91.9</positives>
+      <overlap>197</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="196">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:: ::.:::.:. ::::::...::::::::::::.:.::: :::..:::::::::.::::::::::::::::: ::::.:::.::::.:::: ::::: .:  ::.-.::.. .:..:..:.. ::: .: .::.:.::-.::::::::. .:::::::.:. ...::::::::::::::::::::::::::::.::</pattern>
+      <matchSeq start="1" end="196">MKFAVFASLLASRAAFAPAQQSARTSVATNMAFENEIGAQQPLGYWDPLGLVADGNQEKFDRLRYVEIKHGRICMLAVAGYLTQEAGIRLPGDIDYSGTSFESIPNGFAALSAVPGAGIAQIIAFIGFFEIAVMKDITG-GEFVGDFRNNYLDFGWDTFSEDKKLQKRAIELNQGRAAQMGILALMVHEQLGVSILP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="FCP_TRICV" ac="Q42395" length="203" description="Fucoxanthin-chlorophyll a-c binding protein, chloroplastic OS=Trieres chinensis OX=1514140 GN=FCPA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>830</score>
+      <smithWatermanScore>830</smithWatermanScore>
+      <initn>895</initn>
+      <init1>415</init1>
+      <opt>830</opt>
+      <zScore>1055.4</zScore>
+      <bits>202.2</bits>
+      <expectation>3.2e-51</expectation>
+      <identity>63.1</identity>
+      <positives>87.4</positives>
+      <overlap>198</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="194">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPS-LAAFK---EIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>:: :. : : ..:::::::...-..:.: :::::.:::::::::::::::..::.:::.::::::::.:::::. .: .: .: . :..: :.:::.:..:  .:.- ::..--- :: .::.:.. :.:.:: .::.:.:::.:: :::::::.:::::::::::...:::::::.::::.::::.:::::::: :.</pattern>
+      <matchSeq start="1" end="197">MKLAIAALLAGSAAAFAPAQSG-KASTALNMAFESELGAQPPLGFFDPLGMLADADQERFDRLRYVEVKHGRIAHVAFLGQIVTRNGIHLSGNIDYAGNSFDSFPNGWAAISGPDAIPQAGLLQIVAFVGILELAVMKDVTGEGEFPGDFRNGALDFGWDTFDEETKLSKRAIELNNGRAAMMGILGLMVHEQLGGSIPIVGEM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="FCPB_MACPY" ac="Q40296" length="217" description="Fucoxanthin-chlorophyll a-c binding protein B, chloroplastic OS=Macrocystis pyrifera OX=35122 GN=FCPB PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>648</score>
+      <smithWatermanScore>648</smithWatermanScore>
+      <initn>610</initn>
+      <init1>300</init1>
+      <opt>648</opt>
+      <zScore>825.3</zScore>
+      <bits>159.7</bits>
+      <expectation>2.1e-38</expectation>
+      <identity>54.0</identity>
+      <positives>80.2</positives>
+      <overlap>202</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="190">MKTAVIASLIAGAAAF--------APAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFG--WDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>::.::.:   :.: .:--------:   ..:..  : .:.::.:.::: ::::.:::::.::.:::.:.::::::.:::::.:::..:.:.:.-..:::: .. :..-.::..:.-.::...:: .::.:.. ::: :: .::... : --: :::  :.  ::--::...:::: .:::::::.:::::::::::::::.:</pattern>
+      <matchSeq start="1" end="199">MKSAVMAVACAAAPGFRGPSAFNGAALTTSAKACSAMKMSFESEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQ-NTRLPGMLSNSANLSFADMPNGVAALSKIPPAGLAQIFAFIGFLELAVMKNVEGS--FPGDFTLGGNPFGASWDAMSEETQASKRAIELNNGRAAQMGILALMVHEELNNKPYVINDLVGASYTFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="FCPA_MACPY" ac="Q40297" length="217" description="Fucoxanthin-chlorophyll a-c binding protein A, chloroplastic OS=Macrocystis pyrifera OX=35122 GN=FCPA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>644</score>
+      <smithWatermanScore>644</smithWatermanScore>
+      <initn>609</initn>
+      <init1>299</init1>
+      <opt>644</opt>
+      <zScore>820.3</zScore>
+      <bits>158.7</bits>
+      <expectation>4e-38</expectation>
+      <identity>54.5</identity>
+      <positives>80.7</positives>
+      <overlap>202</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="190">MKTAVIASLIAGA------AAFAPAK--NAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFG--WDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>::.::.:   :.:------.::  : --..:..: : .:.::.:.::: ::::.:::::.::.::. :.::::::.:::::.:::..:.:.:.-..:::: .. :..-.::..:.-.::...:: .::.:.. ::: :: .::... : --: :::  :.  ::--::...:::: .:::::::.:::::::::::::::.:</pattern>
+      <matchSeq start="1" end="199">MKSAVMAVACAAAPGLRRPSAFNGAALTTSAKSSSAMKMSFESEIGAQAPLGFWDPLGLLADADQDGFERLRYVEVKHGRIAMLAIAGHLTQQ-NARLPGMLSNSANLSFADMPNGVAALSKIPPAGLAQIFAFIGFLELAVMKNVEGS--FPGDFTLGGNPFGASWDAMSEETQASKRAIELNNGRAAQMGILALMVHEELNNKPYVINDLVGASYTFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="FCPF_MACPY" ac="Q40300" length="211" description="Fucoxanthin-chlorophyll a-c binding protein F, chloroplastic (Fragment) OS=Macrocystis pyrifera OX=35122 GN=FCPF PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>632</score>
+      <smithWatermanScore>632</smithWatermanScore>
+      <initn>572</initn>
+      <init1>307</init1>
+      <opt>632</opt>
+      <zScore>805.4</zScore>
+      <bits>155.9</bits>
+      <expectation>2.7e-37</expectation>
+      <identity>55.6</identity>
+      <positives>82.4</positives>
+      <overlap>187</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="190">------MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFG--WDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>             : . :::  .:::----.: : .:.::.:.::: ::::.:::::.::.:::.:.::::::.:::::.:::..:.:.:.-..:::: .. :..-.::..:.-.::...:: :::.:.. ::: :: .::... : --: :::  :.  :.--::... ::: .:::::::.:::::::::..::::.:</pattern>
+      <matchSeq start="14" end="193">AIACAAAPGLRGPSAFNGAALSTPAK----SSSAMKMSFESEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQ-NTRLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVEGS--FPGDFIIGGNPFASSWDSMSSETQASKRAIELNNGRAAQMGILGMMVHEELSNQPYITNDLLGASYTFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="FCPD_MACPY" ac="Q40298" length="182" description="Fucoxanthin-chlorophyll a-c binding protein D, chloroplastic (Fragment) OS=Macrocystis pyrifera OX=35122 GN=FCPD PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>619</score>
+      <smithWatermanScore>619</smithWatermanScore>
+      <initn>565</initn>
+      <init1>289</init1>
+      <opt>619</opt>
+      <zScore>790.4</zScore>
+      <bits>153.0</bits>
+      <expectation>1.8e-36</expectation>
+      <identity>59.3</identity>
+      <positives>85.6</positives>
+      <overlap>167</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="28" end="190">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFG--WDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>                           : .:.:: :.::: ::::.:::::.::.:::.:.::::::.:::::.:::..:.:.:.-..:::: .. :..-.::..:.-.::...:: :::.:.. ::: :: .::... :-- : :::  :.  :.--::...:::: .:::::::.:::::::::::::::.:</pattern>
+      <matchSeq start="1" end="164">---------------------------AMKMSFELEIGAQAPLGFWDPLGLLADADQERFERLRYVEVKHGRIAMLAIAGHLTQQ-NARLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVEG--SFPGDFTLGGNPFASSWDAMSEETQESKRAIELNNGRAAQMGILALMVHEELNNKPYVINDLLGASYNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="FCPC_MACPY" ac="Q40299" length="216" description="Fucoxanthin-chlorophyll a-c binding protein C, chloroplastic OS=Macrocystis pyrifera OX=35122 GN=FCPC PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>620</score>
+      <smithWatermanScore>620</smithWatermanScore>
+      <initn>550</initn>
+      <init1>281</init1>
+      <opt>620</opt>
+      <zScore>790.0</zScore>
+      <bits>153.1</bits>
+      <expectation>1.9e-36</expectation>
+      <identity>52.7</identity>
+      <positives>79.1</positives>
+      <overlap>201</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="190">MKTAVIASLIA-----GAAAFAPAK--NAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFG--WDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>::.:..:   :-----: .::  : --..:..: : .:.::.:.::: ::::.:::::. :.::. :.::::::.: :::.:::..:.:.:.-..:::: .. :..-.::..:.-.::...:: :::.:.. ::: :: .::... : --: :::  :.  :.--::... ::: .:::::::.:::::::::::::::.:</pattern>
+      <matchSeq start="1" end="198">MKSAIMAVASAAPGLRGPSAFNGAALTTSAKSSSAMKMSFESEIGAQAPLGFWDPLGLLEDADQDAFERLRYVEVKLGRIAMLAIAGHLTQQ-NARLPGMLSNSANLSFADMPNGVAALSKIPPGGLAQIFGFIGFLELAVMKNVEGS--FPGDFTLGGNPFASSWDAMSAETQASKRAIELNNGRAAQMGILALMVHEELNNKPYVINDLLGASYNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="FCPE_MACPY" ac="Q40301" length="212" description="Fucoxanthin-chlorophyll a-c binding protein E, chloroplastic OS=Macrocystis pyrifera OX=35122 GN=FCPE PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>615</score>
+      <smithWatermanScore>615</smithWatermanScore>
+      <initn>561</initn>
+      <init1>330</init1>
+      <opt>615</opt>
+      <zScore>783.9</zScore>
+      <bits>152.0</bits>
+      <expectation>4.2e-36</expectation>
+      <identity>56.2</identity>
+      <positives>80.5</positives>
+      <overlap>185</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="190">-MKTAVIASLIAGAAAFAPAKNA--ARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGK-TFAEIPS-LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDF--GWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>            ::  :  :  :--:..: : .:.::.:.:::::.::.::::::::.:::.::::::::::::::.::::::...:.-..:::: .... .-.::. :.-.:::..::  : .:... ::  :  :.... : --: ::  .:.  :--.::...:::: .:::::::.::::::::::.::::::</pattern>
+      <matchSeq start="13" end="194">MAIACAAAPGLRGAEPFNGAALATSAKSSSAMKMSFESEIGAQPPIGFWDPLGLVADADQERFDRLRYVEIKHGRIAMLAVVGHITQQ-NTRLPGMLSFKENLAFADSPNGVAAFSKIPPLGTLQIILAIGCHELFVVKQVEGS--FPGDCTTGGNIFQSAWDNMSEETQASKRAIELNNGRAAQMGILAMMVHEQLSNQPYIINDLAGAAYQFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CCAC_AMPCA" ac="P55738" length="102" description="Caroteno-chlorophyll a-c-binding protein (Fragment) OS=Amphidinium carterae OX=2961 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <smithWatermanScore>258</smithWatermanScore>
+      <initn>304</initn>
+      <init1>245</init1>
+      <opt>258</opt>
+      <zScore>340.5</zScore>
+      <bits>68.9</bits>
+      <expectation>2.1e-11</expectation>
+      <identity>44.4</identity>
+      <positives>73.7</positives>
+      <overlap>99</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="33" end="128">TAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYS-GKTFAEIPS--LAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFDEETQFKKRAIELNQGRAAQM</querySeq>
+      <pattern>                              ::.: :.  :.:::::::..:::. :.: .:  .::::::..:::..::..::   .::: .. :-:  . .  .--:. .: .:::-:  ...: ..:</pattern>
+      <matchSeq start="2" end="99">-----------------------------XFENERGVADPVGFFDPLGFTADGSVENFKKLAQTEIKHGRVAMLATMGYITQEITGKLPGYLSPSTGVKYDDDINGVLGLIKIVPAG-LWGIMIFYAALSLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LHR31_CHLRE" ac="P0DO19" length="259" description="Light-harvesting complex stress-related protein 3.1, chloroplastic OS=Chlamydomonas reinhardtii OX=3055 GN=LHCSR3.1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <initn>181</initn>
+      <init1>120</init1>
+      <opt>230</opt>
+      <zScore>296.6</zScore>
+      <bits>62.1</bits>
+      <expectation>5.9e-09</expectation>
+      <identity>30.2</identity>
+      <positives>58.8</positives>
+      <overlap>199</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="188">------------------MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDEL-GAQPPL-GFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVG--------DFRNGAIDF---GWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>                    :... :. .  .. :  ..:: ...   .:.  .:-:.  :.-: ::: :..: .. .   : :  :: :::..:::..:..: :    .:  ....:.. .--:..  :..:  :    ::. ::: ::--.:  .: :  .:--------:.. : . :---:    : :     .. :::.:: :...: :....:</pattern>
+      <matchSeq start="21" end="215">MLANVVSRKASGLRQTPARATVAVKSVSGRRTTAAEPQTAAPVAAEDVFAYTKNLPGVTAPFEGVFDPAGFLATASIKDVRRWRESEITHGRVAMLAALGFVVGEQLQDFPLFFNWDGRVSG--PAIYHFQQIGQGFWEPLLIAIGVAES--YRVAVGWATPTGTGFNSLKDDYEPGDLGFDPLGLKPTDPEELKVMQTKELNNGRLAMIAIAAFVAQELVEQTEIFEHLALRFEKEAILELDDIERDLGLPVTPLPDNLKSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LHR32_CHLRE" ac="P0DO18" length="259" description="Light-harvesting complex stress-related protein 3.2, chloroplastic OS=Chlamydomonas reinhardtii OX=3055 GN=LHCSR3.2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <initn>181</initn>
+      <init1>120</init1>
+      <opt>230</opt>
+      <zScore>296.6</zScore>
+      <bits>62.1</bits>
+      <expectation>5.9e-09</expectation>
+      <identity>30.2</identity>
+      <positives>58.8</positives>
+      <overlap>199</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="188">------------------MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDEL-GAQPPL-GFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVG--------DFRNGAIDF---GWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>                    :... :. .  .. :  ..:: ...   .:.  .:-:.  :.-: ::: :..: .. .   : :  :: :::..:::..:..: :    .:  ....:.. .--:..  :..:  :    ::. ::: ::--.:  .: :  .:--------:.. : . :---:    : :     .. :::.:: :...: :....:</pattern>
+      <matchSeq start="21" end="215">MLANVVSRKASGLRQTPARATVAVKSVSGRRTTAAEPQTAAPVAAEDVFAYTKNLPGVTAPFEGVFDPAGFLATASIKDVRRWRESEITHGRVAMLAALGFVVGEQLQDFPLFFNWDGRVSG--PAIYHFQQIGQGFWEPLLIAIGVAES--YRVAVGWATPTGTGFNSLKDDYEPGDLGFDPLGLKPTDPEELKVMQTKELNNGRLAMIAIAAFVAQELVEQTEIFEHLALRFEKEAILELDDIERDLGLPVTPLPDNLKSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LHSR1_CHLRE" ac="P93664" length="253" description="Light-harvesting complex stress-related protein 1, chloroplastic OS=Chlamydomonas reinhardtii OX=3055 GN=LHCSR1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <smithWatermanScore>217</smithWatermanScore>
+      <initn>182</initn>
+      <init1>121</init1>
+      <opt>217</opt>
+      <zScore>280.4</zScore>
+      <bits>59.1</bits>
+      <expectation>4.7e-08</expectation>
+      <identity>31.6</identity>
+      <positives>57.9</positives>
+      <overlap>171</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="31" end="188">MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDEL-GAQPPL-GFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVG--------DFRNGAIDF---GWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>                              .:.   :-:.  :.-. ::: :..: .. .   : :  :: :::..:::..:..: :    .:  ....:.. .--:..  :..:  :    ::. ::: ::--.:  .: :  .:--------:.. : . :---:    : :     .. :::.:: :...: :....:</pattern>
+      <matchSeq start="43" end="209">ASSRRSVAVNSVSGKRTVSGKAGAPVPEDVLAYAKTLPGVTAPFDNVFDPAGFLATASVKDVRRWRESEITHGRVAMLAALGFIVGEQLQDFPLFFNFDGRVSG--PAIYHFQQIGQGFWEPLLIAIGVAES--YRVAVGWATPTGTGFNSLKDDYEPGDLGFDPLGLKPTDPEELKTLQTKELNNGRLAMIAIAAFVAQELVEQTEIFEHLVLRFEKEVILELEDVERDLGLPLTPLPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="FCP_CHAMQ" ac="A0A4Y1YQ38" length="218" description="Fucoxanthin-chlorophyll a-c binding protein, chloroplastic OS=Chattonella marina var. antiqua OX=859642 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <initn>190</initn>
+      <init1>122</init1>
+      <opt>226</opt>
+      <zScore>279.3</zScore>
+      <bits>58.6</bits>
+      <expectation>5.4e-08</expectation>
+      <identity>31.2</identity>
+      <positives>62.9</positives>
+      <overlap>202</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="190">-MKTAVIASLIAGAA-AF-APAK--NAARTSVATNMAF----EDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTI-DYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNGAIDFGWDTFD----EETQFKKRAI-ELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>   .:..:.:..:.:-::-:::.--..:..: : .: .----:  .:..  :  :::::.. .     ..  : .:.::::..:::..: :::-.  .::  .-. :.: .  . ..   . . :---::. . : . :.------ :.:. .  - ..: :.::: ..----.:  :..  .-::..:: :...: :..:.:.:</pattern>
+      <matchSeq start="4" end="194">MFYSAAVAALMVGSASAFLAPAQFNSVAKSSGALSMKLGSSAEGLIGSDLELPEFDPLGFTNNPAPGALEWYRAAELKHGRVAMLAALGQLVQ-SFYHLPDPVFSESAKPWQALVKVCNERPLAA---VQIGLAIFACEA------IGQANQAKP-GQAAGDLGWDPLNLRGSNEEIFERAQLRELKNGRLAMIAITAMIVQENLTGYGVIEAYRENAINPFGDGKGFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LI181_CHLMO" ac="Q03965" length="270" description="Chlorophyll a-b binding protein LI818, chloroplastic OS=Chlamydomonas moewusii OX=3054 GN=LI818 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <smithWatermanScore>193</smithWatermanScore>
+      <initn>162</initn>
+      <init1>109</init1>
+      <opt>193</opt>
+      <zScore>249.6</zScore>
+      <bits>53.5</bits>
+      <expectation>2.4e-06</expectation>
+      <identity>29.1</identity>
+      <positives>55.7</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="188">------------------------MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDEL---GAQ--PPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEIPAGGLVQLLFFIGVLESSVMRDLTGEAEFVGD-FRN-------GAIDF---GWDTFDEETQFKKRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>                         ::.  .. ..:. . . :.  .: -::  .:.   :---:..--:  : .:::.:.: .      : :  :: :::..:::..:..: :    .:. ....:.  ..--..  : ..  :    ::. ::. ::--.:   : :  .: -: :-------: . :---:    : :   . .. :::.:: :...: .....:</pattern>
+      <matchSeq start="26" end="223">MAFTTKMQRSAVASRSSTVRVQAAGKTVSGSKTVSGGKTVGSASAESRR-VAEVQAYLATLPGCGVESGPFKGVWDPLSLAATATVGDVRRWRESEITHGRVAMLAALGFVVGEQLEDFPAFFNFDGHITGQ--AIKQFDQVQQGFWEPLLIAIGLAES--YRVSLGWATPTGTGFNNLKDEYDLGNLYFDPLGLKPEDPEELRELQTKELNNGRLAMIAIAGFVLQEVAEPGVEIFQHLFFTIEKDIVEEIDIIEKDLGLPPSFPVPTLPNLSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="FCP_ISOGA" ac="Q39709" length="208" description="Fucoxanthin-chlorophyll a-c binding protein, chloroplastic OS=Isochrysis galbana OX=37099 GN=FCP PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <smithWatermanScore>186</smithWatermanScore>
+      <initn>218</initn>
+      <init1>142</init1>
+      <opt>186</opt>
+      <zScore>243.2</zScore>
+      <bits>51.9</bits>
+      <expectation>5.6e-06</expectation>
+      <identity>30.4</identity>
+      <positives>57.1</positives>
+      <overlap>191</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="188">--MKTAVIASLIAGAAAFAPAKNAARTSVATNMAFEDELGAQPPLGFFDPLGLVADGDQEKFDRLRYVEIKHGRISMLAVVGYLVQEAGVRLPGTIDYSGKTFAEIPSLAAFKEI--PAGGLVQLLFFIGVLESSVMRDLTGEAEFVGDFRNG--AIDFGWDTF----DEETQFK-KRAIELNQGRAAQMGILALMVHEQLGVSLLPQ</querySeq>
+      <pattern>        .. ::: :. ::-:   : ..  ..:.    ::. -:: ::: :..   :. .  ::: .:  :::..::: .:..::: --  :     .: .. .::.:  .  :--  :     :: :    ..:  .-::.:.--. .:.:--  :.:.: .----..  .:.- .  ::..:: :...  .....:</pattern>
+      <matchSeq start="9" end="192">MMTLASLPSTAIAGLASAAP-KVQPRMAANDEFAYGLPGGANI-LGEFDPAGFLKGKDKLEVYRLREAETTHGRVAMLASLGFVVQEK--FHPLFSGDNGPAIEQIPQLPYWLWIVMTIGIGRAELFRIQKGWAKVNPE-TGKAD--SALREGYEPGDLGFDPLGLAPSDPDEFRLMQEKELSHGRLAMIAAAGFLAQEAVSGDTWGTYWGDATF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171025-0634-14426106-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171025-0634-14426106-p2m.m9&quot; -m &quot;F10 fasta-R20221107-171025-0634-14426106-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9LKI8|TBB_THAWE" type="PROTEIN" length="443"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:10:25+00:00" end="2022-11-07T17:10:28+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="TBB_THAWE" ac="Q9LKI8" length="443" description="Tubulin beta chain OS=Thalassiosira weissflogii OX=1577725 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3034</score>
+      <smithWatermanScore>3034</smithWatermanScore>
+      <zScore>4008.7</zScore>
+      <bits>750.9</bits>
+      <expectation>1e-215</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="TBB5_ECTVR" ac="P30156" length="447" description="Tubulin beta-5 chain OS=Ectocarpus variabilis OX=2881 GN=TUBB5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2900</score>
+      <smithWatermanScore>2900</smithWatermanScore>
+      <zScore>3830.8</zScore>
+      <bits>718.0</bits>
+      <expectation>8.2e-206</expectation>
+      <identity>94.1</identity>
+      <positives>99.1</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="440">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.:.::::::::.:::::.:::::.::::.::::::::::::: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: .::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::..::.::::: ::::::::::::::::::::::::::::.:.:::::::::::::::::::::::::.:::::::::::::::::::.::::::.:::::::::::::.::::::::::::::::::::::::::.:::::::::.::.::::::::: :::::::::::::::::::::::::::::::::::::::::::.:::::::::</pattern>
+      <matchSeq start="1" end="440">MREIVHVQAGQCGNQIGSKFWEVISDEHGIDPTGSYHGDSDLQLERINCYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDALQGFQLTHSMGGGTGAGMGTLLISKVREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFTLDNEALYDICFRTLKLTTPTYGDLNHLVSAAICGTTCSLRFPGQLNCDLRKLAVNMVPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQCFDSKNMMCAADPRHGRYLTCAVMFRGRMSTKEVDEQMLNVVNKNSSYFVEWIPNNVKASICDIPPKGLKMSTTFVGNTTAIQEVWKRVAEQFTSMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDEDEELDDAMG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="TBB6_ECTVR" ac="P30157" length="447" description="Tubulin beta-6 chain OS=Ectocarpus variabilis OX=2881 GN=TUBB6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2890</score>
+      <smithWatermanScore>2890</smithWatermanScore>
+      <zScore>3817.5</zScore>
+      <bits>715.5</bits>
+      <expectation>4.5e-205</expectation>
+      <identity>93.6</identity>
+      <positives>99.1</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="440">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.:.::::::::.:::::.:::::.:::: ::::::::::::: ::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: .::::::::::::::::::::::::.:::::::.:::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::..::.::::: ::::::::::::::::::::::::::::.:.:::::::::::::::::::::::::.:::::::::::::::::::.::::::.:::::::::::::.::::::::::::::::::::::::::.:::::::::.::.:::::::::.:::::::::::::::::::::::::::::::::::::::::::.:::::::::</pattern>
+      <matchSeq start="1" end="440">MREIVHVQAGQCGNQIGSKFWEVISDEHGIDPTGRYHGDSDLQLERINCYFNEATAGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDALQGFQLTHSMGGGTGAGMGTLLISKVREEYPDRIMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFTLDNEALYDICFRTLKLTTPTYGDLNHLVSAAICGTTCSLRFPGQLNCDLRKLAVNMVPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQCFDSKNMMCAADPRHGRYLTCAVMFRGRMSTKEVDEQMLNVVNKNSSYFVEWIPNNVKASICDIPPKGLKMSTTFVGNTTAIQEVWKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDEDEELDDGMM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="TBB_TETTH" ac="P41352" length="443" description="Tubulin beta chain OS=Tetrahymena thermophila OX=5911 GN=BTU1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2790</score>
+      <smithWatermanScore>2790</smithWatermanScore>
+      <zScore>3684.8</zScore>
+      <bits>691.0</bits>
+      <expectation>1.1e-197</expectation>
+      <identity>89.6</identity>
+      <positives>98.2</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::.:::::::.: :.::.:::::::::::::::::::::::::::.:...::::::::::::::::::::::::::..::. :.::::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: ::::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::.:.:::::::::::::.:::::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.:::::.:.: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVISDEHGIDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKVREEYPDRIMETFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVIDNEALYDICFRTLKLTTPTYGDLNHLVSAAMSGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSICDIPPKGLKMAVTFVGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFEEEEGEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="TBB_TETPY" ac="P10876" length="443" description="Tubulin beta chain OS=Tetrahymena pyriformis OX=5908 GN=BETA-TT1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2784</score>
+      <smithWatermanScore>2784</smithWatermanScore>
+      <zScore>3676.9</zScore>
+      <bits>689.5</bits>
+      <expectation>3.1e-197</expectation>
+      <identity>89.4</identity>
+      <positives>98.2</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::.:::::::.: :.::.:::::::::::::::::::::::::::.:...:::::::::::::::::::::.::::..::. :.::::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: ::::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::.:.:::::::::::::.:::::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.:::::.:.: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVISDEHGIDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKVREEYPDRIMETFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVIDNEALYDICFRTLKLTTPTYGNLNHLVSAAMSGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSICDIPPKGLKMAVTFVGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFEEEEGEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="TBB1_PARTE" ac="P33188" length="442" description="Tubulin beta chain OS=Paramecium tetraurelia OX=5888 GN=bPT2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2781</score>
+      <smithWatermanScore>2781</smithWatermanScore>
+      <zScore>3672.9</zScore>
+      <bits>688.8</bits>
+      <expectation>5.1e-197</expectation>
+      <identity>89.7</identity>
+      <positives>98.4</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="439">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::.:::::::.: :.::.:::::::::::::::::::::::::::.:...::::::::::::::::::::::::::..::. :.::::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: ::::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::.:.:::::::::::::.:::::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.:::::.:.</pattern>
+      <matchSeq start="1" end="439">MREIVHIQGGQCGNQIGAKFWEVISDEHGIDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKVREEYPDRIMETFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVIDNEALYDICFRTLKLTTPTYGDLNHLVSAAMSGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSICDIPPKGLKMAVTFVGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFEEEGEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="TBB_EUPCR" ac="P20365" length="446" description="Tubulin beta chain OS=Euplotes crassus OX=5936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2754</score>
+      <smithWatermanScore>2754</smithWatermanScore>
+      <zScore>3637.0</zScore>
+      <bits>682.1</bits>
+      <expectation>5.1e-195</expectation>
+      <identity>87.9</identity>
+      <positives>97.3</positives>
+      <overlap>445</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEF--DEDEMEG</querySeq>
+      <pattern>::::::.::::::::::::::::.::::::::::::::::::::::::::.::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::. ...::::::::::::::::::::::::::..: . :.: ::::::::: ::::::::..:::::::::::.:::::::::::::::::::::: :::::::::.::::::::: ...::::::.:::::::::: ::.:::::::::::.:.:.:::::::::.:.::.::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.::::.--:::::.:</pattern>
+      <matchSeq start="1" end="445">MREIVHVQGGQCGNQIGAKFWEVISDEHGVDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAVLMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKIREEYPDRIMETFSVFPSPKVSDTVVEPYNATLSVHQLVENADEVMVIDNEALYDICFRTLKLTTPTYGDLNHLVSACISGVTSCLRFPGQLNSDLRKLAVNLIPFPRLHFFMVGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCASDPRHGRYLTASAMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPKGLKLASTFIGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEYVEDEDEMDGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="TBB1_CYAPA" ac="Q9ZSW1" length="447" description="Tubulin beta-1 chain OS=Cyanophora paradoxa OX=2762 GN=TUBB1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2754</score>
+      <smithWatermanScore>2754</smithWatermanScore>
+      <zScore>3636.9</zScore>
+      <bits>682.1</bits>
+      <expectation>5.1e-195</expectation>
+      <identity>87.6</identity>
+      <positives>97.5</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.::::::::::::::::.::::::::::::::::::::::::::.::::::::::::.::::::::::::::::.:::::::::.:::.::::::::::::::::::::::::::::::.:::.::::.:::::::::.:::::::.:.:::::::.: ::::.:::::::::::::::::::::::::::. ...::::::::::::::::::::::::::..: . :.::::::::::: ::::::::..:::::::::.:..::::::::::::::::::::: ::::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::.:::.::::::::::..::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::::.:::: ::.: ::</pattern>
+      <matchSeq start="1" end="443">MREIVHVQGGQCGNQIGAKFWEVISDEHGVDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAVLMDLEPGTMDSVRAGPYGQLFRPDNFIFGQSGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSMGGGTGSGMGTLLIAKVREEYPDRMMCTYSVFPSPKVSDTVVEPYNATLSVHQLVENADEVMVIDNEALYDICFRTLKLTTPTYGDLNHLVSACISGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFVPLTSRGSQQYRALTVPELTQQMFDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKASVCDIPPKGLKMSATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEGDEEEAEGEAAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="TBB_STYLE" ac="P11857" length="442" description="Tubulin beta chain OS=Stylonychia lemnae OX=5949 GN=TUBB1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2742</score>
+      <smithWatermanScore>2742</smithWatermanScore>
+      <zScore>3621.1</zScore>
+      <bits>679.2</bits>
+      <expectation>3.9e-194</expectation>
+      <identity>87.3</identity>
+      <positives>98.0</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.::::::::::::::::::::.::::::::::::.::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::.:::::::.:.:.::.:::::::::::::::::::::::::::. . .::::::::::::::::::::::::::..:.. :.::::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: :::::::::.::::::::: ..:::::::.:::::::::: ::.:::::::::::.:.:.:::::::::::.::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::::..: :.::..::</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVISDEHGIDPTGTYHGDSDLQLERINVYYNEATGGRYVPRAVLMDLEPGTMDSVRAGPFGQLFRPDNFVFGQSGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKVREEYPDRIMATFSVVPSPKVSDTVVEPYNATLSVHQLVENADEVMCIDNEALYDICFRTLKLTTPTYGDLNHLVSAGISGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFMTGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCASDPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPKGLKMAVTFLGNSTAIQEMFKRVGEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEDEEEMDEEQME</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="TBB_CHLIN" ac="O04386" length="443" description="Tubulin beta chain OS=Chlamydomonas incerta OX=51695 GN=TUBB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2740</score>
+      <smithWatermanScore>2740</smithWatermanScore>
+      <zScore>3618.4</zScore>
+      <bits>678.7</bits>
+      <expectation>5.5e-194</expectation>
+      <identity>88.2</identity>
+      <positives>97.5</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::.::.::.:::::::::::::::::::::::::::::::::::::::::::::.::::. ::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::.:..::::::::::::::::::::.:::::::.:.. : ::::::::::: ::::::::..:::::::::::..::::::::::::::::::::: .:::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::::.:.::::::::::..::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::.:.:::::. .: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVVSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRSGPYGQIFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQVCHSLGGGTGSGMGTLLISKIREEYPDRMMLTFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVLDNEALYDICFRTLKLTTPTFGDLNHLISAVMSGITCCLRFPGQLNADLRKLAVNLIPFPRLHFFMVGFTPLTSRGSQQYRALTVPELTQQMWDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNVKSSVCDIPPKGLKMSATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDASAEEEGEFEGEEEEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="TBB_CHLRE" ac="P04690" length="443" description="Tubulin beta-1/beta-2 chain OS=Chlamydomonas reinhardtii OX=3055 GN=TUBB1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2739</score>
+      <smithWatermanScore>2739</smithWatermanScore>
+      <zScore>3617.1</zScore>
+      <bits>678.4</bits>
+      <expectation>6.5e-194</expectation>
+      <identity>88.0</identity>
+      <positives>97.5</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::::::.::.::.:::::::::::::::::::::::::::::::::::::::::::::.::::. ::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::.:..::::::::::::::::::::.:::::::.:.. : ::::::::::: ::::::::..:::::::::::..::::::::::::::::::::: .:::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::::.:.::::::::::..::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::.:.:::::. .: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVVSDEHGIDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRSGPYGQIFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQVCHSLGGGTGSGMGTLLISKIREEYPDRMMLTFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVLDNEALYDICFRTLKLTTPTFGDLNHLISAVMSGITCCLRFPGQLNADLRKLAVNLIPFPRLHFFMVGFTPLTSRGSQQYRALTVPELTQQMWDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNVKSSVCDIPPKGLKMSATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDASAEEEGEFEGEEEEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="TBB1_VOLCA" ac="P11482" length="443" description="Tubulin beta chain OS=Volvox carteri OX=3067 GN=TUBB1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2739</score>
+      <smithWatermanScore>2739</smithWatermanScore>
+      <zScore>3617.1</zScore>
+      <bits>678.4</bits>
+      <expectation>6.5e-194</expectation>
+      <identity>88.0</identity>
+      <positives>97.5</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::::::.::.::.:::::::::::::::::::::::::::::::::::::::::::::.::::. ::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::.:..::::::::::::::::::::.:::::::.:.. : ::::::::::: ::::::::..:::::::::::..::::::::::::::::::::: .:::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::::.:.::::::::::..::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::.:.:::::. .: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVVSDEHGIDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRSGPYGQIFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQVCHSLGGGTGSGMGTLLISKIREEYPDRMMLTFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVLDNEALYDICFRTLKLTTPTFGDLNHLISAVMSGITCCLRFPGQLNADLRKLAVNLIPFPRLHFFMVGFTPLTSRGSQQYRALTVPELTQQMWDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNVKSSVCDIPPKGLKMSATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDASAEEEGEFEGEEEEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="TBB_TOXGO" ac="P10878" length="449" description="Tubulin beta chain OS=Toxoplasma gondii OX=5811 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2724</score>
+      <smithWatermanScore>2724</smithWatermanScore>
+      <zScore>3597.1</zScore>
+      <bits>674.8</bits>
+      <expectation>8.5e-193</expectation>
+      <identity>87.1</identity>
+      <positives>97.5</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.::::::::::::::::.:::::.:::::: ::::::::::::..:::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::.:::::::.: :.::.:::::::::::::::::::::::::::.  ..::::::::::::::::::::::::::..::. :.::::::::::: ::::::::.:::::::::..:.::::::::::::::.::::::: :::::::::.::::::::: ...::::::.:::::::::: ::.:::::::::::.:.:.::::::::::..:::::.::.:: .:::..:::.:::::::::::::::::::::::::::::::::::::::::::.:::::::.: :</pattern>
+      <matchSeq start="1" end="442">MREIVHVQGGQCGNQIGAKFWEVISDEHGIDPTGTYCGDSDLQLERINVFYNEATGGRFVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKVREEYPDRIMETFSVFPSPKVSDTVVEPYNATLSVHQLVENADEVQVIDNEALYDICFRTLKLTTPTYGDLNHLVSAAMSGVTCCLRFPGQLNSDLRKLAVNLVPFPRLHFFLIGFAPLTSRGSQQYRALSVPELTQQMFDAKNMMCASDPRHGRYLTASAMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNMKSSVCDIPPKGLKMSVTFVGNSTAIQEMFKRVSDQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDEEEGEMGAEEGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="TBB_PHYCI" ac="O59837" length="444" description="Tubulin beta chain OS=Phytophthora cinnamomi OX=4785 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2721</score>
+      <smithWatermanScore>2721</smithWatermanScore>
+      <zScore>3593.2</zScore>
+      <bits>674.0</bits>
+      <expectation>1.4e-192</expectation>
+      <identity>88.2</identity>
+      <positives>96.4</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="440">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::.:::::::::::::::::::.::::::::::.:::::::::::::::.:::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::.::::.:::.:::::.:::::::::::::::::.: :::: :::::::::::::::::::::::::::. . :::::::::::::::::.:::::::::. ::. : : :::::::::  :. .:::..:::::::::.:.:::::::::::::::::::::: ::::::::::::::::::: : .::::::.:::::::::: ::.:::::::::::.:::.:::::.::::.:::.::.::.:: .:::.::::.::::::::::::::::::::::::::::::::::::::::.::.:::::::::</pattern>
+      <matchSeq start="1" end="440">MRELVHIQGGQCGNQIGAKFWEVISDEHGVDPTGSYHGDSDLQLERINVYYNEATGGRYVPRAILMDLEPGTMDSVRAGPYGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQITHSLGGGTGSGMGTLLISKIREEYPDRIMCTYSVCPSPKVSDTVVEPYNATLSVHQLVENADEVMCLDNEALYDICFRTLKLTNPTYGDLNHLVCAAMSGITTCLRFPGQLNSVLKLFAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQQFDAKNMMCAADPRHGRYLTAACMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKASVCDIPPQGLKMSTTFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDGTAEEEGEFDEDEEWMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="TBB_EUPOC" ac="Q08115" length="444" description="Tubulin beta chain OS=Euplotoides octocarinatus OX=2716877 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2716</score>
+      <smithWatermanScore>2716</smithWatermanScore>
+      <zScore>3586.6</zScore>
+      <bits>672.8</bits>
+      <expectation>3.3e-192</expectation>
+      <identity>87.5</identity>
+      <positives>97.5</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="440">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.::::::::::::::::.::::::.:::.:::::::::::::::.::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::. ...::::::::::::::::::::::::::..: . :.: ::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: ::::::: :.::::::::: ...::::::.:::::::::: ::.:::::::::::.:.:.::::::::::..:::::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.::::.::.:</pattern>
+      <matchSeq start="1" end="440">MREIVHVQGGQCGNQIGAKFWEVISDEHGVEPTGAYHGDSDLQLERINVYYNEATGGRYVPRAVLMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKIREEYPDRIMETFSVFPSPKVSDTVVEPYNATLSVHQLVENADEVMVIDNEALYDICFRTLKLTTPTYGDLNHLVSACISGVTACLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMSASDPRHGRYLTASAMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPKGLKMSSTFVGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEMDEEEGAME</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="TBB_POLAG" ac="P22852" length="443" description="Tubulin beta chain OS=Polytomella agilis OX=3050 GN=TUBB1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2714</score>
+      <smithWatermanScore>2714</smithWatermanScore>
+      <zScore>3583.9</zScore>
+      <bits>672.3</bits>
+      <expectation>4.6e-192</expectation>
+      <identity>87.6</identity>
+      <positives>97.1</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::::::::::::.:::::.:::::  :::::::::::::::::::.::::::::::::::::::::.::.::.:::::::::::::::::::::::::::::::::::::::::::::.::::. ::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::.:..::::::::::::::::::::.:::::::.:.. : ::::::::::: ::::::::..:::::::::::..::::::::::::::::::::: .:::::::::::::::::: ..:::::::.:::::::::: ::.:::::::::::::.:.::::::::::..::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::.:.::::: :.: :</pattern>
+      <matchSeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVVSDEHGIDPTGTALGDSDLQLERINVYFNEATGSRYVPRAILMDLEPGTMDSVRSGPYGQIFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQVCHSLGGGTGSGMGTLLISKIREEYPDRMMLTFSVVPSPKVSDTVVEPYNATLSVHQLVENADECMVLDNEALYDICFRTLKLTTPTFGDLNHLISAVMSGITCCLRFPGQLNADLRKLAVNLIPFPRLHFFMVGFTPLTSRGSQQYRALTVPELTQQMWDAKNMMCAADPRHGRYLTASALFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNVKSSVCDIPPKGLKMSATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDASAEEEGEFGEEEEEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="TBB_NAEPR" ac="P34108" length="451" description="Tubulin beta chain OS=Naegleria pringsheimi OX=234921 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2705</score>
+      <smithWatermanScore>2705</smithWatermanScore>
+      <zScore>3571.8</zScore>
+      <bits>670.1</bits>
+      <expectation>2.2e-191</expectation>
+      <identity>86.5</identity>
+      <positives>97.1</positives>
+      <overlap>444</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDE-MEG</querySeq>
+      <pattern>::::::::.::::::::::::::.::::::::::.:::::::::::::::.:::::::::::::::::::::::::::::.::.:::::::::::::::::::::::::::::::::::::::::::::.::::..::.:::::.:::::::::::::::::.: :.::.:::::::::::::::::::::::::::. . .:::::::::::::::::::.::::::.. .. :.::::::::::: ::::::::..::::::::..:.:::::::::::::::::::::: ::::::: :.::::::::: ...::::::.:::::::::: ::.:::::::::::.:.:.:::::.:::::.::.::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::::.:::::::.:- ::</pattern>
+      <matchSeq start="1" end="444">MREIVHIQAGQCGNQIGAKFWEVISDEHGVDPTGAYHGDSDLQLERINVYYNEATGGRYVPRAILMDLEPGTMDSVRAGPYGQIFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCLQGFQIAHSLGGGTGSGMGTLLISKIREEYPDRMMMTFSVFPSPKVSDTVVEPYNATLSVHQLVENADEVMCIDNEALYDICFRTLKLTTPTFGDLNHLVSIVMSGVTCCLRFPGQLNSDLRKLAVNLIPFPRLHFFLIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMAASDPRHGRYLTASAMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPRGLKMAATFIGNSTAIQEMFKRVSEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDENEGAEGEEQPADY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="TBB4_OOMCK" ac="P50262" length="451" description="Tubulin beta-4 chain OS=Oomycete-like sp. (strain MacKay2000) OX=129195 GN=TUBB4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2705</score>
+      <smithWatermanScore>2705</smithWatermanScore>
+      <zScore>3571.8</zScore>
+      <bits>670.1</bits>
+      <expectation>2.2e-191</expectation>
+      <identity>87.3</identity>
+      <positives>97.0</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="440">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>:::::::::::::.:::::::::.:::::.::::::.:::::::::.:::.::::::::::::.::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::.:::.::::.:::.:::::.::::::::::::::::::: :.:: :::::::::::::::::::::::::::. ..:::::::::::::::::::::::::::. . . :.:  :::::::: ::::::::..:::::::::.:.::::::::::::::::::::.::::::::::::::::::::: . .::::::.:::::::::: ::.:::::::::::.:.:.::::::::::..:::::.::.:: .:::.::::.:::::::::::::::::::::::::::::::::::::::::::.::::.:::.</pattern>
+      <matchSeq start="1" end="440">MREIVHIQGGQCGDQIGAKFWEVISDEHGIDPTGTYNGDSDLQLERVNVYYNEATGGRYVPRAVLMDLEPGTMDSVRAGPYGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAEQCDCLQGFQVTHSLGGGTGSGMGTLLISKIREEYPDRVMMTFSVCPSPKVSDTVVEPYNATLSVHQLVENADEVMVLDNEALYDICFRTLKLTTPTYGDLNHLVCVCMSGVTSSLRFPGQLNADLRKLAVNLIPFPRLHFFMLGFAPLTSRGSQQYRALTVPELTSQCFDAKNMMCAADPRHGRYLTASCMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPKGLKMSATFVGNSTAIQEMFKRVGEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEYDEDDGGYGDEDDGMM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="TBB_PARLI" ac="P11833" length="447" description="Tubulin beta chain OS=Paracentrotus lividus OX=7656 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2695</score>
+      <smithWatermanScore>2695</smithWatermanScore>
+      <zScore>3558.6</zScore>
+      <bits>667.6</bits>
+      <expectation>1.2e-190</expectation>
+      <identity>86.2</identity>
+      <positives>96.8</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="443">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFDEDEMEG</querySeq>
+      <pattern>::::::.:.::::::::::::::.:::::.::::::::::::::::::::.::::::.:::::.:.:::::::::::.:::::.::::::::::.:::::::::::::::::.::::::::::::::::.::::::::.:::::.:::::::::::::::::.:.:.::.:::::::::::::::::::::::::.:. . .::::::::::::::::::::::::::..:.. :.: ::::::::: ::::::::::::::::::: :.:::::::::::::::::::::: ::::::: : ::::::::: :..:::::: :::::::::: ::.:::::::::::::...:::::.::::..::.::.::.:: .::..::::.:::::::::::::::::::::::::::::::::::::::::::.:::::::.:-::</pattern>
+      <matchSeq start="1" end="442">MREIVHMQAGQCGNQIGAKFWEVISDEHGIDPTGTYHGDSDLQLERINVYYNEATGGKYVPRAVLVDLEPGTMDSVRSGPFGQIFRPDNFVFGQSGAGNNWAKGHYTEGAELVDSVLDVVRKEAESCDCLQGFQLTHSLGGGTGSGMGTLLISKIREEYPDRIMNTFSVVPSPKVSDTVVEPYNATLSVHQLVENTDETYCIDNEALYDICFRTLKLTTPTYGDLNHLVSATMSGVTTCLRFPGQLNADLRKLAVNMVPFPRLHFFMPGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMAACDPRHGRYLTVAAIFRGRMSMKEVDEQMLNVQNKNSSYFVEWIPNNVKTAVCDIPPRGLKMSATFIGNSTAIQELFKRISEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDEEE-EGDEEAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="TBB_EUPFO" ac="Q9N2N6" length="444" description="Tubulin beta chain OS=Euplotes focardii OX=36767 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2693</score>
+      <smithWatermanScore>2693</smithWatermanScore>
+      <zScore>3556.0</zScore>
+      <bits>667.1</bits>
+      <expectation>1.6e-190</expectation>
+      <identity>86.5</identity>
+      <positives>96.6</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="442">MREIVHIQGGQCGNQIGAKFWEVMSDEHGVDPTGTYHGDSDLQLERINVYFNEATGGRYVPRAILMDLEPGTMDSVRAGPFGQLFRPDNFVFGQTGAGNNWAKGHYTEGAELIDSVLDVVRKEAESCDCMQGFQLTHSMGGGTGAGMGTLLISKIREEYPDRVMSTYSVIPSPKVSDTVVEPYNATLSVHQLVENADQCFALDNEALYDICFRTLKLTTPTYGDLNHLIAAAVCGTTCCLRFPGQLNCDLRKLAVNMVPFPRLHFFMVGYAPLTSRGSQQYRALTVPELTQQCFDAKNMMCAADPRHGRYLTCAVLFRGRMSSKEVDEQMLNVVNKSSSYFVEWIPNNVKASICDIPPKGLKMATTFVGNTTAVQETWKRVAEQFTVMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATADEEGEFD-EDEMEG</querySeq>
+      <pattern>::::::::.::::::::::::::.:::::::::::::::::::::::::::::::: .  :::.::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::.:::.::::.:::.:::::.::::::::::::.::::.: :.::.:::::::::::::::::::::::::::. . .:::::::::::::: :::::::::::..:.. :.: ::::::::: ::::::::..:::::::::.:.:::::::::::::::::::::: :::::::::.::::::::: ...::::::.:::::::::: ::.:::::::::::.:.:.::::::::::..::.::.::.:: .::::::::.:::::::::::::::::::::::::::::::::::::::::::.::::::-:.::.</pattern>
+      <matchSeq start="1" end="443">MREIVHIQAGQCGNQIGAKFWEVISDEHGVDPTGTYHGDSDLQLERINVYFNEATGRKICPRAMLMDLEPGTMDSVRAGPFGQLFRPDNFVFGQSGAGNNWAKGHYTEGAELIDSVLDVVRKEAEGCDCLQGFQITHSLGGGTGSGMGTLLISKIREKYPDRIMETFSVFPSPKVSDTVVEPYNATLSVHQLVENADEVMCIDNEALYDICFRTLKPTTPTYGDLNHLVSAVISGVTSCLRFPGQLNSDLRKLAVNLIPFPRLHFFMIGFAPLTSRGSQQYRALTVPELTQQMFDAKNMMCASDPRHGRYLTASAMFRGRMSTKEVDEQMLNVQNKNSSYFVEWIPNNIKSSVCDIPPKGLKMSSTFIGNSTAIQEMFKRVAEQFTAMFRRKAFLHWYTGEGMDEMEFTEAESNMNDLVSEYQQYQDATAEEEGEFDDEEEMDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

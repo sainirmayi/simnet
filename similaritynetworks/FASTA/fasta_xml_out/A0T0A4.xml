@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-161806-0381-63055350-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-161806-0381-63055350-p2m.m9&quot; -m &quot;F10 fasta-R20221107-161806-0381-63055350-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0A4|PSBF_PHATC" type="PROTEIN" length="43"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:18:06+00:00" end="2022-11-07T16:18:09+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBF_PHATC" ac="A0T0A4" length="43" description="Cytochrome b559 subunit beta OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>291</score>
+      <smithWatermanScore>291</smithWatermanScore>
+      <initn>291</initn>
+      <init1>291</init1>
+      <opt>291</opt>
+      <zScore>496.5</zScore>
+      <bits>94.3</bits>
+      <expectation>4.3e-20</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBF_TRICV" ac="P49474" length="43" description="Cytochrome b559 subunit beta OS=Trieres chinensis OX=1514140 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>286</score>
+      <smithWatermanScore>286</smithWatermanScore>
+      <initn>286</initn>
+      <init1>286</init1>
+      <opt>286</opt>
+      <zScore>488.3</zScore>
+      <bits>92.8</bits>
+      <expectation>1.2e-19</expectation>
+      <identity>97.7</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:.:::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="43">MTKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBF_THAPS" ac="A0T0U1" length="43" description="Cytochrome b559 subunit beta OS=Thalassiosira pseudonana OX=35128 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>285</score>
+      <smithWatermanScore>285</smithWatermanScore>
+      <initn>285</initn>
+      <init1>285</init1>
+      <opt>285</opt>
+      <zScore>486.6</zScore>
+      <bits>92.5</bits>
+      <expectation>1.5e-19</expectation>
+      <identity>95.3</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:.::::::::::::::::::.::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="43">MTKNINQPVAYPIFTFRWLAVHGLAIPTVFFLGGITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBF_PORPU" ac="P51390" length="44" description="Cytochrome b559 subunit beta OS=Porphyra purpurea OX=2787 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <smithWatermanScore>252</smithWatermanScore>
+      <initn>251</initn>
+      <init1>251</init1>
+      <opt>252</opt>
+      <zScore>432.3</zScore>
+      <bits>82.5</bits>
+      <expectation>1.6e-16</expectation>
+      <identity>86.4</identity>
+      <positives>95.5</positives>
+      <overlap>44</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAK-NINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:.:-: ::::.:::::::::::::::::::::::.::.::::::</pattern>
+      <matchSeq start="1" end="44">MTKGNANQPVSYPIFTFRWLAIHGLAIPTVFFLGAITSMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBF_NEOYE" ac="Q1XD97" length="44" description="Cytochrome b559 subunit beta OS=Neopyropia yezoensis OX=2788 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <smithWatermanScore>252</smithWatermanScore>
+      <initn>251</initn>
+      <init1>251</init1>
+      <opt>252</opt>
+      <zScore>432.3</zScore>
+      <bits>82.5</bits>
+      <expectation>1.6e-16</expectation>
+      <identity>86.4</identity>
+      <positives>95.5</positives>
+      <overlap>44</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAK-NINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:.:-: ::::.:::::::::::::::::::::::.::.::::::</pattern>
+      <matchSeq start="1" end="44">MTKGNANQPVSYPIFTFRWLAIHGLAIPTVFFLGAITSMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBF_GRATL" ac="Q6B8K5" length="44" description="Cytochrome b559 subunit beta OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <smithWatermanScore>245</smithWatermanScore>
+      <initn>245</initn>
+      <init1>245</init1>
+      <opt>245</opt>
+      <zScore>420.8</zScore>
+      <bits>80.3</bits>
+      <expectation>7.1e-16</expectation>
+      <identity>85.0</identity>
+      <positives>97.5</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>    : :::..:::::::::::::.:::::::::.::.::::::</pattern>
+      <matchSeq start="5" end="44">MTRGNSNQPISYPIFTFRWLAIHGIAIPTVFFLGAITSMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBF_GUITH" ac="O78465" length="42" description="Cytochrome b559 subunit beta OS=Guillardia theta OX=55529 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <smithWatermanScore>243</smithWatermanScore>
+      <initn>241</initn>
+      <init1>241</init1>
+      <opt>243</opt>
+      <zScore>417.9</zScore>
+      <bits>79.7</bits>
+      <expectation>1e-15</expectation>
+      <identity>81.4</identity>
+      <positives>97.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:.:-:.::..:::::::::::::::.:::::::.::.::::::</pattern>
+      <matchSeq start="1" end="42">MSK-IKQPISYPIFTFRWLAIHGLAVPTVFFLGAITSMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBF_CYACA" ac="Q9TM21" length="43" description="Cytochrome b559 subunit beta OS=Cyanidium caldarium OX=2771 GN=psbF PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <smithWatermanScore>242</smithWatermanScore>
+      <initn>242</initn>
+      <init1>242</init1>
+      <opt>242</opt>
+      <zScore>416.0</zScore>
+      <bits>79.4</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>81.4</identity>
+      <positives>95.3</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>::..  ::..:::::::::::::::::::::.:.:::::::::</pattern>
+      <matchSeq start="1" end="43">MANKPLQPISYPIFTFRWLAIHGLAIPTVFFFGAITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBF_EMIHU" ac="Q4G381" length="42" description="Cytochrome b559 subunit beta OS=Emiliania huxleyi OX=2903 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>241</score>
+      <smithWatermanScore>241</smithWatermanScore>
+      <initn>241</initn>
+      <init1>241</init1>
+      <opt>241</opt>
+      <zScore>414.6</zScore>
+      <bits>79.1</bits>
+      <expectation>1.6e-15</expectation>
+      <identity>85.0</identity>
+      <positives>97.5</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>   : ::::::::::::::.::.::.:::::::.::.::::::</pattern>
+      <matchSeq start="3" end="42">-MINTNQPVAYPIFTFRWLTIHALAVPTVFFLGAITSMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBF_CYAM1" ac="Q85FQ3" length="40" description="Cytochrome b559 subunit beta OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <smithWatermanScore>234</smithWatermanScore>
+      <initn>234</initn>
+      <init1>234</init1>
+      <opt>234</opt>
+      <zScore>403.5</zScore>
+      <bits>77.0</bits>
+      <expectation>6.5e-15</expectation>
+      <identity>86.5</identity>
+      <positives>97.3</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>      ::. :::::::::::::::.:::::.:.:::::::::</pattern>
+      <matchSeq start="4" end="40">---MKKQPINYPIFTFRWLAIHGLAVPTVFFFGAITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBF_TRIV2" ac="Q3MC10" length="45" description="Cytochrome b559 subunit beta OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <initn>230</initn>
+      <init1>230</init1>
+      <opt>230</opt>
+      <zScore>396.0</zScore>
+      <bits>75.8</bits>
+      <expectation>1.7e-14</expectation>
+      <identity>80.0</identity>
+      <positives>95.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">--MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>     ::::::.::::: ::::.: ::.:::::::.:..::::::</pattern>
+      <matchSeq start="6" end="45">MTSGNNINQPVTYPIFTVRWLAVHTLAVPTVFFLGAIASMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBF_NOSS1" ac="Q8YQI1" length="45" description="Cytochrome b559 subunit beta OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>227</score>
+      <smithWatermanScore>227</smithWatermanScore>
+      <initn>227</initn>
+      <init1>227</init1>
+      <opt>227</opt>
+      <zScore>391.1</zScore>
+      <bits>74.9</bits>
+      <expectation>3.2e-14</expectation>
+      <identity>77.5</identity>
+      <positives>95.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">--MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>     ::::::.::::: ::.:.: ::.:::::::.:..::::::</pattern>
+      <matchSeq start="6" end="45">MTSGNNINQPVTYPIFTVRWIAVHTLAVPTVFFLGAIASMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBF_RIPO1" ac="B7K625" length="44" description="Cytochrome b559 subunit beta OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <smithWatermanScore>225</smithWatermanScore>
+      <initn>225</initn>
+      <init1>225</init1>
+      <opt>225</opt>
+      <zScore>388.0</zScore>
+      <bits>74.3</bits>
+      <expectation>4.8e-14</expectation>
+      <identity>71.4</identity>
+      <positives>95.2</positives>
+      <overlap>42</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>  ..: ::::.::::: :::..:.::.:::::.:.:.:::::::</pattern>
+      <matchSeq start="3" end="44">MTSNNPNQPVSYPIFTVRWLSVHALAVPTVFFIGAISAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBF_SYNP2" ac="Q8RSW2" length="43" description="Cytochrome b559 subunit beta OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <smithWatermanScore>224</smithWatermanScore>
+      <initn>224</initn>
+      <init1>224</init1>
+      <opt>224</opt>
+      <zScore>386.5</zScore>
+      <bits>73.9</bits>
+      <expectation>5.8e-14</expectation>
+      <identity>72.1</identity>
+      <positives>93.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>:... ::::.::::: ::::.: ::.:.:::::.:.:::::::</pattern>
+      <matchSeq start="1" end="43">MTSGPNQPVSYPIFTVRWLAVHTLAVPSVFFLGAIAAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBF_TRIEI" ac="Q10YS9" length="44" description="Cytochrome b559 subunit beta OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <smithWatermanScore>224</smithWatermanScore>
+      <initn>224</initn>
+      <init1>224</init1>
+      <opt>224</opt>
+      <zScore>386.3</zScore>
+      <bits>73.9</bits>
+      <expectation>5.9e-14</expectation>
+      <identity>71.4</identity>
+      <positives>92.9</positives>
+      <overlap>42</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>  ..: :::..::::: ::::.: :..:::::::.:.:::::::</pattern>
+      <matchSeq start="3" end="44">MTSQNPNQPISYPIFTVRWLAVHTLGVPTVFFLGAIAAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBF_MICAN" ac="B0JLV0" length="44" description="Cytochrome b559 subunit beta OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <smithWatermanScore>223</smithWatermanScore>
+      <initn>223</initn>
+      <init1>223</init1>
+      <opt>223</opt>
+      <zScore>384.7</zScore>
+      <bits>73.6</bits>
+      <expectation>7.3e-14</expectation>
+      <identity>75.0</identity>
+      <positives>92.5</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>    : :::..::::: ::::.: ::.:::::.:.:.:::::::</pattern>
+      <matchSeq start="5" end="44">MASGNPNQPISYPIFTVRWLAVHTLAVPTVFFIGAIAAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBF_NOSP7" ac="B2J6T1" length="45" description="Cytochrome b559 subunit beta OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <smithWatermanScore>223</smithWatermanScore>
+      <initn>229</initn>
+      <init1>223</init1>
+      <opt>223</opt>
+      <zScore>384.5</zScore>
+      <bits>73.6</bits>
+      <expectation>7.4e-14</expectation>
+      <identity>77.5</identity>
+      <positives>95.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">--MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>     ::::::.::::: ::::.: :..:::::::.:.:::::.:</pattern>
+      <matchSeq start="6" end="45">MTSGNNINQPVTYPIFTVRWLAVHTLGVPTVFFLGAIAAMQFIHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBF_SYNY3" ac="P09191" length="44" description="Cytochrome b559 subunit beta OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=psbF PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>221</score>
+      <smithWatermanScore>221</smithWatermanScore>
+      <initn>221</initn>
+      <init1>221</init1>
+      <opt>221</opt>
+      <zScore>381.4</zScore>
+      <bits>73.0</bits>
+      <expectation>1.1e-13</expectation>
+      <identity>73.2</identity>
+      <positives>92.7</positives>
+      <overlap>41</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>   .: ::::.::::: ::::.: ::.:.:::.:.:.:::::::</pattern>
+      <matchSeq start="4" end="44">MATQNPNQPVTYPIFTVRWLAVHTLAVPSVFFVGAIAAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBF_CYAPA" ac="P19153" length="42" description="Cytochrome b559 subunit beta OS=Cyanophora paradoxa OX=2762 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <smithWatermanScore>220</smithWatermanScore>
+      <initn>220</initn>
+      <init1>220</init1>
+      <opt>220</opt>
+      <zScore>380.1</zScore>
+      <bits>72.7</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>77.5</identity>
+      <positives>95.0</positives>
+      <overlap>40</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="43">MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>   : ::::.::::: ::::::...::.:::.:.:::::::::</pattern>
+      <matchSeq start="3" end="42">-MNNPNQPVSYPIFTVRWLAIHAIGIPAVFFIGSITAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBF_GLOC7" ac="B7KH61" length="44" description="Cytochrome b559 subunit beta OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=psbF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <smithWatermanScore>220</smithWatermanScore>
+      <initn>220</initn>
+      <init1>220</init1>
+      <opt>220</opt>
+      <zScore>379.8</zScore>
+      <bits>72.7</bits>
+      <expectation>1.4e-13</expectation>
+      <identity>78.9</identity>
+      <positives>94.7</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="43">-MAKNINQPVAYPIFTFRWLAIHGLAIPTVFFLGGITAMQFIQR</querySeq>
+      <pattern>      ::::.::::: ::::.: ::.:::::.:.:.:::::::</pattern>
+      <matchSeq start="7" end="44">MANPTGNQPVSYPIFTVRWLAVHTLAVPTVFFIGAIAAMQFIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>
