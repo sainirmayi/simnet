@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170647-0505-44728314-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170647-0505-44728314-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170647-0505-44728314-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FTW3|TRM51_PHATC" type="PROTEIN" length="436"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:06:47+00:00" end="2022-11-07T17:06:50+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="TRM51_PHATC" ac="B7FTW3" length="436" description="tRNA (guanine(37)-N1)-methyltransferase 1 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_44373 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2901</score>
+      <smithWatermanScore>2901</smithWatermanScore>
+      <zScore>3704.6</zScore>
+      <bits>694.6</bits>
+      <expectation>8.8e-199</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>436</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDEDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTNIHCYNQCGRAMVHQLQAENIEVDHVIMNLPASAPEFLDAFRGYEGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="436">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDEDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTNIHCYNQCGRAMVHQLQAENIEVDHVIMNLPASAPEFLDAFRGYEGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="TRM5_THAPS" ac="B8BQY5" length="480" description="tRNA (guanine(37)-N1)-methyltransferase OS=Thalassiosira pseudonana OX=35128 GN=THAPSDRAFT_268027 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1104</score>
+      <smithWatermanScore>1104</smithWatermanScore>
+      <zScore>1398.3</zScore>
+      <bits>268.0</bits>
+      <expectation>2.5e-70</expectation>
+      <identity>45.6</identity>
+      <positives>65.7</positives>
+      <overlap>461</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="436">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDR-YPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDET---------------DPQR-RILVLANIDEDAFRDETVQRLIQHED-----CRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLT---ASHGRRNQVTVYANDLNPESYKYLLQNVQSNKC--TNIHCYNQCGRAMVHQLQAENIEVDHVIMNLPASAPEFLDAFRGYE-----GVKRPCIHVHCFAPKAS--EATDYQDA--LDRCSSALG---CTLD-RISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>               ..:   : .:  . :.  . -:::: ::..::.:..:::: :.. .:: :.::  : ---------------::..-: .::  . . : ..:  :    .::----- :  :. ...  .  .      .   :  :.::.::..::.::::::: .::.:: :::..::::-:..:.::::.:.::.:.::: ::..::---:. ..  .::. : :.:::.:::::::: ::: :::: : :--- :  .::: ::::::::::::---: :  .. :. .:::::: :::::  :.: :.:--  .  ::  :: ..:... : ::.:: :::::  ::::::::::..-----:-.:: ::::::  :. --: :  ...--:.:: .:::---: .:-:  :::...:::::.: :::: ::: ::::. .. :. :-- ..  .: ..:: . :</pattern>
+      <matchSeq start="13" end="463">---MTHHLAPLDSLPTSIYPPSAYPPPSFFESSSLIYPALLIPAKRTGEVQKTLKDVIFTEPKRKSVYPLEEGVDYSSIEVSAEGGYDPMKERKVVLIRLGDIAGKNEEEQITGIKEDPVFQDARVKSMLLSAKINIGAEPSTAPNAATNVEEVPSSFEIAGHVAHVNLRSESLPYKYLIGKAILDKN-PKLRVVVNKIGNIENEFRTFPMEILAG---EGLDLDLLKEHGCRFKLDFAKVYWNSRLQGEHARLVQYITK---PKECIVADAMAGVGPFAVPLTSALAPHYYKTTVVCHANDLNPISYKYLQTNAQLNRCFADRLITYNLDGREFIHKMNYERIEADHFIMNLPQMAPEFLDAFRGWKFDDTTG-HRPIIHVHCFDEKTRNEEETARMETHVLQRCEAALGSSGCLVDKRQENDVQIRVVRDVGPRKNMLCVSFRLPVEVAGVEKLLL--TKNSDAEVNGKRKRENYDCVAEVSNVSKKERDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="TRM5_PHYIT" ac="D0NLC2" length="411" description="tRNA (guanine(37)-N1)-methyltransferase OS=Phytophthora infestans (strain T30-4) OX=403677 GN=PITG_12867 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>850</score>
+      <smithWatermanScore>850</smithWatermanScore>
+      <zScore>1073.9</zScore>
+      <bits>207.7</bits>
+      <expectation>2.9e-52</expectation>
+      <identity>40.1</identity>
+      <positives>67.2</positives>
+      <overlap>399</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="407">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQ-------RRILVLANI-DEDAFR--DETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPL-VVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQLQAENIEVDHVIMNLPASAPEFLDAFRG----YEGVKRPCIHVHCFAPKASEATDY-QDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         :...:..     .. . ... ... : :.  :   :. .::  : :.:.-------. ::. ...-: ....--.: .  ....:.   .:...   :  ..:...:..:::.  .:::.:: :::.::.:::..:::::  ::.:.:::: -.:::::::  .:::..::: :::.::---..   : :.: . .::.....:::::::  :: :...::------:: -:: :.: :.::::::.-: .: .----::::::::.::.:: .:.  ::  .-.  ::  :: .. .: .:. .  .:.::::: : :::::: :----.::-. : .: .::----:.: : -::. .:  . .:  ::-- . .  :.::::.:.: :. .:: ::</pattern>
+      <matchSeq start="7" end="383">-------------------MSKPLLDKTLFKKTLDVVGVRVEAKKIGRVVKKLHGHLLNLPRLRNVVPDPTNPDPYKNSSSKLILLNSKVKDMETLQPLNEDLVAFLKEESLAFVSHAIELDYSYFAVDQVLSELLPKGMDIPSSFETVGHIAHLNLRDNQLPFKNVIGQVILDKNA-QIRTVVNKTDNIETKFRTFPMEVLAG---DDDMEVEVHESKASFRFNYAEVYWNSRLQQEHLRIIRQI------KPHDVVCDMMCGIGPFAVPV-ALNGSK----VYANDLNPRSYHYLKENIALNKVEKLVTAYNLDGRDFLAKLLSEKKQFTQVLMNLPAIALEFLDAFPGQFDHWEG-ELPFVHCYCF----SNADDVKQDVKQRAEKIMGGELD--PERTSFHLVRDVAPKKVMVCISFQLPESIAFSSERQASKQDDPKRRKVAAENAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="TRM5_XENTR" ac="F6VSS6" length="494" description="tRNA (guanine(37)-N1)-methyltransferase OS=Xenopus tropicalis OX=8364 GN=trmt5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>848</score>
+      <smithWatermanScore>848</smithWatermanScore>
+      <zScore>1069.6</zScore>
+      <bits>207.2</bits>
+      <expectation>5.1e-52</expectation>
+      <identity>38.3</identity>
+      <positives>64.6</positives>
+      <overlap>441</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="435">-------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDE---DAFRDETVQRLIQHEDCRK--ASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQL------------QAENIEVDHVIMNLPASAPEFLDAFRGYEGVKRPCIH-----VHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              .:... .-.:..: .  . :...:  .   .: :.::: : .::. : : .:  :   ....:     ---:.:-::. . :... :   --..: .  .:::.  ::::. .::. ... :.:  :::.::.:::. :::.:  ::.:.::::-: : .:::: .::.. ::.: :::.::---:.  .. :::.  :...::.::::: ::. :: :.. -.::  .----:. :..:::::::::-----. ... :::::::::::::.::.: . ::  .-.. .:  :: ...  ------------.::.    :. ::::: : ::::::..   -..::  -----.::.. -...    ::.  :  : :: ::.----:  .:.::.:.:::.:. .:: ::---.:.. ..:----..:.:: .:: ..</pattern>
+      <matchSeq start="68" end="479">TISATRSCFSAMAEMQDSHNEMELYSPNPEVRGMTCL-NRDAFDKTIHVPVIKIKKEIINRLMKSLKHRLIQRPSLKRVIEDPKDDVNKLVLLDPYKVKSIDSF-DESDHVLFKQFDVNPQVSQYELQLTYENFKCEEILRAVLPKGQDVTSGFSRVGHIAHMNLRDHQLPYKNVIGQVILDKN-PGITSVVNKTNTIDSTYRNFQMEVLAG---EENMITKVKENYVTYEFDFSKVYWNPRLGTEHNRIIG-FLKARD----VLFDVFAGVGPFAVP-----AAKKNCTVYANDLNPESYKWLLHNCKLNKVEKRVQAFNTDGRDFIKTTIKKELLKYADMPSAEEKPSLHIAMNLPALAVEFLDAFKNLLE-EEPCNSFILPTIHCYSF-SKDDDPLQDVKARAESFLGTTLE----DCSMHLVRNVAPNKEMVCISFKLP---SSVLFQRL----SDTGEPESKRPRTAEAFPLPHVQQSRNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="TRM5_BOVIN" ac="Q3MHN8" length="497" description="tRNA (guanine(37)-N1)-methyltransferase OS=Bos taurus OX=9913 GN=TRMT5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>839</score>
+      <smithWatermanScore>839</smithWatermanScore>
+      <zScore>1058.0</zScore>
+      <bits>205.1</bits>
+      <expectation>2.3e-51</expectation>
+      <identity>36.2</identity>
+      <positives>67.4</positives>
+      <overlap>445</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="436">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVL---ANIDEDAFRDETVQRLIQ-HEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGR---------AMVHQL---QAENIEVDHVIMNLPASAPEFLDAFRGY-EGVKRPCIH-----VHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSE-PGAKRIKSN</querySeq>
+      <pattern>                              : .:.....-::..:..    :.:..  . . .: ..::..  .::  : : .:  : . :...:---  .  :.:. : .. : :-. . . ..:..  .:::.  ::::. .::. ... :.:  :::.::.:::. :::.:. ::.::.:::-: : ..:::...:.. ::.: :::..:---:.  .. :.:.  :...::.::::: ::. :: :-. ..:: ..----:. :..:::::::.: .-----... ::.::::::::.:.::.: . ::  .-.. .:  ::--------- ...::---. :  .  :..:::::.: :::.::.. -::--.::  -----:::.. -...:.  .:. .: ...:: .:.  :.---::.::.:.:::.:: ..: .:. ----. .: : .  .. :-:  :: ...</pattern>
+      <matchSeq start="75" end="494">VIFLLDQRKRFSTMPEIETNHRDSELFSPPSEVRGMTEL-DRTAFKKTVTIPVLKVRKEVVNKLMRSLKRAALQRPGIKRVIEDPEDGEGRLIMLDPYKMFTVDSFEKEELSILKQLNVNPQISKYNLDLTYENFKSEEILRAVLPEGQDVTSGFSRVGHIAHLNLRDHQLPYKHLIGQVMIDKN-PGITSAVNKINNIDNTYRNFEMEVLSG---EENMMTKVRENNYTYEFDFSKVYWNPRLSTEHSR-ITELLKPGD----VLFDVFAGVGPFAIPAA-----KKKCTVFANDLNPESHKWLLHNCKLNKVDQKVKVFNLDGRDFLQGPVREELMQQLGPLSKERKHSVHIVMNLPAKAIEFLSAFKALLEG--QPCGSELLPIVHCYSF-SKDANPAKDVQQRAATVLGISLEAYSS---VHLVRNVAPNKEMLCITFRIPAA----ILYKNQTVNRDNHEGPPLKRQRTDKDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="TRM5_MACMU" ac="F7GSQ4" length="509" description="tRNA (guanine(37)-N1)-methyltransferase OS=Macaca mulatta OX=9544 GN=TRMT5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>827</score>
+      <smithWatermanScore>827</smithWatermanScore>
+      <zScore>1042.4</zScore>
+      <bits>202.2</bits>
+      <expectation>1.7e-50</expectation>
+      <identity>36.1</identity>
+      <positives>66.8</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="435">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLAN---IDEDAFRDETVQRLIQHEDCRKAS-YTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVH-----------QLQAENIEVDHVIMNLPASAPEFLDAFRGY-EGVKRPCIH-----VHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSE-PGAKRIKSN</querySeq>
+      <pattern>                              : .:... .-::..:..    :.:..  . ...: ..:...  .::  : : .:  : . :...:  ---. .:.:.   .. : : .   . :-:..  .:::.  ::::. .::. ... :.:  :::.::.:::. :::::  ::.::.:::-: : ..:::...:.. ::.: :::..: :. ---.. :.:.. :...::.::::: ::. :: :-. ..:: ..----:. :..:::::::.:..-----... ::.::::::::.:.::.: . ::  .-.. .:  :. ...-----------.:. :     :..:::::.: :::.::.  -.:--.:: .-----:::.. -...:.  .:. .: ...:: .:.  :.---::.::.:.:::.:: ..: .:. ----: .: :    :. :-:  :: ..</pattern>
+      <matchSeq start="77" end="494">GIFLLGQRKRFSTMPEIETHERDSELFSPPSDVRGMTKL-DRTAFKKTVNIPVLKVRKEIVSRLMRSLRRAALQRPGIKRVIEDPEDKESRLILLDPYKIFTHDSFEKAELSVLEQLNVSPQISKYNLELTYENFKSEEILRAVLPEGQDVTSGFSRVGHIAHLNLRDHQLPFKQLIGQVMIDKN-PGITSAVNKINNIDNMYRNFHMEVLSGEQNM---MTKVRENKYTYEFDFSKVYWNPRLSTEHSR-ITELLKAGD----VLFDVFAGVGPFAIPVA-----KKNCTVFANDLNPESHKWLLHNCKLNKVDQKVKIFNLDGKDFLQGPVKEELIQLLSLSKERKPSVHIVMNLPAKAIEFLSAFKWLLDG--QPCSNEFLPIVHCYSF-SKDANPAKDVRQRAGAVLGISLEACSS---VHLVRNVAPNKEMLCITFQIPAA----VLYKNQTKNPENHEDPPLKRQRTAEAFSDEKTQIASNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="TRM5_MOUSE" ac="Q9D0C4" length="501" description="tRNA (guanine(37)-N1)-methyltransferase OS=Mus musculus OX=10090 GN=Trmt5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>826</score>
+      <smithWatermanScore>826</smithWatermanScore>
+      <zScore>1041.3</zScore>
+      <bits>202.0</bits>
+      <expectation>2e-50</expectation>
+      <identity>36.4</identity>
+      <positives>65.8</positives>
+      <overlap>445</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="435">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLAN---IDEDAFRDETVQRLIQHEDCRK--ASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQ-----------LQAENIEVDHVIMNLPASAPEFLDAFRGY-EGVKRPC-------IHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              : .:.. ..-::..:..    :.:.   . . .: ..:..:  .::  : : .:  : . :...:  ---.  :.:-:..   .... :   --..:..  .:::.  ::::: .::. ... :.:  :::.::.:::. :::::. ::.::.:::-: : ..::: ..:.. ::.: :::. :---:.  .. :.:.  :...::.::::: ::. :: :-. ..:. ..----:. :..:::::::.:---- .:.:- ::.::::::::.:.::.: . ::  .-.. .:. :. ... -----------:.::     :..:::::.: :::..::. -.:--.::-------.: .::.  .. : : ..---.  ..:: .:.  :.---::.::.:.:::.:: ..: .:--: .: . .   :...-.::  :: :.</pattern>
+      <matchSeq start="70" end="487">SVFLLGQRQGLSTMPEIEASVRDSELFSPPSDVRGMREL-DRTAFKKTVSIPVLKARKEVVNRLMRALRRVALQRPGIKRVIEDPKDEDSRLIMLDPYRMLTADSF-DKAELGVLKELDVSPQLSQYNLELTYENFKSEEILKAVLPEGQDVTSGFSRVGHIAHLNLRDHQLPFKHLIGQVMVDKN-PGITSAVNKTSNIDNTYRNFQMEVLCG---EENMLTKVRENNYTYEFDFSKVYWNPRLSTEHGR-ITELLNPGD----VLFDVFAGVGPFAIP----AARKN-CTVFANDLNPESHKWLLHNCKLNKVDQKVKVFNMDGKDFIQGPVREELMLRLGLSAEAKPSVHIVMNLPAKAIEFLSVFRSLLDG--QPCSTELLPTVHCYCFSKDSDPAKDVRQ---QAEAVLGVSLETSSS---VHLVRNVAPNKEMLCITFQIP--TATLYRNQSLSLQND-QEPPLKRQKTGDPFSGEPQIASDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="TRM5_MACFA" ac="Q95KJ2" length="509" description="tRNA (guanine(37)-N1)-methyltransferase OS=Macaca fascicularis OX=9541 GN=TRMT5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>826</score>
+      <smithWatermanScore>826</smithWatermanScore>
+      <zScore>1041.1</zScore>
+      <bits>202.0</bits>
+      <expectation>2e-50</expectation>
+      <identity>36.1</identity>
+      <positives>66.8</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="435">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLAN---IDEDAFRDETVQRLIQHEDCRKAS-YTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVH-----------QLQAENIEVDHVIMNLPASAPEFLDAFRGY-EGVKRPCIH-----VHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSE-PGAKRIKSN</querySeq>
+      <pattern>                              : .:... .-::..:..    :.:..  . ...: ..:...  .::  : : .:  : . :...:  ---. .:.:.   .. : : .   . :-:..  .:::.  ::::. .::. ... :.:  :::.::.:::. :::::  ::.::.:::-: : ..:::...:.. ::.: :::..: :. ---.. :.:.. :...::.::::: ::. :: :-. ..:: ..----:. :..:::::::.:..-----... ::.::::::::.:.::.: . ::  .-.. .:  :. ...-----------.:. :     :..:::::.: :::.::.  -.:--.:: .-----:::.. -...:.  .:. .: ...:: .:.  :.---::.::.:.:::.:: ..: .:. ----: .: :    :. :-:  :: ..</pattern>
+      <matchSeq start="77" end="494">GIFLLGQRKRFSTMPEIETHEGDSELFSPPSDVRGMTKL-DRTAFKKTVNIPVLKVRKEIVSRLMRSLRRAALQRPGIKRVIEDPEDKESRLILLDPYKIFTHDSFEKAGLSVLEQLNVSPQISKYNLELTYENFKSEEILRAVLPEGQDVTSGFSRVGHIAHLNLRDHQLPFKQLIGQVMIDKN-PGITSAVNKINNIDNMYRNFHMEVLSGEQNM---MTKVRENKYTYEFDFSKVYWNPRLSTEHSR-ITELLKAGD----VLFDVFAGVGPFAIPVA-----KKNCTVFANDLNPESHKWLLHNCKLNKVDQKVKIFNLDGKDFLQGPVKEELIQLLSLSKERKPSVHIVMNLPAKAIEFLSAFKWLLDG--QPCSNEFLPIVHCYSF-SKDANPAKDVRQRAGAVLGISLEACSS---VHLVRNVAPNKEMLCITFQIPAA----VLYKNQTKNPENHEDPPLKRQRTAEAFSDEKTQIASNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="TRM5_BATDJ" ac="F4NUJ6" length="475" description="tRNA (guanine(37)-N1)-methyltransferase OS=Batrachochytrium dendrobatidis (strain JAM81 / FGSC 10211) OX=684364 GN=TRM5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>817</score>
+      <smithWatermanScore>817</smithWatermanScore>
+      <zScore>1030.2</zScore>
+      <bits>199.9</bits>
+      <expectation>8e-50</expectation>
+      <identity>36.5</identity>
+      <positives>62.8</positives>
+      <overlap>438</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="407">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLK-HVLWRRPKTKNVYDDETDPQRRILVL-ANIDEDAFRD--ETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKC-TNIHCYNQCGRAMVHQL----------------------QAENIEVD--------------------HVIMNLPASAPEFLDAFRG-YEGVKR-------PCIHVHCFAPKASEATDYQ-DALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         .. .:.     :::.::.. ..   .::.-:.:  -:. ... :: :: . :.:.:- ... . . :--. ....  ... . ...:.   :. .: ...:...::.: : :.::: :::.::.:::.   :::. ::.:.:::..-.:.:::::: .:.  .: : ::..:: .  :---. .::  : :..::.:::::::: ::: :... . ...-----.. :..:::::::.:-.:.: :--- .:.::::::.:.:::..:.. :: -: :  .:. :: ...: ----------------------. .: .:.--------------------: .:::::.: ::::::.:-: :.. -------: :: :::----:.: : .-:...:   ..:  : --:: . :: :: :.:::.:: .:: ::</pattern>
+      <matchSeq start="17" end="434">---------MKYIFAPPANKGLQQLNHALFESSHTLPALKIPAHASGIAMETLRSHILVA-PRLRTIVDDPTDKKWRLLLLDPSMEASEINDLPNPLKEFALKHEAKLVKHTIELKYDYWTSDQVLRSILPDEMETPGAFETVGHIAHLNLRDRYQPFKHIIGQVILDKSS-HIKTVVNKLDNIDHTFRFFQMEILAGINDMN---AKLKEGGCFFHFDFSKVYWNSRLQGEHDRIIKLFGQND-----LICDVFAGVGPFALP-AAKHKR---CVVFANDLNPQSFKYLMENIKLNKLETRILPFNMDGRQFIKQSLEDLNNPAIWNKITKQKPTSNDKKRNRKVESPTVAPLTDQPAISGIRHFKHYVMNLPATAIEFLDAFHGLYSGMRDVIMDSDLPTIHCHCF----SNAKDVKADVIERVERVIGMPLG--SNLIMVHSVRTVAPNKDMLCISFRLPSALAFAEPKILGKRKGLETEENLVSQSDVSKSSDNILEKDT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="TRM5_HUMAN" ac="Q32P41" length="509" description="tRNA (guanine(37)-N1)-methyltransferase OS=Homo sapiens OX=9606 GN=TRMT5 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>805</score>
+      <smithWatermanScore>805</smithWatermanScore>
+      <zScore>1014.2</zScore>
+      <bits>197.0</bits>
+      <expectation>6.3e-49</expectation>
+      <identity>35.9</identity>
+      <positives>66.4</positives>
+      <overlap>443</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="435">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLAN---IDEDAFRDETVQRLIQHEDCRKAS-YTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVH--------QLQAENIEVD---HVIMNLPASAPEFLDAFRGY-EGVKRPCIH-----VHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSE-PGAKRIKSN</querySeq>
+      <pattern>                              : .:... .-::..:..    :.:..  . ...: ..::..  .::  . : .:  : . :...:  ---. .:.:.   .. : : .   . :-:..  .::..  ::::. .::. ... :.:  .::.::.:::. :: ::. ::.::.:::-: : ..:::...:.. ::.: :::..: :. ---.. :.:.  :...::.::::: ::. :: :-. ..:: ..----:. :..:::::::.:..-----... ::.::::::::.:.:: : . ::  .-.. .:  :. ...--------:: . . :  ---::.:::::.: :::.::.  -.:--.::  -----:::.. -...:.  .:. .: ...:: .:.  :.---::.::.:.:::.:: ..: .:. ----: .: :    :. :-:  :: ..</pattern>
+      <matchSeq start="77" end="494">GIFLLGQRKRFSTMPETETHERETELFSPPSDVRGMTKL-DRTAFKKTVNIPVLKVRKEIVSKLMRSLKRAALQRPGIRRVIEDPEDKESRLIMLDPYKIFTHDSFEKAELSVLEQLNVSPQISKYNLELTYEHFKSEEILRAVLPEGQDVTSGFSRIGHIAHLNLRDHQLSFKHLIGQVMIDKN-PGITSAVNKINNIDNMYRNFQMEVLSGEQNM---MTKVRENNYTYEFDFSKVYWNPRLSTEHSR-ITELLKPGD----VLFDVFAGVGPFAIPVA-----KKNCTVFANDLNPESHKWLLYNCKLNKVDQKVKVFNLDGKDFLQGPVKEELMQLLGLSKERKPSVHVVMNLPAKAIEFLSAFKWLLDG--QPCSSEFLPIVHCYSF-SKDANPAEDVRQRAGAVLGISLEACSS---VHLVRNVAPNKEMLCITFQIPAS----VLYKNQTRNPENHEDPPLKRQRTAEAFSDEKTQIVSNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="TRM5_DICDI" ac="Q54WD6" length="460" description="tRNA (guanine(37)-N1)-methyltransferase OS=Dictyostelium discoideum OX=44689 GN=trmt5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>793</score>
+      <smithWatermanScore>793</smithWatermanScore>
+      <zScore>999.7</zScore>
+      <bits>194.2</bits>
+      <expectation>4e-48</expectation>
+      <identity>34.3</identity>
+      <positives>66.8</positives>
+      <overlap>391</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="407">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDEDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKC-TNIHCYNQCGRAMVHQLQAENIEVDHVIMNLPASAPEFLDAFRGY-------EGVKRPCIHVHCFAPKASEATDY-QDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         ...:: .  .  .: .  . .  . : .:  ... :: : . . ..: .. : .  .. ...   . .. .:...: .     ..  :.:.. :..:: :::..  :: .:: .::. ::::.. :::::: ::...:::: -...::.::.: :.: .::: .:..::---:   :. .::..: ::..: .:::::::  :: .::. . ::.-----.. :..:::::::.:--:.. .. .--:::::::: : ::. .:...:. -....  :  .: .:..:  ..:   ::.::::... ::::.::  -------  .  : :. . :.-: .:..: -.:..    ...: ---.. .:   . ::::.:.:.:. ..: .:</pattern>
+      <matchSeq start="5" end="378">---------------------MNVLNKEVFNQTKKVLGLIVSNKLVNGFSKQFKSYMFQSPKFKPIVSTDNDDKKMIYLCDTLKKETDIPDQLKTFIKENDIKVIEKDISLNYNNFSYEQVLKTLLPKDVGIPFSFERIGHIIHVNLKDEQLPFKYIIGQAILDKNI-QVKTVLNKVGEIDTVFRTFKIEILAG---EPDLVAEIKENECIFRFNFEEVYWNSRLQYEHMELVNTFKKED-----IICDMFAGVGPFALP--AAKIKKCK--VYANDLNPSSVKYMKENAKTNRLESKVEISNLDARDFVKSLVEKSIPFTHVVMNLPSTSIEFLDVFRDIFLNSTIPPPIPPPIINCYTFT-KLDESSDLIKDTIKNVENVIGA---KVPSDYVCYEVRDVAPKKSMMRITFRMPTILPYVGSLTTASTTTTPTTSNTNTSTTTSTTSTSTTTTESTNTNNSANNVEDKNNKKRNSTED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="TRM5_CIOIN" ac="F7A355" length="456" description="tRNA (guanine(37)-N1)-methyltransferase OS=Ciona intestinalis OX=7719 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>782</score>
+      <smithWatermanScore>782</smithWatermanScore>
+      <zScore>985.7</zScore>
+      <bits>191.6</bits>
+      <expectation>2.4e-47</expectation>
+      <identity>37.5</identity>
+      <positives>63.1</positives>
+      <overlap>445</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="434">-----MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYD-------DETDPQRRILVLA-NIDEDAFRDETVQRL--IQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTNIHCYNQCGRAMVHQLQAENIEVD------HVIMNLPASAPEFLDAFRGY--EG------------------VKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              ::..:..:   ::: .::.   . :: .:  :     .:.: :-------.:    .....: -.   ... ..  : :--.  .:-.  .: .: .::::   ..:. .::.      .: .:::. :::::. :::.:. ::.:.::: : - ::::::  .:....:.: :::::---:::  :. . :.   :..::.::.:::::. ::.:-. ....::.----:: :..:::::::.:.-:..:---- .:::::::::::..::.::  ::-:. .:.:. :: ..-: . .:  . ------::.::::: : ::::.::: --.:------------------. . :.:.. :::. .  .: ..---: ...:::.: ---.:. .. ::.:.:.:.:  :::.:---.:  . .: :----.. ::. :.::</pattern>
+      <matchSeq start="38" end="452">NLIRKVIQRGMDHEHSALYPPAAVRGMKVLDRSAFEQEVTLPALLVPVQSLRNCRKMMKSKLVNLSINKKVVDPPAHLVGEELTAGHKLFLLKPGTTMETYSSDEKQMLGKLGVKD-KIYDYRITLGYENYKHWDVLRAILPDSEMAARGFSQVGHILHVNLRDHQLPYKHIIGQVLLDKIQT-ARTVVNKHQNIDNKFRNFEMEVIA---GENNFVTRIIEHGRKFEFDFSKVFWNSRLSTEHQR-ITNFVSESD----VVFDVFAGVGPFAIPI-AKKG----CVVYANDLNPESYRWLLHNVALNK-TKAKCFNSDGREFI-QTELRNYLLTRSPHKVHVLMNLPAIAVEFLDVFRGLLCNGDCLAANDLSNASHKKLLSIPEVCVHLYIFAPEKDGIADLKS---RIKQSLGCALP---EDAVIYNVRNVAPKKQMYCVSFVL---SQHWMDQKEQ----DVYEPAPKKIKECIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="TRM5_DANRE" ac="B8A5G9" length="480" description="tRNA (guanine(37)-N1)-methyltransferase OS=Danio rerio OX=7955 GN=trmt5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>781</score>
+      <smithWatermanScore>781</smithWatermanScore>
+      <zScore>983.9</zScore>
+      <bits>191.3</bits>
+      <expectation>3e-47</expectation>
+      <identity>36.7</identity>
+      <positives>64.0</positives>
+      <overlap>444</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="434">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDP--------QRRILVL---ANIDEDAFRDETVQRLIQHEDCRKA-SYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVH-----QLQA--ENIEVDHVIMNLPASAPEFLDAFRGY-----EGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              ::.:.....-::..: .    ::. .:.    .  :.::.:  .::  : : ..... --------..:.:.:---.  . :.: .. .. :  .   .. -:: .  .:::.  ::::. .::. . . :.:  :::.::.:::  :::..  ::.:..:::-: :  :::: .::.. ::.: :::.::---:.  :. :.:.   ...::..:::: ::. ::.:.:.-.:....:----:.:..:::::::.:-.: .:---- .: ::::::::...: .:.. ::  .-:   :  :: ...-----.: :--.. .  ::.::::: : ::::::.: -----.       .:::.. -..:    .:...:  ..:  .:---...  ::.::.:.:::.:. ::: ::--   : : . : -:  . ::  :. :</pattern>
+      <matchSeq start="53" end="474">FTSQNLNHFMRSQKVMTDQSQTDLGLFKPPSTVRGMTEL-DRSAFNQTVSVPAIRLPTNILNKAVKSLKKVALQRPGLKRVVEEHSEDGNADCGNIEHRLLLLDPNSITSSDSFGSDEAEALKAYSVPQEIQSYELKLTYENFKSEEILRAVLPEGQGVTSGFSRVGHIAHMNLREHQLPYRKLIGQVIIDKN-PGITCVVNKTNTIDSTYRNFQMEVLAG---ESNMVAKVRENGVLYEFDFSRVYWNPRLSTEHERIVS-LLHRGDT----VVDVFAGVGPFAIP-AARRG----CAVLANDLNPESFRWLQHNAKLNKVDQKITTSNLDGRDFIRGPVRERLPALMKGSQKIHVVMNLPALALEFLDAFKGLLDPEPDQSLSNLPQVHCYGF-SKENDPQRDVVERAEASLKTNL---QGQCSVHLVRNVAPNKEMMCVSFTLP--RGVLYKTHTQD-RDTSEEPCPKKQKCEDSTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="TRM5_SCHPO" ac="Q8TFG7" length="450" description="tRNA (guanine(37)-N1)-methyltransferase OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=trm5 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>779</score>
+      <smithWatermanScore>779</smithWatermanScore>
+      <zScore>982.0</zScore>
+      <bits>190.9</bits>
+      <expectation>3.9e-47</expectation>
+      <identity>38.8</identity>
+      <positives>61.2</positives>
+      <overlap>436</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="407">----MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDE--DAFR---DETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLP-NESEI-PSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAM----VHQL-----------------QAENIEVD---------------HVIMNLPASAPEFLDAFRG-YEGVKR-------PCIHVHCFA--PKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                             :.:.:..     : ..  .... : :. :. :   :..:.::..... ----::: : : --:. :---: ::.-.:.... . . . .:  :. . ...::  .::-.:.: -::.:  :::.::.:::   ::.:: ::::.::::-: :.:::::  ::.:..::: :::.::---..  .:: .:  : ::.::.::::::::. :: ::.::.   .-----.: :.:::::::: : ----:..:-: :.:::::: ::. :..:.  :: .:-.. .:: :: .----:..:-----------------.:...: .---------------: .::::.:: ::::::.:-: :.. -------: .::::: --:   :-----: ..:  ..::  ..-- ..:  . :: :.:::.:   .: ::</pattern>
+      <matchSeq start="30" end="439">MHLQIRTVHNMAELLHPNKVEMKPFLKNLDKNLFKKTYNLVAAKVSPKKVGLLNKVCKKDLLDWPRVKHVYQQNNEK----LVLLNRDASLDGTRGLSDATVS-FIKENNIELVPFQLTLDYDYWRADDILDAILPPGEKEDHPSGFTAVGHIAHMNLREEWLPYKYIIGKVILDKN-PSIETVVNKTDTIDTKFRTFQMEVLAG---KDDFIVTQSESNCKFRFDFSKVYWNSRLSTEHDRLIQQFQPGD-----AVCDVMAGVGPFACPA----GKKN-VIVFANDLNPYSYESLVENIFLNKVANFVKAFNQDGREFIRSSVQKLLGFSKDEKAITVFPPRKRARKLEENKDPVRQDIPIPPVFSHYVMNLPGSAIEFLDAFKGCYYGLEYLFKDRSLPKVHVHCFCRFPDPEE-----DLINRIYASLGYRFS--PEEVDFYYVRKVAPNKDMYCCTFTLPGSIIFAKPVSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="TRM5_COPC7" ac="A8N339" length="457" description="tRNA (guanine(37)-N1)-methyltransferase OS=Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) OX=240176 GN=TRM5 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>725</score>
+      <smithWatermanScore>725</smithWatermanScore>
+      <zScore>912.6</zScore>
+      <bits>178.0</bits>
+      <expectation>2.9e-43</expectation>
+      <identity>35.7</identity>
+      <positives>59.6</positives>
+      <overlap>448</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="409">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVR--RTAELRK--TLKHVLWRRPKTKNVYDDETDPQRRILVLANIDEDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESE--IPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQ--------------------------------LQAENIEV--------------DHVIMNLPASAPEFLDAFRGY----EGVKR------PCIHVHCFAPKASEATDYQ-DALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         :...:..--  :.: . ::--..... :--..:..:   ::...: .:  .   :...:   .:  .  :...-::. :.   . ..:.  :. .:..:::...::.: .-- ::.: ::::.::.::    ::.:: ::...:.::.-:.::::::...:.:..: : ::..:---::   ::  .:  : : .:::::::::::  :: ::.: .  : -----::::..:::::::.: ----:...-  : ::::::::::::  :...:.  .-.. . . :: ....--------------------------------:.::.  :--------------.: .:::: ::  ::::::: ----: . :------: .: :::. ...  .. .-:   :    :: .:---....  : ::.:.:::.:  .:: :: :</pattern>
+      <matchSeq start="23" end="450">---MTTRHLYLDTSPPAYTGSRTELDKSAFHK--TLPVLAVRVRPEKVGKFLKGDAMKRALLDIPKVRTVVSDPKEEGNRLVLLRMPNEGDIPPEALE-LIKTESNGLTEFNVNLDYNYWTADEILQSFLPEELREGAPSGFAMVGHIAHLNLNEEYLPYKYIIGQLILEKNN-RVRTVVNKINSIDTQFRFFKMELLA---GEPDYVVEHHESDCRFMFDFTKVYWNSRLHTEHDRLIQVFQPEE-----VVADVFAGVGPFAIPA----GKKG-CGVLANDLNPESYKYLAINAKNNRVDDTVKAFCEDGREFIQKSVSRLWEEPLPAYTGPKQSRVQEEKERRRLQRLKAEGQTVPIPPSEKQHGRRRISHFVMNLPDSAISFLDAFRGLLSGAEPALREQYSTMPMVHCHCFTREVDSRVNAEGDIRKRVEEKLGGAL---TSETSFHFVRSVAPNKDMYCISFRLPPEVAFGERM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="TRM5_DROME" ac="Q8IRE4" length="457" description="tRNA (guanine(37)-N1)-methyltransferase OS=Drosophila melanogaster OX=7227 GN=CG32281 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>710</score>
+      <smithWatermanScore>710</smithWatermanScore>
+      <zScore>893.3</zScore>
+      <bits>174.5</bits>
+      <expectation>3.4e-42</expectation>
+      <identity>35.9</identity>
+      <positives>64.3</positives>
+      <overlap>426</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="415">---------------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANI--DEDAFRDETVQRLIQHEDCRKASYT-VTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCT-NIHCYNQCGRA-MVHQLQAENIE----VD------HVIMNLPASAPEFLDAFRGY----------EGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVH-VHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              :..:.....-.:. ::.  . : : .:  .. ..   .:. : .  . . : -- .: .:.::.  . --. :..  : .::--:. . .. :..-.   :::....::::..::.: :  ...  .::.::.:::.  ::.:  ::.:. ::- :  :::::: ..:.. ::.: .:.: :--  ...: :-::.   :..::.::::: ::. ::.:.:.-.:: ..----:. :..::::::..:-----. ...  : ::::::::...: .:.. ::: -::.  :. :: -.:..:. . ..----.:------:. ::::: : :::::::: ---------- .:  : .::. ::-:. .. .    :--  : :: .::.--: ..-.. ::.:.:::.:  ::: : ..  . .:</pattern>
+      <matchSeq start="33" end="434">IVSRLKDLTIITNRLRHYFRNMDVKELQPPSSVRGMQEL-QREQFRKIVQVPRLRVPESQVQRVMPLVKKFLLKMEHLHPVR--AVDQSREILLHPTPVKNWDSLPTEDLQR--QKVNAENFSFADLELRYENWSANEILKSVLPTEEEGLTSYSRIGHIAHLNLRDHLLPYKQLIGQVLRDK-LPNCRTVVNKASSIDNTYRNFQLELICG--DPDYQVET-KENGVPFEFDFSKVYWNPRLSTEHERIVK-MLKSDD----VLYDVFAGVGPFSIP-----AAKKRCHVLANDLNPESFRWLQHNAKRNKCLPNIKMSNKDGRQFIVEELREDLLKRLCTTDTTTYGIHITMNLPAMAVEFLDAFRGLYSADELAQLPTNVCYPTVHVYSFA-KGENTKELVRQL--VESNLGASLDE--NLLQGINFVRNVAPNKDMYRVSFKLSLNMLTTLKEVEVTRKRYAEEELEVATKVKCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="TRM51_VITVI" ac="F6H2F8" length="608" description="tRNA (guanine(37)-N1)-methyltransferase 1 OS=Vitis vinifera OX=29760 GN=VIT_19s0014g03930 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>689</score>
+      <smithWatermanScore>689</smithWatermanScore>
+      <zScore>863.7</zScore>
+      <bits>169.4</bits>
+      <expectation>1.5e-40</expectation>
+      <identity>39.0</identity>
+      <positives>66.4</positives>
+      <overlap>372</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="49" end="407">RSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDEDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVT-VKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCT-NIHCYNQCGRAMVHQL----QAENIEVDHVIMNLPASAPEFLDAFRGY-------EGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                              : . .:.  ::- .:. .  ::   .. .  : .  . .....: : . .  .  : . :. --:. . ..:::. :::.   .:::::::::.::.:::. .::.:  :.::.::::.:.:.:::::  .:...:::. .::.::----: :.::-: :.   :..:.. :::::::: :..::.. . ...-----:: :...::::.:. -.:.. .:----:::::::: . .:: .:   ::  -.:. .:. :: ... .----.::.:-- .:.:::: .: :::::::: -------. .: : :::. :.   .   :..---.:   ::----.... ::..: :: :.:.: :: .::.::</pattern>
+      <matchSeq start="251" end="596">SEGKKRTGKNEFAMVEVVEDGEEGEDLRGLLGEEFKRKRWR-GSTRLLLLDERYADKGVEELPEAIKAVLKEDTGQSMTSTFELVKCKLTLF--YNYWQMNEILEALLPEGMIVPSAFEMVGHIAHLNLRDEHLPYKKLIAKVVLDKNKPKIQTVVNKTDAIHNDYRTMQLEVLAG----NRSLVTTVIENGMRFQVDLATVYWNSRLATERQRLLNCFTRND-----VVCDVFSGVGPIAIS-AAKKVKR----VYANDLNPYAIEYLESNSVLNKLERKIKVFNMDGRRFINAMFTSDKAESI--TQVVMNLPNDAAEFLDAFRGIFRKKSRDKQLKLPMIHVYGFSKAQDPEFDFH---QRIRIAL----SEVAVDVEMHRVRLVAPGKWMLRASFILPKSVVFAKAVLYM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="TRM5_NEUCR" ac="F5HAU9" length="475" description="tRNA (guanine(37)-N1)-methyltransferase OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=trm5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>686</score>
+      <smithWatermanScore>686</smithWatermanScore>
+      <zScore>862.2</zScore>
+      <bits>168.8</bits>
+      <expectation>1.8e-40</expectation>
+      <identity>32.5</identity>
+      <positives>59.4</positives>
+      <overlap>468</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="409">---------MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRT-AELRKTLKHV--LWRRPKTKNVYD--DET--DPQRRILVLA-NID--EDAFRDETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNE--SEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTI--ETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQ-----LQA----ENI-------------------EVD------HVIMNLPASAPEFLDAFRGY-----------EGVKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLD----RISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>              ..... . .  ..:: .   .: .: .     :  .   : -.. :: :.: --: :. . . . .--:..--:  .. :.:.-:. --:      .... .:...     : .   :. .: ..:. ..::.:--..:::.:. .::.::.:::   .:.:  :..:.:::. - ::::.::. ..--:.:.::: .::.:: .  .---: : :. :.:..:..::::::.: .:::::..-... ..----:: :.:::.:::::: ----:...-: :.:::.:::: ::.   .. :: ..-..   . ::...:.-----:.:----:..-------------------.::------: .:::::.: :::  .:: ----------- : : : .:::::. ::.. :  .:  .: .. ::  . ---- . ..: :: ::::.: : :. .:: .: :</pattern>
+      <matchSeq start="15" end="468">MSQSEKENQGSGEGKTQDMAIFSPPVVRSGAGALNRALFTKTVNLAAAAVNDNRLISKYRKELEHSKELLRQDRLSPIVNHPDKALADQGKKCLLLSPNVKAPEPETWGAALKEGVQKKELSVIPYELQLNYDYWTYHDIITSILPEELHDDIPSGFNTAGHVAHMNLRERYIPYKKVIAEVILDKTT-NIRTVINKVDNVGAESEFRTFQYEVLAGPDDMQ---VQVTENACSFEFDYSKVYWNSKLEAEHRRLIN-MFEPGE----VVCDVMAGIGPFAVPA----GKKG-VFVWANDMNPESNKYMQVAINRNKVSQYVRPICEDGRTFIHHAADSVLEAHKNGEHVLIAPKPPSRAKKAPKPEPKRVDIPPTISHFVMNLPATAIEFLGCYRGVYAGHEDLFSAESGRKLPLVHVHCFSFKADDETPLNDICERITKYLGFPVKPGNPDVEGEVAVHDVRDVAPAKRMFCASFRIPREVAFAERV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="TRM5_FUSV7" ac="C7YK87" length="465" description="tRNA (guanine(37)-N1)-methyltransferase OS=Fusarium vanettenii (strain ATCC MYA-4622 / CBS 123669 / FGSC 9596 / NRRL 45880 / 77-13-4) OX=660122 GN=TRM5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>685</score>
+      <smithWatermanScore>685</smithWatermanScore>
+      <zScore>861.1</zScore>
+      <bits>168.5</bits>
+      <expectation>2.1e-40</expectation>
+      <identity>34.4</identity>
+      <positives>60.3</positives>
+      <overlap>448</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="409">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRT-----AELRKTLKHVLWRR--PKTKNVYDDETDPQRRILVLANIDEDAFRDE---TVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNE--SEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTI--ETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTN-IHCYNQCGRAMVHQ-----LQA-----------------------ENIEV------DHVIMNLPASAPEFLDAFRG-YEG----------VKRPCIHVHCFAPKASEATDYQDALDRCSSALGCTLD----RISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         ::.:: .     : .:   : ----- ::.:: . .. .:--:   .   . ..  :. .::.   . :  . ---:.:.  .  . . . : .  .:. ..  ...:..::.:--.::::.:. :::.::.:.:.. ::.:  :..:.::::-:.:.::.::. ..--:.:.:::..::..: .. :---: :.:  : ::.:..::::::.:  ::.:-. ...: ..----::::.:::.:::::: ----:...-: :.::: ::::..:: . .:.::  .-.. .:. :. ... -----:.:-----------------------: ..:------.: .::::::: :::  .::-:.:----------.: : .:::::. : .. :  .:  .:  . .:  : ----.  ..: .. ::::.: : :. .:: :: :</pattern>
+      <matchSeq start="25" end="458">-MDKNSQLRDMNLFRAPAARAAKTLDRSVFAKTLNAAAASISENRLLSKYRKELEKTQEVLFMERFNPILPDPDPSLASQGRKCIVLSPQIKPASPETWSPTLQEASKLGELKVVPYDLEITYDFWNYFDVVKSILPEELHGEIPSGFNTVGHVAHLNIRDQYLPYKNIIAQVLLDKN-PHIKTVINKIDNVGSENEFRTFAYEVLGGPDNMN---VEVSEAGCIFRFDYSKVYWNSKLDTEHKR-ITSFFKPGE----VVADVMAGIGPFAVPA----GKKG-VFVWANDKNPESHRYLEDAIQKNKVWEFVKPFNHDGHDFIRTSADLVLEASKRGDCAVIKPPRPPRKSAAPPPEPVRVPVPPTISHFVMNLPASAIEFLHNYRGLYHGHEDLFEPHTETKLPIVHVHCFSAKMDDDTPLKDICERIHKEIGVMLKPGDAEKEGEVLIYDVRDVAPAKRMFCASFRLPREVAFAARA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="TRM5_POLPP" ac="D3BT31" length="426" description="tRNA (guanine(37)-N1)-methyltransferase OS=Polysphondylium pallidum (strain ATCC 26659 / Pp 5 / PN500) OX=670386 GN=trmt5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <smithWatermanScore>681</smithWatermanScore>
+      <zScore>856.8</zScore>
+      <bits>167.6</bits>
+      <expectation>3.7e-40</expectation>
+      <identity>33.7</identity>
+      <positives>61.3</positives>
+      <overlap>401</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="407">MLDPVEASSVPVVDDSTIRSLSDFPDRNVFRREDRYPALNIPVRRTAELRKTLKHVLWRRPKTKNVYDDETDPQRRILVLANIDED----AFR-----DETVQRLIQHEDCRKASYTVTTAYENYTVEEILKQLLPNESEIPSAFEMVGHLAHVNLRSSQLPFKYWIGKVMLDKNQPRIRTVVNKLGTIETEYRTFGMEVIAGYQGENWSVVTVKEERCTFRLDFTKVYWNSRLAGEHRRLVQQILKESQTKPLVVADLMAGVGPFAVPLTASHGRRNQVTVYANDLNPESYKYLLQNVQSNKCTNIHCYNQCGRAMVHQLQAEN--IEVDHVIMNLPASAPEFLDAFRGY-------EGVKRPCIHVHCFAPKASEAT-DYQDALDRCSSALGCTLDRISNDVHVHVVRDVSPNKNMLSVSFLLPVETQSLVKMKLQPLRTETSEPGAKRIKSN</querySeq>
+      <pattern>                         ....: .     .:..       : . .:  :  : ..:.. ::  . ......:..  :.----:. ----- ...: ... .. . ... :   :.:.. ::..:.:.:.   :: ::: .::.::.::.   ::.:  ::.:.:::. :.::::.::.: :.: .:::..:..::---.:  .. :-------------:::::::  ::  :.: . ...-----.:.:..:::::::::--::--.  .  ::::::::.: ::. .:.  :: ..:.  :  .: .:..: ...--.   ..:::::... ::::.::  -------  .  : :: . :.: .  : -: ..   .   :.--    .  :. :. :::::::: :. .:: .:</pattern>
+      <matchSeq start="7" end="380">-------------------MSSLLLNKEIFSKSISIVGLKVNKTLLKTLAQEFKGYLLIRDRVKHIVDDSDSKDKKLVLLSESIENGNVGAYGVNKQLPDNLQSFLKTHSIEVVKHQVQLNYNNFSYEEVMKELIPTGLPIPHAFEKIGHIAHLNLKEELLPYKNMIGQVILDKKGPQIRTVLNKVGKIDTVFRTFNFELLAG---DNDLLAQV-------------VYWNSRLQFEHSNLIQTFKSHD-----IVVDMFAGVGPFAVP--AS--KLVKCKVYANDLNPNSVKYMRENATRNKASTIEISNLDARDFVRELVSRDPPVAFTQAIMNLPSTSIEFLDVFREIFLNPEKAPPIPAPTIHCYTFTPVSETAGGDLKELTIKNVEAI--IKHPLPADTTVYEVRDVSPNKRMMRISFKMPTLKKRKDTENNDDQENNNNSSNNNNNNKIDYNEAVSSGGEGKKIKH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

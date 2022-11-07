@@ -1,0 +1,686 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-165957-0253-30639401-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-165957-0253-30639401-p2m.m9&quot; -m &quot;F10 fasta-R20221107-165957-0253-30639401-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7G6D3|MCA3C_PHATC" type="PROTEIN" length="337"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:59:57+00:00" end="2022-11-07T17:00:00+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="MCA3C_PHATC" ac="B7G6D3" length="337" description="Metacaspase III c OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=MCA-IIIc PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2282</score>
+      <smithWatermanScore>2282</smithWatermanScore>
+      <zScore>2892.9</zScore>
+      <bits>543.7</bits>
+      <expectation>1.4e-153</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>337</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="337">MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="337">MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="MCA1B_ASPOR" ac="Q2UCB7" length="419" description="Metacaspase-1B OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=casB PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>577</score>
+      <smithWatermanScore>577</smithWatermanScore>
+      <zScore>719.8</zScore>
+      <bits>141.9</bits>
+      <expectation>1.6e-32</expectation>
+      <identity>41.8</identity>
+      <positives>74.2</positives>
+      <overlap>213</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="119" end="327">NLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              : :: :.::::::::.:-. ..:::: ::: ::  ...  .:.. :...:: :: ..--..::.::.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : :::.. :...::  ::.:. ..: :::::.:::::::...: . : .. .. --:. . . ..:  :: . .  :.: ..  :::. ...</pattern>
+      <matchSeq start="121" end="331">PSWGQMPPRPPMEAQQFGKGAPSNYRFQYSACTGRRKALLIGINYAG-QPNALRGCINDVTNMSTFLHERYGYRREDMVILTDDQQNPMSVPTKANILRAMQWLVKDAQRNDSLFIHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRTAGHIVDDDMHAIMVRPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAITSYGQGDFASVAQTAIGFLKKAALGESARERTVKTKTSPADVVMFSGSKDTQTSADTFQDGQARGALSWAFIKTLQARPNQSYLQLL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>178</score>
+      <smithWatermanScore>178</smithWatermanScore>
+      <zScore>719.8</zScore>
+      <bits>141.9</bits>
+      <expectation>1.6e-32</expectation>
+      <identity>40.0</identity>
+      <positives>69.5</positives>
+      <overlap>95</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="110">---------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDEN</querySeq>
+      <pattern>                              : ..  ::. :.:: .:.:::::-----.::---- :.: :: . .....:---.  :..--:...:::..: .::.:-.:: :::. :::.:.:</pattern>
+      <matchSeq start="335" end="414">GQGDFASVAQTAIGFLKKAALGESARERTVKTKTSPADVVMFSGSKDTQTSAD-----TFQ----DGQARGALSWAFIKTL---QARPNQ--SYLQLLNSIRSELEGK-YSQKPQLSCSHPLDTNLLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="MCA1B_ASPFC" ac="B0Y081" length="408" description="Metacaspase-1B OS=Neosartorya fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) OX=451804 GN=casB PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>560</score>
+      <smithWatermanScore>560</smithWatermanScore>
+      <zScore>698.4</zScore>
+      <bits>137.9</bits>
+      <expectation>2.4e-31</expectation>
+      <identity>38.7</identity>
+      <positives>69.1</positives>
+      <overlap>243</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="322">NVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQ---VPQLTASHPIDVNDDFDLVPP-------AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              : ::---:: .    :.....  . .: -------: :: ::::::::::.:-. . :::: ::: ::  ...  .:.. :...:: :: ..--. ::.::.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : ::....:...::  ::.:. ..: :::::.:::::::...: . : .. .. --:. . ....:  :..  .  :.: ..  : :</pattern>
+      <matchSeq start="75" end="315">TFPPPAHRDYPSPYPTPPPHSPSPYQHPHHGHSQSWSVPAVPPRPPLEAQQFGNGAPSHYRFQYSACTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERYGYRREDMVILTDDQKNPLSIPTKANILRAMQWLVKDAQPNDSLFLHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLRPGVRLTVIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAISSYGKGDLSGVAMTAIGFLKKAAKGDSARQRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGALSWAFIKSLKQWPNQSYLQLLNSIRAQLDGKYTQKPQLSCSHPLDV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>178</score>
+      <smithWatermanScore>178</smithWatermanScore>
+      <zScore>698.4</zScore>
+      <bits>137.9</bits>
+      <expectation>2.4e-31</expectation>
+      <identity>40.0</identity>
+      <positives>66.7</positives>
+      <overlap>105</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="110">-------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYI</querySeq>
+      <pattern>                              ::-:  . : .:----::. :.:: .:.:::::-----.::---- :.: :: . .... :---.: :.--.:...:::..: .:..:-..: :::. :::.:::</pattern>
+      <matchSeq start="319" end="403">AISSYGKGDLSGVAMTAIGFLKKAAKGDSARQ-RTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIKSL---KQWPN--QSYLQLLNSIRAQLDGK-YTQKPQLSCSHPLDVNLLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="MCA1B_ASPFU" ac="Q4WYT0" length="408" description="Metacaspase-1B OS=Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 GN=casB PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>560</score>
+      <smithWatermanScore>560</smithWatermanScore>
+      <zScore>698.4</zScore>
+      <bits>137.9</bits>
+      <expectation>2.4e-31</expectation>
+      <identity>38.7</identity>
+      <positives>69.1</positives>
+      <overlap>243</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="322">NVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQ---VPQLTASHPIDVNDDFDLVPP-------AATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              : ::---:: .    :.....  . .: -------: :: ::::::::::.:-. . :::: ::: ::  ...  .:.. :...:: :: ..--. ::.::.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : ::....:...::  ::.:. ..: :::::.:::::::...: . : .. .. --:. . ....:  :..  .  :.: ..  : :</pattern>
+      <matchSeq start="75" end="315">TFPPPAHRDYPSPYPTPPPHSPSPYQHPHHGHSQSWSVPAVPPRPPLEAQQFGNGAPSHYRFQYSACTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERYGYRREDMVILTDDQKNPLSIPTKANILRAMQWLVKDAQPNDSLFLHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLRPGVRLTVIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAISSYGKGDLSGVAMTAIGFLKKAAKGDSARQRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGALSWAFIKSLKQWPNQSYLQLLNSIRAQLDGKYTQKPQLSCSHPLDV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>178</score>
+      <smithWatermanScore>178</smithWatermanScore>
+      <zScore>698.4</zScore>
+      <bits>137.9</bits>
+      <expectation>2.4e-31</expectation>
+      <identity>40.0</identity>
+      <positives>66.7</positives>
+      <overlap>105</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="110">-------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYI</querySeq>
+      <pattern>                              ::-:  . : .:----::. :.:: .:.:::::-----.::---- :.: :: . .... :---.: :.--.:...:::..: .:..:-..: :::. :::.:::</pattern>
+      <matchSeq start="319" end="403">AISSYGKGDLSGVAMTAIGFLKKAAKGDSARQ-RTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIKSL---KQWPN--QSYLQLLNSIRAQLDGK-YTQKPQLSCSHPLDVNLLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="MCA1B_NEOFI" ac="A1D611" length="411" description="Metacaspase-1B OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=casB PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>559</score>
+      <smithWatermanScore>559</smithWatermanScore>
+      <zScore>697.1</zScore>
+      <bits>137.6</bits>
+      <expectation>2.9e-31</expectation>
+      <identity>41.8</identity>
+      <positives>73.6</positives>
+      <overlap>208</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="119" end="322">NLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              : :: ::::::::::.:-. . :::: ::: ::  ...  .:.. :...:: :: ..--. ::.::.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : ::....:...::  ::.:. ..: :::::.:::::::...: . : .. .. --:. . ....:  :..  .  :.: ..  : :</pattern>
+      <matchSeq start="109" end="314">WSAPALPPRPPLEAQQFGNGAPSHYRFQYSACTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERYGYRREDMVILTDDQKNPLSIPTKANILRAMQWLVKDAQPNDSLFLHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLRPGVRLTVIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSAISSYGKGDLSGVAMTAIGFLKKAAKGDSARKRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGALSWAFIKSLRQWPNQSYLQLL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>161</score>
+      <smithWatermanScore>161</smithWatermanScore>
+      <zScore>697.1</zScore>
+      <bits>137.6</bits>
+      <expectation>2.9e-31</expectation>
+      <identity>41.9</identity>
+      <positives>70.9</positives>
+      <overlap>86</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="22" end="107">---------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMD</querySeq>
+      <pattern>                              ::. :.:: .:.:::::-----.::--:--:.: :: . .... :---.: :.--.:...:::..: .::.:-..: :::. :::.</pattern>
+      <matchSeq start="329" end="399">GVAMTAIGFLKKAAKGDSARKRTVMTKTSPADVVMFSGSKDTQTSAD-----TFQ--D--GEARGALSWAFIKSL---RQWPN--QSYLQLLNSIRAQLEGK-YTQKPQLSCSHPLGAWVMRAIEEPA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="MCA1A_ASPOR" ac="Q2UN81" length="419" description="Metacaspase-1A OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <zScore>695.6</zScore>
+      <bits>137.4</bits>
+      <expectation>3.5e-31</expectation>
+      <identity>41.9</identity>
+      <positives>71.4</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="88" end="284">CTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVND----DFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              .:   .:   .:    ..:.. ..----..     : ::::.:::::::: -...: :::: ::::::  :..   :.  ::...: :: ..--. ::.::.. :.. .:  .: .:.:: :.::::..  : :-:.:::::::.. :.:... : : ::... :...::  ::.:. ..: ::::..:::::.:...: . :</pattern>
+      <matchSeq start="66" end="266">YGSHHNGYNSPQQNYGPPSGGHMYQQQSAYQNSYNQGGHGIPARPPDQPVSFGQGAPQEYAYRYSACTGTRKALLIGINYF-NQKGQLRGCINDVKNMSTYLHENFGYPRENMVLLTDDQQNPKSQPTKANILRAMHWLVKDAKPNDSLFFHYSGHGGQTPDLD-GDEDDGYDEVIYPVDFRQAGHIVDDEMHRIMVNPLQPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNLAKEAGQGLLGVVSAYARGDMGSMVSTAVGFFKKATKGDEVYERNKQTKTSGADVIMWSGSKDDQ</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>176</score>
+      <smithWatermanScore>176</smithWatermanScore>
+      <zScore>695.6</zScore>
+      <bits>137.4</bits>
+      <expectation>3.5e-31</expectation>
+      <identity>34.4</identity>
+      <positives>64.8</positives>
+      <overlap>125</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="122">------------------------------MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHTAPTHANMIAAYKKIVALSKADDALFCHFSGH</querySeq>
+      <pattern>                              .::...  .--: .:.-:. ..  ::. : :: .: ::: :.------:. ---:.: :: . .....: :. :-----.:.:.:::..:..: .:-..: :::. :::.--.: .:-::  ..:</pattern>
+      <matchSeq start="297" end="403">PNLAKEAGQGLLGVVSAYARGDMGSMVSTAVGFFKKATKGDEVYERNKQTKTSGADVIMWSGSKDDQTSQDA------QIQ---GQATGAMSWAFISALRKNPQ-----QSYVQLLNSIRDELSTK-YTQKPQLSCSHPL--GDLID-VPVLGSGFIWFWVLSIFQCQATK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="MCA1B_ASPCL" ac="A1CL82" length="410" description="Metacaspase-1B OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=casB PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>556</score>
+      <smithWatermanScore>556</smithWatermanScore>
+      <zScore>693.3</zScore>
+      <bits>136.9</bits>
+      <expectation>4.7e-31</expectation>
+      <identity>38.6</identity>
+      <positives>70.6</positives>
+      <overlap>228</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="99" end="322">DHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENF--DFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :. . :    . ... .     :: ::::::::::.:-. . :::: ::: ::  ...   :.. :...:: :: ..--..::. :.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : ::....:...::  ::.:. ..: :::::.:::::::...: . : .. .. --:. . :...:  :..  .  :.: ..  :.:</pattern>
+      <matchSeq start="92" end="317">TPPPHSPSPYQHPQHGHSRSWTNPSLPPRPPRESQSFGKGAPSNYRFQYSECTGRRRALLIGINYIG-QPNQLRGCINDVTNMSTFLHERFGYRREDMVILTDDQKNPMSVPTKINILRAMQWLVKDAQPNDSLFIHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRVAGHIVDDEMHNIMVRPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAQDLFSALASYGKGDLSGVAMTAIGFLKKAAIGDSARQRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGAL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>181</score>
+      <smithWatermanScore>181</smithWatermanScore>
+      <zScore>693.3</zScore>
+      <bits>136.9</bits>
+      <expectation>4.7e-31</expectation>
+      <identity>40.0</identity>
+      <positives>67.6</positives>
+      <overlap>105</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="110">-------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYI</querySeq>
+      <pattern>                              ::-:  . : .:----::. :.:: .:.:::::-----.::---- :.: :: . ....---...: :.--.:...:::..: .::.:-..: :::. :::.:::</pattern>
+      <matchSeq start="321" end="405">ALASYGKGDLSGVAMTAIGFLKKAAIGDSARQ-RTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFIK---SQKQRPN--QSYLQLLNSIRAELEGK-YTQKPQLSCSHPLDVNLLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="MCA1B_ASPNC" ac="A2QU58" length="438" description="Metacaspase-1B OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=casB PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>554</score>
+      <smithWatermanScore>554</smithWatermanScore>
+      <zScore>690.1</zScore>
+      <bits>136.4</bits>
+      <expectation>7.1e-31</expectation>
+      <identity>41.5</identity>
+      <positives>72.9</positives>
+      <overlap>207</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="319">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI--DENFDFKKLLGKFGIDDFDKFGGEALG----KINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.::::::::.:-. . :::: ::: ::  ...  .:.. :...:: :: ..--. :..::.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : :::.. :...::  ::.:. ..: :::::.:::::::...: . : ..--.  .:. . ....:  :... .  :.:----  :::</pattern>
+      <matchSeq start="135" end="339">GQNLPPRPPQESQHFGRGAPSNYRFQYSNCTGRRKALLIGINYIG-QPNQLRGCINDVTNMSTFLNEKYGYRREDMVILTDDQKNPMSIPNKANILRAMQWLVKDAQPNDSLFIHFSGHGGRTPDLD-GDEEDGYDDVIYPLDYRTAGHIVDDDMHAIMVRPLRPGVRLTAIFDSCHSGTALDLPYVYSTQGILKEPNLAKEAAMDLFSAINSYGKGDLSSVAQTAIGFFKKAANGDTARQRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGALSWAFIKTLQQRPNQSYLQLLNS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>184</score>
+      <smithWatermanScore>184</smithWatermanScore>
+      <zScore>690.1</zScore>
+      <bits>136.4</bits>
+      <expectation>7.1e-31</expectation>
+      <identity>39.8</identity>
+      <positives>68.1</positives>
+      <overlap>113</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="118">-------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYI</querySeq>
+      <pattern>                              ::-:  . : .:----::. :.:: .:.:::::-----.::--:--:.: :: . .....:---.: :..--:...:::..:..::.:-..: :::. :::. . . -.::::</pattern>
+      <matchSeq start="342" end="433">AINSYGKGDLSSVAQTAIGFFKKAANGDTARQ-RTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ--D--GEARGALSWAFIKTL---QQRPNQ--SYLQLLNSIRNELEGK-YTQKPQLSCSHPLGMCNA-SLVPPRTEID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="MCA1_EMENI" ac="Q8J140" length="404" description="Metacaspase-1 OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=casA PE=2 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>552</score>
+      <smithWatermanScore>552</smithWatermanScore>
+      <zScore>688.3</zScore>
+      <bits>136.0</bits>
+      <expectation>8.9e-31</expectation>
+      <identity>42.9</identity>
+      <positives>72.2</positives>
+      <overlap>212</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="330">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   :.  :...:: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:::::::.. :.:..  : : ::... :..:::  ::.:. ..: ::::..:::::.:...: . : .. ..  -. ::: --:... .--:.-.: . . :.: . : : :</pattern>
+      <matchSeq start="108" end="311">AHGGPTAPPTNPQAFGHGAPQGYNFQYSRCTGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVILTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEDDGYDEVIYPVDFRVAGHIVDDEMHRIMVKPLQPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNLAKEAG-QGLLGV--ISSYAR--GD-MGGMMSTAVGFLKKAAKGDEAYQRTKQTKTSPADVIMWSGSKDDQTSQDAQIAGQATGAMSWAFITAMRKNPQQSY</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>180</score>
+      <smithWatermanScore>180</smithWatermanScore>
+      <zScore>688.3</zScore>
+      <bits>136.0</bits>
+      <expectation>8.9e-31</expectation>
+      <identity>36.3</identity>
+      <positives>68.6</positives>
+      <overlap>102</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="110">---------------------MGFLRRQLREQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAV</querySeq>
+      <pattern>                              : ...-:. ..  ::. : :: .: ::: :.------:.---::.: :: . ...... :. :-----.:.:.:::..:..: ..-..: :::..:::.:::</pattern>
+      <matchSeq start="313" end="399">LGVISSYARGDMGGMMSTAVGFLKKAAKGDEAYQRTKQTKTSPADVIMWSGSKDDQTSQDA------QI---AGQATGAMSWAFITAMRKNPQ-----QSYVQLLNSIRDELSTR-YTQKPQLSSSHPLDVNLLYVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="MCA1B_ASPTN" ac="Q0CQL9" length="378" description="Metacaspase-1B OS=Aspergillus terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=casB PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>549</score>
+      <smithWatermanScore>549</smithWatermanScore>
+      <zScore>685.2</zScore>
+      <bits>135.3</bits>
+      <expectation>1.3e-30</expectation>
+      <identity>38.6</identity>
+      <positives>70.2</positives>
+      <overlap>228</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="99" end="322">DHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEI--DENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: . :    . ... .   : :: :.::::::::.:-. . :::: ::: :. .:..    .. :...:: :: :.--. ::. :.. :.. .:  .. .:.:: ::::::..  : :-:.:.::::... :.::.  : : ::... :...::  ::.:. ..: :::::.:::::::...: . : ..--.  .:. . ....:  :.  ..  :.: ..  :.:</pattern>
+      <matchSeq start="60" end="285">AAPSPPQSSSPHPRGYHSPSPSWGQLPPRPPQEAQSFGGGAPSNYRFQYSACTGRRKALLIGINYIG-QPNQLRGCINDVANVSRYLNERCRYRREDMVILTDDQENPLSIPTKNNILRAMQWLVKDAQPNDSLFIHFSGHGGRTPDLD-GDEEDGYDDVIYPVDYRTAGHIVDDEMHAIMVRPLRPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKEPNLAKEAAMDLFSAISSYGQGDLTGMAKTAIGFFKKAAIGDSARQRTVMTKTSPADVVMFSGSKDTQTSADTFQDGEARGAL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>183</score>
+      <smithWatermanScore>183</smithWatermanScore>
+      <zScore>685.2</zScore>
+      <bits>135.3</bits>
+      <expectation>1.3e-30</expectation>
+      <identity>40.6</identity>
+      <positives>65.1</positives>
+      <overlap>106</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="110">-------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLY-KDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEY</querySeq>
+      <pattern>                              ::-:  . : .:----::. :.:: .:.:::::-----.::---- :.: :: . .....: -. ::------:...:::..: .::.:-..: :::. :::.:::</pattern>
+      <matchSeq start="289" end="373">AISSYGQGDLTGMAKTAIGFFKKAAIGDSARQ-RTVMTKTSP----ADVVMFSGSKDTQTSAD-----TFQ----DGEARGALSWAFVKTLQERPHQ------SYLQLLNSIRAELEGK-YTQKPQLSCSHPLDVNLLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="MCA1_COCIM" ac="Q1E0A3" length="462" description="Metacaspase-1 OS=Coccidioides immitis (strain RS) OX=246410 GN=MCA1 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>545</score>
+      <smithWatermanScore>545</smithWatermanScore>
+      <zScore>678.1</zScore>
+      <bits>134.3</bits>
+      <expectation>3.3e-30</expectation>
+      <identity>40.4</identity>
+      <positives>70.9</positives>
+      <overlap>213</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="331">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   ..  :...:: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:::::::.. :.:... : : ::... :...::  ::.:. ..: ::::..:::::.:...: . :---- :.  .   : .:.-- . ..   .:.. . :.: . : . :.</pattern>
+      <matchSeq start="166" end="370">NHSAPPPPPSGSVAFGHGAPQGYSYQYSNCTGKRKALLIGINYFG-QRGQLRGCINDVKNMSTYLNQSFNYAREDMVILTDDQQNPMSQPTKANILRAMHWLVKDARPNDSLFFHYSGHGGQTPDLD-GDEDDGYDEVIYPVDFRNAGHIVDDEMHRIMVRPLPAGVRLTAIFDSCHSGSALDLPYIYSTQGVLKE----PNLAKEAGQGLLGV--VSAYARGDMGSMVSTAMGFIKKATRGEETYQRAKQTKTSPADVIMWSGSKDVQTSADATINGQATGALSWAFITALKKNPQQSY</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>190</score>
+      <smithWatermanScore>190</smithWatermanScore>
+      <zScore>678.1</zScore>
+      <bits>134.3</bits>
+      <expectation>3.3e-30</expectation>
+      <identity>38.2</identity>
+      <positives>67.6</positives>
+      <overlap>102</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="110">---------------------MGFLRRQLREQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAV</querySeq>
+      <pattern>                              : ...-:. ..  ::. : :: .:::::::.. --------- :.: :: . .....: :. :-----.:.:.:::..:..: .:-.:: :::. :::.:.:</pattern>
+      <matchSeq start="371" end="457">LGVVSAYARGDMGSMVSTAMGFIKKATRGEETYQRAKQTKTSPADVIMWSGSKDVQTSADATI---------NGQATGALSWAFITALKKNPQ-----QSYVQLLNSIRDELASK-YSQKPQLSCSHPLDTNLLYVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="MCA1_SCLS1" ac="A7F075" length="432" description="Metacaspase-1 OS=Sclerotinia sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) OX=665079 GN=casA PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>544</score>
+      <smithWatermanScore>544</smithWatermanScore>
+      <zScore>677.5</zScore>
+      <bits>134.1</bits>
+      <expectation>3.6e-30</expectation>
+      <identity>38.3</identity>
+      <positives>68.9</positives>
+      <overlap>235</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="99" end="331">DHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              ::   :    . ... .     :: :.:::::::: :-..: :::: ::::::  :..   :.. ....:: :: ..--. ::. :.. :.. .:  .. .:.:: :.::::.. .: :-:.:.:::::.. :.:... : : ::... :...::  ::.:. ..: :::::.:::::::...: . : .. ..  -. ::: ..  .   ..: : . ..    . .: :: .:</pattern>
+      <matchSeq start="114" end="345">PNAPQYGRPGMPSVNSNAYINGNQNAPPPPPQGMHSFGQGAPQNYAFQYSNCTGRRKALLIGINYFG-QRGQLRGCINDVKNMSSYLHENFGYQRDDMVILTDDQQNPMSQPTKQNILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGYDEVIYPVDFRQVGHIVDDEMHRIMVQPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKEPNLAKEAG-QGLLGVISSYSQGDMSGVASNLMGFFKKATTGDDAYNKTLATKTSPADVVMWSGSKDDQTSADATIAAQATGA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>159</score>
+      <smithWatermanScore>159</smithWatermanScore>
+      <zScore>677.5</zScore>
+      <bits>134.1</bits>
+      <expectation>3.6e-30</expectation>
+      <identity>36.1</identity>
+      <positives>64.9</positives>
+      <overlap>97</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="22" end="118">---------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMD</querySeq>
+      <pattern>                              ::. : :: .: :::::.. ---------:..: :: . ...... :. :-----.:.:.:::..:..: .:-..: :::. :::..------.:::</pattern>
+      <matchSeq start="354" end="429">GVASNLMGFFKKATTGDDAYNKTLATKTSPADVVMWSGSKDDQTSADATI---------AAQATGAMSWAFITAMKKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPLS------MVPPLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="MCA1A_NEUCR" ac="Q7S232" length="454" description="Metacaspase-1A OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>543</score>
+      <smithWatermanScore>543</smithWatermanScore>
+      <zScore>675.7</zScore>
+      <bits>133.8</bits>
+      <expectation>4.5e-30</expectation>
+      <identity>38.1</identity>
+      <positives>67.6</positives>
+      <overlap>244</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="97" end="336">YKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEHT--APTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDA--LGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              ..:. : .    . . . .     .: :.::::::::.:..-. :.:: ::.::.  ..   .:.. :...:: ::. . -- ::. :.. :.. .:: .. .:::: :.::::.. .: :-:.:::::::.. :.:..  : : ::...: ..:::  ::.:. ..: ::::.::::::.:.. : . : ------.. :  :.-:.--.   :. : : :.: :--: .:.: :.:  :. .</pattern>
+      <matchSeq start="133" end="365">PGPPPDGYDIYGYPIGSGHQTRNQGSHEIHEIPSGTQQFGHGAPEGYGFQYSNCSGRRKALLIGINYLGQD-AELHGCINDTKNVSAFLVENYGYKREDMVILTDDATNPLLQPTKENILRAMQWLVAGAQPNDALFLHYSGHGGQTKDTD-GDEDDGYDEVIYPVDFKTAGHIVDDQIHDTVVKPLQPGVRLTAIFDSCHSGSVLDLPYIYSTKGVIKEP------NLAKEAGQ-GL--LAAVGSYARGDIGGMASSLFSVAKTAFGGGNEAYERTKRTKTSPADVIMWSGSKDDQTSADATIASQATGAMSWAFITAIKANPKQSYVQLLNSIRDVLETKYTQKPQLSSSHPIDVDML</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>169</score>
+      <smithWatermanScore>169</smithWatermanScore>
+      <zScore>675.7</zScore>
+      <bits>133.8</bits>
+      <expectation>4.5e-30</expectation>
+      <identity>37.5</identity>
+      <positives>68.8</positives>
+      <overlap>96</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="110">----------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDE</querySeq>
+      <pattern>                              :. ..  ::. : :: .: :::::.. ---------:..: :: . ......  .---:..--:.:.:::..:. ::.:-..: :::..::::::.</pattern>
+      <matchSeq start="369" end="449">ARGDIGGMASSLFSVAKTAFGGGNEAYERTKRTKTSPADVIMWSGSKDDQTSADATI---------ASQATGAMSWAFITAIKAN---PKQ--SYVQLLNSIRDVLETK-YTQKPQLSSSHPIDVDMLFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="MCA1A_ASPNC" ac="A2RB75" length="404" description="Metacaspase-1A OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>542</score>
+      <smithWatermanScore>542</smithWatermanScore>
+      <zScore>675.6</zScore>
+      <bits>133.6</bits>
+      <expectation>4.5e-30</expectation>
+      <identity>41.1</identity>
+      <positives>70.3</positives>
+      <overlap>202</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="284">TSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDD----FDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :   .:  ..:    : :.. .. ----...     :: :.:::::::: -...: :::: ::::::  :..   :.  :....: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:::::::.. :.:..  : : ::... :..:::  ::.:. ..: ::::..:::::.:...: . :</pattern>
+      <matchSeq start="77" end="276">PPQNGYNGGYPAASQGPMYGGRPGIADVYHNSYNQGNHSAPAPPPSDPVSFGQGAPQGYNFQYSRCTGKRKALLIGINYF-NQKGQLRGCINDVKNMSTYLNQNFGYAREDMVVLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEDDGYDEVIYPVDFRAAGHIVDDEMHRIMVKPLQPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNLAKEAGQGLLGVVSAYARGDMSSMMSTAVGFFKKATKGDEAYERTIQTKTSPADVVMWSGSKDDQT</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>178</score>
+      <smithWatermanScore>178</smithWatermanScore>
+      <zScore>675.6</zScore>
+      <bits>133.6</bits>
+      <expectation>4.5e-30</expectation>
+      <identity>35.5</identity>
+      <positives>65.5</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="107">------------------------------MGFLRRQLR--EQFEKK-KPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHND</querySeq>
+      <pattern>                              .::...  .--: .:. -. ..  ::. : :: .: ::: :.------:.---::.: :: . .....: :. :-----.:.:.:::..:..: ::-..: :::. :::.</pattern>
+      <matchSeq start="307" end="401">PNLAKEAGQGLLGVVSAYARGDMSSMMSTAVGFFKKATKGDEAYERTIQTKTSPADVVMWSGSKDDQTSQDA------QI---AGQATGAMSWAFISALRKNPQ-----QSYVQLLNSIRDELSAK-YTQKPQLSCSHPLVAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="MCA1_MAGO7" ac="A4QTY2" length="396" description="Metacaspase-1 OS=Magnaporthe oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) OX=242507 GN=MCA1 PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>539</score>
+      <smithWatermanScore>539</smithWatermanScore>
+      <zScore>672.0</zScore>
+      <bits>132.9</bits>
+      <expectation>7.2e-30</expectation>
+      <identity>42.6</identity>
+      <positives>72.1</positives>
+      <overlap>190</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="97" end="284">YKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              : ::   .    . .:. .     :: :.:::::::: :.:-: :::: :::.:. ...   . .. :....: ::.. --. ::. :.. :.. .:  .. .:.:: :.::::.. .: :-:.:::::::.. :.:.. :: : :::..  ...::  ::.:. ..: :::::.:::::::...: . :</pattern>
+      <matchSeq start="75" end="262">PQHYQYGPPQGGYQYPPQDGSRAGPSDQAHQPPQGMQQFGHGAPSDYAFQYSQCTGKRKALLIGINYFGQE-GELRGCINDVRNLSNFLMEFYQYRREDMVLLTDDAQDPMSQPTRDNIVRAMHWLVEGAQPNDSLFFHYSGHGGQTEDLD-GDEDDGYDEVIYPVDFRANGHIVDDDMHLWMVQPLQAGVRLTAIFDSCHSGTALDLPYVYSTSGVLKEPNLAKEAGVGLLGAVQSYARGDLGGVATSLFGFAKKAFSDKQARDRTMRTKTSPADVISWSGSKDDQTSADATIASQATG</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>146</score>
+      <smithWatermanScore>146</smithWatermanScore>
+      <zScore>672.0</zScore>
+      <bits>132.9</bits>
+      <expectation>7.2e-30</expectation>
+      <identity>31.2</identity>
+      <positives>62.4</positives>
+      <overlap>109</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="111">----------------------------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMV</querySeq>
+      <pattern>                              :  .: :..  . :  -- ::.   :: .: :::::.. .:.---------: :: . .....:  ...-----... .:::..:. ::..-.:: :::. :::.:...</pattern>
+      <matchSeq start="300" end="391">GVGLLGAVQSYARGDLGGVATSLFGFAKKAFSDKQARDRTMRTKTS--PADVISWSGSKDDQTSADATIASQ---------ATGAMSYAFVSALRANRN-----QTYNQLLNSIRDILEGQ-YSQKPQLSCSHPLDTENVWFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="MCA1_BOTFB" ac="A6SDT7" length="431" description="Metacaspase-1 OS=Botryotinia fuckeliana (strain B05.10) OX=332648 GN=casA PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>539</score>
+      <smithWatermanScore>539</smithWatermanScore>
+      <zScore>671.2</zScore>
+      <bits>132.9</bits>
+      <expectation>8e-30</expectation>
+      <identity>40.4</identity>
+      <positives>72.3</positives>
+      <overlap>213</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="331">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   :.. .....: :: ..--. ::. :.. :.. .:  .. .:.:: :.::::.. .: :-:.:.:::::.. :.:... : : ::... :...::  ::.:. ..: :::::.:::::::...: . : .. ..  -. ::: ..  .   ..: : . ..    . .: :: .:</pattern>
+      <matchSeq start="135" end="344">NQNAPPPPPQGMHAFGQGAPQGYAFQYSNCTGKRKALLIGINYFG-QRGQLRGCINDVKNMSSYLHENFGYQRDDMVLLTDDQQNPMSQPTKQNILRAMHWLVKDARPNDSLFFHYSGHGGQTKDLD-GDEEDGYDEVIYPVDFRQVGHIVDDEMHRIMVQPLQPGVRLTAIFDSCHSGTALDLPYVYSTQGVLKEPNLAKEAG-QGLLGVISSYSQGDMSGVASNLMGFFKKATTGDDAYNKTLATKTSPADVIMWSGSKDDQTSADATIAAQATGAMSWAFITAMKKNPQQSYVQLLN</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <zScore>671.2</zScore>
+      <bits>132.9</bits>
+      <expectation>8e-30</expectation>
+      <identity>36.4</identity>
+      <positives>68.2</positives>
+      <overlap>88</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="22" end="109">---------MGFLRRQLREQFEKKKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMD</querySeq>
+      <pattern>                              ::. : :: .: :::::.. ---------:..: :: . ...... :. :-----.:.:.:::..:..: .:-..: :::. :::...</pattern>
+      <matchSeq start="353" end="425">GVASNLMGFFKKATTGDDAYNKTLATKTSPADVIMWSGSKDDQTSADATI---------AAQATGAMSWAFITAMKKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPLSMFSPLAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="MCA1A_ASPCL" ac="A1CQZ0" length="429" description="Metacaspase-1A OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>538</score>
+      <smithWatermanScore>538</smithWatermanScore>
+      <zScore>669.9</zScore>
+      <bits>132.7</bits>
+      <expectation>9.4e-30</expectation>
+      <identity>39.6</identity>
+      <positives>70.8</positives>
+      <overlap>212</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="330">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.::.::::: :-..: :::: ::::::  :..   :.  :....: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:.:::::.. :.:... : : ::... :...::  ::.:. ..: ::::..:::::.:...: . :---- :.  .   : .:.-- . ..   .:.. . :.: . . : :</pattern>
+      <matchSeq start="133" end="336">HQGGPPPPPSEPVAFGHGAPQGYNFQYSRCTGKRKALMIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVQPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKE----PNLAKEAGQGLLGV--VSAYARGDMGSMVSTAVGFLKRAAKGDEAYERTKQTKTSPADVIMWSGSKDSQTSQDAQIAGQATGAMSWAFISALRKNPQQSY</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>185</score>
+      <smithWatermanScore>185</smithWatermanScore>
+      <zScore>669.9</zScore>
+      <bits>132.7</bits>
+      <expectation>9.4e-30</expectation>
+      <identity>38.2</identity>
+      <positives>67.6</positives>
+      <overlap>102</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="110">---------------------MGFLRRQLREQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAV</querySeq>
+      <pattern>                              : .:.-:. ..  ::. : :: .: ::: :.------:.---::.: :: . .....: :. :-----.:.:.:::..:..: .:-..: :::. :::.:.:</pattern>
+      <matchSeq start="338" end="424">LGVVSAYARGDMGSMVSTAVGFLKRAAKGDEAYERTKQTKTSPADVIMWSGSKDSQTSQDA------QI---AGQATGAMSWAFISALRKNPQ-----QSYVQLLNSIRDELATK-YTQKPQLSCSHPLDTNLLYVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="MCA1A_NEOFI" ac="A1D3V4" length="435" description="Metacaspase-1A OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>538</score>
+      <smithWatermanScore>538</smithWatermanScore>
+      <zScore>669.8</zScore>
+      <bits>132.7</bits>
+      <expectation>9.6e-30</expectation>
+      <identity>42.7</identity>
+      <positives>72.9</positives>
+      <overlap>192</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="310">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   :.  :....: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:.:::::.. :.:... : : ::... :...::  ::.:. ..: ::::..:::::.:...: . : .. ..  -. :::  .      .::</pattern>
+      <matchSeq start="144" end="332">HQGGPPPPPTDPVAFGHGAPQGYSFQYSRCTGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVRPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNLAKEAG-QGLLGVVSAYARGDMGGMVSTAVGFLKRATKGDEAYTRSKQTKTSPADVIMWSGSKDSQTSQDAQIAGQATGAMSWAFITALRKNPQQSYVQLLN</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>184</score>
+      <smithWatermanScore>184</smithWatermanScore>
+      <zScore>669.8</zScore>
+      <bits>132.7</bits>
+      <expectation>9.6e-30</expectation>
+      <identity>37.3</identity>
+      <positives>65.5</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="107">------------------------------MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHND</querySeq>
+      <pattern>                              .:::.:  .--: . .-:. ..  ::. : :: .: ::: :.------:.---::.: :: . .....: :. :-----.:.:.:::..:..: .:-.:: :::. :::.</pattern>
+      <matchSeq start="338" end="432">PNLAKEAGQGLLGVVSAYARGDMGGMVSTAVGFLKRATKGDEAYTRSKQTKTSPADVIMWSGSKDSQTSQDA------QI---AGQATGAMSWAFITALRKNPQ-----QSYVQLLNSIRDELATK-YSQKPQLSCSHPLGKH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="MCA1A_ASPTN" ac="Q0CTN3" length="403" description="Metacaspase-1A OS=Aspergillus terreus (strain NIH 2624 / FGSC A1156) OX=341663 GN=casA PE=3 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>537</score>
+      <smithWatermanScore>537</smithWatermanScore>
+      <zScore>669.3</zScore>
+      <bits>132.5</bits>
+      <expectation>1e-29</expectation>
+      <identity>40.6</identity>
+      <positives>70.3</positives>
+      <overlap>212</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="330">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDALGKLNKFFG</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   :.  :....: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:::::::.. :.:..  : : ::... :...::  :..:. ..: ::::..:::::.:...: . :---- :.  .   : .:.-- . ..   .:.. . :.: . : : :</pattern>
+      <matchSeq start="107" end="310">GHGRPAPPPTDPVAFGHGAPQGYNFQYSRCTGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEDDGYDEVIYPVDFRVAGHIVDDEMHRIMVNPLKPGTRLTAIFDSCHSGSALDLPYIYSTQGILKE----PNLAKEAGQGLLGV--VSAYARGDMGSMVSTAVGFLKKAAKGDEAYERTKQTKTSPADVIMWSGSKDSQTSSDAQIQGQATGAMSWAFISALRKNPQQSY</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>189</score>
+      <smithWatermanScore>189</smithWatermanScore>
+      <zScore>669.3</zScore>
+      <bits>132.5</bits>
+      <expectation>1e-29</expectation>
+      <identity>39.2</identity>
+      <positives>68.6</positives>
+      <overlap>102</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="110">---------------------MGFLRRQLREQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAV</querySeq>
+      <pattern>                              : .:.-:. ..  ::. : :: .: :::.:----...:-----:.: :: . .....: :. :-----.:.:.:::..:..: .:-.:: :::. :::.:::</pattern>
+      <matchSeq start="312" end="398">LGVVSAYARGDMGSMVSTAVGFLKKAAKGDEAYERTKQTKTSPADVIMWSGSKDSQTSSD----AQIQ-----GQATGAMSWAFISALRKNPQ-----QSYVQLLNSIRDELATK-YSQKPQLSCSHPLDVNLLYVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="MCA1A_ASPFU" ac="Q4WJA1" length="413" description="Metacaspase-1A OS=Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 GN=casA PE=3 SV=3">
+    <alignments total="2">
+     <alignment number="1">
+      <score>537</score>
+      <smithWatermanScore>537</smithWatermanScore>
+      <zScore>669.0</zScore>
+      <bits>132.5</bits>
+      <expectation>1.1e-29</expectation>
+      <identity>46.4</identity>
+      <positives>77.1</positives>
+      <overlap>166</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="284">EAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHNDVKNMVEYIKAVHGFEDENITILMDDGEH--TAPTHANMIAAYKKIVALSKADDALFCHFSGHGAKIRDDDRGEEDDGYDETLVPIDYHENGMIRDDDLYDILIKPLVQGVHLVCLMDCCHSGTVLDLPYVYKADGNFTEMEIDENFDFKKLLGKFGIDDFDKFGGEALGKINGDALGKVGKDA</querySeq>
+      <pattern>                              :: :.:::::::: :-..: :::: ::::::  :..   :.  :....: :: ..--. ::.::.. :.. .:  .. .:.:: :.::::..  : :-:.:.:::::.. :.:... : : ::... :...::  ::.:. ..: ::::..:::::.:...: . :</pattern>
+      <matchSeq start="117" end="280">HQGGPPPPPTDPVAFGHGAPQGYSFQYSRCTGKRKALLIGINYFG-QKGQLRGCINDVKNMSTYLNQNFGYAREDMVLLTDDQQNPMSQPTKANILRAMHWLVKDAQPNDSLFFHYSGHGGQTPDLD-GDEEDGYDEVIYPVDFRQAGHIVDDEMHRIMVRPLRPGVRLTAIFDSCHSGSALDLPYIYSTQGILKEPNLAKEAGQGLLGVVSAYARGDMSGMVSTAVGFLKRATKGDEAY</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>194</score>
+      <smithWatermanScore>194</smithWatermanScore>
+      <zScore>669.0</zScore>
+      <bits>132.5</bits>
+      <expectation>1.1e-29</expectation>
+      <identity>37.2</identity>
+      <positives>66.4</positives>
+      <overlap>113</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="110">------------------------------MGFLRRQLR--EQFEK-KKPEALQADIRMISGCQDVQTSADVSNVSSFQLPDPAGNAGGACTSTLLNVLYKDHQTPEDTMSFVELLNKMRENLEAKGFSQVPQLTASHPIDVNDDFDLVPPAATGTRRALLIGINYVGHEQGVLRGCHND</querySeq>
+      <pattern>                              .:::.:  .--: . .-:. ..  ::. : :: .: ::: :.------:.---.:.: :: . .....: :. :-----.:.:.:::..:..: .:-.:: :::. :::.:.:</pattern>
+      <matchSeq start="311" end="408">PNLAKEAGQGLLGVVSAYARGDMSGMVSTAVGFLKRATKGDEAYTRSKQTKTSPADVIMWSGSKDSQTSQDA------QI---GGQATGAMSWAFITALRKNPQ-----QSYVQLLNSIRDELATK-YSQKPQLSCSHPLDTNLLYVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

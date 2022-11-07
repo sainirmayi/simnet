@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162157-0492-41897583-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162157-0492-41897583-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162157-0492-41897583-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0L1|THIG_PHATC" type="PROTEIN" length="269"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:21:57+00:00" end="2022-11-07T16:22:01+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="THIG_PHATC" ac="A0T0L1" length="269" description="Thiazole synthase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1724</score>
+      <smithWatermanScore>1724</smithWatermanScore>
+      <initn>1724</initn>
+      <init1>1724</init1>
+      <opt>1724</opt>
+      <zScore>1690.8</zScore>
+      <bits>320.6</bits>
+      <expectation>1.3e-86</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>269</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="269">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="269">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="THIG_THAPS" ac="A0T103" length="269" description="Thiazole synthase OS=Thalassiosira pseudonana OX=35128 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1486</score>
+      <smithWatermanScore>1486</smithWatermanScore>
+      <initn>1544</initn>
+      <init1>1457</init1>
+      <opt>1486</opt>
+      <zScore>1459.8</zScore>
+      <bits>277.8</bits>
+      <expectation>9.5e-74</expectation>
+      <identity>83.2</identity>
+      <positives>96.3</positives>
+      <overlap>268</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="268">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>: :..: :.::.:::.::::::::::::...:: ::. :.::::::::::::.:...:::.::..:::.:::::::::::::::.::::::::::::::.:::::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::.::::::::::::::..::::::..:::.:::::.:::::.::::::::::::::::::::: ::: :: ::::.:::.::::::::: ::. :::. ::::.</pattern>
+      <matchSeq start="1" end="268">MKNTFDPLRIGDKSFSSRLMLGTGKYRTSEDAINSIKKSECDIVTVAIRRLPTNINSDNISFLKSLDWEKLWLLPNTAGSQTAEDAIRMAFLGHELACQLGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLVKKGFTVLPYINADPMLALHLEDLGCATVMPLGSPIGSGQGLNNLANLQIIIENANIPVIVDAGIGAPSEATMAMELGADGVLLNTAVAQSKNPEQMAFAMNLGVQSGRLGYLAGRMEKKQYANPSSPVSQISKIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="THIG_TRICV" ac="P49570" length="261" description="Thiazole synthase OS=Trieres chinensis OX=1514140 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1392</score>
+      <smithWatermanScore>1392</smithWatermanScore>
+      <initn>1392</initn>
+      <init1>1392</init1>
+      <opt>1392</opt>
+      <zScore>1368.8</zScore>
+      <bits>260.9</bits>
+      <expectation>1.1e-68</expectation>
+      <identity>81.7</identity>
+      <positives>95.6</positives>
+      <overlap>252</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="252">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>: :: : ::::::.::::::::.::::: ..:. ::  :.:.:.:::.::::..: ::: .::..::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::.:::::::::::..:..:::::.:.::::::::::::::...:::::::::::::.::.:.: .:: ::.:.:.::::.::::::::</pattern>
+      <matchSeq start="1" end="252">MINNSDTLKIGNKTFNSRLMLGSGKYRTIENAVNSIITSDCEILTVAVRRLPTKLTNDNTSFLKSLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQLGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLVKKGFTVLPYINADPMLALHLEDLGCATVMPLGSPIGSGQGLNNISNLQIIIENSSIPVIIDAGIGTPSEAAKSMELGADGVLLNTAIAQAKTPEKMALAMKLAVEAGRLGYLAGRMEKNRMQVQVLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="THIG_PROM9" ac="Q317X8" length="264" description="Thiazole synthase OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 GN=thiG1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1118</score>
+      <smithWatermanScore>1118</smithWatermanScore>
+      <initn>945</initn>
+      <init1>945</init1>
+      <opt>1118</opt>
+      <zScore>1102.7</zScore>
+      <bits>211.7</bits>
+      <expectation>7.4e-54</expectation>
+      <identity>64.8</identity>
+      <positives>87.5</positives>
+      <overlap>264</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="266">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>  .: ..:.::.:.:.::::.:::::..::. . :. .:. .:.:::.::.  .  .::.--:.:..:.: :.::::::  .:.::.:.:.::.:::   :::.: ::::::: : :::::::: :.:::: ::.:::.:::::::::.:: .::.:::.:::::.::::::::: ::.:: ::::::.::::::::::.::::.:::::::::::.:.:.::.:::  ::.:.  ::.::: :.::::..:. .: :::: ..::</pattern>
+      <matchSeq start="2" end="263">-MDNYSSLRIGGKQFSSRLMVGTGKYKSTQDMVESLSNSDTEIITVAVRRIKNDQTGDNL--LEKINWKKYWMLPNTAGCVNADEAVRIAMLGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETVKAAEVLIKKGFAVLPYINADPILAKRLEELGCSTVMPLGSPIGSGQGLLNLSNIAIIIENAKVPVIIDAGIGVPSEASQAMELGADGVLINSAIAQAKNPPLMAQAINYGVKAGRQAFLAGRIKKQDFAIASSPEKNISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="THIOG_NOSS1" ac="Q8YRC9" length="652" description="Bifunctional protein ThiO/ThiG OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=thiO/thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1119</score>
+      <smithWatermanScore>1119</smithWatermanScore>
+      <initn>1216</initn>
+      <init1>979</init1>
+      <opt>1119</opt>
+      <zScore>1096.2</zScore>
+      <bits>211.8</bits>
+      <expectation>1.7e-53</expectation>
+      <identity>66.8</identity>
+      <positives>87.3</positives>
+      <overlap>259</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="262">--------------------------MTNNLDK-LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>                              ::.-: :..:::.:::: ::::::. .    :.  :.:.:::::.::. ..  . .-.. . :::.:.:.:::::: ::::::::.: ::.:.:  .::::: ::::::: :::::::::::::.::: :...::.:::::::::::: ::::.::::::::::::::::::.. :::.::::::..::..:::::.::::.::::::::..:.:.:.: ..::. ::.:: :.. :::::::::::  : ::.::::.</pattern>
+      <matchSeq start="390" end="647">RSQKQASTIPMLTHSANFSNGHTKNPPLPTLDSPLIIAGKSFHSRLMTGTGKYRSIEEMQQSVVASGCEIVTVAVRRVQTKTPGHE-GLAEALDWSKIWMLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPIGTLQAAEQLVKEGFAVLPYINADPMLAKHLEDVGCATVMPLASPIGSGQGLKTTANIQIIIENAKIPVVVDAGIGAPSEASQAMELGADALLINSAIALAQNPAAMAQAMNLATVAGRLAYLAGRMPMKTYASASSPVTGTIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="THIG_PROM2" ac="A8G7G9" length="264" description="Thiazole synthase OS=Prochlorococcus marinus (strain MIT 9215) OX=93060 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1099</score>
+      <smithWatermanScore>1099</smithWatermanScore>
+      <initn>1089</initn>
+      <init1>937</init1>
+      <opt>1099</opt>
+      <zScore>1084.3</zScore>
+      <bits>208.3</bits>
+      <expectation>7.9e-53</expectation>
+      <identity>64.5</identity>
+      <positives>87.2</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="266">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>   : ..: ::.:.:.::::.:::::..::. : :. .:. .:.:::.::.----:::. --:.:.:..:.: :.::::::  ...::.:.:.::.:::   :::.: ::::::: : :::::::. ::::::.::.:::.:::::::::.:: .::..::::::::.::::::::: ::.:: ::::.:.::::::::::.::::.:::::::::::.:.:.::..::  ::.:.  ::.::: :.::::..:. .: :::: ..::</pattern>
+      <matchSeq start="3" end="263">-MKNYSSLLIGGKKFSSRLMVGTGKYKSTQDMIESLSNSETEIITVAVRRI----KNDETGENLLEKINWKKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPMETLKAAEILIKKGFSVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIGIIIESAKVPVIIDAGIGVPSEASQAMELGADGVLINSAIAQAENPPLMAQAINYGVKAGRQAFLAGRIKKQDFATASSPEKNISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="THIG_PORPU" ac="P51361" length="277" description="Thiazole synthase OS=Porphyra purpurea OX=2787 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1097</score>
+      <smithWatermanScore>1097</smithWatermanScore>
+      <initn>1092</initn>
+      <init1>1092</init1>
+      <opt>1097</opt>
+      <zScore>1081.9</zScore>
+      <bits>208.0</bits>
+      <expectation>1.1e-52</expectation>
+      <identity>64.2</identity>
+      <positives>86.6</positives>
+      <overlap>268</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="267">----------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKN-DNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>          ....::..::..:::.::::::::::.. :.:: ::. :. .::::::::  -: ::-   :... :::.:::.:::::: ..::::.:.: ::.:.. ..:: :: :.::::: : .::::::::::::::.:: :::.:.:::.:::.:: .::..:::::::::::::::.:: :: :.:::::::..:::::::::::::: ..:::::..::.:::.:..:: . :: :: :.:..:::.:.::::  .  :. :::.  :::</pattern>
+      <matchSeq start="11" end="277">MKPSFSLPHFVNDQLDQFKISDKSFSSRLMLGTGKYKNLQDAINSINVSGANIVTVAIRRAQ-NTKNLGRTNLIDGLDWSKLWILPNTAGCESAEEAVRIASLGQEIVKKLGQFDNNFIKLEVIPDSRYLLPDPIGTLKAAEYLINKGFVVMPYIGADPVLAKQLENIGCATVMPLASPIGSGKGLRNLLNLKIIIENAKIPVIIDAGIGTPSEAGKVMELGASAVLVNTAIARAKNSQTMARAMSLAVESGRLTYIAGRMPISEKAEPSSPILGISK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="THIOG_TRIV2" ac="Q3M859" length="652" description="Bifunctional protein ThiO/ThiG OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=thiO/thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1104</score>
+      <smithWatermanScore>1104</smithWatermanScore>
+      <initn>1202</initn>
+      <init1>965</init1>
+      <opt>1104</opt>
+      <zScore>1081.6</zScore>
+      <bits>209.1</bits>
+      <expectation>1.1e-52</expectation>
+      <identity>66.0</identity>
+      <positives>87.3</positives>
+      <overlap>259</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="262">--------------------------MTNNLDK-LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>                              ::.-: :..:::.:::: ::::::. .    :.  :.:.:::::.::. ..  . .-.. . :::...:.:::::: ::::::::.: ::.:.:  .::::: ::::::: :::::::::::::.::: :...::.:::::::::::: .:::.::::::::::::::::::.. :::.::::::..::..:::::.::::.::::::::..:.:.:.: ..::. ::.:: :.. :::::::::::  : ::.::::.</pattern>
+      <matchSeq start="390" end="647">RFQKQASTTPMFTHSANFSNGHAKNPPLPTLDSSLIIAGKSFHSRLMTGTGKYRSIEEMQQSVVASGCEIVTVAVRRVQTKAPGHE-GLAEALDWSRIWMLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPIGTLQAAEQLVKEGFAVLPYINADPMLAKRLEDVGCATVMPLASPIGSGQGLKTTANIQIIIENAKIPVVVDAGIGAPSEASQAMELGADALLINSAIALAQNPAAMAQAMNLATVAGRLAYLAGRMPIKTYASASSPVTGTIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="THIG_PROMS" ac="A2BTP5" length="264" description="Thiazole synthase OS=Prochlorococcus marinus (strain AS9601) OX=146891 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1096</score>
+      <smithWatermanScore>1096</smithWatermanScore>
+      <initn>1086</initn>
+      <init1>929</init1>
+      <opt>1096</opt>
+      <zScore>1081.4</zScore>
+      <bits>207.8</bits>
+      <expectation>1.1e-52</expectation>
+      <identity>64.2</identity>
+      <positives>87.5</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="266">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNI--NFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>   : ..: ::.:.:.::::.:::::..::. .::. .:. .:.:::.::.----:::. --:.:.:..:.: :.::::::  ...::.:.:.::.:::   :::.: ::::::: : :::::::: ::::::.::.:::.:::::::::.:: .::..::::::::.::::::::: ::.::.:::::..::::::::::.::::.::::.::::::.:.:.::. ::  ::.:.  .:.::: :.::::..:. .: :::: ..::</pattern>
+      <matchSeq start="3" end="263">-MENYSSLLIGGKQFSSRLMVGTGKYKSTQDMVASLSNSETEIITVAVRRI----KNDQTGENLLEKINWEKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILIKKGFAVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIRIIIENSKVPVIIDAGIGVPSEASQAMEIGADGVLINSAIAQAANPPLMAQAINYSVKAGRQAFLAGRIKKQDFAVASSPEKNISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="THIG_ACAM1" ac="B0C390" length="275" description="Thiazole synthase OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1087</score>
+      <smithWatermanScore>1087</smithWatermanScore>
+      <initn>1091</initn>
+      <init1>945</init1>
+      <opt>1087</opt>
+      <zScore>1072.3</zScore>
+      <bits>206.2</bits>
+      <expectation>3.7e-52</expectation>
+      <identity>63.0</identity>
+      <positives>87.5</positives>
+      <overlap>257</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="262">--------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>             . :.::...:.:::: :::::   ..   ::  :.:.:::::.::. .:  . .-.. . .::::.:.:::::: ::::::.:.: ::.:.:  .::::: :.::::: : :::::::::::.::: :...::.:::::::::.:: .::..::::::::.::::::::..:.:::.::::::.:::..:::::.::::.::::.:::.::.:::.:....: .::.:: ...::::.:: .::.  : ::.:::::</pattern>
+      <matchSeq start="14" end="269">MQTIDSSSSAATTETLQIGHRQFQSRLMTGTGKYDDFETMRRSIAASGCEIVTVAVRRVQTNAPGHQ-GLAEAVDWNKVWMLPNTAGCQTAEEAVRVARLGREMAKLLGQEDNNFIKLEVIPDSKYLLPDPIGTLEAAEQLVKEGFAVLPYINADPLLAKRLEEVGCATVMPLGSPIGSGQGIKNMANIQIIIENATVPVVVDAGIGSPSEAAQAMEMGADAVLINTAIAKAQDPVMMATAMGMATQAGRFAYQSGRIPVKAYASASSPLAGRISS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="THIG_PROM0" ac="A3PFF2" length="264" description="Thiazole synthase OS=Prochlorococcus marinus (strain MIT 9301) OX=167546 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1086</score>
+      <smithWatermanScore>1086</smithWatermanScore>
+      <initn>1081</initn>
+      <init1>933</init1>
+      <opt>1086</opt>
+      <zScore>1071.6</zScore>
+      <bits>206.0</bits>
+      <expectation>4e-52</expectation>
+      <identity>63.1</identity>
+      <positives>87.8</positives>
+      <overlap>263</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="266">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>   : ..: ::.:.:.::::.:::::...:. . :. .:. .:.:::.::.  . ...:.--:.:..:.: :.::::::  ...::.:.:.::.:::   :::.: ::::::: : :::::::: ::::::.::.:::.:::::::::.:: .::..::::::::.::::::::: ::.::.::::::.::::::::::.::::.::::.::::::.:.:.::. ::  ::.:.  .:.::: :.::::..:. .: :::: ..::</pattern>
+      <matchSeq start="3" end="263">-MKNYSSLIIGGKKFSSRLMVGTGKYKSSQDMVESLSNSETEIITVAVRRIKNEQSGENL--LEKINWEKYWMLPNTAGCVNSDEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILIKKGFAVLPYINADPILAKRLEEIGCATVMPLGSPIGSGQGLLNLSNIRIIIENAKVPVIIDAGIGVPSEASQAMEIGADGVLINSAIAQAANPPLMAQAINYSVKAGRQAFLAGRIKKQDFAVASSPEKNISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="THIG_THEVB" ac="Q8DMP6" length="277" description="Thiazole synthase OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1086</score>
+      <smithWatermanScore>1086</smithWatermanScore>
+      <initn>1088</initn>
+      <init1>942</init1>
+      <opt>1086</opt>
+      <zScore>1071.2</zScore>
+      <bits>206.0</bits>
+      <expectation>4.2e-52</expectation>
+      <identity>66.7</identity>
+      <positives>85.9</positives>
+      <overlap>255</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="262">--------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>               : :....: :::: ::::::.  .  ::.  :.:.:::::.::. .:  . .-.... :::.:::::::::: ::::::::.: ::.:.:  .::::: ::::::: :::::::::.::: ::: :...::.:::::::::.:: .::..::.::::::::::::::: : :::.::::.:::::..::::::::::. :::::::..:.:::.:.. :   ::.:: :.. ::::::::::.  : ::.:::::</pattern>
+      <matchSeq start="16" end="269">MVSAPPAEQLIEDAPLTIAGRQFRSRLMTGTGKYRSIADLQASVAASGCEIVTVAVRRVQTNAPGHE-GLVDALDWSKLWLLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDPKYLLPDPFGTLAAAEQLVKEGFAVLPYINADPLLAKRLEEVGCVTVMPLASPIGSGQGLRNAANIQIIIEQASVPVVVDAGIGTPSEAAAAMELGADALLINTAIAEAGNAPAMAKAMALATTAGRLAYLAGRIPVKAYASASSPLSGTITARS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="THIG_PROMP" ac="Q7UZJ9" length="265" description="Thiazole synthase OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1085</score>
+      <smithWatermanScore>1085</smithWatermanScore>
+      <initn>936</initn>
+      <init1>936</init1>
+      <opt>1085</opt>
+      <zScore>1070.6</zScore>
+      <bits>205.8</bits>
+      <expectation>4.5e-52</expectation>
+      <identity>64.9</identity>
+      <positives>86.9</positives>
+      <overlap>259</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="266">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>       :.::.:::.::::.::::: ...  . :. ... .:::::.::.  : ...:.--:.:.::.:.:.::::::  ...::::.:.::.:::   :::.: ::::::: : :::::::: ::::::.:: : : :::::::::.:: .::..::.:::::.::::::::: ::.::.:::::...:::::::::.::::.:::::::::::.:.:.: .::: .::.::  ::.::: :.::::.::.  :.::::  .::</pattern>
+      <matchSeq start="7" end="263">-MKEDSCLQIGGKSFSSRLMVGTGKYTSSEVMLESLANTESEIVTVAVRRIQNNQNGENL--LEKIDWKKFWMLPNTAGCTNSDEAIRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILINKDFIVLPYINADPILAKKLEEIGCSTVMPLGSPIGSGQGLLNLSNISIIIENSNIPVIIDAGIGVPSEASQAMELGADGVLINSAIALAKNPLKMAKAMNYGVKAGREAFLAGRIEKQKLANASSPEINISIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="THIG_NEOYE" ac="Q1XDC6" length="277" description="Thiazole synthase OS=Neopyropia yezoensis OX=2788 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1085</score>
+      <smithWatermanScore>1085</smithWatermanScore>
+      <initn>1083</initn>
+      <init1>1083</init1>
+      <opt>1085</opt>
+      <zScore>1070.3</zScore>
+      <bits>205.8</bits>
+      <expectation>4.7e-52</expectation>
+      <identity>64.4</identity>
+      <positives>85.6</positives>
+      <overlap>264</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="267">----------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKN-DNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>              ::.::::.: ::::::.::::: . . :: ::. :. .::::::::  -: ::-   :.:. :::.:::.:::::: ..::::.:.: ::.:.. ..:: :: :.::::: : .::.:::::::::::.:..::: :.:::.:::.:: .::..::::::::::::::::::.:: :.::::::...::::::::::::::...::.::.:::.:::.:.. :  :::.:: :.:..:::.. ::::  .  :. :::.  :::</pattern>
+      <matchSeq start="15" end="277">MKQSFSRPHFENQELDSLKIGEKIFNSRLMVGTGKYNNLKEAIKSIDYSGANIVTVAIRRAQ-NSKNLGRSNLLDGLDWSKLWILPNTAGCESAEEAVRIAALGREIVKKLGQTDNNFIKLEVIPDSHYLFPDPIGTLKAAEYLVKKGFIVMPYIGADPVLAKQLENIGCATVMPLASPIGSGQGLKNLLNLKIIIENSNIPVIIDAGIGTPSEAAKVMEMGASGVLVNTAIARAPNSPQMAKAMSLAVKSGRLTHTAGRMIINQTANPSSPIFGISK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="THIG_PROM5" ac="A2BZ50" length="265" description="Thiazole synthase OS=Prochlorococcus marinus (strain MIT 9515) OX=167542 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1081</score>
+      <smithWatermanScore>1081</smithWatermanScore>
+      <initn>1078</initn>
+      <init1>947</init1>
+      <opt>1081</opt>
+      <zScore>1066.8</zScore>
+      <bits>205.1</bits>
+      <expectation>7.4e-52</expectation>
+      <identity>64.6</identity>
+      <positives>87.3</positives>
+      <overlap>260</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="267">MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>       : ::.:.:.::::.::::: ...  . :. ... .:::::.::. -: .: .-:.:.:.::.:.:.::::::  .:.::.:.:.::.:::   :::.: ::::::: : :::::::: ::::::.::.: : :::::::::.:: .::..::.:::::.::::::::: ::.::.:::::...:::::::::.::::.:::::::::::.:.:.: .:.: .::.::  ::.::: :.::::.::.  :.::::. .:::</pattern>
+      <matchSeq start="7" end="264">-MKEDSALIIGGKNFSSRLMVGTGKYTSAEVMVESLLNTESEIVTVAVRRVQ-NHQNGE-NLLEKIDWEKFWMLPNTAGCANADEAVRIAILGRELAKLSGQEENNFVKLEVIPDKKYLLPDPIETLKAAEILIKKDFIVLPYINADPILAKKLEEIGCSTVMPLGSPIGSGQGLLNLSNISIIIENSNIPVIIDAGIGVPSEASQAMELGADGVLINSAIALAKDPLKMAKAMNHGVRAGREAFLAGRIEKQRLASASSPFTNISKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="THIG_EMIHU" ac="Q4G387" length="277" description="Thiazole synthase OS=Emiliania huxleyi OX=2903 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1066</score>
+      <smithWatermanScore>1066</smithWatermanScore>
+      <initn>1066</initn>
+      <init1>1066</init1>
+      <opt>1066</opt>
+      <zScore>1051.8</zScore>
+      <bits>202.4</bits>
+      <expectation>5e-51</expectation>
+      <identity>62.7</identity>
+      <positives>84.4</positives>
+      <overlap>263</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="267">---------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>             .: : ::...:.::::::::::.. . :  ::  :.:.:.:::.::   .  ..  :... :::.:.::.::::: :::.::::.::::.:.. ..: :.: :.::::: :::::::: .::: :::.:. :.:::::::::::.:: .::. ::::::::.:::::::::.::.::.::::::.::::.::::::::.:.::::.:: ::: :::::...:  ::: ::.::: ::: :. ::...    :. :::.  .::</pattern>
+      <matchSeq start="14" end="276">MTETFEMSPYQPVIDPLVIGERQFTSRLMLGTGKYKNLDEAKKSITASGCQILTVAVRRAQNSTIQSMGNLITGLDWSKIWLMPNTAGCQTAQEAIRVAFLGREITKNIGFENNNFTKLEVIPDPKYLLPDGLGTLLAAEYLVSKNFTVLPYINADPILAKQLENAGCATVMPLGSPIGSGQGLKNLSNIQIIIENANVPVIVDAGIGTPSQAAQAMEIGAGGVLANTAVAKAQNAPQMAYAMQLGVLAGRAAFQAGKIDAGKLAQPSSPIVGLSKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="THIG_TRIEI" ac="Q112X4" length="279" description="Thiazole synthase OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1066</score>
+      <smithWatermanScore>1066</smithWatermanScore>
+      <initn>1139</initn>
+      <init1>921</init1>
+      <opt>1066</opt>
+      <zScore>1051.8</zScore>
+      <bits>202.4</bits>
+      <expectation>5.1e-51</expectation>
+      <identity>63.0</identity>
+      <positives>86.6</positives>
+      <overlap>262</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="262">-------MTNNLDK-LKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>        :..:.:-: :..:.:.:::: ::::: : ..   ::: :.:.:.:::.::. ..  . .-.. . .::.:.:.:::::: ::::.:.:.: ::.:.:  .::::: ::::::: : :::::::::::.::: ::..::.:::::::::.:: .::. ::.:::::.::::::::..: :::.:::.:..:::.::::::::::::::::.:::..:.:.:.: .:::  ::.:: .....:::::::::. :: ::  :::.</pattern>
+      <matchSeq start="9" end="269">MQTVEKLTTETLEKPLIIAGKKFTSRLMTGTGKYPTIETMQQSIEASKCEIITVAVRRVQTQAPGHK-GLAEAIDWQKVWMLPNTAGCQTAEDAVRVARLGREMAKLLGQEDNNFVKLEVIPDSKYLLPDPIGTLQAAEQLIKEGFAVLPYINADPLLAKRLEEAGCSTVMPLGSPIGSGQGIQNAANISIIIDNSTVPVVIDAGIGTPSEATQAMEMGADALLINSAIALAKNPPIMAKAMGMATESGRLAYLAGRIPKKSYATPSSPVTGKINTTTSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="THIG_GRATL" ac="Q6B924" length="276" description="Thiazole synthase OS=Gracilaria tenuistipitata var. liui OX=285951 GN=thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1063</score>
+      <smithWatermanScore>1063</smithWatermanScore>
+      <initn>1115</initn>
+      <init1>1057</init1>
+      <opt>1063</opt>
+      <zScore>1049.0</zScore>
+      <bits>201.9</bits>
+      <expectation>7.3e-51</expectation>
+      <identity>64.7</identity>
+      <positives>85.7</positives>
+      <overlap>258</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="265">--------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>               : : :::: :::::::::::. ..:  ::..:. .::::::::   :  . . ..:. :::.:::.:::::: .:.:::::.:.::.:.: ..:: :: :::::::.: .::.::: :::::::.:. ..:::::::: ::.:: .::..::...:::.:::::::::.:: :..:::.::.::.:::::::: :::.::::.::.:::::::::.. ::  :: ::.::: .::.:::.::. :.  : :::: : :</pattern>
+      <matchSeq start="16" end="273">MSFNLISSYLHLTKPLIIDNKSFPSRLMLGTGKYRSLRNASISIRNSSASIVTVAIRRAYNNKLKGKSSLLDGLDWKKLWILPNTAGCETVEEAIRIAILGREMARRLGQVDNNFVKLEVIADSEYLFPDPYGTLKAAEYLVSNNFTVLPYINPDPVLAKQLEEIGCSAIMPLGSPIGSGQGLQNLLNLQIIINNAKVPIIIDAGIGTASEASQAMEMGASGVLLNTAVAKATNPEYMAEAMKLGVISGRIAYLSGRISKQDKAIASSPSEGIFIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="THIOG_SYNY3" ac="Q55710" length="656" description="Bifunctional protein ThiO/ThiG OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=thiO/thiG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1062</score>
+      <smithWatermanScore>1062</smithWatermanScore>
+      <initn>1066</initn>
+      <init1>924</init1>
+      <opt>1062</opt>
+      <zScore>1040.8</zScore>
+      <bits>201.6</bits>
+      <expectation>2.1e-50</expectation>
+      <identity>63.0</identity>
+      <positives>85.6</positives>
+      <overlap>257</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="262">-------------------------MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>                              : :.:....:.:::: ::::: .  .   :. .:.:.:::::.::. .:  . .-.. . .::. .:.:::::: ::::::::.: ::.:.:  .::::: :.::::: : .::::::::::.::: :...::.:::::::::.:: .::..::::::::.::::::::. : ::: ::::::.:::..::::::::::.::::.:::.::.:.:.:.. ::  ::.:: ...::::::::.:::  :  :.:::::</pattern>
+      <matchSeq start="396" end="651">VLSCRPMTAVFPSIANPSLPHAAENSEGSKDLLEIAGRKFHSRLMTGTGKYPSLTTMQESVASSGCQIVTVAVRRVQTNAPGHE-GLAEAIDWSTIWMLPNTAGCQTAEEAIRVARLGREMAKLLGQEDNNFIKLEVIPDTQYLLPDPIGTLEAAEQLVKEGFAVLPYINADPLLAKRLEEVGCATVMPLGSPIGSGQGIRNAANIGIIIENAKVPVVVDAGIGTPSEAAQAMEMGADAVLINSAIAMAANPVAMAQAMGMATQAGRLAYLSGRMPIKAKANASSPLTGLVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="THIG_SYNP6" ac="Q5N3I3" length="276" description="Thiazole synthase OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=thiG PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1052</score>
+      <smithWatermanScore>1052</smithWatermanScore>
+      <initn>1056</initn>
+      <init1>897</init1>
+      <opt>1052</opt>
+      <zScore>1038.3</zScore>
+      <bits>199.9</bits>
+      <expectation>2.9e-50</expectation>
+      <identity>63.3</identity>
+      <positives>85.5</positives>
+      <overlap>256</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="261">----MTNNLDKLKIGNKSFNSRLMLGTGKYRTTQSAIASIEDSNCDIVTVAIRRLPVNLKNDNINFLNKLDWNKLWLLPNTAGSQTAEEAIRMAFLGHELACQVGQEDNFFVKLEVISDPKYLLPDPIGTLKAAEFLIRKGFTVLPYINADPMLALHLEDLGCATVMPLASPIGSGQGLNNLANIKIIIENASVPVIIDAGIGTPSEATQAMELGADGVLLNTAVAQSKNPSQMASAMRLGVQAGRLAYLAGRMEKKYYADASSPLEQISKLI</querySeq>
+      <pattern>         : : :...:: :::: ::::::. ..  :::  :.:.:::::.::. .:  . .-.. . :::.:.:.::::::  :::::::.: ::.:.:  .::::: ::::::: : .::::::::::.::: :...::.:::::::::.:: .::..::::::::.::::::::. : :::.::.:::.:::..:::::: :::.::::::::..:.:::.::...:..::.:: ... :::::. :::.  .  : ::::</pattern>
+      <matchSeq start="10" end="264">MVATPDTTADVLTIAGRSFRSRLMTGTGKYRSFEQMRASIAASGCEIVTVAVRRVQTNAPGHE-GLAEALDWQKIWMLPNTAGCATAEEAIRVARLGREMAKLLGQEDNNFVKLEVIPDSRYLLPDPIGTLQAAEQLVKEGFAVLPYINADPLLAKRLEEVGCATVMPLGSPIGSGQGIRNEANIRIIVENAKVPVVVDAGIGTASEAAQAMELGADALLINTAIAQAEDPARMAQAMAMATIAGRLAFQAGRIPTRSAAIASSPQTGLVGQSPATV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

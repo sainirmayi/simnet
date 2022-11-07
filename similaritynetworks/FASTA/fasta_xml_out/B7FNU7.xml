@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164106-0849-10043247-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164106-0849-10043247-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164106-0849-10043247-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FNU7|LIS1_PHATC" type="PROTEIN" length="439"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:41:06+00:00" end="2022-11-07T16:41:10+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="LIS1_PHATC" ac="B7FNU7" length="439" description="Lissencephaly-1 homolog OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_17300 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2946</score>
+      <smithWatermanScore>2946</smithWatermanScore>
+      <initn>2946</initn>
+      <init1>2946</init1>
+      <opt>2946</opt>
+      <zScore>2773.4</zScore>
+      <bits>522.3</bits>
+      <expectation>6.4e-147</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="439">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="439">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="LIS1_AEDAE" ac="Q17N69" length="409" description="Lissencephaly-1 homolog OS=Aedes aegypti OX=7159 GN=AAEL000770 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1164</score>
+      <smithWatermanScore>1164</smithWatermanScore>
+      <initn>1215</initn>
+      <init1>357</init1>
+      <opt>1150</opt>
+      <zScore>1030.2</zScore>
+      <bits>199.7</bits>
+      <expectation>8.1e-50</expectation>
+      <identity>44.2</identity>
+      <positives>69.0</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGG-ARRL----LPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>       :.:..-- .: .:: : :--:  ..::. .---:  .:.    . :.--------:::::::.. ::::::.::: . :.  :---------------:: .::  -:.: ----.:: : . .: :: ..:: :  ::::....:.:::...:.:: :.::: :::::::..:. :::   :. :::::.::::::::::-:. :.::..::::..::: :.:-.:: :--------:::::: :.:.:.. ::.: .:.  : .::: . . .:::. :: .::  . :.. .  .  .::: ::..:: ::.  ...    :--:   .:.      .:.:::::.:.:.: :. . ::..: .::::::....::.:.:.::.::::..:..:..:.::..:: -::.:: .::::: . : ..::::: :.. :</pattern>
+      <matchSeq start="8" end="406">MYVRRLRRERSN--QAIADYLGSNG--YTDALEAFRK---EADMPNEIERKYGG--------LLEKKWTSVIRLQKKVMELEAKLSEAEK---------------EAIEGAPTKAKRTPTDWIPRPPEKFALAGHRATVTRVVFHPVFSMMASASEDATIKIWDFETGEYERTLKGHTDSVQDLAFDSHGKLLASCSSDLSIKLWDFQQTFECVKTMHGHDHNVSSVSFVP-AGDYL--------LSASRDKTIKMWEVATGYCVKTFTGHREWVRMVRVNVDGSLMASCSNDHSVRVWQTNSKECKAELREHENTVECIAWAPESAAAAINEAAGADNKKGAHQGPFLASGSRDKTIRVWDVNSGLCLFTLVGHDNWVRGIVFHPGGKYMLSASDDKTLRIWDLRNKRCMKTLY-AHSHFCTSLDMHKSHPYVISGSVDTTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="LIS1_DROVI" ac="B4LQ21" length="411" description="Lissencephaly-1 homolog OS=Drosophila virilis OX=7244 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1183</score>
+      <smithWatermanScore>1183</smithWatermanScore>
+      <initn>1074</initn>
+      <init1>350</init1>
+      <opt>1139</opt>
+      <zScore>1015.1</zScore>
+      <bits>196.9</bits>
+      <expectation>5.6e-49</expectation>
+      <identity>44.1</identity>
+      <positives>70.5</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .::.- .::------- .: .. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: :.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: ..::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLEAFRKEAD-------LSTEAEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGQCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="LIS1_DROAN" ac="B3MEY6" length="411" description="Lissencephaly-1 homolog OS=Drosophila ananassae OX=7217 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1183</score>
+      <smithWatermanScore>1183</smithWatermanScore>
+      <initn>1071</initn>
+      <init1>353</init1>
+      <opt>1139</opt>
+      <zScore>1015.1</zScore>
+      <bits>196.9</bits>
+      <expectation>5.6e-49</expectation>
+      <identity>44.5</identity>
+      <positives>70.2</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .::.- .::------- .: .. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : .....:: . .: :  ::.: .:::.:::...:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-:: :.::..::::..:::.:.:-.:: .--------:::::: :::.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .:: :.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLEAFRKEAD-------LSTEAEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSMSGHRASITRVIFHPIFGLVVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQTYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTVKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLTNSRDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLFTLNGHDNWVRGLAFHPAGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LIS1_DROPE" ac="B4GAJ1" length="411" description="Lissencephaly-1 homolog OS=Drosophila persimilis OX=7234 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1180</score>
+      <smithWatermanScore>1180</smithWatermanScore>
+      <initn>1072</initn>
+      <init1>350</init1>
+      <opt>1137</opt>
+      <zScore>1013.3</zScore>
+      <bits>196.5</bits>
+      <expectation>7.1e-49</expectation>
+      <identity>44.1</identity>
+      <positives>70.7</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::-------..: :. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: :.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :. ..     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YGDSLETFRKEAD-------VSTESEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDSQGKLLASCSADLSIKLWDFQQSYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLMNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LIS1_DROGR" ac="B4JWA1" length="411" description="Lissencephaly-1 homolog OS=Drosophila grimshawi OX=7222 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1178</score>
+      <smithWatermanScore>1178</smithWatermanScore>
+      <initn>1072</initn>
+      <init1>348</init1>
+      <opt>1137</opt>
+      <zScore>1013.3</zScore>
+      <bits>196.5</bits>
+      <expectation>7.1e-49</expectation>
+      <identity>43.9</identity>
+      <positives>70.5</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: . :--:   .::.- .::------- .: .. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :::::::..:. .::   :. :.:::.::::::::::-.: :.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: ..::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGTNG--YADSLEAFRKEAD-------LSTEAEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERTLKGHTDSVQDVAFDAQGKLLVSCSADLSIKLWDFQQSYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGQCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="LIS1_DROPS" ac="Q291L9" length="411" description="Lissencephaly-1 homolog OS=Drosophila pseudoobscura pseudoobscura OX=46245 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1180</score>
+      <smithWatermanScore>1180</smithWatermanScore>
+      <initn>1072</initn>
+      <init1>350</init1>
+      <opt>1137</opt>
+      <zScore>1013.3</zScore>
+      <bits>196.5</bits>
+      <expectation>7.1e-49</expectation>
+      <identity>44.1</identity>
+      <positives>70.7</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::-------..: :. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: :.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :. ..     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YGDSLETFRKEAD-------VSTESEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDSQGKLLASCSADLSIKLWDFQQSYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLMNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LIS1_DROSE" ac="B4HSL3" length="411" description="Lissencephaly-1 homolog OS=Drosophila sechellia OX=7238 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1170</score>
+      <smithWatermanScore>1170</smithWatermanScore>
+      <initn>1068</initn>
+      <init1>346</init1>
+      <opt>1134</opt>
+      <zScore>1011.4</zScore>
+      <bits>196.2</bits>
+      <expectation>9e-49</expectation>
+      <identity>43.9</identity>
+      <positives>70.0</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .:  . . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : . .: :: . .: :  ::.:...::.:::.....:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: ::::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTEVEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKFSLTGHRASITRVIFHPIFALMVSASEDATIRIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECIKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDQTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLSGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="LIS1_DROME" ac="Q7KNS3" length="411" description="Lissencephaly-1 homolog OS=Drosophila melanogaster OX=7227 GN=Lis-1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1170</score>
+      <smithWatermanScore>1170</smithWatermanScore>
+      <initn>1068</initn>
+      <init1>346</init1>
+      <opt>1134</opt>
+      <zScore>1011.4</zScore>
+      <bits>196.2</bits>
+      <expectation>9e-49</expectation>
+      <identity>43.9</identity>
+      <positives>70.0</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .:  . . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : . .: :: . .: :  ::.:...::.:::.....:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: ::::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTEVEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKFSLTGHRASITRVIFHPIFALMVSASEDATIRIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECIKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDQTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLSGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="LIS1_DROSI" ac="B4QHG6" length="411" description="Lissencephaly-1 homolog OS=Drosophila simulans OX=7240 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1170</score>
+      <smithWatermanScore>1170</smithWatermanScore>
+      <initn>1068</initn>
+      <init1>346</init1>
+      <opt>1134</opt>
+      <zScore>1011.4</zScore>
+      <bits>196.2</bits>
+      <expectation>9e-49</expectation>
+      <identity>43.9</identity>
+      <positives>70.0</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .:  . . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : . .: :: . .: :  ::.:...::.:::.....:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: ::::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTEVEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKFSLTGHRASITRVIFHPIFALMVSASEDATIRIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECIKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDQTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLSGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="LIS1_DROWI" ac="B4MY65" length="409" description="Lissencephaly-1 homolog OS=Drosophila willistoni OX=7260 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1175</score>
+      <smithWatermanScore>1175</smithWatermanScore>
+      <initn>1063</initn>
+      <init1>345</init1>
+      <opt>1134</opt>
+      <zScore>1010.5</zScore>
+      <bits>196.0</bits>
+      <expectation>1e-48</expectation>
+      <identity>43.9</identity>
+      <positives>70.5</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>:::..::: .:. .: .:: . :--:   .::.- .::------- .: .. . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :.:::::..:. .::   :. :.:::.::::::::::-.:::.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="1" end="406">MVLSQRQREELNQAIADYLGTNG--YADSLEAFRKEAD-------LSTEAEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLVSCSADLSIKLWDFQQSYACVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSLFATCSNDHTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="LIS1_DROER" ac="B3NPW0" length="411" description="Lissencephaly-1 homolog OS=Drosophila erecta OX=7220 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1168</score>
+      <smithWatermanScore>1168</smithWatermanScore>
+      <initn>1066</initn>
+      <init1>344</init1>
+      <opt>1132</opt>
+      <zScore>1009.5</zScore>
+      <bits>195.8</bits>
+      <expectation>1.1e-48</expectation>
+      <identity>43.9</identity>
+      <positives>69.8</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .:  . . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : . .: :: . .: :  ::.: ..::.:::.....:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: ::::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTEVEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKFSLTGHRASITRVIFHPIFGLMVSASEDATIRIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECIKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDQTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLSGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="LIS1_DROYA" ac="B4P6P9" length="411" description="Lissencephaly-1 homolog OS=Drosophila yakuba OX=7245 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1168</score>
+      <smithWatermanScore>1168</smithWatermanScore>
+      <initn>1066</initn>
+      <init1>344</init1>
+      <opt>1132</opt>
+      <zScore>1009.5</zScore>
+      <bits>195.8</bits>
+      <expectation>1.1e-48</expectation>
+      <identity>43.9</identity>
+      <positives>69.8</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .:  . . .:-----:::::::.. ::::::.::: . ..  :   .--------::   :  . :--. .:: : . .: :: . .: :  ::.: ..::.:::.....:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: ::::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..:::::::.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTEVEKKFGG-----LLEKKWTSVIRLQKKVMELEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKFSLTGHRASITRVIFHPIFGLMVSASEDATIRIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECIKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDQTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLSGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="LIS1_DROMO" ac="B4KT48" length="411" description="Lissencephaly-1 homolog OS=Drosophila mojavensis OX=7230 GN=Lis-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1173</score>
+      <smithWatermanScore>1173</smithWatermanScore>
+      <initn>1064</initn>
+      <init1>350</init1>
+      <opt>1129</opt>
+      <zScore>1008.6</zScore>
+      <bits>195.7</bits>
+      <expectation>1.3e-48</expectation>
+      <identity>43.6</identity>
+      <positives>70.2</positives>
+      <overlap>440</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEAL-AQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:   .:..- .::------- .: :. . .:-----:::::::.. ::::::..:: . ..  :   .--------::   :  . :--. .:: : ...: :: . .: :  ::.: ..::.:::...:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: :.::..::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .::: . .. .::..:. .:: .: :.  .     :::: ::..:: ::.  . .    :--:   .:. .    .:.:::::.:.:.: :: . ::..:..::::::.. .::.:.:..:.::::.:::.:..:.::..:: -::.:: .:.:.: . : ..::::::... :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YADSLETFRKEAD-------LSTESEKKYGG-----LLEKKWTSVIRLQKKVMDLEAKLTEAEKEVIE--------GAPTKNKRTPG--EWIPRPPEKYSLTGHRASITRVIFHPIFGLMVSASEDATIKIWDFETGEYERSLKGHTDSVQDVAFDAQGKLLASCSADLSIKLWDFQQSYECVKTMHGHDHNVSSVAFVP-AGDYV--------LSASRDRTIKMWEVATGYCVKTYTGHREWVRMVRVHIEGSIFATCSNDHTIRVWLTNSKDCKVELRDHEHTVECIAWAPEAAASAINEAAGADNKKGHHQGPFLASGSRDKTIRIWDVSVGLCLLTLNGHDNWVRGLAFHPGGKYLVSASDDKTIRVWDLRNKRCMKTLY-AHQHFCTSIDFHKAHPYVISGSVDQSVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LIS1_GLOMM" ac="D3TLL6" length="411" description="Lissencephaly-1 homolog OS=Glossina morsitans morsitans OX=37546 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1123</score>
+      <smithWatermanScore>1123</smithWatermanScore>
+      <initn>1024</initn>
+      <init1>336</init1>
+      <opt>1083</opt>
+      <zScore>958.9</zScore>
+      <bits>186.5</bits>
+      <expectation>7.5e-46</expectation>
+      <identity>42.4</identity>
+      <positives>69.9</positives>
+      <overlap>439</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="436">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQ-TYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNN--AQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>  :::..::: .:. .: .:: : :--:....::. .---:  :--------.. :    . :::::::.. ::::::.::: . :.  :   .-------:.  .:. . :---. .:: : . .:.:: . .: :  ::......:.:::. .:.:: :.::: :.:::::..:. .::   :. :::::.::::::::::-.: :.::. ::::..:::.:.:-.:: .--------:::::: :.:.:.. ::.: .:   : .:.: . .. ::...:: . :  : ..  .     .:::.:...:: ::.  . .  . :--:   .:. .    .:.:::::.:.:.: :. . ::.:: .:::::: . .::.:.:..:.::::.:::.:..:.: ..:: -::.:: .:.:.:  :: ..:::::.:.. :</pattern>
+      <matchSeq start="3" end="408">MKMVLSQRQREELNQAIADYLGSNG--YSSALEAFRK---EADI--------SGEAERKIVGLLEKKWTSVIRLQKKVMELEAKLSEAEKEVIE-------GAPSRAKRSPG---EWIPRPPEKFSLSGHRASITRVIFHPTYSLMLSASEDAVIKIWDFETGEYERSLKGHTSSVQDIAFDSQGKLLASCSADLSIKLWDFQQSYDCVKTMLGHDHNVSSVAFVP-AGDYV--------LSASRDQTIKMWEVATGYCVKTYSGHREWIRMVRVHMDGNIFASCSIDHSIRIWSINSRDCKAELRAHDHTVECIAWAPDISTTHINEAAGSDNKKGHHQGPFLASGSRDKTIRVWDVGVGLCLFVLTGHDNWVRELTFHPGGKYLVSASDDKTIRVWDLRNKRFMKTLY-AHQHFCTSVDFHKKLPYVISGSVDNTVKVWECR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LIS1_PYRTR" ac="B2VWG7" length="461" description="Nuclear distribution protein PAC1 OS=Pyrenophora tritici-repentis (strain Pt-1C-BFP) OX=426418 GN=pac1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>979</score>
+      <smithWatermanScore>979</smithWatermanScore>
+      <initn>858</initn>
+      <init1>276</init1>
+      <opt>979</opt>
+      <zScore>904.6</zScore>
+      <bits>176.6</bits>
+      <expectation>8e-43</expectation>
+      <identity>40.0</identity>
+      <positives>67.8</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="415">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTP-LLEKKWTAIPRLQKKVLELE-RQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFT-PTG-SHLASCSTDLSIKLWD-FQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAF---LTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNE-RCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>   .:::::  .:: .:  ::---:-----:..:   :--:    ......: ..:   :  -:::::::.. ::::::.:::-:. . .... .   ..----- :. :.  ..--- ::: : .::::.: : .:::  ::::. ..::::: ..:.:: : ::  ::.::::. :  . : -: :-. :::::.::.:::::- . :  :.:: ::::..:.. :.:-.:   . .. . :.::::: :...::. ::.: .::. : :::: .:   ::    ::::: .  ... .  .    . :::.::: ...---..  .. .  . .    . .  .:...::::.:...: -.... . .: .::::.::...::.:.:.::.::::.:: .:. .:-::..:. .::.:::: .</pattern>
+      <matchSeq start="4" end="406">MSAILTDRQAEELHKAIIAYL---G-----VINAPKTA--EAFREEANVSANFDDATRKKYEGLLEKKWTSVVRLQKKVMELEQRNQTLQSELDSTTPTS-----LLRRNQDPAS---WLPRAPARHTLQSHRSPITCVAFHPVFSSLASGSEDTTIKIWDWELGELERTVKGHTKGVLDVDFGGPRGGTLLASCSSDLTIKLWDPSDEYKNIRTLPGHDHSVSAIRFVP-SGAAGSPSSGNLLVSASRDKTLRIWDVTTGYCVKTIRGHADWVRDVAPSFDGRWLLSAGNDQTARLWDASSGEPKCTFIGHEHVVECVTIAPPVSYANLASLAGLKKPPPLSSSAEYIATGSRDKTIKIWD-GRGTLIKTLTGHDNWIRSLVFHPGGKYLLSASDDKTIRCWDLTQEGRCVKTVTDAHGHFVSCMRWAPNVIKDVPVNGDATNGATNGLSKKKEEEAAKAGIRCVIATGCVDLNVRIFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LIS1_DICDI" ac="Q8I0F4" length="419" description="Lissencephaly-1 homolog OS=Dictyostelium discoideum OX=44689 GN=lis1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1147</score>
+      <smithWatermanScore>1147</smithWatermanScore>
+      <initn>1135</initn>
+      <init1>496</init1>
+      <opt>1121</opt>
+      <zScore>899.8</zScore>
+      <bits>175.6</bits>
+      <expectation>1.5e-42</expectation>
+      <identity>42.1</identity>
+      <positives>67.8</positives>
+      <overlap>451</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="438">MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAG-GARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFTPTGSHLASCSTDLSIKLWDFQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTI---------PKNNA---QRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNERCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>::::..:. .:...: .:..:--. :..  : . . -------------.:.   . :  :::::::.. :::::::.::------::.   .   .:::: ---. : :-: .  ::: : .: : :: . .. :. :: :...::.:::...:::: ::::. ::::::::.:. . :  ::. :::::.::.::::::::: :.:::.::::..: : : :-.::--------.:.:.::: :.:::.  ::.: .:.  :.:::: ...  :::  :: .:: .: ...  . .  .  : : .::: .:: : . :---------:....---: :. ..     ::..::::.:...:... . :: .  .::::::.: .:: :...:: .:::.:::.:: . ::..:...::.::.: ::.    : ...:.::..:. : :</pattern>
+      <matchSeq start="1" end="418">MVLTSKQKEELNGSILDYFES--SQYKSSFEEFKKE-------------TGTELDVKKKGLLEKKWTSVIRLQKKVLDLE------AKVAQLEEELNSGGGR---GGGRGRGKEDALPRPPEKHILTGHRNCINSVKFHPSFSLMVSASEDATIKVWDFESGEFERTLKGHTNAVQDIDFDKTGNLLASCSADLTIKLWDFQTYDCVKTLHGHDHNVSCVRFTP-SGD--------QLISSSRDKTIKVWEAATGYCIKTLVGHEDWVRKITVSEDGSCIASCSNDQTIKTWNIVKGECLATYREHSHVVECLAFSTANIIDIPGSLLSTPEGKSKVKQGPGGNLVGQCGYLATGSRDKTIKIWELATGRCLATYIGHDNWVRAVRFHPCGKFLLSVGDDKTIRVWDIAQGRCIKTINEAHTHFISCLDFCLHNPHIATGGVDDVIKVWKLQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="LIS1_PHANO" ac="Q0U1B1" length="462" description="Nuclear distribution protein PAC1 OS=Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) OX=321614 GN=PAC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>955</score>
+      <smithWatermanScore>955</smithWatermanScore>
+      <initn>910</initn>
+      <init1>273</init1>
+      <opt>955</opt>
+      <zScore>894.3</zScore>
+      <bits>174.7</bits>
+      <expectation>3e-42</expectation>
+      <identity>38.9</identity>
+      <positives>66.6</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="415">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELE-RQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFT-PTG-SHLASCSTDLSIKLWD-FQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAF---LTQDTIPKNNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNE-RCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>   .:::::  .:: .:  ::---:      . :  . . . .     .: .-.  ::-----::::::.. ::::::::::-:. : .... .   ..----- :. :.  ..--- ::: : .::::.: : .:::  ::::. ..::::: ..:.:: : ::  ::.::::. :  . : -: :-. :::::.::.:::::- . :  :.:: ::::..:.. :.:-.:   . .. . :.::::: :..:::. ::.: .::. : :::: ..   ::    ::::: .  ... .  .    . :::.:.: ...---..  .. .  . .    . .  .....::::.:...: -.... . .: .::::::....::.:.:.::.::::.:: .:. .:-::.... .::.:::: .</pattern>
+      <matchSeq start="4" end="406">MSAILTDRQAEELHKAIIAYL---GVINAPKTAAAFREEVNFSAAFDDATRK-KYEGL-----LEKKWTSVVRLQKKVLELEQRNQSLQSELDSTTPTS-----LLRRNQDPSS---WLPRAPARHTLQSHRSPITCVAFHPVFSSLASGSEDTTIKIWDWELGELERTVKGHTKGVLDVDFGGPRGGTLLASCSSDLTIKLWDPSDEYKNIRTLPGHDHSVSAIRFVP-SGAAGSPSSGNLLVSASRDKTLRVWDVTTGYCVKTIRGHADWVRDVSPSFDGRWLLSAGNDQTARLWDASSGEAKCTFLGHEHVIECVTIAPPVSYANLASLAGLKKPPPLSSSAEFVATGSRDKTIKIWD-GRGTLIKTLAGHDNWVRALIFHPGGKYLLSASDDKTIRCWDLTQEGRCVKVVTDAHSHFVSCMRWAPNVVKDAPTNGDAPNGTTANGASKKKDEESAKAGIRCVIATGCVDLNVRIFA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LIS1_PARBD" ac="C1GB49" length="478" description="Nuclear distribution protein PAC1 OS=Paracoccidioides brasiliensis (strain Pb18) OX=502780 GN=PAC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>948</score>
+      <smithWatermanScore>948</smithWatermanScore>
+      <initn>742</initn>
+      <init1>290</init1>
+      <opt>948</opt>
+      <zScore>889.3</zScore>
+      <bits>173.8</bits>
+      <expectation>5.7e-42</expectation>
+      <identity>39.0</identity>
+      <positives>66.0</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="415">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQ--ADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFT-PTG-SHLASCSTDLSIKLWDFQT-YACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPKNNAQRPSKHIE---TVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNE-RCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>   .:: ::  .:: ..  :: : .--  : . :: .--::       :.   .:---------:::::::.. :::::...::---:..  .... ..:   . : . .: ..---- ::. : .: ::.:   ::::  ::::. ..:::.: ..:.:: : ::  ::.::::..:  . . -: :-. :::::.::.::::: . -:  :.:: ::::..:.: :.:-.:   .  . . :.::::: :...::. ::.: .:.. : :::: .:.  ::    ::::: :  ... .  .    . :::..:: .::    . :. .:    :.  ---.  .:...::::...:.: -.... . .: .::::::.. .::.:.:.:: ::::..: .:. .:-.:.::...::.::.: .</pattern>
+      <matchSeq start="4" end="406">MSQLLTARQAEELHKAMIAYLLSAN--LPKSAAALREELADSVQLDDSTAKKYEG---------LLEKKWTSVVRLQKKIMDLE---SRNNALQSELDSATPTSLARRNQDPVS----WLPHAPARHILQSHREPVTCVGFHPVFSSLASGSDDTTIKIWDWELGELERTIKGHTKAVLDVDYGGPRGGTLLASCSSDLTIKLWDPSDGYKNIRTLPGHDHSVSAVRFIP-SGAAGSPLSGNLLVSASRDKTLRIWDVTTGYCVKTLRGHVDWVRDVAASPDGRFLFSAGNDQVARLWDVSSGETKSTFLGHEHAVECVAFAPPTSYPHLSALAGLKKAPPSSSSAEYVATGSRDKSIRIWD-ARGTLIKTLIGHDNWVRALAFHPGGKYLLSVSDDKTLRCWDLTQECKCVRTVKDAHGHFISCIRWAPNIIKDAGVVNGDDTSTAASANGGALAASAINGVVPTGKKEDPGGGPMMGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="LIS11_ASPCL" ac="A1CUD6" length="467" description="Nuclear distribution protein nudF 1 OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=nudF-1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>951</score>
+      <smithWatermanScore>951</smithWatermanScore>
+      <initn>976</initn>
+      <init1>265</init1>
+      <opt>951</opt>
+      <zScore>888.6</zScore>
+      <bits>173.6</bits>
+      <expectation>6.3e-42</expectation>
+      <identity>39.1</identity>
+      <positives>66.8</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="415">--MVLTDRQRADLHAGIYEYLQSRGDAYQKVVEALAQADPECTIPHTTTTSNGSSAGLTKTPLLEKKWTAIPRLQKKVLELERQASHHAKIHAHRSAAGSGGGALEANDGAGGARRLLPRLPCQHTLQGHSSVVTCVRVHPVFTVVVSGSEDGSVKVWDHESGEYIRTLKGHTNTVNGLAFT-PTG-SHLASCSTDLSIKLWD-FQTYACIKTLRGHDHTISSVVFLPFGGDLLTTTKCKRLLSASRDCTVKVWDLETGFCDQTIHDHNDWVRTLATRADGSVWASAGNDTVIYVYEQDRMKKAVELRGHEQVVESIAFLTQDTIPK----NNAQRPSKHIETVRDYLVSGSRDRTVRLWKVSEASCLMVLKAHDNWVRSVLIHPNGNYILSSSDDKSIRVFDIKNE-RCLRTLENAHNHFVSSLDMHATLPILVSGSVDQTIRCWPLD</querySeq>
+      <pattern>   .:: ::  .:: .:  :: : -.  ....   :.     ::  .:  .  .--------:::::::.. :::::...::---:. : .... ..:-.  . :. :.   .--- ::: : .:::..: : ::::  ::::. ..:::.: ..:.:: : ::  ::.::::..:  . . -: :-. :::::.::.:::::- . :  :.:: ::::..::: :.:-.:   .  . . :.::::: :...::. ::.: .:.  : ::::..:   ::    .::.: .  ... .  .    . :::.:.: .:.    . :.----.. ..: .-  .  .....::::.:.::: -:... . .: .::::::.. .::.:.:.:: ::::.:: .:. .:-.:.::. ..:.:::. :</pattern>
+      <matchSeq start="4" end="406">MSQLLTTRQAEELHKSIIAYLASV-NLSESATTLRAELGDAVTIDDATIKKYEG--------LLEKKWTSVVRLQKKIMDLE---SRCAALQSELDSA-TPTSLLRKNQDPTA---WLPRAPPRHTLESHRSPVTCVAFHPVFSSLASGSDDTTIKIWDWELGELERTVKGHTKAVLDVDYGGPRGGTLLASCSSDLTIKLWDPSDDYKNIRTLPGHDHSVSSVRFIP-SGAAGSPMSGNLLVSASRDKTLRIWDVTTGYCVKTLSGHVDWVRAVAPSIDGRFLFAAGDDRIPRLWDLSAAETRSTFLGHEHVIECVAIAPAASYPHLAVLSGLKKPPS-ASSSAEFFATGSRDKTIRLWD-SRGNLIKTLVGHDNWVRALAFHPGGKYLLSVSDDKTIRCWDLTQECKCVRTIADTHEHFVTCLRWAPPLIKDSGANGDAGANGTPAATTTSNGARQDPNAANKISIRCVIATGSVDQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170011-0423-86196166-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170011-0423-86196166-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170011-0423-86196166-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9SE35|SIL1_CYLFU" type="PROTEIN" length="265"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:00:11+00:00" end="2022-11-07T17:00:14+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="SIL1_CYLFU" ac="Q9SE35" length="265" description="Silaffin-1 OS=Cylindrotheca fusiformis OX=2853 GN=SIL1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1597</score>
+      <smithWatermanScore>1597</smithWatermanScore>
+      <zScore>1499.6</zScore>
+      <bits>285.1</bits>
+      <expectation>5.8e-76</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="265">MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="265">MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="Y8484_DICDI" ac="Q75JC9" length="374" description="Uncharacterized protein DDB_G0271670 OS=Dictyostelium discoideum OX=44689 GN=DDB_G0271670 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>320</score>
+      <smithWatermanScore>320</smithWatermanScore>
+      <zScore>305.7</zScore>
+      <bits>64.7</bits>
+      <expectation>1.8e-09</expectation>
+      <identity>35.1</identity>
+      <positives>71.5</positives>
+      <overlap>239</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="252">-----------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .:  .  .: : .... :. .:.:..  :..::...:.::  : ...::. :.::  : . :.::  : . :.::  : ..:: .:        ::..:.:  : ....:.: :. :...:.:    ::..:.: :. :...:.:    ::..:.: :.:..:.    ::..:.: :.:..:.  . ::..:.: :.:..:.    ::..:.: :.:..:.  . ::..:.: :.:..:</pattern>
+      <matchSeq start="54" end="292">YRKSVEITNEEPQRDIYQLEKTNKMAEVGDLGVASFLNILDTSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RTOA_DICDI" ac="P54681" length="367" description="Protein rtoA OS=Dictyostelium discoideum OX=44689 GN=rtoA PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <smithWatermanScore>295</smithWatermanScore>
+      <zScore>282.5</zScore>
+      <bits>60.4</bits>
+      <expectation>3.6e-08</expectation>
+      <identity>33.1</identity>
+      <positives>67.3</positives>
+      <overlap>260</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="259">MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESV-DAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>::: :.. .:.  .    ::.    .. .::.: ..:    :...:  .:..:: : -...:...:.:. :.   :.:. .:.. :::   . ..:. .:  .------:..:::  : :...::: :. ....:.:.   .:..::: .. ....:::.   ::.-:::- :: ::.     :....: :::..:.  . :...:.: :...::.    ::.-::: :.:-::.  .  :....: :::..:.    ::</pattern>
+      <matchSeq start="1" end="250">MKLIAFIAFLLILITIINAQGSIGSSSQSLSSEVDSSDISSSGSNSTASSEGSVSSSSNSGSQSTSNSGSEASGSSNSGSQSTSNSGSEASGSSNSGSQSSTD------SSNSGSQGSTGSSNSGSQSSTDSSNSGSQSSTDSSNSGSQGSTGSSNSGSESSGSSN-SGS-EGSTGSSNSGSESSSGSSNSGSESSSGSSNSGSESSSGSSNSGSESSSGSSN-SGSESSS-GSSNSGSESSSGSSNSGSESSSGSSNSGSESSGSSNSGSESSSDSGSSSDGKTTCISFHDTLSINTVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="SRP40_YEAST" ac="P32583" length="406" description="Suppressor protein SRP40 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=SRP40 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <smithWatermanScore>254</smithWatermanScore>
+      <zScore>243.5</zScore>
+      <bits>53.4</bits>
+      <expectation>5.3e-06</expectation>
+      <identity>33.2</identity>
+      <positives>64.3</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="252">-------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESV---DDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ...: .. .... : :.:.:..  :..::.:.::::    ...::. :.::  : :  .::  . . ::::  : ---:.:: .:: :.     ...: .  .  :::. .-   :...: :    ::..: : ::  . ...:  --::..: : : :..... --::..:.: :.: ...  . ::. : : :.:..:.    :.. :.: : :.::.  . :: .:.. : :. :</pattern>
+      <matchSeq start="36" end="268">IKVDEVPKLSVKEKEIEEKSSSSSSSSSSSSSSSSSSSSSSSSSGESSSSSSSSSSSSSSDSSDSSDSESSSSSSSSSSSSSSSSDSESSSESDSSSSGSSSSSSSSSDESSSESESEDETKKRARESDNEDAKETKKAKT-EPESSSSSESSSSGSSSSSESESGSESDSDSSSS--SSSSSDSESDSESDSQS--SSSSSSSDSSSDSDSSSSDSSSDSDSSSSSSSSSSDSDSDSDSSSDSDSSGSSDSSSSSDSSSDESTSSDSSDSDSDSDSGSSSELETKEATADESKAEETPA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YH5D_SCHPO" ac="O94317" length="534" description="Uncharacterized serine-rich protein C215.13 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC215.13 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <smithWatermanScore>254</smithWatermanScore>
+      <zScore>241.6</zScore>
+      <bits>53.4</bits>
+      <expectation>6.8e-06</expectation>
+      <identity>30.8</identity>
+      <positives>68.3</positives>
+      <overlap>240</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="252">------------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .:.  ....... : .. :.   .:....:..:: ..:.::. .----::..: ::. :.. :.::  :   :.::  ....:: .: -----:.::..:.:    .:... : :. :... .:     :..:.: :..:.  :.:    ::. :.: ..:...     :: .:.:.:.. .:.. .-:: .:   :.:. :.  . ::..:.:  .:..:.  .:::.::.: : :...</pattern>
+      <matchSeq start="188" end="417">SISSSSLSSSDPLTSSTFSSLSSSTSSSQPSVSSTSSSTFSSAAPTSTSSSYLSSSSVVSSSSSPSSSSSSTLT----SSSLSTSSIPSTSSSSSSTSSSLSSSSSSSTASSSSSSSS-----IISSSSSSSSSPTSTSSTISSSSSSSSSPTSTSSTISSSSSSSSSFSSTLSSSSMSSSSSFSSSPTSSSSTISSSSSSPSSSSFSSTTSSSKSS-SSFSSTVSSSSSTSSSTLTSSSSSSSRPASSSSHSSSLSSHKSSSSSKSSSAPVSSAFYHNSTSSRSSSHSSSHSLSSLSSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="DSPP_MOUSE" ac="P97399" length="934" description="Dentin sialophosphoprotein OS=Mus musculus OX=10090 GN=Dspp PE=1 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>258</score>
+      <smithWatermanScore>258</smithWatermanScore>
+      <zScore>241.3</zScore>
+      <bits>54.2</bits>
+      <expectation>7e-06</expectation>
+      <identity>34.2</identity>
+      <positives>63.3</positives>
+      <overlap>237</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="252">-------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSD--DASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ...:  : . .. :...: :..--:.::::--:.::::  . .. ::: ::::-.: :-:... .: : : ::  : ...: :: .      :: .: :  :  .. :.: :  : ....:    :: .: : :. :...:.:    .:. :.: : :. :.    :: .::: ..: .:   . ::....: :.:....    .:. :.. : :. :.  . :: .: : ..: .:</pattern>
+      <matchSeq start="548" end="780">NGDGDSESEDKDESDSSDHDNSSDSESKSDSSDSSDDSSDSSDSSDSSDSSD--SSDSSDSSDSSDSSDSNSSSDSSDSSGSS-DSSD-SSDTCDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSSSSDSSDSSSCSDSSDSSDSSDSSDSSDSSDSSSSDSSSSSNSSDSSDSSDSSSSSDSSDSSDSSDSSDSSGSSDSSDSSASSDSSSSSDSSDSSSSSDSSDSSDSSDSSDSSESSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSDSSDSSNSS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>179</score>
+      <smithWatermanScore>179</smithWatermanScore>
+      <zScore>241.3</zScore>
+      <bits>54.2</bits>
+      <expectation>7e-06</expectation>
+      <identity>41.4</identity>
+      <positives>63.2</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="23" end="153">--------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSD--DASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGS</querySeq>
+      <pattern>                              .: . .. :...: :..--:.::::--:.::::  : .. ::: : ::-.: : : ::-.: : : ::  :--:::..:.  .    .:: :.:  : : .:::--.: : ..: :    .: . :: :..::</pattern>
+      <matchSeq start="807" end="931">SDSSDSSDSSDSSDSSNSSDSSDSSDSSDSSDSSNSSDSSDSSDSSD--SSDSSDSSDSSDSSDSSDSSDSSDSSDSS-DSSDSSDSS-DSSDSSDSSDSS--DSSDSSNSSDSSDSDSKDSSSDSSDGDSKSG--NGNSDSNSDSNSDSDSDSEGSDSNHSTSDD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="SCTC_DICDI" ac="Q54KD5" length="486" description="Secreted protein C OS=Dictyostelium discoideum OX=44689 GN=sctC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <smithWatermanScore>246</smithWatermanScore>
+      <zScore>234.8</zScore>
+      <bits>52.0</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>31.9</identity>
+      <positives>60.6</positives>
+      <overlap>254</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="263">----------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYS---TKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSS-KKSGSYSGS-KGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :  .. : .  .....:.  : : .  :...: .::..:  . ...::. :.:.  : . ::..  . . ::::  .  ..:  .   -----::..:::  :-:. .::  ::-.:..:.: .  ::..... :: :---:..::: .  ::.. .: ::: .: ---- :. . : :::. :   ....  : . :::.::..   ::-  .:: :::-. :   . : . : :.::: . .   ..::  :</pattern>
+      <matchSeq start="50" end="292">SNAISIKNDGGVNPFDNNNSGSGSGSGSGGGSSSSGSGTGQSSGTVSSSGSASNNTSSGSQSGNASSGSSSGSSSGSSSGSSSGSSSGSQSGNASSGSSSSGSSGSQSGNASSGTSSG-----SSSSSGSSQS-GNASSGPSSG-TTSSSGSSQSESSQSGNASSGPSSGTTSSSGSSQSESSQSESSQSGSASSG----PSSGTTSSSGSSQSDSSSFTTTGSQGSSGSSGSSQSDSSSFTTTGSGSGSSQDSMSGSDSMSGSDSMSGSDSMSGSSFTGGNSGGSTSTGSGSYSGNPSLTGSSEYSSSSSGGGSGSHGGSSSHPNGWTDVGQFLLGLAEGLVSTVASNTKLCFQSVGSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LYSG3_DICDI" ac="Q8T2I5" length="480" description="Probable GH family 25 lysozyme 3 OS=Dictyostelium discoideum OX=44689 GN=DDB_G0276439 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>241</score>
+      <smithWatermanScore>241</smithWatermanScore>
+      <zScore>230.2</zScore>
+      <bits>51.1</bits>
+      <expectation>2.9e-05</expectation>
+      <identity>36.4</identity>
+      <positives>61.9</positives>
+      <overlap>236</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="43" end="264">AVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDD-SSEDSEEEELRILSSKKSGSYYSYGTKK-SGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKK---SGSYSGSKGSKRRILSSKKSGSYSGSKG--------SKRRNLSSKKSGSYSGSK-GSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              : ..  .: .. ..   .:...:::: . ..-:::: .: .-:::: . ...-::.:: -------.: .:..  : :...-::. :: :..  .: ---::. ::: ::-:   .::.   ::..---::: :::.::.-----: .::: :::.:--------:.    .:...:: .::.-::.  --.:. ::: :::..:   .-.:..::: ::: .:. ---:.:  ::</pattern>
+      <matchSeq start="255" end="466">SSSATSSSTTGRPLTSSSGAGTGGHSSSSGAGTGGHSSTTGGQTSGQTSGQTSGSSNQPLS-SGSSQDSSN-SGSSNQPLSSGSSQDSS-------NSGSSNQPLSSGSSQTSGQTSGSSNQPLSSG---SSQDSGSNSG-SQGTTGSQSGSSSSNPLTSGSQSGSSGSQ-----STSSGSQSGSSGATGTSSTASSTSATGSSSTGSSTGSSSGSNDS--GSNDSGSSSGSNNSGSSS-GSNNSGSSSGSASSSG---SSGSSGSGNYTSGSGNGAFLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="DSPP_HUMAN" ac="Q9NZW4" length="1301" description="Dentin sialophosphoprotein OS=Homo sapiens OX=9606 GN=DSPP PE=1 SV=2">
+    <alignments total="3">
+     <alignment number="1">
+      <score>248</score>
+      <smithWatermanScore>248</smithWatermanScore>
+      <zScore>229.6</zScore>
+      <bits>52.5</bits>
+      <expectation>3.1e-05</expectation>
+      <identity>34.5</identity>
+      <positives>64.6</positives>
+      <overlap>226</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="31" end="252">MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSS--VESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSY-SGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKG-SKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :...: :..  ....:.:.::::  : ...::: :.::-- .: : :.::-:: : : ::  . .:::..:. .     ::..: :  : ... :.. :  :.....:    ::..: : -:. :. .: :    .:. :.. : :. :.    ::..: : ..: .:   . .:. :.. : :. :.    :: .: : .:: .-:. :. ::..: : ..: .:</pattern>
+      <matchSeq start="650" end="874">SDSKSDSSKSESDSSDSDSKSDSSDSNSSDSSDNSDSSDSSNSSNSSDSSDSSDSSDSSSSSDSSNSSDSSDSSDSSNSS-ESSDSSDSSDSDSSDSSDSSNSNSSDSDSSNSSDSSDSSNSSDSSDSSDSSNSSDSSDSSDSSNSSDSSDSSDSSDSSDSSNSSDSNDSSNSSDSSDSSNSSDSSNSSDSSDSSDSSDSDSSNSSDSSNSSDSSDSSNSSDSSDSSDSSDGSDSDSSNRSDSSNSSDSSDSSDSSNSSDSSDSSDSNESSNSSDSSDSSNSSDSDSSDSSNSSDSSDSS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <zScore>229.6</zScore>
+      <bits>52.5</bits>
+      <expectation>3.1e-05</expectation>
+      <identity>34.5</identity>
+      <positives>61.8</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="23" end="252">--------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSD--DASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSY-SGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSY-----SGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .: . .. :...: :..--:.::::--:.::::-:: :...:. :..: .: : : ::-.: : : ::  : ...: :: .      :: .:.:  :  ...:.. :  : ....:    :: .: : -:. :. .: :    .:. :.. : :. :.    :: .: : -----: :. :.  : :: .: :-: :. :.    :: .: : .... :. .. :..:::.-....::</pattern>
+      <matchSeq start="1052" end="1283">SNSSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSD--SSDSSDSSDSSDSS-ESSDSSDSSNSSDSSDSSDSSDSS-DSSDSSDSSDSSDSSNSSDSSDSSDSSDSSDSSNSSDSSDSSESSDSSDSSDSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSSDSNESSDSSDS-SDSSDSSNSSDSSDSSDSSDSTSDSNDESDSQSKSGN-GNNNGSDSDSDSEGSDSNHSTSDD</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>229.6</zScore>
+      <bits>52.5</bits>
+      <expectation>3.1e-05</expectation>
+      <identity>36.4</identity>
+      <positives>62.0</positives>
+      <overlap>187</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="226">TAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSS-VESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLS-SKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :.::::-.:::.  : .. ::: :.::- .: : :.::-.: : :.::-----::::.:.  .----.:..: :  :  .. :.. :. : ....:    :: .: : :. :. .:.:    .:. :.. : :. :.    :: .: : ..:..:   : :-:..:.. : :. :.    :: .: :</pattern>
+      <matchSeq start="876" end="1051">DSSDGSDSDSSNRSDSSNSSDSSDSSDSSNSSDSSD-SSDSNESSNSSDSSDSSNSSDSDSSDSSNSS-DSSDSSNSS-----DSSESSNSSD----NSNSSDSSNSSDSSDSSDSSNSSDSSNSSDSSNSSDSSDSNSSDSSDSSNSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSDSSNSSDSSNSSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSESSDSSDSSNSSDSSDSSDSSDSSDSSDSSDSSDSSDSSNSSDSSDSSDSSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="HPF1_YEAST" ac="Q05164" length="967" description="Haze protective factor 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HPF1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <smithWatermanScore>244</smithWatermanScore>
+      <zScore>228.0</zScore>
+      <bits>51.7</bits>
+      <expectation>3.9e-05</expectation>
+      <identity>33.5</identity>
+      <positives>63.7</positives>
+      <overlap>248</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="261">------------MKLTAIFPLLFTAVGYCAAQSIA-DLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAAS---SDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTK-KSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ..:::-. .....:.  ..:.. .:..::  .: ::: : ..:.---:..::::--:.  ::::-----:::::   .. ::  .:   ----: . : :    :.. ::: :.  . .:::    ......: :: :. -.::: --.:...:.. ::: .:---. ::. : . :::..:  ..-:  .::. :::..:.     .....: :::..:.  ..::.   : :... ..  : :: :</pattern>
+      <matchSeq start="78" end="308">VSISSSIELTSSTSDVSSSLTELTSSSTEVSSSIAPSTSSSEVSSSITSSGSSVSGSSSITSSGSSVSSSSSATESGSSASGSS--SATESGSS-----VSGSSTSITSGSSSATESGS----SVSGSTSATESGSSASGSSSATESGSSASGSSSATESGSSVSGSSSATESGSS--VSGSSSATESGSASS---VPSSSGSVTESGSSSSASES-SITQSGTASGSSASSTSGSVTQSGSSVSGSSASSAPGISSSIPQSTSSASTASGSITSGTLSSITSSASSATATASNSLSSSDGTIYLPSTTISGDITLTGSVIATEAVEVAAGGKLTLLDGDKYVFSADFIIHGGVFVEKSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="IHD1_CANAL" ac="Q5A8I8" length="392" description="Induced during hyphae development protein 1 OS=Candida albicans (strain SC5314 / ATCC MYA-2876) OX=237561 GN=IHD1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <smithWatermanScore>237</smithWatermanScore>
+      <zScore>227.9</zScore>
+      <bits>50.4</bits>
+      <expectation>3.9e-05</expectation>
+      <identity>30.2</identity>
+      <positives>64.4</positives>
+      <overlap>205</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="216">----------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKS-GSYSGYSTKKSASRRIL--SSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :  .... :  .::  ..  ..::.  . ....::..... :  .... .. .:. :  .:::. ...  .:.. .: .:..  . .     ...  ::   . ::..:-::.::  :. ...  . --.:..::: :: ::.-:::    ::. ::: :.:....  --:.. ::: :  .::   . :: .::: ::: .: :</pattern>
+      <matchSeq start="167" end="368">NANNTDGSGATDASNTNNNGSTDTVNTNTAGSGSSETTAAAGAAAGTAAGTNSASDQANETGSDATNAATGSDASGTAATNTASTASGATSGSGSDAAKKTGTNTDSDSDTATKGSDATAGSMTTAASGLGATNGTSNSTGSHSGSMTSITTGSGFTNGTSSRSGSGSGSSTR-SGSNSDSSSSGSGSRSSSSADSSD--SDSGSGSSSTESGSGSGSGSSTSSGSGSGSGSSTRSGGFAATIPTVTFGSLVALALNLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="AWA1_YEASK" ac="Q8TGE1" length="1713" description="Cell wall protein AWA1 OS=Saccharomyces cerevisiae (strain Kyokai no. 7 / NBRC 101557) OX=721032 GN=AWA1 PE=1 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>247</score>
+      <smithWatermanScore>247</smithWatermanScore>
+      <zScore>226.8</zScore>
+      <bits>52.3</bits>
+      <expectation>4.6e-05</expectation>
+      <identity>32.9</identity>
+      <positives>61.5</positives>
+      <overlap>252</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="252">-------------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAAS----SDVSGSSVES-VDVSGSSLESVD-VSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSY--GTKKSGSYSGYSTKKSASRRILSSKKSGSYSGY-STKKSGSRRILSSKKSGSYSGSKGSKRRILS-SKKSGSYSGSK-GSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :  :  :. : .   ... :.  :.:...  . ::..::.::. .  .::----:..::: ..:- .:::::  :. -.:.:  .:....:  :       :.:  :::  . --:.. ::: :.  . .:.:    ......: :: -:. .:::    ::. . : :. .::     :-:. ::: :...-::     ::. : . :::..:  . -:  .::. :::..:.  .  .....: :::..:</pattern>
+      <matchSeq start="650" end="900">SSSATESGSSVSGSTSATESGSSVSGSTSATESGSSASGSSSATESGSASSVPSSSGSVTESGSSSSASESSITQSGTASGSSASSTSGSVTQSGSSVSGSSASSAPGISSSIPQSTSSASTASGSITSGTLTSITSGSSSATESGSSASGSSSATESGSSVSGSTSATESGSSVSGSTSATESGSSASGSSSATESGSSVSGSTSATESGSSASGSSSATESGSASSVPSSSGSVTESGSSSSASES-SITQSGTASGSSASSTSGSVTQSGSSVSGSSASSTSGSVTQSGSSVSGSSASSAPGISSSIPQSTSSASTASGSITSGTLTSITSSASSASATASNSLSSSDGTIYLPTTT</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>215</score>
+      <smithWatermanScore>215</smithWatermanScore>
+      <zScore>226.8</zScore>
+      <bits>52.3</bits>
+      <expectation>4.6e-05</expectation>
+      <identity>33.1</identity>
+      <positives>62.8</positives>
+      <overlap>242</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="23" end="261">--------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVE--SVDAASSDVSGSSVESVDVSGSSLE-SVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ..: .... : .:.  . : . .:.  :-::::--:. . ::: : ::.::...... : -:  :  :: .::. .   ::-----: :: .:..  . :..-:.. :: :.. :.:    .:. ::: :---. .::: --.:.. :.. ::: .:---. ::. : . :::..:  ..-:  .::. :::. :.     .....: :::..:.  ..::.   : :... ..  : :: :</pattern>
+      <matchSeq start="336" end="561">SEITSSAEPLSSSKATTSAESISSNQITISSELIVSSVITSSSEIPSSIEVLTSSGIS-SSVEPTSLVGPSSDESISSTESLSATSTPLAVSSTVVTSSTDSVSPNIPFSE-----ISSSPESSTAITSGSS-SATESGSSVSGSTSATESGSSASGSSS---ATESGSS--VSGSTSATESGSASS---VPSSSGSVTESGSSSSASES-SITQSGTASGSSVSSTSGSVTQSGSSVSGSSASSAPGISSSIPQSTSSASTASGSITSGTLTSITSGSSSATESGSSVSGSSSATESGSSVSGSTSATESGSSVSGSTSATESGSSASGSSSATESGSSVSGSTSATESGSSVSGSTSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="YR705_MIMIV" ac="Q5UNW3" length="313" description="Uncharacterized protein R705 OS=Acanthamoeba polyphaga mimivirus OX=212035 GN=MIMI_R705 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <smithWatermanScore>234</smithWatermanScore>
+      <zScore>226.7</zScore>
+      <bits>49.9</bits>
+      <expectation>4.6e-05</expectation>
+      <identity>33.5</identity>
+      <positives>59.4</positives>
+      <overlap>170</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="262">DVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :.   :. . : : :. ..  . ..       . .:   ..: :::  :. .: :  . ....:::: ----------:::..:  :  .:: :.  :::: :.  . : ..:::-::::... :   :  ::  :.:....: . ::..:.: :::..:.:---::. :</pattern>
+      <matchSeq start="157" end="312">ATRGTYTEGANDAAQLLLGGKQGVAENPETDERHSDAFRMEHRRLAEERERDEFGRFLPTEDGEDGRRGRRSNSRRRSSNARSTSSRSSGSRSSGSRS----------SGSRSSGSRSTGSKTSSRSSGSKTSRSSGSSRSRSGS-SGSKSGRSRNSRSGTSGRSSNSRSGSRSGSSSRSSNSRSGSRSSSR---SGSSRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="GRP17_ARATH" ac="Q9LY09" length="543" description="Tapetal oleosin GRP-17 OS=Arabidopsis thaliana OX=3702 GN=GRP17 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <smithWatermanScore>238</smithWatermanScore>
+      <zScore>226.5</zScore>
+      <bits>50.6</bits>
+      <expectation>4.7e-05</expectation>
+      <identity>34.1</identity>
+      <positives>68.9</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="107" end="263">SSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKS--GSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKK--SGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKK---SGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .:... :   : :  .::. :  ..:::  .  :..:::--:..::     :::.  .:.  .:. .. :.. .  :..::--::..:::.:.  :. .. ..:..::..:::..: ..:..: --:.: .:.:..:.. ---::: .: .::.  . .::. :</pattern>
+      <matchSeq start="306" end="467">GMSGGGGSKSKSKKSKLKAKLGKKKGMSGGMSGSEEGMSGSEGGMSSGGGSKSKSKKSKLKAKLGKKKSMSGGMSGSEEGMSGSEGGMSGGGGGKSKSRKSKLKANLGKKKCMSGGMSGSEGGMSRSEGGISGGGMSGGSGSKHKIGGGKHGGL--GGKFGKKRGMSGSGGGMSGSEGGVSGSEGSMSGGGMSGGSGSKHKIGGGKHGGLRGKFGKKRGMSGSEGGMSGSEGGMSESGMS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="SERI1_BOMMO" ac="P07856" length="1186" description="Sericin 1 OS=Bombyx mori OX=7091 GN=ser1 PE=1 SV=2">
+    <alignments total="3">
+     <alignment number="1">
+      <score>243</score>
+      <smithWatermanScore>243</smithWatermanScore>
+      <zScore>225.6</zScore>
+      <bits>51.6</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>32.6</identity>
+      <positives>60.9</positives>
+      <overlap>230</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="252">AIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDS---------SVESVDAASSDVSGSSVE-SVDVSGSSLESVDVSGSSLESVDDS-SEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSK-KSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :.:.:  .....::..::---------:  : ..:::. :::.: -: . ::::  . .. : -: .:...-: .. .   .  .:. ::.  .:: ..:   .. :.  :.:    :.:..:: .. ...  :  ---::...:: :-: ::.    :: ::.. : : ::.  . ::.. :.  .: ::.    .:..: . : : ::.  . ::.-..:: :-: ::</pattern>
+      <matchSeq start="526" end="749">VDIDLGNLGWWWNSDNKVQRAAGGATKSGASSSTQATTVSGADDSADSYTWWWNPRRSSSSSSSASSSSSGSNVGGSSQSSGSSTSGSNARGH-LGTVSSTGSTSNTDSSSKSAGSRTSGGSSTYGYSSSHRGGSVSSTGSSSNTDSSTKNAGSSTSGGSSTYGYS---SSHRGGSVS-STGSSSNTDSSTKSAGSSTSGGSSTYGYSSRHRGGRVSSTGSSSTTDASSNSVGSSTSGGSSTYGYSSNSRDGSVS-STGSSSNTDSNSNSAGSSTSGGSSTYGYSSNSRDGSVSSTGSSS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>219</score>
+      <smithWatermanScore>219</smithWatermanScore>
+      <zScore>225.6</zScore>
+      <bits>51.6</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>30.2</identity>
+      <positives>61.2</positives>
+      <overlap>232</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="27" end="252">----MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDA-ASSDVSGSSVESVDVSGSSLE--SVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTK-KSGSYS--GYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .:. ::  ..:.   :..: : . .:.  : ..-::.:..:::. .----:::  --: :   .:. :. .::. .   .:   :.. ..: :.:.. - .:: :--: :.. .::  . .:. ::. : :. --:.. :  : ...:: :.. .:     :: ..:: . . .:. :. : ...:: :.. .:     :: ..:: . . .:. :. :   .:: :.. .:</pattern>
+      <matchSeq start="797" end="1022">GSSTYGYSSNSRDGSVSSTGSSSNTDSNSNSAGSSTSGGSSTYGYSSNSRDGSVSSTGSSSNTDASTDLTGSSTSG----GSSTYGYSSDSRDGSVSSTGSSSNTDASTDLAGSSTSGGSSTYGYSSDCGDGSVSSTGSSSNTDASTDLAGSSTSGGSSTYGY--SSDSRDGSVSSTGSSSNTDASTDLAGSSTSGGSSTYGYSSNSRDGSVSSTGSSSNTDASTDLTGSSTSGGSSTYGYSSSNRDGSVLATGSSSNTDASTTEESTTSAGSSTEGYSSSSHDGSVTSTDGSSTSGGAS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>176</score>
+      <smithWatermanScore>176</smithWatermanScore>
+      <zScore>225.6</zScore>
+      <bits>51.6</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>25.6</identity>
+      <positives>58.0</positives>
+      <overlap>262</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="264">-----MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRR---ILSSKKSGSY------SGYSTKKSGSRRILSSKKSGSYSGSKGSKRRI------LSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGS-----KRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKG-SKRRIL--SGGLRGSM</querySeq>
+      <pattern>                              : :: ... : .---.::: : .::.   ..   ...:....: ..-----:  .:   :..  .  .:.::..   .-:  ::.:. . . : :: : . .. :...: :..---  .:. .:::------:. :.::..:  : ..: .   .....:....------.::   :.  .::  .  : . .:: .: :  :.-----:    .:..:..  ....: : . ... . : : ..:-: . :.--:.: :::</pattern>
+      <matchSeq start="149" end="401">RERNVHYVSDGEAVAASSDARDENRSAQQNAQANWNADGSYG---VSADRSGSASSRRRQANYYSDKDITAASKDD-----SRADSSRRSNAYYNRDSDGSESAGLSD-RSASSSKNDNVFVYRTKDSIGGQAKSSRSSHSQESDAYYNSSPDGSYNAGTRDSSISNKKKASSTIYADKDQIRAANDRSSSKQLKQSSAQISSGPEGTSVSSKDRQYSNDKRSKSDAYVGRDGTVAYSNKDSEKTSRQSNTNYADQNSVRSDSAASDQTSKSYDRGYSDKNIVAHSSGSRGSQNQKSSSYRADKDGFSSSTNTEKSKFSSSNSVVETSDGASASRESSAEDTKSSNSNVQSDEKSASQSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="SRAP_STAAR" ac="Q6GDE9" length="1351" description="Serine-rich adhesin for platelets OS=Staphylococcus aureus (strain MRSA252) OX=282458 GN=sasA PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>241</score>
+      <smithWatermanScore>241</smithWatermanScore>
+      <zScore>222.8</zScore>
+      <bits>51.3</bits>
+      <expectation>7.5e-05</expectation>
+      <identity>33.5</identity>
+      <positives>62.5</positives>
+      <overlap>248</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="250">------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESV-DAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYS-----GYSTKKSASRRI-LSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRI---LSSKKSGSYSGSKGSKR---RNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKG---SKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ..:::.  .:. :  ::.:..-:: ..::. : :. ::.-:..:.. : :.  :. .: :   : . : :. : ..::   :  --:   .::. .   :..:..::: :-----. ::. : :. .-::...::: :  .. .:. :   :.. :::.:.:. ..  :---.:.. : : :.: .:..---...:.. ::: ::: ..-----:...: :.::: .---:   ..: . : : : :.</pattern>
+      <matchSeq start="938" end="1177">SQSVSDSTSNSISTSESLSESASTSDSISISNSIANSQSASTSKSDSQSTS-ISLSTSDSKSMSTSESLSDSTSTSDSVSGSLSIATSQSVSTSSSDSMSTSEMISDSMSTSGS--LAASDSKSMSVSSSMSTSQSGSTSESLSDSISTSDSDSKSLSLSTSQSGSTSTSTSTSSSVRTSESQSTSGSMSASQFDSTSISTSFSDSTSDSKSASTASSESISQSVSTSTSGSTSGSTST-----STSESLSMSGSDSTSVSDSTSMSESDSTSVSMSQDKSDSTSISDSESVSTSTSMSLSTSDSTSTSESLSTSMSGSQSISDSTSTSMSNSTSMSNSTSTSMSGSTSTSESNSMHPSD</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>185</score>
+      <smithWatermanScore>185</smithWatermanScore>
+      <zScore>222.8</zScore>
+      <bits>51.3</bits>
+      <expectation>7.5e-05</expectation>
+      <identity>30.6</identity>
+      <positives>61.9</positives>
+      <overlap>252</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="249">-------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSV--ESVDAASSDVSGSSVESV---DVSGSSL-ESVDVSGSSLES--VDDSSEDSEEEELRILSSKKSGSYY---SYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRIL---SSKKSGSYSGSKGSKRR---NLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKG---SKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :.:. .  :..:  :   ..  . :.... ... ...-- ..  .:.:.::... ..---.:. .:.-.::..:::. .:--:. :. ::.  -----:.. :::  ---: .:.:: : :- : . :::. . .:....  :. ::.  .:. .-::. ::: : : . .  : ---:..:: : : : ... :---.::.. : : ::: -:: . ::.. : : : :..---:   ..:...: : :.:</pattern>
+      <matchSeq start="687" end="930">INVVDTTAPTVTPIGDQSSEVYSPISPIKIATQDNSGNAVTNTVTGLPSGLTFDSTNNTISGTPTNIGTSTITIVSTDASGNKTTTTFKYEVTRNSMSDSVSTSGSTQQSQSVSTSKADSQSA-----STSTSGSIVVSTSASTSKSTSVS-LSDSVSASKSLSTSESNSVSSSTSTSLVNSQSV-SSSMSGSVSKSTSLSDSISNSSSTEKSESLSTSTSDSLRTSTSLSDSVSMSTSGSL-SKSQSLSTSTSDSASTSQSVSDSTSNSISTSESLSESASTSDSISISNSIANSQSASTSKSDSQSTSISLSTSDSKSMSTSESLSDSTSTSDSVSGSLSIATSQSVSTSSSDSMSTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CDSN_MOUSE" ac="Q7TPC1" length="561" description="Corneodesmosin OS=Mus musculus OX=10090 GN=Cdsn PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <smithWatermanScore>231</smithWatermanScore>
+      <zScore>219.8</zScore>
+      <bits>49.4</bits>
+      <expectation>0.00011</expectation>
+      <identity>41.8</identity>
+      <positives>64.8</positives>
+      <overlap>165</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="106" end="259">GSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKS-GSYSGYSTKKSASRRILSSKKSGSYS--GYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKK--SGSYSGSKGSKRRILSSKKSGSYSGSKGSKR-RNLSSKK----SGSYSGSKGSKR-RILSGGLRGSM</querySeq>
+      <pattern>                              : :.  :.:. : : ..:-.:..: :.....:   :  : . .::--.::  ..:::----   ::: :::.::.-----: .::: :::.::.  . .:..--::: :::.::.-----: .::: :::.::. -: .::..----:.: :::.::.:-:  ::</pattern>
+      <matchSeq start="65" end="215">IGTLSDPCKDPTRITSPNDPCLIGKTGSNSISSQGGSSSFSSQGGSSSFSSHGGSSSSQGSSSGSLIYKPGTGYSQSSYSYGSGGSR----PGGSGSQSGSSGSQ-----SGSSGSQSGSSGSQSGSSGSQSGSSGSQSGSSGSQ-----SGSSGSQSGSSGSQSGRWVSSSSQWVSSSSQSGSSGSSRDRPGSGSALPTGDKTSGMSQSGGSSTSQSSSSNLRPCSSNVPDSPCSGGPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="TPRXL_HUMAN" ac="Q17RH7" length="258" description="Putative protein TPRXL OS=Homo sapiens OX=9606 GN=TPRXL PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <smithWatermanScore>224</smithWatermanScore>
+      <zScore>218.8</zScore>
+      <bits>48.1</bits>
+      <expectation>0.00013</expectation>
+      <identity>34.1</identity>
+      <positives>61.1</positives>
+      <overlap>208</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="249">TAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .: .:  . .::  : .  ::.. .::. : . :.::  :   :.:   : ..:: .:        ::..:.:  : ....:.: :. :. .:.:    :: .:.: :  :...:.:    ::..: : :.:..:.     :..: : :::. :.  .  :..:.: :.:..:     :: .:.: : :. :     ::. :.:  .:</pattern>
+      <matchSeq start="28" end="235">---MTHDKSWRRCSISGSTKCRCGSRIAGPNALGSGGSRSSSSSSRSILSSSILSSSIPSSSSSSSSPSSSHSSSSPSSSHSSSSPSSSSSTSSPSSSSSSSSSSSPSSSNSSSSSSSSSPSSSSSSSSSSPSSSSSSPSSSSSSSSSSPSSSSSSPSSSSSSSSSSSSSPSSSSPSSSGSSPSSSNSSPSSSSSSPSSSSSSPSPRSSSPSSSSSSTSSPSTSSPSSSSPSSSSPSSSCPSAALGRRPQSPQSSHCAPFP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="SRAP_STAAU" ac="Q8VQ99" length="2283" description="Serine-rich adhesin for platelets OS=Staphylococcus aureus OX=1280 GN=sraP PE=3 SV=1">
+    <alignments total="6">
+     <alignment number="1">
+      <score>239</score>
+      <smithWatermanScore>239</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>33.9</identity>
+      <positives>63.4</positives>
+      <overlap>257</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="264">------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGS--SLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYS-----GYSTKKSASRRI-LSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRI---LSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ..:::.  .:. :  ::.:..-:: ..::. : :. ::.-. :...: :   :..:.::.  :...: :--. : :.:: --:    :   .::. .   :..:..::: :-----. ::. : :. .-::...::: :  .. .:. :   :.. :::.: :....  :---.:.  : : :.: .:..-..:.. : : ::: ...  -::...:   : : -:   .::...: : : : ...  :-: .. ::</pattern>
+      <matchSeq start="938" end="1186">SQSVSDSTSNSISTAESLSESASTSDSISISNSIANSQSASTSKSDSQSTS-ISLSTSDSKSMSTSESL-SDSTSTSDSVSGSLSVAGSQSVSTSTSDSMSTSEIVSDSI--STSGSLSASDSKSMSVSSSMSTSQSGSTSESLSDSQSTSDSDSKSLSLSTSQSGSTSTSTSTSSSVRTSESQSTSGSMSTSQSDSTSISTSFSDPTSDSKSASTASSE-SISQSVSTSTSGSVSTSTS-LSTSNSERTSTSM-SDSTSLSTSESDSTSDSTSTSDSI-SEAISGSESTSISLSESNSTGDSESKSASAFLSESLSESTSESTSESLSGSTSDSTSLSDSNSESGSTSTSLSNSTSGST</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>32.0</identity>
+      <positives>64.1</positives>
+      <overlap>259</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="265">------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSL----ESVDVSGSSLESVDDSSEDSEEEELRI-LSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYS-GYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRN-LSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGS-KRRNLSSKKSGSYSGSK----GSKRRILSGGLRGSM</querySeq>
+      <pattern>                              ..::.:--....:   :.::-. : ..::..: :. ::.....::-: :.  ::..:::. ----::...:::.  ::.::.  :: .    -.:. :: :-----:. :.: :- ::. :.:---::.. : : :-. ::. :::. :-:.. : :.:.: .-----.:.. : :.::: .... :-.  . : :.  .....  : .:. . : : :...-.  . ..:..:. . :.---- . . : ..:: :..</pattern>
+      <matchSeq start="2018" end="2257">SLSTSISTSMSMSASTSTSQSTSVSTSLSTSDSISD--STSISISGSQSA-VESESTSDSTSISDSESLSTSDSD-STSTSTSVSTSGSTSTSVSESLSTSGSGSTSVSDSTSMSESDSTSASMSQDKSDS-----TSISNSES-VSTSTSTS---LSTSDSTSTSESLSTSMSGSQSI-SDSTSTSMSNSTS-----MSNSTSTSMSGSTSTSESNSMHPSDSMSMHHTHSTSTSISTSEATTSTSDSQSTLSATSEATKHNGTRAQSEERLPDTGESIKQNGLLGGIMTLLVGLGLMKRKKKKDENDQDDSQA</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>209</score>
+      <smithWatermanScore>209</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>28.1</identity>
+      <positives>63.5</positives>
+      <overlap>249</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="249">-------------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKS-AQLISADSSDDASDSSVESVD---AASSDVSGSSVESVDVSGSSLESVDVSGSSLE-----SVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKG-SKRRILSSKKSGSYSGSK-GSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :...  ..:: .  ..:.::  .:.:-.: .:...:...:.:.  :..---..:...: :. .....:.:. ::-: :..:: -----:...:  ::.     . .:.....   ..:  : : :- ::..:.:    .:..... .. : ..: ::---:.. ::: : : .-:  :  :.  : :.  : - :.  .::.. : : : : . .  . .: .... ....::   ..: . : : : :</pattern>
+      <matchSeq start="1449" end="1692">ESDSQSTSTYTSQSTSQSESTSTSTSISDSTSISKSTSQSGSTSTSASLSGSESESDSQSVSTSASESTSESASTSLSDSTSTSNSTSESTSNAISTSASASES-DSSSTSLSDSTSASMQSSESDSQSTSTSLSNSQSTSTSIRMSTIVSESVS-ESTSESGSTSESTSESDSTSTSLSDSQSTSR---STSASGSASTSTSTSDSRSTSAPTSTSMRTSTLDSQSMSLSTSTSTSVSDSTSLSDSVSDSTSDSTSTSTSGSMSASISLSDSTSTSTSASEVMSASISDSQSMSESVNDSESVSESNSESDSKSMSGSTSVSDSGSLSVSTSLRKSESVSESSSLSGSQSMSDSVSTSD</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>207</score>
+      <smithWatermanScore>207</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>31.8</identity>
+      <positives>62.0</positives>
+      <overlap>255</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="21" end="265">----------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESV-DAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYS-GYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSK-------GSKRRNLSSKKSGSYSGSKGSKRRI-LSGGLRGSM</querySeq>
+      <pattern>                              ::.:  . . :..::.:.. -: . ::. : :.  ::-:..: .:: :  .: .::----:: ..:::--.:..::   :.   : .  : .:.   : . . : : :  .. ....   ::.. ::: :-. ::. : :  . .: .... .. .::  --::.. : : : : -:  ..:::--: :.:::....  .-:...:.: :.:.-------.:.  ..:.. :.: :::....  .- : .. ::.</pattern>
+      <matchSeq start="1700" end="1941">STSTSGSMSASISLSDSTSTSTSASEVMSASISDSQSMSESVNDSESVSE-SNSESDSKSMSGSTSVSDSGSLSVSTSLRKSESVS----ESSSLSGS--QSMSDSVSTSDSSSLSVSMSLRSSESVSESDSLSDSKSTSGSTSTSTSGSLSTSLSGSESVSESTSLSDSISMSDSTSTSDSDSLSGSIS--LSGSTSLSTSDSL-SDSKSLSS--SQSMSGSESTSTSV-SDSQSSSASNSQFDSMSISASESDSVSTSDSSSISGSNSTSTSLSTSDSMSGSVSVSTSTSLSDSISGSISVSDSSSTSTSESLSDSMAQSQSTSTSASGSLSTSISTSMSMSASTSTSQSTSVSTSLS</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>197</score>
+      <smithWatermanScore>197</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>32.1</identity>
+      <positives>58.7</positives>
+      <overlap>218</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="34" end="249">TAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDVSGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKG-SKRRILSSKKSGSYSGSKG-SKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              .: : .:  ..:. :. ..:. .  . : . : :   : ..:::. .:...: :. :: . :. ---------::.. ::: -: .:. ::: :  ..:. .    ::.. : : :  .. ...     :..::.: :.: ...  :-:..:: : :.: -:   . : ..::: :.: .-:    .: . : : ::: .-:   .::.. : : : :</pattern>
+      <matchSeq start="1187" end="1392">DSTSLSTSESDSTSDSTSTSDSISEAISGSESTSISLSESNSTGDSESKSASAFLSESLSESTSESTSESLSGSTSDSTSLSDSNSESGSTSTS---------LSNSTSGST-SISTSTSGSASTSTVKSESVSTSLSTSTSTSLSDSTSLSTSLSDSTSGSKSNSLSASMSTSDSI-STRKSESLSAST-SLSGSTSESESGSTSSSASQSDSTSMSLSMSQSISGSTSTSTSTSLSDSTSTSLSLSASMNQSGVDSNSASQSASTSTSISTSESDSQSTSTYTSQSTSQSESTSTSTS</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>180</score>
+      <smithWatermanScore>180</smithWatermanScore>
+      <zScore>217.2</zScore>
+      <bits>51.0</bits>
+      <expectation>0.00015</expectation>
+      <identity>30.7</identity>
+      <positives>61.8</positives>
+      <overlap>251</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="249">-------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSV--ESVDAASSDVSGSSVESV---DVSGSSL-ESVDVSGSSLES--VDDSSEDSEEEELRILSSKKSGSYY---SYGTKKSGSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSS-KKSGSYSGS-KGSKRRILSSKKSGSYSGSKGSKRR---NLSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKG---SKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :.:. .  :..: ::   ..  . :.... ... ...-- ..  .:.:.::... ..---.:. .:.-.::..:::. .:--:. :. ::.  -----:.. :::  ---: .:.:: : :- : . :::. . .:....  :. ::.  .:. . ::-. :.: : :-. :     :..:: : : : ... :---.::.. : : ::: -:: . ::.. : : : :..---:   ..:. .: : :.:</pattern>
+      <matchSeq start="687" end="930">INVVDTTAPTVTPIGDQSSEVYSPISPIKIATQDNSGNAVTNKSTGLPSGLTFDSTNNTISGTPTNIGTSTITIVSTDASGNKTTTTFKYEVTRNSMSDSVSTSGSTQQSQSVSTSKADSQSA-----STSTSGSIVVSTSASTSKSTSVS-LSDSVSASKSLSTSESNSVSSSTSTSLVNSQSVSSSMSDSASKSTSLSDSISNSSSTEKSESLSTSTSDSLRTSTSLSDSLSMSTSGSL-SKSQSLSTSTSDSASTSQSVSDSTSNSISTAESLSESASTSDSISISNSIANSQSASTSKSDSQSTSISLSTSDSKSMSTSESLSDSTSTSDSVSGSLSVAGSQSVSTSTSDSMSTSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="YNY5_SCHPO" ac="Q9P785" length="451" description="LisH domain-containing protein C1711.05 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=SPBC1711.05 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <zScore>216.7</zScore>
+      <bits>48.5</bits>
+      <expectation>0.00017</expectation>
+      <identity>34.2</identity>
+      <positives>61.7</positives>
+      <overlap>243</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="252">----------------MKLTAIFPLLFTAVGYCAAQSIADLAAANLSTEDSKSAQLISADSSDDASDSSVESVDAASSDV---SGSSVESVDVSGSSLESVDVSGSSLESVDDSSEDSEEEELRILSSKKSGSYYSYGTKKS-GSYSGYSTKKSASRRILSSKKSGSYSGYSTKKSGSRRILSSKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLS-SKKSGSYSGSKGSKRRILSSKKSGSYSGSKGSKRRNLSSKKSGSYSGSKGSKRRILSGGLRGSM</querySeq>
+      <pattern>                              :  . .: .. . .. :.::. :----:..:::. :.:: :. :..::. ---: :: :. : :.::  : . :.:  .. ..:: ::: :     :...:.:  : . ..:-:: :. :...: :. --::. . : :. : ..: :----::. : : :.:. :. . -::: : : :.:. :.  . :-:. : : :.:. :     :: ...: :.  :..--: ..  ::  :.....</pattern>
+      <matchSeq start="106" end="335">LEKSNDDSQKISKKGAPPEKAHSSSEASGSGSSSDESDSSSSESESSSEDNDS----SSSSSDSESESSSEDSDSSSSSSDSESESSSEGSDSSSSSSSSESESSSEDNDSSSSSSDSESESSSEDSDSSSSSSDSESESSSEGSDSSSSSSSSESES--SSEDNDSSSSSSDSESES----SSEDSDSSSSSSDSESES-SSKDSDSSSNSSDSEDDSSSDSSDSESESSSEDSDSTSSSSDSDSSSSSEDGNS--NTDTTTSGEVSAQSSTNSTSSEESTSVKDEDSSKIHDKSLKRKHEDDESSTSTKSSRTTKTPFTRVGDPSQWDFASPALRDNSFNFEDDYGTLANRDLIVTRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162212-0204-42824507-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162212-0204-42824507-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162212-0204-42824507-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0L2|PSAC_PHATC" type="PROTEIN" length="81"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:22:12+00:00" end="2022-11-07T16:22:17+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSAC_PHATC" ac="A0T0L2" length="81" description="Photosystem I iron-sulfur center OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>582</score>
+      <smithWatermanScore>582</smithWatermanScore>
+      <initn>582</initn>
+      <init1>582</init1>
+      <opt>582</opt>
+      <zScore>727.1</zScore>
+      <bits>138.8</bits>
+      <expectation>6.1e-33</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSAC_SKECO" ac="O96804" length="81" description="Photosystem I iron-sulfur center OS=Skeletonema costatum OX=2843 GN=psaC PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>578</score>
+      <smithWatermanScore>578</smithWatermanScore>
+      <initn>578</initn>
+      <init1>578</init1>
+      <opt>578</opt>
+      <zScore>722.3</zScore>
+      <bits>137.9</bits>
+      <expectation>1.1e-32</expectation>
+      <identity>98.8</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKSGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSAC_THAPS" ac="A0T0W4" length="81" description="Photosystem I iron-sulfur center OS=Thalassiosira pseudonana OX=35128 GN=psaC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>578</score>
+      <smithWatermanScore>578</smithWatermanScore>
+      <initn>578</initn>
+      <init1>578</init1>
+      <opt>578</opt>
+      <zScore>722.3</zScore>
+      <bits>137.9</bits>
+      <expectation>1.1e-32</expectation>
+      <identity>98.8</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKSGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSAC_ACAM1" ac="B0CB42" length="81" description="Photosystem I iron-sulfur center OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=psaC PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>574</score>
+      <smithWatermanScore>574</smithWatermanScore>
+      <initn>574</initn>
+      <init1>574</init1>
+      <opt>574</opt>
+      <zScore>717.4</zScore>
+      <bits>137.0</bits>
+      <expectation>2.1e-32</expectation>
+      <identity>96.3</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSAC_CYAP4" ac="B8HRC2" length="81" description="Photosystem I iron-sulfur center OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=psaC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>574</score>
+      <smithWatermanScore>574</smithWatermanScore>
+      <initn>574</initn>
+      <init1>574</init1>
+      <opt>574</opt>
+      <zScore>717.4</zScore>
+      <bits>137.0</bits>
+      <expectation>2.1e-32</expectation>
+      <identity>96.3</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSAC_SYNEL" ac="P0A416" length="81" description="Photosystem I iron-sulfur center OS=Synechococcus elongatus OX=32046 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <smithWatermanScore>570</smithWatermanScore>
+      <initn>570</initn>
+      <init1>570</init1>
+      <opt>570</opt>
+      <zScore>712.6</zScore>
+      <bits>136.1</bits>
+      <expectation>4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:.::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MAHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSAC_THEVL" ac="P0A417" length="81" description="Photosystem I iron-sulfur center OS=Thermostichus vulcanus OX=32053 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <smithWatermanScore>570</smithWatermanScore>
+      <initn>570</initn>
+      <init1>570</init1>
+      <opt>570</opt>
+      <zScore>712.6</zScore>
+      <bits>136.1</bits>
+      <expectation>4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:.::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MAHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSAC_THEVB" ac="P0A415" length="81" description="Photosystem I iron-sulfur center OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <smithWatermanScore>570</smithWatermanScore>
+      <initn>570</initn>
+      <init1>570</init1>
+      <opt>570</opt>
+      <zScore>712.6</zScore>
+      <bits>136.1</bits>
+      <expectation>4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:.::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MAHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSAC_NOSP7" ac="B2J393" length="81" description="Photosystem I iron-sulfur center OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=psaC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <smithWatermanScore>566</smithWatermanScore>
+      <initn>566</initn>
+      <init1>566</init1>
+      <opt>566</opt>
+      <zScore>707.7</zScore>
+      <bits>135.2</bits>
+      <expectation>7.4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSAC_NOSS9" ac="P0A414" length="81" description="Photosystem I iron-sulfur center OS=Nostoc sp. (strain PCC 9229) OX=70817 GN=psaC PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <smithWatermanScore>566</smithWatermanScore>
+      <initn>566</initn>
+      <init1>566</init1>
+      <opt>566</opt>
+      <zScore>707.7</zScore>
+      <bits>135.2</bits>
+      <expectation>7.4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSAC_MICDP" ac="P0A412" length="81" description="Photosystem I iron-sulfur center OS=Microchaete diplosiphon OX=1197 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <smithWatermanScore>566</smithWatermanScore>
+      <initn>566</initn>
+      <init1>566</init1>
+      <opt>566</opt>
+      <zScore>707.7</zScore>
+      <bits>135.2</bits>
+      <expectation>7.4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSAC_NOSS8" ac="P0A413" length="81" description="Photosystem I iron-sulfur center OS=Nostoc sp. (strain PCC 8009) OX=29413 GN=psaC PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <smithWatermanScore>566</smithWatermanScore>
+      <initn>566</initn>
+      <init1>566</init1>
+      <opt>566</opt>
+      <zScore>707.7</zScore>
+      <bits>135.2</bits>
+      <expectation>7.4e-32</expectation>
+      <identity>95.1</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSAC_NOSS1" ac="P0A410" length="81" description="Photosystem I iron-sulfur center OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>565</score>
+      <smithWatermanScore>565</smithWatermanScore>
+      <initn>565</initn>
+      <init1>565</init1>
+      <opt>565</opt>
+      <zScore>706.5</zScore>
+      <bits>135.0</bits>
+      <expectation>8.6e-32</expectation>
+      <identity>93.8</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:.:::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQVASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSAC_TRIV2" ac="P0A411" length="81" description="Photosystem I iron-sulfur center OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>565</score>
+      <smithWatermanScore>565</smithWatermanScore>
+      <initn>565</initn>
+      <init1>565</init1>
+      <opt>565</opt>
+      <zScore>706.5</zScore>
+      <bits>135.0</bits>
+      <expectation>8.6e-32</expectation>
+      <identity>93.8</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::.:.:::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAAQVASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSAC_TRIEI" ac="Q119B1" length="81" description="Photosystem I iron-sulfur center OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psaC PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>565</score>
+      <smithWatermanScore>565</smithWatermanScore>
+      <initn>565</initn>
+      <init1>565</init1>
+      <opt>565</opt>
+      <zScore>706.5</zScore>
+      <bits>135.0</bits>
+      <expectation>8.6e-32</expectation>
+      <identity>93.8</identity>
+      <positives>98.8</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::.:::::::::::::::::: :::::::::::::::::::::.:::.:::::::::::::::::::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHSVKIYDTCIGCTQCVRACPLDVLEMVPWDGCKAGQIASSPRTEDCIGCKRCETACPTDFLSVRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSAC_SYNP2" ac="P31087" length="81" description="Photosystem I iron-sulfur center OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=psaC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>565</score>
+      <smithWatermanScore>565</smithWatermanScore>
+      <initn>565</initn>
+      <init1>565</init1>
+      <opt>565</opt>
+      <zScore>706.5</zScore>
+      <bits>135.0</bits>
+      <expectation>8.6e-32</expectation>
+      <identity>93.8</identity>
+      <positives>98.8</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::.:::::::::::::::::: :::::::::::::::::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHSVKIYDTCIGCTQCVRACPLDVLEMVPWDGCKAGQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSAC_MASLA" ac="O07112" length="81" description="Photosystem I iron-sulfur center OS=Mastigocladus laminosus OX=83541 GN=psaC PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>564</score>
+      <smithWatermanScore>564</smithWatermanScore>
+      <initn>564</initn>
+      <init1>564</init1>
+      <opt>564</opt>
+      <zScore>705.3</zScore>
+      <bits>134.8</bits>
+      <expectation>1e-31</expectation>
+      <identity>95.1</identity>
+      <positives>98.8</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::: :::::::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAQQIASSPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSAC_SYNE7" ac="Q31QV2" length="81" description="Photosystem I iron-sulfur center OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psaC PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>561</score>
+      <smithWatermanScore>561</smithWatermanScore>
+      <initn>561</initn>
+      <init1>561</init1>
+      <opt>561</opt>
+      <zScore>701.7</zScore>
+      <bits>134.1</bits>
+      <expectation>1.6e-31</expectation>
+      <identity>92.6</identity>
+      <positives>98.8</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::.:::::::::::::::::: :::::::::::::::::.:::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHSVKIYDTCIGCTQCVRACPLDVLEMVPWDGCKAGQIAASPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSAC_SYNP6" ac="P31085" length="81" description="Photosystem I iron-sulfur center OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psaC PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>561</score>
+      <smithWatermanScore>561</smithWatermanScore>
+      <initn>561</initn>
+      <init1>561</init1>
+      <opt>561</opt>
+      <zScore>701.7</zScore>
+      <bits>134.1</bits>
+      <expectation>1.6e-31</expectation>
+      <identity>92.6</identity>
+      <positives>98.8</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>:::.:::::::::::::::::: :::::::::::::::::.:::.:::::::::::::::::::.:::::::::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHSVKIYDTCIGCTQCVRACPLDVLEMVPWDGCKAGQIAASPRTEDCVGCKRCETACPTDFLSIRVYLGAETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSAC_CHAGL" ac="Q8M9U0" length="81" description="Photosystem I iron-sulfur center OS=Chaetosphaeridium globosum OX=96477 GN=psaC PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>559</score>
+      <smithWatermanScore>559</smithWatermanScore>
+      <initn>559</initn>
+      <init1>559</init1>
+      <opt>559</opt>
+      <zScore>699.3</zScore>
+      <bits>133.6</bits>
+      <expectation>2.2e-31</expectation>
+      <identity>92.6</identity>
+      <positives>100.0</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMVPWDGCKAGQIASSPRVEDCVGCKRCETACPTDFLSVRVYLGAETTRSLGLAY</querySeq>
+      <pattern>::::::::::::::::::::::::::::.:::::::.:::::::.::::::::::.::::::::::::::.:::::.::::</pattern>
+      <matchSeq start="1" end="81">MSHTVKIYDTCIGCTQCVRACPTDVLEMIPWDGCKANQIASSPRTEDCVGCKRCESACPTDFLSVRVYLGSETTRSMGLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

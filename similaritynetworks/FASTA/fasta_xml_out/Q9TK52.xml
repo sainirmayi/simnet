@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162708-0597-62880898-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162708-0597-62880898-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162708-0597-62880898-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9TK52|RBL_PHATC" type="PROTEIN" length="490"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:27:08+00:00" end="2022-11-07T16:27:11+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RBL_PHATC" ac="Q9TK52" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3274</score>
+      <smithWatermanScore>3274</smithWatermanScore>
+      <initn>3274</initn>
+      <init1>3274</init1>
+      <opt>3274</opt>
+      <zScore>4228.4</zScore>
+      <bits>791.8</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RBL_TRICV" ac="P49520" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Trieres chinensis OX=1514140 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3089</score>
+      <smithWatermanScore>3089</smithWatermanScore>
+      <initn>3089</initn>
+      <init1>3089</init1>
+      <opt>3089</opt>
+      <zScore>3989.1</zScore>
+      <bits>747.6</bits>
+      <expectation>1.2e-214</expectation>
+      <identity>92.0</identity>
+      <positives>98.4</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::.:.:..::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::..:::::::::::..:::::::::: ::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::.:::::::::.:::::::::.::: .::..:.:::::::::::::::::::::..:::::::::::::::::::::::::::::: ::::::::::::::::::::::::::.: :: :.:::::::::.:.:::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::.::::::::::: ..::::::.::: :::::::::::::::::::::::.::. ::::::</pattern>
+      <matchSeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDASYTVQDTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACERYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVAALRLEDMRIPYAYLKTFQGPATGIVVERERLNKYGAPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCLEGINRASAATGEVKGSYLNITAATMEEVYKRADYAKQIGSVIVIIDLVMGYTAIQSAAIWARDNDMLLHLHRAGNSTYARQKNHGINFRVICKWMRMSGVDHIHAGTVVGKLEGDPLMIKGFYDVLRLTTLDVNLPYGIFFDMSWASLRKCMPVASGGIHCGQMHQLIHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMVLARNEGADYFNPQVGPQILREAAKKCGPLQTALDLWKDISFNYTSTDTADFAETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RBL_CYLSN" ac="P24673" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Cylindrotheca sp. (strain N1) OX=2855 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3083</score>
+      <smithWatermanScore>3083</smithWatermanScore>
+      <initn>3083</initn>
+      <init1>3083</init1>
+      <opt>3083</opt>
+      <zScore>3981.4</zScore>
+      <bits>746.1</bits>
+      <expectation>3.3e-214</expectation>
+      <identity>91.8</identity>
+      <positives>98.2</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::.::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::..:::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::: ::::::::::::::.::::::.::.::::::::.:::: ::::..::::::::::::: :.:::.::..:::::::::::::::::::::::::::::: ::::::::::::::::::::::::: :: :: :.::::::.::::.:::::.:::::::::::::::::.::::::::::::::::::::::::::::::::::.:.:::::::::::...::::::::::::::::.:::::::::::::::::.::..: ::::</pattern>
+      <matchSeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDASYAVKTTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNAADQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVAALRLEDMRIPHSYLKTFQGPATGIVVERERLNKYGTPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLNCMEGINRASAATGEVKGSYLNVTAATMEEVYKRSEYAKEVGSIIIMIDLVMGYTAIQSMALWARENDMLLHLHRAGNSTYARQKNHGINFRVICKWMRMSGVDHIHAGTVVGKLEGDPLMIKGFYHTLRLTTLDVNLPYGLFFEMSWASLRRCMPVASGGIHCGQMHQLIHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVLARNEGADYFNQEVGPQILRNAAKTCGPLQSALDLWKDISFNYTSTDTADFAATSTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RBL_THAPS" ac="A0T0N6" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Thalassiosira pseudonana OX=35128 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3049</score>
+      <smithWatermanScore>3049</smithWatermanScore>
+      <initn>3049</initn>
+      <init1>3049</init1>
+      <opt>3049</opt>
+      <zScore>3937.4</zScore>
+      <bits>738.0</bits>
+      <expectation>9.4e-212</expectation>
+      <identity>91.2</identity>
+      <positives>97.5</positives>
+      <overlap>489</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::.::.::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::..:::::::::::::::::.::.:::::::::::::::.::::::::::::::::::::::::..:::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::: :.::::::::::::.:::::::::.::::::::::::: .::..:::::::::::::: : :::.::..:::::::::::::::::::::::::::::: :::::::::::::::::::::::::: : ::.:.::::.:::::: :::::.:::::::::::::::::.::::::::::::::::::::::::::::::::::::.:::::: ::::...::::::.:::::::::::::::::::::::::::.::. : :::</pattern>
+      <matchSeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYTVKDTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACERYRAKAYRVDPVPSATDQYFAFIAYECDLFEEASLSNLTASIIGNVFGFKAISALRLEDMRIPHSYLKTFQGPATGIVVERERLNKYGTPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLNCLEGINRASAATGEVKGSYLNITAATMEEVYKRAEYAKMIGSVIVMIDLVMGYTAIQSIAYWARENDMLLHLHRAGNSTYARQKNHGINFRVICKWMRMSGVDHIHAGTVVGKLEGDPLMIKGFYDILRLTELEVNLPFGIFFEMDWASLRRCMPVASGGIHCGQMHQLIHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMVLARNEGLDYFNQQVGPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFAETATANR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RBL_DETCO" ac="O98945" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Detonula confervacea OX=83371 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3048</score>
+      <smithWatermanScore>3048</smithWatermanScore>
+      <initn>3048</initn>
+      <init1>3048</init1>
+      <opt>3048</opt>
+      <zScore>3936.1</zScore>
+      <bits>737.8</bits>
+      <expectation>1.1e-211</expectation>
+      <identity>91.2</identity>
+      <positives>97.8</positives>
+      <overlap>489</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::.::.::.:::::::::::::::::::::::::::::::::::::::::.::::::::::::::.:: ::::::::::::::.::.:::::::::::::::.::::::::::::::::::::::::.::::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::: :.::::::::::::.:::::::::.:::::::::::::..::.::::::::::::::: : :::.::..:::::::::::::::::::::::::::::: :::::::::::::::::::::::::: : ::.:.::::.:::::: :::::.:::::::::::::::::.::::::::::::::::::::::::::::::::::::...:::::::::...::::::.:::::::::::::::::::::::::::.::. : :::</pattern>
+      <matchSeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYSVKDTDILALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACERYRAKAYRVDPVPNATDVYFAFIAYECDLFEEASLSNLTASIIGNVFGFKAISALRLEDMRIPHSYLKTFQGPATGIIVERERLNKYGTPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLNCLEGINRASAATGEVKGSYLNITAATMEEVYKRAEYAKAIGSVVVMIDLVMGYTAIQSIAYWARENDMLLHLHRAGNSTYARQKNHGINFRVICKWMRMSGVDHIHAGTVVGKLEGDPLMIKGFYDILRLTELEVNLPFGIFFEMDWASLRRCMPVASGGIHCGQMHQLIHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMVFSRNEGADYFNNQVGPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFAETATANR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RBL_THANO" ac="O98947" length="490" description="Ribulose bisphosphate carboxylase large chain OS=Thalassiosira nordenskioeldii OX=83372 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3007</score>
+      <smithWatermanScore>3007</smithWatermanScore>
+      <initn>3007</initn>
+      <init1>3007</init1>
+      <opt>3007</opt>
+      <zScore>3883.1</zScore>
+      <bits>728.0</bits>
+      <expectation>1e-208</expectation>
+      <identity>89.6</identity>
+      <positives>97.3</positives>
+      <overlap>489</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::.::.::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::. : :.:: :::::::::.::.::::::::::::::::.:::::::::::::::::::::::..:::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::: :.::::::.:::::.:::::::::.:::::::::::::..::..:::::::::::::: : :::.::..:::::::::::::::::::::::.:::::: :::::::::::::::::::::::::: : ::.:.::::.:.:::: :::::.:::::::::::::::::.::::::::::::::::::::::::::::::::::::...::::::.::...::::::.:::::::::::::::::::::::::::.::. : :::</pattern>
+      <matchSeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYTVKDTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACERYRAKAYRVDPVPNSPDVYLAFNAYECDLFEEASLSNLTASIIGNVFGFKAVAALRLEDMRIPHSYLKTFQGPATGIVVERERLNKYGTPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLNCLEGINRAAAATGEVKGSYLNITAATMEEVYKRAEYAKAIGSVLVMIDLVMGYTAIQSIAYWARENDMLLHLHRAGNSTYARQKNHGINFRVFCKWMRMSGVDHIHAGTVVGKLEGDPLMIKGFYDILRLTELEVNLPFGVFFEMDWASLRRCMPVASGGIHCGQMHQLIHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMVFSRNEGADFFNNQVGPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFAETATANR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RBL_OLILU" ac="P14959" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Olisthodiscus luteus OX=83000 GN=rbcL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2868</score>
+      <smithWatermanScore>2868</smithWatermanScore>
+      <initn>2857</initn>
+      <init1>2662</init1>
+      <opt>2868</opt>
+      <zScore>3703.4</zScore>
+      <bits>694.7</bits>
+      <expectation>1e-198</expectation>
+      <identity>85.7</identity>
+      <positives>95.1</positives>
+      <overlap>489</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="489">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>::..: ::.:::.:::::::::::::::::: :.::.::.:::::.:::::::::::::::::::::::::::::::::::: ::::::::::::...:::::.:::::::::::::::.::::::::::::::.::::::::::..:::::::::::.:::::::. .: ::::::::::::::::::::::::::.::.::::::::::::::::::::::::::::::::::.::.::::::.::.::::.:.::.:::.:::..::::::.::::::: ::::: ::.::::::::::::::::::::::::::::::: ::::::::::::::::::::.:::::.:  :.:..::: :::::: ::::::: ::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::: :: . --::.:::. :: ::::.::::::: :.::::::::.::  : :.:</pattern>
+      <matchSeq start="1" end="487">MSNNVYERNRIKNDRYESGVIPYAKMGYWDANYSVKDTDLLALFRLTPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDVYRAKAYRVDPVPSAADQYFAYIAYECDLFEEGSLANMTASIIGNVFGFKAVAALRLEDMRIPYAYLKTFQGPATGIIVERERLDTFGRPLLGATVKPKLGLSGKNYGRVVYEGLRGGIDFLKDDENINSQPFMRWRERFLYCMEGINRASAASGEVKGSYLNVTAATMEEMYERADYAKAVGSVIVMIDLVIGYTAIQSMAIWARKNDMILHLHRAGNSTYARQKNHGINFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMVKGFYDVLRETELSINLPQGIFFEMDWASLRKCCPVASGGIHCGQMHQLVYYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGRDYVSE--GPEILRDIAKLCGPLKTALDLWKGITFNYTSTDTADFVETATSNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RBL_PORAE" ac="Q09119" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Porphyridium aerugineum OX=2792 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2858</score>
+      <smithWatermanScore>2858</smithWatermanScore>
+      <initn>2860</initn>
+      <init1>2599</init1>
+      <opt>2858</opt>
+      <zScore>3690.4</zScore>
+      <bits>692.3</bits>
+      <expectation>5.4e-198</expectation>
+      <identity>85.1</identity>
+      <positives>94.5</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:.:::.::::::..::::::::::::::::  ::.: ::::::::.::::::::::::::.::::::::::::::::::::: ::::::::::::.. :::::.:::. :::::::.:::::::::::::::::.:::::::::: .::::::::::::.:::::.:..: ::::::::::::::::::::::::::::::::::::::::::::::::::::.::::.:::::..::.:: :::.::.:::..:.:::..: ::::. :::::.::::::: : ::: ::.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.:::  :::.::: :.:::..:::::: ::::::::::::::::. :::::::::::::::::::::::::::::::::.:.:::::: ::  .--::::::.:::::::::::::::::::::::::::.::  ::::::</pattern>
+      <matchSeq start="1" end="488">MDQSVQERTRIKNERYESGVIPYAKMGYWDPDYAIKATDVLALFRVTPQPGVDPVEAAAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPSSPDQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRIPVAYLKTFQGPATGVVVERERMNNFGRPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLFCMEGVNRASASSGEVKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQSMAKWARKNDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLEPHLNINLPEGLFFEQNWASLRKVMPVASGGIHCGQMHQLIDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMLLARNEGRDYVAQ--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVQTPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RBL_PYLLI" ac="P23651" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Pylaiella littoralis OX=2885 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2829</score>
+      <smithWatermanScore>2829</smithWatermanScore>
+      <initn>2831</initn>
+      <init1>2637</init1>
+      <opt>2829</opt>
+      <zScore>3652.9</zScore>
+      <bits>685.4</bits>
+      <expectation>6.6e-196</expectation>
+      <identity>84.6</identity>
+      <positives>95.6</positives>
+      <overlap>482</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="482">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>: ..:..::::::.::::::::::::::::: : ::.::.::::::::::::::::: :::::::::::::::::::::::: ::::::::::::.:.::.::.::::::::::::::::::::::::::::::.::::::::::..::::::::::::.::::::.:.: :::::::::::::::::::::::::: ::::::::::::::::::::.:::::::::.:::.:::::.:::::::::.:::..:.:::::...::..::::::.::::::: :::::  ..::::::::::::::::::::::::::::::::::::::::::::::::::::.::::..::::::..::  :.::.: ::.::::.:::::::::::::::..::::::::::::::::::::::.::::::::::.:.:::::: :: . --::.::: :: :::::..::::::::.:.:::::: ::</pattern>
+      <matchSeq start="1" end="480">MPEDVQNRTRIKSERYESGVIPYAKMGYWDADYNVKDTDILALFRITPQPGVDPVEARAAVAGESSTATWTVVWTDLLTACDIYRAKAYRVDPVPGTSDQFFAYIAYECDLFEEGSLANLTASIIGNVFGFKAVKALRLEDMRIPYAYLKTFQGPATGVVVERERLDKFGRPLLGATVKPKLGLSGKNYGRVVYEGLAGGLDFLKDDENINSQPFMRWKERFLYCMEGVNRAAAATGEVKGSYLNITAATMEQMYERAEYAHSIGSVIVMIDLVIGYTAIQSMAIWARKYEMILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMVKGFYNSLLLTHLKINLAEGLFFDMDWAALRKCVPVASGGIHCGQMHQLLYYLGDDVVLQFGGGTIGHPDGIQSGATANRVALESMVLARNEGRDYVGE--GPEILRRAAATCGPLKAALDLWKDITFDYTSTDTPDFVEVATESR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RBL_CYAM1" ac="Q85G81" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2828</score>
+      <smithWatermanScore>2828</smithWatermanScore>
+      <initn>2829</initn>
+      <init1>2573</init1>
+      <opt>2828</opt>
+      <zScore>3651.6</zScore>
+      <bits>685.1</bits>
+      <expectation>7.8e-196</expectation>
+      <identity>84.5</identity>
+      <positives>94.7</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:.:::.::::.:. :::::::::::::::.  :.::..:.:::::.::::::::.::::::::::::::::::::::::::: ::::::::::::.. ::::..:::. :::::::.:::::::::::::::::.:::::::::: ::::::::::::::::::::::.: :::: :::::::::::::::::::::::::::::::::::::::::::.:.:: :::.:::.::.::.::::::.::.:::: :::::.:: :::...:::::.::::::. :::::.:..::::::::::::.:::::::::::: ::::: ::::::::::::::::::..:::::.:::: .:.:::: :.:::: :::::: .:::::::: ::::::.::::.:::::::::::::::::::::::::::::::.:::::: :::: --::::::.:::.::::::::::::::.:::::::::::  ::::::</pattern>
+      <matchSeq start="1" end="488">MAQSVQERTRLKNKRYESGVIPYAKMGYWNPNYVVKDSDMLALFRVTPQPGVDPIEAAAAVAGESSTATWTVVWTDLLTACDVYRAKAYRVDPVPTAPDQYFVYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRIPFSYLKTFQGPATGVIVERERLNKFGRPLLGCTVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRDRYLYVMEGVNRAAAASGEVKGSYLNVTAATMEECYKRAEFAKEVGSVIIMIDLVIGYTAIQTMAIWARENNMILHLHRAGNSTYSRQKNHGINFRVISKWMRMAGVDHIHAGTVVGKLEGDPIIIKGFYNTLLLPKLEVNLPQGLFFEMDWASLRKTLPVASGGIHAGQMHQLLHYLGEDVVLQFGGGTIGHPDGIQAGATANRVALEAMVLARNEGRDYFNE--GPQILRDAAKNCGPLQTALDLWKDIAFNYTSTDTSDFVETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RBL_GRATL" ac="Q6B8P0" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Gracilaria tenuistipitata var. liui OX=285951 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2823</score>
+      <smithWatermanScore>2823</smithWatermanScore>
+      <initn>2826</initn>
+      <init1>2568</init1>
+      <opt>2823</opt>
+      <zScore>3645.2</zScore>
+      <bits>683.9</bits>
+      <expectation>1.8e-195</expectation>
+      <identity>85.1</identity>
+      <positives>93.9</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>::::: ::::::..::::::::::::::::  :.::.::::::::.:::::::::::.:::::::::::::::::::::::: ::::::.:: ::::::::::::::. :::::::.:::::::::::::::::.:::::::::: .:::::::::::.::::::..:.: :.:::::::::::::::::::::::::::::::::::::::::::::.::::: ::..::: :::::::: :.:.::.::::.:.:::.:: .:::..:::::.::::::. ::::: ::.::::::::::::.::: ::.::::::::::: :::::::::::::::::::::.:::.::: :::.:::: :::::. ::::::  :::::::::::::::. :::.:::::::::::::::::::::::::::::::.:::::: ::   --::::::.::::::::::::::::::.::::::::.::  ::::::</pattern>
+      <matchSeq start="1" end="488">MSQSVEERTRIKNQRYESGVIPYAKMGYWDPNYVVKETDVLALFRVTPQPGVDPVEASAAVAGESSTATWTVVWTDLLTACDLYRAKAYKVDAVPNTTDQYFAFIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRIPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWKERFLYSMEAVNRAIAATGETKGHYMNVTAATMEEMYERAEFAKQLGSIIIMIDLVIGYTAIQTMAIWARKNDMILHLHRAGNSTYSRQKIHGMNFRVICKWMRMSGVDHIHAGTVVGKLEGDPLMIRGFYNTLLQTHLEVNLPQGIFFEQDWASLRKVTPVASGGIHCGQMHQLLDYLGNDVVLQFGGGTIGHPDGIQAGATANRVALEAMVLARNEGRDYVAE--GPQILRDAAKTCGPLQTALDLWKDITFNYTSTDTADFVETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RBL_ECTSI" ac="P24313" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Ectocarpus siliculosus OX=2880 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2822</score>
+      <smithWatermanScore>2822</smithWatermanScore>
+      <initn>2824</initn>
+      <init1>2631</init1>
+      <opt>2822</opt>
+      <zScore>3643.9</zScore>
+      <bits>683.7</bits>
+      <expectation>2.1e-195</expectation>
+      <identity>84.4</identity>
+      <positives>96.1</positives>
+      <overlap>482</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="482">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>: ..:..::::::.::::::::::::::::: : .:.::.:::::::::::::::::::::::::::::::::::::::::: ::::::::::::.:.::.::.::::::::::::::::::::::::::::::.::::::::::..::::::::::::.::::::.:.: :.:::::::::::::::::::::::: ::::::::::::::::::::.:::::::::.:::.:::::.:::::::::.:.:..:.:::::...::..::::::.::::::: :::::  ..::::::::::::::::::::::::::::::::::::::::::::::::::::.::::..::::::..::  :.::.: :::::::.:::::::::::::::..::::::::::::::::::::::.::::::::::.:.:::::: :: . --::.::: ::.:::::..::::::::.:.:::::: ::</pattern>
+      <matchSeq start="1" end="480">MPEDVQNRTRIKSERYESGVIPYAKMGYWDADYKLKDTDILALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDIYRAKAYRVDPVPGTSDQFFAYIAYECDLFEEGSLANLTASIIGNVFGFKAVKALRLEDMRIPYAYLKTFQGPATGVVVERERLDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLTGGLDFLKDDENINSQPFMRWKERFLYCMEGVNRAAAATGEVKGSYLNITAATVEQMYERAEYAHAIGSVIVMIDLVIGYTAIQSMAIWARKAEVILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMVKGFYNSLLLTHLKINLAEGLFFDMDWASLRKCVPVASGGIHCGQMHQLLYYLGDDVVLQFGGGTIGHPDGIQSGATANRVALESMVLARNEGRDYVGE--GPDILRRAASTCGPLKAALDLWKDITFDYTSTDTPDFVEVATGSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RBL_PORUM" ac="Q760R7" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Porphyra umbilicalis OX=2786 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2798</score>
+      <smithWatermanScore>2798</smithWatermanScore>
+      <initn>2801</initn>
+      <init1>2540</init1>
+      <opt>2798</opt>
+      <zScore>3612.8</zScore>
+      <bits>677.9</bits>
+      <expectation>1.1e-193</expectation>
+      <identity>83.3</identity>
+      <positives>94.1</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.:::::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::.:: :::.:.::::.:: :: :::.::.:::..:.:::..:.:::.. :::::.::::::: ::::: ::.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .. ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: ::   --::::::.:::::::::::::::::::::::::::.::  ::::::</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKDTDVLALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERYLYSMEGVNKASAAAGELKGHYLNVTAATMEDMYERAEFSKVVGSVICMIDLVIGYTAIQSMAIWARKNDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESETDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRDYVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RBL_PORPU" ac="P51226" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Porphyra purpurea OX=2787 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2791</score>
+      <smithWatermanScore>2791</smithWatermanScore>
+      <initn>2845</initn>
+      <init1>2533</init1>
+      <opt>2791</opt>
+      <zScore>3603.8</zScore>
+      <bits>676.3</bits>
+      <expectation>3.6e-193</expectation>
+      <identity>83.3</identity>
+      <positives>93.9</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.::.::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::::: :::.:.::::.:: :: :::.::.:::..:.:::..:.::::. :::::.::::::: ::::: ::.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.:::  . ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: :.   --::::::.:::::::::::::::::::::::::::.::  ::::::</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDILALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYSMEGVNKASAAAGEIKGHYLNVTAATMEDMYERAEFSKVVGSIICMIDLVIGYTAIQSMAIWARKNDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLAGETEINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRDFVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RBL_NEODN" ac="Q760S7" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Neoporphyra dentata OX=76160 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2782</score>
+      <smithWatermanScore>2782</smithWatermanScore>
+      <initn>2839</initn>
+      <init1>2525</init1>
+      <opt>2782</opt>
+      <zScore>3592.1</zScore>
+      <bits>674.1</bits>
+      <expectation>1.6e-192</expectation>
+      <identity>82.7</identity>
+      <positives>93.9</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.::.::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::::: :::.:.:::..:: :: :::.::.:::..:.:::..: ::::. :::::.::::::: ::::: .:.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .. ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: .:   --::::::.:::::::::::::::::::::::::::.::  :::::.</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDILALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYSMEGVNKASASAGEIKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQSMAIWARKHDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESETDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRNYVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RBL_NEOKA" ac="Q760R9" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Neopyropia katadae OX=76161 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2781</score>
+      <smithWatermanScore>2781</smithWatermanScore>
+      <initn>2838</initn>
+      <init1>2524</init1>
+      <opt>2781</opt>
+      <zScore>3590.8</zScore>
+      <bits>673.9</bits>
+      <expectation>1.9e-192</expectation>
+      <identity>82.7</identity>
+      <positives>93.7</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.::.::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::::: :::.:.:::..:: :: :::.::.:::..:.:::..: ::::. :::::.::::::: ::::: .:.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .  ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: .:   --::::::.:::::::::::::::::::::::::::.::  :::::.</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDILALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYSMEGVNKASASAGEIKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQSMAIWARKHDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESDTDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRNYVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RBL_NEOYE" ac="Q760T5" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Neopyropia yezoensis OX=2788 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2781</score>
+      <smithWatermanScore>2781</smithWatermanScore>
+      <initn>2838</initn>
+      <init1>2524</init1>
+      <opt>2781</opt>
+      <zScore>3590.8</zScore>
+      <bits>673.9</bits>
+      <expectation>1.9e-192</expectation>
+      <identity>82.7</identity>
+      <positives>93.7</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.::.::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::::: :::.:.:::..:: :: :::.::.:::..:.:::..: ::::. :::::.::::::: ::::: .:.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .  ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: .:   --::::::.:::::::::::::::::::::::::::.::  :::::.</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDILALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYSMEGVNKASASAGEIKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQSMAIWARKHDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESDTDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRNYVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RBL_NEOHI" ac="Q760R5" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Neoporphyra haitanensis OX=1262161 GN=rbcL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2780</score>
+      <smithWatermanScore>2780</smithWatermanScore>
+      <initn>2837</initn>
+      <init1>2523</init1>
+      <opt>2780</opt>
+      <zScore>3589.6</zScore>
+      <bits>673.6</bits>
+      <expectation>2.2e-192</expectation>
+      <identity>82.7</identity>
+      <positives>93.9</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.:::::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.:::::::::::::::::::::::::::::::::::::::::::::.::::: :::.:.::::.:: :: :::.::.:::..:.:::..: ::::. :::::.::::::. ::::: .:.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .. ..::: :.:: ..:::::: .:::::::: ::::::. :::::::::::::::::::::::::::::::::.:..::::: .:   --::::::.:::::::::::::::::::::::::::.::  :::::.</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDVLALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWKERFLYSMEGVNKASAAAGEIKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQTMAIWARKHDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESETDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANRVALESMVMARNEGRNYVAE--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RBL_PORCA" ac="P50255" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Pyropia suborbiculata OX=1185355 GN=rbcL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2779</score>
+      <smithWatermanScore>2779</smithWatermanScore>
+      <initn>2835</initn>
+      <init1>2521</init1>
+      <opt>2779</opt>
+      <zScore>3588.3</zScore>
+      <bits>673.4</bits>
+      <expectation>2.6e-192</expectation>
+      <identity>82.4</identity>
+      <positives>94.1</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:::::  ::::::.::::::::::::::::: :..:.::.::::::::::::::.::.::.::::::::::::::::::::: :::::::::::::..:::::.:::. :::::::.:::::::::::::::::.::::::::.: .:::::::::::.::::::..:.: :.::::::::::::::::::::::::::::::::::::::::::::::::::: :::.:.:::..:: :: :::.::.:::..:.:::..: ::::. :::::.::::::: ::::: .:.::::::::::::.::::::.::::::::::: :::::::::::::::::::::::::.::: .. ..::: :.:: ..:::::: .:::::::: ::::::. ::::::::::::::::::::::::::::.::::.:..::::: .:  .--::::::.:::::::::::::::::::::::::::.::  :::::.</pattern>
+      <matchSeq start="1" end="488">MSQSVESRTRIKSERYESGVIPYAKMGYWDADYVIKETDILALFRITPQPGVDPIEASAAIAGESSTATWTVVWTDLLTACDLYRAKAYRVDPVPNVADQYFAYIAYDIDLFEEGSIANLTASIIGNVFGFKAVKALRLEDMRMPVAYLKTFQGPATGLIVERERMDKFGRPFLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYSMEGVNKASASAGEIKGHYLNVTAATMEDMYERAEFSKEVGSIICMIDLVIGYTAIQSMAIWARKHDMILHLHRAGNSTYSRQKNHGMNFRVICKWMRMAGVDHIHAGTVVGKLEGDPLMIKGFYNTLLESETDINLPQGLFFAQNWASLRKVVPVASGGIHAGQMHQLLDYLGDDVVLQFGGGTIGHPDGIQAGATANKVALESMVMARNEGRNYVAK--GPQILRDAAKTCGPLQTALDLWKDISFNYTSTDTADFVETPTANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RBL_CYACA" ac="P37393" length="488" description="Ribulose bisphosphate carboxylase large chain OS=Cyanidium caldarium OX=2771 GN=rbcL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2776</score>
+      <smithWatermanScore>2776</smithWatermanScore>
+      <initn>2825</initn>
+      <init1>2525</init1>
+      <opt>2776</opt>
+      <zScore>3584.4</zScore>
+      <bits>672.7</bits>
+      <expectation>4.3e-192</expectation>
+      <identity>82.9</identity>
+      <positives>93.7</positives>
+      <overlap>490</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="490">MSQSVSERTRIKSDRYESGVIPYAKMGYWDAAYAVKNTDVLALFRITPQPGVDPVEAAAAVAGESSTATWTVVWTDLLTACDRYRAKAYRVDPVPNTTDQYFAFIAYECDLFEEGSLANLTASIIGNVFGFKAVSALRLEDMRIPHSYLKTFQGPATGVIVERERLNKYGIPLLGATVKPKLGLSGKNYGRVVYEGLKGGLDFLKDDENINSQPFMRWRERFLYCMEGINRASAATGETKGSYLNITAGTMEEVYKRAEYAKTVGSIVVMIDLVMGYTAIQSAAIWARDNDLILHLHRAGNSTYARQKNHGINFRVICKWMRMCGVDHIHAGTVVGKLEGDPLMIKGFYDTLLLTHLNVNLPYGIFFEMTWASLRKCMPVASGGIHCGQMHQLVHYLGDDVVLQFGGGTIGHPDGIQAGATANRVALEAMILARNEGADYFNSDIGPQILRNAAKTCGPLQTALDLWKDISFNYTSTDTSDFSVTPTANV</querySeq>
+      <pattern>:.:::.::::.:. ::::::::::::::::  :.::.::.:::::.::::::::.::.::::::::::::::.: ::::::: ::::::::: :::. :::::.:::. :::::::.::::::::::::::::..:::::::::: .::::::::::::.::::::: .: :.::::::::::::.:::::::::::::::.:::::::::::::::::::::: :::.::::::::: ::::::.::.::::.:.::  :: ::::..:::::.::::::: :::::.:..::::::::::::::::::::::::::::::: ::::::::::::::::::...::::.:::: .:.:::: :.:::: :::::: .:::::::: :::: :..::::::::::::::.:::::::::::::::::::..:::::: :: : --:::::..::.:::::::.::::::::::.:::::.::  ::::::</pattern>
+      <matchSeq start="1" end="488">MAQSVQERTRLKNKRYESGVIPYAKMGYWDPNYVVKDTDILALFRVTPQPGVDPIEASAAVAGESSTATWTVIWCDLLTACDVYRAKAYRVDQVPNSPDQYFAYIAYDLDLFEEGSIANLTASIIGNVFGFKALAALRLEDMRIPIGYLKTFQGPATGVVVERERLNMFGKPFLGATVKPKLGLSSKNYGRVVYEGLKGGLNFLKDDENINSQPFMRWRERFLYVMEGVNRASAATGEIKGSYLNVTAATMEEMYNRAACAKEVGSIIIMIDLVIGYTAIQSMAIWARENNMILHLHRAGNSTYARQKNHGINFRVICKWMRMAGVDHIHAGTVVGKLEGDPIIVKGFYNTLLLPKLDVNLPQGLFFEMDWASLRKTVPVASGGIHAGQMHLLLKYLGDDVVLQFGGGTLGHPDGIQAGATANRVALEAIVLARNEGRDYVNE--GPQILKEAARTCGPLQTSLDLWKDISFNFTSTDTADFVETPTANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

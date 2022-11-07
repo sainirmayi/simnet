@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162617-0795-86223848-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162617-0795-86223848-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162617-0795-86223848-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q39493|DSK1_CYLFU" type="PROTEIN" length="624"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:26:17+00:00" end="2022-11-07T16:26:20+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="DSK1_CYLFU" ac="Q39493" length="624" description="Diatom spindle kinesin-1 OS=Cylindrotheca fusiformis OX=2853 GN=DSK1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>4040</score>
+      <smithWatermanScore>4040</smithWatermanScore>
+      <initn>4040</initn>
+      <init1>4040</init1>
+      <opt>4040</opt>
+      <zScore>3657.5</zScore>
+      <bits>686.9</bits>
+      <expectation>3.7e-196</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>624</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="624">MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQILAYDLYGQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="624">MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQILAYDLYGQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="KIF6_DICDI" ac="Q6S004" length="1030" description="Kinesin-related protein 6 OS=Dictyostelium discoideum OX=44689 GN=kif6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>941</score>
+      <smithWatermanScore>941</smithWatermanScore>
+      <initn>856</initn>
+      <init1>430</init1>
+      <opt>941</opt>
+      <zScore>821.3</zScore>
+      <bits>162.8</bits>
+      <expectation>3.5e-38</expectation>
+      <identity>30.4</identity>
+      <positives>64.1</positives>
+      <overlap>616</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="29" end="623">--MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTN---SNICIAVRKRPISDKERQKLDHDSVSCFQNK-VWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTM-----NGIQQILAYDLYGQLAEH-TDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGN-LRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVS-SNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQ---VQADANDYAFTEQV--DEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEA---LLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQ-VQLTQY</querySeq>
+      <pattern>                              ...:. .  . . : ..  .: ..  :. .. .-. .    ..  ..::..-- ..  ..: . :---. : . :::::.. ::  : ..: .  . .:-. ..  : :.:-..:.. ...: .: .: :.... :.:: :. :::: .  -.:.:: : :::::::::.:.-----.:.  . : :.. .:  .- :.:.. ..:::.:.:...:::.  ..    :.   .: :.:: :  . .:. ... : .:...:.: .: .:. ::::::: :. :..   :-:.::....::::::::::: ....: : :.:::: :::::::::::: :.: :.:.: : :: .::: :  .:.:.:.:..::. :...:.:::::::::.::  .:-::...  .:  .    .:  ..: .         .  .. .    : ..:---.:  ..  .  .: --...:..  .   ......   .. . :.:.     :  ..:       . .. .:.   .   ---..: : ....  :..: .:   ... ...  :  -..::  .. .:::.:. :: .:.. ... :.:  ..:.  .:-.:  :</pattern>
+      <matchSeq start="387" end="996">IQQQQQQQQQQQQQQVQQQQQQFNNFNYSGLNEEQIKYYQQQAQYQQQVQQAQQAAIQQAQQA-AALAQASQQQLQQQEQQ--RQQASNFFLDMNEYGQRIRVCVRKRPLNKKEIAKSEKDIIEVLPKKDLIVNEPKTKLD-LSKFIEKHKFTFDGVFDESANNYQVYLHTAYPLVDSIFH-KGKATCFAYGQTGSGKTHTQMGQQGDGLYALAARDIFHRLETYFKDQLQVCISFFEIYGGKLFDLLNERKKLACRENELQNVVIVGLSEKHVTSPQELMNCIIDGNKIRSTGSTGVNSDSSRSHAILQISLKNIKTNKLHGKFSFIDLAGSERGSDTYDNDKQTRKEGADINKSLLALKECIRALDQSSKHTPFRQSTLTQVLKDSFVGNSRTVMIANISPNQSSSEHTLNTLRYADRVKELGTSESNSNKKPVATYNIPAPLPPPDHLKQNFNDPILIPSTTTTTTTTATAINSQQPIIQQTSQPVSKIKQPVKQQQESQIPQTPQQQQQQQPPQQQPQQQQYNIPQTPQQTQQQFNIPQTPKQQQPIQTQPPMSPPKIDFVNYHRNHVDQFADILKKELISINQFESSKGSIP-LENYINNIEQFLDSKQLLINHLRGIIQQHQQQPIQQQQQQQQPIQQQQQSTPQPSQLQTPQQRERARSQLQPPKPSIYSSRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="KIF24_MOUSE" ac="Q6NWW5" length="1356" description="Kinesin-like protein KIF24 OS=Mus musculus OX=10090 GN=Kif24 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>840</score>
+      <smithWatermanScore>840</smithWatermanScore>
+      <initn>769</initn>
+      <init1>542</init1>
+      <opt>840</opt>
+      <zScore>760.1</zScore>
+      <bits>151.9</bits>
+      <expectation>9e-35</expectation>
+      <identity>41.1</identity>
+      <positives>70.8</positives>
+      <overlap>353</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="96" end="433">IGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNK-VWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQ------ILAYDLYGQL--AEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQR------VSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADAN</querySeq>
+      <pattern>                              : . :::::.. .: .. . . ..  ...-. .:  :  ::-.:.:. .. : .:..:::  .....:: :. ::..:. . -: :: : :::::.:::::: : .:------. : :.. ::--..   .: . ..:.:.: :.. :::.  .:    ::..  :.:.::::. . . : .:::: .: . :.:  : .:  ::::::: :. ..: .    :.....:::::::..:... . : . :.:.:: :::::::::::: :. .:.:.: :::: .::: :  ..:: :.:..::.  :..:.:::::::::.:: .------.:...:   .:.:: ..:. :</pattern>
+      <matchSeq start="219" end="569">VSHVSGYNYGIPHSCVRQITSENPWTEMEKIRVCVRKRPLGVREVRRGEVNVITVEDKETLLVHEKKEAVD-LTQYILQHVFYFDEVFGEACSNQDVYLKTAHPLIQHIFNG-GSATCFAYGQTGAGKTYTMIGTHQNPGLYALAAKDIFRQLKVSQSRRNLFVWISFYEIYCGQLYDLLNRRKRLFAREDSKHVVQIAGLRELQVDSVELLLQVILKGSKERSTGATGVNADSSRSHAIIQIQIKDSAKRTFGRISFIDLAGSERAADARDSDRQTKMEGAEINQSLLALKECIRALDQEHTHTPFRQSKLTQVLKDSFIGNAKTCMIANISPSHIATEHTLNTLRYADRVKELKKGVKCCASATSQNQTSANASPKRIQSSPVTLPGDKCSPKKVKLGLQQSLTVAPGPTKVKAHPLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="KIF24_HUMAN" ac="Q5T7B8" length="1368" description="Kinesin-like protein KIF24 OS=Homo sapiens OX=9606 GN=KIF24 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>814</score>
+      <smithWatermanScore>814</smithWatermanScore>
+      <initn>766</initn>
+      <init1>532</init1>
+      <opt>814</opt>
+      <zScore>736.5</zScore>
+      <bits>147.6</bits>
+      <expectation>1.8e-33</expectation>
+      <identity>41.4</identity>
+      <positives>71.5</positives>
+      <overlap>326</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="96" end="412">IGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNK-VWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQ------ILAYDLYGQL--AEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTE</querySeq>
+      <pattern>                              : . :::::.. .: .. . . ..  ...-. .:  :  ::-.:.:. .. : .:..:::  :....:. :: ::..:. . -: :: : :::::.:::::: : ..------. : :.. ::--..    : . ..:.:.: :.. :::.  .:    ::..  :.:.::.:. . . : .:.:: .: . :.:  : .:  ::::::. :. ..: .    :.....:::::::..:... . : . :.:.:: :::::::::::: :. .:.:.: :::: .::: :  ..:: :.:..::.  :..:.:::::::::.:: .</pattern>
+      <matchSeq start="224" end="547">HVSGYNYGIPHSCIRQNTSEKQNPWTEMEKIRVCVRKRPLGMREVRRGEINIITVEDKETLLVHEKKEAVD-LTQYILQHVFYFDEVFGEACTNQDVYMKTTHPLIQHIFNG-GNATCFAYGQTGAGKTYTMIGTHENPGLYALAAKDIFRQLEVSQPRKHLFVWISFYEIYCGQLYDLLNRRKRLFAREDSKHMVQIVGLQELQVDSVELLLEVILKGSKERSTGATGVNADSSRSHAVIQIQIKDSAKRTFGRISFIDLAGSERAADARDSDRQTKMEGAEINQSLLALKECIRALDQEHTHTPFRQSKLTQVLKDSFIGNAKTCMIANISPSHVATEHTLNTLRYADRVKELKKGIKCCTSVTSRNRTSGNSSPKRIQSSPGALSEDKCSPKKVKLGFQQSLTVAAPGSTRGKVHPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="KN13B_ARATH" ac="Q940Y8" length="684" description="Kinesin-like protein KIN-13B OS=Arabidopsis thaliana OX=3702 GN=KIN13B PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>942</score>
+      <smithWatermanScore>942</smithWatermanScore>
+      <initn>663</initn>
+      <init1>412</init1>
+      <opt>876</opt>
+      <zScore>680.5</zScore>
+      <bits>136.2</bits>
+      <expectation>2.4e-30</expectation>
+      <identity>33.9</identity>
+      <positives>66.7</positives>
+      <overlap>537</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="615">DFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQILAYDLYGQLAEHT---DDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLR-DYGGN------LRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRT-----VQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</querySeq>
+      <pattern>                              ..: ..:::::.. ::  : ..: :.   : . .: .:::::-.: :. .. : .: .. :. .....:  :. :.: -..  . .:: : ::::::::::::. .    . :. -.: .::---. ... :.:::.:.:.. :::   ..  . :::. .: :.::.:  .   .:....::.: . :.:  : ::. ::::::: :. ..-.  ::------: :::...::::::::.:: ....: : :.:.:: :::::::::::: . ..:.:.:::::: .:.: :  .:.:.:.. .::.... .:.:::::::::.:  ------..:.:.: .-------------....: .  .. .  ... :   .. . :.:..-.::. :: .:.: : : .  ...   : : .   .: . .   . .  .  . .....-----..:... :: :.: : .... . ... .: .::  ..  :---... .:  .:  .:..: . : .::..: .::..:-::...</pattern>
+      <matchSeq start="168" end="677">DDFEAYNKQPNRSRVLAENLAAEKERMNAVAKIKVVVRKRPLNKKESTKNEEDIVDTHANCLTVHETKLKVD-LTAYVEKHEFVFDAVLDEEVSNDEVYRETVEPVVP-LIFQRIKATCFAYGQTGSGKTYTMKPLPLKASRDIL-RLMHHTYRNQGFQLFVSFFEIYGGKLYDLLSERKKLCMREDGKQQVCIVGLQEYRVSDTDAIMELIERGSATRSTGTTGANEESSRSHAILQLAIKKSVEGNQSKPPRLVGKLSFIDLAGSERGADTTDNDKQTRLEGAEINKSLLALKECIRALDNDQGHIPFRGSKLTEVLRDSFMGNSRTVMISCISPSSGSCEHTLNTLRYADRVKSL------SKGNASKKD-------------VSSSTMNLRESTKIPLSSALPTPSNFDDDVNEM-WTEENDEFDASDYEQDKQMWKKNGKLEPSYNGMAQERIPKPTIQMKSRDMPRPDMKKSNSDDNLNALLQEEEDLVNAHRKQVEDTMNIVKEEMNLLVEADQPG---NQLDGYISRLNTILSQKAAGILQLQNRLAHFQKRL-REHNVLVSTTGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="KN13B_ORYSJ" ac="B9EY52" length="707" description="Kinesin-like protein KIN-13B OS=Oryza sativa subsp. japonica OX=39947 GN=KIN13B PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>938</score>
+      <smithWatermanScore>938</smithWatermanScore>
+      <initn>728</initn>
+      <init1>422</init1>
+      <opt>871</opt>
+      <zScore>659.4</zScore>
+      <bits>132.3</bits>
+      <expectation>3.6e-29</expectation>
+      <identity>34.4</identity>
+      <positives>64.7</positives>
+      <overlap>567</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="85" end="615">IEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQ--NKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNGIQQILAYDLYGQLAEHT---DDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDY-GGN------LRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCFSPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKA-AKASNREIMPS--KERLMRIAAATEQAD-DQHSAF---VQKMLAEH------DQVQADANDYAFTEQ----VDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTV-------QAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</querySeq>
+      <pattern>                              : .  :.  ..: ..:::::.. :: .: ..: ..  :--:.. .: .:::::-.:.:. .. : .: .. :: .....:  :. :.:  . .-. .:: : ::::::::::::  .    . :. -.: .::---.  .. :.:::.:.:...:::.  ..  . :::. .: :.::.:  .   :.. ..::.:.. :.:  : ::. ::::::: :. ..  - ::------: :::...::::::::.:: ....: : :.:.:: :::::::::::: . ..:.:.:::::: .:.: :  ::.:.:.. .::.... .:.:::::::::.:    .:: ..  .-: :  ::  ::--   .  ...:  . :- ..: :--- :... ::------:..:   .:  :. .----  :...         :  :  :....-:  ..: .   :.... . .   .::.:-------. ... :: :.. : .... . .:. .: .::  ..  :---... .:  .:. .:..: . :  ::..: .::..: ... :</pattern>
+      <matchSeq start="142" end="701">GFDDSDPTFAPNKQMSKSTVFAESNFLKAFPEKEKAAPVAKIKVVVRKRPLNKKEISKKEEDIIDIEQQSNSLTVHETKLKVD-LTEYVEKHEFVFDAVLDEDVSNDEVYRETVEPVVPAIFN-RTKATCFAYGQTGSGKTYTMRPLPLKASQDIL-RLMHHTYRNQGYQLFVSFFEIYGGKLFDLLNERSKLCMREDGKQKVCIVGLQEYRVSDVETIKELIEKGNATRSTGTTGANEESSRSHAILQLAIKKRVDGNDSKPPRLAGKLSFIDLAGSERGADTTDNDKQTRIEGAEINKSLLALKECIRALDNDQTHIPFRGSKLTEVLRDSFIGDSRTVMISCISPSSGSCEHTLNTLRYADRVKSLSKGSNTKKDLSLAAAPLRESSPSLLASAVPSFSSAEVMNDITERSNFGWTKQQYVKEHQAPTFVDRMQKVKEDTEFSLSNGGYFKEQRTKGSVPVGIAEVPDTVYQQGR-QPTRKARDLTSDNNMRNSIAYPIIRRVVPDEDEHLNELLQEEEDLVSAHRKQVEETLDMIKEEMNLLVEADQPG---NQLDDYITRLSGILSQKAAGIVDLQARLAQFQRRLNENNVLLYAQCP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="KIF2A_RAT" ac="Q9WV63" length="705" description="Kinesin-like protein KIF2A OS=Rattus norvegicus OX=10116 GN=Kif2a PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>979</score>
+      <smithWatermanScore>979</smithWatermanScore>
+      <initn>449</initn>
+      <init1>293</init1>
+      <opt>979</opt>
+      <zScore>635.1</zScore>
+      <bits>127.8</bits>
+      <expectation>8.2e-28</expectation>
+      <identity>35.2</identity>
+      <positives>65.9</positives>
+      <overlap>549</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="540">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIM---PSKERLMRI---AAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVD---EEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQL</querySeq>
+      <pattern>                              ::.    ..:.....:..::---.:..: :...- ....: ::-. ... .....:   . .    . :----  .  ::. :::::.. :: :  : : .. - .. : .:  : :::-.:.:: ...:..:..: ... .:..:  :. :::. .  -.: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.. ..:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:. :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::::::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  :. .------: .. : ::---::.   .. ---.... : :: ------:.: :... ... . ..: : :.---: : .  :      .:.. . ..:    : . : .:: .. : . :  :.. .. . ::..</pattern>
+      <matchSeq start="154" end="678">EQSSSAQQNGSVSDISPVQAAKKEFGPPSRRKSNCVKEVEKLQEKREKRR---LQQQELREKR-AQDVDATNP-NYEIMCMIRDFRGSLDYRPLTTADP----IDEHRICVCVRKRPLNKKETQMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDDSAPNEMVYRFTARPLVETIFE-RGMATCFAYGQTGSGKTHTMGGDCSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVYATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIDIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLALKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKELTVDPT------AAGDVRPIMHHPPSQIDDLETQWGVGSSPQRDDL------KLLCEQNEEEVSPQLFTFHEAVSQMVEMEEQVVEDHRAVFQESIRWIEDEKALLEMTEEVDYDVDSYATQLEAILEQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="KI10A_DROME" ac="Q960Z0" length="805" description="Kinesin-like protein Klp10A OS=Drosophila melanogaster OX=7227 GN=Klp10A PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>946</score>
+      <smithWatermanScore>946</smithWatermanScore>
+      <initn>864</initn>
+      <init1>282</init1>
+      <opt>939</opt>
+      <zScore>633.9</zScore>
+      <bits>127.8</bits>
+      <expectation>9.6e-28</expectation>
+      <identity>32.1</identity>
+      <positives>63.4</positives>
+      <overlap>626</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="616">-----------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQE-NKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTM------------NGIQQILAYDLYGQLAE---HTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGN-LRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEA--DDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELE--EALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</querySeq>
+      <pattern>                              : . :.. .  ..:.....:..::  . . ::--..  . : . :::-. .   ...:..   :-  . : .-----:  . .: . ::::::: :: .. . : .: - .. . .:  . :::-.::.: ...:..:..:..   . ..:  :. :::-...   : :: : :::::::::.::------------:::  . : :..  :  ---.. .: ....:::.:::.:.:::   :. ..::::. .:...:: :  .   :  :..:..:.. ::. .: ::. ::::::. :. ::  :..-..::....::::.::: ::.. . : : :.:.:: :::::::::::::..:::.:.: :::: .:.: :-.  ::: :.: .::: :. .:.:::::::::.::  :.. ----------- :. :. .-----.   : .::..   ..-:.  :..-:   :..: . : ....:--. . :   ..... . ..... ... :. :----:   .:  .::    ::. .:.--: .. ..  ...:. : .  :.: : .. --.  . .. .:  .   ....  ..  . .. . :.. .::.:. :.</pattern>
+      <matchSeq start="204" end="795">NNTLPNPSAAASAGPAAQGVATAATTQGAGGASTRRSHALKEVERLKENREKRRARQAEMKE--EKVALMNQDPGNP-NWETAQMIREYQSTLEFVPLLDGQ-----AVDDHQITVCVRKRPISRKEVNRKEIDVISVPRKDMLIVHEPRSKVD-LTKFLENHKFRFDYAFNDTCDNAMVYKYTAKPLV-KTIFEGGMATCFAYGQTGSGKTHTMGGEFNGKVQDCKNGIYAMAAKDVFVTLNMPRYRAMNLVVSASFFEIYSGKVFDLLSDKQKLRVLEDGKQQVQVVGLTEKVVDGVEEVLKLIQHGNAARTSGQTSANSNSSRSHAVFQIVLRPQGSTKIHGKFSFIDLAGNERGVDTSSADRQTRMEGAEINKSLLALKECIRALGKQSAHLPFRVSKLTQVLRDSFIGEKSKTCMIAMISPGLSSCEHTLNTLRYADRVKELVVKDI-----------VEVCPGGD-----TEPIEITDDEEEEELN-MVHPHSH-QLHPNSHAPASQSNNQRAPASHHSGAVIHNNNNNNNKNGNAGNMDLAMLS----SLSEHEMSDELIVQHQAIDDLQQTEEMVVEYHRTVNATLETFLAESKALYNLT--NYVDYDQDSYCKRGESMFSQLLDIAIQCRDMMAEYRAKLAKEEMLSCSFNSPNGKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="KIF2C_MOUSE" ac="Q922S8" length="721" description="Kinesin-like protein KIF2C OS=Mus musculus OX=10090 GN=Kif2c PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>958</score>
+      <smithWatermanScore>958</smithWatermanScore>
+      <initn>593</initn>
+      <init1>302</init1>
+      <opt>958</opt>
+      <zScore>632.2</zScore>
+      <bits>127.3</bits>
+      <expectation>1.2e-27</expectation>
+      <identity>35.2</identity>
+      <positives>64.1</positives>
+      <overlap>566</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="545">---------------------------MNAANRRKSTSTVGITGRKDATRMK-IEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLY---GQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQA-DDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEE--ELRRTVQAV---FELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQL</querySeq>
+      <pattern>                              ..:  :... : . :. .  .:-.:.:...:.:.:    . .  : ::.----... :-. .:  ...:.:  .: .    . : ---- .  ::. :::::.. .:  : . : .: - .  . .:  :::::-.:::: ...: .: .: : ...: .:  :. :::-...   :.:: : :::::::::.::.:------------:  . . :..---.:   .. .::. :.:::.:.:.:.:::.   . ..:::.  .:...::.:  .   .  ...:. : . ::. .: ::. ::::::  :..::  :- :.::..::::::.:::.::.. . : : :.:.:: ::::::::::::::..::.:.: :::: .:.: :-. .:.: :.: .::: :. ...:::::::::.::    :-:  :.     . :.: ..     ...  :. -..: :.: . : ----:..-. .. :. : ---.:  ..  .. : ::  :  : . . . . .::  --.:.:.....-- ::....:.---..:::   .:</pattern>
+      <matchSeq start="171" end="713">AIPSHPRASCSTVTELPLLMVSEEAEEQAHSTRSTSSANPGNSVRRKSCIVKEMEKMKNKREEKRAQNSELRIKRAQEY----DSSFP-NWEFARMIKEFRVTMECSPLTVTDPI----EEHRICVCVRKRPLNKQELAKKEIDVISVPSKCLLLVHEPKLKVD-LTKYLENQAFCFDFAFDETASNEVVYRFTARPLV-QTIFEGGKATCFAYGQTGSGKTHTMGGDLSGKSQNASKGIYAMASRDVFLLKNQPRYRNLNLEVYVTFFEIYNGKVFDLLNKKAKLRVLEDSRQQVQVVGLQEYLVTCADDVIKMINMGSACRTSGQTFANSNSSRSHACFQILLRTKG-RLHGKFSLVDLAGNERGADTSSADRQTRMEGAEINKSLLALKECIRALGQNKAHTPFRESKLTQVLRDSFIGENSRTCMIAMISPGISSCEYTLNTLRYADRVKELSPHS-GPSGEQPVQMETEVMEASSNGTSLTGNEEEELSSQMSSFNEAMT----QIR-ELEERALEEL---REIIQQGPNWLELSEMTDQPDYDLETFVNKAESAL--TQQAKQAKHFSALREVIKALRLAMQLEEQASKQINSKKRHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="KIF2A_MOUSE" ac="P28740" length="705" description="Kinesin-like protein KIF2A OS=Mus musculus OX=10090 GN=Kif2a PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>978</score>
+      <smithWatermanScore>978</smithWatermanScore>
+      <initn>450</initn>
+      <init1>294</init1>
+      <opt>978</opt>
+      <zScore>629.6</zScore>
+      <bits>126.8</bits>
+      <expectation>1.7e-27</expectation>
+      <identity>35.2</identity>
+      <positives>65.9</positives>
+      <overlap>549</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="540">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIM---PSKERLMRI---AAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVD---EEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQL</querySeq>
+      <pattern>                              ::.    ..:.....:..::---.:..: :...- ....: ::-. ... .....:   . .    . :----  .  ::. :::::.. :: :  : : .. - .. : .:  : :::-.:.:: ...:..:..: ... .:..:  :. :::. .  -.: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.. ..:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:. :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::::::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  :. ------:: .. . ::---::.   .. ---.... : :: ------:.: :... ... . ..: : :.---: : .  :      .:.. . ..:    : . : .:: .. : . :  :.. .. . ::..</pattern>
+      <matchSeq start="154" end="678">EQSSSAQQNGSVSDISPVQAAKKEFGPPSRRKSNCVKEVEKLQEKREKRR---LQQQELREKR-AQDVDATNP-NYEIMCMIRDFRGSLDYRPLTTADP----IDEHRICVCVRKRPLNKKETQMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDDSAPNEMVYRFTARPLVETIFE-RGMATCFAYGQTGSGKTHTMGGDFSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVYATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIDIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLALKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKELTVNP------AAAGDVHPIMHHPPSQIDDLETQWGVGSSPQRDDL------KLLCEQNEEEVSPQLFTFHEAVSQMVEMEEQVVEDHRAVFQESIRWIEDEKALLEMTEEVDYDVDSYATQLEAILEQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="KIF2A_HUMAN" ac="O00139" length="706" description="Kinesin-like protein KIF2A OS=Homo sapiens OX=9606 GN=KIF2A PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>976</score>
+      <smithWatermanScore>976</smithWatermanScore>
+      <initn>449</initn>
+      <init1>293</init1>
+      <opt>976</opt>
+      <zScore>627.8</zScore>
+      <bits>126.5</bits>
+      <expectation>2.1e-27</expectation>
+      <identity>35.0</identity>
+      <positives>65.9</positives>
+      <overlap>549</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="540">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIM---PSKERLMRI---AAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVD---EEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQL</querySeq>
+      <pattern>                              ::.    ..:.....:..::---.:..: :...- ....: ::-. ... .....:   . .    . :----  .  ::. :::::.. :: :  : : .. - .. : .:  : :::-.:.:: ...:..:..: ... .:..:  :. :::. .  -.: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.. ..:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:. :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::::::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  :. .------: .. : ::---:..   .. ---.... : :: ------:.: :... ... . ..: : :.---: : .  :      .:.. . ..:    : . : .:: .. : . :  :.. .. . ::..</pattern>
+      <matchSeq start="155" end="679">EQSSSAQQNGSVSDISPVQAAKKEFGPPSRRKSNCVKEVEKLQEKREKRR---LQQQELREKR-AQDVDATNP-NYEIMCMIRDFRGSLDYRPLTTADP----IDEHRICVCVRKRPLNKKETQMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDDSAPNEMVYRFTARPLVETIFE-RGMATCFAYGQTGSGKTHTMGGDFSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVYATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIDIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLALKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKELTVDPT------AAGDVRPIMHHPPNQIDDLETQWGVGSSPQRDDL------KLLCEQNEEEVSPQLFTFHEAVSQMVEMEEQVVEDHRAVFQESIRWLEDEKALLEMTEEVDYDVDSYATQLEAILEQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="KIF2A_CHICK" ac="Q5ZKV8" length="706" description="Kinesin-like protein KIF2A OS=Gallus gallus OX=9031 GN=KIF2A PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>970</score>
+      <smithWatermanScore>970</smithWatermanScore>
+      <initn>609</initn>
+      <init1>296</init1>
+      <opt>969</opt>
+      <zScore>626.9</zScore>
+      <bits>126.3</bits>
+      <expectation>2.3e-27</expectation>
+      <identity>35.0</identity>
+      <positives>65.5</positives>
+      <overlap>551</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="533">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRV--SSNGQRGKAAKASNREI-----------MPSKERLMRIAAATEQ-ADDQHSAF---VQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYE-DSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLARE</querySeq>
+      <pattern>                              ::.    ..:.....:..::---.:..: :...- ....: ::-. ... .....: . . .    . : ---- .  ::. :::::.. ::    : : .. - .. : .:  : :::-.:.:: ...:..:..: : . .:..:  :. :::. .  -.: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.. ..:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:: :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::::::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  .--:. :.     . .  .:----------- :... :  .   .:.-.. :  .:---:..:.  ..::  :-.  .: :..   :--::..-  : .:..::.-:: . . :  .... :   : ..  . .: ..:</pattern>
+      <matchSeq start="155" end="689">EQSSSSQQNGTVSGISPVQAAKKEFGPPSRRKSNCVKEVEKLQEKREKRR---LQQQELREKR-AQDVDATNP-NYEIMCMIRDFRGNLDYRPLTTADPI----DEHRICVCVRKRPLNRKETLMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDETAPNEMVYRFTARPLVETIFE-RGMATCFAYGQTGSGKTHTMGGDFSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVYATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIEIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLALKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKELTIDPSAAGDIRPIIHHTPSQIDDLDTQWGVGSSPQRDDLKLLCEQNEEEVSPQLFTFHEAVSQMVEMEEQVVED-HRTVFQESIRWLE--DEKA-LLEMTEEVDYDVDSYATQLEAILDQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="KIF2B_MOUSE" ac="Q8C0N1" length="668" description="Kinesin-like protein KIF2B OS=Mus musculus OX=10090 GN=Kif2b PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>973</score>
+      <smithWatermanScore>973</smithWatermanScore>
+      <initn>617</initn>
+      <init1>299</init1>
+      <opt>973</opt>
+      <zScore>626.5</zScore>
+      <bits>126.2</bits>
+      <expectation>2.5e-27</expectation>
+      <identity>41.4</identity>
+      <positives>71.5</positives>
+      <overlap>411</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="410">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQEN-KIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHT-DDLEITV--AFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADD</querySeq>
+      <pattern>                              .:.    .::...:.:..::. ..---: : .. .-.:..:::-. . . ..::.::. ..-:...  :: -----.  ::. :::::....:    : : .. - .: : .: .: :::-.:.:: ...: .::.: . ...: .:  :. :::. .  -.: :: : :::::::::.::.:------------:  ..: :..  :   .-. ::. :--.:::.:.:.: :::.  .. ..::::: .:...::.:  .   :  :...: :.: ::. .: .:  ::::::. :..:. -::.:.::..::::::.:::.:: . . .:. :.:.:: :::::::::::::....:.:.:.:::: .:.: :-. .: : :.::.::: .. ...:::::::.:.::</pattern>
+      <matchSeq start="145" end="542">WIAMIPHRNETPSGDSQTLMIPSNPCLMKRKKSPCLREIEKLQKQREKRRRLQL---EIRARRAL-DINTGNP-NFETMRMIEEYRRRLDSSKMSSLEPPE-----DHRICVCVRKRPLNQRETTMKDLDIITIPSHNVVMVHESKQKVD-LTRYLENQTFCFDHAFDDKASNELVYQFTARPLVESIFR-KGMATCFAYGQTGSGKTHTMGGAFLGKAQDCSKGIYALVAQDVFLLLKTPAYEKLELKVYGTFFEIYGGKVYDLLNWKKKLQVLEDGNQQVQVVGLQEQEVSCVEEVLNLVELGNSCRTSGQTSVNAHSSRSHAVFQLILKA-GGKLHGKFSLVDLAGNERGADTAKATRKRQLEGAEINKSLLALKECIRALGKNKSHTPFRASKLTQVLRDSFIGQNSYTCMIATISPGMTSCENTLNTLRYANRVKELALEARPYHHCVSPPGHEVPLMIENDNTNSGKSLQRDEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="KIF2A_PONAB" ac="Q5R9Y9" length="744" description="Kinesin-like protein KIF2A OS=Pongo abelii OX=9601 GN=KIF2A PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1022</score>
+      <smithWatermanScore>1022</smithWatermanScore>
+      <initn>727</initn>
+      <init1>293</init1>
+      <opt>975</opt>
+      <zScore>623.7</zScore>
+      <bits>125.8</bits>
+      <expectation>3.5e-27</expectation>
+      <identity>33.4</identity>
+      <positives>63.8</positives>
+      <overlap>622</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="619">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQ-KMLAEHDQVQADANDYAF--TEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELARQVQLTQY</querySeq>
+      <pattern>                              ::.    ..:.....:..::---.:..: :...- ....: ::-. ... .....:   . .    . : ---- .  ::. :::::.. :: :  : : .. - .. : .:  : :::-.:.:: ...:..:..: ... .:..:  :. :::.-..  .: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.. ..:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:. :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::::::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  .: .    . ...:  .. :: : -----------::   . ..-: :.    . .:.     -- .:.:. :..   :.-  . .::   --- .. :: :  :    .::----------:. . :.:: ....: . .: . . : .:  ::. ..    . :---.:: ::  .:..: ... .:..:.  :.  : .:.. ..:.</pattern>
+      <matchSeq start="155" end="736">EQSSSAQQNGSVSDISPVQAAKKEFGPPSRRKSNCVKEVEKLQEKREKRR---LQQQELREKR-AQDVDATNP-NYEIMCMIRDFRGSLDYRPLTTADPI----DEHRICVCVRKRPLNKKETQMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDDSAPNEMVYRFTARPLVE-TIFERGMATCFAYGQTGSGKTHTMGGDFSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVYATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIDIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLALKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKEFGISPSDIPFSQGSGSRPDLSPSYEY-----------DDFSPSVTRVKELTVDPTAAGDVRPIMHHPPNQIDDLETQWGVGS-SPQRDDLKLL---CEQNEEEVSPQLFTFHEA----------VSQMVEMEEQVVEDHRAVFQESIRWLEDEKALLEMTEEVDYDVD---SYATQLEAILEQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="KIF2A_BOVIN" ac="Q2NL05" length="660" description="Kinesin-like protein KIF2A OS=Bos taurus OX=9913 GN=KIF2A PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>973</score>
+      <smithWatermanScore>973</smithWatermanScore>
+      <initn>451</initn>
+      <init1>295</init1>
+      <opt>973</opt>
+      <zScore>623.0</zScore>
+      <bits>125.5</bits>
+      <expectation>3.9e-27</expectation>
+      <identity>34.5</identity>
+      <positives>66.0</positives>
+      <overlap>559</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="540">-----------------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQLAEHTD---DLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIM---PSKERLMRI---AAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVD---EEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAR</querySeq>
+      <pattern>                              .:.:.   . ::.    ..:.....:..::---.:..: :-... ....: ::-. ... .....:   . .    . : ---- .  ::. :::::.. :: :  : : .. - .. : .:  : :::-.:.:: ...:..:..: ... .:..:  :. :::.-..  .: :: : :::::::::.::.:------------:  . : :.. .: . . ---.:.....:::.:::.:.:::.   . ..::::. .:...::.:  .   :  :..:. :.: ::. .: ::  ::::::. :..::-  :.:.::..:.::::.:::.::.. . : : :.:.:: :::: ::::::::... :.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::  :. .------: .. : ::---:..   .. ---.... : :: ------:.: :... ... . ..: : :.---: : .  :      .:.. . ..:    : . : .:: .. : . :  :.. .. . ::..</pattern>
+      <matchSeq start="99" end="633">RTVASIKNEPPPRDNRVVGSARARPSQLPEQSSSAQQNARRKSNCVKEVEKLQEKREKRR---LQQQELR-EKRAQDVDATNP-NYEIMCMIRDFRGSLDYRPLTTADPI----DEHRICVCVRKRPLNKKETQMKDLDVITIPSKDVVMVHEPKQKVD-LTRYLENQTFRFDYAFDDSAPNEMVYRFTARPLVE-TIFERGMATCFAYGQTGSGKTHTMGGDFSGKNQDCSKGIYALAARDVFLMLKKPNYKKLELQVNATFFEIYSGKVFDLLNRKTKLRVLEDGKQQVQVVGLQEREVKCVEDVLKLIDIGNSCRTSGQTSANAHSSRSHAVFQIILR-RKGKLHGKFSLIDLAGNERGADTSSADRQTRLEGAEINKSLLAHKECIRALGRNKPHTPFRASKLTQVLRDSFIGENSRTCMIATISPGMASCENTLNTLRYANRVKELTVDPT------AAGDVRPIMHHPPNQIDDLEAQWGVGSSPQRDDL------KLLCEQNEEEVSPQLFTFHEAVSQMVEMEEQVVEDHRAVFQESIRWLEDEKALLEMTEEVDYDVDSYATQLEAILEQKIDILTELRDKVKSFRAALQEEEQASKQINPKRPRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="KIF2B_RAT" ac="Q5XI51" length="664" description="Kinesin-like protein KIF2B OS=Rattus norvegicus OX=10116 GN=Kif2b PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>970</score>
+      <smithWatermanScore>970</smithWatermanScore>
+      <initn>582</initn>
+      <init1>299</init1>
+      <opt>970</opt>
+      <zScore>622.1</zScore>
+      <bits>125.3</bits>
+      <expectation>4.4e-27</expectation>
+      <identity>40.9</identity>
+      <positives>71.3</positives>
+      <overlap>411</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="410">-------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQEN-KIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQL---AEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAATEQADD</querySeq>
+      <pattern>                              .:.    .::...:.:..::. ..---: : .. .-.:..:::-. . . ..::.::. ..-:..   :: -----.  ::. :::::....:    : : .. - .: : .: .: :::-.:.:: ...: .::.: . ...: .:  :. :::. .  -.: :: : :::::::::.::.:------------:  ..: :..  :---: .  .:..  .:::.:.:.: :::.  .. ..::::: .....::.:  .   :  :...: :.: ::. .: .:  ::::::. :..:.- ::.:.::..::::::.:::.:: . . .:. :.:.:: :::::::::::::....:.:.:.:::: .:.: :-. .: : :.::.::: .. ...:::::::.:.::</pattern>
+      <matchSeq start="145" end="542">WIAMIPHRNETPSGDSQTLVIPSNPCLMKRKKSPCLREIEKLQKQREKRRRLQL---EIRARRAL-DINTGNP-NFETMRMIEEYRRHLDSSKMSRLEPPE-----DHRICVCVRKRPLNERETTMKDLDIITIPSHNVVMVHESKQKVD-LTRYLENQTFCFDHAFDDTASNELVYQFTARPLVESIFR-KGMATCFAYGQTGSGKTHTMGGAFSGKAQECSKGIYALVAQDVFLLLRTPAYEKLELKVYGTFFEIYGGKVYDLLNWKKKLQVLEDGNQQIQVVGLQEQEVGCVEEVLNLVELGNSCRTSGQTSVNAHSSRSHAVFQLILK-CGGKLHGKFSLVDLAGNERGADTAKATRKRQLEGAEINKSLLALKECIRALGKNKSHTPFRASKLTQVLRDSFIGQNSYTCMIATISPGMTSCENTLNTLRYANRVKELALEARPYPPTDHEMPLTLENGNTNSEKSLQKDDIIQIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="KIF2C_CRIGR" ac="P70096" length="718" description="Kinesin-like protein KIF2C OS=Cricetulus griseus OX=10029 GN=KIF2C PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>953</score>
+      <smithWatermanScore>953</smithWatermanScore>
+      <initn>555</initn>
+      <init1>288</init1>
+      <opt>953</opt>
+      <zScore>620.4</zScore>
+      <bits>125.2</bits>
+      <expectation>5.4e-27</expectation>
+      <identity>35.2</identity>
+      <positives>64.2</positives>
+      <overlap>562</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="548">-----------------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSN-ICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLY---GQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMPSKERLMRIAAA---TEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQELA</querySeq>
+      <pattern>                              .:::... . ::.    ..:.:...:.:.:    . .  : ::.----... :-. .:  ...:.:   : .-----: .:   :. .-::. :::::.. .:  : . : .: - .  ...:  :::::-.:::: ...: .: .: : ...: .:  :. :::-...   :.:: : :::::::::.::.:------------:  . . :..---.:   .. .::. :.:::.:.:.:.:::.   . ..:::.. .:...::.:  .   .  ..... : . ::. .: ::. ::::::  :..::  :- :.::..::::::.:::.::.. . : : :.:.:: ::::::::::::::..::.:.: :::: .:.: :-. .:.: :.: .::: :. ...:::::::::.::    :-:  :.     . : : ..     .:. --- :. ..: :.: . :----.:..-. .. :. : ---.:  ..   . : ::  :  : . . . . .::   .. .   . .:. ........:::   .:  :</pattern>
+      <matchSeq start="174" end="713">TGLPRPSCPAMTELPLSMVSEEAEEQVHPTRSTSSANPARRKSCIVKEMEKMKNKREEKRAQNSEIRIKRAQEY----DSSFP-NWEFARMIKEFRVTIECH-----PLTLTDPTEEHRICVCVRKRPLNKQELAKKEIDVISVPSKCLLFVHEPKLKVD-LTKYLENQAFCFDFAFDETASNEVVYRFTARPLV-QTIFEGGKATCFAYGQTGSGKTHTMGGDLSGKSQNTSKGIYAMASRDVFLLKSQPRYRNLNLEVYVTFFEIYNGKVFDLLNKKAKLRVLEDSKQQVQVVGLQEYLVNCADDVIKMLNMGSACRTSGQTFANSNSSRSHACFQILLRAKG-RLHGKFSLVDLAGNERGADTSSADRQTRMEGAEINKSLLALKECIRALGQNKAHTPFRESKLTQVLRDSFIGENSRTCMIAMISPGISSCEYTLNTLRYADRVKELSPHS-GLSGEQPIQMETEEMEASSNGTSLAVNFKEEEELSSQMSSFNEAM----SQIR-ELEERAMEEL---REIIQQGPGWLELSEMTDQPDYDLETFVNKAESALTQQTKHFSALREVIKALRVAMQLEEQASKQMNSKKRHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="KIF2B_BOVIN" ac="A6H750" length="683" description="Kinesin-like protein KIF2B OS=Bos taurus OX=9913 GN=KIF2B PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>970</score>
+      <smithWatermanScore>970</smithWatermanScore>
+      <initn>588</initn>
+      <init1>306</init1>
+      <opt>970</opt>
+      <zScore>619.1</zScore>
+      <bits>124.8</bits>
+      <expectation>6.4e-27</expectation>
+      <identity>39.5</identity>
+      <positives>68.3</positives>
+      <overlap>461</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="449">------------------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSC-FQNKVWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLYGQL---AEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQ-RGKAAKASNREIMPSKERLMRIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLD</querySeq>
+      <pattern>                              :  .:   .: ::.:   .::...:.:..::. ---..: : :.- .. ..::-.  ..  :.:: ::. ..--:  : : --   .  ::. :::::.. .:  . : : :. - .: : .: .: :::-.:.:: ...: .::.: . ...: .:  :  :::. .  -.: :: : :::::::::.::.:------------:  ..: :..  :---: .  .:..  .:::.:.:.: :::.  .. ..::::. .....::.:  .   : .:...: :.: ::. .: .:  ::::::. :..:.. :-.:.::..::::::.:::.:: . : .:. :.:.:: ::::::::::::::...:.:.:.:::: .:.: :-. .:.: :.::.::: .. ...:::::::.:.::--.. : .-: .    ..::.    :  .: .  . :.:.</pattern>
+      <matchSeq start="134" end="580">SVIGDQRTAARWAGKIPQRNETPSGDSLAVRVPSSPCLMTQRKSACLREIEKLQKQRERRRRL---HREIRAQR-ARDADTGN-AHYEIRRLIEECRRRLRG--GRISGPE--PRDGRRICVCVRKRPLNRQEATREDLDIVTIPSDNVVMVHESKQKVD-LTRYLENQTFCFDHAFDDTASNELVYQFTDQPLVESIFR-HGMATCFAYGQTGSGKTHTMGGGFSGRDQDCSKGIYAMVAQDVFLLLKTSAYEKLNLKVYGTFFEIYGGKVYDLLNWKKKLQVLEDGSQQIQVVGLQEQEVCCVEDMLNLVELGNSCRTSGQTSVNAHSSRSHAVFQIILKSRG-KLHGKFSLVDLAGNERGADTAKANRKRQLEGAEINKSLLALKECIRALGQNKSHTPFRASKLTQVLRDSFIGQNSSTCMIATISPGMASCENTLNTLRYANRVKE--ITLNLRPRHRCLYPAEREMPRVLENHIRNSEMSLQGDEFIRIPCLQSEEEKETEGIKVLSSPLVDTTISWKEASQWPDNKIQDTSDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="KIF2C_HUMAN" ac="Q99661" length="725" description="Kinesin-like protein KIF2C OS=Homo sapiens OX=9606 GN=KIF2C PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>937</score>
+      <smithWatermanScore>937</smithWatermanScore>
+      <initn>584</initn>
+      <init1>300</init1>
+      <opt>937</opt>
+      <zScore>614.0</zScore>
+      <bits>124.0</bits>
+      <expectation>1.2e-26</expectation>
+      <identity>35.7</identity>
+      <positives>63.7</positives>
+      <overlap>557</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="9" end="540">----------------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNK--VWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLY---GQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMP--SKERLM--RIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYEDSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAV---FELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQ</querySeq>
+      <pattern>                              :.. :. . ::.    ..:.:...:.:..    . .  : ::.----... :-. .:  ...:.:   : .    . :----  .  ::. :::::.. .:  : . : .:-. .:--. .:  :::::-.:::: ...: .: .: : ...: .:  :. :::-...   :.:: : :::::::::.::.:------------:  . . :..---.:   .   ::. :.:::.:.:...:::.   . ..::::. .:...::.:  . . .  ...:. : . ::. .: ::. ::::::  :..::  :- ..::..::::::.:::.::.. . : : :.:.:: ::::::::::::::..::.:.: :::: .:.: :-. .:.: :.::.::: :. ...:::::::::.::    :-:  :.     . : : --:.  :.-- ..   :. ..: :.: . : ----:..-. .. :. : ---.:  ..  :. : ::  .  : . . . . .::  --.:.:..-   :: ...:.---..:::</pattern>
+      <matchSeq start="181" end="712">RPSCPAVAEIPLRMVSEEMEEQVHSIRGSSSANPVNSVRRKSCLVKEVEKMKNKREEKKAQNSEMRMKRAQEY----DSSFP-NWEFARMIKEFRATLECHPLTMTDP----IEEHRICVCVRKRPLNKQELAKKEIDVIS-IPSKCLLLVHEPKLKVD-LTKYLENQAFCFDFAFDETASNEVVYRFTARPLV-QTIFEGGKATCFAYGQTGSGKTHTMGGDLSGKAQNASKGIYAMASRDVFLLKNQPCYRKLGLEVYVTFFEIYNGKLFDLLNKKAKLRVLEDGKQQVQVVGLQEHLVNSADDVIKMIDMGSACRTSGQTFANSNSSRSHACFQIILRAKG-RMHGKFSLVDLAGNERGADTSSADRQTRMEGAEINKSLLALKECIRALGQNKAHTPFRESKLTQVLRDSFIGENSRTCMIATISPGISSCEYTLNTLRYADRVKELSPHS-GPSGEQLIQMETEEMEACSNGALIPGNLSKEEEELSSQMSSFNEAMT----QIR-ELEEKAMEEL---KEIIQQGPDWLELSEMTEQPDYDLETFVNKAESAL--AQQAKH-FSALRDVIKALRLAMQLEEQASRQISSKKRPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="KIF2C_MACFA" ac="Q95LP1" length="671" description="Kinesin-like protein KIF2C OS=Macaca fascicularis OX=9541 GN=KIF2C PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>935</score>
+      <smithWatermanScore>935</smithWatermanScore>
+      <initn>581</initn>
+      <init1>300</init1>
+      <opt>935</opt>
+      <zScore>612.9</zScore>
+      <bits>123.7</bits>
+      <expectation>1.4e-26</expectation>
+      <identity>35.4</identity>
+      <positives>63.3</positives>
+      <overlap>548</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="9" end="533">----------------------MNAANRRKSTSTVGITGRKDATRMKIEQMEKERKERRKTMMQRKEARKQEHMKNIEAGNPGDVDFIGLVEEWRREQENKIGDKSPPSLFASTNSNICIAVRKRPISDKERQKLDHDSVSCFQNK--VWIHSAKLKVDGITKYLTHNSFQLDHTFGEDSTTEQIYLATTLPLVDHVVSTQGRATVFCYGQTGSGKTYTMNG------------IQQILAYDLY---GQLAEHTDDLEITVAFFELYSGNVLDLLHGCQRCKLLEDGNGEVNITGLREVPAPTPEAFLQVIEEGHSLRTTQKTEANDASSRSHAICQVFLRDYGGNLRGKLGLVDLAGSERGSDTKQHNSQRRTESADINTSLLALKECIRALGQKSAHVPYRGSKLTLILKDCF-SPDSKTTMVATVSPGASAADHSLNTLRYADRIKEQRVSSNGQRGKAAKASNREIMP--SKERLM--RIAAATEQADDQHSAFVQKMLAEHDQVQADANDYAFTEQVDEEEADDEEGDYEEESEDLDYE-DSEGQDYEEAVESQYDHSQEAQEGEEELRRTVQAVFELEEALLNQHMSNIQANAEMLTQEGKLLQSVQAGGLSEDEMHNYAIQLAEFLDKKESLIYKLQSKLDEFQEQLAREQEL</querySeq>
+      <pattern>                              :.. :. . ::.    ..:.:...:.:..    . .  : ::.----... :-. .:  ...:.:   : .    . : ---- .  ::. :::::.. .:  : . : .:-. .:--. .:  :::::-.:::: ...: .: .: : ...: .:  :. :::-...   :.:: : :::::::::.::.:------------:  . . :..---.:   .   ::. :.:::.:.:...:::.   . ..::::. .:...::.:  . . .  ...:. : . ::. .: ::. ::::::  :..::  :- ..::..::::::.:::.::.. . : : :.:.:: ::::::::::::::..::.:.: :::: .:.: :-. .:.: :.::.::: :. ...:::::::::.::    :-:  :.     . : : --:.  :.-- ..   :. ..: :.: . :---- :..-. .. :  :  .  .   .  .  : .:. ::.-..  .  : :. .:  : .  ..  . :: ..:</pattern>
+      <matchSeq start="127" end="655">RPSCPAVAEIPSRMVSEEVEEQVHSIRGSSSANPVNSVRRKSCIVKEVEKMKNKREEKKAQNSEMRMKRAQEY----DSSFP-NWEFARMIKEFRATLECHPLTMTDPI----EEHRICVCVRKRPLNKQELAKKEIDVIS-IPSKCLLLVHEPKLKVD-LTKYLENQAFCFDFAFDETASNEVVYRFTARPLV-QTIFEGGKATCFAYGQTGSGKTHTMGGDLSGKAQNASKGIYAMASRDVFLLKNQPCYRKLGLEVYVTFFEIYNGKLFDLLNKKAKLRVLEDGKQQVQVVGLQEHLVNSADDVIKMIDMGSACRTSGQTFANSNSSRSHACFQILLRAKG-RMHGKFSLVDLAGNERGADTSSADRQTRMEGAEINKSLLALKECIRALGQNKAHTPFRESKLTQVLRDSFIGENSRTCMIATISPGISSCEYTLNTLRYADRVKELSPHS-GPSGEQLIQMETEEMEACSNGALIPGNLSKEEEELSSQMSSFNEAM----TQIR-ELEERAVEELKEIIQQGPDWLELSEMTEQPDYDLETFVNKAEFALAQQAKHFSALRDVIKALRLAMQLEEQASRQISSKKRPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

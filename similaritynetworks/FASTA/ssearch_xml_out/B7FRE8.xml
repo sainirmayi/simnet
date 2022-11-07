@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-172411-0596-2240300-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-172411-0596-2240300-p1m.m9&quot; -m &quot;F10 fasta-R20221107-172411-0596-2240300-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FRE8|CYNS_PHATC" type="PROTEIN" length="193"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:24:11+00:00" end="2022-11-07T17:24:14+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="CYNS_PHATC" ac="B7FRE8" length="193" description="Cyanate hydratase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1281</score>
+      <smithWatermanScore>1281</smithWatermanScore>
+      <zScore>1713.2</zScore>
+      <bits>323.8</bits>
+      <expectation>7.3e-88</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>193</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="193">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="193">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="CYNS_THAPS" ac="B5YM03" length="205" description="Cyanate hydratase OS=Thalassiosira pseudonana OX=35128 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>774</score>
+      <smithWatermanScore>774</smithWatermanScore>
+      <zScore>1032.4</zScore>
+      <bits>197.9</bits>
+      <expectation>6.1e-50</expectation>
+      <identity>67.6</identity>
+      <positives>86.4</positives>
+      <overlap>176</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="25" end="193">------MLSQLPRAAIRLLPRRQPNLHCYRYHSKPT-------SLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:..:.-------: . .: :..:.:.::  ..:::: ::. ::.:::::::.::::.::.  :: ::.::::-.:..:.:::....:::..::::::::.::::::::::::::.:.::::::::::::::::::::::. : .::::::::::::::: :::: ::: : ::::</pattern>
+      <matchSeq start="31" end="205">MLSQCLSRTSRAVAGSNGHRFSKLSAIDGVHHAHPSPRRYTTFSSSDHADRTKRLLDAKEKAGLTYDKLASKLGITNTYAAQILLGQTKLSAATAAKLQAALP-ISEQDIEDMKSTYPMRGFDDEILKEPNVYRTYEAITHYGEAIKSIINEQCGDGIMSAIDFYCDVGTTTGVNGEKRVVITFNGKFLPHIEQKEEDNTAKSPRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CYNS_PHYPA" ac="A9TND9" length="154" description="Cyanate hydratase OS=Physcomitrium patens OX=3218 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>521</score>
+      <smithWatermanScore>521</smithWatermanScore>
+      <zScore>695.7</zScore>
+      <bits>135.2</bits>
+      <expectation>3.5e-31</expectation>
+      <identity>53.6</identity>
+      <positives>79.5</positives>
+      <overlap>151</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="31" end="181">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ::..... : :.:..: .:. :: ..:   :.::.:.:::.  ::.: ::::. :.::.::.::: :  ::.-.::::.:  ....: .:: .:: .::::..: ::::. :::::::: .::.:    ::.:: :::: .:::::: .::</pattern>
+      <matchSeq start="3" end="152">----------------------------MASLSSKSALVSRLLQVKKESGKTYTEIAKLTGLTNAYVAQLFRRQAHLKPETASALKAAVPALSDDLLAAMQE-IPMRSFDPTVVQDPTIYRLHEATVHYGESIKDIINEEFGDGIMSAIGYYCSVEKVKGKEGEDRVVIIMNGKFLPHVEQVN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CYNS_RICCO" ac="B9T3R0" length="164" description="Cyanate hydratase OS=Ricinus communis OX=3988 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>511</score>
+      <smithWatermanScore>511</smithWatermanScore>
+      <zScore>681.6</zScore>
+      <bits>132.7</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>52.7</identity>
+      <positives>78.7</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="184">LPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:  ..:.:..: .:. .:...:   :.::.:.:::.  ::.: :.:: ::::.:: .::. : .:.  -:::::: ....:: :::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. :::.:</pattern>
+      <matchSeq start="5" end="153">--------------------------MAETKATLTNRLLAVKHNSGKSYSEIAEETGLTNVYVAQLFRRQAQLKPDTALKLRAVLPELSDELLGEMMRP-PMRSYDPNLIQEPSVYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVKGVDGKDRVVVTFDGKYLPYSEQKTEHMVSRLRQNGN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CYNS_ORYSJ" ac="Q9FWK4" length="168" description="Cyanate hydratase OS=Oryza sativa subsp. japonica OX=39947 GN=CYN PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>503</score>
+      <smithWatermanScore>503</smithWatermanScore>
+      <zScore>670.7</zScore>
+      <bits>130.7</bits>
+      <expectation>8.6e-30</expectation>
+      <identity>51.0</identity>
+      <positives>78.5</positives>
+      <overlap>149</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="36" end="184">PRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              :: :.:...:::.:  ......   :.::.:.::::  ::.: ::::  ::::.:...:: .  :.. -:.:::  .:..:: .::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. ::...</pattern>
+      <matchSeq start="10" end="157">---------------------MEGGGGERAAGVVRRLMAAKAESRKSFSEIGEEAGLTNVYVAQLLRRQAQLKPETAPALRAAVPGLTDDLVALMMEP-PFRSYHPDIVHEPAIYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVQGADGKDRVVVTFDGKYLPYSEQRSDHMMSRLTRKTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="CYNS_ORYSI" ac="A2Z8F9" length="168" description="Cyanate hydratase OS=Oryza sativa subsp. indica OX=39946 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>503</score>
+      <smithWatermanScore>503</smithWatermanScore>
+      <zScore>670.7</zScore>
+      <bits>130.7</bits>
+      <expectation>8.6e-30</expectation>
+      <identity>51.0</identity>
+      <positives>78.5</positives>
+      <overlap>149</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="36" end="184">PRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              :: :.:...:::.:  ......   :.::.:.::::  ::.: ::::  ::::.:...:: .  :.. -:.:::  .:..:: .::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. ::...</pattern>
+      <matchSeq start="10" end="157">---------------------MEGGGGERAAGVVRRLMAAKAESRKSFSEIGEEAGLTNVYVAQLLRRQAQLKPETAPALRAAVPGLTDDLVALMMEP-PFRSYHPDIVHEPAIYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVQGADGKDRVVVTFDGKYLPYSEQRSDHMMSRLTRKTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="CYNS_POPTR" ac="B9HSR7" length="162" description="Cyanate hydratase OS=Populus trichocarpa OX=3694 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>498</score>
+      <smithWatermanScore>498</smithWatermanScore>
+      <zScore>664.3</zScore>
+      <bits>129.4</bits>
+      <expectation>1.9e-29</expectation>
+      <identity>52.1</identity>
+      <positives>78.8</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="39" end="184">AIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ..:. ..: .:. . ...:   :.::.:.::::  ::.:.:.:: .:::::: . .: :..:.  -:::::: ....:: :::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. :::.:</pattern>
+      <matchSeq start="9" end="153">----------------------MEDNKTTIINRLEAVKRNSGKSCSQIAEQTGLTNVYVAQLLRRQAQLNPDTAPSLRAALPELPEDLLQEMMRP-PMRSYDPNLIQEPCVYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVKGVDGKDRVVVTFDGKYLPYTEQKSEHMVSRPRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CYNS_MEDTR" ac="B7FKW7" length="165" description="Cyanate hydratase OS=Medicago truncatula OX=3880 GN=CYN PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>493</score>
+      <smithWatermanScore>493</smithWatermanScore>
+      <zScore>657.4</zScore>
+      <bits>128.2</bits>
+      <expectation>4.7e-29</expectation>
+      <identity>52.0</identity>
+      <positives>76.7</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="184">LPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:. : .. : :  :. .:..::   :.::.:.::::  ::.: :::: ::.:::: . .. ...:.. -:.:::: .:...: :::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::  :::.:</pattern>
+      <matchSeq start="5" end="153">--------------------------MAQNKANTVSQLQSLKNKSGKSYNQLAEETGLTNVYVAQLLRRQAHLKPETAPKLKAALPELPEELIHEMMKP-PLRSYDPNIIQDPTVYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVQGVDGKDRVVLTFDGKYLPHSEQKTEHMVSRTRPLEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CYNS_VITVI" ac="A5BJL8" length="164" description="Cyanate hydratase OS=Vitis vinifera OX=29760 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>490</score>
+      <smithWatermanScore>490</smithWatermanScore>
+      <zScore>653.5</zScore>
+      <bits>127.4</bits>
+      <expectation>7.8e-29</expectation>
+      <identity>52.8</identity>
+      <positives>77.1</positives>
+      <overlap>144</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="41" end="184">RLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              :..:.:  :. .:  .:   :.::.:.::::  ::.:  .:: ::.:::: ..:. :..:.. -:.:::: ....:: :::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::  :::.:</pattern>
+      <matchSeq start="11" end="153">--------------------MEESKSSVASRLMSVKRTSGKSYGRIAEETGLTNVYVAQLLRRQAQLKADTAPKLQAALPELTDELLQEMMKP-PLRSYDPHLIQEPTVYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVKGVDGKDRVVLTFDGKYLPHTEQKSEHMVSRLRLQGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CYNS_MAIZE" ac="B6TTW1" length="166" description="Cyanate hydratase OS=Zea mays OX=4577 GN=CYN PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <smithWatermanScore>489</smithWatermanScore>
+      <zScore>652.0</zScore>
+      <bits>127.2</bits>
+      <expectation>9.4e-29</expectation>
+      <identity>51.3</identity>
+      <positives>77.3</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="184">LPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:. :.:.. ::  :. :.. .:.  :.::.:.::::  ::.:  .:.  ::::::...:: .: :.. -:.:::  .:..:: .::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. :::.:</pattern>
+      <matchSeq start="7" end="155">------------------------MEASGEKAAVVRRLMEAKEVSGKTFSGIAAETGLTNVYVAQLLRRQAQLKADTVPALRAALPTLTDDLIELMMQP-PFRSYHPNIVHEPAIYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVEGADGKDRVVVTFDGKYLPYTEQKSEHMMSRPTRKTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CYNS_SORBI" ac="C5WYI7" length="166" description="Cyanate hydratase OS=Sorghum bicolor OX=4558 GN=CYN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>487</score>
+      <smithWatermanScore>487</smithWatermanScore>
+      <zScore>649.3</zScore>
+      <bits>126.7</bits>
+      <expectation>1.3e-28</expectation>
+      <identity>49.3</identity>
+      <positives>79.3</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="184">LPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:. :.:.. .: .:. :....:.  :.::.:.::::  ::.:  .:.  ::::::...:. .. :.. -:.:::. .:..:: .::  ::. :.::..: ::::. ::::::::::::.:    :  :. :::.::.::.::. :::.:</pattern>
+      <matchSeq start="7" end="155">------------------------MEASGERAAVVRRLMEVKEESGKTFSEIAAETGLTNVYVAQLLRRQAHLKADTVPALRAALPTLTDELVQLMMQP-PFRSYNPDIVQEPAIYRLNEAVMHFGESIKEIINEEFGDGIMSAIDFYCSVDKVQGADGKDRVVVTFDGKYLPYTEQKSEHMMSRPTRKTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CYNS_SOYBN" ac="C6SXE1" length="165" description="Cyanate hydratase OS=Glycine max OX=3847 GN=CYN PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>471</score>
+      <smithWatermanScore>471</smithWatermanScore>
+      <zScore>627.9</zScore>
+      <bits>122.7</bits>
+      <expectation>2.1e-27</expectation>
+      <identity>50.0</identity>
+      <positives>75.3</positives>
+      <overlap>150</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="35" end="184">LPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              .:  : .. ..: .:. .:..::   :.::.:.::::  ::.:.:.::  :::::: . .: . .:.  -:.:::: .....: :::  ::. :.::..: ::::. ::: ::::::::.:    :  :. :::.::.::.::  :::.:</pattern>
+      <matchSeq start="5" end="153">--------------------------MERKKAKIVAELQAVKHNSGKSYNQLAEETGLTNVYVAQLLRRQAQLNPQTAPLLRAALPDLPQDLVPEMMRP-PLRSYDPNLIQDPTVYRLNEAVMHFGESIKEIINEEFGDGTMSAIDFYCSVDKIKGVDGKDRVVLTFDGKYLPHSEQKSEHMVSRTRPLGKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="CYNS_ARATH" ac="O22683" length="168" description="Cyanate hydratase OS=Arabidopsis thaliana OX=3702 GN=CYN PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>471</score>
+      <smithWatermanScore>471</smithWatermanScore>
+      <zScore>627.7</zScore>
+      <bits>122.7</bits>
+      <expectation>2.1e-27</expectation>
+      <identity>50.0</identity>
+      <positives>79.5</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="40" end="185">IRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ...:..:. :. :...::.  :.::.:.::::  ::.: :.:. ::. ::::..:. . ::.-: : :::: ....:: .::  ::. :.::..: ::::. ::::::::::::.:    :  :..:::.:..::.:   ::..:.</pattern>
+      <matchSeq start="11" end="155">--------------------MEAAKKQSVTNQLLAVKSASGKTFSQLAAETGLTNVYVAQLLRRQAQLKPDTVPKLKEALPALTDELIGDMM-SPPWRSYDPNLIQEPTIYRLNEAVMHFGESIKEIINEDFGDGIMSAIDFYCSVDKIKGVDGNNRVVVTLDGKYLSHSEQRTENMVSRLNLKGGTSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CYNS_PSESM" ac="Q885A6" length="155" description="Cyanate hydratase OS=Pseudomonas syringae pv. tomato (strain ATCC BAA-871 / DC3000) OX=223283 GN=cynS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>326</score>
+      <smithWatermanScore>326</smithWatermanScore>
+      <zScore>434.0</zScore>
+      <bits>86.7</bits>
+      <expectation>1.3e-16</expectation>
+      <identity>37.3</identity>
+      <positives>71.2</positives>
+      <overlap>153</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="26" end="178">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                         ::. .:-: .   ..:::.::: .:::. .::   :.. .:..  ::::  :-:... .. :   ... : . ..:-..:.:.. ... ..: .:: .: .  :: ..::...:: ::::.:::.:  :.      .: .:.:::..:::::.</pattern>
+      <matchSeq start="3" end="152">-----------------------MPHSNISS-TPRQQLTERVLQAKAANNLTWASLAEDTGLSVVYVTAALLGQHPL-PQAVAEVVAERLGLDRDAVVELQ-TIPLRGHVEDVSSDPTIYRFHEMVQVYGTTLKALVHEQFGDGIISAINFKLDIRKVEDPEGGERAVITLDGKFLPYKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CYNS_NEOFI" ac="A1DIL2" length="160" description="Cyanate hydratase OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=cyn1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>326</score>
+      <smithWatermanScore>326</smithWatermanScore>
+      <zScore>433.7</zScore>
+      <bits>86.7</bits>
+      <expectation>1.4e-16</expectation>
+      <identity>41.3</identity>
+      <positives>71.7</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="178">LLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEIL-KEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ...:::...:.....:  .: ... .: :. :::: .::  .::-. :  .: . ::.. ..:: :. . :. -::: .:: :: . .:: :.::..::. ::::::::.:   :       :.. .:::. ::.:::</pattern>
+      <matchSeq start="21" end="157">----------MSLATLDATQHPNLPASAATLFKAKAQNKLSFEQIAQHIGRNEVATAALFYGQAKASPEDIQKL-SELLNISPQVLEEQLSGFPDRGRSVEMPPKEPLIYRLYEIVQNYGYAYKAVLNEKFGDGIMSAISFSTKVEKETDADGNNWAVITLRGKWLPFSRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CYNS_PSEU2" ac="Q4ZQQ7" length="155" description="Cyanate hydratase OS=Pseudomonas syringae pv. syringae (strain B728a) OX=205918 GN=cynS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>324</score>
+      <smithWatermanScore>324</smithWatermanScore>
+      <zScore>431.3</zScore>
+      <bits>86.3</bits>
+      <expectation>1.8e-16</expectation>
+      <identity>37.3</identity>
+      <positives>68.6</positives>
+      <overlap>153</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="29" end="178">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGRVH---RVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                            : :  ..: : :---:::.::. .:::.  ::   :.. .:..  ::::  :-:... .. :   ... : . ..:-..:.:.  ... ..: .:: .: .  :: ..::...:: ::::.:::.:  :.      .: .:.:::..:::::.</pattern>
+      <matchSeq start="2" end="152">---------------------------MPHSNISRAPRQHLTERVLQAKTAKNLTWAGLAEGTGLSVVYVTAALLGQHPL-PQAVAEVVAERLGLDRDAVAELQ-TIPLRGNVEDVSSDPTIYRFHEMVQVYGTTLKALVHEQFGDGIISAINFKLDIKKVDDPEGGERAVITLDGKFLPYKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CYNS_ASPOR" ac="Q2UAX9" length="160" description="Cyanate hydratase OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=cyn1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>322</score>
+      <smithWatermanScore>322</smithWatermanScore>
+      <zScore>428.3</zScore>
+      <bits>85.7</bits>
+      <expectation>2.7e-16</expectation>
+      <identity>40.6</identity>
+      <positives>71.7</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="178">LLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEIL-KEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ...::: ........:  .: ... .: .. :::: .::   .:-:.: .. .. :::. :.:: :. . :. -::: .:: :: . .:: :.::..::. ::::::::.:   :       :.. .:::. ::.:::</pattern>
+      <matchSeq start="21" end="157">----------MSLATLDTSQHPNLPSASATLFKAKAAKKFSFEQIAQHIGRNEVATAAIFYGQAKASPEDITNL-ASLLGIPQEVLEDQLNGFPDRGKSVEMPPKEPLIYRLYEIVQNYGYAYKAVLNEKFGDGIMSAISFSTKVEKETDADGNNWAVITLRGKWLPFSRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="CYNS_PSE14" ac="Q48GB5" length="155" description="Cyanate hydratase OS=Pseudomonas savastanoi pv. phaseolicola (strain 1448A / Race 6) OX=264730 GN=cynS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <smithWatermanScore>321</smithWatermanScore>
+      <zScore>427.3</zScore>
+      <bits>85.5</bits>
+      <expectation>3.1e-16</expectation>
+      <identity>37.3</identity>
+      <positives>69.3</positives>
+      <overlap>153</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="29" end="178">MLSQLPRAAIRLLPRRQPNLHCYRYHSKPTSLTAQAGR---VHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEILKEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                            : :  ..: :---..:::.::. .:::.  ::   :.. .:..  ::::  :-::.. .. :   ... : . ..:-..:.:.  ... ..: .:: .: .  :: ..::...:: ::::.:::.:  :.      .: .:.:::..:::::.</pattern>
+      <matchSeq start="2" end="152">---------------------------MPHSNISRAPRQNLTERVLQAKTAKNLTWAGLAEGTGLSVVYVTAALLGQHPL-PEAVAEVVAERLGLDRDAVAELQ-TIPLRGNVEDVSSDPTIYRFHEMVQVYGTTLKALVHEQFGDGIISAINFKLDIKKVEDPEGGERAVITLDGKFLPYKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CYNS_EMENI" ac="C8VCM2" length="160" description="Cyanate hydratase OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=cyn1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <smithWatermanScore>321</smithWatermanScore>
+      <zScore>427.0</zScore>
+      <bits>85.5</bits>
+      <expectation>3.2e-16</expectation>
+      <identity>39.9</identity>
+      <positives>71.0</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="178">LLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEIL-KEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ..:::: . :.....:  .: ... .: .. :::: .::  .:: . : -.. . :. . ..:: :. . :. -::: .:: :: . .:: :.::..::. ::::::::.:   :     ..:.. .:::. ::.:::</pattern>
+      <matchSeq start="21" end="157">----------MSLATLDTTQHPNLPASSATLFSAKATKALSFEQIAQHIGRNEVATAAIFYGQAKASPEDIEKLSSLLD-IDHETLKAQLSGFPDRGRSVEMPPKEPLIYRLYEIVQNYGYAYKAVLNEKFGDGIMSAISFSTKVEKETDEQGNNWAVITLRGKWLPFSRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CYNS_ASPNC" ac="A2R692" length="160" description="Cyanate hydratase OS=Aspergillus niger (strain CBS 513.88 / FGSC A1513) OX=425011 GN=cyn1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <smithWatermanScore>321</smithWatermanScore>
+      <zScore>427.0</zScore>
+      <bits>85.5</bits>
+      <expectation>3.2e-16</expectation>
+      <identity>40.6</identity>
+      <positives>71.0</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="42" end="178">LLPRRQPNLHCYRYHSKPTSLTAQAGRVHRVLSAKADSNLTYDDLATCLGVTNTYAAQLLLGQAKLTPETAKKLRAALPAVSDDDLEDMQNSFPMRSYDDEIL-KEPHVYRTYEAITHYGEAMKAIINEQCGDGIMSAIDFYCDVGTSIGKHGEKRVVITFNGKFLPFIEQKAEDNGAMSPRD</querySeq>
+      <pattern>                              ...::: ..:.....:  .: ... .: .. :::: .::  .::-..: ..  : ::.  ..:: :. . :. -::: .:: :: . .:: :.::..::. ::::::::.:   :       :.. .:::. ::.:::</pattern>
+      <matchSeq start="21" end="157">----------MSLATLDTAQHPSLPSASETLFKAKAAKKLSFEQIAQHIGRNEVATAAIFYGQAKASPEDIEKL-SGLLTIPYDALEERLSGFPDRGRSVEMPPKEPLIYRLYEIVQNYGYAYKAVLNEKFGDGIMSAISFSTKVEKETDADGNNWAVITLRGKWLPFSRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

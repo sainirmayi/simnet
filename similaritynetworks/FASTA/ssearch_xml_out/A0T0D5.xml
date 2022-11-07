@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171458-0989-73011754-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171458-0989-73011754-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171458-0989-73011754-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0D5|RK33_PHATC" type="PROTEIN" length="64"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:14:58+00:00" end="2022-11-07T17:15:01+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RK33_PHATC" ac="A0T0D5" length="64" description="50S ribosomal protein L33, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>429</score>
+      <smithWatermanScore>429</smithWatermanScore>
+      <zScore>661.7</zScore>
+      <bits>126.0</bits>
+      <expectation>2.7e-29</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RK33_THAPS" ac="A0T0R3" length="64" description="50S ribosomal protein L33, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <smithWatermanScore>377</smithWatermanScore>
+      <zScore>582.5</zScore>
+      <bits>111.4</bits>
+      <expectation>7e-25</expectation>
+      <identity>84.4</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:::::::::::::::::::.:..::: ::::: :::::::::.:.:::::: :::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGTRILITLECTECRTNINKRSAGVSRYLTQKNRRNNPQRMELKKYCPHCNKPTIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RK33_TRICV" ac="P49565" length="64" description="50S ribosomal protein L33, chloroplastic OS=Trieres chinensis OX=1514140 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <smithWatermanScore>368</smithWatermanScore>
+      <zScore>568.8</zScore>
+      <bits>108.8</bits>
+      <expectation>4.1e-24</expectation>
+      <identity>82.8</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:.: :: :::::::::::::: .::: :::::.:::::::::::.:::::: ::::.:.:::::</pattern>
+      <matchSeq start="1" end="64">MGKAKGIRILITLECTECRSNTNKRSNGVSRYTTQKNRRNNPERIELKKYCPHCNKSTIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RL331_SYNSC" ac="Q3AJZ0" length="64" description="50S ribosomal protein L33 1 OS=Synechococcus sp. (strain CC9605) OX=110662 GN=rpmG1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>359</score>
+      <smithWatermanScore>359</smithWatermanScore>
+      <zScore>555.0</zScore>
+      <bits>106.3</bits>
+      <expectation>2.4e-23</expectation>
+      <identity>79.7</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.::.:::::::::::  :::::::::.:.:::::. ::::.::.: ::::.:.:::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRIVITLECTECRSNPAKRSPGVSRYTTEKNRRNTTERLEIKKFCPHCNKSTIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RK33_CHLAT" ac="Q19V74" length="64" description="50S ribosomal protein L33, chloroplastic OS=Chlorokybus atmophyticus OX=3144 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <smithWatermanScore>354</smithWatermanScore>
+      <zScore>547.4</zScore>
+      <bits>104.9</bits>
+      <expectation>6.3e-23</expectation>
+      <identity>81.2</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::::: ::::::.:.::  :::::::::.:::::::.:.::::::.::.::. :::::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGTRITITLECTNCKSNDLKRSPGVSRYTTQKNRRNTPNRLELKKFCSRCNQHTLHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RK33_PAUCH" ac="B1X3H9" length="64" description="50S ribosomal protein L33, organellar chromatophore OS=Paulinella chromatophora OX=39717 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <smithWatermanScore>352</smithWatermanScore>
+      <zScore>544.4</zScore>
+      <bits>104.3</bits>
+      <expectation>9.3e-23</expectation>
+      <identity>76.6</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.:..:::::::::::  :::::::::.:.:::::. ::::.::.: ::::...:::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRLVITLECTECRSNSAKRSPGVSRYTTEKNRRNTTERLEIKKFCPHCNKSAIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RL33_SYNP6" ac="Q5N502" length="64" description="50S ribosomal protein L33 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>351</score>
+      <smithWatermanScore>351</smithWatermanScore>
+      <zScore>542.8</zScore>
+      <bits>104.0</bits>
+      <expectation>1.1e-22</expectation>
+      <identity>79.7</identity>
+      <positives>89.1</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::: ::.::.:::::::::::  :::::::::.:::::::. ::::.::.: :::: : :::::</pattern>
+      <matchSeq start="1" end="64">MAKAKGARIVITLECTECRSNTAKRSPGVSRYTTQKNRRNTTERLEIKKFCPHCNKHTAHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RL33_SYNE7" ac="Q31P67" length="64" description="50S ribosomal protein L33 OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>351</score>
+      <smithWatermanScore>351</smithWatermanScore>
+      <zScore>542.8</zScore>
+      <bits>104.0</bits>
+      <expectation>1.1e-22</expectation>
+      <identity>79.7</identity>
+      <positives>89.1</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::: ::.::.:::::::::::  :::::::::.:::::::. ::::.::.: :::: : :::::</pattern>
+      <matchSeq start="1" end="64">MAKAKGARIVITLECTECRSNTAKRSPGVSRYTTQKNRRNTTERLEIKKFCPHCNKHTAHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RL33_PARMW" ac="Q7U6W0" length="64" description="50S ribosomal protein L33 OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>350</score>
+      <smithWatermanScore>350</smithWatermanScore>
+      <zScore>541.3</zScore>
+      <bits>103.7</bits>
+      <expectation>1.4e-22</expectation>
+      <identity>79.7</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.::.:::::::::::  :::::::::.:.:::::. ::::.::.: :::: : :::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRIVITLECTECRSNPAKRSPGVSRYTTEKNRRNTTERLEIKKFCPHCNKMTPHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RL33_PROMM" ac="Q7V7K4" length="64" description="50S ribosomal protein L33 OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <smithWatermanScore>348</smithWatermanScore>
+      <zScore>538.3</zScore>
+      <bits>103.2</bits>
+      <expectation>2e-22</expectation>
+      <identity>78.1</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.::.:::::.:::::  :::::::::.:.:::::. ::::.::.: ::::.: :::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRIVITLECNECRSNPAKRSPGVSRYTTEKNRRNTTERLEIKKFCPHCNKSTPHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RL33_NOSS1" ac="Q8YNV9" length="64" description="50S ribosomal protein L33 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>342</score>
+      <smithWatermanScore>342</smithWatermanScore>
+      <zScore>529.1</zScore>
+      <bits>101.5</bits>
+      <expectation>6.6e-22</expectation>
+      <identity>73.4</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:::.::.::..::::::::.: .:::::::::.. :::::. .::::::.:.:::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKSKGARIIVTLECTECRTNPDKRSPGVSRYTSTKNRRNTTNRLELKKFCTHCNKHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RL33_TRIV2" ac="Q3MDJ2" length="64" description="50S ribosomal protein L33 OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>342</score>
+      <smithWatermanScore>342</smithWatermanScore>
+      <zScore>529.1</zScore>
+      <bits>101.5</bits>
+      <expectation>6.6e-22</expectation>
+      <identity>73.4</identity>
+      <positives>93.8</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:::.::.::..::::::::.: .:::::::::.. :::::. .::::::.:.:::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKSKGARIIVTLECTECRTNPDKRSPGVSRYTSTKNRRNTTNRLELKKFCTHCNKHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RL33_SYNJB" ac="Q2JL27" length="64" description="50S ribosomal protein L33 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>336</score>
+      <smithWatermanScore>336</smithWatermanScore>
+      <zScore>520.0</zScore>
+      <bits>99.8</bits>
+      <expectation>2.1e-21</expectation>
+      <identity>73.4</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::: ::.::.:::::::::.:..::::::.::.: :::::.  ::::::.: :::. :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKAKGARIIITLECTECRTNVNKRSPGVNRYTTTKNRRNTTARLELKKFCPHCNRHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RL33_SYNPW" ac="A5GLA2" length="64" description="50S ribosomal protein L33 OS=Synechococcus sp. (strain WH7803) OX=32051 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>334</score>
+      <smithWatermanScore>334</smithWatermanScore>
+      <zScore>516.9</zScore>
+      <bits>99.2</bits>
+      <expectation>3.1e-21</expectation>
+      <identity>76.6</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.::..:::::::::. :::: :::::.:.:::::. :::::::.: : :: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRIVVTLECTECRSSTEKRSQGVSRYTTEKNRRNTTERLELKKFCPHDNKMTIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RL33_NOSP7" ac="B2J0D4" length="64" description="50S ribosomal protein L33 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>333</score>
+      <smithWatermanScore>333</smithWatermanScore>
+      <zScore>515.4</zScore>
+      <bits>98.9</bits>
+      <expectation>3.8e-21</expectation>
+      <identity>73.4</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:::.::.::.:::::::::.: .::: :::::.. :::::. .::::::.:.:::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKSKGARIIITLECTECRTNSDKRSAGVSRYTSTKNRRNTTNRLELKKFCTHCNKHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RL33_SYNR3" ac="A5GTB8" length="64" description="50S ribosomal protein L33 OS=Synechococcus sp. (strain RCC307) OX=316278 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>332</score>
+      <smithWatermanScore>332</smithWatermanScore>
+      <zScore>513.9</zScore>
+      <bits>98.7</bits>
+      <expectation>4.6e-21</expectation>
+      <identity>75.0</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::::::.::..:::::::::: .::: :::::.:.:::::. ::::.::.: : :: :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKNKGVRIVVTLECTECRSNTDKRSQGVSRYTTEKNRRNTTERLEIKKFCPHDNKMTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RK33_MESVI" ac="Q9MUP5" length="64" description="50S ribosomal protein L33, chloroplastic OS=Mesostigma viride OX=41882 GN=rpl33 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>332</score>
+      <smithWatermanScore>332</smithWatermanScore>
+      <zScore>513.9</zScore>
+      <bits>98.7</bits>
+      <expectation>4.6e-21</expectation>
+      <identity>73.4</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>:::.:: :: :::::: :..: .::: :.::: :::::::.:.::::::.:::::..:.:::::</pattern>
+      <matchSeq start="1" end="64">MAKTKGIRISITLECTSCKNNNNKRSTGISRYMTQKNRRNTPNRLELKKFCSHCNQSTIHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RL33_MICAN" ac="B0JVN3" length="64" description="50S ribosomal protein L33 OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>328</score>
+      <smithWatermanScore>328</smithWatermanScore>
+      <zScore>507.8</zScore>
+      <bits>97.5</bits>
+      <expectation>1e-20</expectation>
+      <identity>71.9</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::..::.:..::.:::::::: .::.::::::.:.:::::.  :::.:::: :::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MASKKGVRLIITVECTECRSNPDKRTPGVSRYTTSKNRRNTTGRLEIKKYCPHCNKHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RL33_SYNJA" ac="Q2JU21" length="64" description="50S ribosomal protein L33 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>326</score>
+      <smithWatermanScore>326</smithWatermanScore>
+      <zScore>504.7</zScore>
+      <bits>97.0</bits>
+      <expectation>1.5e-20</expectation>
+      <identity>71.9</identity>
+      <positives>90.6</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::: ::.::.:::::::::.:..::::::.::.: :::::.  ::::::.: .::. :.:::::</pattern>
+      <matchSeq start="1" end="64">MAKAKGARIIITLECTECRTNVNKRSPGVNRYTTTKNRRNTTARLELKKFCPKCNRHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RL33_GLOC7" ac="B7KBE3" length="64" description="50S ribosomal protein L33 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=rpmG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>326</score>
+      <smithWatermanScore>326</smithWatermanScore>
+      <zScore>504.7</zScore>
+      <bits>97.0</bits>
+      <expectation>1.5e-20</expectation>
+      <identity>73.4</identity>
+      <positives>92.2</positives>
+      <overlap>64</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="64">MAKNKGTRILITLECTECRSNLEKRSPGVSRYSTQKNRRNNPERLELKKYCSHCNKTTLHKEIK</querySeq>
+      <pattern>::..::.:..::::::::::: .::: :::::.:.:::::.  ::::::.:.:::: :.:::::</pattern>
+      <matchSeq start="1" end="64">MASKKGVRLIITLECTECRSNPDKRSAGVSRYTTSKNRRNTTGRLELKKFCTHCNKHTVHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

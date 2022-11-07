@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171801-0290-80648512-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171801-0290-80648512-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171801-0290-80648512-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0G8|CCS1_PHATC" type="PROTEIN" length="420"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:18:01+00:00" end="2022-11-07T17:18:04+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="CCS1_PHATC" ac="A0T0G8" length="420" description="Cytochrome c biogenesis protein Ccs1 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2729</score>
+      <smithWatermanScore>2729</smithWatermanScore>
+      <zScore>3340.6</zScore>
+      <bits>627.1</bits>
+      <expectation>1.6e-178</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>420</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="420">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="CCS1_THAPS" ac="A0T0W1" length="421" description="Cytochrome c biogenesis protein Ccs1 OS=Thalassiosira pseudonana OX=35128 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1995</score>
+      <smithWatermanScore>1995</smithWatermanScore>
+      <zScore>2439.2</zScore>
+      <bits>460.3</bits>
+      <expectation>2.7e-128</expectation>
+      <identity>68.2</identity>
+      <positives>91.2</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQ-KIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>:::.::. .:::::.::.::.:.  :..::::::::::: :: :::::: ::: :.:: :: :::::::.::::..::.:::.::. ::.:::.:::::::::::::::.:: ::.::: :. .::...: .:  ..:::::::::.:::::::::::::.::.:::.::.:.:.::: ::::::::::::.:::::.: :::.: :::.:.:::::::::::  :..:::::.:::: .::::.:.:: :: :  .::. :::::::..:::.. . . :..::.::. ..:-:.::::::::..:..:.. .::::.::::.::..:.:.::.:::: .....:.:::.:.::::::::.:::: .:: ::.:::.::::::::::::::.: ..:.::::.:.::.:.:::::.:.::</pattern>
+      <matchSeq start="1" end="421">MKQNIFKSIADLRFAIFILLVIAAFSVIGTVIEQDQSIETYKLNYPLTNRVFGFLSWDIILKFGLDHVYKTWWFITLILLFGISLLTCTLLQQFPSLKIARRCQFFRTTQQFCRLNISTNLKHLSFSQLLFKIKENNYSIFQQKNIIYCYKGLIGRIAPIIVHFSMIIILIGAIIGSLSGFKAQEIVPKTETFHIQNVLNNGQFTFIPKVSVRINDFWITYTKQTTITQFYSDLSILNIDGNEIDRQTIFVNSPAKYNGIDYYQTDWNIIGLRLRMQDSSIFQYPFINLPNTQEKLWLTWISTNQQLNDGLTILIDNLQGYCSVYNKVGKFIGNLELNESLKIENPITLIDILSSTGLQIKADPGILLIYLGFLFLMISTLISYITYSQIWIVQDKNKIFIGGNTTRATFEFELEFLKLIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CCS1_TRICV" ac="P49539" length="421" description="Cytochrome c biogenesis protein Ccs1 OS=Trieres chinensis OX=1514140 GN=ccs1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1969</score>
+      <smithWatermanScore>1969</smithWatermanScore>
+      <zScore>2407.2</zScore>
+      <bits>454.4</bits>
+      <expectation>1.6e-126</expectation>
+      <identity>66.7</identity>
+      <positives>90.3</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSE-NQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>:::...:.::::::.: .::.:. ::..:::::::::::::: :::::: .:: :.:: :: :::::::.::::...: ::::::. ::.:::.:::::::::::::::.::  ::.:  :...:....: ::  .::::::::::::::::::::::::.::.::::::.:.: :.: ::::::..:::: ::.::::.::::: :::. .:.:::::::::  ::.:::::.:::: .:::: :::: :: :. .:.. .::::::..::: .. .. :..:::::...-..:.:.::: ... . .:.. ..:::.::::::.:.: :.::.:::: .::..:.::..:.::::::::::::: .::.::.:::::::::::::::::::: ....:.::.:.::.::::.::.:.::</pattern>
+      <matchSeq start="1" end="421">MKQSVLRFLADLRFAISILLIIASCSVIGTVIEQDQSIEIYKLNYPLTNRIFGFLSWDIILKFGLDHVYKTWWFLGFIALFGLSLFTCTILQQFPSLKIARRCQFFRTTQQFGLLKLSRNLGNLSLSQLLFRIKKNQYSIFQQKNIVYCYKGLIGRIAPIIVHFSMILILIGAIFGALNGFKAQELIPKTEAFHVQNILSNGQLTRIPKVVSRVNDFWITYTKQATVAQFYSDVSILNTEGNEIVRKTIFVNSPIKYNNIDFYQTDWNVIGLRVQNDTSSILQYPLINLTNAGNKVWVTWIPSDSEFKKGLTILVDNLQGYCSIYDESGIFVGNLELNETFNLNMPITLVDILSSTGLQIKTDPGILLIYTGFLFLMLSTLISYITYSQIWIIQTNRQIFVGGNTTRATFDFEIEFLKLIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CCS1_NEOYE" ac="Q1XDC4" length="440" description="Cytochrome c biogenesis protein Ccs1 OS=Neopyropia yezoensis OX=2788 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1275</score>
+      <smithWatermanScore>1275</smithWatermanScore>
+      <zScore>1554.5</zScore>
+      <bits>296.7</bits>
+      <expectation>5e-79</expectation>
+      <identity>45.4</identity>
+      <positives>79.5</positives>
+      <overlap>425</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">-------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPL--INFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNE--IINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>             ..  ..::...:.:::.:::::.. : .::::::..   .:.:.: :.:  ...:.:  : :::..::: ::::..:.:.:.:::. :.. .:.:::. ::: .:... ::: ..  :  ..  ..: . . . . .: :::: . .: ::::.::.:::.:: :.::.:.:...: . ::.:::.::. : :..:::...:... ::. -:::.::: : :. .:..:::.:::::::..:.:..:.:: ::.::  .:.  :::::.....: .   ..:.. ::--. . .:.:::.  .  .:    .::--...:.:  .:::..:. . .:...:--:::-.. .:... :.:::::::.:::: :.:..::::. :  .:::.::::::..:.....:::.:::: . :: :..:: :</pattern>
+      <matchSeq start="14" end="435">MKRQLNLRFNRKDIRWYLLRLFSNLQFSIILLLLIAIFSTIGTVIEQNKESSFYQTQYTLSNEYYNILNWKNIELFGFNHVYTTWWFLSLLFIFSLSLFTCSISRQIPSLQNARRWHFYKNPNQFKKFTGSQEIKTTQLNLLASCLQNYNYHIFQQGKSIYGYKGLLGRLAPIFVHGSIILLLTGSVLGLVSGFSAQEMVPSGELFRLQNIISSGKFSYIPQEFSARVNDFNIEYNPNKSISQFFSDISILNSEGKELKRSTIYVNKPLEFHGLTIYQTDWDIIAIRVRINNGNILQIPLKSVLLPNNNKIWIGVLFQEKESQLSVV--LSDLQGQATIYNKNGKNILSINIGEKYIIN-NSTITFLNTIASTGLQIKNDPGIPIVYASFFFLITSISVSYISYSQIWIVEKNRHFYIGGVTNRAQLMFEEELLKISKMSSSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CCS1_PORPU" ac="P51363" length="437" description="Cytochrome c biogenesis protein Ccs1 OS=Porphyra purpurea OX=2787 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1257</score>
+      <smithWatermanScore>1257</smithWatermanScore>
+      <zScore>1532.5</zScore>
+      <bits>292.6</bits>
+      <expectation>8.5e-78</expectation>
+      <identity>42.8</identity>
+      <positives>79.1</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="418">-----------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFS-ENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPL-TLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>           ..  ..::...:.:::.:::.:.  :..::.:::......:...: ...  : .:.:  : ::::.::: ::::..:.:.:.:::..:.. .:.:::. :::  :... ::: ..  :  ..  ... . . .   .: :::: : .::::::.::.:::.:: :.::.:.:...: . ::.:::.::. : :..:::.:.::.. ::. -:::.:.: : :.. ...:::.::::::. .:.:....:: :: ::  .:.  :::::.....:.:   .. .. :: .  - :.:::.  :. ...--. .. ....:.   ..::..:. . .. ..:   . . .-... :. :::::::.:::: :.:..::::. :. .:::.:::::::.:.....:::.:::: . :: :..::</pattern>
+      <matchSeq start="12" end="430">MQINLKFKKKDVRWYLLRLFSNLQFSIILLLVIASFSVIGTIIEQNKDLDFYQAHYSVSGEHFIILNWKNIELFGLNHVYTTWWFLTLLFIFSLSLLVCSLSRQIPSLQNARRWCFYKNPNQFKKFTGSQEIQKTTLHLVASCLQKFNYHIFQQGNSIYCYKGLLGRLAPIFVHASIILLLIGSVLGLVSGFSAQEMVPSGELFRLQNIIASGQFSYIPQDFSARVNNFIIEYNQDNSISQFFSDISILDTEGTELKHSTIHVNSPLQFKGLTIYQTDWDIIAIRIKINNTDTLQIPLKKVVLPNNKIWVGLIAQDQD--NQLALVLQDLQKQATLYNKSGEKIMSVTIGEKYFIDNNIIAFLSIVPSTGLQIKSDPGIPIVYTSFFFLITSVSVSYISYSQIWIIEKKHRFYIGGVTNRAQLTFEEELLKISNRSSKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="CCS1_HETA4" ac="B2XTT2" length="426" description="Cytochrome c biogenesis protein Ccs1 OS=Heterosigma akashiwo (strain CCMP452 / OLISTH) OX=536046 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1256</score>
+      <smithWatermanScore>1256</smithWatermanScore>
+      <zScore>1531.5</zScore>
+      <bits>292.4</bits>
+      <expectation>9.7e-78</expectation>
+      <identity>46.0</identity>
+      <positives>76.6</positives>
+      <overlap>428</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="420">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSEN-QKIWLTWI----STNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWII-----QKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>  ..::..::.:.:.: ::::::.    :..:::::... :: :::::::. : :::  : .: :.:.:...::..:.. .:.::: :::.::.:..:..::: :---.:.  .  ..: :.     .:.  : .  : .::::.  :  ::.::::::..::::.::::.:.: .:: ::..::.. : : :::::. ..: :: . . . :.:::::.:  .. ..::::..::.: .:.:.. ::::::.:::.. . .:::::::.:::.-.  :. .. :.:. ..:-.:.::::.----.:.:.:.-: . ::.: .:   ::...::.  .:::...:. :.-  :::..: ::.:::.:::: .:: :: :::.::..::...::.:. -----:.. :: ... :::.   .  ...:: :</pattern>
+      <matchSeq start="2" end="423">-MEKIFKILANLKFAIALLLLISITITFGSIIEQDQTLDYYKQNYPLTNPIGGFLTWKVINMFQLNHIYKNFWFISLLLSLGISLIACTFFQQFPGIKFSRRCYF---SNNPRKTDFQTQLKTNLSRNIIYTIISEGYFVFQQKKNFYGTKGIIGRIAPVFVHLSIILILLGSIFASLGGFNSQELIGKGEIFHIQNVTSSGPLTKLSQQAIRVNDFWINYYPNNKIKQFYSNLSIINGDGQEVRSKTISVNKPLIYKDLTFYQTDWNLLGLRI-SHNNKNFQIPVIQTTQNLNKVWLTWLPLESNTSKNLS-GETIIINNYKGTIYIYDNNGQLNKKIELSNFIENKN-YKLIEFLSVTGIQIKSDPGILFIYFGFGFLMVSTILSYLSFSQVWLGIDYLEQNNIKLTVNAKTNRTKVLLTTQMYKITKNKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="CCS1_TRIV2" ac="Q3M6F7" length="461" description="Cytochrome c biogenesis protein CcsB OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1256</score>
+      <smithWatermanScore>1256</smithWatermanScore>
+      <zScore>1530.8</zScore>
+      <bits>292.4</bits>
+      <expectation>1.1e-77</expectation>
+      <identity>44.2</identity>
+      <positives>75.2</positives>
+      <overlap>428</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">--------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKN-IVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTV--IPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYP--LINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIE--LNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                    ...... .:.:::..: :::.:.. :: :::::: ::  .:..:::    .:: :::  : . :::::::::::..:. ::: ::  ::: .:::.:: :.: ....   :: .: .:. :.  : :..   . . .:.:::.:.-:.:  ::..:::.::.::.... ::.:.: :.. :: :::.::. :.:...::.  : :..--.:. -:.:.: ::: ::    ..:::::.:.:..::.:...: : ::.:: ..:: .:::::.. :.: .   . :.. :--:.: . . .:: ::: :. .:.:::  .  .:.:.  ::.  :... ...--..  .:-   : ......:::::::.:::: :.:.:: .:::....::...:::: .::  .:..:: ::::   :: : ..:..</pattern>
+      <matchSeq start="21" end="447">MTTDNSAPTASPWWSLPGKFLRREFLPVLTDLRLAIALLLIIALFSISGTVIEQGQSPAFYQANYPEHPALFGFLTWKVIQVVGLDHVYRTWWFLSLLVLFGTSLTACTFTRQLPALKTAQRWKYYEEPRQFQKLALSAELDAGSVNSLSQILQNRRYKIFQEKDDILYARKGIVGRIGPIIVHIGIVTILLGSIWGAMTGFIAQEMVPSGETFQVKNIIDAGPLAAGQFPQDWSVRVNRFWIDYTPKGGIDQFYSDMSVLDNQGKEVDHKKIFVNQPLRYHGVTFYQTDWGISGVRVRLNKSPIFQLPMALLNTNGQGRIWGTWIPTKPDLSEGVSLLAKDLQGMVLIYDAQGKLVDTVRAGMSTQVN-GVTLKVLDVVGSTGLQIKADPGIPIVYTGFGILMLGVVMSYFSHSQIWALQKGDRLYVGGKTNRAQVAFEQEVLEILERLSSQSATASNQQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CCS1_NOSS1" ac="Q9R6Y2" length="461" description="Cytochrome c biogenesis protein CcsB OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1256</score>
+      <smithWatermanScore>1256</smithWatermanScore>
+      <zScore>1530.8</zScore>
+      <bits>292.4</bits>
+      <expectation>1.1e-77</expectation>
+      <identity>44.2</identity>
+      <positives>75.0</positives>
+      <overlap>428</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">--------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKN-IVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTV--IPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYP--LINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIE--LNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                    ...... .:.:::..: :::.:.. :: :::::: ::  .:..:::    .:: :::  : . :::::::::::..:. ::: ::  ::: .:::.:: :.: ....   :: .: .:. :.  : :..   . . .:.:::.:.-:.:  ::..:::.::.::.... ::.:.: :.. :: :::.::. :.:...::.  : :..--.:. -:.:.: ::: ::    ..:::::.:.:..::.:...: : ::.:: ..:: .:::::.. :.: .   . :.. :--:.: . . .:: ::: :. .:.:::  .  .:.:.  ::.  :... ...--..  .:-   : ......:::::::.:::: :.:.:: .:::....::...:::: .::  .:..:: ::::   :: : . :..</pattern>
+      <matchSeq start="21" end="447">MTTDNSAPTASPWWSLPGKFLRREFLPVLTDLRLAIALLLIIALFSISGTVIEQGQSPAFYQSNYPEHPALFGFLTWKVIQVVGLDHVYRTWWFLSLLVLFGTSLTACTFTRQLPALKTAQRWKYYEEPRQFQKLALSAELDAGSVNSLSQILQNRRYKIFQEKDDILYARKGIVGRIGPIIVHIGIVTILLGSIWGAMTGFIAQEMVPSGETFQVKNIIDAGPLAAGQFPQDWSVRVNRFWIDYTPKGGIDQFYSDMSVLDNQGQEVDHKKIFVNQPLRYHGVTFYQTDWGISGVRVRLNKSPIFQLPMALLNTNGQGRIWGTWIPTKPDLSEGVSLLAKDLQGMVLIYDAQGKLVDTVRAGMSTQVN-GVTLKVLDVVGSTGLQIKADPGIPIVYTGFGILMLGVVMSYFSHSQIWALQKGDRLYVGGKTNRAQVAFEQEVLDILERLNSQSATVINQQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CCS1_ACAM1" ac="B0CDA5" length="456" description="Cytochrome c biogenesis protein CcsB OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1251</score>
+      <smithWatermanScore>1251</smithWatermanScore>
+      <zScore>1524.7</zScore>
+      <bits>291.3</bits>
+      <expectation>2.3e-77</expectation>
+      <identity>43.2</identity>
+      <positives>75.0</positives>
+      <overlap>424</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="420">-----------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLT--VIPKTSA-RINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINF-SENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQ-PLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>            :. .  .:::::..: ::: :.. :: :::::: ::.:.:..:::    .:: :::  .. .:::::: ::::..:..::: ::  :::..:::.:: ::  ::..   :: .: .::.:.  .  ..:  .  ..:..:.. . .:  ::. :::.::.:: ::::::.:.: ::: :: :::..:.  . ...::. .:  .-- ::.  :-..: ::: ::    ..:::::.::.... ::..:.:: ::.:: :.::  ::.::...:.: .   . ... :.  .-. . .:: ::. :. .:. ::. .  .:.:   .:.:.:....... .   ....- : :.:...:::::::.::::  ::.:: .::.....::...::::..  . .:..:: ::::.. :: :. ..:.</pattern>
+      <matchSeq start="13" end="436">MTSNLGQPQAFFKKTLVPVLADLRLAIVLLLAIALFSISGTVIEQGQSLEFYQANYPEEPALFGFLTWKVLVTIGLDHVYATWWFLSLLILFGTSLTACTFMRQLPALKAARSWQFYKKPRQFGKLALSTTLDPDQKPSLLKALEKNRYKVFEEDQSIYARKGITGRIGPIIVHASMILILLGSIWGSLTGFMAQEMIPSGTTAKVSNIVKSGPWSGAQIPRDWAVQVNRFWIDYTPEGQIDQFYSDLSIVDEDKNELDRQTIHVNQPLKHKGVTLYQADWSIAGVRVQLNNSPVLQLPMAPLEAAGGRIWGTWVPTKPDLSAGVTLLTTDLQGTVVVYDESGKLVSTVRTGMSTDVNDISLKLVELVGSTGLQIKSDPGIPWIYAGFGLLMIGVIMSYVSHSQIWLLTADDQLYVGGRTNRALLTFERELVEMIESSASDSALSPSTNPQPQEVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CCS1_TRIEI" ac="Q118K5" length="472" description="Cytochrome c biogenesis protein CcsB OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1250</score>
+      <smithWatermanScore>1250</smithWatermanScore>
+      <zScore>1523.2</zScore>
+      <bits>291.0</bits>
+      <expectation>2.8e-77</expectation>
+      <identity>44.8</identity>
+      <positives>75.5</positives>
+      <overlap>424</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="419">-----------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQL--TVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPL--INFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIE-IISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                  :..:. ::::::..: :::.:..::: :::::: .:: .:. :::    .:: :::  :::. ::::::::::.....::: ::  ::: .:::.:: : : .:.   .::  : .:. ..  :....   .    :.  .. . .:  ::.::...::.:: ::..::.:.:.::. :: .:::::. :.:...::.  : .--. :::.-:.:.: ::: :: .  ..:::::.:::.:.:.:..:::: ::.:. ..:: .::.:: ..... ..  . ... :.--.:   . ::: ::.  . .:.:::  .  .:.:   .:. .:....... . .:...    .:.-::.:::::::.:::: :.: :: .::::.:.::...:::: .:. ..:.::: ::::   :: :.. :.</pattern>
+      <matchSeq start="19" end="442">MDVEDSDKNSLINPLRIFKREILPLLADLRLAIALLLIIAICSISGTVIEQGESIAFYQENYPEKPALFGFLTWKVILLLELDHVYRTWWFLSILILFGASLTACTFTRQLPALKSANRWKFYNKKQQFKNLALSAEIETASLDSLEEILQKRGYKTSKEGDKLYGRKGIIGKVGPIIVHASMLIILAGSIIGSMTGFLGQEIVPSGETFQVKNIIDAGIFAKSQIPKNWSVRVNRFWIDYTPSGGIDQFYSDLSILDKSGEEVDRKTIFVNQPMRYHGVTMYQADWAIAAVKVRVNKSPVFRLPMAQLNTEGGGKIWGTWVPIKPDLSEGVSLLAKDLQGNVLVYDTSGKLVASVREGMFIEVSGVTLFIDKIIGSTGLQIKADPGIPIVYLGFGLLMLSVLMSYVSHSQIWAFQESERLYIGGKTNRANVTFEREILDILDRLGSDENISLEKQKQLFSDFSEGIKTSEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CCS1_HETA2" ac="B2XTC6" length="423" description="Cytochrome c biogenesis protein Ccs1 OS=Heterosigma akashiwo (strain NIES-293 / 8280G21-1) OX=536047 GN=ccs1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1243</score>
+      <smithWatermanScore>1243</smithWatermanScore>
+      <zScore>1515.6</zScore>
+      <bits>289.4</bits>
+      <expectation>7.4e-77</expectation>
+      <identity>46.9</identity>
+      <positives>77.3</positives>
+      <overlap>414</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="406">MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSEN-QKIWLTWI----STNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWII-----QKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>  ..::..::.:.:.: ::::::.    :..:::::... :: :::::::. : :::  : .: :.:.:...::..:.. .:.::: :::.::.:..:..::: :---.:.  .  ..: :.     .:.  : .  : .::::.  :  ::.::::::..::::.::::.:.: .:: ::..::.. : : :::::. ..: :: . . . :.:::::.:  .. ..::::..::.: .:.:.. ::::::.:::.. . .:::::::.:::.-.  :. .. :.:. ..:-.:.::::.----.:.:.:.-: . ::.: .:   ::...::.  .:::...:. :.-  :::..: ::.:::.:::: .:: :: :::.::..::...::.:. -----:.. :: ... :::</pattern>
+      <matchSeq start="2" end="409">-MEKIFKILANLKFAIALLLLISITITFGSIIEQDQTLDYYKQNYPLTNPIGGFLTWKVINMFQLNHIYKNFWFISLLLSLGISLIACTFFQQFPGIKFSRRCYF---SNNPRKTDFQTQLKTNLSRNIIYTIISEGYFVFQQKKNFYGTKGIIGRIAPVFVHLSIILILLGSIFASLGGFNSQELIGKGEIFHIQNVTSSGPLTKLSQQAIRVNDFWINYYPNNKIKQFYSNLSIINGDGQEVRSKTISVNKPLIYKDLTFYQTDWNLLGLRI-SHNNKNFQIPVIQTTQNLNKVWLTWLPLESNTSKNLS-GETIIINNYKGTIYIYDNNGQLNKKIELSNFIENKN-YKLIEFLSVTGIQIKSDPGILFIYFGFGFLMVSTILSYLSFSQVWLGIDYLEQNNIKLTVNAKTNRTKVLALTVRIQPFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CCS1_NOSP7" ac="B2J814" length="465" description="Cytochrome c biogenesis protein CcsB OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1237</score>
+      <smithWatermanScore>1237</smithWatermanScore>
+      <zScore>1507.3</zScore>
+      <bits>288.1</bits>
+      <expectation>2.1e-76</expectation>
+      <identity>43.9</identity>
+      <positives>75.0</positives>
+      <overlap>428</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">--------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIF---QQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTV-IPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYP--LINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIE--LNEIINLKQPLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                    ..:... .:..::..: :::::.. : .:::::: ::  .:..:::    .:: :::  : . :::::::::::.::..::: ::  :.: .:::.:: :.: ....   :: .: .:. :.. :.:..   .   .:.::---...::.:  ::..:::.::.::.... ::.: : :.. :: :::.: . ..:.. ::.  : :..-. : -:.:.: ::: :: .  ..:::::.:.:::::.:...: : ::.:: . :. .:::::...:.: .   . :.. :--:.: . . .:: ::. :. .:.:::  .  .:.:.  ::. .:... ...--..  .:  .-: ....:.:::::::.:::: :.:::: .:::....::...:::: .::   :..:: ::::   :: : ..:.</pattern>
+      <matchSeq start="21" end="447">MTLEDSASKELKWWAIPGQFLRQELLPVLTNLRLAIALLLLIAIFSSTGTVIEQGQSPAFYQANYPEHPALFGFLTWKVIQVVGLDHVYRTWWFLALLILFGTSLTACSFTRQLPALKAAQRWKYYEEPRQFQKLALSAELDNGSLNSLSQLLQKRRYKIFPDREKENILYARKGIVGRIGPIIVHIGIVAILLGGIWGAMTGFMAQEMVASGDTFQVTNIVDAGPLAAQVSKDWSVRVNRFWIDYTPSGGIDQFYSDMSVLNKQGEEVDHKKIFVNEPLRYRGITFYQTDWGIAGVRVQFNNSPIFQLPMALLNTKGQGRIWGTWVPTKPDLSEGVSLLAKDLQGMVLIYDPNGKLVDTVRAGMSTQVNGVK-LKILDVIGSTGLQIKADPGIPIVYSGFGLLMLGVVMSYFSHSQIWALQKGDLLYVGGKTNRAQVAFEQEVLEILDRLSSEPKIEEKETAIEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="CCS1_CROS5" ac="B1WRN9" length="451" description="Cytochrome c biogenesis protein CcsB OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1236</score>
+      <smithWatermanScore>1236</smithWatermanScore>
+      <zScore>1506.4</zScore>
+      <bits>287.8</bits>
+      <expectation>2.4e-76</expectation>
+      <identity>44.1</identity>
+      <positives>75.4</positives>
+      <overlap>426</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="420">------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVL--NDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTV--IPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYP--LINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQP-LTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                    .:.....::::..: ::: :.. :: :::::: ..: .:. :::    .:: :::  ::..::.::: ::::..:. ::: ::  ::: .:.:.:: ::. .:.. . :: .: .:: :--::..: . : .  :--:. ::... .:  ::.::.:.::.:: .:..:: :.: :.: :: :: .::   .:...::.  : :. --::: -. :.: ::: ::   :..:::::.:..:..:.:...::: ::.:: ..:: .:::::...:.. ..  . :.. :--:.: . : .:: ::: :. .:.:::  .  .:.:   .:.. :.. . .. . :....  -: . ..:.:::::::.:::: ..:.:: .::.....::...::::..:.... .::: :::.   :: :.. ::.</pattern>
+      <matchSeq start="21" end="444">MTISDSPQTPENLSLPKQGFRQLIKIVADLRLAIVLLLAIALFSISGTVIEQGETISFYQQNYPEDPALFGFLTWKVILILGLNHVYTTWWFLSLLVLFGTSLTTCTFTRQFPALKAARKWNFYQKARQFEKLALSTELAINDLKFVNNLLEQKG--YKTFQENQAIYARKGIIGKIGPIVVHAAMLIILGGAIWGALTGFLAQAMVPTGSEFKVNNIIEAGPLSQPQIPKDWGIRVNRFWIDYTPDGTIDQFYSDLSVINNDGEELKHKTIYVNEPLRYHGVTFYQTDWGIAGVQAQVNNSPIFQLPMALLNTNGNGRIWGTWIPTKPDLSEGVSLLAKDLQGTMMVYDQKGDLYSAVRPGMILDINGVRLKIYQLIGSTGLQIKADPGIPFVYTGFGLLMMGVIMSYVSHSQIWVLQEDEHCYIGGKTNRSQVTFERELLGIIESLEPEKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CCS1_MICAN" ac="B0JHI7" length="447" description="Cytochrome c biogenesis protein CcsB OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1225</score>
+      <smithWatermanScore>1225</smithWatermanScore>
+      <zScore>1493.0</zScore>
+      <bits>285.3</bits>
+      <expectation>1.3e-75</expectation>
+      <identity>42.9</identity>
+      <positives>75.2</positives>
+      <overlap>424</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="420">----------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLT--VIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSE--NQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQ-PLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                  ..... .::::..:.:::::.. :: :::::: ::. .:..:::    .:: :::  .::.::.::: :::...:..::: ::  ::: .:::.:: ::  ::.. . :: .: .:. :.  :....   .  . :..: ..: .:  :::::.:.::.:: .:..::.:.: :.: :: :::.: . ..:...::.  : :.-- .:: -. ..: ::: :.    . :::::.:....::.::.::::.::.:: :.:: .:::.:...:.. ..  . :.. :. ... --: .:: ::: :. .:.:::  .  .:.:   .:.  :.. . .. .  : .. - : ..:...:::::::.:::. :.: :: .::.....::...:::: .:.  ...::: ::::  .:: :..  :.</pattern>
+      <matchSeq start="19" end="442">MTISETSSNLKNTPPQWGRKFIQTIADLRLAIILLLLIAIFSISGTVIEQGQSLSFYQANYPEKPALFGFLTWKVLLLLGLNHVYSTWWYLSLLILFGSSLTACTFRRQLPALKAARNWQFYQQSRQFQKLALSAELETGSLESLTPLLEKKGYKVFLENNSLYARKGLIGKIGPIIVHAAMLIILAGAIWGALTGFFAQEMVASGDSFQVKNIIEAGPLSKNSLPKDWGIKVNRFWIDYSPKGDIEQFYSDLSVIDNQGQEIDRKTIQVNQPLHHKGVTFYQTSWGIAGVKVQVNNSPILQLPMASLDTKGNGQIWGTWIPTKTDLSEGVSLLTRDLQGTVIVYDAQGDLTSAVREGMTIPINGVNLKIVELVGSTGLQIKADPGVPIVYLGFALLMMGVVMSYFSHSQIWALQSGDRFYIGGKTNRAQVSFEREIIDTIERLKLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CCS1_SYNP2" ac="O68616" length="462" description="Cytochrome c biogenesis protein CcsB OS=Synechococcus sp. (strain ATCC 27264 / PCC 7002 / PR-6) OX=32049 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1224</score>
+      <smithWatermanScore>1224</smithWatermanScore>
+      <zScore>1491.4</zScore>
+      <bits>285.1</bits>
+      <expectation>1.6e-75</expectation>
+      <identity>41.6</identity>
+      <positives>75.8</positives>
+      <overlap>418</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="419">------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINF-SEN-QKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQ-PLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                       .. .:::: .: ::::::  ::.:::::: ..:..:. :::    ..: :.:  .: .:::::: :::...:.. ::.::: ::: .:::.:: ::  ...  . :: .: .:: :.  :....  ..  ..:.:::. . .:  ::..:::.::.::..::. :::.: :.. :: :::..:.  ::...:..  : ..   . -:. .: ::: :: :  ..:::::.:... .:.:.::::::::::: ..:. .:::.:.. :.. .   . :.. :  ..-.::- :.: .:.  . ... ::  ....:.:   .::: :...: ..... ... .- : :.....:::::::.:::. ..:.::...::....::..:::.: .    ....:: ::::   :: :...::</pattern>
+      <matchSeq start="24" end="441">MTVSDSSPNSPWHSFPRKVWRTGLKWIADLRVAIALLLLISVFSILGTVIEQGSTIQFYQENYPEDPALLGFLSWKVLLGLGLDHVYTTWWYLVLLLAFGVSLIACTFRRQLPALKTARNWNYYSQARQFNKLALSTELDHGSLQSLKPQLEKKRYKIFQDGEKLYARKGIVGRIGPIIVHIGMIVTLVGSIWGAFGGFMAQEMIPSGVNFKVNNVFKAGIFSESDRPWSVNVNRFWIDYTPTGDIDQFYSDLSVVDGEGQELERKTISVNHPLRYDGITFYQTSWSIGGVQVQLNNSPIFQLPAAQIPTENGAKLWGSWVPIKPDMSAGVSILMQDLQGSAIVYNEQGELVGAVRVGDRLDVGDISLKLVDLVGSTGLQIKADPGVPVVYTGFLLVMLGVVMSYVSYSQVWALAAGDRFYLGGKTNRAQVAFERELLEIINTLETSHSQATPENTLTSIEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CCS1_SYNY3" ac="P73912" length="458" description="Cytochrome c biogenesis protein CcsB OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=ccsB PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1202</score>
+      <smithWatermanScore>1202</smithWatermanScore>
+      <zScore>1464.5</zScore>
+      <bits>280.1</bits>
+      <expectation>5.2e-74</expectation>
+      <identity>41.6</identity>
+      <positives>75.5</positives>
+      <overlap>428</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="418">--------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQL--TVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPL--INFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQ-PLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQ----KEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>              . .: .. :::::..: :::::.  :: :::::: .:. .:. :::    .:: :.:. :: .::..:::::::..:..::: ::  ::: .:.:.:: ::  ::..   :: .: .:  : : ..::: . .    :.:::. . ::  :::.:...::.:: .:..:: :.: :.: :: ::...:. :.:...::. .: :--. ::: -. ..: :::.::.. ...:::::.:..:.::.:..:.:::::::: : :: .:::.:...:.. .   . ... :.--.. ... ..: ..: :. ...::.. .. .:.:   ::.. :..   .. .  .... - .:. :...:::::::.:::: ..: :: .::.....::...::.:...---- ......:: ::::   :: :.. :</pattern>
+      <matchSeq start="15" end="442">MTIANPSPSNFFQQLGRQCLKTLADLRLAIALLLLIAVFSISGTVIEQGESLSFYQQNYPEDPALFGFLSWQVILQLGLNQVYRTWWFLGLLILFGSSLTACTFNRQFPALKAARSWQFYHQPRQFKKLALSFSLPDGDINKIESLLRDRGYKIFQEGDSVYARKGLMGKVGPIIVHGAMLIILGGAIWGALTGFFAQHMIPSGETFQVSNIIEKGPLADSQIPKDWGIKVNRFWINYTENGAIDQFYSDLSVVNNQGEELDRQTISVNHPLRHRGVTFYQTNWGIAGVKVQLNNSPVLQLPMAPLQTANGGQLWGAYIPTKTDFSEGAALLVKDLQGTMIIYDQEGNLTDAVRAGSTVEINGVNITIKELVGSTGLQIKADPGIPFVYLGFGLLMVGVMMSYVSHSQVWLLSVDGDGQREIYLGGRTNRAQVAFEREILAIAEEAEVSSKTEAKVNA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CCS1_THEVB" ac="Q8DL16" length="442" description="Cytochrome c biogenesis protein CcsB OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1194</score>
+      <smithWatermanScore>1194</smithWatermanScore>
+      <zScore>1455.0</zScore>
+      <bits>278.3</bits>
+      <expectation>1.8e-73</expectation>
+      <identity>41.5</identity>
+      <positives>74.6</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="420">-----MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKT-SARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQK--IWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQ-PLTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>       .... ::.:::..:.:::.:.. :..:::::: ::. .:..::: .  .:: :.:  .: .:::::::: :...:. ::: ::  ::. .:.:.:  :.: ....   :: .: .::.. . :.. .   . .. : ..:  . .:  :::.::..::.:: ::.:::.: :.:.: :: :::..:. :. :.:.:.  : :. ::. -:...: ::: :: .  ..:::::.:: . .:.:..: :: ::.:: ..::  ::.::.....::.   . ... :.  .. . :--.: ::. :  .:. ::  :  .:.:   .:.  :.:: ... .   ... - :::.:...:::::::.:::: ..:.:: .:: ....::...::.: .:....:..:: :::: . :: :.  : .</pattern>
+      <matchSeq start="8" end="429">MINAPVFRRVLALLGDLRLAILLLLVIAIASMAGTVIEQGQSLSFYQANYPENPALFGFLSWRVLLALGLDHVYRTPWYLTLLVLFGASLTACTLTRQVPALTTAQRWHYYQEPRQFTKLALSTTIPQGSLTALATALRAKGYRVWQTDTQLYARKGLVGRLGPIVVHASMLLILLGGILGALTGFMAQELIPSGETVHLQHIVEAGPLARIPQDWSVKVNRFWIDYTDAGEIDQFYSDLSIQDAKGQEVKRGTIHVNRPLRYGGVSLYQADWGIAAIRFRLNRSPVLQLPMAPLDTGGKGRLWGTWLPTRPDLSAGVSLIARDLQGTVLLYGPKGEFLTSLRTGMSTEVNGVTLTLVELVGSTGLQIKADPGIPLFYAGFALLMAGVIMSYVSHSQVWGLQENQRLYLGGRTNRAQLAFEQELVAIARELAPPSQTTAVDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="CCS1_SYNJA" ac="Q2JXK6" length="478" description="Cytochrome c biogenesis protein CcsB OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1162</score>
+      <smithWatermanScore>1162</smithWatermanScore>
+      <zScore>1415.0</zScore>
+      <bits>271.0</bits>
+      <expectation>3e-71</expectation>
+      <identity>42.0</identity>
+      <positives>72.4</positives>
+      <overlap>431</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="420">------------------MKQQIFRLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLTVIPKTSARINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINF--SENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIE------LNEIINLKQP----LTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                   ..... ::::::..: :.: :.. : :::::::.... .:...::    .:: :::  :: .:::::::: ::.::..::: ::  :.. .: : ::.::: ...   ..: :: . : : . :.. .  :.    :..::. . .:  ::::::..:::::.:..:::.:.: ::: ::::: ..:.     :... . :.:. .:  . :.: ::: :.    :.:::::.:::. -:.:..:.:::::::: . ::  ::.::.. ..:..   .  .. :..  --. ..:.: ... :  .:.::.. .. .:.:   .:.  ::..:...------:.:.   . :----: : :.:..::::::.:::: ..: :: .:::.. .::..:::.: .. :  :..:: ::::. .:: :: ....</pattern>
+      <matchSeq start="20" end="449">MVIPSLPLSRWLSPLRRYFRHELLPLLADLRLAIGLFLAIALLSAVGTVIEQEETVAFYQAHYPEHPALFGFLTWRLILKLGLDHVYRTSWFLALLILFGSSLAACSLTRQWPMLKVARRWSYLTRPHSFQRLPFWTYLPQRSLQGLPQRLRQRGYAVFQDGSRLYARKGLIGRFGPILVHVSLLLILLGAIWGSLAGFKAQALIPSGSVAAIEQVTGAGDLAHLPTWQIRVNRFWIDYAPDGRVKQFYSDLSILDG-GQEVKRQTISVNHPLSYRGVTLYQADWSIDSIRIRLNNSPPFQIPVVPVPTQAGSKLWGAFVPTRPDLSEGLTLLLPDLQGTALLYDTQGQWIGSLRQGMSLALDEVAPQRFPNRLTLHLDEVIGATGLQIKSDPGIPLVYLGFGLLMLGVAMSYFSYSQVWALETEAGLYLGGKTNRALVSFEREFARLVEQQLLSSPPSPAKEPPPAARVGGTESLANG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CCS1_SYNE7" ac="Q31RG5" length="456" description="Cytochrome c biogenesis protein CcsB OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1157</score>
+      <smithWatermanScore>1157</smithWatermanScore>
+      <zScore>1409.3</zScore>
+      <bits>269.9</bits>
+      <expectation>6.2e-71</expectation>
+      <identity>40.0</identity>
+      <positives>73.2</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="419">----------------MKQQIF-RLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLT--VIPKTSA-RINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQP-LTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                  ::.:-  :::::..:.::: :.. : .:::::: ::. .:. :::    .:: :.:  :: .:::::::. ::..:..::: ::  ::: .: :.:. :.: ::..   :: .: .:. : . .....   .   .: .:.  ...:  .:: ::..::::: .:...: :.: ::: :: :::..:. :.:...::.  :  .-- ::.  :-..: ::: :.    ..:::::.:.....:.: .:.:: ::.:: ..:. .::.:: ... . .   . ... :. ..    .:: :.. :. .:. ::  :  .:.:   ::. .:. ::... .  :...  -:.:.....:::::::.::::  .:.::.:.:.... ::....:.: .... .:.::: .:::.  :: :.. ..</pattern>
+      <matchSeq start="19" end="440">MTSDPLASPSFADRWRRGQQLFWTWLADLRLAILLLLAIAIASATGTVIEQGQSLAFYQENYPTDPALFGFLSWRWILSLGLDHVYRAGWFLGLLILFGASLTACTFRRQWPALRAAQRWQFYQEPRQFTKLALSASLPQGKLDSLEPLLLQRRYRLFRADDVLYARRGLAGRVGPILVHAGMLVVLGGAIWGSLGGFYAQEMIPSGETFQVRNIVDAGPWSGSRIPQDWAVKVNRFWIDYAPDGRIDQFYSDLSVVDREGQEQDRQTIHVNQPLRYGGLTFYQADWAIAAAQVRLNNSPVLQLPMAQLPAAGRIWGTFVPTKPDLSSGVSLIAKDLQGTAVIYGSNGEPLGTLRKGMAIEVEGIRLSLVDLVGSTGLQIKSDPGIPWVYAGFLFVMVGVVCSYVSHAQVWALEQDGQLYIGGRSNRALVAFEQEMLAVLAQLDAQSNHSAETAIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CCS1_SYNP6" ac="Q9R6T0" length="456" description="Cytochrome c biogenesis protein CcsB OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=ccsB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1157</score>
+      <smithWatermanScore>1157</smithWatermanScore>
+      <zScore>1409.3</zScore>
+      <bits>269.9</bits>
+      <expectation>6.2e-71</expectation>
+      <identity>40.0</identity>
+      <positives>73.2</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="419">----------------MKQQIF-RLLADLRFSIFLLLLISFCSIVGTVIEQDQSIEIYKTNYPLTNPVFGVLTWDRILLFGLDHVYRTWWFFALIFLFGLSLILCTFLQQLPSLKIARRCQFFRTTNQFYRLKISTVLNDFSFNKILGRITGSQYSIFQQKNIVYCYKGLIGRIAPILVHLSMILILVGTIVGSLFGFKAQEIVPKTENFHIQNILANGQLT--VIPKTSA-RINDFWITYTKTKTVSQFYSDISILNKQGNEIERKTISVNHPLIHNGVYYYQTDWNLVGLRFKTMANEIIEYPLINFSENQKIWLTWISTNKSLTEGVVTIIDNLEGYCSIYNETGQFLGNIELNEIINLKQP-LTLIEIISSTGLQIKTDPGIQIIYSGFFFLMLSTLISYITYSQIWIIQKEKKLFIGGTTNRAVFDFELEFFKIIK</querySeq>
+      <pattern>                  ::.:-  :::::..:.::: :.. : .:::::: ::. .:. :::    .:: :.:  :: .:::::::. ::..:..::: ::  ::: .: :.:. :.: ::..   :: .: .:. : . .....   .   .: .:.  ...:  .:: ::..::::: .:...: :.: ::: :: :::..:. :.:...::.  :  .-- ::.  :-..: ::: :.    ..:::::.:.....:.: .:.:: ::.:: ..:. .::.:: ... . .   . ... :. ..    .:: :.. :. .:. ::  :  .:.:   ::. .:. ::... .  :...  -:.:.....:::::::.::::  .:.::.:.:.... ::....:.: .... .:.::: .:::.  :: :.. ..</pattern>
+      <matchSeq start="19" end="440">MTSDPLASPSFADRWRRGQQLFWTWLADLRLAILLLLAIAIASATGTVIEQGQSLAFYQENYPTDPALFGFLSWRWILSLGLDHVYRAGWFLGLLILFGASLTACTFRRQWPALRAAQRWQFYQEPRQFTKLALSASLPQGKLDSLEPLLLQRRYRLFRADDVLYARRGLAGRVGPILVHAGMLVVLGGAIWGSLGGFYAQEMIPSGETFQVRNIVDAGPWSGSRIPQDWAVKVNRFWIDYAPDGRIDQFYSDLSVVDREGQEQDRQTIHVNQPLRYGGLTFYQADWAIAAAQVRLNNSPVLQLPMAQLPAAGRIWGTFVPTKPDLSSGVSLIAKDLQGTAVIYGSNGEPLGTLRKGMAIEVEGIRLSLVDLVGSTGLQIKSDPGIPWVYAGFLFVMVGVVCSYVSHAQVWALEQDGQLYIGGRSNRALVAFEQEMLAVLAQLDAQSNHSAETAIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

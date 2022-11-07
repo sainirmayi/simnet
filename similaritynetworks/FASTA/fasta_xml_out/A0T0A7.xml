@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162844-0835-76752962-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162844-0835-76752962-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162844-0835-76752962-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0A7|PETM_PHATC" type="PROTEIN" length="42"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:28:44+00:00" end="2022-11-07T16:28:46+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PETM_PHATC" ac="A0T0A7" length="42" description="Cytochrome b6-f complex subunit 7 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>265</score>
+      <smithWatermanScore>265</smithWatermanScore>
+      <initn>265</initn>
+      <init1>265</init1>
+      <opt>265</opt>
+      <zScore>468.9</zScore>
+      <bits>89.1</bits>
+      <expectation>1.5e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>42</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PETM_THAPS" ac="A0T0S6" length="42" description="Cytochrome b6-f complex subunit 7 OS=Thalassiosira pseudonana OX=35128 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>215</score>
+      <smithWatermanScore>215</smithWatermanScore>
+      <initn>215</initn>
+      <init1>215</init1>
+      <opt>215</opt>
+      <zScore>383.7</zScore>
+      <bits>73.4</bits>
+      <expectation>8.2e-14</expectation>
+      <identity>81.0</identity>
+      <positives>92.9</positives>
+      <overlap>42</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>: :: :::::::.::.::::.:. ::::::::::.:::::::</pattern>
+      <matchSeq start="1" end="42">MALILQIFPFANAEIVTAAVTCIFMTLFGLSLGFALLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PETM_TRICV" ac="P49531" length="42" description="Cytochrome b6-f complex subunit 7 OS=Trieres chinensis OX=1514140 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>200</score>
+      <smithWatermanScore>200</smithWatermanScore>
+      <initn>200</initn>
+      <init1>200</init1>
+      <opt>200</opt>
+      <zScore>358.2</zScore>
+      <bits>68.6</bits>
+      <expectation>2.2e-12</expectation>
+      <identity>71.4</identity>
+      <positives>92.9</positives>
+      <overlap>42</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>: :. .:::.::.::.::::.:. :.::::::::.:::::::</pattern>
+      <matchSeq start="1" end="42">MALVLKIFPYANAEIVTAAVTCIFMVLFGLSLGFALLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PETM_SKECO" ac="O96810" length="25" description="Cytochrome b6-f complex subunit 7 (Fragment) OS=Skeletonema costatum OX=2843 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <smithWatermanScore>131</smithWatermanScore>
+      <initn>131</initn>
+      <init1>131</init1>
+      <opt>131</opt>
+      <zScore>244.5</zScore>
+      <bits>46.9</bits>
+      <expectation>4.7e-06</expectation>
+      <identity>84.0</identity>
+      <positives>96.0</positives>
+      <overlap>25</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>                 :::.:. ::::::::::.:::::::</pattern>
+      <matchSeq start="1" end="25">-----------------AAVTCIFMTLFGLSLGFALLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PETM_CYAPA" ac="P48366" length="33" description="Cytochrome b6-f complex subunit 7 OS=Cyanophora paradoxa OX=2762 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <smithWatermanScore>129</smithWatermanScore>
+      <initn>135</initn>
+      <init1>122</init1>
+      <opt>129</opt>
+      <zScore>239.0</zScore>
+      <bits>46.2</bits>
+      <expectation>9.5e-06</expectation>
+      <identity>62.1</identity>
+      <positives>96.6</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             .:...::.::..::.:::::: :::.::.</pattern>
+      <matchSeq start="4" end="32">----------MGKQIFNTAVICFTLTLIGLSLGFVLLKIQGDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PETM_EMIHU" ac="Q4G3B3" length="32" description="Cytochrome b6-f complex subunit 7 OS=Emiliania huxleyi OX=2903 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <smithWatermanScore>112</smithWatermanScore>
+      <initn>112</initn>
+      <init1>112</init1>
+      <opt>112</opt>
+      <zScore>210.3</zScore>
+      <bits>40.9</bits>
+      <expectation>0.00038</expectation>
+      <identity>62.1</identity>
+      <positives>89.7</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::.:.: : ....: :::.::::::.:::</pattern>
+      <matchSeq start="4" end="32">----------MAKEIFTVAGVMWALVLTGLSVGFGLLKIQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PETM_GUITH" ac="O78499" length="32" description="Cytochrome b6-f complex subunit 7 OS=Guillardia theta OX=55529 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <smithWatermanScore>110</smithWatermanScore>
+      <initn>110</initn>
+      <init1>110</init1>
+      <opt>110</opt>
+      <zScore>206.9</zScore>
+      <bits>40.3</bits>
+      <expectation>0.00058</expectation>
+      <identity>56.7</identity>
+      <positives>90.0</positives>
+      <overlap>30</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>            .:.:..: . : .::.::.:::.:::.:::</pattern>
+      <matchSeq start="3" end="32">----------MGNEFIASASISFIITLIGLTLGFALLKLQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PETM_NEOYE" ac="Q1XDL1" length="32" description="Cytochrome b6-f complex subunit 7 OS=Neopyropia yezoensis OX=2788 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>97</initn>
+      <init1>97</init1>
+      <opt>97</opt>
+      <zScore>184.7</zScore>
+      <bits>36.2</bits>
+      <expectation>0.01</expectation>
+      <identity>55.2</identity>
+      <positives>79.3</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::. .::.   ..: ::..:: :::::::</pattern>
+      <matchSeq start="4" end="32">----------MVGEIVESAVLSSVLVLVGLAIGFLLLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PETM_ACAM1" ac="B0C6T5" length="32" description="Cytochrome b6-f complex subunit 7 OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <smithWatermanScore>97</smithWatermanScore>
+      <initn>97</initn>
+      <init1>97</init1>
+      <opt>97</opt>
+      <zScore>184.7</zScore>
+      <bits>36.2</bits>
+      <expectation>0.01</expectation>
+      <identity>57.7</identity>
+      <positives>84.6</positives>
+      <overlap>26</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="39">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::.:.: .:::. : :..::. ::::</pattern>
+      <matchSeq start="4" end="29">----------MAGEIFTTAFLCFSLILVGIGLGYLLLKVAPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PETM_PORPU" ac="P51275" length="32" description="Cytochrome b6-f complex subunit 7 OS=Porphyra purpurea OX=2787 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <smithWatermanScore>95</smithWatermanScore>
+      <initn>95</initn>
+      <init1>95</init1>
+      <opt>95</opt>
+      <zScore>181.3</zScore>
+      <bits>35.5</bits>
+      <expectation>0.015</expectation>
+      <identity>51.7</identity>
+      <positives>79.3</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::. .:..   ..: ::..:: :::::::</pattern>
+      <matchSeq start="4" end="32">----------MGKEIVESAILSSVLVLVGLAVGFLLLKVQGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PETM_SYNJB" ac="Q2JN39" length="35" description="Cytochrome b6-f complex subunit 7 OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <smithWatermanScore>94</smithWatermanScore>
+      <initn>93</initn>
+      <init1>91</init1>
+      <opt>94</opt>
+      <zScore>179.0</zScore>
+      <bits>35.2</bits>
+      <expectation>0.021</expectation>
+      <identity>51.7</identity>
+      <positives>86.2</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKV-QGE</querySeq>
+      <pattern>             ::.:.: .:. .:: :..::.:.:.:-::</pattern>
+      <matchSeq start="4" end="32">----------MAGEIFTTAGLCIVLTLVGVALGYGILRVTQGGAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PETM_GLOVI" ac="Q7NLN8" length="36" description="Cytochrome b6-f complex subunit 7 OS=Gloeobacter violaceus (strain ATCC 29082 / PCC 7421) OX=251221 GN=petM PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <smithWatermanScore>94</smithWatermanScore>
+      <initn>94</initn>
+      <init1>94</init1>
+      <opt>94</opt>
+      <zScore>178.7</zScore>
+      <bits>35.2</bits>
+      <expectation>0.022</expectation>
+      <identity>48.3</identity>
+      <positives>82.8</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="42">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::. .: . : .:: :...:::.::..::</pattern>
+      <matchSeq start="4" end="32">----------MTGEIFFVAGLVFVLTLVGMAIGFGVLKLRGEGKEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PETM_CROS5" ac="B1WU77" length="37" description="Cytochrome b6-f complex subunit 7 OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <smithWatermanScore>92</smithWatermanScore>
+      <initn>92</initn>
+      <init1>92</init1>
+      <opt>92</opt>
+      <zScore>175.1</zScore>
+      <bits>34.6</bits>
+      <expectation>0.034</expectation>
+      <identity>45.2</identity>
+      <positives>83.9</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>          :.: ....::. . ..::::. :: .::.::</pattern>
+      <matchSeq start="3" end="33">--------MTAESMMFNGAVILMVLVLFGLAWGFLILKIQGGEAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PETM_MICAN" ac="B0JI68" length="37" description="Cytochrome b6-f complex subunit 7 OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <smithWatermanScore>87</smithWatermanScore>
+      <initn>87</initn>
+      <init1>87</init1>
+      <opt>87</opt>
+      <zScore>166.6</zScore>
+      <bits>33.0</bits>
+      <expectation>0.1</expectation>
+      <identity>45.2</identity>
+      <positives>80.6</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>          :.: ....:.: . ..: ::. :: :::.::</pattern>
+      <matchSeq start="3" end="33">--------MTAESMLFNGAIVAIVLVLVGLAWGFLLLKIQGGEAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PETM_NOSP7" ac="B2J8Q3" length="34" description="Cytochrome b6-f complex subunit 7 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <smithWatermanScore>84</smithWatermanScore>
+      <initn>84</initn>
+      <init1>84</init1>
+      <opt>84</opt>
+      <zScore>162.1</zScore>
+      <bits>32.1</bits>
+      <expectation>0.18</expectation>
+      <identity>46.4</identity>
+      <positives>78.6</positives>
+      <overlap>28</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>             ::..::.. :.. . : .::  :::.::</pattern>
+      <matchSeq start="4" end="31">----------MGGEILNAAILSFGLIFVGWGLGALLLKIQGGEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PETM_CYAM1" ac="Q85FX8" length="32" description="Cytochrome b6-f complex subunit 7 OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <smithWatermanScore>83</smithWatermanScore>
+      <initn>90</initn>
+      <init1>82</init1>
+      <opt>83</opt>
+      <zScore>160.9</zScore>
+      <bits>31.7</bits>
+      <expectation>0.21</expectation>
+      <identity>39.3</identity>
+      <positives>78.6</positives>
+      <overlap>28</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="40">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>            .::..  ..:  :.. ::..::.:: .:</pattern>
+      <matchSeq start="2" end="29">-----------MNEIVALMIICPLMVMVGLGMGFALLWLQQQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PETM_SYNJA" ac="Q2JS99" length="35" description="Cytochrome b6-f complex subunit 7 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <smithWatermanScore>83</smithWatermanScore>
+      <initn>91</initn>
+      <init1>80</init1>
+      <opt>83</opt>
+      <zScore>160.2</zScore>
+      <bits>31.7</bits>
+      <expectation>0.23</expectation>
+      <identity>46.7</identity>
+      <positives>80.0</positives>
+      <overlap>30</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKV-QGE</querySeq>
+      <pattern>            :::.: : . . .:: :..::.:.:..-::</pattern>
+      <matchSeq start="3" end="32">----------MASEIFTIAGLSIVLTLVGVALGYGILRITQGGAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PETM_GLOC7" ac="B7KAA7" length="37" description="Cytochrome b6-f complex subunit 7 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <smithWatermanScore>83</smithWatermanScore>
+      <initn>83</initn>
+      <init1>83</init1>
+      <opt>83</opt>
+      <zScore>159.8</zScore>
+      <bits>31.8</bits>
+      <expectation>0.24</expectation>
+      <identity>41.9</identity>
+      <positives>80.6</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>          :.: ....:.. . ..: ::. :: :::.::</pattern>
+      <matchSeq start="3" end="33">--------MTAESMLFNGAILSIVLVLVGLAWGFLLLKIQGGEAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PETM_RIPO1" ac="B7K1J7" length="37" description="Cytochrome b6-f complex subunit 7 OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <smithWatermanScore>83</smithWatermanScore>
+      <initn>83</initn>
+      <init1>83</init1>
+      <opt>83</opt>
+      <zScore>159.8</zScore>
+      <bits>31.8</bits>
+      <expectation>0.24</expectation>
+      <identity>45.2</identity>
+      <positives>80.6</positives>
+      <overlap>31</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="41">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>          :.: ....::. . ..: ::. :: :::.::</pattern>
+      <matchSeq start="3" end="33">--------MTAESMMFNGAVLLMVLVLVGLAWGFLLLKIQGGEAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PETM_CYACA" ac="Q9TLR5" length="31" description="Cytochrome b6-f complex subunit 7 OS=Cyanidium caldarium OX=2771 GN=petM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <smithWatermanScore>81</smithWatermanScore>
+      <initn>86</initn>
+      <init1>80</init1>
+      <opt>81</opt>
+      <zScore>157.7</zScore>
+      <bits>31.1</bits>
+      <expectation>0.32</expectation>
+      <identity>41.4</identity>
+      <positives>82.8</positives>
+      <overlap>29</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="40">MELIKQIFPFANSEIITAAVVCFSMTLFGLSLGFGLLKVQGE</querySeq>
+      <pattern>           ..::.:....   ..: ::..:: :::.:</pattern>
+      <matchSeq start="2" end="30">----------MSQEIVTVSLIISILVLSGLTMGFILLKIQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

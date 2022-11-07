@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163610-0563-87584753-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163610-0563-87584753-p2m.m9&quot; -m &quot;F10 fasta-R20221107-163610-0563-87584753-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0I6|RK16_PHATC" type="PROTEIN" length="138"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:36:10+00:00" end="2022-11-07T16:36:14+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RK16_PHATC" ac="A0T0I6" length="138" description="50S ribosomal protein L16, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>902</score>
+      <smithWatermanScore>902</smithWatermanScore>
+      <initn>902</initn>
+      <init1>902</init1>
+      <opt>902</opt>
+      <zScore>1250.6</zScore>
+      <bits>237.2</bits>
+      <expectation>4.3e-62</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>138</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="138">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="138">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RK16_TRICV" ac="P49553" length="137" description="50S ribosomal protein L16, chloroplastic OS=Trieres chinensis OX=1514140 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>797</score>
+      <smithWatermanScore>797</smithWatermanScore>
+      <initn>832</initn>
+      <init1>797</init1>
+      <opt>797</opt>
+      <zScore>1106.4</zScore>
+      <bits>210.5</bits>
+      <expectation>4.6e-54</expectation>
+      <identity>88.3</identity>
+      <positives>94.9</positives>
+      <overlap>137</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="137">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::::::::::::::::  :::::. ::..:::::::::::::::::::::::::::::: :::::::::::::::::::::::::::::::::::::::.:::.::::::: :::.::.:::::::::: . .:</pattern>
+      <matchSeq start="1" end="137">MLSPKRTKYRKYHRGRMRGKATRGNEVTFGDYGLQALEPTWITSRQIEAARRTITRYTKRGAALWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTILFEIASVPEEIAATALHLASYKLPIKTKFITRIKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RK16_THAPS" ac="A0T0Y0" length="137" description="50S ribosomal protein L16, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>794</score>
+      <smithWatermanScore>794</smithWatermanScore>
+      <initn>822</initn>
+      <init1>794</init1>
+      <opt>794</opt>
+      <zScore>1102.3</zScore>
+      <bits>209.7</bits>
+      <expectation>7.8e-54</expectation>
+      <identity>85.4</identity>
+      <positives>97.1</positives>
+      <overlap>137</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="137">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::::::::::::::::  :::::. ::..:::::::.:::::::::.::::::::::::.::::::::::::::::::::::::::::::::.::::::.:::..::::.:..:.:::::::::::::::. .:</pattern>
+      <matchSeq start="1" end="137">MLSPKRTKYRKYHRGRMRGKATRGNEVSFGKYGLQALEPSWITSRQIEATRRTITRYTKRGASLWIRIFPDKTVTARAAESRMGSGKGAVDYWVATVKPGTILFEISAVPEEVARAAFNLAAYKLPIKTKFIIRKDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RK16_STAPU" ac="Q32RV3" length="141" description="50S ribosomal protein L16, chloroplastic OS=Staurastrum punctulatum OX=102822 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <smithWatermanScore>683</smithWatermanScore>
+      <initn>702</initn>
+      <init1>675</init1>
+      <opt>683</opt>
+      <zScore>949.4</zScore>
+      <bits>181.5</bits>
+      <expectation>2.5e-45</expectation>
+      <identity>67.1</identity>
+      <positives>92.1</positives>
+      <overlap>140</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="138">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFII--KDNIS</querySeq>
+      <pattern>::::.:::::: ::::..:. ::::.:::: :.::::::.:::::::::.::..:::..::.::::::::::..: : ::.:::::::: .::::::::: :..:...: : .:..:...:.::.::::.:..--::.:.</pattern>
+      <matchSeq start="1" end="140">MLSPRRTKYRKQHRGRLKGTATRGNRICFGRFALQALEPSWITSRQIEAGRRAMTRYARRGGKLWIRIFPDKSITMRPAETRMGSGKGAPEYWVAVVKPGRILYEMSGVSETVARSAMKIASYKMPIKTQFLVASKDSITV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RK16_CHAVU" ac="Q1ACG0" length="144" description="50S ribosomal protein L16, chloroplastic OS=Chara vulgaris OX=55564 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>678</score>
+      <smithWatermanScore>678</smithWatermanScore>
+      <initn>678</initn>
+      <init1>678</init1>
+      <opt>678</opt>
+      <zScore>942.4</zScore>
+      <bits>180.2</bits>
+      <expectation>6.3e-45</expectation>
+      <identity>68.4</identity>
+      <positives>92.6</positives>
+      <overlap>136</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="136">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::..::.::.:::::.: .:::: : ::.:.::::::.:::::::::.::..:::..::.:.:::::::: :: : ::.:::::::. .::::::::: :..:. .:::.::..:...::::.: ::.:.:.::</pattern>
+      <matchSeq start="1" end="136">MLSPRKTKFRKHHRGRMKGISTRGNSIVFGKFALQALEPSWITSRQIEAGRRSMTRYARRGGKIWIRIFPDKPVTMRPAETRMGSGKGSPEYWVAVVKPGRILYEMDGVPENIARAAMKIAAYKMPNKTQFLIRDNKDLIDSKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RK16_PORPU" ac="P51307" length="139" description="50S ribosomal protein L16, chloroplastic OS=Porphyra purpurea OX=2787 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>677</score>
+      <smithWatermanScore>677</smithWatermanScore>
+      <initn>695</initn>
+      <init1>677</init1>
+      <opt>677</opt>
+      <zScore>941.3</zScore>
+      <bits>180.0</bits>
+      <expectation>7.2e-45</expectation>
+      <identity>68.6</identity>
+      <positives>91.2</positives>
+      <overlap>137</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="137">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::.::.:: :::::.:. ..:: : ::...::: ::.:.:::::::.:::::::..::.:::::.:::: :::: ::.:::::::: .:::::.::: :.::: .::.. :. :..::.::::::::::....:</pattern>
+      <matchSeq start="1" end="137">MLSPKKTKFRKQHRGRMKGSASKGNTIAFGDYALQATEPVWLTSRQIEATRRTITRYVRRGGKLWIRVFPDKPVTARPAETRMGSGKGAPEYWVAVIKPGHILFEITGVPQKTAQQAMKLASYKLPIKTKFIVRNTIES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RK16_NEOYE" ac="Q1XDI1" length="139" description="50S ribosomal protein L16, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>672</score>
+      <smithWatermanScore>672</smithWatermanScore>
+      <initn>690</initn>
+      <init1>672</init1>
+      <opt>672</opt>
+      <zScore>934.4</zScore>
+      <bits>178.7</bits>
+      <expectation>1.7e-44</expectation>
+      <identity>68.9</identity>
+      <positives>91.1</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="135">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::.::.:: :::::.:. ..:: : ::...::: ::.:.:::::::.:::::::..::.:::::.:::: :::: ::.:::::::: .:::::.::: :.::: .::.. :. :..::.::::::::::...</pattern>
+      <matchSeq start="1" end="135">MLSPKKTKFRKQHRGRMKGSASKGNTIAFGDYALQATEPVWLTSRQIEATRRTITRYVRRGGKLWIRVFPDKPVTARPAETRMGSGKGAPEYWVAVIKPGHILFEITGVPQKTAQQAMKLASYKLPIKTKFIVRNTTES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RK16_ZYGCR" ac="Q32RN5" length="141" description="50S ribosomal protein L16, chloroplastic OS=Zygnema circumcarinatum OX=35869 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>672</score>
+      <smithWatermanScore>672</smithWatermanScore>
+      <initn>672</initn>
+      <init1>672</init1>
+      <opt>672</opt>
+      <zScore>934.3</zScore>
+      <bits>178.7</bits>
+      <expectation>1.8e-44</expectation>
+      <identity>70.5</identity>
+      <positives>91.7</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="132">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::::..:: ::::..: .::::.:::: ::::::::.:::::::::.::.::::..::.:::::::::: .: : ::.:::::::. .::::::::: :..:...: : ::..:. .::.:.::::.::</pattern>
+      <matchSeq start="1" end="132">MLSPKRTRFRKQHRGRLKGISTRGNRICFGRFGLQALEPSWITSRQIEAGRRAITRYARRGGKLWIRIFPDKPITMRPAETRMGSGKGSPEYWVAVVKPGRILYEMSGVSETIARAAMRIAAFKMPIKTQFIKTPVLATIQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RK16_HUPLU" ac="Q5SD18" length="142" description="50S ribosomal protein L16, chloroplastic OS=Huperzia lucidula OX=37429 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>672</score>
+      <smithWatermanScore>672</smithWatermanScore>
+      <initn>687</initn>
+      <init1>672</init1>
+      <opt>672</opt>
+      <zScore>934.2</zScore>
+      <bits>178.7</bits>
+      <expectation>1.8e-44</expectation>
+      <identity>66.4</identity>
+      <positives>92.0</positives>
+      <overlap>137</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="137">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::.:: ::::. :..::::.:::: :.::::::.:::::::::.::.::::..::.:.:::::::: .:.: ::.:::::::. .:::.::::: :..:.:..:: ::..:...::::.:..:..:.   :</pattern>
+      <matchSeq start="1" end="137">MLSPKRTKFRKQHRGRLGGVSTRGNRICFGRFALQALEPAWITSRQIEAGRRAITRYARRGGKIWIRIFPDKPITVRPAETRMGSGKGSPEYWVSVVKPGRILYEVGGIPETIARAAMKIAAYKMPVRTQIIVATPIEMQNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RL16_TRIEI" ac="Q110B4" length="137" description="50S ribosomal protein L16 OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=rplP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <smithWatermanScore>671</smithWatermanScore>
+      <initn>708</initn>
+      <init1>671</init1>
+      <opt>671</opt>
+      <zScore>933.2</zScore>
+      <bits>178.5</bits>
+      <expectation>2e-44</expectation>
+      <identity>70.4</identity>
+      <positives>90.4</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="135">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::.:: .::::::  . ::.: ::...::::::.::::::::::::..::: .::.:.:::.:::: :: ::::.:::::::: .::::::::: :.::.:.: ::::. :. ::..::::::.::...</pattern>
+      <matchSeq start="1" end="135">MLSPKRTKFRKQQRGRMRGNANSGNKISFGQYALQALEPSWITSRQIEAARRAMTRYIRRGGKIWIRVFPDKPVTMRAAETRMGSGKGAPEYWVAVVKPGRIMFELGGVVEEIAREAMRLASFKLPIKTRFIVREED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RL16_ACAM1" ac="B0C1E0" length="139" description="50S ribosomal protein L16 OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=rplP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>667</score>
+      <smithWatermanScore>667</smithWatermanScore>
+      <initn>692</initn>
+      <init1>667</init1>
+      <opt>667</opt>
+      <zScore>927.6</zScore>
+      <bits>177.4</bits>
+      <expectation>4.2e-44</expectation>
+      <identity>68.7</identity>
+      <positives>88.8</positives>
+      <overlap>134</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="134">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::..::.:: :::::::  :::: . ::..:::::::.:::::::::.::..:::..::.:.:::::::: :: : ::.:::::::: .::::::::: :..:...:::  :. :. :::.:.::::::. .</pattern>
+      <matchSeq start="1" end="134">MLSPRKTKFRKQHRGRMRGKATRGNTLSFGDYGLQALEPSWITSRQIEAGRRAMTRYVRRGGKIWIRIFPDKPVTMRPAETRMGSGKGAPEYWVAVVKPGRIMYEMNGVPESTAREAMRLAAFKMPIKTKFVARPKEES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RK16_PHYPA" ac="Q6YXK9" length="138" description="50S ribosomal protein L16, chloroplastic OS=Physcomitrium patens OX=3218 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <smithWatermanScore>666</smithWatermanScore>
+      <initn>666</initn>
+      <init1>666</init1>
+      <opt>666</opt>
+      <zScore>926.3</zScore>
+      <bits>177.2</bits>
+      <expectation>5e-44</expectation>
+      <identity>70.5</identity>
+      <positives>90.9</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="132">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::.:: :::::.:  :::: : ::.:.::::::.:::::::::.::.::::..::.:::::::::: .: : ::.:::::::. .:::.::::: :..::..::: .:..:. .::::.::.:.::</pattern>
+      <matchSeq start="1" end="132">MLSPKRTKFRKQHRGRMKGIATRGNSIAFGKFALQALEPSWITSRQIEAGRRAITRYARRGGKLWIRIFPDKPITMRPAETRMGSGKGSPEYWVSVVKPGRILYEISGVPESVARAAMRIAAYKMPIRTQFITAITSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RK16_PLETE" ac="A6YGC7" length="139" description="50S ribosomal protein L16, chloroplastic OS=Pleurastrum terricola OX=34116 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <smithWatermanScore>666</smithWatermanScore>
+      <initn>697</initn>
+      <init1>666</init1>
+      <opt>666</opt>
+      <zScore>926.2</zScore>
+      <bits>177.2</bits>
+      <expectation>5e-44</expectation>
+      <identity>70.9</identity>
+      <positives>91.0</positives>
+      <overlap>134</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="134">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>:::::::::::.:::::.:  ::::.: ::.:.::::::.:::::::::.::..:::..::.:::::::::: :: : ::::::::::. .::::::::: :..:. .: : ::..:. .:.::.::::.:..:</pattern>
+      <matchSeq start="1" end="134">MLSPKRTKYRKHHRGRMKGKATRGNKIVFGDFALQALEPAWITSRQIEAGRRAMTRYARRGGKLWIRIFPDKPVTMRPAESRMGSGKGSPEYWVAVVKPGKILYEMKGVSEIIARAAMRIASYKMPIKTNFLVKSTSPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RK16_OSTTA" ac="Q0P3L6" length="141" description="50S ribosomal protein L16, chloroplastic OS=Ostreococcus tauri OX=70448 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <smithWatermanScore>666</smithWatermanScore>
+      <initn>698</initn>
+      <init1>666</init1>
+      <opt>666</opt>
+      <zScore>926.1</zScore>
+      <bits>177.2</bits>
+      <expectation>5.1e-44</expectation>
+      <identity>66.7</identity>
+      <positives>90.4</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="135">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::::: :::  .:   :::.: ::.:.:::::: :::::::::.::...::.:::.:::::.:::...::::::.:::.:::: :::: .:::: :..:...::: ::.... .::::.:.::::...:</pattern>
+      <matchSeq start="1" end="135">MLSPKRTKYRKPHRGNRKGQALRGNKISFGDFALQALEPGWITSRQIEAGRRAMSRYAKRGGKLWIRMFPDRSITARAAETRMGAGKGAPDYWVCIVKPGKILYELAGVPETIARASMRIAAYKMPVKTKFLVRDEYVAPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RK16_ANGEV" ac="A2T371" length="146" description="50S ribosomal protein L16, chloroplastic OS=Angiopteris evecta OX=13825 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <smithWatermanScore>666</smithWatermanScore>
+      <initn>666</initn>
+      <init1>666</init1>
+      <opt>666</opt>
+      <zScore>925.7</zScore>
+      <bits>177.2</bits>
+      <expectation>5.3e-44</expectation>
+      <identity>68.9</identity>
+      <positives>93.9</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="132">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::.:.::..:: ::::::: .::::.::::.:.::::::::::.:::::.::.::::..::.:::::::::: .: : ::.:::::::. .:::.::::: :..::..: :..:..:...::::.::.:.::</pattern>
+      <matchSeq start="1" end="132">MLNPRRTRFRKQHRGRMRGISTRGNRICFGKFALQALEPTWITARQIEAGRRAITRYARRGGKLWIRIFPDKPITMRPAETRMGSGKGSPEYWVSVVKPGRILYEISGVSENVARAAMKIAAYKMPIRTQFITTIKMKESILDRKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RK16_MESVI" ac="Q9MUU3" length="136" description="50S ribosomal protein L16, chloroplastic OS=Mesostigma viride OX=41882 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>662</score>
+      <smithWatermanScore>662</smithWatermanScore>
+      <initn>677</initn>
+      <init1>662</init1>
+      <opt>662</opt>
+      <zScore>920.9</zScore>
+      <bits>176.2</bits>
+      <expectation>9.9e-44</expectation>
+      <identity>64.4</identity>
+      <positives>91.9</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="135">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::.:..:::.:::. ::::.. ::.:::..::: :.:::::::.::..::::.::..::::.:::: :: : ::.:::::::. .:::::::::::..:. .:  :::..:. .:..:.:.::.:...:</pattern>
+      <matchSeq start="1" end="135">MLSPKRTKFRRHHRGKMRGVATRGNKVSFGDFGLKTLEPGWLTSRQIEAGRRAMTRYTRRGGQLWIRVFPDKPVTIRPAETRMGSGKGSPEYWVAVVKPGTILYEMKGVTPEIARSAMRVAGFKMPVKTQFVVRDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RK16_CHAGL" ac="Q8M9V1" length="138" description="50S ribosomal protein L16, chloroplastic OS=Chaetosphaeridium globosum OX=96477 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>662</score>
+      <smithWatermanScore>662</smithWatermanScore>
+      <initn>685</initn>
+      <init1>662</init1>
+      <opt>662</opt>
+      <zScore>920.8</zScore>
+      <bits>176.2</bits>
+      <expectation>1e-43</expectation>
+      <identity>66.9</identity>
+      <positives>91.9</positives>
+      <overlap>136</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="136">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::::.:..:::::.: ..::: : ::.:.::::::.:::::::::.::..:::..::.:.:::::::: :: ::::.:::::::. ..:::::::: :..:...: : :::.:. .::.:.::::.:..: .</pattern>
+      <matchSeq start="1" end="136">MLSPKRTKFRRHHRGRMKGISSRGNFIAFGKFALQALEPSWITSRQIEAGRRAMTRYARRGGKIWIRIFPDKPVTMRAAETRMGSGKGSPEFWVAVVKPGRILYEMSGVSESIAKSAMRIAAFKMPIKTQFLVKKDKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RL16_CYAP4" ac="B8HMR1" length="140" description="50S ribosomal protein L16 OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=rplP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>660</score>
+      <smithWatermanScore>660</smithWatermanScore>
+      <initn>697</initn>
+      <init1>660</init1>
+      <opt>660</opt>
+      <zScore>917.9</zScore>
+      <bits>175.7</bits>
+      <expectation>1.5e-43</expectation>
+      <identity>68.1</identity>
+      <positives>90.4</positives>
+      <overlap>135</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="135">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::.:::.:: .::::.:: :::: . ::..:::::::.:::.:::::.::..::: .::.:.:::.:::: :: : ::.:::::::: ..:::::::: :..::..: ::.:. :. :::::.:::::::...</pattern>
+      <matchSeq start="1" end="135">MLSPRRTKFRKQQRGRMEGAATRGNTLTFGDYGLQALEPAWITARQIEAGRRAMTRYIRRGGKIWIRLFPDKPVTMRPAETRMGSGKGAPEFWVAVVKPGRIMYEIAGVSEEVAREAIRLAAYKMPIKTKFIMRETTEES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RK16_CYAPA" ac="P23406" length="136" description="50S ribosomal protein L16, cyanelle OS=Cyanophora paradoxa OX=2762 GN=rpl16 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>659</score>
+      <smithWatermanScore>659</smithWatermanScore>
+      <initn>659</initn>
+      <init1>659</init1>
+      <opt>659</opt>
+      <zScore>916.8</zScore>
+      <bits>175.4</bits>
+      <expectation>1.7e-43</expectation>
+      <identity>70.5</identity>
+      <positives>92.4</positives>
+      <overlap>132</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="132">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::.:::.:: .::::.: .::::.. ::.::::::::.:::::::::.::.:.::..::.:.:::::::: :: : ::.:::::::: .::::.:::: .::::..: .:.::.:. .:..:::::::::</pattern>
+      <matchSeq start="1" end="132">MLSPRRTKFRKQQRGRMKGISTRGNNLVFGDFGLQALEPAWITSRQIEASRRAINRYVRRGGKIWIRIFPDKPVTMRPAETRMGSGKGAPEYWVAIVKPGRVIFEINGVSQEMAKAAFRIATFKLPIKTKFISSRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RK16_ANTAG" ac="Q85C49" length="136" description="50S ribosomal protein L16, chloroplastic OS=Anthoceros angustus OX=48387 GN=rpl16 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>659</score>
+      <smithWatermanScore>659</smithWatermanScore>
+      <initn>659</initn>
+      <init1>659</init1>
+      <opt>659</opt>
+      <zScore>916.8</zScore>
+      <bits>175.4</bits>
+      <expectation>1.7e-43</expectation>
+      <identity>69.2</identity>
+      <positives>92.5</positives>
+      <overlap>133</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="133">MLSPKRTKYRKYHRGRMRGAKTRGNEICFGNFGLQALEPTWITSRQIEAARRTITRYTKRGAKLWIRIFPDKTVTARAAESRMGSGKGAVDYWVAVVKPGTIIFEIGSVPEEIAKTALNLAAYKLPIKTKFIIKDNIS</querySeq>
+      <pattern>::::::.:.:: :::::.: .::::.:: :.:. :::::.:::::::::.::.:.::..::.:.:::::::: :: : ::.:::::::. ..::.::::. :..:::.:::.:::.:. .::::.::.:.:::</pattern>
+      <matchSeq start="1" end="133">MLSPKRVKFRKQHRGRMKGISTRGNQICSGKFAPQALEPAWITSRQIEAGRRAISRYARRGGKIWIRIFPDKPVTMRPAETRMGSGKGSPEFWVSVVKPNRILYEIGGVPEDIAKAAIRIAAYKMPIRTQFIILHL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

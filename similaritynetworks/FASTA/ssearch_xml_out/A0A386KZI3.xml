@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170026-0558-37407949-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170026-0558-37407949-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170026-0558-37407949-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A386KZI3|DABD_PSEMU" type="PROTEIN" length="559"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:00:26+00:00" end="2022-11-07T17:00:31+00:00" search="P0Y0M0DT0H0M5.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="DABD_PSEMU" ac="A0A386KZI3" length="559" description="N-geranyl-L-glutamate oxidase OS=Pseudo-nitzschia multiseries OX=37319 GN=dabD PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3723</score>
+      <smithWatermanScore>3723</smithWatermanScore>
+      <zScore>4823.7</zScore>
+      <bits>902.4</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>559</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="559">MNIATASLCAGLAVSGKFLSKYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFKGYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="559">MNIATASLCAGLAVSGKFLSKYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFKGYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="CP4Z1_HUMAN" ac="Q86W10" length="505" description="Cytochrome P450 4Z1 OS=Homo sapiens OX=9606 GN=CYP4Z1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>651</score>
+      <smithWatermanScore>651</smithWatermanScore>
+      <zScore>826.4</zScore>
+      <bits>162.6</bits>
+      <expectation>1.8e-38</expectation>
+      <identity>31.6</identity>
+      <positives>57.7</positives>
+      <overlap>522</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="52" end="554">YYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKL-RKGGNDIPF-LAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK--TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPL--KLMLTVLKQPWLEKHLSPA---FRTSRNLLNKAADDIVQNAK-NIDDP-------KRR-SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              : ::-...  .  . :  . .:   :  ::---:  . :: - :: --:  :--.:. .::-.:    .:.-..  :.: :----. : :  : ..---. .::    .: .-:.  :: :::...::.:..::.::.:.:. ..:.  ::    .-:. ... :..--. .. ..:  :.:..::: : : ::::. . ----------------..:. : : . :.:. : .--. : . :..  :  ..:  ---:    . :.. .. ..:. :-.. : -------:::-. :.... ::.-:..:--- .....:. :::::. :::.:::.   : :: ::  :. :..   .: .   : ..:  :. .:: :    ..: ::::.:.  :::.  :  .: -: ..::: .. : :  .:..:  :.::. :.: :-:. :.: : : .:::::.:: ::::::.:: .: :. :: .   :..    :   . .  ---. :: :  :...</pattern>
+      <matchSeq start="21" end="500">----------MEPSWLQELMAHPFLLLILLCMSL-LLFQVIRLYQRRRWMIRALHLFPAP---PAHWFYGH-KEFY--PVKE--FEVYHKLMEKYPCAVPLWVGPFTMFFS----VHDPDYAKILL---KRQDPKSAVSHKI-LESWVGRGLVTLDGSKWKKHRQIVKPGFNISILKIFITMMSES-VRMMLNKWEEHIAQNSRLELFQHVSLMTLDSIMKCAFSHQGSI----------------QLDSTLDSYLKAVFNLSKISNQRMNNFLHHNDLVFKFSSQGQIFSKFNQELHQFTEKVIQDRKESLKDKLKQDTTQKRRWDFLDILLSAKS-ENTK---DFSEADLQAEVKTFMFAGHDTTSSAISWILYCLAKYPEHQQRCRDEIRELLGDGSSITWEHLSQMPYTTMCIKECLRLYAPVVNISRLLDKPITFPDGRSLPAGITVFINIWALHHNPYFWEDPQVFNPLR-FSRENSEKIHPYAFIPFSAGLRNCIGQHFAIIECKVAVALTLLRFKLAPDHSRPPQPVRQ---VVLKSKNGIHVFAKKVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CP4AL_PIG" ac="Q9GJX5" length="504" description="Taurochenodeoxycholic 6 alpha-hydroxylase OS=Sus scrofa OX=9823 GN=CYP4A21 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>649</score>
+      <smithWatermanScore>649</smithWatermanScore>
+      <zScore>823.8</zScore>
+      <bits>162.1</bits>
+      <expectation>2.5e-38</expectation>
+      <identity>28.6</identity>
+      <positives>60.1</positives>
+      <overlap>486</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="53" end="526">YQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRF--SPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLL-DCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLN--AHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVL-KQ-----PWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :::  ..  .:. :. : : ..--. :.. :.- :. ..::   :: :   ..:--- ::...:---- :      :.:.. ..:.-: : .: :..----:.  . :  :  :   .: ::....:. : ..::.. :::.  .:.  .   . .-:. ..: :.. .. .  :.--. .:..:::.: : ::::.--.:   .  ..   . . .. . ..: . .:: .. .   :.  -.:-----  ...: . ...  .. :.: ..----- .:.   .. . :.... :. ...----:.:.::..: :: ::..:::..:..   : ::.::. :. :..   .:     :  .:  .. ::: :    ..:.:::: :.  ..:   :  .: -: ..:::  : . :. .:..:. : .::.: : :.---  .: ::. ::.::..:.:::::..::  : :..:: .   ::.</pattern>
+      <matchSeq start="16" end="474">---------------MTVPALASVSGLLQVASLLGLLLLLLKAAQLYLRRQWLLKALQQFPS-PPSHWLYGHSREFQEESELQP---LLKRVEK----YPSACARWLWGTRAMVLVYDPDYMKVVLA----RSEPKAPVLYRLLIPWIGCGLLLLNGQMWFQRRRMLTPAFHYDILKPYVGLMAKS-VQVMLDKWEQLVAQDPRLEIVGPVSLMTLDTIMKCAFSHQ--GSAQTDGDSQSYIQAIWDLKNLIFSRLRSAFLQNDIIYRLSPEGRQCQRACQKVHQHTDRVIQLRKTHLQKEGE-----MENVKKKRHLDFLDILLFARMENG----NSLSDTDVRAEVDTFMAAGHDSTASGISWVLYALASNPEHQQRCREEIQGLLGDGTSITWDHLDQMPYTTMCIKEALRLYPPVPSVGRELSKPITFPDGRSLPAGIILSLSIYGLHHNPQVWPNPEEFDPSRF---APGSARHSHAFMPFSGGSRNCIGKQFAMNEMKVVVALTLLRFELAPDPSRIPVPIQGIVLKSKNGIHLNLRKIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CP4X1_HUMAN" ac="Q8N118" length="509" description="Cytochrome P450 4X1 OS=Homo sapiens OX=9606 GN=CYP4X1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>645</score>
+      <smithWatermanScore>645</smithWatermanScore>
+      <zScore>818.5</zScore>
+      <bits>161.2</bits>
+      <expectation>5e-38</expectation>
+      <identity>29.7</identity>
+      <positives>57.0</positives>
+      <overlap>519</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="50" end="548">SKYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLA--YTTLFGSQRLLLLDCDLIKQVFTAPSGRDPM-RYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK---TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPA---FRTSRNLLNKAADDIVQN--------AKNIDDPKRR--SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              : : .::...   : . :.     . :.- ::---:  .  : - .:..   ::   : ..:  ..---.::  --. ..:----- . : :  : ..---:  :: -.: ... --  ..: ::....: .: .:::.. :.:.  .:.  : . . .-:. ..: :.:---:  ::...  :.. ..::.: : :::.: :----------:---. . . ::  ..:-  .:.  .. . ..: .  .  .::: ---:.    .::. .: :.:.--------.:. . :::.--. :.... :::. .:----...: ....::.:::.:::.: ..   : :: ::  :. ::.   ..     : ..:  .:  .: :    ..:: ::   .  :::   :  .: -: :.::: .. . :  .:..:  ::.:. : : :-:. :.:..:: .:..::.::.::::::.:: .: :. .: .  .:..-  :  --. .:: : . :: :</pattern>
+      <matchSeq start="19" end="496">------------MEFSWLETRWARPFYLAFVFCLALGLLQAIKLYLRRQRLLRDLRPF-PAP---PTHWFLGH-QKFIQDDNMEKLEEIIEKYPRA---FPFWIGPFQAFF-----CIYDPDYAKTLL---SRTDPKSQYLQKFS--PPLLGKGLAALDGPKWFQHRRLLTPGFHFNILKAYIEVMAHS-VKMMLDKWEKICSTQDTSVEVYEHINSMSLDIIMKCAFSKETN----------C---QTNSTHDPYAKAI-FELSKIIFHRLYSLLYHSDIIFKLSPQGYRFQKLSRVLNQYTDTIIQERKKSLQAGVKQDNTPKRKYQDFLDIVLSAKDESGS----SFSDIDVHSEVSTFLLAGHDTLAASISWILYCLALNPEHQERCREEVRGILGDGSSITWDQLGEMSYTTMCIKETCRLIPAVPSISRDLSKPLTFPDGCTLPAGITVVLSIWGLHHNPAVWKNPKVFDPLR-FSQENSDQRHPYAYLPFSAGSRNCIGQEFAMIELKVTIALILLHFRV-TPDPT--RPLTFPNHFILKPKNGMYLHLKKLSEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="CP4X1_MOUSE" ac="Q6A152" length="507" description="Cytochrome P450 4X1 OS=Mus musculus OX=10090 GN=Cyp4x1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>642</score>
+      <smithWatermanScore>642</smithWatermanScore>
+      <zScore>814.7</zScore>
+      <bits>160.4</bits>
+      <expectation>8.2e-38</expectation>
+      <identity>30.3</identity>
+      <positives>56.4</positives>
+      <overlap>512</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="54" end="555">QFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGF-GPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK---TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDK---ELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRRSV-LNLMMEAK-DDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              .: : .  ::  : . :  :   ::.   :-:: .       .::.   ::   : .::-----.   :  ..  :-.  . . : :  :-.: --:  ::     : .-:   .: ::. ..: .: .:: .. :::.. .:.  . : . .-:. ..: :.:---:  :.:..  :....:::.: : ::..: : .--.:   :   :---::::.----:::    :    - ... .  .    ..:. ...   . . .    :..:  . :: .  ..-:.... :.-.:: .-----..:..:: ::.::. :::.....   : :: ::  :. :..  ..: .   : ..:  :: :.: :    ..:::::  :.  :::   :  .. -:...::: .. . :  .:..:  :.::. : : :-:  :.:..::  ::.::..: ::::::.:: .: :. .: .  .:..--: .. -.  .::.   :. :  : ...</pattern>
+      <matchSeq start="17" end="501">--------------MEASWLETRWARPLHLALVFCLALVLMQAMKLYLRRQRLLRDLSPFPGPPAHWLLGHQKFLQEDNMETLDEIVKK-----HPCAFPCWVGPF-QAFFYIYDPDYAK-IFL--SRTDPKMQYLHQL-LTPCIGRGLLNLDGPRWFQHRCLLTPAFHQDILKPCVDTMAHS-VKVMLDKWEKMWTTQETTIEVFEHINLMTLDIIMKCAFGQETNCQ--INGTYESYVKATFELGEI----ISSRLYNFWHHH-DIIFKLSPKGHCFQELGKVIHQYTEKIIQDRKKILKNQVKQDDTQTSQIFLDIVLSAQAEDERA-----FSDADLRAEVNTFMWAGHDASAASISWLLYCLALNPEHQDRCRTEIRSILGDGSSITWEQLDEMSYTTMCIKETLRLIPPVPSISRELSKPLTLPDGHSLPAGMTVVLSIWGLHHNPAVWNDPKVFDPLR-FTKENSDQRHPCAFLPFSSGPRNCIGQQFAMLELKVAIALILLHFQV--APDLT-RPPAFSSHTVLRPKHGIYLHLKKLLEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="CP4A4_RABIT" ac="P10611" length="510" description="Cytochrome P450 4A4 OS=Oryctolagus cuniculus OX=9986 GN=CYP4A4 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <smithWatermanScore>639</smithWatermanScore>
+      <zScore>810.7</zScore>
+      <bits>159.7</bits>
+      <expectation>1.4e-37</expectation>
+      <identity>29.2</identity>
+      <positives>57.5</positives>
+      <overlap>506</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="44" end="533">VSGKFLSKYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFG--PKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK--TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              ..:   ::-: ::...--.:  : . :  :   ::    : --:  .. :   :: . -------. :....:  . .:      : :..-:::. : : .: ..----::.  . :..:  .   .: ::....:. : .:::.. :::.  .:.  .   : .-:. ..: :..--.  .:...  :.:..:::.: : :::..--.:  :.. ..   . ...... ..     .: .: .   :.----:--: .:---:. . .: .. .: ..:. :----------..   .: . :.... :: ...:.----:.: .:: :: ::.  ::.::.. . : .:.:::.:. :..   .:     :  .:  :. ::: :    ..:.:::: :.  ..:   :  .: -: ..: :. : . :. .: .:  :..:: : : :.---  .:  :. ::.::..:.:::::..::  : :. :: .   ::.-: :  .</pattern>
+      <matchSeq start="15" end="486">----------------MSVSALSPTRLPGSLSGLLQVA-ALLGLLL--LLLKAAQLYLHRQWLLRALQQFPCPPFHWLLGHSREFQND-------QELERIQKWVEKFPGACPWWLSGNKARLLVYDPDYLKVIL----GRSDPKAPRNYKLMTPWIGYGLLLLDGQTWFQHRRMLTPAFHYDILKPYVGLMVDS-VQIMLDRWEQLISQDSSLEIFQHVSLMTLDTIMKCAFSYQ--GSVQLDRNSHSYIQAINDLNNLVFYRARNVFHQSDFLYRLS----P--EGRL---FHRACQLAHEHTDRVIQQRKAQLQQEGELEKVRRKRRLDFLDVLLFAKMENGSS----LSDQDLRAEVDTFMFEGHDTTASGVSWIFYALATHPEHQHRCREEIQGLLGDGASITWEHLDQMPYTTMCIKEALRLYPPVPSVTRQLSKPVTFPDGRSLPKGVILFLSIYGLHYNPKVWQNPEVFDPFRF---APDSAYHSHAFLPFSGGARNCIGKQFAMRELKVAVALTLVRFEL-LPDPTRIPIPIARVVLKSKNGIHLRLRKLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="CP4AP_PIG" ac="Q8SPK0" length="504" description="Cytochrome P450 4A25 OS=Sus scrofa OX=9823 GN=CYP4A25 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>638</score>
+      <smithWatermanScore>638</smithWatermanScore>
+      <zScore>809.5</zScore>
+      <bits>159.5</bits>
+      <expectation>1.6e-37</expectation>
+      <identity>29.5</identity>
+      <positives>57.8</positives>
+      <overlap>498</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="53" end="526">YQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRF--SPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLL-DCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLN--AHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTV-LKQPWLEK----HLSPAFRTSRN---LLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :::  ..  .:. :. : : ..--. :.. :.- :. ..::   :: :   ..:--- ::...:---- :      :.:.. ..:.-: : .: :..----:.  . :  :  :   .: ::....:. : ..::.. :::.  .:.  .   . .-:. ..: :.. .. .  :.--. .:..:::.: : ::::. .:----------------..:    : : : ..---:: ....- :. .:..----.:::  : .. ---. .. .: ..:  :----------:.   .. . :.... :. ...----:.:.::.:: :: ::.  ::.::..   : ::.::..:. :..   .:     :  .:  .. ::: :    ..:.:::: :.  .::   :  .: -: ..:::  : . .. .:..:. : .::.: : :.---  .: ::. ::.::..:.:::::..::  : :. :: .   ::.</pattern>
+      <matchSeq start="16" end="474">---------------MTVPALASASGLLQVASLLGLLLLLLKAAQLYLRRQWLLKALQQFPS-PPSHWLYGHSREFQEESELQP---LLKRVEK----YPSACARWLWGTRAMVLVYDPDYMKVVLA----RSEPKAPVLYRLLIPWIGCGLLLLNGQTWFQRRRMLTPAFHYDILKPYVGLMAKS-VQVMLDKWEQLVAQDPRLEIVGPVSLMTLDTIMKCAFSHQGSA----------------QTDGDSHSYIQAIWD---LKNLFSIRTKSAFLQNDIIYRLSPEGRKNHRAARIAHQHTDRVIQLRKAQLQKQGEMENVRKKRHLDFLDILLLARMEKG----NSLSDTDLRAEVDTFMFEGHDTTASGISWILYALASHPEHQQRCREEIQGLLGDGTSITWDHLDQMPYTTMCIKEALRLYPPVPGVSRELSKPITFPDGRSLPAGIILSLSVYSLHHNPQVWPNPEEFDPSRF---APGSARHSHAFMPFSGGSRNCIGKQFAMNEMKVAVALTLLRFELAPDPSRKPTVIPEVVLHSKNGIHLKLRKLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CP4C1_BLADI" ac="P29981" length="511" description="Cytochrome P450 4C1 OS=Blaberus discoidalis OX=6981 GN=CYP4C1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>635</score>
+      <smithWatermanScore>635</smithWatermanScore>
+      <zScore>805.5</zScore>
+      <bits>158.7</bits>
+      <expectation>2.7e-37</expectation>
+      <identity>28.3</identity>
+      <positives>62.3</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="151" end="558">FLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVY--LREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVD-VWKKTAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADD------------IVQNAKN--IDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITK--HSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFKGYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              ::  .  :  ::--.:  .:.::..  :..:  ::... :.:.  .:-: .. .     : :: -. .:..: ....   ..  .::.: ..:.. ..::..------:  .. .  : .--:: .    :  :     ...    . :. .  .:  ... ::. ..------------ ..: ..--.   :: . :.:..::... .-----:..::..:.:: ::.  ::.:::.   :.:..:...:.::.::. .. .--.. : .: . . ::-:.::   ..:.:::.  . .:.:: ... ..  : .:::  . . :. .::. :.. .:: :.:. -:  :. .::: .:..::.:: ::::::.::..: : ..... .::...  .--: . .:. : . :. .  :.. . ::</pattern>
+      <matchSeq start="97" end="505">AKLYGPLYRIWAGPIAQVGLTRPEHVELILRDTKHIDKSLVYSFIRPWLGEGLLTGTGAKWHSHRKMITPTFHFKIL-DIFVDVFVEKSEILVKKLQSKVGGKDFDIYPFITHCALDIICETAMGIQMNAQE------ESESEYVKAVYE--ISELTMQRSVRPWLHPKVIFDLTTMGKRYAECLRILHGFTNKVIQERKSLRQMTGMKPTISNEEDELLGKKKRLAFLDLLLEASENGT-----KMSDTDIREEVDTFMFEGHDTTSAGICWALFLLGSHPEIQDKVYEELDHIFQGSDRSTTMRDLAD-MKYLERVIKESLRLFPSVPFIGRVLKEDTKIGDYLVPAGCMMNLQIYHVHRNQDQYPNPEAFNPDN-FLPERVAKRHPYAYVPFSAGPRNCIGQKFATLEEKTVLSSILRNFKVRSIE--KREDLTLMNELILRPESGIKVELIPRLPADAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="CP4AA_RAT" ac="P08516" length="509" description="Cytochrome P450 4A10 OS=Rattus norvegicus OX=10116 GN=Cyp4a10 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <smithWatermanScore>629</smithWatermanScore>
+      <zScore>797.7</zScore>
+      <bits>157.3</bits>
+      <expectation>7.2e-37</expectation>
+      <identity>29.4</identity>
+      <positives>59.9</positives>
+      <overlap>436</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="127" end="555">LEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAG--TSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              ..::.- :.. : : .: ..----::.  .    :  :   .: ::....:. : .:::.. :::.  .:.  . . . .-.. ..: :.. ::--.::..  :.:..:::.. : ::::--:.:  ..   .   . .:...: . : .   : ..  --. .  ..  : ..     .   . . :   : .::: ...  :..---. :.... :. ...----..:.: .:: :: ::.  ::.::.. . : .:.:::.:. :..   .. .   : ..:  .. ::. :    ..:.:::: :.  : :      .: -: ..: : .. . :. .:..:  : .:: : : :.---  .: ::. .:.::..:.:::::..::  : :.::: .   ::.-: :  :-  : .  ..-:: :  : .:.</pattern>
+      <matchSeq start="89" end="505">FFGHKQFQGDKELQQIMTCVENFPSAFPRWFWGSKAYLIVYDPDYMKVIL----GRSDPKANGVYRLLAPWIGYGLLLLNGQPWFQHRRMLTPAFHYDILKPYVKNMADS-IRLMLDKWEQLAGQDSSIEIFQHISLMTLDTVMKCAFSH--NGSVQVDGNYKSYIQAIGNLNDLFHSRVRNIFHQNDT--IYNFSSNGHLFNRACQLAHDHTDGVIKLRKDQLQNAGELEKVKKKRRLDFLDILLLARMENG----DSLSDKDLRAEVDTFMFEGHDTTASGVSWIFYALATHPEHQQRCREEVQSVLGDGSSITWDHLDQIPYTTMCIKEALRLYPPVPGIVRELSTSVTFPDGRSLPKGIQVTLSIYGLHHNPKVWPNPEVFDPSRF---APDSPRHSHSFLPFSGGARNCIGKQFAMSEMKVIVALTLLRFEL-LPDPTK-VPIPLPRLV-LKSKNGIYLYLKKLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="CP4A6_RABIT" ac="P14580" length="510" description="Cytochrome P450 4A6 OS=Oryctolagus cuniculus OX=9986 GN=CYP4A6 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>626</score>
+      <smithWatermanScore>626</smithWatermanScore>
+      <zScore>793.8</zScore>
+      <bits>156.6</bits>
+      <expectation>1.2e-36</expectation>
+      <identity>30.5</identity>
+      <positives>59.5</positives>
+      <overlap>417</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="127" end="526">LEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK--TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSR---NLLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :.::.-.::. : : .: ..----::.  .    : .:   .: ::....:. : .:::.. :::.  .:.  .   . .-:. ..: :..--.  .:...   .:..:::.: : ::::.--.:  :.. ..   . .:.... ..: .  .: .: -----:. .-------:::  : :.---.: .. .: ..:. :----------..   .: . :.... :: ...:.----:.: .:: :: ::.  ::.::..   : .:.:::.:. :..   .:     :  .:  :. ::: :    ..:.:::: :.  ..:   .  .: -: ..: :. . . :. .:..:  : .:: : :---:    .: ::. ::.::..: :::::..::  : :. :: .   ::.</pattern>
+      <matchSeq start="90" end="480">LGHSREFQNGHELQVMLKWVEKFPSACPRWLWGSRAHLLIYDPDYMKVIL----GRSDPKAQGSYRFLAPWIGYGLLLLNGQTWFQHRRMLTPAFHYDILKPYVGLMADS-VQIMLDKWEQLVSQDSSLEVFQDISLMTLDTIMKCAFSHQ--GSVQLDRNSQSYIQAVGDLNNLFFSRVRNVFHQSD-----TIYR-------LSPEGRLSHRACQLAHEHTDRVIQQRKAQLQQEGELEKVRRKRRLDFLDVLLFAKMENGSS----LSDQDLRAEVDTFMFEGHDTTASGISWIFYALATHPEHQHRCREEIQGLLGDGASITWEHLDQMPYTTMCIKEALRLYPPVPGVGRQLSSPVTFPDGRSLPKGVIVTLSIYALHHNPKVWPNPEVFDP---FPFAPGSARHSHAFLPFSGGPRNCIGKQFAMNELKVAVALTLVRFELLPDPKRVPDQKPRLVLKSSNGIHLRLRKLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="CP4A7_RABIT" ac="P14581" length="511" description="Cytochrome P450 4A7 OS=Oryctolagus cuniculus OX=9986 GN=CYP4A7 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>626</score>
+      <smithWatermanScore>626</smithWatermanScore>
+      <zScore>793.8</zScore>
+      <bits>156.6</bits>
+      <expectation>1.2e-36</expectation>
+      <identity>29.7</identity>
+      <positives>57.7</positives>
+      <overlap>499</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="533">KYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFG--PKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLL-LDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTA--GTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPL-GLISRVTHKEENFKGYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              : : ::... -.:. :. : : .. -::    : --:. .. :   ::---:.     ..::...:  .  :----  :.::. .:.- : : .: ..----::.  .    : .:   .: ::...::. : .:::.. :::.  .:.  .   : .-:. ..:  .: :-- . ...  :.:..::..: : ::::.-.. .: .. ..   . . :..:  .. .  .: .: .   :.----:--: .::-- :. .-: .. .: ..:. :----------..   .: . :.... :: ...:.----:.: .:: :: ::.  ::.::..   : .:.:::.:. :..   .:     :  .:  :. :.: :    ..:.:::: :.-:. :...       : ..: :  . . :. .:..:  : .:: : : :.---  .: ::. ::.::..:.:::::..::  : :. :: .   ::.-: :  .</pattern>
+      <matchSeq start="21" end="487">----------MSVSALSSTRLPGSFSGFLQAAALLGLLLL-LLKAAQLYLRRQWL-LRALQQFPCPPSHWLLGHSREF---PIDSELQQVLKRVEKFPSACP----RWLWGSELFLICYDPDYMKTIL----GRSDPKARVSYSFLAPWIGYGLLLLEGQTWFQHRRMLTPAFHYDILKPYVGLMVDS-VQVMLDKLEKLARKDAPLEIYEHVSLMTLETIMKCAFSHQ-GSVQLESRTSKSYIQAVRELSDLALQRVRNVFHQSDFLYRLS----P--EGRLS--HRACQ-LAHEHTDRVIQQRKAQLQQEGELEKVRRKRRLDFLDVLLFAKMENGSS----LSDQDLRAEVDTFMFEGHDTTASGISWIFYALATHPEHQHRCREEIQGLLGDGASITWEHLDKMPYTTMCIKEALRLYPPVPGVGSKLSSPVTFPDGRSLPKGIIITLSIYGLHHNPKVWPNPEVFDPSRF---APGSARHSHAFLPFSGGSRNCIGKQFAMNELKVAVALTLVRFEL-LPDPTRVPIPITRLVLKSKNGIHLRLRKLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CP4A2_RAT" ac="P20816" length="504" description="Cytochrome P450 4A2 OS=Rattus norvegicus OX=10116 GN=Cyp4a2 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>623</score>
+      <smithWatermanScore>623</smithWatermanScore>
+      <zScore>790.0</zScore>
+      <bits>155.9</bits>
+      <expectation>1.9e-36</expectation>
+      <identity>30.0</identity>
+      <positives>60.6</positives>
+      <overlap>414</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="127" end="533">LEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNA--HLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              : :: -:.:: : : .: :.----::. ---:: :  :   .: ::....:..: .:::.. :::.  .:.  .   . .-:  ..: :.:    .  :. --..:..:::.. : ::::.--.:  :.  ..   : . .... ..  . .:: ..--... .. ..  : ..     .   . . :.    .:: ....  ...---. :.... :: ...----..:.: .:: :: ::.  ::.::..   : .:.:::.:. ::.   .. .   :  ..  .. ::: :    ..:.::::::.  .::   .  .: -: .:: :  . : :. .:..:..: .:. : : :.---  .: ::. :..::..:.:::::..::  : :. :: .   ::.-: :  .</pattern>
+      <matchSeq start="87" end="480">HWLWGHNLKDREFQQVLTWVEKFPGACLQWLSGSTARVLLYDPDYVKVVL----GRSD---PKPYQSLAPWIGYGLLLLNGKKWFQHRRMLTPAFHYDILKPYVKIMADS-VSIMLDKWEKLDDQDHPLEIFHYVSLMTLDTVMKCAFSHQ--GSVQLDVNSRSYTKAVEDLNNLIFFRVRSAFYGN--SIIYNMSSDGRLSRRACQIAHEHTDGVIKTRKAQLQNEEELQKARKKRHLDFLDILLFAKMEDG----KSLSDEDLRAEVDTFMFEGHDTTASGISWVFYALATHPEHQERCREEVQSILGDGTSVTWDHLDQMPYTTMCIKEALRLYSPVPSVSRELSSPVTFPDGRSIPKGIRVTILIYGLHHNPSYWPNPKVFDPSRF---SPDSPRHSHAYLPFSGGARNCIGKQFAMNELKVAVALTLLRFEL-LPDPTRIPVPMPRLVLKSKNGIHLRLKKLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="CP4A5_RABIT" ac="P14579" length="511" description="Cytochrome P450 4A5 OS=Oryctolagus cuniculus OX=9986 GN=CYP4A5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>623</score>
+      <smithWatermanScore>623</smithWatermanScore>
+      <zScore>789.8</zScore>
+      <bits>155.9</bits>
+      <expectation>2e-36</expectation>
+      <identity>28.3</identity>
+      <positives>56.6</positives>
+      <overlap>519</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="44" end="538">VSGKFLSKYYQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFG--PKSFVYGMFYEFLEAPFMEPPIEALKKLRK------GGNDIPFLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKK--TAGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSR---NLLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              ..:   ::-: ::... -.:. :. : : .. -::    : --:  .. :   ::     ..  .. ..:. .------::: .------------:. : : : .: ..----::.  .    :...   .: ::....:. : .:::.. :::.  .:.  .   : .-:. ..: :..--.  .:...   .:..:::.: : :::..-.. .: .. ..   . .:.... ... .   : .: -----:. .-------:::  : :.---.: .. .: ..:. :----------..   .: . :.... :: ...:----.:.: .:: :: ::.  ::.::.. . : .:.:::.:. :..   .:     :  .:  :. ::: :    ..:..::: :.  :::   .  .: -: ..: : .. . :. .:..:. : .:: : : :.---  .: ::. ::.::..:.:::::..::  : :. :: .   ::.-: :  .  : :</pattern>
+      <matchSeq start="15" end="492">----------------MSVSALSPTRLPGSLSGLLQVA-ALLGLLLL-LLKAAQLYLRRQWL-LRALQQFPCPPFHWLLGHSREFQMNQELQQILKWVEKFPRACPHWIGGNKV------------RVQLYDPDYMKVIL----GRSDPKSRGSYTFVAPWIGYGLLLLNGQPWFQHRRMLTPAFHYDILKPYVGLMVDS-VQIMLDKWEQLVSQDSSLEVFQDISLMTLDTIMKCAFSYQ-GSVQLDSRNSQSYIQAVGDLNNLVFARVRNIFHQSD-----TIYR-------LSPEGRLSHRACQLAHEHTDRVIQQRKAQLQQEGELEKVRRKRRLDFLDVLLFAKMENGS----SLSDQDLRAEVDTFMFEGHDTTASGVSWIFYALATHPEHQHRCREEIQGLLGDGASITWEHLDQMPYTTMCIKEAMRLYPPVPAISRDLSSPVTFPDGRSLPKGFTVTLSIYGLHHNPNVWPNPEVFDPGRF---TPGSARHSHAFLPFSGGARNCIGKQFAMNELKVAVALTLVRFEL-LPDPTRIPKPTARLVLKSNNGIHLRLRKLQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CP4AB_HUMAN" ac="Q02928" length="519" description="Cytochrome P450 4A11 OS=Homo sapiens OX=9606 GN=CYP4A11 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>622</score>
+      <smithWatermanScore>622</smithWatermanScore>
+      <zScore>788.4</zScore>
+      <bits>155.6</bits>
+      <expectation>2.4e-36</expectation>
+      <identity>28.9</identity>
+      <positives>57.7</positives>
+      <overlap>492</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="53" end="533">YQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGFG--PKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNA--HLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNL--LNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :::-...  .:  : . :  :   :.    : --:. ...: . :. . -------. :....:  . .:      :.:..-:. : : : .: ..----::.  .    : .:   .: ::....:. : .:::.. :::.  .:.  .   . .-:. ..: :..  : .  :..--:.:..:::.: : ::::.--.:  ... ..   . ...... ..: .  :: ..     ::   .-: ..  . : . . ..--: :: ---.:.  ...  ::.---. :.... :: ...:---- :.: .:: :: ::.  ::.::..   : ::.:::.:  ::.   .: .   :  .:  .. ::: :    ..:.:::: :.  :.:      .: -: ..: :  . . :. .:..:  : .:: : : :.---  .: .:. ::.::..:.:::::..::  : :. .: .   ::.-: :  .</pattern>
+      <matchSeq start="22" end="486">---------MSVSVLSPSRLLGDVSGILQAASL-LILLLLLIKAVQLYLHRQWLLKALQQFPCPPSHWLFGHIQELQQD-------QELQRIQKWVETFPSACPHWLWGGKVRVQLYDPDYMKVIL----GRSDPKSHGSYRFLAPWIGYGLLLLNGQTWFQHRRMLTPAFHYDILKPYVGLMADS-VRVMLDKWEELLGQDSPLEVFQHVSLMTLDTIMKCAFSHQ--GSIQVDRNSQSYIQAISDLNNLVFSRVRNAFHQNDTIYSLTSAGR-WTHRACQLAHQHTDQVIQLRKAQ---LQKEGELEKIKRKRHLDFLDILLLAKMENGS----ILSDKDLRAEVDTFMFEGHDTTASGISWILYALATHPKHQERCREEIHSLLGDGASITWNHLDQMPYTTMCIKEALRLYPPVPGIGRELSTPVTFPDGRSLPKGIMVLLSIYGLHHNPKVWPNPEVFDPFRF---APGSAQHSHAFLPFSGGSRNCIGKQFAMNELKVATALTLLRFEL-LPDPTRIPIPIARLVLKSKNGIHLRLRRLPNPCEDKDQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CP4AO_PIG" ac="Q8SPK1" length="504" description="Cytochrome P450 4A24 OS=Sus scrofa OX=9823 GN=CYP4A24 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>619</score>
+      <smithWatermanScore>619</smithWatermanScore>
+      <zScore>784.8</zScore>
+      <bits>154.9</bits>
+      <expectation>3.8e-36</expectation>
+      <identity>29.5</identity>
+      <positives>57.8</positives>
+      <overlap>498</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="53" end="526">YQFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYY--RFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLL-DCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLN--AHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTV-LKQPWLEK----HLSPAFRTSRN---LLNKAADDIVQNAK----------NIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :::  ..  .:. :. : --.. .. :.. :.- :. ..::   :: :   .-::.--::...:---- :       .:.. ..:.-: : .: :..  ---::-.    :  :   .: ::....:. : ..::.. :::.  .:.  .   . .-:. ..: :.. .. .  :.--. .:..:::.: : ::::. .:----------------..:    : : : ..---:: ....- :. .:..----.:::  : .. ---. .. .: ..:  :----------:.   .. . :.... :. ...----:.:.::.:: :: ::.  ::.::..   : ::.::..:. :..   .:     :  .:  .. ::: :    ..:.:::: :.  .::   :  .: -: ..::: .: . :. .:..:. : .::.: : :.---  .: ::. ::.::..:.:::::..::  : :. :: .   ::.</pattern>
+      <matchSeq start="16" end="474">---------------MTVPALASASGLLQVASLLGLLLLLLKAAQLYLHRQWLLKALQQFPS-PPSHWLYGHSREFQEESEL-PPL--LKRVEK----YPSACALWRWGTRAMVLVYDPDYMKVVLARS---DP-KNSVVYRLLIPWIGCGLLLLNGQTWFQRRRMLTPAFHYDILKPYVGLMAKS-VQVMLDKWEQLVAQDPRLEIVGPVSLMTLDTIMKCAFSHQGSA----------------QTDGDSHSYIQAIWD---LKNLFSIRTKSAFLQNDIIYRLSPEGRKNHRAARIAHQHTDRVIQLRKAQLQKQGEMENVRKKRHLDFLDILLLARMEKG----NSLSDTDLRAEVDTFMFEGHDTTASGISWILYALASHPEHQQRCREEIQGLLGDGTSITWDHLDQMPYTTMCIKEALRLYPPVPGVSRELSKPITFPDGRSLPAGITLSLSIYGLHHNPQVWPNPEEFDPSRF---APGSARHSHAFMPFSGGSRNCIGKQFAMNEMKVAVALTLLRFELAPDPSRKPIATPEVVLNSKNGIHLKLRKLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="CP4X1_RAT" ac="Q8K4D6" length="507" description="Cytochrome P450 4X1 OS=Rattus norvegicus OX=10116 GN=Cyp4x1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>616</score>
+      <smithWatermanScore>616</smithWatermanScore>
+      <zScore>780.8</zScore>
+      <bits>154.2</bits>
+      <expectation>6.3e-36</expectation>
+      <identity>30.4</identity>
+      <positives>55.6</positives>
+      <overlap>520</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="54" end="555">QFLSTSQSDEVGFIEIMNMGMTGNDAVACASLGFVMYCVLSFARSYYRFRFSPLRNAPGF-GPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDI--PFLAYTTLFGSQRLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKT---AGTSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDK---ELGEVDDPLISSI----GAAFSSSP----LKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRRSVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              .: : .  ::  : . :  :   ::.   :-:: .       .::.   ::   : .:.   .    --:: :.  ..--------: :  :-.: --:  ::     : .-.   .: ::. ..: .: .:: .. :::.. .:.  .   . .-:. ..: :.::---  :.:..  :....:::.: : ::..: : .--.:   :   :---::::. .  . ..----   :. ::----.. .  :..: - :: ..   .: .. .:.--::-.:...:. :------. :  .: :...------..:..::.::.::. :::.....   : :: ::  :. :..  ..: .   : ..:  :: :.. :    ..:::::  :.  :::   :  .. -:...::: .. . :  .:..:  ::::. : : :-:  :.: .::  ::.::..: ::::::.:: .: :. .: .   :.. -::  .  --.::.   :. :  : ...</pattern>
+      <matchSeq start="17" end="501">--------------MEASWLENRWARPLHLALVFCLALVLMQAVKLYLRRQRLLRDLRPFPGPTAHWLLGHQKFLQEDNMEKLDEIVKEYPCAFPCWVGPFQAFFYIY--------DPDYAK-IFL--SRTDPKTQYLHQL-MTPFLGRGLLNLDGPRWFQHRCLLTPAFHQDILKPCVDMMAHS-VNMMLDKWEKTWTTQETTIEVFEHINLMTLDIIMKCAFGQETNCQ--INGTYESYVKATFELGEIISSRLYNFWHHHDIIFKLSPKGHCFQELGKVIHQC-TEKIIQDRKKTLKDQVNQ--DD-TQTSQNFLD------IVLSAQAGDEKA------FSDADLRSEVNTFMWAGHDASAASISWLLYCLALNPEHQDRCRTEIRSILGDGSSITWEQLDEIPYTTMCIKETLRLIPPIPSISRELSKPLTLPDGHSLPAGMTVVLSIWGLHHNPAVWKDPKVFDPLR-FTKENSEQRHPCAFLPFSSGPRNCIGQQFAMLELKVAIALTLLRFRVA-ADLTRPP--AFSSHTVLRPKHGIYLHLKKLPEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CP4FB_HUMAN" ac="Q9HBI6" length="524" description="Cytochrome P450 4F11 OS=Homo sapiens OX=9606 GN=CYP4F11 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>616</score>
+      <smithWatermanScore>616</smithWatermanScore>
+      <zScore>780.5</zScore>
+      <bits>154.2</bits>
+      <expectation>6.5e-36</expectation>
+      <identity>30.2</identity>
+      <positives>57.3</positives>
+      <overlap>450</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="101" end="526">RFRFSPLRNAPGFGPKSFVYGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQRLLLLDC--DLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTA--GTS-INLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPA---FRTSRNLLNKAADDIVQN------AKNIDD-----PKRRSV--LNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQAD--QMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              .. :  :..: : .  .  :- ..   .:    ::. :--:.:. . .: ..  :-.    : .:.  .::::..  :..::::::.. :::.  .:.  .     .-:. . : :.. :--:..-...  :.:..::: . : .:: : :----------: .:----- .  :..:-  .:.   :    .: .  .  .:.: ---:: . .:..  .: ..:.------...:::----- : ...--..... .::.....----:.: ..: :. ::.  ::.::..   : :: :: .:. ::.   .. .   : . : .:  :--:. .:   ..:.:::. :. .:::   ..  . -: .:: :    : :  :: .:  : ::: . : :-:: :. ..:  .:::::.:: :::::: ::  : :...: .  .:.:</pattern>
+      <matchSeq start="66" end="491">AWTYTFYDNCRRLQCFPQPPKQNWFWGHQGLVTPTEEGMKTLTQLVTTYP-QGFKLWLGPTFPLLILCHPDIIRPITSASAAVAP-KDMIFYGFLKPWLGDGLLLSGGDKWSRHRRMLTPAFHFNILKPYMKIFNKS-VNIMHDKWQRLASEGSARLDMFEHISLMTLDSLQKCVFSFESN----------CQEK-----PSEYIAAI-LELSAFVEKRNQQILLHTDFLYYLTPDGQRFRRACHLVHDFTDAVIQERRCTLPTQGIDDFLKNKAKSKTLDFIDVLLLSKDEDGKE----LSDEDIRAEADTFMFEGHDTTASGLSWVLYHLAKHPEYQEQCRQEVQELLKDREPIEIEWDDLAQLPFLTMCIKESLRLHPPVPVISRCCTQDFVLPDGRVIPKGIVCLINIIGIHYNPTVWPDPEVYDPFR-FDQENIKERSPLAFIPFSAGPRNCIGQAFAMAEMKVVLALTLLHFRILPTHTEPRRKPELILRAEGGLWLRVEPLGANSQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="CP4AE_RAT" ac="P20817" length="507" description="Cytochrome P450 4A14 OS=Rattus norvegicus OX=10116 GN=Cyp4a14 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>612</score>
+      <smithWatermanScore>612</smithWatermanScore>
+      <zScore>775.6</zScore>
+      <bits>153.2</bits>
+      <expectation>1.2e-35</expectation>
+      <identity>29.0</identity>
+      <positives>60.6</positives>
+      <overlap>414</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="127" end="533">LEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNA--HLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              : ::.-:.:: : : .: :.----::.  .    : .:   .: ::....:..: .:::.. :::. ..:.  .   . .-:. ..: :.:    .  :. --..:..:::.. : ::::.--.:  :.  ..   : . ....  .  . .:: ..--... .. ..  : ..     .   . . :     .:: ....  ...---. :.... :: ...----..:.: .:: :: ::.  ::.::..   : .:.:::.:. ::.   .. .   :  ..  .. ::. :    ..:.:::: :.  .::   .  .: -: .:: : .  : :. .:..:..: .:. : : :.---  .: ::. :..::..:.:::::..::  : :. :: .   ::.-: :  .</pattern>
+      <matchSeq start="87" end="483">HWLWGHDLKDREFQQVLTWVEKFPGACLQWLSGSKTRVLLYDPDYVKVVL----GRSDPKASGIYQFLAPWIGYGLLLLNGKKWFQHRRMLTPAFHYGILKPYVKIMADS-VNIMLDKWEKLDDQDHPLEIFHYVSLMTLDTVMKCAFSHQ--GSVQLDVNSRSYTKAVEDLNNLTFFRVRSAFYGN--SIIYNMSSDGRLSRRACQIAHEHTDGVIKMRKAQLQNEEELQKARKKRHLDFLDILLFAKMEDG----KSLSDEDLRAEVDTFMFEGHDTTASGISWVFYALATHPEHQERCREEVQSILGDGTSVTWDHLDQIPYTTMCIKEALRLYPPVPSVSRELSSPVTFPDGRSIPKGITTTILIYGLHHNPSYWPNPKVFDPSRF---SPDSPRHSHAYLPFSGGARNCIGKQFAMNELKVAVALTLLRFEL-LPDPTRIPVPMARLVLKSKNGIHLRLKKLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CP4AA_MOUSE" ac="O88833" length="509" description="Cytochrome P450 4A10 OS=Mus musculus OX=10090 GN=Cyp4a10 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <smithWatermanScore>608</smithWatermanScore>
+      <zScore>770.4</zScore>
+      <bits>152.2</bits>
+      <expectation>2.4e-35</expectation>
+      <identity>28.5</identity>
+      <positives>59.9</positives>
+      <overlap>414</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="127" end="533">LEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAG--TSINLNAHLSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              ..::.- : . : : .: ..----::.  .    :  :   .: ::....:. : .:::.. :::.  .:.  . . . .-.. ..: :.. : --.::..  :.:..:::.. : ::::.--.:  ..   .   . .:.... . : .   : ..     :.--..  : :.     .   . . :   : .:.  ...  :..---. :.... :. ...----....: .:: :: ::.  ::.::.. . : .:.:::.:: :..   .. .   : ..:  .. ::. :    ..:.:::: :.  : :      .: -: ..: :... . :. .:..:  : .:: : : :.---  .: ::. .:.::..:.:::::..::  : :.::: .   ::.-: :  .</pattern>
+      <matchSeq start="89" end="485">FFGHEKFKGDQELQEIVSCIENFPSAFPRWFWGSKAYLTVYDPDYMKVIL----GRSDPKANGAYRLLAPWIGYGLLLLNGQPWFQHRRMLTPAFHYDILKPYVKNMADS-IRLMLDKWERLADQDSSIEIFQHISLMTLDTVMKCAFSHK--GSVQVDGNYRTYLQAIGDLNNLFHSRVRNIFHQNDTIYKLS--SNGRLAKQACQLAHDHTDGVIKLRKDQLQDEGELEKIKKKRRLDFLDILLFARMENG----DSMSDKDLRAEVDTFMFEGHDTTASGVSWIFYALATHPDHQQRCREEVQSLLGDGSSITWDHLDQIPYTTMCIKEALRLYPPVPGIVRELSTSVTFPDGRSLPKGVQVTLSIYGLHHNPKVWPNPEVFDPSRF---APDSPRHSHSFLPFSGGARNCIGKQFAMSELKVIVALTLLRFEL-LPDPTRVPMPLARLVLKSKNGIYLHLKKLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CP4AE_MOUSE" ac="O35728" length="507" description="Cytochrome P450 4A14 OS=Mus musculus OX=10090 GN=Cyp4a14 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>607</score>
+      <smithWatermanScore>607</smithWatermanScore>
+      <zScore>769.1</zScore>
+      <bits>152.0</bits>
+      <expectation>2.8e-35</expectation>
+      <identity>29.0</identity>
+      <positives>59.4</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="120" end="533">YGMFYEFLEAPFMEPPIEALKKLRKGGNDIPFLAYTTLFGSQ-RLLLLDCDLIKQVFTAPSGRDPMRYPKHYVYLREVVGDGLVVVEGSEWSRHRRIVQPAFQSAFLRDAITTTVPTLVENLVDVWKKTAGTSINLNA-H-LSIITLDVIGKVAFSHEFNASKLLNEWAECPDKELGEVDDPLISSIGAAFSSSPLKLMLTVLKQPWLEKHLSPAFRTSRNLLNKAADDIVQNAKNIDDPKRR---SVLNLMMEAKDDESSKARNKLTDTELRDEVKTFLVAGHETTSTWAHWSLYVLATRPDIQEKVFADITKHSPDDKTILLEQADQMEYLWAFMNETLRLYSPLGLISRVTHKEENFK-GYTIPAGTNLRIPIHLIHRHPDHWKDPEDFKPERWFDTEESSKRHKFAFIPFAAGGRNCIGQRFASMEAKIIVANVAKNFEIHLADSMKGKKITFSNFISLKCKPEIEIYVTPRG</querySeq>
+      <pattern>                              :      : ::.-:.:: : : .: :.----::.  .    : ..   .: ::....:..: .:::.. :::.  .:.  .   . .-:. ..: :.:  : .  :. -:-.:..:::.. : :::..--.:  :.: ..   : . ....  .  .  :: .-- ... .. ..  : .:     .   . . :   . .:: ....  ...---. :.... :. ..----::.:.: .:: :: ::.  ::.::..   : .:.:::.:. :..   .. .   :  ..  ..  :: :    ..:.:::: :.  .::   .  .: -: .:: : .  : :. .:..:  : .:. : : :.---  .:..:. :..::..:.:::::..::  : :. :: .   ::.-: :  .</pattern>
+      <matchSeq start="80" end="483">HFPCMPSHWLWGHHLKDKELQQILIWVEKFPSACLQCLSGSNIRVLLYDPDYVKVVL----GRSDPKASGIYQFFAPWIGYGLLLLNGKKWFQHRRMLTPAFHYDILKPYVKIMADS-VNIMLDKWEKLDGQDHPLEIFHCVSLMTLDTVMKCAFSYQ--GSVQLDENSKLYTKAVEDLNNLTFFRLRNAFYK--YNIIYNMSSDGRLSHHACQIAHEHTDGVIKMRKSQLQNEEELQKARKKRHLDFLDILLFARMED----RNSLSDEDLRAEVDTFMFEGHDTTASGISWIFYALATHPEHQQRCREEVQSILGDGTSVTWDHLGQMPYTTMCIKEALRLYPPVISVSRELSSPVTFPDGRSIPKGITATISIYGLHHNPRFWPNPKVFDPSRF---APDSSHHSHAYLPFSGGSRNCIGKQFAMNELKVAVALTLLRFEL-LPDPTRIPVPIARLVLKSKNGIHLCLKKLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

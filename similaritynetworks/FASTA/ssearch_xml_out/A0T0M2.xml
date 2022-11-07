@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-172339-0514-25844618-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-172339-0514-25844618-p1m.m9&quot; -m &quot;F10 fasta-R20221107-172339-0514-25844618-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0M2|PSBI_PHATC" type="PROTEIN" length="38"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:23:39+00:00" end="2022-11-07T17:23:42+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBI_PHATC" ac="A0T0M2" length="38" description="Photosystem II reaction center protein I OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <smithWatermanScore>240</smithWatermanScore>
+      <zScore>439.0</zScore>
+      <bits>83.3</bits>
+      <expectation>6.9e-17</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBI_TRICV" ac="P49511" length="38" description="Photosystem II reaction center protein I OS=Trieres chinensis OX=1514140 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <smithWatermanScore>228</smithWatermanScore>
+      <zScore>417.6</zScore>
+      <bits>79.4</bits>
+      <expectation>1.1e-15</expectation>
+      <identity>92.1</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::::::::.::::::::::.:::::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MLTLKILVYTTVIFFVSLFIFGFLSSDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBI_THAPS" ac="A0T0U9" length="38" description="Photosystem II reaction center protein I OS=Thalassiosira pseudonana OX=35128 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <smithWatermanScore>225</smithWatermanScore>
+      <zScore>412.3</zScore>
+      <bits>78.4</bits>
+      <expectation>2.1e-15</expectation>
+      <identity>89.5</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::::::::.::::::::::.:::::::::::.:.:</pattern>
+      <matchSeq start="1" end="38">MLTLKILVYTTVIFFVSLFIFGFLSSDPSRNPNRRDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBI_NEOYE" ac="Q1XDQ1" length="38" description="Photosystem II reaction center protein I OS=Neopyropia yezoensis OX=2788 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <zScore>392.8</zScore>
+      <bits>74.7</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>78.9</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::.::::.:::.:::.::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKIFVYTTVIFFISLFVFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBI_PORPU" ac="P51236" length="38" description="Photosystem II reaction center protein I OS=Porphyra purpurea OX=2787 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <smithWatermanScore>214</smithWatermanScore>
+      <zScore>392.8</zScore>
+      <bits>74.7</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>78.9</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::.::::.:::.:::.::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKIFVYTTVIFFISLFVFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBI_GRATL" ac="Q6B8Q2" length="38" description="Photosystem II reaction center protein I OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>211</score>
+      <smithWatermanScore>211</smithWatermanScore>
+      <zScore>387.4</zScore>
+      <bits>73.8</bits>
+      <expectation>5.1e-14</expectation>
+      <identity>81.6</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::.::::.:::::::.::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKIFVYTTVIFFVSLFFFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBI_EMIHU" ac="Q4G3E7" length="38" description="Photosystem II reaction center protein I OS=Emiliania huxleyi OX=2903 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>209</score>
+      <smithWatermanScore>209</smithWatermanScore>
+      <zScore>383.9</zScore>
+      <bits>73.1</bits>
+      <expectation>8.1e-14</expectation>
+      <identity>81.6</identity>
+      <positives>97.4</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::::::..::::::: ::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKILVYTVVIFFVSLFTFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBI_CYAM1" ac="Q85FP4" length="38" description="Photosystem II reaction center protein I OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <smithWatermanScore>207</smithWatermanScore>
+      <zScore>380.3</zScore>
+      <bits>72.4</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>81.6</identity>
+      <positives>94.7</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::.::: .::: ::::::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MLTLKIFVYTCVIFFSSLFIFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBI_OSTTA" ac="Q0P3J5" length="38" description="Photosystem II reaction center protein I OS=Ostreococcus tauri OX=70448 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <smithWatermanScore>205</smithWatermanScore>
+      <zScore>376.8</zScore>
+      <bits>71.8</bits>
+      <expectation>2e-13</expectation>
+      <identity>81.6</identity>
+      <positives>94.7</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::::::.. :::::::::.::.::.:::: ::::</pattern>
+      <matchSeq start="1" end="38">MLTLKILVYTVVSFFVSLFIFGFLSNDPGRNPNSKDFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBI_RIPO1" ac="B7JYE8" length="38" description="Photosystem II reaction center protein I OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <smithWatermanScore>201</smithWatermanScore>
+      <zScore>369.6</zScore>
+      <bits>70.5</bits>
+      <expectation>5e-13</expectation>
+      <identity>78.9</identity>
+      <positives>92.1</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::: :: .. :::::::::.:::::.:::.:::::</pattern>
+      <matchSeq start="1" end="38">MLTLKIAVYIVVAFFVSLFIFGFLSSDPTRNPGRKDFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBI_CHLAT" ac="Q19V93" length="38" description="Photosystem II reaction center protein I OS=Chlorokybus atmophyticus OX=3144 GN=psbI PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <smithWatermanScore>199</smithWatermanScore>
+      <zScore>366.1</zScore>
+      <bits>69.8</bits>
+      <expectation>7.9e-13</expectation>
+      <identity>76.3</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::.:::..::::::::::.::.::.:::.:::..</pattern>
+      <matchSeq start="1" end="38">MLTLKIFVYTVVIFFVSLFIFGFLSNDPARNPKRKDID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBI_CROS5" ac="B1WYX8" length="38" description="Photosystem II reaction center protein I OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=psbI PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <smithWatermanScore>199</smithWatermanScore>
+      <zScore>366.1</zScore>
+      <bits>69.8</bits>
+      <expectation>7.9e-13</expectation>
+      <identity>73.7</identity>
+      <positives>92.1</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::: :: .. ::.:::.::.:::::.:::.:::::</pattern>
+      <matchSeq start="1" end="38">MLTLKIAVYIVVAFFISLFVFGFLSSDPTRNPGRKDFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBI_MESVI" ac="Q9MUS1" length="38" description="Photosystem II reaction center protein I OS=Mesostigma viride OX=41882 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <zScore>359.0</zScore>
+      <bits>68.5</bits>
+      <expectation>2e-12</expectation>
+      <identity>78.9</identity>
+      <positives>97.4</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::.:::..::::::::::.:::: .:::.:::.:</pattern>
+      <matchSeq start="1" end="38">MLTLKIFVYTVVIFFVSLFIFGFLSSDTGRNPKRKDIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBI_GLOC7" ac="B7KFR0" length="38" description="Photosystem II reaction center protein I OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <zScore>359.0</zScore>
+      <bits>68.5</bits>
+      <expectation>2e-12</expectation>
+      <identity>71.1</identity>
+      <positives>92.1</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::: :: .. ::..::.::.:::::.:::.:::::</pattern>
+      <matchSeq start="1" end="38">MLTLKIAVYIVVAFFIALFVFGFLSSDPTRNPGRKDFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBI_CYACA" ac="O19882" length="38" description="Photosystem II reaction center protein I OS=Cyanidium caldarium OX=2771 GN=psbI PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <zScore>359.0</zScore>
+      <bits>68.5</bits>
+      <expectation>2e-12</expectation>
+      <identity>73.7</identity>
+      <positives>92.1</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::.::. . :: ::::::.::.::::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKIFVYSCVAFFCSLFIFGFLSNDPSRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBI_GUITH" ac="O78471" length="38" description="Photosystem II reaction center protein I OS=Guillardia theta OX=55529 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <smithWatermanScore>193</smithWatermanScore>
+      <zScore>355.4</zScore>
+      <bits>67.8</bits>
+      <expectation>3.1e-12</expectation>
+      <identity>76.3</identity>
+      <positives>92.1</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:.::::.::::. :::::: ::.::.: ::::::::.:</pattern>
+      <matchSeq start="1" end="38">MFTLKIVVYTTVTFFVSLFTFGFLSNDASRNPNRKDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBI_ZYGCR" ac="Q32RP2" length="36" description="Photosystem II reaction center protein I OS=Zygnema circumcarinatum OX=35869 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <zScore>354.0</zScore>
+      <bits>67.5</bits>
+      <expectation>3.7e-12</expectation>
+      <identity>77.8</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:::::..:::.::::::::.::.::.::::::.::.</pattern>
+      <matchSeq start="1" end="36">MLTLKLFVYTVIIFFVSLFVFGFLSNDPSRNPGRKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBI_CHAGL" ac="Q8M9Z9" length="37" description="Photosystem II reaction center protein I OS=Chaetosphaeridium globosum OX=96477 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>352.1</zScore>
+      <bits>67.2</bits>
+      <expectation>4.8e-12</expectation>
+      <identity>77.8</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::.:::..::::::::::.::.::.:::.::.</pattern>
+      <matchSeq start="1" end="36">MLTLKIFVYTVVIFFVSLFIFGFLSNDPARNPGRKEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBI_CYAPA" ac="P48106" length="38" description="Photosystem II reaction center protein I OS=Cyanophora paradoxa OX=2762 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>351.9</zScore>
+      <bits>67.2</bits>
+      <expectation>4.9e-12</expectation>
+      <identity>77.8</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>::::::.:::..::::::::::.::.::.:.:.:::</pattern>
+      <matchSeq start="1" end="36">MLTLKIVVYTVVIFFVSLFIFGFLSNDPARKPSRKDIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBI_SYNJB" ac="Q2JJ02" length="38" description="Photosystem II reaction center protein I OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=psbI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <smithWatermanScore>191</smithWatermanScore>
+      <zScore>351.9</zScore>
+      <bits>67.2</bits>
+      <expectation>4.9e-12</expectation>
+      <identity>71.1</identity>
+      <positives>94.7</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MLTLKILVYTTIIFFVSLFIFGLLSSDPSRNPNRKDFE</querySeq>
+      <pattern>:: ::: ::...::::.::.::.::.::::::::.:.:</pattern>
+      <matchSeq start="1" end="38">MLLLKISVYAVVIFFVGLFVFGFLSNDPSRNPNRRDLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

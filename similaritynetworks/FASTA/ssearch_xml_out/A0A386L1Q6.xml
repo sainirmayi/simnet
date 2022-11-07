@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171054-0514-90265764-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171054-0514-90265764-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171054-0514-90265764-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A386L1Q6|DABB_PSEMU" type="PROTEIN" length="249"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:10:54+00:00" end="2022-11-07T17:10:57+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="8">
+   <hit number="1" database="SP" id="DABB_PSEMU" ac="A0A386L1Q6" length="249" description="Domoic acid biosynthesis cluster protein B OS=Pseudo-nitzschia multiseries OX=37319 GN=dabB PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1706</score>
+      <smithWatermanScore>1706</smithWatermanScore>
+      <zScore>2344.5</zScore>
+      <bits>441.3</bits>
+      <expectation>5e-123</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>249</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="249">MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="249">MMAGRKGYQSVMDENCHDKTESAYTDDRSLNGSSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ANR16_MOUSE" ac="A2AS55" length="361" description="Ankyrin repeat domain-containing protein 16 OS=Mus musculus OX=10090 GN=Ankrd16 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <zScore>139.2</zScore>
+      <bits>33.8</bits>
+      <expectation>3.4</expectation>
+      <identity>27.2</identity>
+      <positives>51.8</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="65" end="177">GSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRN-DGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFAS</querySeq>
+      <pattern>                              : ... : :.  .:   . .: --:: .::. ::.  .: .   .:-::: :::.   .  : .. .. -- : :..    ::.     : .:.-- :  :..:  : . .  :</pattern>
+      <matchSeq start="91" end="198">SMDIEATNRDYKRPLHEAASMGHRDCVRYLLGRGAVVDSLKKADWTPLMMAC--TRKNLDVIQDLVEHGANPLLKNKDGWNSFHIASREGHPVILRYLL--TVCPDAWKTESNIRRTPLHTAAM--HGCLEAVQVLLERCHYEPDCRDNCGVTPFMDAIQCGHVSIAKLLLEQHKACSSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="CB60D_ARATH" ac="Q0WVV6" length="601" description="Calmodulin-binding protein 60 D OS=Arabidopsis thaliana OX=3702 GN=CBP60D PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <smithWatermanScore>110</smithWatermanScore>
+      <zScore>132.6</zScore>
+      <bits>33.3</bits>
+      <expectation>8.0</expectation>
+      <identity>26.1</identity>
+      <positives>49.0</positives>
+      <overlap>153</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="70" end="218">KNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDGFAEVL----QQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :  ... .:-:.  .:   : :-:.   .: :::.-::: . . :      : : :.  .:.  .: . :. ..  ::   .  :   .  :. .. ----:..:  : :.-..   ::  .:     : :  .:--.:: :   :. .  .:</pattern>
+      <matchSeq start="387" end="533">YVDGLVKKAYENWNQVVEYEGESLLNLNQPERLDISQTD-PVTALASYSTVP-LSQFPEFAIEGY-NQTLTTALPHNPQAQFDFVPQQDQFIGIQQPQTQTNIENENVTRLVLGPPQSSTGGYQDIKSSADQENLNPFEDW-TNLSENDFFSEEEIRQTSHDLLA--NEDMQQLLFSMGGGKGEDGFTFPSFMQNTPMMQGYDEEGRGRSGKAVVGWLKVKAAMRWGFFIRRKAAERRAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="SSTT_PSEAE" ac="Q9I273" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <zScore>132.4</zScore>
+      <bits>32.7</bits>
+      <expectation>8.2</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="SSTT_PSEAB" ac="Q02LI9" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain UCBPP-PA14) OX=208963 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <zScore>132.4</zScore>
+      <bits>32.7</bits>
+      <expectation>8.2</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="SSTT_PSEA8" ac="B7VA62" length="409" description="Serine/threonine transporter SstT OS=Pseudomonas aeruginosa (strain LESB58) OX=557722 GN=sstT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <smithWatermanScore>107</smithWatermanScore>
+      <zScore>132.4</zScore>
+      <bits>32.7</bits>
+      <expectation>8.2</expectation>
+      <identity>29.1</identity>
+      <positives>59.1</positives>
+      <overlap>110</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="144" end="247">PSFHFEVFHFCPHLINFMYENQVHPQSRVDPSNVIYDAQHPGALAEDG-FAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIA-RGSEDSQWHDFASSLPEGIN---RIYVK-KPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              ::... -:.::: ..  :-.:::::. : .  : ::.  ..     : :-:.. . ::-: . :. -... : : .:..---.. ..- ::   :  .. :.-..: . :</pattern>
+      <matchSeq start="106" end="211">QQTHIRPILLLYLVGTFSAAVVAVIASFAFPSSLVL-ASHPGEMSPPGGIAEVLQSLLLSVVDNPVNALISANFIGILA-WAIGLGIAFRHASDTT-RNLLSELSNGVSLIVKVVIRFAPLGIFGLVASTFA-ESGVEALKGYAHLLVVLLGCMLFVAFVVNPLIVFLKIRRNPYPLVLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="Y1583_ARATH" ac="A8MS78" length="127" description="Uncharacterized protein At1g05835 OS=Arabidopsis thaliana OX=3702 GN=At1g05835 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <smithWatermanScore>98</smithWatermanScore>
+      <zScore>132.2</zScore>
+      <bits>31.0</bits>
+      <expectation>8.4</expectation>
+      <identity>29.7</identity>
+      <positives>60.8</positives>
+      <overlap>74</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="116" end="186">INPTRPSLDARQDFKIEGWGNQTRNDGWPSFHFEVFHFCPH--LINFMYENQVHPQSRVDPSNV-IYDAQHPGALAEDGFAEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFASSLPEGINRIYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :. ::.. :: --.::.  . :  ::: :::. .-. ...  . ...::.    .::: --..:   ...  ::</pattern>
+      <matchSeq start="48" end="119">LQIGSGAICEGKSSEPAVRQTQVKWREGKKFRVEVMNKCPMCPIINLRLKCQGFPQSLVDPTFLRVLSSSAGNCVVNDGLPLSPMQTLS--FNYSNTHQFALRPLSWSFQCE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="CHLB_CHLMO" ac="P17652" length="563" description="Light-independent protochlorophyllide reductase subunit B OS=Chlamydomonas moewusii OX=3054 GN=chlB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <smithWatermanScore>109</smithWatermanScore>
+      <zScore>131.9</zScore>
+      <bits>33.1</bits>
+      <expectation>8.8</expectation>
+      <identity>22.0</identity>
+      <positives>56.4</positives>
+      <overlap>241</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="20" end="244">-----------MMAGRKGYQSVMDENCHDKTESAYTDDRSLNG---SSGSSCLKNNVIAFFLGAAVVAATQYVSIDSSLTKAVEVTSFTTSDAPAIDIAINPTRPS-LDARQ-DFKIEGWGNQTRNDG-WPSFHFEVFHFCPHLINFMYENQVHPQ-SRVDPSNVIYDAQ---HPGALAED--GF--AEVLQQTLPKFYDYPVGYRLNDRPAEISAYWTLHMRIARGSEDSQWHDFAS-SLPEGINR-IYVKKPLQWNGDHVTLFSSQTGYNILVY</querySeq>
+      <pattern>                              :.:. : .  .:.---:..:    .::  : .   .   :...:  . ......  ..: . : ..  : . .  .-. ::.- .:.   :.  ..:.-:--:. .:: :: ...    ..::  .-....::-.:. .:---: :   . --: --: :  :..:  :   .::. ... :..-.: .. .----: ::   . :..-.  : :..-. ... :.:... .  .:.  :.</pattern>
+      <matchSeq start="296" end="528">IGIIDTAVCIREIERILNKIYFESLEGNVNTQSVLTTNPYFNSHINSTNSETRDHNVKPFDFEFYIENQTRFISQAAWFSRSIDCQNLTGKKAVVFGDATHAAGITKILAREMGIKVVCSGTYCKHDADW--FREQVFGFCDQILITDDHTQVGDMIAKLEPS-AIFGTQMERHIGKRLDIPCGVISAPVHIQNFPLSYRPFLGYEGTNQIADL-VYNSFSL----GMEDHLLEIFSGHDTKEPITKSLSTENELNWDAEALKELSNVPGFVRGKVKRNTEKYARQNAIPSITLDVLFAAKEALSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

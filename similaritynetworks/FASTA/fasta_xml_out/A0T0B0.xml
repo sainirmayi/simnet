@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162902-0095-81572324-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162902-0095-81572324-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162902-0095-81572324-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0B0|PSBN_PHATC" type="PROTEIN" length="43"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:29:02+00:00" end="2022-11-07T16:29:04+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBN_PHATC" ac="A0T0B0" length="43" description="Protein PsbN OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>268</score>
+      <smithWatermanScore>268</smithWatermanScore>
+      <initn>268</initn>
+      <init1>268</init1>
+      <opt>268</opt>
+      <zScore>470.9</zScore>
+      <bits>89.6</bits>
+      <expectation>1.1e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBN_THAPS" ac="A0T0P7" length="43" description="Protein PsbN OS=Thalassiosira pseudonana OX=35128 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>259</score>
+      <smithWatermanScore>259</smithWatermanScore>
+      <initn>259</initn>
+      <init1>259</init1>
+      <opt>259</opt>
+      <zScore>455.7</zScore>
+      <bits>86.8</bits>
+      <expectation>8.1e-18</expectation>
+      <identity>95.3</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::::::::::::.:::.:::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="43">METATIIVIFVSSLLVGITAYSVYTAFGPASKNLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBN_TRICV" ac="P49515" length="43" description="Protein PsbN OS=Trieres chinensis OX=1514140 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <smithWatermanScore>258</smithWatermanScore>
+      <initn>258</initn>
+      <init1>258</init1>
+      <opt>258</opt>
+      <zScore>454.0</zScore>
+      <bits>86.4</bits>
+      <expectation>1e-17</expectation>
+      <identity>93.0</identity>
+      <positives>100.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::::::::::::::::.::.:::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="43">METATIIVIFVSSLLLGITAYSIYTAFGPAAKNLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBN_PORPU" ac="P51324" length="43" description="Protein PsbN OS=Porphyra purpurea OX=2787 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <smithWatermanScore>237</smithWatermanScore>
+      <initn>237</initn>
+      <init1>237</init1>
+      <opt>237</opt>
+      <zScore>418.4</zScore>
+      <bits>79.8</bits>
+      <expectation>9.6e-16</expectation>
+      <identity>81.4</identity>
+      <positives>95.3</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::.. ::.:::::::: ::.:::::::::.:::::::::.</pattern>
+      <matchSeq start="1" end="43">METATVLSIFISSLLLGITGYSIYTAFGPASKDLRDPFEEHEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBN_NEOYE" ac="Q1XDG2" length="43" description="Protein PsbN OS=Neopyropia yezoensis OX=2788 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <smithWatermanScore>237</smithWatermanScore>
+      <initn>237</initn>
+      <init1>237</init1>
+      <opt>237</opt>
+      <zScore>418.4</zScore>
+      <bits>79.8</bits>
+      <expectation>9.6e-16</expectation>
+      <identity>81.4</identity>
+      <positives>95.3</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::.. ::.:::::::: ::.:::::::::.:::::::::.</pattern>
+      <matchSeq start="1" end="43">METATVLSIFISSLLLGITGYSIYTAFGPASKDLRDPFEEHEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBN_RHDSA" ac="A6MW33" length="43" description="Protein PsbN OS=Rhodomonas salina OX=52970 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <smithWatermanScore>234</smithWatermanScore>
+      <initn>234</initn>
+      <init1>234</init1>
+      <opt>234</opt>
+      <zScore>413.3</zScore>
+      <bits>78.9</bits>
+      <expectation>1.9e-15</expectation>
+      <identity>74.4</identity>
+      <positives>95.3</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::....:..:::::.: ::::::::: ::.::::::.:::</pattern>
+      <matchSeq start="1" end="43">METATVLIVFIASLLLGVTGYSVYTAFGPNSKDLRDPFEDHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBN_GUITH" ac="O78513" length="43" description="Protein PsbN OS=Guillardia theta OX=55529 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <smithWatermanScore>226</smithWatermanScore>
+      <initn>226</initn>
+      <init1>226</init1>
+      <opt>226</opt>
+      <zScore>399.7</zScore>
+      <bits>76.4</bits>
+      <expectation>1.1e-14</expectation>
+      <identity>72.1</identity>
+      <positives>95.3</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::...::..:::::.: ::.:::::: ::.:::::..:::</pattern>
+      <matchSeq start="1" end="43">METATVLIIFIASLLLGLTGYSIYTAFGPNSKELRDPFDDHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBN_EMIHU" ac="Q4G3C3" length="43" description="Protein PsbN OS=Emiliania huxleyi OX=2903 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>218</score>
+      <smithWatermanScore>218</smithWatermanScore>
+      <initn>219</initn>
+      <init1>218</init1>
+      <opt>218</opt>
+      <zScore>386.2</zScore>
+      <bits>73.9</bits>
+      <expectation>6e-14</expectation>
+      <identity>76.7</identity>
+      <positives>93.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>::::::. ::. .::::.: :::::::::.::.:::::::::.</pattern>
+      <matchSeq start="1" end="43">METATILSIFILGLLLGVTGYSVYTAFGPVSKGLRDPFEEHEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBN_CYAPA" ac="P48108" length="43" description="Protein PsbN OS=Cyanophora paradoxa OX=2762 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <smithWatermanScore>217</smithWatermanScore>
+      <initn>217</initn>
+      <init1>217</init1>
+      <opt>217</opt>
+      <zScore>384.5</zScore>
+      <bits>73.6</bits>
+      <expectation>7.5e-14</expectation>
+      <identity>74.4</identity>
+      <positives>88.4</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:: .:.. ::.:. ::::: ::.:::::: :::::::::::::</pattern>
+      <matchSeq start="1" end="43">MEISTFLSIFISAALLGITGYSIYTAFGPPSKNLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBN_GRATL" ac="Q6B8Y6" length="43" description="Protein PsbN OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>213</score>
+      <smithWatermanScore>213</smithWatermanScore>
+      <initn>215</initn>
+      <init1>204</init1>
+      <opt>213</opt>
+      <zScore>377.7</zScore>
+      <bits>72.3</bits>
+      <expectation>1.8e-13</expectation>
+      <identity>69.8</identity>
+      <positives>90.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:.:::.. ::.:::::::: ::.: .::: :..:::::::::.</pattern>
+      <matchSeq start="1" end="43">MQTATVLSIFISSLLLGITIYSIYISFGPISRELRDPFEEHEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBN_CYAM1" ac="Q85FZ3" length="43" description="Protein PsbN OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>203</score>
+      <smithWatermanScore>203</smithWatermanScore>
+      <initn>203</initn>
+      <init1>203</init1>
+      <opt>203</opt>
+      <zScore>360.8</zScore>
+      <bits>69.2</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>60.5</identity>
+      <positives>97.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:..::.: .::.::..:::.:.....:::...:::::::::::</pattern>
+      <matchSeq start="1" end="43">MQNATLISVFVASLVIGITAYAIFVSFGPSARNLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBN_CYACA" ac="O19926" length="43" description="Protein PsbN OS=Cyanidium caldarium OX=2771 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>203</score>
+      <smithWatermanScore>203</smithWatermanScore>
+      <initn>206</initn>
+      <init1>203</init1>
+      <opt>203</opt>
+      <zScore>360.8</zScore>
+      <bits>69.2</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>69.8</identity>
+      <positives>86.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:: : :. ::. :::::::.::.: .::: ::.:::::::::.</pattern>
+      <matchSeq start="1" end="43">MEKALILSIFIFSLLLGITSYSIYISFGPLSKTLRDPFEEHEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBN_STAPU" ac="Q32RU3" length="43" description="Protein PsbN OS=Staurastrum punctulatum OX=102822 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <smithWatermanScore>201</smithWatermanScore>
+      <initn>201</initn>
+      <init1>201</init1>
+      <opt>201</opt>
+      <zScore>357.4</zScore>
+      <bits>68.6</bits>
+      <expectation>2.4e-12</expectation>
+      <identity>69.8</identity>
+      <positives>90.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::..:::.: ::...: :..:::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">METATLVVIFISCLLVSFTGYALYTAFGQPSKELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBN_CHAVU" ac="Q1ACH3" length="43" description="Protein PsbN OS=Chara vulgaris OX=55564 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <smithWatermanScore>199</smithWatermanScore>
+      <initn>199</initn>
+      <init1>199</init1>
+      <opt>199</opt>
+      <zScore>354.0</zScore>
+      <bits>67.9</bits>
+      <expectation>3.7e-12</expectation>
+      <identity>69.8</identity>
+      <positives>90.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::.:.::.: ::...: :..:::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">METATFITIFISCLLVSVTGYALYTAFGKPSKQLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBN_MESVI" ac="Q9MUV5" length="43" description="Protein PsbN OS=Mesostigma viride OX=41882 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <smithWatermanScore>198</smithWatermanScore>
+      <initn>198</initn>
+      <init1>198</init1>
+      <opt>198</opt>
+      <zScore>352.3</zScore>
+      <bits>67.6</bits>
+      <expectation>4.6e-12</expectation>
+      <identity>72.1</identity>
+      <positives>88.4</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>::::::. :: : ::.:.: ::.::.:: ::..::::::::::</pattern>
+      <matchSeq start="1" end="43">METATIFSIFFSCLLIGLTGYSLYTSFGNASSELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBN_KLEBI" ac="Q71KN5" length="43" description="Protein PsbN OS=Klebsormidium bilatum OX=201239 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <smithWatermanScore>196</smithWatermanScore>
+      <initn>196</initn>
+      <init1>196</init1>
+      <opt>196</opt>
+      <zScore>348.9</zScore>
+      <bits>67.0</bits>
+      <expectation>7.2e-12</expectation>
+      <identity>67.4</identity>
+      <positives>88.4</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:: ::.:.::.: .:.:.: :..:::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">MEPATLITIFLSCFLVGVTGYALYTAFGQPSKELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBN_ZYGCR" ac="Q32RQ4" length="43" description="Protein PsbN OS=Zygnema circumcarinatum OX=35869 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <smithWatermanScore>196</smithWatermanScore>
+      <initn>196</initn>
+      <init1>196</init1>
+      <opt>196</opt>
+      <zScore>348.9</zScore>
+      <bits>67.0</bits>
+      <expectation>7.2e-12</expectation>
+      <identity>67.4</identity>
+      <positives>90.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::...::.: ::...: :..:::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">METATLVAIFISCLLVSFTGYALYTAFGQPSKELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBN_ANGEV" ac="A2T361" length="43" description="Protein PsbN OS=Angiopteris evecta OX=13825 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <smithWatermanScore>196</smithWatermanScore>
+      <initn>196</initn>
+      <init1>196</init1>
+      <opt>196</opt>
+      <zScore>348.9</zScore>
+      <bits>67.0</bits>
+      <expectation>7.2e-12</expectation>
+      <identity>67.4</identity>
+      <positives>90.7</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::...::.: ::...: :..:::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">METATLVAIFISCLLVSFTGYALYTAFGQPSKELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBN_COLOB" ac="Q71KQ8" length="43" description="Protein PsbN OS=Coleochaete orbicularis OX=3124 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <initn>195</initn>
+      <init1>195</init1>
+      <opt>195</opt>
+      <zScore>347.2</zScore>
+      <bits>66.7</bits>
+      <expectation>8.9e-12</expectation>
+      <identity>69.8</identity>
+      <positives>88.4</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::. .::::.: ::...: :.::::::  ::.::::::::::</pattern>
+      <matchSeq start="1" end="43">METGILIVIFISCLLVSFTGYAVYTAFGQPSKKLRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBN_CHLAT" ac="Q71KP0" length="43" description="Protein PsbN OS=Chlorokybus atmophyticus OX=3144 GN=psbN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <smithWatermanScore>195</smithWatermanScore>
+      <initn>195</initn>
+      <init1>195</init1>
+      <opt>195</opt>
+      <zScore>347.2</zScore>
+      <bits>66.7</bits>
+      <expectation>8.9e-12</expectation>
+      <identity>69.8</identity>
+      <positives>86.0</positives>
+      <overlap>43</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="43">METATIIVIFVSSLLLGITTYSVYTAFGPASKNLRDPFEEHED</querySeq>
+      <pattern>:::::.. ::.: :::..: ::.:::::  : .::::::::::</pattern>
+      <matchSeq start="1" end="43">METATVFSIFISCLLLSLTGYSLYTAFGEPSAELRDPFEEHED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

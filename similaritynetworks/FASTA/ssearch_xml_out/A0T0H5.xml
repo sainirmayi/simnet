@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171829-0818-41458612-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171829-0818-41458612-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171829-0818-41458612-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0H5|PSB28_PHATC" type="PROTEIN" length="115"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:18:29+00:00" end="2022-11-07T17:18:31+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSB28_PHATC" ac="A0T0H5" length="115" description="Photosystem II reaction center Psb28 protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>743</score>
+      <smithWatermanScore>743</smithWatermanScore>
+      <zScore>1067.4</zScore>
+      <bits>202.8</bits>
+      <expectation>6.9e-52</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>115</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSB28_TRICV" ac="P49508" length="115" description="Photosystem II reaction center Psb28 protein OS=Trieres chinensis OX=1514140 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>714</score>
+      <smithWatermanScore>714</smithWatermanScore>
+      <zScore>1025.7</zScore>
+      <bits>195.1</bits>
+      <expectation>1.4e-49</expectation>
+      <identity>93.0</identity>
+      <positives>99.1</positives>
+      <overlap>115</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>::::::::::::::::::::::::.:::::::::::::::::::.::::::::::::::.:: ::::::::.:.:::::::::::::::::::::::::::::::.:::::.:::</pattern>
+      <matchSeq start="1" end="115">MEAKIQFIKGLDEKVLPDVRLTRSRDGSTGTATFRFKNPNILDKSTAKEGEITGMYLIDQEGTLETRDVNAQFINGKPEAIESIYIMKSPEAWDRFMRFMERYGESNGLVFTKAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSB28_THAPS" ac="A0T0W9" length="114" description="Photosystem II reaction center Psb28 protein OS=Thalassiosira pseudonana OX=35128 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>638</score>
+      <smithWatermanScore>638</smithWatermanScore>
+      <zScore>916.7</zScore>
+      <bits>174.9</bits>
+      <expectation>1.7e-43</expectation>
+      <identity>82.5</identity>
+      <positives>95.6</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>: :.::::::.:::::::::::::.::::::::: ::: :...:. : .:::::::.::::::::::::.::::::::.:.::::::::::::::::::::::::.:::.:.::</pattern>
+      <matchSeq start="1" end="114">MIARIQFIKGIDEKVLPDVRLTRSRDGSTGTATFLFKNANLINKSLALNGEITGMYMIDEEGILETRDVSARFVNGKPQAVESIYIMKSPEAWDRFMRFMERYGESNGLAFTKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSB28_NEOYE" ac="Q1XDE0" length="115" description="Photosystem II reaction center Psb28 protein OS=Neopyropia yezoensis OX=2788 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>562</score>
+      <smithWatermanScore>562</smithWatermanScore>
+      <zScore>807.5</zScore>
+      <bits>154.7</bits>
+      <expectation>2e-37</expectation>
+      <identity>69.9</identity>
+      <positives>91.2</positives>
+      <overlap>113</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  : ::::.:..:.:.::::::::.::::::::::: ::.::: . : .::::::::.: :: . ::::::.:.::::.:::.....:::. :::::::::::.. :::.:.:::</pattern>
+      <matchSeq start="2" end="114">-MATIQFIQGINEEVVPDVRLTRSRDGSTGTATFRFTNPKILDASMADKGEITGMYLMDTEGQIITRDVNAKFINGKPQAIEAVHVIKSPDDWDRFMRFMERYAQDNGLTFTKASS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSB28_PORPU" ac="P51347" length="115" description="Photosystem II reaction center Psb28 protein OS=Porphyra purpurea OX=2787 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <zScore>801.8</zScore>
+      <bits>153.6</bits>
+      <expectation>4.3e-37</expectation>
+      <identity>69.0</identity>
+      <positives>91.2</positives>
+      <overlap>113</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  : ::::.:..:.:.::::::::.::::::::::: ::.::: . : .::::::::.: :: . ::::::.:.::::.:::.....:::. :::::::::::.. :::.:.::.</pattern>
+      <matchSeq start="2" end="114">-MATIQFIQGINEEVVPDVRLTRSRDGSTGTATFRFTNPKILDASMADKGEITGMYLMDTEGQIITRDVNAKFINGKPQAIEAVHVIKSPDDWDRFMRFMERYAQDNGLTFTKANS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSB28_GUITH" ac="O78418" length="116" description="Photosystem II reaction center Psb28 protein OS=Guillardia theta OX=55529 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>552</score>
+      <smithWatermanScore>552</smithWatermanScore>
+      <zScore>793.1</zScore>
+      <bits>152.0</bits>
+      <expectation>1.3e-36</expectation>
+      <identity>71.7</identity>
+      <positives>89.4</positives>
+      <overlap>113</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="115">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  : ::::.:..: :.::::::::.::::::::::: ::..:.  .. .:.::::::::::: : :::::::::::::..::..:::.: : :::::::::::.: ::: :.::.</pattern>
+      <matchSeq start="2" end="114">-MAVIQFIQGVNEDVIPDVRLTRSRDGSTGTATFRFANPKVLEAQSSVKGNITGMYLIDEEGQLVTRDVNARFVNGKPQGIEAVYIMQSKEDWDRFMRFMERYSEDNGLSFTKANNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSB28_GRATL" ac="Q6B8Z7" length="114" description="Photosystem II reaction center Psb28 protein OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>499</score>
+      <smithWatermanScore>499</smithWatermanScore>
+      <zScore>717.1</zScore>
+      <bits>138.0</bits>
+      <expectation>2.2e-32</expectation>
+      <identity>65.2</identity>
+      <positives>84.8</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  : ::::::..: :. :: ::::.::: :::::::.::.:: .    .:.:::::: :.:: : ::::.:.:.::::.:.:.:::.:::. :::::::::.:.. : : :.::</pattern>
+      <matchSeq start="2" end="113">-MAVIQFIKGINETVVADVSLTRSRDGSKGTATFRFNNPDILKSGMEDKGDITGMYLKDDEGELMTRDVSAKFINGKPQAVEAIYIIKSPQEWDRFMRFMEKYANENKLSFTKAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSB28_NOSP7" ac="B2J5G7" length="113" description="Photosystem II reaction center Psb28 protein OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>477</score>
+      <smithWatermanScore>477</smithWatermanScore>
+      <zScore>685.6</zScore>
+      <bits>132.1</bits>
+      <expectation>1.3e-30</expectation>
+      <identity>65.2</identity>
+      <positives>85.7</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  ::::: .:::: :.:.::::::. :..::::: : ::.:::. ....--:::::: :::: . ::.:.:.::::::::.:..:.::: . :::::::::::.: : : .:::</pattern>
+      <matchSeq start="2" end="111">-MAKIQFSRGLDEVVIPEVRLTRSRTGDSGTATFIFTNPKILDQGSTED--ITGMYLSDEEGEIITREVKAKFVNGKPEALEALYVMKSAQEWDRFMRFMERYAEENDLGLSKAEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSB28_TRIV2" ac="Q3MFL9" length="111" description="Photosystem II reaction center Psb28 protein OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>474</score>
+      <smithWatermanScore>474</smithWatermanScore>
+      <zScore>681.5</zScore>
+      <bits>131.3</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>62.5</identity>
+      <positives>87.5</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  ::::: .::::.:.:.::::::. :.:::::: : ::.:::. :...--::::::::::: . ::.:...::::.::..:..:.::: . :.::.::::::.. : : :::.</pattern>
+      <matchSeq start="2" end="111">-MAKIQFSRGLDEEVIPEVRLTRSRTGDTGTATFIFTNPKILDQGTTED--ITGMYLIDEEGEIITREVKGKFVNGRPEGVEAVYVMKSAQEWERFIRFMERYAQENDLGFSKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSB28_ACAM1" ac="B0CE32" length="111" description="Photosystem II reaction center Psb28 protein OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <smithWatermanScore>473</smithWatermanScore>
+      <zScore>680.1</zScore>
+      <bits>131.1</bits>
+      <expectation>2.6e-30</expectation>
+      <identity>63.8</identity>
+      <positives>81.0</positives>
+      <overlap>116</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEG--EITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>: : ::::.:.::.:.:::::::.::::.: : : :.:::..-----.::--:. :::: :::: : : ::.:.::::::.:::. : ::: : ::::::::.::.:..:: :::.</pattern>
+      <matchSeq start="1" end="111">MSAAIQFIRGVDEEVIPDVRLTRAKDGSSGRAIFYFENPNLI-----QEGKLEVMGMYLQDEEGELTTLDVSAKFVNGKPHAIEANYDMKSEEEWDRFMRFMNRYAESHGLGFSKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSB28_ARATH" ac="Q8W0Y8" length="183" description="Photosystem II reaction center PSB28 protein, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=PSB28 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>476</score>
+      <smithWatermanScore>476</smithWatermanScore>
+      <zScore>679.9</zScore>
+      <bits>131.7</bits>
+      <expectation>2.6e-30</expectation>
+      <identity>60.6</identity>
+      <positives>86.2</positives>
+      <overlap>109</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="113">--------------------------MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>                              .:::.: :: ..:::.::::.:::.: : : : .:...:-.... :::::.:.:::::.... ::::::::::::.: . .::.::. :::::::::::.. ::: : :</pattern>
+      <matchSeq start="74" end="181">PVSLPRAQPSSRTALRPMKPVSITMMVKPALQFIQGTDEMTIPDVKLTRSRDGSNGMALFSFDQPSVFD-SSGEVGEITGLYMIDEEGVIQSTDVNARFVNGKPEGIVAKHIMRSPKEWDRFMRFMERYSDQNGLQFVKKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSB28_NOSS1" ac="Q8YYP5" length="111" description="Photosystem II reaction center Psb28 protein OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>471</score>
+      <smithWatermanScore>471</smithWatermanScore>
+      <zScore>677.2</zScore>
+      <bits>130.5</bits>
+      <expectation>3.7e-30</expectation>
+      <identity>61.6</identity>
+      <positives>87.5</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  ::::: .::::.:.:.::::::. :.:::::: : ::.:::. :...--::::::::::: . ::.:...:.::.::..:..:.::: . :.::.::::::.. : : :::.</pattern>
+      <matchSeq start="2" end="111">-MAKIQFSRGLDEEVIPEVRLTRSRTGDTGTATFIFTNPKILDQGTTED--ITGMYLIDEEGEIITREVKGKFINGRPEGLEAVYVMKSAQEWERFIRFMERYAQENDLGFSKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSB28_SYNP6" ac="Q5MZB9" length="112" description="Photosystem II reaction center Psb28 protein OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>468</score>
+      <smithWatermanScore>468</smithWatermanScore>
+      <zScore>672.8</zScore>
+      <bits>129.7</bits>
+      <expectation>6.5e-30</expectation>
+      <identity>58.8</identity>
+      <positives>84.2</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>: : ::: .:.:: :.::::::::.::..::::: : .:. :   . ..--::::::.:.:: : ::.:.:.:.::.: ..:..:.:.::: ::::::::.::.:.::: :..:</pattern>
+      <matchSeq start="1" end="112">MSAAIQFTRGIDEPVVPDVRLTRSRDGQNGTATFYFDEPQALVGEVRQD--ITGMYLLDDEGELATREVKAKFINGQPAGLEAVYLMRSPEEWDRFMRFMQRYAEANGLGFTEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSB28_SYNE7" ac="Q31ML0" length="112" description="Photosystem II reaction center Psb28 protein OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>468</score>
+      <smithWatermanScore>468</smithWatermanScore>
+      <zScore>672.8</zScore>
+      <bits>129.7</bits>
+      <expectation>6.5e-30</expectation>
+      <identity>58.8</identity>
+      <positives>84.2</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>: : ::: .:.:: :.::::::::.::..::::: : .:. :   . ..--::::::.:.:: : ::.:.:.:.::.: ..:..:.:.::: ::::::::.::.:.::: :..:</pattern>
+      <matchSeq start="1" end="112">MSAAIQFTRGIDEPVVPDVRLTRSRDGQNGTATFYFDEPQALVGEVRQD--ITGMYLLDDEGELATREVKAKFINGQPAGLEAVYLMRSPEEWDRFMRFMQRYAEANGLGFTEA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSB28_CYAM1" ac="Q85G21" length="109" description="Photosystem II reaction center Psb28 protein OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>465</score>
+      <smithWatermanScore>465</smithWatermanScore>
+      <zScore>668.7</zScore>
+      <bits>128.9</bits>
+      <expectation>1.1e-29</expectation>
+      <identity>58.9</identity>
+      <positives>89.3</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  :.::::.:.:: ..: ::::::.::.::::.::: .:..:..----.:::::::.::::: . ::.:.:.::::.:. ::..:.::. .::.::::::.::.:..:: :...</pattern>
+      <matchSeq start="2" end="109">-MASIQFIQGVDEDIIPTVRLTRSRDGQTGTAVFRFVQPKLLQQ----QGEITGMYMIDEEGEIVTREVQAKFVNGQPQIIEALYVMKNAQAWERFMRFMNRYAEAKGLSFQRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSB28_ORYSJ" ac="Q0JG75" length="180" description="Photosystem II reaction center PSB28 protein, chloroplastic OS=Oryza sativa subsp. japonica OX=39947 GN=PSB28 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>468</score>
+      <smithWatermanScore>468</smithWatermanScore>
+      <zScore>668.6</zScore>
+      <bits>129.6</bits>
+      <expectation>1.1e-29</expectation>
+      <identity>57.8</identity>
+      <positives>88.1</positives>
+      <overlap>109</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="113">--------------------------MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>                              ::::.: ::...::::::.:.::..:.: : : .:...:-..:. :.:::.:.::.::.:.. ::.:.::::::  ::. :.:..:. :::::::::::...::: : :</pattern>
+      <matchSeq start="72" end="179">VSLQCRRTKPASLHRSRPSMQVVMMAARPAIQFIQGTDEQTIPDVRLTKSRDGTNGVAIFTFDQPSVFD-SSAELGDITGFYMIDDEGVLQSVDVSAKFVNGKPALIEAKYVMRTPREWDRFMRFMERYSQANGLQFVKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSB28_THEVB" ac="Q8DLJ8" length="116" description="Photosystem II reaction center Psb28 protein OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=psb28 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>461</score>
+      <smithWatermanScore>461</smithWatermanScore>
+      <zScore>662.4</zScore>
+      <bits>127.9</bits>
+      <expectation>2.5e-29</expectation>
+      <identity>57.9</identity>
+      <positives>83.3</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">--MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEG--EITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>    :.::::.:..:.:.:::::::..:::.: : : : ::.:.-----.::--:.::::..:::: . ::::::.:.::.: :::. : :.::. ::::.:::.::. ..:: :.:.</pattern>
+      <matchSeq start="5" end="113">MGAMAEIQFIRGINEEVVPDVRLTRARDGSSGQAMFYFDNPKIV-----QEGNLEVTGMYMVDEEGEIVTRDVNAKFINGQPVAIEATYTMRSPQEWDRFIRFMDRYAASHGLGFQKSENS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSB28_CROS5" ac="B1WXW2" length="111" description="Photosystem II reaction center Psb28 protein OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>460</score>
+      <smithWatermanScore>460</smithWatermanScore>
+      <zScore>661.4</zScore>
+      <bits>127.6</bits>
+      <expectation>2.8e-29</expectation>
+      <identity>59.8</identity>
+      <positives>86.6</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  :.::: .:..: :.:.:::::.:.:..:::::::..:.:::  .. .--::::::.:::: . ::.:...:.:::: ..:.: ::.: . :::::::::::.. ::: ::::</pattern>
+      <matchSeq start="2" end="111">-MAQIQFSRGVSEPVVPEVRLTRAKSGNSGTATFRFESPTILDAESTDD--ITGMYLVDEEGEIVTREVKGKFINGKPTSVEAILIMNSQDEWDRFMRFMERYAQENGLGFSKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSB28_CYAPA" ac="P48264" length="112" description="Photosystem II reaction center Psb28 protein OS=Cyanophora paradoxa OX=2762 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>448</score>
+      <smithWatermanScore>448</smithWatermanScore>
+      <zScore>644.1</zScore>
+      <bits>124.4</bits>
+      <expectation>2.6e-28</expectation>
+      <identity>58.0</identity>
+      <positives>83.9</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="114">MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>  ::::::.:.::...:::.:.::.::..: : : : .:...:---. .:::::.::::::: : :: : :.:.::::..::. :::.. : :.::.::::::.. : : :.::</pattern>
+      <matchSeq start="2" end="110">-MAKIQFIQGVDEEAIPDVKLSRSQDGANGIAKFYFDKPTVFD---VYQGEITGLYLIDEEGELSTRTVYAKFINGKPQSIEASYIMNNREEWERFIRFMERYAKQNDLSFTKAKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSB28_OSTTA" ac="Q00UI6" length="147" description="Photosystem II reaction center psb28 protein, chloroplastic OS=Ostreococcus tauri OX=70448 GN=psb28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>445</score>
+      <smithWatermanScore>445</smithWatermanScore>
+      <zScore>637.4</zScore>
+      <bits>123.6</bits>
+      <expectation>6.1e-28</expectation>
+      <identity>60.6</identity>
+      <positives>82.6</positives>
+      <overlap>109</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="113">--------------------------MEAKIQFIKGLDEKVLPDVRLTRSKDGSTGTATFRFKNPNILDKTTAKEGEITGMYLIDEEGILETRDVNARFVNGKPEAIESIYIMKSPEAWDRFMRFMERYGETNGLVFSKAS</querySeq>
+      <pattern>                              :::.:: .: ..:.::::::::::.::: : :..:.....--- .:.::::.: :::: . : ::::.:::::: .::. :.::.   :.:::::::::.: ::: :::</pattern>
+      <matchSeq start="41" end="146">ALARSFNASTKRFSKSARRSVVVRAGTTTSIQFVKGQNETAVPEVRLTRSKDGSNGTAFFIFSDPDVFEN---GQGDITGMFLTDEEGEMSTVDVNAKFVNGKPTGIEARYVMKTEADWNRFMRFMERYAEDNGLGFSKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170720-0059-93224892-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170720-0059-93224892-p1m.m9&quot; -m &quot;F10 fasta-R20221107-170720-0059-93224892-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7G267|DRE2_PHATC" type="PROTEIN" length="306"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:07:20+00:00" end="2022-11-07T17:07:23+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="DRE2_PHATC" ac="B7G267" length="306" description="Anamorsin homolog OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_47020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2005</score>
+      <smithWatermanScore>2005</smithWatermanScore>
+      <zScore>2398.0</zScore>
+      <bits>451.8</bits>
+      <expectation>5.2e-126</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>306</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="306">MVPPREDVTVRIVCERRRTAGKEARPPPSAKPTPGNTSSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="306">MVPPREDVTVRIVCERRRTAGKEARPPPSAKPTPGNTSSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="DRE2_THAPS" ac="B8C4D7" length="275" description="Anamorsin homolog OS=Thalassiosira pseudonana OX=35128 GN=THAPSDRAFT_6461 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>545</score>
+      <smithWatermanScore>545</smithWatermanScore>
+      <zScore>648.5</zScore>
+      <bits>127.9</bits>
+      <expectation>1.5e-28</expectation>
+      <identity>40.5</identity>
+      <positives>68.3</positives>
+      <overlap>252</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="83" end="305">FFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLS------------PIHTSFLLAGLANNSERRNADGSRTLTA---TRRNNTTNSVAT--LNFA--------SNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAA-TKSG-DDCSGRAPCDDCTCGRAEGAKEGNSEQPKEI--KSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              :.  : .:  .:.: :-- .  .:... . .:.:   :::. :. ..  :::....:: :.. .... :------------ : :::.::::  .::.:...:.:. ::---:  .......::--.:..--------: ... .: :::::.::. ....:. ::.... :-.::.-:::.::  ::.:::::::      .  :.: --:::.::.:. :::::::.::::: :::: ::::::: :.::</pattern>
+      <matchSeq start="25" end="274">------MTSASIHIGSYTSTTNGNTTVVKAPTKESLSTCLSATATT--TSPLDSIDIYINTSDLPTHYDSLALASIVPSLSPGGVLSVHVVSASSSAASNESAAVDVVNWSAITTSFVLAGLKAESEQRDGSGGRVYTARKATASQSASSAAATGRINLGGAKTKVKLSLDDDDDDQLIDEDDLLNGGGGMLAPPPTIDTEARAKSNLDDCGGRKACDNCTCGRAEQEAADAAGGPNEQQSKSSACGNCAKGDAFRCAGCPYLGMPAFKEGEEHLVLKLNDDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="DRE2_DROSI" ac="B4Q5Z1" length="248" description="Anamorsin homolog OS=Drosophila simulans OX=7240 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>375</score>
+      <smithWatermanScore>375</smithWatermanScore>
+      <zScore>445.6</zScore>
+      <bits>90.2</bits>
+      <expectation>2.9e-17</expectation>
+      <identity>36.1</identity>
+      <positives>61.8</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ..:::  :.: ...:   . :-----..:.:.--: :.. ::.-- .. ..:.:.. . -:: :: :.. :. :.----:.:. :  :----:.  .::: . .  :.: : :.::..: :--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:..  :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="247">----MENFKGLQKSLYIWTDSADLDKRVEQLKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNANAVNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="DRE2_DROSE" ac="B4HXL7" length="248" description="Anamorsin homolog OS=Drosophila sechellia OX=7238 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <smithWatermanScore>372</smithWatermanScore>
+      <zScore>442.0</zScore>
+      <bits>89.6</bits>
+      <expectation>4.7e-17</expectation>
+      <identity>35.7</identity>
+      <positives>61.8</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ..:::  :.: ...:   . :-----..:.:.--: :.. ::.-- .. ..:.:.. . -:: :: :.. :. :.----:.:. :  :----:.  .:.: . .  :.: : :.::..: :--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:..  :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="247">----MENFKGLQKSLYIWTDSADLDKRVEQLKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALSAEKPGYETGSSARLSFAKKNANAANVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="DRE2_DROME" ac="Q9V3Y2" length="248" description="Anamorsin homolog OS=Drosophila melanogaster OX=7227 GN=CIAPIN1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <smithWatermanScore>369</smithWatermanScore>
+      <zScore>438.4</zScore>
+      <bits>88.9</bits>
+      <expectation>7.4e-17</expectation>
+      <identity>35.7</identity>
+      <positives>61.8</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ..:::  :.: ...:   . :-----..:.:.--: :.. ::.-- .. ..:.:.. . -:: :: :.. :. :.----:.:. :  :----:.  .::: . .  :.: : :.::..: .--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:..  :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="247">----MENFKGLQKSLYIWTDSADLDKRVEQLKAATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSYIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAVNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="DRE2_DROWI" ac="B4MZ79" length="253" description="Anamorsin homolog OS=Drosophila willistoni OX=7260 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <smithWatermanScore>369</smithWatermanScore>
+      <zScore>438.3</zScore>
+      <bits>88.9</bits>
+      <expectation>7.6e-17</expectation>
+      <identity>34.9</identity>
+      <positives>62.7</positives>
+      <overlap>241</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHD---AIYESLELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN---------GNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRA-----EGAKEGNSEQPK-EIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ...::  ..: ...: ---: : :  . ... : :.. :..-- .. ..:.:.. . -.: :: : . :. :.----:.:. : ::----:.. :::: . .  :.: : :.::..:..--------- .: ::::..:: ....    : :... .:-.: ----:  : .:.:: :-----:  .:. ..: .-:  .::::.: :::::::.:::::: :::::::.  ..:--:..:</pattern>
+      <matchSeq start="27" end="252">----MEQFKGLQKSLYIWTDNAELDKRVEQLKTATGGEVALENVHRLSFASYASSSFDLIVIECAQLTDNY--VKLLHMLKPSGKLHLISFIGAAGSLLQEIK----LSGFINCSE----DSDNTLTAEKPGYETGSSARLSFAKKNSSTLNVWKISGDDDELIDEEDLLDEVDKQKPDPASLKVCST-TGK----RKACKNCSCGLADELENEKKQENAAKQASTENAKSSCGNCYLGDAFRCSSCPYLGMPAFKPGEKVQLVDNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="DRE2_DROYA" ac="B4NYT3" length="248" description="Anamorsin homolog OS=Drosophila yakuba OX=7245 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <smithWatermanScore>366</smithWatermanScore>
+      <zScore>434.8</zScore>
+      <bits>88.3</bits>
+      <expectation>1.2e-16</expectation>
+      <identity>35.7</identity>
+      <positives>62.6</positives>
+      <overlap>227</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="296">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              ...::  :.: ...:   . :-----..:.:.--: :.. ::.-- .. ..:.:.. . -:: :: :.. :. :.----:.:. :  :----:.  .::: . .  :.: : :.::..: .--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:.. .:  .::::.: :::::::..::::: :::::::.</pattern>
+      <matchSeq start="27" end="236">----MENFKGLQKSLYIWTDSADLDKRVQQLKSATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAVNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELETEKQSQKANETAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLGDNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="DRE2_DROER" ac="B3N5N3" length="248" description="Anamorsin homolog OS=Drosophila erecta OX=7220 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>363</score>
+      <smithWatermanScore>363</smithWatermanScore>
+      <zScore>431.2</zScore>
+      <bits>87.6</bits>
+      <expectation>1.9e-16</expectation>
+      <identity>35.7</identity>
+      <positives>62.1</positives>
+      <overlap>227</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="296">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              ...::  :.: ...:   . :-----..:.:.--: :.. ::.-- .. ..:.:.. . -:: :: :.. :. :.----:.:. :  :----:.  .::: . .  :.: : :.::..: .--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:..  :  .::::.: :::::::..::::: :::::::.</pattern>
+      <matchSeq start="27" end="236">----MENFKGLQKSLYIWTDSADLDKRVEQLKSATGGDVALENVHRLSFSSYANSSFDLIVI--ECAQLTDSY--VKLLHMLKPSGKLHLVSFIGPAASLLQEIK----LSGFINCRE----DSPDALTAEKPGYETGSSARLSFAKKNASAINVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELETEKQSQKATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLGDNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="DRE2_DROPE" ac="B4GK79" length="247" description="Anamorsin homolog OS=Drosophila persimilis OX=7234 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>361</score>
+      <smithWatermanScore>361</smithWatermanScore>
+      <zScore>428.9</zScore>
+      <bits>87.1</bits>
+      <expectation>2.5e-16</expectation>
+      <identity>34.5</identity>
+      <positives>62.6</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ...::  ..:....:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . .-: :: :.. :. :.----:.:. : ::-----:. :::: . .  :.: : :.::..: .--------:.: -::::..:: . ..    : .... .:-.: ----:  : .:.:: ::  .-: ..   .:  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="246">----MEQFKGLQKSLYIWTDSADLDKRVEQLKTATGGEVAVENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGKLHLFSFIGPASSLLQEIK----LSGFINCSE-----GTDTLTAEKPGYETGSSARLSFAKKNASALNVWKISGDDEELIDEEDLLDEEDKQKPDPAGLKVCST-TGK----RKACKNCSCGLAEELESEKQTATASENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="DRE2_DROPS" ac="Q29P70" length="247" description="Anamorsin homolog OS=Drosophila pseudoobscura pseudoobscura OX=46245 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>361</score>
+      <smithWatermanScore>361</smithWatermanScore>
+      <zScore>428.9</zScore>
+      <bits>87.1</bits>
+      <expectation>2.5e-16</expectation>
+      <identity>34.5</identity>
+      <positives>62.6</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ...::  ..:....:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . .-: :: :.. :. :.----:.:. : ::-----:. :::: . .  :.: : :.::..: .--------:.: -::::..:: . ..    : .... .:-.: ----:  : .:.:: ::  .-: ..   .:  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="246">----MEQFKGLQKSLYIWTDSADLDKRVEQLKTATGGEVAVENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGKLHLFSFIGPASSLLQEIK----LSGFINCSE-----GTDTLTAEKPGYETGSSARLSFAKKNASALNVWKISGDDEELIDEEDLLDEEDKQKPDPAGLKVCST-TGK----RKACKNCSCGLAEELESEKQTATASENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="DRE2_DROMO" ac="B4KLC0" length="248" description="Anamorsin homolog OS=Drosophila mojavensis OX=7230 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>350</score>
+      <smithWatermanScore>350</smithWatermanScore>
+      <zScore>415.6</zScore>
+      <bits>84.7</bits>
+      <expectation>1.4e-15</expectation>
+      <identity>34.0</identity>
+      <positives>62.2</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="85" end="305">RLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN-------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              :.. ::  ..:....:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . .-. :: :.. :. :.----:.:. : ::   :.---:::: . .  :.: : :.::... .-------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: ...   :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="26" end="247">-----MEQFKGLQKSLYIWTDSGELDKRVQALKEATGGEVAVENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGKLHLFAYIGPAANLLQEIK----LSGFINCSEDAAAN---TLTAEKPGYETGSSARLSFAKKSPSMNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELEDEKKTKAATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="DRE2_DROAN" ac="B3MLC5" length="248" description="Anamorsin homolog OS=Drosophila ananassae OX=7217 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>345</score>
+      <smithWatermanScore>345</smithWatermanScore>
+      <zScore>409.7</zScore>
+      <bits>83.6</bits>
+      <expectation>3e-15</expectation>
+      <identity>33.6</identity>
+      <positives>61.8</positives>
+      <overlap>238</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN--------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ...::  ..: ...:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . -:. :: : . :. ..----:.:. : --:..:: .--::: . .  :.: : :.::... .--------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: .:.   :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="247">----MEQFKGLQKTLYIWTDSADLDKRVEKVKSATGGEVALENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGKLHLVAFIGPAGSLLQEVK----LSGFINC--REDADDA--LTAEKPGYETGSSARLSFAKKDASALNVWKISGDDEELIDEEDLLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELESEKQSKAATENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="DRE2_DROGR" ac="B4JAX0" length="249" description="Anamorsin homolog OS=Drosophila grimshawi OX=7222 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>343</score>
+      <smithWatermanScore>343</smithWatermanScore>
+      <zScore>407.2</zScore>
+      <bits>83.1</bits>
+      <expectation>4e-15</expectation>
+      <identity>33.9</identity>
+      <positives>62.1</positives>
+      <overlap>227</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="296">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVS-VSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNN-------NGNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEG--AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              :. ::  ..:....:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . -.. ::  .. :. :.----:.:. : .:   :.---:::: . .  :.:.: :.::..  -------.:.: -::::..:: .:..    : .. . .:-.: ----:  : .:.:: :: --... .:    :  .::::.: :::::::..::::: :::::::.</pattern>
+      <matchSeq start="27" end="237">----MEQFKDLQKSLYIWTDSGELDKRVQTIKEATGGEVAVENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGKLHLIAYIGTPASLLQEIK----LSGFINCGEDTAAN---TLTAEKPGYETGSAARLSFAKKAAGVNVWKISGDDEELIDEEDLLDEADKQKPDPSGLRVCST-TGK----RKACKNCSCGLAEELESERTTSSANTENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLANNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="DRE2_DROVI" ac="B4LRY2" length="248" description="Anamorsin homolog OS=Drosophila virilis OX=7244 GN=CIAPIN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>341</score>
+      <smithWatermanScore>341</smithWatermanScore>
+      <zScore>404.9</zScore>
+      <bits>82.7</bits>
+      <expectation>5.5e-15</expectation>
+      <identity>33.8</identity>
+      <positives>62.0</positives>
+      <overlap>237</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="86" end="305">LYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYES-----LELVVVASELADVYDSMELSRFTKILSPNATVSV-SVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNN-------GNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAK-EGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLD--LQDDF</querySeq>
+      <pattern>                              ..:::  ..:....:   . :-----..:.:.--: :.. :..-- .. ..:.:.. . .-. :: : . :. :.----:.:. :  :   :.---:::: . .  :.: : :.::.....-------:.: -::::..:: . ..    : .. . .:-.: ----:  : .:.:: ::  .-: ...   :  .::::.: :::::::..::::: :::::::.  . :--:..:</pattern>
+      <matchSeq start="27" end="247">----MEQFKGLQKSLYIWTDSAELDKRVETLKAATGGEVAVENVHRLSFSSYANSSFDLIVI--ECAQLTDNY--VKLLHMLKPSGILHLFAYIGPAGSLLQEIK----LSGFINCREDAVAN---TLTAEKPGYETGSSARLSFAKKTSSVNVWKISGDDEELIDEEELLDEEDKQKPDPAGLRVCST-TGK----RKACKNCSCGLAEELESEKTTKTVTENAKSSCGNCYLGDAFRCSTCPYLGMPAFKPGEKVQLADNLLKSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CPIN1_TETNG" ac="Q4SK88" length="313" description="Anamorsin OS=Tetraodon nigroviridis OX=99883 GN=ciapin1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>339</score>
+      <smithWatermanScore>339</smithWatermanScore>
+      <zScore>400.4</zScore>
+      <bits>82.2</bits>
+      <expectation>9.7e-15</expectation>
+      <identity>32.3</identity>
+      <positives>58.7</positives>
+      <overlap>254</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="68" end="301">SSHPNAKETHRSNEPFFRLYTKQSHRRSIMASTL-CVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELA------DVYDSMELSRFTKI-------LSPNATVSV-SVIGDATKSLSPIHTSFLLAGL--ANNSERRNADGSRT-LTATRRNNTTNSVATLNFASNNNNGNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPK-EIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              :::.-:.:--:   .: .:. .       :.... .    :: ::...:  ------ . ....:: ::..-------:::.:  ..-.. :   ..:  :. :     .--...:. . . :...-  : .     :.:    ...:. : .::-:.: :.::-:  .:    ::   :.: .    . .  : .:::: ::  .. ..:. :-.. .:.::.: :::::::::::::: :::::::.-..::</pattern>
+      <matchSeq start="57" end="306">DYAEELSSIVGTDGKVSVENVDRLLLSSHSASTFDCAV--SCVLADSSAVHSLDTLAELARVLKPGGKLILEEVVTGAEAQRERTSEKLVSTLKLSGFTSVTEISKAELSPDALSAIRTATGYQGNALFRIRMSASKPDFEVGSSSQIKLSFGNKAPRPADKPAPDPNTVKMWMLSANDMNDDDLDLVDSDSLL-DEEDLKKPDPSSLKASTCGEAAGKKKKACKNCTCGLAEELEQESKEKEKTNLPKSACGSCYLGDAFRCASCPYLGMPAFKPGEK-ILLDNKTLTDA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="DRE2_OSTLU" ac="A4RS24" length="257" description="Anamorsin homolog OS=Ostreococcus lucimarinus (strain CCE9901) OX=436017 GN=OSTLU_29219 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>330</score>
+      <smithWatermanScore>330</smithWatermanScore>
+      <zScore>391.4</zScore>
+      <bits>80.3</bits>
+      <expectation>3.1e-14</expectation>
+      <identity>32.5</identity>
+      <positives>58.7</positives>
+      <overlap>240</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="89" end="306">KQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTI-HDAIYESLELVVVASELADVYDSMELSRFTKILSPN--ATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRN----------ADGSRTLTATR--RNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDC---SGRAPCDDCTCGRAEG--AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFK--PGEEHLVLDLQDDF</querySeq>
+      <pattern>                              :  .::... :- :   ..:: .   . .: . :. :  :     : .--:  ...:. :  .. .    ...:::... ... .----------: :.     .:--: :.: . :.  ....    .: ::::. :::. .--------...: .: -:::---.:.  : .:::::::.--:.:...   .:   :.::.:.::::::::.:::::.::::--:: .-. ::: ::.</pattern>
+      <matchSeq start="28" end="257">---MSVLALDVARDVAAPRRAEILETLRALADGADATTREIASDDDADALERASCDAYFARARDASEARRACARASEKLRAGGALGVVVDDERTATATTEAMVLAGFTTVTREDDGVVRCVKPNWARGTAFALKSRAVRVNATAADAADAWGASAAADDDELIDESALLTELD--------VNTAPVKY-DDCDVGAGKKACKNCTCGRAEAEAAEEATTAASEETFVSACGNCALGDAFRCAGCPYLGQPAFKDQPGTK-VELDLGDDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CPIN1_DANRE" ac="Q6AZB3" length="311" description="Anamorsin OS=Danio rerio OX=7955 GN=ciapin1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>327</score>
+      <smithWatermanScore>327</smithWatermanScore>
+      <zScore>386.1</zScore>
+      <bits>79.6</bits>
+      <expectation>6.1e-14</expectation>
+      <identity>32.9</identity>
+      <positives>57.4</positives>
+      <overlap>258</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="72" end="304">NAKETHRSNEPFFRLYTKQSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLL--AGLANNSERR------NAD---GSRT---LTATRRNNTT-------NSVATLNFASNNNNGNDL-LIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEG-AKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLV--LDLQDDF</querySeq>
+      <pattern>                              ::. :  --:: . : .. :    :.... .    ::  :..:: . :  . .:    :.--- . :::. .-- :. :::  .. : --.:...:.  :------. :---:: :---:.  ....::-------...   ....:. . .:.-:.: : ::-::..:    ::-:  :. . :. . .  : .:::: :: - .:... :     .:.::.: :::::::.:::::: :::::::. :.-- :. :</pattern>
+      <matchSeq start="62" end="310">IAAVVGDQSLVSLENSERLLLSSHNASSYDCVLSGLL--TDSSLIHSSEMLVEMARVMKPGGTLVLEEPVTGSEDTGVRTAEKLMSAIKL---AGLVSVTEV--KTEPLSPKAAAALTERTGFSGNTLSRVRMTASKPDFEVGSSTQLKLSFGKKKTTTVKPALDPGTAQKWTLSANDMDDDDVDLVDSDALL-DADDLKKPDPS-SLKASCGDDSKKKKKACKNCTCGLAEELEQESKAAQKASQPKSACGNCYLGDAFRCGSCPYLGMPAFKPGEKVLLANTDIADK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="DRE2_DICDI" ac="O15692" length="256" description="Anamorsin homolog OS=Dictyostelium discoideum OX=44689 GN=rsc43 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>325</score>
+      <smithWatermanScore>325</smithWatermanScore>
+      <zScore>385.4</zScore>
+      <bits>79.1</bits>
+      <expectation>6.6e-14</expectation>
+      <identity>31.1</identity>
+      <positives>62.3</positives>
+      <overlap>228</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="90" end="306">QSHRRSIMASTLCVVLGSASSTDPAAISAATMTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCS-GRAP--CDDCTCGRAEGAKEGNSEQPKEIK--------SSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              :.: . .: -.. : .... :.. :--.  ..:  .: ....:. .. .:.   ..-...:     .::..::.. .   :.  .  . : . .  ::  .:.:. :...:.    :.  . ...-..:..   . :  ::-. ::: -:.. --: .:::::::---: :. .::  :--------.::::.:::::::::..::: : :.:: ::.---..: :::</pattern>
+      <matchSeq start="36" end="251">LELNKEQEVLIISDVENSESIINQVKELSKTVTTSLSKE-QQQIQNNFDHVIIIS--SKPFNSALISMYSNLLKKGGKLSIYQTNE-NETLVNSGMDFLIGGLVDFKATSNSTYKTIVHADKPSWDTNESSTINIPSTSSNNPWASIEGGDRINE-NDLVSENDKTSKPAT-TLDDCEVGKTKKACKNCTCGRAE---EENQSKPKLTKEMIENPGVGSSCGNCSLGDAFRCGGCPYRGLPTFKVGEK---IQLPDDFLVDDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="DRE2_BRAFL" ac="C3YFB4" length="309" description="Anamorsin homolog OS=Branchiostoma floridae OX=7739 GN=BRAFLDRAFT_58504 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>322</score>
+      <smithWatermanScore>322</smithWatermanScore>
+      <zScore>380.1</zScore>
+      <bits>78.4</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>44.0</identity>
+      <positives>64.0</positives>
+      <overlap>125</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="183" end="303">IHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNNNNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAEGAKEGNSEQPKEIKS----SSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              ...: .. .:. .. :..  :::-: :.::-:  .:    :.   :   .: : . :  : .:::: ::---: ...:: .  :----:.::.: :::::::::::::: :::::::.  . : :</pattern>
+      <matchSeq start="185" end="304">SASKPSYEVGSSAQLTLSFAKKKQVEKPKLDENTAKIWSLSAVDMNDDDIDLL-DPDELL-DEEDLKKPDPASLKAQCGTGGDTKKRKACKNCTCGLAE---ELEGDQPGKTASKPATSACGNCYLGDAFRCASCPYLGMPAFKPGEKITLTDRQLKGDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="DRE2_AEDAE" ac="Q17L24" length="254" description="Anamorsin homolog OS=Aedes aegypti OX=7159 GN=AAEL001501 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>318</score>
+      <smithWatermanScore>318</smithWatermanScore>
+      <zScore>377.1</zScore>
+      <bits>77.6</bits>
+      <expectation>1.9e-13</expectation>
+      <identity>34.3</identity>
+      <positives>59.7</positives>
+      <overlap>201</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="121" end="303">MTDAAAKTIHDAIYESLELVVVASELADVYDSMELSRFTKILSPNATVSVSVIGDATKSLSPIHTSFLLAGLANNSERRNADGSRTLTATRRNNTTNSVATLNFASNN-----------NNGNDLLIDEDNLLTDASNLLGAPPSMSAAATKSGDDCSGRAPCDDCTCGRAE-------GAKEGNSEQPKEIKSSSCGKCSLGDAFRCASCPYLGKPAFKPGEEHLVLDLQDDF</querySeq>
+      <pattern>                              .:   : . :...:.. :---:. : . .    ....::.:. : .---. ::.-.... . :   .:.: :....:.-----------.. .:  ::::.:: . ...  .  :. . .:-.: ----:  : ::.:: ::-------:.  .:::-::----::::.: ::::::::.::::: :::::::.  . : :</pattern>
+      <matchSeq start="66" end="249">QVNVENADRVLLAGYTPSQFDVVLANVPSGNSEMASSLLKLVKPKGKV---VFKDDSANAEATRSNLLLSGFINIT---SLDGN-VFVGEKPNYEIGSAAKLSLGGNKAKVAAVWKLDVDDDDDERIDEDELLDEEDKVKPTAESLRVCGT-TGK----RKACKDCSCGLAEELEAETKGSAVANSE-PK----SSCGSCYLGDAFRCATCPYLGMPAFKPGEKIQLTDTQMRADI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163447-0984-2552509-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163447-0984-2552509-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163447-0984-2552509-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0H2|RR4_PHATC" type="PROTEIN" length="203"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:34:47+00:00" end="2022-11-07T16:34:49+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RR4_PHATC" ac="A0T0H2" length="203" description="30S ribosomal protein S4, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1296</score>
+      <smithWatermanScore>1296</smithWatermanScore>
+      <initn>1296</initn>
+      <init1>1296</init1>
+      <opt>1296</opt>
+      <zScore>1710.9</zScore>
+      <bits>323.5</bits>
+      <expectation>9.7e-88</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RR4_TRICV" ac="P49492" length="206" description="30S ribosomal protein S4, chloroplastic OS=Trieres chinensis OX=1514140 GN=rps4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>971</score>
+      <smithWatermanScore>971</smithWatermanScore>
+      <initn>829</initn>
+      <init1>829</init1>
+      <opt>971</opt>
+      <zScore>1283.6</zScore>
+      <bits>244.4</bits>
+      <expectation>6.2e-64</expectation>
+      <identity>70.4</identity>
+      <positives>90.3</positives>
+      <overlap>206</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNT---DIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::::.:.::::.::::: :.:.: .:::. :..---: .:: ::::.::::::::::::::::.::.::.::::::.:::::::::::::::::.::::::: ..:.:::::::::::.: .:::::::::..::.:.:: :..::.::: :... .  ..::::.::  : :: :..:::::.. :.::::::::.::::</pattern>
+      <matchSeq start="1" end="206">MSRYRGPKLRITRRLGALPGLTQKQSKKKGRPGQHGKSNEADNSKKTTEYGIRLEEKQKLKFNYGLTESQLYRYIKEARRRKGVTGLILLQLLEMRLDTICFTLGFAPTIASARQLVNHGHITVNDNVVSIPSFQCQINDVIGIKPKATSKNLVEGNLQTIKQVDLPTHLKFDKSKQEATVINYCDRNELLLNLDELLVIEYYSRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RR4_THAPS" ac="A0T0W7" length="205" description="30S ribosomal protein S4, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rps4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>901</score>
+      <smithWatermanScore>901</smithWatermanScore>
+      <initn>902</initn>
+      <init1>729</init1>
+      <opt>901</opt>
+      <zScore>1191.7</zScore>
+      <bits>227.4</bits>
+      <expectation>8.2e-59</expectation>
+      <identity>65.4</identity>
+      <positives>86.8</positives>
+      <overlap>205</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDG-NTDIGKK-LTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::::.:.:::: ::::: :::.: .:::. :-:   :::- ::::.:::::::::::::..:.::..:.::::::.:::::::::::::::::.::.::.: ..: :::::::::: .: ::..::::::...:.:.:: :: .: ..:.:.:. .    :.:: :.  :::..: .::::... :.:.::::::.::::</pattern>
+      <matchSeq start="1" end="205">MSRYRGPKLRITRRLGDLPGLTQKKSKKTTRPGQHGKNLGEGKKKTTEYGIRLEEKQKLKFNYGISENQLYHYIKEARRRNGVTGLILLQLLEMRLDTICFSLGYAPTIAAARQLVNHGHIIVNDKVIDIPSFQCQIGDVIGIKSKSPAKKIIENNLKTINFSAPPAHLTFNKEKLEGVVQNYCDRSELLLDLNELLVIEYYSRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RS4_SYNE7" ac="Q31N52" length="202" description="30S ribosomal protein S4 OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>753</score>
+      <smithWatermanScore>753</smithWatermanScore>
+      <initn>776</initn>
+      <init1>610</init1>
+      <opt>753</opt>
+      <zScore>997.3</zScore>
+      <bits>191.4</bits>
+      <expectation>5.5e-48</expectation>
+      <identity>55.7</identity>
+      <positives>79.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.: :::: ::::: : . .   ::. :.. --.: .::..::::::::.:::::.:.:: ::::.::: :: ::  ::::::::::.: : :::: ..  :::::::::.:.: .::.: :..:: ...:..... .:. :: .:..   . ..:.:: ::  :::: :   :.:. :.::..::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRIVRRLGDLPGLTRKAARRSYPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGLSERQLVRYVKKARRMQGSTGTNLLQLLEMRLDNLVFRLGFAPTIPGARQLVNHGHVTVNGRVVDIASYNCRPGEVIGVRQREASRKLVTANLEYPGLANVPVHLDFDKNKLEAKVTGACEREWVALQINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RS4_SYNP6" ac="Q5MZ57" length="202" description="30S ribosomal protein S4 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>753</score>
+      <smithWatermanScore>753</smithWatermanScore>
+      <initn>776</initn>
+      <init1>610</init1>
+      <opt>753</opt>
+      <zScore>997.3</zScore>
+      <bits>191.4</bits>
+      <expectation>5.5e-48</expectation>
+      <identity>55.7</identity>
+      <positives>79.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.: :::: ::::: : . .   ::. :.. --.: .::..::::::::.:::::.:.:: ::::.::: :: ::  ::::::::::.: : :::: ..  :::::::::.:.: .::.: :..:: ...:..... .:. :: .:..   . ..:.:: ::  :::: :   :.:. :.::..::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRIVRRLGDLPGLTRKAARRSYPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGLSERQLVRYVKKARRMQGSTGTNLLQLLEMRLDNLVFRLGFAPTIPGARQLVNHGHVTVNGRVVDIASYNCRPGEVIGVRQREASRKLVTANLEYPGLANVPVHLDFDKNKLEAKVTGACEREWVALQINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RS4_PROM5" ac="A2BV69" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9515) OX=167542 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>749</score>
+      <smithWatermanScore>749</smithWatermanScore>
+      <initn>786</initn>
+      <init1>586</init1>
+      <opt>749</opt>
+      <zScore>992.0</zScore>
+      <bits>190.5</bits>
+      <expectation>1.1e-47</expectation>
+      <identity>54.7</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: ..::. .:.::::::..:: ::: ::.   . ..: :...:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSERQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTVNGKVLDIAGYQCKSGDVISIKEKKASKKLVEGNIEFPGLANVPPHIELDKPKLTGKINGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RS4_PROM9" ac="Q31CC9" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9312) OX=74546 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>745</score>
+      <smithWatermanScore>745</smithWatermanScore>
+      <initn>758</initn>
+      <init1>582</init1>
+      <opt>745</opt>
+      <zScore>986.8</zScore>
+      <bits>189.5</bits>
+      <expectation>2.1e-47</expectation>
+      <identity>54.7</identity>
+      <positives>80.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:::: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: ..::. .:.:.:::...:: ::: ::.   . ..: :: .:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSEKQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTVNGKVLDIAGYQCKSGDVIGIKENKASKKLVEGNIEFPGLANVPPHLDLDKPKLTGKITGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RS4_PROMP" ac="Q7V2R1" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus subsp. pastoris (strain CCMP1986 / NIES-2087 / MED4) OX=59919 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>743</score>
+      <smithWatermanScore>743</smithWatermanScore>
+      <initn>780</initn>
+      <init1>580</init1>
+      <opt>743</opt>
+      <zScore>984.2</zScore>
+      <bits>189.0</bits>
+      <expectation>3e-47</expectation>
+      <identity>54.7</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.::: ::..: ..::. .:.:::::...:: ::: ::.   . ..: :...:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSERQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTINGKVLDIAGYQCKPGDVISIKENKASKKLVEGNIEFPGLANVPPHIELDKPKLTGKINGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RS4_PROMS" ac="A2BPN7" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain AS9601) OX=146891 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>742</score>
+      <smithWatermanScore>742</smithWatermanScore>
+      <initn>755</initn>
+      <init1>579</init1>
+      <opt>742</opt>
+      <zScore>982.8</zScore>
+      <bits>188.8</bits>
+      <expectation>3.5e-47</expectation>
+      <identity>54.7</identity>
+      <positives>80.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:::: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: ..::. .:.:.:::...:: ::: ::.   . ..: :: .:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSEKQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTVNGKVLDIAGYQCKSGDVIGIKENKASKKLVEGNIEFPGLANVPPHLDLDKPKLTGKINGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RS4_PROM0" ac="A3PBC7" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9301) OX=167546 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>742</score>
+      <smithWatermanScore>742</smithWatermanScore>
+      <initn>755</initn>
+      <init1>579</init1>
+      <opt>742</opt>
+      <zScore>982.8</zScore>
+      <bits>188.8</bits>
+      <expectation>3.5e-47</expectation>
+      <identity>54.7</identity>
+      <positives>80.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:::: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: ..::. .:.:.:::...:: ::: ::.   . ..: :: .:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSEKQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTVNGKVLDIAGYQCKSGDVIGIKENKASKKLVEGNIEFPGLANVPPHLDLDKPKLTGKINGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RS4_PROM2" ac="A8G3C1" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9215) OX=93060 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>742</score>
+      <smithWatermanScore>742</smithWatermanScore>
+      <initn>755</initn>
+      <init1>579</init1>
+      <opt>742</opt>
+      <zScore>982.8</zScore>
+      <bits>188.8</bits>
+      <expectation>3.5e-47</expectation>
+      <identity>54.7</identity>
+      <positives>80.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:...:::: ::::: : :.: : ::. :.. --.: .::..::::::::.::::..:::: ::::.:: ..: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: ..::. .:.:.:::...:: ::: ::.   . ..: :: .:  :: . .   :::. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRVTRRLGELPGLTRKASKKSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSEKQLVRYVKKARAQEGSTGTNLLRLLENRLDNVCFRLGFGGTIPGSRQLVNHGHVTVNGKVLDIAGYQCKSGDVIGIKENKASKKLVEGNIEFPGLANVPPHLDLDKPKLTGKINGKCDREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RS4_PROM4" ac="A9BE29" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9211) OX=93059 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>737</score>
+      <smithWatermanScore>737</smithWatermanScore>
+      <initn>767</initn>
+      <init1>580</init1>
+      <opt>737</opt>
+      <zScore>976.3</zScore>
+      <bits>187.5</bits>
+      <expectation>8.1e-47</expectation>
+      <identity>52.7</identity>
+      <positives>80.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ... : ::. :.. --.: .::..::::::::.::::..:.:: ::::.::  .: ::  ::.::: :::..:: :::. ..  .::::::::.:.: ::..: :.::. .:.:::.::..:: :.: :..   . ..: ::.:.  :. : .   :.:. :.....::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSNPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGISERQLVRYVKKARSLEGSTGTNLLKLLENRLDNVCFRLGFGPTIPGSRQLVNHGHVTVNGKVLDIASYQCKPGDVISIREKKGSKKLAEGNLEFPGLANVPPHLEFEKSKMSAKITGKCEREWVAIEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RS4_NOSP7" ac="B2J1M8" length="202" description="30S ribosomal protein S4 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>734</score>
+      <smithWatermanScore>734</smithWatermanScore>
+      <initn>748</initn>
+      <init1>597</init1>
+      <opt>734</opt>
+      <zScore>972.3</zScore>
+      <bits>186.8</bits>
+      <expectation>1.3e-46</expectation>
+      <identity>54.7</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.: :::: ::::: :.. .   ::. :.. --:: .::..::::::::.::::::::::.:::..:::  : :: .::::::::::.  : ::.: ..  :::::::::.:.: .::.: :.::: ...:.......:. :::.:..   . ..:.::.::  :: . : .  .:. :.::..::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRIVRRLGDLPGLTRKSARRAYPPGQHGQNR--KKRSEYAIRLEEKQKLRFNYGLTEKQLLRYVRKARRVTGSTGQVLLQLLEMRLDNTVFRLGIAPTIPAARQLVNHGHVTVNGRVVNIASYQCRPGEVIAVRDRAQSRKLVEANLQYPGLANLPSHLEFDKNKLVGKVNSVIEREWVALQVNELLVVEYYSRQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RS4_PROMM" ac="Q7V8U9" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9313) OX=74547 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>733</score>
+      <smithWatermanScore>733</smithWatermanScore>
+      <initn>759</initn>
+      <init1>582</init1>
+      <opt>733</opt>
+      <zScore>971.0</zScore>
+      <bits>186.6</bits>
+      <expectation>1.6e-46</expectation>
+      <identity>50.7</identity>
+      <positives>83.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ... . ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  :::::::::.:.: .:..: :.::. .:...:.:...:: :.:.:..   . ..: :...: .:. : ... :.:. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSHPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGISERQLVRYVKKARAQDGSTGTNLLKLLENRLDNVCFRLGFGPTVPGARQLVNHGHVTVNGRVLDIASYQCKAGDVVAIRERKGSKKLAEANLEFPGLANVPPHIELDKAKMSAKIISKCEREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RS4_PROM3" ac="A2CBJ1" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain MIT 9303) OX=59922 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>733</score>
+      <smithWatermanScore>733</smithWatermanScore>
+      <initn>759</initn>
+      <init1>582</init1>
+      <opt>733</opt>
+      <zScore>971.0</zScore>
+      <bits>186.6</bits>
+      <expectation>1.6e-46</expectation>
+      <identity>50.7</identity>
+      <positives>83.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ... . ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  :::::::::.:.: .:..: :.::. .:...:.:...:: :.:.:..   . ..: :...: .:. : ... :.:. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSHPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGISERQLVRYVKKARAQDGSTGTNLLKLLENRLDNVCFRLGFGPTVPGARQLVNHGHVTVNGRVLDIASYQCKAGDVVAIRERKGSKKLAEANLEFPGLANVPPHIELDKAKMSAKIISKCEREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RS4_SYNSC" ac="Q3ALH7" length="202" description="30S ribosomal protein S4 OS=Synechococcus sp. (strain CC9605) OX=110662 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>731</score>
+      <smithWatermanScore>731</smithWatermanScore>
+      <initn>758</initn>
+      <init1>583</init1>
+      <opt>731</opt>
+      <zScore>968.4</zScore>
+      <bits>186.1</bits>
+      <expectation>2.2e-46</expectation>
+      <identity>52.7</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ...   ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  :::::::::.:.: .:..: :.::. .:.:.:.:.. :: :.:.:..   . ..:.::..:  :: : :   :.:. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSYPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSERQLVRYVKKARAQEGSTGTNLLKLLENRLDNVCFRLGFGPTVPGARQLVNHGHVTVNGRVTDIASYQCKPGDVIAIRERKCSKKLAEANLEFPGLANVPSHLELDKSKLSAKVTARCEREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RS4_PARMW" ac="Q7U5K9" length="202" description="30S ribosomal protein S4 OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>730</score>
+      <smithWatermanScore>730</smithWatermanScore>
+      <initn>749</initn>
+      <init1>586</init1>
+      <opt>730</opt>
+      <zScore>967.1</zScore>
+      <bits>185.8</bits>
+      <expectation>2.6e-46</expectation>
+      <identity>52.2</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:.:::::.:.:.:::: ::::: : ...   ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  :::::::::.:.: .:..: :.::. .:...:.:.. :: :.: :..   . ..::::..: .:: : :   :.:. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MARYRGPRLRITRRLGDLPGLTRKAAKRSYPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSERQLVRYVKKARAQEGSTGTNLLKLLENRLDNVCFRLGFGPTVPGARQLVNHGHVTVNGRVTDIASYQCKPGDVVAIRERKCSKQLAEGNLEFPGLANVPTHLELDKAKLSAKVTGRCEREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RS4_SYNPW" ac="A5GJA2" length="202" description="30S ribosomal protein S4 OS=Synechococcus sp. (strain WH7803) OX=32051 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>729</score>
+      <smithWatermanScore>729</smithWatermanScore>
+      <initn>756</initn>
+      <init1>581</init1>
+      <opt>729</opt>
+      <zScore>965.8</zScore>
+      <bits>185.6</bits>
+      <expectation>3.1e-46</expectation>
+      <identity>52.7</identity>
+      <positives>81.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ...   ::. :.. --.: .::..::::::::.::::..:.:: ::::.:: ..: ::  ::.::: :::..:: :::. ..  :::::::::.:.: .:..: :.::. .:.:.:.:.. :: :.: :..   . ..: ::..:  ::.: :.  :.:. :.:...::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSYPPGQHGQAR--RKRSEYAIRLEEKQKLRFNYGVSERQLVRYVKKARAQEGSTGTNLLKLLENRLDNVCFRLGFGPTVPGARQLVNHGHVTVNGRVTDIASYQCKPGDVIAIRERKCSKQLAEGNLEFPGLANVPPHLELDKPKLNAKVVGRCEREWVALEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RR4_EMIHU" ac="Q4G3A4" length="202" description="30S ribosomal protein S4, chloroplastic OS=Emiliania huxleyi OX=2903 GN=rps4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>729</score>
+      <smithWatermanScore>729</smithWatermanScore>
+      <initn>756</initn>
+      <init1>582</init1>
+      <opt>729</opt>
+      <zScore>965.8</zScore>
+      <bits>185.6</bits>
+      <expectation>3.1e-46</expectation>
+      <identity>54.2</identity>
+      <positives>81.8</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:.:::: ::.:.:::: :::::.: ... .:::. : --. :: :.::.::::::::.::::..::::. :...:.  .:.:: :::::::::::.: : ::.: ..: :::::.: :: .:.  :::::.::. .:..:......::.::.: ... .. . : :: ::  .: : ::   ::. :.:.:.::.:::.:::.</pattern>
+      <matchSeq start="1" end="201">MARYRGAKLRITRRLGDLPGLTSKIAKRTSRPGQHGA--VQKKPTQYGIRLEEKQKLRFNYGISEKQLMNYIRQAKGIKGTTGTILLQLLEMRLDNLIFRLGLAPTIAAARQLVSHKHIQVNNTRVSIPSYQCQPGDVLSVRDNAASKSLVNTYLESPSLSQSPQHLDFDKKNLTAKVLGIVDREWVALKLNELFVIEYYSRKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RS4_PROMA" ac="Q7VDG7" length="202" description="30S ribosomal protein S4 OS=Prochlorococcus marinus (strain SARG / CCMP1375 / SS120) OX=167539 GN=rpsD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>727</score>
+      <smithWatermanScore>727</smithWatermanScore>
+      <initn>751</initn>
+      <init1>563</init1>
+      <opt>727</opt>
+      <zScore>963.1</zScore>
+      <bits>185.1</bits>
+      <expectation>4.4e-46</expectation>
+      <identity>52.2</identity>
+      <positives>80.3</positives>
+      <overlap>203</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="203">MSRYRGPKLKISRRLGTLPGLTTKKSNKLNRPGKDGNTDIGKKLTEYGVRLEEKQKLKFNYGLTEKQLFRYVKEARRRQGVTGLILLQLLEMRLDTLCFTLGFAKSLAQARQLVNHGHITINKKVVSIPSFQCRLNDIISIKEKSSSKTLVETNIKNNQVREIPTHLRFDTVKLEAIVLDYCDRNDVSLQLDELLVIEHYSRR</querySeq>
+      <pattern>:::::::.:.:.:::: ::::: : ... : ::. ::. --.: .::..::::::::.::::..:.:: ::::.::  .: ::  ::.::: :::..:: :::. ..  .::::::::.:.: :...: :.::. .: :.:.:...:: :.: :..   . ..: ::...  :. : :   :::. :.....::::.:.:::.</pattern>
+      <matchSeq start="1" end="201">MSRYRGPRLRITRRLGDLPGLTRKAAKRSNPPGQHGNAR--RKRSEYAIRLEEKQKLRFNYGISERQLVRYVKKARAMEGSTGTNLLKLLEGRLDNVCFRLGFGPTIPGSRQLVNHGHVTVNGKTLDIASYQCKSGDTIAIRERKGSKKLAEGNLEFPGLANVPPHLELEKSKMTAKVTGKCDREWVAIEINELLVVEYYSRKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

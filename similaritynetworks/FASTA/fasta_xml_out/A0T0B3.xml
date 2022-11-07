@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162919-0687-51737228-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162919-0687-51737228-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162919-0687-51737228-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0B3|RR14_PHATC" type="PROTEIN" length="100"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:29:19+00:00" end="2022-11-07T16:29:22+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RR14_PHATC" ac="A0T0B3" length="100" description="30S ribosomal protein S14, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>663</score>
+      <smithWatermanScore>663</smithWatermanScore>
+      <initn>663</initn>
+      <init1>663</init1>
+      <opt>663</opt>
+      <zScore>926.3</zScore>
+      <bits>176.3</bits>
+      <expectation>4.9e-44</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RR14_THAPS" ac="A0T0S2" length="100" description="30S ribosomal protein S14, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>548</score>
+      <smithWatermanScore>548</smithWatermanScore>
+      <initn>548</initn>
+      <init1>548</init1>
+      <opt>548</opt>
+      <zScore>768.4</zScore>
+      <bits>147.0</bits>
+      <expectation>3.1e-35</expectation>
+      <identity>78.0</identity>
+      <positives>92.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>:::.:::::::::::: .::  :: .::..:..  .::::::.:::::.:::::.: :::::::::::::: .::::.::::.:::::::::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKRSMIEREKKRIKLHQKYESKRQALLEEYNSTSDFNLKLEIHSKIQRLPRNSSKIRIRNRCWKTGRPRGYYRDFGVSRHVLREMAHQCLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RR14_TRICV" ac="P49502" length="100" description="30S ribosomal protein S14, chloroplastic OS=Trieres chinensis OX=1514140 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>539</score>
+      <smithWatermanScore>539</smithWatermanScore>
+      <initn>539</initn>
+      <init1>539</init1>
+      <opt>539</opt>
+      <zScore>756.0</zScore>
+      <bits>144.8</bits>
+      <expectation>1.5e-34</expectation>
+      <identity>78.0</identity>
+      <positives>93.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::::::..::. :: :::. :.  :.:. .:..:::::::::::::.:::::::::::::: .::::.::::.:::::.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRIKLNNKYTPKRNTLLQAYRQTEDFQSRLDIHSKIQKLPRNSAKNRIRNRCWKTGRPRGFYRDFGVSRHVLREMAHSCLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RS14_TRIEI" ac="Q10ZE2" length="100" description="30S ribosomal protein S14 OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>468</score>
+      <smithWatermanScore>468</smithWatermanScore>
+      <initn>468</initn>
+      <init1>468</init1>
+      <opt>468</opt>
+      <zScore>658.5</zScore>
+      <bits>126.7</bits>
+      <expectation>4.1e-29</expectation>
+      <identity>68.0</identity>
+      <positives>87.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: ::..::: ::  : ....  :... :.::: .::.:::::: .:.::::: :::::: .:::::::.:.:::::. :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRKKLVEKYAEKRRELKEQFMKAEDLEQKIELHRQIQRLPRNSAPSRVRNRCWLTGRPRGFYRDFGLSRNVIREMAHEGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RS14_TRIV2" ac="Q3MCD2" length="100" description="30S ribosomal protein S14 OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <smithWatermanScore>466</smithWatermanScore>
+      <initn>466</initn>
+      <init1>466</init1>
+      <opt>466</opt>
+      <zScore>655.7</zScore>
+      <bits>126.2</bits>
+      <expectation>5.8e-29</expectation>
+      <identity>70.0</identity>
+      <positives>87.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: ::..::. :: .::....: ::   :::.: .::.:::::: .: ::::: :::::::.:::::::.:.:: ::. :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRAKLVEKYSAKREALLEEFRTTESPLEKLEIHRQIQQLPRNSAPNRRRNRCWVTGRPRGVYRDFGLSRNVLREWAHEGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RS14_NOSS1" ac="Q8YQ66" length="100" description="30S ribosomal protein S14 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>465</score>
+      <smithWatermanScore>465</smithWatermanScore>
+      <initn>465</initn>
+      <init1>465</init1>
+      <opt>465</opt>
+      <zScore>654.4</zScore>
+      <bits>125.9</bits>
+      <expectation>6.9e-29</expectation>
+      <identity>70.0</identity>
+      <positives>87.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: ::..::. :: .::....: ::   :::.: .::.:::::: .: ::::: :::::::.:::::::.:.:: ::. :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRAKLVEKYSEKREALLEEFRTTESPLEKLEIHRQIQQLPRNSAPNRRRNRCWVTGRPRGVYRDFGLSRNVLREWAHEGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RR14_PORPU" ac="P51319" length="100" description="30S ribosomal protein S14, chloroplastic OS=Porphyra purpurea OX=2787 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>455</score>
+      <smithWatermanScore>455</smithWatermanScore>
+      <initn>455</initn>
+      <init1>455</init1>
+      <opt>455</opt>
+      <zScore>640.6</zScore>
+      <bits>123.4</bits>
+      <expectation>4e-28</expectation>
+      <identity>66.0</identity>
+      <positives>83.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::.::.:: :: :: ::: ::: .. .. .   ::  :.::..:.:..::::: .: ::::: ::: :: .:::::::::::::.:.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKNMIQREIKREKLEKKYYLKRLAIKEQLKKTTSFAEKIELRQKLQEMPRNSAPVRSRNRCWLTGRSRGYYRDFGLSRHVFREMSHECLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RR14_MESVI" ac="Q9MUR6" length="100" description="30S ribosomal protein S14, chloroplastic OS=Mesostigma viride OX=41882 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>454</score>
+      <smithWatermanScore>454</smithWatermanScore>
+      <initn>454</initn>
+      <init1>454</init1>
+      <opt>454</opt>
+      <zScore>639.2</zScore>
+      <bits>123.2</bits>
+      <expectation>4.8e-28</expectation>
+      <identity>67.0</identity>
+      <positives>87.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: ::..:::.::  : .. .:  ::. ...:. ..:::::::. ::..:::  ::::.: .:::::::::.:::::.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRQKLVNKYAVKRKELKEQIKTSVSFEERFKLQLELQKLPRNSSPTRLHNRCSVTGRPKGYYRDFGLSRHVLREMAHECLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RS14_NOSP7" ac="B2J6L1" length="100" description="30S ribosomal protein S14 OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <smithWatermanScore>451</smithWatermanScore>
+      <initn>451</initn>
+      <init1>451</init1>
+      <opt>451</opt>
+      <zScore>635.1</zScore>
+      <bits>122.4</bits>
+      <expectation>8.2e-28</expectation>
+      <identity>69.0</identity>
+      <positives>84.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: .: .::: :: .::.....  :   :::.: :::.:::::: :: ::::: ::: :::.:::::::.:.:: ::. :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRTRLIEKYADKREALLEEFRSAASPLDKLEIHRKIQQLPRNSAPTRHRNRCWLTGRSRGVYRDFGLSRNVLREWAHEGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RS14_ACAM1" ac="B0CAI0" length="100" description="30S ribosomal protein S14 OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>450</score>
+      <smithWatermanScore>450</smithWatermanScore>
+      <initn>450</initn>
+      <init1>450</init1>
+      <opt>450</opt>
+      <zScore>633.8</zScore>
+      <bits>122.1</bits>
+      <expectation>9.7e-28</expectation>
+      <identity>65.0</identity>
+      <positives>84.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::.:.:::::: .:. ::: :: .::.. .   : . ...:: ..:.:::::: ::.::::: ::: :: .:::::::::.:::::. ::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKGMVEREKKRQRLVAKYAHKRQALLEQISQASSQQERMDLHRQLQRLPRNSAPTRLRNRCWVTGRSRGYYRDFGLSRHVLREMAHEGLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RS14_SYNP6" ac="P52858" length="100" description="30S ribosomal protein S14 OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>450</score>
+      <smithWatermanScore>450</smithWatermanScore>
+      <initn>450</initn>
+      <init1>450</init1>
+      <opt>450</opt>
+      <zScore>633.8</zScore>
+      <bits>122.1</bits>
+      <expectation>9.7e-28</expectation>
+      <identity>64.0</identity>
+      <positives>85.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::.:.::..:: ::..::: :: .: ... .  : . .:::: :.:.:::::: .:.::::: :::::: .::::: :.:.:::::: :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKAMVERDRKRKKLVEKYAAKREALKEQFAAATSQSERLELHRKLQQLPRNSAPNRVRNRCWVTGRPRGYYRDFGLCRNVLREMAHQGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RR14_CHLAT" ac="Q19V89" length="100" description="30S ribosomal protein S14, chloroplastic OS=Chlorokybus atmophyticus OX=3144 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>448</score>
+      <smithWatermanScore>448</smithWatermanScore>
+      <initn>448</initn>
+      <init1>448</init1>
+      <opt>448</opt>
+      <zScore>631.0</zScore>
+      <bits>121.6</bits>
+      <expectation>1.4e-27</expectation>
+      <identity>66.0</identity>
+      <positives>85.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: ::. :::  :  . ....   ::. ::.:: :.:.:::::..::..:::  .:::.. .:::::::::::::::.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRQKLVAKYAELRKEIKEQMRLASSFEEKLNLHRKLQRLPRNSSSTRLHNRCAISGRPKAYYRDFGLSRHVFREMAHNCLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RS14_MICAN" ac="B0JYC2" length="100" description="30S ribosomal protein S14 OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <smithWatermanScore>444</smithWatermanScore>
+      <initn>444</initn>
+      <init1>444</init1>
+      <opt>444</opt>
+      <zScore>625.5</zScore>
+      <bits>120.6</bits>
+      <expectation>2.8e-27</expectation>
+      <identity>65.0</identity>
+      <positives>84.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::.:::::: .: .::  ::. : ....: :.:. :: .:.:.:.:::::: .: ::::  :::::: .:::::::.:.:: ::: :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMVEREKKRARLRQKYEAKRTELKEQFRTAEDFEEKLAIHQKLQELPRNSAPSRHRNRCLTTGRPRGYYRDFGLSRNVLREWAHQGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RS14_RIPO1" ac="B7JUU6" length="100" description="30S ribosomal protein S14 OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <smithWatermanScore>444</smithWatermanScore>
+      <initn>444</initn>
+      <init1>444</init1>
+      <opt>444</opt>
+      <zScore>625.5</zScore>
+      <bits>120.6</bits>
+      <expectation>2.8e-27</expectation>
+      <identity>63.0</identity>
+      <positives>85.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: .:..::: :: .: . ..  :... :.:.: ..:.:::::. .: ::::: :::::: .:::::::.:.:: ::. :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRARLVEKYAAKREALKEAFHQAEDYEEKIEIHRQLQQLPRNSSPNRRRNRCWATGRPRGYYRDFGLSRNVLREWAHEGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RR14_RHDSA" ac="A6MVZ5" length="100" description="30S ribosomal protein S14, chloroplastic OS=Rhodomonas salina OX=52970 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>440</score>
+      <smithWatermanScore>440</smithWatermanScore>
+      <initn>440</initn>
+      <init1>440</init1>
+      <opt>440</opt>
+      <zScore>620.0</zScore>
+      <bits>119.6</bits>
+      <expectation>5.7e-27</expectation>
+      <identity>63.0</identity>
+      <positives>84.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>:::::::.::::: .:. ::. ::  . :  ..  :.. .:.:..:..::::::  .:.::::: ::: :: .:.:::::::.::::::::::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIQREKKRERLVAKYGKKRDEIKKALKSVTSYKDRLDLYAKLEKLPRNSFPSRLRNRCWLTGRTRGYYRQFGLSRHVLREMAHQCLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RS14_GLOC7" ac="B7K8N1" length="100" description="30S ribosomal protein S14 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=rpsN PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>439</score>
+      <smithWatermanScore>439</smithWatermanScore>
+      <initn>439</initn>
+      <init1>439</init1>
+      <opt>439</opt>
+      <zScore>618.6</zScore>
+      <bits>119.3</bits>
+      <expectation>6.8e-27</expectation>
+      <identity>65.0</identity>
+      <positives>83.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::::: .:  ::: ::: : .. .  :... :.:.. ..:.:::::: .: ::::: :::::: .:::::::.:.:: ::: :::::.::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIEREKKRSRLIAKYADKRAELKEQLRQAEDLDDKIEIQRQLQRLPRNSAPSRHRNRCWVTGRPRGYYRDFGLSRNVLREWAHQGLLPGVVKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RR14_GUITH" ac="O78506" length="100" description="30S ribosomal protein S14, chloroplastic OS=Guillardia theta OX=55529 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>436</score>
+      <smithWatermanScore>436</smithWatermanScore>
+      <initn>436</initn>
+      <init1>436</init1>
+      <opt>436</opt>
+      <zScore>614.5</zScore>
+      <bits>118.6</bits>
+      <expectation>1.1e-26</expectation>
+      <identity>63.0</identity>
+      <positives>83.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::::::::.:: .:..::  ::  : .: .    .. :::...:::..:::.  .:.::::: ::: :: .:::::::::.:::.:.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIERERKREELVSKYEKKRLELKSKLKKTAEYEEKLEVYKKIQEIPRNAFPSRLRNRCWVTGRSRGYYRDFGLSRHVLREMVHDCLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RR14_CYAPA" ac="P48138" length="100" description="Cyanelle 30S ribosomal protein S14 OS=Cyanophora paradoxa OX=2762 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <smithWatermanScore>434</smithWatermanScore>
+      <initn>434</initn>
+      <init1>434</init1>
+      <opt>434</opt>
+      <zScore>611.8</zScore>
+      <bits>118.1</bits>
+      <expectation>1.6e-26</expectation>
+      <identity>65.0</identity>
+      <positives>82.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>:::::::::.::: .: .:: .::  :  . .  .: . :: :....:::::::: .:.: ::: :::::: .::::.::::.:::::: ::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIERDKKRENLMNKYLVKRQQLKTRLNETDSVEEKLLLNQELQKLPRNSAPSRVRIRCWLTGRPRGNYRDFGVSRHVLREMAHQGLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RR14_NEOYE" ac="Q1XDG8" length="100" description="30S ribosomal protein S14, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=rps14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <smithWatermanScore>434</smithWatermanScore>
+      <initn>434</initn>
+      <init1>434</init1>
+      <opt>434</opt>
+      <zScore>611.8</zScore>
+      <bits>118.1</bits>
+      <expectation>1.6e-26</expectation>
+      <identity>63.0</identity>
+      <positives>83.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>::::.::.:: :: ::.::: ::: ..  . .   ::. :..:... ...::::: .: ::::: ::: :: .:::::::::::::.:.:::::::::::</pattern>
+      <matchSeq start="1" end="100">MAKKNMIQREIKRSKLAKKYYLKRLAIKDQLKEAGSFSDKMDLRQNSKEMPRNSAAVRGRNRCWLTGRSRGYYRDFGLSRHVFREMSHECLLPGVTKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RR14_CHLRE" ac="Q9GGE2" length="100" description="30S ribosomal protein S14, chloroplastic OS=Chlamydomonas reinhardtii OX=3055 GN=rps14 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <smithWatermanScore>427</smithWatermanScore>
+      <initn>427</initn>
+      <init1>427</init1>
+      <opt>427</opt>
+      <zScore>602.2</zScore>
+      <bits>116.3</bits>
+      <expectation>5.6e-26</expectation>
+      <identity>65.0</identity>
+      <positives>81.0</positives>
+      <overlap>100</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="100">MAKKSMIEREKKRIKLTKKYALKRATLLKKYQTEESFNLKLELHSKIQKLPRNSAKTRIRNRCWKTGRPRGVFRDFGLSRHVFREMAHQCLLPGVTKSSW</querySeq>
+      <pattern>:::::::.:: :: ::. ::: :::.: .. .    .. :: :: :.:.:::::. .:..:::  ::::.: ::::::::::.:::::: ::::: ::::</pattern>
+      <matchSeq start="1" end="100">MAKKSMIQRELKRQKLVMKYATKRAALKEQIKQTTFLKEKLSLHRKLQQLPRNSSAVRLHNRCMITGRPKGYFRDFGLSRHVLREMAHQGLLPGVCKSSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

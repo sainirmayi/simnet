@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-164129-0751-13435436-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-164129-0751-13435436-p1m.m9&quot; -m &quot;F10 fasta-R20221107-164129-0751-13435436-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FXE8|NNRD_PHATC" type="PROTEIN" length="310"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:41:29+00:00" end="2022-11-07T16:41:33+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="NNRD_PHATC" ac="B7FXE8" length="310" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_19831 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2054</score>
+      <smithWatermanScore>2054</smithWatermanScore>
+      <initn>2054</initn>
+      <init1>2054</init1>
+      <opt>2054</opt>
+      <zScore>2565.0</zScore>
+      <bits>482.7</bits>
+      <expectation>2.6e-135</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="310">MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="310">MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="NNRD_SCHPO" ac="O94347" length="327" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) OX=284812 GN=SPCC61.03 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>661</score>
+      <smithWatermanScore>661</smithWatermanScore>
+      <initn>633</initn>
+      <init1>260</init1>
+      <opt>661</opt>
+      <zScore>826.7</zScore>
+      <bits>161.2</bits>
+      <expectation>1.8e-38</expectation>
+      <identity>38.6</identity>
+      <positives>65.9</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="310">---MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASD-FDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSL-KGYDRLVLTPNVVEYQRLFPKSE-DNNGESMEDASDEELAAAT---IVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW-HAIL---LDREAV--STEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>              ..: . ::  ..:::..:::::.::  .:::::::..:.:.  :.: . .:: .::.  ::::::.:.: :    .:-  :   ::   . :  :. .:: .:.::::::   ... .:.:.: ::.... .:.:::.:....--- :  :-.::  ..:::::.:..::  : .- ..: ---:: ..-::.  ---:..::  :-:: :   ...:.  ::::: :: ::.:.: :.:: .:-:: :--- : :. --. : : :. . :   ..  .. :: .  ::  . :...:.:.: . . ...</pattern>
+      <matchSeq start="15" end="317">MTSGSPKITNLLTRVKRIIPPLLDTFHKGQAGRVGVFGGCQHYTGAPYYSSMSSMLFGSDQSHIFCEKEAANVIKSYSPDLIVHPFLREKDKAGPEDSVDKCFELIKPMMGRLHAIVIGPGLGRDEWMQEIMAKVIEYARKNDMPMVIDADGLWLIQ---QRPELVSGYHNVILTPNVIEFKRLCDKLDIKSDGP---DACNQ-LAGKLNLLIIQKGQSD-IISDGATAYACSVPGGLKRCGGQGDILTGILATFLAWRHAYLSKEWDTEGNMDAKECLFLAAFGASACTRWCSRLAFKECGRATQSTDLVRHVGKAYNALMEDEIPSVEEKIKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="NNRD_SORBI" ac="C5Y210" length="381" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Sorghum bicolor OX=4558 GN=Sb05g010020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>623</score>
+      <smithWatermanScore>623</smithWatermanScore>
+      <initn>518</initn>
+      <init1>276</init1>
+      <opt>623</opt>
+      <zScore>777.8</zScore>
+      <bits>152.4</bits>
+      <expectation>9.2e-36</expectation>
+      <identity>34.4</identity>
+      <positives>68.8</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="306">-------------------------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPV----YSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNNGESMEDASDE------ELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :....-..: . ::: . :::..:...:.::  .::::::.::...:..::::. :::...:.  ::::::::.: :.----::. : . . . . ...:.:  . .. :.::::::::  ...  :. ... ::. ..  :.:.:.:....  .--: ..:    .::::: ::.::  :  -:   . : ::..------... .::..::  :-.: : . : . .  :. .: :: ::.:.:....:.:: -----:. : :.. :   -------..:...::. ..:. .. :... ::..:...</pattern>
+      <matchSeq start="83" end="376">FPPSCPSCSSFLRVRTNHAMAASAGTVYEADAEAV-VRRITPPLDRARHKGQAGKIAVIGGCREYTGAPYFAAISALKVGADLSHVFCTKDAATVIKSYSPELIVHPILEESYSVRDDERASVSSKILTEVGKWMERFDCIVVGPGLGRDSFLLDCVSNIMRHARQANIPTVVDGDGLFLVTNNL--SLVEGNPLAILTPNVYEYKRLVQKVL-NCDVDEETASEQLITLCQKIGDVTIMQKGKAD-VISDGKTVTQVSTFGSPRRCGGQGDILSGSVAVFASWA-----RHFVLTNEQPTEK-------RKAASHAFEKNKRSTVTSDIIEFLGKSLEDICPAEH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="NNRD_PHANO" ac="Q0UVK8" length="325" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) OX=321614 GN=SNOG_04206 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>618</score>
+      <smithWatermanScore>618</smithWatermanScore>
+      <initn>565</initn>
+      <init1>233</init1>
+      <opt>618</opt>
+      <zScore>773.1</zScore>
+      <bits>151.2</bits>
+      <expectation>1.7e-35</expectation>
+      <identity>38.9</identity>
+      <positives>65.8</positives>
+      <overlap>301</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="16" end="303">-MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSAS-DFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSL-KGYDRLVLTPNVVEYQRLFPKSEDNN---GESMEDASD--EELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDR------EAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                : :.  :.:::. :::.:.:::  ::::::..:::: . : :.. :.:   :   ::.:::.::: : .  :-.    . .... .:.  :: .:: .:.::::::  :.. . :.:.. ::.: . .:::::.::. . ---:  :- :  . .:::::::. ::- :..  :---:.  :  : --. ....::..:::.: :   .. ..: ::-:::::::: ::.:.:.:.:. ...    :.------.   .: : :. . . : ... .: :. .: :.. : :. .:.  :.</pattern>
+      <matchSeq start="17" end="312">MASATRKDLLKKVYNMVPPMLESFHKGQLGRVAVIGGSEDYTGAPYFSAMASAKLGCDMSHVICEPGAGAVIKTYSPNLMVHPYMRQSKNVGQNENIESIKSEVVAMLSRLHVVVIGPGLGRDKLMQDTCAEVIQEARKQGIPFVLDADGLYLAQT---RPELVDGCTECILTPNVVEFGRL-AKAKGVNVDEGDPSELCSKLAKAFGGVTIIQKGAKDYISNGSQTLISEGE-GGLKRSGGQGDTLTGSLATLLAYRKAYHDKIWDHGTNMEPSETLALAAYGGSCITRECSKLAYKEKGRSLQAADLTEHVHTAFLNVIGEKEETPKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="NNRD2_PUCGT" ac="E3L9T1" length="346" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase 2 OS=Puccinia graminis f. sp. tritici (strain CRL 75-36-700-3 / race SCCL) OX=418459 GN=PGTG_19074 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>635</score>
+      <smithWatermanScore>635</smithWatermanScore>
+      <initn>572</initn>
+      <init1>267</init1>
+      <opt>635</opt>
+      <zScore>755.0</zScore>
+      <bits>148.0</bits>
+      <expectation>1.7e-34</expectation>
+      <identity>37.7</identity>
+      <positives>66.9</positives>
+      <overlap>308</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="306">-------------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSL-KGYDRLVLTPNVVEYQRLF------PKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDR----EAVSTEDLPLS---CWTACCA----VKRATKR-AFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :::.:::::..::.:..:::  :::::.:...:::. :.::. :.:   :.  ::.:::.:::  -: .:  .:   .. .-:.. ..: .:: :::::::::   ..  .  .:. : ...::::::::::...---: . .:-.::   .:::: ::.:::.------:. .:..:    . :-. :.. .:..::. : .  .  .: . . ::. :: :: ::.:.: .::. .:  . ..:----:  ....::.:--- :    .----. :. .:-:.    :.: . :.: ..:.:....</pattern>
+      <matchSeq start="38" end="339">ATGPHPTTHLEPTMHQPHRSLLRKAFQMIPPLDGSLHKGQAGRIGIVGGSKDYTGAPFYSGYASLRLGSDLSHVICEPSASTVIKTYSPDLMVHS-YLSSPKEPEAYASHQ-NQFEQLLDRLHVLVVGPGLGRDTEMQDWAEWTLKTAIQKKLHLVLDADALWLL---VKKPDLLRGYPNAILTPNHVEFQRLLKACSIEPREHDDDGLLAMELS-KALGGCSILQKGSIDLVAREGSEVAKVSCEGSPKRCGGQGDILSGLVGTWCAWTKLYFERQSQDEKPKSHELPISPEEAWIIAAVLGSEITRTCSRLAYHKFGRSMQSSDMLGYIGEAFEQVMHGHTKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="NNRD1_PUCGT" ac="E3LAQ9" length="398" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase 1 OS=Puccinia graminis f. sp. tritici (strain CRL 75-36-700-3 / race SCCL) OX=418459 GN=PGTG_19583 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>628</score>
+      <smithWatermanScore>628</smithWatermanScore>
+      <initn>572</initn>
+      <init1>267</init1>
+      <opt>628</opt>
+      <zScore>747.5</zScore>
+      <bits>146.8</bits>
+      <expectation>4.5e-34</expectation>
+      <identity>37.9</identity>
+      <positives>66.3</positives>
+      <overlap>306</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="18" end="304">-------------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSL-KGYDRLVLTPNVVEYQRLF------PKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDR----EAVSTEDLPLSC---WTACCA----VKRATKR-AFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :::.:::::..::.:..:::  :::::.:...:::. :.::. :.:   :.  ::.:::.:::  -: .:  .:   .. .-: . ..: .:: :::::::::   ..  .  .:. : ...::::::::::...---: . .:-.::   .:::: ::.:::.------:. .:..:    . :-. :.. .:..::. : .  .  .: . . ::. :: :: ::.:.: .::. .:  . ..:----:  ....::.: ---:    .----. :. .:-:.    :.: . :.: ..:.:..</pattern>
+      <matchSeq start="90" end="389">TTGPHPTTHLEPTMHQPHRSLLRKAFQMIPPLDGSLHKGQAGRIGIVGGSKDYTGAPFYSGYASLRLGSDLSHVICEPSASTVIKTYSPDLMVHS-YLSSPKEPEAYASHQ-NLFEQLLDRLHVLVVGPGLGRDTEMQDWAEWTLKTAIKKKLHLVLDADALWLL---VKKPDLLRGYPNAILTPNHVEFQRLLKACSIEPRENDDDGLLAMELS-KALGGCSILQKGSIDLVAREGSEVAKVSCEGSPKRCGGQGDILSGLVGTWCAWTKLYFERQSQDEKPKSHELPISSEEAWIIAAVLGSEITRTCSRLAYHKLGRSMQSSDMLGYIGEAFELVMHGHTKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="NNRD_VITVI" ac="F6HDM2" length="354" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Vitis vinifera OX=29760 GN=VIT_05s0020g02800 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>636</score>
+      <smithWatermanScore>636</smithWatermanScore>
+      <initn>581</initn>
+      <init1>255</init1>
+      <opt>636</opt>
+      <zScore>733.6</zScore>
+      <bits>144.1</bits>
+      <expectation>2.7e-33</expectation>
+      <identity>36.0</identity>
+      <positives>69.1</positives>
+      <overlap>311</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="306">-------------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPV----YSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNN-GESMEDASDEELAAA------TIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW--HAILLDREAVSTEDLP--LSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              : : . :-:: . :::..:...:.::  .::::::..:...:. ::::. :::...:.  ::::::::.: :.----::. . :   . . ...:.   . .. :::::::::: :...  :..... ::.... .:.:.:.:....  .--. ..::   :::::: ::.::  :  . .-:.--.::... :. :------::.:::  :-.: : . : : :  :. .: :: ::.:.:....: ::--. :. . .   .   :--:.  ..   ...:.. ::..:.:.  . :... ::..:...</pattern>
+      <matchSeq start="45" end="350">IRCLGVGGQSQQFYRKSIPRTMALEADAENILRAITPTLDLARHKGQAGKIAVIGGCREYTGAPYFSAISALKIGADLSHVFCTKDAAPVIKSYSPELIVHPLLEESYSVREEDKKAISEKVLTEVVKWMERFDCLVVGPGLGRDPFLLGCVSEIMKHARQSNVPIVIDGDGLFLVTNSL--DLVSGYPLAVLTPNVNEYKRLVQKVLNCEVGD--QDAAEQLLSLAKGIGGVTILRKGKSD-LISDGETVNSVGIYGSPRRCGGQGDILSGSVAVFLSWARQRIIAEGDLNISPKSPTVLGSIAGSALMRKAASLAFENKKRSTLTGDIIECLGRSLEDICPAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="NNRD_BATDJ" ac="F4NZ38" length="318" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Batrachochytrium dendrobatidis (strain JAM81 / FGSC 10211) OX=684364 GN=BATDEDRAFT_10166 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>611</score>
+      <smithWatermanScore>611</smithWatermanScore>
+      <initn>491</initn>
+      <init1>296</init1>
+      <opt>611</opt>
+      <zScore>718.4</zScore>
+      <bits>141.1</bits>
+      <expectation>1.9e-32</expectation>
+      <identity>36.8</identity>
+      <positives>68.4</positives>
+      <overlap>310</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="306">MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAP-VYSASD---FDPVRL---VDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMM-SLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNNGESMEDAS---DEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW-HAILLDREAVSTEDLPLSCW----TACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>            .: . ::.. ::::.:::.::.::: .:::::::::::.: .:.::  :::::.:.  :: :::::.: :-. :  :---..:: .---..  :.... .: .:  :::::::.: :...  . :..: . :    ::.:::.: ..-. :---. . ::. ..::::. :..::  . . . .:. : :.---.. :...::. ::..:-.:.   ...  ..  .:.: :: :::::: : .: .:-..    : ... ..  .:  ----.:   ... .  ::. ..:...: ..:...: :.: .</pattern>
+      <matchSeq start="8" end="313">-----MAAREVFKRVIPPLSTRLHKGQSGRIGVVGGSLEYTGAPYYAAMAALYTGVDLCHVFCAQDAAPAIKCYSPELVVHPSIVSKRDCEHLNPVAIDNCIETAVDRMSPLLCRLDSLVVGPGLSRDPVMLAMAKRIVEKVISLGTPLVIDADGLCLVEQTP---GLVMGYQNVILTPNTNEFKRLCHSVNIDASENCEVAAVQLSKALGSVTILCKGSKD-LIATGDDILFVSDPTSLRRCGGQGDVLAGILCAFLAWRNGYQSGRWTAQDQSTDISLMIVASNASSFARKCAALAFEKHKRSIVASSILKEIGPAFDSLYDDEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="NNRD_USTMA" ac="Q4P219" length="350" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Ustilago maydis (strain 521 / FGSC 9021) OX=237631 GN=UMAG_05844 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>623</score>
+      <smithWatermanScore>623</smithWatermanScore>
+      <initn>547</initn>
+      <init1>256</init1>
+      <opt>623</opt>
+      <zScore>713.7</zScore>
+      <bits>140.4</bits>
+      <expectation>3.4e-32</expectation>
+      <identity>36.9</identity>
+      <positives>68.1</positives>
+      <overlap>317</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="306">--------------------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSAS-DFDPV-RLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMM-SLPVYRSSLKGYDRLVLTPNVVEYQRLFPKSEDNNGESMEDASDEELAAA----TIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDRE----AVST--------ED--LPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              ...: . ::... :::..::.:..:::  :::::..:.:.:.. : :.....:. ::   ::.:::.:.:  . .::-... :-: ::..-------. ..: .:.::::::  ...: .   . :::.....::.:::.:...-. :---. .::: . .:::::.:. ::  -.   . ..  :.. ..:: :----:...::  :::-.. ..:.    .::::: :: :::::: :::...:  :  :..----: ::--------::--: :. ..:  ...  .. ::  ..::: : :.: ..:.: .:.</pattern>
+      <matchSeq start="38" end="342">GKLATTLGANVSSLASKVRSTSSTQQSLMQSVKRIIPPLSSAKHKGQAGRIGIVGGSRDYTGAPFFASMSSMRFGCDMSYTICTPEAGNVIKTYSPDLIVNRLLDASVEWSQVERSVDEL-------FARFHAVVIGPGLGRDEFMQKCAKLCIGLARKHDMYLVVDADGLWLLQNEP---DLIKGYKKAILTPNVAEFGRLCD-TLGIDCKQEPDSAAKKLAQALEGPTVLEKGPVDRI-TNGKEVLYVDLQGGLKRCGGQGDVLAGCLGTLAGWAKIYQDENPTLPARSTTTDGDLIAEDRLLLLAGYAASVTARTCSRLAFAKSKRAMLADDLLPEVGRAYEELWGDVQALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="NNRD_COPC7" ac="A8N8Z0" length="336" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) OX=240176 GN=CC1G_00865 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>675</score>
+      <smithWatermanScore>675</smithWatermanScore>
+      <initn>683</initn>
+      <init1>294</init1>
+      <opt>566</opt>
+      <zScore>697.9</zScore>
+      <bits>137.4</bits>
+      <expectation>2.6e-31</expectation>
+      <identity>40.9</identity>
+      <positives>65.8</positives>
+      <overlap>325</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="305">MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARV-LELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPK-SEDNNGESMEDAS--DEELAAATIVRKGAEDRIIVDQ----------------------RQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW----HAILLDREAVSTEDLPLSCWTACCAVKRAT-KRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>           :.: . :::.:::::.:::::::::.  :::::..::...:. :.::. :.::  :.  ::::::.:.: :. . :.----- :: . .:. ..: .:: ::::::::: : -:.. ::.-. :.: . ..::::::::....  .--: .::: : ::::::::..::  .-. : ..   : :.--.. :...:...:::.: : :: ----------------------.....   :::::: :: ::::.: .::: .:----.. .    .: :  .::   .:   : :.:-.::.  . :.. . :.: . : :..:</pattern>
+      <matchSeq start="11" end="327">-MPIPRTIIEQIKRIIPPLDGSLHKGQSGRVGVLGGALDYTGAPFFAAFSALRFGVDLSHVICAPTAAGAIKSYSPDLIVHPILNESS-----SVDKVKSELQSLLSRLHVLVVGPGLGREPY-MQSYARLAISLVRERGMYLVLDADALFLVGHDL--SIIKGYRRAVLTPNVVEFKRLSEQVGVDPDAPPDERAGVVSRMLGGVTVLQKGAKDIISVDTTGEEADLSASHIEGADAEKEKIKETIAVDVEGGLKRCGGQGDVLSGCVGTFMAWGKCYESGVYGDGTVPTSRVPLLAAVAGSMVTRTTSRRAYAKSGRSLITQDLLSEAGPAFEECFGGDKGRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="NNRD_POLPP" ac="D3BMU4" length="413" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Polysphondylium pallidum (strain ATCC 26659 / Pp 5 / PN500) OX=670386 GN=PPL_12517 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>593</score>
+      <smithWatermanScore>593</smithWatermanScore>
+      <initn>549</initn>
+      <init1>187</init1>
+      <opt>593</opt>
+      <zScore>628.6</zScore>
+      <bits>124.9</bits>
+      <expectation>1.9e-27</expectation>
+      <identity>36.8</identity>
+      <positives>65.1</positives>
+      <overlap>304</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="303">------------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEA--TLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFP---KSEDNNGESMEDASD--EELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW-HAILLDREAVSTEDLPLS-----------CWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :.  .:::. ::.::.::::.:::::..:...::. :::.. .:  .:.--.  ::. ::::.: :.-- ...::  .. -------- : ..: :..::::::  .. :.. .:.. ::. .: .:::.::: ..   .--  .::::...:::: :::. :  ---: ...:.... . ::--. :. ..::.:: ::-::.:    .:: . :  .: :: ::::::..::: .:-.  :  . .   : :  :----------- ...:  :. :.: :: ..::.  . :... . .::</pattern>
+      <matchSeq start="109" end="399">TTTATTKKMSMDDSFELPTNLNHFLSYVPSLEYHMHKGQCGRIGVFGGSAEYTGAPFFAGITSLRLGADIVHIFAPSEGGTATAIKTLSPELIVHPL--DQQMDPSTIIP--------WLLSIHVLIIGPGLGRSSIAWKSAKEVIKAARNINLPMVLDGDALRLICEDL--ELVKGYDKVILTPNFVEYRALSDAAKKLNNDNSNNILSPSDLAKALGNVVIVQKGQED-IITDGTISYSCDKAGMPRRCGGQGDVLAGVIGTFYAWTQNALKGKTSEELEHLKESIGENQSAAASAAYAGCVLVRYAAKLAFKNNRRSTITDDIIKSVPNALVWGFLTDDRGRPTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="NNRD_AJECG" ac="C0NFV9" length="368" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) OX=447093 GN=HCBG_01775 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>509</score>
+      <smithWatermanScore>509</smithWatermanScore>
+      <initn>404</initn>
+      <init1>168</init1>
+      <opt>500</opt>
+      <zScore>624.7</zScore>
+      <bits>124.0</bits>
+      <expectation>3.1e-27</expectation>
+      <identity>34.1</identity>
+      <positives>63.1</positives>
+      <overlap>328</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="309">MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASD----FD----PVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRL----------FPKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSW----HAILLDR---EAVSTEDLP---LSCWTACCAVKRAT--KRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>           ..: : :.   .:::. :::.:.::::. --::. . .  ::.---:. :.:   ..  ::::::.::: :. ..:.----:.----:   .  ... . ..: .:: ::.:::::: :.... :..... :::... :::::::: ...-- . . ..:: . .:::::::. ::----------.: :. ...:. .  :. -:...::..:: .: :   . ...-:  .:::::::: ::.:.:.:::. .:----:  : : ---:: . ..: ---.    . :. . . --.:  :  .. .. : .:  .. : . .:::</pattern>
+      <matchSeq start="12" end="330">MSSPSKKLLANVRRIVPPMLERFHKGQLGRVAVIGGSAEC--APHISLQWHLQG---LSHVICEPSSATVIKSYSPNLMVHPILQSSNTVSSFSNSPLPHPHARALAEPVLSFLSRLHVLVIGPGLGRDPVTQEIVTEIIKEARSREIPLVLDADALLLVQ--EHPDLIHGYTECILTPNVVEFARLAKALRADVSSMPDSDAGKSEACKRLSNA-LGGVTIIQKGPHDTISNGMVNIV-CDVRGGLKRSGGQGDTLTGSLGTLLAWRKAYHEGLWDTGESEASGGRELSRQDIEEDLSICGYESGDDGERDGDKPKKKLSRPATLLLVAWAGSAITRECSRRAFMAKGRSMQASDLTDEVHGSFLDLIGEPEGTKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="NNRD_NEMVE" ac="A7RRZ8" length="358" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Nematostella vectensis OX=45351 GN=v1g162096 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>696</score>
+      <smithWatermanScore>696</smithWatermanScore>
+      <initn>629</initn>
+      <init1>264</init1>
+      <opt>696</opt>
+      <zScore>607.5</zScore>
+      <bits>120.7</bits>
+      <expectation>2.8e-26</expectation>
+      <identity>39.5</identity>
+      <positives>71.1</positives>
+      <overlap>304</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="306">-----------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYD----RLVLTPNVVEYQRLFP----KSEDNNGESMEDASD--EELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              . :.:-:. ..::: .::.::.::  .::::::.::...:..::::. :::.....  ::::::::.: :. . .-:-------- ::::.. : .:::::::::::: :  .. . :..: ::... :::.:::.. ...--.:   .:.::----...:::::::..::. ----:. : .:.:.:.: .--.::. .:: ::: .:-::.: . :. :.  :. .: :: ::.:.:....:  :  :----- :. .   .. ..:   ..  .. :..  .:.::. :..... ::..:.</pattern>
+      <matchSeq start="68" end="354">AEKRSRSPLPAQRQIHVHNRQQEAQLLQSAKNVIPSLEETFHKGVAGRIGVIGGCQEYTGAPYFAAISALKTGADLSHVFCTSDSASVIKSYSPELIVHPLLDRT-F--------AVNEISEWLSRLHCLVVGPGLGRNPTNLENAKRTIEKARKNKKHLVIDADGIAVVT--TYPEIIKNYDSKKSKVILTPNVVEFDRLYTSVMGKAADPHGDSYEQARSLSQELGNVTICRKGQHD-IITDGQTVVECSITGSNRRCGGQGDLLSGSMAVFLHWANI-----EVTQNPALVAAYAASGLTRWCNRLAYSRLKRSMTTSDMIQQIHQAFEELFGKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="NNRD_ARATH" ac="Q94AF2" length="365" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Arabidopsis thaliana OX=3702 GN=At5g19150 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>661</score>
+      <smithWatermanScore>661</smithWatermanScore>
+      <initn>569</initn>
+      <init1>262</init1>
+      <opt>661</opt>
+      <zScore>604.8</zScore>
+      <bits>120.3</bits>
+      <expectation>4e-26</expectation>
+      <identity>35.6</identity>
+      <positives>70.3</positives>
+      <overlap>320</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="306">------------------------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPV----YSASDF---DPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSLKGYDRLVLTPNVVEYQRLFPKS-----EDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILL-DREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :.. ... . .. : : :-:: . :::..:...:.::  .::::::.::...:. ::::. :::...:.  ::::::::.: ::----:: :..---:  .. : ...:.:  . .. :::.:::::: :.... :. .. ::..... .:.:.:.:....  .--. ...:   :::::: ::.::  : -----...:.:..  .  ......::.:::  :-.: . . : : .  :. .: :: ::.:.: ...: ::   : -: :. : .   :.: .:   ...:.. ::  ..:.  . :... ::..:...</pattern>
+      <matchSeq start="45" end="361">TSHSPSSSSSVLRRQEFLVRTLCGSPIIRAMSSTSEADAESVLRTVTPSLDLKRHKGQAGKIAVIGGCREYTGAPYFAAISALKIGADLSHVFCTKDAAPVIKSYSPELIVHPVLEESYSISQLSEEDKREVQDKVLGEVGKWMERFDCLVIGPGLGRDPFLLECVSIIMLLAKKSNVPFVIDGDGLFLVTNSI--DLVHSYPLAVLTPNVNEYKRLVQKVLNCEVDEQNAEDQLRSLAKQIGGVTILRKGKSD-LISNGETVKSVSIYGSPRRCGGQGDILSGGVAVFLSWAQQLKSDPESPSENPAILGCIAASGLLRKAASLAFTKHKRSTLTSDIIECLGESLEDICPAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="NNRD_PHYPA" ac="A9RY03" length="342" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Physcomitrium patens OX=3218 GN=PHYPADRAFT_121160 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>600</score>
+      <smithWatermanScore>600</smithWatermanScore>
+      <initn>555</initn>
+      <init1>254</init1>
+      <opt>481</opt>
+      <zScore>601.7</zScore>
+      <bits>119.6</bits>
+      <expectation>6e-26</expectation>
+      <identity>35.4</identity>
+      <positives>62.8</positives>
+      <overlap>325</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="303">---MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSAS-DFDPVR------LVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMS-LPVYRSSLKGYDRLVLTPNVVEYQRLFPK---SEDNNGESMEDASDEELAA-----------ATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREA----------VSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>             :.:. :  :  . :::..:...:.::  .::::::.::...:. ::::: :::.. :.  ::::::::.: ::   :-:   . ------: : .. :.:  : .. :.:.:::::: :...  :: ..: :. ... ::::.:.:....- :  ---. ::   .:::::.:..::  :--- .:.:  .  ..:.:.: .-----------.::..::  : :- : . :.:    :. .: :: ::::.:. ..:.::    .. : ----------::..   ..  ..    ....  :: ...:: :. .....::. :</pattern>
+      <matchSeq start="14" end="334">MGGNSTELQKILPALEKVVPVLAPGRHKGQAGKIAVIGGCREYTGAPYFAAISALKMGADLAHVFCTSGAATVIKSYSPELIVHPVLHESYDVGEIGEEEISGLKDKVLAEVGKWLQRFDCIVIGPGLGRDPILLDCVAAIIEEAKFKNIPLVLDGDGLFLVTNQPEL---IIGYPLAILTPNVMEHKRLVAKIVGERDQNVPQNPEVSNEDLPGQLQDLAKRMEGVTILQKGKTDYI-SDGKTVLSSDYYGSPRRCGGQGDVLSGSTAVFVSWAKEYFSNENAAGKKEVEERVSNNPTMVGALAGSLLCRKSAANAFAQHKRATTTTNIIEYLGHRLFTFMLRFY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="NNRD_EMENI" ac="Q5B0D6" length="369" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) OX=227321 GN=AN5994 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>594</score>
+      <smithWatermanScore>594</smithWatermanScore>
+      <initn>596</initn>
+      <init1>245</init1>
+      <opt>464</opt>
+      <zScore>579.8</zScore>
+      <bits>115.7</bits>
+      <expectation>9.9e-25</expectation>
+      <identity>37.3</identity>
+      <positives>62.4</positives>
+      <overlap>338</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="303">------MKTWNDGKTIAIERCVLPLDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVY--SASDFDPVRL-VDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSL-PVYRSSLKGYDRLVLTPNVVEYQRL-------FPK------SEDNNGESMEDASDEELAAA----TIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLD-----------REAVSTEDL-----------P-----LSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                   . : :.  ..:::..:::.:.:::  ::::::..:::: . : ::. :.: . :.  ::::::.::: :. --:::  ::  .-. .... :  :: .:: ::.::::::  ...:.:..:.. :::... .:::::.: ... -:---. .:::   .::::: :..::------- :.------.:...  : :  . :.:. :----::..:: .: :     ...:-   :::::::: ::.:.:.:::. .:.:   :-----------.:: . :..-----------:-----:. :..   ... ..:::  : :.: : :.  .. ...</pattern>
+      <matchSeq start="20" end="353">MANVHHISVPSKVLFQKARKLVPPMLEKFHKGQQGRVAVIGGSLDYTGAPYFSAMASARLGCDLSHVICESSAATVIKSYSPNLMVHPILPSSASVKDPSSIDAPSLASPIIAMLGRLHALVIGPGLGRDGVTLKVVTEVMKEARSRSIPFVLDADGLLLVTENP---DLVKGYKDCILTPNVNEFSRLAKALNIEVPSLAQISSKESGDKTSKEAEACEKLSQALGGVTIIQKGPHDVISNGVTSIVS-DLPGGLKRSGGQGDTLTGSLGTLLAWRAAYHDALWDSGEQEHSKEAENKEEVQGELESNKRMSPSTTLLLAAWAGAAITRECSRRAFKAKGRSMQASDLTDEVHESFLTLIGEPEGSKVPERL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="NNRD_YEAST" ac="P36059" length="337" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=NNR2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>575</score>
+      <smithWatermanScore>575</smithWatermanScore>
+      <initn>510</initn>
+      <init1>294</init1>
+      <opt>538</opt>
+      <zScore>569.4</zScore>
+      <bits>113.6</bits>
+      <expectation>3.8e-24</expectation>
+      <identity>34.2</identity>
+      <positives>65.5</positives>
+      <overlap>325</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="10" end="306">---MKTWNDGKTIAIERCVLPLDASLHKGSSG-RVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLE--LARSQ-QLHLVLDADALYMMSLPV-YRSSLKGYD--RLVLTPNVVEYQRL---FPKSEDNNGESMEDASDEELAAATIVRKGAEDRIIV--DQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLD-------REAVSTEDLPLSCWT-----AC---CAVKRATKR-AFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>            .: .::. ::  ..:::.::-:: ..::   ::::::..: :.   : ::. :.:  .:   ::::.:.::: :    :.      .:.. ..:...: ..: .:.:::::: ::..:..  ...--: . .-.. ::.:::.:....   - .  ::.: --:..:::::::..::---. :. :...:-: .   .::   -.:.::  :.:. --....... .:::. :: :: ::.:.:... . ..   . :-------... :..: ::. :.-----.:---:.. :  .:-.:  : ::: . :.  ..:... ..</pattern>
+      <matchSeq start="13" end="335">MLAELSHRELIKLAQKRCIPPLLPKFHKGQSGGRVCIIGGCEDYTGAPYFSANATALMGCDLTHVICEYNAGTVIKSYTPNLMVHPYLRMSNTKLDVDMDEQRKKINSLLDRIHVVVIGPGLGRDPLMLKSIKDIIRYILEKHEGKIPLVIDADGLFLVTQDSEVKEMLKSYPKGRVILTPNVVEFKRLCDAIGKKGDSHSE-MGSLIAQELNCI-VVEKGQSDKIFSPDSEKDMLTNSEEGSNKRVGGQGDTLTGAISCMLAFSRAMYDFKICEQEEKGESSNDKPLKNWVDYAMLSCYAGCTITRECSRLGFKAKGRAMQTTDLNDRVGEVFAKLFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="NNRD_HUMAN" ac="Q8IW45" length="347" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Homo sapiens OX=9606 GN=NAXD PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <smithWatermanScore>671</smithWatermanScore>
+      <initn>504</initn>
+      <init1>277</init1>
+      <opt>671</opt>
+      <zScore>554.1</zScore>
+      <bits>110.8</bits>
+      <expectation>2.7e-23</expectation>
+      <identity>36.8</identity>
+      <positives>71.7</positives>
+      <overlap>307</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="9" end="306">----------------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSL-PVYRSSLKGYDRLVLTPNVVEYQRLF------P-KSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              :. . : ..:-:... :::..::.::.::  .::::::.::...:..::::. ::::. :.  ::.:::::.: :: ..----:-----. :.:.   ::.:: :::::::::   ... :  .::....... .:.:::.:.... -:. ---..:: . ::::: ::..::.------:- :.:..:  .. .--. :. .:.:.:: .:-:. . .::. :..::. .: :: ::.:.:.::... :  .   ... ..  : .. . ::  ... ...::. . :. :. :.. ..: :....</pattern>
+      <matchSeq start="53" end="344">ALALYGPPLDAVLERAFSLRKAHSIKDMENTLQLVRNIIPPLSSTKHKGQDGRIGVVGGCQEYTGAPYFAAISALKVGADLSHVFCASAAAPVIKAYSPELIVHPVLDS----P-----NAVHEVEKWLPRLHALVVGPGLGRDDALLRNVQGILEVSKARDIPVVIDADGLWLVAQQPAL---IHGYRKAVLTPNHVEFSRLYDAVLRGPMDSDDSHGSVLRLS--QALGNVTVVQKGERD-ILSNGQQVLVCSQEGSSRRCGGQGDLLSGSLGVLVHWALLAGPQKTNGSSPLLVAAFGACSLTRQCNHQAFQKHGRSTTTSDMIAEVGAAFSKLFET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="NNRD_MOUSE" ac="Q9CZ42" length="343" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Mus musculus OX=10090 GN=Naxd PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>661</score>
+      <smithWatermanScore>661</smithWatermanScore>
+      <initn>476</initn>
+      <init1>274</init1>
+      <opt>661</opt>
+      <zScore>551.7</zScore>
+      <bits>110.4</bits>
+      <expectation>3.6e-23</expectation>
+      <identity>37.1</identity>
+      <positives>70.9</positives>
+      <overlap>302</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="306">-----------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSL-PVYRSSLKGYDRLVLTPNVVEYQRLF------P-KSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              : ..:-: .. :::..::.:..::  .::::::.:....:..::::. ::::.::.  ::::::::.: :: ..:.--------- :.:.   ::.:: :::::::::  :... :  .:: ...... .:.:::.:.... -:. ---...: . .:::: ::..::.------:- :.: .: ... .--. :.  :.:.:: .:-.: . .::. :..::. .: :: ::.:.:.::... :      ... ..  : .. : ::  ... ...::.   :. :. :.. ..: :....</pattern>
+      <matchSeq start="54" end="340">WSPLYAVLQRALSLHTAHATKDMENLFQLVRNIVPALTSKKHKGQDGRIGIVGGCQEYTGAPYFAGISALKVGADLTHVFCAREAAPVIKSYSPELIVHPVLDSSN---------AVEEVEKWLPRLHALVVGPGLGRDDLLLNNVRGILESTKARDIPVVIDADGLWLVAQQPAL---IHSYHKAILTPNHVEFSRLWEAVLSSPMDSNDLKGSTLKLS--QALGNITVVQKGEQD-LISNGQQVLVCNQEGSSRRCGGQGDLLSGSLGVMVHWALRAGPEKTNGSSPLLVAAWGACTLTRECNRQAFQKYGRSTTTTDMITEVGTAFSRLFTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="NNRD_RAT" ac="D4AAT7" length="343" description="ATP-dependent (S)-NAD(P)H-hydrate dehydratase OS=Rattus norvegicus OX=10116 GN=Naxd PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>678</score>
+      <smithWatermanScore>678</smithWatermanScore>
+      <initn>487</initn>
+      <init1>280</init1>
+      <opt>678</opt>
+      <zScore>550.5</zScore>
+      <bits>110.1</bits>
+      <expectation>4.2e-23</expectation>
+      <identity>38.9</identity>
+      <positives>70.8</positives>
+      <overlap>301</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="306">-----------------MKTWNDGKTIAIERCVLP-LDASLHKGSSGRVGVLGGSARYTGAPYYAAMASLQAGADLAFVFCAQEATLPIKSYSPELMVAPVYSASDFDPVRLVDDMVNEIGDMLPKLHCLVVGPGLGRCPLVMKAVARVLELARSQQLHLVLDADALYMMSLPVYRSSL-KGYDRLVLTPNVVEYQRLF------PKSEDNNGESMEDASDEELAAATIVRKGAEDRIIVDQRQVMSCGEEGGLKRSGGIGDVLAGTLGTFTSWHAILLDREAVSTEDLPLSCWTACCAVKRATKRAFDDKRRAMTAPDVLHHLGQALDEMTRED</querySeq>
+      <pattern>                              : ..:-: .. :::..::.:..::  .::::::.:....:..::::. ::::.::.  ::::::::.: :: ..::--------- :.:.   ::.:: :::::::::  :... :  .:: ...... .:.:::.:....--- : .:-.::.. ::::: ::..::.------: . .:.. :.   :-. :.  :::.:: .:-.: . .::. :..::. .: :: ::.:.:.::... :      ... ..  : .. : ::  ... .. ::.   :. :. :.. ..: :....</pattern>
+      <matchSeq start="54" end="340">CSPLLAVLQRALSLHTAHATKDMDNLFQLVRNIVPALTSKKHKGQDGRIGIVGGCQEYTGAPYFAGISALKVGADLTHVFCAREAAPVIKSYSPELIVHPVLDSSD---------AVEEVEKWLPRLHALVVGPGLGRDDLLLNNVRGILESTKARDIPVVIDADGLWLIA---QRPALVHGYQKAVLTPNHVEFSRLWDAVLSSPMDTSNHSGSVLKLS-QALGNITIVQKGEQD-LISNGQQVLVCNQEGSSRRCGGQGDLLSGSLGVMAHWALRAGPEKTNGSSPLLVAAWGACTLTRECNHLAFQKYGRSTTTTDMIAEVGAAFSKLFTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

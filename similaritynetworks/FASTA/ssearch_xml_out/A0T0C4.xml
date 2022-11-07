@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171407-0485-68682742-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171407-0485-68682742-p1m.m9&quot; -m &quot;F10 fasta-R20221107-171407-0485-68682742-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0C4|PSBX_PHATC" type="PROTEIN" length="38"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:14:07+00:00" end="2022-11-07T17:14:10+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBX_PHATC" ac="A0T0C4" length="38" description="Photosystem II reaction center X protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <smithWatermanScore>230</smithWatermanScore>
+      <zScore>406.8</zScore>
+      <bits>77.3</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBX_GUITH" ac="O78455" length="39" description="Photosystem II reaction center X protein OS=Guillardia theta OX=55529 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <smithWatermanScore>137</smithWatermanScore>
+      <zScore>247.4</zScore>
+      <bits>47.9</bits>
+      <expectation>3.2e-06</expectation>
+      <identity>61.5</identity>
+      <positives>84.6</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIA-LAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:: ::. : ::.-: :: .:...::::::::.</pattern>
+      <matchSeq start="1" end="39">MTPSLSAFINSLLLGLFIVVLPIGTALLLVSQSDRVTRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBX_THAPS" ac="A0T0N4" length="38" description="Photosystem II reaction center X protein OS=Thalassiosira pseudonana OX=35128 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <smithWatermanScore>133</smithWatermanScore>
+      <zScore>240.8</zScore>
+      <bits>46.6</bits>
+      <expectation>7.5e-06</expectation>
+      <identity>60.5</identity>
+      <positives>84.2</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:: ::..::::: :::..  ::: .:..::..::: ::</pattern>
+      <matchSeq start="1" end="38">MTTSLANFIASLTAGALVLSAIGIALIIISKNDRVQRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBX_TRICV" ac="P49509" length="38" description="Photosystem II reaction center X protein OS=Trieres chinensis OX=1514140 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <smithWatermanScore>132</smithWatermanScore>
+      <zScore>239.1</zScore>
+      <bits>46.3</bits>
+      <expectation>9.4e-06</expectation>
+      <identity>56.8</identity>
+      <positives>91.9</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..::.:: ::....:.:. .:. ::..:::::</pattern>
+      <matchSeq start="1" end="37">MTPSLANFISSLTAGGLVVLTIAVALIVISRTDRVTRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBX_SYNJB" ac="Q2JN82" length="38" description="Photosystem II reaction center X protein OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <smithWatermanScore>126</smithWatermanScore>
+      <zScore>228.8</zScore>
+      <bits>44.4</bits>
+      <expectation>3.5e-05</expectation>
+      <identity>51.4</identity>
+      <positives>78.4</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. :: ::: .  :. :...:.:: :.: :</pattern>
+      <matchSeq start="1" end="37">MTPSLANFLWSLVAGAVVLGALFGAIIFVSQRDKVRRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBX_SYNY3" ac="P72575" length="39" description="Photosystem II reaction center X protein OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=psbX PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <smithWatermanScore>120</smithWatermanScore>
+      <zScore>218.3</zScore>
+      <bits>42.5</bits>
+      <expectation>0.00013</expectation>
+      <identity>56.4</identity>
+      <positives>79.5</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGV-LVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::  :: :.:  . :-:.::::.:..:::</pattern>
+      <matchSeq start="1" end="39">MTPSLANFLWSLVLGAAIVLIPATVGLIFISQKDKITRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBX1_SYNJA" ac="Q2JRR9" length="38" description="Photosystem II reaction center X protein 1 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=psbX1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <smithWatermanScore>119</smithWatermanScore>
+      <zScore>216.8</zScore>
+      <bits>42.2</bits>
+      <expectation>0.00016</expectation>
+      <identity>51.4</identity>
+      <positives>75.7</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::. :: .   . :..::.:: ::: :</pattern>
+      <matchSeq start="1" end="37">MTPSLANFLWSLLYGAVVLGLLFGAIVFVSQRDRVRRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBX2_SYNJA" ac="Q2JRN5" length="38" description="Photosystem II reaction center X protein 2 OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=psbX2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <smithWatermanScore>117</smithWatermanScore>
+      <zScore>213.4</zScore>
+      <bits>41.6</bits>
+      <expectation>0.00025</expectation>
+      <identity>51.4</identity>
+      <positives>73.0</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::  :: .   . :..::.:: ::: :</pattern>
+      <matchSeq start="1" end="37">MTPSLANFLWSLVYGAVVLGLLFGAIVFVSQRDRVRRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBX_NEOYE" ac="Q1XDU0" length="39" description="Photosystem II reaction center X protein OS=Neopyropia yezoensis OX=2788 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <smithWatermanScore>115</smithWatermanScore>
+      <zScore>209.8</zScore>
+      <bits>40.9</bits>
+      <expectation>0.0004</expectation>
+      <identity>53.8</identity>
+      <positives>82.1</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALA-IGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::.::. ::. :: :...-:  .:.:.::.::. ::</pattern>
+      <matchSeq start="1" end="39">MTPSLSSFLNSLILGAVIVVVPITLALLFVSQKDRTIRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBX_PORPU" ac="P51197" length="39" description="Photosystem II reaction center X protein OS=Porphyra purpurea OX=2787 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <smithWatermanScore>115</smithWatermanScore>
+      <zScore>209.8</zScore>
+      <bits>40.9</bits>
+      <expectation>0.0004</expectation>
+      <identity>53.8</identity>
+      <positives>82.1</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALA-IGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::.::. ::. :: :...-:  .:.:.::.::. ::</pattern>
+      <matchSeq start="1" end="39">MTPSLSSFLNSLILGAVIVVVPITLALLFVSQKDRTIRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBX_SYNR3" ac="A5GQT7" length="40" description="Photosystem II reaction center X protein OS=Synechococcus sp. (strain RCC307) OX=316278 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <smithWatermanScore>112</smithWatermanScore>
+      <zScore>204.4</zScore>
+      <bits>40.0</bits>
+      <expectation>0.0008</expectation>
+      <identity>52.6</identity>
+      <positives>84.2</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALA-IGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. :: :::.:...-:  .:..:::.:.: :</pattern>
+      <matchSeq start="1" end="38">MTPSLANFLNSLVAGALIVVVPITIALILISQTDQVDRKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBX_SYNP6" ac="Q5N0A1" length="39" description="Photosystem II reaction center X protein OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <zScore>202.9</zScore>
+      <bits>39.7</bits>
+      <expectation>0.00097</expectation>
+      <identity>46.2</identity>
+      <positives>84.6</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASL-FAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::.:..:: ::-..:..... .  .:.::::.:.: ::</pattern>
+      <matchSeq start="1" end="39">MTPTLSAFIWSLVLGGVIVVIPLTVALIFISQTDKVRRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBX_SYNE7" ac="Q31LM3" length="39" description="Photosystem II reaction center X protein OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <zScore>202.9</zScore>
+      <bits>39.7</bits>
+      <expectation>0.00097</expectation>
+      <identity>46.2</identity>
+      <positives>84.6</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASL-FAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::.:..:: ::-..:..... .  .:.::::.:.: ::</pattern>
+      <matchSeq start="1" end="39">MTPTLSAFIWSLVLGGVIVVIPLTVALIFISQTDKVRRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBX_SYNPW" ac="A5GNP1" length="40" description="Photosystem II reaction center X protein OS=Synechococcus sp. (strain WH7803) OX=32051 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <smithWatermanScore>111</smithWatermanScore>
+      <zScore>202.7</zScore>
+      <bits>39.7</bits>
+      <expectation>0.00099</expectation>
+      <identity>50.0</identity>
+      <positives>81.6</positives>
+      <overlap>38</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">MTPSLGSFIASLFAGAFIALAIGGV-LVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:..::  :: :... ...-: :.::.::: :</pattern>
+      <matchSeq start="1" end="38">MTPSLANFLSSLVWGAVIVVVPASIGLFFLSQTDRVDRKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBX_MICAN" ac="B0JX68" length="39" description="Photosystem II reaction center X protein OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=psbX PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <smithWatermanScore>108</smithWatermanScore>
+      <zScore>197.8</zScore>
+      <bits>38.7</bits>
+      <expectation>0.0019</expectation>
+      <identity>48.7</identity>
+      <positives>74.4</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGV-LVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::  :: :.:  . .-:.:::: :.. :.</pattern>
+      <matchSeq start="1" end="39">MTPSLANFLWSLVLGAAIVLIPATIGLIFISQYDKIKRT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBX_NOSP7" ac="B2ITV2" length="39" description="Photosystem II reaction center X protein OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <smithWatermanScore>108</smithWatermanScore>
+      <zScore>197.8</zScore>
+      <bits>38.7</bits>
+      <expectation>0.0019</expectation>
+      <identity>46.2</identity>
+      <positives>79.5</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAG-AFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::. :-:.... .   :.::::.:.. ::</pattern>
+      <matchSeq start="1" end="39">MTPSLANFLWSLLWGTAIVVIPVTVGLIFISQKDKIQRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBX_NOSS1" ac="Q8YYB0" length="39" description="Photosystem II reaction center X protein OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <smithWatermanScore>106</smithWatermanScore>
+      <zScore>194.4</zScore>
+      <bits>38.1</bits>
+      <expectation>0.0029</expectation>
+      <identity>48.7</identity>
+      <positives>79.5</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGV-LVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::  :..:..  . :-:.::::.:.. ::</pattern>
+      <matchSeq start="1" end="39">MTPSLSNFLWSLAWGTLIVVIPATVGLIFISQKDKIQRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBX_TRIV2" ac="Q3MFU4" length="39" description="Photosystem II reaction center X protein OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <smithWatermanScore>106</smithWatermanScore>
+      <zScore>194.4</zScore>
+      <bits>38.1</bits>
+      <expectation>0.0029</expectation>
+      <identity>48.7</identity>
+      <positives>79.5</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIASLFAGAFIALAIGGV-LVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:. ::  :..:..  . :-:.::::.:.. ::</pattern>
+      <matchSeq start="1" end="39">MTPSLSNFLWSLAWGTLIVVIPATVGLIFISQKDKIQRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBX_ACAM1" ac="B0BYW9" length="40" description="Photosystem II reaction center X protein OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <smithWatermanScore>106</smithWatermanScore>
+      <zScore>194.2</zScore>
+      <bits>38.1</bits>
+      <expectation>0.003</expectation>
+      <identity>40.5</identity>
+      <positives>81.1</positives>
+      <overlap>37</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="37">--MTPSLGSFIASLFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>  .:::: .:. :.. ::..   .:: ..:.::.:...:</pattern>
+      <matchSeq start="3" end="39">MTITPSLQGFFYSILFGAIVLGLLGGGFIFFSQKDKIVRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBX_EMIHU" ac="Q4G3D8" length="39" description="Photosystem II reaction center X protein OS=Emiliania huxleyi OX=2903 GN=psbX PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <smithWatermanScore>105</smithWatermanScore>
+      <zScore>192.7</zScore>
+      <bits>37.8</bits>
+      <expectation>0.0036</expectation>
+      <identity>43.6</identity>
+      <positives>87.2</positives>
+      <overlap>39</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="38">MTPSLGSFIAS-LFAGAFIALAIGGVLVFISQSDRVTRS</querySeq>
+      <pattern>:::::..:..:-..: . :.. :...:::.: .:...::</pattern>
+      <matchSeq start="1" end="39">MTPSLSAFLSSVILAVVVIVVPISAALVFVSTTDKIVRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

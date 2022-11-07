@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162430-0006-26696086-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162430-0006-26696086-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162430-0006-26696086-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7G7Y7|FEN1_PHATC" type="PROTEIN" length="421"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:24:30+00:00" end="2022-11-07T16:24:33+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="FEN1_PHATC" ac="B7G7Y7" length="421" description="Flap endonuclease 1 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2727</score>
+      <smithWatermanScore>2727</smithWatermanScore>
+      <initn>2727</initn>
+      <init1>2727</init1>
+      <opt>2727</opt>
+      <zScore>3161.1</zScore>
+      <bits>593.9</bits>
+      <expectation>1.6e-168</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="421">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLNDIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="421">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLNDIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="FEN1_THAPS" ac="B8C6S5" length="390" description="Flap endonuclease 1 OS=Thalassiosira pseudonana OX=35128 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1717</score>
+      <smithWatermanScore>1717</smithWatermanScore>
+      <initn>1278</initn>
+      <init1>1158</init1>
+      <opt>1423</opt>
+      <zScore>1650.9</zScore>
+      <bits>314.4</bits>
+      <expectation>2.1e-84</expectation>
+      <identity>65.1</identity>
+      <positives>79.2</positives>
+      <overlap>424</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQ--ATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVL--NDIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::::::::::::::  ..:: :. :::::.::::::::::::::::::::. :--: :::::.:::::::::.::::::...::::::.:::::::. :: ::.:::::: ::. :: .: : ::.::::::::::::::::::::: ::::::::::. :::::::::::: ..: :::..::::::::: .:..:::.:::::::: :: . :.:.:::: :.:::::::::.:::::::::.:.:::::::::::: ::: ... ..:.:.:::.---------------------------------------- ::.::.:::.::::--:.:::::  :: : :..::::.:::: :::. .::::: :.::..:::.:::::: :::::.. ----:.::.  ::. :.:. : ::</pattern>
+      <matchSeq start="1" end="380">MGIKGLAKLLSDEAPLSLKEVPLSHLHGRKLAIDASMAIYQFLIAVRSGGPGGQNAAMMLTNADGETTSHIQGIFNRTIRFISEGIRPVYVFDGKPPQFKSGELLKRREKRLKAEQALKAAEESGNIEEQDKQSKRLVRAGTKENEDCIKLLTLMGVPVIRAPCEAEAQAAALARSGKVYAAATEDMDALTFRSPVMVRKMTFANASKSDVQQIFYDKAIEGLEITHDQFVDLCILLGCDYCDTIKGIGPKTALKLIREHKNIETILKHLNREKYVVPD----------------------------------------IYVEARRLFNHHEVLPDNEIELKWTECQPEPLKSFLVDEMGFNPDRVQASIEKLQKAFKASAKPQSRMDSFFKVKANPEGD----KKKAEKRKAELAASRGKGKKGKGGGGFKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="FEN1_XENTR" ac="B1H158" length="382" description="Flap endonuclease 1 OS=Xenopus tropicalis OX=8364 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1178</score>
+      <smithWatermanScore>1178</smithWatermanScore>
+      <initn>1217</initn>
+      <init1>918</init1>
+      <opt>1140</opt>
+      <zScore>1323.2</zScore>
+      <bits>253.7</bits>
+      <expectation>3.9e-66</expectation>
+      <identity>47.5</identity>
+      <positives>70.5</positives>
+      <overlap>413</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="411">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::  :.: ..::  :::.:.:::: :::::::::. :-----.:: : .::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  : .: : :.::. .: .::::..  ..::.:.::::::::: : :::::::  ::: ::: :::..:::::::::.::.:.:.:: ..:.:  .: .. :.:.. ...::.:::::::.:: :::.::::.::: :. :::.: .::.....:: ::. .::.:. .:--------------------------------------::.:: : ::..--. ::::   . : :  :.  .  :. ::..:. .::    ....--: :.:.:: : .. ...:    ..  .:: ::</pattern>
+      <matchSeq start="1" end="368">MGIHGLAKLIADVAPAAIKEHDIKSYFGRKVAVDASMCIYQFLIAVRQDG-----NMLQNEDGETTSHLMGMFYRTIRMIEHGIKPVYVFDGKPPQMKSGELAKRSERRAEAEKLLEAAEEAGEVENIEKFNKRLVKVTKQHNEECKKLLTLMGVPYVDAPCEAEATCAALVKAGKVYAAATEDMDALTFGTPVLLRHLTASEAKKLPIQEFHLNRVMQDMGVSHEQFVDLCILLGSDYCETIRGIGPKRAIDLIRQHKSIEEIVDNIDLKKYPIPENWLHKE--------------------------------------ARQLFLEPEVVDTESTELKWIEPDEEGLVAFMCAEKQFSEDRIRNGAKKLAKNRQGST--QGRLDDFFKVTGSISSTKRKEVESKGSAKKKAKTAGTPAGKFKRGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="FEN1A_XENLA" ac="P70040" length="382" description="Flap endonuclease 1-A OS=Xenopus laevis OX=8355 GN=fen1-a PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1171</score>
+      <smithWatermanScore>1171</smithWatermanScore>
+      <initn>1188</initn>
+      <init1>904</init1>
+      <opt>1128</opt>
+      <zScore>1309.3</zScore>
+      <bits>251.1</bits>
+      <expectation>2.3e-65</expectation>
+      <identity>47.9</identity>
+      <positives>70.5</positives>
+      <overlap>413</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="411">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN-DI-ELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::  :.: ..::  :::.:.:::: :::::::::. : . :-----: :::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  : .: : :.::. .: .::::..  ..::.:.:::::::.: : :::::::  ::: ::: :::..:::::::::.::.:.:.:: ..:.:  .: .. :.::. ..:.:.:::::::.:: :::.::::.::: :. :::.: .:...:..:: ::. :::.:. .:--------------------------------------:..:: : ::..-::-::::   . : :  :.  .  :. ::..:. .::    ....--: :.:.:: : .. ...:    ..  .:: ::</pattern>
+      <matchSeq start="1" end="368">MGIHGLAKLIADVAPAAIKEHDIKSYFGRKVAVDASMCIYQFLIAVRQDGNTLQ-----NEEGETTSHLMGMFYRTIRMVEHGIKPVYVFDGKPPQMKSGELAKRSERRAEAEKLLEAAEEAGEVENIEKFTKRLVKVTKQHNEECKKLLTLMGIPYVDAPCEAEATCAALVKAGKVYAAATEDMDALTFGTPVLLRHLTASEAKKLPIQEFHLNRVIQDIGITHEQFVDLCILLGSDYCETIRGIGPKRAIDLIRQHKTIDEIIDNIDLKKYPVPENWLHKE--------------------------------------AKHLFLEPEVVDTDITELKWIEPDEEGLVAFMCGEKQFSEDRIRNGAKKLAKNRQGST--QGRLDDFFKVTGSVSSTKRKEAESKGSAKKKAKTGGTPAGKFKRGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="FEN1B_XENLA" ac="P70054" length="382" description="Flap endonuclease 1-B OS=Xenopus laevis OX=8355 GN=fen1-b PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1180</score>
+      <smithWatermanScore>1180</smithWatermanScore>
+      <initn>1243</initn>
+      <init1>913</init1>
+      <opt>1127</opt>
+      <zScore>1308.1</zScore>
+      <bits>250.9</bits>
+      <expectation>2.7e-65</expectation>
+      <identity>48.0</identity>
+      <positives>71.0</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN-DI-ELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::  :.: ..::  :::.:.:::: :::::::::-----:...:: : :::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  : .: : :.::. .: .::::..  ..::.:.:::.:::.: : :::::::  ::: ::: :::..:::::::::.::.:.:.:: ..:.:  .: .. :.:.. ..:.:.:::::::.:: :::.::::.::: :. :::.: .::..:..:: ::. .::.:. .:--------------------------------------::.:: : ::..-::-::::   . : :  :.  .  :. ::..:. .::    ....--: :.:.:: :----... :..:::   .:..---.:::.:</pattern>
+      <matchSeq start="1" end="369">MGIHGLAKLIADVAPAAIKEHDIKSYFGRKVAVDASMCIYQFLIAVR-----QDGNMLQNEEGETTSHLMGMFYRTIRMLEHGIKPVYVFDGKPPQMKSGELAKRSERRAEAEKLLEAAEEAGEVENIEKFNKRLVKVTKQHNEECKKLLSLMGIPYVDAPCEAEATCAALVKAGKVYAAATEDMDALTFGTPVLLRHLTASEAKKLPIQEFHLNRVFQDIGINHEQFVDLCILLGSDYCETIRGIGPKRAIDLIRQHKTIEEIIDNIDLKKYPIPENWLHKE--------------------------------------ARQLFLEPEVIDADITELKWTEPDEEGLVAFMCGEKQFSEDRIRNGAKKLAKNRQGST--QGRLDDFFKV----TGSISSTKRKEVESKGS---TKKKSKTGGTPAGKFKRGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="FEN1_PHYIT" ac="D0MY34" length="389" description="Flap endonuclease 1 OS=Phytophthora infestans (strain T30-4) OX=403677 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1254</score>
+      <smithWatermanScore>1254</smithWatermanScore>
+      <initn>1163</initn>
+      <init1>954</init1>
+      <opt>1123</opt>
+      <zScore>1303.3</zScore>
+      <bits>250.1</bits>
+      <expectation>4.9e-65</expectation>
+      <identity>49.5</identity>
+      <positives>71.6</positives>
+      <overlap>430</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVE-LKSLHGRKIAIDASMAIYQFLIAVRS---GGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKK---FVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKA-KAAVSKKKTKKH</querySeq>
+      <pattern>:::::: :::..:::.::.:::-...: :. .:::::::.::::::.::---:::.: ---::::.::.:::.::::.::::.: .:..::.::::::: .:: :: :: ..:..:: ::  :.:.::.:. :. .::::::  ..::::..:: ::::: .::::::::. ::: :.: :::.::::::::::..:.: :.:: . :.:  .  .  ..... : ..:.:::::::. ::::::.::::::: :   :.:: .::. .:.....:--- :.:. :. -----------------------::----------: : .::..: . ::..--. :.::.  :  .:  :::   ::. ::: . : .:. .-- ... : :.::::.:  . :.::---:::: :::.-: :.. :: ::</pattern>
+      <matchSeq start="1" end="389">MGIKGLMKLLQEEAPSCIKEVEKMSALAGHAVAIDASMALYQFLIAIRSADGGGPSQA---LTNADGEVTSHLQGMFSRTIRMMENGLKPVYVFDGKPPVMKSGELAKRSDRRQEAQKALEEATEKGNAEDIDRFNKRLVRATPQHNEDCKELLRLMGVPHITAPCEAEASCAALAKGGRVYAAGTEDMDALTFGVPVLYRRLTVSPAKKIPILEIRLERALQELEMTHEQFVDLCILCGCDYCDSIRGVGPKKAYAGIKEHKSIENFLEVLQKNKSKGVVIPDEWLG-----------------------EN----------PIYKNAREMFIKPEVVDAKETEIKWRDPQETELVDFLVKKHGFQEDRVLSAITRLKKS--KSTQSQKRLDSFFTVMPSANGAK---KRKAPAAKGGKKAATAKKGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="FEN1_NEMVE" ac="A7RRJ0" length="377" description="Flap endonuclease 1 OS=Nematostella vectensis OX=45351 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1206</score>
+      <smithWatermanScore>1206</smithWatermanScore>
+      <initn>1203</initn>
+      <init1>898</init1>
+      <opt>1122</opt>
+      <zScore>1302.5</zScore>
+      <bits>249.9</bits>
+      <expectation>5.5e-65</expectation>
+      <identity>48.1</identity>
+      <positives>71.3</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANP-NAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.::::::.: ::. :.: :.:.  ::::::::::.:::::::::: :-----..:::  ::::::..:.: ::::.. .::.::.:::::::..:: :: :: :.::.:: ::. : : :..:. :: :.::::.  ..::.:..:: :::.: : :::::::: ::: :.: ::::::::::::::.: ...:.:::..:.:  .. .. ..:.   ..:.:.:.::::.:::::::.:.:.::: .. :::.: .:.:..:.:: .:   ::.:.--------------------------------------: .::.::.. :: :--.:::::.  . : :  :. .. ::. ::....:.::  : ....--: :.:::: :  .:-:  :    . ..  :::.. . :. :</pattern>
+      <matchSeq start="1" end="377">MGIQGLAKLLGDIAPSGIKENEIKNYFGRKIAIDASMSIYQFLIAVRSDG-----SQLTNEAGETTSHLMGLFYRTIRMVENGIKPVYVFDGKPPQLKSGELAKRTERREEAQKALSKAEEAGDTENIDKFSRRLVRVTKEHNEECKQLLKLMGIPYVEAPCEAEAQCAALVKSGKVYATGTEDMDALTFGTTVMLRHLTFSEAKKMPIKEFHLQNVLSEAGLSQDEFIDLCILLGCDYCDSIKGIGPKRSVDLIRQHRSIDKILENIDTSKHPPPENWL--------------------------------------YKEARELFKNPEVRNPEEIELKWEEPNEEALVTFMCQEKGFSEDRIRSGIKKLTKARHGST--QGRLDSFFKVLPSPANKRKLQDGKGSQNKKAKTGGKFKRPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="FEN1_AEDAE" ac="Q178M1" length="380" description="Flap endonuclease 1 OS=Aedes aegypti OX=7159 GN=Fen1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1214</score>
+      <smithWatermanScore>1214</smithWatermanScore>
+      <initn>1251</initn>
+      <init1>920</init1>
+      <opt>1119</opt>
+      <zScore>1298.9</zScore>
+      <bits>249.2</bits>
+      <expectation>8.7e-65</expectation>
+      <identity>47.8</identity>
+      <positives>70.2</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAV-KANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>::::::..:..: ::  ..: :.:.. :::.:::::: .::::::::. :-----..::...::::::..: : :::: . .::.::.::::::::.:: :: :: ::::.:: ::  :.: : .:. :: ..:::..  ..... ..:: ::::: : :::::::: ::: :.: ::::.:::::::::.. ::.:.:::..: :  :: .::.:...:: ...:.:.::::.:::::::.:::.::: :..:: .: .:::..:..: ::.::::.:-------------------------------------- : ::: ::.: :: :--..::::   . : : :.:  :  :: ::.. . .:.  .-- ..  : :.:::: :- ..::  ..   .:. :.:   ... :  .:</pattern>
+      <matchSeq start="1" end="378">MGIKGLSQLIADLAPFAVKEGEIKNFFGRKVAIDASMCLYQFLIAVRAEG-----AQLTSVDGETTSHLMGTFYRTIRLLENGIKPVYVFDGKPPDLKSGELTKRAEKREEAQKALDKATEAGVTEDIDKFNRRLVKVTKQHSNEAKELLKLMGVPYVDAPCEAEAQCAALVKGGKVYATATEDMDALTFGSNILLRHLTFSEARKMPVQEFNYDKILQGLELTRDEFIDLCILLGCDYCDSIRGIGPKKAVELINKHRTIEKILENLDTKKYVVPENW--------------------------------------NYQQARVLFKEPEVANPEEVELKWGEPDEEGLVKYLCGDRQFNEDRIRAGAKKILKT--KSTATQGRLDSFFKVLPSTPNPKRKIEDKKTPASKKAKTTGGKPGRKPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="FEN1_BRAFL" ac="C3ZBT0" length="380" description="Flap endonuclease 1 OS=Branchiostoma floridae OX=7739 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1232</score>
+      <smithWatermanScore>1232</smithWatermanScore>
+      <initn>1285</initn>
+      <init1>898</init1>
+      <opt>1109</opt>
+      <zScore>1287.3</zScore>
+      <bits>247.1</bits>
+      <expectation>3.8e-64</expectation>
+      <identity>48.2</identity>
+      <positives>71.6</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVL--NDIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKAD-AAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::  ..: :.:.  :::.::::::.:::::::::-----:...::::  ::.:::..::: ::::.. .::.::.:::::::..:: :: :: :.::.:: ::  : : :..:. .: .::::..  ..: .:.:::::::.: : :::::::: : : : : :::.::::::.:::.: :..:.:::..: :  .. . :....  : ...:::.::::.:::::::.:::.::: :..:::.. .::.... :: ::: :::.:-:-------------------------------------: ::::::.: :: --...::::   . : : ... .. ::. ::.::. .::. : ....--: :.:::: : ..:.. ..   . : -.:. :: .:  : ::</pattern>
+      <matchSeq start="1" end="378">MGIQGLAKLIGDHAPGAMKENEIKNYFGRKVAIDASMSIYQFLIAVR-----QDGNMLTNDAGEATSHLMGMFYRTIRMVDNGIKPVYVFDGKPPNMKSGELAKRAERREEAQKALEKAEEAGEAEDVNKFQKRLVKVTKEHNAECKKLLTLMGIPYVDAPCEAEAQCAELAKKGKVYAAGTEDMDVLTFGTNIMLRHLTFSEARKMPIKEYYYDRLLAELDLTQDQFIDLCILLGCDYCDSIRGIGPKRAIELIRQYKSIEEILKHIDTKKFPVPEDW-P-------------------------------------YDQARKLFKEPEVTPADQVELKWVDPDEEGLVQYMSNEKGFSEDRIKNGAKKLKNARHTST--QGRLDSFFKVMSSPSVKRKEPPKGAKGSASKKAKMSGGKFKKPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="FEN1_OSMMO" ac="C1BM18" length="380" description="Flap endonuclease 1 OS=Osmerus mordax OX=8014 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1157</score>
+      <smithWatermanScore>1157</smithWatermanScore>
+      <initn>1226</initn>
+      <init1>880</init1>
+      <opt>1102</opt>
+      <zScore>1279.2</zScore>
+      <bits>245.6</bits>
+      <expectation>1.1e-63</expectation>
+      <identity>45.6</identity>
+      <positives>71.9</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLND--IELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKA-KAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::  :.: :.:.. :::::::::: :::::::::-----:....: : .::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  :: :.: :. :. :: :::::..  ..:..:.::::::::: : :::::::. ::: ::: :.::.:::::.:::.: .:.:.:: ..:.:  .: ........ ...::.::.::::.:::::: ::.:.::: :. :::.::.::.....:: .:  :::.:.--------------------------------------: .:: ::   .:.. --.::::.  . : : .:.  .  :. ::..:. .:.  . ....--: :.::::.: .. .. ..  . :... : -:....  : ::</pattern>
+      <matchSeq start="1" end="378">MGIHGLAKLIADQAPGAIKEQEMKNFFGRKIAIDASMCIYQFLIAVR-----QDGNVLQNEDGETTSHLMGMFYRTIRMLENGIKPVYVFDGKPPQLKSGELEKRGERRAEAEKLLAQAQEAGEQENIDKFSKRLVKVTRQHNDECKKLLTLMGVPYVEAPCEAEASCAALVKAGKVFATATEDMDGLTFGTGVLLRHLTASEAKKLPIQEFHFSRILQDIGLSHEQFIDLCILLGCDYCGTIKGIGPKRAMDLIRQHGSIEEILDNIDLSKHPVPEDWL--------------------------------------YKEARGLFLTPDVVDCSCLELKWSEPDEEGLVQFMCAEKQFSEDRMRNGCKKILKSRQGST--QGRLDSFFSVTGSLSSKRKEPEMKGSTKKKLKTGATAGKFKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="FEN1_ANOGA" ac="Q7Q323" length="383" description="Flap endonuclease 1 OS=Anopheles gambiae OX=7165 GN=Fen1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1211</score>
+      <smithWatermanScore>1211</smithWatermanScore>
+      <initn>1251</initn>
+      <init1>901</init1>
+      <opt>1101</opt>
+      <zScore>1278.0</zScore>
+      <bits>245.4</bits>
+      <expectation>1.3e-63</expectation>
+      <identity>48.9</identity>
+      <positives>70.8</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>::::::..:..: ::  ..: :.:.. :::.:::::: .::::::::. :-----..::...::::::..: : :::: . .::.::.::::::::.:: :: :: :.::.:: ::  :.: : .:. .: ..:::..  .. .. ..:: ::::: : :::::::: ::: .:: ::::.:::::::::.. ::.:.:::..: :  :: . :.::..:. ...:.:.::::.:::::::::::.::: :..:: .: .:::..: .::.:..:::.:-------------------------------------- : ::::::.: :: .-- :::::.  . : : :::  :  :: ::.... .:.  .-- :.  : :.::::--:. :...--. :::.:  :  :. : ::.:</pattern>
+      <matchSeq start="1" end="372">MGIKGLSQLIADIAPFAVKEGEIKQFFGRKVAIDASMCLYQFLIAVRAEG-----AQLTSVDGETTSHLMGTFYRTIRLLENGIKPVYVFDGKPPDLKSGELNKRAERREEAQKALDKATEAGATEDIEKFNRRLVKVTKHHANEAKELLRLMGVPYVEAPCEAEAQCAALVRAGKVYATATEDMDALTFGSNILLRHLTFSEARKMPVQEFAYEKVLKGFELTQDEFIDLCILLGCDYCDTIRGIGPKKAIELINKHRSIEKILEHLDRQKYIVPEGW--------------------------------------NYEQARKLFKEPEVQDADTIELKWSEPDEEGLVKFLCGDRQFNEDRIRSGAKKILKT--KNTATQGRLDSFF--KVLPSTG--TPKRKVDEKKPLAGSSAKKAKTGGATRGRKPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="FEN1_CHICK" ac="Q5ZLN4" length="381" description="Flap endonuclease 1 OS=Gallus gallus OX=9031 GN=FEN1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1155</score>
+      <smithWatermanScore>1155</smithWatermanScore>
+      <initn>984</initn>
+      <init1>852</init1>
+      <opt>1100</opt>
+      <zScore>1276.9</zScore>
+      <bits>245.1</bits>
+      <expectation>1.5e-63</expectation>
+      <identity>45.4</identity>
+      <positives>71.0</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::. ::: ..::  :::.::::::.:::::::::.:-----: .: : :::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  :  :.: :.  . .: :::::..  .....:.::: :::.: : :: ::::. :.: ::: :::..::::: :::..:.:.:.:: ..:.:  .: .. :.:.. :... .:::::::.::::::..:::.::: :..::..: .::..:. :: ::. .::.:. .:--------------------------------------:.::: : .:.:--:.::::   . :.: .:.  .  :: .:..:....:. . ....--: :.:.:: : .. ..::    .   .:: :: ...  .:</pattern>
+      <matchSeq start="1" end="376">MGIHGLAKLIADVAPSAIRENDIKSYFGRKVAIDASMSIYQFLIAVRQG-----AEVLQNEEGETTSHLMGMFYRTIRMVENGIKPVYVFDGKPPQLKSGELAKRTERRSEAEKHLQEAQEAGEEANIEKFSKRLVKVTQQHTDECKKLLMLMGIPYVEAPGEAEASCATLVKAGKVYAAATEDMDCLTFGSPVLMRHLTASEAKKLPIQEFHLNRVLQDLGLTWEQFVDLCILLGCDYCESIRGIGPKRAVELIKQHKTIEEIIQHIDTKKYPLPENWLHKE--------------------------------------AQKLFLEPDVINPDDVELKWTEPNEEELVQFMCGEKQFNEERIRNGVKRLSKSRQGST--QGRLDDFFKVTGSITSAKRKEPETKGSAKKKAKTNSATAKFKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="FEN1A_DANRE" ac="Q6TNU4" length="380" description="Flap endonuclease 1 OS=Danio rerio OX=7955 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1166</score>
+      <smithWatermanScore>1166</smithWatermanScore>
+      <initn>1198</initn>
+      <init1>873</init1>
+      <opt>1097</opt>
+      <zScore>1273.4</zScore>
+      <bits>244.5</bits>
+      <expectation>2.3e-63</expectation>
+      <identity>45.4</identity>
+      <positives>71.9</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKA-KAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::. :.: :.::  :::::::::: :::::::::-----:....: : .::::::..::: ::::..  ::.::.:::::::..:: :: :: :.: .:.  :: :.: :. :. :: :::::..  ..::.:.:::.::::: . :::::::. ::: ::: ::::.:::::.:::.: .:.:.:: ..:.:  .: ........ . ..:.::.::::.:::::: ::.:.::: :. ::..::.::...:.:: .:  .::.:.--------------------------------------: .:: :: : ::..--...:::.  . . : .:.  .  :. ::..:. .:.  . ....--: :.:.::.: .. .. ..  . :..: : -:....  : ::</pattern>
+      <matchSeq start="1" end="378">MGIHGLAKLIADHAPSAIKEHEIKSYFGRKIAIDASMCIYQFLIAVR-----QDGNVLQNEDGETTSHLMGMFYRTIRMLESGIKPVYVFDGKPPQLKSGELEKRVERRAEAEKLLAQAQEAGEQENIDKFSKRLVKVTKQHNEECKKLLSLMGVPYIEAPCEAEASCAALVKAGKVYATATEDMDGLTFGTTVLLRHLTASEAKKLPIQEFHFSRILQDMELTHQQFIDLCILLGCDYCGTIKGIGPKRAIDLIKQHGSIEEILENIDPNKHPAPEDWL--------------------------------------YKEARGLFLEPEVVDGTSVDLKWNEPDEDGLIQFMCAEKQFSEDRIRNGCKKITKSRQGST--QGRLDTFFTVTGSISSKRKEPETKGSAKKKQKTSATPGKFKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="FEN1_SALSA" ac="B9EMY6" length="380" description="Flap endonuclease 1 OS=Salmo salar OX=8030 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1138</score>
+      <smithWatermanScore>1138</smithWatermanScore>
+      <initn>1158</initn>
+      <init1>870</init1>
+      <opt>1093</opt>
+      <zScore>1268.8</zScore>
+      <bits>243.6</bits>
+      <expectation>4.1e-63</expectation>
+      <identity>43.7</identity>
+      <positives>71.6</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRK-ADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::. :.: ..:.  :::::::::: .::::.:::-----:....: : .::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  :: :.: :. :. :: :::::..  ..:..:.::::::::: . :::::::. ::: ::: :.::.:::::.:::.: .:.:.:: ..:.:  .: ........ . ..:.::.::::.:::::: ::.:.::: :. :::.::.::...:.:: .:  .::.:.--------------------------------------: .:: :: . .:..-- ..:::.  . . : .:.  .  :. ::.::. .:.  . ....--: :.:.::.. .. .. ..  . :-..  : :....  : ::</pattern>
+      <matchSeq start="1" end="378">MGIHGLAKLIADQAPSAIKEQDIKNYFGRKIAIDASMCMYQFLVAVR-----QDGNVLQNENGETTSHLMGMFYRTIRMLEHGIKPVYVFDGKPPQLKSGELEKRGERRAEAEKLLAQAQEAGEQENIDKFSKRLVKVTQQHNDECKKLLTLMGVPYIEAPCEAEASCAALVKAGKVFATATEDMDGLTFGTGVLLRHLTASEAKKLPIQEFQFTRLLQDINLTHEQFIDLCILLGCDYCGTIKGIGPKRAIDLIRQHGSIEEILENIDSSKHPAPEDWL--------------------------------------YKEARGLFLQPDVVDCSTVDLKWSEPDEDALIQFMCAEKQFSEDRIKNGCKKILKSRQGST--QGRLDTFFTITGSLSSKRKEPETKGSNKKKQKTGATPGKFKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="FEN1_XIPMA" ac="Q5I4H3" length="380" description="Flap endonuclease 1 OS=Xiphophorus maculatus OX=8083 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1156</score>
+      <smithWatermanScore>1156</smithWatermanScore>
+      <initn>1216</initn>
+      <init1>871</init1>
+      <opt>1084</opt>
+      <zScore>1258.4</zScore>
+      <bits>241.7</bits>
+      <expectation>1.6e-62</expectation>
+      <identity>44.9</identity>
+      <positives>72.3</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLND--IELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKA-KAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::  :.: ..:.  :::::::::: :::::::::-----:....: . .::::::..::: ::::.. .::.::.:::::::..:: :: :: :.: .:.  :: :.: :. :. :: :::::..  ..:.::.::::::::: . :::::::. ::: : : :.::.:::::.:::.: .:.:.:: ..:.:  :: ...:.... .... .::.::::.:::::: ::.:.::: :. :::.::.::...:.:: .:  .::.:.--------------------------------------: .::.:: . ::...--..:::.  . : : .:. ..  :. ::..:. .:.. . ....--: :.::::.: .. .. ..  . :..: : -:....  : .:</pattern>
+      <matchSeq start="1" end="378">MGIHGLAKLIADHAPGAIKEQDIKNYFGRKIAIDASMCIYQFLIAVR-----QDGNVLQSEDGETTSHLMGMFYRTIRMLENGIKPVYVFDGKPPQLKSAELEKRGERRAEAEKMLAKAQELGEQENIDKFSKRLVKVTKQHNDDCKKLLTLMGVPYIEAPCEAEASCAALVKEGKVFATATEDMDGLTFGTNVLLRHLTASEAKKLPVQEFHFNRILQDIGLTSEQFIDLCILLGCDYCGTIKGIGPKRAIDLIRQHGSIEEILENIDTSKHPAPEDWL--------------------------------------YKEARNLFLKPEVVDSSTVDLKWREPDEEALIQFMCSEKQFSEDRIRNGCKKMMKSRQGST--QGRLDSFFSVTGSLSSKRKEPETKGSAKKKQKTGATPGKFRKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="FEN1_TRIAD" ac="B3RVF0" length="377" description="Flap endonuclease 1 OS=Trichoplax adhaerens OX=10228 GN=FEN1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1183</score>
+      <smithWatermanScore>1183</smithWatermanScore>
+      <initn>1228</initn>
+      <init1>849</init1>
+      <opt>1079</opt>
+      <zScore>1252.7</zScore>
+      <bits>240.6</bits>
+      <expectation>3.3e-62</expectation>
+      <identity>47.9</identity>
+      <positives>71.9</positives>
+      <overlap>413</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="411">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEV--LNDIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..:.::. :.: :.:.  :::.::::::.:::::::::: :-----..:::  ::::::..:.: ::::.: .::.::.::::::: .:: :: .:.:.::.::   . : .::.... :: ..: ::   .. :. .::: ::::::: ::::::.: ::: ::: ::::::::::::::.. ...:.:::..: :  .: .. ..... : .: .::.::::.:::::::.:.::::: :. ::... .:: ....:. .::.:::.:---------------------: :.-----------------:: :: . .:-- .:.::::   .:..: ::::.. ::. ::.. ..::.. : --... : :.::::..--.:.: :  .  : ::.: ::</pattern>
+      <matchSeq start="1" end="366">MGIHGLAKLIADHAPSAIKENEIKNYFGRKVAIDASMSIYQFLIAVRSDG-----NVLTNEAGETTSHLMGLFYRTIRMMENGIKPVYVFDGKPPRLKSGELARRQERREEAQKQASEAEKEGDADNIDKFTRRTVRMTPEHCEEGKKLLKLMGVPVVQAPCEAESQCAALVKAGKVYATGTEDMDALTFGSNVMLRHLTFSEARKMPIQEFHLKNALQELNFSMEQFIDLCILLGCDYCDSIKGVGPKRAVGLIEKYKSIEDIVKNISSEKFTVPENW---------------------PYKD-----------------ARMLFLNPDVEKCEDMELKWTEPDADELVKFLVEEKGFSEDRIRRGVEKISKAR--GTSTQGRLDSFFTI--TPGAIKRKTDAKKDAGKKKAKPGPAGRFKRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="FEN1_RAT" ac="Q5XIP6" length="380" description="Flap endonuclease 1 OS=Rattus norvegicus OX=10116 GN=Fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1134</score>
+      <smithWatermanScore>1134</smithWatermanScore>
+      <initn>1141</initn>
+      <init1>822</init1>
+      <opt>1076</opt>
+      <zScore>1249.1</zScore>
+      <bits>240.0</bits>
+      <expectation>5.2e-62</expectation>
+      <identity>45.1</identity>
+      <positives>71.3</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::. ::: ..::  :::.::::::.:::::::::.:: -----.: : :::::::..::: ::::.: .::.::..::::::..:: :: :: :.: .:.  :  :.: :  :: .: .::::..  ..:..:..::.:::.: . :: ::::. ::: ::: :::..::::: :::..:.:.:.:: ..:.:  .: .. ..:.. :.....:::::::.:: :::...::.::: :. ::..: .::.... .: .:. :::.:. .:--------------------------------------::.:: : :::.--..::::.  . :.: ::.  .  :. .:.......:. . ....--: :.:.:: :----... :.::::    :. :---:::.:</pattern>
+      <matchSeq start="1" end="369">MGIQGLAKLIADVAPSAIRENDIKSYFGRKVAIDASMSIYQFLIAVRQGGD-----VLQNEEGETTSHLMGMFYRTIRMMENGIKPVYIFDGKPPQLKSGELAKRSERRAEAEKQLQQAQEAGAEEEVEKFTKRLVKVTKQHNDECKHLLSLMGIPYLDAPSEAEASCAALAKAGKVYAAATEDMDCLTFGSPVLMRHLTASEAKKLPIQEFHLSRVLQELGLNQEQFVDLCILLGSDYCESVRGIGPKRAVDLIQKHKSIEEIVRRLDPSKYPVPENWLHKE--------------------------------------ARQLFLEPEVLDPESVELKWSEPNEEELVKFMCGEKQFSEERIRSGVKRLNKSRQGST--QGRLDDFFKV----TGSLSSAKRKEPEPKGPA---KKKAKTGGAGKFRRGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="FEN1_ARATH" ac="O65251" length="383" description="Flap endonuclease 1 OS=Arabidopsis thaliana OX=3702 GN=FEN1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1176</score>
+      <smithWatermanScore>1176</smithWatermanScore>
+      <initn>1226</initn>
+      <init1>861</init1>
+      <opt>1070</opt>
+      <zScore>1242.1</zScore>
+      <bits>238.7</bits>
+      <expectation>1.3e-61</expectation>
+      <identity>46.6</identity>
+      <positives>69.7</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAV-RSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLND---IELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>::::::.:::.:.::.:..: ...:  :::::.::::.::::::.:-:.:-----. ::::  ::.:::.::::::::: .  ::.::.:::::::..: .:: ::  ::  : : :. : : :: :. .: ::: :..  ..:.::..:: ::::::: :  ::::: :::::.: ::....::::.:::..: ..:.:   .. :  :. ..  :..: : .. :::.::::. ::::::.:::.: .:::::::.::.:: ..:....... .:: :  ::--------------------------------------:::::.: .:..:---...::   . : . .:::.. :::.::: . :::...:-- :.. : :..:::   :: .. ---::::    ..  ....::::</pattern>
+      <matchSeq start="1" end="375">MGIKGLTKLLADNAPSCMKEQKFESYFGRKIAVDASMSIYQFLIVVGRTG-----TEMLTNEAGEVTSHLQGMFNRTIRLLEAGIKPVYVFDGKPPELKRQELAKRYSKRADATADLTGAIEAGNKEDIEKYSKRTVKVTKQHNDDCKRLLRLMGVPVVEATSEAEAQCAALCKSGKVYGVASEDMDSLTFGAPKFLRHLMDPSSRKIPVMEFEVAKILEELQLTMDQFIDLCILSGCDYCDSIRGIGGQTALKLIRQHGSIETILENLNKERYQIPEEWPYNE--------------------------------------ARKLFKEPDVITDEEQLDIKWTSPDEEGIVQFLVNENGFNIDRVTKAIEKIKTA--KNKSSQGRLESFFKPVANSSVP---AKRKEIPESTTKGAANKKTKGAGGRKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="FEN1_HUMAN" ac="P39748" length="380" description="Flap endonuclease 1 OS=Homo sapiens OX=9606 GN=FEN1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1115</score>
+      <smithWatermanScore>1115</smithWatermanScore>
+      <initn>1133</initn>
+      <init1>810</init1>
+      <opt>1068</opt>
+      <zScore>1239.8</zScore>
+      <bits>238.3</bits>
+      <expectation>1.7e-61</expectation>
+      <identity>44.4</identity>
+      <positives>71.3</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="419">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKAKAAVSKKKTKKH</querySeq>
+      <pattern>:::.:::::..: ::. ::: ..::  :::.::::::.:::::::::.:: -----.: : :::::::..::: ::::.: .::.::.:::::::..:: :: :: :.: .:.  :  :.  :  .: .: .::::..  ..:..:..::.:::.: . :: ::::. ::: ::: :::..::::: :::..:.:.:.:: ..:.:  .: .. ..... :.....:::::::.:: :::..:::.::: :. ::..: .::.... .: .:. :::.:. .:--------------------------------------:..:: : :::.--..::::.  . :.: ::.  .  :. .:.......:. . ....--: :.:.:: :----... :.::::    :..---.:::.:</pattern>
+      <matchSeq start="1" end="369">MGIQGLAKLIADVAPSAIRENDIKSYFGRKVAIDASMSIYQFLIAVRQGGD-----VLQNEEGETTSHLMGMFYRTIRMMENGIKPVYVFDGKPPQLKSGELAKRSERRAEAEKQLQQAQAAGAEQEVEKFTKRLVKVTKQHNDECKHLLSLMGIPYLDAPSEAEASCAALVKAGKVYAAATEDMDCLTFGSPVLMRHLTASEAKKLPIQEFHLSRILQELGLNQEQFVDLCILLGSDYCESIRGIGPKRAVDLIQKHKSIEEIVRRLDPNKYPVPENWLHKE--------------------------------------AHQLFLEPEVLDPESVELKWSEPNEEELIKFMCGEKQFSEERIRSGVKRLSKSRQGST--QGRLDDFFKV----TGSLSSAKRKEPEPKGS---TKKKAKTGAAGKFKRGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="FEN1_ANOFI" ac="C3KJE6" length="380" description="Flap endonuclease 1 OS=Anoplopoma fimbria OX=229290 GN=fen1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1141</score>
+      <smithWatermanScore>1141</smithWatermanScore>
+      <initn>1213</initn>
+      <init1>865</init1>
+      <opt>1067</opt>
+      <zScore>1238.7</zScore>
+      <bits>238.1</bits>
+      <expectation>2e-61</expectation>
+      <identity>44.4</identity>
+      <positives>71.6</positives>
+      <overlap>423</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="420">MGIKGLAKLLSDEAPDCIREVELKSLHGRKIAIDASMAIYQFLIAVRSGGPNQQATMLTNAEGETTSHIQGMFNRTIRYMTEGIRPVFVFDGKPPDVKSHELIKRREKREKAQAALAVASEEGNVEEQDKQSKRLVRAGTKENEDCRKLLTLMGVPVVTAPCEAEAQAAALCKAGLVYATGTEDMDALTFATPILVRKLTFANASKSMVQTMNYNKVIEGLAISHDQFVDLCIMLGCDYCDTIRGVGPKTALKLIREHGNIEKVIETIDRKKFVVPESWVPNEKKLDAQSDDDDEEGVESPSKEENNGIVDTEELIPAYVQARKLFNEHEVLN--DIELKWKPCQAEDLQKFLVDDMGFNVDRVKNNIEKLQAAYKANSKPQTRMDSFFAVKANPNAAKSAAKRKADAAKA-KAAVSKKKTKKH</querySeq>
+      <pattern>:::.::.::..:.::  :.: ..:.  :::::::::: .::::::::-----:....: : .::::::..::: ::::.. .::.::.:::::::..:: :: :: ::: .:.  :: :.: :. :. :: :::::..  ..:..:.::::::::: . :::::::  ::: ::: :.::.:::::.:::.: .:.:.:: ..:.:  .: ..:..... ......::.:::: :::::: ::.:.::: :. ::..::.::...:.:: .:  .::.:.--------------------------------------: .:: :: . ::..-- ..:::.  . : : .:. ..  :. ::..:. .:.  . ....--: :.::::.. .. .. ..  . :..: : -:....  : ::</pattern>
+      <matchSeq start="1" end="378">MGIHGLTKLIADQAPGAIKEQDIKNYFGRKIAIDASMCLYQFLIAVR-----QDGNVLQNEDGETTSHLMGMFYRTIRMLEHGIKPVYVFDGKPPQLKSAELEKRGEKRAEAEKMLAQAQELGEQENIDKFSKRLVKVTKQHNDECKKLLTLMGVPYIEAPCEAEATCAALVKAGKVFATATEDMDGLTFGTNVLLRHLTASEAKKLPIQELHYSRILQDIGLTNEQFIDLCIPLGCDYCGTIKGIGPKRAIDLIKQHGSIEEILENIDSSKHPAPEDWL--------------------------------------YKEARGLFLKAEVVDCSTVDLKWSEPDEEGLIQFMCNEKQFSEDRMRNGCKKILKSRQGST--QGRLDSFFSITGSLSSKRKEPELKGSAKKKQKTGATPGKFKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

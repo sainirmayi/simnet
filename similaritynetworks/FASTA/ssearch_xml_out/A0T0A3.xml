@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170118-0660-66175414-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170118-0660-66175414-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170118-0660-66175414-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0A3|PSBE_PHATC" type="PROTEIN" length="84"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:01:18+00:00" end="2022-11-07T17:01:21+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBE_TRICV" ac="P49473" length="84" description="Cytochrome b559 subunit alpha OS=Trieres chinensis OX=1514140 GN=psbE PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>563</score>
+      <smithWatermanScore>563</smithWatermanScore>
+      <zScore>906.6</zScore>
+      <bits>172.1</bits>
+      <expectation>6.2e-43</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBE_PHATC" ac="A0T0A3" length="84" description="Cytochrome b559 subunit alpha OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>563</score>
+      <smithWatermanScore>563</smithWatermanScore>
+      <zScore>906.6</zScore>
+      <bits>172.1</bits>
+      <expectation>6.2e-43</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBE_THAPS" ac="A0T0U2" length="84" description="Cytochrome b559 subunit alpha OS=Thalassiosira pseudonana OX=35128 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <smithWatermanScore>558</smithWatermanScore>
+      <zScore>898.6</zScore>
+      <bits>170.6</bits>
+      <expectation>1.7e-42</expectation>
+      <identity>96.4</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>::::::::::::::::::::::::.:::::::::::::.::::::::::::::::::::::::.::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHTITIPSLFVSGWLFISTGLAYDVFGTPRPNEYFTQDRQQVPLVNDRFSAKQELEDLTKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBE_GRATL" ac="Q6B8K4" length="84" description="Cytochrome b559 subunit alpha OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>553</score>
+      <smithWatermanScore>553</smithWatermanScore>
+      <zScore>890.5</zScore>
+      <bits>169.1</bits>
+      <expectation>4.8e-42</expectation>
+      <identity>94.0</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::.:::.:::::::::::.:::::::::::::::::::::::::::::.:::::::::::::::::::.</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSIRYWVIHSITIPSLFVAGWLFVSTGLAYDVFGTPRPNEYFTQDRQQVPLVNDRFSAKQELEDLTKGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBE_PORPU" ac="P51391" length="84" description="Cytochrome b559 subunit alpha OS=Porphyra purpurea OX=2787 GN=psbE PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>546</score>
+      <smithWatermanScore>546</smithWatermanScore>
+      <zScore>879.3</zScore>
+      <bits>167.1</bits>
+      <expectation>2e-41</expectation>
+      <identity>92.9</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::::::.:::::::.:::.:::::::::::::::::::::::::::::.:::::::.:::::::::::.</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWVIHSITIPALFVAGWLFVSTGLAYDVFGTPRPNEYFTQDRQQVPLVNDRFNAKQELEDLTKGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBE_NEOYE" ac="Q1XD96" length="84" description="Cytochrome b559 subunit alpha OS=Neopyropia yezoensis OX=2788 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>546</score>
+      <smithWatermanScore>546</smithWatermanScore>
+      <zScore>879.3</zScore>
+      <bits>167.1</bits>
+      <expectation>2e-41</expectation>
+      <identity>92.9</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::::::.:::::::.:::.:::::::::::::::::::::::::::::.:::::::.:::::::::::.</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWVIHSITIPALFVAGWLFVSTGLAYDVFGTPRPNEYFTQDRQQVPLVNDRFNAKQELEDLTKGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBE_GUITH" ac="O78466" length="84" description="Cytochrome b559 subunit alpha OS=Guillardia theta OX=55529 GN=psbE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>546</score>
+      <smithWatermanScore>546</smithWatermanScore>
+      <zScore>879.3</zScore>
+      <bits>167.1</bits>
+      <expectation>2e-41</expectation>
+      <identity>92.9</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::.:::::::::::.:::.::::::::::::.::::::::::::.:::.::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSIRYWIIHSITIPALFVAGWLFVSTGLAYDIFGTPRPNEYFTQERQQVPLVNDRFSAKQELEDLTKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBE_EMIHU" ac="Q4G380" length="84" description="Cytochrome b559 subunit alpha OS=Emiliania huxleyi OX=2903 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>539</score>
+      <smithWatermanScore>539</smithWatermanScore>
+      <zScore>868.1</zScore>
+      <bits>165.0</bits>
+      <expectation>8.7e-41</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::.:::::::::::::::.:.::::::::::.:::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSIRYWIIHSITIPSLFVAGFLFVSTGLAYDAFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBE_CYACA" ac="Q9TM20" length="84" description="Cytochrome b559 subunit alpha OS=Cyanidium caldarium OX=2771 GN=psbE PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>511</score>
+      <smithWatermanScore>511</smithWatermanScore>
+      <zScore>823.1</zScore>
+      <bits>156.7</bits>
+      <expectation>2.8e-38</expectation>
+      <identity>83.3</identity>
+      <positives>100.0</positives>
+      <overlap>84</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:::::::::::::::::::::.::::::::::..:::::::::::::::::::::::...:::.::.::::.:..::.:::..:</pattern>
+      <matchSeq start="1" end="84">MSGGSTGERPFSDIITSVRYWVIHSITIPSLFIAGWLFVSTGLAYDVFGTPRPNEYFSENRQQVPLINDRFNAREELDDLTSNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBE_CYAM1" ac="Q85FQ2" length="81" description="Cytochrome b559 subunit alpha OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>510</score>
+      <smithWatermanScore>510</smithWatermanScore>
+      <zScore>821.8</zScore>
+      <bits>156.4</bits>
+      <expectation>3.3e-38</expectation>
+      <identity>90.0</identity>
+      <positives>98.8</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:.:::::::::::::::.:::.::::::::::..:::::::::::::::::::::::::.: :::::::::.::::::::</pattern>
+      <matchSeq start="1" end="80">MAGGSTGERPFSDIITSIRYWVIHSITIPSLFIAGWLFVSTGLAYDVFGTPRPNEYFTQERTQIPLVNDRFNAKQELEDLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBE_SYNP6" ac="Q5N556" length="83" description="Cytochrome b559 subunit alpha OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>465</score>
+      <smithWatermanScore>465</smithWatermanScore>
+      <zScore>749.3</zScore>
+      <bits>143.0</bits>
+      <expectation>3.6e-34</expectation>
+      <identity>75.3</identity>
+      <positives>97.5</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:.:::::::::.:::::.:::.:::::::.::..::::::::::::.:::::::::::::: ..:.:.::.::::... ..</pattern>
+      <matchSeq start="1" end="81">MAGGSTGERPFTDIITSIRYWVIHSITIPALFIAGWLFVSTGLAYDAFGTPRPNEYFTQDRTEVPIVSDRYSAKQQVDRFSAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBE_SYNE7" ac="Q8KPP3" length="83" description="Cytochrome b559 subunit alpha OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>465</score>
+      <smithWatermanScore>465</smithWatermanScore>
+      <zScore>749.3</zScore>
+      <bits>143.0</bits>
+      <expectation>3.6e-34</expectation>
+      <identity>75.3</identity>
+      <positives>97.5</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:.:::::::::.:::::.:::.:::::::.::..::::::::::::.:::::::::::::: ..:.:.::.::::... ..</pattern>
+      <matchSeq start="1" end="81">MAGGSTGERPFTDIITSIRYWVIHSITIPALFIAGWLFVSTGLAYDAFGTPRPNEYFTQDRTEVPIVSDRYSAKQQVDRFSAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBE_TRIEI" ac="Q10YT0" length="82" description="Cytochrome b559 subunit alpha OS=Trichodesmium erythraeum (strain IMS101) OX=203124 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>461</score>
+      <smithWatermanScore>461</smithWatermanScore>
+      <zScore>743.0</zScore>
+      <bits>141.8</bits>
+      <expectation>8e-34</expectation>
+      <identity>73.2</identity>
+      <positives>97.6</positives>
+      <overlap>82</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>:.:::::::::.:::::.:::.:::::::.::..::::::::::::::::::::::.:..::..:...::: .::...:. :</pattern>
+      <matchSeq start="1" end="82">MAGGSTGERPFGDIITSIRYWVIHSITIPALFIAGWLFVSTGLAYDVFGTPRPNEYYTEQRQELPILSDRFESKQQIDDFIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBE_NEPOL" ac="Q9TKY1" length="83" description="Cytochrome b559 subunit alpha OS=Nephroselmis olivacea OX=31312 GN=psbE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>458</score>
+      <smithWatermanScore>458</smithWatermanScore>
+      <zScore>738.1</zScore>
+      <bits>140.9</bits>
+      <expectation>1.5e-33</expectation>
+      <identity>77.8</identity>
+      <positives>95.1</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   :::::::::::.::.:::.:::::::::::.:::::::::::::::.::::::::..::  ::..:::.: :... ::.::</pattern>
+      <matchSeq start="3" end="83">-MSGSTGERPFSDILTSIRYWVIHSITIPSLFVAGWLFVSTGLAYDVFGSPRPNEYFTEERQTTPLITDRFNALQQMDILTEGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBE_MESVI" ac="Q9MUQ0" length="81" description="Cytochrome b559 subunit alpha OS=Mesostigma viride OX=41882 GN=psbE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>455</score>
+      <smithWatermanScore>455</smithWatermanScore>
+      <zScore>733.5</zScore>
+      <bits>140.0</bits>
+      <expectation>2.7e-33</expectation>
+      <identity>82.3</identity>
+      <positives>96.2</positives>
+      <overlap>79</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="82">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   ::: ::::::::::.:::.::::::::::::::::::::::::::::::::::::.:::.:::..:::.: ..:.. ::</pattern>
+      <matchSeq start="3" end="81">-MAGSTEERPFSDIITSIRYWVIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTEDRQDIPLITDRFNALEQLNQYTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBE_OSTTA" ac="Q0P3N6" length="82" description="Cytochrome b559 subunit alpha OS=Ostreococcus tauri OX=70448 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>450</score>
+      <smithWatermanScore>450</smithWatermanScore>
+      <zScore>725.4</zScore>
+      <bits>138.5</bits>
+      <expectation>7.7e-33</expectation>
+      <identity>76.6</identity>
+      <positives>97.4</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="80">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   :::::::::::.::.:::.:::.::::::..::::::::::::::::::::::::..::..::..::..:  .:.::</pattern>
+      <matchSeq start="3" end="79">-MSGSTGERPFSDIVTSIRYWVIHSVTIPSLFIAGWLFVSTGLAYDVFGTPRPNEYFTEERQELPLISDRYGALAQLDDLVPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBE_CHAVU" ac="Q1ACI7" length="83" description="Cytochrome b559 subunit alpha OS=Chara vulgaris OX=55564 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>449</score>
+      <smithWatermanScore>449</smithWatermanScore>
+      <zScore>723.6</zScore>
+      <bits>138.2</bits>
+      <expectation>9.6e-33</expectation>
+      <identity>72.8</identity>
+      <positives>97.5</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   :.::::::.:::::.:::.::::::::::..::::::::::::::::::::::::..::..::..:::.. ...:. ::..</pattern>
+      <matchSeq start="3" end="83">-MSGNTGERPFADIITSIRYWVIHSITIPSLFIAGWLFVSTGLAYDVFGTPRPNEYFTENRQEVPLITDRFNSLEQIESYTKSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBE_CHAGL" ac="Q8M9W8" length="83" description="Cytochrome b559 subunit alpha OS=Chaetosphaeridium globosum OX=96477 GN=psbE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>448</score>
+      <smithWatermanScore>448</smithWatermanScore>
+      <zScore>722.0</zScore>
+      <bits>137.9</bits>
+      <expectation>1.2e-32</expectation>
+      <identity>74.1</identity>
+      <positives>96.3</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="84">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   :.::::::.:::::.:::.::::::::::..:::::::::::::::::::::::: :::..::.. ::.. ..:...::.:</pattern>
+      <matchSeq start="3" end="83">-MSGNTGERPFADIITSIRYWVIHSITIPSLFIAGWLFVSTGLAYDVFGTPRPNEYFTADRQEVPLITGRFNSLEQLNEITKSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBE_CYAPA" ac="P19152" length="74" description="Cytochrome b559 subunit alpha OS=Cyanophora paradoxa OX=2762 GN=psbE PE=3 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>443</score>
+      <smithWatermanScore>443</smithWatermanScore>
+      <zScore>715.1</zScore>
+      <bits>136.5</bits>
+      <expectation>2.9e-32</expectation>
+      <identity>79.2</identity>
+      <positives>100.0</positives>
+      <overlap>72</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="72">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>::::.:::::::::.::.:::.::..:::::::.:::::::::::::::::::.::::..::..:..:.:::</pattern>
+      <matchSeq start="1" end="72">MSGGTTGERPFSDIVTSIRYWVIHTVTIPSLFVAGWLFVSTGLAYDVFGTPRPDEYFTEERQEVPIINQRFSTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBE_MICAN" ac="B0JLV1" length="81" description="Cytochrome b559 subunit alpha OS=Microcystis aeruginosa (strain NIES-843 / IAM M-2473) OX=449447 GN=psbE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>443</score>
+      <smithWatermanScore>443</smithWatermanScore>
+      <zScore>714.2</zScore>
+      <bits>136.5</bits>
+      <expectation>3.2e-32</expectation>
+      <identity>73.4</identity>
+      <positives>97.5</positives>
+      <overlap>79</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="82">MSGGSTGERPFSDIITSVRYWIIHSITIPSLFVSGWLFVSTGLAYDVFGTPRPNEYFTQDRQQIPLVNDRFSAKQELEDLTKGL</querySeq>
+      <pattern>   ::::::::.::.::.::::::::::: ::..:::::::::::::::::::.::.::.::..:..:::: ::...:....</pattern>
+      <matchSeq start="3" end="81">-MSGSTGERPFGDIVTSIRYWIIHSITIPMLFIAGWLFVSTGLAYDVFGTPRPDEYYTQERQELPIINDRFEAKNQIEQFNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

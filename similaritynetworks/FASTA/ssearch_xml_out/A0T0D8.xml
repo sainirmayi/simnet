@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170254-0650-13310923-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170254-0650-13310923-p1m.m9&quot; -m &quot;F10 fasta-R20221107-170254-0650-13310923-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0D8|RPOC1_PHATC" type="PROTEIN" length="696"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:02:54+00:00" end="2022-11-07T17:03:00+00:00" search="P0Y0M0DT0H0M6.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RPOC1_PHATC" ac="A0T0D8" length="696" description="DNA-directed RNA polymerase subunit beta' OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>4590</score>
+      <smithWatermanScore>4590</smithWatermanScore>
+      <zScore>5683.9</zScore>
+      <bits>1062.2</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>696</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="696">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="696">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RPOC1_THAPS" ac="A0T0R0" length="732" description="DNA-directed RNA polymerase subunit beta' OS=Thalassiosira pseudonana OX=35128 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3820</score>
+      <smithWatermanScore>3820</smithWatermanScore>
+      <zScore>4726.0</zScore>
+      <bits>885.0</bits>
+      <expectation>0.0</expectation>
+      <identity>78.5</identity>
+      <positives>90.1</positives>
+      <overlap>730</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="695">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSE---------------------------------NCKKC--DGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..: :::::::::::::.:::::..:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::: :::::..:::::::. ::.::: .:  ..---------------------------------:::. --.  :   :..:...:::.:::::::::::::::::.:::.::::::::: ::::.:::::::. : .::: .:::::::.:::.:::: ::::::::::: .::.. : ::..:.:::.::.:.:. :.: :::: :::::.:.:.::::::::::. ::..:::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::.::::.:::: ::.::::::: .:::::::::::::::::::.::.::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::.: ::::::.:...:::..::.: ...  . : ..:  ::.:.. ::.:::.:::: ...:.::::.::::::..:::::: :::.</pattern>
+      <matchSeq start="1" end="730">MIRSEKEFDYIKIKLASPMRILQWSHRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGHINLIYPVTHVWYTNSRPNYIALLLEVEQCEKRLDTGWTEFADLRDIKEKDNKDIPEYPSSEIECRNYLASPKAILNCKEFLKEKSKAKKSNIVNFYDERIKRIKLASLAYFIAEDEIAFYGLHWDLQQYRRCRELGFTGYPLKPHSKSRNRRRNTPKYLLRSTPNYLIGAVLIKRELEKLNLDQEIIKTRNFIMLCSKVLHKEQPFYNFSHWSRKWEYQRIYKLRDQSIKRIRILENLLTTGANPAWMIITILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRMLQEAVDTLIDNGKRGKIALSASNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLKLNQCGLPYEMAIELFQPFIIRELINQGLASNMKVAKNLLQQNEPIINPVLEKVLANHPIFLNRAPTLHRLGIQAFQPIIVQGRAIKLHPLVCSAFNADFDGDQMAVHVPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSNHYFADLNDVILAYNQDQIEIHTSIWVRYKHKISKPSNFIKKIILNDKSYIEYYENIQIRKDENDQIIVQYLQTTTGRVLLNYIIQTTLNLKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RPOC1_TRICV" ac="P49467" length="843" description="DNA-directed RNA polymerase subunit beta' OS=Trieres chinensis OX=1514140 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3506</score>
+      <smithWatermanScore>3506</smithWatermanScore>
+      <zScore>4334.3</zScore>
+      <bits>812.7</bits>
+      <expectation>0.0</expectation>
+      <identity>66.9</identity>
+      <positives>77.4</positives>
+      <overlap>842</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="696">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTY--------------------TTHSEN----------CKKCDGLKLTTSTV------------------------------------VDL------------------------------------------------------------------------------WDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKP--QNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..: ::::::.::::::.:::::. :.::::::.::::::::::::::::::::::::::::::.:.:::::::: .:::::::::::::::::::::::::.:::::::.:::: :::::.::::::::. ::.:.:..--------------------. :  .----------::  . . : .:..------------------------------------.::------------------------------------------------------------------------------ :.:.::::::::::::::::::.::.::::::::::::::.:.::::: :::--:::::.::::::: ::..:::: :::.::: :.. .:: : : ::..:.:.:.::::::   ::::::: :: ::.:.::::::::::::..:::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::.::::::.:::.::::::::::::.:::.:::.::::::::::..:::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:.::::::::::::::::::::::.::::::::::::::.::.:::::..:::.: ::.:::.:.:.:.:.:::::  .. :.   . :   :.: . ::.:::.:::. ::.. ::::.::::::.:.:: .: :::.:</pattern>
+      <matchSeq start="1" end="842">MLQSEKEFDYINIKLASPLRILQWSYRRLPNGQFIGEVQKSETINYRTFKPEMDGLFCERIFGPSRSFECACGKYKLIRYEGLICERCGVELTESRVRRHRMGHINLIYPVAHVWYTNSRPNYMALLLEVEQCEKNLNTSWQILRFSLPGIYDQVLRPILLSDHWPDSSIDEYLKTICKDFSTIALESSNIWAKKSKAWYQKIFEIYQELLYAKIETIYQFIEFIDNIDLTKQPTSVNFIFDYLENEKILDLMNPISLTNEITASQDPAQIDLVDPSRDIFLFLNTFPKKQHKELFRKLIRKSNTVKSLDDRIKRIKLASLAYFIAEDEISYYGLHWDLQQYRRSRELGFTAYPLKPEPKPKLQNRRYNTPKYLLRMTPTYLIGAVLIKKELEDLDIIKEIQRTRKFIVICSKILHKEKPIYHFLRWFRKWELQRAYKLRDQAIKRIRILENLLATGSNPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRMLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNECGLPYEMALELFQPFLIREMINQGLASNMKIARNLIEQNEAIIDPVLEKVLSNHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLESQSECYMLMLAPYNFLSPANGEPIILPSQDMVLGCYYLTVSNIKGLLGSNQYFASLEDVLLAYNQDKIELHTAIWIRYTDNYIEPLNFKKQIQLNDASYIEIYENMQIRRDKDGNKIVQYLQTTTGRVIFNYTVQTTLNLLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RPOC1_RHDSA" ac="A6MVX3" length="623" description="DNA-directed RNA polymerase subunit beta' OS=Rhodomonas salina OX=52970 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2394</score>
+      <smithWatermanScore>2394</smithWatermanScore>
+      <zScore>2954.5</zScore>
+      <bits>557.0</bits>
+      <expectation>5.2e-157</expectation>
+      <identity>54.1</identity>
+      <positives>76.3</positives>
+      <overlap>699</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="695">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEK--KLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..  . :::.::.:::: :: .:..: :::::.:::: : :::::::.::::::::::::::: :. :: :::::::::.:.::::::::..::.:::::::.:.:  :::::::..: :.....::..--.. :.-- ...  .:.  :: .    .: . ---: :------:.. .  :---... ..::.-----------:.:-------------------------------:::  :.. :. ..:. :   .:------  ::. . -----:.-------------:..::::.:...:...: :.:::::::.:::::: ::::.::.::::::::::.::::...:::::.:: :: ::..:::::::.:::.::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:.::::::: :::.::::::.:..::.:::..:.: ::..::.:.:.:  :::.:...::..::::::::::::::::::::.::::::::::: ::::::::::::::::::::::::  .::::::::::::.:::::::::::::::::::..: .   ....::.:: :..:::  .:. .:: .:.:.: .  .:.. ..:.:: ..  .... .  :.  .....:.::. :: :: .::  .  .:..</pattern>
+      <matchSeq start="1" end="621">MAKLEQYFDYVKINLASPERIRKWGERTLPNGQIVGEVTKPETINYRTLKPEMDGLFCERIFGPVKDWECHCGKYKRVRYKGIICERCGVEVAESKVRRHRMGHIELAAPVTHVWYLKSLPSYISILLDIPLKDVEQIVYFNSYIVTRPGNCPNLRYKQLLSE---DEW------IEIEDQLY---QEDSNLYGV-----------EVG-------------------------------IGAEAIQKLLKDVDLEVEAESLR------EDVLSAKG-----SK-------------RDKAIKRLRVIDNFIATRSDPAWMILTVLPVIPPDLRPMVQLDGGRFATSDLNDLYRRVLNRNNRLIRLQEILAPEIIIRNEKRMLQESVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPTLQLNQCGLPREMALELFQPFVIHKLIHQGLVNNIKAAKKMIQKNDSVIWSVLEEVIQGHPVLLNRAPTLHRLGIQAFEPILVEGRAIKLHPLVCPAFNADFDGDQMAVHIPLSLEAQAEARLLMLAPYNFLSPATGEPIIMPSQDMVLGCYYLTTHNPSQQKSQAYYFSNLEDALLAYECKKIALHSYVWVRFEGEVEDENLKIRTSILKEKYTLDIFTERIIKTDEEKKVIAQYILTTPGRILLNKTLFDSLTLSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RPOC1_GUITH" ac="O78484" length="623" description="DNA-directed RNA polymerase subunit beta' OS=Guillardia theta OX=55529 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2382</score>
+      <smithWatermanScore>2382</smithWatermanScore>
+      <zScore>2939.6</zScore>
+      <bits>554.2</bits>
+      <expectation>3.6e-156</expectation>
+      <identity>55.1</identity>
+      <positives>75.7</positives>
+      <overlap>700</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="695">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEK--KLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESILLKTTILDDETKIEFYENLQIRKT-KDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>: .  . :::.::.:::: :: .:..:.::::: :::: : :::::::.::::::::::::::: :. :: :::::::::.:..:::::::..::.:::::::::.:  :::::::..: :.....::..--.. :.-- ...  .:.  :: ----------------. : :..--------..:::---- :  . : :... ::--::  . ------------------------:::  :.. :. ..:. :   .:  :::-.: ..:.:-----------------------.:::.:...:...: :.:.:::::.:::::: ::::.::.::::::::::.::::...:::::.:: :: ::..:::::::.:::.::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:.::::::: :::.::::::.:..::.:::..:.: :: :::.:: :.  :::.:...:::.::::::::::::::::::::.::::::::::: ::::::::::::::::::::::::  :::::::::::::.:.:::::::::::::::::..: .  .. : ::.:. ::.:::  . ...:: .:.:.. .  ...  ..   :: . :...: .-.:.: -.::.:.:::. :: :: .:: ..  .:..</pattern>
+      <matchSeq start="1" end="621">MSKLEQYFDYVKINLASPQRIKKWGERRLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPVKDWECHCGKYKRVRYKGIVCERCGVEVAESKVRRHRMGYIELAAPVTHVWYLKSLPSYISILLDIPLKDVEQVVYFNSYVVTKPGNCT----------------NLRYKQL--------LSEDE----WIAIEDQLYQEDSEL--TGVEVG------------------------IGAEAIQKLLRDIDLEVEAESLREEILV-VKGIKKDK-----------------------SIKRLRVIDNFIATRSDPTWMILTVLPVIPPDLRPMVQLDGGRFATSDLNDLYRRVLNRNNRLIRLQEILAPEIIIRNEKRMLQESVDALIDNGRRGRTVMGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPQLELNQCGLPREMALELFQPFVIHKLIQQGLVNNIKAAKRLIQKNELIVWNVLEEVIQGHPILLNRAPTLHRLGIQAFEPILVEGRAIKLHPLVCPAFNADFDGDQMAVHIPLSLEAQAEARMLMLAPYNFLSPATGDPIIMPSQDMVLGCYYLTAENPSQQVNRSLYFSNFDDVLLAYETKLIKLHSYVWVRFNGNVDDDDEKIEEKKLDGNKKLHIYPS-RIKKLDQDNNLMVQYILTTPGRILLNNVLFDSLQLQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RPOC1_NEOYE" ac="Q1XDN6" length="629" description="DNA-directed RNA polymerase subunit beta' OS=Neopyropia yezoensis OX=2788 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2357</score>
+      <smithWatermanScore>2357</smithWatermanScore>
+      <zScore>2908.5</zScore>
+      <bits>548.5</bits>
+      <expectation>1.9e-154</expectation>
+      <identity>54.2</identity>
+      <positives>75.5</positives>
+      <overlap>695</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESIL--LKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..  . :::.::.:::: .: ::..:.:::::.:::. : :::::::.::::::::::.:::: :. :: :::::: ::.:..:::::::.::::::::::.::.:  :::::::...  ...:: :... --:...     :: ---------..:.. .:.-. . :..-: .  .   :.::------.. :.   . :.:-------------------------------:::  :.. :. :.:.     .:------... :  : .   :  : :------------ .::.:..::...::..:.::..:..::::: ::::.::.::::::.::::.:::::.::::: ::  : ::..:::::::.::::::.:.:::.::. ...:::::::::::::.::.:::::::::::::::::::::::: :.:.::::: :::.::::::.:..:: :::..:.: ::..::.::: :  ::..:...::..::::::::::::::::::::.::::::::::: ::::::::::::::.:::::::::  .:::::.::::::.:.:::::::::::::::::.:: .   ::..:::.: ::..:: :.:...:: :: :..    ...  --.:    .:..  .:..:  :..  .:: ::::..::.:: :.: :::..:</pattern>
+      <matchSeq start="1" end="627">MTKFEQYFDYVKISLASPEKIRQWGERSLPNGQIVGEITKPETINYRTLKPEMDGLFCEKIFGPVKDWECHCGKYKRFRYKGIVCERCGVEVTESRVRRHRMAYIELASPVTHVWYLKGSTSYIALALDLKV--KEVEKIVYFHSY---------VVTQSNTDI-NLKYKQL-LEGYEWKSLEEEI------YQNQDENNQVEVG-------------------------------IGAEAIQKLLKDLDLEHIAETLR------SEATNPPKSFKTPSLKFNK------------KMKRLRLIENFIATGADPSWMVFTVIPVIPPDLRPMVQLDGGRFATADLNEFYRRIINRNNRLSRLKSILAPEIIIRNEKRMLQEAVDSLMDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPHLKLHQCGLPREMALELFQPFVIHRLILQGLVNNIKAAKKMIQKNESSIWNVLNEVIQGHPVLLNRAPTLHRLGIQAFEPILVEGRAIKLHPLVCPAFNADFDGDQMAVHVPLSLEAQAEARLLMLAPHNFLSPATGQPIIMPSQDMVLGCYYLTANNPSQQQGSNQYFASLEDVVMAYEQKKIDLHSYIWARFDGLVDGDQPHDPIKIEKHSDNSTTKFFNNHIIKEDAENQRIVQYIRTTAGRIIFNKIIQESLLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RPOC1_PORPU" ac="P51251" length="629" description="DNA-directed RNA polymerase subunit beta' OS=Porphyra purpurea OX=2787 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2333</score>
+      <smithWatermanScore>2333</smithWatermanScore>
+      <zScore>2878.6</zScore>
+      <bits>543.0</bits>
+      <expectation>8.9e-153</expectation>
+      <identity>53.8</identity>
+      <positives>75.0</positives>
+      <overlap>697</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLK--SEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESIL--LKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..  . :::.::.:::: .: ::..:.:::::.:::. : :::::::.::::::::::.:::: :. :: :::::: ::.:..:::::::.::::::::::.::.:  :::::::...  ...:: :... --:...     ::    .-------.:  ..:---. :..-: .  .   :.::------.. :.   . :.:-------------------------------:::  :.. :. :.:.--.: .:.--------.. :  : .   :  : :------------ .::.:..::...::..:.::..:..::::: ::::.::.::::::.::::.:::::.::::: ::  : ::..:::::::.::::::.:.:::.::. ...:::::::::::::.::.:::::::::::::::::::::::: :.:.::::: :::.::::::.:..:: :::..:.: ::..::.::: :  ::..:...::..::::::::::::::::::::.::::::::::: ::::::::::::::.:::::::::  .:::::.::::::.:.:::::::::::::::::.:: .   :.:.:::.: ::..:: ..:...:. :: :..    .... --.:     :..  .:..:  :..  ..: ::::..:: :: :.: :::..:</pattern>
+      <matchSeq start="1" end="627">MTNFEQYFDYVKISLASPEKIRQWGERSLPNGQIVGEITKPETINYRTLKPEMDGLFCEKIFGPVKDWECHCGKYKRFRYKGIVCERCGVEVTESRVRRHRMAYIELASPVTHVWYLKGSTSYIALALDLKV--KEVEKIVYFHSYVVTQ-------SSEETNL---KYKQL-LEGYEWKSLEEEI------YQNQDENNQIEVG-------------------------------IGAEAIQKLLKDLDLEYIAETLRL--------EATNPPKSFKTPSLKFNK------------KMKRLRLIENFIATGADPSWMVFTVIPVIPPDLRPMVQLDGGRFATADLNEFYRRIINRNNRLSRLKSILAPEIIIRNEKRMLQEAVDSLMDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPHLKLHQCGLPREMALELFQPFVIHRLILQGLVNNIKAAKKMIQKNESSIWNVLNEVIQGHPVLLNRAPTLHRLGIQAFEPILVEGRAIKLHPLVCPAFNADFDGDQMAVHVPLSLEAQAEARLLMLAPHNFLSPATGQPIIMPSQDMVLGCYYLTANNPSQQRGASQYFASLEDVVIAYEKKKVDLHAYIWARFDGVIDSDQVKFPIKIETHHDNSVTKFFDNHIIKEDAEHQRIVQYIRTTPGRIIFNKIIQESLVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RPOC1_GRATL" ac="Q6B8R7" length="628" description="DNA-directed RNA polymerase subunit beta' OS=Gracilaria tenuistipitata var. liui OX=285951 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2315</score>
+      <smithWatermanScore>2315</smithWatermanScore>
+      <zScore>2856.2</zScore>
+      <bits>538.8</bits>
+      <expectation>1.6e-151</expectation>
+      <identity>52.9</identity>
+      <positives>74.9</positives>
+      <overlap>697</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENC-KKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINES---ILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:..  ..:::.::.:::: .: .:..: :::::.:::: : :::::::.::::::::::::::: :. :: :::::: ::.:..:::::::.:::.::::::.::.:  :::::::...  ...:: :..  --: :.     ::   -.  .  ::. . ... .. :  . ::.: .  :-------.::-----------:.:-------------------------------:::  : . :...::.. .  .:------ . :   : . . :  : :------------ .::.:.:::...::..:.::.:...::::: ::::.::.::::::.::::.:::::.::::: ::  : ::..:::::::.::::::.:.:::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:.:.::::: :::.::::::.:..:: :::..:.: ::..::.:: ..  ::..:. .::..::::::::::::::::::::.::::::::::: ::::::::::::::.:::::::::  .:::::.::::::.:.::.::::::::::::::. :  ..  :::::.:: :...::.:... .:: .:.:. -  .:.:---..... .  : :  ... .  ..  .:.:..:::..::.:: ..:  :...:</pattern>
+      <matchSeq start="1" end="627">MTKFDHHFDYVKISLASPSKIRSWGERTLPNGQIVGEVTKPETINYRTLKPEMDGLFCERIFGPVKDWECHCGKYKRFRYKGVVCERCGVEVTESKVRRHRMAYIELAAPVTHVWYLKGTTSYIALALDLTV--KDLEKIVYFHSYVVINPGNYHKLNYKQLLEGYEWRNLEEKLSSHSSNI-------FGI-----------EVG-------------------------------IGAEAIYKLLDNINLQNTVEILR------EESLRPPKLFKNPSTKFNK------------KMKRLRLLENFLATGANPSWMVLSVIPVIPPDLRPMVQLDGGRFATADLNEFYRRIINRNNRLARLKAILAPEIIIRNEKRMLQEAVDSLMDNGRRGRTVIGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPNLKLHQCGLPKEMALELFQPFVIHRLILQGLVNNIKAAKKIIQRNEVVVWTVLQEVIYGHPVLLNRAPTLHRLGIQAFEPILVEGRAIKLHPLVCPAFNADFDGDQMAVHVPLSLEAQAEARLLMLAPHNFLSPATGQPILMPSQDMVLGCYYLTTYNPAAISDSSHYFSNLDDALMAYQQNNITLHSLVWVRFS-GLVNDSSNQMVISSKLNIDGTITKIFSDRIVKYDNDGQMVVQYIRTTAGRILFNKAIRESLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RPOC1_THEVB" ac="Q8DL56" length="622" description="DNA-directed RNA polymerase subunit gamma OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2295</score>
+      <smithWatermanScore>2295</smithWatermanScore>
+      <zScore>2831.5</zScore>
+      <bits>534.2</bits>
+      <expectation>3.8e-150</expectation>
+      <identity>53.2</identity>
+      <positives>74.2</positives>
+      <overlap>690</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSE-NCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLE-EQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>     ..:::.:..:::: ::.::..: ::::: :::: : :::::::.:::::::::::::::.:. :: ::::::::..:..:::::::.:::::::::::::.:  :::::::... :..::.::..   . .  . ....  -.  .  ::.       : :..-------------- :.::-----------::.. ::-- :  . ------------------------:::  :.: :. :.:..:  ..: ------..::.--------------. :.----: . :::.:...:...::..: ::.::..::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.:..:: : ...:.: :: .::.:.  :  :::.:...::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::.:::::  :::::  :.::::.:.::: :::::::::::::..: .    :..:.::. ::..:: :..: .:. .:.: .-: . ...   . :  .: ...  :   ....  ..: : ::..:: :: : :  ::..:</pattern>
+      <matchSeq start="6" end="620">MPRLEQRFDYVKVSLASPERIIQWGQRTLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVTHVWYLKGIPSYMAILLDMPLRDVEQIVYFNSYVVLDPGNHPGLSYKQLLSEDQWQD--------------IEEEI-----------YREDSEL--EGVEVG------------------------IGAEAIQRLLRDLDLQAEADQLRQ------EILNS--------------KGQK----RAKLIKRLRVIDNFIATGAKPEWMVLTVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLQMHQCGLPREMAIELFQPFVIHRLIRQQIVNNIKAAKRMIQRNDPQIWDVLEEVIEGHPVLLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSIEAQAEARMLMLASNNILSPATGKPIITPSQDMVLGCYYLTAENPKLPDYSDRYYANFQDVVMAYEQGHLPLHAFVWVRYDGEVDDGDTSEPQITTYEDGSRLLEYALRRVKEDANGQRISQYIRTTPGRIIYNQTIQEALAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RPOC1_CYAP4" ac="B8HTV9" length="622" description="DNA-directed RNA polymerase subunit gamma OS=Cyanothece sp. (strain PCC 7425 / ATCC 29141) OX=395961 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2293</score>
+      <smithWatermanScore>2293</smithWatermanScore>
+      <zScore>2829.0</zScore>
+      <bits>533.8</bits>
+      <expectation>5.2e-150</expectation>
+      <identity>53.7</identity>
+      <positives>73.1</positives>
+      <overlap>694</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLE-EQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>: .  ..:::.:: :::: ::  :..: ::::: :::: : :::::::.:::::::::::::::.:. :: ::::::::..:..:::::::.:::::::::::::.:  :::::::... :..:: ::.. --------------------------------: :-------. ...:: :   ..- : : .:   .   :--------  . . ... ::  . :.    .--:::  ..: :. :.:..:   .:  :--------------: :.------ :.----: . :::.:...:...::: : ::.::..::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.:..:: :::..:.: :: :::.:. ::  :::.:. .::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::.:.:::  .::::  :.::::.:.::. :::::::::::::..: ..  : . :::.. ::..:: :...:.:. ::.: .-: : ...   .     :    ..: . ..:  .:..:: ::..:: :: : :  ::..:</pattern>
+      <matchSeq start="1" end="620">MPKLEQRFDYVKIGLASPDRIRLWGERTLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVTHVWYLKGIPSYMATLLDMP--------------------------------LRD-------VEQIVYFNAYVVLN-PGNHESLTYKQLLSE--------DQWIEIEDQIYSEDSQLVDIEVG--IGAEAVQRLLQDLELETEAEALRSEI--------------DVSK------GQK----RAKLIKRLRVIDNFIATGSRPDWMVLTVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLKMHQCGLPREMAIELFQPFVIHRLIRQGLVNNIKAAKRLIQRNDPIIWEVLEEVIDGHPVLLNRAPTLHRLGIQAFEPILVDGRAIQLHPLVCPAFNADFDGDQMAVHVPLSIESQAEARLLMLASNNILSPATGKPIVTPSQDMVLGCYYLTAENPKSQQGEGTYFASMNDVVMAYEQGQVELHAFIWVRYDGEVEDDDKGEPEIQTSGDGLVTHLYPSKRLRFDQDGKLISQYIRTTPGRIIYNKTIQESLAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RPOC1_GLOC7" ac="B7KK78" length="625" description="DNA-directed RNA polymerase subunit gamma OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2291</score>
+      <smithWatermanScore>2291</smithWatermanScore>
+      <zScore>2826.5</zScore>
+      <bits>533.3</bits>
+      <expectation>7.2e-150</expectation>
+      <identity>52.9</identity>
+      <positives>74.1</positives>
+      <overlap>694</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="693">-MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDG-LKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESIL---LKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>    . ..:::.:: :::: :: ::..: :::: .:::: : :::::::.:::::::::::::::::. :: ::::::::..:..:::::::.:::::::::::.:.:  :::::::... :.....::..   . .  . ....       .:-:.     . : : :  ..:-------- ::: - .:::-----------:.:-------------------------------:::  :.: :..:::  :  ..:  :.--------------::.------ :.----: . :::.:...:...:::.: ::.::..::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:.. ::::: ::::::::::.:..::. ::..:.: ::..::...  .  :::.:. .::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::::.:.:  .:::: .:.::::.:.::. ::::::::::::: .: ..  :.  :...: :...:: :. ...:. .:.: . . ..:.  ---.::   .: :  ..:.. ..:.: :..:: :...::.:: : :  .: ::</pattern>
+      <matchSeq start="5" end="623">MKQPTEQRFDYVKIGLASPDRIRQWGERTLPNGILVGEVTKPETINYRTLKPEMDGLFCERIFGPSKDWECWCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGFIKLAAPVTHVWYLKGIPSYLSILLDMPLRDVEQIVYFNAYVVLDPGNSGNLQYKQLLTEDQWLEIEEQI--------YAEDS-ELYGI-----------EVG-------------------------------IGAEAIERLLQELNLDEEAEKLREEII--------------ESK------GQK----RAKLIKRLRVIDNFIATGSQPDWMVLTVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLSRLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLKIFQCGLPREMAIELFQPFVIHRLIKLGLVNNIKAAKKMIQRGDPQVWNVLEEVITGHPVLLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLESQSEARLLMLACHNILSPATGRPIVAPSQDMVLGCYYLTSENPKAQKGAESYYSDLEDALMAYEQGLVDLHAYVWVRCDLEVVTEQPDDKPIKTETSEDGTVTKYYRHRKVRETADGKLICQFIHTTVGRIIYNKTVQDTLVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RPOC1_CYAPA" ac="P42080" length="636" description="DNA-directed RNA polymerase subunit beta' OS=Cyanophora paradoxa OX=2762 GN=rpoC1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2279</score>
+      <smithWatermanScore>2279</smithWatermanScore>
+      <zScore>2811.4</zScore>
+      <bits>530.5</bits>
+      <expectation>5e-149</expectation>
+      <identity>53.0</identity>
+      <positives>75.6</positives>
+      <overlap>702</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIR---------LEEQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>: .  . :::.::.:::: :: ::..: : ::..::.. : :::::::.::::::::::.:::: :. :: ::::: . :.:.::::::::.:::.:::::::::.:  ::::.::... :.....::-------------------------------------...::.:.--...:: : --. .   . :: .: ----.  :    :-.:  ... :.--: :. .--.. :::  :.: :  :.:..:   .: -::. ----:..:---------.:  :.: -----. ::..::..:...: ..: ::::...::::: ::::.::.::::::::::.::::.:.:::::::: :. ::....:::::.::::::.:::::.::.:...:.:::::::::::.::.::::::::::::::::::::::: .:.: :::::.::::::::::.:..::.:::..:.: ::.:::.:. ::  .::.:...::..::::::::::.:::::::::.::::.:::::: ::::::::::::::.:::::::.:  .::::  :.::::.:.::. ::::::::::::::.:...  :.. :: :  ::..:: :.....:: ::.:---------:::..:..-.: :  : .  : :. :.. .::. ::.  ..::. ::.::...: ..::.:</pattern>
+      <matchSeq start="1" end="632">MPKHEQYFDYVKINLASPERIRQWGERILKNGEIVGKITKPETINYRTLKPEMDGLFCEKIFGPVKDWECHCGKYKSIFYRGVICERCGVEITESQVRRHRMGYIELAAPVTHIWYLKGIPSYISILL-------------------------------------NKKVKEIE--QVVYFNAY--VVLNPGKSDLLNYG----VILTEDDEK-WPYIEEKLYT--KELMDV--ELGIGAEAIQRLLSDLDLQAEAKTIRE-ILIS----NSDK---------KKNTQKRA-----KLIKKLRIINNFIATKAKPEWMILSLIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLLRLQEVFAPEIVVRNEKRILQEAVDALIDNGRRGRIVVGAKNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGLQLKLYQCGLPWEMAIELFQPFVIHRLIHQGLVNNIKAAKKLIQSNDPIIRDILEEVIQNHPVLLNRAPTLHRLSIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLEAQTEARLLMLASNNLLSPATGQPIVTPSQDMVLGCYYLTVDNLKNQKGKGSYFINSEDVLIAYEQQRIDLHSYIWVRFDTFSFDDILEEKNIQQ-VLYKREIDEFGTVIKVYNTRRIREDKDGFCLTQYIITTAGRVLFNKVVQKALIMEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RPOC1_SYNE7" ac="P42079" length="624" description="DNA-directed RNA polymerase subunit gamma OS=Synechococcus elongatus (strain PCC 7942 / FACHB-805) OX=1140 GN=rpoC1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2275</score>
+      <smithWatermanScore>2275</smithWatermanScore>
+      <zScore>2806.6</zScore>
+      <bits>529.6</bits>
+      <expectation>9.2e-149</expectation>
+      <identity>53.1</identity>
+      <positives>74.0</positives>
+      <overlap>697</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSE-NCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRL--EEQEINESILLKTTIL-DDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:... ..:::.:: :::: :: ::..: ::::: :::: : :::::::.::::::::::.::::.:. :: ::::::::..:..:::::::.:::::::::::.:.:  ::.::::... :...:.::..   . .  . ....  -:  . . :.       : : :-------------- ::.:--:. . ::.  ----:.:-------------------------------:::  ... :. :::. :  ..:  : --------------::.------ :.----: . :::.:...:..:: : : ::.:...::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.:..::..   .:.: ::.:::.:. .:  :::.:...::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::.:::::  :::::  :.::::.:.::. :::::::::::::..: ..  :...::::: :.: :. :.....:. .:.:.--: .  .::   .... -:: :  . :.  .::.:.:.: . :::.:: :: ..:  .: .:</pattern>
+      <matchSeq start="1" end="622">MAKQEQRFDYVKIALASPERIRQWGERTLPNGQVVGEVTKPETINYRTLKPEMDGLFCEKIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGFIKLAAPVAHVWYLKGIPSYIAILLDMPLRDVEQIVYFNSYVVLNPGNHSELQYKQLLNEDQWME--------------IEDQI--YAEESDLEGI----EVG-------------------------------IGAEALQQLLQDLNLNEESEKLRQEIA--------------ESK------GQK----RAKLIKRLRVIDNFIGTESRPEWMVLNVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPNLKIHQCGLPREMAIELFQPFVIHRLIKNHSINNIKQAKKLIQKNDPLIWDVLEEVIEGHPVMLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSIEAQAEARMLMLASGNILSPATGQPIVTPSQDMVLGCYYLTAENPGAQKGAGRYFANLEDAIRAFEQGSVDLHAWVWVRFDGEVESEGESDEPESVVAADDGTVTKTYRFRRIRETEDGQRLSQYVKTTPGRILFNNTVQTALIH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RPOC1_ACAM1" ac="B0C2D1" length="623" description="DNA-directed RNA polymerase subunit gamma OS=Acaryochloris marina (strain MBIC 11017) OX=329726 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2265</score>
+      <smithWatermanScore>2265</smithWatermanScore>
+      <zScore>2794.2</zScore>
+      <bits>527.3</bits>
+      <expectation>4.5e-148</expectation>
+      <identity>52.7</identity>
+      <positives>73.6</positives>
+      <overlap>696</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSE-NCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEE--QEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>: .  ..:::.:: :::: :: ::..: :::.: :::: : :::::::.:::::::::::::::.:. :: ::::::::..:..:::::::.:::::::::::::.:  :::::::... :..:: ::..   . .  . ....  -.  . : :.     . : :------:.. .  :--.:: -.. ::-----------:.:-------------------------------:::  ..: :. ..:..:   .:------  . : . --------------:.----: . :::.:...:.:::::.  ::.:...::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.:..::.:::..:.: :: :::.:. .:  :::.:...::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::.:::.:  .::::  :.::::.:.::. :::::::: ::::..: .   :...:::.: :.:.:: :.....:. .:.:.. --.. ....  ..    : .  . : . .:::  :. :: ::..:: :: : :  :: .:</pattern>
+      <matchSeq start="1" end="621">MPKLEQRFDYVKIGLASPERIRQWGERTLPNNQVVGEVTKPETINYRTLKPEMDGLFCERIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVTHVWYLKGIPSYMATLLDMPLRDVEQIVYFNAYVVLDPGNADTLSYKQLLTEDQW------IEIEDQIY--SEDS-QLEGI-----------EVG-------------------------------IGAEAVQRLLQDIKLETEAETLR------EDIGNAKG--------------QK----RAKLIKRLRVIDNFVGTGSQTDWMVLSVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLKMHQCGLPKEMAIELFQPFVIHRLIGQGLVNNIKAAKRLIQRNDPVIWDVLEEVIEGHPVMLNRAPTLHRLGIQAFEPILVDGRAIQLHPLVCPAFNADFDGDQMAVHVPLSIEAQSEARLLMLASNNILSPATGRPIVTPSQDMVLGAYYLTADNPGRQNGAGKYFAGLDDAIMAYEQQQVDLHAYVWVRFDGPVDDGEDDVEPEVETSADGVVTQTYPSRRIRKDADGTLISQYIRTTPGRIIYNKTIQDSLAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RPOC1_SYNJA" ac="Q2JQT5" length="627" description="DNA-directed RNA polymerase subunit gamma OS=Synechococcus sp. (strain JA-3-3Ab) OX=321327 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2264</score>
+      <smithWatermanScore>2264</smithWatermanScore>
+      <zScore>2792.9</zScore>
+      <bits>527.1</bits>
+      <expectation>5.3e-148</expectation>
+      <identity>52.6</identity>
+      <positives>74.6</positives>
+      <overlap>700</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="694">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAY--FIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLE-EQEIN-ESILLKTTILDDE--TKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:... ..:::.:: :::: ::..:..: ::::: :::: : :::::::.::::::::::::::: :. :: ::::::::..:..:::::::.:::::::::::::.:  :::::::... :. .: ::..   . .  . ....---------------.:::  . ------- .:.:--...::. ----.. . :.:... ::  ----------:.:  --------------.:::  :.: :. ..:..:  ..:  :----------------------- . :  :-: . :::.:...:...::. : ::.: .:::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::.....:::::::::::::.::.::::::::::::::::::::::::.::..::::: ::::::::::.:..::..:...:.: ::.:::.:.  .  ::: :. .::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::::::::  .::::  :.::::.: ::: :::::::::::::..: ..   ...:::.: :...::... . .:: ::.:  - .:..-:    .  :... --:.... .  .::. .:...: ::..::.:: :.:  .:  :.</pattern>
+      <matchSeq start="1" end="626">MAKTEQRFDYVKIGLASPERIIEWGQRTLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPVKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVTHVWYLKGIPSHIATLLDMPLRDVEQVVYFNAY---------------VVVDPGNA-------PNLSYKQLLTEDQY----LEIEDQMYEEGSELQL----------PENWA--------------MIGAEAIERLLKDIDLEKEAEQLREEI-----------------------ASARGQK-RARLIKRLRVIDNFIATGARPEWMVLRVLPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEIMAPEIIVRNEKRMLQEAVDALIDNGRRGRMVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPNLRMHQCGLPKEMAIELFQPFVIHKLIKRGIVNNIKAAKKLIQSNDPQVWDVLEDVIDGHPVLLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLEAQAEARLLMLATNNILSPATGAPIITPSQDMVLGCYYLTADNPHAPDLGDRYFASLEDALIAYDRGVIGLHSKIWVRYSGPMELGKEEKESEPQIIEEPGGTRLKITNYRRIREDRDGNVISQYIRTTAGRIIFNKTVQDILSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RPOC1_SYNP6" ac="Q5MZ22" length="624" description="DNA-directed RNA polymerase subunit gamma OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2261</score>
+      <smithWatermanScore>2261</smithWatermanScore>
+      <zScore>2789.2</zScore>
+      <bits>526.4</bits>
+      <expectation>8.5e-148</expectation>
+      <identity>52.6</identity>
+      <positives>74.3</positives>
+      <overlap>700</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="693">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEK--KLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRL--EEQEINESILLKTTIL-DDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:... ..:::.:: :::: :: ::..: ::::: :::: : :::::::.::::::::::.::::.:. :: :::::::...:..:::::::.:: ::::::::.:.:  ::.::::... :...:.::..--.. :.-- ...  . . .: .. .  .: . ---: : :-------------- ::.:--:. . ::.  ----:.:-------------------------------:::  ... :. :::. :  ..:  : --------------::.------ :.----: . :::.:...:..:: : : ::.:...::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.:..::..   .:.: ::.:::.:. .:  :::.:...::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::.:::::  :::::  :.::::.:.::. :::::::::::::..: ..  :...::::: :.: :. :.....:. .:.:.--: .  .::   .... -:: :  . :.  .::.:.:.: . :::.:. :: ..:  .: .:</pattern>
+      <matchSeq start="1" end="622">MAKQEQRFDYVKIALASPERIRQWGERTLPNGQVVGEVTKPETINYRTLKPEMDGLFCEKIFGPAKDWECHCGKYKRVQHRGIVCERCGVEVTEPRVRRHRMGFIKLAAPVAHVWYLKGIPSYIAILLDMPLRDVEQIVYFNSYVVLNPDNHSELQYKQLLNE---DQWME--------------IEDQI--YAEESDLEGI----EVG-------------------------------IGAEALQQLLQDLNLNEESEKLRQEIA--------------ESK------GQK----RAKLIKRLRVIDNFIGTESRPEWMVLNVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPNLKIHQCGLPREMAIELFQPFVIHRLIKNHSINNIKQAKKLIQKNDPLIWDVLEEVIEGHPVMLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSIEAQAEARMLMLASGNILSPATGQPIVTPSQDMVLGCYYLTAENPGAQKGAGRYFANLEDAIRAFEQGSVDLHAWVWVRFDGEVESEGESDEPESVVAADDGTVTKTYRFRRIRETEDGQRLSQYVKTAPGRILFNNTVQTALIH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RPOC1_CYACA" ac="O19897" length="633" description="DNA-directed RNA polymerase subunit beta' OS=Cyanidium caldarium OX=2771 GN=rpoC1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2260</score>
+      <smithWatermanScore>2260</smithWatermanScore>
+      <zScore>2787.8</zScore>
+      <bits>526.2</bits>
+      <expectation>1e-147</expectation>
+      <identity>52.4</identity>
+      <positives>74.0</positives>
+      <overlap>697</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="8" end="695">--MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEK--KLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNL--KSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEINESI--LLKTTILDDE-TKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>         .::::: :::: ::  ::.: :::::.:::: : :::::::.::::::::::::::: :. :: ::::::.. .:.::::::::.:::.:::::::::.:  ::.:.::... :......:..--.:.:.-- ..:   :::   .:-- .:     . : :-------------- . ::.:    :. ..-------:.:-------------------------------:::  : . :. :.:--.:...: .---::  :...:.:----------------------- .::.::..:.. ::.::.::.:...::: : ::::.::.::::::::::.::::.:.::::: :: :: ::..:::::::.::::::.:::::.::.....:::: :::::.::.::.::::::::::::::::::::::::.:.::.::.: ::::::::::.:...:..:::.::: ::.:.:.. :.   .:.:..: ::..:::::::::::::::.:.::.::::.:::::: ::::::::::::::::::.:::.:  .::::: ::::::.:.::: ::::::::::::: ::. .  ::.:::... :.:.::.:. . .:. ::...     : .:--..:.:.  ..-:  ..:::::..:  .. .  :...:..:: ..:  :. .: :</pattern>
+      <matchSeq start="10" end="626">MVSHQFLPYLDYIKICLASPERIRVWAQRILPNGQIVGEVTKPETINYRTLKPEMDGLFCERIFGPIKNWECHCGKYKRIKDKGIICERCGVEVTESKVRRHRMGYIELSAPVVHIWYLKGMPSYISVFLDMAAKEIEQVVYFNTYIITHSTAENK--QIKYKQLLTEDEW--------------VLIEDQIYRNEIQGEI-------EIG-------------------------------IGASAILKMLKDLDLSLESDLLRTK---LVNLKAVKKDK-----------------------IMKRLRIIDNFMVTGASPSWMVLNVIPVISPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLKRLEEILAPEIIIRNEKRMLQEAVDALIDNGRRGRVVVGANNRALKSLSNIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPDLKLNECGIPKEMAIELFQPFLIHQIIKEGLANNMKSAKKLMQKHTSVTIELLQKIIKWHPVLLNRAPTLHRLGIQAFDPVLVDGRAIRLHPLVCPAFNADFDGDQMAVHIPLSIEAQTEARLLMLAPNNFLSPATGQPIITPSQDMVLGCYYLTNNNLANQKGSGHYFSSFEDAIIAYKQKLISLHAFIWVKFYGTINNLDIGRFIKSTLCKNKLTTTDYYENLQVKKDIEGTITCQFIKTSVGRIFFNIAISGNLFFSTSNHNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RPOC1_TRIV2" ac="Q3M5C9" length="625" description="DNA-directed RNA polymerase subunit gamma OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2258</score>
+      <smithWatermanScore>2258</smithWatermanScore>
+      <zScore>2785.4</zScore>
+      <bits>525.7</bits>
+      <expectation>1.4e-147</expectation>
+      <identity>53.1</identity>
+      <positives>74.2</positives>
+      <overlap>695</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="693">-MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEKKLD-TTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLE---EQEINESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>     :..:::.:: :::: :: ::..: ::::: :::: : :::::::.:::::::::::::::.:. :: ::::::::..:..:::::::.:::::::::::::.:  ::.::::... :.....::..--.. :. . -..:.. : .  .    :   : --: : :-------------- ::.:--:.   .::  ----:.:-------------------------------:::  . : :  .::..:   .:  :-------------------- . . :.----: . :::.:...:...:::.: ::..:..::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::::::::::::.::.::::::::::::::::::::::::.:...::::: ::::::::::.: .:: .:...:.: ::.::..:.  .  :::.:...::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::::.:::  .::::  :.::::.:.::: :::::::: ::::..: ..  :...:::.: :::.:..: ....:. :..:..---:..  ..  :..:  :: ..  .:.  ..:.  ...:: :::.:: ::.: :  ::..:</pattern>
+      <matchSeq start="6" end="623">MRPAQTNQFDYVKIGLASPERIRQWGERTLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVAHVWYLKGIPSYISILLDMPLRDVEQIVYFNSYVVLSPGNAETLTYKQLLSE--DQWLE--------------IEDQI--YSEDSQLQGV----EVG-------------------------------IGAEALLRLLADINLEQEAESLREEI--------------------GSAKGQK----RAKLIKRLRVIDNFIATGSKPEWMVMTVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLKIHQCGLPREMAIELFQPFVINRLIRSGMVNNIKAAKKLISRNDPSVWDVLEEVIEGHPVMLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLESQAEARLLMLASNNILSPATGRPIITPSQDMVLGAYYLTAENPGATKGAGKYFASLDDVIMAFQQEQIDLHAYIYVRFDGEVESDQPDTDPLEVTNNDDGSRTVLYKYRRVREDAQGNLISQYVRTTPGRVIYNKAIQEALAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RPOC1_SYNJB" ac="Q2JJ18" length="627" description="DNA-directed RNA polymerase subunit gamma OS=Synechococcus sp. (strain JA-2-3B'a(2-13)) OX=321332 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2257</score>
+      <smithWatermanScore>2257</smithWatermanScore>
+      <zScore>2784.1</zScore>
+      <bits>525.5</bits>
+      <expectation>1.6e-147</expectation>
+      <identity>52.4</identity>
+      <positives>74.8</positives>
+      <overlap>698</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="694">MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEVEEFEKKLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLE-EQEINESILLKTTILDDET---KIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>:... ..:::.:: :::: ::..:..: ::::: :::: : :::::::.:::::::::::::::.:. :: ::::::::..:..:::::::.:::::::::::::.:  :::::::... :. .: ::..   . .  . ....---------------.:::  . .    :----- ...::.--:  :.-:-:.:... ::  ----------:.:  --------------.:::  :.: :. ..:..:  ..:  : -----------------------. :  :-: . :::.:...:...::: : ::.: .:::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::... .:::::::::::::.::.::::::::::::::::::::::::.::..::::: ::::::::::.:..::..:...:.: ::..::.:.  :  :::.:. .::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::::::::  .::::  :.::::.: ::: :::::::::::::..: ..   ....::.: :...::... . .:: .:.: .- .:....   .   . .:.---.... .  .::. .....: ::..:: :: :.:  .:  :.</pattern>
+      <matchSeq start="1" end="626">MAKTEQRFDYVKIGLASPERIMEWGQRTLPNGQVVGEVTKPETINYRTLKPEMDGLFCERIFGPAKDWECHCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGYIKLAAPVTHVWYLKGIPSHIATLLDMPLRDVEQVVYFNAY---------------VVVDPGNAQNLSYK-----QLLTEDQ--FLEIE-D-QMYEEGSELQL----------PENWA--------------MIGAEAIERLLKDIDLEKEAEQLREEIT-----------------------SARGQK-RARLIKRLRVIDNFIATGSRPEWMVLRVLPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLARLQEIMAPEIIVRNEKRMLQEAVDALIDNGRRGRVVAGANNRPLKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPNLRMHQCGLPKEMAIELFQPFVIHKLIKRGIVNNIKAAKKMIQSNDPQIWDVLEEVIDGHPVLLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLEAQAEARLLMLATNNILSPATGAPIITPSQDMVLGCYYLTADNPHAPDIGDRFFASLEDALIAYDRGAIGLHSKVWVRYHGPMELGKGEKESEPQIIEEAGGIRLKITNYRRIREDQNGNVISQYIRTTPGRIIFNKTVQDILSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RPOC1_RIPO1" ac="B7JWQ8" length="625" description="DNA-directed RNA polymerase subunit gamma OS=Rippkaea orientalis (strain PCC 8801) OX=41431 GN=rpoC1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2256</score>
+      <smithWatermanScore>2256</smithWatermanScore>
+      <zScore>2782.9</zScore>
+      <bits>525.2</bits>
+      <expectation>1.9e-147</expectation>
+      <identity>52.7</identity>
+      <positives>74.4</positives>
+      <overlap>698</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="693">-MVESTKEFDYIKIKLASPFRILQWANRKLPNGQFVGEVQKSETINYRTFKPEMDGLFCERIFGPSKSLECACGKYKRVRYEGLICERCGVELTESRVRRHRMGYINLIYPVTHVWYINSRPNFMALLLEV--EEFEK--KLDTTYTTHSENCKKCDGLKLTTSTVVDLWDERVKRIKLASLAYFIAEDEISFYGIHWDLQQYRRSRELGYTGYPLKPYPKPQNRRYSTPKYLLRATPNFLIGAPLIKRELEKLNLKSEIFRMRYFILVCTKVLNKEKPIYDESRWFRKWEQQRIYKIREQAIKRIRILENLVGTGSSPAWMILTILPVIPPALRPMIQLEGGRFATSDLNELYRRIITRNNRLLRLLEIDAPQLIIRNEKRLLQEAVDTLIDNGKRGKIALSANNRPLKSLSDIIKGKHGRFRQNLLGKRVDYSGRSVIVVGPSLRLNQCGLPYEMAIELFQPFIIRELINQGLASNMKIAKNLIQQNESIIDPVLEKVLKSHPIFLNRAPTLHRLGIQAFEPILVQGRAIKLHPLVCSAFNADFDGDQMAVHIPLSLEAQAECYMLMLAPYNFLSPANGEPIIMPSQDMVLGCYYLTVNNINGLLGSSHYFANLADVILAYSQSKLEIHSAIWIRLEEQEIN---ESILLKTTILDDETKIEFYENLQIRKTKDNQLIVQYVQTTTGRAILNYIIQKTLNFL</querySeq>
+      <pattern>   .. ..:::.::.:::: :: ::..:.::::  :::: : :::::::.:::::::::::::::::. :: ::::::::..:..:::::::.:::::::::::.:.:  :::::::... :.....::..--.. :.-- ...  .    : .. .  .: : ---: :------:..    :--::: - .:::-----------:.:-------------------------------:::  :.: :...::.    ..:  ::--------------::.------ :.----: . :::.:...:.:.:.: : ::.:...::::: ::::.::.::::::::::.::::.:.::::: :: :: ::..:.:::::.::::::.:::::.::. ...:::: ::::::::.::.::::::::::::::::::::::::.:.. ::::: ::::::::::.:..::  ::..:.: ::.::....  .  :::.:. .::..::::::::::::::::::::.::::.:::::: ::::::::::::::.:::::::.:  .:::: .:.::::.:.::. :::::::::::::..: ..  :...::... :.: :: :. ...:. .:.: . . ..---.. .:::  ::: . :. :.. ..:.-::...: :...:: :: : :  :. .:</pattern>
+      <matchSeq start="4" end="622">MKAQADSRFDYVKINLASPERIRQWGERSLPNGVVVGEVTKPETINYRTLKPEMDGLFCERIFGPSKDWECWCGKYKRVRHRGIVCERCGVEVTESRVRRHRMGFIKLAAPVTHVWYLKGIPSYLSILLDMALRDVEQIVYFNSYVVLDPGNASNLSYKQLLTE---DQW------IEIEEQIY--AEDS-ELYGI-----------EVG-------------------------------IGAEAIQRLLQEINLEEVAEKLREEIL--------------ESK------GQK----RAKLIKRLRVIDNFVATNSRPDWMVLSVIPVIPPDLRPMVQLDGGRFATSDLNDLYRRVINRNNRLSRLQEILAPEIIVRNEKRMLQEAVDALIDNGRRGRTVVGANNRALKSLSDIIEGKQGRFRQNLLGKRVDYSGRSVIVVGPKLKIYQCGLPREMAIELFQPFVIHRLIRLGLVNNIKAAKKLIMREDPSVWTVLEEVITGHPVLLNRAPTLHRLGIQAFEPILVEGRAIQLHPLVCPAFNADFDGDQMAVHVPLSLEAQSEARLLMLACHNILSPATGKPIVAPSQDMVLGCYYLTAENPKAQKGANRYFGSIPDAIKAYEQGTVDLHAYVWLRYNGDVVTHKPDTEVLKTETLDDGSVIKHYRERRVRE-KDGEVISQFIRTTPGRIIYNKTIEDALVAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

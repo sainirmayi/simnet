@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-172503-0187-53168542-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-172503-0187-53168542-p1m.m9&quot; -m &quot;F10 fasta-R20221107-172503-0187-53168542-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P27060|ACP_CYLSN" type="PROTEIN" length="80"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:25:03+00:00" end="2022-11-07T17:25:06+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="ACP_CYLSN" ac="P27060" length="80" description="Acyl carrier protein OS=Cylindrotheca sp. (strain N1) OX=2855 GN=acpP PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>492</score>
+      <smithWatermanScore>492</smithWatermanScore>
+      <zScore>718.1</zScore>
+      <bits>137.1</bits>
+      <expectation>2e-32</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>80</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="80">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="80">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ACP_PHATC" ac="A0T0F8" length="76" description="Acyl carrier protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>304</score>
+      <smithWatermanScore>304</smithWatermanScore>
+      <zScore>446.7</zScore>
+      <bits>86.8</bits>
+      <expectation>2.6e-17</expectation>
+      <identity>59.5</identity>
+      <positives>90.5</positives>
+      <overlap>74</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="74">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:.:.. :::.::..::..:: ::   .:::..:::::::..::.:.:: ::...:::. ::.:.::::.:::.:</pattern>
+      <matchSeq start="1" end="74">MKDNFTRLQSIVGKQLGIDPSKVKLESDFGRELGADSLDVVELVMAIEDEFEVNIEDQSASQIATVQDVLNYLERN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ACP_THEVB" ac="Q8DHS3" length="81" description="Acyl carrier protein OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>264</score>
+      <smithWatermanScore>264</smithWatermanScore>
+      <zScore>388.3</zScore>
+      <bits>76.1</bits>
+      <expectation>4.6e-14</expectation>
+      <identity>52.6</identity>
+      <positives>86.8</positives>
+      <overlap>76</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="77">--MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>   :. :.... ::..:::::::::.  :.:...:.::::: .::::..: ::...: :. : :. ::::.:..:.::.</pattern>
+      <matchSeq start="4" end="79">MNQSEILEKVKAIVADQLSVDPEKVVPEASFAEDLNADSLDSVELIMALEEEFGVEIPDEEAEKLKTVQDVLDFINNKVAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="ACP_CHLAA" ac="A9WKH6" length="82" description="Acyl carrier protein OS=Chloroflexus aurantiacus (strain ATCC 29366 / DSM 635 / J-10-fl) OX=324602 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>259</score>
+      <smithWatermanScore>259</smithWatermanScore>
+      <zScore>381.0</zScore>
+      <bits>74.8</bits>
+      <expectation>1.2e-13</expectation>
+      <identity>58.0</identity>
+      <positives>87.0</positives>
+      <overlap>69</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="74">--MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>       .::.::. .::.:.::.:. .:.: :.:.:::::..::::.:: ::...: :. : :: :: :::::.:</pattern>
+      <matchSeq start="8" end="76">MASPEMEERLRKIIVDQLGVEPEQVVPSASFTKDLNADSLDLVELIMSIEEEFGVEISDEEAEKIQTVADALNYLETHQSNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="ACP_CHLSY" ac="B9LDT1" length="82" description="Acyl carrier protein OS=Chloroflexus aurantiacus (strain ATCC 29364 / DSM 637 / Y-400-fl) OX=480224 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>259</score>
+      <smithWatermanScore>259</smithWatermanScore>
+      <zScore>381.0</zScore>
+      <bits>74.8</bits>
+      <expectation>1.2e-13</expectation>
+      <identity>58.0</identity>
+      <positives>87.0</positives>
+      <overlap>69</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="74">--MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>       .::.::. .::.:.::.:. .:.: :.:.:::::..::::.:: ::...: :. : :: :: :::::.:</pattern>
+      <matchSeq start="8" end="76">MASPEMEERLRKIIVDQLGVEPEQVVPSASFTKDLNADSLDLVELIMSIEEEFGVEISDEEAEKIQTVADALNYLETHQSNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ACP_NOVAD" ac="Q2G8P0" length="78" description="Acyl carrier protein OS=Novosphingobium aromaticivorans (strain ATCC 700278 / DSM 12444 / CCUG 56034 / CIP 105152 / NBRC 16084 / F199) OX=279238 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <smithWatermanScore>258</smithWatermanScore>
+      <zScore>380.0</zScore>
+      <bits>74.5</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>57.1</identity>
+      <positives>81.8</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="76">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYI-ENKIKQK</querySeq>
+      <pattern>::::  :..::: :.:.:. .:::  :.:  .::::::::.::.:..: ::...: :  : ::.::.::..::-:::</pattern>
+      <matchSeq start="1" end="77">MSDTADRVKKIVVEHLGVEADKVTEEASFIDDLGADSLDIVELVMAFEEEFGVEIPDDAAEKISTVSDAIKYIDENKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ACP_TRIL1" ac="B3E2J4" length="77" description="Acyl carrier protein OS=Trichlorobacter lovleyi (strain ATCC BAA-1151 / DSM 17278 / SZ) OX=398767 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <smithWatermanScore>257</smithWatermanScore>
+      <zScore>378.6</zScore>
+      <bits>74.2</bits>
+      <expectation>1.6e-13</expectation>
+      <identity>54.8</identity>
+      <positives>83.6</positives>
+      <overlap>73</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="73">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::. ::...:..:::.::  ...: :.:  .::::::: .::.:..: ::.:.: :. : :: :::::..::</pattern>
+      <matchSeq start="1" end="73">MSDVAKRVKEIIAEQLGVDEAQAVSEASFMDDLGADSLDTVELVMALEEEFDIEIPDEDAEKIQTVQDAIDYITEHT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="ACP_GEOKA" ac="Q5L0Q4" length="77" description="Acyl carrier protein OS=Geobacillus kaustophilus (strain HTA426) OX=235909 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <smithWatermanScore>257</smithWatermanScore>
+      <zScore>378.6</zScore>
+      <bits>74.2</bits>
+      <expectation>1.6e-13</expectation>
+      <identity>51.9</identity>
+      <positives>81.8</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="77">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:.:.:.:. ::. ..:.::  .::  :.:  .::::::::.::.: .: :::..: :. : ::.:: ::.:::....</pattern>
+      <matchSeq start="1" end="77">MADVLERVTKIIVDRLGVDESQVTLEASFKDDLGADSLDIVELVMELEDEFNMEISDEEAEKIVTVGDAVNYIKSRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="ACP_ZYMMO" ac="Q5NN07" length="78" description="Acyl carrier protein OS=Zymomonas mobilis subsp. mobilis (strain ATCC 31821 / ZM4 / CP4) OX=264203 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <smithWatermanScore>257</smithWatermanScore>
+      <zScore>378.5</zScore>
+      <bits>74.2</bits>
+      <expectation>1.6e-13</expectation>
+      <identity>55.4</identity>
+      <positives>85.1</positives>
+      <overlap>74</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="74">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::: .:..::: :.:.:.:.::. .:.:  .:::::::::::.:..: ::...: :  . :: ::.::..::.</pattern>
+      <matchSeq start="1" end="74">MSDTAERIKKIVVEHLGVEPDKVVENASFLDDLGADSLDIIELVMAFEEEFGVEIPDDSVEKIGTVKDAVSYIDEHKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="ACP_SPHAL" ac="Q1GWG9" length="78" description="Acyl carrier protein OS=Sphingopyxis alaskensis (strain DSM 13593 / LMG 18877 / RB2256) OX=317655 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.6</zScore>
+      <bits>73.7</bits>
+      <expectation>2.3e-13</expectation>
+      <identity>54.5</identity>
+      <positives>83.1</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="76">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIE-NKIKQK</querySeq>
+      <pattern>:::. ....::: :.:.:. .:::  :.:  .::::::::.::.:..: ::...: :  : ::.::.::..:::-::</pattern>
+      <matchSeq start="1" end="77">MSDSAEKVKKIVVEHLGVEADKVTEEASFIDDLGADSLDIVELVMAFEEEFGVEIPDDAAEKIATVKDAIDYIEANKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ACP_PHEZH" ac="B4RAG3" length="79" description="Acyl carrier protein OS=Phenylobacterium zucineum (strain HLK1) OX=450851 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.5</zScore>
+      <bits>73.7</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>53.2</identity>
+      <positives>83.1</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="77">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::.:.:..::: :.:..::::::  :.:  .::::::: .::.:..: ::.:.: :  : .: :: ::...:....</pattern>
+      <matchSeq start="1" end="77">MSDVLERVRKIVIEHLDADPEKVTEKASFIDDLGADSLDNVELVMAFEEEFDIEIPDDAAEHIQTVGDAVKFIQERLGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="ACP_XYLFT" ac="P63449" length="79" description="Acyl carrier protein OS=Xylella fastidiosa (strain Temecula1 / ATCC 700964) OX=183190 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.5</zScore>
+      <bits>73.7</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>52.6</identity>
+      <positives>80.8</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::   :..:::.:.:.:: ::::.:. :  .::::::: .::.:..: ::. .: :. : :.:.:: :..::... :</pattern>
+      <matchSeq start="1" end="78">MSDIEARVRKIVAEKLNVDEEKVTNTSTFVDELGADSLDTVELVMALEDEFQCEIGDEAAEKMTSVQHAIDYIKSNAKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ACP_XYLF2" ac="B2I798" length="79" description="Acyl carrier protein OS=Xylella fastidiosa (strain M23) OX=405441 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.5</zScore>
+      <bits>73.7</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>52.6</identity>
+      <positives>80.8</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::   :..:::.:.:.:: ::::.:. :  .::::::: .::.:..: ::. .: :. : :.:.:: :..::... :</pattern>
+      <matchSeq start="1" end="78">MSDIEARVRKIVAEKLNVDEEKVTNTSTFVDELGADSLDTVELVMALEDEFQCEIGDEAAEKMTSVQHAIDYIKSNAKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ACP_XYLFA" ac="P63448" length="79" description="Acyl carrier protein OS=Xylella fastidiosa (strain 9a5c) OX=160492 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.5</zScore>
+      <bits>73.7</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>52.6</identity>
+      <positives>80.8</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::   :..:::.:.:.:: ::::.:. :  .::::::: .::.:..: ::. .: :. : :.:.:: :..::... :</pattern>
+      <matchSeq start="1" end="78">MSDIEARVRKIVAEKLNVDEEKVTNTSTFVDELGADSLDTVELVMALEDEFQCEIGDEAAEKMTSVQHAIDYIKSNAKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ACP_XYLFM" ac="B0U3X4" length="79" description="Acyl carrier protein OS=Xylella fastidiosa (strain M12) OX=405440 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.5</zScore>
+      <bits>73.7</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>52.6</identity>
+      <positives>80.8</positives>
+      <overlap>78</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="78">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>:::   :..:::.:.:.:: ::::.:. :  .::::::: .::.:..: ::. .: :. : :.:.:: :..::... :</pattern>
+      <matchSeq start="1" end="78">MSDIEARVRKIVAEKLNVDEEKVTNTSTFVDELGADSLDTVELVMALEDEFQCEIGDEAAEKMTSVQHAIDYIKSNAKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ACP_ROSCS" ac="A7NP13" length="82" description="Acyl carrier protein OS=Roseiflexus castenholzii (strain DSM 13941 / HLO8) OX=383372 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <smithWatermanScore>255</smithWatermanScore>
+      <zScore>375.2</zScore>
+      <bits>73.7</bits>
+      <expectation>2.5e-13</expectation>
+      <identity>55.6</identity>
+      <positives>83.3</positives>
+      <overlap>72</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="78">--MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>        ::..::.:::.::  :.. :: : ..:.:::::..:.:: .:  :...: :. : :: ::::::::::.:..</pattern>
+      <matchSeq start="9" end="80">MPSPEMEARLKQIVAEQLGVDESKIVPTARFTEDLNADSLDLVEMIMELEEAFGVEIPDEDAEKIITVQDALNYIEQKLQAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ACP_NOSS1" ac="P58553" length="84" description="Acyl carrier protein OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=acpP PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <smithWatermanScore>254</smithWatermanScore>
+      <zScore>373.6</zScore>
+      <bits>73.4</bits>
+      <expectation>3e-13</expectation>
+      <identity>53.2</identity>
+      <positives>85.7</positives>
+      <overlap>77</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="77">--MSDTLKRLQKIVSEQLSVD-PEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>   :.:.....::: :::::.-:. ::  :.:...: ::::: .::.:..: ::.:.: :. : ::::::.:..::.:..</pattern>
+      <matchSeq start="4" end="80">MSQSETFEKVKKIVIEQLSVENPDTVTPEASFANDLQADSLDTVELVMALEEEFDIEIPDEAAEKITTVQEAVDYINNQVAASA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ACP_ERYLH" ac="Q2NBQ2" length="78" description="Acyl carrier protein OS=Erythrobacter litoralis (strain HTCC2594) OX=314225 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <smithWatermanScore>253</smithWatermanScore>
+      <zScore>372.7</zScore>
+      <bits>73.2</bits>
+      <expectation>3.4e-13</expectation>
+      <identity>56.8</identity>
+      <positives>81.1</positives>
+      <overlap>74</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="74">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>::::  :.:::: :.:.:. .::.. :.:  .::::::::.::.:..: ::...: :  : ::.:: :: .:::</pattern>
+      <matchSeq start="1" end="74">MSDTADRVQKIVVEHLGVEADKVNQEASFIDDLGADSLDIVELVMAFEEEFGVEIPDDAAEKISTVGDATKYIEEHKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ACP_ROSS1" ac="A5URZ0" length="82" description="Acyl carrier protein OS=Roseiflexus sp. (strain RS-1) OX=357808 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <smithWatermanScore>253</smithWatermanScore>
+      <zScore>372.3</zScore>
+      <bits>73.2</bits>
+      <expectation>3.6e-13</expectation>
+      <identity>55.6</identity>
+      <positives>81.9</positives>
+      <overlap>72</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="78">--MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>        ::.:::.:::.::  :..  : : ..:.:::::..:.:: .:  :...: :. : :: ::::::::::.:..</pattern>
+      <matchSeq start="9" end="80">MPSPEMESRLKKIVAEQLGVDESKIVPEARFTEDLNADSLDLVEMIMELEEAFGVEIPDEDAEKIMTVQDALNYIEQKLQAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ACP_GEODF" ac="B9M0W2" length="77" description="Acyl carrier protein OS=Geotalea daltonii (strain DSM 22248 / JCM 15807 / FRC-32) OX=316067 GN=acpP PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <smithWatermanScore>252</smithWatermanScore>
+      <zScore>371.4</zScore>
+      <bits>72.9</bits>
+      <expectation>4e-13</expectation>
+      <identity>53.3</identity>
+      <positives>81.3</positives>
+      <overlap>75</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="75">MSDTLKRLQKIVSEQLSVDPEKVTSTADFGKQLGADSLDIIELIMTIEYEFNIDIEDHYASKITTVQDALNYIENKIKQK</querySeq>
+      <pattern>::.  ::...::.:::.::  .::. :.:  .::::::: .::.:..: ::.:.: :. : :: .::::..:: .</pattern>
+      <matchSeq start="1" end="75">MSSIDKRIKEIVAEQLGVDEAQVTNEASFMDDLGADSLDTVELVMALEEEFDIEISDEDAEKIQSVQDAIDYITDHT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

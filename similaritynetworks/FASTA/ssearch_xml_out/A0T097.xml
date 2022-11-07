@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170049-0847-94881952-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170049-0847-94881952-p2m.m9&quot; -m &quot;F10 fasta-R20221107-170049-0847-94881952-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T097|PSBD_PHATC" type="PROTEIN" length="351"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:00:49+00:00" end="2022-11-07T17:00:53+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSBD_PHATC" ac="A0T097" length="351" description="Photosystem II D2 protein OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2409</score>
+      <smithWatermanScore>2409</smithWatermanScore>
+      <zScore>2946.6</zScore>
+      <bits>553.7</bits>
+      <expectation>1.5e-156</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSBD_TRICV" ac="P49478" length="351" description="Photosystem II D2 protein OS=Trieres chinensis OX=1514140 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2387</score>
+      <smithWatermanScore>2387</smithWatermanScore>
+      <zScore>2919.6</zScore>
+      <bits>548.7</bits>
+      <expectation>4.6e-155</expectation>
+      <identity>98.0</identity>
+      <positives>100.0</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::::::::.:::::::::::::::.::::::::::::::.::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::.:.::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQNQERGLFDLIDDWLKKDRFVFIGWSGLLLFPTAYLAAGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWAFIALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSBD_HETA4" ac="B2XTH7" length="351" description="Photosystem II D2 protein OS=Heterosigma akashiwo (strain CCMP452 / OLISTH) OX=536046 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2382</score>
+      <smithWatermanScore>2382</smithWatermanScore>
+      <zScore>2913.4</zScore>
+      <bits>547.6</bits>
+      <expectation>1e-154</expectation>
+      <identity>97.4</identity>
+      <positives>100.0</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::::::::.:::.:::::.::::::::::::::::::::::::.::::::::::::::::::::::::::::::.:::::::::.::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQNQERGVFDLVDDWLKRDRFVFVGWSGLLLFPTAYLAVGGWFTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLILLWGPEAQGDFTRWCQIGGLWTFVALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPISIFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSBD_HETA2" ac="B2XT21" length="351" description="Photosystem II D2 protein OS=Heterosigma akashiwo (strain NIES-293 / 8280G21-1) OX=536047 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2382</score>
+      <smithWatermanScore>2382</smithWatermanScore>
+      <zScore>2913.4</zScore>
+      <bits>547.6</bits>
+      <expectation>1e-154</expectation>
+      <identity>97.4</identity>
+      <positives>100.0</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::::::::.:::.:::::.::::::::::::::::::::::::.::::::::::::::::::::::::::::::.:::::::::.::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::..::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQNQERGVFDLVDDWLKRDRFVFVGWSGLLLFPTAYLAVGGWFTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLILLWGPEAQGDFTRWCQIGGLWTFVALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPISIFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSBD_THAPS" ac="A0T0T0" length="351" description="Photosystem II D2 protein OS=Thalassiosira pseudonana OX=35128 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2361</score>
+      <smithWatermanScore>2361</smithWatermanScore>
+      <zScore>2887.7</zScore>
+      <bits>542.8</bits>
+      <expectation>2.8e-153</expectation>
+      <identity>96.3</identity>
+      <positives>100.0</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::::::::.:::.:::::.::::::::::.:::::::::.:::.::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::.:.::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQNQERGLFDLVDDWLKRDRFVFVGWSGILLFPTAYLAAGGWFTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWAFIALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVAGLWTSSIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRSWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSBD_GRATL" ac="Q6B918" length="351" description="Photosystem II D2 protein OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2326</score>
+      <smithWatermanScore>2326</smithWatermanScore>
+      <zScore>2844.8</zScore>
+      <bits>534.9</bits>
+      <expectation>6.8e-151</expectation>
+      <identity>94.6</identity>
+      <positives>99.1</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::.. :: :::::::.:.::::::::::::::: .:::.:::.::::::::::::::::::::::::::.:::.:::::::::::::::::::::::::::::::.:.::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQEKTRGRFDLIDDWVKRDRFVFVGWSGLLLFPCSYLALGGWLTGTTFVTSWYTHGLASSYLEGCNFLTSAVSTPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWAFIALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLMYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVQNTLFEDGDAADTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAFGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSBD_PORPU" ac="P51357" length="351" description="Photosystem II D2 protein OS=Porphyra purpurea OX=2787 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2323</score>
+      <smithWatermanScore>2323</smithWatermanScore>
+      <zScore>2841.1</zScore>
+      <bits>534.2</bits>
+      <expectation>1.1e-150</expectation>
+      <identity>94.3</identity>
+      <positives>99.1</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::.. :: :::.:::::.::::::::::::::: ::::::::.::::::::::::::::::::::::::::::.::::::::::.::::::::::::::::::::.:.:::::::::::::::::::::::.::::::::::::::::::::.:::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::.::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::.::::::::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQEKTRGGFDLVDDWLKRDRFVFVGWSGLLLFPCAYLAVGGWLTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLLFLWGPEAQGDFTRWCQIGGLWAFIALHGSFGLIGFCLRQFEIARLVGLRPYNAIAFSGPIAVFVSVFLMYPLGQASWFFAPSLGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVQNTLFEDGDAADTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAFGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRSWMAAQDQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSBD_EMIHU" ac="Q4G395" length="351" description="Photosystem II D2 protein OS=Emiliania huxleyi OX=2903 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2313</score>
+      <smithWatermanScore>2313</smithWatermanScore>
+      <zScore>2828.8</zScore>
+      <bits>531.9</bits>
+      <expectation>5.3e-150</expectation>
+      <identity>94.3</identity>
+      <positives>98.9</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::.:.::.:::::::::.::::::::::::::: :.::::::.:: ::::::::::::::.::::::::::::.::::::::::::::::::::.::: ::::::::::::::::.::::::::::::::::::::::::::::::::.:::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:.::::::::::::::::::::::::::::::::::::::: :::::::.::::::::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQKQDRGVFDLIDDWLKRDRFVFVGWSGLLLFPCAFLAVGGWLTGITFVTSWYTHGLASSFLEGCNFLTAAVSTPANSMGHSLLLLWGPEAQGDITRWFQIGGLWTFVALHGSFGVIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVTVFLVYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVAGMWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNNLLNEGIRSWMAAQDQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSBD_CYACA" ac="Q9TM47" length="351" description="Photosystem II D2 protein OS=Cyanidium caldarium OX=2771 GN=psbD PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2303</score>
+      <smithWatermanScore>2303</smithWatermanScore>
+      <zScore>2816.6</zScore>
+      <bits>529.7</bits>
+      <expectation>2.5e-149</expectation>
+      <identity>93.4</identity>
+      <positives>99.4</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::..:::: :::.:::::.:::::.::::.:::: ::::.:.:.::::::.::::::::::::::::::::::::::::::::::.::::::::::::::::::::::.:::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:..:::::::::::::::::::::::::::::::.::::::::.:::::::::.:.:::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGREQERGWFDLLDDWLKRDRFVFIGWSGILLFPCAYLALGAWFTGTTFVSSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLFLWGPEAQGDFTRWCQIGGLWTFTALHGSFGLIGFCLRQFEIARLVGLRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGEASDTFRAFTPTQSEETYSMVTANRFWSQIFGVAFANKRWLHFFLLFVPVTGLWVSSIGIVGLALNLRAYDFVSQEIRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSBD_GALSU" ac="P28253" length="351" description="Photosystem II D2 protein OS=Galdieria sulphuraria OX=130081 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2303</score>
+      <smithWatermanScore>2303</smithWatermanScore>
+      <zScore>2816.6</zScore>
+      <bits>529.7</bits>
+      <expectation>2.5e-149</expectation>
+      <identity>93.4</identity>
+      <positives>99.1</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::: .: .::.:::.:::::.:::::.::::::::: .:::.:.:.:::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::.::::.:::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::.:::::::::::::::::::::::::::::::.:::::::::::.:::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIERNIQRGLFDLVDDWLKRDRFVFIGWSGLLLFPCSYLALGAWFTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLFLWGPEAQGDFTRWCQIGGLWTFTALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLIYPLGQASWFFAPSFGVAAIFRFILFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGEAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSSIGIIGLALNLRAYDFVSQELRAAEDPEFETFYTKNLLLNEGIRAWMATQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSBD_NEOYE" ac="Q1XDD0" length="351" description="Photosystem II D2 protein OS=Neopyropia yezoensis OX=2788 GN=psbD PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2302</score>
+      <smithWatermanScore>2302</smithWatermanScore>
+      <zScore>2815.4</zScore>
+      <bits>529.4</bits>
+      <expectation>3e-149</expectation>
+      <identity>93.4</identity>
+      <positives>98.6</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::.. :: :::.:::::.::::::::::::::: ::::::::.::::::::::::::::::::::::::::::.::::::::::.::::::::::::::::::::.:.:::::::::::::::::::::::.::::::::::::::::::::.:::::::::::::.:::::::::::::::::::::::::::::::::::::::::::::.::::::::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::: :: .::::.::::::::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQEKTRGGFDLVDDWLKRDRFVFVGWSGLLLFPCAYLAVGGWLTGTTFVTSWYTHGLASSYLEGCNFLTAAVSTPANSMGHSLLFLWGPEAQGDFTRWCQIGGLWAFIALHGSFGLIGFCLRQFEIARLVGLRPYNAIAFSGPIAVFVSVFLMYPLGQASWFFAPSLGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVQNTLFEDGDAADTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAFGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKIILXDEGIRSWMAAQDQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSBD_CYAM1" ac="Q85G27" length="351" description="Photosystem II D2 protein OS=Cyanidioschyzon merolae (strain NIES-3377 / 10D) OX=280699 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2291</score>
+      <smithWatermanScore>2291</smithWatermanScore>
+      <zScore>2801.9</zScore>
+      <bits>526.9</bits>
+      <expectation>1.7e-148</expectation>
+      <identity>92.9</identity>
+      <positives>99.4</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::..:::: :::.:::::.:::::.::::::::: .:::.:.:.:::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::.::::.::::::::::::::::::.::::::::::::::::::::::::::::::::::::::.::::.::::::::::::::::::::::::::::::::::::.:::::::.:..::::::::::::::::::::::::::::::::::::::::.:::::.:::.:.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGREQERGWFDLMDDWLKRDRFVFIGWSGLLLFPCSYLALGAWFTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLFLWGPEAQGDFTRWCQIGGLWTFTALHGAFGLIGFCLRQFEIARLVGLRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAGIFRFILFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVQNTLFEDGEASDTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFLLFVPVAGLWASSIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSBD_GUITH" ac="O78427" length="351" description="Photosystem II D2 protein OS=Guillardia theta OX=55529 GN=psbD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2277</score>
+      <smithWatermanScore>2277</smithWatermanScore>
+      <zScore>2784.7</zScore>
+      <bits>523.8</bits>
+      <expectation>1.5e-147</expectation>
+      <identity>91.5</identity>
+      <positives>99.1</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>:::::::.. :: :::.:::::.:::::.::::::::::.::..:::.::::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::.: ::::.::::::::::::::::::::::::::::::::.::::::.:::::::::::::.:::::::::::.:::::.:::::::::::::::.:::::::::::.::.:::::::::::::::::::::::::::::::::.:::::::::::::::::::..:::::::::::::::::::::::::::::::::::::::::.:::::::.::::::::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAIGQEEGRGWFDLVDDWLKRDRFVFIGWSGLLLFPTSYLSIGGWFTGTTFVTSWYTHGLASSYLEGCNFFTAAVSTPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWAFCALHGAFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAIFVSVFLMYPLGQASWFFAPSLGVAAIFRFLLFIQGFHNFTLNPFHMMGVAGILGAALLCAIHGATVQNTIFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQVFGVAFSNKRWLHFFMLFVPLAGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNLLLNEGIRSWMAAQDQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSBD_CROS5" ac="B1WQ89" length="351" description="Photosystem II D2 protein OS=Crocosphaera subtropica (strain ATCC 51142 / BH68) OX=43989 GN=psbD1 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2240</score>
+      <smithWatermanScore>2240</smithWatermanScore>
+      <zScore>2739.3</zScore>
+      <bits>515.4</bits>
+      <expectation>5.1e-145</expectation>
+      <identity>90.3</identity>
+      <positives>97.4</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.  ::: ::..:::::.::::::::::::::: ::::.:::.::::::::::::::::::::::::::.:::::::..:::::.::::::::::::::::::::::.::::.:::::: :::::::::::::::::::::.::::::::::.:::::.::::.::::::.::::.:::::::::::::::::::::.::::::::::::::::::::::. ::::::: :::.::::::::::::::::::.::::::::::::::::::::: :::::::::::::::::::::::::::::::::::::::::::.::::: :::::.:::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAVGRAPERGWFDVLDDWLKRDRFVFVGWSGLLLFPCAYLALGGWLTGTTFVTSWYTHGLASSYLEGCNFLTVAVSSPANAFGHSLLFLWGPEAQGDFTRWCQIGGLWTFTALHGAFGLIGFMLRQFEIARLVGIRPYNAIAFSAPIAVFVSVFLMYPLGQSSWFFGPSFGVAGIFRFILFLQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFEDGEQANTFRAFEPTQAEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVTGLWMSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGLRAWMAPQDQPHQNFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSBD_PARMW" ac="Q7TTI2" length="351" description="Photosystem II D2 protein OS=Parasynechococcus marenigrum (strain WH8102) OX=84588 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2236</score>
+      <smithWatermanScore>2236</smithWatermanScore>
+      <zScore>2734.4</zScore>
+      <bits>514.5</bits>
+      <expectation>9.5e-145</expectation>
+      <identity>89.5</identity>
+      <positives>97.2</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.  .:: ::..:::::.::::::::::.:::::::::.:::.:::::::::::::.::::::::::::::::.::..:::::::::::::::::.::::.::::.::::::.:.:::: ::::::::::::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. ::::.:: ::: ::::::::::::::::::.::::::::::::::::: :::::.:::.:::::::::::::::.:::::::::::::::::::::.:::::  ::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAVGRAPQRGWFDILDDWLKRDRFVFVGWSGILLFPTAYLAIGGWLTGTTFVTSWYTHGIASSYLEGCNFLTAAVSTPADAMGHSLLLLWGPEAQGDFVRWCQLGGLWAFVALHGAFALIGFMLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLMYPLGQSSWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGEQANTFKAFEPTQEEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVMGLWTSSIGIIGLALNLRAYDFVSQEIRAAEDPEFETFYTKNILLNEGLRAWMAPADQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSBD_SYNPW" ac="A5GMA8" length="351" description="Photosystem II D2 protein OS=Synechococcus sp. (strain WH7803) OX=32051 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2235</score>
+      <smithWatermanScore>2235</smithWatermanScore>
+      <zScore>2733.2</zScore>
+      <bits>514.2</bits>
+      <expectation>1.1e-144</expectation>
+      <identity>89.5</identity>
+      <positives>97.2</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.  .:: ::..:::::.::::::::::.:::::::::.:::.:::::::::::::.::::::::::::::::.::..:::::::::::::::::.::::.::::.::::::.:.:::: ::::::::::::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. ::::.:: ::: ::::::::::::::::::.::::::::::::::::: :::::.:::.:::::::::::::::.:::::::::::::::::::::.:::::  ::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAVGRAPQRGWFDVLDDWLKRDRFVFVGWSGILLFPTAYLAIGGWLTGTTFVTSWYTHGIASSYLEGCNFLTAAVSTPADAMGHSLLLLWGPEAQGDFVRWCQLGGLWAFVALHGAFALIGFMLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLMYPLGQSSWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGEQANTFKAFEPTQEEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVMGLWTSSIGIIGLALNLRAYDFVSQEIRAAEDPEFETFYTKNILLNEGLRAWMAPADQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSBD_THEVB" ac="Q8CM25" length="352" description="Photosystem II D2 protein OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=psbD1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2234</score>
+      <smithWatermanScore>2234</smithWatermanScore>
+      <zScore>2732.0</zScore>
+      <bits>514.0</bits>
+      <expectation>1.3e-144</expectation>
+      <identity>89.2</identity>
+      <positives>97.7</positives>
+      <overlap>352</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQ-ERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::::.  -::: ::..:::::.::::::::::.:::: ::::.:::.::::::::::::::::::::::::::.:::.::::::::::::::::::::::::::.::::::.::::.:::::: :::::::::::.:::::::::.::::::::::.:::::.:::::::::::::::::::.::::::::::::::::::.:::::::::::::::::::.::..:.:::::.:::.::::::::::::::::::.::::::::::::::::::::: ::::.::::::::.:::.:::.:::::::::::::::.::::::::::: :::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="352">MTIAIGRAPAERGWFDILDDWLKRDRFVFVGWSGILLFPCAYLALGGWLTGTTFVTSWYTHGLASSYLEGCNFLTVAVSTPANSMGHSLLLLWGPEAQGDFTRWCQLGGLWTFIALHGAFGLIGFMLRQFEIARLVGVRPYNAIAFSAPIAVFVSVFLIYPLGQSSWFFAPSFGVAAIFRFLLFFQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFQDGEGASTFRAFNPTQAEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVTGLWMSAIGVVGLALNLRSYDFISQEIRAAEDPEFETFYTKNLLLNEGIRAWMAPQDQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSBD_TRIV2" ac="Q3MA59" length="351" description="Photosystem II D2 protein OS=Trichormus variabilis (strain ATCC 29413 / PCC 7937) OX=240292 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2233</score>
+      <smithWatermanScore>2233</smithWatermanScore>
+      <zScore>2730.8</zScore>
+      <bits>513.8</bits>
+      <expectation>1.5e-144</expectation>
+      <identity>90.3</identity>
+      <positives>97.2</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.   :: ::..:::::.::::::::::.:::: :.::.:::.::::::::::::::::::::: ::::.::::::.:::::::::::::::::::::::.:::: ::::::.:::::: :::::::::::::::::.:::.::::::::::.:::::.::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::..:::::::.::::::::::::::::::::::.::::::::::::::::::::: ::.:::::::::::::::::::::::::::::::::::::::::::::: ::::::.::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAVGRAPSRGWFDVLDDWLKRDRFVFVGWSGILLFPCAFLALGGWLTGTTFVTSWYTHGLASSYLEGANFLTVAVSSPADSMGHSLLLLWGPEAQGDFTRWCQLGGLWPFVALHGAFGLIGFMLRQFEIARLVGIRPYNALAFSAPIAVFVSVFLMYPLGQSSWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGVLGGALLCAIHGATVENTLFEDGEGANTFRAFNPTQSEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVTGLWMSAVGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAPQDQPHEKFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSBD_SYNR3" ac="A5GQK3" length="352" description="Photosystem II D2 protein OS=Synechococcus sp. (strain RCC307) OX=316278 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2233</score>
+      <smithWatermanScore>2233</smithWatermanScore>
+      <zScore>2730.7</zScore>
+      <bits>513.8</bits>
+      <expectation>1.5e-144</expectation>
+      <identity>89.8</identity>
+      <positives>96.6</positives>
+      <overlap>352</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQE-RGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.   -:: ::..:::::.::::::::::::::: ::.:.:::.:::::::::::::.::::::::::::::::.::.::::::::::::::::::.::::.::::.::::::.:::::: ::::::::::::::::::::::::::::::::.:::::.::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::.:: ::: ::::::::::::::::::.::::::::::::::::: :::::.:::.:::::::::::::::::::::::::::::::::::::.:::::  :::::::.::::::::::::</pattern>
+      <matchSeq start="1" end="352">MTIAVGRAPAGRGWFDVLDDWLKRDRFVFVGWSGLLLFPCAYMALGGWLTGTTFVTSWYTHGIASSYLEGCNFLTAAVSTPADSMGHSLLLLWGPEAQGDFVRWCQLGGLWAFVALHGAFGLIGFMLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLMYPLGQSSWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDGANTFKAFEPTQEEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVMGLWTSSIGIIGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGLRAWMAPADQPHENFIFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSBD_SYNS9" ac="Q3B038" length="351" description="Photosystem II D2 protein OS=Synechococcus sp. (strain CC9902) OX=316279 GN=psbD1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2228</score>
+      <smithWatermanScore>2228</smithWatermanScore>
+      <zScore>2724.6</zScore>
+      <bits>512.6</bits>
+      <expectation>3.4e-144</expectation>
+      <identity>88.9</identity>
+      <positives>97.2</positives>
+      <overlap>351</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="351">MTIAIGQNQERGIFDLIDDWLKKDRFVFVGWSGLLLFPTAYLAVGGWMTGTTFVTSWYTHGLASSYLEGCNFLTAAVSSPANSMGHSLLLLWGPEAQGDFTRWCQIGGLWTFVALHGSFGLIGFCLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLLYPLGQASWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGDAANTFRAFTPTQSEETYSMVTANRFWSQIFGVAFSNKRWLHFFMLFVPVTGLWTSAIGIVGLALNLRAYDFVSQELRAAEDPEFETFYTKNILLNEGIRAWMAAQDQPHENFVFPEEVLPRGNAL</querySeq>
+      <pattern>::::.:.  .:: ::..:::::.:::::.:::::::.::::.:.:::.:::::::::::::.::::::::::::::::.::..:::::::::::::::::.::::.::::.::::::.:.:::: ::::::::::::::::::::::::::::::::.:::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. ::::.:: ::: ::::::::::::::::::.::::::::::::::::: :::::.:::.:::::::::::::::.:::::::::::::::::::::.:::::  ::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="351">MTIAVGRAPQRGWFDVLDDWLKRDRFVFIGWSGLLLLPTAYMAIGGWLTGTTFVTSWYTHGIASSYLEGCNFLTAAVSTPADAMGHSLLLLWGPEAQGDFVRWCQLGGLWAFVALHGAFALIGFMLRQFEIARLVGIRPYNAIAFSGPIAVFVSVFLMYPLGQSSWFFAPSFGVAAIFRFLLFLQGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLFEDGEQANTFKAFEPTQEEETYSMVTANRFWSQIFGIAFSNKRWLHFFMLFVPVMGLWTSSIGIIGLALNLRAYDFVSQEIRAAEDPEFETFYTKNILLNEGLRAWMAPADQPHENFVFPEEVLPRGNAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

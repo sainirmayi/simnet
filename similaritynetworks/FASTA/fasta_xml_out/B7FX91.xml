@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162342-0769-860561-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162342-0769-860561-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162342-0769-860561-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FX91|BZP14_PHATC" type="PROTEIN" length="468"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:23:42+00:00" end="2022-11-07T16:23:45+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="BZP14_PHATC" ac="B7FX91" length="468" description="bZIP transcription factor 14 OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=bZIP14 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3044</score>
+      <smithWatermanScore>3044</smithWatermanScore>
+      <initn>3044</initn>
+      <init1>3044</init1>
+      <opt>3044</opt>
+      <zScore>3067.0</zScore>
+      <bits>576.8</bits>
+      <expectation>2.9e-163</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>468</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="468">MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTPEELDQIRRERNRMHAKRTRDRKRIFTEEMAEMCRILEEENHLLRVHLGGLDSDFKSESTTTSTHVVDRIDSVLSTPTLASCAPPQDMVSVSLSPSQLPSKPSTKEVAFNQLQTLLDVAGSFERQQREAERKVPQMCSISAASDTSTSDSSHHHRQRRCHKGDSDRPVKRQRYQVPRSITTTTSLAAPVGW</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="468">MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTPEELDQIRRERNRMHAKRTRDRKRIFTEEMAEMCRILEEENHLLRVHLGGLDSDFKSESTTTSTHVVDRIDSVLSTPTLASCAPPQDMVSVSLSPSQLPSKPSTKEVAFNQLQTLLDVAGSFERQQREAERKVPQMCSISAASDTSTSDSSHHHRQRRCHKGDSDRPVKRQRYQVPRSITTTTSLAAPVGW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="LE607_CAEEL" ac="O44743" length="690" description="CREB-H transcription factor homolog let-607 OS=Caenorhabditis elegans OX=6239 GN=let-607 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <smithWatermanScore>185</smithWatermanScore>
+      <initn>158</initn>
+      <init1>92</init1>
+      <opt>185</opt>
+      <zScore>168.8</zScore>
+      <bits>41.1</bits>
+      <expectation>0.077</expectation>
+      <identity>20.2</identity>
+      <positives>51.4</positives>
+      <overlap>486</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="468">----------------MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEK-GPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSST-----KSSSGSR-PVMTTTADPNIVTAASTESVSSSPKWLP-KKADTDD--RVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANI-LVGLFSKGQSQ------SPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTPEELDQIRRERNRMHAKRTRDRKRIFTEEMAEMCRILEEENHLLRVHLGGL--DSDF-------KSESTTTSTHVVDRIDSVLSTPTLASCAPPQDMVSVSLSPSQLPSKPSTKEVAFNQLQTLLDVAGSFERQQRE--AERKVPQMCSISAASDTSTSDSSHHHR--QRRCHKGDSDRPVKRQRYQVPRSITTT--TSLAAPVGW</querySeq>
+      <pattern>                              : :: :    :.. . .   .:  :. -.: :. ...:.--:  .: . .:  . :.:: :::-----:::.: :-       : . .   . :..  -: ..:- ::.  :--:..:-. ::.  :. .:.::.. ...:: :...  .:.  ::: :.. .. : -... ..: :.:------  ..  :  :... :.  . .:.  :------: .:  .: ..    .   :  ::..... . :- . :..    .:. :  .   . .:.      :..--.. ... :. ..... :  :.. .    :. ..   . :  ..-- :: -------:  .   :.   .  .:: :. . .: . :   .: .:.  .     :. .    .. .:. .  : .  .:.--.    :..   .. ... . .......--:.. .    :::.: .  :.   :   --...  : .:</pattern>
+      <matchSeq start="176" end="648">YEICSSGPLLAYTNANSVATSAVHQNQQQQQRRLNQAGFPHQNSNGLVRFKSSQPRVLNPASISLNAPS--SSFNPQSTSSTPATSSSSSSSTNGGFVKSSTGERRKYPPLRLDEEEIKLCKKEGICL-PDFFPLTKAEERDLKRIRR-KIRNKRSAQTSRKRKQDYIEQLEDRVSESTKENQALKQQIERLSSENQSVISQLKKLQAQLGQNAKRTTQAGRCLAVFMLSACLLVSPQLSP------LGNQDNQKVLECIEEACQPSATSMNSANSAQRA-IAGVTAPSVVIPSGGPVMVSTNANRQMNRNAVLNH--HNNSKYPASGNQNHHPIALEDLNHPPPTLQPKQSYQQQHQPSMYRRSDETIAMAMAKIGARKGSSTSSSSASSVASSTSTSSATSPIYRTSRTLGAFEDQCDASSDDSNCANMPSLVPMKMSAQPPKRKIVTMNGQPRVTYRAVPASSVNVEQAQYYKVPQQKVQYVTMDRPIKYEVLQLNDYIKMEEESTIRLPNSWSTAGPRLHPQVNASSRTVRPLTVATPVHYNGPSAKKIKTQMF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="FOSL2_CHICK" ac="P18625" length="323" description="Fos-related antigen 2 OS=Gallus gallus OX=9031 GN=FOSL2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <smithWatermanScore>166</smithWatermanScore>
+      <initn>214</initn>
+      <init1>126</init1>
+      <opt>166</opt>
+      <zScore>164.8</zScore>
+      <bits>39.3</bits>
+      <expectation>0.13</expectation>
+      <identity>24.7</identity>
+      <positives>54.5</positives>
+      <overlap>235</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="177" end="396">GRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNE-DPRVEALMYRSVE-EIPDPSK--IPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQ-QVPDDGIDYDL---LGKDRS--KCTPEELDQ--IRRERNRMHAKRTRDRKRIFTEEMAEMCRILEEENHLLRVHLGGLDSDFKSESTTTSTHVVDRIDSVLSTPTLASCAPPQDMVSVSLSPSQ---LPSKPSTKEVAFNQLQTLLDVAGSFERQQREAERKVPQMCSISAASDTSTSDSSHHH</querySeq>
+      <pattern>                              :.:.: ::..-.:   .   .. .-..:  ..--:: . :-:  .:  .  .. .: .  .:: : :   .. .   :.:.:   -: :--:.   .---.:. : --. .::: ..--::::::.. : . :.:.: .::..    ..::::. .:. ..----.....:.      .: .      .:      : ... ::  . : ---. ..:  .:.  ..:--.:: :</pattern>
+      <matchSeq start="13" end="238">------------------MYQDYPGSFDTSSRGSSGSPGHPEPYSAGAAQQKFRVDMPGSGSAFIPTINA-ITTSQDLQWMVQPTVITSMSSPYSRSHPYSHPLPPLSSVAGHTALQRP--GVIKTIGTTVGRRRRDEQLSPEEEEKRRIRRERNKLAAAKCRNRRRELTEKLQAETEVLEEEKSVLQKEI----AELQKEKEKLEFMLVAHSPVCKISPEERRSPPTSSLQSVRTGASGAVVVKQEPVEEEIPSSSL--VLDKAQRSVIKPISIAGGYYGEEALNTPIVVTSTPAITPG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CEBPB_CHICK" ac="Q05826" length="328" description="CCAAT/enhancer-binding protein beta OS=Gallus gallus OX=9031 GN=CEBPB PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>148</initn>
+      <init1>79</init1>
+      <opt>151</opt>
+      <zScore>161.7</zScore>
+      <bits>38.7</bits>
+      <expectation>0.19</expectation>
+      <identity>26.0</identity>
+      <positives>55.8</positives>
+      <overlap>181</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="14" end="189">-----------------MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSP--KWLPKK-ADT-DDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTA-NILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTP</querySeq>
+      <pattern>                              ::.   ...   :: .. .  ..     ::.   .. :   . :.  . ::  :::... :...:::---:  : . . .  .::.. . :. :--:  :::-.: -.:. .  :::: : .::.:.. : .    . .. .:  :. ::.. ... .  -. : .::..        .::</pattern>
+      <matchSeq start="150" end="327">PDYTYISLTRHGHPCGSQSHKPGVLPGCFPPQIVETKVEPVFETLDSCKGPRKEEGGAGPGPGGMSSPYGSTVRSYLGYQSVPSGSSGNLSTSSSSS---PPGTPNPSESSKSAAGAGGYSGPPAGKNKPKKCVDKHSDEYKLRRERNNIAVRKSRDKAKMRNLETQHKVLELTAENERLQKKVEQLSRELSTLRNLFKQLPEPLLASSPRC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="BATF_HUMAN" ac="Q16520" length="125" description="Basic leucine zipper transcriptional factor ATF-like OS=Homo sapiens OX=9606 GN=BATF PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <smithWatermanScore>142</smithWatermanScore>
+      <initn>168</initn>
+      <init1>112</init1>
+      <opt>142</opt>
+      <zScore>161.6</zScore>
+      <bits>37.3</bits>
+      <expectation>0.19</expectation>
+      <identity>39.4</identity>
+      <positives>70.4</positives>
+      <overlap>71</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="98" end="165">GSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDD---RVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGE</querySeq>
+      <pattern>                              .:  : : :: --: : :..:---::::-::.::: :.:.:::. .. ..:. .. ::....  :.. :..</pattern>
+      <matchSeq start="7" end="74">------------------------MPHSSDSSDSSFSRSPP--PGKQDSSDDVRRVQR-REKNRIAAQKSRQRQTQKADTLHLESEDLEKQNAALRKEIKQLTEELKYFTSVLNSHEPLCSVLAASTPSPPEVVYSAHAFHQPHVSSPRFQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ATF7_PONAB" ac="Q5R9C9" length="483" description="Cyclic AMP-dependent transcription factor ATF-7 OS=Pongo abelii OX=9601 GN=ATF7 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <smithWatermanScore>160</smithWatermanScore>
+      <initn>115</initn>
+      <init1>100</init1>
+      <opt>151</opt>
+      <zScore>158.1</zScore>
+      <bits>38.6</bits>
+      <expectation>0.31</expectation>
+      <identity>23.8</identity>
+      <positives>52.8</positives>
+      <overlap>235</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="37" end="241">SVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGS----RPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLK-QIINEKNTANILVGLF--------------SKGQSQSPNE--DPR--VEALMYRSVEEIPDPS----KIPELPALILPGQHASKKIKVAVPV---VAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKC</querySeq>
+      <pattern>                              :.: ..   . . . .:.:--. ..  ..: :: :.  ...  ...----.:   . :.:..  :  : :...  .    .-: :.: ::  ::::  : . ::..:  ..::: .: .:  ..:.:.-..   .: .  :  :.--------------..:  .::.:--.: --   .. .:    :. .----.  :  :  .  : ::.. ....:.---:  .:::.: :</pattern>
+      <matchSeq start="251" end="482">LARPVSMVPNIPGIPGPPVNSSGSISPSGHPIPSEAKMRLKATLTHQVS--SINGGCGMVVGSASTMVTARPEQSQILIQHPDAPSPAQPQVSPAQPTPSTGGRRRRTVDE-DPDERRQRFLERNRAAASRCRQKRKLWVSSLEKKAEELTSQNIQLSNEVTLLRNEVAQLKQLLLAHKDCPVTALQKKTQGYLESPKESSEPTGSPAPVIQHSSATAPSNGLSVRSAAEAVATSVLTQMASQRTELSMPIQSHVIMTPQSQSAGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="BZP49_ARATH" ac="Q9LXX4" length="620" description="bZIP transcription factor 49 OS=Arabidopsis thaliana OX=3702 GN=BZIP49 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <smithWatermanScore>153</smithWatermanScore>
+      <initn>178</initn>
+      <init1>71</init1>
+      <opt>153</opt>
+      <zScore>157.8</zScore>
+      <bits>38.9</bits>
+      <expectation>0.32</expectation>
+      <identity>25.0</identity>
+      <positives>55.7</positives>
+      <overlap>192</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="40" end="225">VDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQI-----RLKQIINEKNTANILVGL-FSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTPEELDQIRRERNRMHAKRTRDRKRIF</querySeq>
+      <pattern>                              ::. :.::... .  .:..::-...:-::...: : . ..:..: .     . .     . .. .:  :-.  . : . . .    :::  :. .:::::. .. :: .. ..-:  :-----... .. :. :    .: -::.:  . :   : ---..: .    :. :..  ::   :  .:.  :.:</pattern>
+      <matchSeq start="98" end="282">CIPPDATKREMSGDFTPASGISGDCVNEDTEKNTNGVLISTSSCYNRESPT-DSDF-SGTSQSLSFSGQDSAKRKTEIEEDSSDESRRLGKDGFASVIK-VGGEEDDEKKKNVRLVRNRESAHLSRQRKKHYVEELEDKVKNM-HSTISELSSKMSYFVAENVTLRQQMGTRFSSGPPMVPIVYPW---MQYPAYMVKPQGSQVALLPIPRLKPKHSVAKVKKFKKVASFSVFGFLFCMFLFGALVNISYGEYKSNYVTDGVYDQSRGRVLVVDSSRVHCGGDSDQGVGRNVSETENLGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="BATF_BOVIN" ac="E1BD44" length="125" description="Basic leucine zipper transcriptional factor ATF-like OS=Bos taurus OX=9913 GN=BATF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>179</initn>
+      <init1>112</init1>
+      <opt>138</opt>
+      <zScore>157.6</zScore>
+      <bits>36.6</bits>
+      <expectation>0.33</expectation>
+      <identity>38.0</identity>
+      <positives>70.4</positives>
+      <overlap>71</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="98" end="165">GSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDD---RVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGE</querySeq>
+      <pattern>                              .:  : : :: --: : :..:---.:::-::.::: :.:.:::. .. ..:. .. ::....  :.. :..</pattern>
+      <matchSeq start="7" end="74">------------------------MPHSSDSSDSSFSRSPP--PGKQDSSDDVRKVQR-REKNRIAAQKSRQRQTQKADTLHLESEDLEKQNAALRKEIKQLTEEMKYFTSVLSSHEPLCSVLAPGAPSPPEVVYSTHAFHQPHVSSPRFQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="BATF_MOUSE" ac="O35284" length="125" description="Basic leucine zipper transcriptional factor ATF-like OS=Mus musculus OX=10090 GN=Batf PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>173</initn>
+      <init1>112</init1>
+      <opt>138</opt>
+      <zScore>157.6</zScore>
+      <bits>36.6</bits>
+      <expectation>0.33</expectation>
+      <identity>38.0</identity>
+      <positives>70.4</positives>
+      <overlap>71</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="98" end="165">GSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDD---RVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGE</querySeq>
+      <pattern>                              .:  : : :: --: : :..:---.:::-::.::: :.:.:::. .. ..:. .. ::....  :.. :..</pattern>
+      <matchSeq start="7" end="74">------------------------MPHSSDSSDSSFSRSPP--PGKQDSSDDVRKVQR-REKNRIAAQKSRQRQTQKADTLHLESEDLEKQNAALRKEIKQLTEELKYFTSVLSSHEPLCSVLASGTPSPPEVVYSAHAFHQPHISSPRFQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="BATF_RAT" ac="D4A7E1" length="125" description="Basic leucine zipper transcriptional factor ATF-like OS=Rattus norvegicus OX=10116 GN=Batf PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>173</initn>
+      <init1>112</init1>
+      <opt>138</opt>
+      <zScore>157.6</zScore>
+      <bits>36.6</bits>
+      <expectation>0.33</expectation>
+      <identity>38.0</identity>
+      <positives>70.4</positives>
+      <overlap>71</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="98" end="165">GSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDD---RVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGE</querySeq>
+      <pattern>                              .:  : : :: --: : :..:---.:::-::.::: :.:.:::. .. ..:. .. ::....  :.. :..</pattern>
+      <matchSeq start="7" end="74">------------------------MPHSSDSSDSSFSRSPP--PGKQDSSDDVRKVQR-REKNRIAAQKSRQRQTQKADTLHLESEDLEKQNAALRKEIKQLTEELKYFTSVLSSHEPLCSVLASGTPSPPEVVYSAHAFHQPHISSPRFQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ATF7_HUMAN" ac="P17544" length="483" description="Cyclic AMP-dependent transcription factor ATF-7 OS=Homo sapiens OX=9606 GN=ATF7 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <smithWatermanScore>157</smithWatermanScore>
+      <initn>115</initn>
+      <init1>100</init1>
+      <opt>148</opt>
+      <zScore>155.1</zScore>
+      <bits>38.1</bits>
+      <expectation>0.45</expectation>
+      <identity>23.4</identity>
+      <positives>52.8</positives>
+      <overlap>235</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="37" end="241">SVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGS----RPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLK-QIINEKNTANILVGLF--------------SKGQSQSPNE--DPR--VEALMYRSVEEIPDPS----KIPELPALILPGQHASKKIKVAVPV---VAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGKDRSKC</querySeq>
+      <pattern>                              :.: ..   . . . .:.:--. ..  ..: :. :.  ...  ...----.:   . :.:..  :  : :...  .    .-: :.: ::  ::::  : . ::..:  ..::: .: .:  ..:.:.-..   .: .  :  :.--------------..:  .::.:--.: --   .. .:    :. .----.  :  :  .  : ::.. ....:.---:  .:::.: :</pattern>
+      <matchSeq start="251" end="482">LARPVSMVPNIPGIPGPPVNSSGSISPSGHPIPSEAKMRLKATLTHQVS--SINGGCGMVVGTASTMVTARPEQSQILIQHPDAPSPAQPQVSPAQPTPSTGGRRRRTVDE-DPDERRQRFLERNRAAASRCRQKRKLWVSSLEKKAEELTSQNIQLSNEVTLLRNEVAQLKQLLLAHKDCPVTALQKKTQGYLESPKESSEPTGSPAPVIQHSSATAPSNGLSVRSAAEAVATSVLTQMASQRTELSMPIQSHVIMTPQSQSAGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="CPC1_NEUCR" ac="P11115" length="270" description="Cross-pathway control protein 1 OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=cpc-1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <initn>127</initn>
+      <init1>80</init1>
+      <opt>143</opt>
+      <zScore>154.4</zScore>
+      <bits>37.1</bits>
+      <expectation>0.49</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <overlap>161</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="162">----------------------------MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVS-GSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELP</querySeq>
+      <pattern>                              .: :.. :.. :: ---: .  ..:    .::.:  :   :.   .    . :   :. .   .:-::  .:---..:: : :---.    ... ..: .  .  :  . .--: .: :  .: :: . :::.:.:: .... ::..  .:  :. : :..</pattern>
+      <matchSeq start="112" end="261">FDTFDISPNFGHSDLENPDTWFSLFPDATPLPQAQAQVQTQPQT---QTQTEQQTQPLPELVQSVQPTVQPTVEQTVHSVEASPATPSEDLEVLSPGSGHQR---RKSSVSPP---SGRHSSVAGVGSRRRDKPLPPIIVE--DPSDVVAMKRARNTLAARKSRERKAQRLEELEAKIEELIAERDRWKNLALAHGASTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="BATF3_HUMAN" ac="Q9NR55" length="127" description="Basic leucine zipper transcriptional factor ATF-like 3 OS=Homo sapiens OX=9606 GN=BATF3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <smithWatermanScore>133</smithWatermanScore>
+      <initn>224</initn>
+      <init1>113</init1>
+      <opt>133</opt>
+      <zScore>152.4</zScore>
+      <bits>35.6</bits>
+      <expectation>0.63</expectation>
+      <identity>29.2</identity>
+      <positives>61.8</positives>
+      <overlap>89</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="277" end="363">ASTSDVSGDEQQVPDDGIDYDLLGKDRSKCTPEELDQI--RRERNRMHAKRTRDRKRIFTEEMAEMCRILEEENHLLRVHLGGLDSDFKSESTTTSTHVVDRIDSVLSTPTLASCAPPQDMVSVSLSPSQLPSKPSTKEVAFNQLQTLLDVAGSFERQQREAERKVPQMCSISAASDTST</querySeq>
+      <pattern>                              .::. :. --:::.::. :.:.: ..   .... :  . ::.:: .:: ..: :  ..:  . . . :--...  .:  :     .::.</pattern>
+      <matchSeq start="31" end="117">MSQGLPAAGSVLQRSVAAPGNQPQPQPQQQSPEDDDRKVRRREKNRVAAQRSRKKQTQKADKLHEEYESLEQENTMLRREIGKLTEELKHLTEALKEH--EKMCPLLLCPMNFVPVPPRPDPVAGCLPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ATF7_MOUSE" ac="Q8R0S1" length="413" description="Cyclic AMP-dependent transcription factor ATF-7 OS=Mus musculus OX=10090 GN=Atf7 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <initn>118</initn>
+      <init1>100</init1>
+      <opt>143</opt>
+      <zScore>151.5</zScore>
+      <bits>37.2</bits>
+      <expectation>0.71</expectation>
+      <identity>26.0</identity>
+      <positives>59.1</positives>
+      <overlap>127</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="37" end="159">SVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGS----RPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGG</querySeq>
+      <pattern>                              :.: ..   . . . .:.:--. ..  ..: :. :.  ...  ...----.:   . :.:..  :  : :...  .    .-: :.: ::  ::::  : . ::..:  ..::: .: .:  ..:.:</pattern>
+      <matchSeq start="251" end="374">LARPVSMVPNIPGIPGPPVNNSGSISPSGHPMPSEAKMRLKATLTHQVS--SINGGCGMVVGTASTMVTARPEQNQILIQHPDAPSPAQPQVSPAQPTPSTGGRRRRTVDE-DPDERRQRFLERNRAAASRCRQKRKLWVSSLEKKAEELTSQNIQLSNEVTLLRNEVAQLKQLLLAHKDCPVTALQKKTQGYLGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="JRA_DROME" ac="P18289" length="289" description="Transcription factor Jra OS=Drosophila melanogaster OX=7227 GN=Jra PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>122</initn>
+      <init1>102</init1>
+      <opt>139</opt>
+      <zScore>150.8</zScore>
+      <bits>36.5</bits>
+      <expectation>0.78</expectation>
+      <identity>26.8</identity>
+      <positives>64.3</positives>
+      <overlap>112</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="59" end="163">STVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSS-----SGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQ--RSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEI</querySeq>
+      <pattern>                              :.:...  :..... ... ..-----::.  ..:. ..   :      . .:::   :   .......--:.:.:::. : : :.:: :....:: :.  :: :.. : .:.</pattern>
+      <matchSeq start="147" end="258">KAGPVTVEQLDFGRGFEEALHNLHTNSQAFPSANSAANSAANNTTAAAMTAVNNGISGGTFTYTNMTEGFSVIKDEPVNQASSPTVNPIDMEAQEKIKLERKRQRNRVAASKCRKRKLERISKLEDRVKVLKGENVDLASIVKNLKDHVAQLKQQVMEHIAAGCTVPPNSTDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RSBZ5_ORYSJ" ac="Q654B3" length="295" description="bZIP transcription factor RISBZ5 OS=Oryza sativa subsp. japonica OX=39947 GN=RISBZ5 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>121</initn>
+      <init1>84</init1>
+      <opt>138</opt>
+      <zScore>149.6</zScore>
+      <bits>36.3</bits>
+      <expectation>0.91</expectation>
+      <identity>26.8</identity>
+      <positives>58.3</positives>
+      <overlap>127</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="51" end="173">MKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESV---SSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRL-KQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDE</querySeq>
+      <pattern>                              :...-:  : :  .: . .: -:. .. :.  .:. ...  :.  . .. .:.---  ::.    :.    :..:   -::  ::..:.::. :.. ::... .:: :.  :-::. . ..  :  :</pattern>
+      <matchSeq start="68" end="191">SGLFSPGDGEMSVLDQSTLDGSGGGHQLWWPESV-RTPPRAAAAFSATADE-RTPASISDDPKPTTSANHAPESDSDSDCDSLLEAERSPRLRGTKSTETKRIRRMVS-NRESARRSRRRKQAQLSELESQVEQLKGENSSLFKQLTESSQQFNTAVTDNRILKSDVEALRVKVKMAEDMVARAAMSCGLGQLGLAPLLSSRKMCQALDMLSLPRNDACGFKGLNLGRQVQNSPVQSAAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="CREB5_MOUSE" ac="Q8K1L0" length="357" description="Cyclic AMP-responsive element-binding protein 5 OS=Mus musculus OX=10090 GN=Creb5 PE=2 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>110</initn>
+      <init1>91</init1>
+      <opt>139</opt>
+      <zScore>148.8</zScore>
+      <bits>36.5</bits>
+      <expectation>1.0</expectation>
+      <identity>22.7</identity>
+      <positives>51.2</positives>
+      <overlap>207</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="208">--------------------MRFPAASVAVDSTPQLRLLQMKDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMT---TTADPNIVTAASTESVSS-SPKWLPKK----ADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINE-KNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIPELPALILPGQHASKKIKVAVPVVAASPQSMSDGGGEEVASTSDVSGDEQQVPDDGIDYDLLGK</querySeq>
+      <pattern>                              :.::. .: .   .:.:   ----: : :..  . .    ::   ...   ..: --.   .. . ...:   :. :---. ..:       :.... -.:    ..---- : :.: ..  ::::  : . ::..:  ..::: .: .: . ...:.. .. -:: .  :  :.  -... :    . :.  : : :  :  : .:</pattern>
+      <matchSeq start="116" end="315">KAALTHHPAAMSNGNMSTIGHMMEMMGSRQDQTPHHHLHSHPHQHQTLPP----HHPYPHQHQHPAHHPHPQPHHQQNHPHHHSH--SHLHAHPAHHQTSPHPPLHTGNQAQVSPATQQMQPTQTIQPPQPTGGRRRRVVDEDPDERRRKFLERNRAAATRCRQKRKVWVMSLEKKAEELTQTNMQLQNEVSMLKNEVAQLKQLLLT-HKDCPITAMQKESQGYLSPESSPPASPVPACSQQQVIQHNTITTSSSVSEVVGSSTLSQLTTHRTDLNPIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="GBF1_ARATH" ac="P42774" length="315" description="G-box-binding factor 1 OS=Arabidopsis thaliana OX=3702 GN=GBF1 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <smithWatermanScore>137</smithWatermanScore>
+      <initn>219</initn>
+      <init1>103</init1>
+      <opt>137</opt>
+      <zScore>148.0</zScore>
+      <bits>36.1</bits>
+      <expectation>1.1</expectation>
+      <identity>28.4</identity>
+      <positives>61.5</positives>
+      <overlap>109</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="52" end="160">KDSHETYSTVQLVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTANILVGLFSKGQSQSPNEDPRVEALMYRSVEEI</querySeq>
+      <pattern>                              .: : :::.  : ....:--:.:.:   .:: :.  ..   :.  . ---.. ::   .: : . . . :. .. ::  ::..: ::. . ..:. :. .:..:.  :.</pattern>
+      <matchSeq start="162" end="265">SGSGNDGASHSDESVTAGSSDENDENANQQEQGSIRKPSFGQMLADAS--SQSTTGEIQGSVPMKPVAPGTNLNIGM---DLWSSQAGVPVKDERELKRQKRKQSNRESARRSRLRKQAECEQLQQRVESLSNENQSLRDELQRLSSECDKLKSENNSIQDELQRVLGAEAVANLEQNAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="CEBPB_MOUSE" ac="P28033" length="296" description="CCAAT/enhancer-binding protein beta OS=Mus musculus OX=10090 GN=Cebpb PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <smithWatermanScore>136</smithWatermanScore>
+      <initn>129</initn>
+      <init1>79</init1>
+      <opt>136</opt>
+      <zScore>147.5</zScore>
+      <bits>36.0</bits>
+      <expectation>1.2</expectation>
+      <identity>29.2</identity>
+      <positives>57.5</positives>
+      <overlap>120</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="63" end="178">LVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSPKWLPKKADTD---DRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTA-NILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIP</querySeq>
+      <pattern>                              :.  :::..: :.--:::.: :   . :: . . ::   .  ..:     :  .:---:. .  :::: : .::.:.. : .    . .. .:  :. ::.. ... .  -. : .::..</pattern>
+      <matchSeq start="167" end="284">GFEPADCKRADDAPAMAAGFPFALRAYLGYQATPSGSSGSLST--SSSSSPPGTPSPADAKAAPAACFAGPPAAPAKAKAKKTVDKLSDEYKMRRERNNIAVRKSRDKAKMRNLETQHKVLELTAENERLQKKVEQLSRELSTLRNLFKQLPEPLLASAGHC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="CEBPB_RAT" ac="P21272" length="297" description="CCAAT/enhancer-binding protein beta OS=Rattus norvegicus OX=10116 GN=Cebpb PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <smithWatermanScore>136</smithWatermanScore>
+      <initn>136</initn>
+      <init1>79</init1>
+      <opt>136</opt>
+      <zScore>147.5</zScore>
+      <bits>36.0</bits>
+      <expectation>1.2</expectation>
+      <identity>30.8</identity>
+      <positives>59.2</positives>
+      <overlap>120</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="63" end="178">LVHSPLPEKGPNSVLVDVPQQISRRKPTAEQSFVSGSDSSRSSTKSSSGSRPVMTTTADPNIVTAASTESVSSSP-KWLPKKA--DTDDRVQRSRERNRIHARKTRQRKKEQMQSLEGRATDLKHEQIRLKQIINEKNTA-NILVGLFSKGQSQSPNEDPRVEALMYRSVEEIPDPSKIP</querySeq>
+      <pattern>                              :.  :::..: :.--:::.: :   . :: . . ::   .  ..:-:   :::--  .:. .  :::: : .::.:.. : .    . .. .:  :. ::.. ... .  -. : .::..</pattern>
+      <matchSeq start="168" end="285">GFEPADCKRADDAPAMAAGFPFALRAYLGYQATPSGSSGSLST--SSSSSPPGTPSPADAKAAPAACFAGPPAAPAKAKAKKAVDKLSDEYKMRRERNNIAVRKSRDKAKMRNLETQHKVLELTAENERLQKKVEQLSRELSTLRNLFKQLPEPLLASAGHC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

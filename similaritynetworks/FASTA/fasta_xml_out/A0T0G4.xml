@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-163421-0150-43625617-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-163421-0150-43625617-p1m.m9&quot; -m &quot;F10 fasta-R20221107-163421-0150-43625617-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0G4|RK27_PHATC" type="PROTEIN" length="83"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:34:21+00:00" end="2022-11-07T16:34:22+00:00" search="P0Y0M0DT0H0M1.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="RK27_PHATC" ac="A0T0G4" length="83" description="50S ribosomal protein L27, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=rpl27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>553</score>
+      <smithWatermanScore>553</smithWatermanScore>
+      <initn>553</initn>
+      <init1>553</init1>
+      <opt>553</opt>
+      <zScore>797.2</zScore>
+      <bits>151.8</bits>
+      <expectation>7.7e-37</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="83">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="83">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="RK27_TRICV" ac="P49561" length="83" description="50S ribosomal protein L27, chloroplastic OS=Trieres chinensis OX=1514140 GN=rpl27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>460</score>
+      <smithWatermanScore>460</smithWatermanScore>
+      <initn>460</initn>
+      <init1>460</init1>
+      <opt>460</opt>
+      <zScore>665.7</zScore>
+      <bits>127.5</bits>
+      <expectation>1.6e-29</expectation>
+      <identity>82.9</identity>
+      <positives>92.7</positives>
+      <overlap>82</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::::::::::::::::::::::::..: :::::.:::: :: ::.::::::::::.:::.:::.::: :. :: ::::</pattern>
+      <matchSeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGQRVKAGNILVRQRGMKFTPGLNVGCGKDFTLYALTDGIVNFDYKNAQQKRINIIG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="RK27_THAPS" ac="A0T0V7" length="84" description="50S ribosomal protein L27, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=rpl27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>436</score>
+      <smithWatermanScore>436</smithWatermanScore>
+      <initn>436</initn>
+      <init1>436</init1>
+      <opt>436</opt>
+      <zScore>631.7</zScore>
+      <bits>121.2</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>80.5</identity>
+      <positives>89.0</positives>
+      <overlap>82</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::::::::::::::::::::::::: : ::.::::::: :::::.::: ::::::::: .: ::::: .. .: .:::</pattern>
+      <matchSeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGETVKAGSILIRQRGMKFKPGVNVGYGKDFTLFALIDGTVKFDYKDAQHKRVNIITQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="RK27_PORPU" ac="P51210" length="86" description="50S ribosomal protein L27, chloroplastic OS=Porphyra purpurea OX=2787 GN=rpl27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>393</score>
+      <smithWatermanScore>393</smithWatermanScore>
+      <initn>404</initn>
+      <init1>393</init1>
+      <opt>393</opt>
+      <zScore>570.6</zScore>
+      <bits>110.0</bits>
+      <expectation>3.2e-24</expectation>
+      <identity>74.1</identity>
+      <positives>87.7</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.::::::.::::::..:::::::::::::::::: ::: ::: ::: ::::: .:.: :. .:  :: :..</pattern>
+      <matchSeq start="1" end="81">MAHKKGSGSTRNGRDSNSKRLGVKKYGGEQVTAGNILIRQRGTKVKPGQNVGKGKDDTLFALIDGFVLFEKSNQKQKTISVYSSKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="RK27_NEOYE" ac="Q1XDS7" length="86" description="50S ribosomal protein L27, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=rpl27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <smithWatermanScore>389</smithWatermanScore>
+      <initn>400</initn>
+      <init1>389</init1>
+      <opt>389</opt>
+      <zScore>565.0</zScore>
+      <bits>108.9</bits>
+      <expectation>6.6e-24</expectation>
+      <identity>72.8</identity>
+      <positives>87.7</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.::::::.::::::..:::::::::::::::::: ::: ::: ::: :::.: .:.: :. .:  :: :..</pattern>
+      <matchSeq start="1" end="81">MAHKKGSGSTRNGRDSNSKRLGVKKYGGEQVTAGNILIRQRGTKVKPGQNVGKGKDDTLFSLIDGFVLFEKSNQKQKTISVYSAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="RL27_HAMD5" ac="C4K900" length="85" description="50S ribosomal protein L27 OS=Hamiltonella defensa subsp. Acyrthosiphon pisum (strain 5AT) OX=572265 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>378</score>
+      <smithWatermanScore>378</smithWatermanScore>
+      <initn>384</initn>
+      <init1>375</init1>
+      <opt>378</opt>
+      <zScore>549.5</zScore>
+      <bits>106.0</bits>
+      <expectation>4.8e-23</expectation>
+      <identity>72.4</identity>
+      <positives>94.7</positives>
+      <overlap>76</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="76">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>:::::..:::.:::::..:::::::::::.: ::.:..:::::::.::.::::::: :::::..: :::.-..::.</pattern>
+      <matchSeq start="1" end="75">MAHKKAGGSTRNGRDSEGKRLGVKRFGGEKVLAGTIIVRQRGTKFHPGVNVGCGKDHTLFALSHGKVKFE-VKGTKNRSFVSIETE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="RL27_LEPBJ" ac="Q04Q89" length="84" description="50S ribosomal protein L27 OS=Leptospira borgpetersenii serovar Hardjo-bovis (strain JB197) OX=355277 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <smithWatermanScore>376</smithWatermanScore>
+      <initn>381</initn>
+      <init1>373</init1>
+      <opt>376</opt>
+      <zScore>546.8</zScore>
+      <bits>105.5</bits>
+      <expectation>6.8e-23</expectation>
+      <identity>67.9</identity>
+      <positives>88.9</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.::.:::::::..::::::::::.: :::::.:::::::.:: ::: ::: :::::..: :::....  .  ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGGGSSKNGRDSNSQRLGVKRFGGESVLAGNILVRQRGTKFRPGNNVGLGKDHTLFALVTGKVKFEMVTKLKMQVSVYPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="RL27_LEPBL" ac="Q054P5" length="84" description="50S ribosomal protein L27 OS=Leptospira borgpetersenii serovar Hardjo-bovis (strain L550) OX=355276 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <smithWatermanScore>376</smithWatermanScore>
+      <initn>381</initn>
+      <init1>373</init1>
+      <opt>376</opt>
+      <zScore>546.8</zScore>
+      <bits>105.5</bits>
+      <expectation>6.8e-23</expectation>
+      <identity>67.9</identity>
+      <positives>88.9</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.::.:::::::..::::::::::.: :::::.:::::::.:: ::: ::: :::::..: :::....  .  ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGGGSSKNGRDSNSQRLGVKRFGGESVLAGNILVRQRGTKFRPGNNVGLGKDHTLFALVTGKVKFEMVTKLKMQVSVYPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="RL27_LEPIC" ac="Q72NQ6" length="84" description="50S ribosomal protein L27 OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar copenhageni (strain Fiocruz L1-130) OX=267671 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <smithWatermanScore>376</smithWatermanScore>
+      <initn>381</initn>
+      <init1>373</init1>
+      <opt>376</opt>
+      <zScore>546.8</zScore>
+      <bits>105.5</bits>
+      <expectation>6.8e-23</expectation>
+      <identity>67.9</identity>
+      <positives>88.9</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.::.:::::::..::::::::::.: :::::.:::::::.:: ::: ::: :::::..: :::....  .  ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGGGSSKNGRDSNSQRLGVKRFGGESVLAGNILVRQRGTKFRPGNNVGLGKDHTLFALVTGKVKFEMVTKLKMQVSVYPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="RL27_LEPIN" ac="Q8F7U1" length="84" description="50S ribosomal protein L27 OS=Leptospira interrogans serogroup Icterohaemorrhagiae serovar Lai (strain 56601) OX=189518 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <smithWatermanScore>376</smithWatermanScore>
+      <initn>381</initn>
+      <init1>373</init1>
+      <opt>376</opt>
+      <zScore>546.8</zScore>
+      <bits>105.5</bits>
+      <expectation>6.8e-23</expectation>
+      <identity>67.9</identity>
+      <positives>88.9</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.::.:::::::..::::::::::.: :::::.:::::::.:: ::: ::: :::::..: :::....  .  ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGGGSSKNGRDSNSQRLGVKRFGGESVLAGNILVRQRGTKFRPGNNVGLGKDHTLFALVTGKVKFEMVTKLKMQVSVYPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="RL27_PECAS" ac="Q6D9C5" length="85" description="50S ribosomal protein L27 OS=Pectobacterium atrosepticum (strain SCRI 1043 / ATCC BAA-672) OX=218491 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <smithWatermanScore>376</smithWatermanScore>
+      <initn>381</initn>
+      <init1>372</init1>
+      <opt>376</opt>
+      <zScore>546.7</zScore>
+      <bits>105.5</bits>
+      <expectation>6.9e-23</expectation>
+      <identity>68.7</identity>
+      <positives>88.0</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANG-TQKCINIID</querySeq>
+      <pattern>:::::..:::.:::::::.::::::::::.: ::::..:::::::. : ::::::: ::::::.: :.:.  . -..: :.:.</pattern>
+      <matchSeq start="1" end="83">MAHKKAGGSTRNGRDSNAQRLGVKRFGGESVLAGNIIVRQRGTKFHAGTNVGCGKDHTLFALTDGKVQFEVKGPKNRKFISIVAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="RL27_SYNC1" ac="Q3A1D7" length="84" description="50S ribosomal protein L27 OS=Syntrophotalea carbinolica (strain DSM 2380 / NBRC 103641 / GraBd1) OX=338963 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>375</score>
+      <smithWatermanScore>375</smithWatermanScore>
+      <initn>375</initn>
+      <init1>366</init1>
+      <opt>375</opt>
+      <zScore>545.4</zScore>
+      <bits>105.3</bits>
+      <expectation>8.1e-23</expectation>
+      <identity>64.2</identity>
+      <positives>90.1</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>:::::..::.:::::: .::::::::::.:::::.::.::::: ..:: :::::::.::.::..:.:.:.  .  .: ...</pattern>
+      <matchSeq start="1" end="81">MAHKKAGGSSKNGRDSAGKRLGVKRFGGQQVTAGSILVRQRGTTIHPGANVGCGKDYTLYALVDGVVSFERKGKDKKKVSVYAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="RL27_PECCP" ac="C6DKH7" length="85" description="50S ribosomal protein L27 OS=Pectobacterium carotovorum subsp. carotovorum (strain PC1) OX=561230 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>375</score>
+      <smithWatermanScore>375</smithWatermanScore>
+      <initn>381</initn>
+      <init1>372</init1>
+      <opt>375</opt>
+      <zScore>545.3</zScore>
+      <bits>105.3</bits>
+      <expectation>8.2e-23</expectation>
+      <identity>68.7</identity>
+      <positives>88.0</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANG-TQKCINIID</querySeq>
+      <pattern>:::::..:::.:::::::.::::::::::.: ::::..:::::::. : ::::::: ::::::.: :.:.  . -..: :.:.</pattern>
+      <matchSeq start="1" end="83">MAHKKAGGSTRNGRDSNAQRLGVKRFGGESVLAGNIIVRQRGTKFHAGTNVGCGKDHTLFALTDGKVQFEVKGPKNRKYISIVAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="RL27_GEOSL" ac="Q747N0" length="85" description="50S ribosomal protein L27 OS=Geobacter sulfurreducens (strain ATCC 51573 / DSM 12127 / PCA) OX=243231 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <smithWatermanScore>372</smithWatermanScore>
+      <initn>377</initn>
+      <init1>366</init1>
+      <opt>372</opt>
+      <zScore>541.1</zScore>
+      <bits>104.5</bits>
+      <expectation>1.4e-22</expectation>
+      <identity>64.2</identity>
+      <positives>86.4</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.:::::..:::: :.:::: : ::::. :::::...:: :::::::.::::: .:.:::.  .  .: ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGVGSTRNGRDSESKRLGCKKFGGETVKAGNIIYRQRGTQIHPGTNVGCGKDYTLFALIDGVVKFERLGRDRKKVSVYPAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="RL27_THEYD" ac="B5YJ66" length="89" description="50S ribosomal protein L27 OS=Thermodesulfovibrio yellowstonii (strain ATCC 51303 / DSM 11347 / YP87) OX=289376 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <smithWatermanScore>372</smithWatermanScore>
+      <initn>376</initn>
+      <init1>371</init1>
+      <opt>372</opt>
+      <zScore>540.7</zScore>
+      <bits>104.5</bits>
+      <expectation>1.5e-22</expectation>
+      <identity>66.7</identity>
+      <positives>86.4</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.::..:::::.:::::::::::. : :::::.:::::::.:: ::: :.:.::::: .:::::.  .  .  ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGVGSSRNGRDSQAKRLGVKRFGGQFVKAGNILVRQRGTKFHPGANVGVGSDYTLFALIDGIVKFERKDKQRLKVSVYPVIEPAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="RL27_GEOMG" ac="Q39QR5" length="85" description="50S ribosomal protein L27 OS=Geobacter metallireducens (strain ATCC 53774 / DSM 7210 / GS-15) OX=269799 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <smithWatermanScore>369</smithWatermanScore>
+      <initn>374</initn>
+      <init1>363</init1>
+      <opt>369</opt>
+      <zScore>536.8</zScore>
+      <bits>103.7</bits>
+      <expectation>2.4e-22</expectation>
+      <identity>63.0</identity>
+      <positives>87.7</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.:::::..:::: :..:::.: ::::. :::::...:: :::::::.::::: .:.:::.  .  .: ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGVGSTRNGRDSESKRLGCKKYGGENVKAGNIIYRQRGTQIHPGTNVGCGKDYTLFALIDGVVKFERLGRDRKKVSVYPAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="RL27_GLOC7" ac="B7KFE2" length="94" description="50S ribosomal protein L27 OS=Gloeothece citriformis (strain PCC 7424) OX=65393 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>368</score>
+      <smithWatermanScore>368</smithWatermanScore>
+      <initn>386</initn>
+      <init1>368</init1>
+      <opt>368</opt>
+      <zScore>534.5</zScore>
+      <bits>103.4</bits>
+      <expectation>3.3e-22</expectation>
+      <identity>66.7</identity>
+      <positives>88.9</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.:::::..:::::::.::. : :::::.:::::::.:: ::: :.: ::::: .:.:::.: . ... :..</pattern>
+      <matchSeq start="1" end="81">MAHKKGTGSTRNGRDSQSKRLGVKRYGGQVVRAGNILVRQRGTKFHPGNNVGRGSDDTLFALIDGVVKFEYKTRSRQKISVYPVPQEEPATVAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="RL27_KLEP7" ac="A6TEK4" length="85" description="50S ribosomal protein L27 OS=Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578) OX=272620 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <smithWatermanScore>367</smithWatermanScore>
+      <initn>372</initn>
+      <init1>363</init1>
+      <opt>367</opt>
+      <zScore>534.0</zScore>
+      <bits>103.2</bits>
+      <expectation>3.5e-22</expectation>
+      <identity>67.5</identity>
+      <positives>86.7</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANG-TQKCINIID</querySeq>
+      <pattern>:::::..:::.:::::.:::::::::::: : ::.:..:::::::. : :::::.: ::::::.: :::.  . -..: :.:.</pattern>
+      <matchSeq start="1" end="83">MAHKKAGGSTRNGRDSEAKRLGVKRFGGEAVLAGSIIVRQRGTKFHAGTNVGCGRDHTLFALTDGKVKFEVKGPKNRKFISIVAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="RL27_KLEP3" ac="B5XSV6" length="85" description="50S ribosomal protein L27 OS=Klebsiella pneumoniae (strain 342) OX=507522 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <smithWatermanScore>367</smithWatermanScore>
+      <initn>372</initn>
+      <init1>363</init1>
+      <opt>367</opt>
+      <zScore>534.0</zScore>
+      <bits>103.2</bits>
+      <expectation>3.5e-22</expectation>
+      <identity>67.5</identity>
+      <positives>86.7</positives>
+      <overlap>83</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="82">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANG-TQKCINIID</querySeq>
+      <pattern>:::::..:::.:::::.:::::::::::: : ::.:..:::::::. : :::::.: ::::::.: :::.  . -..: :.:.</pattern>
+      <matchSeq start="1" end="83">MAHKKAGGSTRNGRDSEAKRLGVKRFGGEAVLAGSIIVRQRGTKFHAGTNVGCGRDHTLFALTDGKVKFEVKGPKNRKFISIVAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="RL27_NOSS1" ac="Q8Z0F1" length="92" description="50S ribosomal protein L27 OS=Nostoc sp. (strain PCC 7120 / SAG 25.82 / UTEX 2576) OX=103690 GN=rpmA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <smithWatermanScore>367</smithWatermanScore>
+      <initn>380</initn>
+      <init1>367</init1>
+      <opt>367</opt>
+      <zScore>533.3</zScore>
+      <bits>103.2</bits>
+      <expectation>3.8e-22</expectation>
+      <identity>66.7</identity>
+      <positives>86.4</positives>
+      <overlap>81</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="81">MAHKKGAGSTKNGRDSNAKRLGVKRFGGEQVTAGNILIRQRGTKFKPGINVGCGKDFTLFALTNGIVKFDYANGTQKCINIID</querySeq>
+      <pattern>::::::.:::.:::::::.:::::::::. : :::::.:::::::. : ::: ::: :::::..:.: :.  . ..: ...</pattern>
+      <matchSeq start="1" end="81">MAHKKGTGSTRNGRDSNAQRLGVKRFGGQAVIAGNILVRQRGTKFHAGNNVGIGKDDTLFALVDGVVTFERKGKSRKKVSVYPAAAAEAVAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

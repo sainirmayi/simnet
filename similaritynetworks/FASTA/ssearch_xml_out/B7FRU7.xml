@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-170624-0400-69548223-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-170624-0400-69548223-p1m.m9&quot; -m &quot;F10 fasta-R20221107-170624-0400-69548223-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FRU7|LIPA1_PHATC" type="PROTEIN" length="401"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:06:24+00:00" end="2022-11-07T17:06:27+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="LIPA1_PHATC" ac="B7FRU7" length="401" description="Lipoyl synthase 1, mitochondrial OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_18029 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>2653</score>
+      <smithWatermanScore>2653</smithWatermanScore>
+      <zScore>3345.9</zScore>
+      <bits>628.0</bits>
+      <expectation>8.4e-179</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>401</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="401">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="401">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="LIPA_FUSV7" ac="C7Z527" length="412" description="Lipoyl synthase, mitochondrial OS=Fusarium vanettenii (strain ATCC MYA-4622 / CBS 123669 / FGSC 9596 / NRRL 45880 / 77-13-4) OX=660122 GN=NECHADRAFT_66689 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1367</score>
+      <smithWatermanScore>1367</smithWatermanScore>
+      <zScore>1716.4</zScore>
+      <bits>326.5</bits>
+      <expectation>4.8e-88</expectation>
+      <identity>53.4</identity>
+      <positives>77.0</positives>
+      <overlap>408</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="401">MWSSSSSLCR-NPSFRRAWL--STVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQ-KAAPRSAK--ILPKPRWLKAA-PATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>: : . :: :-.  .:.:  --::. .  :. ::::. .  . .   ..... .::.  : .. ..  :   .  .: -...:.. :--:   :.:::. -:: .::.....  .: ::: :::::::::::.:::::.. ..::::::.::::::::::::::::.: :  :::::::..: :.:.::: :::::::::::: : :: :: ... ..: ::::::::::: ::.:..:.:..:: :::::::::.:::: ::: :::::::.:::: ::..:: ...-----------..: .::::::::::: . .:...:.::: :::::::::::..:::.:: :..::::..:..:.. :. ::: : :::::::::::::: :... .---..:..: : :</pattern>
+      <matchSeq start="1" end="394">MASIAPSLKRAHAPLRKALTASSTIRAFATVPPTSSETTKPKRKSYFKDTTVAEFSDFLATSSPAQPLSPAEAFTLRTAEVGPEGKKRTITRLPEWLKTPIPAGNDNFKSIKKDLRGLGLHTVCEEARCPNISECWGGSDKNAATATIMLMGDTCTRGCRFCSVKTNRKPAALDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGAHHFAETIRRIKQKKPSLLVEALTGDFRGDLDMVKVVAESGLDVYAHNVETVEDLTPYVRDRRATFRQSLSVLKHVKEVKG-----------KEGIITKTSLMLGLGEQEHEVMAALEDLRKADVDVVTFGQYMRPTKRHLKVEKYVTPDEFEMWNKRALDMGFLYCASGPLVRSSYKAGEAFIENVL---RKRSGEKAMARGTLAKAVALDSETRSSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="LIAS_PICSI" ac="A9NNH7" length="386" description="Lipoyl synthase, mitochondrial OS=Picea sitchensis OX=3332 GN=LIP1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1339</score>
+      <smithWatermanScore>1339</smithWatermanScore>
+      <zScore>1681.6</zScore>
+      <bits>320.0</bits>
+      <expectation>4.2e-86</expectation>
+      <identity>53.9</identity>
+      <positives>75.4</positives>
+      <overlap>395</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="394">-----------MWSSSSSLCRNPSFRRAWLSTVT--VTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>            :.:.: ---. .: :  . ...--: ::   :.  :.::: .::.   ...:: . :     --:. . :.-----:  :-----::::.:.:::   .:.:  ..  .::..: ::::::.:::.::::.:::  ::::::::.:::::::::::.:::::.::: ::.:: .:: ::..::::::::::::::::::::. :: ..: .::  ::..:::::.:::::: . :. ::::::::.:::.:::: :   :::.::.. ::::::...:: --.:.:.----------:::::.::: :::  ::. :.. .:.: :::.:::::..:::.:. :.:::::: :. .:. .: ::: ::::::.:::::::::......: . ...</pattern>
+      <matchSeq start="13" end="380">MSINPAFLRRITWGSKSL---HHQFTRCQVRALSSSVEQTPESTTPALSALRERLANGGPTLSDFLTRNLGEEP--YSVDVGT-----KKNP-----LPKPKWMKAAVPGGDKYTAIKAKLREMNLHTVCEEAKCPNLGECWSGGETGTATATIMILGDTCTRGCRFCAVKTSRTPPPPDPNEPTNVAEAIVSWGLDYVVLTSVDRDDLPDQGSGHFAKTVQKLKQLKPKMLVEALVPDFQGNSECVQKVATSGLDVFAHNIETVEELQRVVRDHRANFNQSLEVLKMAKTY--SPLGV----------LTKTSVMLGCGETPAQVIETMEKVREAGVDVITFGQYMRPTKRHMAVSEYVTPEAFEKYQKLGMEMGFRYVASGPMVRSSYKAGEFYIKSMIEDDRKKASSSSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="LIPA_PODAN" ac="B2AT43" length="426" description="Lipoyl synthase, mitochondrial OS=Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383) OX=515849 GN=Pa_1_14620 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1339</score>
+      <smithWatermanScore>1339</smithWatermanScore>
+      <zScore>1680.6</zScore>
+      <bits>319.9</bits>
+      <expectation>4.8e-86</expectation>
+      <identity>53.1</identity>
+      <positives>75.4</positives>
+      <overlap>403</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="401">---------------------MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLA-TEEASIDDF-SSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAA-PAT--SDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                        :: .    ::     :.  . . .:. : .. :   . . -:  ::...:-.: .:: . ..    . . .---  : :.  :   :.:::. -:..--. :. :..  .: :.: :::::::::::::::::.. ..::::::.::::::::::::::::.: ::::::::::..: :.:.::: :::::::::::: : :: :: ... ..: :::.::::::: ::.:..:.:. :: :::::::::.::::.::: :::::::.::::.::..::....-----------..: .::::.:::::: ....  :::.::  ::::::::::..:::.:: :..::::..::.:.. :. ::: : :::::::::::::: :... .---..: .: :::</pattern>
+      <matchSeq start="25" end="410">MASPAPLQRLQAPLRRSLARAAVLSSRTYATIPSPSDPGLTQSSPSPAASTTPAKKAPRPSYFKDTTVASFSEFVGSQSAPLSLSEAYEIKTAEV---GPAGRKRTITRLPEWLKTPIPSSGANPNFGKIKADLRGLNLHTVCEEARCPNIGECWGGNDKSAATATIMLMGDTCTRGCRFCSVKTNRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFMGDLDMVKIVAESGLDVYAHNVETVEGLTPYVRDRRATFRQSLKVLEHVKAVRG-----------KEGIITKTSIMLGLGEQEQEIWDTLRELRKIDVDVVTFGQYMRPTKRHLKVEKYVTPDEFDLWKQRALDMGFLYCASGPLVRSSYKAGEAFIENVL---RKRAGERAAASASLDQVVAAEETKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LIAS1_PEA" ac="Q3LSN4" length="376" description="Lipoyl synthase 1, mitochondrial OS=Pisum sativum OX=3888 GN=LIP1-1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1327</score>
+      <smithWatermanScore>1327</smithWatermanScore>
+      <zScore>1666.7</zScore>
+      <bits>317.2</bits>
+      <expectation>2.9e-85</expectation>
+      <identity>54.7</identity>
+      <positives>76.3</positives>
+      <overlap>380</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="388">---MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPT--SSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>             : . .:   :..:.: :.::.--.. :::::..:: :  :..:: : .. ..---:.   :.-----:  :-----::::.:.: .   ...: ...  .::: : ::::::.:::.::::.:::  ::::::::.:::::::::::.:::::.::: :: :: .:: :::.:::::::.::::::::::::. :: ..: .::  ::: :.:::.:::.:: . :. :. :::::.:::.:::: :   :::.::...:::.:: ..:--.  : ::----------:::::.::: ::: ::.. :.. .: : :::.:::::..:.:.:.::.::.::: :. .:  .: ::: ::::::.:::::::::......:</pattern>
+      <matchSeq start="14" end="368">MMYSRFRTVAGNLNCAAKRLSSSSTTTTTTSAPSELQQNLAALRARLAMESPSLSDFISLKSDNA---YSVEVGT-----KKKP-----LPKPKWMKESIPGGEKYVQIKKKLRELKLHTVCEEAKCPNLGECWSGGETGTATATIMILGDTCTRGCRFCNVKTSRTPPPPDPDEPTNVAEAIASWGLDYVVITSVDRDDLPDQGSGHFTETVQKLKALKPSTLIEALVPDFRGNAECVEKVSKSGLDVFAHNIETVEELQSAVRDHRANFKQSLDVLMMAK--EYAPAGT----------LTKTSIMLGCGETPDQIVKTMEKVRAAGVDVMTFGQYMRPSKRHMPVSEYITPEAFEKYQTLGMEMGFRYVASGPMVRSSYKAGEFYIKSMIDSDRAASS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LIAS2_PEA" ac="Q3LSN5" length="376" description="Lipoyl synthase 2, mitochondrial OS=Pisum sativum OX=3888 GN=LIP1-2 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1325</score>
+      <smithWatermanScore>1325</smithWatermanScore>
+      <zScore>1664.1</zScore>
+      <bits>316.7</bits>
+      <expectation>3.9e-85</expectation>
+      <identity>54.5</identity>
+      <positives>76.6</positives>
+      <overlap>380</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="388">---MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPT--SSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>             : . .:   :..:.: :.::.--.. :::::..:: :  :..:: : .. ..---:.   :.-----:  :-----::::.:.: .   ...: ...  .::: : ::::::.:::.::::.:::  ::::::::.:::::::::::.:::::.::: :: :: .:: :::.:::::::.::::::::::::. :: ..: .::  :::.:.:::.:::.:: . :. :. :::::.:::.:::: :   :::.::...:::.:: ..:--.  : ::----------:::::.::: ::: ::.. :.. .: : :::.::::...:.:.:.::.::.::: :. .:  .: ::: ::::::.:::::::::......:</pattern>
+      <matchSeq start="14" end="368">MMYSRFRTVAGNLNCAAKRLSSSSTTTTTTSAPSELQQNLAALRARLAMESPSLSDFISLKSDNA---YSVEVGT-----KKKP-----LPKPKWMKESIPGGEKYVQIKKKLRELKLHTVCEEAKCPNLGECWSGGETGTATATIMILGDTCTRGCRFCNVKTSRTPPPPDPDEPTNVAEAIASWGLDYVVITSVDRDDLPDQGSGHFTETVQKLKALKPSMLIEALVPDFRGNAECVEKVSKSGLDVFAHNIETVEELQSAVRDHRANFKQSLDVLMMAK--EYAPAGT----------LTKTSIMLGCGETPDQIVKTMEKVRAAGVDVMTFGQHMRPSKRHMPVSEYITPEAFEKYQTLGMEMGFRYVASGPMVRSSYKAGEFYIKSMIDSDRAASS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="LIPA_PHYIT" ac="D0NP70" length="383" description="Lipoyl synthase, mitochondrial OS=Phytophthora infestans (strain T30-4) OX=403677 GN=PITG_14852 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1324</score>
+      <smithWatermanScore>1324</smithWatermanScore>
+      <zScore>1662.7</zScore>
+      <bits>316.5</bits>
+      <expectation>4.8e-85</expectation>
+      <identity>53.2</identity>
+      <positives>74.1</positives>
+      <overlap>402</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="400">MWSSSSSLCRNPSFRRAWLSTV--TVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>: .:. . :   .     :::.--.:  : .  ..:::::: .:: :  .   :. -.: .       ....: .. .  : ...-- ::.:::: :. . ::..:: .:. :::.::::::.:::::::::::.:  ::::::.::::::::: ::.::::: : ::: .::.::: ::: :::::.:.:::::::  : :: :: ..:. :. : : .:.: :::::::. .:.  ::::::::.:::::::: :  .::: ::.:.:::.::. .:.--. :------:----- .::::::::.:: ..... ::::::.. ::::::::::.:. ::.::. ::::: :  ::..:  ::: ::::::.:::::::::.:... .---:.:...:.:</pattern>
+      <matchSeq start="1" end="383">MHASTLTRCMRVAQNARCLSTAAASVQVTHSERGARLAALRERLAEETRQGPTFAE-QALSLEDFAFEADAAPGTKPSRKPNASN--RKPKWLKAQPTQGANYERLRKSVKSLGLSTVCEEAKCPNIGECWGGGKDGIATATIMLMGDTCTRGCSFCAVKTSRKPKPLDIEEPNKVAEAIAAWGLDYIVFTSVDRDDYEDLGAGHFAKTVSTLRAKLPEILIECLTPDFQGHDNLIDQVATSGLDVFAHNMETVERLQRRVRDYRANYKQSLHVLERAKV--AAP------H-----LVTKTSLMLGVGERNEDLFQTLRDLRNSGVDVVTFGQYLRPSTKHMPVKSYVTPEAFAEWQKVAEQMGFLYVASGPMVRSSYKAGEFFMKNLL---KNRKTQVVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="LIPA_SORMK" ac="D1Z4I6" length="445" description="Lipoyl synthase, mitochondrial OS=Sordaria macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) / K-hell) OX=771870 GN=SMAC_01256 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1324</score>
+      <smithWatermanScore>1324</smithWatermanScore>
+      <zScore>1661.1</zScore>
+      <bits>316.4</bits>
+      <expectation>5.8e-85</expectation>
+      <identity>54.0</identity>
+      <positives>78.0</positives>
+      <overlap>387</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="20" end="397">-----------MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDF---SSTNAPTTTTH-YT--SSNGSPIVRQKAAPRSAKILPKPRWLKAA-PATSDN--YRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                              ...... .:  :. : . .. ---:  ::.:::---.:. :: . ..-::--... .:  ....  : ------:.:::. -:... :--. :..  .: :.: :::::::::::::::::..  .::::::.:::::::::::::::::: ::::::::::..: :.:.::: :::::::::::: : :: :: ... ..: :::.::::::: ::.:..:.:. :: :::::::::.:::: ::: :::::::.::::.::..::....-----------..: .::::.:::::::....  .::.:: .::::::::::..:::.:: :..:.::..:..:.. :. ::: : :::::::::::::: :... .---:.: .:</pattern>
+      <matchSeq start="60" end="423">ARAAALSTRSYATIPSAPSSQPTSQESSPAASASASASAPATKPRPTYFKD---TTLASLDDFIANQSSAAPLAPSEAYTLRTAQVGPAGKKRTITRL------PEWLKTPIPSAGANPEFAKIKADLRGLNLHTVCEEARCPNIGECWGGSNKAAATATIMLMGDTCTRGCRFCSVKTSRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFMGDLDMVKIVADSGLDVYAHNVETVENLTPYVRDRRATFRQSLKVLEHVKNVRG-----------KEGIITKTSIMLGLGETEEELWDALRELRKVDVDVVTFGQYMRPTKRHLAVEKYITPDEFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVL---KKRASERVVSEALGQAVAAEEATSAKSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="LIAS_CULQU" ac="B0WAU6" length="380" description="Lipoyl synthase, mitochondrial OS=Culex quinquefasciatus OX=7176 GN=CPIJ004250 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1322</score>
+      <smithWatermanScore>1322</smithWatermanScore>
+      <zScore>1660.2</zScore>
+      <bits>316.0</bits>
+      <expectation>6.5e-85</expectation>
+      <identity>54.5</identity>
+      <positives>75.5</positives>
+      <overlap>380</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="23" end="401">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSR-LAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                      :  .::: :.:.-:  .: .: .  .-...:--.. :. . .  :.  . . :.:.     ..---: :::.    . :. ...: .::: ::::::::.::::::::::::  : :::::.::::::::::::::::.:::::::: ::.:.:.:::.:::::.:::::::::::: :..:. ... ..: ..: ..:: :.:::.::.: ...::::::::::::.::::.::: :::::: :::::. :  :: :-------------: . .::::.::::::::.::  :..::: . :: .:.:::.::::.:: : ::::::::  :.  .  .:: :.::::::::::::::.:. . . ..    :: :.:</pattern>
+      <matchSeq start="15" end="375">--------MKYFFSLPFPKVHTTCKHTAAATASQPLQKIRERLESGPG-FQEF--VQNPSYNREDWSAYEGKLKREKGEQDRLRL---PPWLKTKIPMGKNFSRIKDQLRELKLATVCEEAKCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARAPPPLDPDEPKKTASAIASWGLDYIVLTSVDRDDLPDGGSNHIAETIREIKRQNPRIFVECLAPDFRGNLDCIRTVATSGLDVYAHNIETVESLTPFVRDRRAEYRQSLKCLASVKEI-------------NPNMVTKTSIMLGLGETDEQVEQTMKDLRAVGVDCLTLGQYMQPTKRHLKVIEYVTPEKFKHWETRGNELGFLYTASGPLVRSSYKAGEFFITSILKNRAAAAAEEATATKPSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="LIPA_NEUCR" ac="Q7SF84" length="430" description="Lipoyl synthase, mitochondrial OS=Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987) OX=367110 GN=NCU00565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1321</score>
+      <smithWatermanScore>1321</smithWatermanScore>
+      <zScore>1657.7</zScore>
+      <bits>315.7</bits>
+      <expectation>9e-85</expectation>
+      <identity>52.8</identity>
+      <positives>77.1</positives>
+      <overlap>398</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="391">------------------------MWSSSSSLCRNPSFRRAWLSTVTVTQTAAP-TSSRLAALRTQLATEEASIDDF---SSTNAPTTTTH-YT--SSNGSPIVRQKAAPRSAKILPKPRWLKAA-PATSDN--YRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                           : ...  .:: . .   . ......::-:. : . .. ---:  ::.:::---.:. :: . ..-::--... .:  ....  : ------:.:::. -:... :--. :..  .: :.: :::::::::::::::::..  .::::::.:::::::::::::::::: ::::::::::..: :.:.::: :::::::::::: : :: :: ... ..: :::.::::::: :: :..:.:. :: :::::::::.:::: ::: :::::::.::::.::..:: ...-----------..: .::::.:::::::....  .::.:: .::::::::::..:::.:: :..:.::..:..:.. :. ::: : :::::::::::::: :... . ..</pattern>
+      <matchSeq start="28" end="405">MASPVPIQRLQAPLRRSLARAAALSTRSYATIPSGPSSQPTSQESSSAASASAPATKPRPTYFKD---TTLASLDDFIANQSSAAPLAPSEAYTLRTAEVGPAGKKRTITRL------PEWLKTPIPSAGANPEFAKIKADLRGLNLHTVCEEARCPNIGECWGGSNKAAATATIMLMGDTCTRGCRFCSVKTSRKPPPLDPHEPENTAEALARWGLGYVVLTSVDRDDLADGGARHFAETIRRIKQKKPTLLVEALTGDFAGDLDMVKIVAESGLDVYAHNVETVENLTPYVRDRRATFRQSLKVLEHVKKVRG-----------KEGIITKTSIMLGLGETEEELWEALRELRKVDVDVVTFGQYMRPTKRHLAVEKYITPDEFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLRKRSGEKVVSEALGQAVAAEEATSVQSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="LIPA_UNCRE" ac="C4JE77" length="417" description="Lipoyl synthase, mitochondrial OS=Uncinocarpus reesii (strain UAMH 1704) OX=336963 GN=UREG_00501 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1320</score>
+      <smithWatermanScore>1320</smithWatermanScore>
+      <zScore>1656.7</zScore>
+      <bits>315.5</bits>
+      <expectation>1e-84</expectation>
+      <identity>53.1</identity>
+      <positives>75.1</positives>
+      <overlap>390</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="20" end="397">-------MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKA---APRSAKILPK---------PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                          .:.:  . : :..   ::  .     ..:..:--. ::  . . . :.. .  . . :---: ..: . ::---------: :::..   :.::..... .: :.: :::::::::::.::::::  ..::::::.:::::::::::::::::.:::::::::::..: :...::: :::.:::::::::: :: :. ..: ..: : :..::: :: ::.::...:  :: :::::::::.::::::::.:::::: ...:..::. .:. : . :-------------::::.:::::::..:.  .::.:: ::.::::::::..:::.:.::.::: :. :.::.: :. ::: : :::::::::::::: :... .---:.: ::</pattern>
+      <matchSeq start="27" end="398">MAVCARGLRCLGTPAVSLRLAASRSYATTTPPDPAIPNTPGAAATSSPAKRPRTSFQD--KLNAGPSFSDFLSDKDDARILDPAEAYALKTALVGPKGKKKEYTRLPPWLKTSIPDSNNYKRIKNDLRGLNLHTVCEEARCPNISECWGGGSKSAATATIMLMGDTCTRGCRFCSVKTSKAPPPLDPHEPENTAEALSRWGLGYVVMTSVDRDDLPDGGARHWAETVMKIKQKAPNILVECLTGDFDGNLEMVALVAKSGLDVYAHNVETVEALTPQVRDRRAGFQKSIRVLKAAKAAQPSLI-------------TKTSMMLGLGETEEQMWDALRQLRAADIDVVTFGQYMRPTKRHMPVHEYVRPDVFEFWKEKALEMGFLYCASGPLVRSSYKAGEAFIENVL---KKRRAESTGPGSASVQDVATGDLVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="LIPA_ASPFN" ac="B8NUL8" length="415" description="Lipoyl synthase, mitochondrial OS=Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / IAM 13836 / NRRL 3357 / JCM 12722 / SRRC 167) OX=332952 GN=AFLA_100710 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1311</score>
+      <smithWatermanScore>1311</smithWatermanScore>
+      <zScore>1645.4</zScore>
+      <bits>313.4</bits>
+      <expectation>4.4e-84</expectation>
+      <identity>53.5</identity>
+      <positives>75.6</positives>
+      <overlap>389</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="399">--------------MWSSSSSLCRNPSFRRAWLSTV-TVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                         :  ::.. .: -. . :.::...:  .  :.  .   :. :: : .  .:  . . . .   .    : :. ..   : :::.    : ::..:.  .: :.: :::::::::::..::::.. ..::::::.::::::::::::::::.: ::::::::::..: ::..:.: :::::::::::: : :: :: ..: ..: ::::.::: :: :. :....:. :: :::::::::.:::::::: :::::::..:::.::. .:  . : :-------------::::::::.:::..:.  .::.::.. :::::::::..:::.:.::.:::::..:..:.. :. ::: : :::::::::::::: :... .--::.: : .:</pattern>
+      <matchSeq start="26" end="399">MAASTNRLRFLYSSARTVPQTGSITPISRRTYATTEPSPSATGAPATARKRTNFTDKLNAGPSFADFVSGGEDNTPLEPSEAYALKTAMVGPAGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGSDKSAATATIMLMGDTCTRGCRFCSVKTNRRPPPLDPHEPENTAEAISRWSLGYVVLTSVDRDDLADGGARHFAETVIKIKQKKPSMLVECLTGDYLGDLEMVKLVARSGLDVYAHNVETVEALTPFVRDRRATFQQSLRVLEAAKQARPDLI-------------TKTSLMLGFGETEEQLWDALRQLRSVGVDVVTFGQYMRPTKRHMPVHEYVTPDQFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVL--KKRRAAGTAGESVTDSKAAVDEATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="LIPA_ASPCL" ac="A1CJC4" length="415" description="Lipoyl synthase, mitochondrial OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=ACLA_034510 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1310</score>
+      <smithWatermanScore>1310</smithWatermanScore>
+      <zScore>1644.1</zScore>
+      <bits>313.1</bits>
+      <expectation>5.1e-84</expectation>
+      <identity>53.2</identity>
+      <positives>73.4</positives>
+      <overlap>402</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="396">----------MWSSSSSLCRN-----PSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSST---NAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>            ::. :: :.-----:   :.. .:    ....::  :  .   .  .   :..:: :.---:::   ..  . . . .---  : :. ..   : :::.    : ::..:.  .: :.: :::::::::::..::::.. ..::::::.:::::::::::::::::::::::::::::..: ::..::: :::::::::::: : :: :: ..: ..: : ::.::: :: :. :..:.:. :: :::::::::.::::::::.::::::...:::.::  .:  :   :-------------:::::::::::::.:.  .::.:: ..:::::::::..:::.:. :.:::::..:..:.. :. ::: : :::::::::::::: :... .--::.: :</pattern>
+      <matchSeq start="13" end="396">MAASTSHLRSLCSSTRSLSRSGVIVTPIACRGYATTDPSPSATTPTPVRRRTTFKDKLNAGPSFSDFVSNGNDNAPLDPSEAYALKTALV---GPAGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGSDKSSATATIMLMGDTCTRGCRFCSVKTSRAPPPLDPHEPENTAEAISRWGLGYVVLTSVDRDDLVDGGARHFAETVIKIKQKAPSILVECLTGDYAGDLDMVKLVARSGLDVYAHNVETVEALTPQVRDRRANFQQSLRVLDAAKKAQPTLI-------------TKTSLMLGLGETDEQLWDALRQLRAVNVDVVTFGQYMRPTKRHMAVHEYVTPDRFELWRQRALEMGFLYCASGPLVRSSYKAGEAFIENVL--KKRRAASGGAETIGERPVAVDEASR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="LIAS_DROME" ac="Q7JQW6" length="377" description="Lipoyl synthase, mitochondrial OS=Drosophila melanogaster OX=7227 GN=Las PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1307</score>
+      <smithWatermanScore>1307</smithWatermanScore>
+      <zScore>1641.3</zScore>
+      <bits>312.5</bits>
+      <expectation>7.4e-84</expectation>
+      <identity>53.5</identity>
+      <positives>78.2</positives>
+      <overlap>376</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="22" end="397">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                     :..:..:. .. .:  .: .::-.  .. :: .-:  .: ... . .:.-. :.:.  .  ..---: :::..  .. :: :..  .::: :.:::::::::::::::::::  : :::::.::::::::::::::::.: ::::: .:: ..:::::.:::::.:::::::::::: :..:. ..: ..: .. ...:: :.:::.::.. :...:.:::::::::.:::: ::: :::::: :::.:.::  .: .-------------: . .::.:.::::::::... .::.:::.: :: ::.:::.:::.::: : ::::::::  :.: .  .:: :.::::::::::::::.:. . . ..:.:. .</pattern>
+      <matchSeq start="14" end="370">--------MLRALKTHAEAPIVVATRAASTNAEKLEEIRERLA-KGPNFHDFVQ-NPDNTRNEWEQYDGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSEHIAETVREIKARNSNIFVECLVPDFRGNLECVKTIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIENTLKDLREAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKRQNDTEVPKKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="LIPA_ASPFC" ac="B0XYY2" length="414" description="Lipoyl synthase, mitochondrial OS=Neosartorya fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) OX=451804 GN=AFUB_042490 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1307</score>
+      <smithWatermanScore>1307</smithWatermanScore>
+      <zScore>1640.3</zScore>
+      <bits>312.4</bits>
+      <expectation>8.3e-84</expectation>
+      <identity>51.9</identity>
+      <positives>75.7</positives>
+      <overlap>399</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="392">---MWSSSSSLCRN-PSFRRAWLSTVTVTQ--TAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKA-APRSAKILPK---------PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>         ::: .-:  : : .. ..  .--:. :. :  ..  :  : ..... :--. ::  . . .......:.  ..:-: ..: . : ---------: :::.    : ::..:.  .: :.: :::::::::::..::::.. ..::::::.::::::::::::::::::.: ::::::::..: ::..::: :::::::::::: : :: :: ..: ..: : ::.::: :: :. :....:. :: :::::::::.::::::::.::::::...::..::. .:. :--:-----------. .:::::::::::::::.  .::.:: :.:::::::::..:::.:. :.:::::..:..:.. :. ::: : :::::::::::::: :... . ...</pattern>
+      <matchSeq start="10" end="393">MAVSTSHFRSLCASRPLSRTAIVGHISCRSYATTEPSPSATSTSTTTTARRRTTFKD--KLNAGPSFADFVGNGNTPLDPSEAYALKTALVGPAGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGSDKSAATATIMLMGDTCTRGCRFCSVKTSRTPAPLDPHEPENTAEAISRWGLGYVVLTSVDRDDLADGGARHFAETVMKIKQKAPSILVECLTGDYAGDLEMVKLVARSGLDVYAHNVETVEALTPQVRDRRANFQQSIRVLEAAKNAQ--P-----------SLITKTSLMLGLGETDDQLWDALRQLRAANVDVVTFGQYMRPTKRHMAVHEYVTPDRFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLKKRRATSGGTETVGVRPVTVDEVTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="LIPA_ASPFU" ac="Q4WWP1" length="414" description="Lipoyl synthase, mitochondrial OS=Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) OX=330879 GN=AFUA_3G06560 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1307</score>
+      <smithWatermanScore>1307</smithWatermanScore>
+      <zScore>1640.3</zScore>
+      <bits>312.4</bits>
+      <expectation>8.3e-84</expectation>
+      <identity>51.9</identity>
+      <positives>75.7</positives>
+      <overlap>399</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="392">---MWSSSSSLCRN-PSFRRAWLSTVTVTQ--TAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKA-APRSAKILPK---------PRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>         ::: .-:  : : .. ..  .--:. :. :  ..  :  : ..... :--. ::  . . .......:.  ..:-: ..: . : ---------: :::.    : ::..:.  .: :.: :::::::::::..::::.. ..::::::.::::::::::::::::::.: ::::::::..: ::..::: :::::::::::: : :: :: ..: ..: : ::.::: :: :. :....:. :: :::::::::.::::::::.::::::...::..::. .:. :--:-----------. .:::::::::::::::.  .::.:: :.:::::::::..:::.:. :.:::::..:..:.. :. ::: : :::::::::::::: :... . ...</pattern>
+      <matchSeq start="10" end="393">MAVSTSHFRSLCASRPLSRTAIVGHISCRSYATTEPSPSATSTSTTTTARRRTTFKD--KLNAGPSFADFVGNGNTPLDPSEAYALKTALVGPAGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGSDKSAATATIMLMGDTCTRGCRFCSVKTSRTPAPLDPHEPENTAEAISRWGLGYVVLTSVDRDDLADGGARHFAETVMKIKQKAPSILVECLTGDYAGDLEMVKLVARSGLDVYAHNVETVEALTPQVRDRRANFQQSIRVLEAAKNAQ--P-----------SLITKTSLMLGLGETDDQLWDALRQLRAANVDVVTFGQYMRPTKRHMAVHEYVTPDRFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVLKKRRATSGGTETVGVRPVTVDEVTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="LIPA_ASPOR" ac="Q2U4H2" length="415" description="Lipoyl synthase, mitochondrial OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=AO090020000344 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1307</score>
+      <smithWatermanScore>1307</smithWatermanScore>
+      <zScore>1640.3</zScore>
+      <bits>312.4</bits>
+      <expectation>8.4e-84</expectation>
+      <identity>53.6</identity>
+      <positives>75.3</positives>
+      <overlap>392</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="399">--------------MWSSSSSLCRNPSFRRAWLSTV-TVTQTAAPTSSRLAALRTQLATEEASIDDFSS---TNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                         :  ::.. .: -. . :.::...:  .  :.  .   :. :: :--- :::   ..  . . . .---  : :. ..   : :::.    : ::..:.  .: :.: :::::::::::..::::.. ..::::::.::::::::::::::::.: ::::::::::..: ::..:.: :::::::::::: : :: :: ..: ..: ::::.::: :: :. :....:. :: :::::::::.:::::::: :::::::..:::.::. .:  . : :-------------::::::::.:::..:.  .::.::.. :::::::::..:::.:.::.:::::..:..:.. :. ::: : :::::::::::::: :... .--::.: : .:</pattern>
+      <matchSeq start="26" end="399">MAASTNRLRFLYSSARTVPQTGSITPISRRTYATTEPSPSATGAPATARKRTNFTDKLNAGPSFADFVSGGEDNAPLEPSEAYALKTAMV---GPAGRKKEMTRLPSWLKTPIPDSKNYQRLKKDLRGLNLHTVCEEARCPNISDCWGGSDKSAATATIMLMGDTCTRGCRFCSVKTNRRPPPLDPHEPENTAEAISRWSLGYVVLTSVDRDDLADGGARHFAETVIKIKQKKPSMLVECLTGDYLGDLEMVKLVARSGLDVYAHNVETVEALTPFVRDRRATFQQSLRVLEAAKQARPDLI-------------TKTSLMLGFGETEEQLWDALRQLRSVGVDVVTFGQYMRPTKRHMPVHEYVTPDQFELWRQRALDMGFLYCASGPLVRSSYKAGEAFIENVL--KKRRAAGTAGESVTDSKAAVDEATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="LIAS_DROSE" ac="B4IAA7" length="377" description="Lipoyl synthase, mitochondrial OS=Drosophila sechellia OX=7238 GN=Las PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1306</score>
+      <smithWatermanScore>1306</smithWatermanScore>
+      <zScore>1640.0</zScore>
+      <bits>312.2</bits>
+      <expectation>8.7e-84</expectation>
+      <identity>53.9</identity>
+      <positives>78.3</positives>
+      <overlap>373</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="22" end="394">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                     :..:..:. .. .:  .: .::-.  ...:: .-:  .: ... . .:.-. :.:.  .  ..---: :::..  .. :: :..  .::: :.:::::::::::::::::::  : :::::.::::::::::::::::.: ::::: .:: ..:::::.:::::.:::::::::::: :. :. ..: ..: .. ...:: :.:::.::.. :...:.:::::::::.:::: ::: :::::: :::.:.::  .: .-------------: . .::.:.::::::::... .::.:::.: :: ::.:::.:::.::: : ::::::::  :.: .  .:: :.::::::::::::::.:. . . ..:.:</pattern>
+      <matchSeq start="14" end="367">--------MLRALKTHVEAPIVVATRAASTNAEKLEEIRERLA-KGPNFQDFVQ-NPDNTRSEWEQYDGK-LRREKGEEQRLRL---PPWLKTTIPVGKNYAKIKAQMRELKLSTVCEEARCPNIGECWGGGEHGTQTATIMLMGDTCTRGCRFCSVKTARKPPPLDVNEPVNTATAIASWGLDYIVLTSVDRDDLPDGGSKHIAETVREIKARNSNIFVECLVPDFRGNLECVETIANSGLDVYAHNIETVEKLTPYVRDRRAHYRQTLQVLTEAKRF-------------NPNLITKSSIMLGLGETDEEIENTLKDLREAGVDCVTLGQYMQPTNKHLKVIEYVTPEKFKHWEERGNELGFLYTASGPLVRSSYKAGEFFITSILENRKKRQNATEVPKEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="LIAS_MEDTR" ac="B7FM45" length="378" description="Lipoyl synthase, mitochondrial OS=Medicago truncatula OX=3880 GN=LIP1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1302</score>
+      <smithWatermanScore>1302</smithWatermanScore>
+      <zScore>1634.9</zScore>
+      <bits>311.3</bits>
+      <expectation>1.7e-83</expectation>
+      <identity>54.5</identity>
+      <positives>75.8</positives>
+      <overlap>376</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="13" end="388">--------MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                    ::  :- .:.::...  : .--:. ::..:: :  :..:: : .---... :.   :.-----:  :-----::::.:.: .   . .: ...  .::: : ::::::.:::.::::.:::  ::::::::.:::::::::::.:::::.::: :: :: .:: :::.:::::::.::: ::::::::..:: ..: .::. :::.:.:::.:::.:: . :. :. :::::.:::.:::: :   :::.::.. :::.:::..:   --: ::----------:::::.::: ::: ::.. :.. .: : :::.:::::..:.:.:.::.::.::: :. .:  .: ::: ::::::.:::::::::......:</pattern>
+      <matchSeq start="21" end="368">MMYSRFRTVAKNLKSTTKPFSFTTA-TTTTTVSSSEFPQN--LTELRARLARESPSLSDFISLK---SNNAYSVEVGT-----KKNP-----LPKPKWMKESIPGGWKYVQIKKKLRELKLHTVCEEAKCPNMGECWSGGETGTATATIMILGDTCTRGCRFCNVKTSRTPPPPDPDEPTNVAEAIASWGLDYVVITSVGRDDLPDQGSSHFTETVQKLKILKPSILIEALVPDFRGNAECVEKVSKSGLDVFAHNIETVEELQSAVRDHRANFNQSLDVLRMAKDYA--PAGT----------LTKTSIMLGCGETPDQIVKTMEKVRAAGVDVMTFGQYMRPSKRHMPVSEYITPEAFEKYQTLGMEMGFRYVASGPMVRSSYKAGEFYIKSMIDSDRAVSSQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="LIAS_HUMAN" ac="O43766" length="372" description="Lipoyl synthase, mitochondrial OS=Homo sapiens OX=9606 GN=LIAS PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1301</score>
+      <smithWatermanScore>1301</smithWatermanScore>
+      <zScore>1633.8</zScore>
+      <bits>311.1</bits>
+      <expectation>1.9e-83</expectation>
+      <identity>54.9</identity>
+      <positives>76.5</positives>
+      <overlap>366</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="30" end="395">MWSSSSSLCRNPSFRRAWLSTVTVTQTAAPTSSRLAALRTQLATEEASIDDFSSTNAPTTTTHYTSSNGSPIVRQKAAPRSAKILPKPRWLKAAPATSDNYRKLRDTVRELGLATVCEEARCPNIGECWGGGEDQTATATIMIMGDTCTRGCRFCSVKTSRAPPPLDPHEPEKVATAIAQWGLDYVVLTSVDRDDLPDQGADHFRQVVTQLKLKKPSLLVEALTPDFQGNMDLVHAVATSGLDVYAHNMETVEALTPKVRDRRATYRQSLEVLRYVKTIQSDPIGTTNNHNNNNGCLTKTSLMLGLGETDDQVLTTLRDLRDADVDVVTFGQYLQPTKKHLPVQEYVTPEKFDFWQETAMGMGFAYVASGPLVRSSYKAGELFLQKYIAQKKQRNAEVAAA</querySeq>
+      <pattern>                             : ::-:   . .:  .  ...:: : .    .:-.   .:.-. :::.-----. :  : :::.    . :: ::..:.:.:.: :::::::::::::::::::  :::::::.::::::::::::::::.: :::::  :: ..: :::.:::::::::::::::.:: ::.:. ..:. :: ..:..::: :::::.:..  .. :: :::::::::.:::  :  :::: ::.. :::.::...: .: : :-------------.:::.::::::.:.:: .:.. ::.:::: .:.:::.:::..:: :.::.::::: .:....  .:: :.::::::::::::::.::.. .:..: ..</pattern>
+      <matchSeq start="27" end="371">---MSLRCGDAARTLGPRVFGRYFCSPVRPLSS-LPDKKKELLQNGPDLQDFVSGDLADRST-WDEYKGN-LKRQKG-----ERLRLPPWLKTEIPMGKNYNKLKNTLRNLNLHTVCEEARCPNIGECWGGGEYATATATIMLMGDTCTRGCRFCSVKTARNPPPLDASEPYNTAKAIAEWGLDYVVLTSVDRDDMPDGGAEHIAKTVSYLKERNPKILVECLTPDFRGDLKAIEKVALSGLDVYAHNVETVPELQSKVRDPRANFDQSLRVLKHAKKVQPDVI-------------SKTSIMLGLGENDEQVYATMKALREADVDCLTLGQYMQPTRRHLKVEEYITPEKFKYWEKVGNELGFHYTASGPLVRSSYKAGEFFLKNLVAKRKTKDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

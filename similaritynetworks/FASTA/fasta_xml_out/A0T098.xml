@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162726-0763-98050315-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162726-0763-98050315-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162726-0763-98050315-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T098|PSAI_PHATC" type="PROTEIN" length="36"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:27:26+00:00" end="2022-11-07T16:27:28+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PSAI_PHATC" ac="A0T098" length="36" description="Photosystem I reaction center subunit VIII OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <smithWatermanScore>223</smithWatermanScore>
+      <initn>223</initn>
+      <init1>223</init1>
+      <opt>223</opt>
+      <zScore>409.2</zScore>
+      <bits>77.6</bits>
+      <expectation>3.1e-15</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PSAI_TRICV" ac="P49484" length="38" description="Photosystem I reaction center subunit VIII OS=Trieres chinensis OX=1514140 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <smithWatermanScore>192</smithWatermanScore>
+      <initn>197</initn>
+      <init1>192</init1>
+      <opt>192</opt>
+      <zScore>353.8</zScore>
+      <bits>67.5</bits>
+      <expectation>3.8e-12</expectation>
+      <identity>77.8</identity>
+      <positives>94.4</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:::.:::.::::.:::.:::.:::::::: : :::.</pattern>
+      <matchSeq start="1" end="36">MAAAFLPSILVPLVGLIFPAFSMALFFIYISADDITES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PSAI_THAPS" ac="A0T0S9" length="36" description="Photosystem I reaction center subunit VIII OS=Thalassiosira pseudonana OX=35128 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <smithWatermanScore>188</smithWatermanScore>
+      <initn>194</initn>
+      <init1>188</init1>
+      <opt>188</opt>
+      <zScore>347.2</zScore>
+      <bits>66.2</bits>
+      <expectation>8.9e-12</expectation>
+      <identity>75.0</identity>
+      <positives>97.2</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:::::::.::::.:::.:::.::::::.:.. :::.</pattern>
+      <matchSeq start="1" end="36">MAASFLPSILVPLVGLIFPAFSMALFFLYVQTDDIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PSAI_SKECO" ac="O96813" length="36" description="Photosystem I reaction center subunit VIII OS=Skeletonema costatum OX=2843 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <smithWatermanScore>183</smithWatermanScore>
+      <initn>189</initn>
+      <init1>183</init1>
+      <opt>183</opt>
+      <zScore>338.3</zScore>
+      <bits>64.5</bits>
+      <expectation>2.8e-11</expectation>
+      <identity>72.2</identity>
+      <positives>97.2</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:::.:::.::::.:::.:::.::::::.:.. :::.</pattern>
+      <matchSeq start="1" end="36">MAAAFLPSILVPLVGLIFPAFSMALFFLYSQKDDIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PSAI_CHAGL" ac="Q8M9X5" length="36" description="Photosystem I reaction center subunit VIII OS=Chaetosphaeridium globosum OX=96477 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <smithWatermanScore>158</smithWatermanScore>
+      <initn>158</initn>
+      <init1>158</init1>
+      <opt>158</opt>
+      <zScore>294.0</zScore>
+      <bits>56.3</bits>
+      <expectation>8.1e-09</expectation>
+      <identity>68.6</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:::::::.::::.:::::::...: .:::   :.:</pattern>
+      <matchSeq start="1" end="35">MAASFLPSILVPLVGLVFPAIAIASLFIYIEQDEII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PSAI_NEOYE" ac="Q1XDA0" length="36" description="Photosystem I reaction center subunit VIII OS=Neopyropia yezoensis OX=2788 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>159</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>290.5</zScore>
+      <bits>55.7</bits>
+      <expectation>1.3e-08</expectation>
+      <identity>63.9</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.:..::.::::.:::.::::::::.:::   . :.</pattern>
+      <matchSeq start="1" end="36">MTAAYLPSILVPLVGLIFPALSMALLFIYIEKETIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PSAI_STAPU" ac="Q32RX8" length="36" description="Photosystem I reaction center subunit VIII OS=Staurastrum punctulatum OX=102822 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>283.4</zScore>
+      <bits>54.4</bits>
+      <expectation>3.2e-08</expectation>
+      <identity>62.9</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.::::.:::::::..:: .:.:   :.:</pattern>
+      <matchSeq start="1" end="35">MSASYLPSILVPLVGLVFPAVTMASLFLYIEQDEIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PSAI_PSINU" ac="Q8WI10" length="36" description="Photosystem I reaction center subunit VIII OS=Psilotum nudum OX=3240 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>151</initn>
+      <init1>151</init1>
+      <opt>151</opt>
+      <zScore>281.6</zScore>
+      <bits>54.0</bits>
+      <expectation>4e-08</expectation>
+      <identity>62.9</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.:.::.:::::::..:: .:::   :.:</pattern>
+      <matchSeq start="1" end="35">MTASYLPSIFVPLVGLVFPAITMASLFIYIEQDEIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PSAI_ANTAG" ac="Q85CI4" length="36" description="Photosystem I reaction center subunit VIII OS=Anthoceros angustus OX=48387 GN=psaI PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>151</initn>
+      <init1>151</init1>
+      <opt>151</opt>
+      <zScore>281.6</zScore>
+      <bits>54.0</bits>
+      <expectation>4e-08</expectation>
+      <identity>62.9</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.::::.:::::::...: .:::   :.:</pattern>
+      <matchSeq start="1" end="35">MTASYLPSILVPLVGLVFPAITLASLFIYIEQDEIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PSAI_PORPU" ac="P51387" length="36" description="Photosystem I reaction center subunit VIII OS=Porphyra purpurea OX=2787 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>149</initn>
+      <init1>149</init1>
+      <opt>150</opt>
+      <zScore>279.9</zScore>
+      <bits>53.7</bits>
+      <expectation>5e-08</expectation>
+      <identity>61.1</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.:..::.::::.:::.::::.:::.:::   . :.</pattern>
+      <matchSeq start="1" end="36">MTAAYLPSILVPLVGLIFPALGMALLFIYIERETIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PSAI_MARPO" ac="P12185" length="36" description="Photosystem I reaction center subunit VIII OS=Marchantia polymorpha OX=3197 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>150</initn>
+      <init1>150</init1>
+      <opt>150</opt>
+      <zScore>279.9</zScore>
+      <bits>53.7</bits>
+      <expectation>5e-08</expectation>
+      <identity>60.0</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.:.::.:::.:::..:: .:::   :.:</pattern>
+      <matchSeq start="1" end="35">MTASYLPSIFVPLVGLIFPAITMASLFIYIEQDEIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PSAI_GRATL" ac="Q6B8K8" length="36" description="Photosystem I reaction center subunit VIII OS=Gracilaria tenuistipitata var. liui OX=285951 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>150</initn>
+      <init1>150</init1>
+      <opt>150</opt>
+      <zScore>279.9</zScore>
+      <bits>53.7</bits>
+      <expectation>5e-08</expectation>
+      <identity>58.3</identity>
+      <positives>91.7</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:..:.::.::::.::..::..::::.:::   ..::</pattern>
+      <matchSeq start="1" end="36">MTGSYLPSILVPLVGIIFPGISMALLFIYIEEENIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PSAI_MESVI" ac="Q9MUQ4" length="36" description="Photosystem I reaction center subunit VIII OS=Mesostigma viride OX=41882 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <smithWatermanScore>149</smithWatermanScore>
+      <initn>149</initn>
+      <init1>149</init1>
+      <opt>149</opt>
+      <zScore>278.1</zScore>
+      <bits>53.4</bits>
+      <expectation>6.3e-08</expectation>
+      <identity>61.1</identity>
+      <positives>86.1</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>: ::.::.::::.:::::::..:: .:.:   ..::</pattern>
+      <matchSeq start="1" end="36">MIASYLPSILVPLVGLVFPAIAMASLFLYIEQEEIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PSAI_TUPAK" ac="Q3ZJ61" length="36" description="Photosystem I reaction center subunit VIII OS=Tupiella akineta OX=160070 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <smithWatermanScore>149</smithWatermanScore>
+      <initn>147</initn>
+      <init1>147</init1>
+      <opt>149</opt>
+      <zScore>278.1</zScore>
+      <bits>53.4</bits>
+      <expectation>6.3e-08</expectation>
+      <identity>58.3</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:::::::.::::.:::.:::..:. .:::   ....</pattern>
+      <matchSeq start="1" end="36">MAASFLPSILVPLVGLIFPAIAMTSLFIYIEKQEVN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PSAI_ZYGCR" ac="Q32RL7" length="36" description="Photosystem I reaction center subunit VIII OS=Zygnema circumcarinatum OX=35869 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <smithWatermanScore>148</smithWatermanScore>
+      <initn>148</initn>
+      <init1>148</init1>
+      <opt>148</opt>
+      <zScore>276.3</zScore>
+      <bits>53.1</bits>
+      <expectation>7.9e-08</expectation>
+      <identity>60.0</identity>
+      <positives>88.6</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.::::.:::::::..:. .:.:   :.:</pattern>
+      <matchSeq start="1" end="35">MSASYLPSILVPLVGLVFPAITMVSLFLYIEQDEIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PSAI_GUITH" ac="O78462" length="36" description="Photosystem I reaction center subunit VIII OS=Guillardia theta OX=55529 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <smithWatermanScore>146</smithWatermanScore>
+      <initn>155</initn>
+      <init1>146</init1>
+      <opt>146</opt>
+      <zScore>272.8</zScore>
+      <bits>52.4</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>55.6</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.:..::.:::::.:..::.:.::. :::   :.:.</pattern>
+      <matchSeq start="1" end="36">MTAAYLPSILVPIIGIIFPGLTMAFAFIYIEQDQIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PSAI_OSTTA" ac="Q0P3K0" length="36" description="Photosystem I reaction center subunit VIII OS=Ostreococcus tauri OX=70448 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <smithWatermanScore>144</smithWatermanScore>
+      <initn>144</initn>
+      <init1>144</init1>
+      <opt>144</opt>
+      <zScore>269.2</zScore>
+      <bits>51.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>58.3</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>::::.::.:.::.:::::::..:: .:.:   ...:</pattern>
+      <matchSeq start="1" end="36">MAASLLPSIFVPLVGLVFPAVAMASLFLYIEKEQVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PSAI_NEPOL" ac="Q9TL12" length="36" description="Photosystem I reaction center subunit VIII OS=Nephroselmis olivacea OX=31312 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <smithWatermanScore>143</smithWatermanScore>
+      <initn>152</initn>
+      <init1>143</init1>
+      <opt>143</opt>
+      <zScore>267.5</zScore>
+      <bits>51.4</bits>
+      <expectation>2.5e-07</expectation>
+      <identity>55.6</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:..::::...::.:::::::..:: .:.:   :.:.</pattern>
+      <matchSeq start="1" end="36">MVTSFLPSLFVPLVGLVFPAVAMASLFLYIEKDEIA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PSAI_OLTVI" ac="Q20F22" length="36" description="Photosystem I reaction center subunit VIII OS=Oltmannsiellopsis viridis OX=51324 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <smithWatermanScore>141</smithWatermanScore>
+      <initn>141</initn>
+      <init1>141</init1>
+      <opt>141</opt>
+      <zScore>263.9</zScore>
+      <bits>50.8</bits>
+      <expectation>3.9e-07</expectation>
+      <identity>58.3</identity>
+      <positives>88.9</positives>
+      <overlap>36</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="36">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.:..::.::::.:::::::..:: .:.:   ..::</pattern>
+      <matchSeq start="1" end="36">MTAAYLPSILVPLVGLVFPAIAMASLFLYIEEQQIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PSAI_ANGLY" ac="P28251" length="36" description="Photosystem I reaction center subunit VIII OS=Angiopteris lygodiifolia OX=3267 GN=psaI PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <smithWatermanScore>140</smithWatermanScore>
+      <initn>140</initn>
+      <init1>140</init1>
+      <opt>140</opt>
+      <zScore>262.2</zScore>
+      <bits>50.4</bits>
+      <expectation>4.9e-07</expectation>
+      <identity>60.0</identity>
+      <positives>85.7</positives>
+      <overlap>35</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="35">MAASFLPAILVPIVGLVFPALSMALFFIYASIDDIS</querySeq>
+      <pattern>:.::.::.:.::.:::::::..:: . ::   :.:</pattern>
+      <matchSeq start="1" end="35">MTASYLPSIFVPLVGLVFPAITMASLSIYIEQDEIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

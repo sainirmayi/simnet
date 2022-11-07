@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162509-0281-4156364-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162509-0281-4156364-p2m.m9&quot; -m &quot;F10 fasta-R20221107-162509-0281-4156364-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7GDS0|CSK_PHATC" type="PROTEIN" length="583"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:25:09+00:00" end="2022-11-07T16:25:12+00:00" search="P0Y0M0DT0H0M3.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="CSK_PHATC" ac="B7GDS0" length="583" description="Chloroplast sensor kinase, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=CSK PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3767</score>
+      <smithWatermanScore>3767</smithWatermanScore>
+      <initn>3767</initn>
+      <init1>3767</init1>
+      <opt>3767</opt>
+      <zScore>4460.4</zScore>
+      <bits>835.3</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>583</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="583">MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYPGFSYRGLSVVTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="583">MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYPGFSYRGLSVVTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="HIK2_SYNY3" ac="P73276" length="434" description="Sensor histidine kinase Hik2 OS=Synechocystis sp. (strain PCC 6803 / Kazusa) OX=1111708 GN=hik2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <smithWatermanScore>184</smithWatermanScore>
+      <initn>272</initn>
+      <init1>98</init1>
+      <opt>176</opt>
+      <zScore>206.3</zScore>
+      <bits>47.7</bits>
+      <expectation>0.00063</expectation>
+      <identity>23.5</identity>
+      <positives>46.9</positives>
+      <overlap>486</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="569">LKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLP--GFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTE----RAALQMQNDRAA---RALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPS-AEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              ::  .  :  ::..:: ...---------..   ..:: ::... :---..: .-  : :---... .:. . ..--::.  .. :-- :.-----::. :-:. :. .  . .:    :  .--- : .::  : . ::.:..-----.: .:.-:  :.  :.   .:::..:  .: .----: : . ::..  ---.  .: :::..::: :..:..::: .:  --:  ... ..  .....:::-------------------------------------:. : :. ---------------------------------:: :.::       :.  . ...    : .  :: . ::--------:..:: :.: : .::: .:.: .. . .     :     ::.:.. :..::----------: .. :: .-.:: . : . :...   .:. . :.: ::: : ...::.:</pattern>
+      <matchSeq start="11" end="373">--------------------MAGSISSMYSPSAGLISLCQSQVRLLQQGL---------RVDWCGVYLNQEETEQG---LVPLV-VSHGS---TLVESESYGLIS--LPQGEVSPPMDDFS-----LPAVP-VGVGQLSRRSRLEPPPFDADK---RLVLPLVYGEEMVGLLVI-----HRSQGQ-WHGEEMMQLEAIAKSLAVACLLDQQQDWYRQAWEEQNQQYQWERQHWADLLHQLRNPLTALKTFSKLLLKRWH--GDNKSQQVVEGIVRQGEHL-------------------------------------QELLQSFE---------------------------------ASQSQGPEAVPLLSSSPVTTIQVLPPADRVETMPLANFS--------LGEVLPPILLAHQAIAAERNITLTAQIALIDTVVMANRLALREVVNNLLDN----------GIKYTPNGGLVEVSLALEKVSSSGMDWATLAIADTGYGIPPEDQQKIFERNYRGVQGRGSINGTGLGLAIVADLVAQMGGKITVTSPNGLSRDPDQPGSTFTLWLRSGEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="NTRB_VIBAL" ac="P19906" length="350" description="Sensory histidine kinase/phosphatase NtrB OS=Vibrio alginolyticus OX=663 GN=ntrB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <smithWatermanScore>133</smithWatermanScore>
+      <initn>163</initn>
+      <init1>78</init1>
+      <opt>133</opt>
+      <zScore>158.8</zScore>
+      <bits>38.6</bits>
+      <expectation>0.28</expectation>
+      <identity>27.9</identity>
+      <positives>55.9</positives>
+      <overlap>111</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="464" end="567">STYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAE---DRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQ--NSKGSDAGVTILVE--DNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              :  .:   : ..:---.:.:.. .:   .:: . .  . ...:..:...::   .   . :-------.  .: : :.--: .:.   ..  ::--::::::: : .: .:</pattern>
+      <matchSeq start="199" end="302">HIIIEQADRLRALVDRLLGPQKPGKKTQENLHQILEKVRQLVELESQRSIVIERDYDPSLPEILMDADQIEQAMLNIVSNAAQILSHQEHG-------KITIRTRTVHQANIHGKRCKLAARVEITDNGPGIPPELQDTLFYPMVSGREGGTGLGLSISQNLIDQHNGKIDVESWPGHTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="CSK_ARATH" ac="F4HVG8" length="611" description="Chloroplast sensor kinase, chloroplastic OS=Arabidopsis thaliana OX=3702 GN=CSK PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>154</initn>
+      <init1>80</init1>
+      <opt>154</opt>
+      <zScore>156.5</zScore>
+      <bits>39.0</bits>
+      <expectation>0.38</expectation>
+      <identity>21.2</identity>
+      <positives>51.7</positives>
+      <overlap>571</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="21" end="558">----------MSSIYLHGLSRRRRIGSVIVAIYMLDSCGAFLSASGSGRYP-GFSYRGLSVVTENIRS------IHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSI-PCAD-----RPGVS------KIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEV------ICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFS-GNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFL-----SDVLDPVLAAFR--AIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              .. .:.. ..  :.:.:. . -:. : . .: .:. . ------. :.  .  .. ...    :  . :.   :.   ..::  ::.: : ::.:. . .-: : -----::. :------... .. :-:--.::.:.. .: .-..  :.  :.  :. ... :  .  .  ...:   : --.. :. ..    ::     :: ------. .. :   : ..:  .....  : :--::..------..:.:.:  .   ...:..:  :: .   ::... .    .:  ..::..::..::: .:.:. .-.  . .:..--------..: :.::.:.. : :. ..  : -:.. .    :  :  : . .-----------..::----:.::   .  :------------.: . :.: .:-:.: : :---------:::   ..   :.:  .-----:.::  .. . :--:....: . ..-... .: -:..   ::..:: :.:..:.  . .---:..  -----------. ....  .:  ....:.:: .</pattern>
+      <matchSeq start="33" end="527">LSAIASQTLLSSNPNLHFSNSIPNPRPSNPSLKLLNASSSSSSSSSSSIFTRGLRYVNHTVSNEESEPGGGETMVASASAIASAIRGASTTPVEFTQMIEKDHLKTKIILPSPDFQRLCLEQLDLFRQIVDPNAVLSIYVRPAGSYVMDRLELRRVTCY-P--SVNAGDVVILVG-NFGIPAGLRAAEASLSSQQVELVSKHRAAVFPMVKHP--FVVGFLVAELPVEAEEEEEEEEEEKPHGVNQFLSPEEAYALPASANTKSPRVKL--PSVK------VFTEEQRSYAINISRTLAMAYVMDQKTMLLQQSSWQNNVRMSKLVEQIRGPLSTMRTLSKMLSTH-TKRNQISHD--------IVEDLIVQGDQIKDTLEELQDAVH-LTKANIVRHNEEALKKINKT-----------HNET----RRSKYEHKDPI------------DGSQISSTRLSLGSGLDDS---------EMPMPPLALAPLQMHSIRPCDISNVLLDMVETVRPLALTQQRVVELG-ENSASLQ-VAVEEPALRQALSNLIEGALLRTHV---GGKVE-----------ILSTRAPAGGSLVVIDDDGPDMRYMTQMHSLTPFGAELLSENMVEDNMTWNFVAGLTVAREILESYGCVIRVISPRSSDAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="HIK2_THEVB" ac="Q8DMC5" length="385" description="Sensor histidine kinase Hik2 OS=Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1) OX=197221 GN=hik2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <smithWatermanScore>188</smithWatermanScore>
+      <initn>319</initn>
+      <init1>109</init1>
+      <opt>163</opt>
+      <zScore>141.2</zScore>
+      <bits>35.5</bits>
+      <expectation>2.6</expectation>
+      <identity>25.9</identity>
+      <positives>51.9</positives>
+      <overlap>320</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="95" end="409">KLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELALSQLELLANSIPCADRPGVSKIKTMALYLPQENVNTGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQN----DRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPF-VLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRG</querySeq>
+      <pattern>                              :. :  :  .::::..::.------:.:---..:.::-.:..: .------------::   : .  :::: .. :.: ::  -:  .  :::-  ::-------------..:. .:---:  : .::.  . ..:::..------.:.   :   .. :. .....:..:  .: ..  :. . ----:.  . ..: :::..::. :.::. ::: .:.  ----...:- :----.:: .  ...::   :.------:  ..:. .-.:. . :     . ..::  :.:  : . --::    .  .:. .: .</pattern>
+      <matchSeq start="6" end="262">-------------------------MLWPASEEFAALCRTQLELVVNSL------GAS---SLAVYL-SETLNDS------------PSWSPVAVYPEAASLLSLAIPPTLPP-PTQVPETSL-SHYP-------------QQVVSSL---ANQLILPLMYQNWVLGVLVA------QRQHRPWLAAEQAQLQQVAQTLAIACVLDQRQQWLSHSPAQPLDQRQQRFDDLLHQLRNPVAAIRTFVKLLLKRLEP----DHKG-RP----LAEGIAKETERLMALLE------DYRQQRNDIPALTGSQPLPLAGKPLDLAETLLPLISAAQ--ARAEMEGKTFVVEIPPQLPPIWLEERVLQEVVGNLLDNAFKYTPKGGTIGLRLMLSSPALELTVWDTGCGIPKEAQPRLFERGYRGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="SSPH2_SALT1" ac="D0ZPH9" length="788" description="E3 ubiquitin-protein ligase SspH2 OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=sspH2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>157</initn>
+      <init1>55</init1>
+      <opt>138</opt>
+      <zScore>140.7</zScore>
+      <bits>36.4</bits>
+      <expectation>2.8</expectation>
+      <identity>25.4</identity>
+      <positives>49.9</positives>
+      <overlap>343</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="81" end="401">VTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELAL-SQLELLANSIPCADRPGVSKIKTMAL-YLPQENVN----TGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYP------MVSGGSEASVGVVEEVICDL-TSGAAALSVPLF-SGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSL---SLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTP-QLLEMAE----HLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSS</querySeq>
+      <pattern>                              :: . ::. .:..:: : .   .-.::  :    :  .. .::  .  .:- ::.:  .----..::  :: .--:   .:     :. ::-- :.::  :  : .. .  . ::. :------.:::.  .:. :.   . .:-.::    :.:..-::-------:.: :. ------------:.:. :  .::---:   ... :   :. .. .: : ..-:    ..:.  .   :    :.   : : . . ..:-.  : : ----:.. : : -:: ..--- ..: :::   :. . .  .. .. :..::   .- ...:. .: :. .: :</pattern>
+      <matchSeq start="268" end="581">PALPPELRTLEVSGNQLTSLPVLPPGLLELSIFSNPLTHLPALPSGLCKLWIFGNQLTSLPVLPPGLQELSVSDNQLASLPALPSELCKLWAYNNQLTSLPML--PSGLQELSVSDNQLAS--LPTLPSELYKLWAYNNRLTSLPALPSGLKELIVSGNRLTSLPVLPSELKELMVSGNRLTSLPMLPSG-------LLSLSVY------------RNQLTRLPESLIHLSSETTVNLEGNPLSERTLQALREIT-SAPGYSGPIIRFDMAGASAPRETRALHLAAADWLVPAREGEPAPADRWHMFGQEDN-ADAFS---LFLDRLSETENFIKDAGFKAQISSWLAQLAEDEA-LRANTFAMATEATSSCEDRVTFFLHQMKNVQLVHNAEKGQYDNDLAALVATGREMFRLGKLEQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="SSPH2_SALTY" ac="P0CE12" length="788" description="E3 ubiquitin-protein ligase SspH2 OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=sspH2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>157</initn>
+      <init1>55</init1>
+      <opt>138</opt>
+      <zScore>140.7</zScore>
+      <bits>36.4</bits>
+      <expectation>2.8</expectation>
+      <identity>25.4</identity>
+      <positives>49.9</positives>
+      <overlap>343</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="81" end="401">VTENIRSIHSSRRLKLTVNATNKEMYERQDSIHTLPLSPIPVMPSQLFQELAL-SQLELLANSIPCADRPGVSKIKTMAL-YLPQENVN----TGQLEFLPAIHYPHPSRERVFIANEAASGVAPALPRTLTTLPGFAHATSLLPGYP------MVSGGSEASVGVVEEVICDL-TSGAAALSVPLF-SGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSL---SLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTP-QLLEMAE----HLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSS</querySeq>
+      <pattern>                              :: . ::. .:..:: : .   .-.::  :    :  .. .::  .  .:- ::.:  .----..::  :: .--:   .:     :. ::-- :.::  :  : .. .  . ::. :------.:::.  .:. :.   . .:-.::    :.:..-::-------:.: :. ------------:.:. :  .::---:   ... :   :. .. .: : ..-:    ..:.  .   :    :.   : : . . ..:-.  : : ----:.. : : -:: ..--- ..: :::   :. . .  .. .. :..::   .- ...:. .: :. .: :</pattern>
+      <matchSeq start="268" end="581">PALPPELRTLEVSGNQLTSLPVLPPGLLELSIFSNPLTHLPALPSGLCKLWIFGNQLTSLPVLPPGLQELSVSDNQLASLPALPSELCKLWAYNNQLTSLPML--PSGLQELSVSDNQLAS--LPTLPSELYKLWAYNNRLTSLPALPSGLKELIVSGNRLTSLPVLPSELKELMVSGNRLTSLPMLPSG-------LLSLSVY------------RNQLTRLPESLIHLSSETTVNLEGNPLSERTLQALREIT-SAPGYSGPIIRFDMAGASAPRETRALHLAAADWLVPAREGEPAPADRWHMFGQEDN-ADAFS---LFLDRLSETENFIKDAGFKAQISSWLAQLAEDEA-LRANTFAMATEATSSCEDRVTFFLHQMKNVQLVHNAEKGQYDNDLAALVATGREMFRLGKLEQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="SRTD3_MOUSE" ac="Q9ERC3" length="197" description="SERTA domain-containing protein 3 OS=Mus musculus OX=10090 GN=Sertad3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <smithWatermanScore>113</smithWatermanScore>
+      <initn>114</initn>
+      <init1>65</init1>
+      <opt>113</opt>
+      <zScore>140.1</zScore>
+      <bits>34.3</bits>
+      <expectation>3.1</expectation>
+      <identity>24.6</identity>
+      <positives>56.3</positives>
+      <overlap>142</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="241" end="382">DLTSGAAALSVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLF</querySeq>
+      <pattern>                              ::....   .:..:.   .  .: -----. ..: :... :.. :.:.    ...  .    :----::.  : . :    .. :. : ..:. .  :  ... :. .::---:..:  :- ::::: .. :. .:: : :.</pattern>
+      <matchSeq start="5" end="133">--------------------------MGGLKRKHSDLEEEEEEEKWDWSPTALR-----SYQQALLRISLDKVQRSLGPRAPSLRRHVLIHNT----LQQLQAAIRLAPAPALPPEPLFLGEEDFSLSTTIGSILRELDT---SMDEMEP-PLNPAASSSPQNEIVSQADPVFLEALSSRYLGDSGLDDFFLDIDTSAVEKDVALPPPEPPHSLFCSPGSWEWNELDHIMEIILGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PHOQ_SHIFL" ac="Q83RR1" length="486" description="Virulence sensor protein PhoQ OS=Shigella flexneri OX=623 GN=phoQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <smithWatermanScore>161</smithWatermanScore>
+      <initn>149</initn>
+      <init1>102</init1>
+      <opt>120</opt>
+      <zScore>139.9</zScore>
+      <bits>35.6</bits>
+      <expectation>3.1</expectation>
+      <identity>25.4</identity>
+      <positives>52.5</positives>
+      <overlap>244</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="345" end="580">LGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTI---VDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNG---SDVSTYTEDDGAGEMPSSLF--SEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              :.:....---:  : :..  .::::.-:.   :::   . :.  : :  .  : . :.    .  :   . ..  .  :.. .  ... --- ..:  ... :     .:. --. .. :.  .. .:: . .:.  . . .:. .: : . ..  : -  . . :.. ::.:::  : .------.:-----.:.  : ------.:  . :.:::.:::::   :. :::::--: .:-:::</pattern>
+      <matchSeq start="218" end="439">SYMVWSWFIYVLSANLLLVIPLLWVAAWWSLRPIEALAKEVRELEEHNRELLNPAT-TRELTSLVRNLNRLLKSERERYDKYRTTLTDLTHSLKTPLAVLQSTLRSLRSEKMSVSDAEPVMLEQISRISQQIGYYLHRASMRGGTLLSRELHPVAPLLDNLTSALNKVYQRKGVNISLDISPEISFVG-EQNDFVEVMGNVLDNACKYCL------EF-----VEISARQ------TDEHLYIVVEDDGPGIPLSKREVIFDRG--QRVD-TLRPGQGVGLAVAREITEQYEGKIVAGESMLGGARMEVIFGRQHSAPKDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PHOQ_ECOL6" ac="Q8FIB8" length="486" description="Sensor protein PhoQ OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=phoQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <smithWatermanScore>161</smithWatermanScore>
+      <initn>149</initn>
+      <init1>102</init1>
+      <opt>120</opt>
+      <zScore>139.9</zScore>
+      <bits>35.6</bits>
+      <expectation>3.1</expectation>
+      <identity>25.4</identity>
+      <positives>52.5</positives>
+      <overlap>244</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="345" end="580">LGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTI---VDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNG---SDVSTYTEDDGAGEMPSSLF--SEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              :.:....---:  : :..  .::::.-:.   :::   . :.  : :  .  : . :.    .  :   . ..  .  :.. .  ... --- ..:  ... :     .:. --. .. :.  .. .:: . .:.  . . .:. .: : . ..  : -  . . :.. ::.:::  : .------.:-----.:.  : ------.:  . :.:::.:::::   :. :::::--: .:-:::</pattern>
+      <matchSeq start="218" end="439">SYMVWSWFIYVLSANLLLVIPLLWVAAWWSLRPIEALAKEVRELEEHNRELLNPAT-TRELTSLVRNLNRLLKSERERYDKYRTTLTDLTHSLKTPLAVLQSTLRSLRSEKMSVSDAEPVMLEQISRISQQIGYYLHRASMRGGTLLSRELHPVAPLLDNLTSALNKVYQRKGVNISLDISPEISFVG-EQNDFVEVMGNVLDNACKYCL------EF-----VEISARQ------TDEHLYIVVEDDGPGIPLSKREVIFDRG--QRVD-TLRPGQGVGLAVAREITEQYEGKIVAGESMLGGARMEVIFGRQHSAPKDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PHOQ_ECO57" ac="Q8X739" length="486" description="Sensor protein PhoQ OS=Escherichia coli O157:H7 OX=83334 GN=phoQ PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <smithWatermanScore>163</smithWatermanScore>
+      <initn>149</initn>
+      <init1>102</init1>
+      <opt>120</opt>
+      <zScore>139.9</zScore>
+      <bits>35.6</bits>
+      <expectation>3.1</expectation>
+      <identity>25.4</identity>
+      <positives>52.5</positives>
+      <overlap>244</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="345" end="580">LGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTI---VDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNG---SDVSTYTEDDGAGEMPSSLF--SEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              :.:....---:  : :..  .::::.-:.   :::   . :.  : :  .  : . :.    .  :   . ..  .  :.. .  ... --- ..:  ... :     .:. --. .. :.  .. .:: . .:.  . . .:. .: : . ..  : -  . . :.. ::.:::  : .------.:-----.:.  : ------.:  . :.:::.:::::   :. :::::--: .:-:::</pattern>
+      <matchSeq start="218" end="439">SYMVWSWFIYVLSANLLLVIPLLWVAAWWSLRPIEALAKEVRELEEHNRELLNPAT-TRELTSLVRNLNRLLKSERERYDKYRTTLTDLTHSLKTPLAVLQSTLRSLRSEKMSVSDAEPVMLEQISRISQQIGYYLHRASMHGGTLLSRELHPVAPLLDNLTSALNKVYQRKGVNISLDISPEISFVG-EQNDFVEVMGNVLDNACKYCL------EF-----VEISARQ------TDEHLYIVVEDDGPGIPLSKREVIFDRG--QRVD-TLRPGQGVGLAVAREITKQYEGKIVAGESMLGGARMEVIFGRQHSTPKDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PHOQ_ECOLI" ac="P23837" length="486" description="Sensor protein PhoQ OS=Escherichia coli (strain K12) OX=83333 GN=phoQ PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <smithWatermanScore>161</smithWatermanScore>
+      <initn>149</initn>
+      <init1>102</init1>
+      <opt>120</opt>
+      <zScore>139.9</zScore>
+      <bits>35.6</bits>
+      <expectation>3.1</expectation>
+      <identity>25.4</identity>
+      <positives>52.5</positives>
+      <overlap>244</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="345" end="580">LGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTI---VDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNG---SDVSTYTEDDGAGEMPSSLF--SEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLPKPGSRFGPNPSAEVRIRLVQNSKGSDAGVTILVEDNGPGIPAETRDQIFDRGKDQALDWTLRKHW</querySeq>
+      <pattern>                              :.:....---:  : :..  .::::.-:.   :::   . :.  : :  .  : . :.    .  :   . ..  .  :.. .  ... --- ..:  ... :     .:. --. .. :.  .. .:: . .:.  . . .:. .: : . ..  : -  . . :.. ::.:::  : .------.:-----.:.  : ------.:  . :.:::.:::::   :. :::::--: .:-:::</pattern>
+      <matchSeq start="218" end="439">SYMVWSWFIYVLSANLLLVIPLLWVAAWWSLRPIEALAKEVRELEEHNRELLNPAT-TRELTSLVRNLNRLLKSERERYDKYRTTLTDLTHSLKTPLAVLQSTLRSLRSEKMSVSDAEPVMLEQISRISQQIGYYLHRASMRGGTLLSRELHPVAPLLDNLTSALNKVYQRKGVNISLDISPEISFVG-EQNDFVEVMGNVLDNACKYCL------EF-----VEISARQ------TDEHLYIVVEDDGPGIPLSKREVIFDRG--QRVD-TLRPGQGVGLAVAREITEQYEGKIVAGESMLGGARMEVIFGRQHSAPKDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="HAC1_ASPOR" ac="Q1XGE2" length="345" description="Transcriptional activator hacA OS=Aspergillus oryzae (strain ATCC 42149 / RIB 40) OX=510516 GN=hacA PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <smithWatermanScore>117</smithWatermanScore>
+      <initn>114</initn>
+      <init1>51</init1>
+      <opt>117</opt>
+      <zScore>138.8</zScore>
+      <bits>34.9</bits>
+      <expectation>3.6</expectation>
+      <identity>21.1</identity>
+      <positives>54.0</positives>
+      <overlap>265</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="210" end="453">GFAHATSLLPGYPMVSGGSEASVGVVEEVICDLTSGAAAL-SVPLFSGSRTVGVLLVSPSISKRRKGSAWTKEDREQVGRA-------GKSLSLALSMDTERAALQMQNDRAARALSDSLHQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPA--APTKT-------QDSL----VSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLP</querySeq>
+      <pattern>                              ::. .  ...-:.:   .:.-: :: :::. ..  .... :.: . .  . -------:. : .  .    :   . ....  : .   :..-.   :. :   .: .... .  .-. : ..  ::.   .. ....::...:  . . : .    ::.  .::--.:: :-------.: :----. . :: .   : ::. .  ...: --:   :.--:...: .: ...   :. -:::.. .. :: :. . .. :...</pattern>
+      <matchSeq start="3" end="259">----------------------------MSCDMEKTMSSVDSLPATPASE-VPVLTVSPADTSLNSADVKTQEVKPEEKKPAKKRKSWGQELPVPKTNLPPRKRAKTEDEKEQRRIERVLRN-RAAAQTSRERKRLEMEKLENEKI-QMEQQNQFLLQRLSQMEAENNRLSQQLAQLAAEVRGSRANTPMPGSPATASPTLTPTLFKQERDELPLERIPFPTPSLSDYSPTLKPSTLAESSD--VAQHPA--VSVAGLEGDGSALPLFDL-GSDLKHHSTDDVAAPLSDDDFNRLFHGDSSVEPDSSVFEDGLAFDVLEGGDLSAFPFDSMVNFDSEPVTLEGIEMAHGLPDETTCKTSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="NTRB_PROHU" ac="P28788" length="348" description="Sensory histidine kinase/phosphatase NtrB OS=Proteus hauseri OX=183417 GN=ntrB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <smithWatermanScore>114</smithWatermanScore>
+      <initn>131</initn>
+      <init1>72</init1>
+      <opt>114</opt>
+      <zScore>136.4</zScore>
+      <bits>34.4</bits>
+      <expectation>4.9</expectation>
+      <identity>35.6</identity>
+      <positives>58.9</positives>
+      <overlap>90</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="263" end="347">LLVSPSISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTERAALQMQNDRA----ARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMP</querySeq>
+      <pattern>                              : ::- ::..:   : : ..:----:: :  .:-:.::::: ..:  ..:: . . : .:  ---.:  ..:.:..: .  :::    .:</pattern>
+      <matchSeq start="106" end="191">FTDNEVILVIHNQSHTMSLSAQPISEQHILLELA-PMDSQRRLSQEQIQQAQQIAARELVRGLAHEIKNPLGGLRGAAQLLAKSLPDPALTE---YTQVIIEQADRLRTLVDRLLGPQHPGKKTHQSIHHVVERVAQLISLECPENVTLLKDYDPSLPELSHYPDQIEQVLLNITRNALQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="NTRB_SHIFL" ac="P0AFB7" length="349" description="Sensory histidine kinase/phosphatase NtrB OS=Shigella flexneri OX=623 GN=glnL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <smithWatermanScore>125</smithWatermanScore>
+      <initn>178</initn>
+      <init1>83</init1>
+      <opt>113</opt>
+      <zScore>135.2</zScore>
+      <bits>34.2</bits>
+      <expectation>5.8</expectation>
+      <identity>25.9</identity>
+      <positives>53.2</positives>
+      <overlap>205</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="269" end="453">ISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTER----AALQMQNDRAARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSL---SERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPS---NSTTSFS----GNGSDVSTY--TEDDGAGEMP---SSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLP</querySeq>
+      <pattern>                              ::..:----  ::  .. ::: :  .:-:.::::: ..:  ..::.. . : .:: ---.:  ..:.:..:    :::     :   ...:.---.::.  ...   : ...--:.    : .:------:.:..     .... .  . . : : .:  --- . :.:.----:.   ... --.::.: :  :---..::  :</pattern>
+      <matchSeq start="111" end="304">VTLVIDGRSHILSVTAQRMPDGMILLEMAPMDNQRRLSQEQLQHAQQVAARDLVRGLAHEIKNPLGGLRGAAQLLSKALPDPSLLE---YTKVIIEQADRLRNLVDRLLGPQLPGTRVTESIHKVAERVVTLVSMELPDNVR--LIRDYDPSLP------ELAHDPDQIEQVLLNIVRNALQALGPEGGEIILRTRTAFQLTLHGERYRLAARIDVEDNGPGIPPHLQDTLFYPMVSGREGGTGLGLSIARNLIDQHSGKIEFTSWPGHTEFSVYLPIRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="NTRB_ECO57" ac="P0AFB6" length="349" description="Sensory histidine kinase/phosphatase NtrB OS=Escherichia coli O157:H7 OX=83334 GN=glnL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <smithWatermanScore>125</smithWatermanScore>
+      <initn>178</initn>
+      <init1>83</init1>
+      <opt>113</opt>
+      <zScore>135.2</zScore>
+      <bits>34.2</bits>
+      <expectation>5.8</expectation>
+      <identity>25.9</identity>
+      <positives>53.2</positives>
+      <overlap>205</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="269" end="453">ISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTER----AALQMQNDRAARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSL---SERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPS---NSTTSFS----GNGSDVSTY--TEDDGAGEMP---SSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLP</querySeq>
+      <pattern>                              ::..:----  ::  .. ::: :  .:-:.::::: ..:  ..::.. . : .:: ---.:  ..:.:..:    :::     :   ...:.---.::.  ...   : ...--:.    : .:------:.:..     .... .  . . : : .:  --- . :.:.----:.   ... --.::.: :  :---..::  :</pattern>
+      <matchSeq start="111" end="304">VTLVIDGRSHILSVTAQRMPDGMILLEMAPMDNQRRLSQEQLQHAQQVAARDLVRGLAHEIKNPLGGLRGAAQLLSKALPDPSLLE---YTKVIIEQADRLRNLVDRLLGPQLPGTRVTESIHKVAERVVTLVSMELPDNVR--LIRDYDPSLP------ELAHDPDQIEQVLLNIVRNALQALGPEGGEIILRTRTAFQLTLHGERYRLAARIDVEDNGPGIPPHLQDTLFYPMVSGREGGTGLGLSIARNLIDQHSGKIEFTSWPGHTEFSVYLPIRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="NTRB_ECOLI" ac="P0AFB5" length="349" description="Sensory histidine kinase/phosphatase NtrB OS=Escherichia coli (strain K12) OX=83333 GN=glnL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <smithWatermanScore>125</smithWatermanScore>
+      <initn>178</initn>
+      <init1>83</init1>
+      <opt>113</opt>
+      <zScore>135.2</zScore>
+      <bits>34.2</bits>
+      <expectation>5.8</expectation>
+      <identity>25.9</identity>
+      <positives>53.2</positives>
+      <overlap>205</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="269" end="453">ISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTER----AALQMQNDRAARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSL---SERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPS---NSTTSFS----GNGSDVSTY--TEDDGAGEMP---SSLFSEMDLEMSFLSDVLDPVLAAFRAIAEDRGIMFSHDDTEDLPGVTICPQALQEALINVIDNAFTYVFLP</querySeq>
+      <pattern>                              ::..:----  ::  .. ::: :  .:-:.::::: ..:  ..::.. . : .:: ---.:  ..:.:..:    :::     :   ...:.---.::.  ...   : ...--:.    : .:------:.:..     .... .  . . : : .:  --- . :.:.----:.   ... --.::.: :  :---..::  :</pattern>
+      <matchSeq start="111" end="304">VTLVIDGRSHILSVTAQRMPDGMILLEMAPMDNQRRLSQEQLQHAQQVAARDLVRGLAHEIKNPLGGLRGAAQLLSKALPDPSLLE---YTKVIIEQADRLRNLVDRLLGPQLPGTRVTESIHKVAERVVTLVSMELPDNVR--LIRDYDPSLP------ELAHDPDQIEQVLLNIVRNALQALGPEGGEIILRTRTAFQLTLHGERYRLAARIDVEDNGPGIPPHLQDTLFYPMVSGREGGTGLGLSIARNLIDQHSGKIEFTSWPGHTEFSVYLPIRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="MURD_SOLUE" ac="Q01Q46" length="442" description="UDP-N-acetylmuramoylalanine--D-glutamate ligase OS=Solibacter usitatus (strain Ellin6076) OX=234267 GN=murD PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <smithWatermanScore>115</smithWatermanScore>
+      <initn>156</initn>
+      <init1>42</init1>
+      <opt>115</opt>
+      <zScore>135.0</zScore>
+      <bits>34.5</bits>
+      <expectation>5.9</expectation>
+      <identity>28.9</identity>
+      <positives>55.3</positives>
+      <overlap>114</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="322" end="429">HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRL-ADRLKPVDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARES--KTSGELVI---FMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLD</querySeq>
+      <pattern>                              ::  . .  :: :  ..  .-:  :::.: .        ::...  :  .  : .:-- .: ::..   :: ::. --.. ::. .---:.  . .. .:::: .-.:::..:.</pattern>
+      <matchSeq start="12" end="122">-------------------MKLQGVRALVVGMRKSGVASAEFLARRGAVVSATDLKPLDELPGVGELGIPFAVQTPAVFEGYDLIV--PSPDVPYDLPPLEEARRHGVRVIGEVELAAPFLKGRTIGITGSNGKT-TTTSLTGHILREAGVPVQVGGNIGLPVTAMVESSRDDGWNVLEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="NTRB_KLEOX" ac="P06218" length="349" description="Sensory histidine kinase/phosphatase NtrB OS=Klebsiella oxytoca OX=571 GN=ntrB PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <smithWatermanScore>121</smithWatermanScore>
+      <initn>146</initn>
+      <init1>85</init1>
+      <opt>112</opt>
+      <zScore>134.0</zScore>
+      <bits>34.0</bits>
+      <expectation>6.7</expectation>
+      <identity>29.8</identity>
+      <positives>58.9</positives>
+      <overlap>124</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="269" end="384">ISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTER--AALQMQNDR--AARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKP---VDTIVDSLSERTPFVLNPAAPTKTQDSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPVLAA</querySeq>
+      <pattern>                              ::..:--.  :.:. .--::: :  .:-:.::::: ..:  ..::.. . : .:. ---.:  ..:.:..:    :::    .:---:   . ...::.  ...   : ...--::    : .:</pattern>
+      <matchSeq start="111" end="229">VTLVIDGRSHILSLTAQRLPEGYILLEMAPMDNQRRLSQEQLQHAQQIAARDLVRGLAHEIKNPLGGLRGAAQLLSKALPDPALME---YTKVIIEQADRLRNLVDRLLGPQHPGMHVTESIHKVAERVVKLVSMELPDNVK--LVRDYDPSLPELPHDPDQIEQVLLNIVRNALQALGPEGGEITLRTRTAFQLTLHGVRYRLAARIDVEDNGPGIPSHLQDTLFYPMVSGREGGTGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="NTRB_SALTY" ac="P0A2D9" length="349" description="Sensory histidine kinase/phosphatase NtrB OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=glnL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <smithWatermanScore>119</smithWatermanScore>
+      <initn>176</initn>
+      <init1>83</init1>
+      <opt>112</opt>
+      <zScore>134.0</zScore>
+      <bits>34.0</bits>
+      <expectation>6.7</expectation>
+      <identity>30.6</identity>
+      <positives>58.2</positives>
+      <overlap>134</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="269" end="391">ISKRRKGSAWTKEDREQVGRAGKSLSLALSMDTER--AALQMQNDR--AARALSDSL-HQIKNPLQAMRTYGKLLQRRIADLGLLSNEGMTPQLLEMAEHLLVQSDRLADRLKPVDTIVDSL---SERTPFVLNPAAPTKTQ---DSLVSLATPLVPWESETLEFARESKTSGELVIFMPTKKVAASGSNGPSNSTTSFSGNGSDVSTYTEDDGAGEMPSSLFSEMDLEMSFLSDVLDPV</querySeq>
+      <pattern>                              ::..:--.  :.:. .--::: :  .:-:.::::: ..:  ..::.. . : .:  ---.:  ..:.:..:    :::    .:   :..:.---.::.  ...   : ...---:   ::--: .: . : .:</pattern>
+      <matchSeq start="111" end="239">VTLVIDSRSHILSLTAQRLPDDFILLEMAPMDNQRRLSQEQLQHAQQIAARDLVRGLAHEIKNPLGGLRGAAQLLSKALPDPALTE---YTKVIIEQADRLRNLVDRLLGPQHPGMHITESIHKVAERVVALVSMELPDNVRLIRDYDPSL--PELPHDPEQIEQVLLNIVRNALQALGPEGGEITLRTRTAFQLTLHGERYRLAARIDVEDNGPGIPPHLQDTLFYPMVSGREGGTGLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

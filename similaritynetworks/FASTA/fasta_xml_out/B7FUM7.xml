@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-162333-0833-17608787-p1m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-162333-0833-17608787-p1m.m9&quot; -m &quot;F10 fasta-R20221107-162333-0833-17608787-p1m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|B7FUM7|PURA_PHATC" type="PROTEIN" length="526"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T16:23:33+00:00" end="2022-11-07T16:23:37+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="PURA_PHATC" ac="B7FUM7" length="526" description="Adenylosuccinate synthetase OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=PHATRDRAFT_26256 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>3522</score>
+      <smithWatermanScore>3522</smithWatermanScore>
+      <initn>3522</initn>
+      <init1>3522</init1>
+      <opt>3522</opt>
+      <zScore>4217.5</zScore>
+      <bits>790.0</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>526</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="526">MFRHAFSKSSPAFLAGGSAIGGAIAGLMWSGERNTSSSTACDSSEPSNQSVIGLLQELSRKVNNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="526">MFRHAFSKSSPAFLAGGSAIGGAIAGLMWSGERNTSSSTACDSSEPSNQSVIGLLQELSRKVNNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="PURA_PHYIT" ac="D0NVH9" length="551" description="Adenylosuccinate synthetase OS=Phytophthora infestans (strain T30-4) OX=403677 GN=PITG_16736 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1981</score>
+      <smithWatermanScore>1981</smithWatermanScore>
+      <initn>1948</initn>
+      <init1>1308</init1>
+      <opt>1981</opt>
+      <zScore>2329.8</zScore>
+      <bits>440.8</bits>
+      <expectation>3.3e-122</expectation>
+      <identity>60.1</identity>
+      <positives>81.2</positives>
+      <overlap>494</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="23" end="513">--------MFRHAFSKSSPAFLAGGSAIGGAIAGLMWSGERNTSSSTACD-SSEPSNQSVI--GLLQELSRKVNNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :. :.   .  . .... :.-...: .. ..--..:.:.  :.: .:: :..-----: : :.-----: . :.:.:::::::::::::::: :::.::: .::::::::::::: .::::::::.:::.::::: :.::::::.:.::::.::. :.  ::::.::. ::::::.:.:.:::::: .: : ::.::::::::::::::::. :::.:::::. .: : ... .:   .. .:  :. :.. ..  :. . ... .::.::..: :. . :::.:::::::::::::::::::::::::::.::: :: :.::..: :: : :::::::::::::::::  :--- ::::. ::::.::::::.:::::::::::.:: ..:::: .::::.::.::. .:::: :: :.:: :..::..:..:..  :::: . :::::::.:: :::::   :::.:::.::::  :.::::::.: ::: :</pattern>
+      <matchSeq start="59" end="539">HASATLRAALAVEASEANQKGRSAGLLAAMALMGVAGVASMDDNAAAKCEGAAKPVSREAVTQAMLKEVVTKLNRIESAVAN-----PHRHTD-----GLNVGVDVVLGAQWGDEGKGKLVDSLSQSYDVIVRVAGGSNAGHTIVHEGKKYKFHLVPSGILNPNAICIIGNGVVVHLPSFLEELEELKRMGVDYEGRILISDRAHMVLDLHQEVDGINELRRGRNKIGTTKKGIGPAYSSKMLRNGVRVGDLRYFDDFTEKMVDLVKFYKDNYPELEADAEAEIKVYSDMKDKILDMTVDTVSYLNNAYVAGKKILVEGANATMLDIDFGTYPYVTSSNPSIGSVCTGGGISPNRLNGIIGIVKAYCTRVGEGPFPTELHDD---VGEHLGTVGAEFGTTTGRARRCGWLDIPQMRYSNMVNGFTELNLTKLDVLTGLKKVKIGVAYWHEGKKLDGMPSNLQLLQDSVVEYEEMEGWSEDISKCKTFEELPVAAQKYVLRVEELLGTHIKWIGVGPDRFDVITRTHPLEKAYISGN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PURA_OSTTA" ac="Q017T9" length="480" description="Adenylosuccinate synthetase, chloroplastic OS=Ostreococcus tauri OX=70448 GN=PURA PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1592</score>
+      <smithWatermanScore>1592</smithWatermanScore>
+      <initn>1594</initn>
+      <init1>932</init1>
+      <opt>1592</opt>
+      <zScore>1905.8</zScore>
+      <bits>362.2</bits>
+      <expectation>1.4e-98</expectation>
+      <identity>52.9</identity>
+      <positives>80.3</positives>
+      <overlap>442</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="77" end="511">SNQSVIGLLQELSRKVNNLESLVGGNPGSFPARSTSSVTKSGTQYGIDI-----VLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQ-GKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAY-LHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :.:.   :.... .   ..-----:::.::::::::::::.:...::: ::  ::.::::::  .-:::: .::.:::.:: :::::.:::::.:.:....:.:.:  .::: .::. .::::::.::.:.:.:: .:..:. .::::::.::::::.:: .:::.:.::... ..:   .: : .     .::.. ::. ... :: .:::.. .  ::..: :.  ..::.::::::::::::.::::::.::::::..:.: .:::..: :.. : :..::: :::: ::.::::--- :  ...: ..: :::::::: :: ::::.  ..:. :::::: .:.::.::.. : :.::: ::-: :::  .:.::.. .: .: . ::.::::.::::. . ...:::: .::.:::.:: :.  ..:::::.:  ..</pattern>
+      <matchSeq start="39" end="477">ADRARAFGGTTATRARRDDQGRRVTIARGIPSRARVVVARASERAYAELGNVCAVLGSQWGDEGKGKLVDILAREYDVVARCQGGANAGHTIYDDNGKKYALHLVPSGILNENATCVVGNGVVVHLPGMFEEIDKLLQAGVDARGRMIVSDRAHLLFDLHKEIDGLREEELSGNKIGTTKRGIGPAYASKATRNGVRLGDIRDEERFATMLRALAADAAARFEGFQYDVEAEIVRYKEIAERIEPFIADTVEYINEAHDSGKKILVEGANATMLDLDFGTYPFVTSSNPALGGVCNGLGLAPRKFKTIIGVAKAYTTRVGAGPYPTEL---FGDVADKLRELGYEYGTTTGRPRRIGWLDMVALNYANLINGFTHLNITKLDVLSEMDELKIGVAYKLPNGKTTKSFPADIATLEKVETVYETLPGWKEDISKVRTWDDLPENAKKYVLRVEELAGVECKFIGVGPGRDAMVIKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="PURA_PICGU" ac="A5DIP4" length="426" description="Adenylosuccinate synthetase OS=Meyerozyma guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) OX=294746 GN=PGUG_03145 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1575</score>
+      <smithWatermanScore>1575</smithWatermanScore>
+      <initn>1589</initn>
+      <init1>551</init1>
+      <opt>1575</opt>
+      <zScore>1886.6</zScore>
+      <bits>358.4</bits>
+      <expectation>1.6e-97</expectation>
+      <identity>53.9</identity>
+      <positives>80.3</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="513">NLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHK--IGTTKKGIGPAYSSKINRNGLRV-----GDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :.:::::::::::::::::: .: .:::: :::.::::::::   :: ::.::::..::.   ..:.:::.:::::..::..:: .:.: ..:...:.::::::::::..:  .: .:...:--:::: :::::.::.: .:.:.::----- : . ::.:. :. .:   . . :  .. :.. .:  ::   : .. ...:.... .: ..  :::::::::: :::::::::::::::. ..:.::::::. :  .:..::.:::: :::::::::::- :.:-- ::.:...:::.:.:::: :::::::.  ::::. :::.::.:.::.::.  . :.:.: .: ..:: : :.: .:.::.:: :.: .:::: .::.. ::. .:::: :::.  ....: .::.:.:.:: : ... .</pattern>
+      <matchSeq start="3" end="426">----------------------------MCDVVLGAQWGDEGKGKLVDLLCDDIEVCARCAGGNNAGHTIVVGKTKYDFHMLPSGLVNPKCQNILGSGVVVHIPSFFEELENLEKKGLDCRNRLFVSSRAHLVFDFHQRTDKLKEAELSENKKSIGTTGKGIGPTYSTKASRSGIRVHHLVSDDPDAWDEFKTRYYRLVDSRYKRYGEFEYDAEAELERYKKYREVLKPFVVDSVNFMHKAIKDKKRILVEGANALMLDIDFGTYPYVTSSSTGIGGVLTGLGLPPTAIRNVYGVVKAYTTRVGEGPFPTE-QLNE--VGEKLQDIGAEFGVTTGRKRRCGWLDLVVMKYSTAINGYTSLNITKLDVLDTFKEIKVGVSYTYKGKKLESFPEDLNVLKNVEVDYVTLPGWEQDITGIKKYSDLPENAQKYLKFIEDFLEVPIEWVGTGPARESMLTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="PURA_COPC7" ac="A8NDT2" length="428" description="Adenylosuccinate synthetase OS=Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) OX=240176 GN=CC1G_10072 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1575</score>
+      <smithWatermanScore>1575</smithWatermanScore>
+      <initn>1602</initn>
+      <init1>839</init1>
+      <opt>1575</opt>
+      <zScore>1886.6</zScore>
+      <bits>358.4</bits>
+      <expectation>1.6e-97</expectation>
+      <identity>55.3</identity>
+      <positives>79.3</positives>
+      <overlap>425</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVV--QG--KKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::.:. : ::::: :::.::::::::--.:--:.. :::::::..::. : ..:::::::.:::. :::.::..:.:  .:..:::::.::::::: ::: .: .::  .:::::::::::::.: .:.::::  : . . :  .::..   . . :  .. :.....  :. .:::.  ...:.. . .: . .:::.::::::: ::::::::::.::::. :.:.: ::::. :  .    :.:::: :::: ::::::   : :.---::..:: :::::::: :::::::.  ::.: ::::. ..::::.::. :. :.:.: .:  .:: :::.::.:..:: : :.: .::::.  :.. .....:: ::.:::  ..: : .::.::::::.:  .: .</pattern>
+      <matchSeq start="3" end="424">----------------------------MSVSVVLGSQWGDEGKGKLVDILAGDIDVCARCAGGNNAGHTIVVPIDGVEKSFAFHLLPSGLVNPKCTGLLGNGVVIHLPSFFAELDALESQGLDCTNRLFISDRAQLVFDFHQIVDGLKEVELGGSSIGTTKKGIGPAYSGKASRSGLRVHHLFEPETFAAKFRKVVEGRFKRYGHFEYDTEGEIERYRKLAERLRPYVVDSVAFIHKALASGKRVLVEGANALMLDIDFGTYPFVTSSSTSIGGVCTGLGIPPKMVGKTIGVVKAYTTRVGAGPFPTEQLNDVGV---HLQEVGHEYGTTTGRRRRCGWLDLAVMKHSCLINGYDAFNLTKLDVLDGLDEIKVGVSYSLDGKELSSFPADLELLSRVEVNYVTLPGWKTPITEIRNYDDLPANCKKYINFIEEQLKVPIEWIGVGPGRDAMITKRKDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="PURA_OSTLU" ac="A4RYD2" length="428" description="Adenylosuccinate synthetase, chloroplastic OS=Ostreococcus lucimarinus (strain CCE9901) OX=436017 GN=PURA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1574</score>
+      <smithWatermanScore>1574</smithWatermanScore>
+      <initn>1577</initn>
+      <init1>917</init1>
+      <opt>1574</opt>
+      <zScore>1885.4</zScore>
+      <bits>358.2</bits>
+      <expectation>1.9e-97</expectation>
+      <identity>54.5</identity>
+      <positives>81.1</positives>
+      <overlap>418</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="96" end="511">ESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQ-GKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAY-LHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :::.::::::::::::.:...::: ::  ::.::::::  .-:::: .::.:::.:: :::::.:::::.:.:....:.:.:  .::: .::...::::::.::.:.:.:: .: .:. .::::::.::::::.:: .:::.:.::... :.:   .: : .     ..:.. ::. ... :. .: :.. .  ::..:.:   . ::.::::::::::::.::::::.::::::..:.: .:::..: :.. : :..::: :::: ::.::::--- :  ...: ..: :::::::: :: ::::.  ..:.  ::::: .:.::.::.. : :.::: ::-: :::  ...::.. .: :: : ::.::::. ::.: ......::: .::::: .:: :.  :.:::::.:  ..</pattern>
+      <matchSeq start="11" end="425">--------------------MRGREDANARVLGSQWGDEGKGKLVDILAREYDVVARCQGGANAGHTIYDDDGKKYALHLVPSGILNENATCVVGNGVVVHLPGMFDEIDALLKAGVDARGRMMVSDRAHLLFDLHKEIDGLREAELSGNKIGTTKRGIGPAYASKATRNGVRLGDIRDADKFANALRTLAADAAARFDGFEYDVEAEIVRYREIASRIEPFIADTVEYVNDAHRNGKKILVEGANATMLDLDFGTYPFVTSSNPAIGGVSNGLGLAPRKFETIIGVAKAYTTRVGAGPYPTEL---FGDVADKLRELGYEYGTTTGRPRRIGWLDMVALNYANQINGFTHLNITKLDVLSEMDELKIGVAYELPNGKTTTAFPADIATLENVKVVYETLPGWKTDIANVRSWDDMPENAKKYILRCEELSGVECRYIGVGPGRDAMVIKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="PURA1_LACBS" ac="B0DQB9" length="428" description="Adenylosuccinate synthetase 1 OS=Laccaria bicolor (strain S238N-H82 / ATCC MYA-4686) OX=486041 GN=LACBIDRAFT_295311 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1574</score>
+      <smithWatermanScore>1574</smithWatermanScore>
+      <initn>1586</initn>
+      <init1>838</init1>
+      <opt>1574</opt>
+      <zScore>1885.4</zScore>
+      <bits>358.2</bits>
+      <expectation>1.9e-97</expectation>
+      <identity>53.9</identity>
+      <positives>79.3</positives>
+      <overlap>425</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVV--QG--KKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              . .:::.::::::::::::.:. : ::::: :::.::::::.:--.:--: . :::::::..::  : .::.:.:.:.:::. :::.:::.:.: ..:..::::::::::::: ::: .: .:: ..:::::.:::::::.: .:.::::  : . . : ..::.:   . . :  .. :.....  :: .:::.  ...:.. : .: . .::..::::::: :::.:::::::::::. ..:.: ::::. :  .    :.:::: :::: ::::.:   : :.---::..:: :::::::: :::::::.  ...:..:::. :.::::.::.  .::.:..  :: .:: : ..::.:..:.:: ::: .::::. .: :   ...:::::. ::  ... :..::.:::::: : ... .</pattern>
+      <matchSeq start="3" end="424">----------------------------MSVTVVLGSQWGDEGKGKLVDILAADIDVCARCAGGNNAGHTIIVPIDGVLKTFAFHLLPSGLVNPRCTGLIGSGLVVHVPSFFAELDALEAQGLDCSNRLFISDRAHLVFDFHQIVDGLKEVELGGKSIGTTKRGIGPAYSGKASRSGLRVHHLFDHETFAEKFRKLVEGRYKRYGHFEYDTEGEIERYKKLAERLRPYVVDSVAYIHKAITSGKKVLVEGANALMLDLDFGTYPYVTSSSTTIGGVCTGLGIPPKMIGRTIGVVKAYTTRVGGGPFPAEQLNDIGV---HLQEVGREYGTTTGRRRRCGWLDLVVLRHSSMINGYDSLNLTKLDVLDQLPEIKVATRYLVDGKELEGFPADLELLANVDVEYVTLPGWQSSIENITTYDDLPENCKGYIKFIEDSLNVPIEWIGVGPARKSMVRKELKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="PURA1_PHYPA" ac="A9SCV9" length="514" description="Adenylosuccinate synthetase 1, chloroplastic OS=Physcomitrium patens OX=3218 GN=PURA1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1574</score>
+      <smithWatermanScore>1574</smithWatermanScore>
+      <initn>1057</initn>
+      <init1>651</init1>
+      <opt>1574</opt>
+      <zScore>1883.5</zScore>
+      <bits>358.1</bits>
+      <expectation>2.4e-97</expectation>
+      <identity>55.1</identity>
+      <positives>81.0</positives>
+      <overlap>421</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="96" end="511">ESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVV-QGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKID---VDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAY-LHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :::.::::::::::::.:.: .:: ::  ::.::::::  -.:.:. .::.:::.:: ..:::.:::::::.:.:..:.:.::..::. .::. .::::::.:..:::::: .: .:. . :::::.:::: :.::  :::.:::::.. : :....  :       ..:.. .---:: .. .:   :::.. . .::.::.:  .  :::::.::..::::::::::::.:::::::::.. ::::..:..:  : :..::: :::: ::.::::--- :  ::.: ..: :.:::::: ::::::::  ....  :::::.:::::.::..:.::::.: ::- ..:. : :.::.:..: .: ::::.: .:.:::.. ... :::   :::. :..::.:.: ..:::::.:  .:</pattern>
+      <matchSeq start="94" end="511">AQAIERESVKADTGSGREEDAFSGLKQVCAVLGTQWGDEGKGKLVDILAQRFDVVARCQGGANAGHTIYNDKGEKFALHLVPSGILNEKTTCVVGNGVVIHLPGFFKEIDNLESKGVNTSGRLLVSDRAHLLFNLHQEVDGLREAELAGQMIGTTKRGIGPCYASKAIRNGIRVGDLRHLDTFREKLDILFRDAAARFKGFEYSAAAVDAEMEMYVKYAERLEHYIVDTVDYVNTAYAEGKRILIEGGQATMLDIDFGTYPFVTSSNPSVGGICTGLGMAPNRLGDIVGVAKAYTTRVGSGPYPTEL---FGEEGEELRKAGFEWGTTTGRPRRCGWLDIVALNFACTINGFTAINLTKLDVLSGLPEVKLGVAYRTQSGEKLRSFPADLSILEQVEVEYETLEAWKEDITKVRSYAELPVAAQKYVERIEELIGLPCQYIGVGPGRDALIVKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PURA_CANGA" ac="Q6FMU9" length="432" description="Adenylosuccinate synthetase OS=Candida glabrata (strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL Y-65) OX=284593 GN=CAGL0K05027g PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1572</score>
+      <smithWatermanScore>1572</smithWatermanScore>
+      <initn>1421</initn>
+      <init1>513</init1>
+      <opt>1572</opt>
+      <zScore>1882.9</zScore>
+      <bits>357.8</bits>
+      <expectation>2.6e-97</expectation>
+      <identity>53.5</identity>
+      <positives>81.0</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::.: . ::: :: :::.::::::::.: :: ::.::::..:::   ..:::::::::::..::..::..:.-: .::..::.::::::::::..:  .: .:-:: :----:::: :::::.::.: .:.::::  : :-----:. :: :.:.:   ... :  .  :....:  .:   : .. ...:..:. .:..  ...:::::::: :::::::::::::::: ..:.:.::::. : :.. .::.:::: :::::::::::- :.:-- ::.:...:::.:.:::: :::::::.  .:::.::::.::.:.::.::.  . :. .: .: ..:. :.:.: .: .:.:: ::: .::::..::.. ::...:::: .::.  ..... .:..:.:.:: : .....</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDILVSHYDVVARCAGGNNAGHTIVVDGVKYDFHMLPSGLVNPNCKNLLGNGVVIHIPSFFKELETLESKGLNDARGRLFISSRAHLVFDFHQRTDKLRELELAGRSKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVNDNPGAWELFESRYRRLLETRKQRYGDFDYDAEEELNRFKQYKESLKPFVVDSVDFLHKSIANNEKILVEGANALMLDIDFGTYPYVTSSNTGIGGVITGLGIPPQKIQEVYGVVKAYTTRVGEGPFPTE-QLNE--QGEKLQSIGAEFGVTTGRKRRCGWLDLVLLKYSTLINGYTSLNITKLDVLDTFTEIPVGVSYKYKGETLNSFPEDLLTLGNVEVEYVTLPGWNQDITQIKKYDDLPENAKKYLKFIEDFVKVPVQWVGTGPARDSMLEKQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="PURA_USTMA" ac="Q4P7R2" length="439" description="Adenylosuccinate synthetase OS=Ustilago maydis (strain 521 / FGSC 9021) OX=237631 GN=UMAG_03851 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1572</score>
+      <smithWatermanScore>1572</smithWatermanScore>
+      <initn>1571</initn>
+      <init1>832</init1>
+      <opt>1572</opt>
+      <zScore>1882.7</zScore>
+      <bits>357.8</bits>
+      <expectation>2.6e-97</expectation>
+      <identity>53.8</identity>
+      <positives>78.9</positives>
+      <overlap>435</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="83" end="513">GLLQELSRKVNNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIV--VQG--KKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              : .:.: .--  ..::.::::::::::.:.:: ..::::: :::.:::::::--:.:-- :. :::::::..::  .  ::.:::.:.:::. :::... .:.. .::..::::::::::::: ::: .: .::  .::::::::::::::: .:.::::  : . . :  .::.:   . . :  .. :.....: :.. :::.    .: . . .  .  ....::::::: .:::::::::.::::. :.:.::::::. :  .  . :..::: :::: :::::::  .--- :.::..::::::.:::: :::::::. .:.:: ::::.::.::::.::.  . :.::  .:. .:: : :.::.:.::..: :.:..::::..:::.   .:::::::..:.  ....::. :.:::::: : ..: :</pattern>
+      <matchSeq start="8" end="437">-----------------------MAAMPKPSDSKTGGK--ATVLLGSQWGDEGKGKLADVLSGQMDVCARCAGGNNAGHTIVADVNGVKTKFDFHLLPSGLVNPRCAGFIGSGVVVHVPSFFAELDTIQKKGLNCDGRLFISDRAHLVFDFHQVVDGLKEVELGGSSIGTTKKGIGPAYSSKASRSGLRVHHLYDPELFATKFRKLVEGRFKRYGHFEYDTEGEIARYRAFAERLRPHIVDGVTFIHTALAQNRKVLVEGANALFLDIDFGTYPFVTSSSTSIGGVLTGLGIPPTAIGDVIGVMKAYTTRVGMGPFPTELHEE---IGHHLQEVGAEYGVTTGRRRRCGWLDLVMMRYSCLINGYTSLNLTKLDVLDQLKEIKICVGYVVDGKELPSFPADLEVLAKVEVQYKTLPGWQQDISKTTTWEELPENCRNYVDFIEQFLGVKIEWIGVGPARESMIHRAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="PURA_LODEL" ac="A5DSZ3" length="428" description="Adenylosuccinate synthetase OS=Lodderomyces elongisporus (strain ATCC 11503 / CBS 2605 / JCM 1781 / NBRC 1676 / NRRL YB-4239) OX=379508 GN=LELG_00479 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1560</score>
+      <smithWatermanScore>1560</smithWatermanScore>
+      <initn>1497</initn>
+      <init1>542</init1>
+      <opt>1560</opt>
+      <zScore>1868.6</zScore>
+      <bits>355.1</bits>
+      <expectation>1.6e-96</expectation>
+      <identity>53.2</identity>
+      <positives>80.1</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="513">NLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHK--IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :.:::.::::::::::::.: .: ::::: :::.::::::::.:::. ::.::::..::.   ..:.:::::.:::..:: ..: .:.  . :. .:.::::::::::..:  .: .:...:--:::: :::::.::.: .:.:.::  : :-----:..:. :. .:   ... :  .  : . .:: :.   :..  ...:.... .. .   :.:::::::: :::::::::::::::. ..:.::::::. :  .:.:::.:::: :::::::::::---. .. :: :..::::::.:::: :::::::.  .:::.::::.::.:.::.::.  . :...: ::  ::: :.:.: .:  :.:: : :..:::: .::.. ::.:.:::: ..:.  ....::.::.:.:.:: : .....</pattern>
+      <matchSeq start="3" end="426">----------------------------MCDVVLGSQWGDEGKGKLVDILCDDIDVCARCAGGNNAGHTIVVDGKKFDFHMLPSGLVNPKCQNLVGSGVVIHVPSFFEELKNIEEKGLHCRDRLKVSSRAHLVFDFHQRTDKLKEAELSENKKSIGTTGKGIGPTYSTKASRSGIRVHHLVNSNPEAWNEFKTRYMRLVESRQKRYGEFDYDYEAELAKYEKYREELRPFVVDSVEFMHEAIAQKKKILVEGANALMLDIDFGTYPYVTSSSTGIGGVLTGLGIPPKTIRNIYGVVKAYTTRVGEGPFPTE---QLNSVGETLQDVGAEYGVTTGRKRRCGWLDLVVLKYSTLINGYTSLNITKLDVLDKFKEIQVGIAYKLNGKELKSFPEDLIDLGNVEVVYKTLPGWEQDITKIKKYEDLPENAKNYLKYIEDFLGVPIQWVGTGPARDSMLEKKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="PURA_MALGO" ac="A8Q0E3" length="445" description="Adenylosuccinate synthetase OS=Malassezia globosa (strain ATCC MYA-4612 / CBS 7966) OX=425265 GN=MGL_2020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1558</score>
+      <smithWatermanScore>1558</smithWatermanScore>
+      <initn>1573</initn>
+      <init1>835</init1>
+      <opt>1558</opt>
+      <zScore>1865.8</zScore>
+      <bits>354.7</bits>
+      <expectation>2.3e-96</expectation>
+      <identity>51.8</identity>
+      <positives>80.6</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQG------KKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              . .:::.::::::::::.:.:. ..:.::: :::.:::::::...------ :. :::::::..::.    ::.:::.:.:::..:::..: .:.  ..:...:::.:::::::: ::: .: .::  .::::::::::::::: .:.::::  : ..: :  .::.:   . . : ... :.....: :.. :::.  ...: . . .... ...:.::::::: :::.:.::::.::::. ..:.: ::::. :  . :. :..::: .::: ::::::: -::  -- ::..::::::::::: :::::::. .:.:: ::::.: .::::.::. ..::.:.. .:. . : :::.::.:..:..: :.:... ::   :::: ..:.::..:..::  ....::. :.::::::.:  .. :</pattern>
+      <matchSeq start="15" end="438">----------------MASMPKPNQSARGRVTVVLGSQWGDEGKGKLTDMLAGEMDICARCAGGNNAGHTIVANSGPDNVKTKFDFHLLPSGLVNPKCIGFIGSGVVMHVPSFFSELDTIEKKGLKCDNRLFVSDRTHLVFDFHQVVDGLKEVELGGSSIGTTKKGIGPAYSSKASRSGLRVHHLYDFDTFAAKFRKLVEGRFKRYGNFEYDTEGEIARYRAFAERLRPFVVDGVTFIHSMLSSNRRVLVEGANALMLDLDYGTYPFVTSSSTGIGGVCTGLGIPPQCIGGVIGVMKAYTSRVGAGPFPTELN-DEIM--THLQEVGAEYGTTTGRRRRCGWLDLVMMRYSCLINGYTCLNLTKLDVLDNLPEIKVATTYMLGDKELSSFPADLNILAKVDVQYKTFKGWRGPISNCTSYEQLPDTCREYIEFIENFLGVHIEWIGVGPGREAMVHRPLPPHEM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="PURA_KLULA" ac="Q6CQ65" length="432" description="Adenylosuccinate synthetase OS=Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) OX=284590 GN=KLLA0D19426g PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1555</score>
+      <smithWatermanScore>1555</smithWatermanScore>
+      <initn>1567</initn>
+      <init1>509</init1>
+      <opt>1555</opt>
+      <zScore>1862.5</zScore>
+      <bits>354.0</bits>
+      <expectation>3.5e-96</expectation>
+      <identity>53.9</identity>
+      <positives>79.2</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRV-----GDLQNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::::  .::. :: :::.::::::::.: :: ::.::::..:::   .::::::::.:::..:: ::::.:.-. .::..::.::::::::::..:  .: .:-:  :----:::: :::::.::.: .:.::::----- : : :. :: :.:.:   ... : ..  : ...:  ::.  :... ...:.... .  .. .:.:::::::: :::::::::::::::: ..:.:.::::. :  .. ..:.:::: :::::::::::- :.: --::.:...:::.:.:::: :::::::.  .::: ::::.::.:.::.::.  . :.:.: .:  .:: : :.: .: .:..: ::: .:::: ::::.  ..:.:::: :::.  ..... .::.:.:.:: :  .. .</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDLLVGEYDIVARSAGGNNAGHTIVVNGVKYDFHMLPSGLVNPNCQNLIGNGVVIHVPSFFEELKSLEAKGLKNAKGRLFISSRAHLVFDFHQRTDKLRELELSGASKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVNDDPQAWEVFETRYRRLVETRQQRYGSFDYDPEEELQRYKSYREQLKPFVVDSVNFMHDAIKKNKKILVEGANALMLDIDFGTYPYVTSSNTGIGGVITGLGIPPRTIKEVFGVVKAYTTRVGEGPFPTE-QLNED--GEKLQNIGAEFGVTTGRKRRCGWLDLVVLKYSNLINGYTSLNITKLDVLDTFKEIKVGVSYSVDGKKLESFPEDLLTLAKVEVEYVTLPGWEEDISKITNYEDLPENAQKYLKFIEDFVEVPIQWVGTGPARDAMVHKEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="PURA_YEAS7" ac="A6ZRM0" length="433" description="Adenylosuccinate synthetase OS=Saccharomyces cerevisiae (strain YJM789) OX=307796 GN=ADE12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1554</score>
+      <smithWatermanScore>1554</smithWatermanScore>
+      <initn>1495</initn>
+      <init1>518</init1>
+      <opt>1554</opt>
+      <zScore>1861.3</zScore>
+      <bits>353.8</bits>
+      <expectation>4.1e-96</expectation>
+      <identity>53.5</identity>
+      <positives>80.1</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::::   ::. :: :::.::::::::.: :: ::.::::..:::   ..:::::::.:::..::..:::.:.-. ..:...:.:::::::::: .:  .: .:-:: :----:::: :::::.::.: .:.::::  : :-----:..:  :...:   ... :  .. : . .:: :: . :... ...:.. . .. .:: :.:::::::: :::::::::::::::: ..:.::::::. :  .  :::.:::: :::::::::::- :.:.--::.:. .:::.:.:::: :::::::.  .:::.::::.::.:.::.::.  . :. .: .:  .:: :. .: .:..:..: :::.:::::..::..  :.:.:::: .::.  .....:.:..:.:.:: : ... .</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDLLVGKYDIVARCAGGNNAGHTIVVNGVKYDFHMLPSGLVNPNCQNLLGNGVVIHVPSFFKELETLEAKGLKNARSRLFVSSRAHLVFDFHQVTDKLRELELSGRSKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVNDQPGAWEEFVARYKRLLETRRQRYGDFEYDFEAKLAEYKKLREQLKPFVVDSVVFMHNAIEAKKKILVEGANALMLDIDFGTYPYVTSSNTGIGGVLTGLGIPPRTIDEIYGVVKAYTTRVGEGPFPTE-QLNEN--GEKLQTIGAEFGVTTGRKRRCGWLDLVVLKYSTLINGYTSLNITKLDVLDTFKEIPVGISYSIQGKKLDLFPEDLNILGKVEVEYKVLPGWDQDITKITKYEDLPENAKKYLKYIEDFVGVPVEWVGTGPARESMLHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="PURA_YEAST" ac="P80210" length="433" description="Adenylosuccinate synthetase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ADE12 PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1554</score>
+      <smithWatermanScore>1554</smithWatermanScore>
+      <initn>1495</initn>
+      <init1>518</init1>
+      <opt>1554</opt>
+      <zScore>1861.3</zScore>
+      <bits>353.8</bits>
+      <expectation>4.1e-96</expectation>
+      <identity>53.5</identity>
+      <positives>80.1</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::::   ::. :: :::.::::::::.: :: ::.::::..:::   ..:::::::.:::..::..:::.:.-. ..:...:.:::::::::: .:  .: .:-:: :----:::: :::::.::.: .:.::::  : :-----:..:  :...:   ... :  .. : . .:: :: . :... ...:.. . .. .:: :.:::::::: :::::::::::::::: ..:.::::::. :  .  :::.:::: :::::::::::- :.:.--::.:. .:::.:.:::: :::::::.  .:::.::::.::.:.::.::.  . :. .: .:  .:: :. .: .:..:..: :::.:::::..::..  :.:.:::: .::.  .....:.:..:.:.:: : ... .</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDLLVGKYDIVARCAGGNNAGHTIVVDGVKYDFHMLPSGLVNPNCQNLLGNGVVIHVPSFFKELETLEAKGLKNARSRLFVSSRAHLVFDFHQVTDKLRELELSGRSKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVNDQPGAWEEFVARYKRLLETRRQRYGDFEYDFEAKLAEYKKLREQLKPFVVDSVVFMHNAIEAKKKILVEGANALMLDIDFGTYPYVTSSNTGIGGVLTGLGIPPRTIDEIYGVVKAYTTRVGEGPFPTE-QLNEN--GEKLQTIGAEFGVTTGRKRRCGWLDLVVLKYSTLINGYTSLNITKLDVLDTFKEIPVGISYSIQGKKLDLFPEDLNILGKVEVEYKVLPGWDQDITKITKYEDLPENAKKYLKYIEDFVGVPVEWVGTGPARESMLHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="PURA_YEAS2" ac="C7GPD7" length="433" description="Adenylosuccinate synthetase OS=Saccharomyces cerevisiae (strain JAY291) OX=574961 GN=ADE12 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1554</score>
+      <smithWatermanScore>1554</smithWatermanScore>
+      <initn>1495</initn>
+      <init1>518</init1>
+      <opt>1554</opt>
+      <zScore>1861.3</zScore>
+      <bits>353.8</bits>
+      <expectation>4.1e-96</expectation>
+      <identity>53.5</identity>
+      <positives>80.1</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.::::::::::::::   ::. :: :::.::::::::.: :: ::.::::..:::   ..:::::::.:::..::..:::.:.-. ..:...:.:::::::::: .:  .: .:-:: :----:::: :::::.::.: .:.::::  : :-----:..:  :...:   ... :  .. : . .:: :: . :... ...:.. . .. .:: :.:::::::: :::::::::::::::: ..:.::::::. :  .  :::.:::: :::::::::::- :.:.--::.:. .:::.:.:::: :::::::.  .:::.::::.::.:.::.::.  . :. .: .:  .:: :. .: .:..:..: :::.:::::..::..  :.:.:::: .::.  .....:.:..:.:.:: : ... .</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDLLVGKYDIVARCAGGNNAGHTIVVDGVKYDFHMLPSGLVNPNCQNLLGNGVVIHVPSFFKELETLEAKGLKNARSRLFVSSRAHLVFDFHQVTDKLRELELSGRSKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVNDQPGAWEEFVARYKRLLETRRQRYGDFEYDFEAKLAEYKKLREQLKPFVVDSVVFMHNAIEAKKKILVEGANALMLDIDFGTYPYVTSSNTGIGGVLTGLGIPPRTIDEIYGVVKAYTTRVGEGPFPTE-QLNEN--GEKLQTIGAEFGVTTGRKRRCGWLDLVVLKYSTLINGYTSLNITKLDVLDTFKEIPVGISYSIQGKKLDLFPEDLNILGKVEVEYKVLPGWDQDITKITKYEDLPENAKKYLKYIEDFVGVPVEWVGTGPARESMLHKEIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="PURA_CANTT" ac="C5MBF2" length="428" description="Adenylosuccinate synthetase OS=Candida tropicalis (strain ATCC MYA-3404 / T1) OX=294747 GN=CTRG_03394 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1553</score>
+      <smithWatermanScore>1553</smithWatermanScore>
+      <initn>1542</initn>
+      <init1>565</init1>
+      <opt>1553</opt>
+      <zScore>1860.2</zScore>
+      <bits>353.6</bits>
+      <expectation>4.7e-96</expectation>
+      <identity>53.6</identity>
+      <positives>78.9</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="513">NLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHK--IGTTKKGIGPAYSSKINRNGLRVGDLQN-----WDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :.:::.:::::::::::::: .: ::::: :::.::::::::.  :: ::.::::..:::   ..:.:::::.:::..::..:::.:.: . :...:.::::::::::..:  .: .:. .:--:::: :::::.::.: .:.:.::  : :-----:. :. :. .:   ... :  .  : ...:: :.   : .  ...:.. . .  . :.:.:::::::: :::::::::::::::. ..:.::::::. :  ....::.:::: :::::::::::- :.:-- :: :..::::::.:::: :::::::.  .:::  :::.::.:.::.::.  . :...: ::  ::: : :.: .:  :..: : :. .::: .::.. .:.:.:::: ..:.  ..: ::.::.:.:.:: : .....</pattern>
+      <matchSeq start="3" end="426">----------------------------MCDVVLGSQWGDEGKGKLVDLLCDDIDVCARCAGGNNAGHTIVVDKTKYDFHMLPSGLVNPNCKNLVGSGVVIHVPSFFQELENLEAKGLDCRDRLFVSSRAHLVFDFHQRTDKLKEAELSTNKKAIGTTGKGIGPTYSTKASRSGIRVHHLVNPDPAAWEDFKTRYMRLVESRQKRYGQFDYDYEEELARYEKYRETLRPFVVDSVVFMHDAIAANKKILVEGANALMLDIDFGTYPYVTSSSTGIGGVLTGLGIPPRTIKNVYGVVKAYTTRVGEGPFPTE-QLNE--VGETLQDVGAEYGVTTGRKRRCGWLDLVVLKYSNAINGYTSLNITKLDVLDKFKEIEVGVAYKLNGKELPSFPEDLIDLAKVEVVYKKFPGWEQDITGISKYEDLPENAKNYLKFIEEYLGVPIQWVGTGPARESMLEKKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="PURA_ASHGO" ac="Q75E56" length="433" description="Adenylosuccinate synthetase OS=Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) OX=284811 GN=ABL186W PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1553</score>
+      <smithWatermanScore>1553</smithWatermanScore>
+      <initn>1485</initn>
+      <init1>507</init1>
+      <opt>1553</opt>
+      <zScore>1860.1</zScore>
+      <bits>353.6</bits>
+      <expectation>4.8e-96</expectation>
+      <identity>53.9</identity>
+      <positives>80.3</positives>
+      <overlap>432</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="93" end="513">NNLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGV-DYQGRVYISDRAHLVFDFHQEVDGRQEDRL-GRHK----IGTTKKGIGPAYSSKINRNGLRVGDL-----QNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              ...:::.:::::::::::::: . ::. :: :::.:::::::: : :: ::.::::..:::   .::::::::.:::..::..:::.:.-: .::..::.::::::::::..:  .: .:-:. :----:::: :::::.::.: .:.::::  :-----. : .:: ..:.:   ... :  .. :....:: :.   :..  ...:.. . .. ..  :.:::::::: :::::::::::::::. ..:.::::::. :  .  :::.:::: :::::::::::- :.:.--:..:. .:::::.:::: :::::::.  .:::.:::::::.:.::.::.  . :.:.: .:  ::: :. .: .: :::.: ::: .::::.:::.. ...:.:::: ..:.  .....:.:..:.:.::.: ... .</pattern>
+      <matchSeq start="2" end="430">-----------------------------MVNVVLGSQWGDEGKGKLVDLLVSKYDIVARSAGGNNAGHTIVVGGIKYDFHMLPSGLVNPNCQNLIGNGVVIHVPSFFGELEQLEAKGLRDARGRLFISSRAHLVFDFHQRTDKLRELELSGKSKDGKNIGTTGKGIGPTYSTKASRSGLRVHHLVSEQPEAWAEFETKYRRLLETRQQRYGPFEHDAEEELARYRRYREELRPFVVDSVVFMHNAIQQKKKILVEGANALMLDIDFGTYPYVTSSSTGIGGVLTGLGIPPRCIDEIYGVVKAYTTRVGEGPFPTE-QLNEA--GDKLQTIGAEYGVTTGRKRRCGWLDLVVLKYSTLINGFTSLNITKLDVLDTFKEIKVGISYSLNGKKLDLFPEDLLVLSKVDVEYVTLPGWDEDITKISRYEDLPENAKSYLKFIEDFVGVPVEWVGTGPGRESMLHKEVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="PURA_KOMPG" ac="C4R8E8" length="428" description="Adenylosuccinate synthetase OS=Komagataella phaffii (strain GS115 / ATCC 20864) OX=644223 GN=PAS_chr4_0613 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1551</score>
+      <smithWatermanScore>1551</smithWatermanScore>
+      <initn>1563</initn>
+      <init1>539</init1>
+      <opt>1551</opt>
+      <zScore>1857.8</zScore>
+      <bits>353.1</bits>
+      <expectation>6.4e-96</expectation>
+      <identity>52.5</identity>
+      <positives>80.3</positives>
+      <overlap>427</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="94" end="513">NLESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVVQGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHK--IGTTKKGIGPAYSSKINRNGLRVGDL-----QNWDHFERRFRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAYLHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :.:::.::::::::::::.: .: :::::  ::.::::::.:.: :. ::.::::..::.   .::.:::::.:::..::...: .:.:  ::...:.:::::: :::..:  .: .: . :--:::: :::::.::.: .:.:.::  :-----..: .:: :. .:   ... :  .  :....:: ::.. :... ...:.:.. .  ..  :.:::::::: :::::::::::::::: ..:.::::::. :  . .:::.:::: :::::::::::- :.:-- ::.:. .: :::.:::: :::::::.  .:::.::::.::.:.::.::.  . :.::: .: ..:: ....: .: .:..: ::: ..::: :::.. :..:.:: : .::.  ..: . .::.:.:.::.: .....</pattern>
+      <matchSeq start="3" end="426">----------------------------MADVVLGSQWGDEGKGKLVDVLCEDIDVCARCQGGNNAGHTIIVKGVKFDFHMLPSGLVNPKCKNLIGSGVVIHLPSFFEELEAIENKGLDCTGRLFVSSRAHLVFGFHQRTDKLKEAELHETKKSIGTTGKGIGPTYSTKASRSGIRVHHLVSDEPDSWKEFETRLSRLIETRKKRYGHFDCDLESELAKYKVLREKIKPFVVDSIEFMHDAIKDKKKILVEGANALMLDIDFGTYPYVTSSNTGIGGVLTGLGIPPKAINNIYGVVKAYTTRVGEGPFPTE-QLNE--DGEKLQTIGCEYGVTTGRKRRCGWLDLVVLKYSTLINGYTSLNITKLDVLDTFKEIKIGVSYTYQGKRVTTFPEDLHALGKVDVEYVTFPGWEEDITQIKNYEDLPANAKKYLEFIEEYVEVPIQWVGTGPGRESMLEKNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="PURA2_PHYPA" ac="A9TIK2" length="514" description="Adenylosuccinate synthetase 2, chloroplastic OS=Physcomitrium patens OX=3218 GN=PURA2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1549</score>
+      <smithWatermanScore>1549</smithWatermanScore>
+      <initn>1056</initn>
+      <init1>636</init1>
+      <opt>1549</opt>
+      <zScore>1853.6</zScore>
+      <bits>352.6</bits>
+      <expectation>1.1e-95</expectation>
+      <identity>54.0</identity>
+      <positives>81.0</positives>
+      <overlap>422</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="96" end="511">ESLVGGNPGSFPARSTSSVTKSGTQYGIDIVLGAQWGDEGKGKLVDLLSQDYDVCARVAGGSNAGHTIVV-QGKKYKFHLLPSGVLNPNATCVIGNGVVIHIPSFLNELDSLEASGVDYQGRVYISDRAHLVFDFHQEVDGRQEDRLGRHKIGTTKKGIGPAYSSKINRNGLRVGDLQNWDHFERR----FRELCTHHERSYEGLKIDVDNQLAFYKTVAERVNSMTIDTIDYTNKQFEAGKRILVEGANATMLDIDFGTYPYVTSSNPSVGSVLTGLGVSPGKLRGIYGTVKAYCTRVGEGPFPTELPLDEGTPGEHLSQVGAEYGTTTGRTRRCGWLDIPQMKYSALINGFTSINLTKVDVFTGMPEVKIGKAY-LHNGKYLSSMPASLDVLSNVGVEYEVLPGWSEDISNCKKFEELPENCQKYILRVQELLGIPIRWIGVGPNRADVIDRGEGWDLATAGTNQ</querySeq>
+      <pattern>                              :::.::::::::::::.:.: .:: ::  ::.::::::  -.:.:. .::.:::.:: ..:::.:::::::.:.:..:.:.::..::. .::. .::::::.:..:::::: .: .:. . :::::.:::: :.::  :::.::.::.. : :...----.:.  .. -...:  . .:. ..  :   :::.. . .::.::.:  .  :::::.::..::::::::::::.:::::::::.. :::::.:..:  : :..::: .::: ::.::::--- :  :..: ..: :.:::::: ::::::::  ...   :::::.:::::.::..:.::::.: ::-  .:. : ..::.:..: .: ::::.: ::.:::.. ....:::   :.:. :..::.:.: ..:::::.:  .:</pattern>
+      <matchSeq start="94" end="511">AQAIEREAVKADAGNSREEDAFSGLKQVCAVLGTQWGDEGKGKLVDILAQRFDVVARCQGGANAGHTIYNDKGEKFALHLVPSGILNEKTTCVVGNGVVIHLPGFFKEIDNLESKGVNTNGRLLVSDRAHLLFNLHQEVDGLREAELAGQMIGTTKRGIGPCYASKAIRNGIRVSDLRHLDTFREKLDILYRDAAARF-KDFEYSSDEVNAEMEKYVKYAERLEPYIVDTVDYVNAAIAEGKRILIEGGQATMLDIDFGTYPFVTSSNPSVGGICTGLGVAPNRLGDIVGVAKAYTSRVGSGPYPTEL---FGEEGDELRKAGFEWGTTTGRPRRCGWLDIVALNFVCTINGFTAINLTKLDVLSGLPEVKLGIAYKTPSGEKLRAFPADLSILEQVEVEYEILEGWKEDITKVRSYDELPAAAQRYVERIEELIGLPCQYIGVGPGRDALIVKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="ssearch36" version="SSEARCH 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-R20221107-171530-0653-20106945-p2m.sequence | singularity exec -B $PWD:/output $APPBIN/singularity/fasta:36.3.8h /fasta/bin/ssearch36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -d 20 -m &quot;F9B fasta-R20221107-171530-0653-20106945-p2m.m9&quot; -m &quot;F10 fasta-R20221107-171530-0653-20106945-p2m.m10&quot; \@:1- +uniprotkb_swissprot+"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0T0E9|ATPF_PHATC" type="PROTEIN" length="179"/>
+   </sequences>
+   <databases total="1" sequences="568363" letters="205318884">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>20</alignments>
+  </parameters>
+  <timeInfo start="2022-11-07T17:15:30+00:00" end="2022-11-07T17:15:34+00:00" search="P0Y0M0DT0H0M4.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="ATPF_PHATC" ac="A0T0E9" length="179" description="ATP synthase subunit b, chloroplastic OS=Phaeodactylum tricornutum (strain CCAP 1055/1) OX=556484 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1082</score>
+      <smithWatermanScore>1082</smithWatermanScore>
+      <zScore>1238.2</zScore>
+      <bits>235.7</bits>
+      <expectation>2.1e-61</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="179">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</pattern>
+      <matchSeq start="1" end="179">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ATPF_TRICV" ac="Q00822" length="179" description="ATP synthase subunit b, chloroplastic OS=Trieres chinensis OX=1514140 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>858</score>
+      <smithWatermanScore>858</smithWatermanScore>
+      <zScore>982.7</zScore>
+      <bits>188.4</bits>
+      <expectation>3.6e-47</expectation>
+      <identity>76.5</identity>
+      <positives>94.4</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="179">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>::::.::::::::.:::::: .:::::..:: .:::::::::.:::::.::.:::.::.:::::: ::.::..::.::::::.::..:::::.::::..:::::::... :::::  :: :::: :.:::::::::.:.::: ::::::: ::::.:.::::::.::..::::::::::</pattern>
+      <matchSeq start="1" end="179">MENFNQIFTLLAENEGIGLNTDILETGIINIAALVGILIYAGRDFLGSFLEQRKTSIVQGVQDAEGRLEEANRRLSEAQKQLSQAHIVISEIKNETISAKKVLLESDAYQAKKDLTTRFSRALATFRSKERQIFLEVKEQIILLVLKRTVARAQQTFGPKERATALITETINKLEGDLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="ATPF_THAPS" ac="A0T0P2" length="179" description="ATP synthase subunit b, chloroplastic OS=Thalassiosira pseudonana OX=35128 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>780</score>
+      <smithWatermanScore>780</smithWatermanScore>
+      <zScore>893.7</zScore>
+      <bits>171.9</bits>
+      <expectation>3.2e-42</expectation>
+      <identity>70.4</identity>
+      <positives>92.7</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="179">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>::::.::::.::  :::::::.::::::::::.::.::.:.:::::::.:.:::.::::.:::::::::::..::.::::::.::..::::::::: ..:  ::.:..  :::.:  ::.::.. :.:::: :::..:::::::::::..:.:...:. :.:: .:::.::.:::::::</pattern>
+      <matchSeq start="1" end="179">MENFNQIFTVLAASEGIGLNLDILETGLLNILALVAILVYTGKDFLGSILQERKSTIVKSVQDAEDRLNEANRRLSEAQKQLSQAHVVISEIRNETKTAKTNLLKSDATTAKKELTTRFNRAISSFRSKERVIFLDVKQQIISLVLKRSAIQAKETFGSKKRARALINETIQKLEGDLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="ATPF_VAULI" ac="B7T1R8" length="178" description="ATP synthase subunit b, chloroplastic OS=Vaucheria litorea OX=109269 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>342</score>
+      <smithWatermanScore>342</smithWatermanScore>
+      <zScore>394.0</zScore>
+      <bits>79.5</bits>
+      <expectation>2.2e-14</expectation>
+      <identity>33.7</identity>
+      <positives>73.0</positives>
+      <overlap>178</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:.:. . : :. ....:..: :::::.:.::. :. ::.:  : .: . :  :. .:.. .:..:.:.:::..:: .:. : .::.... :..:.:. .: .:...:    .. :. .:.  :  .  .:.: : .::.:.  :.::... . :  .  ..... .:: -:..: :.:</pattern>
+      <matchSeq start="1" end="177">MKNWISSFILVHQEKSISFNTNILETNLINIIILLIILFYFLKGLLKDNLSSRQENILSTIQNSENRINEANERLVDAKLQWSQAQITLEELKNQTLQNKLILFNAEFEIKNQVLSQHFNNLLMTLYYREQQAFNNIKKQVSELALKKVIAKLQAPLMEEDQSVIIINK-IHRLGGNLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="ATPF_GRATL" ac="Q6B8R0" length="182" description="ATP synthase subunit b, chloroplastic OS=Gracilaria tenuistipitata var. liui OX=285951 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>311</score>
+      <smithWatermanScore>311</smithWatermanScore>
+      <zScore>358.5</zScore>
+      <bits>72.9</bits>
+      <expectation>2.1e-12</expectation>
+      <identity>32.2</identity>
+      <positives>73.2</positives>
+      <overlap>183</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MENFDQIFTLLAEHE-----GIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:..  :.:...:. .-----.:..: ..::....::: :.  :.:. :.::::.: .:.  .. ..:..:.::..:..::.:..::: :...::..: .:. .: . . .: .  .: :.   .  . : . . : ::  .:. :. ::..::.... :. ..:. .-: .:...: .: : :</pattern>
+      <matchSeq start="1" end="182">MDSCIQVFSVIANFDTDYNLSISFNTDFLEANVINILLLLLGLMYVLKEFLGSILVDRQEKVLLAIQESEERLKQANSRLSESEKQLAQTQMVIAQIIKEAETTAQKVRQSILDQGKADVDKLISASKASIATAEVQIKQQIQLQVTSLAIKRVTMQLQDQITPNIQ-TRIIDNNIAQLGGYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="ATPF_NEOYE" ac="Q1XDP3" length="183" description="ATP synthase subunit b, chloroplastic OS=Neopyropia yezoensis OX=2788 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>307</score>
+      <smithWatermanScore>307</smithWatermanScore>
+      <zScore>353.9</zScore>
+      <bits>72.1</bits>
+      <expectation>3.8e-12</expectation>
+      <identity>34.5</identity>
+      <positives>72.3</positives>
+      <overlap>177</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="6" end="179">---MENFDQIFTLLAEHEG---IGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>        ::.:.:.:: .---.:.: .:.:....::: :.  :::. :.:::: :. :.  .. ..:..:.::..:. ::.:..::: :....:..:..:.  :   .  : .  .. :..     . . ... :.::  .:.:::  :.:::.... .. ..-.:    .:...: ::-:: :</pattern>
+      <matchSeq start="9" end="183">MNNIVKIPQIITILSEHSSEHKFGFNSDIFEANVINILLLLFGLIYVLKQFLGSSLNARQIKVLAAIQESEERLEQASARLSESEKQLAQTQIIIDQIKKEAQLTAGKVRSSILAQGQLDIERLAITGKSNIETAEKQIRRQIQQQITFLALKRVTLQLENQMS-SEMQLRIIDNNIAKL-GDQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="ATPF_ANTSP" ac="Q02850" length="182" description="ATP synthase subunit b, chloroplastic OS=Antithamnion sp. OX=2767 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>306</score>
+      <smithWatermanScore>306</smithWatermanScore>
+      <zScore>352.8</zScore>
+      <bits>71.9</bits>
+      <expectation>4.3e-12</expectation>
+      <identity>35.0</identity>
+      <positives>69.4</positives>
+      <overlap>183</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="178">MENFDQIFTLLAEH-----EGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:::  :.: :..:.-----..:::: ..::...:::. :.  :::. :.::::::  :.  .. .... :.::..:..:: :..:::.:..:::... :..  : . . .: .  .: :..  .  . : .   : ::  .:::.: .:....-:    .: .     . .:...: ::.::.</pattern>
+      <matchSeq start="1" end="182">MENNFQVFRLISENFSEVSHSIGLNSDFLEANVLNIMLLLFGLIYVLKQFLGSLLTIRQEKVIFAISECEERLQQANNRLLESEKQLEQTQLVITQVLNDAEITAQKVRQSILDKGKIDVEKLIGASKASIVVAENQINQQIKQKITALAIQK-VSSQLKAQVDTTMQAKIIDSSIIKLRGDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="ATPF_CHLAT" ac="Q19VA4" length="187" description="ATP synthase subunit b, chloroplastic OS=Chlorokybus atmophyticus OX=3144 GN=atpF PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>301</score>
+      <smithWatermanScore>301</smithWatermanScore>
+      <zScore>346.9</zScore>
+      <bits>70.8</bits>
+      <expectation>9.3e-12</expectation>
+      <identity>31.5</identity>
+      <positives>75.6</positives>
+      <overlap>168</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="176">------MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPK--ERATTLINDTINKLEGDLL</querySeq>
+      <pattern>                :.:.::...: :::::.:.:. ...:.:.:.:..:: .::..:. .:.:...::..: .:: ..:..:.....::..  .::: ..  : : .  : .  ...: :  ..   : .. .:.. . :...:.: :.:.:.. .... .  .--.:.: :    ...: :</pattern>
+      <matchSeq start="17" end="184">MTDILTNMFTIVAELPLGEEEGFAFNGNILETNLINLAAVIGLLFYSGRSFLTNLLRNREDNILKSIRDADERYKEATEKLQQAKNEFEQAKIEADEIRAQSRITAKEIEVSLMGLVSEDTKRLIDMKQATISFEEEKAINEVRRQVIRLALQRALEQSKNRLNHRLQKRVTRLNIGLLGQLVGVND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="ATPF_RHDSA" ac="A6MVW6" length="181" description="ATP synthase subunit b, chloroplastic OS=Rhodomonas salina OX=52970 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <smithWatermanScore>296</smithWatermanScore>
+      <zScore>341.4</zScore>
+      <bits>69.7</bits>
+      <expectation>1.9e-11</expectation>
+      <identity>32.9</identity>
+      <positives>75.6</positives>
+      <overlap>164</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="178">----MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>                  ...:.: :.::...:::  :.. ..: :..:: : :: :.  .....:.::.:: .:..:: :..:::.::. :: ::..:.  : ... :: .  .: :..   . . . ... : ::  .:.:.:  :........ .. ..:. .-. .:...:..: :.:</pattern>
+      <matchSeq start="19" end="181">MNDFLLISSLAELSSETKKSFGFNPNFLEANVLNIAILLSGVVYLGRNFLTSALEVRQQKVAEAIQEAEERLVQANSRLLESEKQLTQAQAVIEEIKKEAEKTARTVKESILAQGKLDIERLTNNGKSSIEKAELQIKKQIQQHITELAIQKVTVQLKEYMTPNLQ-SKVIDSNISNLGGQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="ATPF_PORPU" ac="P51244" length="183" description="ATP synthase subunit b, chloroplastic OS=Porphyra purpurea OX=2787 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <smithWatermanScore>292</smithWatermanScore>
+      <zScore>336.8</zScore>
+      <bits>68.9</bits>
+      <expectation>3.4e-11</expectation>
+      <identity>32.2</identity>
+      <positives>72.2</positives>
+      <overlap>180</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="3" end="179">---MENFDQIFTLLAEHEG---IGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>     :.  :. .:.:: .---.:.: .:.:....::: :.  :::. :. ::: :.::.  .. ..:..:.::..:..::.:..::: :....:..:..:.  : . .  : .  .. :..     . . ... :.::  .:.:::  :.::..... .. ..-..    .:...: ::-:: :</pattern>
+      <matchSeq start="6" end="183">MNSIVNITPIIIILSEHSSEHTFGFNSDIFEANVINILLLLFGLIYVLKQSLGSTLNERQLKVLAAIQESEERLEQASSRLSESEKQLAQTQIIINQIKKEAQLTAEKVRSSILAQGQIDIERLAITGKSNIETAEKQIRRQIQQQIAFLALKKVTLQLENQMS-SDIQLRIIDNNIAKL-GDQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="ATPF_NOSP7" ac="B2J056" length="190" description="ATP synthase subunit b OS=Nostoc punctiforme (strain ATCC 29133 / PCC 73102) OX=63737 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <smithWatermanScore>288</smithWatermanScore>
+      <zScore>331.9</zScore>
+      <bits>68.1</bits>
+      <expectation>6.3e-11</expectation>
+      <identity>31.1</identity>
+      <positives>71.9</positives>
+      <overlap>167</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="12" end="178">-------------MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>                        : . :.::::.:.::.:.:.  :::::.: :.  :...:.::...:. ..:.:: ::.::.  :..::.::.:..    .::. .. . .   :. .  : .:..   . : : .... .. . ...:.. .:.:...  . . ..:   . .-::. .: .: :..</pattern>
+      <matchSeq start="25" end="190">MGIMGTFLLLAAEANAVHSELAEGAAEGGFGLNLDIFETNLINLAILVGILFYFGRKVLSNILNERQSNIATAIQEAEGRLKEAKTALSQAQEQLKQSQAEAERIRQSAVENAQKAKEALLAKAVQDVERLKQTAAADLNTETERAIAQLRQRVATLALQKVESQLKGGIADDAQQS-LIDRSIAQLGGNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="ATPF_EMIHU" ac="Q4G399" length="179" description="ATP synthase subunit b, chloroplastic OS=Emiliania huxleyi OX=2903 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <smithWatermanScore>287</smithWatermanScore>
+      <zScore>331.2</zScore>
+      <bits>67.8</bits>
+      <expectation>6.9e-11</expectation>
+      <identity>34.1</identity>
+      <positives>69.8</positives>
+      <overlap>179</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="2" end="176">----MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSK----ERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>     .... .  :::.. ..::::.:.:..:.::. : : ..  :.  :.  : ::.  :: ..:..:.::..:  .:.:..::: ::.:::. ...:. :: :- ..:---:   : : ..::  :  :..----:..:  ::.. ...:.:.:.... .  .  . .  -.:. .:.::::</pattern>
+      <matchSeq start="6" end="179">MHLYTQTLNTVTGLLANEGSFGLNLDIFEANLINIVILGGGIFKLGSTALSESLAERQQKIVGAIQESEERLEQAVTKLTESEKQLAQAQLVITSLKEEAEATAK-QVKS---GILTDGKAEIERLTASAKGQIGTIEKKIRKEISEYVVTLALQRVTLQLEGKLDVNLQQQ-IIDKNISKLEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="ATPF_GALSU" ac="P35011" length="176" description="ATP synthase subunit b, chloroplastic OS=Galdieria sulphuraria OX=130081 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>285</score>
+      <smithWatermanScore>285</smithWatermanScore>
+      <zScore>329.1</zScore>
+      <bits>67.4</bits>
+      <expectation>9.1e-11</expectation>
+      <identity>34.5</identity>
+      <positives>73.1</positives>
+      <overlap>145</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="4" end="148">MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>   ::-..     . .: .::..:::...::. :. :::: :. :::..: .:.. .. .....:.::...  :::::..::..:...:..:..:.  :   . :: .  .: :..  .  .  .. . : ::  .::::: .:.:..</pattern>
+      <matchSeq start="3" end="146">-MFFD-VLGYENSQSSIKINLDLLETNIINIFILIIILIYLGRKFLGNILINRQNRVITSIRESEERLEKSTIRLNEAKNQLSSAQIIINQIKQEAKNTAANVKESILKQGKTDIERLLLNTKNYIYNTELQIKKQIKQQIAALALQKVQSKLKDELDNNIQQKIIDQSLAMLTIRNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="ATPF_GUITH" ac="O78477" length="182" description="ATP synthase subunit b, chloroplastic OS=Guillardia theta OX=55529 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>283</score>
+      <smithWatermanScore>283</smithWatermanScore>
+      <zScore>326.6</zScore>
+      <bits>67.0</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>33.1</identity>
+      <positives>71.0</positives>
+      <overlap>169</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="11" end="178">-----MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQ-QAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>               :.. . .:.: ::::...:::  :.. .:: :..:: : :: :.  .....:.::.::..:. .: .:.:::.::. :: .:..:.  : ... :. .  .: :..   . . . ... : ::  .:.:.: .:..:.--. ::-..:   .  . .:. .: .: : .</pattern>
+      <matchSeq start="16" end="182">MDIISGFYNTINLAELSNAKTFGFNPNILEANVLNIAILLSGVIYLGRNFLTSALESRQQKVTEAIQEAEERLQQANVKLLDAEKQLTQAQTVIEQIKKEAEKTARTVKETILAQGKLDIERLTNNGKSSIEKAELQIKKQIQQHITDLAIKK--VSAQMETFMTDNLQVKVIDTNIASLGGKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="ATPF_HETA2" ac="B2XT88" length="182" description="ATP synthase subunit b, chloroplastic OS=Heterosigma akashiwo (strain NIES-293 / 8280G21-1) OX=536047 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>282</score>
+      <smithWatermanScore>282</smithWatermanScore>
+      <zScore>325.4</zScore>
+      <bits>66.8</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>33.3</identity>
+      <positives>72.8</positives>
+      <overlap>147</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="146">MENFDQIFTLLA-EHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:::. .:: .:.-:.::: :: .:.:....:.  :. ..: ..:: :::.:  ::..:.  ...:. .::::.::..::. : .:::.   .....:    ... ::. .  :  :  ..  .:...  :..:.  .... .. :.:</pattern>
+      <matchSeq start="1" end="147">MENLTNIFLFLSNENEGIQLNTDIFEANIINLALLIVLVINVAKDVLGSILSARKASILDKIEEADKKLNEADKRFTEARLQWSQANIFGEDLEKKTYQRINAFHESQNLKNKDALLREYFSTLVVLDLKNEQVQKQVRNYVMELALIEVYGVFTKLVANKKFQENYSNYSVLLLEKLIG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="ATPF_HETA4" ac="B2XTP4" length="182" description="ATP synthase subunit b, chloroplastic OS=Heterosigma akashiwo (strain CCMP452 / OLISTH) OX=536046 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>282</score>
+      <smithWatermanScore>282</smithWatermanScore>
+      <zScore>325.4</zScore>
+      <bits>66.8</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>33.3</identity>
+      <positives>72.8</positives>
+      <overlap>147</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="146">MENFDQIFTLLA-EHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>:::. .:: .:.-:.::: :: .:.:....:.  :. ..: ..:: :::.:  ::..:.  ...:. .::::.::..::. : .:::.   .....:    ... ::. .  :  :  ..  .:...  :..:.  .... .. :.:</pattern>
+      <matchSeq start="1" end="147">MENLTNIFLFLSNENEGIQLNTDIFEANIINLALLIVLVINVAKDVLGSILSARKASILDKIEEADKKLNEADKRFTEARLQWSQANIFGEDLEKKTYQRINAFHESQNLKNKDALLREYFSTLVVLDLKNEQVQKQVRNYVMELALIEVYGVFTKLVANKKFQENYSNYSVLLLEKLIG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="ATPF_STAPU" ac="Q32RS7" length="184" description="ATP synthase subunit b, chloroplastic OS=Staurastrum punctulatum OX=102822 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>279</score>
+      <smithWatermanScore>279</smithWatermanScore>
+      <zScore>321.9</zScore>
+      <bits>66.2</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>36.5</identity>
+      <positives>73.0</positives>
+      <overlap>137</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="15" end="150">---MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAM-FKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>                 :..:.: :::::.:.:. ...:.:.: ::  : ..:..:: ::.. ..:::.: .:: ..::.:. ::.::.    ::: . .   .   .  . .: .: :-:.:..  .-..  :.. ...:.:::  :..::..</pattern>
+      <matchSeq start="18" end="153">MNSETYWIISSNNWDLAESFGFNTNILETNLINLAVVIGVLVYFGKGVLTTILNNRKETILSTIRDAEERYQEAIEKLNQARTQLEQAKAKAEEIRVNGVLQMEREKQELIKAADEDSK-RLEETKNLTIRFAEQKAIVQIRQQISRLTVKRALEIINSRLNLDLHARMIDYHIGLFKAMKTSAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="ATPF_MESVI" ac="Q9MUT1" length="186" description="ATP synthase subunit b, chloroplastic OS=Mesostigma viride OX=41882 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>279</score>
+      <smithWatermanScore>279</smithWatermanScore>
+      <zScore>321.8</zScore>
+      <bits>66.2</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>32.2</identity>
+      <positives>72.3</positives>
+      <overlap>177</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="7" end="174">-MENFDQIFTLLAEH---EGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFG----AKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPK--ERATTLINDTINKLEGDLL</querySeq>
+      <pattern>       :::.:.. ---::.:.: .:.::..::. ...:::. .:..:. :::..:. .:.....::..: .:: ..:..::....::.:  ..:  ..---::.  : ::-:---- :.: :  ..   : .. .:.. . ::..:.: :.:.:.. .... .  .--.:.: :    ...:</pattern>
+      <matchSeq start="8" end="180">MTDILTNIFTILSRMSLAEGFGFNTDIFETNILNLAVVLGILLTSGREFFVSLLQNRQQNILQSINDADERYKEAAEKLQQAQNEFEQAKLEADQILAQS---KKTASEIEV-GLMNLIKEDTKKLLDMKQATISFEEEKAISEIRRQVIRLALQRALEQSKSRLNRRLQKRVTRLNIGLLGRLVTPNDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="ATPF_CYAPA" ac="P48084" length="185" description="ATP synthase subunit b, cyanelle OS=Cyanophora paradoxa OX=2762 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>278</score>
+      <smithWatermanScore>278</smithWatermanScore>
+      <zScore>320.7</zScore>
+      <bits>65.9</bits>
+      <expectation>2.7e-10</expectation>
+      <identity>32.1</identity>
+      <positives>70.5</positives>
+      <overlap>156</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="19" end="174">--------MENFDQIFTLLAEHEGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERALAMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>                          :: .::::.:.:.:..  .::: :. :. .:::::. :..  .. .:.  ::: ..:.::...: ::.:. ..: .:. :. . . .. .   .::.:   : . : ..... ...  ..::.  :.:.:.: . .. . :-:  . .:.  : .:</pattern>
+      <matchSeq start="27" end="181">MNLINSTKIFSSLMIASVENNTAIFSLNTDILETNLINLLVIFFLLIYQGRPFFTALLEERRKTVLDKIKKSENSYNEALEKLKEAKSKLAQAELAAKQIYEEAEAVAESIKKTGLAQLEKDIKRIEETTQASINTQQLSVITYLRQQVALLALRRVVSQLKNYLKP-ELHSQFIDRKILQLRKQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="ATPF_ZYGCR" ac="Q32RL0" length="188" description="ATP synthase subunit b, chloroplastic OS=Zygnema circumcarinatum OX=35869 GN=atpF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>276</score>
+      <smithWatermanScore>276</smithWatermanScore>
+      <zScore>318.3</zScore>
+      <bits>65.5</bits>
+      <expectation>3.6e-10</expectation>
+      <identity>34.9</identity>
+      <positives>69.2</positives>
+      <overlap>146</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="5" end="147">-----MENFDQIFTLLAEH--EGIGLNLNILETGLLNILTLVGILIYAGKDFLGSLLEERKTTIVKGVQDAEDRLNEAQKRLNEAQKQLNQANLVISEIRNETIATKKVLLESEVFGAKKDLKIRFERAL-AMFKSKERQIFLEIKQQIISLVLKRTVIRAQQAFAPKERATTLINDTINKLEGDLL</querySeq>
+      <pattern>         : .. :   :-- :.:.: :..::.:.:. ...:.:.: ::  : .::..:: :::. ..:::.: .:: ..::.:  .:.::.    ::: . .:  ..  .  . .: .: :-:.: . -: .. .:.. . ...::.  :.:.</pattern>
+      <matchSeq start="10" end="154">MGERIKSTMDLLIYLQNSHLATGFGFNTNLFETNLINLAVVIGVLVYFGKGVLTTLLNNRKETIVNTIRDAEERYQEATEKLNKAYTRLEQAKAKAEEIRVNGLAQMEIEKQELIKAADEDSK-RLEDSKNATLRFEEQRAIEQVRQQVSRLALELALETLKTRLNRDLHAQMIDYHIGLLQSMESVID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>
