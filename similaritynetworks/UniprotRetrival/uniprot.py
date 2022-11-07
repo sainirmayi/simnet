@@ -14,10 +14,10 @@ def uniprot_retrieval(query_id):
 
 
 blast_dataframe = pd.read_csv('../Blast/blast.csv')
-proteins = blast_dataframe['hit_protein'].append(blast_dataframe['queried_protein']).drop_duplicates()
+proteins = blast_dataframe['Protein1'].append(blast_dataframe['Protein2']).drop_duplicates()
 
 df = pd.DataFrame()
 for protein in proteins:
     df = pd.concat([df, uniprot_retrieval(protein)], axis=0)
 
-df.to_csv('uniprot.csv')
+df.to_csv('uniprot.csv', index=False)

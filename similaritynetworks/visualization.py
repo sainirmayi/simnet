@@ -3,6 +3,7 @@ import networkx as nx
 import pandas as pd
 pd.options.mode.chained_assignment = None
 import pymysql
+import plotly.express as px
 
 # def create_sample_db():
 #     """ Sample dataframes to represent the databases """
@@ -79,11 +80,13 @@ def get_similarity_data(query,n_neighbors, DB):
 
 def create_network(similar_proteins):
     """ Creating network diagram """
+    # load pandas df as networkx graph
     graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
+    # Deciding on the layout of how the nodes will be lined up
     pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Score')
     for n, p in pos.items():
         graph.nodes[n]['pos'] = p
-
+    # Create edges
     edge_x = []
     edge_y = []
     for edge in graph.edges():
@@ -95,13 +98,13 @@ def create_network(similar_proteins):
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
-
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
         line=dict(width=1, color='#aaa'),
         hoverinfo='none',
         mode='lines')
 
+    #Nodes:
     node_x = []
     node_y = []
     for node in graph.nodes():
@@ -109,11 +112,13 @@ def create_network(similar_proteins):
         node_x.append(x)
         node_y.append(y)
 
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    print(uniprot_df)
+
     # Try hovertemplate instead of hoverinfo to display more information
     node_trace = go.Scatter(
         x=node_x, y=node_y,
         mode='markers+text',
-        hoverinfo='text',
         textposition='middle right',
         textfont=dict(size=10, color='black'),
         marker=dict(
@@ -129,15 +134,38 @@ def create_network(similar_proteins):
                 titleside='right'
             ),
             line_width=2))
+    print(node_x)
+
+    #Colour node points by number of connections + text to node
     node_adjacency = []
     node_text = []
+    node_hovertemplate = []
+
     for node, adjacencies in enumerate(graph.adjacency()):
         node_adjacency.append(len(adjacencies[1]))
         node_text.append(adjacencies[0])
+        entry = adjacencies[0]
+        df = uniprot_df.loc[uniprot_df['Entry'] == entry]
+        entry_name = df['Entry Name']
+        gene_names = df['Gene Names']
+        sequence = df['Sequence']
+        organism = df['Organism']
+        organism_id = df['Organism (ID)']
+        protein_names = df['Protein names']
+
+        node_hovertemplate.append(f'Entry: {entry}'
+                                  + f'<br>Entry name: {entry_name}'
+                                  + f'<br>Gene names: {gene_names}'
+                                  + f'<br>Sequence: {sequence}'
+                                  + f'<br>Organism: {organism}'
+                                  + f'<br>Organism id: {organism_id}'
+                                  + f'<br>Protein names: {protein_names}')
 
     node_trace.marker.color = node_adjacency
     node_trace.text = node_text
+    node_trace.hovertemplate = node_hovertemplate
 
+    # Create Network Graph
     fig = go.Figure(data=[edge_trace, node_trace],
                     layout=go.Layout(
                         title='<br>Protein similarity network',
