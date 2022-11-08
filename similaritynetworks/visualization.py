@@ -5,7 +5,7 @@ pd.options.mode.chained_assignment = None
 import pymysql
 import plotly.express as px
 
-# def create_sample_db():
+#def create_sample_db():
 #     """ Sample dataframes to represent the databases """
 #     main_dataframe = pd.DataFrame(pd.read_csv("sample_data.csv"))
 #     protein_info = main_dataframe.drop(['Hit', 'Score(Bits)', 'Identities(%)', 'Positives(%)', 'E()'],
@@ -26,10 +26,12 @@ import plotly.express as px
 
 
 def getProteinID(sequence):
+
     #-----------------------------------------------------------------------
-    """Database"""
+    # """Database"""
     # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
+                                  #host='localhost',
+    #
     #                              port=3306)
     # sequence = "".join(line.strip() for line in sequence.splitlines())
     # cur = connection.cursor()
@@ -44,69 +46,83 @@ def getProteinID(sequence):
     #------------------------------------------------------------------------
 
     #------------------------------------------------------------------------
-    """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    #"""csv file"""
+    uniprot_df = pd.DataFrame(pd.read_csv("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
-    print(df)
     query = df['Entry'].to_string(index=False)
-    print(query)
     #---------------------------------------------------------------------------
     # return query[0][0] for database option
-    return query
+# return query
 
 
 def get_similarity_data(query,n_neighbors, DB):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
-    #
-    # similarity_db = pd.DataFrame(pd.read_csv("Blast/blast.csv"))
-    # results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
-    #
-    # similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
-    # similarity_db.reset_index(drop=True, inplace=True)
-    # similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
-    # similar.remove(query)
-    # data = similar[:n_neighbors]####variable name modified
-    #
-    # for i in range(results.shape[0]):
-    #     if results['Protein1'][i] != query:
-    #         if results['Protein1'][i] not in data or \
-    #                 (results['Protein1'][i] in data and results['Protein2'][i] not in data):
-    #             results.drop(labels=i, inplace=True, axis=0)
-    #     else:
-    #         if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
-    #             results.drop(labels=i, inplace=True, axis=0)
-    #
-    # results.reset_index(drop=True, inplace=True)
+    similarity_db = pd.DataFrame(pd.read_csv("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/newoutputTrimmed.csv"))
+    similarity_db = similarity_db.drop(['Hit', 'Organism',  'E'], axis=1)
+    results = pd.DataFrame()
+    queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
+                              #| (similarity_db['Protein2'] == query)]
+    queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
+    queryInfo.reset_index(drop=True, inplace=True)
+    print(queryInfo)
+    #similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
+   # similar.remove(query)
+    topN = queryInfo[:n_neighbors]
+    direct_connection = pd.concat([topN['Protein1'][topN['Protein2'] ==
+                            query],topN['Protein2'][topN['Protein1'] == query]])
+
+    direct_connection = direct_connection.tolist()
+    print(direct_connection)
+    for index, row in similarity_db.iterrows():
+        if row["Protein1"] in direct_connection and row['Protein2'] in direct_connection :
+            results = results.append(row)
+    results = pd.concat([results, topN], axis=0)
+    print(topN)
+
+    #for i in range(results.shape[0]):
+     #   if results['Protein1'][i] != query:
+      #      if results['Protein1'][i] not in data or \
+       #              (results['Protein1'][i] in data and results['Protein2'][i] not in data):
+        #              results.drop(labels=i, inplace=True, axis=0)
+         #   else:
+          #      if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
+           #      results.drop(labels=i, inplace=True, axis=0)
+
+    results.reset_index(drop=True, inplace=True)
+    print(results)
+    return results
     #------------------------------------------------------------------------------------------------------------------
-    """Use the following code if you can connect to the database"""
+
+    #"""Use the following code if you can connect to the database"""
     # Retrieve information from database.
-    connection = pymysql.connect(user='root', password='123456',
-                                 host='localhost',
-                                 port=3306)
-    cur = connection.cursor()
-    if DB == 'Blast':
-        sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    elif DB == 'Fasta':
-        sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    else:
+
+    #connection = pymysql.connect(user='root', password='123456',
+                                # host='localhost',
+                                # port=3306)
+    #cur = connection.cursor()
+    #if DB == 'Blast':
+    #    sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #elif DB == 'Fasta':
+    #    sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #else:
         # a default sql query
-        sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+        #sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
 
 
-    cur.execute(sql)
-    dt = cur.fetchall()
-    results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    #cur.execute(sql)
+    #dt = cur.fetchall()
+    #results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
 
-    cur.close()
+    #cur.close()
     # close the connection
-    connection.close()
+    # connection.close()
     #------------------------------------------------------------------------------------------------------------------
 
     # 'return results2' if you want to retrieve data from the database.
-    return results2
+    #return results2
 
 
 def create_network(similar_proteins):
@@ -143,7 +159,7 @@ def create_network(similar_proteins):
         node_x.append(x)
         node_y.append(y)
 
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/uniprot.csv"))
 
     # Try hovertemplate instead of hoverinfo to display more information
     node_trace = go.Scatter(
@@ -176,6 +192,7 @@ def create_network(similar_proteins):
         node_adjacency.append(len(adjacencies[1]))
         node_text.append(adjacencies[0])
         entry = adjacencies[0]
+        print(entry)
         df = uniprot_df.loc[uniprot_df['Entry'] == entry]
         entry_name = df['Entry Name'].to_string(index=False)
         gene_names = df['Gene Names'].to_string(index=False)
@@ -256,4 +273,4 @@ def get_visualization(query,n_neighbors,DB):
 
 if __name__ == "__main__":
 
-    get_visualization("A0T0A3", 5, "Blast").show()
+    get_visualization("A0T0B8", 20, "Blast").show()

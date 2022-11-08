@@ -139,12 +139,14 @@ def dropOutOfScopeProtein(list,df):
 
 
 
-df = pd.read_csv('/Users/jiyue/Desktop/Semester3/IBP/outputTrimmed.csv')
-my_file = open("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/a_file.txt", "r")
-data = my_file.read()
-newdf = dropOutOfScopeProtein(data,df)
-print(newdf)
-newdf.to_csv(main_path + "//newoutputTrimmed.csv",index=False)
+df = pd.read_csv('/Users/jiyue/Desktop/newoutputTrimmed.csv')
+df = df.drop_duplicates(subset=['concat1'])
+df.to_csv(main_path + "/newoutputTrimmed.csv",index=False)
+#my_file = open("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/a_file.txt", "r")
+#data = my_file.read()
+#newdf = dropOutOfScopeProtein(data,df)
+#print(newdf)
+#newdf.to_csv(main_path + "/newoutputTrimmed.csv",index=False)
 #df1 = concatIntoCSV("hmmer_xml_output1")
 #dataTrimming(df1,df2)
 #df2 = concatIntoCSV("hmmer_xml_output2")
