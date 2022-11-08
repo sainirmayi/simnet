@@ -13,14 +13,14 @@ def uniprot_retrieval(query_id):
     return df
 
 
-blast_dataframe = pd.read_csv('../Blast/blast.csv')
+blast_dataframe = pd.read_csv('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/outputTrimmed.csv')
 proteins = blast_dataframe['Protein1'].append(blast_dataframe['Protein2']).drop_duplicates()
 
 df = pd.DataFrame()
-process = 0
+p = 0
 for protein in proteins:
-    process = process + 1
-    print(process)
-    df = pd.concat([df, uniprot_retrieval(protein)], axis=0)
+     p = p + 1
+     print(p)
+     df = pd.concat([df, uniprot_retrieval(protein)], axis=0)
 
-df.to_csv('uniprot.csv', index=False)
+df.to_csv('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/uniprot.csv', index=False)

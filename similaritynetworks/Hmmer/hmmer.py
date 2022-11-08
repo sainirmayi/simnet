@@ -7,8 +7,8 @@ import xml.etree.ElementTree as ET
 
 
 main_path = os.getcwd()
-def parseXML(file):
-    tree = ET.parse(main_path + "/Hmmer/hmmer_xml_output1/"+file)
+def parseXML(file,folder):
+    tree = ET.parse(main_path + "/Hmmer/" + folder+'/'+file)
     root = tree.getroot()
 
     Protein1 = []
@@ -98,14 +98,20 @@ def hmmer_search(sequences, DB):
 #main_path = os.getcwd()
 
 def concatIntoCSV(folderName):
-    deletion = 0
+    #parse a list of xml files in a folder and concatate them into df
     df = pd.DataFrame()
     for file in os.listdir(main_path + "/Hmmer/" + folderName):
         if file.endswith(".xml"):
             if path.exists(f"{file}_hmmer.xml"):
                 print(f"{file}_hmmer.txt already exists")
             else:
-              df = pd.concat([df, parseXML(file)], axis=0)
+              df = pd.concat([df, parseXML(file,folderName)], axis=0)
+    return df
+
+def dataTrimming(df1,df2):
+    #concanate two df and trim repeated protein pairs
+    deletion = 0
+    df = pd.concat([df1, df2], axis=0)
     df["concat1"]  = df["Protein1"]+df["Protein2"]
     df["concat2"] = df["Protein2"] + df["Protein1"]
     df["Hit"] = range(len(df["concat2"] ))
@@ -115,12 +121,18 @@ def concatIntoCSV(folderName):
             df = df.drop(index)
             deletion = deletion +1
             print(deletion)
-    df.to_csv(main_path + "/Hmmer/" + folderName+"/outputTrimmed.csv",index=False)
+    df.to_csv(main_path + "/Hmmer/outputTrimmed.csv",index=False)
     #12643
-#sequences = parse_fasta("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/hmmer-second_search.fasta")
+    #547
+#sequences = parse_fasta("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/fastaSequence/Bacillariophyceae_reviewed.fasta")
 #hmmer_search(sequences, 'swissprot')
 #main_path = os.getcwd()
-concatIntoCSV("hmmer_xml_output1")
+
+df2 = pd.read_csv('/Users/jiyue/Desktop/Semester3/IBP/outputTrimmed.csv')
+df1 = concatIntoCSV("hmmer_xml_output1")
+dataTrimming(df1,df2)
+#df2 = concatIntoCSV("hmmer_xml_output2")
+
 #list = pd.unique(df["Protein2"])
 #print(len(list))
 #textfile = open("a_file.txt", "w")

@@ -52,12 +52,12 @@ def get_similarity_data(query,n_neighbors, DB):
     #------------------------------------------------------------------------------------------------------------------
     """Use the following code if you can connect to the database"""
     # Retrieve information from database.
-    # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
-    #                              port=3306)
-    # cur = connection.cursor()
+     #connection = pymysql.connect(user='root', password='123456',
+                                 #host='localhost',
+                                  #port=3306)
+     #cur = connection.cursor()
     # if DB == 'Blast':
-    #     sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+         #sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
     # elif DB == 'Fasta':
     #     sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
     # else:

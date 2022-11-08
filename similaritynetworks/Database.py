@@ -1,9 +1,9 @@
 import pymysql
 
 if __name__ == '__main__':
-    connection = pymysql.connect(user='root', password='123456',
+    connection = pymysql.connect(user='root', password='proteinsim',
                                  host='localhost',
-                                 port=3306)
+                                 port=3306, database="proteinsim")
     cur = connection.cursor()
     # SQL statement
     sql1 = "select * from protein_network.blast"
