@@ -128,9 +128,25 @@ def dataTrimming(df1,df2):
 #hmmer_search(sequences, 'swissprot')
 #main_path = os.getcwd()
 
-df2 = pd.read_csv('/Users/jiyue/Desktop/Semester3/IBP/outputTrimmed.csv')
-df1 = concatIntoCSV("hmmer_xml_output1")
-dataTrimming(df1,df2)
+def dropOutOfScopeProtein(list,df):
+    deletion = 0
+    for index, row in df.iterrows():
+        if not(row["Protein1"] in list and row["Protein2"] in list):
+            df = df.drop(index)
+            deletion = deletion +1
+            print(deletion)
+    return df
+
+
+
+df = pd.read_csv('/Users/jiyue/Desktop/Semester3/IBP/outputTrimmed.csv')
+my_file = open("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/a_file.txt", "r")
+data = my_file.read()
+newdf = dropOutOfScopeProtein(data,df)
+print(newdf)
+newdf.to_csv(main_path + "//newoutputTrimmed.csv",index=False)
+#df1 = concatIntoCSV("hmmer_xml_output1")
+#dataTrimming(df1,df2)
 #df2 = concatIntoCSV("hmmer_xml_output2")
 
 #list = pd.unique(df["Protein2"])

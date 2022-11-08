@@ -13,7 +13,7 @@ def uniprot_retrieval(query_id):
     return df
 
 
-blast_dataframe = pd.read_csv('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/outputTrimmed.csv')
+blast_dataframe = pd.read_csv('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/newoutputTrimmed.csv')
 proteins = blast_dataframe['Protein1'].append(blast_dataframe['Protein2']).drop_duplicates()
 
 df = pd.DataFrame()
