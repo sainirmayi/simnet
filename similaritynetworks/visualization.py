@@ -30,7 +30,7 @@ def get_similarity_data(query,n_neighbors, DB):
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
 
-    similarity_db = pd.DataFrame(pd.read_csv("Hmmer/final.csv"))
+    similarity_db = pd.DataFrame(pd.read_csv("Blast/blast.csv"))
     results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
 
     similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
@@ -102,7 +102,7 @@ def create_network(similar_proteins):
         x=edge_x, y=edge_y,
         line=dict(width=1, color='#aaa'),
         hoverinfo='none',
-        mode='lines')
+        mode='lines+text')
 
     #Nodes:
     node_x = []
@@ -113,7 +113,6 @@ def create_network(similar_proteins):
         node_y.append(y)
 
     uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
-    print(uniprot_df)
 
     # Try hovertemplate instead of hoverinfo to display more information
     node_trace = go.Scatter(
@@ -134,9 +133,8 @@ def create_network(similar_proteins):
                 titleside='right'
             ),
             line_width=2))
-    print(node_x)
 
-    #Colour node points by number of connections + text to node
+    #Colour node points by number of connections + text to node + text when you hover
     node_adjacency = []
     node_text = []
     node_hovertemplate = []
@@ -146,12 +144,12 @@ def create_network(similar_proteins):
         node_text.append(adjacencies[0])
         entry = adjacencies[0]
         df = uniprot_df.loc[uniprot_df['Entry'] == entry]
-        entry_name = df['Entry Name']
-        gene_names = df['Gene Names']
-        sequence = df['Sequence']
-        organism = df['Organism']
-        organism_id = df['Organism (ID)']
-        protein_names = df['Protein names']
+        entry_name = df['Entry Name'].to_string(index=False)
+        gene_names = df['Gene Names'].to_string(index=False)
+        sequence = df['Sequence'].to_string(index=False)
+        organism = df['Organism'].to_string(index=False)
+        organism_id = df['Organism (ID)'].to_string(index=False)
+        protein_names = df['Protein names'].to_string(index=False)
 
         node_hovertemplate.append(f'Entry: {entry}'
                                   + f'<br>Entry name: {entry_name}'
