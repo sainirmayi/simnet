@@ -28,32 +28,30 @@ import plotly.express as px
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
     """Database"""
-    # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
-    #                              port=3306)
-    # sequence = "".join(line.strip() for line in sequence.splitlines())
-    # cur = connection.cursor()
-    # sql = f"select ID from protein_network.protein where Sequence = '{sequence}'"
-    #
-    # cur.execute(sql)
-    # query = cur.fetchall()
-    #
-    # cur.close()
-    # # close the connection
-    # connection.close()
+    connection = pymysql.connect(user='root', password='123456',
+                                 host='localhost',
+                                 port=3306)
+    sequence = "".join(line.strip() for line in sequence.splitlines())
+    cur = connection.cursor()
+    sql = f"select Entry from protein_network.protein where Sequence = '{sequence}'"
+
+    cur.execute(sql)
+    query = cur.fetchall()
+
+    cur.close()
+    # close the connection
+    connection.close()
     #------------------------------------------------------------------------
 
-    #------------------------------------------------------------------------
-    """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
-    sequence = "".join(line.strip() for line in sequence.splitlines())
-    df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
-    print(df)
-    query = df['Entry'].to_string(index=False)
-    print(query)
-    #---------------------------------------------------------------------------
+    # #------------------------------------------------------------------------
+    # """csv file"""
+    # uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    # sequence = "".join(line.strip() for line in sequence.splitlines())
+    # df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
+    # query = df['Entry'].to_string(index=False)
+    # #---------------------------------------------------------------------------
     # return query[0][0] for database option
-    return query
+    return query[0][0]
 
 
 def get_similarity_data(query,n_neighbors, DB):
