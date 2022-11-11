@@ -140,8 +140,13 @@ def dropOutOfScopeProtein(list,df):
 
 
 df = pd.read_csv('/Users/jiyue/Desktop/newoutputTrimmed.csv')
-df = df.drop_duplicates(subset=['concat1'])
-df.to_csv(main_path + "/newoutputTrimmed.csv",index=False)
+hit = list(range(1,len(df["Protein1"])+1))
+df["Hit"] = hit
+df.reset_index(drop=True, inplace=True)
+print(df)
+df = df.drop(['concat1', 'concat2'], axis=1)
+#df = df.drop_duplicates(subset=['concat1'])
+df.to_csv(main_path + "/HmmerWithSecondSearch.csv",index=False)
 #my_file = open("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/a_file.txt", "r")
 #data = my_file.read()
 #newdf = dropOutOfScopeProtein(data,df)
