@@ -1,3 +1,5 @@
+import os
+
 import plotly.graph_objects as go
 import networkx as nx
 import pandas as pd
@@ -48,9 +50,10 @@ def getProteinID(sequence):
     uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
-    print(df)
+
+    #print(df)
     query = df['Entry'].to_string(index=False)
-    print(query)
+    #print(query)
     #---------------------------------------------------------------------------
     # return query[0][0] for database option
     return query
@@ -60,14 +63,14 @@ def get_similarity_data(query,n_neighbors, DB):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
-    similarity_db = pd.DataFrame(pd.read_csv("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/newoutputTrimmed.csv"))
+    similarity_db = pd.DataFrame(pd.read_csv(os.getcwd() +"/HmmerWithSecondSearch.csv"))
     similarity_db = similarity_db.drop(['Hit', 'Organism',  'E'], axis=1)
     results = pd.DataFrame()
     queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
                               #| (similarity_db['Protein2'] == query)]
     queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
     queryInfo.reset_index(drop=True, inplace=True)
-    print(queryInfo)
+    #print(queryInfo)
     #similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
    # similar.remove(query)
     topN = queryInfo[:n_neighbors]
@@ -75,12 +78,12 @@ def get_similarity_data(query,n_neighbors, DB):
                             query],topN['Protein2'][topN['Protein1'] == query]])
 
     direct_connection = direct_connection.tolist()
-    print(direct_connection)
+    #print(direct_connection)
     for index, row in similarity_db.iterrows():
         if row["Protein1"] in direct_connection and row['Protein2'] in direct_connection :
             results = results.append(row)
     results = pd.concat([results, topN], axis=0)
-    print(topN)
+    #print(topN)
 
     #for i in range(results.shape[0]):
      #   if results['Protein1'][i] != query:
@@ -92,7 +95,8 @@ def get_similarity_data(query,n_neighbors, DB):
            #      results.drop(labels=i, inplace=True, axis=0)
 
     results.reset_index(drop=True, inplace=True)
-    print(results)
+
+    #print(results)
     return results
     #------------------------------------------------------------------------------------------------------------------
 
@@ -167,12 +171,17 @@ def create_network(similar_proteins):
     for edge in graph.edges():
         protein1 = edge[0]
         protein2 = edge[1]
-        df = similar_proteins.loc[(similar_proteins['Protein1'] == protein1) & (similar_proteins['Protein2'] == protein2)]
+        df = similar_proteins[((similar_proteins['Protein1'] == protein1) & (similar_proteins['Protein2']== protein2))
+                               | ((similar_proteins['Protein2'] == protein1) & (similar_proteins['Protein1'] == protein2))]
+
+
+
         score = df['Score'].to_string(index=False)
-        edge_colors.append(float(score))
+        print(score)
+        edge_colors.append(score)
         edge_hovertemplate.append(f'Score: {score} <extra></extra>')
 
-    print(edge_colors)
+    #print(edge_colors)
     #edge_trace.line.color = edge_colors
 
     eweights_trace = go.Scatter(x=xtext, y=ytext, mode='text',
@@ -295,6 +304,7 @@ def create_network(similar_proteins):
 def get_visualization(query,n_neighbors,DB):
     """ Call this function to get the similarity network for a query """
     similar_proteins = get_similarity_data(query,n_neighbors,DB)
+
     return create_network(similar_proteins)
 
 
