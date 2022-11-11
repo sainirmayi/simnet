@@ -5,7 +5,7 @@ pd.options.mode.chained_assignment = None
 import pymysql
 import plotly.express as px
 
-# def create_sample_db():
+#def create_sample_db():
 #     """ Sample dataframes to represent the databases """
 #     main_dataframe = pd.DataFrame(pd.read_csv("sample_data.csv"))
 #     protein_info = main_dataframe.drop(['Hit', 'Score(Bits)', 'Identities(%)', 'Positives(%)', 'E()'],
@@ -28,19 +28,19 @@ import plotly.express as px
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
     """Database"""
-    # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
-    #                              port=3306)
-    # sequence = "".join(line.strip() for line in sequence.splitlines())
-    # cur = connection.cursor()
-    # sql = f"select ID from protein_network.protein where Sequence = '{sequence}'"
-    #
-    # cur.execute(sql)
-    # query = cur.fetchall()
-    #
-    # cur.close()
-    # # close the connection
-    # connection.close()
+    #connection = pymysql.connect(user='root', password='123456',
+    #                             host='localhost',
+    #                             port=3306)
+    #sequence = "".join(line.strip() for line in sequence.splitlines())
+    #cur = connection.cursor()
+    #sql = f"select Entry from protein_network.protein where Sequence = '{sequence}'"
+
+    #cur.execute(sql)
+    #query = cur.fetchall()
+
+    #cur.close()
+    # close the connection
+    #connection.close()
     #------------------------------------------------------------------------
 
     #------------------------------------------------------------------------
@@ -52,7 +52,7 @@ def getProteinID(sequence):
     query = df['Entry'].to_string(index=False)
     print(query)
     #---------------------------------------------------------------------------
-    # return query[0][0] for database option
+    #return query[0][0] #for database option
     return query
 
 
@@ -60,59 +60,61 @@ def get_similarity_data(query,n_neighbors, DB):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
-    #
-    # similarity_db = pd.DataFrame(pd.read_csv("Blast/blast.csv"))
-    # results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
-    #
-    # similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
-    # similarity_db.reset_index(drop=True, inplace=True)
-    # similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
-    # similar.remove(query)
-    # data = similar[:n_neighbors]####variable name modified
-    #
-    # for i in range(results.shape[0]):
-    #     if results['Protein1'][i] != query:
-    #         if results['Protein1'][i] not in data or \
-    #                 (results['Protein1'][i] in data and results['Protein2'][i] not in data):
-    #             results.drop(labels=i, inplace=True, axis=0)
-    #     else:
-    #         if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
-    #             results.drop(labels=i, inplace=True, axis=0)
-    #
-    # results.reset_index(drop=True, inplace=True)
+
+    similarity_db = pd.DataFrame(pd.read_csv("Blast/blast.csv"))
+    results = similarity_db.drop(['Hit', 'DB', 'Organism', 'Length', 'Positives', 'E'], axis=1)
+
+    similarity_db.sort_values(by=['Protein1', 'Identities'], ascending=False, inplace=True)
+    similarity_db.reset_index(drop=True, inplace=True)
+    similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
+    similar.remove(query)
+    data = similar[:n_neighbors]####variable name modified
+
+    for i in range(results.shape[0]):
+        if results['Protein1'][i] != query:
+             if results['Protein1'][i] not in data or \
+                     (results['Protein1'][i] in data and results['Protein2'][i] not in data):
+                 results.drop(labels=i, inplace=True, axis=0)
+        else:
+             if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
+                 results.drop(labels=i, inplace=True, axis=0)
+
+    results.reset_index(drop=True, inplace=True)
     #------------------------------------------------------------------------------------------------------------------
     """Use the following code if you can connect to the database"""
     # Retrieve information from database.
-    connection = pymysql.connect(user='root', password='123456',
-                                 host='localhost',
-                                 port=3306)
-    cur = connection.cursor()
-    if DB == 'Blast':
-        sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    elif DB == 'Fasta':
-        sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    else:
-        # a default sql query
-        sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #connection = pymysql.connect(user='root', password='123456',
+                                 #host='localhost',
+                                 #port=3306)
+    #cur = connection.cursor()
+    #if DB == 'Blast':
+    #    sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #elif DB == 'Fasta':
+    #    sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    #else:
+        #a default sql query
+    #    sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
 
 
-    cur.execute(sql)
-    dt = cur.fetchall()
-    results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    #cur.execute(sql)
+    #dt = cur.fetchall()
+    #results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
 
-    cur.close()
+    #cur.close()
     # close the connection
-    connection.close()
+    #connection.close()
     #------------------------------------------------------------------------------------------------------------------
 
     # 'return results2' if you want to retrieve data from the database.
-    return results2
+    #return results2
+    return results
 
 
 def create_network(similar_proteins):
     """ Creating network diagram """
     # load pandas df as networkx graph
     graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
+
     # Deciding on the layout of how the nodes will be lined up
     pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Score')
     for n, p in pos.items():
@@ -120,20 +122,49 @@ def create_network(similar_proteins):
     # Create edges
     edge_x = []
     edge_y = []
+    xtext = []
+    ytext = []
     for edge in graph.edges():
         x0, y0 = graph.nodes[edge[0]]['pos']
         x1, y1 = graph.nodes[edge[1]]['pos']
+        xtext.append((x0 + x1) / 2)
+        ytext.append((y0 + y1) / 2)
         edge_x.append(x0)
         edge_x.append(x1)
         edge_x.append(None)
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
+
     edge_trace = go.Scatter(
         x=edge_x, y=edge_y,
-        line=dict(width=1, color='#aaa'),
-        hoverinfo='none',
-        mode='lines+text')
+        mode='lines',
+        line=dict(
+            #showscale=True,
+            #colorscale='YlGnBu',
+            #reversescale=True,
+            #color=[],
+            width=1)
+    )
+
+    edge_hovertemplate = []
+    edge_colors = []
+
+    for edge in graph.edges():
+        protein1 = edge[0]
+        protein2 = edge[1]
+        df = similar_proteins.loc[(similar_proteins['Protein1'] == protein1) & (similar_proteins['Protein2'] == protein2)]
+        score = df['Score'].to_string(index=False)
+        edge_colors.append(float(score))
+        edge_hovertemplate.append(f'Score: {score} <extra></extra>')
+
+    print(edge_colors)
+    #edge_trace.line.color = edge_colors
+
+    eweights_trace = go.Scatter(x=xtext, y=ytext, mode='text',
+                                marker_size=0.5,
+                                textposition='top center')
+    eweights_trace.hovertemplate = edge_hovertemplate
 
     #Nodes:
     node_x = []
@@ -170,8 +201,6 @@ def create_network(similar_proteins):
     node_text = []
     node_hovertemplate = []
 
-
-
     for node, adjacencies in enumerate(graph.adjacency()):
         node_adjacency.append(len(adjacencies[1]))
         node_text.append(adjacencies[0])
@@ -181,56 +210,56 @@ def create_network(similar_proteins):
         gene_names = df['Gene Names'].to_string(index=False)
         sequence = df['Sequence'].to_string(index=False)
         organism = df['Organism'].to_string(index=False)
+
         organism_id = df['Organism (ID)'].to_string(index=False)
         protein_names = df['Protein names'].to_string(index=False)
-
         node_hovertemplate.append(f'Entry: {entry}'
                                   + f'<br>Entry name: {entry_name}'
                                   + f'<br>Gene names: {gene_names}'
                                   + f'<br>Sequence: {sequence}'
                                   + f'<br>Organism: {organism}'
                                   + f'<br>Organism id: {organism_id}'
-                                  + f'<br>Protein names: {protein_names}')
+                                  + f'<br>Protein names: {protein_names}'
+                                  + '<extra></extra>')
 
     #-------------------------------------------------------------------------
     """Database option"""
     #
-    # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
-    #                              port=3306)
-    # cur = connection.cursor()
-    # for node, adjacencies in enumerate(graph.adjacency()):
-    #     node_adjacency.append(len(adjacencies[1]))
-    #     node_text.append(adjacencies[0])
-    #     entry = adjacencies[0]
-    #     sql = f"select entryName, GeneName, Sequence, Organism, OrganismID, ProteinName from protein_network.protein where ID = '{entry}'"
-    #     cur.execute(sql)
-    #     data = cur.fetchall()
-    #     entry_name = data[0][0]
-    #     gene_names = data[0][1]
-    #     sequence = data[0][2]
-    #     organism = data[0][3]
-    #     organism_id = data[0][4]
-    #     protein_names = data[0][5]
-    #     node_hovertemplate.append(f'Entry: {entry}'
-    #                               + f'<br>Entry name: {entry_name}'
-    #                               + f'<br>Gene names: {gene_names}'
-    #                               + f'<br>Sequence: {sequence}'
-    #                               + f'<br>Organism: {organism}'
-    #                               + f'<br>Organism id: {organism_id}'
-    #                               + f'<br>Protein names: {protein_names}')
-    # cur.close()
-    # # close the connection
-    # connection.close()
+    #connection = pymysql.connect(user='root', password='123456',
+    #                             host='localhost',
+    #                             port=3306)
+    #cur = connection.cursor()
+    #for node, adjacencies in enumerate(graph.adjacency()):
+    #    node_adjacency.append(len(adjacencies[1]))
+    #    node_text.append(adjacencies[0])
+    #    entry = adjacencies[0]
+    #    sql = f"select Entry Name, Gene Names, Sequence, Organism, Organism (ID), Protein Names from protein_network.protein where ID = '{entry}'"
+    #    cur.execute(sql)
+    #    data = cur.fetchall()
+    #    entry_name = data[0][0]
+    #    gene_names = data[0][1]
+    #    sequence = data[0][2]
+    #    organism = data[0][3]
+    #    organism_id = data[0][4]
+    #    protein_names = data[0][5]
+    #    node_hovertemplate.append(f'Entry: {entry}'
+    #                              + f'<br>Entry name: {entry_name}'
+    #                              + f'<br>Gene names: {gene_names}'
+    #                              + f'<br>Sequence: {sequence}'
+    #                              + f'<br>Organism: {organism}'
+    #                              + f'<br>Organism id: {organism_id}'
+    #                              + f'<br>Protein names: {protein_names}')
+    #cur.close()
+     # close the connection
+    #connection.close()
     #-------------------------------------------------------------------------
 
     node_trace.marker.color = node_adjacency
     node_trace.text = node_text
     node_trace.hovertemplate = node_hovertemplate
 
-
     # Create Network Graph
-    fig = go.Figure(data=[edge_trace, node_trace],
+    fig = go.Figure(data=[edge_trace, node_trace, eweights_trace],
                     layout=go.Layout(
                         title='<br>Protein similarity network',
                         titlefont_size=16,
