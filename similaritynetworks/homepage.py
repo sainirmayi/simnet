@@ -12,7 +12,7 @@ homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 #wehpage design
 homepage.layout = html.Div(
     [
-    dbc.Row(dbc.Col('Name',width={"size": 3, "offset": 0},),),
+    dbc.Row(dbc.Col('Diatom protein similarity searching tool',width={"size": 25, "offset": 0},),),
     html.Br(),#blank
     html.Hr(),#line
     html.Br(),
@@ -111,23 +111,25 @@ homepage.layout = html.Div(
         options=[
         {'label': 'Blast', 'value': 'Blast'},
         {'label': 'Fasta', 'value': 'Fasta'},
+        {'label': 'hmmer', 'value': 'hmmer'},
+        {'label': 'ssearch', 'value': 'ssearch'},
          ],
          placeholder="Blast")),width={"size": 5,  "offset": 4},),),
-
     html.Br(),
-    dbc.Row(
-         dbc.Col(html.Label("Target Organism:"), width={"size": 5, "offset": 4},)),
 
-    dbc.Row(dbc.Col(html.Div(
-                dcc.Dropdown(
-                    options=[
-                        {'label': 'Bacillariophyceae', 'value': 'diatom'},
-                        {'label': 'Homo sapiens', 'value': 'human'}
-                    ],
-                    placeholder="Original Organism",
-                    multi=True
-                )), width={"size": 5, "offset": 4},),
-        ),
+    dbc.Row(
+    dbc.Col(html.Label("Hit"), width={"size": 5, "offset": 4}, )),
+    dbc.Row(dbc.Col(
+        dcc.Dropdown(id='n_neighbors',
+        options=[
+        {'label': '5', 'value': 5},  # font needs to be adjusted
+        {'label': '10', 'value': 10},
+        {'label': '15', 'value': 15},
+        {'label': '20', 'value': 20},
+        ],
+        placeholder="15",
+        ), width={"size": 5, "offset": 4}, ), ),
+
     html.Br(),
     dbc.Row(
         html.Details(
@@ -136,26 +138,43 @@ homepage.layout = html.Div(
             html.Summary(
                 children="Advanced Settings" #set the name of the detail label
             ),
-            dbc.Row(dbc.Col(
-            html.Div(
-            dcc.Dropdown(
-            options=[
-                {'label': '1', 'value': 'diatom'},
-                {'label': '2', 'human': 'human'},
-                ],
-                placeholder="Default score cut-off",
-        )),width={"size": 5,  "offset": 4},),),
-            html.Br(),
-            dbc.Row(dbc.Col(
-            dcc.Dropdown(id = 'n_neighbors',
-            options=[
-                {'label': 'No more than 5 interactors', 'value': 5},#font needs to be adjusted
-                {'label': 'No more than 10 interactors', 'value': 10},
-                {'label': 'No more than 15 interactors', 'value': 15},
-                {'label': 'No more than 20 interactors', 'value': 20},
-                ],
-                placeholder="no more than 15 interactors",
-                ),width={"size": 5,  "offset": 4},),)],)),
+        #     dbc.Row(dbc.Col(
+        #     html.Div(
+        #     dcc.Dropdown(
+        #     options=[
+        #         {'label': '1', 'value': 'diatom'},
+        #         {'label': '2', 'value': 'human'},
+        #         ],
+        #         placeholder="Default score cut-off",
+        # )),width={"size": 5,  "offset": 4},),),
+
+    html.Br(),
+
+    dbc.Row(dbc.Col(html.Label("Target Organism:"), width={"size": 5, "offset": 4}, )),
+    dbc.Row(dbc.Col(html.Div(
+    dcc.Dropdown(
+    options=[
+        {'label': "All", 'value': 0},
+        {'label': "Acaryochloris marina [329726]", 'value': 329726},
+        {'label': "Angiopteris evecta [13825]", 'value': 13825},
+        {'label': "Aspergillus clavatus [344612]", 'value': 344612},
+        {'label': "Aspergillus niger [425011]", 'value': 425011},
+        {'label': "Bacillus anthracis [592021]", 'value': 592021},
+        {'label': "Bacillus pumilus [315750]", 'value': 315750},
+        {'label': "Bos taurus [9913]", 'value': 9913},
+        {'label': "Branchiostoma floridae [7739]", 'value': 7739},
+        {'label': "Chloroflexus aurantiacus [324602]", 'value': 324602},
+        {'label': "Chlorokybus atmophyticus [3144]", 'value': 3144},
+        {'label': "Cicer arietinum [3827]", 'value': 3827},
+        {'label': "Coffea arabica [13443]", 'value': 13443},
+        {'label': "Coprinopsis cinerea [240176]", 'value': 240176},
+        {'label': "Crocosphaera subtropica [43989]", 'value': 43989},
+        {'label': "Cyanothece sp. [395961]", 'value': 395961},
+        {'label': "Desulfitobacterium hafniense [272564]", 'value': 272564},
+        ],
+        placeholder="All",
+        multi=True
+        )), width={"size": 9, "offset": 2}, ),),],)),
     html.Br(),
     dbc.Row(
         dbc.Col(
@@ -231,7 +250,7 @@ def file_upload_info(content):
     if content is not None:
         return "File uploaded successfully!"
     else:
-        return "Please upload file!"
+        return "Please upload file or provide a uniprot accession number!"
 
 
 if __name__ == '__main__':

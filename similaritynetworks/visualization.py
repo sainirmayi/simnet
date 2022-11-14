@@ -30,19 +30,20 @@ import plotly.express as px
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
     """Database"""
-    # connection = pymysql.connect(user='root', password='123456',
-    #                              host='localhost',
-    #                              port=3306)
-    # sequence = "".join(line.strip() for line in sequence.splitlines())
-    # cur = connection.cursor()
-    # sql = f"select ID from protein_network.protein where Sequence = '{sequence}'"
-    #
-    # cur.execute(sql)
-    # query = cur.fetchall()
-    #
-    # cur.close()
-    # # close the connection
-    # connection.close()
+    connection = pymysql.connect(user='root', password='123456',
+                                 host='localhost',
+                                 port=3306)
+    sequence = "".join(line.strip() for line in sequence.splitlines())
+    cur = connection.cursor()
+    sql = f"select Entry from protein_network.protein where Sequence = '{sequence}'"
+
+    cur.execute(sql)
+    query = cur.fetchall()
+
+    cur.close()
+    # close the connection
+    connection.close()
+    return query[0][0]
     #------------------------------------------------------------------------
 
     #------------------------------------------------------------------------
@@ -98,31 +99,31 @@ def get_similarity_data(query,n_neighbors, DB):
 
     #print(results)
     return results
-    #------------------------------------------------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------------------------------------------
 
-    #"""Use the following code if you can connect to the database"""
+    """Use the following code if you can connect to the database"""
     # Retrieve information from database.
-    #connection = pymysql.connect(user='root', password='123456',
-                                 #host='localhost',
-                                 #port=3306)
-    #cur = connection.cursor()
-    #if DB == 'Blast':
-    #    sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    #elif DB == 'Fasta':
-    #    sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    #else:
-        #a default sql query
-    #    sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    connection = pymysql.connect(user='root', password='123456',
+                                 host='localhost',
+                                 port=3306)
+    cur = connection.cursor()
+    if DB == 'Blast':
+       sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    elif DB == 'Fasta':
+       sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+    else:
+        # a default sql query
+       sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
 
 
-    #cur.execute(sql)
-    #dt = cur.fetchall()
-    #results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    cur.execute(sql)
+    dt = cur.fetchall()
+    results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
 
-    #cur.close()
+    cur.close()
     # close the connection
-    #connection.close()
-    #------------------------------------------------------------------------------------------------------------------
+    connection.close()
+    # ------------------------------------------------------------------------------------------------------------------
 
     # 'return results2' if you want to retrieve data from the database.
     return results2
@@ -177,7 +178,6 @@ def create_network(similar_proteins):
 
 
         score = df['Score'].to_string(index=False)
-        print(score)
         edge_colors.append(score)
         edge_hovertemplate.append(f'Score: {score} <extra></extra>')
 
@@ -204,7 +204,7 @@ def create_network(similar_proteins):
         x=node_x, y=node_y,
         mode='markers+text',
         textposition='middle right',
-        textfont=dict(size=10, color='black'),
+        textfont=dict(size=18, color='black'),
         marker=dict(
             showscale=False,
             colorscale='YlGnBu',
@@ -286,7 +286,7 @@ def create_network(similar_proteins):
     fig = go.Figure(data=[edge_trace, node_trace, eweights_trace],
                     layout=go.Layout(
                         title='<br>Protein similarity network',
-                        titlefont_size=16,
+                        titlefont_size=32,
                         showlegend=False,
                         hovermode='closest',
                         margin=dict(b=20, l=5, r=5, t=40),

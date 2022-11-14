@@ -92,11 +92,6 @@ def hmmer_search(sequences, DB):
         print(f"The result for {name[1]} has been saved.")
 
 
-
-#sequences = parse_fasta("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/hmmer-second_search.fasta")
-#hmmer_search(sequences, 'swissprot')
-#main_path = os.getcwd()
-
 def concatIntoCSV(folderName):
     #parse a list of xml files in a folder and concatate them into df
     df = pd.DataFrame()
