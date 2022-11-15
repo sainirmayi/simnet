@@ -147,7 +147,8 @@ def dataTrimming(df1,df2):
             df = df.drop(index)
             deletion = deletion +1
             print(deletion)
-    df = df.drop(['concat1', 'concat2'], axis=1)
+    df = df.drop_duplicates(subset=['concat1'])#remove identical rows
+    df = pd.DataFrame(df)
     return df
     #12643
     #547
@@ -167,8 +168,13 @@ def dropOutOfScopeProtein(list,df):
     return df
 
 
-
-#df = pd.read_csv('/Users/jiyue/Desktop/newoutputTrimmed.csv')
+#d = {'Protein1': ["1", "2","1","3","5"], 'Protein2': ["2", "1","2","4","6"]}
+#df1 = pd.read_csv('/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/Hmmer/testnew.csv')
+#df1 = pd.DataFrame(data=d)
+#df2 = pd.DataFrame()
+#df = dataTrimming(df1,df2)
+#print(df)
+#df.to_csv(main_path + "/prey",index=False)
 #hit = list(range(1,len(df["Protein1"])+1))
 #df["Hit"] = hit
 #df.reset_index(drop=True, inplace=True)
