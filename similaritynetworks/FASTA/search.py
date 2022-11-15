@@ -152,8 +152,8 @@ def retrieve_protein_info(similarity_search_results):
 if __name__ == '__main__':
     baseUrl = 'https://www.ebi.ac.uk/Tools/services/rest/fasta'
     sequences = parse_fasta('../fastaSequence/Bacillariophyceae_reviewed.fasta')
-    # program = 'fasta'
-    program = 'ssearch'
+    program = 'fasta'
+    # program = 'ssearch'
     stype = 'protein'
     alignments = 20
     database = 'uniprotkb_swissprot'
