@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import io
 
+
 def uniprot_retrieval(query_id):
     base = "https://rest.uniprot.org/uniprotkb/"
     query = "search?query="
@@ -13,14 +14,15 @@ def uniprot_retrieval(query_id):
     return df
 
 
-blast_dataframe = pd.read_csv('../Blast/blast.csv')
-proteins = blast_dataframe['Protein1'].append(blast_dataframe['Protein2']).drop_duplicates()
+if __name__ == '__main__':
+    blast_dataframe = pd.read_csv('../Blast/blast.csv')
+    proteins = blast_dataframe['Protein1'].append(blast_dataframe['Protein2']).drop_duplicates()
 
-df = pd.DataFrame()
-process = 0
-for protein in proteins:
-    process = process + 1
-    print(process)
-    df = pd.concat([df, uniprot_retrieval(protein)], axis=0)
+    df = pd.DataFrame()
+    process = 0
+    for protein in proteins:
+        process = process + 1
+        print(process)
+        df = pd.concat([df, uniprot_retrieval(protein)], axis=0)
 
-df.to_csv('uniprot.csv', index=False)
+    df.to_csv('uniprot.csv', index=False)

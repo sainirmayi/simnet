@@ -48,7 +48,7 @@ def getProteinID(sequence):
 
     #------------------------------------------------------------------------
     """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
 
@@ -197,7 +197,7 @@ def create_network(similar_proteins):
         node_x.append(x)
         node_y.append(y)
 
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
 
     # Try hovertemplate instead of hoverinfo to display more information
     node_trace = go.Scatter(

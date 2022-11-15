@@ -1,5 +1,6 @@
 import os
 
+import numpy as np
 import pandas as pd
 from Bio import SeqIO
 import time
@@ -10,6 +11,8 @@ from urllib.parse import urlparse, urlencode
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
 import xml.etree.ElementTree as ET
+
+from UniprotRetrieval.uniprot import uniprot_retrieval
 
 
 def parse_fasta(filename):
@@ -60,7 +63,7 @@ def get_status(jobId):
     return status
 
 
-def clientPoll(jobId):
+def client_poll(jobId):
     result = 'PENDING'
     while result == 'RUNNING' or result == 'PENDING':
         result = get_status(jobId)
@@ -78,7 +81,7 @@ def get_result_types(jobId):
 
 def get_result(jobId, outformat, outfile):
     # Check status and wait if necessary
-    clientPoll(jobId)
+    client_poll(jobId)
     # Get available result types
     resultTypes = get_result_types(jobId)
     # Derive the filename for the result
@@ -92,30 +95,28 @@ def get_result(jobId, outformat, outfile):
     fh.close()
 
 
-def similarity_search(sequences, program, stype, alignments, db, outformat, baseUrl, email):
-    for sequence in sequences:
-        parameters = {
-            'program': program,
-            'stype': stype,
-            'alignments': alignments,
-            'sequence': f'>{sequence.id}\n{sequence.seq}',
-            'database': db,
-            'email': email
-        }
-        outfile = f"{program}_xml_out/{sequence.name.split('|')[1]}"
-        if os.path.exists(f"{os.getcwd()}/{outfile}.{outformat}"):
-            print(f"{outfile}.{outformat} already exists!")
-        else:
-            jobId = submit_job(parameters, baseUrl)
-            print(f"Job: {jobId}")
-            print(f"Getting results of {sequence.name.split('|')[1]}")
-            get_result(jobId, outformat, outfile)
+def similarity_search(sequence, program, stype, alignments, db, outformat, baseUrl, email, outfile):
+    parameters = {
+        'program': program,
+        'stype': stype,
+        'alignments': alignments,
+        'sequence': sequence,
+        'database': db,
+        'email': email
+    }
+    if os.path.exists(f"{os.getcwd()}/{outfile}.{outformat}"):
+        print(f"{outfile}.{outformat} already exists!")
+    else:
+        jobId = submit_job(parameters, baseUrl)
+        print(f"Job: {jobId}")
+        print(f"Getting results of {sequence.splitlines()[0]}")
+        get_result(jobId, outformat, outfile)
 
 
-def parse_xml_files(program):
+def parse_xml_files(folder):
     df = pd.DataFrame()
-    for file in os.listdir(f"{os.getcwd()}/{program}_xml_out/"):
-        tree = ET.parse(f"{os.getcwd()}/{program}_xml_out/{file}")
+    for file in os.listdir(folder):
+        tree = ET.parse(f"{folder}/{file}")
         root = tree.getroot()
         records = []
         ns = {'name': 'http://www.ebi.ac.uk/schema'}
@@ -129,11 +130,23 @@ def parse_xml_files(program):
             identity = item.find('name:alignments/name:alignment/name:identity', ns).text
             positives = item.find('name:alignments/name:alignment/name:positives', ns).text
             e = item.find('name:alignments/name:alignment/name:expectation', ns).text
+            match_seq = item.find('name:alignments/name:alignment/name:matchSeq', ns).text
             records.append(
                 dict(Protein1=protein1, Protein2=protein2, DB=db, Organism=organism, Length=length, Score=score,
-                     Identities=identity, Positives=positives, E=e))
+                     Identities=identity, Positives=positives, E=e, MatchSequence=match_seq))
         df = pd.concat([df, pd.DataFrame.from_records(records)], axis=0)
-    df.to_csv(f'{program}.csv', index=False)
+    return df
+
+
+def retrieve_protein_info(similarity_search_results):
+    # Retrieving protein information from uniprot
+    uniprot_df = pd.read_csv("../UniprotRetrieval/updated_uniprot.csv")
+    proteins = pd.concat([similarity_search_results['Protein1'], similarity_search_results['Protein2']], axis=0).drop_duplicates()
+    protein_info = pd.DataFrame()
+    for protein in proteins:
+        if protein not in uniprot_df:
+            protein_info = pd.concat([protein_info, uniprot_retrieval(protein)], axis=0)
+    pd.concat([uniprot_df, protein_info], axis=0).drop_duplicates().to_csv('../UniprotRetrieval/updated_uniprot.csv')
 
 
 if __name__ == '__main__':
@@ -146,10 +159,58 @@ if __name__ == '__main__':
     database = 'uniprotkb_swissprot'
     outformat = 'xml'
     email = 'ynirmayi@gmail.com'
-    # make a new directory to put the separated hmmer result
+
+    # make a new directory for the first search results
     if not os.path.exists(f"{os.getcwd()}/{program}_xml_out/"):
         # Create a new directory because it does not exist
         os.makedirs(f"{os.getcwd()}/{program}_xml_out/")
         print("The new directory is created!")
-    similarity_search(sequences, program, stype, alignments, database, outformat, baseUrl, email)
-    parse_xml_files(program)
+
+    # first similarity search
+    for record in sequences:
+        sequence = f">{record.id}\n{record.seq}"
+        similarity_search(sequence, program, stype, alignments, database, outformat, baseUrl, email, f"{program}_xml_out/{sequence.split('|')[1]}")
+
+    # Parsing search results in xml folder
+    first_search_results = parse_xml_files(f"{os.getcwd()}/{program}_xml_out/")
+    print(first_search_results)
+
+    # updating uniprot protein information file
+    retrieve_protein_info(first_search_results)
+
+    # make a new directory for the search results
+    if not os.path.exists(f"{os.getcwd()}/{program}_second_search_xml_out/"):
+        # Create a new directory because it does not exist
+        os.makedirs(f"{os.getcwd()}/{program}_second_search_xml_out/")
+        print("The new directory is created!")
+
+    # Finding similarities between hits for each queried protein
+    for query in first_search_results['Protein1'].unique():
+        hits = first_search_results[first_search_results['Protein1'] == query]
+        for index, hit in hits.iterrows():
+            if hit['Protein2'] != query and hit['Protein2'] not in hits['Protein1'].unique():
+                seq = f">{hit['Protein2']}\n{hit['MatchSequence'].replace('-', '')}"
+                similarity_search(seq, program, stype, alignments, database, outformat, baseUrl, email, f"{program}_second_search_xml_out/{hit['Protein2']}")
+
+    second_search_results = parse_xml_files(f"{os.getcwd()}/{program}_second_search_xml_out/")
+    print(second_search_results)
+
+    final_df = pd.concat([second_search_results, first_search_results], axis=0).drop_duplicates().drop(columns='MatchSequence')
+    final_df.reset_index(drop=True, inplace=True)
+    print(len(final_df))
+    # removing duplicate protein pairs
+    duplicates = final_df.index[pd.DataFrame(np.sort(final_df[['Protein1', 'Protein2']].values)).duplicated()].to_list()
+    print(len(duplicates),duplicates)
+    final_df.drop(duplicates, axis=0, inplace=True)
+    final_df.reset_index(drop=True, inplace=True)
+
+    # removing similarities between protein pairs if either of the proteins are not in the first search
+    proteins_list = first_search_results['Protein2'].unique()
+    print(proteins_list)
+    for index, row in final_df.iterrows():
+        if not(row["Protein1"] in proteins_list and row["Protein2"] in proteins_list):
+            final_df.drop(index, inplace=True)
+    final_df.reset_index(drop=True, inplace=True)
+    print(final_df)
+
+    final_df.to_csv(f"{program}.csv", index=False)
