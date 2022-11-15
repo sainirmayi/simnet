@@ -6,10 +6,11 @@ import urllib.request as urllib2
 import xml.etree.ElementTree as ET
 
 '''For who wants to do second search:
- 1.first search, get df1, and get unique list of 2 protein columns(name list_scope)
+ 1.first search, get parsed results df1(as csv), and get unique list of 2 protein columns(name list_scope) (do yourselves)
  2.second search , feed the folder with xml output into function parsingAndConcatIntoDf(folderName), get df2
  3.feed the df1 and df2 to dataTrimming(df1,df2), get df
- 4.feed list_scope and df to dropOutOfScopeProtein(list,df)(!Dont forget to write to csv in main)'''
+ 4.feed list_scope and df to dropOutOfScopeProtein(list,df)(!Dont forget to write to csv in main)
+ Note:paths defintely needs to be modified...'''
 main_path = os.getcwd()
 def parseXML(file,folder):
     '''(DEPRECATED)'''
