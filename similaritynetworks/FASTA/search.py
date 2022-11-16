@@ -11,8 +11,9 @@ from urllib.parse import urlparse, urlencode
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
 import xml.etree.ElementTree as ET
-
-from UniprotRetrieval.uniprot import uniprot_retrieval
+import sys
+sys.path.insert(0,r"C:\Users\Tutuy\PycharmProjects\similarity-networks\similaritynetworks\UniprotRetrieval")
+import uniprot
 
 
 def parse_fasta(filename):
@@ -145,7 +146,7 @@ def retrieve_protein_info(similarity_search_results):
     protein_info = pd.DataFrame()
     for protein in proteins:
         if protein not in uniprot_df:
-            protein_info = pd.concat([protein_info, uniprot_retrieval(protein)], axis=0)
+            protein_info = pd.concat([protein_info, uniprot.uniprot_retrieval(protein)], axis=0)
     pd.concat([uniprot_df, protein_info], axis=0).drop_duplicates().to_csv('../UniprotRetrieval/updated_uniprot.csv')
 
 
@@ -174,10 +175,11 @@ if __name__ == '__main__':
     # Parsing search results in xml folder
     first_search_results = parse_xml_files(f"{os.getcwd()}/{program}_xml_out/")
     print(first_search_results)
-
+    print("start retrieval")
     # updating uniprot protein information file
-    retrieve_protein_info(first_search_results)
+    # retrieve_protein_info(first_search_results)
 
+    print("information retrieved")
     # make a new directory for the search results
     if not os.path.exists(f"{os.getcwd()}/{program}_second_search_xml_out/"):
         # Create a new directory because it does not exist
