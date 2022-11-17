@@ -244,7 +244,7 @@ def create_network(similar_proteins):
     #-------------------------------------------------------------------------
     """Database option"""
 
-    connection = pymysql.connect(user='root', password='123456',
+    connection = pymysql.connect(user='root', password='proteinsim',
                                 host='localhost',
                                 port=3306)
     cur = connection.cursor()
