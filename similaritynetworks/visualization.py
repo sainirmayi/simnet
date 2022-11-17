@@ -253,15 +253,17 @@ def create_network(similar_proteins):
        node_text.append(adjacencies[0])
        entry = adjacencies[0]
        """Important: sql table attribute name must not have white space."""
-       sql = f"select Entry_Name, Gene_Names, Organism, OrganismID, Seq, Protein_Names from protein_network.protein where Entry = '{entry}'"
+       sql = f"select Entry,Entry_Name, Gene_Names, Seq, Organism, OrganismID, Protein_Names from protein_network.protein where Entry = '{entry}'"
        cur.execute(sql)
        data = cur.fetchall()
-       entry_name = data[0][0]
-       gene_names = data[0][1]
-       sequence = data[0][2]
-       organism = data[0][3]
-       organism_id = data[0][4]
-       protein_names = data[0][5]
+       print(data)
+       entry = data[0][0]
+       entry_name = data[0][1]
+       gene_names = data[0][2]
+       sequence = data[0][3]
+       organism = data[0][4]
+       organism_id = data[0][5]
+       protein_names = data[0][6]
        node_hovertemplate.append(f'Entry: {entry}'
                                  + f'<br>Entry name: {entry_name}'
                                  + f'<br>Gene names: {gene_names}'
