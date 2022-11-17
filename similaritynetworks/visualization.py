@@ -48,7 +48,7 @@ def getProteinID(sequence):
 
     #------------------------------------------------------------------------
     """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("pages/UniprotRetrival/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
 
@@ -69,6 +69,7 @@ def get_similarity_data(query,n_neighbors, DB):
     results = pd.DataFrame()
     queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
                               #| (similarity_db['Protein2'] == query)]
+    #queryInfo = pd.concat(queryInfo,similarity_db[(similarity_db['Protein2'] == query) ])
     queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
     queryInfo.reset_index(drop=True, inplace=True)
     #print(queryInfo)
