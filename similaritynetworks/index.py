@@ -36,7 +36,7 @@ def render_page_content(pathname):
     elif pathname == "/Developer":
         return html.P("deve")
     elif pathname == "/page2":
-        return html.P("Oh cool, this is page 2!")
+        return html.P("to be developed")
     # If the user tries to reach a different page, return a 404 message
     return html.Div(
         [

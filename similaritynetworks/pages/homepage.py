@@ -105,7 +105,6 @@ layout =  html.Div([html.Div(
             ],
             className="mt-3", ),
 
-    html.Br(),
     dbc.Row(dbc.Col('Algorithm',width={"size": 3},),),
     dbc.Row(
         dbc.Col(html.Div(
@@ -151,7 +150,6 @@ layout =  html.Div([html.Div(
         # )),width={"size": 5,  "offset": 4},),),
 
     html.Br(),
-
     dbc.Row(dbc.Col(html.Label("Target Organism:"), width={"size": 5}, )),
     dbc.Row(dbc.Col(html.Div(
     dcc.Dropdown(
@@ -192,12 +190,11 @@ layout =  html.Div([html.Div(
 
           #  }, ),# specify the search block style
     html.Br(),
-    html.Br(),
-    ],style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '1vw','backgroundColor':'GhostWhite'}),
+    ],style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw','margin-right': '1vw', 'margin-top': '1vw','backgroundColor':'GhostWhite'}),
 
     html.Div([
     html.Div(
-         id='plot_zone' ,style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw'}),
+         id='plot_zone' ,style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '0vw', 'margin-top': '-1.5vw'}),
     #html.Div(html.P("Input Protein"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},),
 #html.Div(html.P("Sequence Similarity Partners"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},)
         ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '0vw', 'margin-top': '0vw',})
@@ -211,16 +208,24 @@ layout =  html.Div([html.Div(
      State('n_neighbors', 'value')
  )
 def showNetworkDiagram(n_clicks,proteinID,n_neighors):
-     if n_clicks:
-         print('yes')
-         return \
+    if n_neighors == None:
+        n_neighors = 10
+
+    if n_clicks:
+        print('yes')
+        return \
         html.Div(dbc.Col([dcc.Graph(
-                 id='network',figure = visualization.get_visualization(proteinID,n_neighors,'kk'),style={'width': '110vh', 'height': '60vh'}),
+                 id='network',figure = visualization.get_visualization(proteinID,n_neighors,'kk'),style={'width': '135vh', 'height': '90vh'}),
                  html.Div([html.P("Your Input")], style={'font-size': '12px',"font-weight": "bold"}),
                  dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'), [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns], style_cell={'textAlign': 'left'},),
                  html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
-                 #dash_table.DataTable(getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'jj').to_dict('records'), [{"name": i, "id": i} for i in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'jj').columns],style_cell={'textAlign': 'left'})
-                                     ]
+                 dash_table.DataTable(getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'), [{"name": i, "id": i} for i in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],style_cell={'textAlign': 'left'})
+                 #dash_table.DataTable(
+                 #data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
+                # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
+                 #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
+                  #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
+                  ]
             )
          )
 
@@ -262,8 +267,8 @@ def show_accession(n_clicks1, n_clicks2, is_open1, value, is_open2, is_open3):
 def file_upload_info(content):
     if content is not None:
         return "File uploaded successfully!"
-    else:
-        return "Please upload file or provide a uniprot accession number!"
+    #else:
+     #   return "Please upload file or provide a uniprot accession number!"
 
 
 #if __name__ == '__main__':
