@@ -48,7 +48,7 @@ def getProteinID(sequence):
 
     #------------------------------------------------------------------------
     """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("pages/UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("../UniprotRetrival/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
 

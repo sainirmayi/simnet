@@ -4,7 +4,7 @@ from similaritynetworks.visualization import get_similarity_data
 
 
 def getInfoForSingleProtein(UniprotID):
-    df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    df = pd.DataFrame(pd.read_csv("../../UniprotRetrival/uniprot.csv"))
     info = df[df['Entry'] == UniprotID]
     info = info[["Entry","Protein names"]]
     info = info.astype(str)
