@@ -76,49 +76,49 @@ def get_similarity_data(query,n_neighbors, DB):
 
     results.reset_index(drop=True, inplace=True)
 
-    # return results
+    return results
 
     # ------------------------------------------------------------------------------------------------------------------
     """Database option"""
     """Use the following code if you can connect to the database"""
     # Retrieve information from database.
-    connection = pymysql.connect(user='root', password='123456',
-                                 host='localhost',
-                                 port=3306)
-    cur = connection.cursor()
-    sql = f"select Protein1, Protein2, Score from protein_network.{DB} where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
+   # connection = pymysql.connect(user='root', password='123456',
+    #                             host='localhost',
+     #                            port=3306)
+    #cur = connection.cursor()
+    #sql = f"select Protein1, Protein2, Score from protein_network.{DB} where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
 
-    cur.execute(sql)
-    dt = cur.fetchall()
-    results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
-    results2.reset_index(drop=True, inplace=True)
+    #cur.execute(sql)
+    #dt = cur.fetchall()
+    #results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    #results2.reset_index(drop=True, inplace=True)
 
-    direct_connection = pd.concat([results2['Protein1'][results2['Protein2'] ==
-                            query],results2['Protein2'][results2['Protein1'] == query]])
+    #direct_connection = pd.concat([results2['Protein1'][results2['Protein2'] ==
+     #                       query],results2['Protein2'][results2['Protein1'] == query]])
 
-    t = tuple(direct_connection)
+   # t = tuple(direct_connection)
 
-    if DB == 'hmmer':
-        sql = "select distinct Protein1, Protein2, Score from protein_network.hmmer where Protein2 in {} and Protein1 in {}".format(t,t)
-    elif DB == 'Blast':
-        sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
-    elif DB == 'Fasta':
-        sql = "select distinct Protein1, Protein2, Score from protein_network.fasta where Protein2 in {} and Protein1 in {}".format(t,t)
-    elif DB == 'ssearch':
-        sql = "select distinct Protein1, Protein2, Score from protein_network.ssearch where Protein2 in {} and Protein1 in {}".format(t,t)
-    else:
-        sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
-
-
-    cur.execute(sql)
-    re = cur.fetchall()
-    results2 = results2.append(pd.DataFrame(re, columns=['Protein1', 'Protein2', 'Score']))
-    results2.reset_index(drop=True, inplace=True)
+    #if DB == 'hmmer':
+     #   sql = "select distinct Protein1, Protein2, Score from protein_network.hmmer where Protein2 in {} and Protein1 in {}".format(t,t)
+    #elif DB == 'Blast':
+     #   sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
+    #elif DB == 'Fasta':
+     #   sql = "select distinct Protein1, Protein2, Score from protein_network.fasta where Protein2 in {} and Protein1 in {}".format(t,t)
+    #elif DB == 'ssearch':
+     #   sql = "select distinct Protein1, Protein2, Score from protein_network.ssearch where Protein2 in {} and Protein1 in {}".format(t,t)
+    #else:
+     #   sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
 
 
-    cur.close()
-    connection.close()
-    return results2
+    #cur.execute(sql)
+    #re = cur.fetchall()
+    #results2 = results2.append(pd.DataFrame(re, columns=['Protein1', 'Protein2', 'Score']))
+    #results2.reset_index(drop=True, inplace=True)
+
+
+    #cur.close()
+    #connection.close()
+    #return results2
     # ------------------------------------------------------------------------------------------------------------------
 
 
