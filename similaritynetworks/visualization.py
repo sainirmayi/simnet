@@ -7,25 +7,6 @@ pd.options.mode.chained_assignment = None
 import pymysql
 import plotly.express as px
 
-# def create_sample_db():
-#     """ Sample dataframes to represent the databases """
-#     main_dataframe = pd.DataFrame(pd.read_csv("sample_data.csv"))
-#     protein_info = main_dataframe.drop(['Hit', 'Score(Bits)', 'Identities(%)', 'Positives(%)', 'E()'],
-#                                        axis=1).drop_duplicates()
-#     protein_info.reset_index(drop=True, inplace=True)
-#     similarity_db = main_dataframe.drop(['DB', 'Description', 'Organism', 'Length'], axis=1)
-#     similarity_db.reset_index(drop=True, inplace=True)
-#     similarity_db['Protein1'] = None
-#     for i in range(similarity_db.shape[0]):
-#         if similarity_db["Hit"][i] == 1:
-#             qp = similarity_db.loc[i, 'Accession']
-#         similarity_db['Protein1'][i] = qp
-#     similarity_db.rename(columns={'Accession': 'Protein2', 'Score(Bits)': 'Score',
-#                                   'Identities(%)': 'Identities', 'Positives(%)': 'Positives', 'E()': 'E'},
-#                          inplace=True)
-#     similarity_db.reset_index(drop=True, inplace=True)
-#     return similarity_db
-
 
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
@@ -35,7 +16,7 @@ def getProteinID(sequence):
                                  port=3306)
     sequence = "".join(line.strip() for line in sequence.splitlines())
     cur = connection.cursor()
-    sql = f"select Entry from protein_network.protein where Sequence = '{sequence}'"
+    sql = f"select Entry from protein_network.protein where Seq = '{sequence}'"
 
     cur.execute(sql)
     query = cur.fetchall()
@@ -48,7 +29,7 @@ def getProteinID(sequence):
 
     #------------------------------------------------------------------------
     """csv file"""
-    uniprot_df = pd.DataFrame(pd.read_csv("../UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
     sequence = "".join(line.strip() for line in sequence.splitlines())
     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
 
@@ -69,10 +50,8 @@ def get_similarity_data(query,n_neighbors, DB):
     results = pd.DataFrame()
     queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
                               #| (similarity_db['Protein2'] == query)]
-    #queryInfo = pd.concat(queryInfo,similarity_db[(similarity_db['Protein2'] == query) ])
     queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
     queryInfo.reset_index(drop=True, inplace=True)
-    #print(queryInfo)
     #similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
    # similar.remove(query)
     topN = queryInfo[:n_neighbors]
@@ -80,7 +59,6 @@ def get_similarity_data(query,n_neighbors, DB):
                             query],topN['Protein2'][topN['Protein1'] == query]])
 
     direct_connection = direct_connection.tolist()
-    #print(direct_connection)
     for index, row in similarity_db.iterrows():
         if row["Protein1"] in direct_connection and row['Protein2'] in direct_connection :
             results = results.append(row)
@@ -98,36 +76,50 @@ def get_similarity_data(query,n_neighbors, DB):
 
     results.reset_index(drop=True, inplace=True)
 
-    #print(results)
-    return results
-    # ------------------------------------------------------------------------------------------------------------------
+    # return results
 
+    # ------------------------------------------------------------------------------------------------------------------
+    """Database option"""
     """Use the following code if you can connect to the database"""
     # Retrieve information from database.
     connection = pymysql.connect(user='root', password='123456',
                                  host='localhost',
                                  port=3306)
     cur = connection.cursor()
-    if DB == 'Blast':
-       sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    elif DB == 'Fasta':
-       sql = f"select Protein1, Protein2, Score from protein_network.fasta where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-    else:
-        # a default sql query
-       sql = f"select Protein1, Protein2, Score from protein_network.blast where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
-
+    sql = f"select Protein1, Protein2, Score from protein_network.{DB} where Protein1 = '{query}' and Protein2 != '{query}' order by Score desc LIMIT {n_neighbors}"
 
     cur.execute(sql)
     dt = cur.fetchall()
     results2 = pd.DataFrame(dt, columns=['Protein1', 'Protein2', 'Score'])
+    results2.reset_index(drop=True, inplace=True)
+
+    direct_connection = pd.concat([results2['Protein1'][results2['Protein2'] ==
+                            query],results2['Protein2'][results2['Protein1'] == query]])
+
+    t = tuple(direct_connection)
+
+    if DB == 'hmmer':
+        sql = "select distinct Protein1, Protein2, Score from protein_network.hmmer where Protein2 in {} and Protein1 in {}".format(t,t)
+    elif DB == 'Blast':
+        sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
+    elif DB == 'Fasta':
+        sql = "select distinct Protein1, Protein2, Score from protein_network.fasta where Protein2 in {} and Protein1 in {}".format(t,t)
+    elif DB == 'ssearch':
+        sql = "select distinct Protein1, Protein2, Score from protein_network.ssearch where Protein2 in {} and Protein1 in {}".format(t,t)
+    else:
+        sql = "select distinct Protein1, Protein2, Score from protein_network.blast where Protein2 in {} and Protein1 in {}".format(t,t)
+
+
+    cur.execute(sql)
+    re = cur.fetchall()
+    results2 = results2.append(pd.DataFrame(re, columns=['Protein1', 'Protein2', 'Score']))
+    results2.reset_index(drop=True, inplace=True)
+
 
     cur.close()
-    # close the connection
     connection.close()
-    # ------------------------------------------------------------------------------------------------------------------
-
-    # 'return results2' if you want to retrieve data from the database.
     return results2
+    # ------------------------------------------------------------------------------------------------------------------
 
 
 def create_network(similar_proteins):
@@ -176,11 +168,11 @@ def create_network(similar_proteins):
         df = similar_proteins[((similar_proteins['Protein1'] == protein1) & (similar_proteins['Protein2']== protein2))
                                | ((similar_proteins['Protein2'] == protein1) & (similar_proteins['Protein1'] == protein2))]
 
-
-
         score = df['Score'].to_string(index=False)
         edge_colors.append(score)
         edge_hovertemplate.append(f'Score: {score} <extra></extra>')
+
+
 
     #print(edge_colors)
     #edge_trace.line.color = edge_colors
@@ -198,7 +190,7 @@ def create_network(similar_proteins):
         node_x.append(x)
         node_y.append(y)
 
-    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrival/uniprot.csv"))
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
 
     # Try hovertemplate instead of hoverinfo to display more information
     node_trace = go.Scatter(
@@ -225,58 +217,60 @@ def create_network(similar_proteins):
     node_text = []
     node_hovertemplate = []
 
-    for node, adjacencies in enumerate(graph.adjacency()):
-        node_adjacency.append(len(adjacencies[1]))
-        node_text.append(adjacencies[0])
-        entry = adjacencies[0]
-        df = uniprot_df.loc[uniprot_df['Entry'] == entry]
-        entry_name = df['Entry Name'].to_string(index=False)
-        gene_names = df['Gene Names'].to_string(index=False)
-        sequence = df['Sequence'].to_string(index=False)
-        organism = df['Organism'].to_string(index=False)
+    # for node, adjacencies in enumerate(graph.adjacency()):
+    #     node_adjacency.append(len(adjacencies[1]))
+    #     node_text.append(adjacencies[0])
+    #     entry = adjacencies[0]
+    #     df = uniprot_df.loc[uniprot_df['Entry'] == entry]
+    #     entry_name = df['Entry Name'].to_string(index=False)
+    #     gene_names = df['Gene Names'].to_string(index=False)
+    #     sequence = df['Sequence'].to_string(index=False)
+    #     organism = df['Organism'].to_string(index=False)
+    #
+    #     organism_id = df['Organism (ID)'].to_string(index=False)
+    #     protein_names = df['Protein names'].to_string(index=False)
+    #
+    #     node_hovertemplate.append(f'Entry: {entry}'
+    #                               + f'<br>Entry name: {entry_name}'
+    #                               + f'<br>Gene names: {gene_names}'
+    #                               + f'<br>Sequence: {sequence}'
+    #                               + f'<br>Organism: {organism}'
+    #                               + f'<br>Organism id: {organism_id}'
+    #                               + f'<br>Protein names: {protein_names}'
+    #                               + '<extra></extra>')
 
-        organism_id = df['Organism (ID)'].to_string(index=False)
-        protein_names = df['Protein names'].to_string(index=False)
 
-        node_hovertemplate.append(f'Entry: {entry}'
-                                  + f'<br>Entry name: {entry_name}'
-                                  + f'<br>Gene names: {gene_names}'
-                                  + f'<br>Sequence: {sequence}'
-                                  + f'<br>Organism: {organism}'
-                                  + f'<br>Organism id: {organism_id}'
-                                  + f'<br>Protein names: {protein_names}'
-                                  + '<extra></extra>')
 
     #-------------------------------------------------------------------------
     """Database option"""
-    #
-    #connection = pymysql.connect(user='root', password='123456',
-    #                             host='localhost',
-    #                             port=3306)
-    #cur = connection.cursor()
-    #for node, adjacencies in enumerate(graph.adjacency()):
-    #    node_adjacency.append(len(adjacencies[1]))
-    #    node_text.append(adjacencies[0])
-    #    entry = adjacencies[0]
-    #    sql = f"select Entry Name, Gene Names, Sequence, Organism, Organism (ID), Protein Names from protein_network.protein where ID = '{entry}'"
-    #    cur.execute(sql)
-    #    data = cur.fetchall()
-    #    entry_name = data[0][0]
-    #    gene_names = data[0][1]
-    #    sequence = data[0][2]
-    #    organism = data[0][3]
-    #    organism_id = data[0][4]
-    #    protein_names = data[0][5]
-    #    node_hovertemplate.append(f'Entry: {entry}'
-    #                              + f'<br>Entry name: {entry_name}'
-    #                              + f'<br>Gene names: {gene_names}'
-    #                              + f'<br>Sequence: {sequence}'
-    #                              + f'<br>Organism: {organism}'
-    #                              + f'<br>Organism id: {organism_id}'
-    #                              + f'<br>Protein names: {protein_names}')
-    #cur.close()
-     # close the connection
-    #connection.close()
+
+    connection = pymysql.connect(user='root', password='123456',
+                                host='localhost',
+                                port=3306)
+    cur = connection.cursor()
+    for node, adjacencies in enumerate(graph.adjacency()):
+       node_adjacency.append(len(adjacencies[1]))
+       node_text.append(adjacencies[0])
+       entry = adjacencies[0]
+       """Important: sql table attribute name must not have white space."""
+       sql = f"select Entry_Name, Gene_Names, Organism, OrganismID, Seq, Protein_Names from protein_network.protein where Entry = '{entry}'"
+       cur.execute(sql)
+       data = cur.fetchall()
+       entry_name = data[0][0]
+       gene_names = data[0][1]
+       sequence = data[0][2]
+       organism = data[0][3]
+       organism_id = data[0][4]
+       protein_names = data[0][5]
+       node_hovertemplate.append(f'Entry: {entry}'
+                                 + f'<br>Entry name: {entry_name}'
+                                 + f'<br>Gene names: {gene_names}'
+                                 + f'<br>Sequence: {sequence}'
+                                 + f'<br>Organism: {organism}'
+                                 + f'<br>Organism id: {organism_id}'
+                                 + f'<br>Protein names: {protein_names}')
+    cur.close()
+    connection.close()
     #-------------------------------------------------------------------------
 
     node_trace.marker.color = node_adjacency
@@ -311,4 +305,5 @@ def get_visualization(query,n_neighbors,DB):
 
 if __name__ == "__main__":
 
-    get_visualization("A0T0A3", 5, "Blast").show()
+    get_visualization("A0T0A3", 10, "blast").show()
+    # get_similarity_data("A0T0A3", 5, "Blast")
