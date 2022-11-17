@@ -45,36 +45,36 @@ def get_similarity_data(query,n_neighbors, DB):
     """ Creating dataframe of similar proteins.
      To be replaced with a function to query the database
      and maybe obtain a result dataframe with the 20 most similar proteins. """
-    similarity_db = pd.DataFrame(pd.read_csv(os.getcwd() +"/HmmerWithSecondSearch.csv"))
-    similarity_db = similarity_db.drop(['Hit', 'Organism',  'E'], axis=1)
-    results = pd.DataFrame()
-    queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
-                              #| (similarity_db['Protein2'] == query)]
-    queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
-    queryInfo.reset_index(drop=True, inplace=True)
-    #similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
-   # similar.remove(query)
-    topN = queryInfo[:n_neighbors]
-    direct_connection = pd.concat([topN['Protein1'][topN['Protein2'] ==
-                            query],topN['Protein2'][topN['Protein1'] == query]])
-
-    direct_connection = direct_connection.tolist()
-    for index, row in similarity_db.iterrows():
-        if row["Protein1"] in direct_connection and row['Protein2'] in direct_connection :
-            results = results.append(row)
-    results = pd.concat([results, topN], axis=0)
-    #print(topN)
-
-    #for i in range(results.shape[0]):
-     #   if results['Protein1'][i] != query:
-      #      if results['Protein1'][i] not in data or \
-       #              (results['Protein1'][i] in data and results['Protein2'][i] not in data):
-        #              results.drop(labels=i, inplace=True, axis=0)
-         #   else:
-          #      if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
-           #      results.drop(labels=i, inplace=True, axis=0)
-
-    results.reset_index(drop=True, inplace=True)
+   #  similarity_db = pd.DataFrame(pd.read_csv(os.getcwd() +"/HmmerWithSecondSearch.csv"))
+   #  similarity_db = similarity_db.drop(['Hit', 'Organism',  'E'], axis=1)
+   #  results = pd.DataFrame()
+   #  queryInfo = similarity_db[(similarity_db['Protein1'] == query) ]
+   #                            #| (similarity_db['Protein2'] == query)]
+   #  queryInfo.sort_values(by= 'Score', ascending=False, inplace=True)
+   #  queryInfo.reset_index(drop=True, inplace=True)
+   #  #similar = list(similarity_db['Protein2'][similarity_db['Protein1'] == query])
+   # # similar.remove(query)
+   #  topN = queryInfo[:n_neighbors]
+   #  direct_connection = pd.concat([topN['Protein1'][topN['Protein2'] ==
+   #                          query],topN['Protein2'][topN['Protein1'] == query]])
+   #
+   #  direct_connection = direct_connection.tolist()
+   #  for index, row in similarity_db.iterrows():
+   #      if row["Protein1"] in direct_connection and row['Protein2'] in direct_connection :
+   #          results = results.append(row)
+   #  results = pd.concat([results, topN], axis=0)
+   #  #print(topN)
+   #
+   #  #for i in range(results.shape[0]):
+   #   #   if results['Protein1'][i] != query:
+   #    #      if results['Protein1'][i] not in data or \
+   #     #              (results['Protein1'][i] in data and results['Protein2'][i] not in data):
+   #      #              results.drop(labels=i, inplace=True, axis=0)
+   #       #   else:
+   #        #      if results["Protein1"][i] == results["Protein2"][i] or results['Protein2'][i] not in data:
+   #         #      results.drop(labels=i, inplace=True, axis=0)
+   #
+   #  results.reset_index(drop=True, inplace=True)
 
     # return results
 
@@ -256,7 +256,6 @@ def create_network(similar_proteins):
        sql = f"select Entry,Entry_Name, Gene_Names, Seq, Organism, OrganismID, Protein_Names from protein_network.protein where Entry = '{entry}'"
        cur.execute(sql)
        data = cur.fetchall()
-       print(data)
        entry = data[0][0]
        entry_name = data[0][1]
        gene_names = data[0][2]
@@ -307,5 +306,7 @@ def get_visualization(query,n_neighbors,DB):
 
 if __name__ == "__main__":
 
-    get_visualization("A0T0A3", 10, "blast").show()
+    get_visualization("A0T0A3", 10, "Fasta").show()
+    get_visualization("A0T0A3", 20, "ssearch").show()
+
     # get_similarity_data("A0T0A3", 5, "Blast")
