@@ -1,26 +1,28 @@
 import base64
-import dash
-import visualization
-from dash import html, Input, Output,State, ctx
+
+from dash import dash_table
+
+from similaritynetworks import visualization
+from dash import html, Input, Output, State, ctx, callback
 from dash import dcc
 import dash_bootstrap_components as dbc
 import re
 
 # library used need to be specified here
-homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+from similaritynetworks.app import app
+
+#homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+#components
 
 #wehpage design
-homepage.layout = html.Div(
+from similaritynetworks.pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnectedProteins
+
+layout =  html.Div([html.Div(
     [
-    dbc.Row(dbc.Col('Diatom protein similarity searching tool',width={"size": 25, "offset": 0},),),
-    html.Br(),#blank
-    html.Hr(),#line
     html.Br(),
     html.Br(),
-    html.Br(),
-    html.Br(),
-    html.Br(),
-        dbc.Container(
+    html.Div([html.P("SEARCH")], style={'font-size': '35px'}),
+     dbc.Container(
     [
     dbc.Row(style={'height': '30px'}),
 
@@ -28,7 +30,7 @@ homepage.layout = html.Div(
         dbc.Button('Accession search', id='accession', n_clicks=0, outline=True, color="info",className="me-1"),
         " or ",
         dbc.Button('Upload fasta', id='fasta', n_clicks=0, outline=True, color="success",className="me-1"),
-    ]), width={"offset":2})
+    ]), )
 
     ),
 
@@ -36,7 +38,7 @@ homepage.layout = html.Div(
             [
                 dbc.Col(
                     dbc.Collapse(
-                        dbc.Col("Protein ID",width={"offset": 4},),
+                        dbc.Col("Protein ID",),
                         id="accession_show1",
                         is_open=False,
                     )
@@ -52,7 +54,7 @@ homepage.layout = html.Div(
                     id="accession_show2",
                     is_open=False,
                 ),
-                width={"size": 3,"offset": 4},
+                width={"size": 3},
             ),
         ],
         className="mt-3", ),
@@ -104,7 +106,7 @@ homepage.layout = html.Div(
             className="mt-3", ),
 
     html.Br(),
-    dbc.Row(dbc.Col('Algorithm',width={"size": 3, "offset": 4},),),
+    dbc.Row(dbc.Col('Algorithm',width={"size": 3},),),
     dbc.Row(
         dbc.Col(html.Div(
         dcc.Dropdown(id = 'Algorithm',
@@ -114,11 +116,11 @@ homepage.layout = html.Div(
         {'label': 'hmmer', 'value': 'hmmer'},
         {'label': 'ssearch', 'value': 'ssearch'},
          ],
-         placeholder="Blast")),width={"size": 5,  "offset": 4},),),
+         placeholder="Blast")),width={"size": 5},),),
     html.Br(),
 
     dbc.Row(
-    dbc.Col(html.Label("Hit"), width={"size": 5, "offset": 4}, )),
+    dbc.Col(html.Label("Hit"), width={"size": 5}, )),
     dbc.Row(dbc.Col(
         dcc.Dropdown(id='n_neighbors',
         options=[
@@ -128,7 +130,7 @@ homepage.layout = html.Div(
         {'label': '20', 'value': 20},
         ],
         placeholder="15",
-        ), width={"size": 5, "offset": 4}, ), ),
+        ), width={"size": 5}, ), ),
 
     html.Br(),
     dbc.Row(
@@ -150,7 +152,7 @@ homepage.layout = html.Div(
 
     html.Br(),
 
-    dbc.Row(dbc.Col(html.Label("Target Organism:"), width={"size": 5, "offset": 4}, )),
+    dbc.Row(dbc.Col(html.Label("Target Organism:"), width={"size": 5}, )),
     dbc.Row(dbc.Col(html.Div(
     dcc.Dropdown(
     options=[
@@ -174,44 +176,55 @@ homepage.layout = html.Div(
         ],
         placeholder="All",
         multi=True
-        )), width={"size": 9, "offset": 2}, ),),],)),
+        )), width={"size": 9}, ),),],)),
     html.Br(),
     dbc.Row(
         dbc.Col(
             dbc.Button('SEARCH', id= 'search',style={'border-radius': '18px'},n_clicks=0),
-            width={'size': 10, 'offset': 2},
+            width={'size': 10},
             style={'text-align': 'center'})),
+    html.Br(),
 
-        ], style={
-                'background-color': '#ededef',
-                'max-width': '480px',
-                'border-radius': '12px'
-            }),# specify the search block style
-    dbc.Row(
-        html.Div(
-            id='plot_zone' ),) # empty block that ready to receive the diagram
-    ])
+        ],),# style={
+           #     'background-color': '#ededef',
+            #    'max-width': '480px',
+                #'border-radius': '12px'
 
-@homepage.callback(
-    Output('plot_zone2', 'children'),
-    Input('search', 'n_clicks'), # dynamic input
-    Input('upload_fasta', 'contents'),
-    State('input', 'value'), # static input
-    State('Algorithm', 'value'),
-    State('n_neighbors', 'value')# static input
-)
+          #  }, ),# specify the search block style
+    html.Br(),
+    html.Br(),
+    ],style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '1vw','backgroundColor':'GhostWhite'}),
 
-def showNetworkDiagram(n_clicks, content, proteinID, db,n_neighbors):
-    if "search" == ctx.triggered_id and proteinID: #click or not
-        visualization.get_visualization(proteinID, n_neighbors, db).show()
-    elif content and "search" == ctx.triggered_id:
-        fasta = base64.b64decode(content.split(',')[-1].encode('ascii')).decode()
-        x = re.findall("^>.*", fasta)
-        sequence = fasta.replace(f"{x[0]}", "")
-        query = visualization.getProteinID(sequence)
-        visualization.get_visualization(query, n_neighbors, db).show()
+    html.Div([
+    html.Div(
+         id='plot_zone' ,style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw'}),
+    #html.Div(html.P("Input Protein"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},),
+#html.Div(html.P("Sequence Similarity Partners"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},)
+        ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '0vw', 'margin-top': '0vw',})
+])
 
-@homepage.callback(
+
+@callback(
+     Output('plot_zone', 'children'),
+     Input('search', 'n_clicks'),
+     State('input', 'value'),
+     State('n_neighbors', 'value')
+ )
+def showNetworkDiagram(n_clicks,proteinID,n_neighors):
+     if n_clicks:
+         print('yes')
+         return \
+        html.Div(dbc.Col([dcc.Graph(
+                 id='network',figure = visualization.get_visualization(proteinID,n_neighors,'kk'),style={'width': '110vh', 'height': '60vh'}),
+                 html.Div([html.P("Your Input")], style={'font-size': '12px',"font-weight": "bold"}),
+                 dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'), [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns], style_cell={'textAlign': 'left'},),
+                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
+                 #dash_table.DataTable(getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'jj').to_dict('records'), [{"name": i, "id": i} for i in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'jj').columns],style_cell={'textAlign': 'left'})
+                                     ]
+            )
+         )
+
+@callback(
     Output('accession_show1', "is_open"),
     Output('accession_show2', "is_open"),
     Output('fasta_show', "is_open"),
@@ -241,7 +254,7 @@ def show_accession(n_clicks1, n_clicks2, is_open1, value, is_open2, is_open3):
 
     return is_open1, is_open2, is_open3, value
 
-@homepage.callback(
+@callback(
     Output('info_zone', 'children'),
     Input('upload_fasta', 'contents'),
 )
@@ -253,5 +266,5 @@ def file_upload_info(content):
         return "Please upload file or provide a uniprot accession number!"
 
 
-if __name__ == '__main__':
-    homepage.run_server()
+#if __name__ == '__main__':
+ #   homepage.run_server()
