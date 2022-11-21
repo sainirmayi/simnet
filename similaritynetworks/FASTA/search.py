@@ -1,5 +1,4 @@
 import os
-
 import numpy as np
 import pandas as pd
 from Bio import SeqIO
@@ -7,13 +6,12 @@ import time
 import requests
 from xmltramp2 import xmltramp
 import urllib
-from urllib.parse import urlparse, urlencode
+from urllib.parse import urlparse
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
 import xml.etree.ElementTree as ET
-import sys
-sys.path.insert(0,r"C:\Users\Tutuy\PycharmProjects\similarity-networks\similaritynetworks\UniprotRetrieval")
-import uniprot
+
+from UniprotRetrieval import uniprot
 
 
 def parse_fasta(filename):
@@ -152,7 +150,7 @@ def retrieve_protein_info(similarity_search_results):
 
 if __name__ == '__main__':
     baseUrl = 'https://www.ebi.ac.uk/Tools/services/rest/fasta'
-    sequences = parse_fasta('../fastaSequence/Bacillariophyceae_reviewed.fasta')
+    sequences = parse_fasta('../diatom_proteins/Bacillariophyceae_reviewed.fasta')
     program = 'fasta'
     # program = 'ssearch'
     stype = 'protein'
@@ -176,8 +174,9 @@ if __name__ == '__main__':
     first_search_results = parse_xml_files(f"{os.getcwd()}/{program}_xml_out/")
     print(first_search_results)
     print("start retrieval")
+
     # updating uniprot protein information file
-    # retrieve_protein_info(first_search_results)
+    retrieve_protein_info(first_search_results)
 
     print("information retrieved")
     # make a new directory for the search results
@@ -200,6 +199,7 @@ if __name__ == '__main__':
     final_df = pd.concat([second_search_results, first_search_results], axis=0).drop_duplicates().drop(columns='MatchSequence')
     final_df.reset_index(drop=True, inplace=True)
     print(len(final_df))
+
     # removing duplicate protein pairs
     duplicates = final_df.index[pd.DataFrame(np.sort(final_df[['Protein1', 'Protein2']].values)).duplicated()].to_list()
     print(len(duplicates),duplicates)
