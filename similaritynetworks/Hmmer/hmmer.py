@@ -152,7 +152,7 @@ def dataTrimming(df1,df2):
     return df
     #12643
     #547
-#sequences = parse_fasta("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/fastaSequence/Bacillariophyceae_reviewed.fasta")
+#sequences = parse_fasta("/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/diatom_proteins/Bacillariophyceae_reviewed.fasta")
 #hmmer_search(sequences, 'swissprot')
 #main_path = os.getcwd()
 
