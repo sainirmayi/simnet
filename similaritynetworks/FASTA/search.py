@@ -139,13 +139,13 @@ def parse_xml_files(folder):
 
 def retrieve_protein_info(similarity_search_results):
     # Retrieving protein information from uniprot
-    uniprot_df = pd.read_csv("../UniprotRetrieval/updated_uniprot.csv")
+    uniprot_df = pd.read_csv("../UniprotRetrieval/uniprot.csv")
     proteins = pd.concat([similarity_search_results['Protein1'], similarity_search_results['Protein2']], axis=0).drop_duplicates()
     protein_info = pd.DataFrame()
     for protein in proteins:
         if protein not in uniprot_df:
             protein_info = pd.concat([protein_info, uniprot.uniprot_retrieval(protein)], axis=0)
-    pd.concat([uniprot_df, protein_info], axis=0).drop_duplicates().to_csv('../UniprotRetrieval/updated_uniprot.csv')
+    pd.concat([uniprot_df, protein_info], axis=0).drop_duplicates().to_csv('../UniprotRetrieval/uniprot.csv')
 
 
 if __name__ == '__main__':

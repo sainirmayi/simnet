@@ -96,7 +96,7 @@ def get_similarity_data(query, n_neighbors, algorithm, cur):
 
 def info_from_csv(similar_proteins):
     protein_list = list(pd.concat([similar_proteins['Protein1'], similar_proteins['Protein2']]).unique())
-    df = pd.read_csv("uniprot.csv")
+    df = pd.read_csv("UniprotRetrieval/uniprot.csv")
     results = pd.DataFrame()
     for protein in protein_list:
         results = pd.concat([results, df[df['Entry'] == protein]], axis=0, ignore_index=True)
@@ -106,7 +106,7 @@ def info_from_csv(similar_proteins):
 def info_from_db(similar_proteins, cur):
     protein_list = list(pd.concat([similar_proteins['Protein1'], similar_proteins['Protein2']]).unique())
     sql = """SELECT `COLUMN_NAME` FROM `INFORMATION_SCHEMA`.`COLUMNS` 
-            WHERE `TABLE_SCHEMA` = 'protein_network' AND `TABLE_NAME` = protein"""
+            WHERE `TABLE_SCHEMA` = 'protein_network' AND `TABLE_NAME` = 'protein'"""
     cur.execute(sql)
     columns = [item[0] for item in cur.fetchall()]
     results = pd.DataFrame()
@@ -152,11 +152,13 @@ def create_network(similar_proteins, protein_info):
         edge_y.append(None)
 
         edge_hovertemplate.append(f"Score: {graph.edges()[edge]['Score']} <extra></extra>")
-
+        weight = ((graph.edges()[edge]['Score']-similar_proteins['Score'].min())*255)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())
         edge_trace.append(go.Scatter(
             x=edge_x, y=edge_y,
             mode='lines',
-            line=dict(color='grey', width=(graph.edges()[edge]['Score'])/(similar_proteins['Score'].max()))
+            # line=dict(color='Grey', width=weight)
+            # line=dict(color=f"rgb({(255-weight)*0.2},{(255-weight)*0.8},{weight})", width=1.5)
+            line=dict(width=1.5)
             )
         )
 
@@ -216,7 +218,7 @@ def create_network(similar_proteins, protein_info):
                                   + f'<br>Gene names: {gene_names}'
                                   + f'<br>Sequence: {sequence}'
                                   + f'<br>Organism: {organism}'
-                                  + f'<br>Organism id: {organism_id}'
+                                  + f'<br>Organism ID: {organism_id}'
                                   + f'<br>Protein names: {protein_names}'
                                   + '<extra></extra>')
     node_trace.marker.color = node_adjacency
