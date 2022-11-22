@@ -11,7 +11,7 @@ import plotly.express as px
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
     """Database"""
-    connection = pymysql.connect(user='root', password='123456',
+    connection = pymysql.connect(user='root', password='proteinsim',
                                  host='localhost',
                                  port=3306)
     sequence = "".join(line.strip() for line in sequence.splitlines())
@@ -82,7 +82,7 @@ def get_similarity_data(query,n_neighbors, DB):
     """Database option"""
     """Use the following code if you can connect to the database"""
     # Retrieve information from database.
-   # connection = pymysql.connect(user='root', password='123456',
+   # connection = pymysql.connect(user='root', password='proteinsim',
     #                             host='localhost',
      #                            port=3306)
     #cur = connection.cursor()
