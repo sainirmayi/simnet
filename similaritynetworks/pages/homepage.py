@@ -1,4 +1,4 @@
-import base64
+
 
 from dash import dash_table
 
@@ -6,6 +6,7 @@ from similaritynetworks import visualization
 from dash import html, Input, Output, State, ctx, callback
 from dash import dcc
 import dash_bootstrap_components as dbc
+import base64
 import re
 
 # library used need to be specified here
@@ -204,30 +205,77 @@ layout =  html.Div([html.Div(
 @callback(
      Output('plot_zone', 'children'),
      Input('search', 'n_clicks'),
+     Input('upload_fasta', 'contents'),
      State('input', 'value'),
      State('n_neighbors', 'value')
  )
-def showNetworkDiagram(n_clicks,proteinID,n_neighors):
+def showNetworkDiagram(n_clicks,content, proteinID,n_neighors):
     if n_neighors == None:
         n_neighors = 10
 
-    if n_clicks:
+    if "search" == ctx.triggered_id and proteinID:
         print('yes')
         return \
-        html.Div(dbc.Col([dcc.Graph(
-                 id='network',figure = visualization.get_visualization(proteinID,n_neighors,'kk'),style={'width': '135vh', 'height': '90vh'}),
-                 html.Div([html.P("Your Input")], style={'font-size': '12px',"font-weight": "bold"}),
-                 dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'), [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns], style_cell={'textAlign': 'left'},),
-                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
-                 dash_table.DataTable(getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'), [{"name": i, "id": i} for i in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],style_cell={'textAlign': 'left'})
-                 #dash_table.DataTable(
-                 #data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
+            html.Div(dbc.Col([dcc.Graph(
+                id='network', figure=visualization.get_visualization(proteinID, n_neighors, 'kk'),
+                style={'width': '135vh', 'height': '90vh'}),
+                html.Div([html.P("Your Input")], style={'font-size': '12px', "font-weight": "bold"}),
+                dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),
+                                     [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns],
+                                     style_cell={'textAlign': 'left'}, ),
+                html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
+                dash_table.DataTable(
+                    getInfoForConnectedProteins(proteinID, 'tmp', n_neighors, 'tmp').to_dict('records'),
+                    [{"name": i, "id": i} for i in
+                     getInfoForConnectedProteins(proteinID, 'tmp', n_neighors, 'tmp').columns],
+                    style_cell={'textAlign': 'left'})
+                # dash_table.DataTable(
+                # data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
                 # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
-                 #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
-                  #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
-                  ]
+                #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
+                #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
+            ]
             )
-         )
+            )
+    elif content and "search" == ctx.triggered_id:
+        fasta = base64.b64decode(content.split(',')[-1].encode('ascii')).decode()
+        x = re.findall("^>.*", fasta)
+        print(x)
+        sequence = fasta.replace(f"{x[0]}","")
+        print(sequence)
+        query = visualization.getProteinID(sequence)
+        return \
+            html.Div(dbc.Col([dcc.Graph(
+                id='network', figure=visualization.get_visualization(query, n_neighors, 'kk'),
+                style={'width': '135vh', 'height': '90vh'}),
+                html.Div([html.P("Your Input")], style={'font-size': '12px', "font-weight": "bold"}),
+                dash_table.DataTable(getInfoForSingleProtein(query).to_dict('records'),
+                                     [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns],
+                                     style_cell={'textAlign': 'left'}, ),
+                html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
+                dash_table.DataTable(
+                    getInfoForConnectedProteins(query, 'tmp', n_neighors, 'tmp').to_dict('records'),
+                    [{"name": i, "id": i} for i in
+                     getInfoForConnectedProteins(query, 'tmp', n_neighors, 'tmp').columns],
+                    style_cell={'textAlign': 'left'})]))
+
+    # if n_clicks:
+    #     print('yes')
+        # return \
+        # html.Div(dbc.Col([dcc.Graph(
+        #          id='network',figure = visualization.get_visualization(proteinID,n_neighors,'kk'),style={'width': '135vh', 'height': '90vh'}),
+        #          html.Div([html.P("Your Input")], style={'font-size': '12px',"font-weight": "bold"}),
+        #          dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'), [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns], style_cell={'textAlign': 'left'},),
+        #          html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
+        #          dash_table.DataTable(getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'), [{"name": i, "id": i} for i in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],style_cell={'textAlign': 'left'})
+        #          #dash_table.DataTable(
+        #          #data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
+        #         # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
+        #          #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
+        #           #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
+        #           ]
+        #     )
+        #  )
 
 @callback(
     Output('accession_show1', "is_open"),

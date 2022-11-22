@@ -11,10 +11,11 @@ import plotly.express as px
 def getProteinID(sequence):
     #-----------------------------------------------------------------------
     """Database"""
-    connection = pymysql.connect(user='root', password='123456',
+    connection = pymysql.connect(user='root', password='proteinsim',
                                  host='localhost',
                                  port=3306)
     sequence = "".join(line.strip() for line in sequence.splitlines())
+    print(sequence)
     cur = connection.cursor()
     sql = f"select Entry from protein_network.protein where Seq = '{sequence}'"
 
