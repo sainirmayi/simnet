@@ -7,37 +7,37 @@ import pymysql
 pd.options.mode.chained_assignment = None
 
 
-# def getProteinID(sequence):
-#     #-----------------------------------------------------------------------
-#     """Database"""
-#     connection = pymysql.connect(user='root', password='123456',
-#                                  host='localhost',
-#                                  port=3306)
-#     sequence = "".join(line.strip() for line in sequence.splitlines())
-#     cur = connection.cursor()
-#     sql = f"select Entry from protein_network.protein where Seq = '{sequence}'"
-#
-#     cur.execute(sql)
-#     query = cur.fetchall()
-#
-#     cur.close()
-#     # close the connection
-#     connection.close()
-#     return query[0][0]
-#     #------------------------------------------------------------------------
-#
-#     #------------------------------------------------------------------------
-#     """csv file"""
-#     uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
-#     sequence = "".join(line.strip() for line in sequence.splitlines())
-#     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
-#
-#     #print(df)
-#     query = df['Entry'].to_string(index=False)
-#     #print(query)
-#     #---------------------------------------------------------------------------
-#     # return query[0][0] for database option
-#     return query
+def getProteinID(sequence):
+    #-----------------------------------------------------------------------
+    """Database"""
+    connection = pymysql.connect(user='root', password='123456',
+                                 host='localhost',
+                                 port=3306)
+    sequence = "".join(line.strip() for line in sequence.splitlines())
+    cur = connection.cursor()
+    sql = f"select Entry from protein_network.protein where Seq = '{sequence}'"
+
+    cur.execute(sql)
+    query = cur.fetchall()
+
+    cur.close()
+    # close the connection
+    connection.close()
+    return query[0][0]
+    #------------------------------------------------------------------------
+
+    #------------------------------------------------------------------------
+    """csv file"""
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
+    sequence = "".join(line.strip() for line in sequence.splitlines())
+    df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
+
+    #print(df)
+    query = df['Entry'].to_string(index=False)
+    #print(query)
+    #---------------------------------------------------------------------------
+    # return query[0][0] for database option
+    return query
 
 
 def database_connection():
@@ -90,7 +90,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    # return similarity_data_from_csv(query, n_neighbors, algorithm)
+    # return similarity_data_from_csv(query, n_neighbors, algorithm, organism)
     return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
@@ -122,24 +122,24 @@ def get_protein_info(similar_proteins, cur):
     return info_from_db(similar_proteins, cur)
 
 
-def create_network(similar_proteins, protein_info):
+def create_network(query, similar_proteins, protein_info):
     """ Creating network diagram """
     # load pandas df as networkx graph
     graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
 
     # Deciding on the layout of how the nodes will be lined up
-    pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Score')
+    pos = nx.spring_layout(graph, k=0.5, iterations=50, seed=1, weight='Score')
     for n, p in pos.items():
         graph.nodes[n]['pos'] = p
 
     # Create edges
-    edge_x = []
-    edge_y = []
     xtext = []
     ytext = []
     edge_trace = []
     edge_hovertemplate = []
     for edge in graph.edges():
+        edge_x = []
+        edge_y = []
         x0, y0 = graph.nodes[edge[0]]['pos']
         x1, y1 = graph.nodes[edge[1]]['pos']
         xtext.append((x0 + x1) / 2)
@@ -152,13 +152,11 @@ def create_network(similar_proteins, protein_info):
         edge_y.append(None)
 
         edge_hovertemplate.append(f"Score: {graph.edges()[edge]['Score']} <extra></extra>")
-        weight = ((graph.edges()[edge]['Score']-similar_proteins['Score'].min())*255)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())
+        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*(5-0.5)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())+0.5
         edge_trace.append(go.Scatter(
             x=edge_x, y=edge_y,
             mode='lines',
-            # line=dict(color='Grey', width=weight)
-            # line=dict(color=f"rgb({(255-weight)*0.2},{(255-weight)*0.8},{weight})", width=1.5)
-            line=dict(width=1.5)
+            line=dict(color='Grey', width=weight)
             )
         )
 
@@ -234,13 +232,12 @@ def create_network(similar_proteins, protein_info):
 
     # Create Network Graph
     fig = go.Figure(layout=go.Layout(
-                        title='<br>Protein similarity network',
-                        titlefont_size=32,
                         showlegend=False,
                         hovermode='closest',
                         margin=dict(b=20, l=5, r=5, t=40),
                         annotations=[dict(
-                            text="Protein similarities",
+                            text=f"{query}",
+                            font=dict(color="red"),
                             showarrow=False,
                             xref="paper", yref="paper",
                             x=0.005, y=-0.002)],
@@ -254,25 +251,27 @@ def create_network(similar_proteins, protein_info):
     return fig
 
 
-def get_visualization(query, n_neighbors, algorithm):
+def get_visualization(query, n_neighbors, algorithm, organism='All'):
     """ Call this function to get the similarity network for a query """
     # establish a database connection
     connection = database_connection()
     cur = connection.cursor()
 
-    similar_proteins = get_similarity_data(query, n_neighbors, algorithm, cur)
+    similar_proteins = get_similarity_data(query, n_neighbors, algorithm.lower(), cur)
     protein_info = get_protein_info(similar_proteins, cur)
 
     cur.close()
     connection.close()
 
-    return create_network(similar_proteins, protein_info)
+    return create_network(query, similar_proteins, protein_info)
 
 
 if __name__ == "__main__":
-    diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
-    print(diatom_proteins['Entry'].to_list())
-    query = input("Protein ID: ")
-    n_neighbors = int(input("Max. no. of hits: "))
-    algorithm = input("Similarity algorithm: ")
-    get_visualization(query, n_neighbors, algorithm).show()
+    # diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
+    # print(diatom_proteins['Entry'].to_list())
+    # query = input("Protein ID: ")
+    # n_neighbors = int(input("Max. no. of hits: "))
+    # algorithm = input("Similarity algorithm: ")
+    # get_visualization(query, n_neighbors, algorithm).show()
+    get_visualization('A0T0C6', 15, 'fasta', ).show()
+
