@@ -3,7 +3,7 @@ import pymysql
 
 
 def getInfoForSingleProtein(UniprotID):
-    connection = pymysql.connect(user='root', password='proteinsim',db='protein_network',
+    connection = pymysql.connect(user='root', password='123456',db='protein_network',
                                 host='localhost',
                                 port=3306)
 
@@ -20,7 +20,7 @@ def getInfoForSingleProtein(UniprotID):
 
 def getInfoForConnectedProteins(UniprotID,Algorithm,n_neighbors,targetOrganisms):
     data = pd.DataFrame()
-    connection = pymysql.connect(user='root', password='proteinsim', db='protein_network',
+    connection = pymysql.connect(user='root', password='123456', db='protein_network',
                                  host='localhost',
                                  port=3306)
     cur = connection.cursor()

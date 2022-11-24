@@ -41,7 +41,7 @@ pd.options.mode.chained_assignment = None
 
 
 def database_connection():
-    connection = pymysql.connect(user='root', password='proteinsim', host='localhost', port=3306)
+    connection = pymysql.connect(user='root', password='123456', host='localhost', port=3306)
     return connection
 
 
@@ -69,6 +69,7 @@ def similarity_data_from_csv(query, n_neighbors, algorithm):
     results.drop_duplicates(inplace=True, ignore_index=True)
     return results
 
+#proteinsim
 
 def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     sql = """SELECT `COLUMN_NAME` FROM `INFORMATION_SCHEMA`.`COLUMNS` 
@@ -209,7 +210,7 @@ def create_network(similar_proteins, protein_info):
         df = protein_info[protein_info['Entry'] == entry]
         entry_name = df['Entry_Name'].to_string(index=False)
         gene_names = df['Gene_Names'].to_string(index=False)
-        sequence = df['Sequence'].to_string(index=False)
+        sequence = df['Seq'].to_string(index=False)
         organism = df['Organism'].to_string(index=False)
         organism_id = df['OrganismID'].to_string(index=False)
         protein_names = df['Protein_names'].to_string(index=False)
