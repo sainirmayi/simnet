@@ -18,15 +18,15 @@ layout = html.Div([html.Div(
     [
         html.Br(),
         html.Br(),
-        html.Div([html.P("SEARCH")], style={'font-size': '35px'}),
+        html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
         dbc.Container(
             [
-                dbc.Row(style={'height': '30px'}),
+                dbc.Row(style={'height': '20px'}),
 
                 dbc.Row(dbc.Col(html.Div([
                     dbc.Button('Accession search', id='accession', n_clicks=0, outline=True, color="info",
                                className="me-1"),
-                    " or ",
+                    " OR ",
                     dbc.Button('Upload fasta', id='fasta', n_clicks=0, outline=True, color="success", className="me-1"),
                 ]), )
 
@@ -176,9 +176,8 @@ layout = html.Div([html.Div(
                 html.Br(),
                 dbc.Row(
                     dbc.Col(
-                        dbc.Button('SEARCH', id='search', style={'border-radius': '18px'}, n_clicks=0),
-                        width={'size': 10},
-                        style={'text-align': 'center'})),
+                        dbc.Button('SEARCH', id='search',  className="me-1",n_clicks=0, style={'font-size': '20px','height':'50px','width':'120px','border': '0px','border-radius': '18px',}),
+                        style={'text-align': 'center','font-size': '30px'})),
                 html.Br(),
 
             ], ),  # style={
@@ -188,16 +187,20 @@ layout = html.Div([html.Div(
 
         #  }, ),# specify the search block style
         html.Br(),
-    ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw', 'margin-right': '1vw',
-              'margin-top': '1vw', 'backgroundColor': 'GhostWhite'}
-),      html.Br(),
-        html.Div([html.P("KULeuven")], style={'font-size': '20px'}),
-        html.Div([html.P("Msc.Bioinfomatics")], style={'font-size': '20px'}),
-        html.Div([html.P("Kato")], style={'font-size': '10px'}),
-        html.Div([html.P("Sai")], style={'font-size': '10px'}),
-        html.Div([html.P("Shuhua Liu")], style={'font-size': '10px'}),
-        html.Div([html.P("Wenjia Yu")], style={'font-size': '10px'}),
+    ], style={'color': '#142d4c','display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw', 'margin-right': '1vw',
+              'margin-top': '1vw', 'width': '335px','backgroundColor': '#ececec','border-radius': '8px'}
+),
+html.Div([
+        html.Br(),
+        html.Div(html.Img(src=r'assets/logo.png', alt='image',style={'margin-left': '0.7vw','height':'45%', 'width':'45%'})),
+        html.Div([html.P(["M.Sc.Bioinfomatics", html.Br(), "Integrated Bioinformatics Project"])], style={'margin-left': '0.7vw','font-size': '18px'}),
+        html.Hr(),
+        html.Div([html.P(["Kato Milis, Sai Nirmayi Yasa",html.Br(),"Shuhua Liu, Wenjia Yu"])], style={"background-color":"#eaeaea",'width':'230px','margin-left': '0.7vw','font-size': '16px','border-radius': '8px'}),
 
+        html.Br()],
+    style={'margin-left': '-2vw','width': '335px',
+          'margin-top': '1vw', 'backgroundColor': '#eaeaea','border-radius': '8px'}
+),
     html.Div([
         html.Div(
             id='plot_zone',
