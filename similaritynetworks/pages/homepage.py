@@ -1,4 +1,4 @@
-import homepage as homepage
+# import homepage as homepage
 from dash import dash_table
 from dash import html, Input, Output, State, ctx, callback
 from dash import dcc
@@ -189,7 +189,14 @@ layout = html.Div([html.Div(
         #  }, ),# specify the search block style
         html.Br(),
     ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw', 'margin-right': '1vw',
-              'margin-top': '1vw', 'backgroundColor': 'GhostWhite'}),
+              'margin-top': '1vw', 'backgroundColor': 'GhostWhite'}
+),      html.Br(),
+        html.Div([html.P("KULeuven")], style={'font-size': '20px'}),
+        html.Div([html.P("Msc.Bioinfomatics")], style={'font-size': '20px'}),
+        html.Div([html.P("Kato")], style={'font-size': '10px'}),
+        html.Div([html.P("Sai")], style={'font-size': '10px'}),
+        html.Div([html.P("Shuhua Liu")], style={'font-size': '10px'}),
+        html.Div([html.P("Wenjia Yu")], style={'font-size': '10px'}),
 
     html.Div([
         html.Div(
@@ -214,7 +221,7 @@ def showNetworkDiagram(n_clicks, proteinID, n_neighbors):
         print('yes')
         return \
             html.Div(dbc.Col([dcc.Graph(
-                id='network', figure=visualization.get_visualization(proteinID, n_neighbors, 'kk'),
+                id='network', figure=visualization.get_visualization(proteinID, n_neighbors, 'hmmer'),
                 style={'width': '135vh', 'height': '90vh'}),
                 html.Div([html.P("Your Input")], style={'font-size': '12px', "font-weight": "bold"}),
                 dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),

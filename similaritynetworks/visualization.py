@@ -75,12 +75,17 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
         WHERE `TABLE_SCHEMA` = 'protein_network' AND `TABLE_NAME` = %s"""
     cur.execute(sql, (algorithm,))
     columns = [item[0] for item in cur.fetchall()]
+    print(columns)
     sql = f"""SELECT * FROM protein_network.{algorithm} WHERE (Protein1 = %s OR Protein2 = %s) AND Protein1 != Protein2 
         ORDER BY Score desc LIMIT %s"""
     cur.execute(sql, (query, query, n_neighbors))
     results = pd.DataFrame(cur.fetchall(), columns=columns)
+    print(results)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
+    print("prot_list")
+    print(prot_list)
     prot_list.remove(query)
+
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
     cur.execute(sql, (tuple(prot_list), tuple(prot_list)))
@@ -226,11 +231,11 @@ def create_network(similar_proteins, protein_info):
     node_trace.hovertemplate = node_hovertemplate
 
     # change color of query node to red
-    for i in range(len(graph.nodes())):
-        if node_trace.text[i] == query:
-            highlighted = list(node_trace.marker.color)
-            highlighted[i] = 'darkred'
-            node_trace.marker.color = tuple(highlighted)
+   # for i in range(len(graph.nodes())):
+    #    if node_trace.text[i] == query:
+     #       highlighted = list(node_trace.marker.color)
+       #     highlighted[i] = 'darkred'
+      #      node_trace.marker.color = tuple(highlighted)
 
     # Create Network Graph
     fig = go.Figure(layout=go.Layout(
@@ -275,4 +280,4 @@ if __name__ == "__main__":
     query = input("Protein ID: ")
     n_neighbors = int(input("Max. no. of hits: "))
     algorithm = input("Similarity algorithm: ")
-    get_visualization(query, n_neighbors, algorithm).show()
+    get_visualization("P51249", 5, "hmmer").show()
