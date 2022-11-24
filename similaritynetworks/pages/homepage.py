@@ -1,20 +1,19 @@
-# import homepage as homepage
-import dash
 from dash import dash_table
 from dash import html, Input, Output, State, ctx, callback
 from dash import dcc
 import dash_bootstrap_components as dbc
-from similaritynetworks import visualization
+
+import visualization
 from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnectedProteins
 
 # library used need to be specified here
 # import app
 
-homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+# homepage = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
 # components
 
 # webpage design
-homepage.layout = html.Div([html.Div(
+layout = html.Div([html.Div(
     [
         html.Br(),
         html.Br(),

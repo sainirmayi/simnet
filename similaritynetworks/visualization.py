@@ -7,37 +7,28 @@ import pymysql
 pd.options.mode.chained_assignment = None
 
 
-# def getProteinID(sequence):
-#     #-----------------------------------------------------------------------
-#     """Database"""
-#     connection = pymysql.connect(user='root', password='123456',
-#                                  host='localhost',
-#                                  port=3306)
-#     sequence = "".join(line.strip() for line in sequence.splitlines())
-#     cur = connection.cursor()
-#     sql = f"select Entry from protein_network.protein where Seq = '{sequence}'"
-#
-#     cur.execute(sql)
-#     query = cur.fetchall()
-#
-#     cur.close()
-#     # close the connection
-#     connection.close()
-#     return query[0][0]
-#     #------------------------------------------------------------------------
-#
-#     #------------------------------------------------------------------------
-#     """csv file"""
-#     uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
-#     sequence = "".join(line.strip() for line in sequence.splitlines())
-#     df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
-#
-#     #print(df)
-#     query = df['Entry'].to_string(index=False)
-#     #print(query)
-#     #---------------------------------------------------------------------------
-#     # return query[0][0] for database option
-#     return query
+def getID_from_db(sequence):
+    connection = database_connection()
+    cur = connection.cursor()
+    sql = f"SELECT Entry FROM protein_network.protein where Sequence = %s"
+    cur.execute(sql, sequence)
+    query = cur.fetchall()
+    cur.close()
+    connection.close()
+    return query[0][0]
+
+
+def getID_from_csv(sequence):
+    uniprot_df = pd.DataFrame(pd.read_csv("UniprotRetrieval/uniprot.csv"))
+    df = uniprot_df.loc[uniprot_df['Sequence'] == sequence]
+    query = df['Entry'].to_string(index=False)
+    return query
+
+
+def getProteinID(sequence):
+    sequence = "".join(line.strip() for line in sequence.splitlines())
+    return getID_from_db(sequence)
+    # return getID_from_csv(sequence)
 
 
 def database_connection():
@@ -91,7 +82,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    # return similarity_data_from_csv(query, n_neighbors, algorithm)
+    # return similarity_data_from_csv(query, n_neighbors, algorithm, organism)
     return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
@@ -123,24 +114,24 @@ def get_protein_info(similar_proteins, cur):
     return info_from_db(similar_proteins, cur)
 
 
-def create_network(similar_proteins, protein_info):
+def create_network(query, similar_proteins, protein_info):
     """ Creating network diagram """
     # load pandas df as networkx graph
     graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
 
     # Deciding on the layout of how the nodes will be lined up
-    pos = nx.spring_layout(graph, k=0.5, iterations=50, weight='Score')
+    pos = nx.spring_layout(graph, k=0.5, iterations=50, seed=1, weight='Score')
     for n, p in pos.items():
         graph.nodes[n]['pos'] = p
 
-    # Create edges
-    edge_x = []
-    edge_y = []
+    # Edges
     xtext = []
     ytext = []
     edge_trace = []
     edge_hovertemplate = []
     for edge in graph.edges():
+        edge_x = []
+        edge_y = []
         x0, y0 = graph.nodes[edge[0]]['pos']
         x1, y1 = graph.nodes[edge[1]]['pos']
         xtext.append((x0 + x1) / 2)
@@ -151,15 +142,14 @@ def create_network(similar_proteins, protein_info):
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
-
         edge_hovertemplate.append(f"Score: {graph.edges()[edge]['Score']} <extra></extra>")
-        weight = ((graph.edges()[edge]['Score']-similar_proteins['Score'].min())*255)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())
+
+        # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
+        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*(5)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())+0.5
         edge_trace.append(go.Scatter(
             x=edge_x, y=edge_y,
             mode='lines',
-            # line=dict(color='Grey', width=weight)
-            # line=dict(color=f"rgb({(255-weight)*0.2},{(255-weight)*0.8},{weight})", width=1.5)
-            line=dict(width=1.5)
+            line=dict(color='Grey', width=weight)
             )
         )
 
@@ -205,22 +195,35 @@ def create_network(similar_proteins, protein_info):
 
     for node, adjacencies in enumerate(graph.adjacency()):
         node_adjacency.append(len(adjacencies[1]))
-        node_text.append(adjacencies[0])
         entry = adjacencies[0]
         df = protein_info[protein_info['Entry'] == entry]
         entry_name = df['Entry_Name'].to_string(index=False)
+        primary_gene = df['Primary_Gene_Name'].to_string(index=False)
         gene_names = df['Gene_Names'].to_string(index=False)
         sequence = df['Seq'].to_string(index=False)
         organism = df['Organism'].to_string(index=False)
         organism_id = df['OrganismID'].to_string(index=False)
         protein_names = df['Protein_names'].to_string(index=False)
+        ecnum = df['EC_number'].to_string(index=False)
+        family = df['Protein_families'].to_string(index=False)
+        pdb = df['PDB'].to_string(index=False)
+        function = df['Function'].to_string(index=False).split(': ', 1)[1] if df['Function'].to_string(index=False) != '' else ''
+        pathway = df['Pathway'].to_string(index=False).split(': ', 1)[1] if df['Pathway'].to_string(index=False) != '' else ''
+
+        node_text.append(entry_name)
         node_hovertemplate.append(f'Entry: {entry}'
-                                  + f'<br>Entry name: {entry_name}'
-                                  + f'<br>Gene names: {gene_names}'
-                                  + f'<br>Sequence: {sequence}'
-                                  + f'<br>Organism: {organism}'
-                                  + f'<br>Organism ID: {organism_id}'
-                                  + f'<br>Protein names: {protein_names}'
+                                  + f'<br><b>Entry name:</b> {entry_name}'
+                                  + f'<br><b> Primary gene names:</b> {primary_gene}'
+                                  + f'<br><b>Gene names:</b> {gene_names}'
+                                  # + f'<br><b>Sequence:</b> {sequence}'
+                                  + f'<br><b>Organism:</b> {organism}'
+                                  + f'<br><b>Organism ID:</b> {organism_id}'
+                                  + f'<br><b>Protein names:</b> {protein_names}'
+                                  + f'<br><b>EC Number:</b> {ecnum}'
+                                  + f'<br><b>Protein families:</b> {family}'
+                                  + f'<br><b>PDB:</b> {pdb}'
+                                  + f'<br><b>Function:</b> {function}'
+                                  + f'<br><b>Pathway:</b> {pathway}'
                                   + '<extra></extra>')
     node_trace.marker.color = node_adjacency
     node_trace.text = node_text
@@ -228,26 +231,27 @@ def create_network(similar_proteins, protein_info):
 
     # change color of query node to red
     for i in range(len(graph.nodes())):
-        if node_trace.text[i] == query:
+        if node_trace.text[i] == protein_info[protein_info['Entry'] == query]['Entry_Name'].to_string(index=False):
             highlighted = list(node_trace.marker.color)
             highlighted[i] = 'darkred'
             node_trace.marker.color = tuple(highlighted)
 
     # Create Network Graph
     fig = go.Figure(layout=go.Layout(
-                        title='<br>Protein similarity network',
-                        titlefont_size=32,
-                        showlegend=False,
-                        hovermode='closest',
-                        margin=dict(b=20, l=5, r=5, t=40),
-                        annotations=[dict(
-                            text="Protein similarities",
-                            showarrow=False,
-                            xref="paper", yref="paper",
-                            x=0.005, y=-0.002)],
-                        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
-                    )
+        plot_bgcolor='white',
+        showlegend=False,
+        hovermode='closest',
+        margin=dict(b=20, l=5, r=5, t=40),
+        annotations=[dict(
+            text=f"Query: {query}",
+            font=dict(color="darkred"),
+            showarrow=False,
+            xref="paper", yref="paper",
+            x=0.005, y=-0.002)],
+        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+        )
+
     for trace in edge_trace:
         fig.add_trace(trace)
     fig.add_trace(node_trace)
@@ -255,19 +259,19 @@ def create_network(similar_proteins, protein_info):
     return fig
 
 
-def get_visualization(query, n_neighbors, algorithm):
+def get_visualization(query, n_neighbors, algorithm, organism='All'):
     """ Call this function to get the similarity network for a query """
     # establish a database connection
     connection = database_connection()
     cur = connection.cursor()
 
-    similar_proteins = get_similarity_data(query, n_neighbors, algorithm, cur)
+    similar_proteins = get_similarity_data(query, n_neighbors, algorithm.lower(), cur)
     protein_info = get_protein_info(similar_proteins, cur)
 
     cur.close()
     connection.close()
 
-    return create_network(similar_proteins, protein_info)
+    return create_network(query, similar_proteins, protein_info)
 
 
 if __name__ == "__main__":
@@ -277,3 +281,5 @@ if __name__ == "__main__":
     n_neighbors = int(input("Max. no. of hits: "))
     algorithm = input("Similarity algorithm: ")
     get_visualization(query, n_neighbors, algorithm).show()
+    # get_visualization('A0T0C6', 15, 'fasta').show()
+
