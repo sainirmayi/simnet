@@ -1,4 +1,6 @@
 import os
+import textwrap
+
 import plotly.graph_objects as go
 import networkx as nx
 import pandas as pd
@@ -27,12 +29,12 @@ def getID_from_csv(sequence):
 
 def getProteinID(sequence):
     sequence = "".join(line.strip() for line in sequence.splitlines())
-    return getID_from_db(sequence)
-    # return getID_from_csv(sequence)
+    # return getID_from_db(sequence)
+    return getID_from_csv(sequence)
 
 
 def database_connection():
-    connection = pymysql.connect(user='root', password='123456', host='localhost', port=3306)
+    connection = pymysql.connect(user='root', password='proteinsim', host='localhost', port=3306)
     return connection
 
 
@@ -60,7 +62,6 @@ def similarity_data_from_csv(query, n_neighbors, algorithm):
     results.drop_duplicates(inplace=True, ignore_index=True)
     return results
 
-#proteinsim
 
 def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     sql = """SELECT `COLUMN_NAME` FROM `INFORMATION_SCHEMA`.`COLUMNS` 
@@ -82,16 +83,21 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    # return similarity_data_from_csv(query, n_neighbors, algorithm, organism)
-    return similarity_data_from_db(query, n_neighbors, algorithm, cur)
+    return similarity_data_from_csv(query, n_neighbors, algorithm)
+    # return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
 def info_from_csv(similar_proteins):
     protein_list = list(pd.concat([similar_proteins['Protein1'], similar_proteins['Protein2']]).unique())
     df = pd.read_csv("UniprotRetrieval/uniprot.csv")
+    df.rename(columns={'Entry Name':'Entry_Name', 'Gene Names (primary)':'Primary_Gene_Name', 'Gene Names':'Gene_Names',
+                       'Organism (ID)':'OrganismID', 'Protein names':'Protein_names', 'Protein families':'Protein_families',
+                       'Function [CC]':'Function', 'EC number':'EC_number', 'pH dependence':'pH_dependence',
+                       'Temperature dependence':'Temperature_dependence'}, inplace=True)
     results = pd.DataFrame()
     for protein in protein_list:
         results = pd.concat([results, df[df['Entry'] == protein]], axis=0, ignore_index=True)
+    results = results.fillna('')
     return results
 
 
@@ -110,8 +116,8 @@ def info_from_db(similar_proteins, cur):
 
 
 def get_protein_info(similar_proteins, cur):
-    # return info_from_csv(similar_proteins)
-    return info_from_db(similar_proteins, cur)
+    return info_from_csv(similar_proteins)
+    # return info_from_db(similar_proteins, cur)
 
 
 def create_network(query, similar_proteins, protein_info):
@@ -193,14 +199,17 @@ def create_network(query, similar_proteins, protein_info):
     node_text = []
     node_hovertemplate = []
 
+    pd.set_option('display.max_colwidth', None)   # to display the entire string
     for node, adjacencies in enumerate(graph.adjacency()):
         node_adjacency.append(len(adjacencies[1]))
         entry = adjacencies[0]
+
         df = protein_info[protein_info['Entry'] == entry]
         entry_name = df['Entry_Name'].to_string(index=False)
         primary_gene = df['Primary_Gene_Name'].to_string(index=False)
         gene_names = df['Gene_Names'].to_string(index=False)
-        sequence = df['Seq'].to_string(index=False)
+        sequence = df['Sequence'].to_string(index=False)
+        sequence = textwrap.fill(sequence, 100).replace('\n', '<br>')
         organism = df['Organism'].to_string(index=False)
         organism_id = df['OrganismID'].to_string(index=False)
         protein_names = df['Protein_names'].to_string(index=False)
@@ -208,14 +217,15 @@ def create_network(query, similar_proteins, protein_info):
         family = df['Protein_families'].to_string(index=False)
         pdb = df['PDB'].to_string(index=False)
         function = df['Function'].to_string(index=False).split(': ', 1)[1] if df['Function'].to_string(index=False) != '' else ''
+        function = textwrap.fill(function, 100).replace('\n', '<br>')
         pathway = df['Pathway'].to_string(index=False).split(': ', 1)[1] if df['Pathway'].to_string(index=False) != '' else ''
 
         node_text.append(entry_name)
-        node_hovertemplate.append(f'Entry: {entry}'
+        node_hovertemplate.append(f'<b>Entry:</b> {entry}'
                                   + f'<br><b>Entry name:</b> {entry_name}'
-                                  + f'<br><b> Primary gene names:</b> {primary_gene}'
+                                  + f'<br><b>Primary gene names:</b> {primary_gene}'
                                   + f'<br><b>Gene names:</b> {gene_names}'
-                                  # + f'<br><b>Sequence:</b> {sequence}'
+                                  + f'<br><b>Sequence:</b> {sequence}'
                                   + f'<br><b>Organism:</b> {organism}'
                                   + f'<br><b>Organism ID:</b> {organism_id}'
                                   + f'<br><b>Protein names:</b> {protein_names}'
@@ -275,11 +285,11 @@ def get_visualization(query, n_neighbors, algorithm, organism='All'):
 
 
 if __name__ == "__main__":
-    diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
-    print(diatom_proteins['Entry'].to_list())
-    query = input("Protein ID: ")
-    n_neighbors = int(input("Max. no. of hits: "))
-    algorithm = input("Similarity algorithm: ")
-    get_visualization(query, n_neighbors, algorithm).show()
-    # get_visualization('A0T0C6', 15, 'fasta').show()
+    # diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
+    # print(diatom_proteins['Entry'].to_list())
+    # query = input("Protein ID: ")
+    # n_neighbors = int(input("Max. no. of hits: "))
+    # algorithm = input("Similarity algorithm: ")
+    # get_visualization(query, n_neighbors, algorithm).show()
+    get_visualization('A0T0C6', 15, 'fasta').show()
 

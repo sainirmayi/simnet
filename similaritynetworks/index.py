@@ -13,13 +13,13 @@ app.layout = html.Div(
         dcc.Location(id="url"),
         dbc.NavbarSimple(
             children=[
-                dbc.NavLink("Search", href="/", active="exact"),
-                dbc.NavLink("Developer", href="/Developer", active="exact"),
+                dbc.NavLink("Single Search", href="/", active="exact"),
+                dbc.NavLink("Multi-Search", href="/Developer", active="exact"),
                 dbc.NavLink("page 2", href="/page2", active="exact"),
             ],
 
             brand="Name of app",
-            color="primary",
+            color="#385170",
             dark=True,
         ),
         dbc.Container(id="page-content", className="pt-4"),
