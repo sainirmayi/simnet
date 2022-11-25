@@ -24,11 +24,13 @@ def getInfoForConnectedProteins(UniprotID,Algorithm,n_neighbors,targetOrganisms)
                                  host='localhost',
                                  port=3306)
     cur = connection.cursor()
-    sql = f"select Protein1, Protein2, Score from protein_network.hmmer where Protein1 = '{UniprotID}' OR Protein1 = '{UniprotID}'" \
+    sql = f"select Protein1, Protein2, Score from protein_network.{Algorithm} where Protein1 = '{UniprotID}' OR Protein2 = '{UniprotID}'" \
           f"order by Score desc LIMIT {n_neighbors}"
     cur.execute(sql)
     dt = cur.fetchall()
+    print(n_neighbors)
     info = pd.DataFrame(dt, columns=['Protein1', 'Protein2','Score'])
+    print(info)
     for index, row in info.iterrows():
         # info.loc[info.index[index], 'Links'] = '[Google]' + f"https://www.uniprot.org/uniprotkb/{UniprotID}/entry"
         if row['Protein1'] == UniprotID:

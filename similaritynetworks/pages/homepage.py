@@ -14,7 +14,7 @@ from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnected
 # components
 
 # webpage design
-layout = html.Div([html.Div(
+layout = html.Div([html.Div([html.Div(
     [
         html.Br(),
         html.Br(),
@@ -192,7 +192,7 @@ layout = html.Div([html.Div(
 ),
 html.Div([
         html.Br(),
-        html.Div(html.Img(src=r'assets/logo.png', alt='image',style={'margin-left': '0.7vw','height':'45%', 'width':'45%'})),
+        html.Div(html.Img(src=r'assets/logo.png', alt='image',style={'margin-left': '0.7vw','height':'50%', 'width':'50%'})),
         html.Div([html.P(["M.Sc.Bioinfomatics", html.Br(), "Integrated Bioinformatics Project"])], style={'margin-left': '0.7vw','font-size': '18px'}),
         html.Hr(),
         html.Div([html.P(["Kato Milis, Sai Nirmayi Yasa",html.Br(),"Shuhua Liu, Wenjia Yu"])], style={"background-color":"#eaeaea",'width':'230px','margin-left': '0.7vw','font-size': '16px','border-radius': '8px'}),
@@ -200,7 +200,7 @@ html.Div([
         html.Br()],
     style={'margin-left': '-2vw','width': '335px',
           'margin-top': '1vw', 'backgroundColor': '#eaeaea','border-radius': '8px'}
-),
+)],style={'display': 'inline-block'}),
     html.Div([
         html.Div(
             id='plot_zone',
@@ -215,27 +215,30 @@ html.Div([
     Output('plot_zone', 'children'),
     Input('search', 'n_clicks'),
     State('input', 'value'),
+    State('Algorithm', 'value'),
     State('n_neighbors', 'value')
 )
-def showNetworkDiagram(n_clicks, proteinID, n_neighbors):
+def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
     if n_neighbors is None:
         n_neighbors = 10
     if n_clicks:
         print('yes')
         return \
-            html.Div(dbc.Col([dcc.Graph(
-                id='network', figure=visualization.get_visualization(proteinID, n_neighbors, 'hmmer'),
-                style={'width': '135vh', 'height': '90vh'}),
-                html.Div([html.P("Your Input")], style={'font-size': '12px', "font-weight": "bold"}),
-                dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),
+            html.Div(dbc.Col([html.Div(dcc.Graph(
+                id='network', figure=visualization.get_visualization(proteinID, n_neighbors, Algorithm),
+                style={'width': '130vh', 'height': '90vh'})),
+                html.Div([html.Div(html.P("Your Input"),
+                         style={'font-size': '12px', "font-weight": "bold"}),
+                html.Div(dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),
                                      [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns],
-                                     style_cell={'textAlign': 'left'}, ),
+                                     style_cell={'textAlign': 'left'}, ),style={'margin-top': '-1vw',}),
+                          html.Br(),
                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
-                dash_table.DataTable(
-                    getInfoForConnectedProteins(proteinID, 'tmp', n_neighbors, 'tmp').to_dict('records'),
+                html.Div(dash_table.DataTable(
+                    getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').to_dict('records'),
                     [{"name": i, "id": i} for i in
-                     getInfoForConnectedProteins(proteinID, 'tmp', n_neighbors, 'tmp').columns],
-                    style_cell={'textAlign': 'left'})
+                     getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').columns],
+                    style_cell={'textAlign': 'left'}),style={'margin-top': '-1vw',}),],style={'width': '130vh',"background-color":"#e7eaf6"})
                 # dash_table.DataTable(
                 # data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
                 # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
