@@ -244,7 +244,7 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
                 # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
                 #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
                 #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
-            ]
+            ], style={'width': '90vh',"background-color":"#e7eaf6"}
             )
             )
 
