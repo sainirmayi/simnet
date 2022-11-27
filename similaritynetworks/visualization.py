@@ -73,6 +73,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     cur.execute(sql, (query, query, n_neighbors))
     results = pd.DataFrame(cur.fetchall(), columns=columns)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
+    print(prot_list)
     prot_list.remove(query)
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
@@ -83,8 +84,8 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    # return similarity_data_from_csv(query, n_neighbors, algorithm)
-    return similarity_data_from_db(query, n_neighbors, algorithm, cur)
+    return similarity_data_from_csv(query, n_neighbors, algorithm)
+    # return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
 def info_from_csv(similar_proteins):
@@ -110,8 +111,9 @@ def info_from_db(similar_proteins, cur):
     results = pd.DataFrame()
     for protein in protein_list:
         sql = f"""SELECT * FROM protein_network.protein WHERE Entry = %s"""
-        cur.execute(sql, (protein,))
+        cur.execute(sql, (protein))
         results = pd.concat([results, pd.DataFrame(cur.fetchall(), columns=columns)], axis=0, ignore_index=True)
+    print(len(results))
     return results
 
 
