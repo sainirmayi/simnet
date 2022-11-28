@@ -29,8 +29,8 @@ def getID_from_csv(sequence):
 
 def getProteinID(sequence):
     sequence = "".join(line.strip() for line in sequence.splitlines())
-    # return getID_from_db(sequence)
-    return getID_from_csv(sequence)
+    return getID_from_db(sequence)
+    # return getID_from_csv(sequence)
 
 
 def database_connection():
@@ -73,6 +73,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     cur.execute(sql, (query, query, n_neighbors))
     results = pd.DataFrame(cur.fetchall(), columns=columns)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
+    print(prot_list)
     prot_list.remove(query)
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
@@ -110,20 +111,23 @@ def info_from_db(similar_proteins, cur):
     results = pd.DataFrame()
     for protein in protein_list:
         sql = f"""SELECT * FROM protein_network.protein WHERE Entry = %s"""
-        cur.execute(sql, (protein,))
+        cur.execute(sql, (protein))
         results = pd.concat([results, pd.DataFrame(cur.fetchall(), columns=columns)], axis=0, ignore_index=True)
+    print(len(results))
     return results
 
 
 def get_protein_info(similar_proteins, cur):
-    return info_from_csv(similar_proteins)
-    # return info_from_db(similar_proteins, cur)
+    # return info_from_csv(similar_proteins)
+    return info_from_db(similar_proteins, cur)
 
 
 def create_network(query, similar_proteins, protein_info):
     """ Creating network diagram """
     # load pandas df as networkx graph
-    graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr='Score')
+    if 'Identities' not in similar_proteins.columns:
+        similar_proteins['Identities'] = ''
+    graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr=['Score', 'E', 'Identities'])
 
     # Deciding on the layout of how the nodes will be lined up
     pos = nx.spring_layout(graph, k=0.5, iterations=50, seed=1, weight='Score')
@@ -148,10 +152,13 @@ def create_network(query, similar_proteins, protein_info):
         edge_y.append(y0)
         edge_y.append(y1)
         edge_y.append(None)
-        edge_hovertemplate.append(f"Score: {graph.edges()[edge]['Score']} <extra></extra>")
+        edge_hovertemplate.append(f"<b>Score:</b> {graph.edges()[edge]['Score']}" +
+                                  f"<br><b>E-value:</b> {graph.edges()[edge]['E']}" +
+                                  f"<br><b>Identity:</b> {graph.edges()[edge]['Identities']}"
+                                  "<extra></extra>")
 
         # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
-        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*(5)/(similar_proteins['Score'].max()-similar_proteins['Score'].min())+0.5
+        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*5/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
         edge_trace.append(go.Scatter(
             x=edge_x, y=edge_y,
             mode='lines',
@@ -209,7 +216,7 @@ def create_network(query, similar_proteins, protein_info):
         primary_gene = df['Primary_Gene_Name'].to_string(index=False)
         gene_names = df['Gene_Names'].to_string(index=False)
         sequence = df['Sequence'].to_string(index=False)
-        sequence = textwrap.fill(sequence, 100).replace('\n', '<br>')
+        sequence = textwrap.fill(sequence).replace('\n', '<br>')
         organism = df['Organism'].to_string(index=False)
         organism_id = df['OrganismID'].to_string(index=False)
         protein_names = df['Protein_names'].to_string(index=False)
@@ -217,7 +224,7 @@ def create_network(query, similar_proteins, protein_info):
         family = df['Protein_families'].to_string(index=False)
         pdb = df['PDB'].to_string(index=False)
         function = df['Function'].to_string(index=False).split(': ', 1)[1] if df['Function'].to_string(index=False) != '' else ''
-        function = textwrap.fill(function, 100).replace('\n', '<br>')
+        function = textwrap.fill(function, width=100).replace('\n', '<br>')
         pathway = df['Pathway'].to_string(index=False).split(': ', 1)[1] if df['Pathway'].to_string(index=False) != '' else ''
 
         node_text.append(entry_name)
@@ -225,15 +232,15 @@ def create_network(query, similar_proteins, protein_info):
                                   + f'<br><b>Entry name:</b> {entry_name}'
                                   + f'<br><b>Primary gene names:</b> {primary_gene}'
                                   + f'<br><b>Gene names:</b> {gene_names}'
-                                  + f'<br><b>Sequence:</b> {sequence}'
                                   + f'<br><b>Organism:</b> {organism}'
                                   + f'<br><b>Organism ID:</b> {organism_id}'
                                   + f'<br><b>Protein names:</b> {protein_names}'
                                   + f'<br><b>EC Number:</b> {ecnum}'
                                   + f'<br><b>Protein families:</b> {family}'
                                   + f'<br><b>PDB:</b> {pdb}'
-                                  + f'<br><b>Function:</b> {function}'
+                                  + f'<br><b>Function:</b> <br>{function}'
                                   + f'<br><b>Pathway:</b> {pathway}'
+                                  + f'<br><b>Sequence:</b> <br>{sequence}'
                                   + '<extra></extra>')
     node_trace.marker.color = node_adjacency
     node_trace.text = node_text
@@ -285,11 +292,11 @@ def get_visualization(query, n_neighbors, algorithm, organism='All'):
 
 
 if __name__ == "__main__":
-    # diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
-    # print(diatom_proteins['Entry'].to_list())
-    # query = input("Protein ID: ")
-    # n_neighbors = int(input("Max. no. of hits: "))
-    # algorithm = input("Similarity algorithm: ")
-    # get_visualization(query, n_neighbors, algorithm).show()
-    get_visualization('A0T0C6', 15, 'fasta').show()
+    diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
+    print(diatom_proteins['Entry'].to_list())
+    query = input("Protein ID: ")
+    n_neighbors = int(input("Max. no. of hits: "))
+    algorithm = input("Similarity algorithm: ")
+    get_visualization(query, n_neighbors, algorithm).show()
+    # get_visualization('A0T0C6', 15, 'fasta').show()
 

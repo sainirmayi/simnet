@@ -238,13 +238,14 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
                     getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').to_dict('records'),
                     [{"name": i, "id": i} for i in
                      getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').columns],
+                    style_data={'whiteSpace': 'normal','height': 'auto',},
                     style_cell={'textAlign': 'left'}),style={'margin-top': '-1vw',}),],style={'width': '130vh',"background-color":"#e7eaf6"})
                 # dash_table.DataTable(
                 # data=getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').to_dict('records'),
                 # columns = [{ 'name': x, 'id': x, 'type':'text', 'presentation': 'markdown'} if x == 'Links' else { 'name': x,'id': x}
                 #           for x in getInfoForConnectedProteins(proteinID,'tmp',n_neighors,'tmp').columns],
                 #         style_table = {'position': 'relative', 'top': '5vh', 'left': '5vw', 'width': '60vw'}
-            ]
+            ], style={'width': '100vh',"background-color":"#e7eaf6"}
             )
             )
 
