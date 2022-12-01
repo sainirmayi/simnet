@@ -11,16 +11,32 @@ from app import app
 app.layout = html.Div(
     [
         dcc.Location(id="url"),
-        dbc.NavbarSimple(
-            children=[
-                dbc.NavLink("Single Search", href="/", active="exact"),
-                dbc.NavLink("Multi-Search", href="/Developer", active="exact"),
-                dbc.NavLink("page 2", href="/page2", active="exact"),
+        dbc.Navbar(
+            children=[html.A(
+                # Use row and col to control vertical alignment of logo / brand
+                dbc.Row(
+                    [
+                        dbc.Col(html.Div(html.Img(src=r'assets/SimNet.png', height = '60',width = '150',alt='image'),style={'display': 'inline-block','margin-left': '2vw', 'margin-right': '10vw', })),
+                        dbc.Col(html.Div(dbc.NavLink("Single Search", href="/", active="exact",style={'color': '#fff'}),style={'margin-left': '60vw','color': '#fff'})),
+                        dbc.Col(dbc.NavLink("Multi-Search", href="/Developer", active="exact",style={'color': '#fff'})),
+                        dbc.Col(dbc.NavLink("Help", href="/page2", active="exact",style={'color': '#fff'})),
+                        #html.Div(dbc.Col(html.Img(src=r'assets/SimNet.png', height = '50',width = '130',alt='image')),
+                        #style={'display': 'inline-block','margin-left': '2vw', 'margin-right': '1vw', }),
+                        #html.Div(dbc.Col(dbc.NavLink("Single Search", href="/", active="exact")),style={'display': 'inline-block'}),
+                        #html.Div(dbc.Col(dbc.NavLink("Multi-Search", href="/Developer", active="exact")),style={'display': 'inline-block'}),
+                        #html.Div(dbc.Col(dbc.NavLink("page 2", href="/page2", active="exact")),style={'display': 'inline-block'}),
+
+
+                    ],
+                    align="center",
+                    className="g-0",
+                ),
+            style={"color": "white"}),
             ],
 
-            brand="Name of app",
+            #brand="Name of app",
             color="#385170",
-            dark=True,
+            #dark=True,
         ),
         dbc.Container(id="page-content", className="pt-4"),
     ]
