@@ -21,7 +21,7 @@ layout = html.Div([html.Div([html.Div(
     [
         html.Br(),
         html.Br(),
-        html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
+        #html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
         dbc.Container(
             [
                 dbc.Row(style={'height': '20px'}),
@@ -212,7 +212,7 @@ html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','m
 
         html.Div(
             id='plot_zone')],
-            style={'display': 'inline-block', 'height': '600px','width': '800px','vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '-3vw','margin-top': '0vw'}),
+            style={'display': 'inline-block', 'height':"600px",'width': '800px','vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '-3vw','margin-top': '0vw'}),
         # html.Div(html.P("Input Protein"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},),
         # html.Div(html.P("Sequence Similarity Partners"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},)
 
@@ -234,14 +234,15 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
     if n_clicks:
         print('yes')
         return \
-            html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', html.Div(dbc.Col([html.Div(dcc.Graph(
+            html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
+            html.Div(dbc.Col([html.Div(dcc.Graph(
                 id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm),
-                style={'width': '130vh', 'height': '90vh'})),
+                style={'width': '130vh', 'height': '600px'}),style={'margin-top': '0vw','width': '130vh', 'height': '600px'}),
                 html.Div([html.Div(html.P("Your Input"),
                          style={'font-size': '12px', "font-weight": "bold"}),
                 html.Div(dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),
                                      [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns],
-                                     style_cell={'textAlign': 'left'}, fill_width=False),style={'width': '800px','margin-top': '-1vw',}),
+                                     style_data={'whiteSpace': 'normal','height': 'auto',},style_cell={'textAlign': 'left'}, fill_width=False),style={'width': '130vh','margin-right': '3vw','margin-top': '-1vw',}),
                           html.Br(),
                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
                 html.Div(dash_table.DataTable(
