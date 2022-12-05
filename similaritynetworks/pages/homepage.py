@@ -4,7 +4,8 @@ from dash import html, Input, Output, State, ctx, callback
 from dash import dcc
 import dash_bootstrap_components as dbc
 
-import visualization
+import pages.visualization
+import UniprotRetrieval.alphafold_visualization
 from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnectedProteins
 
 # library used need to be specified here
@@ -14,11 +15,13 @@ from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnected
 # components
 
 # webpage design
+from similaritynetworks.UniprotRetrieval.alphafold_visualization import getAlphaFoldStructure
+
 layout = html.Div([html.Div([html.Div(
     [
         html.Br(),
         html.Br(),
-        html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
+        #html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
         dbc.Container(
             [
                 dbc.Row(style={'height': '20px'}),
@@ -188,30 +191,37 @@ layout = html.Div([html.Div([html.Div(
         #  }, ),# specify the search block style
         html.Br(),
     ], style={'color': '#142d4c','display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw', 'margin-right': '1vw',
-              'margin-top': '1vw', 'width': '335px','backgroundColor': '#ececec','border-radius': '8px'}
+              'margin-top': '0vw', 'height': '580px','width': '335px','backgroundColor': '#ececec','border-radius': '8px'}
 ),
-html.Div([
-        html.Br(),
-        html.Div(html.Img(src=r'assets/logo.png', alt='image',style={'margin-left': '0.7vw','height':'50%', 'width':'50%'})),
-        html.Div([html.P(["M.Sc.Bioinfomatics", html.Br(), "Integrated Bioinformatics Project"])], style={'margin-left': '0.7vw','font-size': '18px'}),
-        html.Hr(),
-        html.Div([html.P(["Kato Milis, Sai Nirmayi Yasa",html.Br(),"Shuhua Liu, Wenjia Yu"])], style={"background-color":"#eaeaea",'width':'230px','margin-left': '0.7vw','font-size': '16px','border-radius': '8px'}),
+html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','margin-right': '-3vw','width': '335px',
+          'border-radius': '8px'}
+    #[
+     #   html.Br(),
+      #  html.Div(html.Img(src=r'assets/logo.png', alt='image',style={'margin-left': '0.7vw','height':'50%', 'width':'50%'})),
+       # html.Div([html.P(["M.Sc.Bioinfomatics", html.Br(), "Integrated Bioinformatics Project"])], style={'margin-left': '0.7vw','font-size': '18px'}),
+        #html.Hr(),
+        #html.Div([html.P(["Kato Milis, Sai Nirmayi Yasa",html.Br(),"Shuhua Liu, Wenjia Yu"])], style={"background-color":"#eaeaea",'width':'230px','margin-left': '0.7vw','font-size': '16px','border-radius': '8px'}),
 
-        html.Br()],
-    style={'margin-left': '-2vw','width': '335px',
-          'margin-top': '1vw', 'backgroundColor': '#eaeaea','border-radius': '8px'}
+        #html.Br()],
 )],style={'display': 'inline-block'}),
-    html.Div([
+        html.Div([
         html.Div(
-            id='plot_zone',
-            style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '0vw', 'margin-top': '-1.5vw'}),
+            html.Div(html.Img(src=r'assets/intro.jpg', alt='image',
+                              style={'margin-left': '0vw', 'height': '210%', 'width': '130%'})),id='intro_zone',
+            style={'vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '1vw', 'font-size': '100px','margin-top': '0vw'}),
+
+        html.Div(
+            id='plot_zone')],
+            style={'display': 'inline-block', 'height':"600px",'width': '800px','vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '-3vw','margin-top': '0vw'}),
         # html.Div(html.P("Input Protein"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},),
         # html.Div(html.P("Sequence Similarity Partners"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},)
-    ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '0vw', 'margin-top': '0vw', })
+
 ])
 
 
 @callback(
+    Output('alphafold_zone', 'children'),
+    Output('intro_zone', 'children'),
     Output('plot_zone', 'children'),
     Input('search', 'n_clicks'),
     State('input', 'value'),
@@ -224,14 +234,15 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
     if n_clicks:
         print('yes')
         return \
+            html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
-                id='network', figure=visualization.get_visualization(proteinID, n_neighbors, Algorithm),
-                style={'width': '130vh', 'height': '90vh'})),
+                id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm),
+                style={'width': '130vh', 'height': '600px'}),style={'margin-top': '0vw','width': '130vh', 'height': '600px'}),
                 html.Div([html.Div(html.P("Your Input"),
                          style={'font-size': '12px', "font-weight": "bold"}),
                 html.Div(dash_table.DataTable(getInfoForSingleProtein(proteinID).to_dict('records'),
                                      [{"name": i, "id": i} for i in getInfoForSingleProtein(proteinID).columns],
-                                     style_cell={'textAlign': 'left'}, ),style={'margin-top': '-1vw',}),
+                                     style_data={'whiteSpace': 'normal','height': 'auto',},style_cell={'textAlign': 'left'}, fill_width=False),style={'width': '130vh','margin-right': '3vw','margin-top': '-1vw',}),
                           html.Br(),
                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
                 html.Div(dash_table.DataTable(
