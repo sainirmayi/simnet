@@ -20,8 +20,7 @@ from similaritynetworks.UniprotRetrieval.alphafold_visualization import getAlpha
 layout = html.Div([html.Div([html.Div(
     [
         html.Br(),
-        html.Br(),
-        #html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
+        html.Div([html.P("SEARCH")], style={'margin-left': '1vw','color': '#142d4c','font-size': '30px'}),
         dbc.Container(
             [
                 dbc.Row(style={'height': '20px'}),
@@ -191,7 +190,7 @@ layout = html.Div([html.Div([html.Div(
         #  }, ),# specify the search block style
         html.Br(),
     ], style={'color': '#142d4c','display': 'inline-block', 'vertical-align': 'top', 'margin-left': '-2vw', 'margin-right': '1vw',
-              'margin-top': '0vw', 'height': '580px','width': '335px','backgroundColor': '#ececec','border-radius': '8px'}
+              'margin-top': '0vw', 'height': '620px','width': '335px','backgroundColor': '#ececec','border-radius': '8px'}
 ),
 html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','margin-right': '-3vw','width': '335px',
           'border-radius': '8px'}
@@ -207,12 +206,12 @@ html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','m
         html.Div([
         html.Div(
             html.Div(html.Img(src=r'assets/intro.jpg', alt='image',
-                              style={'margin-left': '0vw', 'height': '210%', 'width': '130%'})),id='intro_zone',
+                              style={'margin-left': '0vw', 'height': '300%', 'width': '130%'})),id='intro_zone',
             style={'vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '1vw', 'font-size': '100px','margin-top': '0vw'}),
 
         html.Div(
-            id='plot_zone')],
-            style={'display': 'inline-block', 'height':"600px",'width': '800px','vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '-3vw','margin-top': '0vw'}),
+            id='plot_zone',style = { 'margin-left': '-1vw','height':"800px"})],
+            style={'display': 'inline-block', 'width': '800px','vertical-align': 'top', 'margin-left': '0vw', 'margin-right': '-3vw','margin-top': '0vw'}),
         # html.Div(html.P("Input Protein"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},),
         # html.Div(html.P("Sequence Similarity Partners"), style={'display': 'block', 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '0vw','font-size': '12px'},)
 

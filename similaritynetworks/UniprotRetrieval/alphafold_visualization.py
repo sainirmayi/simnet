@@ -6,7 +6,7 @@ from dash_bio_utils import PdbParser, create_mol3d_style
 
 def getAlphaFoldStructure():
     print(os.getcwd())
-    DNA_pdb_file = os.getcwd()+'/UniprotRetrieval/AF-A0T0A1-F1-model_v4.pdb'
+    DNA_pdb_file = os.getcwd()+'/UniprotRetrieval/AF-A0T097-F1-model_v4.pdb'
     parser = PdbParser(DNA_pdb_file)
 
     data = parser.mol3d_data()

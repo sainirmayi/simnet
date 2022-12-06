@@ -14,6 +14,7 @@ def getInfoForSingleProtein(UniprotID):
     cur.execute(sql)
     dt = cur.fetchall()
     info = pd.DataFrame(dt, columns=['Protein ID', 'UniProt Entry', 'Gene Name', 'Protein Name', 'Organism'])
+
     cur.close()
     connection.close()
     return info
