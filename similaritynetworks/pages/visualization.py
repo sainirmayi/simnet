@@ -40,11 +40,11 @@ def database_connection():
 
 def similarity_data_from_csv(query, n_neighbors, algorithm):
     if algorithm == 'blast':
-        df = pd.read_csv("{path to blast csv file}")
+        df = pd.read_csv("../Blast/blast.csv")
     elif algorithm == 'fasta':
-        df = pd.read_csv("FASTA/fasta.csv")
+        df = pd.read_csv("../FASTA/fasta.csv")
     elif algorithm == 'ssearch':
-        df = pd.read_csv("FASTA/ssearch.csv")
+        df = pd.read_csv("../FASTA/ssearch.csv")
     elif algorithm == 'hmmer':
         df = pd.read_csv("../HmmerWithSecondSearch.csv")
     else:
@@ -84,8 +84,8 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    return similarity_data_from_csv(query, n_neighbors, algorithm)
-    # return similarity_data_from_db(query, n_neighbors, algorithm, cur)
+    # return similarity_data_from_csv(query, n_neighbors, algorithm)
+    return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
 def info_from_csv(similar_proteins):
@@ -118,8 +118,8 @@ def info_from_db(similar_proteins, cur):
 
 
 def get_protein_info(similar_proteins, cur):
-    return info_from_csv(similar_proteins)
-    #return info_from_db(similar_proteins, cur)
+    # return info_from_csv(similar_proteins)
+    return info_from_db(similar_proteins, cur)
 
 
 def create_network(query, similar_proteins, protein_info):
@@ -158,11 +158,13 @@ def create_network(query, similar_proteins, protein_info):
                                   "<extra></extra>")
 
         # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
-        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*5/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
+        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*4/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
+        visibility = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*0.7/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.3
         edge_trace.append(go.Scatter(
             x=edge_x, y=edge_y,
             mode='lines',
-            line=dict(color='Grey', width=weight)
+            opacity=visibility,
+            line=dict(color='rgb(95,70,144)', width=weight)
             )
         )
 
@@ -298,5 +300,5 @@ if __name__ == "__main__":
     #n_neighbors = int(input("Max. no. of hits: "))
     #algorithm = input("Similarity algorithm: ")
     #get_visualization(query, n_neighbors, algorithm).show()
-    get_visualization('A0T0C6', 15, 'fasta').show()
+    get_visualization('A0T0C2', 15, 'fasta').show()
 

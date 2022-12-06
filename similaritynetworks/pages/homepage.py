@@ -15,7 +15,7 @@ from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnected
 # components
 
 # webpage design
-from similaritynetworks.UniprotRetrieval.alphafold_visualization import getAlphaFoldStructure
+from UniprotRetrieval.alphafold_visualization import getAlphaFoldStructure
 
 layout = html.Div([html.Div([html.Div(
     [
