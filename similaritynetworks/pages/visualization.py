@@ -294,7 +294,7 @@ def get_visualization(query, n_neighbors, algorithm, organism='All'):
 
 
 if __name__ == "__main__":
-    #diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
+    #diatom_proteins = pd.read_csv("diatom_proteins/diatoms.csv")
     #print(diatom_proteins['Entry'].to_list())
     #query = input("Protein ID: ")
     #n_neighbors = int(input("Max. no. of hits: "))
