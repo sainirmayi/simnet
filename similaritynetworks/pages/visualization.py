@@ -73,7 +73,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     cur.execute(sql, (query, query, n_neighbors))
     results = pd.DataFrame(cur.fetchall(), columns=columns)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
-    print(prot_list)
+    # print(prot_list)
     prot_list.remove(query)
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
@@ -113,7 +113,7 @@ def info_from_db(similar_proteins, cur):
         sql = f"""SELECT * FROM protein_network.protein WHERE Entry = %s"""
         cur.execute(sql, (protein))
         results = pd.concat([results, pd.DataFrame(cur.fetchall(), columns=columns)], axis=0, ignore_index=True)
-    print(len(results))
+    # print(len(results))
     return results
 
 
@@ -283,9 +283,28 @@ def get_visualization(query, n_neighbors, algorithm, organism='All'):
     # establish a database connection
     connection = database_connection()
     cur = connection.cursor()
-
-    similar_proteins = get_similarity_data(query, n_neighbors, algorithm.lower(), cur)
-    protein_info = get_protein_info(similar_proteins, cur)
+    diatoms = ['Skeletonema costatum', 'Phaeodactylum tricornutum', 'Cylindrotheca fusiformis',
+               'Cylindrotheca sp. (strain N1)', 'Nitzschia alba', 'Cyclotella meneghiniana', 'Thalassiosira pseudonana',
+               'Pseudo-nitzschia multiseries', 'Detonula confervacea', 'Thalassiosira nordenskioeldii',
+               'Thalassiosira oceanica', 'Phaeodactylum tricornutum (strain CCAP 1055/1)', 'Trieres chinensis',
+               'Thalassiosira weissflogii']
+    if organism == 'Diatoms':
+        all_similar_proteins = get_similarity_data(query, 20, algorithm.lower(), cur)
+        all_protein_info = get_protein_info(all_similar_proteins, cur)
+        d = all_protein_info['Organism'].copy(deep=True)
+        d = d.str.extract(r"([^(]*)")[0]
+        d = d.str.strip()
+        protein_info = all_protein_info[d.isin(diatoms)]
+        # print(protein_info)
+        similar_proteins = pd.DataFrame()
+        for index, row in all_similar_proteins.iterrows():
+            if row['Protein1'] in protein_info['Entry'].to_list() and row['Protein2'] in protein_info['Entry'].to_list():
+                similar_proteins = pd.concat([similar_proteins, row.to_frame().T])
+        similar_proteins.drop_duplicates(inplace=True, ignore_index=True)
+        # print(similar_proteins)
+    else:
+        similar_proteins = get_similarity_data(query, n_neighbors, algorithm.lower(), cur)
+        protein_info = get_protein_info(similar_proteins, cur)
 
     cur.close()
     connection.close()
@@ -294,11 +313,12 @@ def get_visualization(query, n_neighbors, algorithm, organism='All'):
 
 
 if __name__ == "__main__":
-    #diatom_proteins = pd.read_csv("diatom_proteins/new_diatoms.csv")
+    #diatom_proteins = pd.read_csv("diatom_proteins/diatoms.csv")
     #print(diatom_proteins['Entry'].to_list())
     #query = input("Protein ID: ")
     #n_neighbors = int(input("Max. no. of hits: "))
     #algorithm = input("Similarity algorithm: ")
-    #get_visualization(query, n_neighbors, algorithm).show()
-    get_visualization('A0T0C2', 15, 'fasta').show()
+    #organism = input("All or Diatoms? ")
+    #get_visualization(query, n_neighbors, algorithm, organism).show()
+    get_visualization('A0T0C2', 15, 'fasta', 'Diatoms').show()
 
