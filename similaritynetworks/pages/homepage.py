@@ -236,8 +236,8 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
     #if Algorithm is None:
      #   Algorithm = 'Fasta'
     if n_clicks:
-        #print(Scope)
-        #print("yes")
+        print(Scope)
+        print("yes")
         return \
             html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
@@ -251,9 +251,9 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
                           html.Br(),
                 html.Div([html.P("Sequence Similarity Partners")], style={'font-size': '12px', "font-weight": "bold"}),
                 html.Div(dash_table.DataTable(
-                    getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').to_dict('records'),
+                    getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, Scope).to_dict('records'),
                     [{"name": i, "id": i} for i in
-                     getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, 'tmp').columns],
+                     getInfoForConnectedProteins(proteinID, Algorithm, n_neighbors, Scope).columns],
                     style_data={'whiteSpace': 'normal','height': 'auto',},
                     style_cell={'textAlign': 'left'}),style={'margin-top': '-1vw',}),],style={'width': '130vh',"background-color":"#e7eaf6"})
                 # dash_table.DataTable(
