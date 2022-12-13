@@ -246,7 +246,7 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
         return \
             html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
-                id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm,"Scope"),
+                id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm,Scope),
                 style={'width': '130vh', 'height': '600px'}),style={'margin-top': '0vw','width': '130vh', 'height': '600px'}),
                 html.Div([html.Div(html.P("Your Input"),
                          style={'font-size': '12px', "font-weight": "bold"}),
