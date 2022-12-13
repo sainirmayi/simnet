@@ -153,10 +153,10 @@ layout = html.Div([html.Div([html.Div(
                             html.Br(),
                             dbc.Row(dbc.Col(html.Label("Target Scope:"), width={"size": 5}, )),
                             dbc.Row(dbc.Col(html.Div(
-                                #dcc.Dropdown(
-                                 #   options=[
-                                  #      {'label': "All", 'value': 0},
-                                   #     {'label': "Acaryochloris marina [329726]", 'value': 329726},
+                                dcc.Dropdown(id = 'Scope',
+                                    options=[
+                                       {'label': "All", 'value': "All"},
+                                       {'label': "Diatoms", 'value': 'Diatoms'}])
                                     #    {'label': "Angiopteris evecta [13825]", 'value': 13825},
                                      #   {'label': "Aspergillus clavatus [344612]", 'value': 344612},
                                       #  {'label': "Aspergillus niger [425011]", 'value': 425011},
@@ -174,14 +174,8 @@ layout = html.Div([html.Div([html.Div(
                                       #  {'label': "Desulfitobacterium hafniense [272564]", 'value': 272564},
                                     #],
                                     #placeholder="All",
-                                    #multi=True
-                            dcc.Checklist(
-                            id='scope',
-                            options=[
-                            {'label': 'Diatom proteins', 'value': 'Diatoms'}
-                                 ],
-                                value=['no']
-                        )
+                                    #multi=True)
+
                                 ), width={"size": 9}, ), ), ], )),
                 html.Br(),
                 dbc.Row(
@@ -239,10 +233,11 @@ html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','m
 def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
     if n_neighbors is None:
         n_neighbors = 10
-    if Algorithm is None:
-        Algorithm = 'Fasta'
+    #if Algorithm is None:
+     #   Algorithm = 'Fasta'
     if n_clicks:
-        print('yes')
+        #print(Scope)
+        #print("yes")
         return \
             html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
