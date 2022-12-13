@@ -115,7 +115,8 @@ layout = html.Div([html.Div([html.Div(
                                          {'label': 'hmmer', 'value': 'hmmer'},
                                          {'label': 'ssearch', 'value': 'ssearch'},
                                      ],
-                                     placeholder="Blast")), width={"size": 5}, ), ),
+                                    placeholder="Fasta",
+                                     )), width={"size": 5}, ), ),
                 html.Br(),
 
                 dbc.Row(
@@ -123,12 +124,12 @@ layout = html.Div([html.Div([html.Div(
                 dbc.Row(dbc.Col(
                     dcc.Dropdown(id='n_neighbors',
                                  options=[
-                                     {'label': '5', 'value': 5},  # font needs to be adjusted
-                                     {'label': '10', 'value': 10},
-                                     {'label': '15', 'value': 15},
-                                     {'label': '20', 'value': 20},
+                                     {'label': 'UP TO 5', 'value': 5},  # font needs to be adjusted
+                                     {'label': 'UP TO 10', 'value': 10},
+                                     {'label': 'UP TO 15', 'value': 15},
+                                     {'label': 'UP TO 20', 'value': 20},
                                  ],
-                                 placeholder="15",
+                                 placeholder="UP TO 10",
                                  ), width={"size": 5}, ), ),
 
                 html.Br(),
@@ -150,31 +151,38 @@ layout = html.Div([html.Div([html.Div(
                             # )),width={"size": 5,  "offset": 4},),),
 
                             html.Br(),
-                            dbc.Row(dbc.Col(html.Label("Target Organism:"), width={"size": 5}, )),
+                            dbc.Row(dbc.Col(html.Label("Target Scope:"), width={"size": 5}, )),
                             dbc.Row(dbc.Col(html.Div(
-                                dcc.Dropdown(
-                                    options=[
-                                        {'label': "All", 'value': 0},
-                                        {'label': "Acaryochloris marina [329726]", 'value': 329726},
-                                        {'label': "Angiopteris evecta [13825]", 'value': 13825},
-                                        {'label': "Aspergillus clavatus [344612]", 'value': 344612},
-                                        {'label': "Aspergillus niger [425011]", 'value': 425011},
-                                        {'label': "Bacillus anthracis [592021]", 'value': 592021},
-                                        {'label': "Bacillus pumilus [315750]", 'value': 315750},
-                                        {'label': "Bos taurus [9913]", 'value': 9913},
-                                        {'label': "Branchiostoma floridae [7739]", 'value': 7739},
-                                        {'label': "Chloroflexus aurantiacus [324602]", 'value': 324602},
-                                        {'label': "Chlorokybus atmophyticus [3144]", 'value': 3144},
-                                        {'label': "Cicer arietinum [3827]", 'value': 3827},
-                                        {'label': "Coffea arabica [13443]", 'value': 13443},
-                                        {'label': "Coprinopsis cinerea [240176]", 'value': 240176},
-                                        {'label': "Crocosphaera subtropica [43989]", 'value': 43989},
-                                        {'label': "Cyanothece sp. [395961]", 'value': 395961},
-                                        {'label': "Desulfitobacterium hafniense [272564]", 'value': 272564},
-                                    ],
-                                    placeholder="All",
-                                    multi=True
-                                )), width={"size": 9}, ), ), ], )),
+                                #dcc.Dropdown(
+                                 #   options=[
+                                  #      {'label': "All", 'value': 0},
+                                   #     {'label': "Acaryochloris marina [329726]", 'value': 329726},
+                                    #    {'label': "Angiopteris evecta [13825]", 'value': 13825},
+                                     #   {'label': "Aspergillus clavatus [344612]", 'value': 344612},
+                                      #  {'label': "Aspergillus niger [425011]", 'value': 425011},
+                                       # {'label': "Bacillus anthracis [592021]", 'value': 592021},
+                                        #{'label': "Bacillus pumilus [315750]", 'value': 315750},
+                                       # {'label': "Bos taurus [9913]", 'value': 9913},
+                                       # {'label': "Branchiostoma floridae [7739]", 'value': 7739},
+                                       # {'label': "Chloroflexus aurantiacus [324602]", 'value': 324602},
+                                        #{'label': "Chlorokybus atmophyticus [3144]", 'value': 3144},
+                                        #{'label': "Cicer arietinum [3827]", 'value': 3827},
+                                        #{'label': "Coffea arabica [13443]", 'value': 13443},
+                                        #{'label': "Coprinopsis cinerea [240176]", 'value': 240176},
+                                        #{'label': "Crocosphaera subtropica [43989]", 'value': 43989},
+                                        #{'label': "Cyanothece sp. [395961]", 'value': 395961},
+                                      #  {'label': "Desulfitobacterium hafniense [272564]", 'value': 272564},
+                                    #],
+                                    #placeholder="All",
+                                    #multi=True
+                            dcc.Checklist(
+                            id='scope',
+                            options=[
+                            {'label': 'Diatom proteins', 'value': 'Diatoms'}
+                                 ],
+                                value=['no']
+                        )
+                                ), width={"size": 9}, ), ), ], )),
                 html.Br(),
                 dbc.Row(
                     dbc.Col(
@@ -225,17 +233,20 @@ html.Div(id='alphafold_zone',style={'margin-top': '1vw','margin-left': '-8vw','m
     Input('search', 'n_clicks'),
     State('input', 'value'),
     State('Algorithm', 'value'),
-    State('n_neighbors', 'value')
+    State('n_neighbors', 'value'),
+    State('Scope', 'value'),
 )
-def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors):
+def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
     if n_neighbors is None:
         n_neighbors = 10
+    if Algorithm is None:
+        Algorithm = 'Fasta'
     if n_clicks:
         print('yes')
         return \
             html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
-                id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm),
+                id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm,"Scope"),
                 style={'width': '130vh', 'height': '600px'}),style={'margin-top': '0vw','width': '130vh', 'height': '600px'}),
                 html.Div([html.Div(html.P("Your Input"),
                          style={'font-size': '12px', "font-weight": "bold"}),

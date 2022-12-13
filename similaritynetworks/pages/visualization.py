@@ -42,7 +42,7 @@ def similarity_data_from_csv(query, n_neighbors, algorithm):
     if algorithm == 'blast':
         df = pd.read_csv("../Blast/blast.csv")
     elif algorithm == 'fasta':
-        df = pd.read_csv("../FASTA/fasta.csv")
+        df = pd.read_csv("FASTA/fasta.csv")
     elif algorithm == 'ssearch':
         df = pd.read_csv("../FASTA/ssearch.csv")
     elif algorithm == 'hmmer':
@@ -84,7 +84,7 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
 
 
 def get_similarity_data(query, n_neighbors, algorithm, cur):
-    # return similarity_data_from_csv(query, n_neighbors, algorithm)
+    #return similarity_data_from_csv(query, n_neighbors, algorithm)
     return similarity_data_from_db(query, n_neighbors, algorithm, cur)
 
 
