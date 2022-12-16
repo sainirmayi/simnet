@@ -5,7 +5,6 @@ from dash import dcc
 import dash_bootstrap_components as dbc
 
 import pages.visualization
-import UniprotRetrieval.alphafold_visualization
 from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnectedProteins
 
 # library used need to be specified here
@@ -15,7 +14,7 @@ from pages.SupplementaryInfo import getInfoForSingleProtein, getInfoForConnected
 # components
 
 # webpage design
-from UniprotRetrieval.alphafold_visualization import getAlphaFoldStructure
+from pages.UniprotRetrieval.alphafold_visualization import getAlphaFoldStructure
 
 layout = html.Div([html.Div([html.Div(
     [
@@ -239,7 +238,7 @@ def showNetworkDiagram(n_clicks, proteinID, Algorithm,n_neighbors,Scope):
         print(Scope)
         print("yes")
         return \
-            html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure()]), '', \
+            html.Div([html.Label("AlphaFold Predicted Structure",style = {'margin-left':'6vw'}),getAlphaFoldStructure(proteinID)]), '', \
             html.Div(dbc.Col([html.Div(dcc.Graph(
                 id='network', figure=pages.visualization.get_visualization(proteinID, n_neighbors, Algorithm,Scope),
                 style={'width': '130vh', 'height': '600px'}),style={'margin-top': '0vw','width': '130vh', 'height': '600px'}),

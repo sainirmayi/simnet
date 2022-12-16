@@ -46,7 +46,7 @@ def similarity_data_from_csv(query, n_neighbors, algorithm):
     elif algorithm == 'ssearch':
         df = pd.read_csv("../FASTA/ssearch.csv")
     elif algorithm == 'hmmer':
-        df = pd.read_csv("../HmmerWithSecondSearch.csv")
+        df = pd.read_csv("../Hmmer/HmmerWithSecondSearch.csv")
     else:
         df = pd.DataFrame()
     hits = pd.concat([df[df['Protein1'] == query], df[df['Protein2'] == query]], axis=0, ignore_index=True)
@@ -74,7 +74,8 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     results = pd.DataFrame(cur.fetchall(), columns=columns)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
     # print(prot_list)
-    prot_list.remove(query)
+    if query in prot_list:
+        prot_list.remove(query)
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
     cur.execute(sql, (tuple(prot_list), tuple(prot_list)))
@@ -125,156 +126,171 @@ def get_protein_info(similar_proteins, cur):
 def create_network(query, similar_proteins, protein_info):
     """ Creating network diagram """
     # load pandas df as networkx graph
-    if 'Identities' not in similar_proteins.columns:
-        similar_proteins['Identities'] = ''
-    graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr=['Score', 'E', 'Identities'])
+    if similar_proteins.empty:
+        fig = go.Figure(layout=go.Layout(
+            plot_bgcolor='white',
+            showlegend=False,
+            margin=dict(b=20, l=5, r=5, t=40),
+            annotations=[dict(
+                text=f"No diatom proteins similar to {query} were found!",
+                font=dict(color="black"),
+                showarrow=False,
+                xref="paper", yref="paper",
+                )],
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+        )
+    else:
+        if 'Identities' not in similar_proteins.columns:
+            similar_proteins['Identities'] = ''
+        graph = nx.from_pandas_edgelist(similar_proteins, 'Protein1', 'Protein2', edge_attr=['Score', 'E', 'Identities'])
 
-    # Deciding on the layout of how the nodes will be lined up
-    pos = nx.spring_layout(graph, k=0.5, iterations=50, seed=1, weight='Score')
-    for n, p in pos.items():
-        graph.nodes[n]['pos'] = p
+        # Deciding on the layout of how the nodes will be lined up
+        pos = nx.spring_layout(graph, k=0.5, iterations=50, seed=1, weight='Score')
+        for n, p in pos.items():
+            graph.nodes[n]['pos'] = p
 
-    # Edges
-    xtext = []
-    ytext = []
-    edge_trace = []
-    edge_hovertemplate = []
-    for edge in graph.edges():
-        edge_x = []
-        edge_y = []
-        x0, y0 = graph.nodes[edge[0]]['pos']
-        x1, y1 = graph.nodes[edge[1]]['pos']
-        xtext.append((x0 + x1) / 2)
-        ytext.append((y0 + y1) / 2)
-        edge_x.append(x0)
-        edge_x.append(x1)
-        edge_x.append(None)
-        edge_y.append(y0)
-        edge_y.append(y1)
-        edge_y.append(None)
-        edge_hovertemplate.append(f"<b>Score:</b> {graph.edges()[edge]['Score']}" +
-                                  f"<br><b>E-value:</b> {graph.edges()[edge]['E']}" +
-                                  f"<br><b>Identity:</b> {graph.edges()[edge]['Identities']}"
-                                  "<extra></extra>")
+        # Edges
+        xtext = []
+        ytext = []
+        edge_trace = []
+        edge_hovertemplate = []
+        for edge in graph.edges():
+            edge_x = []
+            edge_y = []
+            x0, y0 = graph.nodes[edge[0]]['pos']
+            x1, y1 = graph.nodes[edge[1]]['pos']
+            xtext.append((x0 + x1) / 2)
+            ytext.append((y0 + y1) / 2)
+            edge_x.append(x0)
+            edge_x.append(x1)
+            edge_x.append(None)
+            edge_y.append(y0)
+            edge_y.append(y1)
+            edge_y.append(None)
+            edge_hovertemplate.append(f"<b>Score:</b> {graph.edges()[edge]['Score']}" +
+                                      f"<br><b>E-value:</b> {graph.edges()[edge]['E']}" +
+                                      f"<br><b>Identity:</b> {graph.edges()[edge]['Identities']}"
+                                      "<extra></extra>")
 
-        # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
-        weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*4/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
-        visibility = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*0.7/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.3
-        edge_trace.append(go.Scatter(
-            x=edge_x, y=edge_y,
-            mode='lines',
-            opacity=visibility,
-            line=dict(color='rgb(95,70,144)', width=weight)
+            # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
+            weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*4/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
+            visibility = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*0.7/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.3
+            edge_trace.append(go.Scatter(
+                x=edge_x, y=edge_y,
+                mode='lines',
+                opacity=visibility,
+                line=dict(color='rgb(95,70,144)', width=weight)
+                )
             )
-        )
 
-    eweights_trace = go.Scatter(
-        x=xtext, y=ytext,
-        mode='text',
-        marker=dict(size=0.5),
-        textposition='top center')
+        eweights_trace = go.Scatter(
+            x=xtext, y=ytext,
+            mode='text',
+            marker=dict(size=0.5),
+            textposition='top center')
 
-    eweights_trace.hovertemplate = edge_hovertemplate
+        eweights_trace.hovertemplate = edge_hovertemplate
 
-    # Nodes
-    node_x = []
-    node_y = []
-    for node in graph.nodes():
-        x, y = graph.nodes[node]['pos']
-        node_x.append(x)
-        node_y.append(y)
+        # Nodes
+        node_x = []
+        node_y = []
+        for node in graph.nodes():
+            x, y = graph.nodes[node]['pos']
+            node_x.append(x)
+            node_y.append(y)
 
-    node_trace = go.Scatter(
-        x=node_x, y=node_y,
-        mode='markers+text',
-        textposition='middle right',
-        textfont=dict(size=18, color='black'),
-        marker=dict(
-            showscale=True,
-            colorscale='YlGnBu',
-            reversescale=True,
-            color=[],
-            size=30,
-            colorbar=dict(
-                thickness=15,
-                title='Node Connections',
-                xanchor='left',
-                titleside='right'
-            ),
-            line_width=2))
+        node_trace = go.Scatter(
+            x=node_x, y=node_y,
+            mode='markers+text',
+            textposition='middle right',
+            textfont=dict(size=18, color='black'),
+            marker=dict(
+                showscale=True,
+                colorscale='YlGnBu',
+                reversescale=True,
+                color=[],
+                size=30,
+                colorbar=dict(
+                    thickness=15,
+                    title='Node Connections',
+                    xanchor='left',
+                    titleside='right'
+                ),
+                line_width=2))
 
-    # Colour node points by number of connections + text to node + text when you hover
-    node_adjacency = []
-    node_text = []
-    node_hovertemplate = []
+        # Colour node points by number of connections + text to node + text when you hover
+        node_adjacency = []
+        node_text = []
+        node_hovertemplate = []
 
-    pd.set_option('display.max_colwidth', None)   # to display the entire string
-    for node, adjacencies in enumerate(graph.adjacency()):
-        node_adjacency.append(len(adjacencies[1]))
-        entry = adjacencies[0]
+        pd.set_option('display.max_colwidth', None)   # to display the entire string
+        for node, adjacencies in enumerate(graph.adjacency()):
+            node_adjacency.append(len(adjacencies[1]))
+            entry = adjacencies[0]
 
-        df = protein_info[protein_info['Entry'] == entry]
-        entry_name = df['Entry_Name'].to_string(index=False)
-        primary_gene = df['Primary_Gene_Name'].to_string(index=False)
-        gene_names = df['Gene_Names'].to_string(index=False)
-        sequence = df['Sequence'].to_string(index=False)
-        sequence = textwrap.fill(sequence).replace('\n', '<br>')
-        organism = df['Organism'].to_string(index=False)
-        organism_id = df['OrganismID'].to_string(index=False)
-        protein_names = df['Protein_names'].to_string(index=False)
-        ecnum = df['EC_number'].to_string(index=False)
-        family = df['Protein_families'].to_string(index=False)
-        pdb = df['PDB'].to_string(index=False)
-        function = df['Function'].to_string(index=False).split(': ', 1)[1] if df['Function'].to_string(index=False) != '' else ''
-        function = textwrap.fill(function, width=100).replace('\n', '<br>')
-        pathway = df['Pathway'].to_string(index=False).split(': ', 1)[1] if df['Pathway'].to_string(index=False) != '' else ''
+            df = protein_info[protein_info['Entry'] == entry]
+            entry_name = df['Entry_Name'].to_string(index=False)
+            primary_gene = df['Primary_Gene_Name'].to_string(index=False)
+            gene_names = df['Gene_Names'].to_string(index=False)
+            sequence = df['Sequence'].to_string(index=False)
+            sequence = textwrap.fill(sequence).replace('\n', '<br>')
+            organism = df['Organism'].to_string(index=False)
+            organism_id = df['OrganismID'].to_string(index=False)
+            protein_names = df['Protein_names'].to_string(index=False)
+            ecnum = df['EC_number'].to_string(index=False)
+            family = df['Protein_families'].to_string(index=False)
+            pdb = df['PDB'].to_string(index=False)
+            function = df['Function'].to_string(index=False).split(': ', 1)[1] if df['Function'].to_string(index=False) != '' else ''
+            function = textwrap.fill(function, width=100).replace('\n', '<br>')
+            pathway = df['Pathway'].to_string(index=False).split(': ', 1)[1] if df['Pathway'].to_string(index=False) != '' else ''
 
-        node_text.append(entry_name)
-        node_hovertemplate.append(f'<b>Entry:</b> {entry}'
-                                  + f'<br><b>Entry name:</b> {entry_name}'
-                                  + f'<br><b>Primary gene names:</b> {primary_gene}'
-                                  + f'<br><b>Gene names:</b> {gene_names}'
-                                  + f'<br><b>Organism:</b> {organism}'
-                                  + f'<br><b>Organism ID:</b> {organism_id}'
-                                  + f'<br><b>Protein names:</b> {protein_names}'
-                                  + f'<br><b>EC Number:</b> {ecnum}'
-                                  + f'<br><b>Protein families:</b> {family}'
-                                  + f'<br><b>PDB:</b> {pdb}'
-                                  + f'<br><b>Function:</b> <br>{function}'
-                                  + f'<br><b>Pathway:</b> {pathway}'
-                                  + f'<br><b>Sequence:</b> <br>{sequence}'
-                                  + '<extra></extra>')
-    node_trace.marker.color = node_adjacency
-    node_trace.text = node_text
-    node_trace.hovertemplate = node_hovertemplate
+            node_text.append(entry_name)
+            node_hovertemplate.append(f'<b>Entry:</b> {entry}'
+                                      + f'<br><b>Entry name:</b> {entry_name}'
+                                      + f'<br><b>Primary gene names:</b> {primary_gene}'
+                                      + f'<br><b>Gene names:</b> {gene_names}'
+                                      + f'<br><b>Organism:</b> {organism}'
+                                      + f'<br><b>Organism ID:</b> {organism_id}'
+                                      + f'<br><b>Protein names:</b> {protein_names}'
+                                      + f'<br><b>EC Number:</b> {ecnum}'
+                                      + f'<br><b>Protein families:</b> {family}'
+                                      + f'<br><b>PDB:</b> {pdb}'
+                                      + f'<br><b>Function:</b> <br>{function}'
+                                      + f'<br><b>Pathway:</b> {pathway}'
+                                      + f'<br><b>Sequence:</b> <br>{sequence}'
+                                      + '<extra></extra>')
+        node_trace.marker.color = node_adjacency
+        node_trace.text = node_text
+        node_trace.hovertemplate = node_hovertemplate
 
-    # change color of query node to red
-    for i in range(len(graph.nodes())):
-        if node_trace.text[i] == protein_info[protein_info['Entry'] == query]['Entry_Name'].to_string(index=False):
-            highlighted = list(node_trace.marker.color)
-            highlighted[i] = 'darkred'
-            node_trace.marker.color = tuple(highlighted)
+        # change color of query node to red
+        for i in range(len(graph.nodes())):
+            if node_trace.text[i] == protein_info[protein_info['Entry'] == query]['Entry_Name'].to_string(index=False):
+                highlighted = list(node_trace.marker.color)
+                highlighted[i] = 'darkred'
+                node_trace.marker.color = tuple(highlighted)
 
-    # Create Network Graph
-    fig = go.Figure(layout=go.Layout(
-        plot_bgcolor='white',
-        showlegend=False,
-        hovermode='closest',
-        margin=dict(b=20, l=5, r=5, t=40),
-        annotations=[dict(
-            text=f"Query: {query}",
-            font=dict(color="darkred"),
-            showarrow=False,
-            xref="paper", yref="paper",
-            x=0.005, y=-0.002)],
-        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
-        )
+        # Create Network Graph
+        fig = go.Figure(layout=go.Layout(
+            plot_bgcolor='white',
+            showlegend=False,
+            hovermode='closest',
+            margin=dict(b=20, l=5, r=5, t=40),
+            annotations=[dict(
+                text=f"Query: {query}",
+                font=dict(color="darkred"),
+                showarrow=False,
+                xref="paper", yref="paper",
+                x=0.005, y=-0.002)],
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+            )
 
-    for trace in edge_trace:
-        fig.add_trace(trace)
-    fig.add_trace(node_trace)
-    fig.add_trace(eweights_trace)
+        for trace in edge_trace:
+            fig.add_trace(trace)
+        fig.add_trace(node_trace)
+        fig.add_trace(eweights_trace)
     return fig
 
 
@@ -320,5 +336,5 @@ if __name__ == "__main__":
     #algorithm = input("Similarity algorithm: ")
     #organism = input("All or Diatoms? ")
     #get_visualization(query, n_neighbors, algorithm, organism).show()
-    get_visualization('A0T0C2', 15, 'fasta', 'Diatoms').show()
+    get_visualization('A0T097', 15, 'hmmer', 'Diatoms').show()
 

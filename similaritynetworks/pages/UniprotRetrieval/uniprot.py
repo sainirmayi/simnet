@@ -27,7 +27,7 @@ if __name__ == '__main__':
     fasta_proteins = fasta_dataframe['Protein1'].append(fasta_dataframe['Protein2']).drop_duplicates()
     print(len(fasta_proteins))
 
-    hmmer_dataframe = pd.read_csv('../Hmmer/outputTrimmed.csv')
+    hmmer_dataframe = pd.read_csv('../Hmmer/HmmerWithSecondSearch.csv')
     hmmer_proteins = hmmer_dataframe['Protein1'].append(hmmer_dataframe['Protein2']).drop_duplicates()
     print(len(hmmer_proteins))
 

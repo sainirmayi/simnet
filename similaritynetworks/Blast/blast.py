@@ -1,11 +1,13 @@
 import os
-from os import path
-from Bio.Blast import NCBIWWW
-from Bio.Blast import NCBIXML
-import pandas as pd
 import shutil
 import xml.etree.ElementTree as ET
+from os import path
+
 import numpy as np
+import pandas as pd
+from Bio.Blast import NCBIWWW
+from Bio.Blast import NCBIXML
+
 
 #function to split the fasta sequences in the fasta file into different files
 def split_fasta(fastafile):

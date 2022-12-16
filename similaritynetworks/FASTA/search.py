@@ -1,17 +1,17 @@
 import os
-import numpy as np
-import pandas as pd
-from Bio import SeqIO
 import time
-import requests
-from xmltramp2 import xmltramp
 import urllib
+import xml.etree.ElementTree as ET
+from urllib.error import HTTPError
 from urllib.parse import urlparse
 from urllib.request import urlopen, Request
-from urllib.error import HTTPError
-import xml.etree.ElementTree as ET
 
+import numpy as np
+import pandas as pd
+import requests
+from Bio import SeqIO
 from UniprotRetrieval import uniprot
+from xmltramp2 import xmltramp
 
 
 def parse_fasta(filename):
