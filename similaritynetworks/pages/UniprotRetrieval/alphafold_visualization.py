@@ -2,7 +2,6 @@ import pandas as pd
 import dash_bio
 from dash_bio_utils import PdbParser, create_mol3d_style
 from pages.visualization import database_connection
-import plotly.graph_objects as go
 
 
 def getAlphaFoldStructure(proteinID):
