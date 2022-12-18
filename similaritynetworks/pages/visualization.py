@@ -73,13 +73,14 @@ def similarity_data_from_db(query, n_neighbors, algorithm, cur):
     cur.execute(sql, (query, query, n_neighbors))
     results = pd.DataFrame(cur.fetchall(), columns=columns)
     prot_list = list(pd.concat([results['Protein1'], results['Protein2']]).unique())
-    # print(prot_list)
     if query in prot_list:
         prot_list.remove(query)
     sql = f"""SELECT * FROM protein_network.{algorithm} 
         WHERE Protein1 in %s and Protein2 in %s"""
-    cur.execute(sql, (tuple(prot_list), tuple(prot_list)))
-    results = pd.concat([results, pd.DataFrame(cur.fetchall(), columns=columns)], axis=0)
+    print(prot_list)
+    if prot_list:
+        cur.execute(sql, (tuple(prot_list), tuple(prot_list)))
+        results = pd.concat([results, pd.DataFrame(cur.fetchall(), columns=columns)], axis=0)
     results.drop_duplicates(inplace=True, ignore_index=True)
     return results
 
@@ -132,7 +133,7 @@ def create_network(query, similar_proteins, protein_info):
             showlegend=False,
             margin=dict(b=20, l=5, r=5, t=40),
             annotations=[dict(
-                text=f"No diatom proteins similar to {query} were found!",
+                text=f"No results found for {query}!",
                 font=dict(color="black"),
                 showarrow=False,
                 xref="paper", yref="paper",
@@ -173,7 +174,7 @@ def create_network(query, similar_proteins, protein_info):
                                       f"<br><b>Identity:</b> {graph.edges()[edge]['Identities']}"
                                       "<extra></extra>")
 
-            # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 5.5)
+            # make an edge trace for each edge based on the edge weights (edge width is within in the range of 0.5 to 4.5)
             weight = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*4/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.5
             visibility = (graph.edges()[edge]['Score']-similar_proteins['Score'].min())*0.7/(similar_proteins['Score'].max()-similar_proteins['Score'].min()) + 0.3
             edge_trace.append(go.Scatter(

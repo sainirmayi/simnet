@@ -24,9 +24,9 @@ def getAlphaFoldStructure(proteinID):
 
     id = results['AlphaFoldDB'].to_string(index=False)
     if id != '':
-        alphafoldID = str(id).replace(';', '')
-        DNA_pdb_file = "pages/UniprotRetrieval/alphafold/AF-"+alphafoldID+"-F1.pdb"
-        # DNA_pdb_file = results['Alphafold_path'].to_string(index=False)
+        # alphafoldID = str(id).replace(';', '')
+        # DNA_pdb_file = "pages/UniprotRetrieval/alphafold/AF-"+alphafoldID+"-F1.pdb"
+        DNA_pdb_file = results['Alphafold_path'].to_string(index=False)
         parser = PdbParser(DNA_pdb_file)
         data = parser.mol3d_data()
         styles = create_mol3d_style(data["atoms"], visualization_type="cartoon", color_element="residue")

@@ -33,7 +33,7 @@ def getInfoForConnectedProteins(UniprotID,Algorithm,n_neighbors, Scope):
     df = cur.fetchall()
     df = pd.DataFrame(df, columns=['Protein ID', 'UniProt Entry', 'Protein Name', 'Organism', 'Score'])
 
-    print(df)
+    #print(df)
     #diatoms = pd.read_csv(
      #   "/Users/jiyue/PycharmProjects/similarity-networks/similaritynetworks/pages/diatom_proteins/diatoms.csv")
 
