@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import requests
 from Bio import SeqIO
-from UniprotRetrieval import uniprot
+from pages.UniprotRetrieval import uniprot
 from xmltramp2 import xmltramp
 
 
